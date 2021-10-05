@@ -6,94 +6,22 @@
       "siteUrl": "https://github.com/osmoscraft/osmosfeed/releases",
       "articles": [
         {
-          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.7.2",
+          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.11.2",
           "author": null,
-          "description": "⚠ Deprecated: To accommodate the monorepo setup, the node version in all templates/demos/examples has changed from 14 to 16. This is not a breaking change as our compile target is still node 14, and node 16 is backward compatible. We still recommend you start using node-version: \"16\" in your .github/workflows/update-feed.yaml today to get the performance/security improvements from the newer node. See example\nChore: Reorganize to monorepo with npm workspace.",
-          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.7.2",
-          "publishedOn": "2021-05-17T05:32:19.000Z",
-          "wordCount": 340,
-          "title": "v1.7.2"
+          "description": "Fixed: unicode characters in URL caused download error\nFixed: project root npm install error\nAdded: unit test library\nChore: Dependency updates\nThank you: @CaptNo1",
+          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.11.2",
+          "publishedOn": "2021-09-26T18:45:39.000Z",
+          "wordCount": 354,
+          "title": "v1.11.2"
         },
         {
-          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.7.1",
+          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.11.1",
           "author": null,
-          "description": "Fixed: static files were unnecessarily copied for custom templates.",
-          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.7.1",
-          "publishedOn": "2021-05-16T02:33:58.000Z",
-          "wordCount": 276,
-          "title": "v1.7.1"
-        },
-        {
-          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.7.0",
-          "author": null,
-          "description": "Added: templating system. Demo | Source | Docs\nChore: rendering logic refactoring. Adopting functional paradigm.\nThank you @tianheg, @onnyyonn",
-          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.7.0",
-          "publishedOn": "2021-05-16T01:42:24.000Z",
-          "wordCount": 286,
-          "title": "v1.7.0"
-        },
-        {
-          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.4.0",
-          "author": null,
-          "description": "Added: Basic theme customization: Demo | Source | Docs.",
-          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.4.0",
-          "publishedOn": "2021-05-10T08:55:42.000Z",
-          "wordCount": 276,
-          "title": "v1.4.0"
-        },
-        {
-          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.6.0",
-          "author": null,
-          "description": "Added: Link from the title of a subscription to its website.\nAdded: Store feedUrl and siteUrl for each source in cache.\nAdded: Semantic element (<time>) for timestamp on the UI.\nAdded: Semantic API for theming the default template. Demo | Source | Docs\nChanged: Moved feed metadata from article level to feed level in cache.\nFixed: Any html-like text was stripped from title. Fixed with encoded text.\nRemoved: href for each source in cache. The value was never used so it's not a breaking change.",
-          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.6.0",
-          "publishedOn": "2021-05-10T08:15:20.000Z",
-          "wordCount": 352,
-          "title": "v1.6.0"
-        },
-        {
-          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.5.0",
-          "author": null,
-          "description": "Added: Atom feed generator\nAdded: Customizable site title\nAdded: Copy all files from static directory to the root of the site.\nChanged: Favicon, css, and js assets now existing at site root level.\nChore: Excluded testing files from repo.",
-          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.5.0",
-          "publishedOn": "2021-05-08T05:16:47.000Z",
-          "wordCount": 306,
-          "title": "v1.5.0"
-        },
-        {
-          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.3.1",
-          "author": null,
-          "description": "Fixed: Avoid crwalers.\nFixed: Error logging from XML parser.\nFixed: Typo in docs.\nThank you: @dym-sh, @tabokie, @cheese1",
-          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.3.1",
-          "publishedOn": "2021-05-05T05:19:57.000Z",
-          "wordCount": 285,
-          "title": "v1.3.1"
-        },
-        {
-          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.3.0",
-          "author": null,
-          "description": "Added: Customize cache lifespan with cacheMaxDays property in osmosfeed.yaml.\nAdded: Documentation for osmosfeed.yaml.\nFixed: More intuitive logging during build.\nChore: Refactored parameter passing for enrich step.",
-          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.3.0",
-          "publishedOn": "2021-05-05T05:19:26.000Z",
-          "wordCount": 293,
-          "title": "v1.3.0"
-        },
-        {
-          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.2.3",
-          "author": null,
-          "description": "Changed: favicon update.",
-          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.2.3",
-          "publishedOn": "2021-05-05T05:19:03.000Z",
-          "wordCount": 270,
-          "title": "v1.2.3"
-        },
-        {
-          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.2.1",
-          "author": null,
-          "description": "Added: Display CLI version in footer.",
-          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.2.1",
-          "publishedOn": "2021-05-05T05:18:52.000Z",
-          "wordCount": 273,
-          "title": "v1.2.1"
+          "description": "Fixed: Unexpected nested element in author field crashes the parser\nThank you @ad-m",
+          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.11.1",
+          "publishedOn": "2021-09-16T06:39:32.000Z",
+          "wordCount": 344,
+          "title": "v1.11.1"
         }
       ]
     },
@@ -103,139 +31,139 @@
       "siteUrl": "https://css-tricks.com",
       "articles": [
         {
-          "id": "https://css-tricks.com/?p=340599",
+          "id": "https://css-tricks.com/?p=353179",
           "author": "Chris Coyier",
-          "description": "Jonathan Neal tweeted a heck of a little CSS trick the other day, putting JSON inside CSS and plucking it out with JavaScript. Valid values for custom properties are quite liberal! So this looks for a CSS rule (e.g. a …\nThe post JSON in CSS appeared first on CSS-Tricks.\nYou can support CSS-Tricks by being an MVP Supporter.",
-          "link": "https://css-tricks.com/json-in-css/",
-          "publishedOn": "2021-05-20T22:29:53.000Z",
-          "wordCount": 631,
-          "title": "JSON in CSS"
+          "description": "Dumb trick alert! \nNot all browsers support all features. Say you want to write a fallback for browsers that doesn’t support CSS Grid. Not very common these days, but it’s just to illustrate a point.\nYou could write the supporting …\nThe post Quickly Testing CSS Fallbacks appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
+          "link": "https://css-tricks.com/quickly-testing-css-fallbacks/",
+          "publishedOn": "2021-10-04T19:15:22.000Z",
+          "wordCount": 530,
+          "title": "Quickly Testing CSS Fallbacks"
         },
         {
-          "id": "https://css-tricks.com/?p=340933",
+          "id": "https://css-tricks.com/?p=352819",
+          "author": "Luke Courtney",
+          "description": "Animating elements with CSS can either be quite easy or quite difficult depending on what you are trying to do. Changing the background color of a button when you hover over it? Easy. Animating the position and size of an …\nThe post Animation Techniques for Adding and Removing Items From a Stack appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
+          "link": "https://css-tricks.com/animation-techniques-for-adding-and-removing-items-from-a-stack/",
+          "publishedOn": "2021-10-04T14:05:36.000Z",
+          "wordCount": 4663,
+          "title": "Animation Techniques for Adding and Removing Items From a Stack"
+        },
+        {
+          "id": "https://css-tricks.com/?p=352857",
           "author": "Chris Coyier",
-          "description": "Ooo look at this mighty SEO flex from Google: Learn CSS! Well deserved — this is great content. Twenty-three chapters taking you through all the fundamentals of CSS with extra content, like relevant podcasts, interactive examples, and even quizzes to …\nThe post Learn CSS! appeared first on CSS-Tricks.\nYou can support CSS-Tricks by being an MVP Supporter.",
-          "link": "https://web.dev/learn/css/",
-          "publishedOn": "2021-05-20T21:51:43.000Z",
-          "wordCount": 991,
-          "title": "Learn CSS!"
+          "description": "Dave and I slapped up a little videos section of the ShopTalk website. Twelve so far! They are short-ish, between 10-20 minutes, each focused on one fairly specific thing. We’re kinda just dipping our toes here — we don’t …\nThe post ShopTalk Goes Video appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
+          "link": "https://css-tricks.com/shoptalk-goes-video/",
+          "publishedOn": "2021-10-04T14:04:32.000Z",
+          "wordCount": 512,
+          "title": "ShopTalk Goes Video"
         },
         {
-          "id": "https://css-tricks.com/?p=340715",
-          "author": "Jhey Tompkins",
-          "description": "If you follow new developments in CSS, you’ve likely heard of the impending arrival of container queries. We’re going to look at the basics here, but if you’d like another look, check out Una’s “Next Gen CSS: @container” article. …\nThe post Can We Create a “Resize Hack” With Container Queries? appeared first on CSS-Tricks.\nYou can support CSS-Tricks by being an MVP Supporter.",
-          "link": "https://css-tricks.com/can-we-create-a-resize-hack-with-container-queries/",
-          "publishedOn": "2021-05-20T14:24:12.000Z",
-          "wordCount": 1691,
-          "title": "Can We Create a “Resize Hack” With Container Queries?"
-        },
-        {
-          "id": "https://css-tricks.com/?p=340897",
+          "id": "https://css-tricks.com/?p=352717",
           "author": "Chris Coyier",
-          "description": "Here’s some hardcore deep-dive CSS nerdery from PPK. If you can wrap your mind around min-content (the smallest an element can be based on the content it contains) and max-content (the largest the content of an element can push it) …\nThe post fit-content and fit-content() appeared first on CSS-Tricks.\nYou can support CSS-Tricks by being an MVP Supporter.",
-          "link": "https://www.quirksmode.org/blog/archives/2021/04/fitcontent_and.html",
-          "publishedOn": "2021-05-20T14:20:56.000Z",
-          "wordCount": 1196,
-          "title": "fit-content and fit-content()"
+          "description": "How To Use The Vite Build Tool with React — Vite is hot, in part, because it’s based on esbuild and wickedly fast. It’s from Evan You of Vue fame, but it’s not a Vue-specific tool. Here, NARUHODO covers how \n…\nThe post Links on React and JavaScript II appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
+          "link": "https://css-tricks.com/links-on-react-and-javascript-ii/",
+          "publishedOn": "2021-10-01T21:09:25.000Z",
+          "wordCount": 789,
+          "title": "Links on React and JavaScript II"
         },
         {
-          "id": "https://css-tricks.com/?p=340731",
+          "id": "https://css-tricks.com/?p=352867",
           "author": "Chris Coyier",
-          "description": "The Public Beta of the Notion API dropped! Woot! Here’s their guide. I’ve been a Notion user and fan for a long time, for both personal and professional team use. They even sponsored a few videos around here a …\nThe post Notion API appeared first on CSS-Tricks.\nYou can support CSS-Tricks by being an MVP Supporter.",
-          "link": "https://css-tricks.com/notion-api/",
-          "publishedOn": "2021-05-19T23:18:42.000Z",
-          "wordCount": 1042,
-          "title": "Notion API"
+          "description": "I'm certainly not dogmatic about it, but I think if you can pull of a project with literally zero build process, it feels good while working on it and feels very good when you come back to it months/years later and can just pick up and go.\nThe post Using the platform appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
+          "link": "https://elisehe.in/2021/08/22/using-the-platform",
+          "publishedOn": "2021-10-01T18:50:43.000Z",
+          "wordCount": 3344,
+          "title": "Using the platform"
         },
         {
-          "id": "https://css-tricks.com/?p=340692",
-          "author": "Shubham Jain",
-          "description": "SVGs are awesome: they are small, look sharp on any scale, and can be customized without creating a separate file. However, there is something I feel is missing in web standards today: a way to include them as an external …\nThe post svg-loader: A Different Way to Work With External SVG appeared first on CSS-Tricks.\nYou can support CSS-Tricks by being an MVP Supporter.",
-          "link": "https://css-tricks.com/svg-loader-a-different-way-to-work-with-external-svg/",
-          "publishedOn": "2021-05-19T14:28:19.000Z",
-          "wordCount": 1558,
-          "title": "svg-loader: A Different Way to Work With External SVG"
+          "id": "https://css-tricks.com/?p=352798",
+          "author": "Jamie Barton",
+          "description": "Directives are one of GraphQL’s best — and most unspoken — features.\nLet’s explore working with GraphQL’s built-in schema and operation directives that all GraphQL spec compliant APIs must implement. They are extremely useful if you are working with a …\nThe post Working With Built-in GraphQL Directives appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
+          "link": "https://css-tricks.com/working-with-built-in-graphql-directives/",
+          "publishedOn": "2021-10-01T14:35:02.000Z",
+          "wordCount": 1463,
+          "title": "Working With Built-in GraphQL Directives"
         },
         {
-          "id": "https://css-tricks.com/?p=340613",
+          "id": "https://css-tricks.com/?p=352475",
+          "author": "Tobias Günther",
+          "description": "A commit can be something that helps us stay on top of things. It can be a container for related changes that belong to one and only one topic, and thereby make it easier for us to understand what happened.\nIn this post, we’re talking about what it takes to produce the \"perfect\" commit.\nThe post Creating the Perfect Commit in Git appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
+          "link": "https://css-tricks.com/creating-the-perfect-commit-in-git/",
+          "publishedOn": "2021-09-30T14:29:36.000Z",
+          "wordCount": 2274,
+          "title": "Creating the Perfect Commit in Git"
+        },
+        {
+          "id": "https://css-tricks.com/?p=350620",
           "author": "Chris Coyier",
-          "description": "I’m afraid I have to start this with a whole backstory, as the journey here is the point, not so much the theme.\nA fella wrote to me a while back outlining a situation he was in. His company has …\nThe post Pinned Audio WordPress Theme appeared first on CSS-Tricks.\nYou can support CSS-Tricks by being an MVP Supporter.",
-          "link": "https://css-tricks.com/pinned-audio-wordpress-theme/",
-          "publishedOn": "2021-05-18T19:14:53.000Z",
-          "wordCount": 1082,
-          "title": "Pinned Audio WordPress Theme"
+          "description": "(This is a sponsored post.)\nOf the languages that browsers speak, I’d wager that the very first one that developers decided needed some additional processing was HTML. Every single CMS in the world (aside from intentionally headless-only CMSs) …\nThe post Comparing HTML Preprocessor Features appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
+          "link": "https://css-tricks.com/comparing-html-preprocessor-features/",
+          "publishedOn": "2021-09-30T14:00:00.000Z",
+          "wordCount": 2581,
+          "title": "Comparing HTML Preprocessor Features"
         },
         {
-          "id": "https://css-tricks.com/?p=340420",
-          "author": "Silvia O'Dwyer",
-          "description": "Neon text can add a nice, futuristic touch to any website. I’ve always loved the magic of neon signs, and wanted to recreate them using CSS. I thought I’d share some tips on how to do it! In this article, …\nThe post How to Create Neon Text With CSS appeared first on CSS-Tricks.\nYou can support CSS-Tricks by being an MVP Supporter.",
-          "link": "https://css-tricks.com/how-to-create-neon-text-with-css/",
-          "publishedOn": "2021-05-18T14:31:25.000Z",
-          "wordCount": 2401,
-          "title": "How to Create Neon Text With CSS"
+          "id": "https://css-tricks.com/?p=352723",
+          "author": "Ollie Williams",
+          "description": "Chrome developer advocate Jake Archibald called 2016 “the year of web streams.” Clearly, his prediction was somewhat premature. The Streams Standard was announced back in 2014. It’s taken a while, but there’s now a consistent streaming API implemented …\nThe post Web Streams Everywhere (and Fetch for Node.js) appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
+          "link": "https://css-tricks.com/web-streams-everywhere-and-fetch-for-node-js/",
+          "publishedOn": "2021-09-29T14:51:25.000Z",
+          "wordCount": 2251,
+          "title": "Web Streams Everywhere (and Fetch for Node.js)"
         },
         {
-          "id": "https://css-tricks.com/?p=340716",
+          "id": "https://css-tricks.com/?p=352627",
+          "author": "Geoff Graham",
+          "description": "I was pretty stoked when Chris shared a way to “View Source” on mobile. Sure, it’s not the same as a built-in feature but it allows iOS users like myself a way to peek at a site’s code the …\nThe post Front-End Dev Shortcuts in iOS 15 appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
+          "link": "https://css-tricks.com/front-end-dev-shortcuts-in-ios-15/",
+          "publishedOn": "2021-09-29T14:51:22.000Z",
+          "wordCount": 1218,
+          "title": "Front-End Dev Shortcuts in iOS 15"
+        },
+        {
+          "id": "https://css-tricks.com/?p=352669",
           "author": "Chris Coyier",
-          "description": "Addy Osmani on images in HTML:\nThe humble <img> element has gained some superpowers over the years. Given how central it is to image optimization on the web, let’s catch up on what it can do and how it can \n…\nThe post The Humble `img` Element And Core Web Vitals appeared first on CSS-Tricks.\nYou can support CSS-Tricks by being an MVP Supporter.",
-          "link": "https://www.smashingmagazine.com/2021/04/humble-img-element-core-web-vitals/",
-          "publishedOn": "2021-05-17T22:38:06.000Z",
-          "wordCount": 5325,
-          "title": "The Humble `img` Element And Core Web Vitals"
+          "description": "I had one of those little single-serving designer helper sites bookmarked the other day: getwaves.io. Randomized SVG waves! Lots of cool options! Easy to customize! Easy to copy and paste! Well played, z creative labs. \n\nBut then I …\nThe post So many little design helper sites! appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
+          "link": "https://css-tricks.com/so-many-little-design-helper-sites/",
+          "publishedOn": "2021-09-28T21:00:04.000Z",
+          "wordCount": 728,
+          "title": "So many little design helper sites!"
         },
         {
-          "id": "https://css-tricks.com/?p=339522",
-          "author": "Ashley Kolodziej",
-          "description": "I see you. In the back there, behind JavaScript and React and PHP and all those “real” programming languages, I see you. And I appreciate you.\nThe post A Love Letter to HTML & CSS appeared first on CSS-Tricks.\nYou can support CSS-Tricks by being an MVP Supporter.",
-          "link": "https://css-tricks.com/a-love-letter-to-html-css/",
-          "publishedOn": "2021-05-17T14:27:22.000Z",
-          "wordCount": 2661,
-          "title": "A Love Letter to HTML & CSS"
-        },
-        {
-          "id": "https://css-tricks.com/?p=340594",
+          "id": "https://css-tricks.com/?p=352681",
           "author": "Chris Coyier",
-          "description": "An interactive tool for learning grid syntax from Etesam Ansari. In the Learn section, it teaches you some concepts (involving multiple bits of the grid syntax) then gives you a task to complete by filling out the right syntax. I’m …\nThe post Euismod appeared first on CSS-Tricks.\nYou can support CSS-Tricks by being an MVP Supporter.",
-          "link": "https://www.euismod.dev/",
-          "publishedOn": "2021-05-17T14:27:13.000Z",
-          "wordCount": 3,
-          "title": "Euismod"
+          "description": "Just last week I got one of those really?! 🤨 faces when this fact came up in conversation amongst smart and engaged fellow web developers: there is no browser choice on iOS. It’s all Safari. You can download apps that …\nThe post iOS Browser Choice appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
+          "link": "https://css-tricks.com/ios-browser-choice/",
+          "publishedOn": "2021-09-28T14:26:23.000Z",
+          "wordCount": 1799,
+          "title": "iOS Browser Choice"
         },
         {
-          "id": "https://css-tricks.com/?p=340136",
+          "id": "https://css-tricks.com/?p=352073",
           "author": "Chris Coyier",
-          "description": "I’ve been thinking about social media images again. You know, the images that (can) show up when you share a link in places like Twitter, Facebook, or iMessage. You’re essentially leaving money on the table without them, because they …\nThe post Auto-Generated Social Media Images appeared first on CSS-Tricks.\nYou can support CSS-Tricks by being an MVP Supporter.",
-          "link": "https://css-tricks.com/auto-generated-social-media-images/",
-          "publishedOn": "2021-05-14T20:34:49.000Z",
-          "wordCount": 2298,
-          "title": "Auto-Generated Social Media Images"
+          "description": "(This is a sponsored post.)\nNow in its tenth year (!!!), Web Unleashed is one of the top events for web devs. It’s coming up quick: October 20-22, 2021. \nThe lineup is amazing. You’ll hear from leaders in …\nThe post Web Unleashed is Back! (Use Coupon Code “CSS-Tricks” for 50% Off) appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
+          "link": "https://fitc.ca/event/webu21/",
+          "publishedOn": "2021-09-28T14:24:34.000Z",
+          "wordCount": 1491,
+          "title": "Web Unleashed is Back! (Use Coupon Code “CSS-Tricks” for 50% Off)"
         },
         {
-          "id": "https://css-tricks.com/?p=340343",
-          "author": "Nathan Babcock",
-          "description": "!default is a Sass flag that indicates conditional assignment to a variable — it assigns a value only if the variable was previously undefined or null. Consider this code snippet:\n$variable: 'test' !default;\nTo the Sass compiler, this line …\nThe post Creating Stylesheet Feature Flags With Sass !default appeared first on CSS-Tricks.\nYou can support CSS-Tricks by being an MVP Supporter.",
-          "link": "https://css-tricks.com/creating-stylesheet-feature-flags-with-sass-default/",
-          "publishedOn": "2021-05-14T14:14:34.000Z",
-          "wordCount": 1344,
-          "title": "Creating Stylesheet Feature Flags With Sass !default"
-        },
-        {
-          "id": "https://css-tricks.com/?p=340403",
+          "id": "https://css-tricks.com/?p=352621",
           "author": "Chris Coyier",
-          "description": "Manuel Matuzović goes line-by-line through a boilerplate HTML document. I like it. It’s a good reference and has a lot of the same type of stuff I tend to put in the main HTML template. It makes me think about …\nThe post HTML Boilerplates appeared first on CSS-Tricks.\nYou can support CSS-Tricks by being an MVP Supporter.",
-          "link": "https://css-tricks.com/html-boilerplates/",
-          "publishedOn": "2021-05-14T14:13:07.000Z",
-          "wordCount": 781,
-          "title": "HTML Boilerplates"
+          "description": "I enjoy little frameworks like Tonic. It’s essentially syntactic sugar over <web-components /> to make them feel easier to use. Define a Class, template literal an HTML template, probably some other fancy helpers, and you’ve got a component …\nThe post Tonic (Component Framework) appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
+          "link": "https://css-tricks.com/tonic-component-framework/",
+          "publishedOn": "2021-09-27T18:52:46.000Z",
+          "wordCount": 637,
+          "title": "Tonic (Component Framework)"
         },
         {
-          "id": "https://css-tricks.com/?p=340490",
-          "author": "Chris Coyier",
-          "description": "Chen Hui Jing covers some recent movement in DevTools:\nFirefox’s grid inspector was pretty full-featured from the get-to and released together with CSS grid in Firefox 52. It was constantly improved upon since. Chrome added a basic grid inspector \n…\nThe post DevTools for CSS layouts 2021 edition appeared first on CSS-Tricks.\nYou can support CSS-Tricks by being an MVP Supporter.",
-          "link": "https://chenhuijing.com/blog/devtools-for-css-layouts-2021-edition/#%F0%9F%9A%B2",
-          "publishedOn": "2021-05-13T23:22:45.000Z",
-          "wordCount": 1594,
-          "title": "DevTools for CSS layouts 2021 edition"
+          "id": "https://css-tricks.com/?p=352211",
+          "author": "Ravgeet Dhillon",
+          "description": "A lot of people these days are setting up their own newsletters. You’ve got the current big names like Substack and MailChimp, companies like Twitter are getting into it with Revue, and even Facebook is getting into the …\nThe post Collecting Email Signups With the Notion API appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
+          "link": "https://css-tricks.com/collecting-email-signups-with-the-notion-api/",
+          "publishedOn": "2021-09-27T15:26:01.000Z",
+          "wordCount": 4395,
+          "title": "Collecting Email Signups With the Notion API"
         }
       ]
     },
@@ -245,238 +173,354 @@
       "siteUrl": "https://www.smashingmagazine.com/",
       "articles": [
         {
-          "id": "https://smashingmagazine.com/2021/05/new-online-workshops-front-end-ux/",
-          "author": "hello@smashingmagazine.com (Iris Lješnjanin)",
-          "description": "Front-end and design are remarkably complex these days. That’s why we invite kind, smart folks from the community to run online workshops for all of us to learn together. And we have new ones coming up, and we’d like to kindly welcome you to join in.",
-          "link": "https://smashingmagazine.com/2021/05/new-online-workshops-front-end-ux/",
-          "publishedOn": "2021-05-20T14:20:00.000Z",
-          "wordCount": 831,
-          "title": "Boost Your Skills Online: Smashing Workshops On Front-End And Design"
+          "id": "https://smashingmagazine.com/2021/10/build-expandable-accessible-gallery/",
+          "author": "hello@smashingmagazine.com (Silvestar Bistrović)",
+          "description": "In this article, we’ll be looking at how to set up a gallery that is expandable as well as accessible with a few tips and tricks along the way. Let’s get started!",
+          "link": "https://smashingmagazine.com/2021/10/build-expandable-accessible-gallery/",
+          "publishedOn": "2021-10-04T10:00:00.000Z",
+          "wordCount": 2610,
+          "title": "How To Build An Expandable Accessible Gallery",
+          "enclosure": {
+            "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/8271f985-0b13-4db2-afd6-3f6026272fc2/build-expandable-accessible-gallery.jpg",
+            "length": "0",
+            "type": "image/jpg"
+          }
         },
         {
-          "id": "https://smashingmagazine.com/2021/05/implement-authentication-nextjs-auth0/",
-          "author": "hello@smashingmagazine.com (Facundo Giuliani)",
-          "description": "A step-by-step tutorial on adding authentication and authorization to your Next.js apps, with Auth0. We’ll be using a Next.js SDK to connect our application to the Auth0 API and will create the dynamic API route for React.",
-          "link": "https://smashingmagazine.com/2021/05/implement-authentication-nextjs-auth0/",
-          "publishedOn": "2021-05-20T11:00:00.000Z",
-          "wordCount": 1919,
-          "title": "How To Implement Authentication In Next.js With Auth0"
+          "id": "https://smashingmagazine.com/2021/10/search-functionality-nuxt-app-algolia-instantsearch/",
+          "author": "hello@smashingmagazine.com (Miracle Onyenma)",
+          "description": "Many websites have some sort of search feature because it helps users navigate through their content easily. Implementing it the right way can be tricky and might not give a good user experience. In this tutorial, we will be integrating Algolia, a popular and powerful search service for the best experience on our Nuxt site.",
+          "link": "https://smashingmagazine.com/2021/10/search-functionality-nuxt-app-algolia-instantsearch/",
+          "publishedOn": "2021-10-01T10:00:00.000Z",
+          "wordCount": 4895,
+          "title": "How To Implement Search Functionality In Your Nuxt App Using Algolia InstantSearch",
+          "enclosure": {
+            "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/584ac63f-f493-4e93-8d6a-5e6bc640d7ea/search-functionality-nuxt-app-algolia-instantsearch.jpg",
+            "length": "0",
+            "type": "image/jpg"
+          }
         },
         {
-          "id": "https://smashingmagazine.com/2021/05/frustrating-design-patterns-mega-dropdown-hover-menus/",
-          "author": "hello@smashingmagazine.com (Vitaly Friedman)",
-          "description": "Do we need mega-dropdown hover menus in 2021? Probably not. Let’s explore things to keep in mind when designing and building a mega-dropdown, alternatives to hover menus and fine details for designing a better UX.",
-          "link": "https://smashingmagazine.com/2021/05/frustrating-design-patterns-mega-dropdown-hover-menus/",
-          "publishedOn": "2021-05-19T11:40:00.000Z",
-          "wordCount": 4986,
-          "title": "Frustrating Design Patterns: Mega-Dropdown Hover Menus"
-        },
-        {
-          "id": "https://smashingmagazine.com/2021/05/create-edit-animate-svg-svgator3/",
-          "author": "hello@smashingmagazine.com (Mikołaj Dobrucki)",
-          "description": "Today, we are taking a closer look at [SVGator 3.0](https://www.svgator.com/?utm_source=article&utm_medium=smashingmag&utm_campaign=svgator3_smashing), a new major release of the popular SVG application that lets you create, edit and animate SVG files and make the best out of what SVG has to offer — from start to finish.",
-          "link": "https://smashingmagazine.com/2021/05/create-edit-animate-svg-svgator3/",
-          "publishedOn": "2021-05-18T10:30:00.000Z",
-          "wordCount": 1796,
-          "title": "How To Create, Edit And Animate SVGs All In One Place With SVGator 3.0"
-        },
-        {
-          "id": "https://smashingmagazine.com/2021/05/smashing-podcast-episode-37/",
-          "author": "hello@smashingmagazine.com (Drew McLellan)",
-          "description": "In this episode, we’re talking about VisBug. What is it, and how is it different from the array of options already found in Chrome DevTools? Drew McLellan talks to its creator Adam Argyle to find out.",
-          "link": "https://smashingmagazine.com/2021/05/smashing-podcast-episode-37/",
-          "publishedOn": "2021-05-18T05:00:00.000Z",
-          "wordCount": 9250,
-          "title": "Smashing Podcast Episode 37 With Adam Argyle: What Is VisBug?"
-        },
-        {
-          "id": "https://smashingmagazine.com/2021/05/core-web-vitals-case-study/",
-          "author": "hello@smashingmagazine.com (Beau Hartshorne)",
-          "description": "Google’s “Page Experience Update” will start rolling out in June. At first, sites that meet Core Web Vitals thresholds will have a minor ranking advantage in mobile search for all browsers. Search is important to any business, and this is the story of how Beau Hartshorne and his team at Instant Domain Search improved their Core Web Vitals scores.",
-          "link": "https://smashingmagazine.com/2021/05/core-web-vitals-case-study/",
-          "publishedOn": "2021-05-17T11:30:00.000Z",
-          "wordCount": 2906,
-          "title": "How We Improved Our Core Web Vitals (Case Study)"
-        },
-        {
-          "id": "https://smashingmagazine.com/2021/05/tree-shaking-reference-guide/",
-          "author": "hello@smashingmagazine.com (Átila Fassina)",
-          "description": "“Tree-shaking” is a must-have performance optimization when bundling JavaScript. In this article, we dive deeper on how exactly it works and how specs and practice intertwine to make bundles leaner and more performant. Plus, you’ll get a tree-shaking checklist to use for your projects.",
-          "link": "https://smashingmagazine.com/2021/05/tree-shaking-reference-guide/",
-          "publishedOn": "2021-05-14T10:30:00.000Z",
-          "wordCount": 2393,
-          "title": "Tree-Shaking: A Reference Guide"
-        },
-        {
-          "id": "https://smashingmagazine.com/2021/05/frustrating-design-patterns-birthday-picker/",
-          "author": "hello@smashingmagazine.com (Vitaly Friedman)",
-          "description": "In this new series of articles on UX, we take a closer look at some frustrating design patterns and explore better alternatives, along with plenty of examples to keep in mind when building or designing one. Let’s start with an infamous birthday picker.",
-          "link": "https://smashingmagazine.com/2021/05/frustrating-design-patterns-birthday-picker/",
-          "publishedOn": "2021-05-12T12:42:00.000Z",
-          "wordCount": 3443,
-          "title": "Frustrating Design Patterns That Need Fixing: Birthday Picker"
-        },
-        {
-          "id": "https://smashingmagazine.com/2021/05/little-smashing-stories/",
-          "author": "hello@smashingmagazine.com (Vitaly Friedman)",
-          "description": "Today marks the day we sent out our 300th edition of the Smashing Newsletter. This article is a little celebration in which we share little Smashing stories from people working behind the scenes.",
-          "link": "https://smashingmagazine.com/2021/05/little-smashing-stories/",
-          "publishedOn": "2021-05-12T08:00:00.000Z",
-          "wordCount": 1993,
-          "title": "Little Smashing Stories"
-        },
-        {
-          "id": "https://smashingmagazine.com/2021/05/complete-guide-css-container-queries/",
-          "author": "hello@smashingmagazine.com (Stephanie Eckles)",
-          "description": "A prototype of the long-awaited CSS container queries has landed in Chrome Canary and is available for experimentation. Let’s look at what problem is being solved, learn how container queries work, and see how they compare with and complement existing CSS features for layout.",
-          "link": "https://smashingmagazine.com/2021/05/complete-guide-css-container-queries/",
-          "publishedOn": "2021-05-11T13:30:00.000Z",
-          "wordCount": 4874,
-          "title": "A Primer On CSS Container Queries"
-        },
-        {
-          "id": "https://smashingmagazine.com/2021/05/smashingconf-conference-platform-hopin/",
-          "author": "hello@smashingmagazine.com (Amanda Annandale)",
-          "description": "At the beginning of 2020, the SmashingConf team was ready for a new year. We had so many things that excited us. New speakers, new workshops, new cities, new attendees, new experiences. And as we all know, 2020 had other ideas. With so many people working from home, we thought we would bring our [Smashing workshops](https://smashingconf.com/online-workshops/) from our home offices to yours — but how?",
-          "link": "https://smashingmagazine.com/2021/05/smashingconf-conference-platform-hopin/",
-          "publishedOn": "2021-05-11T10:00:00.000Z",
-          "wordCount": 1958,
-          "title": "The Conference Platform We Use For Our Online Events: Hopin"
-        },
-        {
-          "id": "https://smashingmagazine.com/2021/05/get-started-whac-a-mole-react-game/",
-          "author": "hello@smashingmagazine.com (Jhey Tompkins)",
-          "description": "Want to get started with React but struggling to find a good place to start? This article should have you covered. We’ll focus on some of the main concepts of React and then we’ll be building a game from scratch!",
-          "link": "https://smashingmagazine.com/2021/05/get-started-whac-a-mole-react-game/",
-          "publishedOn": "2021-05-10T11:00:00.000Z",
-          "wordCount": 6310,
-          "title": "Get Started With React By Building A Whac-A-Mole Game"
-        },
-        {
-          "id": "https://smashingmagazine.com/2021/05/product-records-organization-collaboration-best-practices/",
-          "author": "hello@smashingmagazine.com (Valeriia Panina)",
-          "description": "How do you organize your Google Drive assets? How do you name your Dropbox Paper documents? How do you deal with comments? Let’s get it right.",
-          "link": "https://smashingmagazine.com/2021/05/product-records-organization-collaboration-best-practices/",
-          "publishedOn": "2021-05-07T10:00:00.000Z",
-          "wordCount": 4127,
-          "title": "How To Organize Product-Related Assets And Collaborate Better"
-        },
-        {
-          "id": "https://smashingmagazine.com/2021/05/improving-performance-shopify-themes-case-study/",
-          "author": "hello@smashingmagazine.com (Carson Shold)",
-          "description": "When dealing with themes for large platforms and CMS, legacy issues often become a bottleneck. In this article, Carson Shold discusses how his team improved the performance and organization of their Shopify themes, and improved maintainability along the way.",
-          "link": "https://smashingmagazine.com/2021/05/improving-performance-shopify-themes-case-study/",
-          "publishedOn": "2021-05-06T11:00:00.000Z",
-          "wordCount": 2617,
-          "title": "Improving The Performance Of Shopify Themes (Case Study)"
-        },
-        {
-          "id": "https://smashingmagazine.com/2021/05/reduce-data-sent-client-nextjs/",
-          "author": "hello@smashingmagazine.com (Liran Cohen)",
-          "description": "This article showcases a case study of Bookaway’s landing page performance. We’ll see how taking care of the props we send to Next.js pages can make loading times and Web Vitals better.",
-          "link": "https://smashingmagazine.com/2021/05/reduce-data-sent-client-nextjs/",
-          "publishedOn": "2021-05-05T10:30:00.000Z",
-          "wordCount": 2296,
-          "title": "Reducing HTML Payload With Next.js (Case Study)"
-        },
-        {
-          "id": "https://smashingmagazine.com/2021/05/undoing-mistakes-git-part1/",
-          "author": "hello@smashingmagazine.com (Tobias Günther)",
-          "description": "No matter how experienced you are, mistakes are an inevitable part of software development. But we can learn to repair them! And this is what we'll be looking at in this two-part series: how to undo mistakes using Git.",
-          "link": "https://smashingmagazine.com/2021/05/undoing-mistakes-git-part1/",
-          "publishedOn": "2021-05-04T14:30:00.000Z",
-          "wordCount": 1791,
-          "title": "A Guide To Undoing Mistakes With Git"
-        },
-        {
-          "id": "https://smashingmagazine.com/2021/05/smashing-podcast-episode-36/",
-          "author": "hello@smashingmagazine.com (Drew McLellan)",
-          "description": "In this episode, we’re starting our new season of the Smashing Podcast with a look at the future of CSS. What new specs will be landing in browsers soon? Drew McLellan talks to expert Miriam Suzanne to find out.",
-          "link": "https://smashingmagazine.com/2021/05/smashing-podcast-episode-36/",
-          "publishedOn": "2021-05-04T05:00:00.000Z",
-          "wordCount": 6993,
-          "title": "Smashing Podcast Episode 36 With Miriam Suzanne: What Is The Future Of CSS?"
-        },
-        {
-          "id": "https://smashingmagazine.com/2021/05/evolution-jamstack/",
-          "author": "hello@smashingmagazine.com (Mathias Biilmann)",
-          "description": "Web-oriented databases, frameworks like Nuxt and Next.js, and even frameworkless approaches are evolving the Jamstack, but the core principles are more powerful than ever.",
-          "link": "https://smashingmagazine.com/2021/05/evolution-jamstack/",
-          "publishedOn": "2021-05-03T07:00:00.000Z",
-          "wordCount": 2141,
-          "title": "The Evolution Of Jamstack"
-        },
-        {
-          "id": "https://smashingmagazine.com/2021/04/desktop-wallpaper-calendars-may-2021/",
+          "id": "https://smashingmagazine.com/2021/09/desktop-wallpaper-calendars-october-2021/",
           "author": "hello@smashingmagazine.com (Cosima Mielke)",
-          "description": "Do you need a little inspiration boost? Well, then our new collection of wallpapers is for you. Designed with love by the community for the community, the wallpapers are available with and without a calendar for May 2021.",
-          "link": "https://smashingmagazine.com/2021/04/desktop-wallpaper-calendars-may-2021/",
-          "publishedOn": "2021-04-30T09:00:00.000Z",
-          "wordCount": 2139,
-          "title": "May Is In The Air (2021 Wallpapers Edition)"
+          "description": "Get your desktop ready for fall and the upcoming Halloween season with a fresh batch of desktop wallpapers. Created with love by designers and artists from across the globe, they come in versions with and without a calendar for October 2021.",
+          "link": "https://smashingmagazine.com/2021/09/desktop-wallpaper-calendars-october-2021/",
+          "publishedOn": "2021-09-30T08:00:00.000Z",
+          "wordCount": 2465,
+          "title": "A Time Of Transition (October 2021 Desktop Wallpapers Edition)",
+          "enclosure": {
+            "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/8987d365-d643-429d-b840-56ff195a9da5/oct-21-autumn-vibes-preview-opt.png",
+            "length": "0",
+            "type": "image/png"
+          }
         },
         {
-          "id": "https://smashingmagazine.com/2021/04/humble-img-element-core-web-vitals/",
+          "id": "https://smashingmagazine.com/2021/09/modern-image-formats-avif-webp/",
           "author": "hello@smashingmagazine.com (Addy Osmani)",
-          "description": "Images have also been a key part of the web. They communicate ideas instantly, but they are also a lot heavier than text to load. This means that it’s essential to get loading and displaying them right, if you want to give your users a fantastic first impression. An excerpt from [Addy's new book](https://www.smashingmagazine.com/2021/04/image-optimization-pre-release/) (also, check a [free PDF preview](http://provide.smashingmagazine.com/eBooks/image-optimization-sample-chapter.pdf)).",
-          "link": "https://smashingmagazine.com/2021/04/humble-img-element-core-web-vitals/",
-          "publishedOn": "2021-04-29T12:15:00.000Z",
-          "wordCount": 5325,
-          "title": "The Humble `<img>` Element And Core Web Vitals"
+          "description": "In this article, we’ll highlight how modern image formats (AVIF or WebP) can improve compression by up to 50% and deliver better quality per-byte while still looking visually appealing. We’ll compare what’s possible at high-quality, low-quality and file-size targets.",
+          "link": "https://smashingmagazine.com/2021/09/modern-image-formats-avif-webp/",
+          "publishedOn": "2021-09-29T08:25:00.000Z",
+          "wordCount": 5052,
+          "title": "Using Modern Image Formats: AVIF And WebP",
+          "enclosure": {
+            "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/67b6e428-ea96-41b4-baf2-6be51577910d/modern-image-formats-avif-webp.jpg",
+            "length": "0",
+            "type": "image/jpg"
+          }
         },
         {
-          "id": "https://smashingmagazine.com/2021/04/image-optimization-pre-release/",
+          "id": "https://smashingmagazine.com/2021/09/improving-accessibility-of-markdown/",
+          "author": "hello@smashingmagazine.com (Eric Bailey)",
+          "description": "You can find Markdown in many places on the Internet. This article covers different aspects of Markdown and how it interacts with other technology.",
+          "link": "https://smashingmagazine.com/2021/09/improving-accessibility-of-markdown/",
+          "publishedOn": "2021-09-28T09:00:00.000Z",
+          "wordCount": 3871,
+          "title": "Improving The Accessibility Of Your Markdown",
+          "enclosure": {
+            "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/fa95c8d2-8322-4766-ac8d-891dabff0dd6/improving-accessibility-of-markdown.jpg",
+            "length": "0",
+            "type": "image/jpg"
+          }
+        },
+        {
+          "id": "https://smashingmagazine.com/2021/09/cypress-end-to-end-testing/",
+          "author": "hello@smashingmagazine.com (Ramona Schwering)",
+          "description": "Is end-to-end testing a painful topic for you? In this article, Ramona Schwering explains how to handle end-to-end testing with Cypress and make it make it not so tedious and expensive for yourself, but fun instead.",
+          "link": "https://smashingmagazine.com/2021/09/cypress-end-to-end-testing/",
+          "publishedOn": "2021-09-27T11:30:00.000Z",
+          "wordCount": 4954,
+          "title": "Let’s Dive Into Cypress For End-to-End Testing",
+          "enclosure": {
+            "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/2c42e65f-5a60-4844-a252-00169b21ab0c/cypress-end-to-end-testing.jpg",
+            "length": "0",
+            "type": "image/jpg"
+          }
+        },
+        {
+          "id": "https://smashingmagazine.com/2021/09/lessons-learned-ecommerce-nextjs-case-study/",
+          "author": "hello@smashingmagazine.com (Jonne Kats)",
+          "description": "We made the switch from a more traditional integrated e-commerce platform to a headless platform with Next.js. Here are the most important lessons learned while rebuilding a large e-commerce site with Next.js.",
+          "link": "https://smashingmagazine.com/2021/09/lessons-learned-ecommerce-nextjs-case-study/",
+          "publishedOn": "2021-09-24T10:00:00.000Z",
+          "wordCount": 3792,
+          "title": "Rebuilding A Large E-Commerce Website With Next.js (Case Study)",
+          "enclosure": {
+            "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/5f1d9e62-ec85-435a-8899-56ac48b4190b/lessons-learned-ecommerce-nextjs.jpg",
+            "length": "0",
+            "type": "image/jpg"
+          }
+        },
+        {
+          "id": "https://smashingmagazine.com/2021/09/smashing-workshop-frustrating-design-patterns/",
           "author": "hello@smashingmagazine.com (Vitaly Friedman)",
-          "description": "The cat is out! For the last year, we’ve been working with Addy Osmani on a new Smashing Book all around image optimization. And now it’s here. Meet “Image Optimization”, our practical modern guide to delivering high-quality images on the web with the best performance.",
-          "link": "https://smashingmagazine.com/2021/04/image-optimization-pre-release/",
-          "publishedOn": "2021-04-28T13:20:00.000Z",
-          "wordCount": 2130,
-          "title": "Meet Image Optimization, A New Smashing Book By Addy Osmani"
+          "description": "You’ve seen them before. Confusing and frustrating design patterns that seem to be chasing you everywhere you go, from one website to another. It’s time to fix them for good in a [free Smashing online workshop](https://smashingconf.com/online-workshops/workshops/vitaly-friedman-frustrating-patterns/) next week.",
+          "link": "https://smashingmagazine.com/2021/09/smashing-workshop-frustrating-design-patterns/",
+          "publishedOn": "2021-09-24T06:50:00.000Z",
+          "wordCount": 784,
+          "title": "Free Online Workshop: Frustrating Design Patterns And How To Fix Them",
+          "enclosure": {
+            "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/76262eaa-9498-4682-a320-6a7469bef697/sept27-workshop.png",
+            "length": "0",
+            "type": "image/png"
+          }
         },
         {
-          "id": "https://smashingmagazine.com/2021/04/easing-functions-css-animations-transitions/",
-          "author": "hello@smashingmagazine.com (Adrian Bece)",
-          "description": "Easing functions can change the look and feel of an animation by affecting the rate, or speed, of an animation. In this article, we’re going to take a deep dive into easing functions and see how we can use them to create those natural and stunning animations.",
-          "link": "https://smashingmagazine.com/2021/04/easing-functions-css-animations-transitions/",
-          "publishedOn": "2021-04-27T12:00:00.000Z",
-          "wordCount": 2623,
-          "title": "Understanding Easing Functions For CSS Animations And Transitions"
+          "id": "https://smashingmagazine.com/2021/09/simplifying-form-styles-accent-color/",
+          "author": "hello@smashingmagazine.com (Michelle Barker)",
+          "description": "The new CSS `accent-color` property makes it quick and easy to roll out our brand colors to certain form inputs by leveraging user agent styles. In this article we’ll take a look at what it does and how to use it alongside `color-scheme` for simple, accessible checkboxes and radio buttons — and imagine how we might use it in the future.",
+          "link": "https://smashingmagazine.com/2021/09/simplifying-form-styles-accent-color/",
+          "publishedOn": "2021-09-23T11:00:00.000Z",
+          "wordCount": 2154,
+          "title": "Simplifying Form Styles With `accent-color`",
+          "enclosure": {
+            "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/195a9e83-5686-47fd-80d9-3c1d6dc4655a/simplifying-form-styles-accent-color.jpg",
+            "length": "0",
+            "type": "image/jpg"
+          }
         },
         {
-          "id": "https://smashingmagazine.com/2021/04/bake-layers-accessibility-testing-process/",
-          "author": "hello@smashingmagazine.com (Kate Kalcevich & Mike Gifford)",
-          "description": "Accessibility experts Kate Kalcevich and Mike Gifford introduce readers to \"layered accessibility testing”, a practice of using a variety of tools and approaches at different stages in the digital product lifecycle to catch accessibility issues early — when it’s easier and cheaper to fix them.",
-          "link": "https://smashingmagazine.com/2021/04/bake-layers-accessibility-testing-process/",
-          "publishedOn": "2021-04-26T11:00:00.000Z",
-          "wordCount": 3279,
-          "title": "How To Bake Layers Of Accessibility Testing Into Your Process"
+          "id": "https://smashingmagazine.com/2021/09/css-head-tag/",
+          "author": "hello@smashingmagazine.com (Vitaly Friedman)",
+          "description": "We love little useful tools and techniques to help folks get their work done better and faster. Today, we’d love to shine the spotlights on a little helper that helps spot common performance bottlenecks easily: [ct.css](https://csswizardry.com/ct/).",
+          "link": "https://smashingmagazine.com/2021/09/css-head-tag/",
+          "publishedOn": "2021-09-22T15:00:00.000Z",
+          "wordCount": 725,
+          "title": "Getting Your `head` Straight: A New CSS Performance Diagnostics Snippet",
+          "enclosure": {
+            "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/b5bbafda-ded4-4bd3-bb2a-8c4188693d30/head-2.png",
+            "length": "0",
+            "type": "image/png"
+          }
         },
         {
-          "id": "https://smashingmagazine.com/2021/04/guide-supported-modern-css-pseudo-class-selectors/",
-          "author": "hello@smashingmagazine.com (Stephanie Eckles)",
-          "description": "The CSS Working Group Editor’s Draft for [Selectors Level 4](https://drafts.csswg.org/selectors-4/) includes several pseudo-class selectors that already have proposal candidates in most modern browsers. This guide will cover ones that currently have the best support along with examples to demonstrate how you can start using them today!",
-          "link": "https://smashingmagazine.com/2021/04/guide-supported-modern-css-pseudo-class-selectors/",
-          "publishedOn": "2021-04-23T08:30:00.000Z",
-          "wordCount": 2430,
-          "title": "A Guide To Newly Supported, Modern CSS Pseudo-Class Selectors"
+          "id": "https://smashingmagazine.com/2021/09/mouseless-development-environment/",
+          "author": "hello@smashingmagazine.com (Matthieu Cneude)",
+          "description": "Building a development environment with the shell as a keystone offers multiple benefits. You can customize everything depending on your own needs, and the biggest of all, you can control your entire development environment with your keyboard.",
+          "link": "https://smashingmagazine.com/2021/09/mouseless-development-environment/",
+          "publishedOn": "2021-09-21T11:30:00.000Z",
+          "wordCount": 4161,
+          "title": "How To Build Your Own Mouseless Development Environment",
+          "enclosure": {
+            "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/5c58e67b-deff-4745-b162-f60f468469ac/mouseless-development-environment.jpg",
+            "length": "0",
+            "type": "image/jpg"
+          }
         },
         {
-          "id": "https://smashingmagazine.com/2021/04/web-design-done-well-part1/",
+          "id": "https://smashingmagazine.com/2021/09/web-development-tools-users-keep-pace-rapid-change/",
           "author": "hello@smashingmagazine.com (Frederick O’Brien)",
-          "description": "Sometimes it’s the little things in web life that make us look twice. From carousels to documentation to cookie disclaimers, here are some sites taking the mundane and sprinkling in a little magic.",
-          "link": "https://smashingmagazine.com/2021/04/web-design-done-well-part1/",
-          "publishedOn": "2021-04-22T14:00:00.000Z",
-          "wordCount": 1764,
-          "title": "Web Design Done Well: The Ordinary Made Extraordinary (Part 1)"
+          "description": "The last 18 months have been a time of unprecedented turbulence. As the people of the world have flooded online, businesses have joined them, using web development tools to adapt in real-time.",
+          "link": "https://smashingmagazine.com/2021/09/web-development-tools-users-keep-pace-rapid-change/",
+          "publishedOn": "2021-09-21T09:30:00.000Z",
+          "wordCount": 1686,
+          "title": "How Web Development Tools Are Helping Users Keep Pace With Rapid Change",
+          "enclosure": {
+            "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/d8f1b98f-ddeb-407f-ab88-c34305a5380b/web-development-tools-users-keep-pace-rapid-change.jpg",
+            "length": "0",
+            "type": "image/jpg"
+          }
         },
         {
-          "id": "https://smashingmagazine.com/2021/04/incremental-static-regeneration-nextjs/",
-          "author": "hello@smashingmagazine.com (Lee Robinson)",
-          "description": "Incremental Static Regeneration (ISR) is a new evolution of the Jamstack, allowing you to update static content instantly without needing a full rebuild of your site. The hybrid approach of Next.js allows you to use ISR for e-commerce, marketing pages, blog posts, ad-backed media, and more.",
-          "link": "https://smashingmagazine.com/2021/04/incremental-static-regeneration-nextjs/",
-          "publishedOn": "2021-04-21T13:55:00.000Z",
-          "wordCount": 1929,
-          "title": "A Complete Guide To Incremental Static Regeneration (ISR) With Next.js"
+          "id": "https://smashingmagazine.com/2021/09/imposter-domains-republishing-website/",
+          "author": "hello@smashingmagazine.com (Ken Harker)",
+          "description": "Content scraping is a fact of life on the Internet. When you think of web scraping, you probably do not think about the scrapers turning around and immediately serving your entire, whole page content on another website. But what if your site content is being re-published?  It might be already happening.",
+          "link": "https://smashingmagazine.com/2021/09/imposter-domains-republishing-website/",
+          "publishedOn": "2021-09-20T11:30:00.000Z",
+          "wordCount": 3965,
+          "title": "Are Imposter Domains Re-Publishing Your Website?",
+          "enclosure": {
+            "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/4504ea89-0356-45c7-a7c1-a5c360ecc471/imposter-domains-republishing-website.jpg",
+            "length": "0",
+            "type": "image/jpg"
+          }
+        },
+        {
+          "id": "https://smashingmagazine.com/2021/09/monetize-open-source-software-gatsby-functions-stripe/",
+          "author": "hello@smashingmagazine.com (Paul Scanlon)",
+          "description": "Gatsby Functions provide front-end developers a way to write and use server-side code without the hassle of maintaining a server. If making money from open-source is of interest to you and your site isn’t built using Gatsby, this approach may well be the answer you were looking for.",
+          "link": "https://smashingmagazine.com/2021/09/monetize-open-source-software-gatsby-functions-stripe/",
+          "publishedOn": "2021-09-17T09:00:00.000Z",
+          "wordCount": 2595,
+          "title": "Monetize Open-Source Software With Gatsby Functions And Stripe",
+          "enclosure": {
+            "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/73f6525b-6678-4db1-a875-16150bc822cd/monetize-open-source-software-gatsby-functions-stripe.jpg",
+            "length": "0",
+            "type": "image/jpg"
+          }
+        },
+        {
+          "id": "https://smashingmagazine.com/2021/09/journey-into-web-quality-assurance/",
+          "author": "hello@smashingmagazine.com (Elie Sloïm)",
+          "description": "Twenty years ago, Elie Sloïm chose to dedicate his professional life to web quality assurance. He started asking, ”What does quality mean for a web user?” Well, this article explains everything he has learned along the way.",
+          "link": "https://smashingmagazine.com/2021/09/journey-into-web-quality-assurance/",
+          "publishedOn": "2021-09-16T12:00:00.000Z",
+          "wordCount": 4512,
+          "title": "Web Quality Assurance: From User Requirements To Web Risk Management",
+          "enclosure": {
+            "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/da816ee2-199c-49e8-8f63-f50d1fb5adb7/journey-into-web-quality-assurance.jpg",
+            "length": "0",
+            "type": "image/jpg"
+          }
+        },
+        {
+          "id": "https://smashingmagazine.com/2021/09/reasons-build-crm-powered-website-business/",
+          "author": "hello@smashingmagazine.com (Zara Cooper)",
+          "description": "Integrating a CRM with your business website has numerous benefits. In this article, Zara Cooper explains what these benefits are and why websites should be integrated with a CRM platform.",
+          "link": "https://smashingmagazine.com/2021/09/reasons-build-crm-powered-website-business/",
+          "publishedOn": "2021-09-16T11:00:00.000Z",
+          "wordCount": 2293,
+          "title": "Reasons To Build A CRM-Powered Website For Your Business",
+          "enclosure": {
+            "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/bdb5e7f2-9050-4e5f-8b93-ca24f0483188/hubspot-preview-image.png",
+            "length": "0",
+            "type": "image/png"
+          }
+        },
+        {
+          "id": "https://smashingmagazine.com/2021/09/reducing-need-pseudo-elements/",
+          "author": "hello@smashingmagazine.com (Marcel Moreau)",
+          "description": "For years, pseudo-elements have faithfully helped front-end developers implement creative designs. While they still have an important place, we can now leave pseudo-elements behind in some scenarios, thanks to newer CSS properties.",
+          "link": "https://smashingmagazine.com/2021/09/reducing-need-pseudo-elements/",
+          "publishedOn": "2021-09-15T10:00:00.000Z",
+          "wordCount": 1942,
+          "title": "Reducing The Need For Pseudo-Elements",
+          "enclosure": {
+            "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c994e024-5695-4cf7-b9b6-dc589e547f19/reducing-need-pseudo-elements.jpg",
+            "length": "0",
+            "type": "image/jpg"
+          }
+        },
+        {
+          "id": "https://smashingmagazine.com/2021/09/power-pen-paper-sketching/",
+          "author": "hello@smashingmagazine.com (Tracy Osborn)",
+          "description": "When designing for digital spaces, it’s natural to default to digital mockup tools, but doing so cuts out a world of possibilities. Analog drawing can unleash your imagination and allow you to focus on what’s most important at the start: the ideas.",
+          "link": "https://smashingmagazine.com/2021/09/power-pen-paper-sketching/",
+          "publishedOn": "2021-09-14T09:30:00.000Z",
+          "wordCount": 2079,
+          "title": "The Power Of Pen And Paper Sketching",
+          "enclosure": {
+            "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/e4a5bd0b-53db-40c2-90d9-9d0a19b8d377/power-pen-paper-sketching.jpg",
+            "length": "0",
+            "type": "image/jpg"
+          }
+        },
+        {
+          "id": "https://smashingmagazine.com/2021/09/orchestrating-complexity-web-animations-api/",
+          "author": "hello@smashingmagazine.com (Kirill Myshkin)",
+          "description": "There are way too many options in Web Animations API to pick them up that easily. Learning how timing works and how to control the playback of several animations at once makes for a solid foundation on which to base your projects on.",
+          "link": "https://smashingmagazine.com/2021/09/orchestrating-complexity-web-animations-api/",
+          "publishedOn": "2021-09-13T09:00:00.000Z",
+          "wordCount": 2997,
+          "title": "Orchestrating Complexity With Web Animations API",
+          "enclosure": {
+            "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/cc4a9b5f-fd83-4fc0-9966-6f98707d1466/orchestrating-complexity-web-animations-api.jpg",
+            "length": "0",
+            "type": "image/jpg"
+          }
+        },
+        {
+          "id": "https://smashingmagazine.com/2021/09/web-design-done-well-excellent-editorial/",
+          "author": "hello@smashingmagazine.com (Frederick O’Brien)",
+          "description": "They say content is king, and they’re right. The web has unlocked untold possibilities for storytellers — provided the story is right, of course. Here are some of our favorite examples of editorial content thriving in the digital realm.",
+          "link": "https://smashingmagazine.com/2021/09/web-design-done-well-excellent-editorial/",
+          "publishedOn": "2021-09-10T10:00:00.000Z",
+          "wordCount": 2048,
+          "title": "Web Design Done Well: Excellent Editorial",
+          "enclosure": {
+            "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/7af3bbbe-821b-4e3c-870a-f8290ed52212/web-design-done-well-excellent-editorial.jpg",
+            "length": "0",
+            "type": "image/jpg"
+          }
+        },
+        {
+          "id": "https://smashingmagazine.com/2021/09/useswr-react-hook-library-incremental-static-regeneration-nextjs/",
+          "author": "hello@smashingmagazine.com (Sam Poder)",
+          "description": "When paired with ISR and Next.js’ API routes, SWR can be used to create a responsive user experience. In this article, Sam Poder explains what SWR is, where to use it (and where not), and how to build a website by using Incremental Static Regeneration.",
+          "link": "https://smashingmagazine.com/2021/09/useswr-react-hook-library-incremental-static-regeneration-nextjs/",
+          "publishedOn": "2021-09-09T10:30:00.000Z",
+          "wordCount": 2065,
+          "title": "Using SWR React Hooks With Next.js’ Incremental Static Regeneration (ISR)",
+          "enclosure": {
+            "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/47c6e5fc-73b3-41fe-afb7-b640b860efa0/useswr-react-hook-library-incremental-static-regeneration-nextjs.jpg",
+            "length": "0",
+            "type": "image/jpg"
+          }
+        },
+        {
+          "id": "https://smashingmagazine.com/2021/09/developer-decisions-building-flexible-components/",
+          "author": "hello@smashingmagazine.com (Michelle Barker)",
+          "description": "In this article, we’ll walk through the process of taking a seemingly simple design for a text-and-media component and deciding how best to translate it into code, keeping in mind the needs of both users and content authors.",
+          "link": "https://smashingmagazine.com/2021/09/developer-decisions-building-flexible-components/",
+          "publishedOn": "2021-09-08T10:30:00.000Z",
+          "wordCount": 2855,
+          "title": "Developer Decisions For Building Flexible Components",
+          "enclosure": {
+            "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/76d3eef0-2a0a-45e0-b0bb-399da37c3834/developer-decisions-building-flexible-components.jpg",
+            "length": "0",
+            "type": "image/jpg"
+          }
+        },
+        {
+          "id": "https://smashingmagazine.com/2021/09/new-smashing-online-workshops-sep-2021/",
+          "author": "hello@smashingmagazine.com (Iris Lješnjanin)",
+          "description": "What’s the state of HTML Email, Vue.js and Next.js? What are new, smart interface design patterns we could use? Let’s figure it out. With our brand new online workshops on front-end & design. Now with **free workshops** for you to test the waters.",
+          "link": "https://smashingmagazine.com/2021/09/new-smashing-online-workshops-sep-2021/",
+          "publishedOn": "2021-09-08T08:00:00.000Z",
+          "wordCount": 921,
+          "title": "New Smashing Online Workshops on Front-End & UX",
+          "enclosure": {
+            "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/1a95c729-8b29-4b44-90b0-d38183b367c0/online-workshops-2021-opt.png",
+            "length": "0",
+            "type": "image/png"
+          }
+        },
+        {
+          "id": "https://smashingmagazine.com/2021/09/devtools-cross-browser-edition/",
+          "author": "hello@smashingmagazine.com (Patrick Brosset)",
+          "description": "Learn what’s new with developer tools in Firefox, Edge, Chrome and Safari. Discover new and powerful features that will help you be more comfortable and productive when testing and debugging across browsers.",
+          "link": "https://smashingmagazine.com/2021/09/devtools-cross-browser-edition/",
+          "publishedOn": "2021-09-07T10:00:00.000Z",
+          "wordCount": 4040,
+          "title": "What’s New With DevTools: Cross-Browser Edition",
+          "enclosure": {
+            "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/1e0eef0e-e4b0-45b6-8afd-1d1a60b7c53b/devtools-cross-browsers.jpg",
+            "length": "0",
+            "type": "image/jpg"
+          }
+        },
+        {
+          "id": "https://smashingmagazine.com/2021/09/http3-practical-deployment-options-part3/",
+          "author": "hello@smashingmagazine.com (Robin Marx)",
+          "description": "After almost five years in development, the new HTTP/3 protocol is nearing its final form. Let’s take a close look at the challenges involved in deploying and testing HTTP/3, and how and if you should change your websites and resources as well.",
+          "link": "https://smashingmagazine.com/2021/09/http3-practical-deployment-options-part3/",
+          "publishedOn": "2021-09-06T11:00:00.000Z",
+          "wordCount": 9720,
+          "title": "HTTP/3: Practical Deployment Options (Part 3)",
+          "enclosure": {
+            "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a19cca97-b411-44a6-a8be-e1468a0df78a/http3-practical-deployment-options-part3.jpg",
+            "length": "0",
+            "type": "image/jpg"
+          }
         }
       ]
     },
@@ -486,94 +530,94 @@
       "siteUrl": "https://www.freecodecamp.org/news",
       "articles": [
         {
-          "id": "60a6b3ab906c5207e3a7f5fa",
-          "author": "",
-          "description": "Angular is one of the most popular web frameworks. We just released a course on the freeCodeCamp.org YouTube channel that will teach you how to create an Angular 11 project from scratch. It uses a public API to create a game database website. You will gain a great foundation",
-          "link": "https://www.freecodecamp.org/news/angular-11-tutorial-code-a-project-from-scratch/",
-          "publishedOn": "2021-05-20T19:14:48.000Z",
-          "wordCount": 397,
-          "title": "Angular 11 Tutorial: Code a Project from Scratch"
+          "id": "5fff3ec998be260817e495ee",
+          "author": null,
+          "description": "Ping and traceroute are common commands you can use to troubleshoot network problems.  Ping is a simple command that can test the reachability of a device on the network.  Traceroute is a command you use to 'trace' the route that a packet takes when traveling to its destination. It's useful",
+          "link": "https://www.freecodecamp.org/news/traceroute-and-ping/",
+          "publishedOn": "2021-10-04T23:46:48.000Z",
+          "wordCount": 1157,
+          "title": "How to Use the Traceroute and Ping Commands to Troubleshoot Network Connectivity Issues"
         },
         {
-          "id": "60a694ab906c5207e3a7f544",
-          "author": "",
-          "description": "A lot of C++ courses teach you how to build toy projects with no real-world application. But it can often be more helpful to write programs people would actually use. We just released a 5-hour C++ course that will teach you how to write modern C++ code by building an",
-          "link": "https://www.freecodecamp.org/news/learn-modern-cpp-by-building-an-audio-plugin/",
-          "publishedOn": "2021-05-20T17:12:29.000Z",
-          "wordCount": 436,
-          "title": "Learn Modern C++ by Building an Audio Plugin"
+          "id": "6154775964aefe07d3fa0b7d",
+          "author": null,
+          "description": "Everyone needs websites and web applications these days. So there are many opportunities for you if you work as a web developer.  But if you want to get a web developer job, you'll need a good portfolio website to showcase your skills and experience.  In this tutorial, I'll discuss some",
+          "link": "https://www.freecodecamp.org/news/how-to-build-a-developer-portfolio-website/",
+          "publishedOn": "2021-10-04T20:59:10.000Z",
+          "wordCount": 6519,
+          "title": "How to Build Your Own Developer Portfolio Website with HTML, CSS, and JavaScript"
         },
         {
-          "id": "60a4b5c7906c5207e3a7e2bb",
-          "author": "",
-          "description": "In this tutorial, you'll learn what version control is and how you can contribute to open-source projects using Git.  We'll get through the fundamentals of Git and I'll give you the knowledge that is indispensable for any web developer. What is Git?Git is a version control software which lets",
-          "link": "https://www.freecodecamp.org/news/get-started-with-version-control-and-git/",
-          "publishedOn": "2021-05-20T15:20:53.000Z",
-          "wordCount": 1493,
-          "title": "How to Get Started with Version Control Using Git"
+          "id": "613b97f1852f4307d372b637",
+          "author": null,
+          "description": "In this article, you will learn about the core concepts of the Open Systems Interconnections (OSI) model in a simple and easy way. As a developer, it's a good idea to learn how things work \"under the hood\". That way you understand what your code and the tools you use",
+          "link": "https://www.freecodecamp.org/news/osi-model-computer-networking-for-beginners/",
+          "publishedOn": "2021-10-04T16:27:49.000Z",
+          "wordCount": 1915,
+          "title": "What is the OSI Model? Computer Networking for Beginners"
         },
         {
-          "id": "60a36742906c5207e3a7da6e",
-          "author": "",
-          "description": "Over the last four months, I have recorded what is probably the most interactive JavaScript course that has ever been created. The reason I have done this is because I often see new coders fall into the same pitfalls again and again when trying to learn JavaScript, with the most",
-          "link": "https://www.freecodecamp.org/news/learn-javascript-interactive-course/",
-          "publishedOn": "2021-05-20T14:53:38.000Z",
-          "wordCount": 1202,
-          "title": "Learn JavaScript - A Free 7-hour Interactive Tutorial"
+          "id": "61063c1d3306a507d1bfbfca",
+          "author": null,
+          "description": "You might have heard of the term User Experience or UX design. But what does it mean exactly? In this article, I will explain what UX design is and talk about how to become a UX designer.  What is UX design?The term User Experience refers to how users interact",
+          "link": "https://www.freecodecamp.org/news/user-experience-design-what-does-a-ux-designer-do/",
+          "publishedOn": "2021-10-04T16:21:30.000Z",
+          "wordCount": 1195,
+          "title": "What is UX Design? User Experience Design Explained in Plain English"
         },
         {
-          "id": "60a341f5906c5207e3a7da61",
-          "author": "",
-          "description": "CSS selectors are one of the most important parts of CSS. They give you the ability to target HTML elements on your web page that you want to style. Without CSS selectors, you wouldn't be able to style your page to look how you want. Thankfully CSS selectors have been",
-          "link": "https://www.freecodecamp.org/news/use-css-selectors-to-style-webpage/",
-          "publishedOn": "2021-05-19T23:17:21.000Z",
-          "wordCount": 2742,
-          "title": "How to Use CSS Selectors to Style Your Web Page"
+          "id": "5f9c98a3740569d1a4ca1b33",
+          "author": null,
+          "description": "Every year Class Central releases a list of the Best Free Online Courses Of All Time, based on tens of thousands of user reviews. This year, thanks to a growing number of reviews, I've expanded the list from 200 to 250 courses. For close to ten years, well-known and well-respected",
+          "link": "https://www.freecodecamp.org/news/best-online-courses/",
+          "publishedOn": "2021-10-03T04:21:00.000Z",
+          "wordCount": 11998,
+          "title": "The 250 Best Free Online Courses of All Time – A Data-Driven Analysis [2021 Edition]"
         },
         {
-          "id": "60a42386906c5207e3a7dfe2",
-          "author": "",
-          "description": "The internet is going through a paradigm shift. Learn the differences between Web2 and Web3, and why many developers and companies are shifting their approach in building apps.",
-          "link": "https://www.freecodecamp.org/news/what-is-web3/",
-          "publishedOn": "2021-05-19T21:09:01.000Z",
-          "wordCount": 2087,
-          "title": "What is Web3? The Decentralized Internet of the Future Explained"
+          "id": "613f8a73852f4307d372cc55",
+          "author": null,
+          "description": "Java is one of the most popular object-oriented programming languages in use today.  Because it is platform-independent, you will find Java applications on every type of device and every operating system. And because Java is relatively easy to learn, it is one of the first languages that many programmers pick",
+          "link": "https://www.freecodecamp.org/news/how-to-solve-multiple-inheritance-in-java/",
+          "publishedOn": "2021-10-01T14:42:02.000Z",
+          "wordCount": 1381,
+          "title": "How to Solve the Problem of Multiple Inheritance in Java"
         },
         {
-          "id": "60a469ec906c5207e3a7e1b9",
-          "author": "",
-          "description": "Imagine that you work at Magic Money Corp, which runs on just three lines of JavaScript: let input = { step1: 'collect underpants' } doStuff(input)  profit(input) // $$$!!! Now imagine that something's wrong with doStuff and you need to take it down for maintenance. What happens if you temporarily comment out the second",
-          "link": "https://www.freecodecamp.org/news/how-to-optimize-for-change-software-development/",
-          "publishedOn": "2021-05-19T17:30:08.000Z",
-          "wordCount": 1981,
-          "title": "How to Optimize for Change in Software Development"
+          "id": "611b08a4e884de075217ff23",
+          "author": null,
+          "description": "The United States Census Bureau estimates that more than 12% of the United States' population is living with a disability. Disabilities can include vision difficulties, hearing difficulties, mobility challenges, and much more.  And a person can become disabled at any stage of their life.  Since a significant portion of the",
+          "link": "https://www.freecodecamp.org/news/mobile-accessibility/",
+          "publishedOn": "2021-09-30T21:47:00.000Z",
+          "wordCount": 1886,
+          "title": "Accessibility Best Practices for Mobile App Development"
         },
         {
-          "id": "60a53182906c5207e3a7e588",
-          "author": "",
-          "description": "Lately, I've been talking about my move into the Web3, Ethereum, and crypto space since making the switch from a traditional web, mobile, and cloud background. Since making that move, a shocking number of people have reached out to me who are also thinking about doing the same.  It's really",
-          "link": "https://www.freecodecamp.org/news/breaking-into-ethereum-crypto-web3-as-a-developer/",
-          "publishedOn": "2021-05-18T21:04:00.000Z",
-          "wordCount": 2258,
-          "title": "How to Break into Ethereum, Crypto, and Web3 as a Developer"
+          "id": "6155b8f964aefe07d3fa1234",
+          "author": null,
+          "description": "We use lists all the time in our everyday lives.  We create them to structure and organize our days, and we use them to make to-do lists. We use them in recipes so we don't miss any of the steps. And we use them when we want to assemble a",
+          "link": "https://www.freecodecamp.org/news/html-bullet-points-how-to-create-an-unordered-list-with-the-ul-tag-example/",
+          "publishedOn": "2021-09-30T17:31:40.000Z",
+          "wordCount": 1234,
+          "title": "HTML Bullet Points – How to Create an Unordered List with the &lt;ul&gt; Tag Example"
         },
         {
-          "id": "60a3780f906c5207e3a7db5f",
-          "author": "",
-          "description": "If you offer your services as a freelance developer, you have a major say in how you price your project.  But how do you go about charging for a website project? \"Well, I just bill by the hour and send an invoice every week or month.\" ...I hear you say.",
-          "link": "https://www.freecodecamp.org/news/the-different-ways-to-charge-for-a-website/",
-          "publishedOn": "2021-05-18T17:12:59.000Z",
-          "wordCount": 1973,
-          "title": "Freelance Development Pricing Guide – Should Freelancers Bill by the Hour?"
+          "id": "613f3c6d852f4307d372c7ca",
+          "author": null,
+          "description": "In SQL, you can make a database query and use the COUNT function to get the number of rows for a particular group in the table.  In this article, I will show you how to use the COUNT function with a few code examples.  What is the COUNT function in",
+          "link": "https://www.freecodecamp.org/news/sql-distinct-statement-how-to-query-select-and-count/",
+          "publishedOn": "2021-09-30T16:24:19.000Z",
+          "wordCount": 1065,
+          "title": "SQL Distinct Statement – How to Query, Select, and Count"
         },
         {
-          "id": "6068f146d5756f080ba9402d",
-          "author": "",
-          "description": "Yes, you can learn to code for free, from the convenience of your own home, and at your own pace. I'm going to show you 101 courses where you can learn computer science and programming for free.  The freeCodeCamp courses are completely free and some of them include a free",
-          "link": "https://www.freecodecamp.org/news/coding-programs-101-ways-to-learn-to-code-for-free/",
-          "publishedOn": "2021-05-18T16:50:36.000Z",
-          "wordCount": 3309,
-          "title": "Coding Programs – 101 Ways to Learn to Code for Free"
+          "id": "6155d5c364aefe07d3fa1467",
+          "author": null,
+          "description": "Almost every software developer uses git. Many use it continually throughout the day. While you may already know the very basics of git, your productivity will be increased if you learn some advanced git concepts. We just released a git course on the freeCodeCamp.org YouTube channel that will help",
+          "link": "https://www.freecodecamp.org/news/git-for-professionals/",
+          "publishedOn": "2021-09-30T15:29:20.000Z",
+          "wordCount": 5941,
+          "title": "Git for Professionals – Free Version Control Course"
         }
       ]
     },
@@ -582,7 +626,104 @@
       "feedUrl": "https://yuanhuihui.github.io/feed.xml",
       "siteUrl": "http://gityuan.com/",
       "articles": []
+    },
+    {
+      "title": "少数派",
+      "feedUrl": "https://sspai.com/feed",
+      "siteUrl": "https://sspai.com",
+      "articles": [
+        {
+          "id": "https://sspai.com/post/69072",
+          "author": "化学心情下2",
+          "description": "北京时间 10 月 5 日，微软发布了其下一代桌面操作系统 Windows 11 正式版，和 Windows 10 不同的是，Windows 11 具有更为现代的设计风格，完全替代传统控制面板的「设置」工具，全新的小部件等新工具，无论在设计还是功能上都让人耳目一新。\n少数派整理了 Windows 10 正式版中值得关注的系统新特性，希望可以帮助广大的 Windows 用户可以更加熟悉这个全新设计的「下一代 Windows」。\n编注：无论是全新安装还是升级到 Windows 11，都请先对重要的数据进行备份，对于不在「官方支持硬件」范围内的设备，强行安装 Windows 11 可能会出现无可预估的系统故障和 Bug，请在安装前三思而后行，也可以通过虚拟机的形式进行尝鲜，不建议用在生产环境中。\n我的电脑能升级/安装 Windows 11 吗？\n\n和 Windows 10 具有较高的硬件兼容性有所不同的是，Windows 11 对于硬件设备有着较高的要求，目前微软给出的 官方硬件要求 如下：\n\n需要 1GHz 或更快的支持 64 位的处理器（双核或多核）或系统单芯片(SoC)；\n4GB 内存；\n64GB 或更大的存储设备；\n支持 UEFI 安全启动；\n受信任的平台模块(TPM)版本 2.0；\n支持 DirectX 12 或更高版本，支持 WDDM 2.0 驱动程序；\n对角线长大于 9 英寸的高清 (720p) 显示屏，每个颜色通道为 8 位。\n\n虽然在硬件需求中并没有专门说明，但微软却单独给出了官方的支持处理器型号支持列表，其中 Intel 的处理器 最低型号需要至少八代酷睿处理器以及同架构的奔腾、赛扬、志强以及 Atom 处理器。而 AMD 方面，最低支持的 CPU 型号为锐龙 2000 及对应同架构的霄龙处理器、速龙处理器、线程撕裂者处理器。\n\n从今天开始对于所有支持的设备，…",
+          "link": "https://sspai.com/post/69072",
+          "publishedOn": "2021-10-05T07:00:00.000Z",
+          "wordCount": 466,
+          "title": "Windows 11 正式版发布，升级后一定不要错过这些新特性"
+        },
+        {
+          "id": "https://sspai.com/post/68195",
+          "author": "Hermanchannn",
+          "description": "一个城市的魅力不全是它的历史、文化或自然风光，也有不少惊喜往往来自那些只有当地人才知晓的隐蔽深巷。而「城市收藏夹」是我们征集来自世界各地 Matrix 社区作者共同维护的一个长期话题，我们会邀请大家分享自己所在城市或家乡的美食或玩乐目的地。\n大众点评可能会让你踩坑，但我们不会。\n\n今年八月份，我前往香港，作为一名学生，开始了新生活。\n说到香港，真的很感慨，因为太久没来，以至于对它感到有点陌生了。（许万里同学说的，我觉得也非常能描述我的心境，所以直接搬来用了。）\n作为一个广州人，我基本上每年都会来一次。上一次来香港是 2019 年的 6 月，那一次是来考试，所以并没有去什么地方，除了在考场考试，大部分时间都在酒店里备考了。离开香港时，本以为找个假期再来一次很容易，没想到，匆匆一别，已是两年的时间。这两年的时间里，香港和我自己都经历了很多，以至于出发前我对于这个曾经感到无比熟悉的城市竟然产生了一些茫然：究竟，香港现在是什么样子呢？我也很想知道。\n沙田 车公庙附近\n怎么去香港\n在开始讲述我的港漂生活之前，想先和大家分享一下我来港前的各项准备工作。\n租房\n在办理签证之前，我们需要先找好住处。因为港校的研究生基本上不能分配到宿舍，所以绝大部分的学生都需要自己找房子租。\n在香港，非本地研究生租房基本上有三种选择，分别是租村屋、租普通商品房和长租酒店。\n村屋\n定义：指位于学校附近村子里的别墅，既可以整套出租，也可以分开出租给不同人。\n优点：价格会相对低廉。和普通商品房相比，相同价格下往往能获得更大的个人使用空间。有的村屋还会配有院子。地理上通常会更加靠近学校（对于在一些位置稍微偏僻学校就读的学生会更有吸引力）。\n缺点：因为位置偏僻，通常配套设施（交通、饮食、娱乐）不是很好。\n适合人群：耐得住寂寞，预算有限，对私人空间比较有要求，动手能力较强的同学。\n普通商品房\n定义：指普通的商品房，可以…",
+          "link": "https://sspai.com/post/68195",
+          "publishedOn": "2021-10-05T03:56:00.000Z",
+          "wordCount": 207,
+          "title": "城市收藏夹 · 香港：两年不见，甚是想念"
+        },
+        {
+          "id": "https://sspai.com/post/69105",
+          "author": "少数派编辑部",
+          "description": "本期《派评》的内容有：\n\n📷 iOS 专业相机应用 NOMO RAW 迎来大版本更新。\n🥛 除了记录喝水还不够，HiWater 还想帮你控制热量。\n📈 iWork 办公三件套迎来大更新，让线上协作更加便利。\n……\n\n你可以通过文章目录快速跳转到你感兴趣的内容。如果发现了其它感兴趣的 App 或者关注的话题，也欢迎在评论区和我们进行讨论。\n不容错过的新 App\n虽然少数派一直在为大家发发现和介绍各平台上的优质 App，但仍有不少设计、功能、交互、体验都非常优秀的 App，还没有被我们发掘和介绍。它们可能是一款老 App，也可能是近期上架的新 App，我们会在这里介绍给你。\nHiWater：光记录喝水还不够，控制热量也很重要\n\n平台：iOS / iPadOS\n关键词：饮水记录、健康追踪\n\n@Vanilla：作为老牌喝水应用 WaterMinder 的用户，我对这款 App 已经非常满意。可是，当我看到 HiWater 后，我才后知后觉得发现 WaterMinder 缺少了点什么，那就是对摄入热量的提醒。\n在「今日」标签页，HiWater 展示了当日的饮水进度和详细的记录历史，这是它与其它喝水应用相同的功能。不过，每日补水目标下方的饮水金字塔就非常有意思了，它将常见饮品分为 6 个健康等级，用来衡量各类饮品的摄入比例。金字塔底端的白水是健康补水的首选，而位于顶端的饮品应加以控制。也就是说，我每天除了要完成饮水数量的目标，还要注重摄入水分的质量，如果热量太高导致超标，也是一件得不偿失的事情。\n\n在设置界面中，我可以调整「饮水金字塔」的比例：对正常用户来说白水的比例要大于等于 60%，而对于需要控制热量输入的人群来说白水的比例要大于等于 70%，大家可以各取所需。在「饮品目录」标签页中，我可以查询到每一类饮品每 100 毫升所含的热量，根据热量大小从 LV1 到 LV6 分门别…",
+          "link": "https://sspai.com/post/69105",
+          "publishedOn": "2021-10-04T08:31:15.000Z",
+          "wordCount": 469,
+          "title": "派评 | 近期值得关注的 App"
+        },
+        {
+          "id": "https://sspai.com/post/69097",
+          "author": "waychane",
+          "description": "每年 iPhone 推出新款之后，如何选择一定是个热门话题。一边是尺寸、功能都「刚刚好」的数字系列，一边是代表着最强移动设备的 Pro 系列，当然价格也是最强。尤其是去年 iPhone 12 mini 的加入，让本就难做的这道选择题变得更难了。\n今年我有机会拿到了 iPhone 13 和 iPhone 13 Pro Max 二台设备，并且也在之前 上手体验 了 iPhone 13 全系列的 4 款机型，对于不同型号 iPhone 的使用体验，以及如何选择的问题，也来聊聊我的看法。\n关联阅读：荧幕、影像、性能处处 Pro，一台没有「短板」的好手机：iPhone 13 Pro 体验\n手感也许「没那么重要」\niPhone 12 mini 的出现，如同手机行业的一场「文艺复兴」：极致的尺寸设计、极佳的握持体验，不少人曾日思夜想的「小屏旗舰」，似乎在这里有了答案。不过，经过一年时间的检验，这台尺寸 mini 的 iPhone，似乎没有许多人当初想得那么好：出色的尺寸设计，牺牲的必然是电池续航；极佳的握持体验之外，好像也无更多优势可言。\niPhone 13 mini\n相反地，在与 iPhone 13 相伴的一周之内，我重新找到了久违的轻松体验：与 iPhone 13 Pro 尺寸相仿的同时，轻了 30 克的手感称为减负毫不为过。作为 Pro 系列 iPhone 的多年用户，上手 iPhone 13 之后，我注意到了一个之前没有发现的细节：铝金属边框相比不锈钢边框，除了不留指纹之外，更加「亲切」的触感对于握持体验而言也有提升；如果要用词语来形容这种「亲切感」，「光滑」与「亲肤」也许较为准确。反观 iPhone 13 Pro 系列，手术级不锈钢边框不论质感还是触感虽然已经足够优秀，但是相比之下摸起来也确实有点「生涩」了。\niPhone 13\n当然，iPhone 13 的握持体验，也让人挑不…",
+          "link": "https://sspai.com/post/69097",
+          "publishedOn": "2021-10-04T03:21:11.000Z",
+          "wordCount": 608,
+          "title": "平衡与极致：iPhone 13 & iPhone 13 Pro Max 体验"
+        },
+        {
+          "id": "https://sspai.com/post/69091",
+          "author": "关哥Emma",
+          "description": "编注：本篇文章为「年轻人的第一份保险指南」的后记。「保险怎么买，才不花冤枉钱」是许多年轻人共有的困惑。希望用合理的资金投入，构建最佳的保险配置，是我们相同的诉求。通过这份「年轻人的第一份保险指南」，希望能为你解答这些问题。\n \n大家好，我是关哥，感谢你和我一起走进了保险的世界。\n《年轻人的第一份保险指南》的正文已经全部更新完成了。课程里我们密集地介绍了很多知识点，暂时消化不了也很正常。我希望这套课程，先帮你接触到一个大致的体系，即使对它的概念是模糊的，也没有关系。有些细节，是在我们真正要做决策时，才能体会到的区别。\n不知道有多少人会跟随课程，一路走到这一章节。但如果你看到这里了，我想继续和你分享几条建议，这也是我在和保险多年的「共舞」中，感悟出的道理。\n通过提问来学习\n其实，我自己的保险入门和精进，本来就是在回答问题中完成的。\n我在少数派的播客中，和老麦聊到了我过去的经历。如果你听过这期节目就会知道，我既接触过大量的保险从业人员，也面对面接触了很多银行客户，同时，也一直在做培训。我每天的工作内容，就是解答各种各样的问题。包括写公众号、做保险科普的这些年，我也在线回答了有几万条留言。\n有人对保险的规则充满疑惑：「为什么医生说我没事，但保险却不保？」「为什么我父亲做了大手术，重疾险也不给赔？」\n有人寻求配置保险的具体建议：「我到底要不要选择身负责任？」「别人给我推荐了一个保险，说是收益不错，比存银行划算，是真的吗？」\n甚至还有人仍对保险充满负面的看法：「买的没有卖的精！」「我想买，可是觉得理赔太难了。」\n我对保险的理解，就是在替别人寻找这些答案的过程中，逐渐得到了丰富和完善。从一个一个独立的知识点，构建起了立体多元的知识体系。同时，也看到了人性和思维模式的多样性。\n从一个人的提问中，其实能看出很多东西。对保险的认知在什么程度？关心的问题是什么？思考问题的逻辑在哪里？\n从专业角度…",
+          "link": "https://sspai.com/post/69091",
+          "publishedOn": "2021-10-03T07:36:50.000Z",
+          "wordCount": 68,
+          "title": "与保险「共舞」多年悟出的 5 条心得，或许能让你少走弯路"
+        },
+        {
+          "id": "https://sspai.com/post/69093",
+          "author": "少数派编辑部",
+          "description": "导语\n伴着淅淅沥沥秋雨而来的除了骤降的气温，还有秋日独特的浓郁色调，我们去公园散步，到山间露营，品尝时令美味，也许每年你都有一份长长的「秋日必做清单」，毕竟没人想错过秋天短暂的赏味期限。\n本片单共 10 部影视作品，大都是发生在秋天的故事，有人恋爱，有人离别，也有人过着平淡却美好的日常。你的秋天发生着怎样的故事，你最喜欢在秋天做些什么？欢迎在评论区分享和讨论 🙋，我们会选取一则优质评论，送上少数派周边一份 🎁！\n之后每个月「看什么」栏目都会推出不同主题的特辑，关注每周新片的同时，也和大家一起回顾过往经典。\nTL;DR\n\n[电影] 秋天的故事、[电影] 秋天的童话\n[电影] 蒂莫西的奇异生活、[动画] 狼与香辛料、[电影] 小森林 夏秋篇\n[电影] 转转、[电影] 去见瀑布、[电影] 晚秋\n[电影] 当哈利遇到莎莉、[电影] 秋天里的春光\n\n根据读者反馈，如果推荐语涉及剧透（对故事核心、暗线、伏笔、结局等关键要素的透露），我们会在对应作品的标题前增加 🔦 的 Emoji。\n如果你喜欢我们的内容，希望它持续更新，或是有任何建议，就请留言和充电吧~ 你们的支持将是我们的重要动力！\n\n[电影] 秋天的故事\n\n关键词：剧情 / 爱情\n片长：112 分钟；豆瓣链接\n观看渠道：哔哩哔哩\n\n当生命这场旅行走到秋天，方能结出最香醇的葡萄果实。\n\n@利兹与青鸟 ：《秋天的故事》是法国导演侯麦「四季故事系列」的最后一部，侯麦眼中的秋天，是丰收的、喜悦的、金色的季节，单身的马嘉利经营的葡萄园迎来了收成旺季，她的好友伊莎贝拉的女儿即将举行婚礼，人们在秋日午后洒满金色阳光的庭院树下，谈论着生活与爱情。\n侯麦热衷于展示人物在道德边缘的试探，但总能把看似狗血的情节处理得轻盈自然、不落俗套。《秋天的故事》聚焦于中年男女的情感生活，全片情节可以简单概括为「一厢情愿为好友介绍对象后，产生的种种误会」：马嘉…",
+          "link": "https://sspai.com/post/69093",
+          "publishedOn": "2021-10-03T04:20:22.000Z",
+          "wordCount": 210,
+          "title": "看什么 · 特别篇丨秋天到了，我最想生活在这 10 部电影里"
+        },
+        {
+          "id": "https://sspai.com/post/69082",
+          "author": "少数派编辑部",
+          "description": "不读可以先收藏\n让有价值的内容保持生命力，是对少数派作者分享和创作精神的肯定，对刚刚接触少数派的读者而言，这些内容也是方便他们直达少数派内容和 Matrix 社区核心价值的钥匙。\n在这个不定期更新的栏目中，少数派编辑部将人工挑选过去一段时间内值得重读和收藏的文章，这些内容凝聚了作者的耕耘和读者的肯定，应该能为想读好内容的你献上一份数字时代的「合订本」。\n\n大家好，今天是 2021 年 10 月 2 日。本栏目的第 3 期，我们从上一周期内推荐到首页的 120 篇文章中挑选了 10 篇值得你收藏的好文。\n快把文章末尾的收藏按钮用起来吧。\n这些文章可以先收藏\n看什么 Café丨当我们聊「电影感」的时候，我们在聊些什么？\n🔋 充电量：57\n作者：利兹与青鸟\n\n无论艺术的形式如何变迁，历史如何循环往复，能够被记住的一定是那些体现着「人」这一主体及其精神世界发展历程的作品，「电影感」的本质不在于高难度的炫技，而是技术背后创作者所想传递的一切信息、观念与情感。\n阅读全文>\n\n编辑荐语（北鸮）：「电影感」对大多数人来说只是一个模糊的名词。人们用它描述，用它形容，甚至用它赞赏，但很少有人明明白白地解释出它是什么。这篇文章以希区柯克的《后窗》为主线，将「电影感」中包含的叙事手法、剪辑魔术一点点拆开，以「拉片」的方法深入浅出地为读者解析这一概念。\n对于希望将电影看得更深入的人来说，这篇文章是很好的引导。它提供了一种思维方式，让你可以在欣赏电影时，多一层技术与艺术的角度，让电影的欣赏不再局限于词不逮意的感叹。而抛开这一专业层面，本文也可以作为希区柯克经典作品的观影引导，让你从《后窗》开始，逐步体会希区柯克精心构建的恐怖世界。\n「看什么 Café」是「本周看什么」的衍生栏目，旨在从一个特定主题或视角为读者提供与电影相关的优质内容，栏目中每篇文章都可以为你的闲暇时光添些乐趣。\n\n吹尽狂沙始到金——…",
+          "link": "https://sspai.com/post/69082",
+          "publishedOn": "2021-10-02T08:09:51.000Z",
+          "wordCount": 178,
+          "title": "不读可以先收藏 03 | 这些好文让你的假期更充实"
+        },
+        {
+          "id": "https://sspai.com/post/68830",
+          "author": "JLDUAN",
+          "description": "Matrix 首页推荐\nMatrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。\n文章代表作者个人观点，少数派仅对标题和排版略作修改。\n\nApple 在去年年底发布了 M1 芯片，这款芯片在性能、功耗、发热方面的表现，都让无数吃瓜网友大为震惊。正好手中的电脑也到了该换机的时候，我瞅准时机，入手了一台 M1 MacBook Air。\n等我收到电脑，习惯性安装了最爱的 Minecraft。这时却发现，只有原版游戏可以正常运行，当我给游戏安装 Minecraft 知名第三方 Forge API 之后，游戏在启动时会报错「Error 255」，有时又会报错「GLFW Error 65544」，无法进入游戏界面。根据错误信息可知，两种报错均为相同原因导致。\nError 255GLFW Error 65544\n由于我只是一位普普通通的创造模式玩家，失去 Mod 支持，游戏的乐趣就少了很多。为此我不得不暂停我的火柴盒建造计划，苦寻解决方法。\n而根据网络中搜索到的各种解决方案，并没有解决我本机 Minecraft 报错的问题，因此我将近半年没有打开游戏。这几天我又按耐不住，结合网友的教程和我自己的一些尝试，非常幸运的解决了游戏报错的问题。如果网上的其他教程同样未能解决你的问题，不妨参考一下这篇文章。\n我的解决方法\n1.卸载系统当前安装的 Java 版本\n打开终端，输入命令 java -version ，查看当前安装的 Java 版本。如果是 Oracle Java ，需要卸载并安装 Zulu Java。\n输入命令查询 Java 版本\nOracle Java 不能通过常规方式卸载，需要在官网下载 专用卸载工具。不建议直接删除 Java 路径文件夹，否则 macOS 设置中会残留 Ja…",
+          "link": "https://sspai.com/post/68830",
+          "publishedOn": "2021-10-02T03:00:00.000Z",
+          "wordCount": 321,
+          "title": "一日一技 | 解决 Minecraft 在 M1 Mac 上的 Error 255 报错"
+        },
+        {
+          "id": "https://sspai.com/post/69083",
+          "author": "少数派编辑部",
+          "description": "☕️ TL;DR\n\n近期佳作推荐：[国产剧] 功勋、[音乐剧] 来自远方、[动画] 蓝色时期、[美剧] 紧急呼救 第五季、[综艺] 最后的赢家、[国产剧] 在希望的田野上、[美剧] 午夜弥撒\n几则精彩预告：漫改 TV 动画《鬼灭之刃 花街篇》12 月 5 日开始播出、动画剧集《英雄联盟：双城之战》发布正式中字预告，11 月 6 日上线 Netflix、骨头社制作 Netflix 超能力动画《超级骗子》首曝预告，11 月 25 日上线、《活死人军团》前传《神偷军团》10 月 29 日上线 Netflix\n几则影视资讯：奥斯卡最佳外语片《入殓师》中国内地定档 10 月 29 日、Netflix 已正式宣布续订《性爱自修室》第四季、Netflix 真人版《星际牛仔》剧集首曝片头，11 月 19 日播出\n🎬 秋日特辑：这 10 部电影，让你不再错过秋天的短暂赏味期 🍁\n\n👀 N 部作品推荐\n🇨🇳 大家国庆假期愉快！\n根据读者反馈，如果推荐语涉及剧透（对故事核心、暗线、伏笔、结局等关键要素的透露），我们会在对应作品的标题前增加 🔦 的 Emoji。\n如有其他建议也欢迎在评论区提出，感谢大家对「看什么」栏目的喜爱和支持。\n[国产剧] 功勋\n\n关键词：剧情 / 传记\n片长：41 分钟（单集）× 48 集；豆瓣链接\n@宇宙浪费指南：《功勋》采用单元创作的模式，全剧分为 8 个单元，讲述 8 位共和国勋章获得者的故事，每个单元各有对应负责的导演，并由郑晓龙担任总导演。\n剧集取材于真实故事，用单元剧的形式，将首批八位功勋人物的人生华彩篇章与共和国命运串联起来，更加凸显时代背景下的英雄人物，也更深刻诠释他们忠诚、执着、朴实的人生品格和献身祖国人民的崇高境界。\n《功勋》分别讲述了投身国防安全事业的于敏、首倡男女同工同酬的第一届全国人大代表申纪兰、科学家孙家栋、抗美援朝英雄李延年、战斗英…",
+          "link": "https://sspai.com/post/69083",
+          "publishedOn": "2021-10-01T09:30:00.000Z",
+          "wordCount": 410,
+          "title": "本周看什么丨最近值得一看的 7 部作品"
+        },
+        {
+          "id": "https://sspai.com/post/68878",
+          "author": "100gle",
+          "description": "引言\n在无纸化信息处理的流程中，信息输入、信息整理阶段的工具选择已经很多了，雨后春笋般不断浮现的笔记工具让人眼花缭乱。但到了信息输出和展示的环节——例如发表自己的读书心得、思考或是学习笔记，或是为自己的软件项目撰写文档——现有解决方案则总有明显的遗憾之处。\n一方面，如果选择语雀、Notion 这样的第三方云端文档平台来存放，定制空间就很有限，且数据始终是寄人篱下。另一方面，如果选择 WordPress 这类 CMS 或近年流行的 Jekyll、Hugo 或是 Hexo 等「静态网站生成器」，随之而来的技术门槛和复杂操作又容易打消人的创作和分享热情。\n以我个人为例，我想通过搭建简单的静态网站来很好地展示我在学习编程过程中的所作的笔记、对问题的看法等，将它们作为一个 Cookbook 或系统化的参考文档来使用，同时也兼具美观和可读性。对此，上述主流框架都有些「杀鸡用牛刀」的感觉，那么，有没有更好的方式呢？\n我遇见的答案是 MkDocs。\n什么是 MkDocs？\nMkDocs（Markdown Documents）是一个快速、简单的静态网站生成器，用于将 Markdown 文档组织起来构建成有层次、美观的文档站点。\n\nMkDocs 基于 Python 编写，也贯彻了 Python 里「简洁胜于复杂」的理念，与其他常见的静态网站生成器相比，无需繁琐的环境配置（如 Jekyll 涉及的 Bundler、Gems 等），所有配置都用只有简单的一个配置文件管理，并且当中配置项的内容也仅有一页文档。\nMkDocs 见名知意就是为 Markdown 而生，根据 Markdown 格式将内容渲染成美观的文档，并通过目录层级关系对应文档的树状结构，使得当中所有的文档组织分明且层次递进。\n\n此外，简洁不等同于简单，MkDocs 还为「动手能力强」的玩家们提供了扩展的空间：我们可以进一步让更多语法特…",
+          "link": "https://sspai.com/post/68878",
+          "publishedOn": "2021-10-01T03:20:39.000Z",
+          "wordCount": 654,
+          "title": "笔记文档一把梭——MkDocs 快速上手指南"
+        }
+      ]
     }
   ],
-  "cliVersion": "1.7.2"
+  "cliVersion": "1.11.2"
 }
