@@ -1,13 +1,9 @@
 package io.gsyx.feed;
 
-import cn.hutool.core.util.XmlUtil;
 import cn.hutool.http.HttpUtil;
 import cn.hutool.log.StaticLog;
 import io.gsyx.feed.model.FeedConfig;
 import io.gsyx.feed.model.RSS;
-import org.w3c.dom.Document;
-
-import java.util.Objects;
 
 public class Main {
 
