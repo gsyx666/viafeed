@@ -60,7 +60,7 @@ public class Utils {
         YamlReader reader = null;
         FeedConfig feedConfig = null;
         try {
-            reader = new YamlReader(new FileReader("osmosfeed.yaml"));
+            reader = new YamlReader(new FileReader("test.yaml"));
             Object object = reader.read();
             //System.out.println(object);
             if (object == null) {
