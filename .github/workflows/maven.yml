@@ -22,5 +22,14 @@ jobs:
         java-version: '11'
         distribution: 'adopt'
         cache: maven
+    - name: 缓存 Maven 依赖
+        uses: actions/cache@v2
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      env:
+        TEST: 1
+      run: mvn compile exec:java -Dexec.mainClass="io.gsyx.feed.Main" -Dexec.args="${TEST} ${TEST}"
