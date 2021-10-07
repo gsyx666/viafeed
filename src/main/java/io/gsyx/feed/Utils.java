@@ -26,8 +26,8 @@ public class Utils {
         RSS.Channel channelBean = new RSS.Channel();
         channelBean.items = new ArrayList<>();
         for (Element channel : channels) {
-            String title = channel.getElementsByTag("title").get(0).text();
-            String pubDate = channel.getElementsByTag("pubDate").get(0).text();
+            String title =getValue(channel,"title");
+            String pubDate =getValue(channel,"pubDate");
             channelBean.title = title;
             channelBean.pubDate = pubDate;
             Elements items = channel.getElementsByTag("item");
