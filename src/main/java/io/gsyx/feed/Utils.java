@@ -3,6 +3,7 @@ package io.gsyx.feed;
 
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.StrUtil;
+import cn.hutool.log.StaticLog;
 import com.esotericsoftware.yamlbeans.YamlReader;
 import com.google.gson.Gson;
 import io.gsyx.feed.model.Atom;
@@ -64,7 +65,8 @@ public class Utils {
                 entry.title = item.title;
                 entry.id = item.link;
                 entry.link = item.link;
-                entry.updated = pubDate2Updated(item.pubDate);// TODO
+                //entry.updated = pubDate2Updated(item.pubDate);// TODO
+                entry.updated = item.pubDate;
                 entry.summary = item.description;
                 entry.author = item.author;
                 entries.append(entry.toXml());
@@ -88,7 +90,7 @@ public class Utils {
     }
 
     public static FeedConfig getFeedConfig(String path) {
-        YamlReader reader = null;
+        YamlReader reader;
         FeedConfig feedConfig = null;
         try {
             reader = new YamlReader(new FileReader(path));
@@ -100,7 +102,7 @@ public class Utils {
             Gson gson = new Gson();
             feedConfig = gson.fromJson(new Gson().toJson(object), FeedConfig.class);
         } catch (Exception e) {
-            e.printStackTrace();
+            StaticLog.error(e);
         }
         return feedConfig;
     }
@@ -112,10 +114,10 @@ public class Utils {
     public static String pubDate2Updated(String pubDate) {
         String updated = DateUtil.now();
         Date date = new Date(pubDate);
-       // StaticLog.debug("updated");
+        // StaticLog.debug("updated");
         SimpleDateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         updated = dateformat.format(date);
-       // StaticLog.debug(updated);
+        // StaticLog.debug(updated);
         return updated;
     }
 }

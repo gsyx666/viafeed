@@ -1,26 +1,20 @@
 package io.gsyx.feed;
 
-import cn.hutool.core.date.DatePattern;
-import cn.hutool.core.date.DateTime;
-import cn.hutool.core.date.DateUtil;
-import cn.hutool.core.io.unit.DataUnit;
+import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.util.XmlUtil;
-import cn.hutool.http.HttpUtil;
+import cn.hutool.http.HttpRequest;
 import cn.hutool.log.StaticLog;
 import io.gsyx.feed.model.Atom;
 import io.gsyx.feed.model.FeedConfig;
 import io.gsyx.feed.model.RSS;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class Main {
+
+    public static String Linux = "./gh-pages/feed.atom";
+    public static String Win = "D:\\GSYX\\Java\\action-osmosfeed\\gh-pages\\feed.atom";
 
     public static void main(String[] args) {
         System.out.println("start");
@@ -46,14 +40,18 @@ public class Main {
     }
 
     public static void feedAction() {
-        FeedConfig feedConfig = Utils.getFeedConfig();
+        FeedConfig feedConfig = Utils.getFeedConfig("osmosfeed2.yaml");
         if (feedConfig == null || feedConfig.sources == null || feedConfig.sources.isEmpty()) {
             StaticLog.error("osmosfeed.yaml 配置错误");
             return;
         }
         List<RSS> rsss = new ArrayList<>();
         for (FeedConfig.Sources sources : feedConfig.sources) {
-            RSS rss = Utils.rss2Bean(HttpUtil.get(sources.href));
+            String response = HttpRequest.get(sources.href)
+                    .timeout(80000)
+                    .execute()
+                    .body();
+            RSS rss = Utils.rss2Bean(response);
             if (rss != null) {
                 rsss.add(rss);
                 //StaticLog.debug(rss.toString());
@@ -61,7 +59,8 @@ public class Main {
         }
         Atom atom = Utils.rssBean2Atom(rsss);
         if (atom == null) return;
-        XmlUtil.toFile(XmlUtil.readXML(atom.toXml()), "./gh-pages/feed.atom");
+        FileUtil.del(Win);
+        FileUtil.writeBytes(atom.toXml().getBytes(), Win);
         //GET请求
         // String content = HttpUtil.get("https://sspai.com/feed");
     }

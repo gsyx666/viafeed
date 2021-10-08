@@ -1,0 +1,13 @@
+cacheUrl: https://gsyx666.github.io/action-osmosfeed/cache.json
+sources:
+  - href: https://sspai.com/feed
+  - href: https://feeds.appinn.com/appinns
+  - href: https://rsshub-gsyx.vercel.app/douban/movie/weekly
+  - href: https://rsshub-gsyx.vercel.app/bilibili/ranking/0/3?limit=10
+  - href: https://rsshub-gsyx.vercel.app/bilibili/partion/ranking/201/3/0
+
+# `siteTitle`: Title to use in the browser tab and the machine readable feed output. (optional)
+siteTitle: "gsyx::feed"
+
+# `cacheMaxDays` Max number of days to keep the feed content in cache. A very large value can increase the initial load time of the site. (optional)
+cacheMaxDays: 10

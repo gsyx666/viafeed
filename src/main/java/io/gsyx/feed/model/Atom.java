@@ -39,12 +39,6 @@ public class Atom {
         public String summary;
         public String author;
 
-
-        @Override
-        public String toString() {
-            return toXml();
-        }
-
         public String toXml() {
             return "    <entry>\n" +
                     "        <title type=\"html\"><![CDATA[" + title + "]]></title>\n" +
@@ -58,6 +52,7 @@ public class Atom {
                     "    </entry>\n";
         }
 
+        @Deprecated
         public String toXml2() {
             return "<entry>" +
                     "<title type=\"html\"><![CDATA[" + title + "]]></title>" +
@@ -73,7 +68,7 @@ public class Atom {
     }
 
     public String toXml() {
-        return "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"no\"?><feed xmlns=\"http://www.w3.org/2005/Atom\">\n" +
+        return "<?xml version=\"1.0\" encoding=\"utf-8\"?><feed xmlns=\"http://www.w3.org/2005/Atom\">\n" +
                 "   <id>" + id + "</id>\n" +
                 "    <title>" + title + "</title>\n" +
                 "    <updated>" + updated + "</updated>\n" +
