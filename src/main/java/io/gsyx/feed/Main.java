@@ -18,23 +18,16 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
         System.out.println("start");
-        /**
-         try {
-         String xml= XmlUtil.toStr(XmlUtil.readXML(new FileReader("test.atom")));
-         XmlUtil.toFile(XmlUtil.readXML(xml),"D:\\GSYX\\Java\\action-osmosfeed\\test\\test.xml");
-         //System.out.println(xml);
-         } catch (FileNotFoundException e) {
-         e.printStackTrace();
-         }
-         */
-        //feedAction();
+
+        feedAction();
         // atomTest();
-        dateTest();
+        //dateTest();
 
     }
 
@@ -58,12 +51,17 @@ public class Main {
             StaticLog.error("osmosfeed.yaml 配置错误");
             return;
         }
+        List<RSS> rsss = new ArrayList<>();
         for (FeedConfig.Sources sources : feedConfig.sources) {
             RSS rss = Utils.rss2Bean(HttpUtil.get(sources.href));
             if (rss != null) {
-                StaticLog.debug(rss.toString());
+                rsss.add(rss);
+                //StaticLog.debug(rss.toString());
             }
         }
+        Atom atom = Utils.rssBean2Atom(rsss);
+        if (atom == null) return;
+        XmlUtil.toFile(XmlUtil.readXML(atom.toXml()), "./gh-pages/feed.atom");
         //GET请求
         // String content = HttpUtil.get("https://sspai.com/feed");
     }

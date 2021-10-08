@@ -3,7 +3,6 @@ package io.gsyx.feed;
 
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.StrUtil;
-import cn.hutool.log.StaticLog;
 import com.esotericsoftware.yamlbeans.YamlReader;
 import com.google.gson.Gson;
 import io.gsyx.feed.model.Atom;
@@ -18,6 +17,7 @@ import java.io.FileReader;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Utils {
 
@@ -46,28 +46,30 @@ public class Utils {
                 itemBean.author = getValue(item, "author");
                 channelBean.items.add(itemBean);
             }
-            StaticLog.debug(title + pubDate);
+            //StaticLog.debug(title + pubDate);
         }
         rss.channel = channelBean;
         return rss;
     }
 
-    public static Atom rssBean2Atom(RSS rss) {
-        if (rss == null) return null;
+    public static Atom rssBean2Atom(List<RSS> rsss) {
+        if (rsss == null || rsss.isEmpty()) return null;
         Atom atom = new Atom();
-        RSS.Channel channel = rss.channel;
-        if (channel == null || channel.items == null || channel.items.isEmpty()) return null;
         StringBuilder entries = new StringBuilder();
-        for (RSS.Channel.Item item : channel.items) {
-            Atom.Entry entry = new Atom.Entry();
-            entry.title = item.title;
-            entry.id = item.link;
-            entry.link = item.link;
-            entry.updated = item.pubDate;// TODO
-            entry.summary = item.description;
-            entry.author = item.author;
-            entries.append(entry.toXml());
+        for (RSS rss : rsss) {
+            RSS.Channel channel = rss.channel;
+            if (channel == null || channel.items == null || channel.items.isEmpty()) return null;
+            for (RSS.Channel.Item item : channel.items) {
+                Atom.Entry entry = new Atom.Entry();
+                entry.title = item.title;
+                entry.id = item.link;
+                entry.link = item.link;
+                entry.updated = pubDate2Updated(item.pubDate);// TODO
+                entry.summary = item.description;
+                entry.author = item.author;
+                entries.append(entry.toXml());
 
+            }
         }
         atom.entries = entries.toString();
         if (StrUtil.isEmpty(atom.entries)) {
@@ -85,11 +87,11 @@ public class Utils {
         return value;
     }
 
-    public static FeedConfig getFeedConfig() {
+    public static FeedConfig getFeedConfig(String path) {
         YamlReader reader = null;
         FeedConfig feedConfig = null;
         try {
-            reader = new YamlReader(new FileReader("test.yaml"));
+            reader = new YamlReader(new FileReader(path));
             Object object = reader.read();
             //System.out.println(object);
             if (object == null) {
@@ -103,13 +105,17 @@ public class Utils {
         return feedConfig;
     }
 
+    public static FeedConfig getFeedConfig() {
+        return getFeedConfig("osmosfeed.yaml");
+    }
+
     public static String pubDate2Updated(String pubDate) {
         String updated = DateUtil.now();
         Date date = new Date(pubDate);
-        StaticLog.debug("updated");
+       // StaticLog.debug("updated");
         SimpleDateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         updated = dateformat.format(date);
-        StaticLog.debug(updated);
+       // StaticLog.debug(updated);
         return updated;
     }
 }
