@@ -1,9 +1,12 @@
 package io.gsyx.feed;
 
 
+import cn.hutool.core.date.DateUtil;
+import cn.hutool.core.util.StrUtil;
 import cn.hutool.log.StaticLog;
 import com.esotericsoftware.yamlbeans.YamlReader;
 import com.google.gson.Gson;
+import io.gsyx.feed.model.Atom;
 import io.gsyx.feed.model.FeedConfig;
 import io.gsyx.feed.model.RSS;
 import org.jsoup.Jsoup;
@@ -12,7 +15,9 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.FileReader;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Utils {
 
@@ -26,8 +31,8 @@ public class Utils {
         RSS.Channel channelBean = new RSS.Channel();
         channelBean.items = new ArrayList<>();
         for (Element channel : channels) {
-            String title =getValue(channel,"title");
-            String pubDate =getValue(channel,"pubDate");
+            String title = getValue(channel, "title");
+            String pubDate = getValue(channel, "pubDate");
             channelBean.title = title;
             channelBean.pubDate = pubDate;
             Elements items = channel.getElementsByTag("item");
@@ -36,7 +41,7 @@ public class Utils {
                 RSS.Channel.Item itemBean = new RSS.Channel.Item();
                 itemBean.title = getValue(item, "title");
                 itemBean.link = getValue(item, "link");
-                itemBean.description =getValue(item, "description");
+                itemBean.description = getValue(item, "description");
                 itemBean.pubDate = getValue(item, "pubDate");
                 itemBean.author = getValue(item, "author");
                 channelBean.items.add(itemBean);
@@ -45,6 +50,30 @@ public class Utils {
         }
         rss.channel = channelBean;
         return rss;
+    }
+
+    public static Atom rssBean2Atom(RSS rss) {
+        if (rss == null) return null;
+        Atom atom = new Atom();
+        RSS.Channel channel = rss.channel;
+        if (channel == null || channel.items == null || channel.items.isEmpty()) return null;
+        StringBuilder entries = new StringBuilder();
+        for (RSS.Channel.Item item : channel.items) {
+            Atom.Entry entry = new Atom.Entry();
+            entry.title = item.title;
+            entry.id = item.link;
+            entry.link = item.link;
+            entry.updated = item.pubDate;// TODO
+            entry.summary = item.description;
+            entry.author = item.author;
+            entries.append(entry.toXml());
+
+        }
+        atom.entries = entries.toString();
+        if (StrUtil.isEmpty(atom.entries)) {
+            atom = null;
+        }
+        return atom;
     }
 
     public static String getValue(Element element, String tag) {
@@ -72,5 +101,15 @@ public class Utils {
             e.printStackTrace();
         }
         return feedConfig;
+    }
+
+    public static String pubDate2Updated(String pubDate) {
+        String updated = DateUtil.now();
+        Date date = new Date(pubDate);
+        StaticLog.debug("updated");
+        SimpleDateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        updated = dateformat.format(date);
+        StaticLog.debug(updated);
+        return updated;
     }
 }

@@ -21,10 +21,10 @@ public class Atom {
             "        </author>\n" +
             "    </entry>\n" +
             "</feed>";
-    public String id;
-    public String title;
-    public String updated;
-    public String generator;
+    public String id = "https://gsyx666.github.io/action-osmosfeed/index.html";
+    public String title = "gsyx::feed";
+    public String updated; // TODO
+    public String generator = "osmosfeed 1.11.2";
     public String entries;
 
     private static String getEvEntries(String str, String str2) {

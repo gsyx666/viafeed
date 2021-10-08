@@ -1,5 +1,9 @@
 package io.gsyx.feed;
 
+import cn.hutool.core.date.DatePattern;
+import cn.hutool.core.date.DateTime;
+import cn.hutool.core.date.DateUtil;
+import cn.hutool.core.io.unit.DataUnit;
 import cn.hutool.core.util.XmlUtil;
 import cn.hutool.http.HttpUtil;
 import cn.hutool.log.StaticLog;
@@ -10,7 +14,10 @@ import io.gsyx.feed.model.RSS;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Main {
 
@@ -26,8 +33,14 @@ public class Main {
          }
          */
         //feedAction();
-        atomTest();
+        // atomTest();
+        dateTest();
 
+    }
+
+    public static void dateTest() {
+        String pubDate = "Fri, 08 Oct 2021 15:30:00 +0800";
+        Utils.pubDate2Updated(pubDate);
     }
 
     public static void atomTest() {
