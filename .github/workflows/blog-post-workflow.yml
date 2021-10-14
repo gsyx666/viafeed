@@ -24,11 +24,11 @@ jobs:
         with:
           comment_tag_name: APPINN
           feed_list: "https://feeds.appinn.com/appinns"
-      - name: Pull in bilibili posts
-        uses: gautamkrishnar/blog-post-workflow@master
-        with:
-          comment_tag_name: BILIBILI
-          feed_list: "https://rsshub-gsyx.vercel.app/bilibili/ranking/0/3?limit=10"
+ #     - name: Pull in bilibili posts
+ #       uses: gautamkrishnar/blog-post-workflow@master
+#        with:
+#          comment_tag_name: BILIBILI
+ #         feed_list: "https://rsshub-gsyx.vercel.app/bilibili/ranking/0/3?limit=10"
       - name: Pull in douban posts
         uses: gautamkrishnar/blog-post-workflow@master
         with:
