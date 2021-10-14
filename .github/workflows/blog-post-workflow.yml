@@ -19,18 +19,21 @@ jobs:
         with:
           comment_tag_name: SSPAI
           feed_list: "https://sspai.com/feed"
-      - uses: gautamkrishnar/blog-post-workflow@master
+      - name: Pull in appinn.com posts
+        uses: gautamkrishnar/blog-post-workflow@master
         with:
           comment_tag_name: APPINN
           feed_list: "https://feeds.appinn.com/appinns"
-      - uses: gautamkrishnar/blog-post-workflow@master
+      - name: Pull in bilibili posts
+        uses: gautamkrishnar/blog-post-workflow@master
         with:
           comment_tag_name: BILIBILI
-          feed_list: "https://rsshub.app/bilibili/ranking/0/3?limit=10"
-      - uses: gautamkrishnar/blog-post-workflow@master
+          feed_list: "https://rsshub-gsyx.vercel.app/bilibili/ranking/0/3?limit=10"
+      - name: Pull in douban posts
+        uses: gautamkrishnar/blog-post-workflow@master
         with:
           comment_tag_name: DOUBAN
-          feed_list: "https://rsshub.app/douban/movie/weekly"
+          feed_list: "https://rsshub-gsyx.vercel.app/douban/movie/weekly"
 #      - uses: gautamkrishnar/blog-post-workflow@master
  #       with:
  #          comment_tag_name: MEDIUM
