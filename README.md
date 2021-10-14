@@ -8,7 +8,25 @@ This is repository hosts the UI and content of an RSS feed reader.
 - [File an issue about the template](https://github.com/osmoscraft/osmosfeed-template)
 - [File an issue about the tool](https://github.com/osmoscraft/osmosfeed)
 - [Lastest documentation](https://github.com/osmoscraft/osmosfeed)
-- 
+
+
+### 少数派
+
+<!-- SSPAI:START -->
+<!-- SSPAI:END -->
+
+### 小众软件
+
+<!-- APPINN:START -->
+<!-- APPINN:END -->
+
+### 豆瓣
+
+<!-- DOUBAN:START -->
+<!-- DOUBAN:END -->
+
+
+
 # Feed posts
 <!-- BLOG-POST-LIST:START -->
 - [新玩意 080｜少数派的编辑们最近买了啥？](https://sspai.com/post/69337)
