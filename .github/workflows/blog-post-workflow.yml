@@ -30,7 +30,7 @@ jobs:
 #          comment_tag_name: BILIBILI
  #         feed_list: "https://rsshub-gsyx.vercel.app/bilibili/ranking/0/3?limit=10"
       - name: Pull in douban posts
-        uses: gautamkrishnar/blog-post-workflow@master
+        uses: khaosdoctor/blog-post-workflow@master
         with:
           comment_tag_name: DOUBAN
           feed_list: "https://rsshub.app/douban/movie/weekly"
