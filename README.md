@@ -9,7 +9,7 @@ This is repository hosts the UI and content of an RSS feed reader.
 - [File an issue about the tool](https://github.com/osmoscraft/osmosfeed)
 - [Lastest documentation](https://github.com/osmoscraft/osmosfeed)
 - 
-# Blog posts
+# Feed posts
 <!-- BLOG-POST-LIST:START -->
 - [新玩意 080｜少数派的编辑们最近买了啥？](https://sspai.com/post/69337)
 - [3Dicons – 漂亮的 1440+ 个 3D 图标，免费可商用](https://www.appinn.com/3dicons-online/)
