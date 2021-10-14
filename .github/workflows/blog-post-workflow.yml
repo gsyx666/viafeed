@@ -14,8 +14,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Pull in dev.to posts
-      - uses: gautamkrishnar/blog-post-workflow@master
+      - name: Pull in sspai.com posts
+        uses: gautamkrishnar/blog-post-workflow@master
         with:
           comment_tag_name: SSPAI
           feed_list: "https://sspai.com/feed"
