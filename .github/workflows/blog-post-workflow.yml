@@ -15,19 +15,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Pull in dev.to posts
-        uses: gautamkrishnar/blog-post-workflow@master
-        with:
-          max_post_count: 50
-          disable_sort: true
-          feed_list: "https://sspai.com/feed,https://feeds.appinn.com/appinns,https://rsshub.app/douban/movie/weekly"
       - uses: gautamkrishnar/blog-post-workflow@master
         with:
-          comment_tag_name: FCC
-          feed_list: "https://www.freecodecamp.org/news/author/_staticvoid/rss"
+          comment_tag_name: SSPAI
+          feed_list: "https://sspai.com/feed"
+      - uses: gautamkrishnar/blog-post-workflow@master
+        with:
+          comment_tag_name: APPINN
+          feed_list: "https://feeds.appinn.com/appinns"
       - uses: gautamkrishnar/blog-post-workflow@master
         with:
           comment_tag_name: BILIBILI
           feed_list: "https://rsshub.app/bilibili/ranking/0/3?limit=10"
+      - uses: gautamkrishnar/blog-post-workflow@master
+        with:
+          comment_tag_name: DOUBAN
+          feed_list: "https://rsshub.app/douban/movie/weekly"
 #      - uses: gautamkrishnar/blog-post-workflow@master
  #       with:
  #          comment_tag_name: MEDIUM
