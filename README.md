@@ -23,11 +23,11 @@ This is repository hosts the UI and content of an RSS feed reader.
 ### 小众软件
 
 <!-- APPINN:START -->
+- [《观妙中国》新专题：首个司马台长城的 360 度实景游览](https://www.appinn.com/guanmiaozhongguo-simatai/)
+- [可以期待一下：Meta – 一个用于视觉学习的笔记工具](https://www.appinn.com/projectmeta/)
+- [APEnabler – 为没有 AirPlay 按钮的视频播放器添加 AirPlay 功能[Safari]](https://www.appinn.com/apenabler-for-safari/)
 - [3Dicons – 漂亮的 1440+ 个 3D 图标，免费可商用](https://www.appinn.com/3dicons-online/)
 - [Aphrodite – 记录你的每一次性生活[iPhone]](https://www.appinn.com/aphrodite-for-ios/)
-- [微软必应壁纸测试版发布，支持每日更换必应壁纸、3 个小组件、浏览器放劫持等功能](https://www.appinn.com/ms-bing-wallpaper-beta/)
-- [NanaZip – 适配 Windows 11 右键菜单的开源压缩工具，基于 7-Zip](https://www.appinn.com/nanazip-for-windows11/)
-- [Windows 11 正式版下载：微软官方 ISO 镜像文件 & 创建 U 盘启动盘](https://www.appinn.com/windows-11-iso-download/)
 <!-- APPINN:END -->
 
 ### 豆瓣
