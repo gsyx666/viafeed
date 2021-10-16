@@ -13,11 +13,11 @@ This is repository hosts the UI and content of an RSS feed reader.
 ### 少数派
 
 <!-- SSPAI:START -->
-- [新玩意 080｜少数派的编辑们最近买了啥？](https://sspai.com/post/69337)
-- [我应该选择全职备考吗？](https://sspai.com/post/69233)
-- [Apple 10 月发布会前瞻：除了新 MacBook，还有哪些新品「来炸场」？](https://sspai.com/post/69323)
-- [折叠屏形态的临界点——这是我的 Galaxy Z Fold3 使用体验](https://sspai.com/post/69089)
-- [派早报：一加 9 RT 发布、黑鲨推出 4S 系列手机、多家发布会即将到来等](https://sspai.com/post/69330)
+- [本周看什么丨最近值得一看的 10 部作品](https://sspai.com/post/69364)
+- [数字存储完全指南 02：机械硬盘的原理与参数详解](https://sspai.com/post/68712)
+- [轻薄好用的健康管家：Amazfit 跃我 GTS 3 两周体验](https://sspai.com/post/69357)
+- [瞎玩菌的游戏周报：近期游戏圈资讯汇总](https://sspai.com/post/69341)
+- [后疫情时代，「开会」这件事或许没那么讨厌……](https://sspai.com/post/69360)
 <!-- SSPAI:END -->
 
 ### 小众软件
