@@ -13,11 +13,11 @@ This is repository hosts the UI and content of an RSS feed reader.
 ### 少数派
 
 <!-- SSPAI:START -->
+- [离职指南：体面地和公司说再见](https://sspai.com/post/69056)
+- [本月玩什么 | 密特罗德、孤岛惊魂 6、帝国时代 IV、旅行游记](https://sspai.com/post/69359)
 - [本周看什么丨最近值得一看的 10 部作品](https://sspai.com/post/69364)
 - [数字存储完全指南 02：机械硬盘的原理与参数详解](https://sspai.com/post/68712)
 - [轻薄好用的健康管家：Amazfit 跃我 GTS 3 两周体验](https://sspai.com/post/69357)
-- [瞎玩菌的游戏周报：近期游戏圈资讯汇总](https://sspai.com/post/69341)
-- [后疫情时代，「开会」这件事或许没那么讨厌……](https://sspai.com/post/69360)
 <!-- SSPAI:END -->
 
 ### 小众软件
