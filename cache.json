@@ -892,33 +892,6 @@
           "publishedOn": "2021-10-22T21:59:39.000Z",
           "wordCount": 5950,
           "title": "Vue vs React – How to Go from One Framework to the Other"
-        },
-        {
-          "id": "616fed81d48e1707b6d7898e",
-          "author": null,
-          "description": "Dotfiles are important files that will play an integral role in your career as a software developer.  First, they can help make you more productive. But not only that - you'll be able to have that productive setup you created for youself on any machine.  This article is an introduction",
-          "link": "https://www.freecodecamp.org/news/dotfiles-what-is-a-dot-file-and-how-to-create-it-in-mac-and-linux/",
-          "publishedOn": "2021-10-21T19:49:01.000Z",
-          "wordCount": 2135,
-          "title": "Dotfiles – What is a Dotfile and How to Create it in Mac and Linux"
-        },
-        {
-          "id": "6171b7b2d48e1707b6d79998",
-          "author": null,
-          "description": "Endless runner games can be fun and addicting. Also, an endless runner game is a great game development project for a beginner. We just released a course on the freeCodeCamp.org YouTube channel that will teach you how to create an endless runner game using Unreal Engine and C++. Fahir",
-          "link": "https://www.freecodecamp.org/news/code-an-endless-runner-game-using-unreal-engine-and-c/",
-          "publishedOn": "2021-10-21T19:02:44.000Z",
-          "wordCount": 17095,
-          "title": "Code an Endless Runner Game Using Unreal Engine and C++"
-        },
-        {
-          "id": "617144ced48e1707b6d79686",
-          "author": null,
-          "description": "msmpeng.exe is an important part of Windows Security, formerly known as Windows Defender. It scans your computer for various threats ranging from malware to spyware, then renders the appropriate solution(s).  In this article, I will take you through what mempeng.exe is, the reason why it eats up",
-          "link": "https://www.freecodecamp.org/news/what-is-msmpeng-exe-why-is-it-of-high-cpu-disk-usage/",
-          "publishedOn": "2021-10-21T15:01:54.000Z",
-          "wordCount": 914,
-          "title": "What is msmpeng.exe? Why is it High CPU Disk Usage?"
         }
       ]
     },
@@ -927,6 +900,114 @@
       "feedUrl": "https://dev.to/feed",
       "siteUrl": "https://dev.to",
       "articles": [
+        {
+          "id": "https://dev.to/manuthecoder/yes-these-are-emoji-buttons-1pf8",
+          "author": "ManuTheCoder",
+          "description": "Take a look at this horrid button in CSS. Click on it.\n<button style=\"padding:0;border:0;background:transparent;outline:0;font-size: 100px\" onclick=\"if(this.innerText=='🔲'){this.innerText='🔳'}else {this.innerText='🔲'}\">🔲</button>\n\nThe purpose of this post is to let you know that you can use emojis in JavaScript, CSS, and HTML.",
+          "link": "https://dev.to/manuthecoder/yes-these-are-emoji-buttons-1pf8",
+          "publishedOn": "2021-11-20T23:07:52.000Z",
+          "wordCount": 425,
+          "title": "Yes, these are emoji buttons"
+        },
+        {
+          "id": "https://dev.to/alexmercedcoder/simple-setup-for-application-wide-state-in-react-5e7g",
+          "author": "Alex Merced",
+          "description": "For a lot of useful State Related Hooks, Checkout my Library merced-react-hooks\nTo quick setup application wide state in your app just make a file called src/GlobalState.js in your react app.\nGlobalState.js\nimport { useState, createContext, useContext } from \"react\"\n\n// The initial state, you can setup any properties initilal values here.\nconst initialState = {\n    count: 0\n}\n\n// create the context object for delivering your state across your app.\nconst GlobalContext = createContext(null)\n\n// custom component to provide the state to your app\nexport const GlobalState = props => {\n  // declare the GlobalState\n  const [globalState, setGlobalState] = useState({})\n\n  // create a function that'll make it easy to update one state property at a time\n  const updateGlobalState = (key, newValue) => {\n    setGlobalState(oldState => {\n      if (oldState[key] !== newValue) {\n        const newState = { ...oldState }\n        newState[key] = newValue\n        return newState\n      } else {\n        return oldState\n      }\n    })\n  }\n\n  return (\n    <GlobalContext.Provider value={[globalState, updateGlobalState]}>{props.children}</GlobalContext.Provider>\n  )\n}\n\n// custom hook for retrieving the provided state\nexport const useGlobalState = () => useContext(GlobalContext)\n\nthen you just have wrap your application with the GlobalState component in index.js\n<GlobalState>\n    <App/>\n</GlobalState>\n\nthen in any component you can use the state. Below is an example of a counter component using the GlobalState.\nimport {useGlobalState} from \"../GlobalState.js\"\n\nfunction Counter(props){\n\n    const [globalState, updateGlobalState] = useGlobalState()\n\n    return <div>\n    <h1>{globalState.count}</h1>\n    <button onClick={() => updateGlobalState(\"count\", globalState.count + 1)}>Add One</button>\n    <button onClick={() => updateGlobalState(\"count\", globalState.count - 1)}>Subtract One</button>\n    </div>\n\n}\n\nThere you go, now you can share state across your app in an easy that you can customize to your needs.",
+          "link": "https://dev.to/alexmercedcoder/simple-setup-for-application-wide-state-in-react-5e7g",
+          "publishedOn": "2021-11-20T22:46:31.000Z",
+          "wordCount": 677,
+          "title": "Simple Setup for Application Wide State in React"
+        },
+        {
+          "id": "https://dev.to/thetrendycoder/add-git-blame-on-visual-studio-code-23p4",
+          "author": "Sara Ounissi",
+          "description": "When you are working on a project, it is very useful to know the history of the modifications using git. If you are coding on Visual Studio Code like me, you should activate git blame by following these steps :\n- Open Visual Studio Code\n- Press Ctrl+Shift+X (windows) or ⇧⌘X (Mac)\n- Type blame\n- Click install on Git Blame\nNow, you can see at the bottom of the vs code window who is responsible for the line of code you have your cursor on, as you can see on the image below: line 37 Sara Ounissi (that would be me), pushed this code 1 day ago.\n\nHowever, the aim of this option is not just to see who wrote the code, but why and when. You can click on the name of the person, this will open a pop-in, the button View will then redirect you to the git repository where you will see the whole modification, the name of the commit, etc… Hopefully, that will help you get more context.",
+          "link": "https://dev.to/thetrendycoder/add-git-blame-on-visual-studio-code-23p4",
+          "publishedOn": "2021-11-20T22:21:31.000Z",
+          "wordCount": 581,
+          "title": "Add git blame on Visual Studio Code"
+        },
+        {
+          "id": "https://dev.to/skino2020/elementary-os-dev-environment-setup-1jjh",
+          "author": "skino",
+          "description": "Overview\n\n\nSo every now and then i see something that catches my eye. Recently that seems to be Linux Distributions, over the last few months i have changed my distribution's a few times to try and find one i'm comfortable with. I moved from my iMac (getting a bit sluggish) to Ubuntu originally and it worked but i didn't \"enjoy it\", i then tried Manjaro, then Pop!_OS and then finally thought id have a go with Elementary OS.\nSo far i am really enjoying it! it feels a bit \"Mac'ish\", Looks nice and feels quick!\nBut compared to Ubuntu its a little bit different with the Setup of the dev environment, so i thought id write up a little tutorial on setting a Laravel Dev Environment on Elementary OS.\nSo as with any tutorial i do with Linux, we start with an update/upgrade.\nsudo apt update\nsudo apt …",
+          "link": "https://dev.to/skino2020/elementary-os-dev-environment-setup-1jjh",
+          "publishedOn": "2021-11-20T22:13:26.000Z",
+          "wordCount": 2446,
+          "title": "Elementary OS - Dev Environment Setup"
+        },
+        {
+          "id": "https://dev.to/stankukucka/google-trends-with-python-5fh7",
+          "author": "Stan ku2ck4",
+          "description": "Thinking these days how we probably started to value more building blocks of our existence. As it started to feel more integrated into our existence as follows - health, water, food and often mentioned Covid that limited our ability to travel for some regions. To have overall knowledge of how does it goes worldwide there is well known Google Trends online tool to work with. But there is something special for those who are in love with Python. Beautiful graphing library Plotly licensed under the MIT license. \nHere is a simple installation prepared to work with on my GitHub repository with a requirements.txt file and a short script to plot data into a nice histogram data form. Simply download these two files as follows so save to your desktop into some working directory google-trends-analysi…",
+          "link": "https://dev.to/stankukucka/google-trends-with-python-5fh7",
+          "publishedOn": "2021-11-20T21:26:31.000Z",
+          "wordCount": 769,
+          "title": "Google Trends with Python"
+        },
+        {
+          "id": "https://dev.to/ra1nbow1/why-you-should-choose-nodejs-for-developing-server-side-applications-3jkf",
+          "author": "Matvey Romanov",
+          "description": "Node.JS is a technology that has transformed JavaScript, which is familiar to all web developers, from a client-side scripting language to a general-purpose language that has a large number of application use cases.\n \nAt the heart of how Node works.js is asynchronous. In addition to non-blocking I / O, this allows a server-side application on Node.js can handle much more client requests per unit of time than a similar application developed on most other server-side development technologies.\nWhat does this mean for your business?\nYou can start your own project with relatively low costs for the server infrastructure.\nWith the right architecture, this allows you to scale your business without investing a lot of money.\nWhat does this mean for developers?\nIf you don't have an understanding of a…",
+          "link": "https://dev.to/ra1nbow1/why-you-should-choose-nodejs-for-developing-server-side-applications-3jkf",
+          "publishedOn": "2021-11-20T21:20:20.000Z",
+          "wordCount": 1629,
+          "title": "Why you should choose Node.js for developing server-side applications"
+        },
+        {
+          "id": "https://dev.to/lavig10/different-ways-for-user-authentication-with-nodejs-1odj",
+          "author": "Lavish Goyal",
+          "description": "First let us get over with the debate of Authentication vs Authorization.\nIt is the process to verify if the user is telling the truth. For example: when we log into our account with some username and password, the process of verifying those credentials with the stored information in database and knowing that the user is really whom he/she claims to be is called Authentication.\nIt is a security process to know what information user has access to. Giving someone permission to download a particular file on a server or providing individual users with administrative access to an application are good examples of authorization.\nIn this article we are going to look into two different methods of User Authentication with NodeJS\nSesssion Based Authentication\nToken Based Authentication\nPrerequisites\n…",
+          "link": "https://dev.to/lavig10/different-ways-for-user-authentication-with-nodejs-1odj",
+          "publishedOn": "2021-11-20T20:15:09.000Z",
+          "wordCount": 1175,
+          "title": "Different ways for User Authentication with NodeJS"
+        },
+        {
+          "id": "https://dev.to/thibaultduponchelle/the-ephemeral-miniconf-once-upon-perl-acronyms-366c",
+          "author": "Tib",
+          "description": "(This was a talk at The ephemeral miniconf, here are the slides)\nOnce upon a time, \na guy named Larry Wall \ncreated a language called Perl.\n\nHe became the BDFL \nof this PL \nwhich values are TIMTOWTDI, \nDWIM, \nPOLA \nand as all UNIXes: \nKISS \nand DOTADIW.\n\nPerl enhances some key concepts \nof AWK, \nSED \nor GREP \nand even provides ACK \nand leads industry standard REGEX \n(PCRE).\n\nPPL started to ❤️ Perl, \nmeeting in PM groups \nand calling themself JAPH.\n\nEventually, big-sized meetings appeared \nlike YAPC, \nTPC \nand TPRCIC \n(or chartreuse-sized ones like PTS).\n\nThere were also associations \nlike TPF \nor EPO \nand individuals \nlike YOU \nand ME.\n\nFYI in 2021, \nI decided to organize TEM \nbecause hey, YOLO!\n\nTechnically speaking, \nyou can say Perl \nor perl \nbut not PERL \nnor the horrific PEARL... 😱\n\nAnd if you don't know, \ngo on IRC \nand ask PURL! 🤖 \n\nPeople say \n\"Only perl can parse Perl\" \nbut there is PPI, \nPPR \nand PLS.\n\nInterfacing w/ native extensions is easy \nwith FFI, \nXS, \nSWIG \nor WASM \n(and even easier with NCI in Raku).\n\nPerl lovers contribute \nto the CPAN w/ ❤️  \nvia PAUSE \nso Perl users can use CPANP, \nCPANM \nor CPM \nto DRY.\n\nYou can browse MetaCPAN \nfor DBI, \nEUMM, \nMB, \nLWP \nor PDL \nor even some idiot ACME.\n\nEach DIST \ncontains a whole lot of DOC \nin a format named POD \nand even a dedicated RT Q.\n\nIf you're in trouble, \nhave a look at HOP \nor PBP.\n\nIMHO \nit is a good PPT, \nbut maybe a bit WTF... \nIDK 🤷\nTHX for attending \nand FWIW \nhere is a well deserved GIF.\n\nTY",
+          "link": "https://dev.to/thibaultduponchelle/the-ephemeral-miniconf-once-upon-perl-acronyms-366c",
+          "publishedOn": "2021-11-20T19:53:17.000Z",
+          "wordCount": 899,
+          "title": "The ephemeral miniconf - Once Upon Perl Acronyms"
+        },
+        {
+          "id": "https://dev.to/irenejoeunpark/internal-pr-for-release-03-421g",
+          "author": "irenejoeunpark",
+          "description": "A post by irenejoeunpark",
+          "link": "https://dev.to/irenejoeunpark/internal-pr-for-release-03-421g",
+          "publishedOn": "2021-11-20T19:51:33.000Z",
+          "wordCount": 348,
+          "title": "Internal PR for Release 0.3"
+        },
+        {
+          "id": "https://dev.to/sturpin/spread-operator-and-rest-parameters-4dij",
+          "author": "Sergio Turpín",
+          "description": "- English Version -\n\n\n\n\n\nThere are many pages wich explain what the Spread Operator (also know as three dots) and Rest Parameters are. \nIt is an operator that I really like and I would like to share with you some ways that I use it.\n📓 Spread Operator\nlet numbers = [1, 2, 3, 4];\nconsole.log( numbers );\n\n// => [ 1, 2, 3, 4 ] (print as array)\n\nWhen we use the spread operator we get the values ​​independently:\nlet numbers = [1, 2, 3, 4];\nconsole.log( ...numbers );\n\n// => 1 2 3 4\n\nAdd an array to another:\nlet customers = [ 'Claudia', 'Borja', 'May' ];\nlet otherCustomers = [ 'Sergio', 'Jose' ];\n\ncustomers.push( ...otherCustomers );\nconsole.log( customers );\n\n// => [ 'Claudia', 'Borja', 'May', 'Sergio', 'Jose' ]\n\nConcat arrays:\nlet customers = [ 'Claudia', 'Borja', 'May' ];\nlet otherCustomers = …",
+          "link": "https://dev.to/sturpin/spread-operator-and-rest-parameters-4dij",
+          "publishedOn": "2021-11-20T18:43:10.000Z",
+          "wordCount": 1539,
+          "title": "Spread Operator and Rest Parameters"
+        },
+        {
+          "id": "https://dev.to/ozboware/one-way-to-make-tic-tac-toe-using-javascript-1g3a",
+          "author": "ozboware",
+          "description": "There are quite a few posts online detailing how to make Tic Tac Toe using Javascript and other languages. This isn't meant to be a definitive \"how to\" on the subject, it's more of a \"how I did it\".\nFirst I built the HTML layout and style\n<div id=\"board\">\n    <div class=\"box\" data-ida=\"0\" data-idb=\"0\"></div>\n    <div class=\"box\" data-ida=\"0\" data-idb=\"1\"></div>\n    <div class=\"box\" data-ida=\"0\" data-idb=\"2\"></div>\n    <div></div>\n    <div class=\"box\" data-ida=\"1\" data-idb=\"0\"></div>\n    <div class=\"box\" data-ida=\"1\" data-idb=\"1\"></div>\n    <div class=\"box\" data-ida=\"1\" data-idb=\"2\"></div>\n    <div></div>\n    <div class=\"box\" data-ida=\"2\" data-idb=\"0\"></div>\n    <div class=\"box\" data-ida=\"2\" data-idb=\"1\"></div>\n    <div class=\"box\" data-ida=\"2\" data-idb=\"2\"></div>\n    <div id=\"resetBtn\">Res…",
+          "link": "https://dev.to/ozboware/one-way-to-make-tic-tac-toe-using-javascript-1g3a",
+          "publishedOn": "2021-11-20T18:36:23.000Z",
+          "wordCount": 3028,
+          "title": "One way to make Tic Tac Toe using Javascript"
+        },
+        {
+          "id": "https://dev.to/ideradevtools/building-secure-net-apps-for-ibm-i-2g0b",
+          "author": "IderaDevTools",
+          "description": "IBM i is a robust and reliable operating environment. It is still used by many organizations today, especially for data-heavy applications.\nOver the years, businesses have heavily customized IBM i applications to suit their business processes.\nMost of these applications, however, run on an RPG code format that outputs to monolithic 5250 green screens. These screens contrast starkly with modern software expectations.\nWhile 5250 green screens are effective, they don’t provide the rich UX-based experience users demand from modern software applications. In addition, because of the knowledge gap and dwindling talent pool of IBM i developers, most organizations run on multiple computing systems.\nThey generally have a different IBM i development team siloed from developers working on other comput…",
+          "link": "https://dev.to/ideradevtools/building-secure-net-apps-for-ibm-i-2g0b",
+          "publishedOn": "2021-11-20T17:53:26.000Z",
+          "wordCount": 1920,
+          "title": "Building Secure .NET Apps for IBM i"
+        },
         {
           "id": "https://dev.to/abstract/9-chrome-extensions-that-every-web-developer-should-use-f1a",
           "author": "Mark Vassilevskiy",
@@ -1474,6 +1555,24 @@
       "feedUrl": "https://sspai.com/feed",
       "siteUrl": "https://sspai.com",
       "articles": [
+        {
+          "id": "https://sspai.com/post/69893",
+          "author": "化学心情下2",
+          "description": "掐指算来，Apple 正式将其桌面端设备的系统架构从 X86 转移到 ARM 也已经有一年左右的时间。这个过程之中 Apple 不仅通过 Rosetta 2 巧妙地解决了原来 X86 应用的兼容性问题，与此同时越来越多的应用开发商也适时地更新应用加入了对 Apple silicon 的原生支持。但对应的则是硬件架构上带来的封闭——虽然提供了所谓的一整套虚拟化实现接口，但一年多来支持 Apple silicon 的虚拟化软件却屈指可数。\n作为 Mac 平台上较为老牌的商业虚拟化软件，VMware Fusion 在推进基于 M1 架构 Mac 虚拟机应用的进展却一直不快，一直到 2021 年 9 月才推出了首个技术预览版。再对比今年四月初就已推出基于 M1 架构正式版虚拟化软件的 Parallels Desktop，VMware Fusion 对于个人用户而言最大的优势可能就是免费了。\nVMware Fusion 更新之后，我也在第一时间下载了 VMware Fusion 首个基于 M1 架构技术测试版，来看看这款商业虚拟化软件在 M1 架构下的表现如何。\n能安装哪些系统\n因为基于 ARM64 架构，因此和 Parallels Desktop 类似，VMware Fusion for Apple silicon Public Tech Preview 也只支持同架构下的系统模拟。也就是说，安装的虚拟机系统也必须是基于 ARM64 的。\n但相比 Parallels Desktop 官方原生支持 Windows ARM64，VMware Fusion for Apple silicon Public Tech Preview 明确说明将不会「官方」支持 ARM64 架构的 Windows 系统，仅支持基于 ARM64 的 Linux 发行套件。官方给出的解释则是微软并没有推出零售版…",
+          "link": "https://sspai.com/post/69893",
+          "publishedOn": "2021-11-20T06:28:23.000Z",
+          "wordCount": 568,
+          "title": "M1 芯片 Mac 虚拟机新选择：VMware Fusion 公测版深度体验"
+        },
+        {
+          "id": "https://sspai.com/post/69981",
+          "author": "bakamio",
+          "description": "Matrix 首页推荐\nMatrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。\n文章代表作者个人观点，少数派仅对标题和排版略作修改。\n\n天气渐渐转凉，吃得也比以前多了起来。但吃归吃，还是不希望自己发胖或影响身体健康。接触「Locabo Diet 低糖质饮食」的概念有一段时间，也进行了相关尝试，但因为我并不是会做饭的人，所以想分享一下市面上就能轻松购买到的相关好物。只需简单的替换，就能减少许多糖和热量的摄入。\n什么是 Locabo，什么是糖质\nLocabo 严格意义上是日本一个 健康协会 的登录商标，名称来源于 low-carbohydrate（低碳水饮食），但观念有所不同，他们不提倡极端控制碳水，而是适量、健康、美味地进行摄取，因此称自己为 Locabo。\n\n糖质指的是碳水化合物中去除不参与代谢的食物纤维，其他的能参与代谢、产生能量的部分。\n\nLocabo 协会认为现代人饮食中摄取的糖质太多了。一餐饭中，两个饭团+一杯蔬果汁就有 100 g 糖质，而健康的糖质摄取量应该为一餐 20-40 g，再加上加餐 10 g，一天的摄入量应该控制在 70-130 g 之间。\n为此，需要做到：1. 米饭半碗；2. 多吃菜、鱼、肉；3. 使用低糖质的甜味剂代替砂糖。综合实践下来，采用低糖质替代品来减糖还是相对容易的，但减少主食的摄入量可能不那么容易，尤其是胃口大的人。不过不要紧，我们可以采用 Locabo 的部分理念来践行减糖活动。\n万变不离其宗：无热量甜味剂取代砂糖\n少数派作者的 这篇文章 中，「甜味剂的分类和无糖的概念」这一节，介绍了生活中常见的甜味剂。有些甜味剂使用少量即可产生强效甜味，但热量极低，可以作为糖的良好替代品。生活中会用到糖，主要是饮品（如奶茶）、烹饪（如糖醋菜…",
+          "link": "https://sspai.com/post/69981",
+          "publishedOn": "2021-11-20T03:32:06.000Z",
+          "wordCount": 305,
+          "title": "巧用置换法，让日常中摄入的糖再少一点点｜市贩商品的 Locabo Diet 实践"
+        },
         {
           "id": "https://sspai.com/post/70019",
           "author": "少数派编辑部",
@@ -2571,51 +2670,6 @@
           "publishedOn": "2021-10-23T03:53:48.000Z",
           "wordCount": 159,
           "title": "如果着火了，地铁怎样保证我们的安全？"
-        },
-        {
-          "id": "https://sspai.com/post/69462",
-          "author": "少数派编辑部",
-          "description": "☕️ TL;DR\n\n近期佳作推荐：[电影] 沙丘、[电影] 驾驶我的车、[港剧] 星空下的仁医、[美剧] 成瘾剂量、[动画] 迷宫标记者、[纪录片] 我叫保利·默里、[综艺] 一年一度喜剧大赛、[韩剧] 我的名字、[动画] 逆转世界的电池少女\n几则精彩预告：《神秘海域》真人电影公布预告，2022 年 2 月上映、《星际牛仔》真人美剧公布先导预告，11 月 19 日上线、陈坤、白宇领衔主演《风起陇西》发布预告、DC 公布《新蝙蝠侠》《闪电侠》等多部新作预告\n几则影视资讯：韦斯·安德森执导全明星阵容新片《法兰西特派》发布新海报、雷德利·斯科特执导新片《古驰家族》发布新海报、电影《误杀 2》曝光主演阵容\n\n👀 N 部作品推荐\n根据读者反馈，如果推荐语涉及剧透（对故事核心、暗线、伏笔、结局等关键要素的透露），我们会在对应作品的标题前增加 🔦 的 Emoji。\n如有其他建议也欢迎在评论区提出，感谢大家对「看什么」栏目的喜爱和支持。\n[电影] 沙丘\n\n关键词：剧情 / 科幻 / 冒险\n片长：156 分钟\n观看渠道：院线上映中；豆瓣链接\n\n沙漠版《王子复仇记》。\n\n@潘誉晗：标题下的「PART ONE」让人很难不期待第二部的出现，而本部作品也把故事的前因说清楚了——因为被银河帝国皇帝嫉妒家族威望，古老的厄崔迪家族被灭，与母亲成功逃出的少年保罗·厄崔迪前往沙漠寻找弗雷曼族寻求帮助，而保罗的预言能力也在这场冒险中渐渐苏醒。\n找了《降临》和《银翼杀手 2049》的导演丹尼斯·维伦纽瓦执导这部根据长篇科幻巨著改编的作品是相当正确的决定。擅长文艺科幻风格的他让 156 分钟的观影过程并不难熬，反而在流畅的叙事中感受到了诗一样的美感。导演擅用的废墟般的荒凉感结合科幻的风格，在这部作品中所呈现出来的效果，是在沙漠漫无边际荒芜感之下的科幻味。它很宏大，很肃穆，缓缓道来，又带着一种无法抵抗的宿命感。蒂…",
-          "link": "https://sspai.com/post/69462",
-          "publishedOn": "2021-10-22T09:30:00.000Z",
-          "wordCount": 401,
-          "title": "本周看什么丨最近值得一看的 9 部作品"
-        },
-        {
-          "id": "https://sspai.com/post/68976",
-          "author": "Fairyex",
-          "description": "这是少数派与国民好物 aigo 联合推出的信息储存设备的科普系列文章。作为国内早期的存储设备制造商及佼佼者，感谢 aigo 对本文提供的一系列支持，包括但不限于技术知识指导、市场难寻的老物件以及作者用于拆解介绍的最新产品等。\n我们希望通过最简洁通俗的描述，带领大家了解信息储存设备的基本原理，知道那些复杂的参数，如何挑选购买适合自己的存储设备，又是如何更好地使用，更安全稳定地保存我们的数据，以及未来我们能够用上什么技术。 另本系列虽然与 aigo 联合发起，但所有内容不涉及任何品牌指导或要求的商业营销。\n\n在上一章，我给大家介绍了机械硬盘的原理和参数，机械硬盘作为一种量大实惠的储存设备，已经为我们尽心尽力服务了几十年，为人类的发展做出了巨大贡献。在这几十年里，科学家们也没有停止对储存技术的探索，像是电影从胶片转向数字一般，偏向机械原理的机械硬盘已经不能满足越来越高的储存需求，新的储存技术不断出现。\n转过头来看，其它技术有点像魔法\n固态硬盘，或者说闪存技术就是在各种技术中脱颖而出的那个胜者，它不是效率最高的那个，但却是性价比比较高同时适用场景相对广泛的一个技术。\n工厂里面的闪存颗粒，来源：Made-in-China.com\n那这一章我们就来聊聊现在广泛使用的最新技术，也是购买储存设备的第一选择 —— 固态硬盘（SSD）。\n说到固态硬盘，大家对于它的第一印象应该都差不多，那就是快和贵。固态硬盘贵自有贵的道理，它技术原理上保证了速度与容量上限会不断刷新，同时摆脱了机械结构，不会像机械硬盘那样晃一下数据爆炸，还能做进小型化和各种奇奇怪怪形态的设备上。\n小小的内存卡和固态硬盘都是使用 NAND 闪存颗粒储存数据的\n虽然比起机械硬盘，现在固态硬盘仍然比较贵。但随着固态硬盘价格不断走低，以后它始终会成为我们的主力储存设备，机械硬盘只能退而其次成为担任仓库盘的角色，甚至不会再出现在我们电脑里…",
-          "link": "https://sspai.com/post/68976",
-          "publishedOn": "2021-10-22T08:05:32.000Z",
-          "wordCount": 840,
-          "title": "数字存储完全指南 03 ：固态硬盘的历史、结构与原理"
-        },
-        {
-          "id": "https://sspai.com/post/69449",
-          "author": "瞎玩菌",
-          "description": "Matrix 首页推荐\nMatrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。\n文章代表作者个人观点，少数派仅对标题和排版略作修改。\n\n2021.10.22 尽量每周五更新\n《瞎玩菌的游戏周报》是我对游戏领域的观察和点评。具有以下特点：\n\n宁缺毋滥，为读者带来价值\n主观，但基于事实和数据\n有新鲜感，但时效性不强\n享受游戏，但反对沉迷游戏\n提升品位，但反对鄙视链\n\n享乐\n「享乐（yuè ）」版块是为了推荐好的游戏音乐，「享」字体现「分享」音乐和「享受」音乐两重意思。我衷心希望也许有人因为音乐从而对游戏产生兴趣（我就是）。\n也欢迎读者评论推荐你们喜欢的游戏音乐，我将会在后续的游戏周报中分享。\n《The World of Random》 - The Blake Robinson Synthetic Orchestra\n\n这是来自游戏《迷失随机(Lost in Random)》的原声音乐。你可以在 Bandcamp | Spotify | YouTube Music | Apple Music 收听这首音乐，或者按名称在你喜欢的音乐服务中搜索。由于曲目较多，该原声在部分平台分为 2 张专辑收录。为方便你在文章页面内直接播放，下面是这首音乐的在线播放版本：\n \n要闻\n「要闻」版块为你带来游戏领域最重要的话题性事件，除了展示足够丰富的细节，还有我主观的点评、吐槽或提问。游戏本身就是一种互动娱乐，我非常鼓励读者通过评论互动的方式，参与到话题中来，而不是仅仅当个「读」者。\n开罗游戏控诉中国代理识君：付费下载和充值收入一分钱都没拿到\n\n以《游戏发展国》等像素经营模拟类游戏闻名的 日本开罗社，发表了《就开罗游戏代理事件告玩家书》。\n开罗游戏声称因 识君 重大违约，从 2018 年 9…",
-          "link": "https://sspai.com/post/69449",
-          "publishedOn": "2021-10-22T06:34:43.000Z",
-          "wordCount": 620,
-          "title": "瞎玩菌的游戏周报：《坦克大战》制作者辞世、买完所有 PS4 游戏要花多少钱？"
-        },
-        {
-          "id": "https://sspai.com/post/69442",
-          "author": "徐雁冰",
-          "description": "Matrix 首页推荐\nMatrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。\n文章代表作者个人观点，少数派仅对标题和排版略作修改。\n\n无论做什么事，都离不开「系统」二字，比如学习外语，从字母到单词，从句子到短文，如果没有系统学习，很难让自己的外语得到提升。同样地，写作也是一样，如果你想让自己在写作方面有更多的收获，就需要构建自己的「写作系统」。\n📝一、什么是写作系统？\n我们先来了解一下，什么是写作系统？我们平时说的一篇文章所包含的内容有标题、开头、正文、结尾、修辞方式、素材等等，这就是一个简单的写作系统。\n所以我们应该可以明白，写作系统不是单独的某一个部分（比如标题），也不是笼统的一整篇文章（文章也分为标题开头结尾等）。所以，所谓的写作系统就是由标题、开头、结尾、故事等各个部分组成的整体——这样概括也是为了让我们更好地理解什么是写作系统。\n📝二、为什么要构建写作系统？\n从我个人的写作经历中，以及我所遇到的写作者，在写作时都会遇到一些问题，最常见的有三个大问题：\n\n写作都是一次性的，没有良好的写作习惯；\n不能形成固定的写作风格；\n寻找素材很困难。\n\n我们分别来说一说这三个问题。\n1、写作都是一次性的，没有良好的写作习惯\n这是不少写作者最容易出现的问题之一了。我之前在深圳上班时，是负责新媒体这块的，与我同职责的还有个女生。但我们并不是为同一个公众号做内容，而是每人负责了两个公众号，如此一来，我们每天基本都要写上一篇内容（每个公众号需要隔天推送一次）。但写文章却成了很头痛的事，虽然在一开始我们也对公众号进行了规划，一方面是为了让客户感受到专业，另一方面也是给自己一个思路，但在写文章的时候，却都变成了「一次性的」。\n怎么理解一次性呢？就是因为没有写作系统，我们在写作…",
-          "link": "https://sspai.com/post/69442",
-          "publishedOn": "2021-10-22T03:31:34.000Z",
-          "wordCount": 76,
-          "title": "好文章是如何「炼成」的：你也可以有所收获的系统练习之路"
-        },
-        {
-          "id": "https://sspai.com/post/69455",
-          "author": "少数派编辑部",
-          "description": "你可能错过的新鲜事\n小米发布 Redmi 智能电视 X 2022 款\n\n \n小米于 10 月 20 日正式发布了 Redmi 智能电视 X 2022 款，新品采用全面屏设计，屏占比为 97%，拥有△E≈2 的专业显示器级色准，支持 10.7 亿色，94% DCI-P3 广色域，具备 AI-PQ、AI-AQ 智能音画调校，120Hz 高刷屏并支持 120Hz MEMC，还支持 FreeSync Premium，同时引入低帧率补偿技术（LFC）。同步支持杜比视界、杜比全景声等高端音画标准，硬件性能上四核 A73 芯片，配备 3GB+32GB 内存，采用 HDMI 2.1 接口并支持自动低延迟模式 （ALLM）。售价上，55英寸版本售价为 2999元，65英寸版本售价为 3999元，即日开启定金预售。10 月 31 日正式开售。来源\n联想拯救者与 Nanoleaf 推出联名奇光板\n10 月 21 日，联想拯救者正式宣布与 Nanoleaf 联名推出游戏氛围配件智能奇光板。该智能配件同时支持 Homekit、米家智能家具平台。控制模式方面，可以语音控制、识别声音自动调节、触摸控制。色彩方面，支持 1600 万色彩。预计售价为 1400 元左右一套。来源\n\n雷神发布 911M 创作大师 16:10 巨幕本\n\n雷神于 10 月 21 日正式发布雷神 911M 创作大师 16:10 巨幕本，该笔记本主要专为图像后期、视频等创作用途设计，搭载英特尔酷睿 i7-11800H 处理器，其具有 8 核 16 线程，睿频频率可达 4.6GHz。笔记本还配备英伟达 RTX 3060 显卡，内置双风洞散热器，具有四根热管、四出风口。屏幕为 16 英寸 16:10 屏幕，拥有 2560×1600 高分辨率，165Hz 刷新率。屏幕还覆盖 100% sRGB 色域。标配 16GB 双通道内存，同时还可选配…",
-          "link": "https://sspai.com/post/69455",
-          "publishedOn": "2021-10-22T01:00:56.000Z",
-          "wordCount": 418,
-          "title": "派早报：小米发布 Redmi 智能电视 X 2022 款、联想拯救者与 Nanoleaf 推出联名奇光板等"
         }
       ]
     },
@@ -2624,6 +2678,24 @@
       "feedUrl": "https://feeds.appinn.com/appinns",
       "siteUrl": "https://www.appinn.com",
       "articles": [
+        {
+          "id": "https://www.appinn.com/?p=40510",
+          "author": "青小蛙",
+          "description": "Aliyunpan Webdav for QNAP 是一个 QNAP 威联通插件，可以让阿里云盘以 WebDAV 协议的文件服务器挂载到你的 NAS 中，并可通过第三方客户端连接，实现上传、下载文件。",
+          "link": "https://www.appinn.com/qnap-aliyunpan-webdav/",
+          "publishedOn": "2021-11-20T09:49:47.000Z",
+          "wordCount": 701,
+          "title": "适用于 QNAP 威联通的阿里云盘 WebDAV 插件"
+        },
+        {
+          "id": "https://www.appinn.com/?p=40504",
+          "author": "青小蛙",
+          "description": "喵切 3.0 是一款非常有趣的 Windows 小工具，它是一只在屏幕顶部的猫咪，只需要用鼠标下拉猫咪，就能帮你快速切换桌面壁纸，非常简单有趣。另外还有晴天娃娃、圣诞树等几个形象。@Appinn 继在",
+          "link": "https://www.appinn.com/cat-switch/",
+          "publishedOn": "2021-11-20T03:51:14.000Z",
+          "wordCount": 690,
+          "title": "喵切 3.0 – 下拉猫咪，切换壁纸[Windows]"
+        },
         {
           "id": "https://www.appinn.com/?p=40501",
           "author": "青小蛙",
@@ -3092,15 +3164,6 @@
           "publishedOn": "2021-10-23T11:06:35.000Z",
           "wordCount": 920,
           "title": "CleanUp.pictures – 魔法橡皮擦：快速删掉任何图片中不需要的部分"
-        },
-        {
-          "id": "https://www.appinn.com/?p=40146",
-          "author": "青小蛙",
-          "description": "昨天青小蛙折腾了在 Windows 11 上安装 Windows Subsystem for Android，也就是在 Windows 11 上运行 Android 系统，装好之后发现，这个所谓的子系",
-          "link": "https://www.appinn.com/how-to-install-android-app-in-windows11/",
-          "publishedOn": "2021-10-22T03:40:37.000Z",
-          "wordCount": 1090,
-          "title": "如何在 Windows 11 WSA 中安装安卓应用？"
         }
       ]
     },
@@ -3144,15 +3207,6 @@
           "publishedOn": "2021-10-29T01:02:26.000Z",
           "wordCount": 1031,
           "title": "科技爱好者周刊（第 181 期）：移动支付应该怎么设计？"
-        },
-        {
-          "id": "http://www.ruanyifeng.com/blog/2021/10/weekly-issue-180.html",
-          "author": null,
-          "description": "这里记录每周值得分享的科技内容，周五发布。\n本杂志开源（GitHub: ruanyf/weekly），欢迎提交 issue，投稿或推荐科技内容。\n周刊讨论区的帖子《谁在招人？》，提供大量程序员就业信息，欢迎访问或发布工作/实习岗位。\n封面图\n\n香港摄影师李海涛拍摄的广州岑村玄武山公园。（via）\n本周话题：你想住在中国哪里？\n很多人不喜欢一线城市\"北上广深\"，觉得生活压力大，房价奇高，空间局促嘈杂，想要离开。\n但是离开以后，去哪里呢？哪个城市能够提供令人满意的生活方式，以及良好的社会经济状况？\n\n我最近读到时事评论家宁南山的一篇文章，觉得很有启发，跟大家分享一下。\n他说，考虑未来的居住城市时，应该对中国的三个宏观趋势有所认知。\n首先，中国各地的基础设施，都是差不多的。 我们是统一的国家，各省的高铁、高速公路、电力网、无线通信、宽带网等等，基本都是一样的，同样的标准、同样的材料、同样的施工、同样的管理，不会有某个省的基础设施特别好、另一个省特别差这种情况。\n\n其次，各省的发展速度最终会逐渐趋同。沿海省份的增速会降下来，内地省份会赶上来，不会有某个省一直高速发展，另一个省一直低速发展这种情况。长远来看，各省的社会经济和发展状况，最终都会达到一个基本的现代化水平，不会有某个省显著落后于全国平均水平。\n再次， 各省的真正差异来自于产业。 比如，广东的电子业、上海的金融业、北京的政治中心、西部的能源产业等等，都是有地域性的，这个很难改变。产业的兴盛决定了收入的差异，这才是地域差异未来的主要来源。\n\n基于上面三点看法，可以预测，如果中国人均 GDP 继续增长，到了2035年比现在增长一倍，那么中国各地的生活条件都会达到一个相当不错的水平。\n目前，全国的人均 GDP 大概是1万美元，一线城市是2万多美元。到了2035年，如果全国人均 GDP 能够达到2万美元，一线城市达到五万美元，这就意…",
-          "link": "http://www.ruanyifeng.com/blog/2021/10/weekly-issue-180.html",
-          "publishedOn": "2021-10-22T00:35:24.000Z",
-          "wordCount": 440,
-          "title": "科技爱好者周刊（第 180 期）：你想住在中国哪里？"
         }
       ]
     },
@@ -3214,6 +3268,24 @@
       "feedUrl": "https://www.zhihu.com/rss",
       "siteUrl": "http://www.zhihu.com",
       "articles": [
+        {
+          "id": "http://www.zhihu.com/question/497248872/answer/2233520905",
+          "author": "炒饭",
+          "description": "大家好，我是游戏的作者炒饭。\n发布的这个星期情绪波动很大，补了一个长觉到现在终于缓过来了。\n到现在为止，游戏卖了大概两万份，很多很多了\n虽然距离回本还有距离（抱歉，我烧太多）但希望还是有的。\n\n\n至于怎么评价自己的游戏，现在还没办法说。\n目前的状态很像刚刚考完试的学生，对一切还是懵的。\n做项目很像考试，不同的环节是不同的题。\n\n\n有些题你有把握，做的很顺畅；有的题没把握，瞎写了个答案。\n有的题目不会但你蒙对了，有些题本来可以对粗心做错了。\n还有些题呢，超出了你的能力范畴，想蒙个答案都不知道怎么写。\n\n\n反正现在成绩出来了，分数还行。\n之前做好了不及格的准备，做好了暴死的准备。\n后路也准备好了，简历写了好几份，打工的地方也联系过。\n现在看来……虽然中间一波三折，但暂时应该不用去打工了。\n\n\n回过头看去，项目里问题很多，\n系统的，设计上的，剧本里节奏的，人物设计上的都有。\n还有大家很诟病的结局，结尾的都合降神，段子太多建政水平低，\n这些问题无法辩驳，狡辩找理由也没啥意义。\n\n\n借口也好找——受限于时间也受限于水平，\n就像考试的时候遇到难题，超出了你的水平和知识储备，\n这种题你只能强行答，答完了检查多少遍，也未必能改对。\n\n\n接着往下说估计又要开始哭穷了，说点梦想啊之类的场面话，\n但这两年大家都不容易，谁都穷，谁也都有梦想。\n与其说那些，不如说点更有意思的。\n\n\n其实最早这是个卖萌的游戏，篇幅很短（2-3小时时长），\n当时手上钱不多，做外包垫了一些钱回不来，不敢做规模大的企划。\n正好去日本旅游（购物旅行团）了几天，认识了很多做代购的大妈，\n那几天梦见自己去阴间做代购，代购什么黄泉化妆品孟婆汤阴间树叶。\n后来就根据这个写了个小故事，男主角是个骗子，骗了个兔子精去做代购。\n故事也没啥主题，就是纯卖萌，日常，搞笑，带点小温馨。\n\n\n然后剧本我刚开了个头，疫情来了。作为武汉人很崩溃。\n\n…",
+          "link": "http://www.zhihu.com/question/497248872/answer/2233520905?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
+          "publishedOn": "2021-11-20T12:59:26.000Z",
+          "wordCount": 17,
+          "title": "如何评价《小白兔电商》这款 AVG 模拟经营游戏？"
+        },
+        {
+          "id": "http://zhuanlan.zhihu.com/p/435109365",
+          "author": "中国文艺网",
+          "description": "喜迎文代会 · 学习 传习 讲习\n\n\n党的十八大以来，习近平总书记对文艺工作高度重视，对文艺工作者亲切关怀，给文艺界以巨大鼓舞和有力鞭策。\n中国文艺网特别推出“喜迎第十一次全国文代会”栏目，在“牢记重托 不负期望”系列中邀请知名文艺家讲述当面聆听习近平总书记重要讲话或者收到总书记致信回信的切身感受，表达牢记重托、不负期望，繁荣发展文艺事业、推动文化强国建设的决心与信心。\n\n\n本期推出中国文联荣誉委员、中国戏剧家协会名誉主席、著名京剧表演艺术家尚长荣专访。\n中国文联荣誉委员、中国戏剧家协会名誉主席、著名京剧表演艺术家尚长荣\n2014年，习近平总书记亲自主持召开文艺工作座谈会并发表重要讲话。尚长荣是现场发言的7位文艺家之一。\n2020年，习近平总书记给中国戏曲学院师生回信。尚长荣是中国戏曲学院老中青少四代师生代表之一。\n在习近平总书记讲话、回信精神鼓舞下，年逾八旬的尚长荣依然活跃在舞台上，为中华优秀传统文化传承创新不懈奔忙。他说，习近平总书记给广大文艺家、文艺工作者增添了信心、传递了能量、给予了动力。戏曲工作者要更加坚定文化自信，在守正创新的基础上，不断发扬中华优秀戏曲文化。\n访谈\n中国文艺网：2014年，习近平总书记亲自主持召开文艺工作座谈会。您是现场发言的7位文艺家之一。能和我们谈一谈您的发言情况吗？\n尚长荣：那次会议我记忆犹新。我是第二个发言的。汇报完毕后，习近平总书记和我进行了交流。他提到了我主演的《贞观盛事》《廉吏于成龙》，认为很有现实针对性，能够起到启迪、警示的作用，支持我们继续搞好这方面的工作。\n中国文艺网：习近平总书记在文艺工作座谈会上发表了重要讲话，您个人感觉对我国戏曲事业和戏曲工作者来说具有什么样的意义？\n尚长荣：我反复地学习总书记的讲话。我觉得，这次讲话长了戏曲人的志气，长了中华优秀传统文化的志气。总书记的讲话是指针，给文艺工作指引了方向，给广大文艺家、文…",
+          "link": "http://zhuanlan.zhihu.com/p/435109365?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
+          "publishedOn": "2021-11-19T09:33:10.000Z",
+          "wordCount": 36,
+          "title": "喜迎第十一次全国文代会 | 尚长荣：“守正创新”四字重千斤"
+        },
         {
           "id": "http://www.zhihu.com/question/500033418/answer/2232215544",
           "author": "观察者网",
@@ -3825,87 +3897,6 @@
           "publishedOn": "2021-10-23T03:54:10.000Z",
           "wordCount": 129,
           "title": "如今「网红打卡地」泛滥，褪下滤镜后还有哪些值得一去的旅行目的地？"
-        },
-        {
-          "id": "http://www.zhihu.com/question/20498808/answer/2183501118",
-          "author": "拆车实验室",
-          "description": "现在汽车上搭载的AEB主动刹车系统就提供这样的功能。\n拆车实验室 | 6款车AEB主动刹车横评 亲测实证 切勿依赖\n我们分别测试了6款车的AEB主动刹车功能，包括长安UNI-T、长安UNI-K、广汽传祺GS4 PLUS、广汽埃安Y、思皓QX、岚图FREE。\n在测试中发现各家AEB主动刹车能力各不相同，识别假人、假车能力各有侧重，在雨雾天气下防追尾功能全部失效，面对假白墙、常见障碍物全军覆没。\n\n来源：知乎 www.zhihu.com\n拆车实验室\n点击下载\n828 个回答，查看全部。\n为什么汽车刹车和油门非要设计在一起？\n为什么汽车不能设计成用手刹车？",
-          "link": "http://www.zhihu.com/question/20498808/answer/2183501118?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2021-10-22T09:22:43.000Z",
-          "wordCount": 15,
-          "title": "为什么汽车不能设计成快撞车就自动刹车？"
-        },
-        {
-          "id": "http://www.zhihu.com/question/493745295/answer/2182710663",
-          "author": "腾讯医典",
-          "description": "玩游戏并非只有弊端，也可以用来治病\n前段时间，美国食品药品监督管理局（FDA）批准了一款电子游戏——EndeavorRX，作为注意缺陷多动障碍（ADHD）儿童的治疗措施之一。\n也就是说，美国医生可以开具电子游戏作为“处方药”了。\n\n（图片来源：美国FDA批准EndeavorRX可用于ADHD治疗的新闻报道）\nEndeavorRX是一款益智类的电子游戏，游戏公司经过了时长七年的临床试验，研究了600多名儿童，对于儿童ADHD治疗给出了指导性的建议——认为EndeavorRX可以改善8到12岁ADHD儿童的注意功能。这一研究结论也发表在了世界顶尖的医学杂志柳叶刀（The Lancet）上[1]。\n\n\n\n一时间，医疗界哗然，谁也没想到让人诟病的电子游戏，竟然成了可以治疗疾病的“良药”。\nADHD，究竟是什么病？\n普通人对于注意缺陷多动障碍（Attention-Deficit Hyperactivity Disorder，ADHD），乍一听有点陌生，但大部分人应该都听过它的另一个名字——儿童多动症。\n多动症是儿童时期常见的行为障碍之一，与同龄儿童相比，多动症儿童存在注意集中困难、注意持续时间短暂、活动过度或容易冲动，特别是“注意力集中困难”这点，多动症儿童随时随地都可能会犯。\n怎么判断孩子有没有多动症呢？\n假设你的孩子能认真玩积木，在陌生环境下很乖，聊天时还能围绕固定的主题，那可能就不是多动症。\n因为多动症儿童的注意力缺陷是几近分散到“秒”为计算单位的，就像钢琴上的琴键，黑键是多动症患儿的注意力，而白键是分心的事，白键反复穿插在黑键中。\n\n（图片来源：网络）\n但由于多动症和普通孩子的“活泼好动”区别并没有那么明显，所以很被家长忽视，甚至错过有效的治疗时间。\n在世界范围内，约有3.4%的儿童和青少年受到影响，而在我国，多动症的总体患病率约为6%~9%。\n不仅仅是孩子会患病，一部分多动…",
-          "link": "http://www.zhihu.com/question/493745295/answer/2182710663?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2021-10-22T08:50:39.000Z",
-          "wordCount": 172,
-          "title": "全国政协委员称「不能简单地对网络游戏扣帽子、打棍子」，要明确游戏的重要责任，有哪些值得关注的信息？"
-        },
-        {
-          "id": "http://www.zhihu.com/question/493816614/answer/2182951105",
-          "author": "东风快递",
-          "description": "关于长征，给大家介绍一件物品，再讲述一个小村庄的故事吧。\n爬雪山、过草地，红军用顽强的意志征服了人类生存极限、创造了世界军事史上的奇迹。陪伴红军战士克服一路险阻、共同走过二万五千里的，就是这样的草鞋。\n当年，红军就是穿着这样的草鞋走完了长征\n云南玉龙县香格里雄古村，是红军长征时两路部队经过的一个地方。这里留给人们红色往事，也留下了追寻幸福生活的种子。火箭军某部上等兵和必坚，就来自这个村子。\n\n过去，由于资源和劳动力等原因，这里是典型的贫困村。村民靠天吃饭，只能赚取微薄的收入，担负着沉重的生活重担。\n\n\n随着脱贫攻坚号角吹响，这里开始发展红色旅游，红军临时医院、红色文化纪念馆、红色纪念碑……红军留下的一个个遗迹被“点亮”，成为振兴经济的新的增长点。\n“红军村”的幸福蜕变\n村民发展水果、土鸡等种养殖业，打造红色文化体验线路，红色原生力正激励更多人走向致富路。\n当年烈士为信仰而奋斗的愿景，正在中华大地上一一实现，一个又一个小村落，一日胜一日美丽。\n\n来源：知乎 www.zhihu.com\n东风快递\n点击下载\n99 个回答，查看全部。\n怎么看跨越2021，朱日和红军胜利？\n你们知道的长征是什么样的，有哪些故事？",
-          "link": "http://www.zhihu.com/question/493816614/answer/2182951105?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2021-10-22T03:35:37.000Z",
-          "wordCount": 54,
-          "title": "长征胜利 85 周年，有哪些关于长征的故事或诗词？今天的我们该怎样践行长征精神？"
-        },
-        {
-          "id": "http://www.zhihu.com/question/493814225/answer/2182923238",
-          "author": "中国文艺网",
-          "description": "【中国文艺网微评：人生一旦走错，必被舞台所弃！】\n不修身何以立心，不守正岂能铸魂！人生和艺途，行差踏错常在一念之间，自律自爱首重日常功夫。心存敬畏，方能慎独慎微；行而知止，才可行稳致远。记住红线，守住底线，是从艺先要做人的基本要求；崇德尚艺，德艺兼修，是做人不能忘本的切实体现。人生一旦走错，必被舞台所弃！真才学，好德行，高品位，是新时代文艺工作者要牢牢放在心里的自我要求！\n\n来源：知乎 www.zhihu.com\n中国文艺网\n点击下载\n767 个回答，查看全部。\n如何看待钢琴家李云迪直播卖货?\n国内有没有比较出色的钢琴家？除了郎朗和李云迪?",
-          "link": "http://www.zhihu.com/question/493814225/answer/2182923238?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2021-10-22T03:20:21.000Z",
-          "wordCount": 17,
-          "title": "媒体评价李云迪被拘是「自作孽不可活」，其音乐家协会会员被取消，广州城市形象代言人被终止，他彻底糊了吗？"
-        },
-        {
-          "id": "http://www.zhihu.com/question/493816614/answer/2182886710",
-          "author": "新华社",
-          "description": "聆听历史回响 阔步新的长征——写在红军长征胜利85周年之际\n新华社北京10月21日电    新华社记者李学勇、李砺寒\n\n这是一条筚路蓝缕之路，也是一条通往胜利之路；\n这是一条荆棘遍布之路，也是一条开创新局之路。\n栉风沐雨，浴血淬火。长征，是改变中国命运的伟大远征。长征精神，已成为中国共产党人精神谱系中的宝贵财富。\n历史照亮未来，征程未有穷期。\n当我们站在建党百年这一重要时间节点，再次翻开长征这本历史教科书，会对那一段伟大远征留下的历史启示有着更加深刻的认识。\n当我们站在“两个一百年”奋斗目标的历史交汇点上，再次品读长征这一部壮丽史诗，展望中华民族伟大复兴的美好前景，心底会激荡起更为强大的奋进力量，信心满怀行进在新时代的长征路上。\n\n\n\n↑这是红军长征经过的草地（资料照片）。新华社发\n长征，一条信仰之路——革命理想高于天，理想信念之火一经点燃就会产生巨大的精神力量\n万里长征路，每一步都非常艰难。\n在敌人的围追堵截中，红军一次又一次杀开血路、突出重围。是什么，让红军前赴后继、一往无前？\n答案，写在那连绵的雪山上。\n红四方面军前卫营走过党岭雪山时，有人看到雪地里伸出一只胳膊，手中紧紧攥着一个党证和一块银元，党证上写着“中共党员刘志海，1933年2月入党”。牺牲前，这名红军战士想交最后一次党费。\n答案，写在那无尽的草地里。\n军旅作家王树增说他曾在档案中看到：过草地时没吃的，不少战士吃草中毒。于是有部队成立试吃小组，参加者有一个条件——必须是党员。“我想，当他们误吃一种植物倒下的那一刻，他们是没有遗憾的，因为他们心中有一种梦想，有信仰的支撑。”\n答案，写在这支队伍每个人的心中。\n许多红军战士投身革命之初不识字甚至没有名字，他们并不确切知道什么是革命，但他们从拯救天下穷苦人的实际行动中，从自身命运的巨大改变中，逐步明白他们为之献身的共产主义事业的伟大意义。于是，他们有了改变命运的勇气，…",
-          "link": "http://www.zhihu.com/question/493816614/answer/2182886710?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2021-10-22T03:04:57.000Z",
-          "wordCount": 139,
-          "title": "长征胜利 85 周年，有哪些关于长征的故事或诗词？今天的我们该怎样践行长征精神？"
-        },
-        {
-          "id": "http://www.zhihu.com/question/420545697/answer/2178180051",
-          "author": "地道风物",
-          "description": "在广西\n一万种米粉向你奔来\n中国最复杂的一碗米粉，在广西。\n浩荡的南方米粉江湖，强手如林。湖南人吃米粉只在省内PK，十四个地市谁也不服谁；江西勉强承认自己“阿卡林省”，但江西米粉必须好吃到封神；不过论起米粉的丰富程度，广西人直接摊牌了：我们的米粉天下第一！\n\n广西人的米粉——多多多制图/monk\n广西的粉，几乎融入了当地饮食的“半壁江山”——百色的烧鸭粉、崇左的鸡肉粉、钦州的猪脚粉、玉林的牛巴粉、河池的吊烧粉、柳州的螺蛳粉、北海的海鲜粉……鸡鸭猪牛、河鲜海鲜，无所不包。\n\n老友粉，汤与料的强强结合。摄影/巨石王生\n造型上也颇为别具一格——刀削面似的切粉、用“筛子”挤出来的滤粉、带点酸味分分钟上头的生榨米粉、长得真和虫子一样的“粉虫”、又粗又大的卷筒粉……高矮胖瘦、长短粗细，应有尽有。\n\n横州市的簸箕粉，吃取随意，突出大口豪爽。摄影/韦宇晴\n如果真的有“米粉天堂”，那应该是广西的模样。\n\n\n广西人的米粉\n拌得下全宇宙\n广西人对米粉有多深情？\n就像四川人遇见美味的菜肴，要“留着晚上下面吃”，广西人则把每座城市最惊艳的食材，统统都留到了米粉里。靠山吃山，靠海吃海，形成了广西各个城市各具特色的米粉风味。\n\n螺蛳粉猪脚Plus版里全是广西米粉的经典食材摄影/陆宇堃\n\n\n钦州猪脚粉，神仙也打滚！\n广西人吃粉，首先是真的费肉。\n比如一碗钦州猪脚粉，盛的不是粉，是满满的胶原蛋白。吃粉之前，钦州人会在盆里挑选猪脚放入碗里，喜肥或喜瘦、想大口吃肉还是细啃骨头，都能凭食客自行选择。\n\n大块猪脚镇米粉。摄影/陆宇堃\n猪脚油亮发红，卤汁香气扑鼻，是鉴定猪脚粉的秘籍。烫好的粉，需要一勺猪脚卤汁注入灵魂，汤色微黄，猪脚软而不烂、肥而不腻，连汤带粉一碗下肚，十分满足。\n\n\n崇左鸡肉粉，最炫融合风\n钦州往西的崇左，天等县鸡肉粉是原汁原味的鸡汤加鸡肉，以鲜甜作为米粉的基底。鸡选用当地农家土鸡，以白切做法，吃粉…",
-          "link": "http://www.zhihu.com/question/420545697/answer/2178180051?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2021-10-22T02:35:39.000Z",
-          "wordCount": 132,
-          "title": "广西旅游，有什么美食不容错过？"
-        },
-        {
-          "id": "http://www.zhihu.com/question/493816614/answer/2182800456",
-          "author": "一号哨位",
-          "description": "著名报告文学作家王树增先生在《长征》的开篇这样写道：\n当人类社会迈入二十一世纪的时候，《人类1000年》一书由美国时代生活出版公司出版，该书公布了从公元1000年至公元2000年间，人类历史进程中所发生的一百件重要事件。中国的三个事件被世界认为具有巨大影响，并入选人类历史进程中的一百件重要事件。\n其中第三个事件：长征。\n来自世界不同民族、不同国家、不同学科领域的学者们，在评选一千年间影响了人类历史进程的一百件重要事件时，他们在意识形态上与中国共产党人并无共同之处，他们也不是从中国共产党党史和中国红色武装的军史角度来看待长征的。\n但是，毫无疑问，在二十一世纪回首长征，中国人应该能够从人类文明发展的角度去探求中国历史上的这一重要事件。\n……\n世界上不曾有过像中国工农红军这样的军队：指挥员的平均年龄不足二十五岁，战斗员的年龄平均不足二十岁，十四岁至十八岁的战士至少占百分之四十。在两万五千里的征途上，平均每三百米就有一名红军牺牲。\n世界不曾有过像中国工农红军这样的军队，官兵军装是一样的，头上的红星是一样的，牺牲时的姿态也是一样的。他们激情万丈、前赴后继、视死如归，决心为每一个红军所认同的理想牺牲生命。\n这就是长征！\n人类历史上罕见的不畏艰难险阻的远征。\n长征跨越了中国十五个省份，转战地域面积的总和比许多欧洲国家的国土面积都大。\n长征翻越了二十多座巨大的山脉。其中的五座位于世界屋脊之上且终年积雪。\n长征渡过了三十多条河流。包括世界上最汹涌险峻的峡谷大江。\n长征走过了世界上海拔最高的广袤湿地。那片人烟罕至的湿地的面积几乎和法国的国土面积相等。\n而更重要的是，在总里程超过两万五千里的长征途中。中国工农红军始终在数十倍于己的敌人的追击、堵截与合围中。遭遇的战斗在四百场以上。平均三天就发生一次激烈的大战。\n一位叫Ｂ·瓜格里尼的意大利诗人这样写道：\n黑夜沉沉，朦胧的黎明前时分，\n遥望辽阔而古老的亚细亚莽原上，\n一条觉醒的金光四射的巨龙在跃动、跃动，\n这就是那条威力与希望化身的神龙！\n他们是些善良的，志气高、理想远大的人，\n交不起租税走投无路的农家子弟，\n逃自死亡线上的学徒、铁路工、烧瓷工，\n飞出牢笼的鸟儿——丫环、童养媳，\n有教养的将军，带枪的学者、诗人……\n就这样汇成一支浩荡的中国铁流，\n就这样一双草鞋一根土枪，踏上梦想的征程！\n\n这是小时候学的课文《丰碑》，当时读着只觉得感动。长大后再读，才猛然发现，这就是我们的父辈啊，是用尽最后一点力气拖着重病的国家踉跄前行的父辈啊！\n因为相信未来的胜利，所以他们看见了未来。\n\n\n来源：知乎 www.zhihu.com\n一号哨位\n点击下载\n99 个回答，查看全部。\n怎么看跨越2021，朱日和红军胜利？\n你们知道的长征是什么样的，有哪些故事？",
-          "link": "http://www.zhihu.com/question/493816614/answer/2182800456?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2021-10-22T02:22:49.000Z",
-          "wordCount": 34,
-          "title": "长征胜利 85 周年，有哪些关于长征的故事或诗词？今天的我们该怎样践行长征精神？"
-        },
-        {
-          "id": "http://www.zhihu.com/question/493816614/answer/2182743235",
-          "author": "三剑客",
-          "description": "最近正在重温《亮剑》，又看了很多相关的解说，真是每一次看都有新感觉。就和大家聊聊李云龙的原型——王近山。这个传奇人物，19岁已经是一名团长，带着手下的将士们英勇杀敌，长征前夜，他还干了一件大事。\n\n“我要死也要死的像个爷们,我不能这样窝窝囊囊的死了,要死也要死在冲锋的路上！”戏里的李云龙像一头怒吼的雄狮，咆哮在草原之上，所有人都死一般的沉寂，因为他们很清楚，这个人已经不再是一个普通的军人，他是不取得胜利不罢休的斗士，他是勇猛无畏的战神！\n戏外的王近山，李云龙的真实原型，从士兵到领袖，所有人都知道他那个响当当的外号“王疯子”。那还是红军时期，王近山当连长的时候，一次战斗中与敌人近身肉搏，他抱住敌人滚下悬崖，头上被尖石戳穿了一个洞，但由于情况紧张，他竟然没有感觉到剧痛，竟然还能拔出手枪给了对方一枪，从此他不仅头上多了一道疤，也多了一个跟随他一辈子的外号“王疯子”。\n1、起点\n\n1915年10月29日，农历九月廿一，这个时候湖北已经很冷了，但对于贫苦的王家人来说，却是一片暖意融融，因为这一天他们的孩子出世了——一个白白胖胖，虎头虎脑，相当有灵性的男婴。\n孩子他爹，我们该给他起个什么名字好呢？\n就叫王文善吧，希望他以后做一个读书人，保持善良的秉性，不要像我们一样就好。\n孩子，我们并不能给予你太多，只希望你能够堂堂正正地活过一辈子，做一个男子汉。\n2、从军\n在那个时代，贫苦人家想出人头地是很困难的，没有安定的社会环境，没有稳定的经济来源，又不可能去学校念书（王近山九岁就做了放牛郎），想要走出大山，闯出一番事业，途径只有一个——闹革命。\n于是到了1930年3月，王文善决定做一件大事情——加入红军。不过，在此之前，他还要先做另一件事，改名。\n我想像一座大山般坚强不倒，威武挺拔，就叫王近山吧。\n这一天起，15岁的王文善正式更名为王近山，身份也从一个贫苦农民转变为一名“红小鬼”。事实证明，王…",
-          "link": "http://www.zhihu.com/question/493816614/answer/2182743235?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2021-10-22T02:17:19.000Z",
-          "wordCount": 72,
-          "title": "长征胜利 85 周年，有哪些关于长征的故事或诗词？今天的我们该怎样践行长征精神？"
-        },
-        {
-          "id": "http://www.zhihu.com/question/493772413/answer/2182772969",
-          "author": "中国文艺网",
-          "description": "来源：知乎 www.zhihu.com\n中国文艺网\n点击下载\n2189 个回答，查看全部。\n钢琴价值靠什么来体现？\n沈文裕为什么不能红？",
-          "link": "http://www.zhihu.com/question/493772413/answer/2182772969?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2021-10-22T02:10:49.000Z",
-          "wordCount": 25,
-          "title": "李云迪嫖娼被抓后，后续的艺术生涯会怎样？还能活跃在古典音乐圈吗？"
         }
       ]
     },
@@ -3914,6 +3905,44 @@
       "feedUrl": "https://www.xda-developers.com/feed",
       "siteUrl": "https://www.xda-developers.com",
       "articles": [
+        {
+          "id": "https://www.xda-developers.com/?p=551379",
+          "author": "Gaurav Shukla",
+          "description": "Even though Apple is slowly migrating from the Lightning port to USB Type-C, many of its older and existing devices still use the Lightning port for charging and data transfer. And the company supplies a Lightning cable with pretty much every product that needs it, but Apple cables are notoriously flimsy and very often break.\nThe post These are the Best Lightning Cables to buy in 2021 appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/best-lightning-cables/",
+          "publishedOn": "2021-11-20T15:00:32.000Z",
+          "wordCount": 1620,
+          "title": "These are the Best Lightning Cables to buy in 2021",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/11/best_lightning_cables.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=547469",
+          "author": "Dylan Raga",
+          "description": "Pixels are no stranger to top-end phone prices. Though all this time, it’s seemed that Google hadn’t yet released a true spiritual flagship that they were happy with—at least not until now with the Pixel 6 and Pixel 6 Pro. This year, it’s clear that Google’s new phones are the ones that the company takes\nThe post Google Pixel 6 and Pixel 6 Pro Display Review: Questionable value OLED tech appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/google-pixel-6-pro-display-review/",
+          "publishedOn": "2021-11-20T13:00:52.000Z",
+          "wordCount": 6742,
+          "title": "Google Pixel 6 and Pixel 6 Pro Display Review: Questionable value OLED tech",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/11/google_pixel6_pixel6pro_viewangles_1.webm",
+            "length": "613455",
+            "type": "video/webm"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=543879",
+          "author": "Team XDA",
+          "description": "What makes a smartphone camera system great? Some phone makers believe in using the newest, most capable camera hardware, like a Periscope zoom lens or a main camera with a large image sensor. Other phone brands have placed all their chips on “computational photography” — aka software — achieved via custom-built Image Signal Processing and\nThe post How the vivo X70 Series Brings True Professional Photography Features to Mobile with ZEISS Optics appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/the-vivo-x70-series-photography/",
+          "publishedOn": "2021-11-20T11:00:58.000Z",
+          "wordCount": 2184,
+          "title": "How the vivo X70 Series Brings True Professional Photography Features to Mobile with ZEISS Optics",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/09/Vivo-X70-Pro-Plus-25.jpg"
+          }
+        },
         {
           "id": "https://www.xda-developers.com/?p=558757",
           "author": "Rich Woods",
@@ -8903,366 +8932,6 @@
           "enclosure": {
             "url": "https://www.xda-developers.com/files/2021/10/GALAXYTABTHREE_1634904371.jpg"
           }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=542575",
-          "author": "Kishan Vyas",
-          "description": "It’s been a while since the OnePlus Nord received a stable OxygenOS update. The last stable update for the device came in August, which added Bitmoji AOD, a screenshot feature for AOD, and bumped the Android security patch level. Now OnePlus has released OxygenOS 11.1.6.6 to the OnePlus Nord. It’s a minor update that bumps\nThe post Latest OnePlus Nord update brings October 2021 security patches appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/oneplus-rolls-out-oxygenos-11-1-6-6-oneplus-nord/",
-          "publishedOn": "2021-10-22T12:30:58.000Z",
-          "wordCount": 698,
-          "title": "Latest OnePlus Nord update brings October 2021 security patches",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/05/OnePlus-Nord-on-pink-background.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=542525",
-          "author": "Pranob Mehrotra",
-          "description": "Several Android OEMs have announced Android 12 beta programs over the last few weeks. While some OEMs have already started rolling out early builds of the software to a handful of devices, others are still getting around to sharing the release timeline for their phones. Yesterday, Vivo shared the Funtouch OS beta release timeline for\nThe post iQOO releases Android 12 beta rollout schedule for its devices appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/iqoo-android-12-beta-rollout-schedule/",
-          "publishedOn": "2021-10-22T12:01:38.000Z",
-          "wordCount": 777,
-          "title": "iQOO releases Android 12 beta rollout schedule for its devices",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/05/iQOO-7-Legend-XDA-11.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=542519",
-          "author": "Kishan Vyas",
-          "description": "ASUS today detailed its plans to roll out the stable Android 12 update for its ROG and ZenFone flagships. The Taiwanese company will kick off the stable Android 12 rollout by the end of this year, starting with the ZenFone 8 series, with devices like the ROG Phone 5 and others joining the Android 12\nThe post ASUS announces Android 12 Release Schedule for Zenfone 8, Zenfone 7 and ROG Phone Series appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/asus-stable-android-12-update-rollout-plan-zenfone-8-rog-phone-5/",
-          "publishedOn": "2021-10-22T11:10:36.000Z",
-          "wordCount": 781,
-          "title": "ASUS announces Android 12 Release Schedule for Zenfone 8, Zenfone 7 and ROG Phone Series",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/Zenfone_Andriod-12_RolloutPlan.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=465367",
-          "author": "Skanda Hazarika",
-          "description": "The wait is finally over — Windows 11 is here as Microsoft has officially kicked off the Insider Preview program for the next generation of Windows. The company is also rolling out several updates on top of the base Windows 11 build in preparation for an eventual rollout via the stable channel. This article will\nThe post Windows 11 Update Tracker: Download and Install the latest Windows 11 update appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/windows-11-update-tracker/",
-          "publishedOn": "2021-10-22T11:00:14.000Z",
-          "wordCount": 1753,
-          "title": "Windows 11 Update Tracker: Download and Install the latest Windows 11 update",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/07/Windows-11-Update-Tracker.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=542259",
-          "author": "Pranob Mehrotra",
-          "description": "You might have noticed an annoying trend in the tech world over the last few years. Whenever Apple adopts a new design or technology, many Android and PC OEMs follow suit. While there’s no denying the fact that Apple too picks up on things first pioneered by companies on the other side of the fence,\nThe post The iPhone 13’s boxy design may be the latest trend that Android OEMs copy appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/android-smartphone-iphone-13-boxy-design-theme-2022/",
-          "publishedOn": "2021-10-22T10:29:03.000Z",
-          "wordCount": 1152,
-          "title": "The iPhone 13’s boxy design may be the latest trend that Android OEMs copy",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/Blue-iPhone-13-Pro-iPhone-13-Pro-Max-on-cream-background.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=542447",
-          "author": "Kishan Vyas",
-          "description": "Last year Twitter introduced Spaces, the company’s take on Clubhouse-style audio chat rooms. Initially limited to iOS, Twitter finally expanded Spaces to Android earlier this year. At the time, Android users could only join Spaces created by other creators. But that changed in March when Twitter started allowing some Android users to host their own\nThe post Twitter finally rolls out the ability to create a Space to everyone appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/twitter-rolls-out-spaces-to-everyone/",
-          "publishedOn": "2021-10-22T09:56:53.000Z",
-          "wordCount": 747,
-          "title": "Twitter finally rolls out the ability to create a Space to everyone",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/03/Twitter-Spaces-for-Android.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=542295",
-          "author": "Kishan Vyas",
-          "description": "Android work profiles provide a convenient way to separate your work and personal life on your smartphone. When this feature is enabled, work and personal apps appear under two different tabs within the app drawer. Work apps feature a small briefcase badge to distinguish themselves from personal apps. Right now, however, the work profile feature\nThe post Google will finally let you set up Android work profile on unmanaged devices appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/android-work-profile-unmanaged-devices-coming/",
-          "publishedOn": "2021-10-22T08:03:33.000Z",
-          "wordCount": 740,
-          "title": "Google will finally let you set up Android work profile on unmanaged devices",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/Android-Work-profile-featured.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=457183",
-          "author": "João Carrasqueira",
-          "description": "As we approach the holiday season, many of us are starting to think about what gifts to get for ourselves or loved ones this year. To help out, we’ve already rounded up some of the best laptops you can buy this holiday, but what if you specifically want a tablet? Windows tablets aren’t all that\nThe post These are the best Windows tablets this holiday season appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/best-windows-tablets/",
-          "publishedOn": "2021-10-22T08:00:26.000Z",
-          "wordCount": 4691,
-          "title": "These are the best Windows tablets this holiday season",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/06/The-best-Windows-tablets-1.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=542221",
-          "author": "Kishan Vyas",
-          "description": "Alongside the Huawei Nova 9 yesterday, Huawei unveiled a pair of new smartwatches. The Huawei Watch GT 3 is a slightly modified version of the Huawei Watch 3 that was launched in China back in June. The new smartwatch comes in 46mm and 42mm sizes and runs the latest version of Huawei’s watch OS, Harmony\nThe post Huawei launches a pair of smartwatches with HarmonyOS 2.1 and up to 14 days of battery life appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/huawei-watch-gt-3-launch/",
-          "publishedOn": "2021-10-22T06:38:16.000Z",
-          "wordCount": 861,
-          "title": "Huawei launches a pair of smartwatches with HarmonyOS 2.1 and up to 14 days of battery life",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/image001.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=541421",
-          "author": "Sumukh Rao",
-          "description": "Realme started off as a sub-brand of OPPO back in 2018. What this meant was that Realme used ColorOS on its smartphones for quite a while before users started demanding a custom UI solely meant for Realme devices. While the company didn’t really work on a completely new OS, they developed a slightly modified version\nThe post Hands-on with Realme UI 3.0 based on Android 12: Wallpaper-based Themes, new Dark Mode options, and more! appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/realme-ui-3-hands-on/",
-          "publishedOn": "2021-10-22T06:30:47.000Z",
-          "wordCount": 2686,
-          "title": "Hands-on with Realme UI 3.0 based on Android 12: Wallpaper-based Themes, new Dark Mode options, and more!",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/RealmeUI-3-Featured.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=542131",
-          "author": "Corbin Davenport",
-          "description": "Windows Terminal is the new all-in-one terminal application that Microsoft has been working on for a few years. It’s the new central way to work with PowerShell, the Windows Subsystem for Linux, and old command-line applications, and Microsoft has continued to roll out new features since the first release. Windows Terminal Preview 1.12 is now\nThe post Windows Terminal adds session restore and more profile features in latest Preview appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/windows-terminal-adds-session-restore-and-more-profile-features-in-latest-preview/",
-          "publishedOn": "2021-10-21T21:14:39.000Z",
-          "wordCount": 785,
-          "title": "Windows Terminal adds session restore and more profile features in latest Preview",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/06/Windows-terminal-1.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=542113",
-          "author": "Corbin Davenport",
-          "description": "Google’s current music streaming service is YouTube Music, which primarily serves two purposes: it’s a better player for music hosted on YouTube, and it can access the millions of songs offered by other music streaming services. Google revealed earlier this month that the ability to play music in the background would be coming to the\nThe post YouTube Music’s free plan is losing features, starting in November appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/youtube-musics-free-plan-is-losing-features-starting-in-november/",
-          "publishedOn": "2021-10-21T20:33:18.000Z",
-          "wordCount": 764,
-          "title": "YouTube Music’s free plan is losing features, starting in November",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2018/05/youtube-music-logo-1.png"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=540843",
-          "author": "Karthik Iyer",
-          "description": "Adding more storage while purchasing a new Apple product can be incredibly pricey. This is true for all Apple computing devices, especially the Macs. The new 2021 MacBook Pro notebooks, for instance, have 512GB SSD storage as a standard for the base configurations. Upgrading to a 2TB SSD storage from there adds as much as\nThe post These are the best external hard drives and SSDs for Mac appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/best-external-hard-drives-mac/",
-          "publishedOn": "2021-10-21T19:00:39.000Z",
-          "wordCount": 1620,
-          "title": "These are the best external hard drives and SSDs for Mac",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/crucial-X6-SSD-outdoor.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=542093",
-          "author": "Corbin Davenport",
-          "description": "Android is the most popular operating system in the world (even counting desktop platforms), and as a result, Google Play is one of the most important software distribution channels ever. However, Google has been under pressure in recent years to reduce the fees it charges developers for transactions, especially during the recent legal battles with\nThe post Google Play is lowering its developer fees for app subscriptions appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/google-play-is-lowering-its-developer-fees-for-app-subscriptions/",
-          "publishedOn": "2021-10-21T18:33:06.000Z",
-          "wordCount": 788,
-          "title": "Google Play is lowering its developer fees for app subscriptions",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/07/Google-Play-Store-logo-on-gradient-background.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=541927",
-          "author": "João Carrasqueira",
-          "description": "Today, Razer held its RazerCon 2021 digital livestream, and with it came a wide range of new product launches, including new gaming peripherals and a new color for the Razer Book. For desktop enthusiasts, Razer launched new high-performance components, but there was a lot for everyone else, too. Razer Zephyr Perhaps the most long-awaited announcement\nThe post Razer launches Zephyr face mask and new peripherals at RazerCon 2021 appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/razercon-2021-peripherals/",
-          "publishedOn": "2021-10-21T18:00:13.000Z",
-          "wordCount": 1210,
-          "title": "Razer launches Zephyr face mask and new peripherals at RazerCon 2021",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/Razer-Zephyr-face-mask.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=541949",
-          "author": "Karthik Iyer",
-          "description": "Razer sells plenty of gaming laptops and peripherals like mice, keyboards, headphones, and more. But the company never truly explored the gaming desktop PC space. Well, that’s changing now with the launch of its new premium PC components — Razer Kunai high-performance fans, Razer Hanbo AIO liquid coolers, and Razer Katana platinum ATX PSU. Razer\nThe post Razer’s new line of PC components include Kunai fans, Hanbo AIO liquid coolers, and Katana PSU appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/razers-new-line-of-pc-components-include-kunai-fans-hanbo-aio-liquid-coolers-and-katana-psu/",
-          "publishedOn": "2021-10-21T18:00:10.000Z",
-          "wordCount": 1081,
-          "title": "Razer’s new line of PC components include Kunai fans, Hanbo AIO liquid coolers, and Katana PSU",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/Razer-new-PC-components.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=541891",
-          "author": "Victor Wright",
-          "description": "T-Mobile’s Keep & Switch promotion is getting yet another upgrade, and now you can get up to $1,000 per line to pay off your phone when you switch from AT&T or Verizon. Starting October 22nd, T-Mobile will offer an increased value to their Keep & Switch promotion. Keep & Switch allows customers to join T-Mobile\nThe post T-Mobile will give you up to $1,000 to switch from a competitor appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/t-mobile-will-give-you-up-to-1000-to-switch-from-a-competitor/",
-          "publishedOn": "2021-10-21T17:45:01.000Z",
-          "wordCount": 954,
-          "title": "T-Mobile will give you up to $1,000 to switch from a competitor",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/03/T-Mobile-logo.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=542069",
-          "author": "João Carrasqueira",
-          "description": "When Windows 11 launched a couple of weeks ago, there were a few notable issues with the new version of the OS. Two, in particular, got the most attention, which affected AMD processors specifically. One decreased the performance of the L3 cache in AMD processors, and the other affected the “preferred core” feature of those\nThe post Fixes for AMD issues on Windows 11 are now available to everyone appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/amd-fix-preferred-core-windows-11/",
-          "publishedOn": "2021-10-21T17:44:55.000Z",
-          "wordCount": 890,
-          "title": "Fixes for AMD issues on Windows 11 are now available to everyone",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2020/11/AMD-Ryzen-5000.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=542071",
-          "author": "Rich Woods",
-          "description": "While Windows 11 was released earlier this month, it almost flies under the radar that Windows 10 is alive and well. In fact, it’s supported for another four years, so as expected, there’s a version 21H2 coming for the OS. Thanks to a blog post today, we now know that it will be called the\nThe post Microsoft releases ISOs for the Windows 10 November 2021 Update appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/microsoft-releases-isos-for-the-windows-10-november-2021-update/",
-          "publishedOn": "2021-10-21T17:32:25.000Z",
-          "wordCount": 931,
-          "title": "Microsoft releases ISOs for the Windows 10 November 2021 Update",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2017/10/windows-10-logo_4.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=537427",
-          "author": "Karthik Iyer",
-          "description": "CPU coolers, as the name suggests, are designed to handle a CPU’s thermal output and keep it running cool at all times. They’re critical to avoid thermal throttling and help your CPU achieve its full potential. Not having the right cooler can also be a limiting factor when it comes to overclocking the CPU. We\nThe post These are the best CPU coolers you can buy in 2021 appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/best-cpu-coolers/",
-          "publishedOn": "2021-10-21T17:30:31.000Z",
-          "wordCount": 5794,
-          "title": "These are the best CPU coolers you can buy in 2021",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/Noctua-NH-P1.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=541995",
-          "author": "Corbin Davenport",
-          "description": "Google and Roku have spent most of this year fighting over distribution agreements for YouTube and YouTube TV on Roku devices. The disagreement has left Roku without an actual YouTube TV application, though the service remains accessible through the normal YouTube app on Roku devices. Negotiations are apparently not going anywhere, as Roku has now\nThe post Roku and Google are fighting again, and Roku might lose YouTube access appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/roku-and-google-are-fighting-again-and-roku-might-lose-youtube-access/",
-          "publishedOn": "2021-10-21T17:14:31.000Z",
-          "wordCount": 901,
-          "title": "Roku and Google are fighting again, and Roku might lose YouTube access",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2020/11/YouTube-for-Android-TV-featured.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=541445",
-          "author": "Aamir Siddiqui",
-          "description": "The Google Smart Home Summit 2021 is underway, and Google has a few key announcements to make. Google has announced a new Developer Center and two new SDKs, and now it is extending concepts like Suggested Routines to Matter. Expanding Google Home Google is taking the opportunity at this developer summit to expand the idea\nThe post Google expands Google Home branding, introduces Suggested Routines for smart home developers appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/google-expands-google-home-branding-introduces-suggested-routines/",
-          "publishedOn": "2021-10-21T17:00:37.000Z",
-          "wordCount": 1095,
-          "title": "Google expands Google Home branding, introduces Suggested Routines for smart home developers",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/Screen-Shot-2021-10-18-at-10.29.02-AM.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=541353",
-          "author": "Aamir Siddiqui",
-          "description": "Smart homes are the future, and the future is inching closer with every passing day. Earlier this year at Google I/O, Google had announced Matter, a universal standard for smart home devices to encourage interoperability and seamless co-existence between them. Several internet giants like Google, Amazon, Apple, and Samsung have worked together on Matter, and\nThe post Google introduces new Developer Center and SDKs at Smart Home Developer Summit, clarifies GMS requirement for Matter support appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/google-developer-center-matter-sdk-smart-home-developer-summit/",
-          "publishedOn": "2021-10-21T17:00:26.000Z",
-          "wordCount": 1214,
-          "title": "Google introduces new Developer Center and SDKs at Smart Home Developer Summit, clarifies GMS requirement for Matter support",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/Screen-Shot-2021-10-18-at-10.27.50-AM.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=540613",
-          "author": "Karthik Iyer",
-          "description": "Apple’s M1 SoC ushered in the beginning of its transition away from x86 based chips. The first generation Mac silicon shook the industry in many ways and won numerous accolades for its impressive performance and class-leading power efficiency. The M1 chip was a good start but it wasn’t enough to help Apple lunge for a\nThe post Apple M1 Pro vs M1 Max: Here’s everything you need to know before buying appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/deep-dive-apple-m1-pro-max/",
-          "publishedOn": "2021-10-21T16:00:48.000Z",
-          "wordCount": 2071,
-          "title": "Apple M1 Pro vs M1 Max: Here’s everything you need to know before buying",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/Apple-M1-Pro-and-M1-Max-chips.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=541429",
-          "author": "Adam Conway",
-          "description": "In the security world, bug bounties are incredibly common. The reason for their existence is simple and two-fold: they incentivize security researchers to poke holes in the security of a device, as the payout for a successful exploit can be lucrative. The second is that they encourage individuals to privately report their findings, rather than\nThe post Google’s new Android Enterprise Vulnerability Rewards Program will give you up to $250,000 if you can fully exploit a Pixel 6 appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/google-android-enterprise-vulnerability-rewards-program/",
-          "publishedOn": "2021-10-21T16:00:24.000Z",
-          "wordCount": 841,
-          "title": "Google’s new Android Enterprise Vulnerability Rewards Program will give you up to $250,000 if you can fully exploit a Pixel 6",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/android-12-enterprise.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=541719",
-          "author": "Karthik Iyer",
-          "description": "Despite a rocky start, Halo Infinite is shaping up to be one of the most popular games of this generation. It arrives in December 2021, after a delay of over a year. Following a few successful multiplayer previews, 343 Industries has now shared some more information about the game. Microsoft has partnered with AMD to\nThe post Microsoft partners with AMD for a limited edition GPU and promises ray-tracing for Halo Infinite appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/microsoft-partners-with-amd-for-a-limited-edition-gpu-and-promises-ray-tracing-for-halo-infinite/",
-          "publishedOn": "2021-10-21T15:40:02.000Z",
-          "wordCount": 784,
-          "title": "Microsoft partners with AMD for a limited edition GPU and promises ray-tracing for Halo Infinite",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/Halo-Infinite-AMD-GPU.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=541457",
-          "author": "Pranob Mehrotra",
-          "description": "Despite all the restrictions, Huawei continues to bring new smartphones to the market. Earlier this year, the company launched its second foldable, the Huawei Mate X2, and its flagship Huawei P50 lineup. Today, it has launched the mid-range Huawei Nova 9. The latest phone from the Chinese OEM offers a Snapdragon 778G SoC, a 120Hz\nThe post Huawei Nova 9 with Snapdragon 778G, 120Hz OLED display, and 66W fast charging launched in Europe appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/huawei-nova-9-launch/",
-          "publishedOn": "2021-10-21T15:00:19.000Z",
-          "wordCount": 941,
-          "title": "Huawei Nova 9 with Snapdragon 778G, 120Hz OLED display, and 66W fast charging launched in Europe",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/Starry-Blue-Huawei-Nova-9-on-gradient-background.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=540999",
-          "author": "Skanda Hazarika",
-          "description": "It’s been just a day since Microsoft unveiled the long-anticipated Windows Subsystem for Android for Windows 11. The company has also published a plethora of documentation related to the integration with Amazon Appstore and Android app development on Windows using the native Android subsystem. However, unlike typical bleeding edge features, the Dev channel of Windows\nThe post You don’t need to be a Windows Insider to get Android apps on Windows 11 appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/how-to-run-android-apps-on-any-windows-11-pc/",
-          "publishedOn": "2021-10-21T14:41:10.000Z",
-          "wordCount": 1341,
-          "title": "You don’t need to be a Windows Insider to get Android apps on Windows 11",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/Windows-Subsystem-for-Android-icon-on-Windows-11-Start-Menu-featured.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=540631",
-          "author": "João Carrasqueira",
-          "description": "Both Apple and Microsoft recently made waves with brand-new laptops aimed at creative professionals. Microsoft’s Surface Laptop Studio is a new form factor for Microsoft and it’s the company’s most powerful Surface ever. At the same time, the new MacBook Pro is also Apple’s most powerful laptop ever, thanks to the Apple M1 Pro and\nThe post MacBook Pro vs Surface Laptop Studio: What’s the best creator laptop? appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/macbook-pro-vs-surface-laptop-studio/",
-          "publishedOn": "2021-10-21T14:30:21.000Z",
-          "wordCount": 2937,
-          "title": "MacBook Pro vs Surface Laptop Studio: What’s the best creator laptop?",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/MacBook-Pro-vs-Surface-Laptop-Studio.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=541365",
-          "author": "Skanda Hazarika",
-          "description": "So you just set up Windows Subsystem for Android on your Windows 11 PC. You can’t wait to run your favorite Android apps right on your computer, but there is a catch! Microsoft has partnered with Amazon to integrate the Amazon Appstore with the Microsoft Store, which means you can’t officially access the Google Play\nThe post How to sideload Android apps on Windows 11 appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/how-to-sideload-android-apps-on-windows-11/",
-          "publishedOn": "2021-10-21T14:03:20.000Z",
-          "wordCount": 1444,
-          "title": "How to sideload Android apps on Windows 11",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/WSA-app-sideloading-featured.jpg"
-          }
         }
       ]
     },
@@ -9666,24 +9335,6 @@
           "publishedOn": "2021-10-24T06:34:25.000Z",
           "wordCount": null,
           "title": "Getting a Character by Index From a String in Java"
-        },
-        {
-          "id": "https://www.baeldung.com/?p=111229",
-          "author": "Krzysztof Majewski",
-          "description": "Explore a few ways to use a Git repository inside a Dockerfile.\n      \nRelated Stories\n\nShare Docker Images Without Using the Docker Hub\nSquash the Last X Commits Using Git\nServerless Architecture with Knative",
-          "link": "https://feeds.feedblitz.com/~/670544400/0/baeldung~Dockerfile-Strategies-for-Git",
-          "publishedOn": "2021-10-22T11:58:27.000Z",
-          "wordCount": null,
-          "title": "Dockerfile Strategies for Git"
-        },
-        {
-          "id": "https://www.baeldung.com/?p=111223",
-          "author": "Daniel Strmecki",
-          "description": "Learn how to use Spring Data Cassandra to save date values and map them to Cassandra data types.",
-          "link": "https://feeds.feedblitz.com/~/670454006/0/baeldung~Saving-Date-Values-in-Spring-Data-Cassandra",
-          "publishedOn": "2021-10-21T14:37:34.000Z",
-          "wordCount": null,
-          "title": "Saving Date Values in Spring Data Cassandra"
         }
       ]
     },
@@ -9745,6 +9396,15 @@
           "publishedOn": "2021-11-12T03:14:41.000Z",
           "wordCount": 1094,
           "title": "Ventoy 多合一启动盘制作工具神器 - 将多个系统 Win/PE/Linux 镜像装在1个U盘里"
+        },
+        {
+          "id": "https://www.iplaysoft.com/?post_type=xpost&p=5578",
+          "author": "X-Force",
+          "description": "「 前往查看原文.... 」\n\n异次元正版数字商城  |  异次元首页  |  微信公众号  |  iPcFun  |  关注微博  |  软件精选",
+          "link": "https://www.iplaysoft.com/p/baiduwenku-vip",
+          "publishedOn": "2021-11-09T21:02:58.000Z",
+          "wordCount": 579,
+          "title": "划算！QQ音乐 + 爱奇艺 / 京东 Plus + 文库月卡 = 169 元"
         },
         {
           "id": "https://www.iplaysoft.com/?post_type=xpost&p=5444",
@@ -9880,15 +9540,6 @@
           "publishedOn": "2021-10-22T18:12:43.000Z",
           "wordCount": 1047,
           "title": "Win11 安卓子系统 (WSA) 安装包教程 - 电脑运行 Android 手机应用 / 安装 APK 方法"
-        },
-        {
-          "id": "https://www.iplaysoft.com/?p=5497",
-          "author": "X-Force",
-          "description": "在苹果发布了 macOS Monterey 系统之后，微软终于如约地正式发布了其最新一代的操作系统——Windows 11 正式版 了！并且微软还很厚道地宣布「Win11 可以完全免费升级」。\n新版的 Windows 11 系统相比 Win10 带来很多显著的变化，比如全新设计的“毛玻璃”界面、原生支持运行 Android 应用、窗口布局管理 / Widgets 小工具、新的应用商店、支持 XBox Game Pass 订阅、支持云游戏、DirectX 12、AutoHDR 等更强大的游戏体验……\n「 前往查看原文.... 」\n异次元还有这些值得一看：\n\nWindows 10 最新版本 21H1 正式版 ISO 镜像下载 (微软 MSDN / VL 官方原版系统)\nWindows7集成SP1补丁中文旗舰版光盘镜像下载 (真正微软MSDN官方原版32位+64位)\n3 种免费升级安装 Windows 11 正式版方法教程 / 制作 U 盘启动盘 (微软官方工具)\nWindows 8.1 官方中文正式版下载与免费在线升级更新方法 (微软MSDN原版ISO镜像)\n\n异次元正版数字商城  |  异次元首页  |  微信公众号  |  iPcFun  |  关注微博  |  软件精选",
-          "link": "https://www.iplaysoft.com/windows11.html",
-          "publishedOn": "2021-10-22T05:00:31.000Z",
-          "wordCount": 1884,
-          "title": "Windows 11 最新官方正式版 ISO 镜像下载 (微软 MSDN 原版系统 / 免费升级 / 网盘 BT)"
         }
       ]
     },
@@ -9959,6 +9610,15 @@
           "publishedOn": "2021-11-09T21:39:14.000Z",
           "wordCount": 31,
           "title": "真的有这么丝滑吗？MotionLayout的高级玩法我学会了！"
+        },
+        {
+          "id": "https://juejin.cn/post/7028726137542934535",
+          "author": "岛上码农",
+          "description": "theme: channing-cyan\nhighlight: darcula\n「这是我参与11月更文挑战的第10天，活动详情查看：2021最后一次更文挑战」\n前言\n写了一篇基础的性能优化的内容，继续我们的动画相关的介绍。今天的主角是英雄 —— Hero 组件。Hero 组件非常适合从列表、概览页切换到详情页转场动画场合。因为可以将两个页面的组件串起来动画，体验上会觉得整个操作的连贯性非常好。下面是我们这篇要做的一个效果。\n\nHero 动画过程\nHero 本质是是在不同的路由页面做了一个中转层，然后通过动画完成过渡，下面用4张图是官方演示的过程。\n动画开始前，会准备一个空的遮罩层（Overlay）。此时目标路由页面还没生成。\n\nt = 0.0，即动画开始时，源页面已经从屏幕消失，遮罩层出现在屏幕上，此时目标路由页面已经构建好，并且在遮罩层下方不可见。但此时 Flutter 渲染引擎已经计算出从遮罩层到目标路由页面的动画路径。\n\n动画过程中，英雄飞起来，逐步飞到目标页面。使用的是Tween方式更改外形和位置，默认是使用 MaterialRectArcTween 对象完成动画。\n\n动画结束：遮罩层消失，只剩下目标路由页面。而源页面恢复到它对应的路由状态（以便返回时使用逆向的动画）。\n\nHero 基础示例\n下面来看我们本篇动画效果的实现。对于 Hero 最简单的应用，就是前后两个路由页面的 Hero 组件使用相同的 tag 标识，然后所有动画都交给 Hero 来完成了 —— 果然是超级英雄，啥都不用我们管！当然，为了用户体验，前后两个页面的组件最好是具有相同的内容（比如图片），然后如果组件树结构是一致的话效果更好。\n我们这个示例的第一个页面就是两张小尺寸的图片，这里的关键是 Hero 组件的 tag 标签，两张图片使用了不同的 tag，这是因为同一个页面的多个 Hero 不能共用…",
+          "link": "https://juejin.cn/post/7028726137542934535",
+          "publishedOn": "2021-11-09T16:09:10.000Z",
+          "wordCount": 31,
+          "title": "页面切换转场动画，英雄救场更有趣！"
         },
         {
           "id": "https://juejin.cn/post/7028405590984491022",
@@ -10148,6 +9808,15 @@
       "siteUrl": "https://bbs.marginnote.cn/tag/论坛精华/l/latest.json",
       "articles": [
         {
+          "id": "https://bbs.marginnote.cn/t/topic/6880",
+          "author": "kulley",
+          "description": "用处：\n\nhttps://bbs-upload.marginnote.cn/original/2X/3/33ff8e386202bc07538d53172566b23b9bf6c720.MP4\n    \n  \n\n改进：\n无论是\n点击卡片\n点击摘录\n改变摘录\n新增摘录\n选择文本\n均会复制到剪切板。\n技巧：\n下载：\nInstant Copy.mnaddon (3.6 KB)",
+          "link": "https://bbs.marginnote.cn/t/topic/6880",
+          "publishedOn": "2021-11-20T15:43:53.000Z",
+          "wordCount": 276,
+          "title": "【第三方MN插件】 InstantCopy 自动复制选中单词到系统剪贴板 #Ver.1.0 已获官方签名#"
+        },
+        {
           "id": "https://bbs.marginnote.cn/t/topic/18974",
           "author": "ourongxing\n            (ourongxing)",
           "description": "简介\n\n\nimage1206×452 80.1 KB\n\n\n\nB070900985A51BFA3122CE7B103C51E92177×1628 297 KB\n\n\nOCR pro 对标点符号的识别真的是差强人意，这其实恰恰是很多人标点符号使用上会出现的问题，所以才会有 pangu.js 的出现，pangu.js 的作用就是优化中英文排版问题，具体规范可见 中文文案排版指北，其中自然包括了中英文之间的空格问题和半角全角标点符号使用。\n通过 pangu.js，我们很容易实现对摘录文本和标题的排版优化，我只做了很小的工作，相当于把 pangu.js 引入 Marginnote 中，基础代码修改自 Autotitile，感谢。\n使用\n本插件默认开启摘录优化，不支持关闭，我认为这是必不可少的过程。\n提供按键开启点击卡片优化标题和摘录。但很遗憾，目前提供的 API 点击卡片后只能获取到卡片内第一个笔记以及标题，所以无法优化卡片内所有的摘录和评论，不过你可以点击文章中的摘录来触发。当然，从现在开始，你摘录的所有文字都将得到排版优化。\n最新版本下载\nPangu4MarginNote",
@@ -10317,15 +9986,6 @@
           "publishedOn": "2021-10-23T13:55:14.000Z",
           "wordCount": 350,
           "title": "【第三方MN插件】[Omnifocus3,Thing3,Reminders,Sorted3,Mematom,TickTick]PlugIn #Ver.1.0.0 已获官方签名#"
-        },
-        {
-          "id": "https://bbs.marginnote.cn/t/topic/2977",
-          "author": "Xiamumu\n            (夏暮)",
-          "description": "如果你有时间，看之前请参考一下我去年写的这篇帖子，当时想法不够成熟，帖子中感性的思考成分要多过理性的定义和解释的成分，那篇帖子能够帮助你粗略了解我对于标签和笔记之间关系的思路和想法，这样一来本篇帖子里过多的定义词语可能就不至于让你感到过于困惑。\n这篇帖子的正文内容集中于我对知识和信息的理解，对于各路笔记管理软件中笔记和标签的理解，以及我希望在MarginNote3中可以实现的功能，效果类似一个已有笔记能自动形成超链接的智能的知识库，具体参考下面两个gif：\n\n\nGif1-11080×1080 2.61 MB\n\n\n效果1：用户的某些笔记，在其他笔记的评论中会被自动识别为超链接。\n【某些笔记】：在功能上属于用户的知识，而不是碎片信息的笔记，这些笔记应当可以被转化为标签，从而使其他笔记可以挂在这个标签上，使得用户的知识树不断丰富。此外，当代表知识的笔记被转化为标签后，该标签应当仍然可以作为笔记进行编辑补充信息。\n\n\nGif2-11080×1080 8.45 MB\n\n\n效果2：点击该超链接，会展示对对应的笔记。\n例子来自某个外国的医学知识库网站制作的anki插件，他的点击实现的是连接到该网站的网页。这方面MarginNote应当实现的是连接到用户自己的所有笔记库。\n接下来我再具体讲一讲我对于标签和笔记理解，但在继续往下看之前，请思考一下几个问题，这也许可以帮助你更好地理解后面的定义：\n当我们谈到笔记软件中的标签分类和传统的文件夹式分类时，我们在谈什么？\n当我们谈到笔记软件中的超链接时，我们在谈什么？\n当我们谈到知识管理时，我们希望达成的目标是什么？\n针对最后一问，我假设我们想要的不仅仅是信息，而是如何得到知识和智慧，当面对海量的信息和材料，我们也许需要不时问自己几个问题：\n这条信息和我已经知道的信息有什么关系？\n这条信息在说什么？为什么这样说？\n我在其他地方要如何运用这条信息？\n这…",
-          "link": "https://bbs.marginnote.cn/t/topic/2977",
-          "publishedOn": "2021-10-21T13:41:47.000Z",
-          "wordCount": 424,
-          "title": "【已实现】如何实现外部大脑：关于笔记与标签的关系，以及超链接含义的思考和建议"
         }
       ]
     },
@@ -10338,10 +9998,30 @@
           "id": "https://stratechery.com/2021/unity-buys-weta-digital-an-interview-with-unity-ceo-john-riccitiello/",
           "author": "Ben Thompson",
           "description": "The Weta acquisition, Unity’s ambitions, their advertising business and relationship with Apple, and why Riccitiello thinks my understanding of the metaverse isn’t quite right.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS91bml0eS1idXlzLXdldGEtZGlnaXRhbC1hbi1pbnRlcnZpZXctd2l0aC11bml0eS1jZW8tam9obi1yaWNjaXRpZWxsby8.f03cInEW4wZ0rp11XAf7udmi93xqsp1sjdEjt3v6E__7iD44hzeBQUt6l5GtG4xJAGp9WKvMZcq9W_AOZOWi7sy6cBu25RgUzifH47XgWD2gHdMHurbjL6kgi8RvcMvipd7Tk7v6_XNl1TZrl94w8t3jfpX8LzCEIz_cSbpsEJVMwgLFTrCHBWX0QqU4DZa35XFB5pA6gMyh8tp57LNKM0UoVMtahnXHt-5eeCQ1yb43idR2KlidpD2RLl6cCSUf4Sx542fu_rMEGoaHJcO8NehqVsMVgVnhe0WnFrqNOl9bulbJZYM_II90eidElfNfU0JrHG9yo-Xf1dcNg46kJA",
+          "publishedOn": "2021-11-17T09:34:06.000Z",
+          "wordCount": null,
+          "title": "Unity Buys Weta Digital, An Interview with Unity CEO John Riccitiello",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/unity-buys-weta-digital-an-interview-with-unity-ceo-john-riccitiello/",
+          "author": "Ben Thompson",
+          "description": "The Weta acquisition, Unity’s ambitions, their advertising business and relationship with Apple, and why Riccitiello thinks my understanding of the metaverse isn’t quite right.",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS91bml0eS1idXlzLXdldGEtZGlnaXRhbC1hbi1pbnRlcnZpZXctd2l0aC11bml0eS1jZW8tam9obi1yaWNjaXRpZWxsby8.s4gOsmb67E3PKHK1ABLS1U5xS-QLbpWK-jlSHYKEJz8PJPn5D8DEonzsUDmRT25IxiYvEd0gXwIAL6Q7qu8q-evxsCskUainrlL1djarNkQdZZawZAtdfXgY2bQeYsba9m2Wly3RrKLf5y9e2YFoQNIL0WNqrXgN1_PhXWzZ_LCdaCyYLasKfpyMKKnBgT5h9bTYgr8cvcsbOM3OFyqpc3apqcK5RwOU0ks1K1kYVzT4WjIOygsi-erB-5jYrvYckg5-qR5ieAolyI93F9Go4f9DcMcqEQZRH6rVxNf7FOpJJVdUTKIbKoPqmabXTf0nDL3uoIWED9nuB9bZWLWvrQ",
           "publishedOn": "2021-11-17T09:34:06.000Z",
           "wordCount": null,
           "title": "Unity Buys Weta Digital, An Interview with Unity CEO John Riccitiello",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/constitutiondao-the-need-for-trust-memes-and-reality/",
+          "author": "Ben Thompson",
+          "description": "ConstitutionDAO is an interesting project to buy a physical good as a community; what is particularly interesting is what it says about the power of actualizing memes",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9jb25zdGl0dXRpb25kYW8tdGhlLW5lZWQtZm9yLXRydXN0LW1lbWVzLWFuZC1yZWFsaXR5Lw.ljCriDhomKWRoqSVdocIOEhEgJXV-dXVzr4oMEUmZIhjz977AcNUhV7zyV3DzyKWYQxmKyxAOh9LeD2uVnvc_xtCRVThGbHKGO4LkaBEAEbM5Ox0hpd-j0c7GaRcOxIsoE3b3_rlSaWiRkRvVPM9U4Pe78SmT_2Cb92Rb8LrocvLKWTCyicJqsfsnPdY3zDz4xw-8BI_u7P9MgOuHEbiKf384AI3Klta0MrXIZpP210aBHGtXlF42mZ731FrhhXzNuX8Vz_stgQEJ4RCUfkRxlXRmyJPOE_aJj_1i-GdZZ4F7h2fz1dUGe-lRiHODas_tOzr2wlTaBrIfsrlv5_FeA",
+          "publishedOn": "2021-11-16T13:21:35.000Z",
+          "wordCount": null,
+          "title": "ConstitutionDAO, The Need for Trust, Memes and Reality",
           "itunes": {}
         },
         {
@@ -10372,6 +10052,16 @@
           "publishedOn": "2021-11-16T13:21:35.000Z",
           "wordCount": null,
           "title": "ConstitutionDAO, The Need for Trust, Memes and Reality",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/opendoor-earnings-opendoors-pricing-opendoors-scalability/",
+          "author": "Ben Thompson",
+          "description": "Opendoor's results suggest that the problem in the home-buying market was unique to Zillow's lack of expertise, not the model",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9vcGVuZG9vci1lYXJuaW5ncy1vcGVuZG9vcnMtcHJpY2luZy1vcGVuZG9vcnMtc2NhbGFiaWxpdHkv.e8pe5Cz9DdEfKFVgjSIDFkkWoU4fQOEK-4eGe-n-y-b0L4GqWdUKtrXCGXkviGDYjNp6OjvHgQgH8c1vgyQ0O09YQ7AitxGmpj54Ba97U-bk7W_zhKQ9WEIcohSWOc_F70BSx8phAjOF8iTyoNxFbuJ-qYUdewdH0ZyMWa9PwL86-GoktqDvtunm0QNokpW4blnX-4WwZif7nXKP-lqyH-jJfWlqrjRxLcBtQqCG4OvvDIPfbYEDAdSaAK6eyTuy63cDoqXbJB_zKT-tsT4ykAM200dOK5-praHJvJfQJ6487wcJWiNCVUdWubYBFj_F-npmJFTxrjsdncis19WqoQ",
+          "publishedOn": "2021-11-15T11:56:46.000Z",
+          "wordCount": null,
+          "title": "Opendoor Earnings, Opendoor's Pricing, Opendoor's Scalability",
           "itunes": {}
         },
         {
@@ -10412,6 +10102,16 @@
           "publishedOn": "2021-11-15T11:56:46.000Z",
           "wordCount": null,
           "title": "Opendoor Earnings, Opendoor's Pricing, Opendoor's Scalability",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
+          "author": "Ben Thompson",
+          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.BqoDwfpXvyfkbvwgkAgv2xPH1wF_SIka7m7g1CsQR_GjANAlB0dRa2dWQlMvmTouJBTARQC32v4BWH7M9oOZAOr4uesK9c8xRqKGP_iAluoU2vYCQ0uHF3g4XvpfpSdqHNi6H9yr4t298W46gH1brGIPkIfmdUZ98s0fIj7zt8PuR1lYbsV_osOHtziah8ib9AmMU8izQAGHb1NDbOrAUWmBC_uHmVwmozTklkyezof87a2dKdjQecruwn8sm-TAz-J_opbLlycpCJ8BCbFln1_gdPMbg3NBQP3kjxXiJR3XqLrCmFWr0VILFIOfthfPek9Wmy6b45n9rxOZspnn-g",
+          "publishedOn": "2021-11-11T13:29:31.000Z",
+          "wordCount": null,
+          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
           "itunes": {}
         },
         {
@@ -10478,6 +10178,16 @@
           "id": "https://stratechery.com/2021/metaverse-follow-up-apple-denied-stay-in-epic-case-google-loses-eu-shopping-case-appeal/",
           "author": "Ben Thompson",
           "description": "Metaverse follow-up, and then both Apple and Google lose in court",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9tZXRhdmVyc2UtZm9sbG93LXVwLWFwcGxlLWRlbmllZC1zdGF5LWluLWVwaWMtY2FzZS1nb29nbGUtbG9zZXMtZXUtc2hvcHBpbmctY2FzZS1hcHBlYWwv.Q1ssp1G2VcRKpQkzwW_Zk1xeF92Jq24PQqUS-ss-HZmxgAQ2c4BGKgfJ2dK65FeJcWH27YWOM5d5ALwTvyhKTc_Unws37Nxk3NAmdo-UfniMnuedyx28fUsFQNZyuLG6jVO0HAwRkZ-G-MS2NTX1057vJ8TS2HkHLY6lNJ16NGt1KxSEEZEachEc7tPDjfQ7WFA38UnojiLrUAc7uqZquhTq_rLfejL6MR1WONFaFdq_kPze3vrAy5afLsTpuepM8MxvALpbLwTDyroqV-CnF_1c9mWAbQ3vkVZHvj9hDQypbRgW5BNqmKR0k-SswacC1msWUp36Rg574NwfAsAf1g",
+          "publishedOn": "2021-11-10T12:38:31.000Z",
+          "wordCount": null,
+          "title": "Metaverse Follow-up, Apple Denied Stay in Epic Case, Google Loses EU Shopping Case Appeal",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/metaverse-follow-up-apple-denied-stay-in-epic-case-google-loses-eu-shopping-case-appeal/",
+          "author": "Ben Thompson",
+          "description": "Metaverse follow-up, and then both Apple and Google lose in court",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9tZXRhdmVyc2UtZm9sbG93LXVwLWFwcGxlLWRlbmllZC1zdGF5LWluLWVwaWMtY2FzZS1nb29nbGUtbG9zZXMtZXUtc2hvcHBpbmctY2FzZS1hcHBlYWwv.noOXo1hO2vOS0LBxuJMxvFwuSwtuB1dyJPzLRNz2jfb6lxFlS1qlBYguELCJBFsUYrK6dPAZE7WJTaERhtu5kRfZD-EbW4XaBqQVSpR1gLhxW5xvbp8vj_i_zRMGorZ4LHgSx1aZeo27F5GdwQ4qAp-GovAJMQh3klfKhZGr0ydhk7jVG8TEpygDF2DBCupLfjsNQ62l0flpbxvEx6ruw6iC1NJrXgyf-ooMoTJ5FhWnTYay6glZiRE62XulWjCibsoTJPBwaHqJFFp1u4d41J7S_XRwoiwIfnjwlsFjyadPIQppVNFJj2GJvX9vAdirkSA_KOsVu_29PhHY4qhEkQ",
           "publishedOn": "2021-11-10T12:38:31.000Z",
           "wordCount": null,
@@ -10532,6 +10242,16 @@
           "publishedOn": "2021-11-10T12:38:31.000Z",
           "wordCount": null,
           "title": "Metaverse Follow-up, Apple Denied Stay in Epic Case, Google Loses EU Shopping Case Appeal",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/googles-south-korea-plan-no-duty-to-deal-developer-versus-customer-choice/",
+          "author": "Ben Thompson",
+          "description": "Google's response the South Korean App Store law, what that says about platform IP rights, and why markets should decide App Store policies.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9nb29nbGVzLXNvdXRoLWtvcmVhLXBsYW4tbm8tZHV0eS10by1kZWFsLWRldmVsb3Blci12ZXJzdXMtY3VzdG9tZXItY2hvaWNlLw.dJXXMNecry-AER9k6JRiNEAAFxj4kxLJwB3N5x4o6Y78ttSho_wQ1OMpO-VDIWwBlcM2hUwyf1t5BAlu3WucBCkYPkkjKxPof563-7lJRzFxyxSMyii6yRisX9-71nQNu6wacw5Dr1ixLaOX3CneaHQYKPWygJbcaoBoNaQKav-Fihfh9J3qSFq9KChUK8UhoJBP2rDx3tU164GZ_et4hHmY_1inUiTAzL6cIL8zlwNS84fcKSA_IxWYIxsylmYxW1P10LYDf1Vanc7QQL-FHNPwXcG8VPP6qQLMUqOESP-upnHxfTOIMUqc82JJLGtKu6fEraT1enSUH_nf_gXjZw",
+          "publishedOn": "2021-11-08T12:11:52.000Z",
+          "wordCount": null,
+          "title": "Google's South Korea Plan, No Duty to Deal, Developer Versus Customer Choice",
           "itunes": {}
         },
         {
@@ -10598,6 +10318,16 @@
           "id": "https://stratechery.com/2021/an-interview-with-eric-seufert-about-the-impact-of-att/",
           "author": "Ben Thompson",
           "description": "An interview with Eric Seufert about the impact of ATT and the future of advertising, Apple, and Facebook.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hbi1pbnRlcnZpZXctd2l0aC1lcmljLXNldWZlcnQtYWJvdXQtdGhlLWltcGFjdC1vZi1hdHQv.hYboq-_TnttAEsynSi2CpSoiy8CN1MBMlf9BH0ntjBecIoTfNpMWqe1ye_nSSLYSzwJ-c8kIqt2oesmp9UnIiXpuwhO43mEtoX6T8oZPFhWxKjxbr10PSloQLp3P8dNTa_oe8iCc_Sfg2HFJvrq7jFgdxydtDWm8rFa74FViIOyCA7JfBnFa1pP_ykCr4LbvMIpA0PNf7N50TKnZ-1HW1NNqiXs4LOyMg9qGShIFPEwxEOcrp9bqcxAjU4bs_Fx2SseSy_fA96aPEvStEH6nMmNgD0KsObq7XUAByq452CHXxsa1Tlpxta9_9verT2vx4vX4MnkE-9thdMr8Tk1Q1w",
+          "publishedOn": "2021-11-04T11:09:45.000Z",
+          "wordCount": null,
+          "title": "An Interview with Eric Seufert about the Impact of ATT",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/an-interview-with-eric-seufert-about-the-impact-of-att/",
+          "author": "Ben Thompson",
+          "description": "An interview with Eric Seufert about the impact of ATT and the future of advertising, Apple, and Facebook.",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hbi1pbnRlcnZpZXctd2l0aC1lcmljLXNldWZlcnQtYWJvdXQtdGhlLWltcGFjdC1vZi1hdHQv.vpIb_ATnc4awVa6X2fWYV14vTwUz7GRDtlzThyFTM6vJSXQvOcDKGn9KryF7UcJtfviS18Cs-edC5tLC5DYrqCHMW9GLK_50o0jSCsoiCkOFl06CsTKbK3RZaSTUusFkC4L8xtKl4-G1nr5rd9Q7PWa-KV-piHEz9g3IEelPIzWN8IttGT5lzQpew6PU8U3RUoERe7d3wXwCno41HbdMJHU8cvuS0G8DREM0dde6T1Xq5zZWcrKtJMyjiEWTS8wzpH_KWKQcW7DetpJcEHIRIeb1wWqa9VcijqYLxfdc46nxmcsMK1bynjcoq79TnOuWyg9xLQdRmAs_b686lt0bQA",
           "publishedOn": "2021-11-04T11:09:45.000Z",
           "wordCount": null,
@@ -10652,6 +10382,16 @@
           "publishedOn": "2021-11-04T11:09:45.000Z",
           "wordCount": null,
           "title": "An Interview with Eric Seufert about the Impact of ATT",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/zillow-shuts-down-offers-where-zillow-went-wrong-reflecting-on-zillow-aggregation-and-integration/",
+          "author": "Ben Thompson",
+          "description": "Zillow is ending Zillow Offers; where did the company go wrong, and what my initial analysis got right, and what I missed.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS96aWxsb3ctc2h1dHMtZG93bi1vZmZlcnMtd2hlcmUtemlsbG93LXdlbnQtd3JvbmctcmVmbGVjdGluZy1vbi16aWxsb3ctYWdncmVnYXRpb24tYW5kLWludGVncmF0aW9uLw.NJ7A25OIeRHGatzc5EKthSCSGfkNF6Hjy0zMYMfiDjUPK6XhS243_8AxhLhaPB92ujWYR9Qhe_h6chZ6NnAmKopYYTyk2tz7oxdyMXvgjQ1gYhX55kF0NlmbTIMHSUFcHIGxIIAp5F2U18MwdgD0D_0Xmhn-JhGR1U55YP2lGZs0OrgdK_cYqJcf2Bs62axGklwRtFtb5e45klIui7WObI5esVKYdii5ZusiEihxDNDd-KO5l8RT4x0M9JgGEndpEeCgnenhHgJ_f3gGLIpXJ5g1R5ErD3h3os5-OJ5q0jD2U8HYiuLwpu1KUj_tAIvFqTBWNj3HzRB3AqdnGv74ug",
+          "publishedOn": "2021-11-03T12:00:32.000Z",
+          "wordCount": null,
+          "title": "Zillow Shuts Down Offers; Where Zillow Went Wrong; Reflecting on Zillow, Aggregation, and Integration",
           "itunes": {}
         },
         {
@@ -10718,6 +10458,16 @@
           "id": "https://stratechery.com/2021/adobe-max-photoshop-on-the-web-photoshop-and-nfts/",
           "author": "Ben Thompson",
           "description": "Adobe Max suggested that Adobe is finally starting to build its products as a service, not just selling them that way. Plus, Photoshop on the Web leans into Photoshop's complexity, and Photoshop's NFT authenticity feature is compelling.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hZG9iZS1tYXgtcGhvdG9zaG9wLW9uLXRoZS13ZWItcGhvdG9zaG9wLWFuZC1uZnRzLw.NJ4ebBzS2tn6JYq1ipz1TRdWBpEXd8srMmmDhUS5WgZYoUTBDE4iaAKLWhUi128OVAs_dNGpcizwruehnS2a9_oHatHiISGwpaaExtrm5-XurqsmZz0MiDMgxM5pjTau5f5hmKA8xPL9mpTfknjNYHkBGnjlZahwkGovtLF7cSkEk5iBMuRk54T3n8iwZj-ij_BffJDjUp_jjE0wt6Z6K6F-aT7eaX3vVyJRtLW0njRTgA4XcfAXDIeN7wCFg6y90K4bvwtagTjF_in_W1fHvqoJdw4nWAvBjSXV9XB2CPGlw7LtG47wgZ2qkfk8khYfQYrq_nshzVs9mF6KXoU9Nw",
+          "publishedOn": "2021-11-02T12:08:15.000Z",
+          "wordCount": null,
+          "title": "Adobe Max, Photoshop on the Web, Photoshop and NFTs",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/adobe-max-photoshop-on-the-web-photoshop-and-nfts/",
+          "author": "Ben Thompson",
+          "description": "Adobe Max suggested that Adobe is finally starting to build its products as a service, not just selling them that way. Plus, Photoshop on the Web leans into Photoshop's complexity, and Photoshop's NFT authenticity feature is compelling.",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hZG9iZS1tYXgtcGhvdG9zaG9wLW9uLXRoZS13ZWItcGhvdG9zaG9wLWFuZC1uZnRzLw.bhfiyQ1Il_BncmaEvAjRzXl1zkua3fqTYj_1pdswuhm-56jiBROtTvQJFZDDKa1RUpGbb_DbJWW1F-FUiWR8C0iXMcyasccRRNLuPONDkc2hWMzQt8Uat9IajC6xsa6opRZ_0EaA0h7moNEIoJC3GDKweTvtzTAT-BZhhfIYEPP5V7QBDXgcdbyw9utqFPF6VZJc7RMJXqx7G78U4NjnIjYf0-roXad5znqGzHn3XaSTckbDAK5Lagt625KCny7677yXu-T_iCFdXEMMYNRQK0I4ZXKN69aFTppqQMlM27ptjXLKpcoTBDqEh4cpi54Xr9jjtl0P5LaYEd6dSngJNg",
           "publishedOn": "2021-11-02T12:08:15.000Z",
           "wordCount": null,
@@ -10772,6 +10522,16 @@
           "publishedOn": "2021-11-02T12:08:15.000Z",
           "wordCount": null,
           "title": "Adobe Max, Photoshop on the Web, Photoshop and NFTs",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/about-the-interview-the-metaverse-and-vr-why-not-a-startup/",
+          "author": "Ben Thompson",
+          "description": "How I approached the interview with Zuckerberg, why the metaverse is really about VR, and then a discussion of Facebook's competitors.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hYm91dC10aGUtaW50ZXJ2aWV3LXRoZS1tZXRhdmVyc2UtYW5kLXZyLXdoeS1ub3QtYS1zdGFydHVwLw.RWyHKGatOK22uWrnM100A2bWpDFT2LDdJgasCb83bEtJky9tofwz0XJD4PChPdFYEH5F8sEdhUbY8U2ZD5mgLvoEfLE_d9vf6edUGse4B4WmOAG26XI7olX6Lx7-t8DZk4ijeT6mGFO6BJEZdEwsB0e5p8Ft9QxrqZvxoIQkaD4XD3rHKcK6ti1DLBScCVdQSJ22FJofgoVSBx45suC7X22b4xyjhw_TFSpICPAmXLGZ1TopP4rts2bQ-1jX9acspWo7X6tvKtmMgm_j60FzXs1qdJQPSx4qabed0T-ORTqtZaqrUiF20OfD82UGxYpDJmFyt99Dwz8RZ1VBZDaNUQ",
+          "publishedOn": "2021-11-01T12:06:21.000Z",
+          "wordCount": null,
+          "title": "About the Interview, The Metaverse and VR, Why Not a Startup?",
           "itunes": {}
         },
         {
@@ -10838,6 +10598,16 @@
           "id": "https://stratechery.com/2021/facebook-earnings-investor-trust-facebook-reality-labs/",
           "author": "Ben Thompson",
           "description": "Facebook's earning seemed bad, but investors responded well, thanks to the trust that Facebook has developed over the years, and demonstrated this quarter.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9mYWNlYm9vay1lYXJuaW5ncy1pbnZlc3Rvci10cnVzdC1mYWNlYm9vay1yZWFsaXR5LWxhYnMv.LVC4y9TDroHebQNXK_u_mAY2aBrB-Lk_Gr7RbS-CSY874X-fchTvxSR3T11XSBEdzg0g3uKOdS91WCxwR3uhjccmYdGBFLY9zXXXx6pFatzJdroDhVMPuqUm9vY7G1yZuT0IgIMXzlbaXfp-LWTTSaoU7WWV3nlMI48E-m7akRVdi07tPLb9v67gpPISA1nZrKmr9Bn8bbfM1cmoIuqtaWxE9P66nyWM6eHupwiEoTQzd2NXDHRysxlk6YVRvJANYfbN5HlLRnUY77WEC7rSygS2MIJ9wXKLLoIW4SR7M4c0p2rSeXvqUZ0P_U4qX_OZcKx-X1M_lNvNCGM33-b5lA",
+          "publishedOn": "2021-10-26T11:51:13.000Z",
+          "wordCount": null,
+          "title": "Facebook Earnings, Investor Trust, Facebook Reality Labs",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/facebook-earnings-investor-trust-facebook-reality-labs/",
+          "author": "Ben Thompson",
+          "description": "Facebook's earning seemed bad, but investors responded well, thanks to the trust that Facebook has developed over the years, and demonstrated this quarter.",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9mYWNlYm9vay1lYXJuaW5ncy1pbnZlc3Rvci10cnVzdC1mYWNlYm9vay1yZWFsaXR5LWxhYnMv.tyFoHbGnMgZouU3A_5nDbtwYgFFO1RCnOOcPuK0KG6zbH56U8QR5jhfJ7Q-fX-zOOaF12Sy-8LJ2n-RYELM4DIF_EdCFFnvTeUk77DNkojSpXq3e2udoLSvDx-mpw4nCRJBanHTHauAJYk1R_QTRKtv8P9ljHSHyYDkfx01ygSlsozM6MiCw2qBV8q_H6aRgKmD-hU46P3Ccvz2ucyU0FkSQl3tQFXSyNxVc5bMjH7lYtP01sDV1d50TYvDs7VTOqnhvNpHp61bntAEJbHG_wTAOr3qfQ7bD3kX2TCUnrrAOD4L4QGYfN7X6SRytldRKUpARYCfaOOoLAojDD-oGqg",
           "publishedOn": "2021-10-26T11:51:13.000Z",
           "wordCount": null,
@@ -10892,6 +10662,16 @@
           "publishedOn": "2021-10-26T11:51:13.000Z",
           "wordCount": null,
           "title": "Facebook Earnings, Investor Trust, Facebook Reality Labs",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/snap-earnings-attribution-and-targeting-the-supply-chain/",
+          "author": "Ben Thompson",
+          "description": "Snap's earnings show how the inability to measure attribution makes it hard to target ads; the big question is what this means for Facebook.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9zbmFwLWVhcm5pbmdzLWF0dHJpYnV0aW9uLWFuZC10YXJnZXRpbmctdGhlLXN1cHBseS1jaGFpbi8.OBnRK4Ea4SvZnj5WOseeuRutkNJw3mSF_ELPo_X2zeMCOxthiUTErjgXfKQzMomd6R_Whxn_aLheX_tB6pF8gvlfyJAOkXOdxUCE9sDBgzWMe5pmL83VhPbHI6-Ic4zCVZ8DyWUN4WkyYNWtNu8yJxwxmcC9JFlze-AiJcGlMMKiOIWSJfKFrP4BAGQFKjmpGtLvj5MlbwqwJPmrc3YT3tQlHCYHqLOMyEoA4a0GKtpvInBC2R18NxXISZ8-_oLx02C9njSfUnmbohUmol4HpUBDWaGPPKk26dMwl0oPLSFnNcOCzYHrBzR2SIicQYeihHix_Db1gIGoM4mLO9oPrg",
+          "publishedOn": "2021-10-25T13:00:53.000Z",
+          "wordCount": null,
+          "title": "Snap Earnings, Attribution and Targeting, The Supply Chain",
           "itunes": {}
         },
         {
