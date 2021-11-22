@@ -2,10 +2,419 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gsyx666.github.io/action-osmosfeed/index.html</id>
     <title>gsyx::feed</title>
-    <updated>2021-11-21T00:45:29.893Z</updated>
+    <updated>2021-11-22T00:43:50.477Z</updated>
     <generator>osmosfeed 1.11.3</generator>
     <link rel="alternate" href="https://gsyx666.github.io/action-osmosfeed/index.html"/>
     <link rel="self" href="https://gsyx666.github.io/action-osmosfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Consulting Temperature API with JS]]></title>
+        <id>https://dev.to/walternascimentobarroso/consulting-temperature-api-with-js-4ibg</id>
+        <link href="https://dev.to/walternascimentobarroso/consulting-temperature-api-with-js-4ibg"/>
+        <updated>2021-11-22T00:22:44.000Z</updated>
+        <summary type="html"><![CDATA[[Clique aqui para ler em português]
+Let’s make a query for a temperature api using javascript fetch
+First let’s create the interface, we’ll do something simple, using just HTML.
+<div>
+  <span id="city"></span>
+  <span id="temperature"></span>
+</div>
+
+To present the data we have a div with two spans, one to represent the city and the other to represent the temperature.
+const CITY = document.getElementById('city');
+const TEMPERATURE = document.getElementById('temperature');
+const URL_MAIN = 'https://api.openweathermap.org/data/2.5/weather';
+const API_KEY = '8f57cb746c4c1d4b48b7f35eba6f6230';
+const UNITS = 'metric';
+
+navigator.geolocation.getCurrentPosition(loadUrl);
+
+function loadUrl(pos) {
+  let lat = pos.coords.latitude;
+  let long = pos.coords.longitude;
+  let url = `${URL_MAIN}?lat=${lat…]]></summary>
+        <author>
+            <name>Walter Nascimento</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Shenanigans with Shaders]]></title>
+        <id>https://dev.to/georgeoffley/shenanigans-with-shaders-3i97</id>
+        <link href="https://dev.to/georgeoffley/shenanigans-with-shaders-3i97"/>
+        <updated>2021-11-21T23:22:52.000Z</updated>
+        <summary type="html"><![CDATA[Table Of Contents
+
+
+
+Introduction
+Shaders
+Setup
+Shader Code
+Conclusion
+For those of you who love rabbit holes, learning graphics programming is a pretty deep one. There’s always some new thing to learn, there’s a bunch of different new languages and toolsets to know, and on top of all that, there’s math. Like anything else in programming, you pick up momentum with each new thing you build, so I found a tutorial and started making shaders. I know very little about this. However, I’m writing what I’m learning, so don’t come for me if I’m off on anything. 
+
+
+
+A shader is a program that runs on the GPU as part of the graphics pipeline. We’re going to focus primarily on shaders in Unity. There are other ways to tackle this, but Unity gives an easy setup to get started quickly. For the context o…]]></summary>
+        <author>
+            <name>George Offley</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Oops, I Did It Again...I Made A Rust Web API And It Was Not That Difficult]]></title>
+        <id>https://dev.to/deciduously/oops-i-did-it-againi-made-a-rust-web-api-and-it-was-not-that-difficult-3kk8</id>
+        <link href="https://dev.to/deciduously/oops-i-did-it-againi-made-a-rust-web-api-and-it-was-not-that-difficult-3kk8"/>
+        <updated>2021-11-21T23:02:27.000Z</updated>
+        <summary type="html"><![CDATA[Over two years ago (gulp), I posted a walkthrough of my Rust implementation of todo-mvp by @gypsydave5
+ demonstrating how to build a simple Rust API without a framework.  The core functionality was built using hyper, a lower-level HTTP library instead of a full-blown framework.
+It turns out I wrote that post about six months too early.  I published it in May 2019, and in November, Rust released 1.39.0 containing async/await syntax.  Womp womp.
+My intent here was to simply upgrade the existing application to use the new syntax where applicable and call it a day.  But, you know that thing that happens when you go back and review code you wrote years ago?  Yeah, that thing happened. 
+Our result functions almost identically to the implementation in the previous post, so some of this code will …]]></summary>
+        <author>
+            <name>Ben Lovy</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Resizing alone doesn't make it mobile first]]></title>
+        <id>https://dev.to/noriller/resizing-alone-doesnt-make-it-mobile-first-22g5</id>
+        <link href="https://dev.to/noriller/resizing-alone-doesnt-make-it-mobile-first-22g5"/>
+        <updated>2021-11-21T22:38:13.000Z</updated>
+        <summary type="html"><![CDATA[Where I'm coming from, I never had to even bother about mobile.
+When I did start bothering about it... what was my surprise when everywhere I saw they would just resize the screen and call it a day.
+Granted, it was usually because one thing was being explained and most of the time... it will be enough...
+Sometimes just resizing your desktop browser isn't enough... you have to use it on the real thing.
+And if that's the case... what if I told you, you could have your desktop debugging experience in your phone? 
+On your Android device, enable debugging
+
+
+See more here: https://developer.android.com/studio/debug/dev-options
+
+
+
+
+
+Connect your phone and desktop by USB
+Go to: chrome://inspect#devices
+
+???
+Profit?
+
+To learn more: https://developer.chrome.com/docs/devtools/remote-debugging/
+If you're having trouble connecting, try unplugging and replugging it (seriously), also make sure "Discover USB devices" is checked.
+After it's on, you can click inspect or even open new tabs!
+
+And you probably want to set up the port you'll be using to be forwarded.
+
+And that's it!
+You have the full experience of debugging straight from Chrome
+If you use it from the phone, it's reflected in the inspect window.
+If you use it from the inspect window, it will reflect on the phone.
+The area reserved for the bezel and address bar is transparent, but there.
+Have you ever visited the SO landing page?
+Sorry iPhone users... this one is for Android.
+Feel free to donate so I would be able to buy an iPhone. 😘
+
+Cover Photo by Joshua Mayo on Unsplash]]></summary>
+        <author>
+            <name>Bruno Noriller</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Create a Restful API with Golang from scratch]]></title>
+        <id>https://dev.to/pacheco/create-a-restful-api-with-golang-from-scratch-42g2</id>
+        <link href="https://dev.to/pacheco/create-a-restful-api-with-golang-from-scratch-42g2"/>
+        <updated>2021-11-21T21:33:11.000Z</updated>
+        <summary type="html"><![CDATA[In this tutorial, we are going to walk through an example of how to create a Restful API with Golang. We are going to cover the initial setup of the application, how to structure your app, how to handle persistence, docker config, HTTP requests and even debugging with vscode.
+1. Why Golang
+
+2. Initial Setup
+
+3. Create your first endpoint with fiber
+
+4. Run with Docker
+
+
+4.1. Setup Dockerfile
+
+4.2. Include Air for hot-reloading
+
+4.3. Create a docker-compose.yaml config
+
+
+
+5. Setup VSCode debugger
+
+6. Create a Todo API
+
+
+6.1. Include Database connection
+
+6.2. Todo module implementation
+
+
+6.2.1. Todo model definition
+
+6.2.2. Todo repositories
+
+6.2.3. Todo handlers
+
+
+
+6.3. Start the database and register endpoints
+
+
+
+Build and test
+Test with insomnia
+
+
+8.1. Import swagger
+
+8.2. Test create Tod…]]></summary>
+        <author>
+            <name>Thiago Pacheco</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[100 Languages Speedrun: Episode 01: Python]]></title>
+        <id>https://dev.to/taw/100-languages-speedrun-episode-01-python-22c3</id>
+        <link href="https://dev.to/taw/100-languages-speedrun-episode-01-python-22c3"/>
+        <updated>2021-11-21T21:29:43.000Z</updated>
+        <summary type="html"><![CDATA[Time to start a 100 programming languages speedrun. Every day or so, I'll be posting about a different programming language. Not just doing 100 fizzbuzzes, but trying out something that's interesting about each language.
+But that's not all, some of the programming languages I will create for purpose of this series. So if you follow along, you'll see not just a lot of different programming languages, but you might also learn a thing or two about how to create your own.
+I won't be shy about my opinions, and I might be even exaggerating a bit. Feel free to share your thoughts in the comments.
+Episodes will all be indepedent. Target audience is people who know programming, but don't know a 100 difference languages, so I'll often use some less idiomatic ways of doing things if I think it's clea…]]></summary>
+        <author>
+            <name>Tomasz Wegrzanowski</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Make A ToDo App using React and ReduxToolkit]]></title>
+        <id>https://dev.to/arunavamodak/make-a-simple-todo-app-using-react-and-reduxtoolkit-2d4i</id>
+        <link href="https://dev.to/arunavamodak/make-a-simple-todo-app-using-react-and-reduxtoolkit-2d4i"/>
+        <updated>2021-11-21T20:39:00.000Z</updated>
+        <summary type="html"><![CDATA[In this article we will learn the very basics of redux toolkit and make a simple app using react and redux toolkit. I have kept it very simple with respect to styling, using a little bit css, but you guys can choose whatever you need for styling.
+Redux is an open-source JavaScript library for managing and centralizing application state. It helps us to write JavaScript apps that behave consistently across client, server, and native environments and are easy to test. While it's mostly used as a state management tool with React.
+According to the official documentation,
+Redux Toolkit is our official recommended approach for writing Redux logic. It wraps around the Redux core, and contains packages and functions that we think are essential for building a Redux app. Redux Toolkit builds in our s…]]></summary>
+        <author>
+            <name>Arunava Modak</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Why don't we call copy-constructors **reconstruct**ors?]]></title>
+        <id>https://dev.to/baenencalin/why-dont-we-call-copy-constructors-reconstructors-4i7f</id>
+        <link href="https://dev.to/baenencalin/why-dont-we-call-copy-constructors-reconstructors-4i7f"/>
+        <updated>2021-11-21T20:23:31.000Z</updated>
+        <summary type="html"><![CDATA[I think it'd be funny if we called copy-constructors (constructors that take a set of data from one object and puts it in another - of the same type) reconstructors, because they are reconstructing the original object.]]></summary>
+        <author>
+            <name>Calin Baenen</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Playing around with browser cookies in Scala.js]]></title>
+        <id>https://dev.to/awwsmm/playing-around-with-browser-cookies-in-scalajs-3p43</id>
+        <link href="https://dev.to/awwsmm/playing-around-with-browser-cookies-in-scalajs-3p43"/>
+        <updated>2021-11-21T20:06:28.000Z</updated>
+        <summary type="html"><![CDATA[Photo by Laura James from Pexels
+I spent this weekend playing around with Scala.js and learning how to manipulate browser cookies with it.
+Check out the live demo at cookies.awwsmm.com.
+The source is available at github.com/awwsmm/CookiesScalaJS.
+There are a few cool Scala flairs here, particularly this bit which pattern matches on a regular expression
+  def clearAllCookies(): Unit = {
+    val Cookie = "([^=]+)=.+".r
+    document.cookie.split("; ").foreach {
+      case Cookie(key) => clearCookie(key)
+      case other => err.println(s"Couldn't parse '$other' as a key=value cookie pair")
+    }
+  }
+
+In order to ensure that users don't include the ; or = characters in their cookie keys and values (which confuses the parser), I've also added these two little safeguards, as well
+    // prevent the user from typing ';' or '=' into the input
+    input.addEventListener("keypress", (e: dom.KeyboardEvent) => {
+      if (e.key == ";" || e.key == "=") {
+        e.preventDefault()
+      }
+    })
+
+    // prevent the user from pasting ';' or '=' into the input
+    input.addEventListener("paste", (e: dom.ClipboardEvent) => {
+      val text = e.clipboardData.getData("text")
+      if (text.contains(";") || text.contains("=")) {
+        e.preventDefault()
+      }
+    })
+
+What do you think? Anyone else on DEV doing anything cool with Scala.js?]]></summary>
+        <author>
+            <name>Andrew (he/him)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Quick Guide to Typescript - Part 1]]></title>
+        <id>https://dev.to/anuradha9712/quick-guide-to-typescript-part-1-3494</id>
+        <link href="https://dev.to/anuradha9712/quick-guide-to-typescript-part-1-3494"/>
+        <updated>2021-11-21T19:21:06.000Z</updated>
+        <summary type="html"><![CDATA[Let's get started with some quick guide to Typescript.
+In this article we'll cover the following concepts:
+Introduction
+Type Inference
+Explicit Types
+Union Types
+Dynamic Types
+Functions
+Type Aliases
+Typescript is superset of Javascript which means it is an extension of Javascript, adding new features and syntax on top of the core language.
+Typescript is a strongly typed, object-oriented & compiled language.
+Typescript is designed to be compiled into fully compatible Javascript, so it works in any browser, any host, and any OS. 
+We need typescript compiler to compile it to Javascript code because browsers do not understand typescript.
+Typescript strongly encouraged static-typing which means it will validate all the assertions before the code executes. It allows you to do a type check during…]]></summary>
+        <author>
+            <name>Anuradha Aggarwal</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to create NFTs (General Explanation)  +  Extravagant Whales Collection]]></title>
+        <id>https://dev.to/balt1794/how-to-create-nfts-general-explanation-extravagant-whales-collection-439e</id>
+        <link href="https://dev.to/balt1794/how-to-create-nfts-general-explanation-extravagant-whales-collection-439e"/>
+        <updated>2021-11-21T19:10:50.000Z</updated>
+        <summary type="html"><![CDATA[After months of hard work, I have finally released my NFT collection called Extravagant Whales. 
+At first I wasn't really sure about NFTs, but the more I dived into the NFT world, the more I was convinced about finishing my collection.
+NFTs are unique tokens which can be images, videos, audio files, and any other types of digital files. NFTs are deployed on the blockchain and use blockchain technology to generate a public proof of ownership.
+I didn't create my NFTs for the money or the fame of being recognized. I did it for the learning process and what's behind creating NFTs.
+I'm not an artist, so I used programming and some tools which were already created by some awesome people such as Daniel Eugene Botha (HashLips) and Rounak Banik (Scrappy Squirrels) to generate my collection. I did c…]]></summary>
+        <author>
+            <name>balt1794</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Becoming a JavaScript Jedi - Mastering the JavaScript Filter]]></title>
+        <id>https://dev.to/uequations/becoming-a-javascript-jedi-mastering-the-javascript-filter-14eh</id>
+        <link href="https://dev.to/uequations/becoming-a-javascript-jedi-mastering-the-javascript-filter-14eh"/>
+        <updated>2021-11-21T18:55:55.000Z</updated>
+        <summary type="html"><![CDATA[Mensah Alkebu-Lan
+Prerequisites
+Discussion
+References
+Some familiarity with the JavaScript programming language.
+Arrays in JavaScript are list-like objects whose prototype has methods to perform traversal and mutation operations. There are countless use cases in Web Development where arrays will be useful.
+The Array.prototype.filter() method creates a new filtered array containing all of the elements in the array that pass the test implemented by the provider function. This provider function can be an arrow function taking an element of the array as input and a boolean pass/fail as output.  To clarify, if the output is true the element will be included in the new filtered array. As with most methods in JavaScript, there is considerable flexibility in how they are implemented. For example, instead of an arrow function, the filter method can also take a callback function that returns true or false.
+Below is a typical example of how the filter function is used:
+var arr1 = [1,2,3,4],
+    arr2 = [2,4],
+    res = arr1.filter(item => !arr2.includes(item));
+
+console.log(res);
+
+When this program is executed, the result should be [1,3]. That is, for each of the elements is arr1, the provider function is going to check whether the array [2,4] includes that item. If the element is neither 2 nor 4, it will be added to the filtered array. 
+ Array.prototype.filter() - JavaScript | MDN. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter. Assessed 11-21-2021.
+ Array - JavaScript | MDN. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array. Assessed 11-21-2021.
+View original article at https://voices.hassanriver.com/article/2021/11/becoming-javascript-jedi-mastering-javascript-filter/.]]></summary>
+        <author>
+            <name>Mensah Alkebu-Lan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Java Classpath Syntax in Linux vs. Windows]]></title>
+        <id>https://www.baeldung.com/?p=112589</id>
+        <link href="https://feeds.feedblitz.com/~/673376274/0/baeldung~Java-Classpath-Syntax-in-Linux-vs-Windows"/>
+        <updated>2021-11-21T13:20:51.000Z</updated>
+        <summary type="html"><![CDATA[Learn how to set the Java classpath on different operating systems and what to watch out for.]]></summary>
+        <author>
+            <name>Kai Yuan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[These are the Best Cases for the Nintendo Switch OLED model in 2021]]></title>
+        <id>https://www.xda-developers.com/?p=546537</id>
+        <link href="https://www.xda-developers.com/best-nintendo-switch-oled-cases/"/>
+        <updated>2021-11-21T13:00:37.000Z</updated>
+        <summary type="html"><![CDATA[The Nintendo Switch OLED model is the fancy new toy in town, and it’s a big improvement over the original Nintendo Switch from 2017. That new OLED display makes a huge difference, making colors more vibrant and deeper blacks, it makes a huge difference in the way games look. If you’re buying a Switch this
+The post These are the Best Cases for the Nintendo Switch OLED model in 2021 appeared first on xda-developers.]]></summary>
+        <author>
+            <name>João Carrasqueira</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Declaring Val and Var Variables in Lombok]]></title>
+        <id>https://www.baeldung.com/?p=112694</id>
+        <link href="https://feeds.feedblitz.com/~/673374740/0/baeldung~Declaring-Val-and-Var-Variables-in-Lombok"/>
+        <updated>2021-11-21T12:39:42.000Z</updated>
+        <summary type="html"><![CDATA[Learn how to use Lombok's val and var to define local variables without specifying the type.]]></summary>
+        <author>
+            <name>baeldung</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Omitting Getter or Setter in Lombok]]></title>
+        <id>https://www.baeldung.com/?p=112630</id>
+        <link href="https://feeds.feedblitz.com/~/673374742/0/baeldung~Omitting-Getter-or-Setter-in-Lombok"/>
+        <updated>2021-11-21T12:36:20.000Z</updated>
+        <summary type="html"><![CDATA[Learn how to skip the generation of individual getters and setters when using Lombok annotations.]]></summary>
+        <author>
+            <name>baeldung</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[字体渲染 – 优化低分辨率显示器的文字显示效果[油猴脚本]]]></title>
+        <id>https://www.appinn.com/?p=40518</id>
+        <link href="https://www.appinn.com/font-rendering-greasyfork/"/>
+        <updated>2021-11-21T08:02:40.000Z</updated>
+        <summary type="html"><![CDATA[字体渲染（自用脚本）是一款油猴脚本，它能够让 Windows 用户在无需安装 MacType 的情况下，优化浏览器字体显示效果，让每个中文字体变得更有质感。并可设置自定义字体、描边、平滑、阴影等效果。]]></summary>
+        <author>
+            <name>青小蛙</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[实现不同浏览器间书签同步，你可试试这三种方案]]></title>
+        <id>https://sspai.com/post/70017</id>
+        <link href="https://sspai.com/post/70017"/>
+        <updated>2021-11-21T07:30:10.000Z</updated>
+        <summary type="html"><![CDATA[不少读者可能会有同时使用多个浏览器的习惯，比如在 Windows 上使用 Microsoft Edge、在 macOS 上使用 Safari、在移动端则使用 Chrome。在这种使用场景下，实现不同浏览器之间的书签同步也是个不小的需求——毕竟书签内容往往会随着我们的浏览行为发生变化，每次切换平台、浏览器都进行一次导出、导入还是比较麻烦。
+作为一个多平台、多浏览器都在使用的用户，在今天的文章中我将分享一些能够在不同浏览器之间实现书签同步的解决方案。
+Chrome、Edge 以及 Firefox 的书签同步
+在桌面端，基于 Chromium 内核的浏览器（主要是 Chrome、Edge）与 Firefox 因为都有着丰富的扩展生态支持，因此也可以通过浏览器扩展来实现书签管理与同步。
+个人比较推荐的是以下两款：
+xBrowserSync
+如果你想要开箱即用的多浏览器书签同步服务，最佳选择就是 xBrowserSync。
+这款工具支持的浏览器包括 Firefox 以及各种基于 Chromium 的浏览器，只需在对应浏览器的扩展商店中搜索 xBrowserSync 并安装即可。
+
+在扩展中点击 xBrowserSync 开始设置同步，直接点击 next 然后会让你输入对应的密码——之后服务会自动生成一个同步 ID，默认同步的服务器为主服务器，当然 xBrowserSync 也提供多个镜像同步服务器（服务器列表）方便我们进行选择，你可以根据具体的网络情况点击下方的 Switch Service 来切换到更为稳定的服务器。
+
+输入两遍密码之后，你当前浏览器的书签会以书签文件的形式自动同步到 xBrowserSync 服务器中。点击扩展程序栏中的 xBrowserSync 图标，你可以对书签进行管理，设定相关的同步服务。比如对在线书签进行搜索、添加当前标签页为书签等等。
+
+点击 xBrow…]]></summary>
+        <author>
+            <name>化学心情下2</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[玩转 Obsidian 07 ：自动化「间歇式日记」]]></title>
+        <id>https://sspai.com/post/69982</id>
+        <link href="https://sspai.com/post/69982"/>
+        <updated>2021-11-21T03:07:16.000Z</updated>
+        <summary type="html"><![CDATA[Matrix 首页推荐
+Matrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。
+文章代表作者个人观点，少数派仅对标题和排版略作修改。
+
+在系列的第三期文章《玩转 Obsidian 03：如何记录「间歇式日记」》中介绍过如何通过「间歇式日记」管理自己的日常工作和生活：
+
+「间歇式日记」是著名的生产力教练 Coach Tony 在2017 年发表的《Replace Your To-Do List With Interstitial Journaling To Increase Productivity》文章中提出的一个概念。他认为「间歇式日记」可以更好的帮助自己集中精力更聪明的工作。「间歇式日记」既不同于常规的「日记」，也不同于常规的「任务管理软件」，它更强调围绕着「工作流」打造一个「正反馈描述」从而提高「生产力」。
+
+「间歇式日记」的运作方式其实很简单，一句话总结：
+
+在每个「工作间歇」，以「时间戳」为单位，采用类似「日记」的形式做的笔记。
+
+在实际使用中「间歇式日记」也不会有太多负担，因为适当总结和梳理总是会帮助我们「理清现状」并开始下一个行动。但是，在使用「间歇式日记」一段时间后我发现了几个问题。
+间歇式日记的问题
+问题1：笔记优先法则 Vs 文件夹管理
+在《玩转 Obsidian 04：为什么推荐使用 Obsidian 做知识管理》文章中专门提到 Obsidian 遵循「笔记优先法则」，这是它的优势之一：
+笔记优先法则
+「笔记优先法则」要求我们我们完全不需要考虑文件「存到哪里」这件事，只需要关注文件的「双向链接」以及 Tag 即可。并且借助 Obsidian 强大的搜索和关联能力，我们可以很方便的找到各种笔记。
+在实际使用场景中，每天的「间歇式日记」经常要关联…]]></summary>
+        <author>
+            <name>闲者时间_王掌柜</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Yes, these are emoji buttons]]></title>
         <id>https://dev.to/manuthecoder/yes-these-are-emoji-buttons-1pf8</id>
@@ -889,6 +1298,17 @@ We have a div and inside we have a label, an input and a ul, this input will be 
 The post Today only: Get a OnePlus 9 Pro for $799 ($270 off) or OnePlus Buds Pro for $100 ($50 off) appeared first on xda-developers.]]></summary>
         <author>
             <name>Corbin Davenport</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows 11 Update Tracker: Download and Install the latest Windows 11 update]]></title>
+        <id>https://www.xda-developers.com/?p=465367</id>
+        <link href="https://www.xda-developers.com/windows-11-update-tracker/"/>
+        <updated>2021-11-19T19:00:14.000Z</updated>
+        <summary type="html"><![CDATA[The wait is finally over — Windows 11 is here as Microsoft has officially kicked off the Insider Preview program for the next generation of Windows. The company is also rolling out several updates on top of the base Windows 11 build in preparation for an eventual rollout via the stable channel. This article will
+The post Windows 11 Update Tracker: Download and Install the latest Windows 11 update appeared first on xda-developers.]]></summary>
+        <author>
+            <name>Skanda Hazarika</name>
         </author>
     </entry>
     <entry>
@@ -2783,6 +3203,16 @@ The post Download OnePlus Nord 2 Pac-Man Edition’s wallpapers, animations, and
     <entry>
         <title type="html"><![CDATA[Unity Buys Weta Digital, An Interview with Unity CEO John Riccitiello]]></title>
         <id>https://stratechery.com/2021/unity-buys-weta-digital-an-interview-with-unity-ceo-john-riccitiello/</id>
+        <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS91bml0eS1idXlzLXdldGEtZGlnaXRhbC1hbi1pbnRlcnZpZXctd2l0aC11bml0eS1jZW8tam9obi1yaWNjaXRpZWxsby8.RUQfp0xLsW92xQipnsAHYhrs_Gdz5mmE0aLUhCAOCFrm5nCJF3s-dC52YPs_coNGaQoCTkcO1vt-8MdiruCasLjOe-nKrxA4_jS1xVaOtzUPGa3qsR3ENaxKRoPRIwrgGOAtUaEsSKuH-dgHNzYwC1AaRcoNXg_mf0B7L3gSByKpp_EVd-PMZMtM5OmltA-hwt0f_KwLz4gGNml7ednmHtVX1JSEvCmKu7pEteHgzOJ1LhOonrBfv9nWow20S3V1lVSmuXuOmvLlh__5ZwhK9CcGjJJVHXvs2k1WwGIODz9KzCM4TnPacsRlOfotCBFKmsrSjd0yrPeZZgXHV7AX3Q"/>
+        <updated>2021-11-17T09:34:06.000Z</updated>
+        <summary type="html"><![CDATA[The Weta acquisition, Unity’s ambitions, their advertising business and relationship with Apple, and why Riccitiello thinks my understanding of the metaverse isn’t quite right.]]></summary>
+        <author>
+            <name>Ben Thompson</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Unity Buys Weta Digital, An Interview with Unity CEO John Riccitiello]]></title>
+        <id>https://stratechery.com/2021/unity-buys-weta-digital-an-interview-with-unity-ceo-john-riccitiello/</id>
         <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS91bml0eS1idXlzLXdldGEtZGlnaXRhbC1hbi1pbnRlcnZpZXctd2l0aC11bml0eS1jZW8tam9obi1yaWNjaXRpZWxsby8.f03cInEW4wZ0rp11XAf7udmi93xqsp1sjdEjt3v6E__7iD44hzeBQUt6l5GtG4xJAGp9WKvMZcq9W_AOZOWi7sy6cBu25RgUzifH47XgWD2gHdMHurbjL6kgi8RvcMvipd7Tk7v6_XNl1TZrl94w8t3jfpX8LzCEIz_cSbpsEJVMwgLFTrCHBWX0QqU4DZa35XFB5pA6gMyh8tp57LNKM0UoVMtahnXHt-5eeCQ1yb43idR2KlidpD2RLl6cCSUf4Sx542fu_rMEGoaHJcO8NehqVsMVgVnhe0WnFrqNOl9bulbJZYM_II90eidElfNfU0JrHG9yo-Xf1dcNg46kJA"/>
         <updated>2021-11-17T09:34:06.000Z</updated>
         <summary type="html"><![CDATA[The Weta acquisition, Unity’s ambitions, their advertising business and relationship with Apple, and why Riccitiello thinks my understanding of the metaverse isn’t quite right.]]></summary>
@@ -3594,6 +4024,16 @@ Windows7集成SP1补丁中文旗舰版光盘镜像下载 (真正微软MSDN官方
 异次元正版数字商城  |  异次元首页  |  微信公众号  |  iPcFun  |  关注微博  |  软件精选]]></summary>
         <author>
             <name>X-Force</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ConstitutionDAO, The Need for Trust, Memes and Reality]]></title>
+        <id>https://stratechery.com/2021/constitutiondao-the-need-for-trust-memes-and-reality/</id>
+        <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9jb25zdGl0dXRpb25kYW8tdGhlLW5lZWQtZm9yLXRydXN0LW1lbWVzLWFuZC1yZWFsaXR5Lw.YTMRScz-OLtMAyR6TmtxJtTwM_U0uhNGVR3j_Q5Ie2gFs7AnvkyqIOw7SeM-hieV4lCBZNQAMts5111frfStNIWINdE_OsoQy4z5yzvqvNaTfvvv4m-XDCNr8JjwbMPc820cKJWHC5GGCW_d37iHsrgPo-FmU4Etas7K4hRI500bd-VWEno8TweBEobkgSEHaD2iTCHey_wPxXV62ko5R1L4LLx16zBHhNW_swRKhh8zbPfIA9bQxPG127_2mHUeDNr4MUqXjznREgI5bL8uqLMpwlpyaIbVY2AtrA4EDPvXNIHdq3LXSttQa5anoEvkDuw1sVy2GPe53nUu-2mp7Q"/>
+        <updated>2021-11-16T13:21:35.000Z</updated>
+        <summary type="html"><![CDATA[ConstitutionDAO is an interesting project to buy a physical good as a community; what is particularly interesting is what it says about the power of actualizing memes]]></summary>
+        <author>
+            <name>Ben Thompson</name>
         </author>
     </entry>
     <entry>
@@ -4420,6 +4860,16 @@ The post Apple holiday gift guide: The best products to buy this season appeared
     <entry>
         <title type="html"><![CDATA[Opendoor Earnings, Opendoor's Pricing, Opendoor's Scalability]]></title>
         <id>https://stratechery.com/2021/opendoor-earnings-opendoors-pricing-opendoors-scalability/</id>
+        <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9vcGVuZG9vci1lYXJuaW5ncy1vcGVuZG9vcnMtcHJpY2luZy1vcGVuZG9vcnMtc2NhbGFiaWxpdHkv.tYYVb511Thx6tRzCWlkEiZeHu1ukU3HM8Dk7j_qMjWBemt2v6QZ6EhCsYU3LDSS4Ng6_XKqxxyfD52F0bDB50lA5FfJxzTC7ZTvJepPyLaDUJRiB7bCoD_uX8z-3Uw76-a0xOEUot1W7glJrhiJsZANNCSQ_gEWNfLD0Fq82BJl1-LhsIGDX-E1UzlPI_dZHndXvAgkZWWGmKNWGA8M0HGpLmej5yJx90fxSXN7J9kC0klaTzYn_P7h-ZBGsGz9yxe0zIz64UzNTXW836j5M6XqcAMyT64MBhCkd3OZgxhexuIW3JlnAsb6kJExK9zqrvPjalxcp1C_cgIm4Py2nLg"/>
+        <updated>2021-11-15T11:56:46.000Z</updated>
+        <summary type="html"><![CDATA[Opendoor's results suggest that the problem in the home-buying market was unique to Zillow's lack of expertise, not the model]]></summary>
+        <author>
+            <name>Ben Thompson</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Opendoor Earnings, Opendoor's Pricing, Opendoor's Scalability]]></title>
+        <id>https://stratechery.com/2021/opendoor-earnings-opendoors-pricing-opendoors-scalability/</id>
         <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9vcGVuZG9vci1lYXJuaW5ncy1vcGVuZG9vcnMtcHJpY2luZy1vcGVuZG9vcnMtc2NhbGFiaWxpdHkv.e8pe5Cz9DdEfKFVgjSIDFkkWoU4fQOEK-4eGe-n-y-b0L4GqWdUKtrXCGXkviGDYjNp6OjvHgQgH8c1vgyQ0O09YQ7AitxGmpj54Ba97U-bk7W_zhKQ9WEIcohSWOc_F70BSx8phAjOF8iTyoNxFbuJ-qYUdewdH0ZyMWa9PwL86-GoktqDvtunm0QNokpW4blnX-4WwZif7nXKP-lqyH-jJfWlqrjRxLcBtQqCG4OvvDIPfbYEDAdSaAK6eyTuy63cDoqXbJB_zKT-tsT4ykAM200dOK5-praHJvJfQJ6487wcJWiNCVUdWubYBFj_F-npmJFTxrjsdncis19WqoQ"/>
         <updated>2021-11-15T11:56:46.000Z</updated>
         <summary type="html"><![CDATA[Opendoor's results suggest that the problem in the home-buying market was unique to Zillow's lack of expertise, not the model]]></summary>
@@ -5004,6 +5454,42 @@ MN按照知识获取的流程，设计了多层次的阅读逻辑，并逐渐转
         <summary type="html"><![CDATA[终结内容农场 是一款开源的浏览器扩展，支持 Chrome、Firefox，它会在你打开内容农场网页之前弹出警告，让你离开这些网站。@Appinn 来自人人都能提交软件的发现频道，@kanz 同学的推荐]]></summary>
         <author>
             <name>青小蛙</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[那些容易混淆的设计模式，了解一下~]]></title>
+        <id>https://juejin.cn/post/7030415720676589581</id>
+        <link href="https://juejin.cn/post/7030415720676589581"/>
+        <updated>2021-11-14T05:25:40.000Z</updated>
+        <summary type="html"><![CDATA[theme: smartblue
+highlight: a11y-dark
+前言
+了解过设计模式的同学都知道，设计模式家族成员非常庞大，具体可以分为3类共23种设计模式
+本文主要包括以下内容
+六大设计原则的介绍
+简单工厂、工厂方法与抽象工厂模式的区别
+代理，装饰与适配器模式的区别
+策略、状态与命令模式的区别
+设计原则介绍
+众所周知，5大设计原则一般有6个
+单一职责原则(Single Responsibility Principle, SRP)
+开闭原则(Open Close Principle, OCP)
+里氏替换原则(Liskov Substitution Principle, LSP)
+依赖倒置原则(Dependence Inversion Principle, DIP)
+接口隔离原则(Interface Segregation Principle, ISP)
+迪米特法则(Law of Demeter, LoD),又称最少知识原则(Principle of Least Knowledge)
+其中，前5个原则称为SOLID原则
+单一职责原则
+单一职责原则很简单也很好理解：类的职责应该单一，一个方法只做一件事,这里就不多说了
+开闭原则
+开闭原则是说程序对扩展开放，对修改关闭：当你的程序需要扩展时，不应该修改原来的代码，而是可以添加一个类来扩展。
+getPrice 方法，也可以增加一个子类，重写getPrice方法，通过高层模块，在打折时使用子类。
+开闭原则的思想其实是将不变的地方封装起来，将可变的部分暴露出去，这样它们就不会混淆，还可以复用不变的部分，增加扩展性
+里氏替换原则
+里氏替换原则用一句话描述就是：所有引用基类的地方，必须能够使用其子类直接替换，换句话说，所有引用基类的地方必须透明地使用其子类对象。
+Java中，引用基类的地方，本来就可以用子类替换，为什么要提出个原…]]></summary>
+        <author>
+            <name>RicardoMJiang</name>
         </author>
     </entry>
     <entry>
@@ -5937,6 +6423,16 @@ The post Motorola Edge 30 Ultra renders and key specs leak appeared first on xda
 The post Like it or not, iOS is a better OS than Android for the average user appeared first on xda-developers.]]></summary>
         <author>
             <name>Mahmoud Itani</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse]]></title>
+        <id>https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/</id>
+        <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.dsUduZgOX59e2LTPFaqUxi3qeLtEfbiJMRHoJC6wVM37l-D1WbLumlDpf2_9SCbC6og5r7xmpIewUDo-Iw2lcdcTQL_mobdw7pTm4Bbsk7sv_0ABKEmx5cCXTNKb90XrlGENQCyWOJvn5WD3rMyPVv53adILfrOKv-oaIKXKg0xZE5FRnBk9Kcq87uFFLtpATbDbblwR8UlKir2Bq7N3gAsrfmrmVN_FSU_bWrmnuocN5Mtzynn86_ePpJfJ8erbCfVJCG9E7Q6T7_SZj8R5vQFTv7S7E6Z1nm3cMovfoAHRGS-jUFtpV3LGN9gYbiGMh1XtlducUy2DUTpbntB9Lg"/>
+        <updated>2021-11-11T13:29:31.000Z</updated>
+        <summary type="html"><![CDATA[Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.]]></summary>
+        <author>
+            <name>Ben Thompson</name>
         </author>
     </entry>
     <entry>
@@ -7017,6 +7513,16 @@ The post Facebook will remove sensitive ad targeting groups from next year appea
         <summary type="html"><![CDATA[Anlink 是一款简单易用的用 Windows 控制 Android 设备的软件，支持 USB 与 Wi-Fi 连接，无需在手机上安装 App，支持多点触控（如果有触摸屏）、键盘打字，仅需要打开 U]]></summary>
         <author>
             <name>青小蛙</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Metaverse Follow-up, Apple Denied Stay in Epic Case, Google Loses EU Shopping Case Appeal]]></title>
+        <id>https://stratechery.com/2021/metaverse-follow-up-apple-denied-stay-in-epic-case-google-loses-eu-shopping-case-appeal/</id>
+        <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9tZXRhdmVyc2UtZm9sbG93LXVwLWFwcGxlLWRlbmllZC1zdGF5LWluLWVwaWMtY2FzZS1nb29nbGUtbG9zZXMtZXUtc2hvcHBpbmctY2FzZS1hcHBlYWwv.LMzoWUla_RebMrbiQRJ1nwOHB51Xx2RwUylox37wf0LnvLZFajWuHDUSQoRAjSC3oW3G9xyTtpKnPAyfS3U824MkcQ4Pz7SjX1YJ7y7Th7rSgtM3h_IkCAgbuyGRvUlox6q_Z70LviyZXR7DZTu8gOVCdJZnwYX-C_UOkqwJYNV-7d2DbqgrXYIVolx2M2rmlBt1CVNr5tXBtX1LJQQsp7HLAmr-OjaSswkS9fHkBPN01WYVw4GTjazZqSjYbhW5A-J5k8d5geCcFyS3nRPkrmh8LEc4OyRyUmTnFEdZSOTp8bup9ZB3FA5mu5iG2zCstiN-C1-Q6FNqC0IANnQY0g"/>
+        <updated>2021-11-10T12:38:31.000Z</updated>
+        <summary type="html"><![CDATA[Metaverse follow-up, and then both Apple and Google lose in court]]></summary>
+        <author>
+            <name>Ben Thompson</name>
         </author>
     </entry>
     <entry>
@@ -8596,6 +9102,16 @@ This constructor is appropriate for list views with a large (or infinite) number
     <entry>
         <title type="html"><![CDATA[Google's South Korea Plan, No Duty to Deal, Developer Versus Customer Choice]]></title>
         <id>https://stratechery.com/2021/googles-south-korea-plan-no-duty-to-deal-developer-versus-customer-choice/</id>
+        <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9nb29nbGVzLXNvdXRoLWtvcmVhLXBsYW4tbm8tZHV0eS10by1kZWFsLWRldmVsb3Blci12ZXJzdXMtY3VzdG9tZXItY2hvaWNlLw.VZiPeJ3_Sv923o0UYc8UeyLrqnDZutFmkWucpofe86iLq23n0TTl92c3NjEJSmzbYFVWl3uE90k0RK9xp8D-ZxZHp_5GP19-Z7Ewl8RoAVU7-miOtEzmgFLDsJsNEdvNYCzip3elNOMzCnyLvzGRjfG94ZdY-0qQ6YaLxhqYZRLYRjxNM19VQx3lxIzWDk6lEFTPXvGNaq82IhJI0rF7IDu18C1aRsGOnx_mTgqQG0Lb38PvJl61CAZcmuJ-R5NdBkvDgeFdpFHtbLpbX1OYTNDJgg6zBmtGpvEmHWcTrDLMufcXHc1YU2YAMgtz-JIOos_GjCulWLZF2gOymT6kXQ"/>
+        <updated>2021-11-08T12:11:52.000Z</updated>
+        <summary type="html"><![CDATA[Google's response the South Korean App Store law, what that says about platform IP rights, and why markets should decide App Store policies.]]></summary>
+        <author>
+            <name>Ben Thompson</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Google's South Korea Plan, No Duty to Deal, Developer Versus Customer Choice]]></title>
+        <id>https://stratechery.com/2021/googles-south-korea-plan-no-duty-to-deal-developer-versus-customer-choice/</id>
         <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9nb29nbGVzLXNvdXRoLWtvcmVhLXBsYW4tbm8tZHV0eS10by1kZWFsLWRldmVsb3Blci12ZXJzdXMtY3VzdG9tZXItY2hvaWNlLw.dJXXMNecry-AER9k6JRiNEAAFxj4kxLJwB3N5x4o6Y78ttSho_wQ1OMpO-VDIWwBlcM2hUwyf1t5BAlu3WucBCkYPkkjKxPof563-7lJRzFxyxSMyii6yRisX9-71nQNu6wacw5Dr1ixLaOX3CneaHQYKPWygJbcaoBoNaQKav-Fihfh9J3qSFq9KChUK8UhoJBP2rDx3tU164GZ_et4hHmY_1inUiTAzL6cIL8zlwNS84fcKSA_IxWYIxsylmYxW1P10LYDf1Vanc7QQL-FHNPwXcG8VPP6qQLMUqOESP-upnHxfTOIMUqc82JJLGtKu6fEraT1enSUH_nf_gXjZw"/>
         <updated>2021-11-08T12:11:52.000Z</updated>
         <summary type="html"><![CDATA[Google's response the South Korean App Store law, what that says about platform IP rights, and why markets should decide App Store policies.]]></summary>
@@ -10146,6 +10662,16 @@ The post ASUS launches the ROG Phone 5s series in Europe appeared first on xda-d
     <entry>
         <title type="html"><![CDATA[An Interview with Eric Seufert about the Impact of ATT]]></title>
         <id>https://stratechery.com/2021/an-interview-with-eric-seufert-about-the-impact-of-att/</id>
+        <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hbi1pbnRlcnZpZXctd2l0aC1lcmljLXNldWZlcnQtYWJvdXQtdGhlLWltcGFjdC1vZi1hdHQv.Mn7Q2Wloa1Jdz1G8DLs2phnkyFYaM55RnMJy_Y-c3phpA65EE_6TOaUE_B5pstRKVv9xR0EQZtRW0k_doPXa4BgchmTfG9ZoOMvOzErxczR0mQMsAuqvqgDjbO25mwxptZDBW8StEWnEUFHjOImbRFTrYxIoP4PstYqoBYrNRgf4BZX3oAvl8Ode8oqF0h4kO5ggIJtqRJfEzWZifSl9U1_bCr2TTFLKNiwiXfGmX-RZQrtb_X238eG76UQLmS48EpZDRpR6-pn-jDhLI6bLNLQva2_j968GZ1ORvoeYCmeT22sXtkEtjvfmr2VNTBXSpn9vs-3hOQfkdRgTaFA3dg"/>
+        <updated>2021-11-04T11:09:45.000Z</updated>
+        <summary type="html"><![CDATA[An interview with Eric Seufert about the impact of ATT and the future of advertising, Apple, and Facebook.]]></summary>
+        <author>
+            <name>Ben Thompson</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[An Interview with Eric Seufert about the Impact of ATT]]></title>
+        <id>https://stratechery.com/2021/an-interview-with-eric-seufert-about-the-impact-of-att/</id>
         <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hbi1pbnRlcnZpZXctd2l0aC1lcmljLXNldWZlcnQtYWJvdXQtdGhlLWltcGFjdC1vZi1hdHQv.hYboq-_TnttAEsynSi2CpSoiy8CN1MBMlf9BH0ntjBecIoTfNpMWqe1ye_nSSLYSzwJ-c8kIqt2oesmp9UnIiXpuwhO43mEtoX6T8oZPFhWxKjxbr10PSloQLp3P8dNTa_oe8iCc_Sfg2HFJvrq7jFgdxydtDWm8rFa74FViIOyCA7JfBnFa1pP_ykCr4LbvMIpA0PNf7N50TKnZ-1HW1NNqiXs4LOyMg9qGShIFPEwxEOcrp9bqcxAjU4bs_Fx2SseSy_fA96aPEvStEH6nMmNgD0KsObq7XUAByq452CHXxsa1Tlpxta9_9verT2vx4vX4MnkE-9thdMr8Tk1Q1w"/>
         <updated>2021-11-04T11:09:45.000Z</updated>
         <summary type="html"><![CDATA[An interview with Eric Seufert about the impact of ATT and the future of advertising, Apple, and Facebook.]]></summary>
@@ -10644,6 +11170,16 @@ The post Dropbox adds Automated Folders and a new tagging system to let you easi
 The post These are the Best Deals on the new Apple AirPods 3 appeared first on xda-developers.]]></summary>
         <author>
             <name>Sumukh Rao</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Zillow Shuts Down Offers; Where Zillow Went Wrong; Reflecting on Zillow, Aggregation, and Integration]]></title>
+        <id>https://stratechery.com/2021/zillow-shuts-down-offers-where-zillow-went-wrong-reflecting-on-zillow-aggregation-and-integration/</id>
+        <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS96aWxsb3ctc2h1dHMtZG93bi1vZmZlcnMtd2hlcmUtemlsbG93LXdlbnQtd3JvbmctcmVmbGVjdGluZy1vbi16aWxsb3ctYWdncmVnYXRpb24tYW5kLWludGVncmF0aW9uLw.JeWVFHNOmfndyJ2Q0Uh3a_uWij78wXW4J9g9BAQBOIqwUUB01Xq1nazqAoJg03OJ1AczB6YYcrxA_iZ7_4A4jkBLI-PXxmIUaD_C2iwItMHRj1rfBPS1AyFJ-DKJ76iqFtIegHPNeoQYG_AsW3kgz4ae4n379whrzRtMKR3N8wadmaJjMmRxJ6ANjUQ2cpv6iUIh65ybAhY99Z_Pj0SNELzhXBkifKa_3eJtHT8q-8IsLI8Dy0EuKqDG0MZVzMjmD-VzLmGi4nwLubJsFQ1YCW-E9ObD4DlGGx1CULjvbxaB_d38sWkPh2WFlZH_7TTX0aAcIOKESPGorlYI5Hfz9Q"/>
+        <updated>2021-11-03T12:00:32.000Z</updated>
+        <summary type="html"><![CDATA[Zillow is ending Zillow Offers; where did the company go wrong, and what my initial analysis got right, and what I missed.]]></summary>
+        <author>
+            <name>Ben Thompson</name>
         </author>
     </entry>
     <entry>
@@ -11430,6 +11966,16 @@ The goal of this question is to write a FizzBuzz implementation that goes from 1
     <entry>
         <title type="html"><![CDATA[Adobe Max, Photoshop on the Web, Photoshop and NFTs]]></title>
         <id>https://stratechery.com/2021/adobe-max-photoshop-on-the-web-photoshop-and-nfts/</id>
+        <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hZG9iZS1tYXgtcGhvdG9zaG9wLW9uLXRoZS13ZWItcGhvdG9zaG9wLWFuZC1uZnRzLw.Exeiv03vPUbgCWp1jqysuHRJAS874xVwBgonqsIH3e7MPNngkKHT0QMVdPKt1DBw2POdDxyFERXl_UUVfbHYs8s6HiQOLIPSpxsgi9c7zoCZgkbyPt8_Ml_yBWkvBWF90BezLZxSSTl9zU7VO4piLp_CzA2gEMaXPsCU0ZQIl0cglRPpCfQ34X22rPAyOtnd1xHI239mNv8fvE1QIuJkRlX2d_RjN8Vnp1FCVYDDvAD7588Cwu2AEtJmFAHkcXvWpy-RopsxnXSjrGoRJeGf5vRg6wI8DNsPoJROJkyhck05C7Zb_pzuvjuN7tPNb5QIKXYw-vvZaD4Wp4kdskekrg"/>
+        <updated>2021-11-02T12:08:15.000Z</updated>
+        <summary type="html"><![CDATA[Adobe Max suggested that Adobe is finally starting to build its products as a service, not just selling them that way. Plus, Photoshop on the Web leans into Photoshop's complexity, and Photoshop's NFT authenticity feature is compelling.]]></summary>
+        <author>
+            <name>Ben Thompson</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Adobe Max, Photoshop on the Web, Photoshop and NFTs]]></title>
+        <id>https://stratechery.com/2021/adobe-max-photoshop-on-the-web-photoshop-and-nfts/</id>
         <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hZG9iZS1tYXgtcGhvdG9zaG9wLW9uLXRoZS13ZWItcGhvdG9zaG9wLWFuZC1uZnRzLw.NJ4ebBzS2tn6JYq1ipz1TRdWBpEXd8srMmmDhUS5WgZYoUTBDE4iaAKLWhUi128OVAs_dNGpcizwruehnS2a9_oHatHiISGwpaaExtrm5-XurqsmZz0MiDMgxM5pjTau5f5hmKA8xPL9mpTfknjNYHkBGnjlZahwkGovtLF7cSkEk5iBMuRk54T3n8iwZj-ij_BffJDjUp_jjE0wt6Z6K6F-aT7eaX3vVyJRtLW0njRTgA4XcfAXDIeN7wCFg6y90K4bvwtagTjF_in_W1fHvqoJdw4nWAvBjSXV9XB2CPGlw7LtG47wgZ2qkfk8khYfQYrq_nshzVs9mF6KXoU9Nw"/>
         <updated>2021-11-02T12:08:15.000Z</updated>
         <summary type="html"><![CDATA[Adobe Max suggested that Adobe is finally starting to build its products as a service, not just selling them that way. Plus, Photoshop on the Web leans into Photoshop's complexity, and Photoshop's NFT authenticity feature is compelling.]]></summary>
@@ -11984,6 +12530,16 @@ The post Everything you need to know about Android Enterprise Recommended smartp
 The post Slack’s Huddle feature may soon gain support for video appeared first on xda-developers.]]></summary>
         <author>
             <name>Kishan Vyas</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[About the Interview, The Metaverse and VR, Why Not a Startup?]]></title>
+        <id>https://stratechery.com/2021/about-the-interview-the-metaverse-and-vr-why-not-a-startup/</id>
+        <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hYm91dC10aGUtaW50ZXJ2aWV3LXRoZS1tZXRhdmVyc2UtYW5kLXZyLXdoeS1ub3QtYS1zdGFydHVwLw.SHe_piEQ3NkmtZJjzXJbFnqrX86FK3MtoQyNJaS-1r948eZzUaVidSHzuw7vps-CwNhXbIcJRFljiwozkblAM4LJGG3JmvNtSpgFvlcSUXyHaV1GgyaQVL-73yHYjmr1r95omqUHQyrAuFGePkD4DUVEyN9chTu6NWjrRkTBgcXFdi-Sb9WfRM5NdXSxouVe-KbeSHygKdGlDdmBVFHz8C-hdzyGxEjzv8VzBS7xL7LeTinF8NWDu0l-SUIzc1VP-mtEGsAYfwDYOxBh5FoHaE_-lgkQ8ZpBcBRWJq9uSrsQHf1MxNJ0rOmMAFPou75VVpjfYkPxoYF3W3SzUJpD7A"/>
+        <updated>2021-11-01T12:06:21.000Z</updated>
+        <summary type="html"><![CDATA[How I approached the interview with Zuckerberg, why the metaverse is really about VR, and then a discussion of Facebook's competitors.]]></summary>
+        <author>
+            <name>Ben Thompson</name>
         </author>
     </entry>
     <entry>
@@ -14980,6 +15536,16 @@ The post How to use Quick Note on macOS Monterey and iOS 15 appeared first on xd
     <entry>
         <title type="html"><![CDATA[Facebook Earnings, Investor Trust, Facebook Reality Labs]]></title>
         <id>https://stratechery.com/2021/facebook-earnings-investor-trust-facebook-reality-labs/</id>
+        <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9mYWNlYm9vay1lYXJuaW5ncy1pbnZlc3Rvci10cnVzdC1mYWNlYm9vay1yZWFsaXR5LWxhYnMv.iUuEms9Qz35aHi1jgKEJXbhN4VmFE8UB8OJrN-TIQ9YvlVIoG4WD_D1fpggjW3JJDMBi7dlgXVNZz98-g2v2niz30spbOzGG3Si6_fof4sckbveWv3P-3chG5xG33UipiwCCCzaGkll8MasBYivQ-8396Tf7Ew6WfNQMoBuj50MtA5QL9ZLiVdaWvR0lYmLfe0OdirS3zf-TuW27xZww8Tl0AIA92a-oF1LnXaycMTzR57ftREdoFuCuVqwmWHSpbba27NAOSsXzdaIEoLzj9LNHie3MyAalAgpWPuNnCINJ_EBkdGdCh8XLfzxF57WjBAeuA8IYfh3e9-9T-4bvYg"/>
+        <updated>2021-10-26T11:51:13.000Z</updated>
+        <summary type="html"><![CDATA[Facebook's earning seemed bad, but investors responded well, thanks to the trust that Facebook has developed over the years, and demonstrated this quarter.]]></summary>
+        <author>
+            <name>Ben Thompson</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Facebook Earnings, Investor Trust, Facebook Reality Labs]]></title>
+        <id>https://stratechery.com/2021/facebook-earnings-investor-trust-facebook-reality-labs/</id>
         <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9mYWNlYm9vay1lYXJuaW5ncy1pbnZlc3Rvci10cnVzdC1mYWNlYm9vay1yZWFsaXR5LWxhYnMv.LVC4y9TDroHebQNXK_u_mAY2aBrB-Lk_Gr7RbS-CSY874X-fchTvxSR3T11XSBEdzg0g3uKOdS91WCxwR3uhjccmYdGBFLY9zXXXx6pFatzJdroDhVMPuqUm9vY7G1yZuT0IgIMXzlbaXfp-LWTTSaoU7WWV3nlMI48E-m7akRVdi07tPLb9v67gpPISA1nZrKmr9Bn8bbfM1cmoIuqtaWxE9P66nyWM6eHupwiEoTQzd2NXDHRysxlk6YVRvJANYfbN5HlLRnUY77WEC7rSygS2MIJ9wXKLLoIW4SR7M4c0p2rSeXvqUZ0P_U4qX_OZcKx-X1M_lNvNCGM33-b5lA"/>
         <updated>2021-10-26T11:51:13.000Z</updated>
         <summary type="html"><![CDATA[Facebook's earning seemed bad, but investors responded well, thanks to the trust that Facebook has developed over the years, and demonstrated this quarter.]]></summary>
@@ -15679,6 +16245,16 @@ The post Latest Magisk Canary release adds support for Android 12, drops MagiskH
 The post The Sony Xperia Pro 1 might feature a 1-inch primary sensor appeared first on xda-developers.]]></summary>
         <author>
             <name>Pranob Mehrotra</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Snap Earnings, Attribution and Targeting, The Supply Chain]]></title>
+        <id>https://stratechery.com/2021/snap-earnings-attribution-and-targeting-the-supply-chain/</id>
+        <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9zbmFwLWVhcm5pbmdzLWF0dHJpYnV0aW9uLWFuZC10YXJnZXRpbmctdGhlLXN1cHBseS1jaGFpbi8.NgwgF9Qnyney-wLHsP2TudzB_KoIIOcn3t2mPniO5I3uVhlCaa1f1wnQBiA9hLJnEO8xdE6ByYm5c2L_7JqstBiHwhAuF_Fs2KgsnQVGW8n6zst2LGkiGZhyt-g0wio4ALgLTUIWhTBr8d_yH_PACh8orPHf94TlqxzUCqY1Y2LQ0ew1ec3Vsao1Bf3mYrFgzLDiuxDLCrpYRUqqwka3hSdwY8z_RqMtLvCqzhzEfQV7po0SPtxLS6VLg3YPKnI6ftnik_72s4HB4goDE8wTLKFC4_rvBLb4y7XNOWUGXapD5gkWr5ZZyMZtXl3kizc8PDgnn_9Qo7lPIvn6uY4eiQ"/>
+        <updated>2021-10-25T13:00:53.000Z</updated>
+        <summary type="html"><![CDATA[Snap's earnings show how the inability to measure attribution makes it hard to target ads; the big question is what this means for Facebook.]]></summary>
+        <author>
+            <name>Ben Thompson</name>
         </author>
     </entry>
     <entry>
@@ -16597,283 +17173,6 @@ The post T-Mobile delays Sprint CDMA shutdown yet again appeared first on xda-de
 The post iPhone 13 Pro Max Review: Too big for me, and I usually like big phones appeared first on xda-developers.]]></summary>
         <author>
             <name>Ben Sin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[CleanUp.pictures – 魔法橡皮擦：快速删掉任何图片中不需要的部分]]></title>
-        <id>https://www.appinn.com/?p=40151</id>
-        <link href="https://www.appinn.com/cleanup-pictures/"/>
-        <updated>2021-10-23T11:06:35.000Z</updated>
-        <summary type="html"><![CDATA[CleanUp.pictures 是一款开源的在线服务，它可以通过魔法橡皮擦，快速删掉任何图片中不需要的部分，简单快捷。@Appinn 感谢 @GitHubDaily 的推荐。 CleanUp.pic]]></summary>
-        <author>
-            <name>青小蛙</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[你也可以轻松修复老照片——看 AI 如何让它们焕发新生]]></title>
-        <id>https://sspai.com/post/69472</id>
-        <link href="https://sspai.com/post/69472"/>
-        <updated>2021-10-23T07:00:14.000Z</updated>
-        <summary type="html"><![CDATA[AI（Artificial Intelligence，人工智能）作为融合了数学、计算机科学、生物学、图形学等多门学科理论，并随着电子硬件的发展和与之而来算力的提升而不断地从理论到现实落地的技术，也在近些年正逐渐成为影响世界的「黑魔法」之一。
-它以无形姿态存在于我们的生活之中，比如电商平台的同类商品推荐、戴口罩后依旧能验证身份的人脸识别、会议现场中英传译的语音转写、手机内置的语音助手等都是 AI 大显身手的「战场」。
-除此之外，AI 在影像方面也有着不俗的表现，例如：现在手机厂商在发布会上都会对影像内容着力宣传，通过 AI 来辅助我们能通过手机拍摄到更好的画面或是视频。但对于那些已经「上了年纪」的影像，如有着爸妈当年模样的黑白老照片、周杰伦 2004 年的《无与伦比演唱会》现场，它们也并没有被时代和科技给抛弃；相反，它们会因为像 AI 这样技术的出现，在带给我们「回忆杀」的同时也更充满现代气息，仿佛斯人已矣却又历久弥新。
-本文将会简单介绍关于 AI 在影像方面的一些应用服务，而当中使用到的测试图片为来自于微软研究团队 Bringing-Old-Photos-Back-to-Life 论文 Github 项目仓库中的测试图片。
-绮霓 | 让黑白照充满摩登色彩
-colourise
-colourise 是一个免费且能为老照片上色的在线服务站点，通过 AI 的加持能在短时间内为黑白老照片、泛黄旧照片等照片进行自动化上色。
-进入到网站后我们只需要将待上色照片拖入到特定的区域内，即可等待 colourise 后台渲染的结果，渲染完成后我们就可以在网站上看到对比图效果并下载。
-
-DeOldfy
-DeOldfy 是基于深度学习技术并对老照片进行上色和修复的项目，当然这不仅仅能用于照片，还能作用在视频上，使得黑白照片充满生机。
-在 DeOldfy 的 Github 仓库上您可以看到关于该项目更…]]></summary>
-        <author>
-            <name>100gle</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[🎯🎯🎯一起来玩 Flutter —— 完整学习路线解读]]></title>
-        <id>https://juejin.cn/post/7022246208097746958</id>
-        <link href="https://juejin.cn/post/7022246208097746958"/>
-        <updated>2021-10-23T05:02:16.000Z</updated>
-        <summary type="html"><![CDATA[theme: channing-cyan
-highlight: darcula
-本文已参与「掘力星计划」，赢取创作大礼包，挑战创作激励金。
-前言
-近期有不少网友加我微信（微信号：island-coder）咨询 Flutter 学习相关的问题，Flutter 作为一门新的技术，确实相关的资料书籍不太多。但就 Flutter 生态的影响力而言，已经是越来越强了。譬如，在 StackOverflow 网站上2021年度最受欢迎的技术中，Dart 语言排在了第7位。随着谷歌对 Flutter 跨平台解决方案的推进，估计会有越来越多的开发者使用 Flutter 构建他们的应用。
-
-本篇，就学习 Flutter 来一次完整的梳理，也欢迎大家在评论区进行补充和交流。
-学习线路思维导图
-先上一份思维导图，让大家有个整体认识。
-
-Dart 语言
-在学习 Dart 语言前，若没有任何编程基础，建议先了解一下计算机基础知识。Dart 作为一门现代化的面向对象编程语言，具备了市面上大多数编程语言的特点，具体来说会分为下面这些内容：
-变量定义、赋值：这是最基础的部分，至少要知道什么是变量，如何赋值。final，var 和 const 的区别。
-基本数学运算：加、减、乘、除、整除、取余等运算；
-条件分支：if...else if...else 控制程序逻辑走向，或是 switch 分支；
-循环：使用循环完成重复性的工作；
-容器类：如List、Map 和 Set 的应用；
-函数和参数：一个是使用函数编写可复用的逻辑处理代码，二是需要注意在 Dart 中函数也是对象。同时需要区分函数的命名参数、可选参数的使用；
-面向对象编程：了解面向对象编程的概念和思想，能够合理地使用类来封装代码提高复用性和降低耦合；
-继承、多态和抽象类：这是提高代码复用、降低代码耦合度十分重要的概念，建议是多看看一些源码和设计思想（如…]]></summary>
-        <author>
-            <name>岛上码农</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[如今「网红打卡地」泛滥，褪下滤镜后还有哪些值得一去的旅行目的地？]]></title>
-        <id>http://www.zhihu.com/question/491721079/answer/2167443272</id>
-        <link href="http://www.zhihu.com/question/491721079/answer/2167443272?utm_campaign=rss&amp;utm_medium=rss&amp;utm_source=rss&amp;utm_content=title"/>
-        <updated>2021-10-23T03:54:10.000Z</updated>
-        <summary type="html"><![CDATA[网红，可不可以理解为就是那种在视频或者图片上看起来非常漂亮，一眼就种草的地方呢？如果是，其实我们也无需过多在意，因为真金不怕火炼，褪去滤镜，摘下美颜，终有一天它会被人们遗忘。
-一个好的旅行目的地，不仅仅是靠着几幅好看的画面就能留住人的，还要看它有没有真正值得体会的东西，能否承载我们前去旅行的愿望？
-我推荐一种分类方式，只要按照这些分类，就比较容易找到值得去的旅行目的地。
-纯地理地貌类：
-这些景区不仅含有其特色的景色，还需要历史事件有关联或是具有独特的地理地貌，在地理环境上有特殊的代表意义。
-例如：黄山、泰山、庐山、西湖之类的景色与历史相结合的地方。
-
-
-例如：桂林、各种溶洞、武隆、诺尔盖之类有独特不可复制的地理景色的地方。
-
-例如珠峰（珠峰大本营）、青海湖、纳木错、长江三峡之类具有独特的地理位置和与众不同的代表意义的。
-
-
-人文与自然或是历史相融合一的：
-这些地方不仅要有自然美景，还需要拥有人文的特点，或是和历史紧密的关联。两者相辅相成，相互融入。
-例如：丽江、苏州、各种古镇之类自然与人文共存的地方，非常值得驻足仔细体会和观赏。
-
-
-例如：敦煌、西安、北京之类不但拥有厚重的历史，还拥有独特的人文气息的地方，甚至要住一段时间才能感受到他们的魅力。
-
-
-具有少数民族独特生活特色的：
-中国拥有56个民族，每个民族都鲜明的特色，如果某个地方能够将这种名族特色表现出来，那它一定就是一个很好的旅行地点。
-例如：喀什古城、西江千户苗寨、丹巴藏寨、色达（可惜的是已经不能去了）等等具有浓烈少数民族气息的地方。
-
-
-先进现代化气息的地方
-人文和历史固然重要，但科学技术的发展是一个国家前进的动力，参观一些现代化城市和现代化的建设，能很好的了解中国。
-例如：深圳、上海市、北盘江大桥、矮寨大桥、拉林铁路之类的，中国人凭借双手建立起来的世界级奇迹。
-
-
-
-
-祖国960万平方公里的土地，值得去的地点当然还有很多很多，我根本不可能将他们都列在这里。以上提供几个建议的分类，有了这些分类，你就可以将其余无数的景点一一对号入座，有些或许可以同时满足多个分类的要求，这些景点便是更好的去处。
-其实只要是具有真正值得推敲的历史、环境、人文、民族、技术等特色的地方，都可以成为一个好的旅行的目的地。希望你能找到适合你的地方。
-@七侠镇在逃捕头 
-以上，谢阅！
-
-
-来源：知乎 www.zhihu.com
-海水茶杯鱼
-点击下载
-27 个回答，查看全部。
-旅游的网红打卡地，真有有那么好吗？
-国内有什么小众旅行打卡地？]]></summary>
-        <author>
-            <name>海水茶杯鱼</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[如果着火了，地铁怎样保证我们的安全？]]></title>
-        <id>https://sspai.com/post/69234</id>
-        <link href="https://sspai.com/post/69234"/>
-        <updated>2021-10-23T03:53:48.000Z</updated>
-        <summary type="html"><![CDATA[前排提示：本文仅作科普目的，各地市的建设方式和运营管理存在差异，部门内容已作简化省略，如有谬误请及时指正；当在真实生活中遭遇特殊情况，请务必听从工作人员指挥，切勿自由行动；非危险情况下切勿随意触碰紧急设施，违者承担法律责任。
-
-2021 年 6 月，伦敦地铁车站内发生火灾导致至少 6 人受伤；2020 年 3 月，纽约地铁 2 号线列车起火导致 16 人受伤；2003 年 2 月，韩国大邱市发生地铁纵火案，造成 192 人死亡、147 人受伤……
-
-地铁作为城市交通大动脉，能够提供大量运力，源源不断地将人们运送到目的地。但也因为人员密集、环境封闭这种特点，让灾难发生时的危害性成倍提升，其中火灾尤其危险。
-根据交通运输部统计，
-
-截至2020年12月31日，全国（不含港澳台）共有44个城市开通运营城市轨道交通线路233条，运营里程7545.5公里，车站4660座，实际开行列车2528万列次，完成客运量175.9亿人次，进站量109.1亿人次，全年未发生一般及以上运营安全责任事故。
-
-中国城市轨道交通协会发布的数据略有差异，截至 2020 年 12 月 31 日，中国内地累计 45 座城市开通城轨交通运营线路 7978.19km。协会发布的 2021 年 4 月客运量统计显示，全国 39 地的当月总客运量达 21.89 亿人次，日均 7326.43 万人次。
-各城市轨道交通运营线路规模 （来源：中国城市轨道交通协会）
-虽然因为统计方式和数据略有差异，不过可以肯定的是，中国的轨道交通总里程数稳居世界第一。如此庞大体量的轨道交通如果发生了火灾，该如何保证你和每一位乘客的安全？
-其实地铁自带防火 buff
-我们先来了解一下地铁系统中的「防火 buff」。现代化地铁车站里所用的装饰装修材料以及大部分公共设备设施已经具备相当程度的耐燃、阻燃甚至是不燃的防火性能，许多材料选用也有着低烟、无…]]></summary>
-        <author>
-            <name>Noah_Choi</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Vue vs React – How to Go from One Framework to the Other]]></title>
-        <id>6130bf69d6679a07b7d40a74</id>
-        <link href="https://www.freecodecamp.org/news/vue-vs-react-comparison-of-frameworks/"/>
-        <updated>2021-10-22T21:59:39.000Z</updated>
-        <summary type="html"><![CDATA[These days, a new trending front-end framework is released every now and then. But React and Vue.js still stand as the most popular among all the other alternatives.  And although both are performant, elegant, and arguably easy to learn, they have some different opinions on how certain things should]]></summary>
-        <author>
-            <name>freeCodeCamp.org</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Get a Logitech MX Master 3 mouse for just $80 ($20 off)]]></title>
-        <id>https://www.xda-developers.com/?p=543051</id>
-        <link href="https://www.xda-developers.com/get-a-logitech-mx-master-3-mouse-for-just-80-20-off/"/>
-        <updated>2021-10-22T21:39:16.000Z</updated>
-        <summary type="html"><![CDATA[Logitech sells some of the best computer accessories around, and the MX Master series is the company’s top-of-the-line option for a productivity mouse. The latest MX Master 3 has gone on sale a few times, but thanks to a coupon code at Staples, you can now get it for $80. That’s $20 off the typical
-The post Get a Logitech MX Master 3 mouse for just $80 ($20 off) appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Corbin Davenport</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[This Lenovo IdeaPad Flex 5 is an excellent productivity laptop at $470 ($130 off)]]></title>
-        <id>https://www.xda-developers.com/?p=543019</id>
-        <link href="https://www.xda-developers.com/this-lenovo-ideapad-flex-5-is-an-excellent-productivity-laptop-at-470-130-off/"/>
-        <updated>2021-10-22T20:44:34.000Z</updated>
-        <summary type="html"><![CDATA[Even though prices have gone up for gaming PCs over the past few months, it’s still relatively easy to find non-gaming laptops and desktops on sale. Lenovo’s IdeaPad lineup has some of the best mid-range PC laptops around, and now the IdeaPad Flex 5 is on sale for $469.99, a savings of $130 from the
-The post This Lenovo IdeaPad Flex 5 is an excellent productivity laptop at $470 ($130 off) appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Corbin Davenport</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Google Calendar will help you cut out distractions with ‘Focus time’]]></title>
-        <id>https://www.xda-developers.com/?p=542993</id>
-        <link href="https://www.xda-developers.com/google-calendar-focus-time/"/>
-        <updated>2021-10-22T19:01:28.000Z</updated>
-        <summary type="html"><![CDATA[One of the more challenging aspects of setting a work schedule is figuring out when you can take a breather. More often than not, I’ve accidentally scheduled events on my off days, simply because I forgot I was saving that day. Google Calendar already has an ‘Out of office’ option when creating an event, and
-The post Google Calendar will help you cut out distractions with ‘Focus time’ appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Corbin Davenport</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Amazon Samsung sale includes deals on Galaxy Book Pro, Galaxy Watch 4, and more]]></title>
-        <id>https://www.xda-developers.com/?p=542909</id>
-        <link href="https://www.xda-developers.com/amazon-samsung-deals-oct2021/"/>
-        <updated>2021-10-22T18:38:15.000Z</updated>
-        <summary type="html"><![CDATA[If you’re looking to buy new Samsung gear, Amazon is offering deals on all kinds of Samsung products, including phones, wearables, accessories, laptops, and TVs. Tons of products are discounted, including recently-launched products like the Samsung Galaxy Watch 4 and the premium Galaxy Book Pro laptop. They’re big discounts, too, so this is the perfect
-The post Amazon Samsung sale includes deals on Galaxy Book Pro, Galaxy Watch 4, and more appeared first on xda-developers.]]></summary>
-        <author>
-            <name>João Carrasqueira</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Win11 安卓子系统 (WSA) 安装包教程 - 电脑运行 Android 手机应用 / 安装 APK 方法]]></title>
-        <id>https://www.iplaysoft.com/?p=5580</id>
-        <link href="https://www.iplaysoft.com/win11-wsa.html"/>
-        <updated>2021-10-22T18:12:43.000Z</updated>
-        <summary type="html"><![CDATA[在发布早期，微软就给 Windows 11 画了个大饼，说将会提供能在 PC 电脑上运行 Android 应用的“安卓子系统”WSA，然而一直拖到正式版发布，此功能仍未全面对所有人开放。
-直到今天，微软终于给 Beta / Dev 通道的测试用户推出 WSA 安卓子系统功能了！！但如果你正在使用 Win11 正式版，那么按官方方法是没机会体验的。为此，异次元给大家送上 Android 子系统的离线安装包以及安装任意 APK 应用的方法教程，让所有人都能抢先享受这一功能……
-「 前往查看原文.... 」
-异次元还有这些值得一看：
-
-3 种免费升级安装 Windows 11 正式版方法教程 / 制作 U 盘启动盘 (微软官方工具)
-Parallels Desktop 17.1 最新版下载 - Mac 系统最强虚拟机 (支持M1/Win11/macOS Monterey)
-最新 Windows 11 ARM 系统 ISO 镜像下载 - 支持 M1 芯片 Mac 安装运行 Win11 (PD 虚拟机)
-网易 MuMu 安卓模拟器 - 免费高性能在电脑运行 Android 手机应用 APP 游戏的神器
-
-异次元正版数字商城  |  异次元首页  |  微信公众号  |  iPcFun  |  关注微博  |  软件精选]]></summary>
-        <author>
-            <name>X-Force</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Apple Watch Series 7 teardown reveals no diagnostic port and iPhone 13-like display]]></title>
-        <id>https://www.xda-developers.com/?p=542913</id>
-        <link href="https://www.xda-developers.com/apple-watch-series-7-teardown-reveals-no-diagnostic-port-and-iphone-13-like-display/"/>
-        <updated>2021-10-22T17:53:30.000Z</updated>
-        <summary type="html"><![CDATA[The launch of every new Apple product is usually accompanied by a teardown article (and sometimes a video) from the folks at iFixit. Sure enough, with the Apple Watch Series 7 now shipping to buyers, iFixit has graced us with an incredibly detailed teardown. Although the latest Apple Watches don’t appear too different on the
-The post Apple Watch Series 7 teardown reveals no diagnostic port and iPhone 13-like display appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Corbin Davenport</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Best games for Mac: Portal 2, Hades, Fortnite, and more]]></title>
-        <id>https://www.xda-developers.com/?p=541055</id>
-        <link href="https://www.xda-developers.com/best-games-mac/"/>
-        <updated>2021-10-22T16:00:34.000Z</updated>
-        <summary type="html"><![CDATA[Apple just launched the new Macbook Pro in 14″ and 16″ variants, with the new M1 Pro and M1 Max chips inside. If you recently preordered one of these awesome machines, you might be interested in doing more than just work with them. The Macbook Pro is renowned for its excellent productivity capability and is
-The post Best games for Mac: Portal 2, Hades, Fortnite, and more appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Jeff Springer</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Lenovo ThinkPad X1 Extreme Gen 4 review: Turning the power up to 3080]]></title>
-        <id>https://www.xda-developers.com/?p=534081</id>
-        <link href="https://www.xda-developers.com/lenovo-thinkpad-x1-extreme-gen-4-review/"/>
-        <updated>2021-10-22T15:00:44.000Z</updated>
-        <summary type="html"><![CDATA[Lenovo’s new ThinkPad X1 Extreme Gen 4 is way more powerful than Gen 3. Seriously, it’s not just a spec bump this time. The X1 Extreme was designed to be a premium member of Lenovo’s X1 family, but it was also the first with powerful H-series processors and dedicated graphics. But since it was still
-The post Lenovo ThinkPad X1 Extreme Gen 4 review: Turning the power up to 3080 appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Rich Woods</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Here’s how to bypass Amazon Appstore’s region lock on Windows Subsystem for Android]]></title>
-        <id>https://www.xda-developers.com/?p=542563</id>
-        <link href="https://www.xda-developers.com/how-to-bypass-amazon-appstore-region-lock-windows-subsystem-for-android/"/>
-        <updated>2021-10-22T14:58:49.000Z</updated>
-        <summary type="html"><![CDATA[Earlier this week, Microsoft gave us a sneak peek of the Windows Subsystem for Android on Windows 11, as they released the first build through the beta channel. However, the Android layer comes without any Google services, which means there’s no official way to download apps from the Google Play Store on Windows 11 just
-The post Here’s how to bypass Amazon Appstore’s region lock on Windows Subsystem for Android appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Skanda Hazarika</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Apple MacBook Pro 16 (2021) with M1 Max features ‘High Power Mode’ for extreme performance]]></title>
-        <id>https://www.xda-developers.com/?p=542755</id>
-        <link href="https://www.xda-developers.com/apple-macbook-pro-16-2021-with-m1-max-features-high-power-mode-for-extreme-performance/"/>
-        <updated>2021-10-22T14:39:51.000Z</updated>
-        <summary type="html"><![CDATA[There’s no doubt the Apple MacBook Pro (2021) with the new M1 Max chip is going to be one of the most powerful laptops on the market. To make it even better, Apple is said to have added a new feature that it didn’t mention during the keynote. The new MacBook Pro 16-inch model powered
-The post Apple MacBook Pro 16 (2021) with M1 Max features ‘High Power Mode’ for extreme performance appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Karthik Iyer</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Leaked renders give us our first look at Samsung’s upcoming flagship tablet]]></title>
-        <id>https://www.xda-developers.com/?p=542759</id>
-        <link href="https://www.xda-developers.com/galaxy-tab-s8-leaked-renders/"/>
-        <updated>2021-10-22T13:59:44.000Z</updated>
-        <summary type="html"><![CDATA[Samsung will reportedly unveil the Galaxy Tab S8 series early next year. We first learned about Samsung’s next flagship tablet series in July this year. At the time, we were told that the lineup would feature two models and hit the market in early 2022. Now leaked renders of the Galaxy Tab S8 have surfaced,
-The post Leaked renders give us our first look at Samsung’s upcoming flagship tablet appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Kishan Vyas</name>
         </author>
     </entry>
 </feed>

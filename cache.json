@@ -883,15 +883,6 @@
           "publishedOn": "2021-10-25T14:02:26.000Z",
           "wordCount": 1135,
           "title": "Media Query CSS Example – Max and Min Screen Width for Mobile Responsive Design"
-        },
-        {
-          "id": "6130bf69d6679a07b7d40a74",
-          "author": null,
-          "description": "These days, a new trending front-end framework is released every now and then. But React and Vue.js still stand as the most popular among all the other alternatives.  And although both are performant, elegant, and arguably easy to learn, they have some different opinions on how certain things should",
-          "link": "https://www.freecodecamp.org/news/vue-vs-react-comparison-of-frameworks/",
-          "publishedOn": "2021-10-22T21:59:39.000Z",
-          "wordCount": 5950,
-          "title": "Vue vs React – How to Go from One Framework to the Other"
         }
       ]
     },
@@ -900,6 +891,114 @@
       "feedUrl": "https://dev.to/feed",
       "siteUrl": "https://dev.to",
       "articles": [
+        {
+          "id": "https://dev.to/walternascimentobarroso/consulting-temperature-api-with-js-4ibg",
+          "author": "Walter Nascimento",
+          "description": "[Clique aqui para ler em português]\nLet’s make a query for a temperature api using javascript fetch\nFirst let’s create the interface, we’ll do something simple, using just HTML.\n<div>\n  <span id=\"city\"></span>\n  <span id=\"temperature\"></span>\n</div>\n\nTo present the data we have a div with two spans, one to represent the city and the other to represent the temperature.\nconst CITY = document.getElementById('city');\nconst TEMPERATURE = document.getElementById('temperature');\nconst URL_MAIN = 'https://api.openweathermap.org/data/2.5/weather';\nconst API_KEY = '8f57cb746c4c1d4b48b7f35eba6f6230';\nconst UNITS = 'metric';\n\nnavigator.geolocation.getCurrentPosition(loadUrl);\n\nfunction loadUrl(pos) {\n  let lat = pos.coords.latitude;\n  let long = pos.coords.longitude;\n  let url = `${URL_MAIN}?lat=${lat…",
+          "link": "https://dev.to/walternascimentobarroso/consulting-temperature-api-with-js-4ibg",
+          "publishedOn": "2021-11-22T00:22:44.000Z",
+          "wordCount": 753,
+          "title": "Consulting Temperature API with JS"
+        },
+        {
+          "id": "https://dev.to/georgeoffley/shenanigans-with-shaders-3i97",
+          "author": "George Offley",
+          "description": "Table Of Contents\n\n\n\nIntroduction\nShaders\nSetup\nShader Code\nConclusion\nFor those of you who love rabbit holes, learning graphics programming is a pretty deep one. There’s always some new thing to learn, there’s a bunch of different new languages and toolsets to know, and on top of all that, there’s math. Like anything else in programming, you pick up momentum with each new thing you build, so I found a tutorial and started making shaders. I know very little about this. However, I’m writing what I’m learning, so don’t come for me if I’m off on anything. \n\n\n\nA shader is a program that runs on the GPU as part of the graphics pipeline. We’re going to focus primarily on shaders in Unity. There are other ways to tackle this, but Unity gives an easy setup to get started quickly. For the context o…",
+          "link": "https://dev.to/georgeoffley/shenanigans-with-shaders-3i97",
+          "publishedOn": "2021-11-21T23:22:52.000Z",
+          "wordCount": 1385,
+          "title": "Shenanigans with Shaders"
+        },
+        {
+          "id": "https://dev.to/deciduously/oops-i-did-it-againi-made-a-rust-web-api-and-it-was-not-that-difficult-3kk8",
+          "author": "Ben Lovy",
+          "description": "Over two years ago (gulp), I posted a walkthrough of my Rust implementation of todo-mvp by @gypsydave5\n demonstrating how to build a simple Rust API without a framework.  The core functionality was built using hyper, a lower-level HTTP library instead of a full-blown framework.\nIt turns out I wrote that post about six months too early.  I published it in May 2019, and in November, Rust released 1.39.0 containing async/await syntax.  Womp womp.\nMy intent here was to simply upgrade the existing application to use the new syntax where applicable and call it a day.  But, you know that thing that happens when you go back and review code you wrote years ago?  Yeah, that thing happened. \nOur result functions almost identically to the implementation in the previous post, so some of this code will …",
+          "link": "https://dev.to/deciduously/oops-i-did-it-againi-made-a-rust-web-api-and-it-was-not-that-difficult-3kk8",
+          "publishedOn": "2021-11-21T23:02:27.000Z",
+          "wordCount": 5764,
+          "title": "Oops, I Did It Again...I Made A Rust Web API And It Was Not That Difficult"
+        },
+        {
+          "id": "https://dev.to/noriller/resizing-alone-doesnt-make-it-mobile-first-22g5",
+          "author": "Bruno Noriller",
+          "description": "Where I'm coming from, I never had to even bother about mobile.\nWhen I did start bothering about it... what was my surprise when everywhere I saw they would just resize the screen and call it a day.\nGranted, it was usually because one thing was being explained and most of the time... it will be enough...\nSometimes just resizing your desktop browser isn't enough... you have to use it on the real thing.\nAnd if that's the case... what if I told you, you could have your desktop debugging experience in your phone? \nOn your Android device, enable debugging\n\n\nSee more here: https://developer.android.com/studio/debug/dev-options\n\n\n\n\n\nConnect your phone and desktop by USB\nGo to: chrome://inspect#devices\n\n???\nProfit?\n\nTo learn more: https://developer.chrome.com/docs/devtools/remote-debugging/\nIf you're having trouble connecting, try unplugging and replugging it (seriously), also make sure \"Discover USB devices\" is checked.\nAfter it's on, you can click inspect or even open new tabs!\n\nAnd you probably want to set up the port you'll be using to be forwarded.\n\nAnd that's it!\nYou have the full experience of debugging straight from Chrome\nIf you use it from the phone, it's reflected in the inspect window.\nIf you use it from the inspect window, it will reflect on the phone.\nThe area reserved for the bezel and address bar is transparent, but there.\nHave you ever visited the SO landing page?\nSorry iPhone users... this one is for Android.\nFeel free to donate so I would be able to buy an iPhone. 😘\n\nCover Photo by Joshua Mayo on Unsplash",
+          "link": "https://dev.to/noriller/resizing-alone-doesnt-make-it-mobile-first-22g5",
+          "publishedOn": "2021-11-21T22:38:13.000Z",
+          "wordCount": 682,
+          "title": "Resizing alone doesn't make it mobile first"
+        },
+        {
+          "id": "https://dev.to/pacheco/create-a-restful-api-with-golang-from-scratch-42g2",
+          "author": "Thiago Pacheco",
+          "description": "In this tutorial, we are going to walk through an example of how to create a Restful API with Golang. We are going to cover the initial setup of the application, how to structure your app, how to handle persistence, docker config, HTTP requests and even debugging with vscode.\n1. Why Golang\n\n2. Initial Setup\n\n3. Create your first endpoint with fiber\n\n4. Run with Docker\n\n\n4.1. Setup Dockerfile\n\n4.2. Include Air for hot-reloading\n\n4.3. Create a docker-compose.yaml config\n\n\n\n5. Setup VSCode debugger\n\n6. Create a Todo API\n\n\n6.1. Include Database connection\n\n6.2. Todo module implementation\n\n\n6.2.1. Todo model definition\n\n6.2.2. Todo repositories\n\n6.2.3. Todo handlers\n\n\n\n6.3. Start the database and register endpoints\n\n\n\nBuild and test\nTest with insomnia\n\n\n8.1. Import swagger\n\n8.2. Test create Tod…",
+          "link": "https://dev.to/pacheco/create-a-restful-api-with-golang-from-scratch-42g2",
+          "publishedOn": "2021-11-21T21:33:11.000Z",
+          "wordCount": 3439,
+          "title": "Create a Restful API with Golang from scratch"
+        },
+        {
+          "id": "https://dev.to/taw/100-languages-speedrun-episode-01-python-22c3",
+          "author": "Tomasz Wegrzanowski",
+          "description": "Time to start a 100 programming languages speedrun. Every day or so, I'll be posting about a different programming language. Not just doing 100 fizzbuzzes, but trying out something that's interesting about each language.\nBut that's not all, some of the programming languages I will create for purpose of this series. So if you follow along, you'll see not just a lot of different programming languages, but you might also learn a thing or two about how to create your own.\nI won't be shy about my opinions, and I might be even exaggerating a bit. Feel free to share your thoughts in the comments.\nEpisodes will all be indepedent. Target audience is people who know programming, but don't know a 100 difference languages, so I'll often use some less idiomatic ways of doing things if I think it's clea…",
+          "link": "https://dev.to/taw/100-languages-speedrun-episode-01-python-22c3",
+          "publishedOn": "2021-11-21T21:29:43.000Z",
+          "wordCount": 1455,
+          "title": "100 Languages Speedrun: Episode 01: Python"
+        },
+        {
+          "id": "https://dev.to/arunavamodak/make-a-simple-todo-app-using-react-and-reduxtoolkit-2d4i",
+          "author": "Arunava Modak",
+          "description": "In this article we will learn the very basics of redux toolkit and make a simple app using react and redux toolkit. I have kept it very simple with respect to styling, using a little bit css, but you guys can choose whatever you need for styling.\nRedux is an open-source JavaScript library for managing and centralizing application state. It helps us to write JavaScript apps that behave consistently across client, server, and native environments and are easy to test. While it's mostly used as a state management tool with React.\nAccording to the official documentation,\nRedux Toolkit is our official recommended approach for writing Redux logic. It wraps around the Redux core, and contains packages and functions that we think are essential for building a Redux app. Redux Toolkit builds in our s…",
+          "link": "https://dev.to/arunavamodak/make-a-simple-todo-app-using-react-and-reduxtoolkit-2d4i",
+          "publishedOn": "2021-11-21T20:39:00.000Z",
+          "wordCount": 1184,
+          "title": "Make A ToDo App using React and ReduxToolkit"
+        },
+        {
+          "id": "https://dev.to/baenencalin/why-dont-we-call-copy-constructors-reconstructors-4i7f",
+          "author": "Calin Baenen",
+          "description": "I think it'd be funny if we called copy-constructors (constructors that take a set of data from one object and puts it in another - of the same type) reconstructors, because they are reconstructing the original object.",
+          "link": "https://dev.to/baenencalin/why-dont-we-call-copy-constructors-reconstructors-4i7f",
+          "publishedOn": "2021-11-21T20:23:31.000Z",
+          "wordCount": 479,
+          "title": "Why don't we call copy-constructors **reconstruct**ors?"
+        },
+        {
+          "id": "https://dev.to/awwsmm/playing-around-with-browser-cookies-in-scalajs-3p43",
+          "author": "Andrew (he/him)",
+          "description": "Photo by Laura James from Pexels\nI spent this weekend playing around with Scala.js and learning how to manipulate browser cookies with it.\nCheck out the live demo at cookies.awwsmm.com.\nThe source is available at github.com/awwsmm/CookiesScalaJS.\nThere are a few cool Scala flairs here, particularly this bit which pattern matches on a regular expression\n  def clearAllCookies(): Unit = {\n    val Cookie = \"([^=]+)=.+\".r\n    document.cookie.split(\"; \").foreach {\n      case Cookie(key) => clearCookie(key)\n      case other => err.println(s\"Couldn't parse '$other' as a key=value cookie pair\")\n    }\n  }\n\nIn order to ensure that users don't include the ; or = characters in their cookie keys and values (which confuses the parser), I've also added these two little safeguards, as well\n    // prevent the user from typing ';' or '=' into the input\n    input.addEventListener(\"keypress\", (e: dom.KeyboardEvent) => {\n      if (e.key == \";\" || e.key == \"=\") {\n        e.preventDefault()\n      }\n    })\n\n    // prevent the user from pasting ';' or '=' into the input\n    input.addEventListener(\"paste\", (e: dom.ClipboardEvent) => {\n      val text = e.clipboardData.getData(\"text\")\n      if (text.contains(\";\") || text.contains(\"=\")) {\n        e.preventDefault()\n      }\n    })\n\nWhat do you think? Anyone else on DEV doing anything cool with Scala.js?",
+          "link": "https://dev.to/awwsmm/playing-around-with-browser-cookies-in-scalajs-3p43",
+          "publishedOn": "2021-11-21T20:06:28.000Z",
+          "wordCount": 593,
+          "title": "Playing around with browser cookies in Scala.js"
+        },
+        {
+          "id": "https://dev.to/anuradha9712/quick-guide-to-typescript-part-1-3494",
+          "author": "Anuradha Aggarwal",
+          "description": "Let's get started with some quick guide to Typescript.\nIn this article we'll cover the following concepts:\nIntroduction\nType Inference\nExplicit Types\nUnion Types\nDynamic Types\nFunctions\nType Aliases\nTypescript is superset of Javascript which means it is an extension of Javascript, adding new features and syntax on top of the core language.\nTypescript is a strongly typed, object-oriented & compiled language.\nTypescript is designed to be compiled into fully compatible Javascript, so it works in any browser, any host, and any OS. \nWe need typescript compiler to compile it to Javascript code because browsers do not understand typescript.\nTypescript strongly encouraged static-typing which means it will validate all the assertions before the code executes. It allows you to do a type check during…",
+          "link": "https://dev.to/anuradha9712/quick-guide-to-typescript-part-1-3494",
+          "publishedOn": "2021-11-21T19:21:06.000Z",
+          "wordCount": 1617,
+          "title": "Quick Guide to Typescript - Part 1"
+        },
+        {
+          "id": "https://dev.to/balt1794/how-to-create-nfts-general-explanation-extravagant-whales-collection-439e",
+          "author": "balt1794",
+          "description": "After months of hard work, I have finally released my NFT collection called Extravagant Whales. \nAt first I wasn't really sure about NFTs, but the more I dived into the NFT world, the more I was convinced about finishing my collection.\nNFTs are unique tokens which can be images, videos, audio files, and any other types of digital files. NFTs are deployed on the blockchain and use blockchain technology to generate a public proof of ownership.\nI didn't create my NFTs for the money or the fame of being recognized. I did it for the learning process and what's behind creating NFTs.\nI'm not an artist, so I used programming and some tools which were already created by some awesome people such as Daniel Eugene Botha (HashLips) and Rounak Banik (Scrappy Squirrels) to generate my collection. I did c…",
+          "link": "https://dev.to/balt1794/how-to-create-nfts-general-explanation-extravagant-whales-collection-439e",
+          "publishedOn": "2021-11-21T19:10:50.000Z",
+          "wordCount": 1325,
+          "title": "How to create NFTs (General Explanation)  +  Extravagant Whales Collection"
+        },
+        {
+          "id": "https://dev.to/uequations/becoming-a-javascript-jedi-mastering-the-javascript-filter-14eh",
+          "author": "Mensah Alkebu-Lan",
+          "description": "Mensah Alkebu-Lan\nPrerequisites\nDiscussion\nReferences\nSome familiarity with the JavaScript programming language.\nArrays in JavaScript are list-like objects whose prototype has methods to perform traversal and mutation operations. There are countless use cases in Web Development where arrays will be useful.\nThe Array.prototype.filter() method creates a new filtered array containing all of the elements in the array that pass the test implemented by the provider function. This provider function can be an arrow function taking an element of the array as input and a boolean pass/fail as output.  To clarify, if the output is true the element will be included in the new filtered array. As with most methods in JavaScript, there is considerable flexibility in how they are implemented. For example, instead of an arrow function, the filter method can also take a callback function that returns true or false.\nBelow is a typical example of how the filter function is used:\nvar arr1 = [1,2,3,4],\n    arr2 = [2,4],\n    res = arr1.filter(item => !arr2.includes(item));\n\nconsole.log(res);\n\nWhen this program is executed, the result should be [1,3]. That is, for each of the elements is arr1, the provider function is going to check whether the array [2,4] includes that item. If the element is neither 2 nor 4, it will be added to the filtered array. \n Array.prototype.filter() - JavaScript | MDN. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter. Assessed 11-21-2021.\n Array - JavaScript | MDN. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array. Assessed 11-21-2021.\nView original article at https://voices.hassanriver.com/article/2021/11/becoming-javascript-jedi-mastering-javascript-filter/.",
+          "link": "https://dev.to/uequations/becoming-a-javascript-jedi-mastering-the-javascript-filter-14eh",
+          "publishedOn": "2021-11-21T18:55:55.000Z",
+          "wordCount": 628,
+          "title": "Becoming a JavaScript Jedi - Mastering the JavaScript Filter"
+        },
         {
           "id": "https://dev.to/manuthecoder/yes-these-are-emoji-buttons-1pf8",
           "author": "ManuTheCoder",
@@ -1555,6 +1654,24 @@
       "feedUrl": "https://sspai.com/feed",
       "siteUrl": "https://sspai.com",
       "articles": [
+        {
+          "id": "https://sspai.com/post/70017",
+          "author": "化学心情下2",
+          "description": "不少读者可能会有同时使用多个浏览器的习惯，比如在 Windows 上使用 Microsoft Edge、在 macOS 上使用 Safari、在移动端则使用 Chrome。在这种使用场景下，实现不同浏览器之间的书签同步也是个不小的需求——毕竟书签内容往往会随着我们的浏览行为发生变化，每次切换平台、浏览器都进行一次导出、导入还是比较麻烦。\n作为一个多平台、多浏览器都在使用的用户，在今天的文章中我将分享一些能够在不同浏览器之间实现书签同步的解决方案。\nChrome、Edge 以及 Firefox 的书签同步\n在桌面端，基于 Chromium 内核的浏览器（主要是 Chrome、Edge）与 Firefox 因为都有着丰富的扩展生态支持，因此也可以通过浏览器扩展来实现书签管理与同步。\n个人比较推荐的是以下两款：\nxBrowserSync\n如果你想要开箱即用的多浏览器书签同步服务，最佳选择就是 xBrowserSync。\n这款工具支持的浏览器包括 Firefox 以及各种基于 Chromium 的浏览器，只需在对应浏览器的扩展商店中搜索 xBrowserSync 并安装即可。\n\n在扩展中点击 xBrowserSync 开始设置同步，直接点击 next 然后会让你输入对应的密码——之后服务会自动生成一个同步 ID，默认同步的服务器为主服务器，当然 xBrowserSync 也提供多个镜像同步服务器（服务器列表）方便我们进行选择，你可以根据具体的网络情况点击下方的 Switch Service 来切换到更为稳定的服务器。\n\n输入两遍密码之后，你当前浏览器的书签会以书签文件的形式自动同步到 xBrowserSync 服务器中。点击扩展程序栏中的 xBrowserSync 图标，你可以对书签进行管理，设定相关的同步服务。比如对在线书签进行搜索、添加当前标签页为书签等等。\n\n点击 xBrow…",
+          "link": "https://sspai.com/post/70017",
+          "publishedOn": "2021-11-21T07:30:10.000Z",
+          "wordCount": 258,
+          "title": "实现不同浏览器间书签同步，你可试试这三种方案"
+        },
+        {
+          "id": "https://sspai.com/post/69982",
+          "author": "闲者时间_王掌柜",
+          "description": "Matrix 首页推荐\nMatrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。\n文章代表作者个人观点，少数派仅对标题和排版略作修改。\n\n在系列的第三期文章《玩转 Obsidian 03：如何记录「间歇式日记」》中介绍过如何通过「间歇式日记」管理自己的日常工作和生活：\n\n「间歇式日记」是著名的生产力教练 Coach Tony 在2017 年发表的《Replace Your To-Do List With Interstitial Journaling To Increase Productivity》文章中提出的一个概念。他认为「间歇式日记」可以更好的帮助自己集中精力更聪明的工作。「间歇式日记」既不同于常规的「日记」，也不同于常规的「任务管理软件」，它更强调围绕着「工作流」打造一个「正反馈描述」从而提高「生产力」。\n\n「间歇式日记」的运作方式其实很简单，一句话总结：\n\n在每个「工作间歇」，以「时间戳」为单位，采用类似「日记」的形式做的笔记。\n\n在实际使用中「间歇式日记」也不会有太多负担，因为适当总结和梳理总是会帮助我们「理清现状」并开始下一个行动。但是，在使用「间歇式日记」一段时间后我发现了几个问题。\n间歇式日记的问题\n问题1：笔记优先法则 Vs 文件夹管理\n在《玩转 Obsidian 04：为什么推荐使用 Obsidian 做知识管理》文章中专门提到 Obsidian 遵循「笔记优先法则」，这是它的优势之一：\n笔记优先法则\n「笔记优先法则」要求我们我们完全不需要考虑文件「存到哪里」这件事，只需要关注文件的「双向链接」以及 Tag 即可。并且借助 Obsidian 强大的搜索和关联能力，我们可以很方便的找到各种笔记。\n在实际使用场景中，每天的「间歇式日记」经常要关联…",
+          "link": "https://sspai.com/post/69982",
+          "publishedOn": "2021-11-21T03:07:16.000Z",
+          "wordCount": 758,
+          "title": "玩转 Obsidian 07 ：自动化「间歇式日记」"
+        },
         {
           "id": "https://sspai.com/post/69893",
           "author": "化学心情下2",
@@ -2652,24 +2769,6 @@
           "publishedOn": "2021-10-24T04:58:07.000Z",
           "wordCount": 115,
           "title": "咖啡怎么喝出风味？教你如何在家做感官训练"
-        },
-        {
-          "id": "https://sspai.com/post/69472",
-          "author": "100gle",
-          "description": "AI（Artificial Intelligence，人工智能）作为融合了数学、计算机科学、生物学、图形学等多门学科理论，并随着电子硬件的发展和与之而来算力的提升而不断地从理论到现实落地的技术，也在近些年正逐渐成为影响世界的「黑魔法」之一。\n它以无形姿态存在于我们的生活之中，比如电商平台的同类商品推荐、戴口罩后依旧能验证身份的人脸识别、会议现场中英传译的语音转写、手机内置的语音助手等都是 AI 大显身手的「战场」。\n除此之外，AI 在影像方面也有着不俗的表现，例如：现在手机厂商在发布会上都会对影像内容着力宣传，通过 AI 来辅助我们能通过手机拍摄到更好的画面或是视频。但对于那些已经「上了年纪」的影像，如有着爸妈当年模样的黑白老照片、周杰伦 2004 年的《无与伦比演唱会》现场，它们也并没有被时代和科技给抛弃；相反，它们会因为像 AI 这样技术的出现，在带给我们「回忆杀」的同时也更充满现代气息，仿佛斯人已矣却又历久弥新。\n本文将会简单介绍关于 AI 在影像方面的一些应用服务，而当中使用到的测试图片为来自于微软研究团队 Bringing-Old-Photos-Back-to-Life 论文 Github 项目仓库中的测试图片。\n绮霓 | 让黑白照充满摩登色彩\ncolourise\ncolourise 是一个免费且能为老照片上色的在线服务站点，通过 AI 的加持能在短时间内为黑白老照片、泛黄旧照片等照片进行自动化上色。\n进入到网站后我们只需要将待上色照片拖入到特定的区域内，即可等待 colourise 后台渲染的结果，渲染完成后我们就可以在网站上看到对比图效果并下载。\n\nDeOldfy\nDeOldfy 是基于深度学习技术并对老照片进行上色和修复的项目，当然这不仅仅能用于照片，还能作用在视频上，使得黑白照片充满生机。\n在 DeOldfy 的 Github 仓库上您可以看到关于该项目更…",
-          "link": "https://sspai.com/post/69472",
-          "publishedOn": "2021-10-23T07:00:14.000Z",
-          "wordCount": 180,
-          "title": "你也可以轻松修复老照片——看 AI 如何让它们焕发新生"
-        },
-        {
-          "id": "https://sspai.com/post/69234",
-          "author": "Noah_Choi",
-          "description": "前排提示：本文仅作科普目的，各地市的建设方式和运营管理存在差异，部门内容已作简化省略，如有谬误请及时指正；当在真实生活中遭遇特殊情况，请务必听从工作人员指挥，切勿自由行动；非危险情况下切勿随意触碰紧急设施，违者承担法律责任。\n\n2021 年 6 月，伦敦地铁车站内发生火灾导致至少 6 人受伤；2020 年 3 月，纽约地铁 2 号线列车起火导致 16 人受伤；2003 年 2 月，韩国大邱市发生地铁纵火案，造成 192 人死亡、147 人受伤……\n\n地铁作为城市交通大动脉，能够提供大量运力，源源不断地将人们运送到目的地。但也因为人员密集、环境封闭这种特点，让灾难发生时的危害性成倍提升，其中火灾尤其危险。\n根据交通运输部统计，\n\n截至2020年12月31日，全国（不含港澳台）共有44个城市开通运营城市轨道交通线路233条，运营里程7545.5公里，车站4660座，实际开行列车2528万列次，完成客运量175.9亿人次，进站量109.1亿人次，全年未发生一般及以上运营安全责任事故。\n\n中国城市轨道交通协会发布的数据略有差异，截至 2020 年 12 月 31 日，中国内地累计 45 座城市开通城轨交通运营线路 7978.19km。协会发布的 2021 年 4 月客运量统计显示，全国 39 地的当月总客运量达 21.89 亿人次，日均 7326.43 万人次。\n各城市轨道交通运营线路规模 （来源：中国城市轨道交通协会）\n虽然因为统计方式和数据略有差异，不过可以肯定的是，中国的轨道交通总里程数稳居世界第一。如此庞大体量的轨道交通如果发生了火灾，该如何保证你和每一位乘客的安全？\n其实地铁自带防火 buff\n我们先来了解一下地铁系统中的「防火 buff」。现代化地铁车站里所用的装饰装修材料以及大部分公共设备设施已经具备相当程度的耐燃、阻燃甚至是不燃的防火性能，许多材料选用也有着低烟、无…",
-          "link": "https://sspai.com/post/69234",
-          "publishedOn": "2021-10-23T03:53:48.000Z",
-          "wordCount": 159,
-          "title": "如果着火了，地铁怎样保证我们的安全？"
         }
       ]
     },
@@ -2678,6 +2777,15 @@
       "feedUrl": "https://feeds.appinn.com/appinns",
       "siteUrl": "https://www.appinn.com",
       "articles": [
+        {
+          "id": "https://www.appinn.com/?p=40518",
+          "author": "青小蛙",
+          "description": "字体渲染（自用脚本）是一款油猴脚本，它能够让 Windows 用户在无需安装 MacType 的情况下，优化浏览器字体显示效果，让每个中文字体变得更有质感。并可设置自定义字体、描边、平滑、阴影等效果。",
+          "link": "https://www.appinn.com/font-rendering-greasyfork/",
+          "publishedOn": "2021-11-21T08:02:40.000Z",
+          "wordCount": 656,
+          "title": "字体渲染 – 优化低分辨率显示器的文字显示效果[油猴脚本]"
+        },
         {
           "id": "https://www.appinn.com/?p=40510",
           "author": "青小蛙",
@@ -3155,15 +3263,6 @@
           "publishedOn": "2021-10-24T03:08:00.000Z",
           "wordCount": 826,
           "title": "落水后，为 iPhone 喇叭排水的「专用快捷指令」"
-        },
-        {
-          "id": "https://www.appinn.com/?p=40151",
-          "author": "青小蛙",
-          "description": "CleanUp.pictures 是一款开源的在线服务，它可以通过魔法橡皮擦，快速删掉任何图片中不需要的部分，简单快捷。@Appinn 感谢 @GitHubDaily 的推荐。 CleanUp.pic",
-          "link": "https://www.appinn.com/cleanup-pictures/",
-          "publishedOn": "2021-10-23T11:06:35.000Z",
-          "wordCount": 920,
-          "title": "CleanUp.pictures – 魔法橡皮擦：快速删掉任何图片中不需要的部分"
         }
       ]
     },
@@ -3888,15 +3987,6 @@
           "publishedOn": "2021-10-25T04:31:41.000Z",
           "wordCount": 20,
           "title": "如何看待李云迪在被通报嫖娼后，李云迪母校四川音乐学院火速摘掉「李云迪钢琴工作室」牌子？"
-        },
-        {
-          "id": "http://www.zhihu.com/question/491721079/answer/2167443272",
-          "author": "海水茶杯鱼",
-          "description": "网红，可不可以理解为就是那种在视频或者图片上看起来非常漂亮，一眼就种草的地方呢？如果是，其实我们也无需过多在意，因为真金不怕火炼，褪去滤镜，摘下美颜，终有一天它会被人们遗忘。\n一个好的旅行目的地，不仅仅是靠着几幅好看的画面就能留住人的，还要看它有没有真正值得体会的东西，能否承载我们前去旅行的愿望？\n我推荐一种分类方式，只要按照这些分类，就比较容易找到值得去的旅行目的地。\n纯地理地貌类：\n这些景区不仅含有其特色的景色，还需要历史事件有关联或是具有独特的地理地貌，在地理环境上有特殊的代表意义。\n例如：黄山、泰山、庐山、西湖之类的景色与历史相结合的地方。\n\n\n例如：桂林、各种溶洞、武隆、诺尔盖之类有独特不可复制的地理景色的地方。\n\n例如珠峰（珠峰大本营）、青海湖、纳木错、长江三峡之类具有独特的地理位置和与众不同的代表意义的。\n\n\n人文与自然或是历史相融合一的：\n这些地方不仅要有自然美景，还需要拥有人文的特点，或是和历史紧密的关联。两者相辅相成，相互融入。\n例如：丽江、苏州、各种古镇之类自然与人文共存的地方，非常值得驻足仔细体会和观赏。\n\n\n例如：敦煌、西安、北京之类不但拥有厚重的历史，还拥有独特的人文气息的地方，甚至要住一段时间才能感受到他们的魅力。\n\n\n具有少数民族独特生活特色的：\n中国拥有56个民族，每个民族都鲜明的特色，如果某个地方能够将这种名族特色表现出来，那它一定就是一个很好的旅行地点。\n例如：喀什古城、西江千户苗寨、丹巴藏寨、色达（可惜的是已经不能去了）等等具有浓烈少数民族气息的地方。\n\n\n先进现代化气息的地方\n人文和历史固然重要，但科学技术的发展是一个国家前进的动力，参观一些现代化城市和现代化的建设，能很好的了解中国。\n例如：深圳、上海市、北盘江大桥、矮寨大桥、拉林铁路之类的，中国人凭借双手建立起来的世界级奇迹。\n\n\n\n\n祖国960万平方公里的土地，值得去的地点当然还有很多很多，我根本不可能将他们都列在这里。以上提供几个建议的分类，有了这些分类，你就可以将其余无数的景点一一对号入座，有些或许可以同时满足多个分类的要求，这些景点便是更好的去处。\n其实只要是具有真正值得推敲的历史、环境、人文、民族、技术等特色的地方，都可以成为一个好的旅行的目的地。希望你能找到适合你的地方。\n@七侠镇在逃捕头 \n以上，谢阅！\n\n\n来源：知乎 www.zhihu.com\n海水茶杯鱼\n点击下载\n27 个回答，查看全部。\n旅游的网红打卡地，真有有那么好吗？\n国内有什么小众旅行打卡地？",
-          "link": "http://www.zhihu.com/question/491721079/answer/2167443272?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2021-10-23T03:54:10.000Z",
-          "wordCount": 129,
-          "title": "如今「网红打卡地」泛滥，褪下滤镜后还有哪些值得一去的旅行目的地？"
         }
       ]
     },
@@ -3905,6 +3995,18 @@
       "feedUrl": "https://www.xda-developers.com/feed",
       "siteUrl": "https://www.xda-developers.com",
       "articles": [
+        {
+          "id": "https://www.xda-developers.com/?p=546537",
+          "author": "João Carrasqueira",
+          "description": "The Nintendo Switch OLED model is the fancy new toy in town, and it’s a big improvement over the original Nintendo Switch from 2017. That new OLED display makes a huge difference, making colors more vibrant and deeper blacks, it makes a huge difference in the way games look. If you’re buying a Switch this\nThe post These are the Best Cases for the Nintendo Switch OLED model in 2021 appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/best-nintendo-switch-oled-cases/",
+          "publishedOn": "2021-11-21T13:00:37.000Z",
+          "wordCount": 2700,
+          "title": "These are the Best Cases for the Nintendo Switch OLED model in 2021",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/07/Nintendo-Switch-OLED-Featured.jpg"
+          }
+        },
         {
           "id": "https://www.xda-developers.com/?p=551379",
           "author": "Gaurav Shukla",
@@ -4001,6 +4103,18 @@
           "title": "Today only: Get a OnePlus 9 Pro for $799 ($270 off) or OnePlus Buds Pro for $100 ($50 off)",
           "enclosure": {
             "url": "https://www.xda-developers.com/files/2021/03/OnePlus-9-Pro-Review-Display-10.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=465367",
+          "author": "Skanda Hazarika",
+          "description": "The wait is finally over — Windows 11 is here as Microsoft has officially kicked off the Insider Preview program for the next generation of Windows. The company is also rolling out several updates on top of the base Windows 11 build in preparation for an eventual rollout via the stable channel. This article will\nThe post Windows 11 Update Tracker: Download and Install the latest Windows 11 update appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/windows-11-update-tracker/",
+          "publishedOn": "2021-11-19T19:00:14.000Z",
+          "wordCount": 1795,
+          "title": "Windows 11 Update Tracker: Download and Install the latest Windows 11 update",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/07/Windows-11-Update-Tracker.jpg"
           }
         },
         {
@@ -8812,126 +8926,6 @@
           "enclosure": {
             "url": "https://www.xda-developers.com/files/2021/10/DSC07749.jpg"
           }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=543051",
-          "author": "Corbin Davenport",
-          "description": "Logitech sells some of the best computer accessories around, and the MX Master series is the company’s top-of-the-line option for a productivity mouse. The latest MX Master 3 has gone on sale a few times, but thanks to a coupon code at Staples, you can now get it for $80. That’s $20 off the typical\nThe post Get a Logitech MX Master 3 mouse for just $80 ($20 off) appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/get-a-logitech-mx-master-3-mouse-for-just-80-20-off/",
-          "publishedOn": "2021-10-22T21:39:16.000Z",
-          "wordCount": 789,
-          "title": "Get a Logitech MX Master 3 mouse for just $80 ($20 off)",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/05/71c88j-DZXL._AC_SL1500_.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=543019",
-          "author": "Corbin Davenport",
-          "description": "Even though prices have gone up for gaming PCs over the past few months, it’s still relatively easy to find non-gaming laptops and desktops on sale. Lenovo’s IdeaPad lineup has some of the best mid-range PC laptops around, and now the IdeaPad Flex 5 is on sale for $469.99, a savings of $130 from the\nThe post This Lenovo IdeaPad Flex 5 is an excellent productivity laptop at $470 ($130 off) appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/this-lenovo-ideapad-flex-5-is-an-excellent-productivity-laptop-at-470-130-off/",
-          "publishedOn": "2021-10-22T20:44:34.000Z",
-          "wordCount": 797,
-          "title": "This Lenovo IdeaPad Flex 5 is an excellent productivity laptop at $470 ($130 off)",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/Screenshot-2021-10-22-at-16-34-33-Lenovo-IdeaPad-Flex-5-14-Touchscreen-Intel-Core-i3-1005G1-8GB-RAM-256GB-SSD-194632742275-....jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=542993",
-          "author": "Corbin Davenport",
-          "description": "One of the more challenging aspects of setting a work schedule is figuring out when you can take a breather. More often than not, I’ve accidentally scheduled events on my off days, simply because I forgot I was saving that day. Google Calendar already has an ‘Out of office’ option when creating an event, and\nThe post Google Calendar will help you cut out distractions with ‘Focus time’ appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/google-calendar-focus-time/",
-          "publishedOn": "2021-10-22T19:01:28.000Z",
-          "wordCount": 756,
-          "title": "Google Calendar will help you cut out distractions with ‘Focus time’",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2019/05/google-calendar-dark.png"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=542909",
-          "author": "João Carrasqueira",
-          "description": "If you’re looking to buy new Samsung gear, Amazon is offering deals on all kinds of Samsung products, including phones, wearables, accessories, laptops, and TVs. Tons of products are discounted, including recently-launched products like the Samsung Galaxy Watch 4 and the premium Galaxy Book Pro laptop. They’re big discounts, too, so this is the perfect\nThe post Amazon Samsung sale includes deals on Galaxy Book Pro, Galaxy Watch 4, and more appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/amazon-samsung-deals-oct2021/",
-          "publishedOn": "2021-10-22T18:38:15.000Z",
-          "wordCount": 2324,
-          "title": "Amazon Samsung sale includes deals on Galaxy Book Pro, Galaxy Watch 4, and more",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/08/Samsung-Galaxy-Buds-2-Galaxy-Watch-4-Chakotay.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=542913",
-          "author": "Corbin Davenport",
-          "description": "The launch of every new Apple product is usually accompanied by a teardown article (and sometimes a video) from the folks at iFixit. Sure enough, with the Apple Watch Series 7 now shipping to buyers, iFixit has graced us with an incredibly detailed teardown. Although the latest Apple Watches don’t appear too different on the\nThe post Apple Watch Series 7 teardown reveals no diagnostic port and iPhone 13-like display appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/apple-watch-series-7-teardown-reveals-no-diagnostic-port-and-iphone-13-like-display/",
-          "publishedOn": "2021-10-22T17:53:30.000Z",
-          "wordCount": 807,
-          "title": "Apple Watch Series 7 teardown reveals no diagnostic port and iPhone 13-like display",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/s7_out.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=541055",
-          "author": "Jeff Springer",
-          "description": "Apple just launched the new Macbook Pro in 14″ and 16″ variants, with the new M1 Pro and M1 Max chips inside. If you recently preordered one of these awesome machines, you might be interested in doing more than just work with them. The Macbook Pro is renowned for its excellent productivity capability and is\nThe post Best games for Mac: Portal 2, Hades, Fortnite, and more appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/best-games-mac/",
-          "publishedOn": "2021-10-22T16:00:34.000Z",
-          "wordCount": 1913,
-          "title": "Best games for Mac: Portal 2, Hades, Fortnite, and more",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/Screen-Shot-2021-10-22-at-12.30.59-AM.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=534081",
-          "author": "Rich Woods",
-          "description": "Lenovo’s new ThinkPad X1 Extreme Gen 4 is way more powerful than Gen 3. Seriously, it’s not just a spec bump this time. The X1 Extreme was designed to be a premium member of Lenovo’s X1 family, but it was also the first with powerful H-series processors and dedicated graphics. But since it was still\nThe post Lenovo ThinkPad X1 Extreme Gen 4 review: Turning the power up to 3080 appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/lenovo-thinkpad-x1-extreme-gen-4-review/",
-          "publishedOn": "2021-10-22T15:00:44.000Z",
-          "wordCount": 2817,
-          "title": "Lenovo ThinkPad X1 Extreme Gen 4 review: Turning the power up to 3080",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/Lenovo-ThinkPad-X1-Extreme-Gen-4-18.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=542563",
-          "author": "Skanda Hazarika",
-          "description": "Earlier this week, Microsoft gave us a sneak peek of the Windows Subsystem for Android on Windows 11, as they released the first build through the beta channel. However, the Android layer comes without any Google services, which means there’s no official way to download apps from the Google Play Store on Windows 11 just\nThe post Here’s how to bypass Amazon Appstore’s region lock on Windows Subsystem for Android appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/how-to-bypass-amazon-appstore-region-lock-windows-subsystem-for-android/",
-          "publishedOn": "2021-10-22T14:58:49.000Z",
-          "wordCount": 1228,
-          "title": "Here’s how to bypass Amazon Appstore’s region lock on Windows Subsystem for Android",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/WSA-Amazon-Appstore-Aurora-Store-featured.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=542755",
-          "author": "Karthik Iyer",
-          "description": "There’s no doubt the Apple MacBook Pro (2021) with the new M1 Max chip is going to be one of the most powerful laptops on the market. To make it even better, Apple is said to have added a new feature that it didn’t mention during the keynote. The new MacBook Pro 16-inch model powered\nThe post Apple MacBook Pro 16 (2021) with M1 Max features ‘High Power Mode’ for extreme performance appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/apple-macbook-pro-16-2021-with-m1-max-features-high-power-mode-for-extreme-performance/",
-          "publishedOn": "2021-10-22T14:39:51.000Z",
-          "wordCount": 839,
-          "title": "Apple MacBook Pro 16 (2021) with M1 Max features ‘High Power Mode’ for extreme performance",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/Apple-MacBook-Pro-16-featured.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=542759",
-          "author": "Kishan Vyas",
-          "description": "Samsung will reportedly unveil the Galaxy Tab S8 series early next year. We first learned about Samsung’s next flagship tablet series in July this year. At the time, we were told that the lineup would feature two models and hit the market in early 2022. Now leaked renders of the Galaxy Tab S8 have surfaced,\nThe post Leaked renders give us our first look at Samsung’s upcoming flagship tablet appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/galaxy-tab-s8-leaked-renders/",
-          "publishedOn": "2021-10-22T13:59:44.000Z",
-          "wordCount": 854,
-          "title": "Leaked renders give us our first look at Samsung’s upcoming flagship tablet",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/GALAXYTABTHREE_1634904371.jpg"
-          }
         }
       ]
     },
@@ -8940,6 +8934,33 @@
       "feedUrl": "https://feeds.feedblitz.com/baeldung",
       "siteUrl": "https://www.baeldung.com",
       "articles": [
+        {
+          "id": "https://www.baeldung.com/?p=112589",
+          "author": "Kai Yuan",
+          "description": "Learn how to set the Java classpath on different operating systems and what to watch out for.",
+          "link": "https://feeds.feedblitz.com/~/673376274/0/baeldung~Java-Classpath-Syntax-in-Linux-vs-Windows",
+          "publishedOn": "2021-11-21T13:20:51.000Z",
+          "wordCount": null,
+          "title": "Java Classpath Syntax in Linux vs. Windows"
+        },
+        {
+          "id": "https://www.baeldung.com/?p=112694",
+          "author": "baeldung",
+          "description": "Learn how to use Lombok's val and var to define local variables without specifying the type.",
+          "link": "https://feeds.feedblitz.com/~/673374740/0/baeldung~Declaring-Val-and-Var-Variables-in-Lombok",
+          "publishedOn": "2021-11-21T12:39:42.000Z",
+          "wordCount": null,
+          "title": "Declaring Val and Var Variables in Lombok"
+        },
+        {
+          "id": "https://www.baeldung.com/?p=112630",
+          "author": "baeldung",
+          "description": "Learn how to skip the generation of individual getters and setters when using Lombok annotations.",
+          "link": "https://feeds.feedblitz.com/~/673374742/0/baeldung~Omitting-Getter-or-Setter-in-Lombok",
+          "publishedOn": "2021-11-21T12:36:20.000Z",
+          "wordCount": null,
+          "title": "Omitting Getter or Setter in Lombok"
+        },
         {
           "id": "https://www.baeldung.com/?p=112553",
           "author": "baeldung",
@@ -9531,15 +9552,6 @@
           "publishedOn": "2021-10-24T05:46:15.000Z",
           "wordCount": 477,
           "title": "腾讯云好价：轻量2核4G 8M 年付 70 元 / 领取 3500 元代金券"
-        },
-        {
-          "id": "https://www.iplaysoft.com/?p=5580",
-          "author": "X-Force",
-          "description": "在发布早期，微软就给 Windows 11 画了个大饼，说将会提供能在 PC 电脑上运行 Android 应用的“安卓子系统”WSA，然而一直拖到正式版发布，此功能仍未全面对所有人开放。\n直到今天，微软终于给 Beta / Dev 通道的测试用户推出 WSA 安卓子系统功能了！！但如果你正在使用 Win11 正式版，那么按官方方法是没机会体验的。为此，异次元给大家送上 Android 子系统的离线安装包以及安装任意 APK 应用的方法教程，让所有人都能抢先享受这一功能……\n「 前往查看原文.... 」\n异次元还有这些值得一看：\n\n3 种免费升级安装 Windows 11 正式版方法教程 / 制作 U 盘启动盘 (微软官方工具)\nParallels Desktop 17.1 最新版下载 - Mac 系统最强虚拟机 (支持M1/Win11/macOS Monterey)\n最新 Windows 11 ARM 系统 ISO 镜像下载 - 支持 M1 芯片 Mac 安装运行 Win11 (PD 虚拟机)\n网易 MuMu 安卓模拟器 - 免费高性能在电脑运行 Android 手机应用 APP 游戏的神器\n\n异次元正版数字商城  |  异次元首页  |  微信公众号  |  iPcFun  |  关注微博  |  软件精选",
-          "link": "https://www.iplaysoft.com/win11-wsa.html",
-          "publishedOn": "2021-10-22T18:12:43.000Z",
-          "wordCount": 1047,
-          "title": "Win11 安卓子系统 (WSA) 安装包教程 - 电脑运行 Android 手机应用 / 安装 APK 方法"
         }
       ]
     },
@@ -9556,6 +9568,15 @@
           "publishedOn": "2021-11-15T19:59:27.000Z",
           "wordCount": 38,
           "title": "2021 Google Developer Summit 中国开发者大会-主场内容"
+        },
+        {
+          "id": "https://juejin.cn/post/7030415720676589581",
+          "author": "RicardoMJiang",
+          "description": "theme: smartblue\nhighlight: a11y-dark\n前言\n了解过设计模式的同学都知道，设计模式家族成员非常庞大，具体可以分为3类共23种设计模式\n本文主要包括以下内容\n六大设计原则的介绍\n简单工厂、工厂方法与抽象工厂模式的区别\n代理，装饰与适配器模式的区别\n策略、状态与命令模式的区别\n设计原则介绍\n众所周知，5大设计原则一般有6个\n单一职责原则(Single Responsibility Principle, SRP)\n开闭原则(Open Close Principle, OCP)\n里氏替换原则(Liskov Substitution Principle, LSP)\n依赖倒置原则(Dependence Inversion Principle, DIP)\n接口隔离原则(Interface Segregation Principle, ISP)\n迪米特法则(Law of Demeter, LoD),又称最少知识原则(Principle of Least Knowledge)\n其中，前5个原则称为SOLID原则\n单一职责原则\n单一职责原则很简单也很好理解：类的职责应该单一，一个方法只做一件事,这里就不多说了\n开闭原则\n开闭原则是说程序对扩展开放，对修改关闭：当你的程序需要扩展时，不应该修改原来的代码，而是可以添加一个类来扩展。\ngetPrice 方法，也可以增加一个子类，重写getPrice方法，通过高层模块，在打折时使用子类。\n开闭原则的思想其实是将不变的地方封装起来，将可变的部分暴露出去，这样它们就不会混淆，还可以复用不变的部分，增加扩展性\n里氏替换原则\n里氏替换原则用一句话描述就是：所有引用基类的地方，必须能够使用其子类直接替换，换句话说，所有引用基类的地方必须透明地使用其子类对象。\nJava中，引用基类的地方，本来就可以用子类替换，为什么要提出个原…",
+          "link": "https://juejin.cn/post/7030415720676589581",
+          "publishedOn": "2021-11-14T05:25:40.000Z",
+          "wordCount": 30,
+          "title": "那些容易混淆的设计模式，了解一下~"
         },
         {
           "id": "https://juejin.cn/post/7029517821004480549",
@@ -9790,15 +9811,6 @@
           "publishedOn": "2021-10-24T05:28:43.000Z",
           "wordCount": 24,
           "title": "MVVM 进阶版：MVI 架构了解一下~"
-        },
-        {
-          "id": "https://juejin.cn/post/7022246208097746958",
-          "author": "岛上码农",
-          "description": "theme: channing-cyan\nhighlight: darcula\n本文已参与「掘力星计划」，赢取创作大礼包，挑战创作激励金。\n前言\n近期有不少网友加我微信（微信号：island-coder）咨询 Flutter 学习相关的问题，Flutter 作为一门新的技术，确实相关的资料书籍不太多。但就 Flutter 生态的影响力而言，已经是越来越强了。譬如，在 StackOverflow 网站上2021年度最受欢迎的技术中，Dart 语言排在了第7位。随着谷歌对 Flutter 跨平台解决方案的推进，估计会有越来越多的开发者使用 Flutter 构建他们的应用。\n\n本篇，就学习 Flutter 来一次完整的梳理，也欢迎大家在评论区进行补充和交流。\n学习线路思维导图\n先上一份思维导图，让大家有个整体认识。\n\nDart 语言\n在学习 Dart 语言前，若没有任何编程基础，建议先了解一下计算机基础知识。Dart 作为一门现代化的面向对象编程语言，具备了市面上大多数编程语言的特点，具体来说会分为下面这些内容：\n变量定义、赋值：这是最基础的部分，至少要知道什么是变量，如何赋值。final，var 和 const 的区别。\n基本数学运算：加、减、乘、除、整除、取余等运算；\n条件分支：if...else if...else 控制程序逻辑走向，或是 switch 分支；\n循环：使用循环完成重复性的工作；\n容器类：如List、Map 和 Set 的应用；\n函数和参数：一个是使用函数编写可复用的逻辑处理代码，二是需要注意在 Dart 中函数也是对象。同时需要区分函数的命名参数、可选参数的使用；\n面向对象编程：了解面向对象编程的概念和思想，能够合理地使用类来封装代码提高复用性和降低耦合；\n继承、多态和抽象类：这是提高代码复用、降低代码耦合度十分重要的概念，建议是多看看一些源码和设计思想（如…",
-          "link": "https://juejin.cn/post/7022246208097746958",
-          "publishedOn": "2021-10-23T05:02:16.000Z",
-          "wordCount": 24,
-          "title": "🎯🎯🎯一起来玩 Flutter —— 完整学习路线解读"
         }
       ]
     },
@@ -9998,6 +10010,16 @@
           "id": "https://stratechery.com/2021/unity-buys-weta-digital-an-interview-with-unity-ceo-john-riccitiello/",
           "author": "Ben Thompson",
           "description": "The Weta acquisition, Unity’s ambitions, their advertising business and relationship with Apple, and why Riccitiello thinks my understanding of the metaverse isn’t quite right.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS91bml0eS1idXlzLXdldGEtZGlnaXRhbC1hbi1pbnRlcnZpZXctd2l0aC11bml0eS1jZW8tam9obi1yaWNjaXRpZWxsby8.RUQfp0xLsW92xQipnsAHYhrs_Gdz5mmE0aLUhCAOCFrm5nCJF3s-dC52YPs_coNGaQoCTkcO1vt-8MdiruCasLjOe-nKrxA4_jS1xVaOtzUPGa3qsR3ENaxKRoPRIwrgGOAtUaEsSKuH-dgHNzYwC1AaRcoNXg_mf0B7L3gSByKpp_EVd-PMZMtM5OmltA-hwt0f_KwLz4gGNml7ednmHtVX1JSEvCmKu7pEteHgzOJ1LhOonrBfv9nWow20S3V1lVSmuXuOmvLlh__5ZwhK9CcGjJJVHXvs2k1WwGIODz9KzCM4TnPacsRlOfotCBFKmsrSjd0yrPeZZgXHV7AX3Q",
+          "publishedOn": "2021-11-17T09:34:06.000Z",
+          "wordCount": null,
+          "title": "Unity Buys Weta Digital, An Interview with Unity CEO John Riccitiello",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/unity-buys-weta-digital-an-interview-with-unity-ceo-john-riccitiello/",
+          "author": "Ben Thompson",
+          "description": "The Weta acquisition, Unity’s ambitions, their advertising business and relationship with Apple, and why Riccitiello thinks my understanding of the metaverse isn’t quite right.",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS91bml0eS1idXlzLXdldGEtZGlnaXRhbC1hbi1pbnRlcnZpZXctd2l0aC11bml0eS1jZW8tam9obi1yaWNjaXRpZWxsby8.f03cInEW4wZ0rp11XAf7udmi93xqsp1sjdEjt3v6E__7iD44hzeBQUt6l5GtG4xJAGp9WKvMZcq9W_AOZOWi7sy6cBu25RgUzifH47XgWD2gHdMHurbjL6kgi8RvcMvipd7Tk7v6_XNl1TZrl94w8t3jfpX8LzCEIz_cSbpsEJVMwgLFTrCHBWX0QqU4DZa35XFB5pA6gMyh8tp57LNKM0UoVMtahnXHt-5eeCQ1yb43idR2KlidpD2RLl6cCSUf4Sx542fu_rMEGoaHJcO8NehqVsMVgVnhe0WnFrqNOl9bulbJZYM_II90eidElfNfU0JrHG9yo-Xf1dcNg46kJA",
           "publishedOn": "2021-11-17T09:34:06.000Z",
           "wordCount": null,
@@ -10012,6 +10034,16 @@
           "publishedOn": "2021-11-17T09:34:06.000Z",
           "wordCount": null,
           "title": "Unity Buys Weta Digital, An Interview with Unity CEO John Riccitiello",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/constitutiondao-the-need-for-trust-memes-and-reality/",
+          "author": "Ben Thompson",
+          "description": "ConstitutionDAO is an interesting project to buy a physical good as a community; what is particularly interesting is what it says about the power of actualizing memes",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9jb25zdGl0dXRpb25kYW8tdGhlLW5lZWQtZm9yLXRydXN0LW1lbWVzLWFuZC1yZWFsaXR5Lw.YTMRScz-OLtMAyR6TmtxJtTwM_U0uhNGVR3j_Q5Ie2gFs7AnvkyqIOw7SeM-hieV4lCBZNQAMts5111frfStNIWINdE_OsoQy4z5yzvqvNaTfvvv4m-XDCNr8JjwbMPc820cKJWHC5GGCW_d37iHsrgPo-FmU4Etas7K4hRI500bd-VWEno8TweBEobkgSEHaD2iTCHey_wPxXV62ko5R1L4LLx16zBHhNW_swRKhh8zbPfIA9bQxPG127_2mHUeDNr4MUqXjznREgI5bL8uqLMpwlpyaIbVY2AtrA4EDPvXNIHdq3LXSttQa5anoEvkDuw1sVy2GPe53nUu-2mp7Q",
+          "publishedOn": "2021-11-16T13:21:35.000Z",
+          "wordCount": null,
+          "title": "ConstitutionDAO, The Need for Trust, Memes and Reality",
           "itunes": {}
         },
         {
@@ -10052,6 +10084,16 @@
           "publishedOn": "2021-11-16T13:21:35.000Z",
           "wordCount": null,
           "title": "ConstitutionDAO, The Need for Trust, Memes and Reality",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/opendoor-earnings-opendoors-pricing-opendoors-scalability/",
+          "author": "Ben Thompson",
+          "description": "Opendoor's results suggest that the problem in the home-buying market was unique to Zillow's lack of expertise, not the model",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9vcGVuZG9vci1lYXJuaW5ncy1vcGVuZG9vcnMtcHJpY2luZy1vcGVuZG9vcnMtc2NhbGFiaWxpdHkv.tYYVb511Thx6tRzCWlkEiZeHu1ukU3HM8Dk7j_qMjWBemt2v6QZ6EhCsYU3LDSS4Ng6_XKqxxyfD52F0bDB50lA5FfJxzTC7ZTvJepPyLaDUJRiB7bCoD_uX8z-3Uw76-a0xOEUot1W7glJrhiJsZANNCSQ_gEWNfLD0Fq82BJl1-LhsIGDX-E1UzlPI_dZHndXvAgkZWWGmKNWGA8M0HGpLmej5yJx90fxSXN7J9kC0klaTzYn_P7h-ZBGsGz9yxe0zIz64UzNTXW836j5M6XqcAMyT64MBhCkd3OZgxhexuIW3JlnAsb6kJExK9zqrvPjalxcp1C_cgIm4Py2nLg",
+          "publishedOn": "2021-11-15T11:56:46.000Z",
+          "wordCount": null,
+          "title": "Opendoor Earnings, Opendoor's Pricing, Opendoor's Scalability",
           "itunes": {}
         },
         {
@@ -10102,6 +10144,16 @@
           "publishedOn": "2021-11-15T11:56:46.000Z",
           "wordCount": null,
           "title": "Opendoor Earnings, Opendoor's Pricing, Opendoor's Scalability",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
+          "author": "Ben Thompson",
+          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.dsUduZgOX59e2LTPFaqUxi3qeLtEfbiJMRHoJC6wVM37l-D1WbLumlDpf2_9SCbC6og5r7xmpIewUDo-Iw2lcdcTQL_mobdw7pTm4Bbsk7sv_0ABKEmx5cCXTNKb90XrlGENQCyWOJvn5WD3rMyPVv53adILfrOKv-oaIKXKg0xZE5FRnBk9Kcq87uFFLtpATbDbblwR8UlKir2Bq7N3gAsrfmrmVN_FSU_bWrmnuocN5Mtzynn86_ePpJfJ8erbCfVJCG9E7Q6T7_SZj8R5vQFTv7S7E6Z1nm3cMovfoAHRGS-jUFtpV3LGN9gYbiGMh1XtlducUy2DUTpbntB9Lg",
+          "publishedOn": "2021-11-11T13:29:31.000Z",
+          "wordCount": null,
+          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
           "itunes": {}
         },
         {
@@ -10178,6 +10230,16 @@
           "id": "https://stratechery.com/2021/metaverse-follow-up-apple-denied-stay-in-epic-case-google-loses-eu-shopping-case-appeal/",
           "author": "Ben Thompson",
           "description": "Metaverse follow-up, and then both Apple and Google lose in court",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9tZXRhdmVyc2UtZm9sbG93LXVwLWFwcGxlLWRlbmllZC1zdGF5LWluLWVwaWMtY2FzZS1nb29nbGUtbG9zZXMtZXUtc2hvcHBpbmctY2FzZS1hcHBlYWwv.LMzoWUla_RebMrbiQRJ1nwOHB51Xx2RwUylox37wf0LnvLZFajWuHDUSQoRAjSC3oW3G9xyTtpKnPAyfS3U824MkcQ4Pz7SjX1YJ7y7Th7rSgtM3h_IkCAgbuyGRvUlox6q_Z70LviyZXR7DZTu8gOVCdJZnwYX-C_UOkqwJYNV-7d2DbqgrXYIVolx2M2rmlBt1CVNr5tXBtX1LJQQsp7HLAmr-OjaSswkS9fHkBPN01WYVw4GTjazZqSjYbhW5A-J5k8d5geCcFyS3nRPkrmh8LEc4OyRyUmTnFEdZSOTp8bup9ZB3FA5mu5iG2zCstiN-C1-Q6FNqC0IANnQY0g",
+          "publishedOn": "2021-11-10T12:38:31.000Z",
+          "wordCount": null,
+          "title": "Metaverse Follow-up, Apple Denied Stay in Epic Case, Google Loses EU Shopping Case Appeal",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/metaverse-follow-up-apple-denied-stay-in-epic-case-google-loses-eu-shopping-case-appeal/",
+          "author": "Ben Thompson",
+          "description": "Metaverse follow-up, and then both Apple and Google lose in court",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9tZXRhdmVyc2UtZm9sbG93LXVwLWFwcGxlLWRlbmllZC1zdGF5LWluLWVwaWMtY2FzZS1nb29nbGUtbG9zZXMtZXUtc2hvcHBpbmctY2FzZS1hcHBlYWwv.Q1ssp1G2VcRKpQkzwW_Zk1xeF92Jq24PQqUS-ss-HZmxgAQ2c4BGKgfJ2dK65FeJcWH27YWOM5d5ALwTvyhKTc_Unws37Nxk3NAmdo-UfniMnuedyx28fUsFQNZyuLG6jVO0HAwRkZ-G-MS2NTX1057vJ8TS2HkHLY6lNJ16NGt1KxSEEZEachEc7tPDjfQ7WFA38UnojiLrUAc7uqZquhTq_rLfejL6MR1WONFaFdq_kPze3vrAy5afLsTpuepM8MxvALpbLwTDyroqV-CnF_1c9mWAbQ3vkVZHvj9hDQypbRgW5BNqmKR0k-SswacC1msWUp36Rg574NwfAsAf1g",
           "publishedOn": "2021-11-10T12:38:31.000Z",
           "wordCount": null,
@@ -10242,6 +10304,16 @@
           "publishedOn": "2021-11-10T12:38:31.000Z",
           "wordCount": null,
           "title": "Metaverse Follow-up, Apple Denied Stay in Epic Case, Google Loses EU Shopping Case Appeal",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/googles-south-korea-plan-no-duty-to-deal-developer-versus-customer-choice/",
+          "author": "Ben Thompson",
+          "description": "Google's response the South Korean App Store law, what that says about platform IP rights, and why markets should decide App Store policies.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9nb29nbGVzLXNvdXRoLWtvcmVhLXBsYW4tbm8tZHV0eS10by1kZWFsLWRldmVsb3Blci12ZXJzdXMtY3VzdG9tZXItY2hvaWNlLw.VZiPeJ3_Sv923o0UYc8UeyLrqnDZutFmkWucpofe86iLq23n0TTl92c3NjEJSmzbYFVWl3uE90k0RK9xp8D-ZxZHp_5GP19-Z7Ewl8RoAVU7-miOtEzmgFLDsJsNEdvNYCzip3elNOMzCnyLvzGRjfG94ZdY-0qQ6YaLxhqYZRLYRjxNM19VQx3lxIzWDk6lEFTPXvGNaq82IhJI0rF7IDu18C1aRsGOnx_mTgqQG0Lb38PvJl61CAZcmuJ-R5NdBkvDgeFdpFHtbLpbX1OYTNDJgg6zBmtGpvEmHWcTrDLMufcXHc1YU2YAMgtz-JIOos_GjCulWLZF2gOymT6kXQ",
+          "publishedOn": "2021-11-08T12:11:52.000Z",
+          "wordCount": null,
+          "title": "Google's South Korea Plan, No Duty to Deal, Developer Versus Customer Choice",
           "itunes": {}
         },
         {
@@ -10318,6 +10390,16 @@
           "id": "https://stratechery.com/2021/an-interview-with-eric-seufert-about-the-impact-of-att/",
           "author": "Ben Thompson",
           "description": "An interview with Eric Seufert about the impact of ATT and the future of advertising, Apple, and Facebook.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hbi1pbnRlcnZpZXctd2l0aC1lcmljLXNldWZlcnQtYWJvdXQtdGhlLWltcGFjdC1vZi1hdHQv.Mn7Q2Wloa1Jdz1G8DLs2phnkyFYaM55RnMJy_Y-c3phpA65EE_6TOaUE_B5pstRKVv9xR0EQZtRW0k_doPXa4BgchmTfG9ZoOMvOzErxczR0mQMsAuqvqgDjbO25mwxptZDBW8StEWnEUFHjOImbRFTrYxIoP4PstYqoBYrNRgf4BZX3oAvl8Ode8oqF0h4kO5ggIJtqRJfEzWZifSl9U1_bCr2TTFLKNiwiXfGmX-RZQrtb_X238eG76UQLmS48EpZDRpR6-pn-jDhLI6bLNLQva2_j968GZ1ORvoeYCmeT22sXtkEtjvfmr2VNTBXSpn9vs-3hOQfkdRgTaFA3dg",
+          "publishedOn": "2021-11-04T11:09:45.000Z",
+          "wordCount": null,
+          "title": "An Interview with Eric Seufert about the Impact of ATT",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/an-interview-with-eric-seufert-about-the-impact-of-att/",
+          "author": "Ben Thompson",
+          "description": "An interview with Eric Seufert about the impact of ATT and the future of advertising, Apple, and Facebook.",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hbi1pbnRlcnZpZXctd2l0aC1lcmljLXNldWZlcnQtYWJvdXQtdGhlLWltcGFjdC1vZi1hdHQv.hYboq-_TnttAEsynSi2CpSoiy8CN1MBMlf9BH0ntjBecIoTfNpMWqe1ye_nSSLYSzwJ-c8kIqt2oesmp9UnIiXpuwhO43mEtoX6T8oZPFhWxKjxbr10PSloQLp3P8dNTa_oe8iCc_Sfg2HFJvrq7jFgdxydtDWm8rFa74FViIOyCA7JfBnFa1pP_ykCr4LbvMIpA0PNf7N50TKnZ-1HW1NNqiXs4LOyMg9qGShIFPEwxEOcrp9bqcxAjU4bs_Fx2SseSy_fA96aPEvStEH6nMmNgD0KsObq7XUAByq452CHXxsa1Tlpxta9_9verT2vx4vX4MnkE-9thdMr8Tk1Q1w",
           "publishedOn": "2021-11-04T11:09:45.000Z",
           "wordCount": null,
@@ -10382,6 +10464,16 @@
           "publishedOn": "2021-11-04T11:09:45.000Z",
           "wordCount": null,
           "title": "An Interview with Eric Seufert about the Impact of ATT",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/zillow-shuts-down-offers-where-zillow-went-wrong-reflecting-on-zillow-aggregation-and-integration/",
+          "author": "Ben Thompson",
+          "description": "Zillow is ending Zillow Offers; where did the company go wrong, and what my initial analysis got right, and what I missed.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS96aWxsb3ctc2h1dHMtZG93bi1vZmZlcnMtd2hlcmUtemlsbG93LXdlbnQtd3JvbmctcmVmbGVjdGluZy1vbi16aWxsb3ctYWdncmVnYXRpb24tYW5kLWludGVncmF0aW9uLw.JeWVFHNOmfndyJ2Q0Uh3a_uWij78wXW4J9g9BAQBOIqwUUB01Xq1nazqAoJg03OJ1AczB6YYcrxA_iZ7_4A4jkBLI-PXxmIUaD_C2iwItMHRj1rfBPS1AyFJ-DKJ76iqFtIegHPNeoQYG_AsW3kgz4ae4n379whrzRtMKR3N8wadmaJjMmRxJ6ANjUQ2cpv6iUIh65ybAhY99Z_Pj0SNELzhXBkifKa_3eJtHT8q-8IsLI8Dy0EuKqDG0MZVzMjmD-VzLmGi4nwLubJsFQ1YCW-E9ObD4DlGGx1CULjvbxaB_d38sWkPh2WFlZH_7TTX0aAcIOKESPGorlYI5Hfz9Q",
+          "publishedOn": "2021-11-03T12:00:32.000Z",
+          "wordCount": null,
+          "title": "Zillow Shuts Down Offers; Where Zillow Went Wrong; Reflecting on Zillow, Aggregation, and Integration",
           "itunes": {}
         },
         {
@@ -10458,6 +10550,16 @@
           "id": "https://stratechery.com/2021/adobe-max-photoshop-on-the-web-photoshop-and-nfts/",
           "author": "Ben Thompson",
           "description": "Adobe Max suggested that Adobe is finally starting to build its products as a service, not just selling them that way. Plus, Photoshop on the Web leans into Photoshop's complexity, and Photoshop's NFT authenticity feature is compelling.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hZG9iZS1tYXgtcGhvdG9zaG9wLW9uLXRoZS13ZWItcGhvdG9zaG9wLWFuZC1uZnRzLw.Exeiv03vPUbgCWp1jqysuHRJAS874xVwBgonqsIH3e7MPNngkKHT0QMVdPKt1DBw2POdDxyFERXl_UUVfbHYs8s6HiQOLIPSpxsgi9c7zoCZgkbyPt8_Ml_yBWkvBWF90BezLZxSSTl9zU7VO4piLp_CzA2gEMaXPsCU0ZQIl0cglRPpCfQ34X22rPAyOtnd1xHI239mNv8fvE1QIuJkRlX2d_RjN8Vnp1FCVYDDvAD7588Cwu2AEtJmFAHkcXvWpy-RopsxnXSjrGoRJeGf5vRg6wI8DNsPoJROJkyhck05C7Zb_pzuvjuN7tPNb5QIKXYw-vvZaD4Wp4kdskekrg",
+          "publishedOn": "2021-11-02T12:08:15.000Z",
+          "wordCount": null,
+          "title": "Adobe Max, Photoshop on the Web, Photoshop and NFTs",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/adobe-max-photoshop-on-the-web-photoshop-and-nfts/",
+          "author": "Ben Thompson",
+          "description": "Adobe Max suggested that Adobe is finally starting to build its products as a service, not just selling them that way. Plus, Photoshop on the Web leans into Photoshop's complexity, and Photoshop's NFT authenticity feature is compelling.",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hZG9iZS1tYXgtcGhvdG9zaG9wLW9uLXRoZS13ZWItcGhvdG9zaG9wLWFuZC1uZnRzLw.NJ4ebBzS2tn6JYq1ipz1TRdWBpEXd8srMmmDhUS5WgZYoUTBDE4iaAKLWhUi128OVAs_dNGpcizwruehnS2a9_oHatHiISGwpaaExtrm5-XurqsmZz0MiDMgxM5pjTau5f5hmKA8xPL9mpTfknjNYHkBGnjlZahwkGovtLF7cSkEk5iBMuRk54T3n8iwZj-ij_BffJDjUp_jjE0wt6Z6K6F-aT7eaX3vVyJRtLW0njRTgA4XcfAXDIeN7wCFg6y90K4bvwtagTjF_in_W1fHvqoJdw4nWAvBjSXV9XB2CPGlw7LtG47wgZ2qkfk8khYfQYrq_nshzVs9mF6KXoU9Nw",
           "publishedOn": "2021-11-02T12:08:15.000Z",
           "wordCount": null,
@@ -10522,6 +10624,16 @@
           "publishedOn": "2021-11-02T12:08:15.000Z",
           "wordCount": null,
           "title": "Adobe Max, Photoshop on the Web, Photoshop and NFTs",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/about-the-interview-the-metaverse-and-vr-why-not-a-startup/",
+          "author": "Ben Thompson",
+          "description": "How I approached the interview with Zuckerberg, why the metaverse is really about VR, and then a discussion of Facebook's competitors.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hYm91dC10aGUtaW50ZXJ2aWV3LXRoZS1tZXRhdmVyc2UtYW5kLXZyLXdoeS1ub3QtYS1zdGFydHVwLw.SHe_piEQ3NkmtZJjzXJbFnqrX86FK3MtoQyNJaS-1r948eZzUaVidSHzuw7vps-CwNhXbIcJRFljiwozkblAM4LJGG3JmvNtSpgFvlcSUXyHaV1GgyaQVL-73yHYjmr1r95omqUHQyrAuFGePkD4DUVEyN9chTu6NWjrRkTBgcXFdi-Sb9WfRM5NdXSxouVe-KbeSHygKdGlDdmBVFHz8C-hdzyGxEjzv8VzBS7xL7LeTinF8NWDu0l-SUIzc1VP-mtEGsAYfwDYOxBh5FoHaE_-lgkQ8ZpBcBRWJq9uSrsQHf1MxNJ0rOmMAFPou75VVpjfYkPxoYF3W3SzUJpD7A",
+          "publishedOn": "2021-11-01T12:06:21.000Z",
+          "wordCount": null,
+          "title": "About the Interview, The Metaverse and VR, Why Not a Startup?",
           "itunes": {}
         },
         {
@@ -10598,6 +10710,16 @@
           "id": "https://stratechery.com/2021/facebook-earnings-investor-trust-facebook-reality-labs/",
           "author": "Ben Thompson",
           "description": "Facebook's earning seemed bad, but investors responded well, thanks to the trust that Facebook has developed over the years, and demonstrated this quarter.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9mYWNlYm9vay1lYXJuaW5ncy1pbnZlc3Rvci10cnVzdC1mYWNlYm9vay1yZWFsaXR5LWxhYnMv.iUuEms9Qz35aHi1jgKEJXbhN4VmFE8UB8OJrN-TIQ9YvlVIoG4WD_D1fpggjW3JJDMBi7dlgXVNZz98-g2v2niz30spbOzGG3Si6_fof4sckbveWv3P-3chG5xG33UipiwCCCzaGkll8MasBYivQ-8396Tf7Ew6WfNQMoBuj50MtA5QL9ZLiVdaWvR0lYmLfe0OdirS3zf-TuW27xZww8Tl0AIA92a-oF1LnXaycMTzR57ftREdoFuCuVqwmWHSpbba27NAOSsXzdaIEoLzj9LNHie3MyAalAgpWPuNnCINJ_EBkdGdCh8XLfzxF57WjBAeuA8IYfh3e9-9T-4bvYg",
+          "publishedOn": "2021-10-26T11:51:13.000Z",
+          "wordCount": null,
+          "title": "Facebook Earnings, Investor Trust, Facebook Reality Labs",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/facebook-earnings-investor-trust-facebook-reality-labs/",
+          "author": "Ben Thompson",
+          "description": "Facebook's earning seemed bad, but investors responded well, thanks to the trust that Facebook has developed over the years, and demonstrated this quarter.",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9mYWNlYm9vay1lYXJuaW5ncy1pbnZlc3Rvci10cnVzdC1mYWNlYm9vay1yZWFsaXR5LWxhYnMv.LVC4y9TDroHebQNXK_u_mAY2aBrB-Lk_Gr7RbS-CSY874X-fchTvxSR3T11XSBEdzg0g3uKOdS91WCxwR3uhjccmYdGBFLY9zXXXx6pFatzJdroDhVMPuqUm9vY7G1yZuT0IgIMXzlbaXfp-LWTTSaoU7WWV3nlMI48E-m7akRVdi07tPLb9v67gpPISA1nZrKmr9Bn8bbfM1cmoIuqtaWxE9P66nyWM6eHupwiEoTQzd2NXDHRysxlk6YVRvJANYfbN5HlLRnUY77WEC7rSygS2MIJ9wXKLLoIW4SR7M4c0p2rSeXvqUZ0P_U4qX_OZcKx-X1M_lNvNCGM33-b5lA",
           "publishedOn": "2021-10-26T11:51:13.000Z",
           "wordCount": null,
@@ -10662,6 +10784,16 @@
           "publishedOn": "2021-10-26T11:51:13.000Z",
           "wordCount": null,
           "title": "Facebook Earnings, Investor Trust, Facebook Reality Labs",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/snap-earnings-attribution-and-targeting-the-supply-chain/",
+          "author": "Ben Thompson",
+          "description": "Snap's earnings show how the inability to measure attribution makes it hard to target ads; the big question is what this means for Facebook.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9zbmFwLWVhcm5pbmdzLWF0dHJpYnV0aW9uLWFuZC10YXJnZXRpbmctdGhlLXN1cHBseS1jaGFpbi8.NgwgF9Qnyney-wLHsP2TudzB_KoIIOcn3t2mPniO5I3uVhlCaa1f1wnQBiA9hLJnEO8xdE6ByYm5c2L_7JqstBiHwhAuF_Fs2KgsnQVGW8n6zst2LGkiGZhyt-g0wio4ALgLTUIWhTBr8d_yH_PACh8orPHf94TlqxzUCqY1Y2LQ0ew1ec3Vsao1Bf3mYrFgzLDiuxDLCrpYRUqqwka3hSdwY8z_RqMtLvCqzhzEfQV7po0SPtxLS6VLg3YPKnI6ftnik_72s4HB4goDE8wTLKFC4_rvBLb4y7XNOWUGXapD5gkWr5ZZyMZtXl3kizc8PDgnn_9Qo7lPIvn6uY4eiQ",
+          "publishedOn": "2021-10-25T13:00:53.000Z",
+          "wordCount": null,
+          "title": "Snap Earnings, Attribution and Targeting, The Supply Chain",
           "itunes": {}
         },
         {
