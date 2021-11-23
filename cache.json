@@ -12,6 +12,69 @@
       "siteUrl": "https://www.freecodecamp.org/news",
       "articles": [
         {
+          "id": "619909b111d3cb08287a9bd9",
+          "author": null,
+          "description": "A common practice in software projects is to keep certain information separated but accessible from the codebase which uses it. Developers usually do this with secrets such as passwords or private keys, or with user or context-specific info pieces.  But managing environment variables can be a pain. There are a",
+          "link": "https://www.freecodecamp.org/news/how-to-manage-directory-scoped-envs-with-direnv-in-posix-systems/",
+          "publishedOn": "2021-11-22T21:39:20.000Z",
+          "wordCount": 725,
+          "title": "How to Manage Directory-Scoped Variables with direnv in POSIX Systems"
+        },
+        {
+          "id": "613f3cad852f4307d372c7dc",
+          "author": null,
+          "description": "The Design Thinking Process is a way to come up with creative, user centric solutions to complex problems. But how does it work exactly? In this article, I will explain what the Design Thinking Process is and break down the five phases behind it. We will explore how this process",
+          "link": "https://www.freecodecamp.org/news/the-design-thinking-process-explained/",
+          "publishedOn": "2021-11-22T21:27:40.000Z",
+          "wordCount": 1069,
+          "title": "The Design Thinking Process Explained"
+        },
+        {
+          "id": "619b998511d3cb08287aa257",
+          "author": null,
+          "description": "Today we're gonna practice our React JS skills by building a Rick and Morty Character Wiki.  Here's what we'll build today:    Here's a [live demo of the project] 👇  https://react-projects-psi.vercel.app/.  And here's the GitHub Repository.  The topics we'll cover while building this project are:  React Hooks (useState, useEffect)",
+          "link": "https://www.freecodecamp.org/news/react-js-project-build-a-rick-and-morty-character-wiki/",
+          "publishedOn": "2021-11-22T19:13:34.000Z",
+          "wordCount": 4193,
+          "title": "ReactJS Project – Build a Rick and Morty Character Wiki"
+        },
+        {
+          "id": "619bb03e11d3cb08287aa4c8",
+          "author": null,
+          "description": "If you have a Windows 10 PC, you might occasionally see the notorious \"scanning and repairing drive\" message. This error can happen to the C drive, hard drive, and any other external drive.  This scanning and repairing can take several hours, or even cost you a whole workday",
+          "link": "https://www.freecodecamp.org/news/scanning-and-repairing-drive-how-to-fix-stuck-windows-10-pc-hard-drive/",
+          "publishedOn": "2021-11-22T17:10:42.000Z",
+          "wordCount": 736,
+          "title": "Scanning and Repairing Drive – How to Fix Stuck Windows 10 PC Hard Drive"
+        },
+        {
+          "id": "619ba98511d3cb08287aa3a8",
+          "author": null,
+          "description": "In this conference talk, Magdalena Ostoja-Chyżyńska will not talk about the differences between developers and designers.  Instead of focusing on the differences between the roles and how that might cause friction, she will approach the subject with a problem-solving attitude, and expand on how to make the relationship work. And",
+          "link": "https://www.freecodecamp.org/news/how-to-speak-to-a-designer-as-a-developer-tech-talk/",
+          "publishedOn": "2021-11-22T17:07:06.000Z",
+          "wordCount": 774,
+          "title": "Let&#x27;s Talk Design – How to Speak to a Designer as a Developer"
+        },
+        {
+          "id": "612cc005b5177808226d4a57",
+          "author": null,
+          "description": "You can use the % and _ wildcards with the SQL LIKE statement to compare values from an SQL table. But how does that work exactly?  In this article, I will show you how to use the SQL LIKE statement through code examples.  Basic syntax of SQL LIKE statementHere is the basic",
+          "link": "https://www.freecodecamp.org/news/sql-like-statement-how-to-query-sql-with-wildcard/",
+          "publishedOn": "2021-11-22T15:01:50.000Z",
+          "wordCount": 1083,
+          "title": "SQL LIKE Statement – How to Query SQL with Wildcard"
+        },
+        {
+          "id": "619694ef11d3cb08287a88ce",
+          "author": null,
+          "description": "In this tutorial, you'll learn some of the different ways you can reverse lists and list ranges in Python. And we'll look at some coding examples along the way.  Let's get started!  How to create a range in Python An efficient way to create a list of a range of",
+          "link": "https://www.freecodecamp.org/news/python-reverse-list-how-to-reverse-a-range-or-array/",
+          "publishedOn": "2021-11-22T14:54:14.000Z",
+          "wordCount": 1242,
+          "title": "Python Reverse List – How to Reverse a Range or Array"
+        },
+        {
           "id": "618941df8bcfae07ca4e3869",
           "author": null,
           "description": "If you're working in IT, you might need to schedule various repetitive tasks as part of your automation processes.  For example, you could schedule a particular job to periodically execute at specific times of the day. This is helpful for performing daily backups, monthly log archiving, weekly file deletion to",
@@ -892,6 +955,114 @@
       "siteUrl": "https://dev.to",
       "articles": [
         {
+          "id": "https://dev.to/trumpowen/json2obj-3llm",
+          "author": "Owen Trump",
+          "description": "json2obj\n\n\nAllows you to transform JSON data into an object whose members can be queried using the member access operator. Unlike json.dumps in the standard library that returns a dictionary object, this library returns a JSONObjectMapper object. The attributes of these objects are defined by the contents of the JSON data provided to it\nIt can be installed using pip \npip install json2obj\nhttps://github.com/trumpowen/json2obj\n\nimport datetime\nfrom json2obj import JSONObjectMapper \n\nperson = JSONObjectMapper(\"\"\"{ \"name\" : \"trumpowen\" , \"age\" : 125 }\"\"\") \nperson.name == \"trumpowen\" # true\nperson.age == 125 # true \n# replaces and overwrites \nperson.name = {} \nperson.name.first_name = \"Wilkins\" \nperson.name.last_name = \"Owen\" \nperson.name.other_names = [\"Trump\"]\n\n# add new attribute. If this is not desired, you can initialize the object with readonly set to True. This will prevent the addition of new attributes and changing the values of existing attributes \nperson.dob = datetime(1900, 12, 6) \njson_data = str(person) # returns a string representation \njson_as_dict = person.to_dict() # returns a dictionary representation \n\nUse help(obj) , where obj is an instance of JSONObjectMapper",
+          "link": "https://dev.to/trumpowen/json2obj-3llm",
+          "publishedOn": "2021-11-22T23:45:15.000Z",
+          "wordCount": 542,
+          "title": "JSON2OBJ"
+        },
+        {
+          "id": "https://dev.to/rodrigosabino02/o-metodo-para-ir-mais-longe-296f",
+          "author": "rodrigo sabino",
+          "description": "Diariamente o ser humano vem procurando e criando meios para acelerar a evolução, e aqui eu vou passar um pouco de 3 pilares que eu tenho utilizado evoluir cada vez no meu desenvolvimento pessoal e profissional.\nA falta de foco e uma das piores pedras no caminho dos devs quando se trata de evolução, o grande leque de tecnologias que surgem diariamente faz com que muitos devs(principalmente os iniciantes) não tenham um foco especifico em uma stack e isso acaba atrapalhando a evolução de muita gente.\nNão se trata qual e a melhor tecnologia, se trata de qual tecnologia você e melhor desenvolvendo.\nMantenha sua atenção no que você esta estudando no momento.\nouvir uma frase uma vez que falava que longevidade > intensidade\nE para você evoluir com tecnologia que você escolheu não basta só ter foco se você não exercita, e necessário MUITA PRATICA, e a pratica que acelera o seu desenvolvimento.\nProgramação e uma disciplina pratica, e ela que vai te da toda bagagem e experiência para vencer os desafios que você enfrenta no seu dia a dia e te transforma e um profissional muito mais capacitado no mercado.\nA teoria só funciona quando você sabe quando e onde aplicar.\nA sensação de esta apenas copiando código e super normal para quem ta começando, mas a repetição se transforma em repertorio e todo o código começa a fazer sentido\nTer pessoas ao seu lado, vivendo o mesmo contexto que você e o melhor combustível que um dev pode receber, o aprendizado compartilhado e a troca de experiências faz a sua evolução se tornar mais leve e divertida.\nQuem nunca teve um bug que não resolvia a dias e um amigo ajudou a resolver. Esta ao lado de devs mais experientes faz com que você esteja sempre atualizado com as melhores praticas e tecnologias do mercado\nConhecimento quanto mais a gente divide, mais se multiplica!",
+          "link": "https://dev.to/rodrigosabino02/o-metodo-para-ir-mais-longe-296f",
+          "publishedOn": "2021-11-22T21:29:44.000Z",
+          "wordCount": 753,
+          "title": "O método para ir mais longe"
+        },
+        {
+          "id": "https://dev.to/polyterative/my-golden-rules-for-angular-intercomponent-data-communication-44g7",
+          "author": "Vladyslav Yakovenko",
+          "description": "These are some rules that I have lazily picked up over the past four years of professional development on angular.\nI generally work on small to medium projects without the time to integrate a formal state management system.\nIt is for this reason that there are data services that try to solve the problem of carrying communication around. If anyone has any further questions or curiosities regarding these points feel free to leave a comment.\nmethods must be extracted into functions until nothing can be extracted anymore\nthe component logic shold refer only to local resources of the component as much as possible\ndataservices deal with data I/O with the server\nthe business Logic must live within the dataservice and all components should be of assistance to the business Logic, visualization assistance and small local logics to visualize and modify data\ncomponents (internal to the feature internal to the root component) must implement the root dataservice or receive data as input (observables are strongly preferred)\navoid multi-level handovers through inputs, it slows you down and makes refactoring a hassle\nif the data as input changed hands more than twice use a dataservice,\neach feature must have its own module and declare components related only to that feature\nputting the general dataservice next to the feature module is the best way to indicate the root from which to start exploring the code\nthe beginning of the end of the data flow must take place within the dataservice\n\nthe substrate cache-services for API calls must live in the provide of the feature module they belong to and refer to\ncomponents  can be interaction contexts between dataservices but services are preferred when possible\ninteraction services can be interaction contexts between dataservices",
+          "link": "https://dev.to/polyterative/my-golden-rules-for-angular-intercomponent-data-communication-44g7",
+          "publishedOn": "2021-11-22T20:52:02.000Z",
+          "wordCount": 660,
+          "title": "My golden rules for Angular intercomponent data communication"
+        },
+        {
+          "id": "https://dev.to/beatrizmaciel/hackerrank-40-java-dequeue--497h",
+          "author": "Beatriz Maciel",
+          "description": "Esse exercício recebe dois inputs iniciais: um integer N, relativo à quantidade de números em um array, e um integer M, relativo a um subarray deslocável que fará a \"varredura\" dentro do array principal.\n\nN = quantidade de números do array\nDessa forma, os arrays estruturados com M = 3 serão:\n[5, 3, 5]\nComo todos os subarrays precisam ter M números, nesse caso esses serão os subarrays possíveis.\nDepois disso, precisamos que o programa contabilize qual é o máximo de números únicos existentes em um subarray de tamanho M.\n[5, 3, 5] = 2 números únicos\nSendo assim, o máximo de números únicos em um subarray será 3. Esse precisa ser o output.\nVamos para a solução, dividida em partes:\nPrimeiro declaramos um Array de Integers de nome deque.\nDeclaramos também um Hashset de Integers de nome hashset. L…",
+          "link": "https://dev.to/beatrizmaciel/hackerrank-40-java-dequeue--497h",
+          "publishedOn": "2021-11-22T20:35:53.000Z",
+          "wordCount": 961,
+          "title": "HackerRank #40 | Java Dequeue | 🇧🇷"
+        },
+        {
+          "id": "https://dev.to/ryunosukezoran/my-favorite-image-placeholder-4cfb",
+          "author": "Zoran Stankovic",
+          "description": "For my first post, I decided to write about a tool that I always use gladly when mockup new websites. So here I would like to share with you my favorite image and video placeholder Place Corgi. As you can guess I am a Corgi lover and this image placeholder is just perfect for me, and everyone who loves dogs and especially Corgis.\nIt is easy to use, just a link to Place Corgi site with a width and optional height specified after the URL.\nhttp://placecorgi.com/width/height\nAlso, we can place a video as a placeholder. To do that, we would add /v to the URL along with width and height\nhttp://placecorgi.com/v/width/height\nYou can add the Place Corgi js file to your application, which will automatically replace any img tags that have the class corgi with images from Place Corgi.\nhere.",
+          "link": "https://dev.to/ryunosukezoran/my-favorite-image-placeholder-4cfb",
+          "publishedOn": "2021-11-22T20:30:12.000Z",
+          "wordCount": 510,
+          "title": "My favorite image placeholder"
+        },
+        {
+          "id": "https://dev.to/itz_salemm/build-a-web-crawler-from-scratch-34on",
+          "author": "Salem Olorundare👨‍💻",
+          "description": "Introduction\n\n\nHave you ever wondered how search engines like Google, fetch data from different parts of the web and serve it to you as a user, based on your query? The method used by applications like this is termed crawling. \nSearch engines work and by crawling and indexing billions of web pages using different web crawlers called web spiders or search engine bots. What these web spiders do is follow links from each web page that have been indexed to discover new ages.\nIn this short article, you will be building out your own web crawler using Python and its popular web framework for extracting the data you need from websites.\nAlso, in this tutorial, developers tend to be confused with web crawling and web scraping. We would learn the difference between these two concepts and examine some…",
+          "link": "https://dev.to/itz_salemm/build-a-web-crawler-from-scratch-34on",
+          "publishedOn": "2021-11-22T20:27:02.000Z",
+          "wordCount": 1692,
+          "title": "Build a web crawler from scratch"
+        },
+        {
+          "id": "https://dev.to/muckitymuck/prometheus-and-grafana-part-2-47bg",
+          "author": "muckitymuck",
+          "description": "The Prometheus.yml:\n# my global config\nglobal:\n  scrape_interval:     15s # Set the scrape interval to every 15 seconds. Default is every 1 minute.\n  evaluation_interval: 15s # Evaluate rules every 15 seconds. The default is every 1 minute.\n\nscrape_configs:\n  # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.\n  - job_name: 'prometheus'\n\n    # metrics_path defaults to '/metrics'\n    # scheme defaults to 'http'.\n\n    static_configs:\n      - targets: ['localhost:9090']\n\n  - job_name: 'node-exporter'\n\n    # Override the global default and scrape targets from this job every 5 seconds.\n    scrape_interval: 5s\n    metrics_path: /metrics\n\n    static_configs:\n      - targets:\n        - <PUBLIC IP>:9100\n\nThis is a good starting place for a monitoring system for Linux boxes\nRunning the services in docker is also advised as it simplifies the rollout.\nDocker node exporter:\nsudo docker run --restart always -d --net=\"host\" --pid=\"host\"  -v \"/:/host:ro,rslave\"  prom/node-exporter:latest  --path.rootfs=/host\n\nDocker prometheus:\nsudo docker service create --replicas 1 --name dockerprometheus     --mount type=bind,source=/home/ubuntu/prometheus/prometheus.yml,destination=/etc/prometheus/prometheus.yml     --publish published=9090,target=9090,protocol=tcp     prom/prometheus\n\nWhen you get around to making panels in Grafana, these queries are very useful:\n100 - ((node_filesystem_avail_bytes{mountpoint=\"/\",fstype!=\"rootfs\"} * 100) /            node_filesystem_size_bytes{mountpoint=\"/\",fstype!=\"rootfs\"})\n\nnode_filesystem_avail_bytes\n\n\nOR you could just setup a template for Node Exporter:\n\nEnter 405 for the Grafana ID.\n\nPick up the name and choose a Data Source for the dashboard.\n\nTo make an alert, start a NEW dashboard and NEW panel. Template dashboards like above will not work. \nEnter the query for the item you want to track and press the Alert tab.\nThat should do it for a basic monitoring service.",
+          "link": "https://dev.to/muckitymuck/prometheus-and-grafana-part-2-47bg",
+          "publishedOn": "2021-11-22T20:13:46.000Z",
+          "wordCount": 649,
+          "title": "Prometheus and Grafana, Part 2"
+        },
+        {
+          "id": "https://dev.to/adeleyeayodeji/learn-how-to-lazy-load-image-using-javascript-in-php-1f1n",
+          "author": "Adeleye Ayodeji",
+          "description": "Do you want to increase your website speed?\n\n\nThen you need this tutorial to lazy load your assets.\nhttps://www.youtube.com/watch?v=kyU8GvHf3o4\nDownload Source Code: https://www.biggidroid.com/product/javascript-lazy-image-script/\nHave an issue? Comment below.",
+          "link": "https://dev.to/adeleyeayodeji/learn-how-to-lazy-load-image-using-javascript-in-php-1f1n",
+          "publishedOn": "2021-11-22T20:09:30.000Z",
+          "wordCount": 416,
+          "title": "Learn How To Lazy Load Image Using Javascript In PHP"
+        },
+        {
+          "id": "https://dev.to/ademking/betterviewer-a-chrome-extension-for-better-image-viewing-experience-3k3m",
+          "author": "Adem Kouki",
+          "description": "Hi everyone! \nAfter many cups of coffee and many more hours of hard work, I launched my free Open source Chrome extension: BetterViewer\nBetterViewer makes image viewing faster, easier, and more fun.\nBetterViewer was designed as a replacement for the image viewing mode built into Chrome-based web browsers.\nWith BetterViewer you can use various keyboard shortcuts to quickly pan, zoom images, edit and a lot more!\n\n\n\n\n\n\n\n\n\nFeatures: \nZoom in / Zoom Out / Reset \nFullscreen \nRotate Left / Rotate Right \nFlip Horizontal / Flip Vertical \nCrop Image \nPaint \nDownload Image \nUpload Image to imgur.com \nColor picker \nImage Details \nChange background color (Dark / Light / Blurred) \nPrint Image \nExtract Text from Image \nEdit in Photopea\n📌 Product Hunt: https://www.producthunt.com/posts/betterviewer \n📌 Chrome Web Store: https://chrome.google.com/webstore/detail/betterviewer/llcpfkbjgkpmapiidpnohffjmmnhpmpb \n / \n        BetterViewer\n      \n    \n\n\n\n    Fast, Simple, Easy image viewer\n\nBetterViewer makes image viewing faster, easier, and more fun.\nBetterViewer was designed as a replacement for the image viewing mode built into Chrome-based web browsers.\nWith BetterViewer you can use various keyboard shortcuts to quickly pan, zoom images, edit and a lot more!\nClick Here\n\n\n\n    \n\n\n\n\n   Screenshots\n\n\n\n\n    \n\n\n\n\n    \n\n\n\n\n  \n\n\n\nFeatures\nZoom in / Zoom Out / Reset\nFullscreen\nRotate Left / Rotate Right\nFlip Horizontal / Flip Vertical\nCrop Image\nPaint\nDownload Image\nUpload Image to imgBB\nColor picker\nImage Details\nChange background color (Dark / Light / Blurred)\nPrint Image\nExtract Text from Image\nEdit in Photopea (Thanks to @bbbenji)\nFix Crop problem\nFix random shutdown\nReplace Imgur with ImgBB (Many users requested this)\nAdd \"Edit with Photopea\"\nAdd Contributors in About popup\nFirst version\nThanks goes to these wonderful people (emoji key):\n…\n\n\n\n\n  \nView on GitHub",
+          "link": "https://dev.to/ademking/betterviewer-a-chrome-extension-for-better-image-viewing-experience-3k3m",
+          "publishedOn": "2021-11-22T20:04:17.000Z",
+          "wordCount": 758,
+          "title": "BetterViewer — A chrome extension for better image viewing experience"
+        },
+        {
+          "id": "https://dev.to/rezapped/cloud-migration-benefits-and-challenges-5aeb",
+          "author": "Reza Piri",
+          "description": "A growing number of organizations are switching to cloud services. In this guide, we’ll outline the benefits and challenges of cloud migration.\n\nBy Reza Piri  Cloud  November 17, 2021\nCloud computing has boomed in the last decade and cloud adoption is at the top of every tech exec’s to do list. More and more companies are considering migrating to the cloud, but what does cloud migration mean, what does the process involve, and what are the benefits and challenges? In this article we will cover this topic and explain how Gennovacap can help your company with cloud migration services. \nIntroduction: What is Cloud Migration\nTypes of Cloud Migration\nSoftware as a Service\nPlatform as a Service\nInfrastructure as a Service\nWhat Tools are Used in Cloud Migration\nAWS Cloud Migration Tools\nAzure Mig…",
+          "link": "https://dev.to/rezapped/cloud-migration-benefits-and-challenges-5aeb",
+          "publishedOn": "2021-11-22T19:46:26.000Z",
+          "wordCount": 2024,
+          "title": "Cloud Migration Benefits and Challenges"
+        },
+        {
+          "id": "https://dev.to/mage_ai/how-to-build-a-search-engine-with-word-embeddings-56jd",
+          "author": "Mage",
+          "description": "Imagine you have a large set of news articles, and want to provide a way to allow your users to search through them. For example, here are 5 random articles from the Economist:\nAn investment bonanza is coming\nWho governs a country’s airspace?\nWhat is a supermoon, and how noticeable is it to the naked eye?\nWhat the evidence says about police body-cameras\nWho controls Syria?\nLet’s think about what kind of queries potential users issue and the articles that we would want to return.\nA search for “investment” should return the 1st article.\nA search for “supermoon” should return the 3rd article.\nA search for “syria” should return the 5th article.\nThis is quite simple to implement with traditional information retrieval techniques, since these queries have keyword matching.\nA search for “banking” …",
+          "link": "https://dev.to/mage_ai/how-to-build-a-search-engine-with-word-embeddings-56jd",
+          "publishedOn": "2021-11-22T19:43:42.000Z",
+          "wordCount": 2037,
+          "title": "How to build a search engine with word embeddings"
+        },
+        {
+          "id": "https://dev.to/marcinjaniak/adopting-200-ok-error-handling-strategy-in-graphql-with-hotchocolate-dotnet-54md",
+          "author": "Marcin Janiak",
+          "description": "This article is about the strategy of handling errors in your C# GraphQL APIs and is based on Sasha Solomon's article about handling errors in GraphQL environments. \nIt's adopted to asp.net core server implementation (Hot Chocolate) and it's a glimpse of how it might look and be used in your next GraphQL application.\nMostly, the mentioned article is about separating \"errors\" into categories:\nerrors (e.g. Internal Server Error)\nresults (Deleted User, Unavailable in Country)\nLater on, it encourages to use union types for response modeling. It also highlights the pros of this approach and shows the cons of using the default approach.\nGraphQL errors mostly look like this one.\n{\n  \"data\": {\n    \"user\": null\n  },\n  \"errors\": [\n    { \"path\": [ \"user\" ],\n      \"locations\": [ { \"line\": 2, \"column\":…",
+          "link": "https://dev.to/marcinjaniak/adopting-200-ok-error-handling-strategy-in-graphql-with-hotchocolate-dotnet-54md",
+          "publishedOn": "2021-11-22T19:30:32.000Z",
+          "wordCount": 2194,
+          "title": "Adopting 200 OK! Error Handling strategy in GraphQL with Hot Chocolate (dotnet)."
+        },
+        {
           "id": "https://dev.to/jacquelinenagle/tips-to-ignite-your-zeal-by-jacqueline-nagle-og4",
           "author": "Jacqueline Nagle",
           "description": "Can a person be successful without the zeal or passion to do something? I doubt it! Businesses, CEOs, politicians, successful career men and women, the zeal to pursue it against all odds is what makes them who they are today. The fact is the journey to success is not always smooth. The pain, the struggles, the challenges, the disappointments and so much more are enough to make any man quit. Hence, the end goal becomes the focus, the zeal becomes the driver driving you through the rough road to your destination. \nBut what happens when you lose that zeal? Well, it’s okay to be tired, weary, disappointed, and discouraged. It’s all part of human nature and even machines that tend to work like a clock sometimes require reignition once the power is turned off.  The good news is you can restore your passion. You can power your tenacity, that zeal can be reignited. Jacqueline Nagle,  a passionate mentor, strategist and speaker is here to help you power up and remind you of how it all started. She shares these powerful tools to help you reignite your zeal. Keep reading!\nBe grateful\nSee mistakes as a teacher\nStay in the present\nFinish what you started\nRemain focused on your goal\nReward yourself for every win\nBe inspired\nmentors, who will be more than willing to share their success stories with you. You can also google those that you see as role models to know how they go about it. Read motivational quotes written by successful people. All these are sure to encourage you and get you to rise and put in the energy and enthusiasm you started with. \nThese tips provided by Jacqueline Nagle are proven ways for self-motivation that will set you up for success. They will let you push through challenges, difficulties, pains and make it to the end goal. Hence, regularly check yourself to see if you are on the right track. If not, reignite and get your zeal running. The goal is to finish well and strong!\nOriginally published at getjoys.net",
@@ -1753,6 +1924,33 @@
       "feedUrl": "https://sspai.com/feed",
       "siteUrl": "https://sspai.com",
       "articles": [
+        {
+          "id": "https://sspai.com/post/70077",
+          "author": "少数派编辑部",
+          "description": "本期《派评》的主要内容有：\n\n💻 在 Mac 上一键退出应用的实用小工具：Quit All。\n🪄 macOS 老牌自动化工具 Keyboard Maestro 大更新。\n📃 团队协作工具飞书大版本更新 5.0。\n……\n\n你可以通过文章目录快速跳转到你感兴趣的内容。如果发现了其它感兴趣的 App 或者关注的话题，也欢迎在评论区和我们进行讨论。\n不容错过的新 App\n虽然少数派一直在为大家发发现和介绍各平台上的优质 App，但仍有不少设计、功能、交互、体验都非常优秀的 App，还没有被我们发掘和介绍。它们可能是一款老 App，也可能是近期上架的新 App，我们会在这里介绍给你。\nQuit All：在 Mac 上一键退出应用程序\n\n平台：macOS\n关键词：应用管理、活动监视、后台管理\n\n@huhuhang：在使用 Mac 处理工作时，往往需要打开非常多的应用，但同时也会拖慢系统性能。此外，像我这样有一些「强迫症」的人，总是喜欢把暂时不用的应用一一手动退出。\n\nQuit All 这款主打应用退出痛点的小工具非常实用，你可以把它理解成 Mac 自带「活动监视器」的易用版本。它支持从菜单栏非常方便地退出当前正在运行的应用，或者「一键退出」全部应用。同时，Quit All 提供了过滤后台应用、不弹出退出确认框等个性化选项。一键退出不仅可以满足强迫症，还能够有下班仪式感，每天下班时我都会执行 Quit All。\n\n除了 Quit All，顺带推荐一下应用退出小工具 Quitter。Quitter 和知名播客客户端 Overcast 是同一个开发者。Quitter 主打定时退出，对于处于未激活状态的应用，你可以设置自动退出倒计时。Quitter 对于低频应用特别实用，避免我们忘记手动退出。有了 Quit All 和 Quitter 的完美搭配，退出应用变得无比轻松。\nQuit All…",
+          "link": "https://sspai.com/post/70077",
+          "publishedOn": "2021-11-22T09:28:46.000Z",
+          "wordCount": 382,
+          "title": "派评 | 近期值得关注的 App"
+        },
+        {
+          "id": "https://sspai.com/post/70054",
+          "author": "jijiali",
+          "description": "10 月的某天，我家楼下的布告栏贴了一张通知，告知住户 10 月 18 日小区要停电一天。虽然此前这种事情也曾发生过，但是也就是停一会儿而已，所以我也就没拿当回事。然而，这次停电持续了将近一整天，在我黑灯瞎火地做饭的时候，我真真切切地感受到电已经渗透到生活的方方面面，没有电是万万不能的（事后了解到，这次是涉及小区供电的一个变压器调整）。这次停电的「阴影」之大，直接唤醒了我儿时的停电记忆。\n曾经的停电记忆\n在《沿海地区的山珍漫游指南：盘点家乡那些奇怪的美食》一文中，我曾简要地介绍过我老家的一些情况。在细聊限电应对措施之前，我想先聊聊我小时候见过、用过的那些「原始」的应对停电的方案。\n因为电力紧张（或者村民们拖欠电费），我儿时经常会遇到停电。每当停电的时候，我经常会点起火油（煤油）灯，火油的那股味道挥之不去。除了火油灯，也有用瓦斯灯（电石灯）的。伴随着忽闪忽闪的火油灯，我经常在微光下赶作业。再到后来，遇到停电的时候用起了蓄电池的灯。这就是之前应对停电时照明的措施。\n除了照明受影响，停电其实对于我们日常的饮食、取暖影响其实并不算大。\n作为一个深处胶东腹地的山村，我们当地日常的燃料主要是苹果树的枝条及各种作物的秸秆藤蔓，「果木炭烤」再平常不过了。农村烧火做饭顶多用一下鼓风机来助燃（有些家庭甚至还在使用传统的、节能环保的风箱），所以停电时候把鼓风机变成用扇子扇，不影响炭火正常燃烧。\n每家每户必备的取暖设备则是火炕。火炕可以将灶台做饭时产生的多余热量引导至炕内，用来给室内供暖。虽然现在很多人家里使用上了液化气、添置了土暖气、空调，但火炕始终是一个标配。因此，停电对于取暖的影响也算不上大，除了极少数喜好电热毯的人。\n胶东地区民居中很常见的火炕，利用厨房余热取暖\n停电也不影响村里供水。村民们的日常用水来自井水，而且每家都有一个储水用的大水缸，所以几乎不存在停水一说。\n整体上来讲，停电对于传…",
+          "link": "https://sspai.com/post/70054",
+          "publishedOn": "2021-11-22T09:01:10.000Z",
+          "wordCount": 113,
+          "title": "受限电影响的你，或许可以看看这些应对措施"
+        },
+        {
+          "id": "https://sspai.com/post/70059",
+          "author": "ThomasTeng",
+          "description": "正所谓「硬件是基建，软件生产力」，在软件正版化理念逐渐成为主流的当下，免费好用的「开源」软件也成了不少人的选择。对于个人用户来说，使用开源软件有如下优势：\n\n更便宜：降低软件授权费用，节约使用成本；\n更安全：相对于闭源的软件来说，我们无法看到其内部代码，对个人隐私的顾虑只能依靠软件厂商的诚信度和法规，而开源软件公开了源代码，就算我们自己不会看，也会有其他程序员朋友帮助甄别筛选，相对更可靠一些；\n更稳定：本文介绍的软件大部分是比较老牌的软件，持续运营多年具有稳定性。\n\n作为已经过了「不当家不知柴米油盐」年纪的普通用户，应对当前大势所趋的订阅及超前消费的方式就是选择适合自己的开源软件。其次，作为折腾软件十余年但不会编程的「玩家」，天然对开源软件有亲切感，非常喜欢这种奔着相对纯粹目的完善能够造福更多人的工具。\n最后，「实用为王」能够解决实际问题且符合自己使用习惯的开源软件会作为我的首选。本人日常工作生活主要用到 Windows 和 macOS 平台，偶尔还需要折腾 Linux。本文本着「完全无需付费，也能很好用」这一原则，我挑选了个人使用过的 18 款开源软件分享给大家。\n文本工具\nSimplenote：跨平台文本收集工具\n\n平台: Windows / macOS / Linux / 移动端\n官网: https://simplenote.com/\n软件性质: 开源\n\n当你想要快速记录稍纵即逝的灵感时，肯定不会喜欢需要繁琐操作步骤才能记录或者启动缓慢的 App。如果能够更进一步，能够把随时随地记录自动同步或聚合就更好了。为了实现这一目标，我试用了多款收费及开源工具，最终保留了 Simplenote 作为主力碎片文本收集和同步工具。相比其他软件，Simplenote 具备如下优势：\n\n大厂提供的开源免费工具，全平台同步，满足随时随地各种条件下的记录需求；\n轻量化，启动迅速，同步及时；…",
+          "link": "https://sspai.com/post/70059",
+          "publishedOn": "2021-11-22T06:30:00.000Z",
+          "wordCount": 406,
+          "title": "从用过的 18 款软件开始，聊聊我为什么要选择开源软件"
+        },
         {
           "id": "https://sspai.com/post/69986",
           "author": "不是远达",
@@ -2868,24 +3066,6 @@
           "publishedOn": "2021-10-25T00:56:07.000Z",
           "wordCount": 382,
           "title": "派早报：索尼推出全画幅微单相机 Alpha 7 IV、大疆将于月底举行发布会等"
-        },
-        {
-          "id": "https://sspai.com/post/69434",
-          "author": "ElijahLee",
-          "description": "还剩 70 多天，2021 年就要结束了。记得上一次推荐新年日历还是在上一次已经一年了。2022 年在中国生肖上是一个虎年，根据传统说法，虎年是大年，不管是家庭、事业还是爱情，在这一年发生的事都会容易成功。\n为了迎接这样一个充满希望的 2022 年，你有想好要买哪款新年日历了吗？一起来看看我为你搜罗的新年日历。\n豆瓣电影日历 2022\n《豆瓣电影日历》翻到了 2022 年。新一年日历的定位依旧是「全年观影指南」，每天推荐一部豆瓣高分电影，同时配备经典的电影画面以及台词。335 页日历页面的电影剧照都获得了正版授权，其余 30 天则是手绘插画，为整本日历增添一些新鲜的视觉元素。\n\n日历页的背面设计成了空白的书写空间，取下之后可以在上面自由地记录文字。初次之外，使用豆瓣 App 扫描右下角的二维码，就能立刻跳转查看影片详情。在一些特殊的日子，我们还能翻到独特编排的影片，比如《你好，李焕英》就被安排在 2022 年 5 月的第二个星期日。在《豆瓣电影日历 2022》里，还有更多的彩蛋供我们去发掘。\n\n在造型方面，《豆瓣电影日历 2022》和过去的版本没有较大差异，依旧赠送一张大幅海报，标识了全年的豆瓣佳片，一览无余。\n《豆瓣电影日历 2022》有森林绿、朱砂红、星空蓝三色可选，经典版售价 ¥99 / 本，套装礼盒版增加了豆瓣电影手办一只和日程本一本，售价¥168/套。你可以在 豆瓣电影日历官网 购买 2022年的豆瓣电影日历。\n\n故宫日历 2022\n《故宫日历》已经成了故宫博物院的一张文化名片，融合中华民族传统文化，又兼具美观实用，可以说是老少咸宜的新年伴手礼。到了 2022 年，《故宫日历 2022》全新改版，发行了十二年的故宫日历迎来了下一个新的周期。\n\n《故宫日历 2022》的主题是「吉虎迎新岁，山河庆升平」。老虎威武勇猛，寓意吉祥平安，是活力和荣耀的象征，因此《故宫日历 …",
-          "link": "https://sspai.com/post/69434",
-          "publishedOn": "2021-10-24T06:13:42.000Z",
-          "wordCount": 191,
-          "title": "挑一本好看的 2022 年日历，迎接充满希望的虎年"
-        },
-        {
-          "id": "https://sspai.com/post/69487",
-          "author": "老林还年少",
-          "description": "很多小伙伴，都跟我说过同样的话：「描述的风味我喝不出来啊！」。\n针对这个问题，我觉得有必要聊一聊，在家如何训练自己的感官，能让自己喝出咖啡描述中的风味。\n咖啡风味都从哪儿来的？\n咖啡中的风味，概括来讲是品种、处理法、烘焙程度、冲煮方式等综合起来得到的，但更深入的理解，就是化合物的组成。\n咖啡烘焙的方式、品种、种植海拔这些都会对化合物产生影响。在喝出风味前，要先理解，这些风味都是怎么来的。一般情况下，咖啡的风味从这几个方面综合而来：\n咖啡本身的物质\n咖啡生豆密度很高，含水率在 10~12% 之间，剩下的是糖类、蛋白质、脂质、酸和生物碱组成的混合物。它是一种立体的纤维素，也就是多糖，其中所含的化学物质决定了咖啡的风味。\n\n咖啡因：苦味的来源。\n脂　肪：咖啡豆所含的脂肪大致可分为酸性脂肪和挥发性脂肪，挥发性脂肪是咖啡香气的主要来源。一些坚果、烤面包香气都是从这里变化而来。\n蛋白质：蛋白质在咖啡中的含量差不多在 12%，后期一些像奶油、可可风味的主要来源。\n糖：咖啡的甜味、色泽来源。咖啡生豆经烘焙后，内含的糖分会转化为焦糖。焦糖和单宁酸结合会使咖啡涩中带甜。\n粗纤维：咖啡色泽的来源。生豆的纤维经烘焙后会炭化。当炭纤维与焦糖的结合后就形成咖啡的色泽。\n矿物质：稍许的涩味来源。有少量石灰、铁质、磷、碳酸钠等。\n水　份：生豆大约含 10-12% 的水分，经烘焙后余约 2.5%。\n\n另一个不得不提的重点就是咖啡中的酸质，我比较喜欢咖啡中带一些酸，优质的酸可以让人（最起码让我自己感到愉悦）愉悦。咖啡的酸可略分为有机酸以及绿原酸两种。\n有机酸包含柠檬酸、 苹果酸、奎宁酸、醋酸、琥珀酸和酒石酸，上述这些是带来果酸与好风味的酸。咖啡中的有机酸，对于风味的呈现是不可或缺的因素。\n这些酸各自赋予咖啡不同的风味特性：\n\n柠檬酸：这与青苹果是相同类型的酸，试着将咖啡与果汁感和清爽酸甜的青苹果联想。\n苹果酸…",
-          "link": "https://sspai.com/post/69487",
-          "publishedOn": "2021-10-24T04:58:07.000Z",
-          "wordCount": 115,
-          "title": "咖啡怎么喝出风味？教你如何在家做感官训练"
         }
       ]
     },
@@ -2894,6 +3074,15 @@
       "feedUrl": "https://feeds.appinn.com/appinns",
       "siteUrl": "https://www.appinn.com",
       "articles": [
+        {
+          "id": "https://www.appinn.com/?p=40523",
+          "author": "青小蛙",
+          "description": "MyerSplash 是一款免费的跨平台 Unsplash 壁纸应用，适用于 Windows、macOS、iOS 和 Android，可以在里面浏览来自 Unsplash 的免费、无版权图片，并设置为",
+          "link": "https://www.appinn.com/myersplash-wallpaper-2/",
+          "publishedOn": "2021-11-22T07:23:04.000Z",
+          "wordCount": 724,
+          "title": "MyerSplash – 跨平台 Unsplash 壁纸应用"
+        },
         {
           "id": "https://www.appinn.com/?p=40518",
           "author": "青小蛙",
@@ -3371,15 +3560,6 @@
           "publishedOn": "2021-10-25T04:18:59.000Z",
           "wordCount": 882,
           "title": "普通闹钟 – 支持「智能跳过节假日」的闹钟[iPhone]"
-        },
-        {
-          "id": "https://www.appinn.com/?p=40136",
-          "author": "青小蛙",
-          "description": "两年前，青小蛙发现过一个相当有趣的网页：Fix My Speakers 🔊 – 通过特定的声波，清出意外弄湿的喇叭里的液体，用你的 iPhone 访问这个网页，喇叭就会发出奇怪的",
-          "link": "https://www.appinn.com/labapaishui-shortcuts/",
-          "publishedOn": "2021-10-24T03:08:00.000Z",
-          "wordCount": 826,
-          "title": "落水后，为 iPhone 喇叭排水的「专用快捷指令」"
         }
       ]
     },
@@ -3484,6 +3664,15 @@
       "feedUrl": "https://www.zhihu.com/rss",
       "siteUrl": "http://www.zhihu.com",
       "articles": [
+        {
+          "id": "http://www.zhihu.com/question/499326548/answer/2236988283",
+          "author": "团长大人",
+          "description": "开发者来强答一波\n《物理世界》的灵感诞生于CIGA Game Jam 2019上。\n当时的题目是一张这样的图片：\n\n\n\n（看到图片的我亿脸蒙蔽XD）\n但没办法，题还是要做的哇，所以我就在想，这爱心到底怎么插入小人中奖的三角形？\n\n一般正常情况下看到这个问题，肯定是会想到“父母的爱对孩子来说太沉重”，“看起来好的东西不一定适合自己”一类的观点，但可能是我苦于物理荼毒久已，导致我第一时间想到的事居然是——\n\n爱心通过怎样的形态变化能成为三角形，最终契合进小人的内心？我脑内闪过了一万个公式，发现都没有办法解决我的疑惑。\n进而，我联想到了《Baba is you》——一款通过不同的组合方式产生不同的效果，最终解决谜题的作品。\n\n\n\n\n虽然和物理世界不尽相同，但通过不同组合方式，改变角色行动逻辑，最终让角色成功移动到终点的解谜内核触动了我。彼时的我已经把题目图片抛之脑后，满脑子只想的是“我要把各种物理公式嵌进一款解谜游戏中”，让玩家再次体验被物理课堂所支配的......\n就这样，初版的物理世界诞生了。\n\n（老版本的物理世界，当时主角还不是盒娘）\n\n尽管Game Jam很快就结束了，我们对继续制作《物理世界》的热情却丝毫没有熄灭。\n首先，我们决定更换美术素材——黑板的绿底白字让人感觉过于古板，于是我们打算采用更卡通的风格让画面更有活力。\n\n\nGame Jam上制作的版本中的地图的地形均为直接绘制，这不利于后续关卡的搭建和维护。我们首先换用了TileMap插件来搭建地形和绘制方块。但它的自由度不是很高，有些比较不规则的图形无法实现。于是我们又换用了更加自由的SpriteShapeController来编辑地形。\n\n\n继续制作解密游戏最重要的一点就是丰富关卡内容了。为了扩充关卡内容，我们在接下来的时间里制作了更多的关卡，包括摩擦力关卡、浮力关卡、圆周运动关卡以及动量关卡。\n\n 摩擦力关卡\n\n浮力关卡\n\n圆周运动关卡\n\n动量关卡\n一切关卡的设计思路以有趣为前提，为此我们也都是绞尽脑汁，不断迭代我们的作品。\n当内容逐渐丰富之后，游戏主要矛盾逐渐转移到了用户的游玩体验之上。\n在游玩《Baba is you》的过程中，尽管你会被他惊艳的创意所折服，但有时也会莫名其妙的过关弄昏头脑。\n如果玩家与设计者的脑洞没有对上，关卡的乐趣就会骤减，原本精妙的解谜关卡设置在玩家眼中可能会“过于电波系”，让玩家一头雾水，卡关的挫败感也许会让他们不再打开这部作品。\n\n为了解决这样的问题，在设计比较复杂的关卡的时候，我们或有意或无意地留下了多于一种的过关方式。\n\n\n\n\n在这个关卡中，你可以选择黄色和紫色方块中任何一个用于垫脚\n\n我们加入了提示系统以避免避免玩家长时间的卡关导致失去兴趣的情况出现，但于此同时，我们也不会给予玩家包办式的过关引导——玩家依然需要去考虑如何实现提示系统中的各条提示，它们一般都不会太难，只是需要花点时间。\n\n\n同时，为了玩家能够更好地get到我们设计时的脑洞，我们也特地的在靠前的引导关卡中以更简单的方法呈现给玩家。\n\n这个关卡的过关方式中需要用方块将红色小旗撞下来。\n在本作最开始的测试中，许多玩家第一次看到这样的关卡时，往往无法第一时间悟到本关的解谜机制，最终会因为定式思维卡关很久。\n我们注意到了这点，于是在较为前面的关卡中加入了这样的一关来进行引导。\n\n这关需要玩家用蓝色方块将红色小旗撞下\n这样一来，玩家能更容易地理解并利用这样的机制进行解密。\n在游戏进行测试的过程中我们发现，有的玩家在一开始就难以理解这个游戏的机制——用物理公式来控制场上的物体。甚至在第一关就不知所措。于是我们又额外增加了教程关卡来解决这个问题。\n\n\n教程关中通过文字一步步的指导，让玩家了解游戏的机制以及游玩思路——这成功地降低了游戏的上手难度，也让这部作品能够得以有机会被更多用户所看到。\n一起来体验《物理世界》的美妙吧！\n\n来源：知乎 www.zhihu.com\n团长大人\n点击下载\n2 个回答，查看全部。\n为什么现在好多单机游戏都做开放世界？\n怪猎世界中有什么整活的流派？",
+          "link": "http://www.zhihu.com/question/499326548/answer/2236988283?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
+          "publishedOn": "2021-11-22T08:08:39.000Z",
+          "wordCount": 184,
+          "title": "如何评价 Steam 上的独立游戏《物理世界》？"
+        },
         {
           "id": "http://www.zhihu.com/question/500576875/answer/2235946272",
           "author": "芮爷",
@@ -4139,6 +4328,246 @@
       "feedUrl": "https://www.xda-developers.com/feed",
       "siteUrl": "https://www.xda-developers.com",
       "articles": [
+        {
+          "id": "https://www.xda-developers.com/?p=559539",
+          "author": "Rich Woods",
+          "description": "Today, Microsoft is releasing a new optional cumulative update for Windows 11. Unlike most cumulative updates, however, this one actually comes with a new feature. It has the new emojis that were announced back in July. Well, kind of. When the new emoji characters were announced, the design team showed off these beautiful, 3D characters\nThe post Microsoft releases Windows 11 build 22000.348 with new emojis appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/microsoft-releases-windows-11-build-22000-348-new-emojis/",
+          "publishedOn": "2021-11-22T22:58:34.000Z",
+          "wordCount": 2675,
+          "title": "Microsoft releases Windows 11 build 22000.348 with new emojis",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/11/Windows-11-emojis.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=559425",
+          "author": "Skanda Hazarika",
+          "description": "We’re still a few days away from moving into the next month, but that’s not stopping Samsung from releasing December 2021 security patches. This time, the Korean OEM bundled the new set of monthly security patches with a fresh One UI 4 beta build based on Android 12 for its latest foldable duo. The Galaxy\nThe post Latest One UI 4 beta for the Galaxy Z Fold 3 and Z Flip 3 brings December 2021 security patches appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/samsung-galaxy-z-fold-3-flip-3-android-12-one-ui-4-beta-3/",
+          "publishedOn": "2021-11-22T22:04:08.000Z",
+          "wordCount": 844,
+          "title": "Latest One UI 4 beta for the Galaxy Z Fold 3 and Z Flip 3 brings December 2021 security patches",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/08/Samsung_Galaxy_Z_Flip_3-Featured_Image_Lifestyle_17_1108972791-Web.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=559457",
+          "author": "Corbin Davenport",
+          "description": "Black Friday is rapidly approaching, and we’re starting to see better and better deals pop up. If you’re still in the market for a webcam, or you know someone who is, you might be interested in a new sale that just started. The Logitech C920S Pro camera is now on sale for $55 at Newegg,\nThe post Get the Logitech C920S Pro HD Webcam for only $55 right now appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/logitech-c920s-pro-hd-webcam-deal-november-2021/",
+          "publishedOn": "2021-11-22T20:44:13.000Z",
+          "wordCount": 733,
+          "title": "Get the Logitech C920S Pro HD Webcam for only $55 right now",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/11/Logitech-C920S-Pro-HD-1080p-Webcam.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=559441",
+          "author": "Corbin Davenport",
+          "description": "Apple usually doesn’t discount its own products often, but for this year’s Black Friday sales are at least somewhat worthwhile. The AirPods Pro was recently updated with a new charging case that supports MagSafe, and earlier this month, the updated version went on sale for the first time at $179. Apple has now discounted the\nThe post Apple AirPods Pro drop to lowest-ever price of $170 ($79 off) appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/apple-airpods-pro-deal-november-2021/",
+          "publishedOn": "2021-11-22T20:04:45.000Z",
+          "wordCount": 732,
+          "title": "Apple AirPods Pro drop to lowest-ever price of $170 ($79 off)",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/08/AirPods-Pro-XDA11.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=559365",
+          "author": "Corbin Davenport",
+          "description": "Black Friday is nearly upon us, and even though many sales started at the beginning of the month, more are starting to show up. Amazon has seemingly finalized its Black Friday deals for its hardware products, as everything from the Fire TV Stick Lite to the true wireless Echo Buds are now on sale for\nThe post Amazon’s Echo Show display, Fire TV Stick, and more are on sale for Black Friday appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/amazon-hardware-deals-black-friday-2021/",
+          "publishedOn": "2021-11-22T18:28:40.000Z",
+          "wordCount": 1118,
+          "title": "Amazon’s Echo Show display, Fire TV Stick, and more are on sale for Black Friday",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2020/09/Amazon-Fire-TV-Stick-Lite-1600777582-0-0.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=559359",
+          "author": "Mahmoud Itani",
+          "description": "Meta — the company behind Facebook and Instagram — has shared an update regarding its end-to-end (E2E) encryption plans. The company had promised that it would E2E encrypt Facebook and Instagram messages by default during 2022. Now it has pushed this deadline till “sometime in 2023” — a year later. Meta already E2E encrypts WhatsApp messages\nThe post Meta isn’t ready to E2E encrypt your Facebook and Instagram messages by default just yet appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/meta-isnt-ready-encrypt-facebook-instagram-messages-by-default-yet/",
+          "publishedOn": "2021-11-22T17:50:09.000Z",
+          "wordCount": 842,
+          "title": "Meta isn’t ready to E2E encrypt your Facebook and Instagram messages by default just yet",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/11/instagram-messenger-hush-emoji.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=559281",
+          "author": "Corbin Davenport",
+          "description": "Even though we’re still a matter of days away from Black Friday itself, many companies started their sales earlier this month. Nintendo has been discounting a some of its games over the past few weeks, but now its proper Black Friday sales have started. Just like last year, Nintendo is selling a bundle with a\nThe post Get a Nintendo Switch and Mario Kart 8 Deluxe for only $300 appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/nintendo-black-friday-2021/",
+          "publishedOn": "2021-11-22T16:41:09.000Z",
+          "wordCount": 975,
+          "title": "Get a Nintendo Switch and Mario Kart 8 Deluxe for only $300",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/11/6436769cv17d.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=558915",
+          "author": "Pranob Mehrotra",
+          "description": "Qualcomm’s current mobile SoC branding lets buyers easily differentiate between a high-end Snapdragon SoC and a mid-range or entry-level SoC. However, differentiating between SoCs in the same series could prove to be a bit difficult for the average user. That’s because Qualcomm has switched up its naming convention a fair bit in the last few\nThe post Qualcomm’s future mobile SoCs will have an easier-to-follow branding appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/qualcomm-mobile-soc-easy-branding/",
+          "publishedOn": "2021-11-22T16:00:23.000Z",
+          "wordCount": 774,
+          "title": "Qualcomm’s future mobile SoCs will have an easier-to-follow branding",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/11/Qualcomm-Snapdragon-logo-featured.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=559269",
+          "author": "Mahmoud Itani",
+          "description": "iOS and Android –as mobile operating systems — don’t always get along well with each other. For example, iPhone users can’t send files to Android phones via Bluetooth without using third-party apps. Another incompatibility plenty of Android users suffer from is iMessage emoji reactions. For the unfamiliar, when an iMessage user reacts to a text from\nThe post Google Messages will make it less annoying to chat with your iMessage friends appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/google-messages-make-it-less-annoying-chat-with-imessage/",
+          "publishedOn": "2021-11-22T15:45:55.000Z",
+          "wordCount": 826,
+          "title": "Google Messages will make it less annoying to chat with your iMessage friends",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/11/Google-Messages-and-Apple-iMessage-icons-1.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=559259",
+          "author": "Rich Woods",
+          "description": "Last week, we reported that MediaTek is planning to build a chipset for Windows on ARM. As it turns out, the Windows on ARM chipset space could be even hotter than that, because there’s a reason that we’ve only seen Qualcomm SoCs in ARM PCs so far. Qualcomm actually has an exclusivity deal with Microsoft\nThe post Qualcomm has an exclusivity deal with Microsoft for Windows on ARM appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/qualcomm-exclusivity-deal-microsoft-windows-on-arm/",
+          "publishedOn": "2021-11-22T15:24:03.000Z",
+          "wordCount": 909,
+          "title": "Qualcomm has an exclusivity deal with Microsoft for Windows on ARM",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2017/06/Windows10-Qualcomm-Snapdragon-1024x576.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=559223",
+          "author": "Kishan Vyas",
+          "description": "Google’s Pixel 6 series debuts several new exclusive software features, and one of them is a revamped “At a Glance” widget. The updated widget is much powerful than the previous version and can show events from your calendar, your boarding pass on the day of your flight, your workout stats, and so on. And it’s\nThe post At a Glance widget on the Pixel 6 is about to get even better appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/at-a-glance-widget-pixel-6-new-features-in-works/",
+          "publishedOn": "2021-11-22T14:30:51.000Z",
+          "wordCount": 726,
+          "title": "At a Glance widget on the Pixel 6 is about to get even better",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/10/Google-Pixel-6-Pro-Side-Front-Watermarked.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=559175",
+          "author": "Mahmoud Itani",
+          "description": "For years, Meta‘s Instagram has allowed users in supported regions to add music to their Stories. With a catalog including millions of songs, users can choose a few seconds of a certain track to attach to their expiring Instagram moments. Music support on Instagram eventually expanded with the release of Reels — TikTok’s carbon copy.\nThe post Instagram is testing music support in feed posts appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/instagram-testing-music-support-feed-posts/",
+          "publishedOn": "2021-11-22T14:00:04.000Z",
+          "wordCount": 785,
+          "title": "Instagram is testing music support in feed posts",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2019/08/Glyph-Icon-hero.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=559135",
+          "author": "Adam Conway",
+          "description": "Material You’s wallpaper-based theming system launched with Android 12. The theming system creates color palettes based on the dominant color scheme of your wallpaper and applies them to Quick Settings tiles, lockscreen, Settings, pop-ups, and apps.  The theming engine itself is code-named “monet.” Google actually manages to do a pretty decent job at assessing your\nThe post Here’s how you can customize Android 12’s monet colors without root appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/how-to-customize-android-12-monet-colors-no-root/",
+          "publishedOn": "2021-11-22T13:25:18.000Z",
+          "wordCount": 965,
+          "title": "Here’s how you can customize Android 12’s monet colors without root",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/05/android-12-monet-theme-2-e1630582987189.jpeg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=556043",
+          "author": "Gaurav Shukla",
+          "description": "If you have upgraded to the latest generation gaming console, are buying a new 4K or 8K TV, or simply need an eARC-capable HDMI cable for your home theater setup, there are tons of options on the market. But if you are not sure which HDMI cable is suitable for you, we can help. Although\nThe post These are the Best HDMI Cables to buy in 2021 appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/best-hdmi-cables/",
+          "publishedOn": "2021-11-22T13:00:43.000Z",
+          "wordCount": 1614,
+          "title": "These are the Best HDMI Cables to buy in 2021",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/11/best_hdmi_cables.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=556613",
+          "author": "Ben Sin",
+          "description": "I have the luxury and privilege of testing a lot of smartphones. Obviously, I get my hands on the iPhones and Samsung Galaxies and OnePluses of the world, but because I’m based in Hong Kong in Southern China, I have access to obscure Asian releases too, like the Royole FlexPai 2 or the Leica Leitz 1. It\nThe post Google Pixel 6 Pro vs Vivo X70 Pro Plus: The two best camera phones of 2021 appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/google-pixel-6-pro-vs-vivo-x70-pro-plus-camera-shootout-comparison/",
+          "publishedOn": "2021-11-22T12:30:52.000Z",
+          "wordCount": 7238,
+          "title": "Google Pixel 6 Pro vs Vivo X70 Pro Plus: The two best camera phones of 2021",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/11/Pixel-6-Pro-vs-Vivo-X70-Pro-Plus-XDA11177.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=559051",
+          "author": "Mahmoud Itani",
+          "description": "Music streaming services are a convenient option for users to listen to their favorite artists without paying for songs individually. For the longest time, some services have offered a free tier that usually comes with ads and limitations. One of these limitations is Spotify’s shuffle button. The company doesn’t allow free users to play songs in\nThe post Spotify no longer shuffles albums by default, thanks to Adele appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/spotify-no-longer-shuffles-albums-by-default/",
+          "publishedOn": "2021-11-22T12:15:27.000Z",
+          "wordCount": 774,
+          "title": "Spotify no longer shuffles albums by default, thanks to Adele",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/11/adele-disco-30-capa-reproducao-1920x1080_widelg-2.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=559065",
+          "author": "Kishan Vyas",
+          "description": "One of the areas where Samsung has lagged behind other Android OEMs is fast charging. While OEMs like Xiaomi have already commercialized 120W fast charging, Samsung’s latest and greatest flagships can only manage 25W. However, there are rumors that this may finally change with the Galaxy S22 series. Now, a new report suggests the South\nThe post Samsung may finally be planning to offer 45W fast charging on its phones (again) appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/samsung-45w-65w-fast-chargers-launch-soon/",
+          "publishedOn": "2021-11-22T11:54:46.000Z",
+          "wordCount": 802,
+          "title": "Samsung may finally be planning to offer 45W fast charging on its phones (again)",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/11/Samsung-65W-fast-charger-featured.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=447003",
+          "author": "Sumukh Rao",
+          "description": "If you’re in the Indian market for a new Android smartphone and are wondering what the best Android phones are across different categories, we’ve got you covered. We’ve compiled a list of the best Android phones in India you can buy right from the affordable budget segment to the premium flagships with top-of-the-line features and\nThe post These are the Best Android Phones to buy in India in 2021 appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/best-android-phones-india/",
+          "publishedOn": "2021-11-22T11:30:17.000Z",
+          "wordCount": 7937,
+          "title": "These are the Best Android Phones to buy in India in 2021",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/06/Best-Android-Phones-In-India-1.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=552799",
+          "author": "A Word From Our Sponsors",
+          "description": "Get the Dreametech L10Pro on Amazon  Regular Price: $489.99 Black Friday Price: $389.99 Black Friday Price when combined with coupon: $365.49 With 4,000Pa of high suction power, the Dreametech L10Pro is an ideal solution for many different types of flooring. The robot can detect carpet and hardwood floors and adjust the suction power accordingly. This\nThe post Don’t Miss this Black Friday Sale on the Dreametech L10Pro Robot Vacuum appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/dreame-l10pro-black-friday/",
+          "publishedOn": "2021-11-22T11:00:24.000Z",
+          "wordCount": 936,
+          "title": "Don’t Miss this Black Friday Sale on the Dreametech L10Pro Robot Vacuum",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/11/L10Pro-1.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=559013",
+          "author": "Kishan Vyas",
+          "description": "In April, the Google Play Store received a big UI overhaul that saw the app store getting rid of the hamburger menu, adding a redesigned Settings page and My apps menu, among other UI tweaks. Now Google is testing another UI change in the Google Play Store that adds a fifth tab in the bottom\nThe post Google Play Store tests a new “Offer” tab in the bottom bar appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/google-play-store-test-offer-tab/",
+          "publishedOn": "2021-11-22T09:47:45.000Z",
+          "wordCount": 777,
+          "title": "Google Play Store tests a new “Offer” tab in the bottom bar",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/11/Google-Play-Store-Offer-tab-.jpg"
+          }
+        },
         {
           "id": "https://www.xda-developers.com/?p=558897",
           "author": "Kishan Vyas",
@@ -8974,42 +9403,6 @@
           "enclosure": {
             "url": "https://www.xda-developers.com/files/2021/10/Pixel-6-discussion-post-featured.jpg"
           }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=537821",
-          "author": "A Word From Our Sponsors",
-          "description": "If you own a HUAWEI phone, laptop, tablet, or service, the My HUAWEI app is the best way to stay in touch with the community. This app comes in the form of an update to the old Support app. The new update brings many new features that combine shopping, community, and support into one app.\nThe post Get Community, Shopping, and Support with My HUAWEI App appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/get-community-shopping-and-support-with-my-huawei-app/",
-          "publishedOn": "2021-10-24T10:00:30.000Z",
-          "wordCount": 951,
-          "title": "Get Community, Shopping, and Support with My HUAWEI App",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/community.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=535243",
-          "author": "Skanda Hazarika",
-          "description": "After over six years of Windows 10, PC users are now getting a major Windows update with Windows 11. The latest iteration of Windows has got some of the biggest visual refreshments, with a centered Start Menu and taskbar, rounded corners, and more. As part of the UI overhaul, Microsoft also shipped a modernized right-click\nThe post How to open the full right-click menu by default on Windows 11 appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/how-to-open-full-right-click-menu-by-default-windows-11/",
-          "publishedOn": "2021-10-24T08:00:44.000Z",
-          "wordCount": 1111,
-          "title": "How to open the full right-click menu by default on Windows 11",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/Windows-11-right-click-context-menu-featured.png"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=542451",
-          "author": "Sumukh Rao",
-          "description": "The Smart TV category in India has suddenly taken off in the past few years. Thanks to brands like Xiaomi, Vu, TCL, and now more recently — Realme, consumers have been able to purchase smart TVs at affordable prices. This wasn’t really the case a few years back when mainstream brands like Sony and Samsung\nThe post Realme 4K Smart Google TV Stick Review: Enough to douse Amazon’s Fire? appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/realme-4k-smart-google-tv-stick-review/",
-          "publishedOn": "2021-10-24T04:30:55.000Z",
-          "wordCount": 2339,
-          "title": "Realme 4K Smart Google TV Stick Review: Enough to douse Amazon’s Fire?",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/Realme-Google-TV-Stick-3.jpg"
-          }
         }
       ]
     },
@@ -9018,6 +9411,42 @@
       "feedUrl": "https://feeds.feedblitz.com/baeldung",
       "siteUrl": "https://www.baeldung.com",
       "articles": [
+        {
+          "id": "https://www.baeldung.com/?p=112704",
+          "author": "baeldung",
+          "description": "Learn different ways to read key names from JSON content.",
+          "link": "https://feeds.feedblitz.com/~/673420600/0/baeldung~Get-all-the-Keys-in-a-JSON-String-Using-JsonNode",
+          "publishedOn": "2021-11-22T08:13:03.000Z",
+          "wordCount": null,
+          "title": "Get all the Keys in a JSON String Using JsonNode"
+        },
+        {
+          "id": "https://www.baeldung.com/?p=112701",
+          "author": "baeldung",
+          "description": "Explore how to generate a variety of cell borders using CellRangeAddress, RegionUtil, BorderStyles, and IndexedColors classes.",
+          "link": "https://feeds.feedblitz.com/~/673420602/0/baeldung~Add-Borders-to-Excel-Cells-With-Apache-POI",
+          "publishedOn": "2021-11-22T08:11:47.000Z",
+          "wordCount": null,
+          "title": "Add Borders to Excel Cells With Apache POI"
+        },
+        {
+          "id": "https://www.baeldung.com/?p=112717",
+          "author": "baeldung",
+          "description": "Learn why it is necessary to remove Docker containers.\n      \nRelated Stories\n\nHow to Get Docker-Compose to Always Use the Latest Image\nStates of a Docker Container\nDockerfile Strategies for Git",
+          "link": "https://feeds.feedblitz.com/~/673420604/0/baeldung~Removing-Docker-Containers",
+          "publishedOn": "2021-11-22T08:09:07.000Z",
+          "wordCount": null,
+          "title": "Removing Docker Containers"
+        },
+        {
+          "id": "https://www.baeldung.com/?p=112706",
+          "author": "Kai Yuan",
+          "description": "Learn how to invoke public and private static methods using the Java Reflection API",
+          "link": "https://feeds.feedblitz.com/~/673420044/0/baeldung~Invoke-a-Static-Method-Using-Java-Reflection-API",
+          "publishedOn": "2021-11-22T07:57:25.000Z",
+          "wordCount": null,
+          "title": "Invoke a Static Method Using Java Reflection API"
+        },
         {
           "id": "https://www.baeldung.com/?p=112589",
           "author": "Kai Yuan",
@@ -9422,24 +9851,6 @@
           "publishedOn": "2021-10-25T08:57:34.000Z",
           "wordCount": 1525,
           "title": "Using Test Containers With Spring Data Cassandra"
-        },
-        {
-          "id": "https://www.baeldung.com/?p=111353",
-          "author": "baeldung",
-          "description": "Explore different states of a Docker container.\n      \nRelated Stories\n\nDockerfile Strategies for Git\nShare Docker Images Without Using the Docker Hub\nServerless Architecture with Knative",
-          "link": "https://feeds.feedblitz.com/~/670800356/0/baeldung~States-of-a-Docker-Container",
-          "publishedOn": "2021-10-24T06:35:55.000Z",
-          "wordCount": null,
-          "title": "States of a Docker Container"
-        },
-        {
-          "id": "https://www.baeldung.com/?p=111347",
-          "author": "baeldung",
-          "description": "Learn how to get the character at a given position of a String in Java.",
-          "link": "https://feeds.feedblitz.com/~/670800358/0/baeldung~Getting-a-Character-by-Index-From-a-String-in-Java",
-          "publishedOn": "2021-10-24T06:34:25.000Z",
-          "wordCount": null,
-          "title": "Getting a Character by Index From a String in Java"
         }
       ]
     },
@@ -9448,6 +9859,24 @@
       "feedUrl": "https://feed.iplaysoft.com/",
       "siteUrl": "https://www.iplaysoft.com",
       "articles": [
+        {
+          "id": "https://www.iplaysoft.com/synergy.html",
+          "author": "X-Force",
+          "description": "很多人都会同时使用多台电脑，譬如台式机+笔记本，但如果桌子上要摆放多套键盘鼠标，是不是很凌乱，使用也很累呢？其实，咱们可以实现只用一套键鼠，就能“同时控制”你全部的电脑。\nSynergy 正是为此而生的好工具！它能让你的多台电脑共享使用同一套键鼠，甚至还能共享剪贴板，你只需移动鼠标，指针就可以神奇般地在各台电脑屏幕之间来回穿梭，无缝切换，体验极佳。同时 Synergy 跨平台支持 Win / Mac / Linux 三大系统！使用后，工作效率提高，腿不酸腰不疼，桌面也干净了，绝对是必备的神器……\n「 前往查看原文.... 」\n异次元还有这些值得一看：\n\n无界鼠标 (Mouse without Borders) 一套键鼠控制多台电脑的工具！(可跨电脑拷贝/拖放文件)\nParallels Desktop 17.1 最新版下载 - Mac 系统最强虚拟机 (支持M1/Win11/macOS Monterey)\nInput Director - 又一款用一套键盘鼠标同时控制多台电脑的免费实用工具！\nGroupy - 给所有程序窗口加上“多标签页”功能的 Windows 桌面增强工具\n\n异次元正版数字商城  |  异次元首页  |  微信公众号  |  iPcFun  |  关注微博  |  软件精选",
+          "link": "https://www.iplaysoft.com/synergy.html",
+          "publishedOn": "2021-11-22T18:28:25.000Z",
+          "wordCount": null,
+          "title": "Synergy - 用一套键鼠同时控制多台电脑的软件！跨屏共享键鼠设置教程"
+        },
+        {
+          "id": "https://www.iplaysoft.com/?p=4917",
+          "author": "X-Force",
+          "description": "无论是下载高清电影，还是用手机录制的视频，很多时候文件体积都非常巨大。收藏保存或分享时会比较麻烦，因此常备一款真正好用的免费视频压缩压制/格式转换软件是很有必要的。\n网上的视频处理工具非常繁多，收费免费的一大堆，很多人根本不知道怎么选。而在尝试过的软件中，我认为 Handbrake 可能是最好的开源免费跨平台视频压缩和格式转换软件了！作为一款万能视频转码压制工具，它不仅免费，还跨平台支持 Win、Mac、Linux 三大操作系统……\n「 前往查看原文.... 」\n异次元还有这些值得一看：\n\nApowersoft 视频编辑王 - 快速分割/剪辑/合并/缩放/裁剪/加马赛克等多轨道编辑器\nGiliSoft Video Editor 强大易用的视频编辑器工具软件中文版 (视频截取/合并/加水印/字幕等)\n剪映专业版 - 免费好用强大的全平台视频剪辑神器，你让那些付费工具怎么活？\nGiliSoft 万能视频格式转换器软件中文版下载 - 可截取/旋转视频，简单给视频加水印/字幕等\n\n异次元正版数字商城  |  异次元首页  |  微信公众号  |  iPcFun  |  关注微博  |  软件精选",
+          "link": "https://www.iplaysoft.com/handbrake.html",
+          "publishedOn": "2021-11-22T12:10:08.000Z",
+          "wordCount": 645,
+          "title": "HandBrake 中文版 - 开源免费视频压缩剪辑压制/万能格式转换工具神器 (跨平台)"
+        },
         {
           "id": "https://www.iplaysoft.com/?post_type=news&p=5352",
           "author": "X-Force",
@@ -9627,15 +10056,6 @@
           "publishedOn": "2021-10-26T02:34:11.000Z",
           "wordCount": 565,
           "title": "2021 双 11 各种必领红包 / 超划算羊毛汇总整理 (每满200减30)"
-        },
-        {
-          "id": "https://www.iplaysoft.com/?post_type=news&p=3880",
-          "author": "X-Force",
-          "description": "「 前往查看原文.... 」\n\n异次元正版数字商城  |  异次元首页  |  微信公众号  |  iPcFun  |  关注微博  |  软件精选",
-          "link": "https://www.iplaysoft.com/news/3880",
-          "publishedOn": "2021-10-24T05:46:15.000Z",
-          "wordCount": 477,
-          "title": "腾讯云好价：轻量2核4G 8M 年付 70 元 / 领取 3500 元代金券"
         }
       ]
     },
@@ -9895,15 +10315,6 @@
           "publishedOn": "2021-10-24T18:21:06.000Z",
           "wordCount": 24,
           "title": "使用 Kotlin Flow 优化你的网络请求框架，减少模板代码"
-        },
-        {
-          "id": "https://juejin.cn/post/7022624191723601928",
-          "author": "RicardoMJiang",
-          "description": "theme: smartblue\nhighlight: a11y-dark\n本文已参与「掘力星计划」，赢取创作大礼包，挑战创作激励金。\n前言\nAndroid开发发展到今天已经相当成熟了，各种架构大家也都耳熟能详，如MVC,MVP,MVVM等，其中MVVM更是被官方推荐，成为Android开发中的显学。\nMVVM架构也不是尽善尽美的，在使用过程中也会有一些不太方便之处，而MVI可以很好的解决一部分MVVM的痛点。\nMVC,MVP,MVVM等经典架构介绍\nMVI架构到底是什么?\nMVI架构实战\n需要重点指出的是,标题中说MVI架构是MVVM的进阶版是指MVI在MVVM非常相似，并在其基础上做了一定的改良，并不是说MVI架构一定比MVVM适合你的项目\n经典架构介绍\nMVC架构介绍\nMVC是个古老的Android开发架构，随着MVP与MVVM的流行已经逐渐退出历史舞台，我们在这里做一个简单的介绍,其架构图如下所示：\n\nMVC架构主要分为以下几部分\n视图层（View）：对应于xml布局文件和java代码动态view部分\n控制层（Controller）：主要负责业务逻辑，在android中由Activity承担，同时因为XML视图功能太弱，所以Activity既要负责视图的显示又要加入控制逻辑，承担的功能过多。\n模型层（Model）：主要负责网络请求，数据库处理，I/O的操作，即页面的数据来源\n由于android中xml布局的功能性太弱,Activity实际上负责了View层与Controller层两者的工作，所以在android中mvc更像是这种形式：\n\n因此MVC架构在android平台上的主要存在以下问题：\nActivity同时负责View与Controller层的工作，违背了单一职责原则\nModel层与View层存在耦合，存在互相依赖，违背了最小知识原则\nMVP架构介绍\n由于M…",
-          "link": "https://juejin.cn/post/7022624191723601928",
-          "publishedOn": "2021-10-24T05:28:43.000Z",
-          "wordCount": 24,
-          "title": "MVVM 进阶版：MVI 架构了解一下~"
         }
       ]
     },
@@ -9912,6 +10323,15 @@
       "feedUrl": "https://rsshub.app/marginnote/tag/%E8%AE%BA%E5%9D%9B%E7%B2%BE%E5%8D%8E",
       "siteUrl": "https://bbs.marginnote.cn/tag/论坛精华/l/latest.json",
       "articles": [
+        {
+          "id": "https://bbs.marginnote.cn/t/topic/17773",
+          "author": "BeTone\n            (大海)",
+          "description": "本人去年考研用了一年的marginnote神器进行学习，非常感谢maiginnote开发人员给我在无纸化学习上带来极大的便利，当然我也在摘录学习的过程中发现了本软件许多的不足，其中公式识别这一块就是硬伤，不过这一两年里开发出了多款插件，例如markdown等可以支持MD、Latex、UML流程图、表格，但是也有个问题，不能在标题栏公添加公式的上下标，插件输入卡片会有一大片空白等问题。\n1. 网上搜索所需要的符号\n上下标符号大全；\n数学单位符号；\n化学元素符号；\n箭头符号\n数字上标：⁰ ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁺ ⁻ ⁼ ⁽ ⁾ ⁿ º ˙\n数字下标：₀ ₁ ₂ ₃ ₄ ₅ ₆ ₇ ₈ ₉ ₊ ₋ ₌ ₍ ₎\n小写字母上标：ᵃ ᵇ ᶜ ᵈ ᵉ ᵍ ʰ ⁱ ʲ ᵏ ˡ ᵐ ⁿ ᵒ ᵖ ʳ ˢ ᵗ ᵘ ᵛ ʷ ˣ ʸ ᙆ\n小写字母下标：ₐ ₔ ₑ ₕ ᵢ ⱼ ₖ ₗ ₘ ₙ ₒ ₚ ᵣ ₛ ₜ ᵤ ᵥ ₓ\n大写字母上标：ᴬ ᴮ ᒼ ᴰ ᴱ ᴳ ᴴ ᴵ ᴶ ᴷ ᴸ ᴹ ᴺ ᴼ ᴾ ᴼ̴ ᴿ ˢ ᵀ ᵁ ᵂ ˣ ᵞ ᙆ\n大写字母下标：ᴀʙᴄᴅᴇғɢʜɪᴊᴋʟᴍɴᴏᴘǫʀsᴛᴜᴠᴡxʏᴢ\n常用数学符号：＋－ × ± ≈ ≠ ∑ ∏ ∪ ∩ ∥ ∠ ∽ ≌ ≤ ≥ ∧ √  ∫ ∮ ∝ ∞ º ％ ‰  ℃ ℉ ′″ ㎎ ㎏ ㎜ ㎝ ㎞ ㎡ ㎥㏄ ㏎ ml mol ㏒ ㏑ ‖ △ π（圆周率） ← ↑ →  ↓\n常用阿拉伯数字：α β γ δ ε ζ η θ ι κ λ μ ν ξ ο π ρ σ τ υ φ χ ψ ω\n2. 复制符号添加到ios文本快捷键（ipad上是键盘的自定义短语）\n\n    \n      \n      https://bbs-upload.marginnote.cn/original/2X/b/b285be51f0c63f3ee7ceb5599cb300a01a72fb36.MP4\n    \n  \n\n3. 在标题栏或文本中添加公式\nhttps://bbs-upload.marginnote.cn/original/2X/c/c5e60c8fafb7a15d7d9deb925595f425443bacdb.MP4",
+          "link": "https://bbs.marginnote.cn/t/topic/17773",
+          "publishedOn": "2021-11-22T14:20:13.000Z",
+          "wordCount": 285,
+          "title": "【教程】在标题实现简单化学公式/数学公式编辑"
+        },
         {
           "id": "https://bbs.marginnote.cn/t/topic/6880",
           "author": "kulley",
@@ -10073,15 +10493,6 @@
           "publishedOn": "2021-10-24T17:31:45.000Z",
           "wordCount": 388,
           "title": "🌟【工作流安利】MarginNote-Zotero学术工作流"
-        },
-        {
-          "id": "https://bbs.marginnote.cn/t/topic/19815",
-          "author": "KaiKai",
-          "description": "我该如何安装一款插件？\n 本插件需要【MarginNote 3.7.11 或更新版本】\n 最新版本下载 (48.5 MB)\n 简介\n内置 MDX 格式词典，作为查找单词释义的后端（采用 Collins COBUILD Overhaul v2.30 + 物書堂纸质风格样式，使用 JS库 进行解析）。\n集成官方的 DeepL 插件 作为翻译句子/段落的后端。\n使用“手型工具”选择文字后，插件自动弹出释义、翻译窗口，取消选中文本自动关闭窗口。\n 设计这款插件的初衷\n使用场景\n阅读外文书刊、文献时，查看生词释义、段落翻译\n痛点需求\n① 内置英汉双解词典，生词释义一网打尽\n 使用方法\n\n\niPad3072×2388 841 KB\n\n\n\niPhone_11642×3007 533 KB\n\n  \n\niPhone_21642×3007 524 KB\n\n\n兼容性\nMarginNote 3.7.11 及更新版本\n更新日志：\nv1.0.5\n获得了官方签名。\nv1.0.4\n修正文本翻译弹窗 bug。\nv1.0.3\n再次修正 DeepL 视图。\nv1.0.2\n修正了插件开关逻辑。\n修正了 DeepL 语言选择按钮的小 bug。\nv1.0.1\n修正了 DeepL 插件 iPhone 端的视图问题。\nv1.0.0\n第一版发布\n修正了 DeepL 插件 ‘/’ 后的文本无法正确翻译的问题。\n已知问题\n由于插件的词典数据库较大（约 64 MiB），初次导入插件、MN 重启后初始化界面持续较久（约 5-10 s）。\n阅读 epub 文档时，只能滑动弹窗内容，点击之后弹窗会关闭。\n部分设备上弹窗显示不全，请等待作者修复。\nTODOs w/o Deadlines\n允许用户自定义 mdx/mdd 词库文件\n详见此楼\n\n将词库文件从前端换到后端进行解析，从 mdict-js 转移到 js-mdict",
-          "link": "https://bbs.marginnote.cn/t/topic/19815",
-          "publishedOn": "2021-10-24T07:06:18.000Z",
-          "wordCount": 453,
-          "title": "【第三方MN插件】MdxDict——内置 MDX 格式词典、集成官方 DeepL 插件，选中单词/段落可自动弹出释义/翻译 #Ver.1.0.5 已获官方签名#"
         }
       ]
     },
@@ -10090,6 +10501,26 @@
       "feedUrl": "https://rss.stratechery.passport.online/feed/rss/XKSD6WRxZC5aAmZfGdv9MX",
       "siteUrl": "https://stratechery.com",
       "articles": [
+        {
+          "id": "https://stratechery.com/2021/spotifys-earnings-spotifys-podcast-payoff-universal-taylor-swift-and-internet-power/",
+          "author": "Ben Thompson",
+          "description": "Spotify's earnings show that their strategy is working exactly as predicted; then, Universal is responding to Taylor Swift's leveraging of Internet power.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9zcG90aWZ5cy1lYXJuaW5ncy1zcG90aWZ5cy1wb2RjYXN0LXBheW9mZi11bml2ZXJzYWwtdGF5bG9yLXN3aWZ0LWFuZC1pbnRlcm5ldC1wb3dlci8.N8tKD9VCft68hk9Y0u9KkHd6eGXahhYFvrFI1eN_Je847Z5Zu54PPAxdzV8VIYJ8yAOf-wxCPt3LTJAR8n827Vm3zYsy-g47LtJOQAsLhnEMLvt4g_vBxSY0MuKo59Tm_x9dFA0RAMwoMyVNYlq5pF9h9m3CxpbjmT7S-5_Xx_cAerHBqKnwqELjK98I1JEWuYi4UrlPBYlIyPBHaQtZj2_4b2lYO0TC1UY-RbZt31p3nnce-OGKaiCCyXmqczha0po8EQ1YA0H3J7jfXNEzBQFohMuS6WXvlpLiCZzuaA4sdqQo2v_wSnYKrGRQa6nDuosSblYJywNNU6TCeGid9w",
+          "publishedOn": "2021-11-22T13:14:38.000Z",
+          "wordCount": null,
+          "title": "Spotify's Earnings; Spotify's Podcast Payoff; Universal, Taylor Swift, and Internet Power",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/unity-buys-weta-digital-an-interview-with-unity-ceo-john-riccitiello/",
+          "author": "Ben Thompson",
+          "description": "The Weta acquisition, Unity’s ambitions, their advertising business and relationship with Apple, and why Riccitiello thinks my understanding of the metaverse isn’t quite right.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS91bml0eS1idXlzLXdldGEtZGlnaXRhbC1hbi1pbnRlcnZpZXctd2l0aC11bml0eS1jZW8tam9obi1yaWNjaXRpZWxsby8.nPjjLM8OVMuTil7Krlw1SweeczllFeMcvRGmS8lzRoFiEvXhTQsYB7zhfrqI10p6_cLAu17w9kFwvTT9MuPN5vXcWPt5X0tKgOq7jJqYpE6lKx5fXtaNVgw0UvOUACXTJE9XfQAeCWOJFHdJYZENZncKNlJ2G1KEmFELhZRJrX4OA-4G_SYa2Gk4RRMvU14clQTorDKpxM4HztUGapbwY0f0IJosLMPg1zi21zwd_fkyamywrVO_ith5Oc2isEX7dZgwq-fOHVIZNrDQUPYUxgoli84P12JWIKqDJYQwmUi9frPEHaRJlWq8mtiOst2VjwjDmTxsteQKO6cHrr_rpQ",
+          "publishedOn": "2021-11-17T09:34:06.000Z",
+          "wordCount": null,
+          "title": "Unity Buys Weta Digital, An Interview with Unity CEO John Riccitiello",
+          "itunes": {}
+        },
         {
           "id": "https://stratechery.com/2021/unity-buys-weta-digital-an-interview-with-unity-ceo-john-riccitiello/",
           "author": "Ben Thompson",
@@ -10118,6 +10549,16 @@
           "publishedOn": "2021-11-17T09:34:06.000Z",
           "wordCount": null,
           "title": "Unity Buys Weta Digital, An Interview with Unity CEO John Riccitiello",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/constitutiondao-the-need-for-trust-memes-and-reality/",
+          "author": "Ben Thompson",
+          "description": "ConstitutionDAO is an interesting project to buy a physical good as a community; what is particularly interesting is what it says about the power of actualizing memes",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9jb25zdGl0dXRpb25kYW8tdGhlLW5lZWQtZm9yLXRydXN0LW1lbWVzLWFuZC1yZWFsaXR5Lw.mRWkU8rQedl36x3rHBDO8WLFUKi81dmbHoA1DVEoWp5sWZ0cuRW1ADz2w9IdX90Q8VZohe1IvMMbgIc33pdsp_rHawjMOr6qjQls9OVbRsiOXYY7jwMVLHYWYaMzFExaxkiZ2tq0ei45hgSXccAGaeirp8oOk5NIDLwFBLrEEUDR3PGWHQTxfrRyLkjPVMNfuLSbDFChhdfgFWEcAr9RRG3-MvmjfswOqQC9i9pgLQDzarzFxwdc40kLdx7qFab7xGYxfJeTtSs6F4QinjhCy-Zkbro2qJf2QoD2B2g1P9hSoLQXFioC-ZdS9BOmH6T-NO076MDOdGOPKD3basywwA",
+          "publishedOn": "2021-11-16T13:21:35.000Z",
+          "wordCount": null,
+          "title": "ConstitutionDAO, The Need for Trust, Memes and Reality",
           "itunes": {}
         },
         {
@@ -10168,6 +10609,16 @@
           "publishedOn": "2021-11-16T13:21:35.000Z",
           "wordCount": null,
           "title": "ConstitutionDAO, The Need for Trust, Memes and Reality",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/opendoor-earnings-opendoors-pricing-opendoors-scalability/",
+          "author": "Ben Thompson",
+          "description": "Opendoor's results suggest that the problem in the home-buying market was unique to Zillow's lack of expertise, not the model",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9vcGVuZG9vci1lYXJuaW5ncy1vcGVuZG9vcnMtcHJpY2luZy1vcGVuZG9vcnMtc2NhbGFiaWxpdHkv.HePXdCxZFBmniYpXsY8EryXPswhmnQdoyqa_kSNhM7PrBzOwGMxmczCa52Vv-Qa9HNyqhqBO9yJ5u1Tn1KWvBjv11GOMwlgIOLfYdXxeEtdApdKSdv8ZD2bS3j3LeL7eXASRo__uqGSO2OxuyAZwT2ycvt3WqTeUeaW1Z_vY9biaaAsGV4Xf0ZflTT5Vy0txUjyrG9FdvmthrZbu4WptOmcm-6dFG5t43zh1_1EKWNA_LdNfBy89A8hfUTqbbL6cp0a1NNELLIflnz4XcsZz4HUS9caT-k7NM3hZ-sWsVPGNzaxjXx7Y7p-caLgs0cEKAcP9c-5Cx94SpaXYwkVF-Q",
+          "publishedOn": "2021-11-15T11:56:46.000Z",
+          "wordCount": null,
+          "title": "Opendoor Earnings, Opendoor's Pricing, Opendoor's Scalability",
           "itunes": {}
         },
         {
@@ -10228,6 +10679,16 @@
           "publishedOn": "2021-11-15T11:56:46.000Z",
           "wordCount": null,
           "title": "Opendoor Earnings, Opendoor's Pricing, Opendoor's Scalability",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
+          "author": "Ben Thompson",
+          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.sKORAEmC6JP87mCi8G5VRahgkosBbgIi0S8q7_2xdRg2trdE6MBGS80xTAZRXkwyILH-bemcYTltSgBQP_Pln7TUzYrOHHmKtbx1OdZQ4phlEIfmFVEMAir9Zjo9ZgczpFAk8i1KdyEoy5PpWJtKHBuFKHenpcJcbMNdstGURpSTypqWymbVeu0nQv6GwzX5VvWIfAc1v09wntGgZpd10gUzrVX_P1Tmz7CsVkGXwKw85-GbPBewnfcuErynwAIpNgDliwF3wFMxDwqTX6iDojRNxv2gb_PlGThhlqzAOUV-uKpSWSB-BiDkOuk4oLcTwYzOgEuIEEGQzrxvEETOWw",
+          "publishedOn": "2021-11-11T13:29:31.000Z",
+          "wordCount": null,
+          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
           "itunes": {}
         },
         {
@@ -10314,6 +10775,16 @@
           "id": "https://stratechery.com/2021/metaverse-follow-up-apple-denied-stay-in-epic-case-google-loses-eu-shopping-case-appeal/",
           "author": "Ben Thompson",
           "description": "Metaverse follow-up, and then both Apple and Google lose in court",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9tZXRhdmVyc2UtZm9sbG93LXVwLWFwcGxlLWRlbmllZC1zdGF5LWluLWVwaWMtY2FzZS1nb29nbGUtbG9zZXMtZXUtc2hvcHBpbmctY2FzZS1hcHBlYWwv.LkVZ4-ARg9eihk8zXB94JhYoGCgCJzqAfqnGy3B5AJ7JqGLdRUv--6XCPQLi8lmzdDkD2GsLeXrubXOpArh6oT0v-nNTDKpvN6g-4Owz8lNEtP75NW4fPw7VQYjkneLrO7853C2PUqcXxY_UcFdeUweyUcE2WZQsMhdEkw8Q71_tNXW5TTCjqm1Zc_jZ-69osSgdJKIUO3wxyGPTEWSsoYUgun1gw3s_0weMR2jVPTiOKtsEG5mO3Q8iaouHN783s4Ia_wPiw8_rcNkryiyihwepmbxm8cHUVjtTuqcWzbyAXx7Zu7X0mrt8vxICeFZY4SI7iiYL1fx9zhvkGMB8og",
+          "publishedOn": "2021-11-10T12:38:31.000Z",
+          "wordCount": null,
+          "title": "Metaverse Follow-up, Apple Denied Stay in Epic Case, Google Loses EU Shopping Case Appeal",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/metaverse-follow-up-apple-denied-stay-in-epic-case-google-loses-eu-shopping-case-appeal/",
+          "author": "Ben Thompson",
+          "description": "Metaverse follow-up, and then both Apple and Google lose in court",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9tZXRhdmVyc2UtZm9sbG93LXVwLWFwcGxlLWRlbmllZC1zdGF5LWluLWVwaWMtY2FzZS1nb29nbGUtbG9zZXMtZXUtc2hvcHBpbmctY2FzZS1hcHBlYWwv.LMzoWUla_RebMrbiQRJ1nwOHB51Xx2RwUylox37wf0LnvLZFajWuHDUSQoRAjSC3oW3G9xyTtpKnPAyfS3U824MkcQ4Pz7SjX1YJ7y7Th7rSgtM3h_IkCAgbuyGRvUlox6q_Z70LviyZXR7DZTu8gOVCdJZnwYX-C_UOkqwJYNV-7d2DbqgrXYIVolx2M2rmlBt1CVNr5tXBtX1LJQQsp7HLAmr-OjaSswkS9fHkBPN01WYVw4GTjazZqSjYbhW5A-J5k8d5geCcFyS3nRPkrmh8LEc4OyRyUmTnFEdZSOTp8bup9ZB3FA5mu5iG2zCstiN-C1-Q6FNqC0IANnQY0g",
           "publishedOn": "2021-11-10T12:38:31.000Z",
           "wordCount": null,
@@ -10388,6 +10859,16 @@
           "publishedOn": "2021-11-10T12:38:31.000Z",
           "wordCount": null,
           "title": "Metaverse Follow-up, Apple Denied Stay in Epic Case, Google Loses EU Shopping Case Appeal",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/googles-south-korea-plan-no-duty-to-deal-developer-versus-customer-choice/",
+          "author": "Ben Thompson",
+          "description": "Google's response the South Korean App Store law, what that says about platform IP rights, and why markets should decide App Store policies.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9nb29nbGVzLXNvdXRoLWtvcmVhLXBsYW4tbm8tZHV0eS10by1kZWFsLWRldmVsb3Blci12ZXJzdXMtY3VzdG9tZXItY2hvaWNlLw.MpSU1lHVj4qKPbvSOTtOQMUTd-X59IkT8SWwEEOlXh2MpfHQnP8Gd6DUtwSqt50WQAIp3YXBSdR5oHwp8kA_M1SLTamhNXv-WX2206yOFowPBgDsXqG732a1KF8MoDGHjwRo8bwiu0vjaoVczKTTcoMGTjehdrZ5fg0LvSSnhvqEHmUCm6RxkYs5NFS5kuAyDo89nA6PSjmmf0FQhlcULGJ_OWlftLIHcCdlG8ZJaJGcKctxYyJmtMCUddBGml2Te48KxaE6w8sWEhEHbZb8u6pt4Da8IzpYui10TInIQe1GTRrefHXrexeDovRZne4zato5XRh1nz05nc88olKsog",
+          "publishedOn": "2021-11-08T12:11:52.000Z",
+          "wordCount": null,
+          "title": "Google's South Korea Plan, No Duty to Deal, Developer Versus Customer Choice",
           "itunes": {}
         },
         {
@@ -10474,6 +10955,16 @@
           "id": "https://stratechery.com/2021/an-interview-with-eric-seufert-about-the-impact-of-att/",
           "author": "Ben Thompson",
           "description": "An interview with Eric Seufert about the impact of ATT and the future of advertising, Apple, and Facebook.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hbi1pbnRlcnZpZXctd2l0aC1lcmljLXNldWZlcnQtYWJvdXQtdGhlLWltcGFjdC1vZi1hdHQv.WO5D-f_x5JB0Q0fNrsTRKeg0l5VnDD93Eh-dU2oKbbPklqLATb57w1d7E3xK8CjjbngbpICuJKvjoSZWmASa38wE2NtCpSmvTo7L4JWc5egz7piyJ8um9vMj0z07ZYqydUzFv7cXdA24y4YlwbdqybUpWH51UAlE2YFFR3aUb7wWlc1TNp3ZOGYkHNVy_SLtnBYPRNjhpUsI9K7L1ExUsQ_7ckSpmEOk4wLZyI4s2JxlWFhq-2OpvO1592GEc4nWFG1r14qSbF9TU5rP_Ht5mM86TPXJJASf3FupHmC7azIIvRZqOBilauHMXQXupQkraTjYdMh_DyPyUz9EePdilA",
+          "publishedOn": "2021-11-04T11:09:45.000Z",
+          "wordCount": null,
+          "title": "An Interview with Eric Seufert about the Impact of ATT",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/an-interview-with-eric-seufert-about-the-impact-of-att/",
+          "author": "Ben Thompson",
+          "description": "An interview with Eric Seufert about the impact of ATT and the future of advertising, Apple, and Facebook.",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hbi1pbnRlcnZpZXctd2l0aC1lcmljLXNldWZlcnQtYWJvdXQtdGhlLWltcGFjdC1vZi1hdHQv.Mn7Q2Wloa1Jdz1G8DLs2phnkyFYaM55RnMJy_Y-c3phpA65EE_6TOaUE_B5pstRKVv9xR0EQZtRW0k_doPXa4BgchmTfG9ZoOMvOzErxczR0mQMsAuqvqgDjbO25mwxptZDBW8StEWnEUFHjOImbRFTrYxIoP4PstYqoBYrNRgf4BZX3oAvl8Ode8oqF0h4kO5ggIJtqRJfEzWZifSl9U1_bCr2TTFLKNiwiXfGmX-RZQrtb_X238eG76UQLmS48EpZDRpR6-pn-jDhLI6bLNLQva2_j968GZ1ORvoeYCmeT22sXtkEtjvfmr2VNTBXSpn9vs-3hOQfkdRgTaFA3dg",
           "publishedOn": "2021-11-04T11:09:45.000Z",
           "wordCount": null,
@@ -10548,6 +11039,16 @@
           "publishedOn": "2021-11-04T11:09:45.000Z",
           "wordCount": null,
           "title": "An Interview with Eric Seufert about the Impact of ATT",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/zillow-shuts-down-offers-where-zillow-went-wrong-reflecting-on-zillow-aggregation-and-integration/",
+          "author": "Ben Thompson",
+          "description": "Zillow is ending Zillow Offers; where did the company go wrong, and what my initial analysis got right, and what I missed.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS96aWxsb3ctc2h1dHMtZG93bi1vZmZlcnMtd2hlcmUtemlsbG93LXdlbnQtd3JvbmctcmVmbGVjdGluZy1vbi16aWxsb3ctYWdncmVnYXRpb24tYW5kLWludGVncmF0aW9uLw.ZlikyqkfOaqnYocNppze_TPQZFUCyZ1Dj6bFFaM59EKV_ejOdgdyhuHULNo41VJzlAkeoIqNLBJx7ibTKkNcsO-EP2rRqxgJGrQsE3B_ASz5zJbD32dvIqbdjKeXNJBduoHKR5K_KyH9CA1XwMjxhe5VRppwZMe2V6td7XLNYubpxeVNfxFmY9MxsLP8mBb1pl3AZn0ezaJzod4W9l-dKTBMWDRFB5hPE1ApcuEDYAQXXNrQ6QjZ_3fCaGWw5mtM4RPo-9FTMVxYQPd4WIPSBfONk6W6b-8lgeI-RJR_mcvLdXYTkeeb3bhMpQKap8gd4wHdLsAk0WndeR2yj_FWng",
+          "publishedOn": "2021-11-03T12:00:32.000Z",
+          "wordCount": null,
+          "title": "Zillow Shuts Down Offers; Where Zillow Went Wrong; Reflecting on Zillow, Aggregation, and Integration",
           "itunes": {}
         },
         {
@@ -10634,6 +11135,16 @@
           "id": "https://stratechery.com/2021/adobe-max-photoshop-on-the-web-photoshop-and-nfts/",
           "author": "Ben Thompson",
           "description": "Adobe Max suggested that Adobe is finally starting to build its products as a service, not just selling them that way. Plus, Photoshop on the Web leans into Photoshop's complexity, and Photoshop's NFT authenticity feature is compelling.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hZG9iZS1tYXgtcGhvdG9zaG9wLW9uLXRoZS13ZWItcGhvdG9zaG9wLWFuZC1uZnRzLw.ugJ6xeGt1CgU1PkKXDlE_pVimEt18h_JPZpAL_4gyrmKe0e45CZllSiPt5hJDrob_tPVTYpZi5DuOQDmp8lv_rDakDa62E7mWTERSJD5TTPSSq8KCEMNEeKN8N4RYXVFFvMivlqShFeo3MDuj--a1ARGzVx8UkXfG4a_AiHYR7eyL2NfK4ZiIq3MNj11Sc5CWZ6Fuk_31mXozGZhwvZoewlo0bOMWo3jw9gXPPuQwOArBJ5r4xchI9srYgW4QXhCXLkdoUQK8E9akPcuX52A1h7nb15liHcFQ6V5Lt_CjK3aEwsjtJMbAx5jgeToT4UxyhKQUyDM1N9wEMk1dmBvZQ",
+          "publishedOn": "2021-11-02T12:08:15.000Z",
+          "wordCount": null,
+          "title": "Adobe Max, Photoshop on the Web, Photoshop and NFTs",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/adobe-max-photoshop-on-the-web-photoshop-and-nfts/",
+          "author": "Ben Thompson",
+          "description": "Adobe Max suggested that Adobe is finally starting to build its products as a service, not just selling them that way. Plus, Photoshop on the Web leans into Photoshop's complexity, and Photoshop's NFT authenticity feature is compelling.",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hZG9iZS1tYXgtcGhvdG9zaG9wLW9uLXRoZS13ZWItcGhvdG9zaG9wLWFuZC1uZnRzLw.Exeiv03vPUbgCWp1jqysuHRJAS874xVwBgonqsIH3e7MPNngkKHT0QMVdPKt1DBw2POdDxyFERXl_UUVfbHYs8s6HiQOLIPSpxsgi9c7zoCZgkbyPt8_Ml_yBWkvBWF90BezLZxSSTl9zU7VO4piLp_CzA2gEMaXPsCU0ZQIl0cglRPpCfQ34X22rPAyOtnd1xHI239mNv8fvE1QIuJkRlX2d_RjN8Vnp1FCVYDDvAD7588Cwu2AEtJmFAHkcXvWpy-RopsxnXSjrGoRJeGf5vRg6wI8DNsPoJROJkyhck05C7Zb_pzuvjuN7tPNb5QIKXYw-vvZaD4Wp4kdskekrg",
           "publishedOn": "2021-11-02T12:08:15.000Z",
           "wordCount": null,
@@ -10708,6 +11219,16 @@
           "publishedOn": "2021-11-02T12:08:15.000Z",
           "wordCount": null,
           "title": "Adobe Max, Photoshop on the Web, Photoshop and NFTs",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/about-the-interview-the-metaverse-and-vr-why-not-a-startup/",
+          "author": "Ben Thompson",
+          "description": "How I approached the interview with Zuckerberg, why the metaverse is really about VR, and then a discussion of Facebook's competitors.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hYm91dC10aGUtaW50ZXJ2aWV3LXRoZS1tZXRhdmVyc2UtYW5kLXZyLXdoeS1ub3QtYS1zdGFydHVwLw.K4TBuBCl07Dq17TfoyDY2dDZHYtnnt3TsexUMXEnxQ7C8VaQIABKHlfSpdI4uvO1JQ88o1i8eyJLCFn9dvAwd4hckFiHZGMT5GEmyHiitRsmmpj_daA10lxF4TWWLM4rH6DEYqtc8_3rXy-AcOKT3H4IGTS3YHChNCw9yz9g8SAOl9YEBBDIlqtxveA6qOLK7IDgxDlzTc_yvuPjsQe4H5D4GKoKctgd4v8U866IYG2CywBPc2rCCRT5MjlsoXHzAg9IQoJctBNtCTbOPzWyHjx9qRMbaHUIl1fgpCbN_SiK0MB1MItuPb-YCk0bHNafNYE9ONkpssrvGhgK8xZ9Tg",
+          "publishedOn": "2021-11-01T12:06:21.000Z",
+          "wordCount": null,
+          "title": "About the Interview, The Metaverse and VR, Why Not a Startup?",
           "itunes": {}
         },
         {
@@ -10794,6 +11315,16 @@
           "id": "https://stratechery.com/2021/facebook-earnings-investor-trust-facebook-reality-labs/",
           "author": "Ben Thompson",
           "description": "Facebook's earning seemed bad, but investors responded well, thanks to the trust that Facebook has developed over the years, and demonstrated this quarter.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9mYWNlYm9vay1lYXJuaW5ncy1pbnZlc3Rvci10cnVzdC1mYWNlYm9vay1yZWFsaXR5LWxhYnMv.NHap6srWOqDhzKb1v5bSx5qejdjfedsCFscyYHdBAKWOa-m4CEW-7d-cV5zWw0ohmrDcC4CKDpWfBlBXBEy3sWvKvxBthRbnUA6DLIlLrZEFc4KVcPnvcBU3x0EQ2S4sju0b0kR_psNg3DcOP3Qa6QijWHP6B8xOkZUqw9-u2MQnW_WTqe53rQ_CyFGP447FF5b4wzeNEuZSfMxXuEGN02ZPxiMhFLLQOtDYy29HsPSoKGMoEhUZ2gdRM2LKLquVl-6tA_Jksoy5tCyAxhiOO-svtMfAiRBoxG942LHqQ20B1Y1mRv55W5HbDOaT3O-90zsOR_dwtXzUziKJGbcwsA",
+          "publishedOn": "2021-10-26T11:51:13.000Z",
+          "wordCount": null,
+          "title": "Facebook Earnings, Investor Trust, Facebook Reality Labs",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/facebook-earnings-investor-trust-facebook-reality-labs/",
+          "author": "Ben Thompson",
+          "description": "Facebook's earning seemed bad, but investors responded well, thanks to the trust that Facebook has developed over the years, and demonstrated this quarter.",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9mYWNlYm9vay1lYXJuaW5ncy1pbnZlc3Rvci10cnVzdC1mYWNlYm9vay1yZWFsaXR5LWxhYnMv.iUuEms9Qz35aHi1jgKEJXbhN4VmFE8UB8OJrN-TIQ9YvlVIoG4WD_D1fpggjW3JJDMBi7dlgXVNZz98-g2v2niz30spbOzGG3Si6_fof4sckbveWv3P-3chG5xG33UipiwCCCzaGkll8MasBYivQ-8396Tf7Ew6WfNQMoBuj50MtA5QL9ZLiVdaWvR0lYmLfe0OdirS3zf-TuW27xZww8Tl0AIA92a-oF1LnXaycMTzR57ftREdoFuCuVqwmWHSpbba27NAOSsXzdaIEoLzj9LNHie3MyAalAgpWPuNnCINJ_EBkdGdCh8XLfzxF57WjBAeuA8IYfh3e9-9T-4bvYg",
           "publishedOn": "2021-10-26T11:51:13.000Z",
           "wordCount": null,
@@ -10868,6 +11399,16 @@
           "publishedOn": "2021-10-26T11:51:13.000Z",
           "wordCount": null,
           "title": "Facebook Earnings, Investor Trust, Facebook Reality Labs",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/snap-earnings-attribution-and-targeting-the-supply-chain/",
+          "author": "Ben Thompson",
+          "description": "Snap's earnings show how the inability to measure attribution makes it hard to target ads; the big question is what this means for Facebook.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9zbmFwLWVhcm5pbmdzLWF0dHJpYnV0aW9uLWFuZC10YXJnZXRpbmctdGhlLXN1cHBseS1jaGFpbi8.s9q4fwyUkxTH1CyxBEewd3Xxj9qdqHNUq15BF6JRHxXqtup7S2FFE2Xw_GHhspn8BNeMrzRV7BOumAl-YpgAgr59Rctp9EWD7kCsUlWZug5HpBITR1Jzfm1bOFSibL8mo7Pe5RBaEMJ2za7lEJ94JOs1aSdXdXycwFLQIYVEvbMj8GwG9DRAzriL5JS4_Bb-3vuzznC-Ojs8tV-vnQ5Nkq-X1z3ZzSmf-TOejhoMlFs2KLUrrlMXCjBxiv7BHsdKRc-32Nm70aI9v78pXmJaEbgItjywYtdaLwBLHo76Sm5jR13llu2Vu5NohjNtamGoss4X56niac8H4yoF1Us2jA",
+          "publishedOn": "2021-10-25T13:00:53.000Z",
+          "wordCount": null,
+          "title": "Snap Earnings, Attribution and Targeting, The Supply Chain",
           "itunes": {}
         },
         {
