@@ -16,12 +16,354 @@
 <body>
 <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-11-26">2021-11-26</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://dev.to">DEV Community</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Building My First Command Line Interface (CLI) with Rust</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/devtails/building-my-first-command-line-interface-cli-with-rust-84e">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(6 min)</span>
+                    <span>After telling myself over and over that today is the day I start learning rust. I finally successfully built a (very small) cli for engram.
+This post will cover some of the things I learned along the way. I mostly from a TypeScript/Node background and will make comparisons between the two where applicable.
+I have found that having a tangible end goal increases my odds of project completion by nearly 100%. In this case, the goal is to create a command line program that simply POSTs requests to my personal notes application engram.
+This is not just a learning or for fun project as I recently realized that the command line is a great place for the input of quick notes. When I’m working, I sometimes find myself investigating something in the terminal and realize that I have a thought that I’d …</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2021-11-25">2021-11-25</time></h2>
     <ul class="sources card">
       <li class="source">
         <section>
           <h3 class="source-name"><a class="source-name__link" href="https://dev.to">DEV Community</a></h3>
           <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Understand React Redux from scrach on one page</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/byusa/understand-react-redux-from-scrach-on-one-page-340g">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>Redux a popular React and React Native state management library.
+npx create-react-app reactapp
+
+cd reactapp
+yarn add react-redux
+
+Add this in index.js
+import React from &quot;react&quot;;
+import ReactDOM from &quot;react-dom&quot;;
+import &quot;./index.css&quot;;
+import App from &quot;./App&quot;;
+import reportWebVitals from &quot;./reportWebVitals&quot;;
+import { createStore } from &quot;redux&quot;;
+import allReducer from &quot;./reducers&quot;;
+
+//ACTION  -&gt; INCREMENT (describes what you want to do!) it&#x27;s a simple function
+
+const increment &#x3D; () &#x3D;&gt; {
+    return {
+        type: &quot;INCREMENT&quot;,
+    };
+};
+
+const decrement &#x3D; () &#x3D;&gt; {
+    return {
+        type: &quot;DECREMENT&quot;,
+    };
+};
+
+//REDUCER -&gt; (action transfer from one state to another state, it gonna modify our store)
+//You can have many reducers (Auth reducer, Movielist reducer etc ...)
+const counter &#x3D; (state &#x3D; 0, action) &#x3D;&gt; {
+    switch (action.type) {
+        case &quot;INCREMENT&quot;:
+            return state + 1;
+        case &quot;DECREMENT&quot;:
+            return state - 1;
+    }
+};
+
+//STORE  -&gt; Globalized STATE
+let store &#x3D; createStore(counter);
+
+//Display it in the console.
+store.subscribe(() &#x3D;&gt; console.log(store.getState()));
+
+//DISPATCH (DISPATTCH this action to the reducer)
+store.dispatch(increment());
+store.dispatch(decrement());
+store.dispatch(increment());
+
+ReactDOM.render(
+    
+        
+    ,
+    document.getElementById(&quot;root&quot;)
+);
+
+reportWebVitals();
+
+
+Testing it: check the console in inspect to see how it increments and decrements. 
+Check this repo for more advanced way of doing it: 
+https://github.com/Byusa/learn-redux
+This repo shows the use of redux it could be one a proper way with the store and multiple reducers their own folders.
+Reference: 
+https://www.youtube.com/watch?v&#x3D;CVpUuw9XSjY</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Fetch and display the latest git commit hash in your iOS apps</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/daholino/fetch-and-display-the-latest-git-commit-hash-in-your-ios-apps-1fp2">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>If you want to know from what exact commit your app is built you can include the latest git commit hash to the place where you display the app version. I like to call that generated hash “revision” or in short “rev”.
+Displaying this can be useful when you are distributing internal versions of your apps to QA engineers and you want to know on what app version they are testing. While the changes are coming in on development branches we don’t increase version or build numbers, we follow the revision value and always know what version is in use.
+In this article I will explain how to fetch the latest git commit hash in Xcode and display it in the iOS app.
+The procedure I will describe adds a new row to your Info.plist file with specified key and sets the value to the short git commit hash.
+The first step is to go to your target’s Build phases setting and add a new run script phase. The “Run script” action will be on the bottom and you need to move it above the “Copy bundle resources” action.
+When you move it, you can paste this code for the script:
+GIT&#x3D;&#x60;xcrun -find git&#x60;
+GIT_REV&#x3D;&#x60;${GIT} rev-parse --short HEAD&#x60;
+/usr/libexec/PlistBuddy -c &quot;Set :REVISION ${GIT_REV}&quot; &quot;${SRCROOT}/{{path-to-your-info.plist-file}}&quot;
+
+In the script above we rely on PlistBuddy to set the key REVISION and the value of the latest git commit hash to the app’s Info.plist file. PlistBuddy is a macOS utility that helps us to manage plist files. You can read more about it here or you can type /usr/libexec/PlistBuddy -h in your terminal to find out more of what it can do.
+Now, when you have run the build process, the script that we added should’ve inserted a new entry in your Info.plist file and we can proceed to displaying it.
+To display the revision we just need to fetch our Info.plist and provide a key to read the value from it:
+let revision &#x3D; Bundle.main.object(forInfoDictionaryKey: &quot;REVISION&quot;) as? String 
+
+In Objective-C we would do it like this:
+NSString *revision &#x3D; [NSBundle.mainBundle objectForInfoDictionaryKey:@&quot;REVISION&quot;];</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Azia Dashboard - Open-Source Flask Dashboard</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/sm0ke/azia-dashboard-open-source-flask-dashboard-4ana">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>Hello coders!
+This article presents an open-source Flask Dashboard crafted with authentication, database, and Docker support on top of Azia Admin, a colorful dashboard template. The product can be used to prototype fast a new dashboard on top of the existing codebase. For newcomers, Flask is a leading framework written in Python used to code from simple websites to microservices, APIs, or complex eCommerce solutions. 
+Thanks for reading! 
+👉 Flask Azia Admin - product page
+👉 Flask Azia Admin - LIVE Demo
+
+Azia Dashboard is a beautifully designed admin template featuring a fine selection of useful Bootstrap components and elements. The pre-built pages of the templates are intuitive and very well-designed.
+Azia features many essential utility classes that can help cut down CSS bloat and modify CSS components instantly.
+The product requires a minimal programming kit to be present and properly installed in the workstation in order to clone and compile the sources:
+Python3 - the language that powers Flask
+GIT - used to download the sources from Github
+A modern editor like VsCode or Atom
+
+
+Docker - (optional) for an automatized setup
+Probably the most easier way to use the product is via Docker, a popular virtualization and containerization software.
+👉 Step #1 - Download the source code
+$ git clone https://github.com/app-generator/flask-azia-dashboard.git
+$ cd flask-azia-dashboard
+
+👉 Step #2 - Start in Docker
+$ docker-compose pull   # download dependencies 
+$ docker-compose build  # local set up
+$ docker-compose up -d  # start the app 
+
+Once all the above commands are executed, we should see the starter running in the browser at the address http://localhost:85
+
+Flask Azia Admin - Charts Page
+
+Flask Azia Admin - UI Buttons
+
+Thanks for reading! For more resources and support, feel free to access:
+✨ AppSeed for support via email and Discord
+
+✨ Free Dashboards - crafted in Django, Flask, and React</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Top 5 business intelligence blog websites</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/analyticsstepss/top-5-business-intelligence-blog-websites-13ep">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>business intelligence blogs are those that talk about business formation with proper insights and researched analytics or data. These types of blogs help business owners or researchers to create business roadmaps and plans. Blogs are written to help business researchers and owners not to do mistakes which previous business persons did.
+We listed the top 5 business intelligence blogs, These are-
+Analytics steps- Analytics Steps is one of the leading analytical content writing companies that focuses on solitary growth with the vision to empower users with the necessary information in technical and non-technical business issues. Analytics Steps.
+IT Business Edge- A well-known, premium B2B Technology brand, IT Business Edge is part of the QuinStreet Enterprise. IT Business Edge seeks to help executives make strategic decisions by providing articles and resources from leading industry experts in Business Intelligence.
+Dataversity- DATAVERSITY offers rescues for IT professionals, executives, and business managers on data uses and management. DATAVERSITY offers a wealth of useful resources, including the blog, that features posts written by leading experts and consultants in the Business Intelligence field.
+Smart Data- SmartData Collective is an online community that provides enterprise leaders access to the latest Business Intelligence trends. As a &#x27;platform for recognized, global experts to share their insights through peer contributions, custom content publishing and alignment with industry leaders.
+Jet Reports- The JetReports Blog features insights on Business Intelligence, marketing, sales, development, and related topics, with tips and information on maximizing and optimizing your data to drive results. Jet Reports is an affordable Business Intelligence and reporting solution that leverages existing investments to facilitate streamlined, informed decision-making.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Storecle - a neat app state management for React and Solid</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/chrisczopp/storecle-a-neat-app-state-management-for-react-and-solid-52ak">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(5 min)</span>
+                    <span>Storecle is a neat uni-directional app state management for React and Solid (❤️).
+Storecle uses a simple mental model which lets you access app-wide actions and their results by using Context API.
+To improve the code re-usability, Data Suppliers use a middleware pattern. They are executed in the order you specify and pass a snapshot of Store from one to another, letting you split the logic into small, specified functions.
+It works with both React and Solid (it&#x27;s framework agnostic to certain degree).
+It uses Context API and useEffect / createEffect to provide action re-triggers based on specified Store changes.
+It facilitates splitting the business logic into granual, re-usable functions by applying a middleware pattern.
+It simplifies naming and reduces noise by letting you access action r…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Nodejs And Express CRUD</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/moreno8423/nodejs-and-express-crud-2g8j">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(15 min)</span>
+                    <span>Now we are going to learn how to create a Nodejs and express CRUD application. A CRUD application is the simplest web  application that we can create. The term CRUD comes from  &quot;Create,&quot; &quot;Read,&quot; &quot;Update&quot;, and &quot;Delete.&quot;  We create CRUDs Applications using the HTTP Verbs. In this tutorial we are also going to learn how to connect and use  a MongoDB Database in a Nodejs application. In this tutorial we assume that you have some JavaScript knowledge. We also assume that you have read something about MongoDB. You can take this tutorial as a second part for our Nodejs and Express Tutorial. Now let us start learning.
+In this tutorial we are going to build the simplest Nodejs and express application. Applications like this serve as part of  more complex applications. The application will be a list…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Lenses: what they are and why you may want to use them ;)</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/itbhp/lenses-what-they-are-and-why-you-may-want-to-use-them--1op2">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(4 min)</span>
+                    <span>This is my first post here, and I hope you will enjoy it.
+I am a backend software engineer in N26, Barcelona office. In N26 we use kotlin and we build microservices, as you can imagine, to run the digital bank.
+We were working on a backoffice microservice, that somehow handled some data about our customers and exposed some endpoints to change them (like a CRUD but not exactly).
+So I cannot tell the problem using the same data because those are privileged, but I can explain the same problem using a simpler example.
+Suppose you have a model in your application to store information about a Person:
+data class Person(
+ val name: String, 
+ val address: Address
+)
+
+data class Address(
+ val streetName: String, 
+ val number: String, 
+ val city: String
+) 
+
+Now imagine you have an endpoint and so a do…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Publishing my package to NPM</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/tuanthanh2067/publishing-my-package-to-npm-4f22">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>Introduction
+
+
+Hello everyone, my name is Dustin. Today, I&#x27;d like to talk about my experience of publishing my static site generator to NPM. It&#x27;s quite a fun experience as I finally made my project up and running in public.
+I&#x27;ve used this as instruction to publish it to NPM.
+You can check it out here
+Because I already built my project for quite a long time so, I can skip most of the steps, and just focus on this step and some steps that help me understand the semantic versioning and dist-tags. 
+When I first start using command line npm publish to publish the project, I had to sign up and log in to NPM. But I encountered an error where it said something like this
+npm ERR! code E403
+npm ERR! 403 403 Forbidden - PUT https://registry.npmjs.org/cv-ssg - Forbidden
+npm ERR! 403 In most cases, you…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Which technologies would you choose for your next web project?</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/bjakyt/which-technologies-would-you-choose-for-your-next-web-project-3a4h">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>If you were building an application consisting of a user interface and an API, what technology choices would you make and why?
+I&#x27;ll go first.
+1. TypeScript
+2. React &amp; Next.js
+React is a battle-tested library for building UI&#x27;s. It has good documentation and a large community. There are so many components already implemented and ready to use, so you don&#x27;t have to build everything yourself.
+Next.js has been around for only a couple of years, but it is already one of the most popular tools in the React ecosystem. Next.js offers you so much out of the box. SSR, file-system-based routing, has the potential to improve metrics such as time-to-first-draw (TTFD) and so much more...
+3. PostgreSQL or MongoDB
+If I&#x27;d end up using PostgreSQL, I would choose Prisma as an ORM. Their API is very intuitive t…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">🧠 Thoughts - a self-hosted microblogging web app for teams and groups</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/kamesh_dev/thoughts-a-self-hosted-microblogging-web-app-for-teams-and-groups-39ja">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>🧠 Thoughts - a self-hosted microblogging web app for teams and groups
+
+
+
+Share your ideas, thoughts, and feelings. Let your team and group know what&#x27;s up.
+Lightweight, easy to use, and free.
+For startups 🚀, teams and groups.
+✍🏻 Share your thoughts, ideas, and feelings.
+🔔 Get notified when someone shares, comments, or likes your thoughts.
+💖 Like and share your view on others thoughts, ideas, and feelings.
+#️⃣ hashtags, mentions, and links.
+🧠 Share Ideas and get validated.
+✅ Polls and Forms.
+📝 Write your thoughts in Markdown as Blogs.
+💻 Node.js
+📦 Feathers.js
+📦 MongoDB
+🆚 vue.js
+⬇️ Download the latest release from GitHub
+📦 Run npm install to install dependencies
+🔌 Run the app with npm start
+
+
+
+
+  
+  
+  Follow
+
+
+
+👁 Watch and 💖 star this repo to get notified
+https://github.com/git-kamesh/thoughts</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Typescript generics for React developers</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/adevnadia/typescript-generics-for-react-developers-4lji">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(7 min)</span>
+                    <span>I don’t know about you, but I fall asleep every time I’m trying to read typescript documentation. There is something in the way it is written that signals to my brain that I should not even attempt to comprehend it until I had a good night’s sleep, three coffees, and ideally some chocolate to stimulate the brain cells. I think I now found my purpose for the next few months: I want to re-write typescript documentation in a way that is actually understandable by a casual reader 😊
+Let&#x27;s start with one of the pain points many developers are struggling with: generics! And we’re going to start with a bottom-up approach: let’s implement a component without generics, and introduce them only when we need them.
+Introducing: Judi 👩🏽‍💻. Judi is a very ambitious developer and wants to implement her…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">300+ Nodejs Projects for Beginners – Easy Ideas to Get Started Coding Nodejs [Beginners - Advance]</summary>
@@ -244,8 +586,65 @@ Did you find some differences between SDKs and runtimes, other than the paths? T
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.iplaysoft.com">异次元软件世界</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">仅限今天！亚马逊群晖、硬盘、固态、NAS 黑五降价！列表整理</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.iplaysoft.com/news/5606">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>随着国外的「黑色星期五大促」正式开启之后，陆续出现了不少超值的软件和商品神价，比如 SetApp、Oculus Quest2，以及很快就卖断货的三星 2TB 固态了。
+
+亚马逊硬盘 NAS 专场仅限今天 1 天！仅限 1 天！仅限 1 天
+更多黑五软件数码优惠汇总
+而今天 (仅限 1 天) 闪购，亚马逊专门推出了一批「硬盘」、「NAS…… 
+「 前往查看原文.... 」
+
+异次元正版数字商城  |  异次元首页  |  微信公众号  |  iPcFun  |  关注微博  |  软件精选</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://www.appinn.com">小众软件</a></h3>
           <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Windows 11 企业版虚拟机镜像文件下载地址，支持 VMWare、Hyper-V、VirtualBox、Parallels</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.appinn.com/windows-11-enterprise-vm-iso-download/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>微软发布了针对 4 款主流虚拟机程序的 Windows 11 企业版镜像，包括虚拟机：VMWare、Hyper-V、VirtualBox 和 Parallels。@Appinn 本次镜像为评估版，将于</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">1876 个产品，23 个品类，亚马逊黑五大促 Excel 表格下载</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.appinn.com/amazon-list-2021-d/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>是的，还是那个亚马逊小哥，一股脑发来了 1876 个产品的 Excel 表格，青小蛙看的头都大了，感觉直接放出来…大家一起头大吧。 对了，可以直接预览： 熟悉 Excel 的同学，可以在预</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">亚马逊黑五：群晖、QNAP、西部数据、东芝硬盘特价</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.appinn.com/amazon-2021-black-friday-hdd-nas/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(4 min)</span>
+                    <span>黑五就要来了，亚马逊小哥给青小蛙发来了只此一天（售完为止）的 NAS、硬盘专场，20多件特价商品，一起来看看。 NAS 专区 QNAP TS-230 2 盘位 QNAP TS-230 2-Bay Re</span>
+                  </div>
+                </a>
+              </details>
+            </article>
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">Ting – 将微信公众号文章转为音频，帮你读出来，听文章[iPhone]</summary>
@@ -261,8 +660,344 @@ Did you find some differences between SDKs and runtimes, other than the paths? T
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.baeldung.com">Baeldung</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Quarkus Bean Discovery With Jandex Indexing</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://feeds.feedblitz.com/~/673657580/0/baeldung~Quarkus-Bean-Discovery-With-Jandex-Indexing">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>In this article, we&#x27;ll learn the difference between bean discovery in Quarkus and classic Jakarta EE environments.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Java Weekly, Issue 413</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://feeds.feedblitz.com/~/673643236/0/baeldung~Java-Weekly-Issue">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Java bridger, GC improvements in Java, Kotlin 1.6, native images, hashing in Java, full-stack Spring Boot, and K8S operators!</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Difference Between Gradle Test and Check</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://feeds.feedblitz.com/~/673641288/0/baeldung~Difference-Between-Gradle-Test-and-Check">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Learn the difference between the Gradle test and check tasks and identify exactly what each one does and when it makes sense to use them</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://hn.buzzing.cc">Hacker News 热门</a></h3>
           <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">B.1.1.529</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29344274">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>B.1.1.529</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">严重变异的冠状病毒变体让科学家们提高了警惕</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29345194">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>严重变异的冠状病毒变体让科学家们提高了警惕</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Gov.uk的一个专门的色情网站？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29343025">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Gov.uk的一个专门的色情网站？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">PHP 8.1.0 发布公告</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29343773">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>PHP 8.1.0 发布公告</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">为什么1949年的烤面包机仍然比今天出售的任何烤面包机更聪明？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29342936">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>为什么1949年的烤面包机仍然比今天出售的任何烤面包机更聪明？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">抽象的Clojure</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29341400">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>抽象的Clojure</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Ask HN: 为什么机器学习比基本社交技能更容易学习？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29339776">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Ask HN: 为什么机器学习比基本社交技能更容易学习？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Emacs附带的电池</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29342176">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Emacs附带的电池</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">吉姆-沃伦已经去世</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29339200">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>吉姆-沃伦已经去世</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">彭帅对一党统治的启示</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29342833">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>彭帅对一党统治的启示</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">鱼壳是惊人的</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29341390">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>鱼壳是惊人的</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">购买电动自行车</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29337902">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>购买电动自行车</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">现代PHP小抄</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29339814">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>现代PHP小抄</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">德国新政府呼吁欧洲禁止生物识别大规模监控</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29342198">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>德国新政府呼吁欧洲禁止生物识别大规模监控</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">台积电 &quot;苹果优先 &quot;的3纳米政策导致AMD和高通叛变</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29341113">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>台积电 &quot;苹果优先 &quot;的3纳米政策导致AMD和高通叛变</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">沃尔玛撤下用波兰语说脏话和唱可卡因的儿童玩具</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29340572">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>沃尔玛撤下用波兰语说脏话和唱可卡因的儿童玩具</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">JavaScript引擎如何实现出色的性能</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29327573">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>JavaScript引擎如何实现出色的性能</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">被低估的感恩的理由</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29341055">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>被低估的感恩的理由</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Nvidia发布Paint me Picture - GauGAN2的网络应用程序</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29337722">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Nvidia发布Paint me Picture - GauGAN2的网络应用程序</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">插头和插座博物馆</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29338026">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>插头和插座博物馆</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">LetsEncrypt的证书发行被叫停</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29338965">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>LetsEncrypt的证书发行被叫停</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">赞美闲暇》(1932)</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29338666">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>赞美闲暇》(1932)</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">FarPlay。互联网上的低延迟音频</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29336759">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>FarPlay。互联网上的低延迟音频</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">OpenLGTV。LG电视固件的合法反向工程和研究</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29338658">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>OpenLGTV。LG电视固件的合法反向工程和研究</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">3-2-1备份规则--为什么你的数据总能生存下去（2019年）</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29333351">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>3-2-1备份规则--为什么你的数据总能生存下去（2019年）</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">告诉HN：大家感恩节快乐</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29338155">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>告诉HN：大家感恩节快乐</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Ask HN: 我想雇佣一名个人/行政助理--有什么技巧或建议吗？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29336234">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Ask HN: 我想雇佣一名个人/行政助理--有什么技巧或建议吗？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">两名挪威记者在采访卡塔尔世界杯经理后被捕</summary>
@@ -337,6 +1072,127 @@ Did you find some differences between SDKs and runtimes, other than the paths? T
           <section class="articles-per-source">
             <article>
               <details class="article-expander">
+                <summary class="article-expander__title">为了捕捉令人惊叹的镜头</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/therewasanattempt/comments/r1r61s/to_capture_a_stunning_footage/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>为了捕捉令人惊叹的镜头</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">第四只猪</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/funny/comments/r1z0iu/the_fourth_pig/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>第四只猪</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">沃里克城堡的下层地牢。这是一个&#x27;oubliette&#x27;，囚犯被丢在那里，被遗忘在那里。</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/r1m7tq/the_lower_dungeon_of_warwick_castle_its_an/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>沃里克城堡的下层地牢。这是一个&#x27;oubliette&#x27;，囚犯被丢在那里，被遗忘在那里。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">印度妻子接受陈规定型观念，&quot;帮助 &quot;丈夫打游戏</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/funny/comments/r19i2m/indian_wife_embraces_stereotypes_to_help_husband/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>印度妻子接受陈规定型观念，&quot;帮助 &quot;丈夫打游戏</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">感谢正义!</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/r1c9ef/thankful_for_justice/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>感谢正义!</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">如果《朋友》今天播出了。</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/funny/comments/r1d3o0/if_friends_aired_today/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>如果《朋友》今天播出了。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">徐霞客是中国的综合格斗选手，在大陆各地打拼，揭露假功夫的高手。</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/r1eamh/xu_xiadong_is_a_chinese_mma_fighter_who_fought/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>徐霞客是中国的综合格斗选手，在大陆各地打拼，揭露假功夫的高手。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">梅拉尼娅-特朗普在唐纳德-特朗普的烤肉会上露出真诚的笑容</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/pics/comments/r1juhs/melania_trump_with_a_genuine_smile_at_donald/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>梅拉尼娅-特朗普在唐纳德-特朗普的烤肉会上露出真诚的笑容</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">活鱼承载装置</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/r1ce0u/live_fish_carrier_device/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>活鱼承载装置</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">汽油价格...</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/memes/comments/r12jse/gas_prices/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>汽油价格...</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">大声点说吧!</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/MurderedByWords/comments/r15bbr/say_it_louder/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>大声点说吧!</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
                 <summary class="article-expander__title">是时候了</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/Unexpected/comments/r13pu1/its_time/">
                   <div class="article-summary-box-inner">
@@ -374,6 +1230,67 @@ Did you find some differences between SDKs and runtimes, other than the paths? T
         <section>
           <h3 class="source-name"><a class="source-name__link" href="https://sspai.com">少数派</a></h3>
           <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">新玩意 086｜少数派的编辑们最近买了啥？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://sspai.com/post/70133">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>关于栏目
+很多读者都会好奇少数派的编辑们到底平时都「买了啥」。我们希望通过「编辑部的新玩意」介绍编辑部成员们最近在用的新奇产品，让他们自己来谈谈这些新玩意的使用体验究竟如何。
+内容声明：《新玩意》栏目如含有商务内容，将会在对应条目标注「广告」；来源为「厂商送测」的产品并无内容干涉。
+
+@北鸮：华硕 ROG 游侠 RX 光学机械键盘
+
+购买渠道：淘宝自购
+入手价格：649 元
+
+和手感显在、特点鲜明的段落轴相比，线性轴体之间的手感差异就非常微妙了。除去按键时能直接感受到的压力克数的差别，线性轴的手感差异还体现在弹簧回弹速度（一定程度上决定了轴体是否「跟手」）、轴心稳定性（影响按在边角处的力度变化）、材质和模具精度（会影响轴体的声音与顺滑程度）等等。我自己很爱线性轴，一直希望用上一个压力克数不高、高速回弹、轴心稳定性极好、还能超级顺滑的轴体——其实我也没这么龟毛，是个线性轴我就能用，但之前能最接近我个人所有手感需求的轴体，只有我自己换了更轻的双段弹簧、全面润滑的、新换完模具的樱桃黑轴。我自己都嫌麻烦，这么折腾出来够拼一把键盘的轴就给我累个够呛，发誓再也不弄了。
+之所以看上这把 ROG 的光轴键盘，是因为它搭载的 RX 光轴在许多个键盘评测视频里被称作「最强量产线性轴」，作为一个线性轴爱好者，我一直盯着它却不忍心下手。一号那天，ABS 键帽版的游侠 RX 突然从 899 降到了 599，新的 PBT 键帽版本也只要 699 元（我找到的 649 价格已经卖没了）——光这套替换键帽本身就要 200 块，看见这个价格，我想都没想，直接下单。
+超长的左 Ctrl 是主要特征
+朋友们，到手试机的一瞬间，我就明白之前 ROG 那只大眼睛收来的税都用来干吗了。
+ROG 自研的 RX 光轴用了火山口的结构，中置 LED，这样的结构上次见到还是在被我喷得狗血淋头的罗技自研的 Romer-G。Ro…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">黑五大促哪些硬件值得买，我们帮你准备了这份清单</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://sspai.com/post/70130">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>随着感恩节而来的，就是黑色星期五了。这被等同于「海外双十一」的购物节即将来临，不知道你海淘的心有没有荡漾起来？我们挑选了一些数字生活圈子里面一些叫得上名字的东西，看看它们在黑五期间有怎样的折扣和优惠～
+智能手机
+Google Pixel
+Google Pixel 近年以来的热度可以说是只增不减，从它在少数派新玩意栏目的出现频率，已经是可见一斑了。凭借 Google 神一般的优化，Google Pixel 利用并非出色的硬件达到了相当令人满意的流畅度与智能体验，同时整体的机身设计也常常是令人称赞。当然了，整个 Pixel 系列的拍照表现也一直是手机摄影界个中翘楚，而且大陆也没得买，所以 Google Pixel 也成为了海淘手机时很多人的首选。
+Pixel 6
+
+Pixel 6 尽管上市不久，但是其亚马逊海外购的价格已经开始下降。如今，128 GB 版本的黑色 Pixel 6 在 亚马逊海外购 已经是 4329.17 元的价格（预估税费为 399.29 元），从英国发货。除了发货时间比较长（1-2 个月）之外，这个价格本身已经是比较合适的价格了。Google Pixel 6 采用 Google 自研的 Tensor 处理器，尽管在实际性能上可能比不过 Snapdragon 888，但是在 Google 的调教下，Android 12 的流畅度是自不用说的。
+Pixel 5a
+
+Pixel 5a 本身相对于 5G 版 Pixel 4a 的升级并不大：高通骁龙 765G、6GB RAM，在流畅使用上基本不会有什么问题，主要在续航上有了不小的改进。如今在 Google Store，黑五折扣的情况下，Pixel 5a 的价格还下调了 50 美元，来到了 399 美元；但是需要找到靠谱的转运才能够购买。在 亚马逊海外购 上，Pixel 5a 的价格是 3720 元（预估税费为 372.…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">在争议声中更新的老牌密码管理工具，1Password 8 值得关注的新变化</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://sspai.com/post/70123">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>1Password 在少数派绝对算得上是一个「多数派」。作为一款 2006 年发家于 macOS 平台的密码管理应用，可以说是引领着同类应用发展的「老大哥」。然而这位德高望重的老大哥却在今年「翻车」了，如果你还不清楚前因后果，可以 点击此处 了解。
+在这样沸沸扬扬的争议声中测试了半年，开发团队终于正式发布全新的 1Password 8 版本（8.4.0），不知是亟待 Windows 用户认可，还是 Electron 框架真的高效，首次面向大众的竟然是 Windows 版本（macOS 现在处于 公开测试阶段）。怎么说也是三年磨一剑的大版本更新，不如让我们将主观印象先放一边，来看看 1Password 8 到底带来了哪些变化。
+界面风格统一，更活泼多彩的外观设计
+以往应用评测都会把不同平台区分清楚，以免造成混淆，但由于 1Password 8 统一使用 Electron 编写 UI，Windows 版和 macOS 版几乎是从一个模子里刻出来。除了窗口三键位置默认不同，以及 Windows 版将 macOS 版集成在系统菜单栏中的功能移到了左侧栏右上角的「…」中，其他 UI 设计和交互逻辑不能说十分相似，只能说完全一致。想想自己一篇评测能当两篇用，忽然理解 AgileBits 为什么死磕 Electron 了（并不是）。
+开发者介绍文档从「全新」的锁屏开始，那我们就如他所愿。1Password 8 锁屏将 7.X 上下打开的解锁动画改回了更早的左右开启，并增加了用户头像，以后与你密切相关的不再是各种「独立库」，而是绑定订阅账号，从这个界面似乎就能读出开发者的更新方向。
+
+解锁后的主界面，新版依旧保留了三栏设计，最左侧是分类目录和管理项，第二栏是项目清单，第三栏则是具体的项目数据和功能服务。新版相较于此前布局更宽松，清扫了一些划分空间的线条，还加入各种彩色小图标，尤其是「新建项…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">思想史博士的厚积薄发之路：我的阅读与笔记方法分享</summary>
@@ -1207,6 +2124,711 @@ Sendung im ZDF angesehen.[...]</span>
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(3 min)</span>
                     <span>Why I left Yahoo!</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.xda-developers.com">xda-developers</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">The LG A1 Series 55-inch Smart TV can be your first OLED TV for under $1100</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/lg-a1-oled-tv-black-friday-deal/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>If you’ve been waiting to buy a new TV, there’s no better time to do so than during Black Friday sales. You get a variety of products to choose from with big discounts which means you can pick up a premium product at a lower than usual price. The LG A1 Series 55-inch TV is
+The post The LG A1 Series 55-inch Smart TV can be your first OLED TV for under $1100 appeared first on xda-developers.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Beats Studio Buds now on sale for $100 ($50 off)</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/beats-studio-buds-sale-100-black-friday/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>Apple-owned Beats launched the Beats Studio Buds in June this year for $149.95, packing features like active noise canceling, Fast Pair support, and transparency mode. They also have an IPX4 rating for sweat and water resistance, and an advertised battery life of 24-hours when including the case. They differ from AirPods as they incorporate a
+The post Beats Studio Buds now on sale for $100 ($50 off) appeared first on xda-developers.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Track your stress, sleep, heart rate, and more with the Fitbit Luxe for just $100</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/fitbit-luxe-deal-november-2021/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>Black Friday is upon us, and Fitbit already has some tempting deals! The Fitbit Luxe is currently on sale for $100 only — that’s $50 off its usual price. This wearable helps you manage your stress, monitor your heart rate, and track your sleep. It has a fancy, slim design — inspired by jewelry —
+The post Track your stress, sleep, heart rate, and more with the Fitbit Luxe for just $100 appeared first on xda-developers.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Upcoming Chromebooks may offer snoop detection to protect your work from prying eyes</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/future-chromebook-snoop-protection/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>Back in September, we learned that Google was working on a “Human Presence Sensor” for future Chromebooks. At the time, we speculated that the sensor could be used to offer Windows Hello-like human detection feature and face detection. Now a new report has shed more light on how future Chromebooks may utilize this sensor. According
+The post Upcoming Chromebooks may offer snoop detection to protect your work from prying eyes appeared first on xda-developers.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Dell’s beastly Alienware x15 is a fantastic gaming laptop for just $1,900</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/dell-alienware-x15-black-friday-1900/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>If you’re looking for a new gaming rig this Black Friday, Dell’s discount on the Alienware x15 makes it one of the very best laptops you can get right now. This model, powered by an Intel Core i7-11800H, NVIDIA GeForce RTX 3060 graphics, and 16GB of RAM has an official MSRP of $2,580, but right
+The post Dell’s beastly Alienware x15 is a fantastic gaming laptop for just $1,900 appeared first on xda-developers.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">The Samsung Galaxy Tab S7 can now be yours for just $499</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/samsung-galaxy-tab-s7-black-friday-deal/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>Good Android tablets are hard to come by. There are very limited options in the market from selected brands like Samsung and Lenovo so the iPad becomes an obvious choice for a lot of folks looking for a good tablet. However, Samsung does make some nice tablets, especially in the flagship segment. The Galaxy Tab
+The post The Samsung Galaxy Tab S7 can now be yours for just $499 appeared first on xda-developers.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Want to watch TV outdoors? Samsung’s 65″ The Terrace 4K QLED TV with IP55 rating is available for $8,000 this Black Friday</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/samsung-65-the-terrace-4k-qled-tv-black-friday-sale/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>Black Friday sales are already here on Thanksgiving, and you can get some great deals on TVs too. For most people, watching TV is an indoor activity, done within the comfort of the living room or bedroom. But what if you wanted to watch TV when you are in your jacuzzi? What if you wanted
+The post Want to watch TV outdoors? Samsung’s 65″ The Terrace 4K QLED TV with IP55 rating is available for $8,000 this Black Friday appeared first on xda-developers.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Grab the 2021 Amazon Fire HD 10 tablet for a mere $75 (and sideload Google Play Store on it later)</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/amazon-fire-hd-10-tablet-deal-november-2021/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>Tablets are great devices for media consumption, studying remotely, reading news and ebooks, and more. What’s better than a tablet is an affordable tablet — and we have one in mind for you! Amazon’s Black Friday deals are live, and you can grab a 2021 Fire HD 10 tablet for a mere $75. That’s a 50%
+The post Grab the 2021 Amazon Fire HD 10 tablet for a mere $75 (and sideload Google Play Store on it later) appeared first on xda-developers.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Save $150 on the Magic Keyboard for your 12.9-inch iPad Pro</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/apple-magic-keyboard-black-friday-deal/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>The iPad Pro is undoubtedly one of the most powerful tablets out there. It’s a portable powerhouse that can be used to perform intensive tasks as well as a media consumption device that can keep you entertained while you’re traveling. Apple calls it a computer so if you want to get some serious work done,
+The post Save $150 on the Magic Keyboard for your 12.9-inch iPad Pro appeared first on xda-developers.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">The Acer Swift 5 is down to $999 at Amazon ahead of Black Friday</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/acer-swift-5-999-black-friday/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>Black Friday isn’t here just yet, but Acer is already running a pretty sweet deal on its Swift 5 laptop over at Amazon. The top-tier configuration of this laptop, including a Full HD touchscreen, Intel Core i7 processor, and 16GB of RAM, is now available for $999, which is a solid $301 less than its
+The post The Acer Swift 5 is down to $999 at Amazon ahead of Black Friday appeared first on xda-developers.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">The TCL 10L is a good entry-level smartphone for just $150</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/tcl-10l-black-friday-deal/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>Black Friday is almost here and we already have a slew of deals from major online retailers. If you’re a consumer looking to buy just about anything, this is your best opportunity! We’ve accumulated all the best smartphone and accessory deals, the best TV deals, and the best PC and gaming deals for you to
+The post The TCL 10L is a good entry-level smartphone for just $150 appeared first on xda-developers.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Save up to $100 and document your next adventure with these GoPro cameras</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/gopro-cameras-deal-november-2021/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>Life is starting to return to normal-ish in some part of the world, and new adventures are ahead of us. GoPro — the company known for its durable action cameras — already has some live Black Friday deals. If you’re looking to buy something of the sort, you’re in luck! The HERO9 and HERO10 (includes a
+The post Save up to $100 and document your next adventure with these GoPro cameras appeared first on xda-developers.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">OPPO’s new Reno 7 lineup features iPhone 13-like boxy design, MediaTek 1200-Max chipset and up to 65W fast charging</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/oppo-reno-7-launch/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(4 min)</span>
+                    <span>After weeks of leaks and teasing, OPPO today finally unveiled the new Reno 7 series, featuring the Reno 7, Reno 7 Pro, and Reno 7 SE. All three phones are launching first in China, with the international launch likely coming early next year. OPPO Reno 7 series: Specifications Specifications Reno 7 Pro Reno 7 Reno
+The post OPPO’s new Reno 7 lineup features iPhone 13-like boxy design, MediaTek 1200-Max chipset and up to 65W fast charging appeared first on xda-developers.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Motorola has up to $600 off on its smartphones for Black Friday</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/motorola-smartphone-deals-black-friday/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(4 min)</span>
+                    <span>Black Friday sale season is well and truly upon us, even though we’re still on Thanksgiving Thursday. Sales have begun, and we are seeing some incredible discounts on products all through. If you’re looking to pick up a smartphone for yourself, and you want to stick to the affordable and value purchases, Motorola has some
+The post Motorola has up to $600 off on its smartphones for Black Friday appeared first on xda-developers.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">The entire Fossil Gen 6 smartwatch lineup is $90 off on Amazon right now</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/fossil-gen-6-smartwatch-90-off-amazon-black-friday/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>In August this year, Fossil launched its latest lineup of Wear OS smartwatches — Fossil Gen 6. The new smartwatches launched with Qualcomm’s Snapdragon Wear 4100+ SoC, 1GB RAM, 8GB storage, and a 1.28-inch AMOLED display at a starting price of $299 for the 42mm variants and $319 for the 44mm variants. Today, the entire
+The post The entire Fossil Gen 6 smartwatch lineup is $90 off on Amazon right now appeared first on xda-developers.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Make your home smarter with Google’s Nest Hub 2nd Gen for just $50</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/google-nest-hub-black-friday-deal/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>Smart speakers have become quite popular recently. This is because they serve two important purposes — you can use them as a speaker to listen to songs or hook them up with your TV or existing audio devices for an improved experience. And of course, they come with a built-in assistant to answer your queries
+The post Make your home smarter with Google’s Nest Hub 2nd Gen for just $50 appeared first on xda-developers.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Material You’s monet theme engine is the big highlight of Android 12, and here’s how it works</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/material-you-monet-theme-engine/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(6 min)</span>
+                    <span>By far the biggest change in Android 12 is Material You, the latest version of Google’s Material design language. Material You, as Google describes, “seeks to create designs that are personal for every style, accessible for every need, alive and adaptive for every screen.” When developing Android 12, Google created a new theme engine code-named “monet”
+The post Material You’s monet theme engine is the big highlight of Android 12, and here’s how it works appeared first on xda-developers.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Lay back and relax as the Roomba 692 vacuums your house for $199 only</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/irobot-roomba-692-deal-november-2021/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>It’s Thanksgiving Eve, the guests have left, and you’re lazily sitting on the couch staring at the mess you have to start cleaning — eventually. If only there was someone — or something — out there to collect those pie crumbs sitting on the floor, as you wind down. Well, we have some good news
+The post Lay back and relax as the Roomba 692 vacuums your house for $199 only appeared first on xda-developers.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Upgrade your PS5 with these compatible SSDs, now with Black Friday discounts</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/ps5-compatible-ssd-black-friday-sale/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>It’s time for PlayStation 5 owners to rejoice as there are some great Black Friday deals on PS5 compatible M.2 solid-state drives (SDDs). The PS5 compatible PCIe 4.0 SSDs usually carry an expensive price tag, which is why we think this is one of the best times to grab them at a discounted price. In
+The post Upgrade your PS5 with these compatible SSDs, now with Black Friday discounts appeared first on xda-developers.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">OnePlus rolls out November 2021 security update to the OnePlus 9 series and Nord N200</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/oneplus-9-nord-n200-november-2021-update/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>Two weeks ago, OnePlus rolled out OxygenOS 12 Open Beta 2 for the OnePlus 9 and OnePlus 9 Pro. The second Android 12 beta release brought several improvements, including system optimization, improved camera, and November 2021 security patches. While we don’t know then the stable Android 12 will be out, OnePlus is rolling out a
+The post OnePlus rolls out November 2021 security update to the OnePlus 9 series and Nord N200 appeared first on xda-developers.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="http://www.zhihu.com">知乎每日精选</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">动画《新秦时明月》开播，你感觉如何？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="http://www.zhihu.com/question/501068047/answer/2242508940?utm_campaign&#x3D;rss&amp;utm_medium&#x3D;rss&amp;utm_source&#x3D;rss&amp;utm_content&#x3D;title">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>大家好，我是沈乐平导演。今天我们《新秦时明月之百步飞剑》正式上线了，今天正好是感恩节，在此首先感恩大家的关注，也和大家做一番交流。很多人关心，我们为什么会在这个时间点推出《秦时明月》的十五周年版？我想说，最主要的原因正是感恩和回馈。
+熟悉秦时明月和玄机的观众都知道，这次的秦时明月十五周年版其实已经是秦时明月第一部的第二次重制。百步飞剑到目前已有三个版本。每一次的重制，我们都将其当作对长久支持我们的观众和粉丝的一份礼物和回馈。
+
+
+其中一个很重要的原因，是我们发现很多月饼不仅自己会经常回顾这部作品，也会向身边的朋友推荐这部曾带给他感动和启发的作品；但确实15年前制作这部动画的技术，从模型的精度甚至到画面的比例，和今天比已不可同日而语。所以这次的秦时明月十五周年版，我们用现在所掌握的最新技术进行了全面优化，以期给大家呈现全新的面貌。通过这些版本的比较，相信大家也能看出玄机在大家支持、鼓励和鞭策下，不断前进，努力做更好的自己。
+
+秦时明月对于玄机的意义是非凡的。应该说玄机在行业中很长一段时间属于比较独特的公司——整整十年时间只做一部作品秦时明月。这一方面是因为行业发展和团队发展的阶段性；但另一方面，通过这样一段时间的沉淀和团队经验累积，我们也更深刻的理解“十年磨一剑”这句话的意义。我们觉得自己很幸运，能够在15周年的时候，有机会和能力再一次重新打磨这部作品。大家可以看到，这部作品相比原来的版本是一个脱胎换骨的升级——从每一个道具、场景的模型，每一个分镜还有动画，包括光影的处理，实际上都是全新的制作。
+
+十五周年版我们内部专门成立了一个极致动画部，主要聚焦动画的表现，如口型、表情、布料物理运算的提升。十五周年版加强的并不是我们已经受肯定较多的场景、建模和光影特效等方面，主要加强的是角色表演的生动性、细腻度和流畅性。这三方面其实不仅仅在角色，更是一个全方位的体现，比如场景，大家可以看…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://youtube.buzzing.cc">Youtube 热门</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">&quot;南方公园&quot;。后科维德 &quot;预览</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/M19gImHO754">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Things get nuts on SOUTH PARK: POST COVID. The exclusive event is now streaming in the US and Canada on Paramount+. Start your free 30-day trial with coupon code SOUTHPARK at checkout: https://cart.mn/paramountplus
+
+Subscribe to South Park: https://www.youtube.com/channel/UC7R27sAWc_DqOldtI1JcYhQ?sub_confirmation&#x3D;1 
+
+Watch more South Park: https://www.youtube.com/southpark 
+
+About South Park: South Park is the Emmy and Peabody-award winning animated series co-created by Trey Parker and Matt Stone about four boys living in one screwed-up Colorado mountain town. Between local and global tragedies, as well as parental and celebrity interference, Kyle, Stan, Cartman, and Kenny manage to have themselves a time. 
+
+Watch full episodes of South Park: https://cart.mn/episodes 
+
+Shop official South Park merch: https://cart.mn/shop 
+
+Follow South Park: 
+Instagram: https://www.instagram.com/southpark 
+Twitter: https://twitter.com/southpark 
+Facebook: https://www.facebook.com/southpark 
+
+#SouthPark #SouthParkPostCovid</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">采访中，Yo Gotti对Young Dolph开枪的反应。</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/ixq4iC0lC3E">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Yo Gotti Reaction To Young Dolph Shooting (Interview)
+
+MORE VIDEOS RELATED:
+An Inside Look At Tekashi 6ix9ine’s Life Behind Bars..
+https://www.youtube.com/watch?v&#x3D;dYUF7tN1xvY
+WHEN RAPPERS AUTO-TUNE STOPS WORKING... (Lil Uzi Vert, Quavo, Travis Scott, Lil Yachty &amp; MORE!)
+https://www.youtube.com/watch?v&#x3D;44yofLp3lY4
+7 Rappers Who Completely Let Themselves Go... (Lil Pump, 6ix9ine, Cardi B &amp; MORE!)
+https://www.youtube.com/watch?v&#x3D;OO54N9hJArI
+5 Rappers You Didn&#x27;t Know Were Related! (Playboi Carti, Aminé, Migos &amp; MORE!)
+https://www.youtube.com/watch?v&#x3D;25xyD3lO66o
+
+RAP CENTRAL is your number one spot for hip hop rumors, gossip, and more!
+Make sure you subscribe for more!
+
+FAIR USE DISCLAIMER:
+This channel follows the Fair Use Guidelines in United States. Video clips and images are transformed and edited in a way that&#x27;s different from the original work. Any claims or false takedowns will be proscuted in the legal courts of United States and State of Florida.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">我的克莱尔的穿孔是如何被感染的...😐</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/QCrCl3za2Qo">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>我的克莱尔的穿孔是如何被感染的...😐</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">AMP BRO代码</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/TTJXkYaVPyM">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Thank you to the Ghostbusters: Afterlife ScARe app for sponsoring this video. Click this link to download the game if you&#x27;re on a mobile device: https://kr8.la/9QlhXr 
+
+Join this channel to get access to perks:
+https://www.youtube.com/channel/UCJbYdyufHR-cxOuY96KIoqA/join
+
+AMP AMP AMP AMP
+💜 Join the AMP SQUAD on Discord: https://discord.gg/zMeuncfUc8
+📸: Follow us on Instagram: https://www.instagram.com/ampexclusive/
+🦅: Follow us on Twitter: https://twitter.com/ampexclusive
+
+⚡️⚡️AMP⚡️⚡️
+
+⚡️Fanum aka JustFanum
+🎥 https://www.youtube.com/channel/UCJ-rK_vd0Pw3J8kOjfW_m8g
+📸 https://www.instagram.com/elfanum/
+🦅 https://twitter.com/FanumTV
+
+⚡️Duke aka Duke Dennis
+🎥 https://www.youtube.com/channel/UCspFcBk0XKaSJjZccJkPqnQ
+📸 https://www.instagram.com/duke_dennis/
+🦅 https://twitter.com/ImDukeDennis
+
+⚡️Agent aka Agent 00
+🎥 https://www.youtube.com/user/CallMeAgent00
+📸 https://www.instagram.com/callmeagentzero/
+🦅 https://twitter.com/CallMeAgent00
+
+⚡️Davis aka ImDavisss
+🎥  https://www.youtube.com/channel/UCNLgp2Ewml3Gp5fT4uh3raw
+📸 https://www.instagram.com/imdavisssyt/
+🦅 https://twitter.com/imdavisss
+
+⚡️ Kai aka Kai Cenat
+🎥 https://www.youtube.com/user/cenat24
+📸 https://www.instagram.com/kai_cenattv/
+🦅 https://twitter.com/KaiCenat
+
+⚡️Chrisnxtdoor aka GOATED Editor
+🎥  https://www.youtube.com/channel/UCecIOBvj1k5dwh_WVtsE7kg/featured
+📸 https://www.instagram.com/chrisnxtdoor_/
+🦅 https://twitter.com/chrisnxtdoor_</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">终于把我们的孩子带回家了! *情绪化*</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/eNdJ7OTGl1Q">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>LEGALITIES/COPYRIGHT: All content published on and sent through this Youtube account is exclusive copyright material belonging to Riss &amp; Quan. No person may download, reproduce, distribute, publish, display, modify, make available or in any way exploit any such content. Legal action will be taken against anyone who violates these terms.
+
+We hope you guys enjoyed being apart of this journey with us! This was one of the most special days of our lives and we are happy to share with you all!</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">光环无限》是免费的，但我还是觉得被骗了</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/BW7EM9-upgA">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>gotta pay 20 bucks for the color white
+
+
+
+►zan clan meme merch
+https://crowdmade.com/collections/zanny
+►Kirin &amp; Miro shirts and hoodies
+https://projectorochi.com/collections/originals
+
+►My things
+Twitch: https://www.twitch.tv/theonlyzanman
+Twitter: https://twitter.com/TheOnlyZanny
+Xbox: Sir Zanny
+Subreddit: https://www.reddit.com/r/ZanClan/
+Destiny 2 Discord: https://discord.gg/kvQaGFHynq
+SWTOR Discord: https://discord.gg/v6g5vaG9qn
+
+►Music used
+Halo Infinite OST - Main Theme https://www.youtube.com/watch?v&#x3D;CQ4UT7KV71o
+
+Doom Eternal OST - The Only Thing they Fear is You by Mick Gordon https://www.youtube.com/watch?v&#x3D;T12ygsp9Mvg
+
+Storybook (Prod. by Lukrembo) - https://youtu.be/t7CE-lIUE8U
+
+Classical Piano by Liborio Conti https://www.youtube.com/watch?v&#x3D;YQsPGqKJ0pA
+
+Circus by CFmusic - https://www.youtube.com/watch?v&#x3D;pYtZzzowfuQ
+
+►Outro
+Music credits:
+Gorillaz - On Melancholy Hill (Cover) by Koji Kobura
+https://www.youtube.com/watch?v&#x3D;6wpbgujCuKQ
+Art credits:
+Knight walking puppies animation - https://www.instagram.com/bluescluesvevo/
+Medieval overgrowth - https://www.instagram.com/mdesgn099/
+Sitting with the pups - https://www.instagram.com/lazy__drawings/
+Dathomir - https://sin-scribbles.tumblr.com/
+Floating temple - https://www.instagram.com/titiknoda_/
+Alien fantasy - https://www.instagram.com/kyle_cochran_art/
+Medieval sunset - https://twitter.com/DainsArt
+White castle - https://www.instagram.com/fyctionv/</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">The Weeknd - Die For You (官方音乐视频)</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/uPD0QOGTmMI">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Official music video for The Weeknd “Die For You”, from Starboy available everywhere now: http://theweeknd.co/Starboy
+
+►Subscribe to The Weeknd on YouTube: http://theweeknd.co/subscribeYD
+
+►Get exclusive merch: https://shop.theweeknd.com
+
+►Follow The Weeknd: 
+https://www.theweeknd.com
+https://instagram.com/theweeknd 
+https://twitter.com/theweeknd 
+https://facebook.com/theweeknd
+https://snapchat.com/add/theweeknd
+https://tiktok.com/@theweeknd
+
+#TheWeeknd #DieForYou
+
+
+Music video by The Weeknd performing Die For You. © 2021 The Weeknd XO, Inc., Manufactured and Marketed by Republic Records, a Division of UMG Recordings, Inc.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">和我一起旅行｜新布揭晓！？首场时装秀，美食和更多</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/qz0d9cnm_eA">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Travel With Me To Washington D.C with Friends | Travel Vlog 
+
+Instagram: @dearra
+Twitter: @dearra
+TikTok: dearra</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">CM朋克和MJF：世界等待的时刻没有令人失望 | AEW Dynamite, 11/24/21</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/SPAAKVDDEUU">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>#AllEliteWrestling #AEWDynamite #AEWRampage
+
+Subscribe now and never miss a new video: 
+https://www.youtube.com/c/aew?sub_confirmation&#x3D;1
+
+AEW Dynamite airs every Wednesday night 8e/7c on TNT
+**AEW DYNAMITE MOVES TO TBS STARTING WED, JAN 5TH, 2022
+
+AEW Rampage airs every Friday night 10e/9c on TNT
+AEW Dark: Elevation airs every Monday at 7e/6c - youtube.com/AEW
+AEW Dark airs every Tuesday night 7e/6c - youtube.com/AEW
+
+How to watch Dynamite and Pay Per View events
+➡️  TNT - https://www.tntdrama.com/allelitewrestling
+➡️  FITE TV - https://www.fite.tv/channel/aew (For international fans only)
+➡️  Bleacher Report - https://www.BleacherReport.com
+
+Follow #AllEliteWrestling on all social media platforms
+➡️  https://www.Twitter.com/aew
+➡️  https://www.Twitter.com/AEWonTNT
+➡️  https://www.Facebook.com/allelitewrestling
+➡️  https://www.instagram.com/allelitewrestling
+➡️  https://www.instagram.com/AEWonTNT
+➡️  TikTok - AllEliteWrestling
+➡️  Snapchat - AEW
+
+Welcome to the All Elite Wrestling YouTube channel! Here you can find the latest highlights from AEW Dynamite and the latest episodes of AEW DARK. A world-class roster of diverse male and female wrestlers give you a new wrestling experience for the first time in 20 years. Featuring Cody &amp; Brandi Rhodes, The Young Bucks, Kenny Omega, Hangman Adam Page, Chris Jericho and Jon Moxley. Subscribe today so you don&#x27;t miss the latest videos from All Elite Wrestling!
+
+This video is AEW intellectual property. It is intended for only the private use of our audience.  No part of this show may be reproduced, broadcast or exhibited in any form or by any means without the consent of AEW.  It is also prohibited for users to generate revenue from the broadcast or exhibition by the user of any AEW content (including media scrums or other editorial materials) without the consent of AEW.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">如何成为一名水务影响者与Danny Gonzalez交流</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/HLxmls9J7t8">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Go to https://casetify.com/nickisnotgreen/ to save 15% off your order!
+
+Danny &amp; Nick go back to the influencer lifestyle and try to become a Water Sommelier.
+
+SUBSCRIBE TO THE LET&#x27;S PLAY CHANNEL: https://www.youtube.com/channel/UCm48V9P_cpk8ObO0BbGoFHQ
+SECOND CHANNEL: https://www.youtube.com/c/greenisnotnick
+HE SAID US?: https://www.youtube.com/c/HESAIDUS
+
+SUBSCRIBE TO DANNY HE ONLY HAS FIVE MILLION SUBS: https://www.youtube.com/channel/UCSUf5_EPEfl4zlBKZHkZdmw
+
+FOLLOW MARTIN RIESE:
+https://www.instagram.com/martinriese
+
+edited by: https://www.instagram.com/southernfriedwonton/
+
+my new music: https://linktr.ee/imdenton
+
+twitch: https://www.twitch.tv/nickisnotgreen​
+patreon: https://www.patreon.com/nickisnotgreen​
+instagram: https://www.instagram.com/nickisnotgreen​
+discord: https://discord.gg/jVCmkaPNUs
+twitter: https://www.twitter.com/nickisnotgreen​
+tiktok: https://www.tiktok.com/@nickisnotgreen?lang&#x3D;en
+
+everything else: https://linktr.ee/nickisnotgreen</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">我打开了价值1500美元的诈骗物品</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/OX1LUiuaAhk">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Check out part 1 HERE:
+https://youtu.be/srGyEhWmtGM
+
+Follow My Twitch: https://www.twitch.tv/cdawgva
+My Main YouTube: https://www.youtube.com/c/CDawgVA
+
+Twitter: http://bit.ly/2fG2i5n
+Facebook: https://www.facebook.com/CDawgVA/
+Discord: https://discord.gg/cdawgva
+Instagram: http://bit.ly/2g1IZWM
+
+Editor gang rise up!
+Mudan - https://twitter.com/MudanTV
+Luca - https://twitter.com/ValgardKvlt
+
+Amazon Affiliate Links (I Get Commission if used):
+My Audio Interface: https://amzn.to/2K8DlQX
+My Streaming Audio Interface: https://amzn.to/2Uqk412
+My Microphone: https://amzn.to/39AyB17
+My USB Budget Microphone Recommendation: https://amzn.to/2X5xaCQ
+My XLR Budget Microphone Recommendation: https://amzn.to/2YTA0sP
+My Camera: https://amzn.to/3nmnVbW
+My Lense: https://amzn.to/2Mft7Re
+My Tripod: https://amzn.to/2K6FvjX
+My Lighting: https://amzn.to/2EBox9A
+My Headset: https://amzn.to/3kublWr
+
+#CDawgVA #Wish #Chat</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Moneybagg Yo - Scorpio [官方音乐视频] 。</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/GChxzIwyNt4">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Moneybagg Yo&#x27;s new album out now: https://moneybaggyo.lnk.to/AGangstasPainReloaded
+
+Follow Moneybagg Yo:
+https://www.instagram.com/moneybaggyo/
+https://twitter.com/moneybaggyo
+https://www.facebook.com/moneybaggyo
+
+#MoneybaggYo #AGangstasPainReloaded #Scorpio
+
+Music video by Moneybagg Yo performing Scorpio. © 2021 N-Less Entertainment/Interscope Records
+
+http://vevo.ly/fwwtLe</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">45.6万美元的鱿鱼游戏在现实生活中！？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/0e3GPea1Tyg">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>MAKE SURE YOU WATCH UNTIL GLASS BRIDGE IT&#x27;S INSANE!
+Download Brawl Stars now and get a free gift from me in the game! http://supr.cl/mrbeast
+
+
+Thank you GoPro for supplying us with cameras to get some of these shots. You can get them here: https://prf.hn/l/6bNbQB3
+
+Shoutout to SOKRISPYMEDIA for helping with visuals!
+
+----------------------------------------------------------------
+follow all of these or i will kick you
+• Facebook - https://www.facebook.com/MrBeast6000/
+• Twitter - https://twitter.com/MrBeast
+•  Instagram - https://www.instagram.com/mrbeast
+--------------------------------------------------------------------</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">B-Lovee, G Herbo - My Everything (Part III) （官方音频）。</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/-4FtvGpPNrk">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Official audio for “My Everything (Pt. III)” by B-Lovee &amp; G Herbo
+ 
+Listen &amp; Download “My Everything (Pt. III)” out now: https://blovee.lnk.to/MyEverythingPtIII
+ 
+Amazon Music - https://blovee.lnk.to/MyEverythingPtIII/amazonmusic
+Apple Music - https://blovee.lnk.to/MyEverythingPtIII/applemusic
+Audiomack - https://blovee.lnk.to/MyEverythingPtIII/audiomack
+Deezer - https://blovee.lnk.to/MyEverythingPtIII/deezer
+iTunes - https://blovee.lnk.to/MyEverythingPtIII/itunes
+SoundCloud - https://blovee.lnk.to/MyEverythingPtIII/soundcloud
+Spotify - https://blovee.lnk.to/MyEverythingPtIII/spotify
+Tidal - https://blovee.lnk.to/MyEverythingPtIII/tidal
+YouTube Music - https://blovee.lnk.to/MyEverythingPtIII/youtubemusic
+ 
+Follow B-Lovee
+Instagram - https://www.instagram.com/blovee.1/
+Twitter - https://twitter.com/BLovee10
+TikTok - https://www.tiktok.com/@bloveecourtlandt
+ 
+Follow G Herbo
+Instagram - https://www.instagram.com/nolimitherbo/
+Twitter - https://twitter.com/gherbo
+TikTok - https://www.tiktok.com/@gherbo
+ 
+#BLovee #GHerbo #MyEverything</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">皮克斯停止让你的角色看起来像我</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/cHJ8uEE-Vvo">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Thanks to Raycon for sponsoring this video! Go to https://buyraycon.com/furiousfor up to 20% off your order! Brought to you by Raycon.</span>
                   </div>
                 </a>
               </details>
@@ -2686,6 +4308,55 @@ No.1 壹
         <section>
           <h3 class="source-name"><a class="source-name__link" href="https://youtube.buzzing.cc">Youtube 热门</a></h3>
           <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">POV每个人在撒谎时都会在手臂上留下印记，除了他。</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/qAGUAXfdlOw">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Follow me on IG for your daily dose of Ian! 🙌🏼 IG: https://www.instagram.com/ianboggz/
+
+Hey Ian Nation! What do you think is going to happen next? 👀 Subscribe for more!
+
+#Shorts​
+
+Subscribe to join the best community on here! ♡
+
+WHO AM I? 😄
+Hey friends, I&#x27;m Ian Boggs!!
+I&#x27;m a creative, actor, model &amp; writer. My goal is to being more creativity and joy into the world, one video, picture or movie at a time! ^_^
+#pov</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">现实生活中的乌贼游戏......但这只是女孩！！！&quot;。</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/z84NDl9eNXg">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>In today&#x27;s video we play squid games with an all star girls cast! Deniesse and I are game masters and host the first ever all girls squid game. We make them play red light green light, the cookie game, tug of war, the glass bridge and more. Major shout out to the girls that competed in the squid games. 
+
+Britt Hertz - @britthertz
+Chelsea Redmond - @managerchels
+Kacey Dirksen - @kaceydirksen 
+Kelsey Marie - @kelyseymarieedwards
+Antje - @awesomeantjay
+Babara - @barbiee_02
+Ivanita - @ivanitalomeli
+Ashley - @ashleynocera
+Savage Granny  - @rosssmith
+
+Mr Beast - https://www.youtube.com/watch?v&#x3D;ta3ltwuIgFo
+James Charles - https://www.youtube.com/watch?v&#x3D;SntSCzTv_ko
+Brent Rivera - https://www.youtube.com/watch?v&#x3D;6zO3PvMqZn8&amp;t&#x3D;298s
+Stokes Twins - https://www.youtube.com/watch?v&#x3D;S_cP_eesA-Y&amp;t&#x3D;213s
+B…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">Minecraft，但你可以制作无限宝石</summary>
@@ -7850,6 +9521,39 @@ one of the most popular Chrome, Firefox Extension is ColorZilla and it uses to p
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(2 min)</span>
                     <span>喵切 3.0 是一款非常有趣的 Windows 小工具，它是一只在屏幕顶部的猫咪，只需要用鼠标下拉猫咪，就能帮你快速切换桌面壁纸，非常简单有趣。另外还有晴天娃娃、圣诞树等几个形象。@Appinn 继在</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://juejin.im/android?sort&#x3D;monthly_hottest">掘金Android本月最热</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Android 基础架构组面试题  | 面试</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://juejin.cn/post/7032625978023084062">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>theme: smartblue
+水一篇
+这个应该是今年最后一篇文章了，卷累了打算明年在卷了。
+年中的时候帮部门招人，发现很多候选人对于我们部门还是很青睐的。也对鸡架部门做的事比较感兴趣，所以今天这篇水文主要就给大家梳理下基架的面试题以及基础架构组涉及的sdk相关。
+因为最近几年面试经常被人吊打，所以也有了总结面试题的习惯。之后加上之前帮候选人的面试总结，今天给大家再卷一波。
+也不是别的啥就是想要毛面试题的流量了呢。
+SDK相关
+面试的时候我觉得哦，这些sdk有任意其实你研究的比较深入就行了，应该能在面试中表现的很好了。还有就是个人建议最好还是在单一方向研究的更深入一点，别的只要大概知道干什么的就行了。
+配置中心以及灰度测试
+app必备工具之一，配置中心主要负责的就是动态化的配置，比如文本展示类似这些的。sdk提供方需要负责的是提供动态更新能力，这里有个差异化更新，只更新dif部分，还有就是流量优化等等需要开发同学考虑的。然后可以考虑下存储性能方面的提升等。
+而abtest也是app必备工具之一了，动态的下发实验策略，之后开发同学可以切换实验的页面。另外主要需要考虑灰度结果计算，分桶以及版本过滤白名单等等。这里只是一个简单的介绍不展开，因为我只是一个使用方。
+调试组件
+个人还是更推荐滴滴的Dokit，功能点比较多而且接入相对来说比较简单。而且提供了很多给开发同学定制的能力，可以在debug情况下增加很多业务相关的测试功能，方便测试同学，核心还是浮窗太方便了。
+当然很多实验性的预研功能等其实都可以直接接在这里，然后在测试环境下充分展开，之后在进行线上灰度方案。还有一些具有风险的hook操作，个人也比较建议放在debug组件上。
+性能监控框架
+这部分有几个不同的方面，首先是异常崩溃方面的，另外则是性能监控方面的，但是他们整体是划分在一起的，都属于线上性能监控体系的。
+Crash…</span>
                   </div>
                 </a>
               </details>
@@ -24261,263 +25965,6 @@ The post Google Play Store improvements are on the way for tablets, Chromebooks,
     <ul class="sources card">
       <li class="source">
         <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.appinn.com">小众软件</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">croc – 1 条命令，轻松、安全地传输文件，跨平台命令行工具</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.appinn.com/croc/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(3 min)</span>
-                    <span>croc 是一款 Go 语言便携的命令行工具，它能够轻松、安全地传输文件，内置一个公共中继服务器，可以实现内网穿透，也支持自建中继服务器。@Appinn 感谢 @ZXC 同学在Wormhole – 带</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">悬浮窗 – 实时显示屏幕刷效率，高刷检测是否支持 120Hz[iPhone]</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.appinn.com/floating-screen-refresh/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(3 min)</span>
-                    <span>悬浮窗是一款挺有意思的 iPhone 应用，它通过画中画的方式，来实时显示当前屏幕刷新率，查看你的手机是否支持 120Hz，也能以悬浮的方式显示时间、倒计时、网速等内容。@Appinn 悬浮窗支持的其</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://bbs.marginnote.cn/tag/论坛精华/l/latest.json">论坛精华 - MarginNote 中文论坛</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">【第三方MN插件】GoToPage——设定偏移后可跳转到指定页面 #Ver 1.1.0 已获官方签名#</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://bbs.marginnote.cn/t/topic/18787">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>GoToPage
-设定偏移后可跳转到指定页面
-操作示例
-Set Offset(2) and Page(10): “2@10”
-Set Page(10): &quot;10”
-Set Offset(2): “2@”
-效果演示
-
-
-image1885×1401 463 KB
-
-
-
-https://bbs-upload.marginnote.cn/original/2X/a/ab3418dbc9ca8f0944310c5a6b1a70e20ce3a1d0.MP4
-    
-  
-
-GitHub
-https://github.com/BigGrayVVolf/marginnote.extension.GoToPage
-  欢迎 star 
-Release
-v1.1.0
-更新插件图标选中状态
-添加官方签名
-GoToPage_v1.1.0.mnaddon (3.7 KB)
-v1.0.0
-GoToPage_v1.0.0.mnaddon (3.5 KB)</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">【第三方MN插件】写了个flomo的插件，有在用flomo的同学吗 #Ver.0.0.2 已获官方签名#</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://bbs.marginnote.cn/t/topic/18381">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>v 0.0.2版本发布
-做了以下支持
-支持切换flomo的位置(主要参考deepl的代码，想请教下怎么直接刷新位置，现在是再次开关插件后生效)
-笔记增加了笔记id ,为打开marginNote做准备
-预览图
-
-
-image1024×768 208 KB
-
-
-
-image1024×768 199 KB
-
-
-v 0.0.1版本发布
-做了以下支持
-点击笔记同步到flomo编辑器
-划线同步到flomo编辑器
-待完善
-图标设置了不显示显示一个紫色块，很纠结，哪位朋友知道的话麻烦解答下，谢谢（图标是44*44 png）
-Mac版本预览图：
-
-
-image1024×768 197 KB
-
-
-iPhone 预览图：
-
-
-image1170×2532 633 KB
-
-
-iPad 预览图：
-
-
-image2048×1536 453 KB
-
-
-注意事项
-需要打开设置-允许加载未经认证的插件 
-
-
-
-下载地址
-flomo.mnaddon (11.9 KB)</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://sspai.com">少数派</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">信步寻幽，自我策展：我的阅读技术史</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://sspai.com/post/69136">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>引言：阅读何以是技术史
-假如你也同意关于阅读的一切可以构成一种历史，则这种历史如何定性？是文化史抑或社会史？或许在将来的回顾中，它被视为彻头彻尾的一种商业史，也未可知。
-但在我的体验中，「阅读」也是一种技术史。从 20 世纪 80 年代到 21 世纪 20 年代，阅读与我的个人经历与技术的演变相互缠绕，成为我个人史中的独特一节。
-在这篇「阅读技术个人史」中，我会从识字的工具开始，讲到此时此刻的日常行动。这或许啰嗦，但又的确有其必要——我们常人的适应能力实在是很强，甚至是过强了一些，以至于任何新东西用久了，就好像「素来如此」一般；而既有的事物消逝不久，又会轻快地忘记它们正经存在过。
-这些繁琐的叙事，不妨当作对诸位的提醒：重新面对自己乃至身旁世界的丰富过往，使一切理所当然、天经地义之物，稍稍褪去光环、恢复原貌。
-请。
-拼音和白话文：文本入门工具的迷思
-1883 年，英国出身的年轻传教士苏慧廉来到浙江温州。他用拉丁字母转写温州方言的读音，编出一本圣经的普及读本，外加赞美诗集。比起过去只用规范的官话版本布道，这种变通做法效果要好得多。
-随后，他又用这个法子编了几本福音书与使徒行传。到 1902 年，整本《新约》的温州方言版本也出版了。据研究者说，现在剑桥大学的圣经公会图书馆里藏有当年的印本。其中，《马太福音》标题是 Ng-da-ko Chao-chi Yi-su Chi-tuh-ge Sang Iah Sing Shi，即方言的「我大家救主耶稣基督该新约圣书」（我们大家的救主耶稣基督的新约圣书）。
-苏慧廉所编《四千常用汉字学生袖珍字典》，1908 年第六版
-论把中国的方言发音变成拉丁字母，苏慧廉不是第一人，但他的工作影响更大。典雅的官话版本中文《新约》用到了两千来个汉字，可是温州市井小民信徒当中能全看懂这些字只是极少数。编写出字母话发言版本的圣经之后，传教士用方言布道，听众只需学会…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">疑难杂症不求人：如何在 Windows 11 中搞定「重装」这件事</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://sspai.com/post/69533">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>Windows 11 已经正式推送一段时间了，如果你已经很顺利的升级到 Windows 11 且没有出任何 Bug，那么恭喜你。但如果你升级以后遇到了很不幸得遇到了类似卡顿、系统文件缺失或是应用崩溃等问题，那你可能不得不求助于搜索引擎。有些问题可能的确有简单有效的方法去解决，而有些问题则只能通过「重装」系统进行解决。
-的确，「重装」系统是一剂灵丹妙药，任何和系统有关的问题都可以靠它解决。但是对于普通用户来说这项技能并不常用，只能继续依赖搜索引擎从茫茫多的文章里找到一篇看起来还像那么回事的方法试着重装系统；但随着系统不断更新，有些步骤可能的确不再适用，这是不正确的操作可能依然会把数据搞丢了。
-就比如很早以前大家都「喜欢用」的 GHOST，搜索引擎里随便一搜就有不少教你用这个办法的对系统进行修复或是重装，实际上 GHOST 已经于 2013 年正式停止维护，无论是 Windows 10 还是 11 都不兼容，强行使用反而会让系统更加不稳定。2021 年修复系统我们首先要排除的就是 Ghost。
-此外，你也根据网上的教程使用 U 盘 PE 进行系统修复，但是我们无法对第三方的 PE 安全性做出任何的保证，因此同样不在本文中进行推荐；而 Microsoft 官方 PE 想要使用则还需安装镜像，但我们可以直接借助安装镜像进行电脑修复。如果你的 PE U 盘为 FAT32 格式，而新的 Windows 11 wim 安装文件已经超过了 4G，那么可以参照微软官方的 这个办法 对 wim 进行分割，以可以将 wim 文件正常放入 U 盘中。
-为此，本文总结了几种常用的仅基于 Windows 本身修复 Windows 11 的几个方法，希望可以帮助你解决和系统有关的问题。
-重装前的问题排查
-
-如果你已经尝试过「重启软件」、「更新软件」、「Windows 11 疑难解答」以及「重启电脑」这四…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">使用 iPhone 13 Pro 半个月，重新思考「创新」的维度和边界</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://sspai.com/post/69241">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(3 min)</span>
-                    <span>Matrix 首页推荐
-Matrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。
-文章代表作者个人观点，少数派仅对标题和排版略作修改。
-
-如果有那么一台手机，能让很多不懂数码的普通人群都有热烈的讨论和购买欲望，那每年一更的 iPhone 必然是毫无疑问的那个，甚至还可以加上「有且只有」。而与每年新 iPhone 发布后火爆的市场需求相反的是，越来越多被冠以「评测」的内容却显得乏善可陈，似乎将上一年的那套说辞拿到今年，换上 Apple 新造的营销词汇，也能像是那么一回事。
-但这好像也不能完全怪这些做评测的人们，毕竟在内容也内卷的时代，我们都希望 Apple 给我们直接感到「Wow」的东西，可每次要么得来的是「恨铁不成钢」，要么就需要大费周折去自己挖掘 —— 以致于有人吐槽，如今做 iPhone 评测，要么你得是硬件或供应链的资深从业者，要么就是摄影师，或者干脆你得会拍电影。
-生怕你不知道这次摄像头系统有多「Pro」
-其实，要说这一年 13 Pro 系列感知最强的东西，绝对不是 Apple 告诉你那些各种「更 Pro」了的升级，而是价格。
-自从 2018 年开始，Max 机型正式将 iPhone 拉上万元大关之后，后续的 11 Pro 系列也继续维持在八千到一万元的高位上。直到 2020 年的 12 Pro 系列开始迎来了小幅度的降价，再到今年 iPhone 13 全系列的中国大陆第一方价格都有了明显的下降。加上发售后国内各大电商平台的补贴，仿佛它的价格又回到了多年前，五千元出头也能买到一台新 iPhone 了 —— 只不过是数字系列。
-2018 年以来历代 8000 以上价位 iPhone 的变化曲线
-巧合的是，2019 年也是曾任 Burberry CEO 和 Ap…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">不止双链笔记，这五种思路带你用好 Logseq</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://sspai.com/post/69503">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>Matrix 首页推荐
-Matrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。
-文章代表作者个人观点，少数派仅对标题和排版略作修改。
-
-开篇
-体验一款笔记软件最快乐的时候，是看着茫茫多的功能列表然后发动想象力，你总能屡试不爽地预支一些并不存在的成就感。而放弃一款笔记软件，是当你两三天过后再打开它，思索片刻后发现，其实我那价值贫乏且低产的工作，好像也没有什么好写的。为什么都用了无数款笔记软件，我却依然还写不好这一生？我想原因就在于，从「快乐地幻想」到「失望地卸载」，这个圈一直在循环，正如 GTD 软件，正如记账软件。
-幸好这种低落的情绪总是来得快去得也快，让我在完全放弃之前，还能遇到 Logseq。它用一种很奇妙的方式让我发现，原来我也有值得写的东西，而我也真的用它写了 30 万字，动力就来自软件机制所制造的持续不断的正反馈。
-如果你好奇这是怎样的一个实现过程，欢迎你继续阅读：
-
-信任的起点：开源离线、隐私至上
-这是一款由国人开发的支持双向链接的大纲笔记软件，如果你对 Roam Research 有所耳闻，想找一款基础用法大差不差的平替，Logseq 会是目前市面上最好的选择之一。但须知它不是 RR 的抄袭者，这里不存在 Notion 所遭遇的那种情况。
-它现在 Beta 阶段的主要功能包括现在及以后都将永久免费，这意味着体验它无需成本。它秉承隐私至上的理念，你可以完全离线使用它，所有文档将以 Markdown 格式存储在本地，任何一款文本编辑器都可以打开。你可以访问 官方 FAQ，了解更多关于 Logseq 的运营策略。
-至少对我来说，纯云端就是没有安全感，而其他笔记软件的迁移可能也不会太简单，所以 Logseq 的运营策略让我能没有任何后顾之忧地使用它。
-
-基本…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">派早报：索尼发布新一代微单手机 Xperia PRO-I、高通推出新款骁龙处理器</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://sspai.com/post/69527">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>你可能错过的新鲜事
-Palm 发布真无线降噪耳机 Palm Buds Pro
-10 月 26 日，Palm 正式发布真无线降噪耳机 Palm Buds Pro，该耳机采用了主流的入耳式设计，并提供三种配色方案。内置六颗麦克风，可以实现主动降噪以及通透模式，搭载 10mm 动态单元，续航时间为 5.5 小时，支持 Siri 和 Google Assistant，售价 129 美元。来源
-
-OURA 发布第三代智能戒指
-10 月 26 日，OURA 在正式发布第三代智能戒指，该设备本次增加大量微型传感器，将戒指的健康监控进一步提升。相较于前代来说，三代将支持实时心率、锻炼心率、睡眠记录和分析、经期记录、提问监控等。来源
-
-索尼发布新一代微单手机 Xperia PRO-I
-索尼于 10 月 26 日正式推出新一代微单手机 Xperia PRO-I，该机采用了索尼首款具有相位检测 AF 的 1 英寸 Exmor RS 感光元件并加入了具有相位检测自动对焦功能，更有 RAW 12-bit 拍摄，可提供出色的暗光性能及动态范围，双光圈 (F2.0/F4.0)h y 则可根据创意需求轻松切换景深。Xperia PRO-I 还搭载移动版 BIONZ X™ 影像处理器和前端 LSI，在多种场景中可提供更快的处理速度和呈现更高的图像质量，三镜头均采用蔡司® T抗反射涂层和 3D iToF 传感器，以实现创作自由。新开发的 24mm 镜头采用蔡司® Tessar Optics T 提供了高分辨率的图像，减少了边缘图像的失真，实现了更高的对比度和清晰度。Xperia PRO-I 拥有 16mm、24 mm 和 50 mm 镜头，使用户能够在构图上发挥更多创意。3D iToF 传感器可实时计算相机与拍摄对象之间的距离，可在多种场景中实现快速、准确的自动对焦。
-
-硬件规格上，Xperia PRO-I …</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="/atom.xml">Android Performance</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">一本讲 Android 流畅性的书，应该有什么内容？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://androidperformance.com/2021/10/27/if-i-write-a-book-about-performance/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(3 min)</span>
-                    <span>最近读了一本新书：《打造流畅的 Android App》，京东链接：https://item.jd.com/10035215362170.html 。因为书名所以买了这本书，读完之后觉得有必要写一篇文章，让还没有买此书的同学了解一下
-我个人的建议是：如果你是个老鸟，不建议买，这本书里面没有介绍太多原理性的东西，对于 Android 流畅性也没有一个比较全面的介绍；如果你是新手，这本书用来当做开阔视野 + 查漏补缺还可以，想更深入的了解 Android 流畅度还是差了点东西
-之所以我会这么建议，是因为这本书确实没有讲太多性能或者流畅度相关的东西，也没有比较深入的原理部分，篇幅更多在讲静态代码审查、AS Profiler 的使用、App 架构、保活、网络性能优化、APK 大小优化、App 耗电等，内容也不深，浅尝辄止</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://www.freecodecamp.org/news">freeCodeCamp.org</a></h3>
           <section class="articles-per-source">
             <article>
@@ -24593,17 +26040,6 @@ OURA 发布第三代智能戒指
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(3 min)</span>
                     <span>When FaceTime came out in 2010, it became a popular way for friends and family to connect over live video. But when FaceTime is not working, it can be a frustrating experience.  In this article, I will provide some reasons why FaceTime might not be working and tips on how</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Tailwind CSS Components Tutorial – How to get started with Flowbite</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.freecodecamp.org/news/tailwind-css-components-flowbite/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(5 min)</span>
-                    <span>Flowbite is an open-source library of web components built with the utility-first classes from Tailwind CSS. It also includes interactive elements such as dropdowns, modals, datepickers. Tailwind CSS is a framework that I&#x27;ve been using a lot lately in my web-related projects because of how fast it is to build</span>
                   </div>
                 </a>
               </details>
@@ -24856,295 +26292,11 @@ The post These are the best CPUs you can buy in 2021 appeared first on xda-devel
             </article>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="http://www.zhihu.com">知乎每日精选</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">军服是国威军威的标志和象征。你有没有见过非法使用军服仿制品的行为？守护戎装有哪些必要性？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="http://www.zhihu.com/question/494871604/answer/2192001757?utm_campaign&#x3D;rss&amp;utm_medium&#x3D;rss&amp;utm_source&#x3D;rss&amp;utm_content&#x3D;title">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>现在非法使用军服仿制品的行为不少。大街小巷，非军人穿着迷彩服的现象几乎每天都能看到，这是很不严肃的。尤其是工地上，非军人穿迷彩服的可能更多，尽管没有配上军衔和军种符号，但非常碍眼。到了冬天，迷彩军大衣又成为非军人比较喜欢穿的衣服。
-对于军服的日常管理，早在2009年，国务院就发布第547号令，出台《军服管理条例》，自2009年3月1日起施行，全文共20条。
-其中第九至十八条规定如下：
-第九条  现役军人以及依照法律、法规和军队有关规定可以穿着军服的人员，应当依照有关规定穿着军服。军队警备执勤人员应当加强检查、纠察，及时纠正违法穿着军服的行为。影视制作和文艺演出单位的演艺人员因扮演军人角色需要穿着军服的，应当遵守军队关于军服穿着的规定，不得损害军队和军人形象。非拍摄、演出时不得穿着军服。
-第十条  禁止买卖、出租或者擅自出借、赠送军服。禁止使用军服和中国人民解放军曾经装备的制式服装从事经营活动。禁止以“军需”、“军服”、“军品”等用语招揽顾客。
-第十一条  机关、团体、企业事业单位和其他组织的制式服装及其标志服饰，应当与军服有明显区别。禁止生产、销售、购买和使用仿照军服样式、颜色制作的足以使公众视为军服的仿制品。
-第十二条  违反本条例规定，有下列情形之一的，由工商行政管理部门没收违法物品和违法所得，处1万元以上10万元以下的罚款；违法经营数额巨大的，吊销营业执照；构成犯罪的，依法追究刑事责任：（一）非法生产军服、军服专用材料的；（二）买卖军服、军服专用材料的；（三）生产、销售军服仿制品的。工商行政管理部门发现涉嫌非法生产、销售军服或者军服仿制品的行为时，可以查封、扣押涉嫌物品。
-第十三条  军服承制企业违反本条例规定，有下列情形之一的，由工商行政管理部门责令改正，处1万元以上5万元以下的罚款；拒不改正的，责令停业整顿：（一）转让军服、军服专用材料生产合同或者生产技术规范，或者委托其他企业生产军服、军服专用材料的；（二）销售或者以其他方式转让未经改制、染色等处理的军服、军服专用材料残次品的；（三）未将军服生产中剩余的军服专用材料妥善保管、移交的。具有前款规定情形之一的，军队军需主管部门应当将其从军服承制企业备选名录中除名，并不得再列入军服承制企业备选名录。
-第十四条 军服承制企业的工作人员泄露军服专用材料生产技术，或者军服承制、承运企业的工作人员泄露军服、军服专用材料生产、运输数量以及接收单位等涉及国家秘密的信息，构成犯罪的，依法追究刑事责任。
-第十五条 违反本条例规定，使用军服和中国人民解放军曾经装备的制式服装从事经营活动，或者以“军需”、“军服”、“军品”等用语招揽顾客的，由工商行政管理部门责令改正，没收违法物品和违法所得，并处2000元以上2万元以下的罚款；拒不改正的，责令停业整顿。
-第十六条 穿着军服或者军服仿制品冒充军人招摇撞骗的，由公安机关依法给予治安管理处罚；构成犯罪的，依法追究刑事责任。
-第十七条 公务员和现役军人在军服管理工作中滥用职权、玩忽职守、徇私舞弊的，依法给予处分；构成犯罪的，依法追究刑事责任。现役军人出租或者擅自出借、赠送军服的，依照《中国人民解放军纪律条令》的规定给予处分。
-第十八条 对公安机关、工商行政管理部门查获的军服仿制品的认定存在争议的，由省军区（卫戍区、警备区）或者军分区（警备区）军需主管部门鉴定。公安机关、工商行政管理部门依法没收的军服、军服专用材料，应当移交省军区（卫戍区、警备区）或者军分区（警备区）军需主管部门；依法没收的军服仿制品，应当按照国家有关规定处理。
-由此可见，非军人着军服，是有严格限定的，影视演员在拍摄相关作品时，可以穿相应的军服，但非拍摄时，不能着军服。
-所以在守护戎装上，一是要加强《军服管理条例》的宣传普及，让人民群众知道军服到底能不能穿，非军人穿着军服会有什么后果。二是对军服承制企业，要加强督查和严格约束，除了向军队供货，不得将承制的军服或仿制军服向地方销售。三是对经营户，省军区（卫戍区、警备区）或者军分区（警备区）军需主管部门、公安机关、工商行政管理部门要加大执法力度，对售卖军服的经营户，及时处罚和制止。四是军人也要严格要求自己，穿旧的军服，要按规定处理，不要给家人或亲友穿。五是退役军人着军服，也要按照规定和时机执行，不能像在军营一样穿着军服。
-
-来源：知乎 www.zhihu.com
-东部战区
-点击下载
-14 个回答，查看全部。
-军服上那些花花绿绿的块块是有什么特殊含义吗？
-怎么看美国陆军将换新军装，改回二战时期“粉绿”军服？</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">一箭一星！快舟一号甲火箭成功完成11次发射履约</summary>
-                <a class="article-summary-link article-summary-box-outer" href="http://zhuanlan.zhihu.com/p/426350021?utm_campaign&#x3D;rss&amp;utm_medium&#x3D;rss&amp;utm_source&#x3D;rss&amp;utm_content&#x3D;title">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>10月27日14时19分，命名为“快舟•新洲”号的快舟一号甲固体运载火箭在酒泉卫星发射中心点火升空以“一箭一星”方式将吉林一号高分02F（航天星云•常熟一号）卫星送入预定轨道发射任务取得圆满成功。
-
-
-
-
-
-吉林一号高分02F（航天星云•常熟一号）卫星是由长光卫星技术有限公司自主研发的高分辨光学遥感卫星，具备高分辨、大幅宽、高速数传等特点，可获取全色分辨率优于0.75m、多光谱分辨率优于3m、幅宽大于40km的高清影像。
-
-执行此次发射任务的快舟一号甲火箭（编号为遥五箭），是航天科工火箭技术有限公司推出的一款小型固体运载火箭，具备国际通用接口，主要为300公斤级低轨小卫星提供发射服务，具有飞行可靠性高、入轨精度高、准备周期短、保障需求少、发射成本低等特点。自2017年1月9日首次执行商业发射任务以来，快舟一号甲火箭已成功完成11次发射履约，顺利将21颗卫星精确送入预定轨道。
-
-执行发射任务期间，西北部分地区连续出现新冠确诊病例，快舟试验队在属地党委政府和试验基地统一部署下，立即启动应急预案，一手抓疫情防控，一手抓试验任务，以“越是艰难越向前”的工作状态，确保发射履约任务取得了圆满成功。
-
-航天科工火箭技术有限公司成立于2016年2月16日，是中国航天科工及所属航天三江为抢抓商业航天发展机遇，按照社会化、市场化要求组建成立。该公司以建设国际一流商业航天发射服务公司为目标，坚持技术创新、商业模式创新、管理创新，持续推进资本、市场、人才深度融合和治理改革，于2017年12月完成了A轮融资，2019年5月入选国务院国资委国企改革“双百行动”名单，未来将发展成为国内商业发射服务的先行者、国内商业航天产业的开拓者、太空经济开发的探索者。武汉市新洲区位于长江中游北岸，是全国绿色发展百强区、全国新型城镇化质量百强区。2021年，武汉市新洲区提出“筑梦中国星谷，扬帆航天时代”的发展构想，依托大国航天的创新转化能级，计划形成全新大航天产业板块。同年，航天科工火箭技术有限公司与武汉市新洲区达成品牌合作，将快舟一号甲遥五箭冠名为“快舟·新洲”号运载火箭。目前，火箭公司位于武汉新洲国家航天产业基地的快舟火箭总装总调中心（一期）已投入使用，主要用于快舟固体运载火箭总装测试，现已具备年产20发固体运载火箭的总装测试能力。
-
-来源：知乎 www.zhihu.com
-中国航天科工
-点击下载</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-    </ul>
-  </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2021-10-26">2021-10-26</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.iplaysoft.com">异次元软件世界</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">苹果 macOS Monterey 最新官方正式版下载 - Mac 12.0.1 (21A559) 系统 ISO 镜像 (网盘地址)</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.iplaysoft.com/macos-monterey.html">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(3 min)</span>
-                    <span>苹果发布了最新 iOS 15、iPadOS 固件，同时新款 Mac 也已采用 Apple 自研处理器，最新的 macOS Monterey 系统不仅肩负着架构过渡的使命，同时还要面对「Windows 11」冲击。
-最新的 macOS Monterey 12.0.1 正式版 同样给 Mac 带来很多新功能，比如能让 iPad 和 Mac 共用键盘鼠标操控的“通用控制”、图片照片实时识别文字、Safari 改进、SharePlay 与朋友看剧听歌、专注模式、捷径 for Mac、接收 AirPlay 投屏等；而且在 M1 处理器上，还能直接在 Mac 上运行 iOS 应用……
-「 前往查看原文.... 」
-异次元还有这些值得一看：
-
-苹果 macOS Big Sur 最新官方正式版下载 / Mac 11.0 操作系统 dmg 镜像
-Parallels Desktop 17.1 最新版下载 - Mac 系统最强虚拟机 (支持M1/Win11/macOS Monterey)
-SetApp 正版 Mac 软件包月订阅 - 超低价入手正版 macOS 付费软件的新姿势
-苹果 macOS Catalina 最新官方正式版下载 / Mac 10.15 操作系统 dmg 镜像
-
-异次元正版数字商城  |  异次元首页  |  微信公众号  |  iPcFun  |  关注微博  |  软件精选</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.freecodecamp.org/news">freeCodeCamp.org</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Constants in C Explained – How to Use #define and the const Qualifier to Define Constants</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.freecodecamp.org/news/constants-in-c-explained-how-to-use-define-and-const-keyword/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(4 min)</span>
-                    <span>When you&#x27;re programming, there are times when you&#x27;ll want the values of certain variables to remain unchanged. In the C language, you&#x27;ll likely define them as constants. You can define constants in C in a few different ways. In this tutorial, you&#x27;ll learn how to use #define and the const</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">How to Secure Linux Servers with SE Linux</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.freecodecamp.org/news/securing-linux-servers-with-se-linux/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(3 min)</span>
-                    <span>Security is an extremely important aspect of software development, server management, and application development these days.  And if you use Linux, you&#x27;re in luck – it comes with an excellent feature called SE Linux that helps you add an additional layer of security. What is SE Linux?SE Linux was developed</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">What is Software Engineering? How to Become a Software Engineer</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.freecodecamp.org/news/what-is-software-engineering-how-to-become-a-software-engineer/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(5 min)</span>
-                    <span>If you are interested in the tech industry, then you might consider a career as a software engineer. But what is a software engineer and how do you become one?  In this article, I will explain what software engineers do and the steps you can take to become one. What</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Django Project: Create a Digital Resume Using Django and Python</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.freecodecamp.org/news/django-project-create-a-digital-resume-using-django-and-python/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>Django is a popular web development framework that uses Python.  We just published a course on the freeCodeCamp.org YouTube channel that will help you improve your Django skills by teaching you how to create a digital resume using Python and Django. Bobby Stearman developed this course. Bobby has created</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">How to Integrate a Static Website with WordPress</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.freecodecamp.org/news/how-to-integrate-a-static-website-with-wordpress/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(4 min)</span>
-                    <span>Lots of people still use static websites, from family-run businesses who don&#x27;t need to update information that often, to large teams who need to release something quickly without spending too much time and effort on it.  You might also want a static website for these reasons: Speed: pages load quicklyMinimal</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.xda-developers.com">xda-developers</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Do the Google Pixel 6 and Pixel 6 Pro support 5G?</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/google-pixel-6-pro-5g-support/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(5 min)</span>
-                    <span>Google launched the Pixel 6 and Pixel 6 Pro with a whole bunch of improvements over the Pixel 5. Both phones pack Google’s custom Tensor SoC and feature a revamped camera setup with fresh hardware. Google has also gone for a bold design on the Pixels this time, giving the phones a unique look. You
-The post Do the Google Pixel 6 and Pixel 6 Pro support 5G? appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Grab a Google Nest Hub for only $80 right now ($20 off)</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/grab-a-google-nest-hub-for-only-80-right-now-20-off/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(3 min)</span>
-                    <span>Google updated its Nest Hub smart display (originally called the Home Hub) back in March with a new second-generation model. The upgraded model has an almost identical design, but with the addition of Soli motion sensors for hand gestures and optional sleep tracking. Stores have discounted the new Nest Hub a few times already, but
-The post Grab a Google Nest Hub for only $80 right now ($20 off) appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Microsoft releases Windows 10 builds 19043.1320, 19042.1320 – here’s what’s new</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/microsoft-releases-windows-10-builds-19043-1320-19042-1320/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(4 min)</span>
-                    <span>It’s that time of the month when Microsoft is releasing new optional cumulative updates for Windows 10. Today, the updates are available for all versions of the OS that are supported for consumers, meaning Windows 10 versions 21H1, 20H2, and 2004. Of course, given the nature of those updates, they all get the exact same
-The post Microsoft releases Windows 10 builds 19043.1320, 19042.1320 – here’s what’s new appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">The best laptops you can buy at Walmart this holiday</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/best-laptops-walmart/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(19 min)</span>
-                    <span>The holiday season is quickly approaching, and for many of us, that means it’s time to buy gifts. Whether it’s for yourself or as a gift to a loved one, buying a fancy new laptop is something many will do, and we’re here to help. We’ve already rounded up some of the best laptops you
-The post The best laptops you can buy at Walmart this holiday appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Pick up a Microsoft Modern Webcam for just $42 today ($28 off)</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/pick-up-a-microsoft-modern-webcam-for-just-42-today-28-off/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>The global pandemic has affected global trade in a significant way, causing product shortages for everything from toilet paper (sigh) to webcams. Thankfully, the toilet paper madness only lasted a month or two, and webcams have mostly returned to pre-pandemic prices. Microsoft released a new webcam earlier this year, alongside the Surface Laptop 4, and
-The post Pick up a Microsoft Modern Webcam for just $42 today ($28 off) appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Air Quality Index begins showing up on non-Nest smart displays</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/air-quality-index-non-nest-smart-displays/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>With air pollution becoming more and more of an issue, it’s important to know about the air quality in your area on any given day. In the U.S., Google started showing Air Quality Index (AQI) indicators on its Nest smart displays in some areas, though it wasn’t clear if it would roll out to non-Nest
-The post Air Quality Index begins showing up on non-Nest smart displays appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">How to change your Nest Doorbell ringtone to spooky Halloween sounds or one of the new year-round tones</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/how-to-change-nest-doorbell-ringtone/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(3 min)</span>
-                    <span>If you have a Nest doorbell from Google, it’s quite simple to change the ringtone of your device. Apart from the classic “ding dong” sound, the Nest doorbell can be customized to play various other ringtones that you can set from within the Nest app. Google also rolls out a few seasonal ringtones from time
-The post How to change your Nest Doorbell ringtone to spooky Halloween sounds or one of the new year-round tones appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Microsoft shares how it’s improving meeting quality in Teams</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/microsoft-improving-teams-meeting-quality/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(3 min)</span>
-                    <span>Microsoft is taking steps to improve the call and meeting quality in Teams meetings through AI and other enhancements that help users stay in the flow of a meeting with fewer distractions. Hybrid work has been a big deal for Microsoft in the past year and a half, but we usually hear about new Teams
-The post Microsoft shares how it’s improving meeting quality in Teams appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="http://www.zhihu.com">知乎每日精选</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">游戏系统拆解：明日方舟 / Game system: Arknights</summary>
-                <a class="article-summary-link article-summary-box-outer" href="http://zhuanlan.zhihu.com/p/413367446?utm_campaign&#x3D;rss&amp;utm_medium&#x3D;rss&amp;utm_source&#x3D;rss&amp;utm_content&#x3D;title">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(3 min)</span>
-                    <span>游戏系统主框架 / Main framework of the game system：
-
-游戏的核心循环：干员系统→战斗系统→资源→干员系统，这是一个负反馈循环，如果无外界干扰，系统各项参数会稳定在一个水平上。
-通常来说，无付费的游戏体验会在某个时候稳定到一个水平，但是人们对游戏体验的要求只会越来越高，而付费会提升游戏体验。
-资源系统、干员招募、玩家的水平会介入到核心循环中，给予其提升的动力。
-The core cycle of the game: Operator system → Combat system → Resources → Operator system. This is a negative feedback loop. If there is no external interference, the system parameters will level off at a certain level.
-Generally speaking, the unpaid gaming experience will stabilize to a certain level at some point, and people&#x27;s requirements for the gaming experience will only become increasingly higher, and paying will enhance the gaming experience.
-However, the resource system, recruitment of operators, and the gaming level of players will intervene in the core cycle, allowing it to improve.…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2021-11-25T05:09:12.633Z">2021-11-25T05:09:12.633Z</time>
+    <time id="build-timestamp" datetime="2021-11-26T00:42:52.843Z">2021-11-26T00:42:52.843Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.11.3</a></span>
   </footer>
   <script src="index.js"></script>
