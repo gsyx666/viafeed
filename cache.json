@@ -982,6 +982,24 @@
           "title": "Building My First Command Line Interface (CLI) with Rust"
         },
         {
+          "id": "https://dev.to/jeffshomali/integrating-macos-with-multiple-github-or-bitbucket-accounts-1an4",
+          "author": "Jeff Shomali",
+          "description": "Assume you want to use your personal Github account on your work laptop, and wanted to commit to your personal account without breaking your work repository configuration. In this tutorial I will show you how to easily manage multiple Github/Bitbucket accounts on MacOS without conflict each other. \nTo achieve our goal we need to tell Github/Bitbucket Git's engine that we have multiple account in one computer. \nSo bare with me to achieve our goal. \nGo to SSH directory $ cd ~/.ssh\n\nCreate a new SSH key ssh-keygen -t rsa -b 4096 -C <your_email@example.com? More on Github\n\n\n\n\n  \n  \n  Register created SSH key to Github\n\n\n\nThis is very strait forward, just follow the Adding a new SSH key to your GitHub account\n\n\n\n\n  \n  \n  Create SSH Config\n\n\nTo connection to multiple remote server through the SS…",
+          "link": "https://dev.to/jeffshomali/integrating-macos-with-multiple-github-or-bitbucket-accounts-1an4",
+          "publishedOn": "2021-11-25T22:27:25.000Z",
+          "wordCount": 779,
+          "title": "Integrating MacOS with multiple Github or Bitbucket accounts"
+        },
+        {
+          "id": "https://dev.to/maddy/5-actionable-steps-to-land-your-first-software-engineering-role-g7c",
+          "author": "Maddy",
+          "description": "Originally published on my blog.\nLanding your first engineering role after getting a degree in computer science (or software engineering) is a challenging process. \nThere are so many software engineering vacancies, but a significant majority of them are for those with at least 2+ years of experience. There are not enough junior positions on the market, so the competition for entry-level roles is high. Yet, it is still possible to land an engineering role, even without experience. \nThe following tips are mainly dedicated to computer science or software engineering graduates looking to land their first engineering role. However, self-taught developers and boot-camp graduates can still benefit from this article.\nI'm going to list five actionable steps that I hope can help you land your first …",
+          "link": "https://dev.to/maddy/5-actionable-steps-to-land-your-first-software-engineering-role-g7c",
+          "publishedOn": "2021-11-25T22:06:22.000Z",
+          "wordCount": 1406,
+          "title": "5 Actionable Steps to Land Your First Software Engineering Role"
+        },
+        {
           "id": "https://dev.to/byusa/understand-react-redux-from-scrach-on-one-page-340g",
           "author": "Serge Jabo Byusa",
           "description": "Redux a popular React and React Native state management library.\nnpx create-react-app reactapp\n\ncd reactapp\nyarn add react-redux\n\nAdd this in index.js\nimport React from \"react\";\nimport ReactDOM from \"react-dom\";\nimport \"./index.css\";\nimport App from \"./App\";\nimport reportWebVitals from \"./reportWebVitals\";\nimport { createStore } from \"redux\";\nimport allReducer from \"./reducers\";\n\n//ACTION  -> INCREMENT (describes what you want to do!) it's a simple function\n\nconst increment = () => {\n    return {\n        type: \"INCREMENT\",\n    };\n};\n\nconst decrement = () => {\n    return {\n        type: \"DECREMENT\",\n    };\n};\n\n//REDUCER -> (action transfer from one state to another state, it gonna modify our store)\n//You can have many reducers (Auth reducer, Movielist reducer etc ...)\nconst counter = (state = 0, action) => {\n    switch (action.type) {\n        case \"INCREMENT\":\n            return state + 1;\n        case \"DECREMENT\":\n            return state - 1;\n    }\n};\n\n//STORE  -> Globalized STATE\nlet store = createStore(counter);\n\n//Display it in the console.\nstore.subscribe(() => console.log(store.getState()));\n\n//DISPATCH (DISPATTCH this action to the reducer)\nstore.dispatch(increment());\nstore.dispatch(decrement());\nstore.dispatch(increment());\n\nReactDOM.render(\n    <React.StrictMode>\n        <App />\n    </React.StrictMode>,\n    document.getElementById(\"root\")\n);\n\nreportWebVitals();\n\n\nTesting it: check the console in inspect to see how it increments and decrements. \nCheck this repo for more advanced way of doing it: \nhttps://github.com/Byusa/learn-redux\nThis repo shows the use of redux it could be one a proper way with the store and multiple reducers their own folders.\nReference: \nhttps://www.youtube.com/watch?v=CVpUuw9XSjY",
@@ -4018,6 +4036,15 @@
       "feedUrl": "https://feeds.feedburner.com/ruanyifeng",
       "siteUrl": "http://www.ruanyifeng.com/blog/",
       "articles": [
+        {
+          "id": "http://www.ruanyifeng.com/blog/2021/11/weekly-issue-185.html",
+          "author": null,
+          "description": "这里记录每周值得分享的科技内容，周五发布。\n本杂志开源（GitHub: ruanyf/weekly），欢迎提交 issue，投稿或推荐科技内容。\n周刊讨论区的帖子《谁在招人？》，提供大量程序员就业信息，欢迎访问或发布工作/实习岗位。\n封面图\n\n正在迪拜举办的世博会，每天举行四场\"空中钢琴\"的表演。钢琴悬浮在空中，看上去很神奇。（via）\n本周话题：美国宪法拍卖，一个区块链案例\n上周四（11月18日），美国纽约有一场拍卖会，拍卖第一版印刷的美国宪法。这件事很有意思，因为它跟区块链有关。\n两百多年前，美国打赢了独立战争，13个殖民地的代表聚在一起开会，起草了宪法，决定建国。\n\n宪法通过后，一共印刷了500份，让代表们带回各州。留存到现在的有13份，其中只有一份在私人手里，这次拍卖的就是它。\n\n\n一个区块链爱好者看到了这件事。晚上在群里聊天，他随口提了一句，有人就说：\"我们集资去参加吧！\"\n大伙一听，觉得很好玩，通过区块链，向全世界的网友集资，去竞标一件古董。以前没人这么干过，就让我们试试看，证明技术有这个潜力。\n说干就干，他们就在区块链上成立了一个组织，叫做\"宪法 DAO\"（ConstitutionDAO），专门负责这件事，相当于项目公司。\n他们注册了域名 ConstitutionDAO.com，整个网站只有一个页面（下图），解释了整件事情。\n\n下面就是最关键的部分了，怎么才能收到钱呢？\n令人意想不到的是，这反而是最容易的部分。专门的区块链工具，都已经开发出来了，在互联网上公开提供服务，可以直接拿来用。\n集资服务叫做 Juicebox（下图）。它将每个项目的合约，写入区块链，并提供一个钱包接收资金。所有提供资金的人，会收到项目的代币，作为出资证明，享受相应的权益。\n\n有了集资账户还不够，还必须让大家相信，项目组织者不会卷款跑路。大伙转账以后，组织者将这些钱转到他的个人钱包，那可…",
+          "link": "http://www.ruanyifeng.com/blog/2021/11/weekly-issue-185.html",
+          "publishedOn": "2021-11-26T00:31:08.000Z",
+          "wordCount": 444,
+          "title": "科技爱好者周刊（第 185 期）：美国宪法拍卖，一个区块链案例"
+        },
         {
           "id": "http://www.ruanyifeng.com/blog/2021/11/weekly-issue-184.html",
           "author": null,
@@ -10905,6 +10932,15 @@
       "siteUrl": "https://bbs.marginnote.cn/tag/论坛精华/l/latest.json",
       "articles": [
         {
+          "id": "https://bbs.marginnote.cn/t/topic/18381",
+          "author": "extrastu\n            (extrastu)",
+          "description": "v 0.0.2版本发布\n做了以下支持\n支持切换flomo的位置(主要参考deepl的代码，想请教下怎么直接刷新位置，现在是再次开关插件后生效)\n笔记增加了笔记id ,为打开marginNote做准备\n预览图\n\n\nimage1024×768 208 KB\n\n\n\nimage1024×768 199 KB\n\n\nv 0.0.1版本发布\n做了以下支持\n点击笔记同步到flomo编辑器\n划线同步到flomo编辑器\n待完善\n图标设置了不显示显示一个紫色块，很纠结，哪位朋友知道的话麻烦解答下，谢谢（图标是44*44 png）\nMac版本预览图：\n\n\nimage1024×768 197 KB\n\n\niPhone 预览图：\n\n\nimage1170×2532 633 KB\n\n\niPad 预览图：\n\n\nimage2048×1536 453 KB\n\n\n注意事项\n需要打开设置-允许加载未经认证的插件 \n\n\n\n下载地址\nflomo.mnaddon (11.9 KB)",
+          "link": "https://bbs.marginnote.cn/t/topic/18381",
+          "publishedOn": "2021-11-25T13:44:42.000Z",
+          "wordCount": 334,
+          "title": "【第三方MN插件】写了个flomo的插件，有在用flomo的同学吗 #Ver.0.0.2 已获官方签名#"
+        },
+        {
           "id": "https://bbs.marginnote.cn/t/topic/24087",
           "author": "Wein\n            (Wen Yung)",
           "description": "好像有人需要計時器所以弄了一個\ntimer.mnaddon (5.1 KB)",
@@ -10921,6 +10957,15 @@
           "publishedOn": "2021-11-23T23:17:49.000Z",
           "wordCount": 325,
           "title": "【第三方MN插件】All In One Translator — 集成了谷歌翻译 deepl 百度翻译 谷歌搜寻 谷歌图片搜寻 可折叠"
+        },
+        {
+          "id": "https://bbs.marginnote.cn/t/topic/18787",
+          "author": "marcocpt\n            (大灰很)",
+          "description": "GoToPage\n设定偏移后可跳转到指定页面\n操作示例\nSet Offset(2) and Page(10): “2@10”\nSet Page(10): \"10”\nSet Offset(2): “2@”\n效果演示\n\n\nimage1885×1401 463 KB\n\n\n\nhttps://bbs-upload.marginnote.cn/original/2X/a/ab3418dbc9ca8f0944310c5a6b1a70e20ce3a1d0.MP4\n    \n  \n\nGitHub\nhttps://github.com/BigGrayVVolf/marginnote.extension.GoToPage\n  欢迎 star \nRelease\nv1.1.0\n更新插件图标选中状态\n添加官方签名\nGoToPage_v1.1.0.mnaddon (3.7 KB)\nv1.0.0\nGoToPage_v1.0.0.mnaddon (3.5 KB)",
+          "link": "https://bbs.marginnote.cn/t/topic/18787",
+          "publishedOn": "2021-11-23T00:14:46.000Z",
+          "wordCount": 302,
+          "title": "【第三方MN插件】GoToPage——设定偏移后可跳转到指定页面 #Ver 1.1.0 已获官方签名#"
         },
         {
           "id": "https://bbs.marginnote.cn/t/topic/17773",
@@ -12898,6 +12943,15 @@
       "siteUrl": "https://reddit.buzzing.cc",
       "articles": [
         {
+          "id": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/r1vdyz/pufferfish_waits_by_its_trapped_friend_while_a/",
+          "author": null,
+          "description": "河豚在被困的朋友身边等待，而潜水员用螃蟹来割网",
+          "link": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/r1vdyz/pufferfish_waits_by_its_trapped_friend_while_a/",
+          "publishedOn": "2021-11-26T00:58:07.000Z",
+          "wordCount": 29,
+          "title": "河豚在被困的朋友身边等待，而潜水员用螃蟹来割网"
+        },
+        {
           "id": "https://reddit.buzzing.cc/reddit/r/therewasanattempt/comments/r1r61s/to_capture_a_stunning_footage/",
           "author": null,
           "description": "为了捕捉令人惊叹的镜头",
@@ -13453,6 +13507,24 @@
       "feedUrl": "https://hn.buzzing.cc/rss.xml",
       "siteUrl": "https://hn.buzzing.cc",
       "articles": [
+        {
+          "id": "https://hn.buzzing.cc/hn/29344709",
+          "author": null,
+          "description": "去年90%的 \"黑色星期五 \"交易在销售活动前6个月更便宜",
+          "link": "https://hn.buzzing.cc/hn/29344709",
+          "publishedOn": "2021-11-26T00:58:01.000Z",
+          "wordCount": 39,
+          "title": "去年90%的 \"黑色星期五 \"交易在销售活动前6个月更便宜"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29338455",
+          "author": null,
+          "description": "Jamulus - 在线播放音乐。与朋友一起。免费的",
+          "link": "https://hn.buzzing.cc/hn/29338455",
+          "publishedOn": "2021-11-25T23:54:42.000Z",
+          "wordCount": 35,
+          "title": "Jamulus - 在线播放音乐。与朋友一起。免费的"
+        },
         {
           "id": "https://hn.buzzing.cc/hn/29344274",
           "author": null,
@@ -14755,6 +14827,470 @@
           "publishedOn": "2021-11-22T04:14:33.000Z",
           "wordCount": 16,
           "title": "即将结束!"
+        }
+      ]
+    },
+    {
+      "title": "Android Central - Android Forums, News, Reviews, Help and Android Wallpapers",
+      "feedUrl": "http://feeds.androidcentral.com/androidcentral",
+      "siteUrl": "https://www.androidcentral.com/",
+      "articles": [
+        {
+          "id": "105595.r34380 at https://www.androidcentral.com",
+          "author": "Ara Wagoner",
+          "description": "While the Galaxy S20 has been out for a while now — it was essentially the last phone to come out in the before times — and whether you're buying one through this year's Black Friday Galaxy deals or you've had it the full 20 months, this is the best time to grab a case for it. Tech21's drop-tested cases are down to \"price of a latte\" territory, and OtterBox's cases will keep your S20, S20+, S20 Ultra, or even your S20 FE pristine and protected for the rest of their lengthy support life. Here are the case deals you can capture right now.\r\n\r\n\r\n\r\nTech21 Evo Check (Save up to $35)\r\n\r\n\r\n\r\nFrom $5 at Amazon\r\n\r\nDon't let the Amazon price fool you, the EvoCheck was originally $40, and it was the case my S20 used for the majority of 2020. Available in a smoky black, translucent purple, and a soft opaque blue, you can swap out the buttons for a better look, and it can take drops up to 12 feet. $5 for this is an absolute steal.\r\n\r\nTech21 Studio Colour (Save up to 50%)\r\n\r\n\r\n\r\n$13 at Amazon (S20)\r\nFrom $7 at Am...",
+          "link": "https://www.androidcentral.com/these-are-black-friday-case-deals-your-galaxy-s20-has-been-waiting",
+          "publishedOn": "2021-11-26T01:35:47.000Z",
+          "wordCount": 1423,
+          "title": "These are the Black Friday case deals your Galaxy S20 has been waiting for"
+        },
+        {
+          "id": "105593.r34380 at https://www.androidcentral.com",
+          "author": "Ara Wagoner",
+          "description": "The Samsung Galaxy S21 series has been out for almost a year now, and whether you've had yours from the very beginning or you're just picking one up this Black Friday thanks to some great Samsung Galaxy Black Friday deals, today is the day your S21, S21+, or S21 Ultra deserves a case.\r\n\r\nAfter all, if you've had your phone and case since late January, your case has likely seen better days, and if your phone is brand spanking new, you need a case for it before you take it out into the world. Don't tempt fate into a fall onto cracked asphalt; this is the season for joy, not heartbreak! Whatever your tastes, there's a whole cornucopia of case deals out there, so grab one for every S21 in your family.\r\n\r\n\r\n\r\nCaseology Nano Pop (Save up to 60%)\r\n\r\n\r\n\r\nFrom $17 at Amazon (S21)\r\nFrom $10 at Amazon (S21+)\r\nFrom $17 at Amazon (S21 Ultra)\r\n\r\nThis is our favorite Galaxy S21 case on the market today, marrying a slim, grippy profile with eye-catching two-tone colorways for a case that's distinct, protective, and...",
+          "link": "https://www.androidcentral.com/black-friday-galaxy-s21-case-deals",
+          "publishedOn": "2021-11-25T22:09:31.000Z",
+          "wordCount": 1982,
+          "title": "Protect your Galaxy S21, S21+, or Ultra with 80% off Black Friday cases"
+        },
+        {
+          "id": "105592.r34380 at https://www.androidcentral.com",
+          "author": "Derrek Lee",
+          "description": "Wireless chargers are on the rise. While many may offer slower charging speeds than a USB charger, there's something absolutely freeing about not having to futz around with cables. Just place your phone on a page next to your bed, while you're watching the dishes, or in the bathroom while you're getting ready for a bit of a top-up. And many of the Android phones on sale for Black Friday support wireless charging making these great gifts for anyone.\r\n\r\nBelkin makes some of the best wireless chargers around, so it's nice to see that it's offering some great discounts on products for Black Friday; with some chargers nearly half-off! iOttie and Anker also offer great chargers with sleek designs, and some offer charging speeds as fast as 15W, which is perfect whether you own an iPhone or a Samsung.\r\n\r\nBelkin wireless chargers up to 49% off for Black Friday\r\n\r\n\r\n\r\n\r\n\r\nBelkin Special Edition BoostUp Wireless Charger 7.5W | 33% off\r\n\r\n\r\n\r\n$20 at Amazon\r\n\r\nThis charger is optimized for iPhones but is compatibl...",
+          "link": "https://www.androidcentral.com/black-friday-wireless-charger-deals",
+          "publishedOn": "2021-11-25T22:07:41.000Z",
+          "wordCount": 1024,
+          "title": "These wireless chargers are fair game on Black Friday — up to 49% off"
+        },
+        {
+          "id": "98314.r34380 at https://www.androidcentral.com",
+          "author": "Ara Wagoner",
+          "description": "The Galaxy S21 Ultra is one of the biggest and most powerful Galaxy phones ever and the first to work with the S Pen, traditionally reserved for the Note line. Given its size and heft, you need to protect your investment with a secure case that adds grip and style. The best Galaxy S21 Ultra cases are right here, whether you're after a clear case to show off the Ultra's design or a durable tank to keep it safe and secure.\r\n\r\n\r\n\r\nColorful and durable\r\n\r\nCaseology Nano Pop\r\n\r\nStaff Pick\r\n\r\n\r\n\r\nAfter two years of the Nano Pop being exclusive to iPhones, it's finally available for Samsung devices with the S21 series. The Blueberry Navy with its yellow accents is striking and classic, and the impact-absorbing pattern embedded in the back gives you slim protection. I wish the Ultra also had the Violet shade the smaller S21s have, but these colors are still fun.\r\n\r\nFrom $17 at Amazon $18 at Walmart\r\n\r\nReady to work hard\r\n\r\nArmadilloTek Vanguard Series for S21 Ultra\r\n\r\n\r\n\r\nThe S21 Ultra is made for productivity, so ...",
+          "link": "https://www.androidcentral.com/best-samsung-galaxy-s21-ultra-cases",
+          "publishedOn": "2021-11-25T22:00:00.000Z",
+          "wordCount": 2709,
+          "title": "These are the best cases you can get for your Galaxy S21 Ultra"
+        },
+        {
+          "id": "105594.r34380 at https://www.androidcentral.com",
+          "author": "Samuel Contreras",
+          "description": "Netatmo's Weather Station takes smart home tech beyond just speakers and a camera. This device can show you precise weather for your area with both an indoor and outdoor module included. It even works with Alexa so if you've been updating your home with the best Black Friday smart home deals you're more than likely compatible. It also works with HomeKit if you're an Apple user.\r\n\r\nThe Weather Station kit also has an indoor sensor that can monitor the air quality inside. You can even add modules for more precise readings throughout your home. Outdoor modules can also be added with an anemometer measuring wind speed and direction and a rain gauge. If you're a gardener or just interested in the weather, these are some very fun tools.\r\n\r\nKeep track of your home with Netatmo products up to 20% off\r\n\r\n\r\n\r\n\r\n\r\nNetatmo Weather Station Indoor Outdoor | 19% off\r\n\r\n\r\n\r\n$120.10 at Amazon\r\n\r\nKeep track of the weather outside and the air quality inside with the Netatmo Weather Station. With both an indoor and outdo...",
+          "link": "https://www.androidcentral.com/make-your-home-smarter-weather-tracking-netatmo-20",
+          "publishedOn": "2021-11-25T21:49:53.000Z",
+          "wordCount": 874,
+          "title": "Make your home smarter with weather tracking with Netatmo up to 20% off"
+        },
+        {
+          "id": "60140.r34380 at https://www.androidcentral.com",
+          "author": "Jennifer Locke",
+          "description": "PlayStation VR is becoming an increasingly larger platform, especially with the upcoming PS5 VR release. But no matter where you play your VR games, whether on a PS4 or PS5, you're in for an incredible experience. With PlayStation unleashing new games almost every month, it's easy to get overwhelmed by what's out there. Here are some of the unreleased VR games slated to hit PSVR in the coming months. We look forward to adding more upcoming PlayStation VR games to this list as they become available. For now, we hope some of our favorite picks on this list catch your eye.\r\n\r\n\r\n\r\nJump to:\r\n\r\n\r\nAfter the Fall\r\nPuzzling Places\r\nStride\r\nZenith\r\nWanderer\r\nPuzzle Bobble 3D: Vacation Odyssey\r\n\r\n\r\n\r\n\r\nAfter the Fall\r\n\r\n\r\n\r\n\r\n\r\nHave enough post-apocalyptic experiences? Well, you're in for another one. Developer Vertigo Games (creators of Arizona Sunshine) is bringing After the Fall to PlayStation VR. Set 20 years after a viral outbreak caused by designer drugs, Los Angeles is infested with these so-called Snowbreed. ...",
+          "link": "https://www.androidcentral.com/playstation-vr-games-launching-this-month",
+          "publishedOn": "2021-11-25T21:30:00.000Z",
+          "wordCount": 1442,
+          "title": "PlayStation VR games releasing in December 2021 and beyond"
+        },
+        {
+          "id": "105591.r34380 at https://www.androidcentral.com",
+          "author": "Luke Filipowicz",
+          "description": "If you've been looking around at the Best Black Friday Android phone deals, you know that a phone is only as good as its accessories. A portable Bluetooth speaker is one of the best accessories for any phone.\r\n\r\nThe Treblab HD77 Bluetooth portable speaker offers a lot of features that many more expensive Bluetooth speakers have, like an IPX6 rating so you can get the speaker wet with no issues, the ability to create stereo pair with another HD77, and a stellar 20-hour battery life that will keep your favorite music blasting all through the night. At only $59.47, you're saving over $40 on a great portable Bluetooth speaker.\r\n\r\n\r\n\r\nTreblab HD77 Bluetooth portable speaker | Save over $40\r\n\r\n\r\n\r\nWith an IPX6 water-resistance rating, you can take the Treblab HD77 with you just about anywhere and never worry about a little bit of water ruining your favorite music. The icing on the cake? It has 20 hours of battery life.\r\n\r\n$59.47 at Amazon\r\n\r\n\r\n\r\nThe design of the Treblab HD77 allows the sound to come all aw...",
+          "link": "https://www.androidcentral.com/save-41on-long-lasting-bluetooth-speaker-black-friday",
+          "publishedOn": "2021-11-25T21:13:34.000Z",
+          "wordCount": 575,
+          "title": "Save 41% on this long-lasting Bluetooth Speaker for Black Friday"
+        },
+        {
+          "id": "105527.r34380 at https://www.androidcentral.com",
+          "author": "Courtney Lynch",
+          "description": "Sifting through the best Black Friday smartwatch deals can be quite challenging when you have so many solid choices in front of you. We're seeing major discounts on some of the best Android smartwatches, including every model in the Garmin Venu lineup.\r\n\r\nIf you're not familiar with this lineup, it includes the original Garmin Venu, the Garmin Venu Sq, and the Garmin Venu 2. These are a few of the best Garmin smartwatches on the market, so getting any of these wearables at a discounted price is a real treat. The deals range from $50 off all the way up to $155 off, so you'll want to act fast to get yours.\r\n\r\n\r\n\r\nNo matter which Garmin Venu model you fancy, you'll be getting one of the best fitness smartwatches available. The original Venu was released back in 2019, which makes it the oldest model. Don't worry, this smartwatch is still capable of handling your needs. You'll enjoy plenty of features, including built-in GPS, heart-rate monitoring, activity/sleep tracking, blood oxygen monitori...",
+          "link": "https://www.androidcentral.com/black-friday-garmin-venu-deals",
+          "publishedOn": "2021-11-25T20:30:02.000Z",
+          "wordCount": 925,
+          "title": "These are the best Black Friday Garmin Venu deals"
+        },
+        {
+          "id": "105584.r34380 at https://www.androidcentral.com",
+          "author": "Alex Dobie",
+          "description": "The Sony WF-1000XM3 wireless earbuds debuted in late 2019 with a fairly astronomical $228 price tag. But right now, just ahead of Black Friday, they're down to $128 across a range of U.S. retailers. That's a 36% saving on the previous price of $199.\r\n\r\nThese aren't Sony's very latest wireless earbuds, but the XM3s still hold up extremely well alongside the current crop of $100-level buds. They boast excellent active noise cancelation (ANC) capabilities, the rich, warm sound we've come to expect from Sony's audio equipment, and USB-C charging.\r\n\r\nExceptional earbuds for half the original price\r\n\r\n\r\n\r\n\r\n\r\nSony WF-1000XM3 | $72 off\r\n\r\n\r\n\r\n$128 at Amazon\r\n$128 at Best Buy\r\n$128 at Walmart\r\n$128 at B&H\r\n\r\nWhile some of the features aren't quite as good as what you get with the XM4s, the XM3s are still some of the best available — and at $128, they're hard to pass up if you are looking to save some cash this Black Friday.\r\n\r\n\r\n\r\n\r\n\r\nThe XM3s have since been superseded by the newer WF-1000XM4 buds, which launch...",
+          "link": "https://www.androidcentral.com/save-72-some-best-sony-wireless-earbuds",
+          "publishedOn": "2021-11-25T20:13:05.000Z",
+          "wordCount": 672,
+          "title": "Save $72 on some of Sony's best wireless earbuds this Black Friday"
+        },
+        {
+          "id": "94499.r34380 at https://www.androidcentral.com",
+          "author": "Andrew Myrick",
+          "description": "Samsung's Galaxy S20 FE might be mostly made of plastic, but it still warrants protecting, especially when it comes to the screen. Thus, you'll probably be looking for the best Galaxy S20 FE screen protectors. Pair it up with some of the best Galaxy S20 FE cases, and you have all the protection you'll need. This smartphone turns heads with its sleek design and a spec-sheet that could rival some of the best Android phones on the market.\r\n\r\n\r\n\r\n\r\n\r\nEasy application\r\n\r\nSupershieldz Tempered Glass Screen Protector (3 pack)\r\n\r\nStaff pick\r\n\r\n\r\n\r\nSupershieldz is one of the most popular brands of screen protectors because not only is the glass quite durable, but the pocketbook-style application method is so easy even my mother can put them on by herself. This pack also gives you two spares, so if your first one shatters in the line of duty, you can replace it the moment you get home.\r\n\r\n$9 at Amazon\r\n$9 at Walmart\r\n\r\n\r\n\r\n\r\n\r\nScreen and eye protection\r\n\r\nZAGG InvisibleShield Glass+\r\n\r\n\r\n\r\nZAGG makes some of the best Galaxy...",
+          "link": "https://www.androidcentral.com/best-samsung-galaxy-s20-fe-screen-protectors",
+          "publishedOn": "2021-11-25T20:00:00.000Z",
+          "wordCount": 1852,
+          "title": "These are the screen protectors you'll want to get for your Galaxy S20 FE"
+        },
+        {
+          "id": "80502.r34380 at https://www.androidcentral.com",
+          "author": "Jeramy Johnson",
+          "description": "Look no further, for we have the definitive listing of the best Amazon Fire Tablets to help you make your purchase decision. Can you believe that Fire Tablets have been around for almost a decade? When the original Kindle Fire was released way back in 2011, many thought Amazon was onto something with a low-cost, easy-to-use tablet experience. You know what? They were right! Today, there are no fewer than six Fire Tablet devices on offer from Amazon if you count the Kids Editions. Out of them all, we think the Fire HD 8 (2020) is the best overall value thanks to its size, improved processor, charging, storage capabilities, and ability to hit an affordable price point still. Here is a list of some of the best Fire Tablets out on the market right now.\r\n\r\nBest overall Amazon Fire Tablet: Fire HD 8 Tablet (2020)\r\n\r\n\r\n\r\nThe Fire HD 8 sits in between the Fire 7 and Fire HD 10 in more ways than one. It's roughly in the middle of the two sizes, of course, but it's also priced in the middle. Those t...",
+          "link": "https://www.androidcentral.com/best-kindle-fire-tablet",
+          "publishedOn": "2021-11-25T19:30:00.000Z",
+          "wordCount": 3046,
+          "title": "Which Amazon Fire Tablet should you get?"
+        },
+        {
+          "id": "73866.r34380 at https://www.androidcentral.com",
+          "author": "Joe Maring",
+          "description": "There are plenty of ways to stream content on your television, and if you get one of the best Android TV boxes, you can make sure that the experience is as fast, seamless, and enjoyable as possible. Android TV boxes allow you to instantly access all of your favorite video and music apps, along with some light games, without going out and buying a completely new TV. There are a few different options to choose from, with these being the best of the best.\r\n\r\nWhat are the best Android TV boxes?\r\n\r\nOur overall pick has to be the Chromecast with Google TV when it comes to the best Android TV boxes. In almost every regard, the new Chromecast is basically perfect. It has 4K HDR streaming with support for Dolby Vision/Atmos, a great remote that's easy-to-use, and comes in at an incredible price. However, the star of the show is the special Google TV software that's layered on top of Android TV, offering new features and an upgraded design that we think you'll love.\r\n\r\nIf you aren't thrilled with what...",
+          "link": "https://www.androidcentral.com/best-android-tv-boxes",
+          "publishedOn": "2021-11-25T19:00:00.000Z",
+          "wordCount": 4281,
+          "title": "Create the ultimate home theater experience with these Android TV boxes"
+        },
+        {
+          "id": "105585.r34380 at https://www.androidcentral.com",
+          "author": "Sean Endicott",
+          "description": "Many of the best budget Android phones deliver a solid experience for only a few hundred dollars. But if you want to spend even less, you can pick up a Samsung Galaxy A02s on Black Friday. The prepaid smartphone is on sale for just $40 at Walmart, which is almost half price.\r\n\r\nThe Galaxy A02s is a modest smartphone with specs that reflect its price tag, but it's a great pickup if you need a spare phone. It's also a good choice for kids, especially at only $40. It can handle the basics that you'd expect from a smartphone in 2021, including sending messages, making calls, and running Android apps. It should also last a while on each charge, thanks to its 5,000 mAh battery.\r\n\r\nSave 50% on a Samsung smartphone on Black Friday\r\n\r\n\r\n\r\n\r\n\r\nSamsung Galaxy A02s\r\n\r\n\r\n\r\n$40 at Walmart\r\n\r\nThis prepaid smartphone only costs $40 on Black Friday. It has modest specs but is a perfect choice for a child or if you need a spare phone. It features a 5,000 mAh battery, so it should get enough power to last throughout the...",
+          "link": "https://www.androidcentral.com/just-40-discounted-phone-perfect-choice-kids-black-friday",
+          "publishedOn": "2021-11-25T18:57:51.000Z",
+          "wordCount": 578,
+          "title": "You can grab this Samsung phone for only $40 on Black Friday"
+        },
+        {
+          "id": "105583.r34380 at https://www.androidcentral.com",
+          "author": "Cale Hunt",
+          "description": "Our phones, tablets, and cameras continue to eat up more and more storage space as files grow in size, and it seems like you can never have enough storage space. If you'd rather not rely on cloud storage or just want a simple alternative, SD cards, microSD cards, and USB flash drives are still a popular and affordable solution. While this type of hardware isn't ever particularly expensive, Black Friday sees a bunch of major brands like Lexar, SanDisk, and PNY put some of their best gear up for sale at Amazon. A wide range of sizes and prices are available, so you should be able to find something that suits your needs, especially if you're getting in on some great Black Friday phone deals.\r\n\r\nIf you're looking for SD and microSD cards for a phone, tablet, or camera, SanDisk and Lexar make some top options. Photographers and videographers should be able to save some dough, plus there are basic options for general use.\r\n\r\nThose who are interested in a USB flash drive will find options from PN...",
+          "link": "https://www.androidcentral.com/black-friday-storage-lexar-sandisk-pny",
+          "publishedOn": "2021-11-25T18:37:06.000Z",
+          "wordCount": 1089,
+          "title": "Solve your storage issues with deals from SanDisk, Lexar, PNY, and more"
+        },
+        {
+          "id": "105578.r34380 at https://www.androidcentral.com",
+          "author": "Jay Bonggolto",
+          "description": "Google Pixel's Now Playing feature is apparently adding a 'Favorites' tab.\r\n\r\nWhat you need to know\r\n\r\n\r\nGoogle appears to be planning to release a useful update to the Pixel phones' music discovery feature.\r\nThe Now Playing feature could pick up a new tab for your favorite songs in the future.\r\nIt also means the feature's bottom bar could get a redesign once it is rolled out.\r\n\r\n\r\nGoogle added a feature to the Pixel 2 series that allows the Pixel devices to recognize songs that are playing nearby. While the feature automatically displays the title of a mystery song on your lock screen, there is currently no simple way to keep track of music you might want to listen to again later.\r\n\r\nThat could change in a future update to the Shazam-like feature. 9to5Google has spotted new evidence in the Android System Intelligence that indicates a new favorites tab is on its way to Google's Pixel phones. Android System Intelligence is designed to manage your Pixel phone's smart functions including Live Trans...",
+          "link": "https://www.androidcentral.com/google-pixel-now-playing-feature-favorites-tab",
+          "publishedOn": "2021-11-25T18:19:45.000Z",
+          "wordCount": 955,
+          "title": "Google Pixel phones could soon make it easier to sort your favorite songs"
+        },
+        {
+          "id": "105576.r34380 at https://www.androidcentral.com",
+          "author": "Chris Wedel",
+          "description": "While there are many options when it comes to smartwatches for Android users, there are really only a few that are worth your hard-earned money. One brand that has been at the top with some of the best Android smartwatches — is Mobvoi with its TicWatch lineup. This Black Friday, their devices are discounted up to 50% off and is the perfect time to pick out one or more of their fantastic watches.\r\n\r\n\r\n\r\nPerhaps the most impressive of all the watches that Mobvoi offers is the TicWatch Pro 3. When I reviewed the TicWatch Pro 3, this watch instantly became my favorite smartwatch to wear as my daily device. Aside from its amazing battery life, up to 45 days, thanks to its unique dual-layer display technology, it was the first Wear OS smartwatch to run the Snapdragon 4100. This brought a major bump in performance. The watch is fast, and everything works wonderful, even Google Assistant, which was also a first — it too is fast. You'll get all the health features you'd expect like heart rate t...",
+          "link": "https://www.androidcentral.com/save-100-wear-os-3-ready-ticwatch-pro-3-and-more",
+          "publishedOn": "2021-11-25T18:03:00.000Z",
+          "wordCount": 1180,
+          "title": "Save up to $100 on the Wear OS 3 ready TicWatch Pro 3 and more"
+        },
+        {
+          "id": "101070.r34380 at https://www.androidcentral.com",
+          "author": "Courtney Lynch",
+          "description": "Several new features\r\n\r\nGarmin Venu 2\r\n\r\n\r\n\r\n$400 at Amazon\r\n\r\nPros\r\n\r\n\r\nGPS, HRM, NFC\r\n10 to 11 days of battery life\r\nStunning AMOLED display\r\nHealth Snapshot, fitness age, sleep score\r\nTwo size options\r\n\r\n\r\nCons\r\n\r\n\r\nSignificantly more expensive\r\n\r\n\r\nThe Garmin Venu 2 shows that successors can indeed be successful. There are several new features to go around. You get the essentials and more, including fitness age, sleep score, Health Snapshot, new activity profiles, a battery saver mode, rapid charging, and more. It's more expensive, but the beautiful design, AMOLED display, and extra perks might just be worth the money.\r\n\r\n\r\n\r\n\r\n\r\nTimeless classic\r\n\r\nGarmin Vivoactive 4\r\n\r\n\r\n\r\n$268 at Amazon\r\n\r\nPros\r\n\r\n\r\nGPS, HRM, NFC\r\n7 to 8 days of battery life\r\nActivity/sleep tracking\r\nMore affordable\r\nTwo size options\r\n\r\n\r\nCons\r\n\r\n\r\nShorter battery life\r\nNo battery saving mode\r\nLacks Venu 2's new perks\r\n\r\n\r\nMost people searching for a smartwatch with solid health and fitness tracking will be more than happy with the Garmin Vivoactive 4. You get t...",
+          "link": "https://www.androidcentral.com/garmin-venu-2-vs-vivoactive-4",
+          "publishedOn": "2021-11-25T17:45:00.000Z",
+          "wordCount": 2566,
+          "title": "Should you buy the Garmin Venu 2 or Vivoactive 4?"
+        },
+        {
+          "id": "97329.r34380 at https://www.androidcentral.com",
+          "author": "Courtney Lynch",
+          "description": "A perfect lifestyle watch\r\n\r\nFossil Gen 5\r\n\r\n\r\n\r\nFrom $205 at Amazon\r\n\r\nPros\r\n\r\n\r\nOnboard GPS\r\nHeart-rate monitoring\r\nActivity/sleep tracking\r\nGoogle Assistant\r\nGoogle Pay\r\n\r\n\r\nCons\r\n\r\n\r\nOnly one size option\r\nMore expensive\r\n\r\n\r\nIf you want to go big or go home with your smartwatch experience, the Fossil Gen 5 is a worthy contender. It's nearly identical to the Fossil Gen 5E, with a few key exceptions. On this model, you get onboard GPS, more internal storage, and a rotating crown. It only comes in one size, though.\r\n\r\n\r\n\r\n\r\n\r\nLite yet efficient wearable\r\n\r\nFossil Gen 5E\r\n\r\n\r\n\r\nFrom $196 at Amazon\r\n\r\nPros\r\n\r\n\r\nHeart-rate monitoring\r\nActivity/sleep tracking\r\nGoogle Assistant\r\nGoogle Pay\r\nTwo sizes\r\n\r\n\r\nCons\r\n\r\n\r\nLacks onboard GPS\r\nNo rotating crown\r\nLess storage\r\n\r\n\r\nIf looks are more important to you than interior features, you might find yourself favoring the Fossil Gen 5E. You'll have two size options to choose from, which is ideal for users with smaller wrists. It's slightly more affordable, but you'll sacrifice GPS and a few other fe...",
+          "link": "https://www.androidcentral.com/fossil-gen-5-vs-gen-5e",
+          "publishedOn": "2021-11-25T17:44:00.000Z",
+          "wordCount": 2216,
+          "title": "Should you buy the Fossil Gen 5 or the Fossil Gen 5E?"
+        },
+        {
+          "id": "64113.r34380 at https://www.androidcentral.com",
+          "author": "Keegan Prosser",
+          "description": "Best for Roku\r\n\r\nRoku Ultra\r\n\r\n\r\n\r\n$90 at Amazon\r\n\r\nPros\r\n\r\n\r\n4K HDR streaming\r\nWorks with Google Assistant and Alexa\r\nLost remote function\r\nHuge selection of apps/channels\r\nCheaper Roku options available\r\n\r\n\r\nCons\r\n\r\n\r\nUI isn't as sleek as Android TV\r\nWeaker gaming features\r\n\r\n\r\nIf you're more of a Roku person, the Roku Ultra is the best way to experience the platform. You get 4K HDR streaming, a powerful voice remote, and a bunch more features. If the Ultra is too rich for your blood, Roku sells various cheaper models, too.\r\n\r\n\r\n\r\n\r\n\r\nBest for Android TV\r\n\r\nNVIDIA Shield TV\r\n\r\n\r\n\r\n$150 at Amazon\r\n\r\nPros\r\n\r\n\r\n4K HDR streaming\r\nGoogle Assistant built-in\r\nChromecast target\r\nSupports NVIDIA's GeForce Now game streaming\r\nHands-free Alexa controls\r\n\r\n\r\nCons\r\n\r\n\r\nMore expensive\r\nLimited app selection \r\nNo extra USB ports\r\n\r\n\r\nThe latest version of the Shield TV was released in 2019, but it's still the best Android TV box you can buy. It runs on Android 9 Pie, supports 4K HDR streaming and Dolby Atmos, and offers fast and smooth performance.\r\n\r\n...",
+          "link": "https://www.androidcentral.com/android-tv-vs-roku",
+          "publishedOn": "2021-11-25T17:44:00.000Z",
+          "wordCount": 2890,
+          "title": "Android TV vs. Roku: Which smart TV platform is right for you?"
+        },
+        {
+          "id": "105582.r34380 at https://www.androidcentral.com",
+          "author": "Harish Jonnalagadda",
+          "description": "Mesh routers get all the attention these days, but in most use cases, they don't do as good a job as a standalone router with high-gain antennae. ASUS definitely knows a thing or two about building such routers, and the RT-AC3100 is one of the best options you can get in the mid-range segment.\r\n\r\nThis router usually goes for $220, but it's on sale for $160, $60 off its retail price. What do you get for that price? One of the fastest Wi-Fi ac routers right now — you miss out on Wi-Fi 6 connectivity, but the RT-AC3100 more than makes up for it when you look at the feature-set.\r\n\r\nThe RT-AC3100 has four antennae, and it can deliver up to 2.1Gbit over the 5GHz band and 1Gbit over 2.4GHz, utilizing NitroQAM to do so. The 4x4 MIMO design ensures there are no bottlenecks even when several devices are connected to the router and consuming bandwidth at the same time, and it is tuned for low-latency use cases like gaming.\r\n\r\n\r\n\r\nASUS RT-AC3100\r\n\r\n\r\n\r\n$160 at Amazon\r\n\r\nThe RT-AC3100 follows in the heels of t...",
+          "link": "https://www.androidcentral.com/give-your-home-wi-fi-boost-160-router",
+          "publishedOn": "2021-11-25T17:35:38.000Z",
+          "wordCount": 593,
+          "title": "Supercharge your home Wi-Fi with this $160 router"
+        }
+      ]
+    },
+    {
+      "title": "Windows Central - News, Forums, Reviews, Help for Windows 10, Windows 11, and all things Microsoft.",
+      "feedUrl": "http://feeds.windowscentral.com/wmexperts",
+      "siteUrl": "https://www.windowscentral.com/",
+      "articles": [
+        {
+          "id": "89240.r34380 at https://www.windowscentral.com",
+          "author": "Cale Hunt",
+          "description": "Intel might have jumped ahead to PCIe 5.0 support with its 12th Gen Alder Lake processors, but most people are just starting to get into PCIe 4.0 support with their PC hardware. Some of the best Black Friday PC parts deals include solid-state drives, but PCIe 4.0 is still relatively rare.\r\n\r\nIf your PC can support PCIe 4.0, something like Seagate's FireCuda 530 SSD is going to turn long load times into a thing of the past. This drive, which is currently on sale for up to 25% off, can hit read speeds up to 7,300MB/s, essentially doubling what even the faster PCIe 3.0 drives can handle. And if you're still working with a SATA SSD, you're going to step into a future where Windows boots before your screen wakes up.\r\n\r\nThe FireCuda 530 PCIe 4.0 SSD available in four discounted sizes at Amazon, ranging from 500GB up to 4TB. The 500GB model is 20% off, the 1TB model is 25% off, the 2TB model is 22% off, and the 4TB model is 15% off. PCIe 4.0 drives don't yet come cheap, so any savings here is wel...",
+          "link": "https://www.windowscentral.com/seagate-firecuda-530-black-friday",
+          "publishedOn": "2021-11-26T01:40:05.000Z",
+          "wordCount": 609,
+          "title": "Seagate's speedy FireCuda 530 PCIe 4.0 SSD is up to $115 off"
+        },
+        {
+          "id": "89239.r34380 at https://www.windowscentral.com",
+          "author": "Cale Hunt",
+          "description": "The HP Reverb G2 VR and Windows Mixed Reality system was first released in 2020, with a second updated model hitting markets much more recently in 2021. The first effort was enough to garner a Windows Central Recommended Award, all thanks to its impressive visual fidelity, robust audio system, and comfortable fit. The main drawbacks were the inside-out tracking sometimes losing the controllers, as well as the controllers themselves. Compared to more expensive VR systems — like the Valve Index — the lack of touch-capacitive sensors was a letdown. No giving thumbs-up to your pals in a virtual world.\r\n\r\nHP went ahead and made a few changes to the headset for 2021 at no extra cost. While the controllers themselves didn't see any improvement, tracking was improved, especially when holding the controllers below the waist. The Reverb G2-V2 (as I took to calling it) also received a new face gasket that allows for a much closer eye relief, improving the headset's field of view. A new cable de...",
+          "link": "https://www.windowscentral.com/updated-reverb-g2-black-friday-hp-deal",
+          "publishedOn": "2021-11-26T00:54:57.000Z",
+          "wordCount": 853,
+          "title": "HP's updated Reverb G2-V2 with better tracking is down to just $399"
+        },
+        {
+          "id": "89238.r34380 at https://www.windowscentral.com",
+          "author": "Sean Endicott",
+          "description": "At one point, you had to wait up until midnight to get the best Black Friday PC deals. Now, you can browse all of the discounts online. Dell is so kind that it's even given people a heads up for when the Dell Inspiron 27 7000 All-in-One will go on sale. Starting at 1 PM EST on November 26, 2021 (Black Friday), you can order the All-in-One for just a penny under $700, which is $350 off.\r\n\r\nThe Inspiron 27 7000 has the looks and specs to compete with the best All-in-One PCs. The configuration that will be available for $700 runs on an 11th Gen Intel Core i5-1135G7 processor and Intel Iris Xe graphics. Inside, it has 8GB of RAM and 256GB of storage. The All-in-One has a 27-inch display with an InfinityEdge display, meaning it has thin bezels.\r\n\r\nScheduled savings on the Dell Inspiron 27 7000 All-in-One\r\n\r\n\r\n\r\n\r\n\r\nDell Inspiron 27 7000\r\n\r\n\r\n\r\n$700 at Dell\r\n\r\nAn All-in-One is a great way to set up a PC in your home or office without having to deal with lots of wires or a clunky setup. The Inspiron 27 7000 ...",
+          "link": "https://www.windowscentral.com/set-your-alarm-get-black-friday-deal-dell-inspiron-27-7000-all-one",
+          "publishedOn": "2021-11-25T21:50:45.000Z",
+          "wordCount": 631,
+          "title": "Here’s when to grab a Dell Inspiron 27 AiO for under $700 on Black Friday"
+        },
+        {
+          "id": "81429.r34380 at https://www.windowscentral.com",
+          "author": "John Levite",
+          "description": "It should not be a shock to you that we at Windows Central like the Dell XPS 13 laptop. \"Perfect\" is not a word online tech reviewers throw around very often, but it is how we described the Dell XPS 13 in our review that also gave it 5 out of 5 stars. The laptop combines one of the best and most stylish designs on the market with some of the best features you should expect from a modern Windows laptop. What you get is, according to our review, \"easily the best 13-inch Ultrabook on the market.\"\r\n\r\nOf course, all that perfection doesn't come without a cost. The XPS 13 can definitely get expensive, especially if you want more storage and faster processors. Lucky for you Dell's Black Friday deals are here nice and early, and this is the time of year for you to save hundreds on a great laptop like the XPS 13.\r\n\r\n\r\n\r\n\r\n\r\nXPS 13 laptop | $649 at Dell\r\n\r\n\r\n\r\n$649 at Dell\r\n\r\nNot long ago we would have been loosing our minds to see an XPS 13 under a grand. Then the Black Friday XPS 13 deals came long this y...",
+          "link": "https://www.windowscentral.com/best-dell-xps-13-deals-black-friday",
+          "publishedOn": "2021-11-25T21:22:00.000Z",
+          "wordCount": 1683,
+          "title": "These are the best Dell XPS 13 deals for Black Friday"
+        },
+        {
+          "id": "89237.r34380 at https://www.windowscentral.com",
+          "author": "Cale Hunt",
+          "description": "The best Dell Black Friday deals have mostly been hosted at the official Dell website, but we've also sourced out some officially branded accessories at other retailers. Whether you're looking for a keyboard, mouse, headset, or bag, you're looking at savings up to 50% at Amazon. These are better prices than Dell is currently offering.\r\n\r\nDell's KM5221W wireless keyboard and mouse bundle is a great choice if you need some hardware for the office, and the wireless capabilities make them great for a living room media PC setup. The Dell MS5120W wireless mouse is also available on its own for 50% off.\r\n\r\nFor gamers, the Alienware AW310H headset works with PC and console. It has a built-in microphone and 50mm drivers for excellent sound. The Alienware AW310K mechanical keyboard has Cherry MX Red switches for high-end performance. It's a wired option with white LED backlight, USB passthrough, and dedicated volume keys.\r\n\r\nIf you'd rather not use a headset, be sure to check out Dell's AC511M stereo ...",
+          "link": "https://www.windowscentral.com/dell-accessories-black-friday-amazon",
+          "publishedOn": "2021-11-25T21:16:44.000Z",
+          "wordCount": 936,
+          "title": "Amazon has some great deals on Dell accessories for Black Friday"
+        },
+        {
+          "id": "89235.r34380 at https://www.windowscentral.com",
+          "author": "Jez Corden",
+          "description": "Xbox Game Pass is an excellent service, offering hundreds of games across PC, console, and cloud for a relatively low monthly fee. For Black Friday, we've already seen Best Buy offer steep discounts on Xbox Game Pass Ultimate that includes all three services and EA Play, but what if you just want the PC games? In that case, this deal is probably for you.\r\n\r\n\r\n\r\n\r\n\r\n33% off\r\n\r\nXbox Game Pass for PC\r\n\r\n\r\n\r\nXbox Game Pass for PC has well over three hundred high-quality games for a relatively low monthly fee. With this Black Friday deal, you can score access to the entire catalog for 3 months with this huge saving.\r\n\r\n$19 (was $29) at Amazon\r\n\r\n\r\n\r\n\r\n\r\nAmazon is offering Xbox Game Pass for PC codes for 33% off their typical asking price, giving you three months of access for just $19 with an online code. After purchasing this deal, Amazon will email the code to you, which you then simply attach to your Microsoft Account on a Windows 10 or Windows 11 PC. From there, you can access all of the PC games Xbox Game...",
+          "link": "https://www.windowscentral.com/black-friday-grab-33-xbox-game-pass-pc-codes-amazon-right-now",
+          "publishedOn": "2021-11-25T20:52:51.000Z",
+          "wordCount": 650,
+          "title": "Grab 33% off Xbox Game Pass for PC codes at Amazon right now"
+        },
+        {
+          "id": "89234.r34380 at https://www.windowscentral.com",
+          "author": "Cale Hunt",
+          "description": "Some of the best Black Friday laptop deals are currently underway, and as you might have noticed there are a ton of high-end laptops that still have a fairly high price after a discount. While that's perfectly fine for those who are searching out something for work or gaming, anyone who just needs a basic PC to have around the house for homework or general productivity will want to have a look at Chuwi's HeroBook pro 14.1. It's down to $279 at Amazon for Black Friday, which is a $100 discount.\r\n\r\nThe HeroBook Pro is an evolution of the standard Chuwi HeroBook 14.1 I reviewed a couple of years ago. The Pro version has been updated with a 256GB M.2 solid-state drive for much better performance compared to eMMC storage, and there's a microSD card reader if you'd like to add some extra removable storage.\r\n\r\n\r\n\r\nChuwi HeroBook Pro 14.1 | $100 off\r\n\r\n\r\n\r\nThe HeroBook Pro from Chuwi features a Celeron N4020 dual-core CPU, 8GB of RAM, and 256GB M.2 SSD. The 14.1-inch display is set at an FHD resolution,...",
+          "link": "https://www.windowscentral.com/chuwi-herobook-pro-14-black-friday",
+          "publishedOn": "2021-11-25T20:39:58.000Z",
+          "wordCount": 656,
+          "title": "Get the Chuwi HeroBook Pro 14.1 laptop for just $279 thanks to Black Friday"
+        },
+        {
+          "id": "89233.r34380 at https://www.windowscentral.com",
+          "author": "Jez Corden",
+          "description": "Highly recommended.\r\n\r\nThere's always one headset I recommend when someone is looking for the cheapest, but actually good headset for their shiny new Xbox. That headset is the HyperX CloudX. Thanks to Black Friday it has hit one of its lowest prices ever, and easily makes the grade as one of the best Xbox headset deals for Black Friday we've found so far.\r\n\r\n\r\n\r\n\r\n\r\n$30 off\r\n\r\nHyperX CloudX\r\n\r\n\r\n\r\nThis headset has been on sale, largely unchanged, for years. Why? Because it's that damn good. The HyperX CloudX like its namesake is an airy and light set of cans with big sound, big bass, and big quality. At $39, it absolutely wipes the floor with almost every other wired headset deal we've seen so far.\r\n\r\n$39 (was $69) at Amazon\r\n\r\n\r\n\r\n\r\n\r\nThe HyperX CloudX has existed largely unchanged since its launch several years ago, at this point. Why? Because it was practically perfect from the outset. The HyperX CloudX is the definitive \"entry-level\" gaming headset for any console, although it typically sports an Xbox-s...",
+          "link": "https://www.windowscentral.com/impeccable-hyperx-cloudx-headset-hits-its-lowest-price-yet-black-friday",
+          "publishedOn": "2021-11-25T20:33:30.000Z",
+          "wordCount": 632,
+          "title": "The HyperX CloudX wired headset is an absolute STEAL with 43% off"
+        },
+        {
+          "id": "89163.r34380 at https://www.windowscentral.com",
+          "author": "Rich Edmonds",
+          "description": "It's time for Black Friday, and that means there are discounts to be had across numerous product categories, including the best NAS for home. We've seen QNAP NAS servers go on sale before, and we expect the same to happen again for this year's discount event. To make it easier to digest everything, you'll find all the best QNAP deals right here.\r\n\r\n\r\n\r\n\r\n\r\nQNAP TS-451D2-4G | $50 off\r\n\r\n\r\n\r\nThe QNAP TS-451D2 is one of the company's best enclosures for the home and office, offering excellent value. This server has four drive bays, an Intel Celeron J4025 CPU, and 4GB of DDR4 RAM. If you want to run anything from a file server to a Plex Media Server, this is a great system.\r\n\r\n$459 at Best Buy\r\n\r\n\r\n\r\n\r\n\r\nQNAP TS-230 | $20 off\r\n\r\n\r\n\r\nThe QNAP TS-230 is an affordable two-bay NAS enclosure with a Realtek RTD1296 ARM processor, 2GB of DDR4 RAM, and a single 1Gb LAN port. It's not the most powerful NAS around, but it's perfect for your first enclosure or for some file storage.\r\n\r\n$179 at Best Buy\r\n\r\n\r\n\r\n\r\n\r\nQNAP TS-253D |...",
+          "link": "https://www.windowscentral.com/best-qnap-nas-black-friday-deals",
+          "publishedOn": "2021-11-25T20:00:03.000Z",
+          "wordCount": 889,
+          "title": "These are the best QNAP NAS Black Friday deals"
+        },
+        {
+          "id": "89232.r34380 at https://www.windowscentral.com",
+          "author": "Sean Endicott",
+          "description": "Microsoft is gradually rolling out the mica blur effect for Word to Beta Channel Office Insiders.\r\n\r\n\r\n\r\nWhat you need to know\r\n\r\n\r\nMicrosoft is testing out the mica blur effect on Word on Windows 11.\r\nMica requires fewer system resources than an acrylic blur because it only samples from a PC's background.\r\nThe mica effect has been spotted by Office Insiders in the Beta Channel but is rolling out gradually.\r\n\r\n\r\nMicrosoft's mica blur effect is one step closer to rolling out in Microsoft Word. Mica is the new blur effect available in Windows 11. An Office Insider in the Beta Channel spotted the new style of blurring in Microsoft Word and shared a screenshot on Reddit.\r\n\r\nMica is an effect similar to the acrylic blur, but it's less resource-intensive because it samples from a PC's wallpaper rather than any apps behind an active window. The effect is seen on several apps on Windows 11, including the File Explorer and the Settings app.\r\n\r\n\r\n\r\nHere's Microsoft's description of mica from a support document (e...",
+          "link": "https://www.windowscentral.com/office-insiders-can-try-out-mica-blur-effect-microsoft-word-windows-11",
+          "publishedOn": "2021-11-25T19:53:50.000Z",
+          "wordCount": 910,
+          "title": "Windows 11’s mica blur effect is being tested in Microsoft Word"
+        },
+        {
+          "id": "89231.r34380 at https://www.windowscentral.com",
+          "author": "Cale Hunt",
+          "description": "You might not be able to find any graphics cards on sale this year, but there is still plenty of other hardware available in our roundup of the best Black Friday PC parts deals. One area we've been keeping a keen eye on is PC cases. You can't really build a new computer without one, and with the right shopping you should be able to find something that accommodates both your sense of style and need for airflow.\r\n\r\nPC hardware maker Hyte recently released a Revolt 3 ITX case that's ideal for those who prefer a compact build. It's about 16 inches tall, 10 inches deep, and 7 inches wide, making it just a bit larger than the Xbox Series X. All four of the case's side panels are breathable and include a dust filter. Plus, they can all be removed for easy tinkering inside. The removable top panel, which also has a dust filter, incorporates a foldable handle for easy carrying.\r\n\r\nThe Revolt 3 is available in black and white finishes, plus there are models available with an included modular 700W Go...",
+          "link": "https://www.windowscentral.com/hyte-revolt-3-black-friday",
+          "publishedOn": "2021-11-25T19:43:16.000Z",
+          "wordCount": 748,
+          "title": "Hyte's superb Revolt 3 ITX PC cases are on sale for Black Friday"
+        },
+        {
+          "id": "89230.r34380 at https://www.windowscentral.com",
+          "author": "Jez Corden",
+          "description": "Fancy a saving on Madden, FIFA, or NHL?\r\n\r\nBlack Friday is here, friends, and it's an ideal time to score a saving on various gifts and goodies ahead of the big Santafest later this year. If you're shopping for yourself or that beloved sports fan in your life, EA is discounting a range of sports games across its Xbox portfolio this Black Friday.\r\n\r\n\r\n\r\n\r\n\r\n36% off\r\n\r\nNHL 22 for Xbox Series X|S\r\n\r\n\r\n\r\nNHL 22 is the latest hockey sports title from EA, bringing the most realistic simulation of the sport to Xbox, PC, and PlayStation. For Black Friday, it's enjoying a sizeable third off discount of its next-gen version for Xbox Series S and X consoles. It's also available for 50% off for past-gen consoles too.\r\n\r\n$45 (was $70) at Amazon (Xbox S|X)\r\n$30 (was $60) at Amazon (Xbox One)\r\n\r\n\r\n\r\n\r\n\r\n36% off\r\n\r\nMadden 22 for Xbox Series X|S\r\n\r\n\r\n\r\nMadden 22 is EA's long-running American Football title, and its latest offering is also enjoying a deep discount for Black Friday across both current gen Xbox Series X|S consoles an...",
+          "link": "https://www.windowscentral.com/ea-discounting-its-2022-sports-titles-xbox-black-friday",
+          "publishedOn": "2021-11-25T19:31:08.000Z",
+          "wordCount": 720,
+          "title": "EA is discounting its 2022 Xbox sports games up to 50% for Black Friday"
+        },
+        {
+          "id": "89219.r34380 at https://www.windowscentral.com",
+          "author": "Richard Devine",
+          "description": "Gigabyte is often thought of more by gamers, but this hot Black Friday RTX 3060 laptop deal at Best Buy is perhaps better suited to the creators out there.\r\n\r\nOK, and gamers, but the AERO 4K OLED is an NVIDIA Studio-certified laptop, which makes it a really strong tool for folks who use a whole variety of creative software.\r\n\r\nThis is a pretty hefty discount and one of the best Black Friday laptop deals, especially considering it also packs a 4K Samsung OLED display. Oh yeah.\r\n\r\n\r\n\r\nGigabyte AERO 4K OLED | Save $650\r\n\r\n\r\n\r\nThis is a pretty insane laptop with not only a GTX 3060 and an 11th Gen Intel Core i7, but a simply glorious Samsung 4K OLED display. It can certainly game, but as an NVIDIA Studio laptop, this one's more for the creators.\r\n\r\n$1,250 at Best Buy\r\n\r\n\r\n\r\nFirst up, what hardware are you getting? Well besides that display, you'll also find an Intel Core i7-11800H, 16GB of RAM, a 1TB PCIe SSD, and an NVIDIA RTX 3060 GPU. So it can certainly game, but the display refresh rate is only 60Hz, s...",
+          "link": "https://www.windowscentral.com/black-friday-gigabyte-aero-4k-oled",
+          "publishedOn": "2021-11-25T18:26:00.000Z",
+          "wordCount": 651,
+          "title": "MacBook Who? This is the laptop creators should buy on Black Friday"
+        },
+        {
+          "id": "89229.r34380 at https://www.windowscentral.com",
+          "author": "Sean Endicott",
+          "description": "100 people purchased an Xbox Series X for $10,000.\r\n\r\n\r\n\r\n\r\n\r\nWhat you need to know\r\n\r\n\r\nMicrosoft and Gucci partnered together to create a luxury Xbox Series X.\r\nThe stylized console celebrates the 100th anniversary of Gucci and costs $10,000.\r\nAll 100 of the Gucci Xbox Series X consoles have already been sold.  \r\n\r\n\r\nThe Xbox Series X is difficult to find in stock this holiday season. It's so scarce, in fact, that Microsoft recently introduced a program for valued customers to get a better chance to purchase a console. It turns out that even if you're willing to spend $10,000 on a Gucci Xbox Series X that you won't be able to order one this Black Friday. Gucci's website shows that the \"Xbox by Gucci\" is sold out.\r\n\r\nIt's not that surprising that the Gucci Xbox Series X is out of stock. The luxury company only made 100 of the high-end consoles to celebrate the 100th year of Gucci and the 20th anniversary of Xbox. The console is emblazoned with a pattern that Gucci enthusiasts will recognize. It also ...",
+          "link": "https://www.windowscentral.com/even-gucci-xbox-series-x-sold-out-black-friday",
+          "publishedOn": "2021-11-25T18:00:09.000Z",
+          "wordCount": 988,
+          "title": "Sorry, you won't be able to buy the Gucci Xbox Series X for Black Friday"
+        },
+        {
+          "id": "89146.r34380 at https://www.windowscentral.com",
+          "author": "Jez Corden",
+          "description": "Xbox time machine.\r\n\r\nAh, the early 2000s. The scent of the 90s still lingering, 4:3 aspect ratio TV shows, mad hairstyles, and a primordial internet. Although it somehow doesn't feel like so long ago, it really rather was, given that we now seem to be sprinting to the mid-20s at an alarming rate.\r\n\r\nThis past month, Microsoft celebrated Xbox's 20th anniversary. Originally revealed by Bill Gates and The Rock (yes, that The Rock), Xbox changed the video game industry forever, presenting what an internet-first video game console would look like. You can argue that the Windows-powered Dreamcast was there first with its built-in modem, but it was ultimately Xbox that would bring it to the masses.\r\n\r\nAn entirely new concept for console gaming, Xbox Live was revealed as a fully online service, complete with integrated voice communications and connected multiplayer gameplay. No platform had really attempted this at scale before, and Microsoft, being the tech behemoth it is, was well placed to t...",
+          "link": "https://www.windowscentral.com/how-microsoft-explained-concept-xbox-live-press-back-2002",
+          "publishedOn": "2021-11-25T18:00:02.000Z",
+          "wordCount": 1665,
+          "title": "This retro vid is how Microsoft explained 'Xbox Live' to press back in 2002"
+        },
+        {
+          "id": "89228.r34380 at https://www.windowscentral.com",
+          "author": "Cale Hunt",
+          "description": "You can never have enough storage for your tech devices, but prices can add up quickly. Thankfully, some major storage brands — including SanDisk, Lexar, and PNY — have a bunch of products on sale for Black Friday. There are more than 30 USB sticks, SD cards, and microSD cards on sale at Amazon, with sizes for every need and prices for every budget.\r\n\r\nSanDisk's Extreme, Extreme Pro, and Ultra microSD and SD cards are ideal for quick removable storage across devices, while the Lexar Professional 1667x and 2000x SD cards might be the right choice for photographers and videographers who need high-quality storage. You're looking at savings up to 52% off here depending on the card you choose.\r\n\r\nIf you'd rather stick with USB storage, flash drives from PNY and SanDisk are also discounted by up to 38% off. Sizes range from 32GB all the way up to 1TB, so you're sure to find something that suits your needs and your budget.\r\n\r\nCheck out a bunch of the more impressive deals right here, but be sur...",
+          "link": "https://www.windowscentral.com/sandisk-lexar-pny-storage-black-friday",
+          "publishedOn": "2021-11-25T17:59:41.000Z",
+          "wordCount": 1052,
+          "title": "Removable storage from top brands is heavily discounted for Black Friday"
+        },
+        {
+          "id": "81222.r34380 at https://www.windowscentral.com",
+          "author": "Matt Brown",
+          "description": "Xbox Series X and Xbox Series S pack solid-state drives (SSDs) for super-speedy storage, although not without consequences. You don't have to spend long with the latest Xbox consoles to realize space is tight, with file sizes for many games north of 100GB, filling up internal storage extremely fast. That makes external storage near-essential for any sizeable game collection, but with cheap upgrades out there, you don't need an expensive SSD. We've rounded up the best external hard drives, all that work with Xbox Series X and Xbox Series S.\r\n\r\nBest overall: Seagate Expansion 2TB external drive\r\n\r\n\r\n\r\nWhen in the market for Xbox Series X and Xbox Series S storage expansions, an external hard drive presents a lower entry cost than alternatives. Hard drives act as an affordable upgrade to your console capacity, although trading the performance reserved for SSDs. But mechanical storage expands your console for a fraction of the cost, providing more gigabytes for your dollar.\r\n\r\nWhile Xbox owners ...",
+          "link": "https://www.windowscentral.com/xbox-series-x-series-s-hard-drives",
+          "publishedOn": "2021-11-25T17:51:00.000Z",
+          "wordCount": 3839,
+          "title": "Expand your Xbox Series X|S with these best hard drives"
+        },
+        {
+          "id": "83043.r34380 at https://www.windowscentral.com",
+          "author": "Matt Brown",
+          "description": "While gaming consoles traditionally pair with a TV, opting for a monitor has unique benefits. They make great desktop solutions, often delivering high-quality visuals in smaller screen sizes, sliding beside any PC in the home office. And with the rise of 4K HDR content steadily extending to PC monitors, they are viable across all price points. These are our favorite monitors for Xbox Series X and Series S gaming in 2021.\r\n\r\n\r\n\r\n\r\n\r\nBest monitors for Xbox in 2021:\r\n\r\n\r\n1. LG 27GP950-B (From $900)\r\n2. Dell S2721QS (From $315)\r\n3. LG C1 OLED (From $1,297)\r\n4. Samsung Odyssey G7 (From $768)\r\n5. ASUS VG27AQ (From $329)\r\n6. ASUS VG279Q (From $229)\r\n7. AOC C24G1 (From $213)\r\n\r\n\r\n\r\n\r\nWhich is the best monitor for Xbox?\r\n\r\n\r\n\r\nChoosing the right monitor for your Xbox console largely comes down to budget and your expectations from a desktop display. The best 4K TVs for Xbox Series X and Xbox Series S often dominate the conversation, but there are reasons to choose a monitor, and it's not all about screen size. PC gamin...",
+          "link": "https://www.windowscentral.com/best-monitor-xbox-series-x-series-s",
+          "publishedOn": "2021-11-25T17:51:00.000Z",
+          "wordCount": 5487,
+          "title": "Our recommendations for the best Xbox Series X|S monitors in 2021"
+        },
+        {
+          "id": "89227.r34380 at https://www.windowscentral.com",
+          "author": "Jez Corden",
+          "description": "Save on hundreds of games.\r\n\r\nXbox Game Pass is a service providing access to hundreds of Xbox games for a relatively low monthly fee. Xbox Game Pass Ultimate is the next level of that, bundling together Xbox Game Pass for console, Xbox Game Pass for PC, Xbox Live Gold for multiplayer, and Xbox Cloud Gaming, letting you take all of those console games mobile. One of the best Black Friday Xbox deals we've seen so far concerning Xbox Game Pass can be found right now on Best Buy in the U.S.\r\n\r\n\r\n\r\n\r\n\r\nSave $15\r\n\r\nXbox Game Pass Ultimate\r\n\r\n\r\n\r\nXbox Game Pass Ultimate gives you access to over three hundred high-quality games on Xbox consoles, PC, and via the cloud on mobile devices. At Best Buy through Black Friday, you can net yourself a decent saving on both digital codes and physical cards, ideal for gifts this holiday season.\r\n\r\n$29 (was $44) at Best Buy (Digital)\r\n$29 (was $44) at Best Buy (Physical Card)\r\n\r\n\r\n\r\n\r\n\r\nXbox Game Pass has been an amazing service since its launch a few years ago, and has only go...",
+          "link": "https://www.windowscentral.com/xbox-game-pass-ultimate-cards-are-15-cheaper-best-buy",
+          "publishedOn": "2021-11-25T17:42:27.000Z",
+          "wordCount": 774,
+          "title": "Best Buy lands Xbox Game Pass Ultimate's BEST DEAL for Black Friday"
+        },
+        {
+          "id": "88472.r34380 at https://www.windowscentral.com",
+          "author": "Richard Devine",
+          "description": "While Black Friday doesn't actually kick off until Nov. 26, in many cases deals are already starting to roll. It's one of the best times of the year to shop for new tech, and Dell is always a big supporter of the shopping event.\r\n\r\nThat's good for everyone since Dell makes some of the best Windows laptops, and that makes this a good time of year to go shopping. Whether you're looking for an Ultrabook, a mid-range laptop, something for work, or something for gaming, Dell is a good place to start.\r\n\r\nWhatever you need from your next laptop, Dell will not only have the right machine for the job, but as we head closer to Black Friday there will be more deals starting to appear, but we'll be tracking them all.\r\n\r\nWhere to find the best Black Friday Dell laptop deals\r\n\r\nBlack Friday has really started to become a month-long shopping event and as such, you can already see deals on Dell laptops as well as Dell deals across their product range. While we'll be rounding up the best deals on this page, ...",
+          "link": "https://www.windowscentral.com/best-black-friday-dell-laptop-deals",
+          "publishedOn": "2021-11-25T17:19:48.000Z",
+          "wordCount": 1053,
+          "title": "Best Black Friday Dell laptop deals"
+        },
+        {
+          "id": "89226.r34380 at https://www.windowscentral.com",
+          "author": "Jez Corden",
+          "description": "Save on the Astro A40.\r\n\r\nIt's Black Friday once again, joy! As such, many of the greatest Xbox headsets are on sale for Black Friday and its surrounding retail festivities. The Astro A40 MixAmp bundle is on sale right alongside its unbundled brethren, both offering a tidy $50 saving for early deal hunters.\r\n\r\n\r\n\r\n\r\n\r\nSave $50\r\n\r\nAstro A40 TR with MixAmp\r\n\r\n\r\n\r\nThe Astro A40 TR combined with the MixAmp is an excellent pro-grade set up for anyone looking to get into content creation. Thanks to the SPDIF-optical port on the MixAmp, you can combine audio from a TV output (such as from your Xbox) with PC USB (for communications). I used this setup for a long time while streaming, and only the A50 wireless is better.\r\n\r\n$199 (was $249) at Amazon\r\n\r\n\r\n\r\n\r\n\r\nSave $50\r\n\r\nAstro A40 TR\r\n\r\n\r\n\r\nIf you aren't a content creator and just want a great wired headset for cross-device play, the Astro A40 TR is also sold without the MixAmp. Astro's sound profile is one of the best in the business and for $99, this headset is a steal...",
+          "link": "https://www.windowscentral.com/powerful-astro-a40-tr-headset-xbox-offering-50-savings",
+          "publishedOn": "2021-11-25T17:15:21.000Z",
+          "wordCount": 818,
+          "title": "The powerful Astro A40 TR headset for Xbox is offering up to $50 in savings"
+        },
+        {
+          "id": "89119.r34380 at https://www.windowscentral.com",
+          "author": "Richard Devine",
+          "description": "There have been a lot of great games released in 2021, but my own personal game of the year is Marvel's Guardians of the Galaxy. I love Marvel anyway, and the Guardians of the Galaxy is one of my favorite franchises, but it's so well done it's impossible not to be impressed. And even if you're not a fan but you're sick of the constant push of live service and multiplayer titles, this is the antidote.\r\n\r\nWhat could be better? How about a pretty stellar Black Friday discount on such a phenomenal game just in time for the holidays? A deal even Star-Lord himself wouldn't pass up.\r\n\r\n\r\n\r\nMarvel's Guardians of the Galaxy | 35% discount\r\n\r\n\r\n\r\n$39 at Amazon\r\n\r\nA single-player superhero epic for Xbox One and Xbox Series X|S that captures the spirit of the franchise perfectly with stunning visuals, incredible writing, and top drawer voice acting.\r\n\r\n\r\n\r\n\r\n\r\nThere are no microtransactions to worry about getting upsold on, either, so you can literally just play the game, relax, and earn every single unlockable pie...",
+          "link": "https://www.windowscentral.com/guardians-galaxy-xbox-black-friday",
+          "publishedOn": "2021-11-25T16:49:01.000Z",
+          "wordCount": 616,
+          "title": "Play my Xbox game of the year for 35% less right now for Black Friday"
+        },
+        {
+          "id": "89120.r34380 at https://www.windowscentral.com",
+          "author": "Jez Corden",
+          "description": "Black Friday 2021 is upon us, bringing another week of epic consumerism. Whether you're shopping for yourself or hunting for early Christmas gifts, Black Friday is a great time to score some savings on some of the best tech and accessories to enhance your gaming life.\r\n\r\nThis top Black Friday 2021 deal has rolled around again and remains arguably the best option on the market for anyone looking to get into Xbox Cloud Gaming, as long as they're rocking an Android device. The GameSir X2 is a stellar clamp-based gamepad for Android phones and small tablets, letting you eliminate that uncanny latency from Bluetooth controllers with a direct USB-C connection to your device.\r\n\r\n\r\n\r\n\r\n\r\nSave 30%\r\n\r\nGameSir X2 (USB-C) | $30 off\r\n\r\n\r\n\r\n$70 at Amazon\r\n\r\nThe GameSir X2 is a stellar mobile game controller for Android devices, which eliminates lag introduced by Bluetooth with a unique USB-C pivot. Works with practically any USB-C Android phone and small tablet.\r\n\r\n\r\n\r\nSave 30%\r\n\r\nGameSir X2 (Bluetooth) | 30% off\r\n\r\n\r\n\r\n$60 ...",
+          "link": "https://www.windowscentral.com/gamesir-x2-early-black-friday-2021-deal-xbox-fans",
+          "publishedOn": "2021-11-25T16:43:00.000Z",
+          "wordCount": 954,
+          "title": "The GameSir X2 is an A+ early Black Friday 2021 deal for Xbox fans"
+        },
+        {
+          "id": "89225.r34380 at https://www.windowscentral.com",
+          "author": "Richard Devine",
+          "description": "Not all gaming keyboards are created equal. There are those that are good, those that are class-leading, and then there are those which really do stand apart from the masses for a variety of reasons. This Black Friday deal on Drop gaming keyboards at Amazon definitely fits into the latter.\r\n\r\nWe've used a ton of keyboards over the years in the pursuit of helping you find the best mechanical keyboards but these offerings from Drop are a little different. Sure, they're pricey, but they're what you'd call \"enthusiast-grade\" keyboards. Good for gamers, but also just really, really nice mechanical keyboards for those who appreciate such a thing.\r\n\r\nAnd let's face it, a chance to score such a thing and keep more of your money in your wallet is not something to sneer at. Drop has a host of deals going on right now, but we've highlighted the most enticing ones below. Including one for the Marvel fans out there.\r\n\r\n\r\nSave up to 30% on Drop mechanical keyboards and keycaps at Amazon\r\n\r\n\r\n\r\n\r\nDrop CTRL High-...",
+          "link": "https://www.windowscentral.com/drop-gaming-keyboards-black-friday",
+          "publishedOn": "2021-11-25T16:38:33.000Z",
+          "wordCount": 724,
+          "title": "Get a mechanical keyboard Captain America would be proud of"
+        },
+        {
+          "id": "89224.r34380 at https://www.windowscentral.com",
+          "author": "Jez Corden",
+          "description": "Razer products on the cheap.\r\n\r\nWhat's better than Razer products? CHEAPER Razer products, that's what, and that's exactly what you're getting for Black Friday 2021.\r\n\r\nRazer has discounted a huge range of its latest and greatest headsets, keyboards, mice, and other peripherals over on Amazon, and you see the full range of discounted items right here.\r\n\r\nWhether you're in the market for a new gaming chair, a new headset, or want a sneaky deal on the Xbox Cloud Gaming-capable Razer Kishi, Razer most likely has something for you, or the ideal gift for that cool gamer pal in your life. Here are some of our top deals picks from the full list.\r\n\r\n\r\n\r\n\r\n\r\n28% off\r\n\r\nRazer BlackShark V2 Pro\r\n\r\n\r\n\r\nThe Razer BlackShark V2 and all of its cousins are enjoying major savings for Black Friday. This headset is wireless on PC and is esports-grade for its quality and performance. You can use it on Xbox, PlayStation, and Nintendo Switch thanks to its 3.5mm support too.\r\n\r\n$130 (was $180) at Amazon\r\n\r\n\r\n\r\n\r\n\r\n60% off\r\n\r\nRazer Deat...",
+          "link": "https://www.windowscentral.com/razer-having-huge-black-friday-sale-pc-accessories-60",
+          "publishedOn": "2021-11-25T16:32:14.000Z",
+          "wordCount": 911,
+          "title": "Razer is having a HUGE sale on PC and Xbox accessories with up to 60% off"
+        },
+        {
+          "id": "89215.r34380 at https://www.windowscentral.com",
+          "author": "Rizwan Anwer",
+          "description": "We got to review the PowerA FUSION Pro 2 Wired Controller earlier this year and found it was one of the best third-party Xbox controllers on the market. It's more closely comparable to the Xbox Elite Controller and clocks in a much more budget-friendly asking price.\r\n\r\nWith Black Friday almost here, the controller has reached an unprecedented all-time low price on Amazon. At an attractive $62.99, you can save $27 on the controller, getting an accessory that rivals the Xbox Elite Controller at almost half the price.\r\n\r\n\r\n\r\n\r\n\r\nPowerA FUSION Pro 2 Wired Controller\r\n\r\n\r\n\r\n$63 at Amazon (Xbox Series X|S, Xbox One X|S)\r\n\r\nThe PowerA Fusion Pro 2 wired controller is easily one of the better and cheaper solutions for getting the Xbox Elite Controller while on budget, but you're still getting a lot of the features and perks of a controller that is otherwise double the price.\r\n\r\n\r\n\r\n\r\n\r\nFeatures include four programmable buttons which you can quickly change on the fly while gaming. In addition, the dual rumble mot...",
+          "link": "https://www.windowscentral.com/powera-xbox-controller-all-time-low-price-and-worth-it",
+          "publishedOn": "2021-11-25T16:32:01.000Z",
+          "wordCount": 618,
+          "title": "This PowerA gamepad rivals the Xbox Elite Controller for just $63"
+        },
+        {
+          "id": "89223.r34380 at https://www.windowscentral.com",
+          "author": "Rich Edmonds",
+          "description": "NAS storage isn't cheap with drives costing considerably more than desktop PC counterparts. Black Friday helps with some notable discounts, but even the best NAS hard drive deal cannot beat this Western Digital 18TB Elements external storage offer.\r\n\r\nInstead of buying a NAS HDD, you can simply extract a drive from these devices. But if that's a little too much storage (and money) for your comfort, there's always a 12TB version of the same external enclosure that can also be extracted and installed inside your NAS.\r\n\r\n\r\n\r\nWestern Digital 18TB Elements External Storage | $215 off!\r\n\r\n\r\n\r\n$300 at Amazon\r\n\r\nInside this enclosure, you'll find a white label 18TB Western Digital HDD. These devices are designed to run for prolonged periods of time, just like a NAS enclosure.\r\n\r\nWestern Digital 12TB Elements External Storage | $112 off!\r\n\r\n\r\n\r\n$198 at Amazon\r\n\r\nIf the 18TB model is a little too out of your reach for budget and NAS capabilities, we've got you covered with this slightly more affordable and smaller ...",
+          "link": "https://www.windowscentral.com/you-wont-believe-how-cheap-18tb-nas-hard-drive-black-friday-deal",
+          "publishedOn": "2021-11-25T16:07:01.000Z",
+          "wordCount": 763,
+          "title": "Expand your NAS storage with this 18TB hard drive Black Friday deal"
+        },
+        {
+          "id": "88463.r34380 at https://www.windowscentral.com",
+          "author": "Jez Corden",
+          "description": "It's that time of year once again, friends. Our holiest annual celebration of consumption, where the lords of Amazon grant us, humble peasants, a reprieve from big prices, shaving pennies off what would otherwise be burdening purchases. Bless Bezos and his space-faring minions, for this holiest of holy capitalistic holidays. How would one be able to celebrate without the proper audio tools, though? What you need is one of the best Xbox headsets, many of which will be discounted heavily for this magical Black Friday 2021 period.\r\n\r\nWe're not quite fully into Black Friday yet, but there are some early bird deals if you're keeping a look out. The best headsets to track are from companies like Turtle Beach, Razer, LucidSound, and Astro, with many of them already enjoying steep discounts ahead of the holiday period. The LucidSound LS35X, for example, recently got a large permanent price drop, making it far more palatable. This headset is the one I recommend first to anyone and everyone look...",
+          "link": "https://www.windowscentral.com/best-black-friday-xbox-headset-deals-2021",
+          "publishedOn": "2021-11-25T15:52:00.000Z",
+          "wordCount": 659,
+          "title": "Best Black Friday Xbox headset deals 2021"
+        },
+        {
+          "id": "89222.r34380 at https://www.windowscentral.com",
+          "author": "Jez Corden",
+          "description": "Improve your audio.\r\n\r\nWhat's better than a SteelSeries Arctis 3 headset? I'll tell you, it's a SteelSeries Arctis 3 headset with 51% off, and that's exactly what you're getting for Black Friday.\r\n\r\nThe SteelSeries Arctis 3 headset is a 3.5mm wired headset meaning that it'll work on practically every device out there with an audio socket, including your Xbox, PlayStation, and Nintendo Switch. It also punches above its weight for audio quality, owing to quality speakers for its price class and solid, comfortable construction ideal for users of all ages. This is quite easily among the best Xbox headset Black Friday deals we've found so far.\r\n\r\n\r\n\r\n\r\n\r\n51% off\r\n\r\nSteelSeries Arctis 3\r\n\r\n\r\n\r\nThe SteelSeries Arctis 3 headset is a rock-solid entry-level gaming headset, made even sweeter with this incredible 51% off deal. Grab it now while stocks last.\r\n\r\n$33.99 (was $69.99 at Amazon\r\n\r\n\r\n\r\n\r\n\r\nThe SteelSeries Arctis 3 comes with a retractable boom microphone with \"ClearCast\" sound technology that emphasizes voice c...",
+          "link": "https://www.windowscentral.com/excellent-steelseries-arctis-3-headset-massive-51-black-friday",
+          "publishedOn": "2021-11-25T15:44:33.000Z",
+          "wordCount": 684,
+          "title": "This might be the best entry-level Xbox headset Black Friday deal so far"
+        },
+        {
+          "id": "89214.r34380 at https://www.windowscentral.com",
+          "author": "Matt Brown",
+          "description": "The latest console generation has suffered a slow start, with Xbox Series X and PlayStation 5 hard to find in late 2021, amid ongoing hardware shortages. You shouldn't expect any major deals on Xbox Series X and PlayStation 5 consoles this Black Friday, especially with each in limited supply, beyond odd restocks throughout the weekend.\r\n\r\nThis stock-hunting charade is probably familiar to anyone who has purchased big-ticket electronics in the past two years. Console demand remains high, and with scarce availability expected into 2023, don't expect that to change anytime soon. It makes Microsoft's alternate Xbox Series S increasingly lucrative, granting full access to the new console generation, also just a fraction of the price.\r\n\r\nWhile Xbox Series S consoles aren't sat on shelves en masse, you'll have a much easier time getting hands-on compared to Xbox Series X. We also don't expect Xbox Series S to receive a Black Friday price cut, but this Xbox console bundle is the closest yet. The s...",
+          "link": "https://www.windowscentral.com/cant-find-xbox-series-x-black-friday-xbox-series-s-bundle-wont-last",
+          "publishedOn": "2021-11-25T15:36:07.000Z",
+          "wordCount": 874,
+          "title": "This is the Xbox Series S bundle to watch on Black Friday"
         }
       ]
     }
