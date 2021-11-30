@@ -12,6 +12,15 @@
       "siteUrl": "https://www.freecodecamp.org/news",
       "articles": [
         {
+          "id": "61a0f98125888a07c3e1bfbc",
+          "author": null,
+          "description": "Everyone should learn three skills that can help them make money in their life. This means that you won't have to rely on one skill to make money, and it gives you a chance to make a side income, too. The value you can add at your job or to",
+          "link": "https://www.freecodecamp.org/news/5-valuable-skills-developers-should-learn/",
+          "publishedOn": "2021-11-30T01:12:15.000Z",
+          "wordCount": 1098,
+          "title": "5 Valuable Skills Developers Should Learn in 2022"
+        },
+        {
           "id": "61a39f3025888a07c3e1cf08",
           "author": null,
           "description": "How you train for your career is one of the most consequential decisions you'll ever make. But it's hard to narrow down your options for a career in software development or IT. Medicine is easy: pick a medical school and apply. But programming?  Will what you learn in a four",
@@ -874,6 +883,24 @@
       "siteUrl": "https://dev.to",
       "articles": [
         {
+          "id": "https://dev.to/darito/100-dias-de-codigo-25-26-y-27-comenzando-la-semana-1a73",
+          "author": "Daro",
+          "description": "¡Hey hey hey!\nBienvenidos a esta nueva entrada en la que explicare lo que ha sucedido en los últimos días que han sido muy ocupados.\nNo olviden marcar bien sus prioridades para poder escribir en el blog (no como yo).\nPractique 30 min de touch typing.\nTermine el ejercicio de Etch a Sketch de The odin project.\nHice el deploy de la pagina de mi relación.\nPractique 30 min de Touch typing\nMejore el uso de ramas en git y comencé a usar mejores practicas en los commits.\nComplete los ejercicios de Javascript de la sección Fundamentals part 5.\nComplete la sección fundamentals part 5 de The odin project.\nPractique touch typing.\nMejore el diseño de la pagina etch a sketch que había creado anteriormente.\nHe bajado bastante mi productividad este fin de semana pero este lunes ha sido un buen comienzo de semana con lo cual me siento productivo.\nEspero que tengan un día excelente y mucho éxito con sus proyectos.\nPD: les dejo el png de la piedra que use en el proyecto piedra papel o tijera como cover.",
+          "link": "https://dev.to/darito/100-dias-de-codigo-25-26-y-27-comenzando-la-semana-1a73",
+          "publishedOn": "2021-11-30T00:52:28.000Z",
+          "wordCount": 579,
+          "title": "100 días de código: 25, 26 y 27, comenzando la semana."
+        },
+        {
+          "id": "https://dev.to/devteam/keeping-the-stakes-low-while-breaking-production-3nej",
+          "author": "Jeremy Friesen",
+          "description": "Using Existing Tooling to Make Changes Reversible\n\n\nThis morning I deployed a major change to the production servers of DEV.to. \nFeature update: Feed - DEV Community.\n\n\nAdjusting the feed is a big deal. It’s the front door of DEV.to.\nWe wanted to gather information about the impact of changing the front door. At Forem we use the Field Test gem. This allows us to run different experiments. I configured Field Test to assign 20% of the folks to the new strategy and 80% of the folks to the prior strategy.\nTo insulate from upstream libraries, we often wrap those libraries in our own implementations. This helps with the principle of least exposure; rely on the narrowest interface possible. I wrote the AbExperiment class to be the wrapper around Field Test. With the wrapper, I allowed for the sys…",
+          "link": "https://dev.to/devteam/keeping-the-stakes-low-while-breaking-production-3nej",
+          "publishedOn": "2021-11-30T00:48:52.000Z",
+          "wordCount": 1375,
+          "title": "Keeping the Stakes Low while Breaking Production"
+        },
+        {
           "id": "https://dev.to/wolfpack9108/is-there-an-apilibrary-in-python-for-rayso-or-carbonnowsh-g2d",
           "author": "Wolf",
           "description": "I have been looking for an API and/or library for websites like (https://ray.so/) and (https://carbon.now.sh/) my goals for using this API /  library is to interact with the website and download the image that is outputted I found a few so far but they don't work: carbon-now-sh-API-Wrapper(this one wasn't working) and carbonsh(this one wasn't saving the file).\ncarbonara but for python.",
@@ -910,6 +937,15 @@
           "title": "The definitive guide to Accuracy, Precision, and Recall for product developers"
         },
         {
+          "id": "https://dev.to/michaelmangial1/help-i-need-to-organize-my-global-state-in-my-react-application-14lk",
+          "author": "Michael Mangialardi",
+          "description": "In this article, we'll discuss some patterns for organizing a global state in a React application.\nWriting about how to organize global state implies that there is such a thing as disorganized state. Truth be told, there are several issues that can spring up from an unorganized, unprincipled global state.\nAs a basic example, the global state may contain a response payload from an API request, and it may contain some UI state about whether certain components are visible. These two types of state are not the same, and an organized global state will make that clear.\nWhen these distinctions aren't made, you can run into trouble. For example, if you create a top-level property for every screen/experience, you can duplicate the storage of the API responses that support those experiences:\nconst s…",
+          "link": "https://dev.to/michaelmangial1/help-i-need-to-organize-my-global-state-in-my-react-application-14lk",
+          "publishedOn": "2021-11-29T21:10:31.000Z",
+          "wordCount": 2669,
+          "title": "Help! I Need to Organize My Global State in a React Application"
+        },
+        {
           "id": "https://dev.to/martinheinz/exploring-google-analytics-realtime-data-with-python-2n9n",
           "author": "Martin Heinz",
           "description": "Google Analytics can provide a lot of insight into traffic and about users visiting your website. A lot of this data is available in nice format in web console, but what if you wanted to build your own diagrams and visualizations, process the data further or just generally work with it programmatically? That's where Google Analytics API can help you, and in this article we will look at how you can use it to query and process realtime analytics data with Python.\nBefore jumping into using some specific Google API, it might be a good idea to first play around with some of them. Using Google's API explorer, you can find out which API will be most useful for you, and it will also help you determine which API to enable in Google Cloud console.\nWe will start with Real Time Reporting API as we're …",
@@ -926,6 +962,15 @@
           "publishedOn": "2021-11-29T21:01:12.000Z",
           "wordCount": 2249,
           "title": "How to build a customer-facing roadmap with React"
+        },
+        {
+          "id": "https://dev.to/nexik/how-to-in-github-markdown-45kh",
+          "author": "Tomasz Ślązok",
+          "description": "In Github to create markdown file with list of some links started with emoticons instead of standard bullet points or numbers you can use breakpoint (\n)\n\nTo do this, the line must end with two spaces and return. It's not something natural you can guess but it works like magic :)",
+          "link": "https://dev.to/nexik/how-to-in-github-markdown-45kh",
+          "publishedOn": "2021-11-29T20:55:22.000Z",
+          "wordCount": 424,
+          "title": "How to <br> in GitHub Markdown"
         },
         {
           "id": "https://dev.to/sorskoot/webxr-at-global-xr-conference-184g",
@@ -2618,6 +2663,15 @@
       "siteUrl": "https://sspai.com",
       "articles": [
         {
+          "id": "https://sspai.com/post/70212",
+          "author": "少数派编辑部",
+          "description": "你可能错过的新鲜事\nWindows 11 高危漏洞被公开\n近日，有黑客在 GitHub 上上传了 Windows 11 目前高危漏洞的利用方案，并表示由于微软的漏洞赏金大幅缩水，他决定直接公开漏洞。该漏洞可以通过恶意程序，快速让他人获得系统管理员权限。Windows 10 与 Windows Server 2022 亦受此漏洞波及。来源\n\n微信公布最新《微信外部链接内容管理规范》，支持其他电商链接在微信中分享\n微信于 11 月 29 日开始对外部链接管理措施进行更新，本次更新中在点对点聊天场景中将可直接访问外部链接；基于监管部门指导下，为贯彻安全底线原则，同时兼顾用户使用体验，将在群聊场景下试行开放电商类外部链接直接访问功能，并且后续计划开发自主选择模式，为用户提供外链管理功能。来源\n理想发布 Q3 财报\n11 月 29 日，理想官方发布第三季度财报，理想汽车第三季度实现营收 77.8 亿元，现金储备达 488.3 亿元，交付 25,116 辆，再创历史新高。第四季度预计交付 30,000 到 32,000 辆。来源\n\n微软因为 Windows 11 捆绑 OneDrive 被欧盟起诉\n欧盟企业联盟于 11 月 27 日向欧盟及德国反垄断当局提出申诉，认为微软滥用其在操作系统领域的主导地位，强行在云服务，远程协作等领域捆绑推广自己的服务。根据这份指控，微软对 Office 365 越来越深入的推广与在整合使得微软的云服务 OneDrive 在 Windows 系统中存在天然的优先权，并且微软将其作为了 Windows 11 的默认功能，向所有用户进行推广。参与诉讼的欧盟企业联盟包括 Nextcloud、LibreOffice 以及Free Software Foundation Europe 等多家企业和协会组织。来源\n小米智能门铃 3 发布\n11 月 29 日，小米商城公布小米智能门铃 3，该产品将于 12 月 1 日开始众筹。智能门铃 3 支持双向通话，智能变声，门前异动通知；搭载 5200 mAh 内置电池，续航可达 4.8 个月；分辨率升级至 2K，视野可达 180°。售价 349 元，众筹期间 299 元。来源\n\nvivo 发布 OriginOS Ocean 预告\n11 月 29 日，vivo 官方发布「原系统」OriginOS Ocean 预告视频，将于 12 月 9 日正式公布有关下一大版本的全部信息。来源\n\n看看就行的小道消息\n\n据彭博社最新的报道称，虽然 Apple 已经取消了 AirPower 无线充电产品，但目前仍然在进行多设备充电器的开发，该产品支持长距离以及短距离的无线充电，并且和现在的感应式无线充电技术不同，并且未来 Apple 设备之间也可以相互进行充电。来源\n11 月 29 日，realme CEO 公开了品牌首款高端型号 GT2 Pro。根据之前爆料信息显示，该设备采用 6.51 寸 Super AMOLED 显示屏，配备 12GB / 256GB 存储空间，并采用 50MP 主摄 、50MP 超广角摄像头、8MP 长焦镜头。手机型号为 realme RMX3300，安兔兔跑分成绩为 1025215 分。同时 91Mobiles 放出该机渲染图。来源\n\n少数派的近期动态\n\n⌨️ sspai × Keychron K3 联名键盘，少数派商店预售中\n🖥 科技漫游第 0x05 期 开始滚动更新，首篇文章 关注 Airtable、黑帕云、多位表格等主流「无代码」数据系统的理解和选择\n会员播客《对话 214：让我们一起上山，让我们一起下河》上线，让我们一起走进 214 的摄影世界\n📕《少数派系统指南 · iOS 15》已经全部更新完毕，五大板块逐一详解 iOS 功能与设置\n🔖 人气教程 《高效信息管理术》的实体书 现已上市，用实用技巧和方法帮你从容应对信息的洪流\n\n你可能错过的文章\n\n🎧 考物阁 03｜为了让主动消噪「效果拔群」，我放弃了 AirPods Pro\n🖥️ 动动嘴就能下载文件，我用快捷指令 + Quicker 实现远程操作\n📅 好看好玩的 2022 新年日历，我们又为你收集了 11 款\n⭐️ 派评 | 近期值得关注的 App\n\n> 下载 少数派 2.0 客户端、关注 少数派公众号，解锁全新阅读体验 📰\n> 实用、好用的 正版软件，少数派为你呈现 🚀\n© 本文著作权归作者所有，并授权少数派独家使用，未经少数派许可，不得转载使用。",
+          "link": "https://sspai.com/post/70212",
+          "publishedOn": "2021-11-30T01:01:17.000Z",
+          "wordCount": 268,
+          "title": "派早报：Windows 11 高危漏洞被公开，微信公布外部链接内容管理规范等"
+        },
+        {
           "id": "https://sspai.com/post/70197",
           "author": "少数派编辑部",
           "description": "本期《派评》的主要内容有：\n\n🎆 老牌动态壁纸工具 Wallpaper Engine 推出 Android 版本。\n🐦 Android 上的鸟类识别 & 科普应用：Merlin。\n🔧 Pixelmator Pro 推出一键抠图功能。\n✏️ 跨平台桌面写作工具《妙笔》大版本更新。\n……\n\n你可以通过文章目录快速跳转到你感兴趣的内容。如果发现了其它感兴趣的 App 或者关注的话题，也欢迎在评论区和我们进行讨论。\n不容错过的新App\n虽然少数派一直在为大家发发现和介绍各平台上的优质 App，但仍有不少设计、功能、交互、体验都非常优秀的 App，还没有被我们发掘和介绍。它们可能是一款老 App，也可能是近期上架的新 App，我们会在这里介绍给你。\nWallpaper Engine：万众期待的动态壁纸引擎上线 Android 版\n\n平台：Android / Windows\n关键词：壁纸、动态壁纸\n\n@Noah_Choi：想必各位玩家的 Steam 库中一定会有 Wallpaper Engine 这个强大的动态壁纸工具，它帮无数玩家美化了自己的电脑桌面、营造了一个或炫酷或可爱的娱乐氛围。不过话说回来，动态壁纸可是 Android 平台的强项，所以在近日，Wallpaper Engine 发布了 Android 版本，我们手里的手机或者平板电脑也能享受到创意工坊里无穷无尽的动态壁纸了。\n使用 Wallpaper Engine 的 Android 版非常简单，它直接使用了 Android 系统动态壁纸接口，我们可以在壁纸设置中找到 Wallpaper Engine 服务，或者通过应用内设置壁纸。Wallpaper Engine 已经内置了 9 款基础壁纸，可以看作是一个基础功能展示。每种壁纸都会有一些自定义选项，例如修改配色、元素选择等等，在电脑上使用过 Wallpaper Engi…",
@@ -3776,6 +3830,15 @@
       "feedUrl": "https://feeds.appinn.com/appinns",
       "siteUrl": "https://www.appinn.com",
       "articles": [
+        {
+          "id": "https://www.appinn.com/?p=40633",
+          "author": "青小蛙",
+          "description": "著名的软件开发商 JetBrains 昨日发布了自己的轻量级编辑器 Fleet，具有语法高亮显示、简单的代码补全以及「您对一个编辑器期待的所有功能」。@Appinn 虽然，看起来有点像 VS Code",
+          "link": "https://www.appinn.com/fleet-preview/",
+          "publishedOn": "2021-11-30T02:02:07.000Z",
+          "wordCount": 585,
+          "title": "JetBrains 发布轻量级编辑器 Fleet"
+        },
         {
           "id": "https://www.appinn.com/?p=40599",
           "author": "青小蛙",
@@ -13536,6 +13599,15 @@
       "siteUrl": "https://reddit.buzzing.cc",
       "articles": [
         {
+          "id": "https://reddit.buzzing.cc/reddit/r/memes/comments/r4sy1f/a_certain_low_effort_meme/",
+          "author": null,
+          "description": "某种低努力的备忘录",
+          "link": "https://reddit.buzzing.cc/reddit/r/memes/comments/r4sy1f/a_certain_low_effort_meme/",
+          "publishedOn": "2021-11-30T01:58:15.000Z",
+          "wordCount": 18,
+          "title": "某种低努力的备忘录"
+        },
+        {
           "id": "https://reddit.buzzing.cc/reddit/r/HolUp/comments/r4rauq/prime_parenting/",
           "author": null,
           "description": "首要的育儿方式",
@@ -14622,6 +14694,42 @@
       "feedUrl": "https://hn.buzzing.cc/rss.xml",
       "siteUrl": "https://hn.buzzing.cc",
       "articles": [
+        {
+          "id": "https://hn.buzzing.cc/hn/29385006",
+          "author": null,
+          "description": "Asmrepl: x86 汇编语言的 REPL",
+          "link": "https://hn.buzzing.cc/hn/29385006",
+          "publishedOn": "2021-11-30T01:58:07.000Z",
+          "wordCount": 31,
+          "title": "Asmrepl: x86 汇编语言的 REPL"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29381055",
+          "author": null,
+          "description": "显示HN：安全摄像机镜头计算器",
+          "link": "https://hn.buzzing.cc/hn/29381055",
+          "publishedOn": "2021-11-30T01:58:07.000Z",
+          "wordCount": 30,
+          "title": "显示HN：安全摄像机镜头计算器"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29382127",
+          "author": null,
+          "description": "启动HN：阅兵式（YC S20）--不雇佣设计师就启动你的公司",
+          "link": "https://hn.buzzing.cc/hn/29382127",
+          "publishedOn": "2021-11-30T01:12:46.000Z",
+          "wordCount": 35,
+          "title": "启动HN：阅兵式（YC S20）--不雇佣设计师就启动你的公司"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29383251",
+          "author": null,
+          "description": "博士生展示了硅上的单个工作激光器",
+          "link": "https://hn.buzzing.cc/hn/29383251",
+          "publishedOn": "2021-11-30T01:12:46.000Z",
+          "wordCount": 32,
+          "title": "博士生展示了硅上的单个工作激光器"
+        },
         {
           "id": "https://hn.buzzing.cc/hn/29386239",
           "author": null,
@@ -16114,6 +16222,51 @@
       "feedUrl": "https://youtube.buzzing.cc/rss.xml",
       "siteUrl": "https://youtube.buzzing.cc",
       "articles": [
+        {
+          "id": "https://youtube.buzzing.cc/youtube/h91PyXBesgk",
+          "author": null,
+          "description": "Charles Barkley gained 20 lbs in two days to avoid getting drafted by the Philadelphia 76ers…\n\nLIKE & SUBSCRIBE 👍\n\n#NBA #CharlesBarkley #Philadelphia76ers \n\nMusic By Prod. Depo\n- Song: “Try It” | Travis Scott Type Beat \n(https://youtu.be/XPy3-PTPR6s)",
+          "link": "https://youtube.buzzing.cc/youtube/h91PyXBesgk",
+          "publishedOn": "2021-11-29T22:00:00.000Z",
+          "wordCount": 13,
+          "title": "在NBA选秀前的两天里，查尔斯-巴克利增加了20磅的体重|#短裤"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/VfOtgxp4Fng",
+          "author": null,
+          "description": "Shaquille O’Neal goes Sneaker Shopping with Complex’s Joe La Puma at A Ma Maniere in Atlanta and talks about signing to Reebok, starting his own sneaker brand, and the problems he’s dealt with from having huge feet.\n\nLooking for the best deal on a pair of sneakers? Download the Sole Collector app now!: https://solecollector.com/app \n\n\nSubscribe to Complex on YouTube: https://www.youtube.com/c/Complex\n\nCheck out more of Complex here:\nhttps://www.twitch.tv/complex\nhttp://www.complex.com\nhttps://twitter.com/Complex\nhttps://www.facebook.com/complex\nhttp://instagram.com/complex\nhttps://plus.google.com/+complex/\n\nCOMPLEX is a community of creators and curators, armed with the Internet, committed to surfacing and sharing the voices and conversations that define our new America. Our videos exemplify convergence culture, exploring topics that include music, sneakers, style, sports, and pop culture through original shows and Complex News segments. Featuring your favorite celebrities, authoritative commentary, and a unique voice, our videos make culture pop.",
+          "link": "https://youtube.buzzing.cc/youtube/VfOtgxp4Fng",
+          "publishedOn": "2021-11-29T21:35:03.000Z",
+          "wordCount": 14,
+          "title": "沙奎尔-奥尼尔带着情结去买运动鞋"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/esYZ15aIccU",
+          "author": null,
+          "description": "Auburn and Texas A&M get a head start on post game traffic and head to the Wins Claim Department in order to claim their W's for this week. Just one tiny problem, the clock hasn't struck zero yet. No way this comes back to haunt them right? Right?",
+          "link": "https://youtube.buzzing.cc/youtube/esYZ15aIccU",
+          "publishedOn": "2021-11-29T20:57:48.000Z",
+          "wordCount": 18,
+          "title": "美国证券交易委员会短裤--奥本和德克萨斯A&M提前亮相，夺得他们的胜利"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/XCAlNWNbN5c",
+          "author": null,
+          "description": "“The Book of Boba Fett,” a thrilling Star Wars adventure teased in a surprise end-credit sequence following the Season 2 finale of “The Mandalorian,” finds legendary bounty hunter Boba Fett and mercenary Fennec Shand navigating the galaxy’s underworld when they return to the sands of Tatooine to stake their claim on the territory once ruled by Jabba the Hutt and his crime syndicate.\n\n \n\n“The Book of Boba Fett” stars Temuera Morrison and Ming-Na Wen. Jon Favreau, Dave Filoni, Robert Rodriguez, Kathleen Kennedy and Colin Wilson are the executive producers. Karen Gilchrist and Carrie Beck serve as co-executive producers, with John Bartnicki producing and John Hampian as co-producer.\n\n \n\nTwitter: @StarWars, @DisneyPlus, @BobaFett\n\nFacebook: @StarWars, @DisneyPlus\n\nInstagram: @StarWars, @DisneyPlus, @TheBookOfBobaFett\n\nStarWars.com: http://strw.rs/6008JnzSm",
+          "link": "https://youtube.buzzing.cc/youtube/XCAlNWNbN5c",
+          "publishedOn": "2021-11-29T20:32:33.000Z",
+          "wordCount": 26,
+          "title": "信息 | 波巴-费特之书 | 迪士尼+"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/p8xl0HIEaVQ",
+          "author": null,
+          "description": "@Larry Wheels\n\nRYSE Supplements \n(Use code \"NOEL\" for 15% off your purchase)\nMy current stack:\n(restocked) Pre-workout: https://rysesupps.com/products/project-blackout-pre-workout\nBest tasting Protein💪🏼: https://rysesupps.com/products/loaded-protein?variant=31879078281312\nPump Complex: https://rysesupps.com/products/project-blackout-pump\nAmino Acids: https://rysesupps.com/products/bcaa-eaa?variant=32492494749792\nCreatine https://rysesupps.com/products/creatine-monohydrate-300g\n\nYoung La Gym|Fitness|Bodybuilding Clothing\nCode '\"NOEL\" gets you 15% off\nhttps://www.youngla.com/discount/NOEL\n\nFollow me:\nInstagram: https://www.instagram.com/noeldeyzel_bodybuilder\n...\nTikTok: https://www.tiktok.com/@noeldeyzel_bodybuilder",
+          "link": "https://youtube.buzzing.cc/youtube/p8xl0HIEaVQ",
+          "publishedOn": "2021-11-29T17:53:12.000Z",
+          "wordCount": 39,
+          "title": "对 \"没有坚果的十一月 \"的看法 - 拉里-韦尔斯"
+        },
         {
           "id": "https://youtube.buzzing.cc/youtube/UYPC92TWNws",
           "author": null,
