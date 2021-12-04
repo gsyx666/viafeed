@@ -12,6 +12,15 @@
       "siteUrl": "https://www.freecodecamp.org/news",
       "articles": [
         {
+          "id": "61a7b9390c0c7407b2b3f076",
+          "author": null,
+          "description": "As programmers, we will inevitably make mistakes. Even the most accomplished specialists make them. But you'll become a better programmer faster if you don't make the same mistakes over and over. There are many types of mistakes you might make when you're coding. The majority of them usually come from",
+          "link": "https://www.freecodecamp.org/news/mistakes-programmers-make-when-coding-and-how-to-fix-them/",
+          "publishedOn": "2021-12-03T19:14:57.000Z",
+          "wordCount": 1748,
+          "title": "Mistakes Every Programmer Makes When Learning to Code – and How to Fix Them"
+        },
+        {
           "id": "5fff3e8b98be260817e495e9",
           "author": null,
           "description": "What is a SIM swap?SIM swapping is when a hacker convinces your cell phone carrier to switch your phone number to a different SIM - one that they own.  This is a relatively normal thing for a retail employee to do, which means that someone asking for a swap",
@@ -802,51 +811,6 @@
           "publishedOn": "2021-11-04T13:47:13.000Z",
           "wordCount": 477,
           "title": "Web Applications for Everybody - Dr. Chuck Teaches HTML, JavaScript, PHP, SQL, and More"
-        },
-        {
-          "id": "6181896c8bcfae07ca4e0407",
-          "author": null,
-          "description": "Ever since the outbreak of COVID-19 in December 2019, researchers in the field of artificial intelligence and machine learning have been trying to find better ways to diagnose the disease. They've worked on developing algorithms that would detect the disease within a matter of seconds – and only by looking at",
-          "link": "https://www.freecodecamp.org/news/deep-learning-with-pytorch/",
-          "publishedOn": "2021-11-03T19:49:35.000Z",
-          "wordCount": 4229,
-          "title": "Deep Learning Tutorial – How to Use PyTorch and Transfer Learning to Diagnose COVID-19 Patients"
-        },
-        {
-          "id": "6130917fd6679a07b7d40727",
-          "author": null,
-          "description": "In programming, you'll use loops when you need to repeat a block of code multiple times.  These repetitions of the same block of code a certain number of times are called iterations. And there's a looping condition that decides the number of iterations.  The for and the while loops are",
-          "link": "https://www.freecodecamp.org/news/for-loops-in-c/",
-          "publishedOn": "2021-11-03T15:56:21.000Z",
-          "wordCount": 1034,
-          "title": "For Loops in C – Explained with Code Examples"
-        },
-        {
-          "id": "61825f588bcfae07ca4e091e",
-          "author": null,
-          "description": "Zip files often contain multiple large files, so you might want to encrypt them or protect them with a password. That way, only certain people will have access to it.  In this guide, I will show you a great way to password protect a zip file, so you can be",
-          "link": "https://www.freecodecamp.org/news/password-protect-zip-file-windows10/",
-          "publishedOn": "2021-11-03T15:49:56.000Z",
-          "wordCount": 790,
-          "title": "How to Password Protect a Zip File [Windows 10 PC Guide]"
-        },
-        {
-          "id": "618216228bcfae07ca4e0733",
-          "author": null,
-          "description": "As you are building out a project, there might be times where you need to rename a local branch. But how do you do that in Git? In this article, I will provide you with two methods for renaming  local branches in Git.  How to Rename a Branch in Git",
-          "link": "https://www.freecodecamp.org/news/git-rename-branch-how-to-change-a-local-branch-name/",
-          "publishedOn": "2021-11-03T15:42:12.000Z",
-          "wordCount": 549,
-          "title": "Git Rename Branch – How to Change a Local Branch Name"
-        },
-        {
-          "id": "61828b8a8bcfae07ca4e0a1f",
-          "author": null,
-          "description": "Touch cat tail. Find man head. Who? The previous seven words are common Linux commands. If you are a programmer, you are likely going to need to use Linux and terminal commands at some point.  We just published a course on the freeCodeCamp.org YouTube channel that will teach you",
-          "link": "https://www.freecodecamp.org/news/learn-the-50-most-used-linux-terminal-commands/",
-          "publishedOn": "2021-11-03T13:33:59.000Z",
-          "wordCount": 368,
-          "title": "Learn the 50 Most Used Linux &amp; Terminal Commands"
         }
       ]
     },
@@ -855,6 +819,114 @@
       "feedUrl": "https://dev.to/feed",
       "siteUrl": "https://dev.to",
       "articles": [
+        {
+          "id": "https://dev.to/ansigameengine/developing-a-game-engine-with-perl-part-7-fork-3acm",
+          "author": "Shawn Holland",
+          "description": "Pssssst... I DO NOT KNOW WHAT I AM DOING.\nIf you want to start reading from the beginning. Check out the first article in this series\nContinuing from our last post, I talked about how ANSI Game Engine is a colourful telnet server. We left off with needing to fork the engines telnet server.\nTime to level up our telnet server and make it multi-player with some knify forky.\n\nI've added in the strftime identifier from Perl's POSIX module to help with time stamping the output. The setsid identifier is for starting a new session and group ID for each forked process. A.K.A, the child process. :sys_wait_h is for returning without wait after the child process has exited, using the WNOHANG flag when calling waitpid(). This provides non-blocking wait for all pending zombie children.\n\nreaped. This wil…",
+          "link": "https://dev.to/ansigameengine/developing-a-game-engine-with-perl-part-7-fork-3acm",
+          "publishedOn": "2021-12-03T23:34:45.000Z",
+          "wordCount": 1342,
+          "title": "Developing A Game Engine with Perl: Part 7 - Fork"
+        },
+        {
+          "id": "https://dev.to/marcoservetto/advent-of-code-day-3-24pp",
+          "author": "Marco Servetto",
+          "description": "Ok, day 3 part one was nice and simple. FIrst I defined a couple of utility static methods, then just rolled over the data.\nPow2 = {class method I (I that) =\n  if that==0I 1I else 2I*This(that-1I) }\nIs1 = {class method Bool(S that, I i) =\n  that.startsWith(S\"1\" leftOffSet=i)}\nMainPart1 = (\n  input = Fs.Real.#$of().read(\\\"input\")\n  tot = I.List[0I;0I;0I;0I;0I;0I;0I;0I;0I;0I;0I;0I]\n  var size = 0I\n  for s in input.split(S.nl()) (\n    size+=1I\n    for var e in tot, i in Range(tot.size()) (\n      if Is1(s i=i) e:=e+1I //update the value inside of 'tot'\n      )\n    )\n  var gamma = 0I\n  var epsilon = 0I\n  for e in tot, i in Range(tot.size()).reverse() (\n    if e+e>size gamma+=Pow2(i) \n    else      epsilon+=Pow2(i)\n    )\n  Debug(gamma*epsilon)\n  )\n\nThe second part, I found it involved in a borin…",
+          "link": "https://dev.to/marcoservetto/advent-of-code-day-3-24pp",
+          "publishedOn": "2021-12-03T23:28:47.000Z",
+          "wordCount": 743,
+          "title": "Advent of code, day 3"
+        },
+        {
+          "id": "https://dev.to/mage_ai/why-does-ai-responsibility-matter-34jl",
+          "author": "Mage",
+          "description": "TLDR\n\n\nA machine learning (ML) model is only as good as its input data. In a world of inequity, developers must ensure they build responsible models void of bias.\nIntroduction\nWhat is algorithmic bias?\nSocietal harm\nClosing thoughts\nAs artificial intelligence (AI) begins to integrate itself into daily life, it’s essential that the technology be created for equitable and ethical use. Creating a responsible product is essential and failure to do so can have very real consequences. While neutral in theory, algorithms are at risk to become as biased as the world they were created from.\nAlgorithmic bias occurs when computers make systematically biased and unfair decisions based on the data they're given. AI has the power to be a tool for the implementation of diversity and inclusion in many fac…",
+          "link": "https://dev.to/mage_ai/why-does-ai-responsibility-matter-34jl",
+          "publishedOn": "2021-12-03T21:57:46.000Z",
+          "wordCount": 1110,
+          "title": "Why does AI responsibility matter"
+        },
+        {
+          "id": "https://dev.to/enesskilic/form-validation-with-css-2hc4",
+          "author": "Enes Kılıç",
+          "description": "In this post, I will show you how to validation the required form fields with CSS.\nIf you want to see full version of this project or all HTML-CSS projects look this Repository\nCreate HTML\n  <form class=\"form\">\n\n    <!--==== Add required attribute to input tag  ====-->\n    <input type=\"text\" required placeholder=\"Username\" />\n\n    <button type=\"submit\"> Login </button>\n\n  </form>\n\nCSS\nform:invalid button {\n  pointer-events: none;\n}\n\nform:valid button {\n  pointer-events: initial;\n}\n\nMy output with some styles",
+          "link": "https://dev.to/enesskilic/form-validation-with-css-2hc4",
+          "publishedOn": "2021-12-03T21:51:27.000Z",
+          "wordCount": 516,
+          "title": "Form Validation with CSS"
+        },
+        {
+          "id": "https://dev.to/qainsights/getting-started-with-azure-load-testing-1n24",
+          "author": "NaveenKumar Namachivayam ⚡",
+          "description": "A new sheriff in town. Microsoft launched the fully managed Azure service for performance test engineers and developers to perform high scale load testing called Azure Load Testing, currently in preview mode. It is quite a big announcement for performance engineers. Let us see whether Azure Load Testing fulfills our needs or not in this blog post.\nWhat is Azure Load Testing?\nAs foretold, aptly put, Azure Load Testing is an offering for the customers who are in the Azure ecosystem. Even if you are not in Azure, you can still spin up the load test resource for performance testing. But the catch is, PRICING. We can discuss the pricing in another blog post. Let us focus on the features, how to get started and more.\nAzure Load Testing is backed up by none other than Apache JMeter and Azure infr…",
+          "link": "https://dev.to/qainsights/getting-started-with-azure-load-testing-1n24",
+          "publishedOn": "2021-12-03T21:33:13.000Z",
+          "wordCount": 1432,
+          "title": "Getting Started with Azure Load Testing"
+        },
+        {
+          "id": "https://dev.to/deepfence/open-source-runtime-exploitability-management-with-threatmapper-3iel",
+          "author": "Deepfence",
+          "description": "CNCF Webinar - Move from mere vulnerability management to exploitability management with ThreatMapper\nhttps://www.youtube.com/watch?v=S-sNUuLDhz0",
+          "link": "https://dev.to/deepfence/open-source-runtime-exploitability-management-with-threatmapper-3iel",
+          "publishedOn": "2021-12-03T21:03:39.000Z",
+          "wordCount": 371,
+          "title": "Open Source Runtime Exploitability Management with ThreatMapper"
+        },
+        {
+          "id": "https://dev.to/coreyscorner/flutter-user-authentication-part-1-models-and-api-eb",
+          "author": "gardnerapp",
+          "description": "Signing user up, in and out are nearly universal features for every type of app. In this series I’ll teach you how to build a simple authentication system. Part 1 will cover the basics of API calls and models. In part 2 I’ll teach you how to store authenticated users inside your app with the Cubit package and in part 3 we’ll be learning how to maintain sign-in after our app closes by using the shared preferences package.\nPodcast: https://podcasts.apple.com/us/podcast/coreys-corner/id1479097455\nLearn to code: https://www.youtube.com/channel/UCfd8A1xfzqk7veapUhe8hLQ\nOur first step is to build a BaseAPI class to hold all of the URL’s of our API. In my How To Make Flutter API Calls Easy I taught you how to use class inheritance as a means of simplifying and organizing your API calls. This clas…",
+          "link": "https://dev.to/coreyscorner/flutter-user-authentication-part-1-models-and-api-eb",
+          "publishedOn": "2021-12-03T20:38:23.000Z",
+          "wordCount": 1601,
+          "title": "Flutter User Authentication Part 1: Models and API"
+        },
+        {
+          "id": "https://dev.to/aernesto24/you-may-want-to-consider-this-when-using-docker-images-and-dockerfiles-starting-point-51ag",
+          "author": "Ernesto Lopez",
+          "description": "One of the advantages of using containers is the ability to have images with our environment pre configured and ready to go with our application code. These images is what allows us to run a container on our laptop and then run the same image on a container in the cloud. But building this images is not a trivial task, and we tend add useless tasks or overhead to the images we create. This entry is to share some of the best practices that has work for me in the past when building docker images.\nFirst of all we need to define what a docker image is. A docker image is a unit of packaging that may includes Operating systems constructs or packages, application dependencies and libraries and application code. If you came from the virtualization world, see the image as a VM template, and the cont…",
+          "link": "https://dev.to/aernesto24/you-may-want-to-consider-this-when-using-docker-images-and-dockerfiles-starting-point-51ag",
+          "publishedOn": "2021-12-03T20:15:21.000Z",
+          "wordCount": 1978,
+          "title": "You may want to consider this when using docker images and Dockerfiles"
+        },
+        {
+          "id": "https://dev.to/linearb/rethinking-teamwork-with-range-4on1",
+          "author": "Conor Bronsdon",
+          "description": "\"Where is the future of work\" is almost as important a question as, \"What is the future of work?\"\nThat's why the minds behind Range are on a mission to keep teams connected, focused and productive no matter where they're working.\nDan Pupius, CEO and co-founder of Range, joins us this week to discuss the need for better, more collaborative tools as work becomes increasingly team and project based. Dan believes software development was the vanguard to the 21st century work model: when a distinction between 'normal' work and hybrid work will no longer exist because all work will be hybrid work.\nWhy current management models are designed around factories\nWhat is hybrid work and is it the future?\nHybrid work best practices\nHow a sense of belonging helps teams move faster\nThe reasons work has become increasingly team-based\nWith over 2000 members, the Dev Interrupted Discord Community is the best place for Engineering Leaders to engage in daily conversation. No sales people allowed. Join the community >>",
+          "link": "https://dev.to/linearb/rethinking-teamwork-with-range-4on1",
+          "publishedOn": "2021-12-03T20:04:53.000Z",
+          "wordCount": 671,
+          "title": "Rethinking Teamwork with Range"
+        },
+        {
+          "id": "https://dev.to/vangware/you-dont-need-if-37f1",
+          "author": "LUKESHIRU",
+          "description": "It was the first day in my last year of tech high school. The new programming teacher arrived and stood silent for a second, and then he started the lesson:\nThis year we will create a state machine with persistence using C++. This state machine will be a light-bulb that can be turned on, or off.\nWe all just look at each other thinking \"ok, that will be easy\"... and then he dropped the bomb:\nThere's a catch: You'll not be allowed to use if or for for it.\nNow the class was clearly confused. Flow control is one of the first things we all learn as programmers. The main objective of that teacher was to teach us that we need to stop thinking conditions as if, repetitions as for, and so on, and instead be more abstract with the logic on our code. In JavaScript we have:\n  if/else.\n  for/of/in.\n  w…",
+          "link": "https://dev.to/vangware/you-dont-need-if-37f1",
+          "publishedOn": "2021-12-03T19:36:21.000Z",
+          "wordCount": 2145,
+          "title": "You don't need \"if\""
+        },
+        {
+          "id": "https://dev.to/iainfreestone/10-trending-projects-on-github-for-web-developers-3rd-december-2021-12f5",
+          "author": "Iain Freestone",
+          "description": "Trending Projects is available as a weekly newsletter please sign up at Stargazing.dev to ensure you never miss an issue.\nCSS custom properties to help accelerate adaptive and consistent design. Useful in any framework\n / \n        open-props\n      \n    \n\ngradients animations sizes easings colors shadows aspect-ratios z-indexes\n\nDiscord\n\n\n\n\nCDN\nhttps://unpkg.com/open-props\nnpm run gen:op - runs through src/ js files and creates the PostCSS files in src/\n\n\nnpm run gen:nowhere  - creates a version of Open Props without the use of :where()\n\n\nnpm run gen:prefixed - creates a version of Open Props with each prop prefixed with op, like --op-font-size-1\n\n\nnpm run bundle - creates all the various minified bundles of props\nnpm run lib:js - builds the JS modules for NPM\nView on GitHub\nRecord, Replay,…",
+          "link": "https://dev.to/iainfreestone/10-trending-projects-on-github-for-web-developers-3rd-december-2021-12f5",
+          "publishedOn": "2021-12-03T19:15:48.000Z",
+          "wordCount": 4416,
+          "title": "🚀10 Trending projects on GitHub for web developers - 3rd December 2021"
+        },
+        {
+          "id": "https://dev.to/suhemparack/year-in-review-academic-research-with-the-twitter-api-v2-52mm",
+          "author": "Suhem Parack",
+          "description": "In 2021, we launched product improvements and various community initiatives to help the academic research community succeed in their research studies with Twitter data. In this post, I present a recap of all the API launches and programs - from Twitter as well as the academic research community - that has made it easier for researchers to do research with Twitter data.\nLaunched in January 2021, the academic research product track is one of the biggest updates to the Twitter API v2 for the academic research community. It provides qualified academic researchers free access to the full-archive of public Tweets (previously, academics had to use the paid premium API to get Tweets older than 7 days). In addition to access to the full-archive search functionality, academics get 10 million Tweets …",
+          "link": "https://dev.to/suhemparack/year-in-review-academic-research-with-the-twitter-api-v2-52mm",
+          "publishedOn": "2021-12-03T18:58:39.000Z",
+          "wordCount": 1685,
+          "title": "Year in review: Academic Research with the Twitter API v2"
+        },
         {
           "id": "https://dev.to/costamatheus97/web3-the-ultimate-guide-to-create-your-own-cryptocurrency-token-with-solidity-ne9",
           "author": "Matheus Costa",
@@ -2960,6 +3032,60 @@
       "siteUrl": "https://sspai.com",
       "articles": [
         {
+          "id": "https://sspai.com/post/69134",
+          "author": "PlatyHsu",
+          "description": "注：本文原文为少数派会员专属文章，为配合我们的国际残疾人日专题，临时开放免费阅读。\n\n引言\n作为一部手腕上的计算设备，Apple Watch 能给我们的生活带来很多方便。遗憾的是，Apple Watch 本身的操作逻辑还有很大的改进空间。\n例如，从初代 Apple Watch 一路用上来，我始终困惑于为什么操作手表始终需要用到两只手：你必须把佩戴手表的手腕端正抬着，用另一只手在表盘的方寸江山上指点。\n即使是在双手空闲的情况下，这么操作也会显得窘迫，更不要提撑雨伞、提重物这种一只手被占据的情况了。（用鼻子或者下巴点过屏幕的读者请举手。）\n这个问题终于在今年得到了解决——尽管是通过一种「曲线救国」的方式。在 watchOS 8 中，Apple 将多种新的「辅助功能」带到了 Apple Watch 上，其中就包括 iOS 用户熟悉的「辅助触控」。\n在辅助触控的帮助下，用户可以用捏指、握拳等手势代替触控操作；换言之，用一只手就可以使用 Apple Watch 上的所有功能。\n先来看看 Apple 的官方介绍视频：\n \n是不是颇有些「呼风唤雨」的魔术色彩？\n诚然，「辅助功能」的设计初衷是方便那些有肢体不便的用户，但这并不意味着普通用户不能从中受益；从某种意义上说，「一只手被占用」本身就是一种肢体不便的情形。本文中，我们就将介绍如何利用这一新增的辅助触控功能，单手掌控 Apple Watch。\n注： 请注意「辅助触控」功能仅适用于 2020 年起推出的型号，即 Apple Watch Series 6 或以上，以及 Apple Watch SE。\n开启手势和基本操作\n启用 Apple Watch 的辅助触控功能其实只需简单几步。在 iPhone 上打开 Watch App，进入「辅助功能」>「辅助触控」，然后打开「辅助触控」开关。接着，点击「手势」，再打开其中的「手势」开关。\n\n现在抬…",
+          "link": "https://sspai.com/post/69134",
+          "publishedOn": "2021-12-03T10:02:48.000Z",
+          "wordCount": 221,
+          "title": "呼风唤雨于指尖拳心：巧用辅助功能单手操作 Apple Watch"
+        },
+        {
+          "id": "https://sspai.com/post/70282",
+          "author": "少数派编辑部",
+          "description": "☕️ TL;DR\n\n近期佳作推荐：[动画] JOJO 的奇妙冒险 石之海、[电影] 最后的决斗、[国产剧] 爱很美味、[综艺] 血战、[电影] 童一个世界、[台剧] 华灯初上、[纪录片] 征服 14 座高峰、[韩剧] 某一天、[台剧] 第一次遇见花香的那刻、[纪录片] 是这样的，法官\n几则精彩预告：文牧野执导、易烊千玺主演电影《奇迹》首爆预告、《星球大战》系列衍生剧集《波巴·费特之书》12 月 29 日上线 Disney+、《欲望都市》重启版限定剧《就这样...》12 月 9 日上线 HBO Max、电影《大怪兽的善后处理》公布预告，2022 年 2 月上映\n几则影视资讯：动画电影《名侦探柯南 万圣节的新娘》2022 年 4 月上映、华纳正式宣布《魔力麦克》拍第三部、HBO 宣布将推出权游衍生剧《邓肯与伊戈》\n\n👀 N 部作品推荐\n根据读者反馈，如果推荐语涉及剧透（对故事核心、暗线、伏笔、结局等关键要素的透露），我们会在对应作品的标题前增加 🔦 的 Emoji。\n如有其他建议也欢迎在评论区提出，感谢大家对「看什么」栏目的喜爱和支持。\n🔦 [动画] JOJO 的奇妙冒险 石之海\n\n关键词：漫画改 / 剧情 / 战斗 / 热血\n片长：24 分钟（单集）× 具体集数未知\n观看渠道：Netflix / 哔哩哔哩（存在严重影响观看体验的大幅删改）；豆瓣链接\n读原作：哔哩哔哩漫画 / 东立出版社\n\n我要从这片石之海获得自由！\n\n@SHY：时间是 2011 年，舞台是美国佛罗里达州。空条徐伦在与恋人兜风途中遭遇交通事故，而后被律师与法官联手陷害，因谋杀罪获刑 15 年，押入别名「水族馆」的州立绿海豚街重警备监狱。束手无策之际，徐伦却从父亲空条承太郎托付的护身符中觉醒了不可思议的力量。然而，将家族秘辛和盘托出的承太郎，在营救徐伦越狱时因失去主角光环遭到敌人暗算，沦为失去替身和记忆的植…",
+          "link": "https://sspai.com/post/70282",
+          "publishedOn": "2021-12-03T09:42:40.000Z",
+          "wordCount": 427,
+          "title": "本周看什么丨最近值得一看的 10 部作品"
+        },
+        {
+          "id": "https://sspai.com/post/70275",
+          "author": "Noah_Choi",
+          "description": "作为不记账就会焦虑星人，我在使用 iPhone 时曾大力赞扬 MOZE 这款记账应用，不是因为 MOZE 有多强大或多完善，而是它具备了许多特别人性化、符合实际情况的功能细节。\n在回归 Android 平台后，我一直在「吹毛求疵」般寻找记账应用。可无论是大厂知名产品还是无数来自独立开发者之手的优秀作品，使用起来它们都有地方会让我皱一下眉头——并非是不够强大（有的产品甚至可以用于资产管理），而是缺少了那些贴心细节。所以当我体验到小星记账时，那些细节让我产生了一种「平行时空里的我开发了这样一款记账应用」的错觉。\n基础功能常规但足够好用\n从应用本身来看，小星记账仍然是常规的记账工具，它将账目概览、账户信息、统计报表这三个核心功能分成三个页面展示，低频和进阶功能则收纳进了侧滑菜单，整个记账流程足够顺畅，账目类型、金额分类以及附属信息在一个屏幕中就可以完成，结合规范的 UI 设计，日常使用使用起来逻辑感很强。\n不过有几个地方也能看出来小星记账有它自己的想法，比如它没有像大多数同类产品一样提供日历视图，以及它将四则运算收纳进了数字键盘的二级菜单中，记账老手们应该会比较不习惯，不过体验一段时间之后我发现，这两个功能似乎并没有我想象中那样常用。\n\n记账是为了了解自己的消费习惯，所以定期查阅详单和报表非常重要。小星记账在报表方面的逻辑也非常明确：概览和图表一目了然、详单可以通过筛选查看。小星记账也提供了收支差额（可以看作结余）的计算，另外每类图表下方还会「一言以蔽之」简要概括这段时间的财务状况。详单部分也比较完善，对应大类、小类、账户或者不同时间段的结余详单都能查看到。最近一次更新后小星记账在搜索功能中新增了「高级筛选」，用户可以通过自定义时间、金额、分类、账户等等信息筛选对应账单，完全可以满足我们统计和对账的使用需求了。\n\n除了常规功能，小星记账支持报销管理和周期事件，更新后也在记账页面提…",
+          "link": "https://sspai.com/post/70275",
+          "publishedOn": "2021-12-03T08:30:00.000Z",
+          "wordCount": 172,
+          "title": "Android 记账应用那么多，我为什么对小星记账一见钟情？"
+        },
+        {
+          "id": "https://sspai.com/post/70270",
+          "author": "PlatyHsu",
+          "description": "按：今天是 12 月 3 日，国际残疾人日。根据世界银行的数据，全球约 10 亿人患有某种形式的残疾。\n诚如联合国在今年纪念活动的说明中指出，技术和创新越发促进着可访问性（accessibility）和可用性（usability）；辅助设备和辅助技术对于残疾人士发挥着关键的「促进平等」作用。其实，早在 2006 年，联合国通过、中国参与签署的《残疾人权利公约》就承认，获得辅助技术是一项人权。\n在少数派，我们关注技术，也强调包容。在内容出品中，我们重视推广无障碍设计、介绍辅助工具的选题；与读者互动时，我们常常感动于那些虽然视听、行动不便，但依靠坚忍与才智活出别样精彩的故事。\n值此残疾人日之际，我们特将网站中无障碍相关的优秀内容以合集形式呈现，希望为促进无障碍方面助人和自助的意识和技能，略尽绵薄之力。\n\n一、无障碍技术综合讨论\n怎样打造互联网「无障碍」\n\n互联网为很多人打开了认识世界的另一扇门。对于残障人士来说，互联网不仅仅是丰富生活的方式，更是为了让他（她）们全身心投入到工作、生活、沟通、聆听、创作的桥梁。那么，为了实现这种互联网「无障碍」，厂商、社会组织都做了哪些努力？信息无障碍应当满足哪些标准？不同操作系统的无障碍设计和教程资源应该去哪查阅？本文一一为你解读。\n阅读全文：打造互联网「无障碍」，互联网厂商做了这些努力（作者：Eric_hong）\n我们为什么要关注包容性设计\n\n包容性设计（inclusive design）是「一种能够充分利用并实现人类多样性的方法」。它包含无障碍设计，但又高于无障碍设计。世卫组织指出，残疾是一种个人属性，不仅仅只是健康问题，而还是一个环境问题，反映了身体特征与社会特征之间的相互作用。因此，每个人都可能在某种场景下成为「残疾人」。这篇译文从设计角度出发，探讨了包容性设计的实践方式，但对于任何用户都可以产生启发和触动。\n阅读全文：译文 | 我们为…",
+          "link": "https://sspai.com/post/70270",
+          "publishedOn": "2021-12-03T05:12:55.000Z",
+          "wordCount": 196,
+          "title": "为了更包容和便利的未来——国际残疾人日专题"
+        },
+        {
+          "id": "https://sspai.com/post/70255",
+          "author": "瞎玩菌",
+          "description": "Matrix 首页推荐\nMatrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。\n文章代表作者个人观点，少数派仅对标题和排版略作修改。\n\n2021.12.3 尽量每周五更新\n《瞎玩菌的游戏周报》是我对游戏领域的观察和点评。具有以下特点：\n\n宁缺毋滥，为读者带来价值\n主观，但基于事实和数据\n有新鲜感，但时效性不强\n享受游戏，但反对沉迷游戏\n提升品位，但反对鄙视链\n\n游戏本身就是一种互动娱乐，我非常鼓励读者通过评论互动参与进来，而不是仅仅当个「读」者。\n享乐\n推荐好的游戏音乐，希望更多人因为音乐对游戏产生兴趣（我就是）。\nExo One Original Soundtrack - Rhys Lindsay\n\n这是来自新游戏《Exo One》的原声音乐，这款游戏现已发售，且首日加入 XGP。你可以在 Bandcamp | Spotify | YouTube Music | Steam 收听整张专辑（共 21 首曲目），或者按名称在你喜欢的音乐服务中搜索。为方便你在文章页面内直接播放，下面是这首音乐的在线播放版本：\n \n要闻\n游戏领域过去一周最重要的话题性事件，以及我的主观看法。\n被迫畅销：Xbox Series S 成「黑五」期间最畅销游戏主机\n\n相比一货难求的 PS5、Xbox Series X 和 Switch OLED 机型，长得像一个音箱的 Xbox Series S 作为唯一可以不加价买到的游戏主机，毫无悬念地成为了今年「黑色星期五」促销期间的最畅销游戏主机。\nXbox Series S 常年售价在 300 美元（国内售价约 2200 元），而且随时可以买到。由于近期 Xbox Game Pass 3 年 158 元的「特价」漏洞（目前已跌至 130 元左右），…",
+          "link": "https://sspai.com/post/70255",
+          "publishedOn": "2021-12-03T03:24:40.000Z",
+          "wordCount": 287,
+          "title": "瞎玩菌的游戏周报：XSS 黑五最畅销、索尼 PS 手柄夹手机新专利等"
+        },
+        {
+          "id": "https://sspai.com/post/70272",
+          "author": "少数派编辑部",
+          "description": "你可能错过的新鲜事\nApp Store Awards 获奖者揭晓\n12 月 2 日，App Store 公布了 2021 年 App Store Awards 获奖者名单。其中，年度游戏为《英雄联盟手游》，年度 iPhone App 为《Toca Life: World》，年度 iPad App 为《LumaFusion》，年度 Mac App 为《Craft》，年度 Apple Watch App 为《CARROT Weather》。来源\n\n索尼 Airpeak S1 无人机开启预定\n12 月 2 日，索尼正式开启了 Airpeak S1 无人机的预定，该无人机配备独立云台，搭载 3D 视觉系统，可以完成避障或空间感知，最大飞行速度可达 90km/h，无负载续航为 22 分钟，售价 9000 美元，将于 12 月 24 日开始发货。来源\n\n中邮 Hi nova 9 系列正式发布\n12 月 2 日，中邮举办新品发布会，正式发布了 Hi nova 9 系列手机，该设备采用了 6.72 英寸 120Hz 超曲 OLED 显示屏，搭载了骁龙 778G 5G 处理器，配备了 5000 万像素的超感光镜头、一颗 800 万像素超广角镜头、一颗 200 万像素景深镜头，内置超高导热石墨烯以及双 VC 液冷散热，本次共提供 8/128GB 和 8/256GB 两个版本，拥有幻境森林、梦幻罗兰、梦幻星河和亮黑色四种配色方案，售价 2999 元起。来源\n\nOneDrive 新增在线照片滤镜功能\n12 月 1 日，微软宣布 OneDrive 继支持线上颜色调整、裁剪功能、旋转和翻转后，OneDrive 即将支持滤镜以及标记等新功能。来源\n\n高德地图上线停车雷达功能\n高德地图于 12 月 2 日上线「停车雷达」新功能，通过超过百万的全国停车场数据，可为用户智能推荐目的地附近的多个及首选停车场，用…",
+          "link": "https://sspai.com/post/70272",
+          "publishedOn": "2021-12-03T00:58:50.000Z",
+          "wordCount": 504,
+          "title": "派早报：App Store Awards 获奖者揭晓、索尼 Airpeak S1 无人机开启预定等"
+        },
+        {
           "id": "https://sspai.com/post/70014",
           "author": "Matrix机器人",
           "description": "关于栏目\n为了满足读者们对于《新玩意》栏目加更的需求，机器人特地邀请了 Matrix 作者们也来聊聊自己近期购买的新奇产品。喜欢本栏目的话，欢迎充电或评论文章来表达自己的喜爱，你的每一次真心夸赞或建议，都是作者前进的动力。\n所有内容均遵循 原创、首发、非商务 原则，投稿细则可查看文末。\n\n@南鱼祭酒：realme Book 海岛灰\n买这种手机厂商推出的首款笔记本电脑，是需要一定的勇气的。对于我来说，做勇士，其实是一个明确自己需求的必然结果。\n\n购买渠道：realme 京东自营旗舰店\n入手价格：4399（原价 4699）\n下单及签收日期：10 月 27 日下定金，31 日付尾款，11 月 1 日发货，3 日收到\n\n我一直有台式 Windows 电脑兜底，所以在笔记本方面只需要考虑轻薄即可。上一台 win 本是 vaio z，在 19 年底的时候 C 面有一点点鼓，就送回京东返修了（京东自营，我作为京东 plus，不修白不修），结果京东表示修不好，可以按购入价八折赔付给我，然后机器销毁。用了一年半的笔记本能有这样一个结果，对于消费者来说显然很值了。于是在之后的一年时间里，我的移动设备就变成了一台华硕的 Chromebook 和 iPad Air 第三代。这样的组合在家里当然无所谓，但是一旦要出门，一旦要出门而且要跟他人进行文件交换，Chromebook 和 iPad 的不足就体现出来了。恰逢苹果推出了全新的 M1，于是我在 20 年年底斥巨资购入了一台 MacBook Air M1 16+512（官网 24 期分期免息，四舍五入不要钱……）。\n但是，在接下来的将近一年时间里，我发现 MacBook 并不适合我。\n\n最值得称道的高性能 M1，我用不上。笔记本在我这里主要作用就是文档编辑器 + 浏览器，M1 杀鸡用牛刀了。\n高续航我用不上，甚至轻薄我也用不上。我在今年（21 年）4…",
@@ -4074,60 +4200,6 @@
           "publishedOn": "2021-11-05T00:56:37.000Z",
           "wordCount": 350,
           "title": "派早报：小米激光影院 2 4K 发布、魅族回应魅族 18 天气应用出现广告等"
-        },
-        {
-          "id": "https://sspai.com/post/69671",
-          "author": "和燕燕",
-          "description": "近来整理外公的笔记本，记叙心得，与诸君分享。\n外公自退休后入股市，二十多年来周一至周五上午九点到下午三点工作，晚上再耕耘三两钟头，笔记主要记录整理新闻资料、分析行情走势数据。早年间，他多是做剪报，后因家中失火心血化为灰烬。近十余年间，他的笔记又渐渐积累了数十本，自成体系。本文简单梳理其笔记系统，并做简要讨论，以做纪念。\n基本体例\n外公的笔记系统非常简单，一言蔽之，按专题分块分区，以时间为线索依次排列，利用活页本灵活调整结构。\n材质选用\n他的笔记少量存于电脑，主体部分是纸笔笔记。近年来，笔记本统一为 A5 活页本，封面花色和纸质没有什么特殊的选择。笔分三色，黑色水笔、红色水笔、铅笔。黑色部分记录主体内容，红色标注重点信息或用于增补内容，铅笔记录不确定的内容。\n\n目录\n笔记本以板块进行区分，每一个专题对应一本专用笔记本。单个专题用完一本（即厚度最大无法再加纸）后接续第二本。透明封面的笔记本通常不另贴标签，不透明封面的笔记本封面处会贴标签注明，同一专题若干本笔记以一二三顺序标注。\n每本笔记第一页是目录，目录内容会随正文内容增加而不断增补，或定期更新版本。一级目录以天干排序，二级目录以一二三四排序，未见三级目录。更新目录版本即新誊抄一份夹进活页本中作为首页，旧版即可丢弃。\n\n笔记内容主要包括两个方面，一是行业产业信息，二是自选股信息。从笔记使用目的来看，外公记笔记目的明确，以选股为最终目的，因此有选股意愿的专题会增加自选股信息专栏，配以相应的自选股小目录（如下图所示）。\n\n记录方式\n无论是产业行业信息还是自选股信息，笔记均以时间为线索录入信息。如下图所示，每当看到新材料便记录到相应专题页下，首先记录日期，随后记录具体内容。有些信息时间跨度会非常大，如下图中所示，关于钠电池的第一条记录记于 2013 年 4 月，第二条记于 2016 年 7 月，第三条则记于 2020 年 2 月。（…",
-          "link": "https://sspai.com/post/69671",
-          "publishedOn": "2021-11-04T10:03:47.000Z",
-          "wordCount": 84,
-          "title": "翻阅外公的活页笔记本，我对双向链接与卢曼笔记法感触更深了"
-        },
-        {
-          "id": "https://sspai.com/post/69673",
-          "author": "少数派编辑部",
-          "description": "关于栏目\n很多读者都会好奇少数派的编辑们到底平时都「买了啥」。我们希望通过「编辑部的新玩意」介绍编辑部成员们最近在用的新奇产品，让他们自己来谈谈这些新玩意的使用体验究竟如何。\n内容声明：《新玩意》栏目如含有商务内容，将会在对应条目标注「广告」；来源为「厂商送测」的产品并无内容干涉。\n\n@张奕源 Nick：Bellroy Lite Duffel 轻行行李包\n上周五出差之前，我正在犹豫两天的短差用什么包合适，就神奇地收到了来自同事赠送的 Bellroy Lite Duffel 轻行行李包。因为送的时机正好，所以我也没客气，直接就笑纳了。\n同事送我的 Bellroy Lite Duffel 是白色版，Bellroy 网站上还有一个同款的黑色。但我建议，如果你要购买这款包包——除非你真的非常非常喜欢黑色——一定要购买白色版，因为它太好看了。白色版 Bellroy Lite Duffel 的实际颜色带一点灰，搭配细腻的网格设计，将包包的质感体现得很明确。从上海出差回来后，我继续把这款包作为日常通勤使用，回到办公室后就听到好几位同事表达「哎你这包真好看」的赞叹。\n借用一张 Bellroy 的外观图，好看\nBellroy Lite Duffel 轻行行李包的定位是都市通勤和短期差旅，所以功能上的最大特点就是「能装」。我这次的两天之旅是参加 JustPod 举办的 PodFest 播客大会，原本我自己去就行，但黛西此前还没去过上海，于是一路同去。单人之行变成了双人，要带的衣物也增加了一倍。但对 Bellroy Lite Duffel 来说，这样的负载增量完全不是问题。\n除了两个人的秋季衣物和一个化妆包之外，我还装了两部相机，而且其中一部带着完整包装盒（因为要借道还给朋友）。此外，作为科技爱好者，各种电子书、充电宝、电源线、充电头等数码配件也要统统塞进包内，即使这么一通装，Bellroy L…",
-          "link": "https://sspai.com/post/69673",
-          "publishedOn": "2021-11-04T09:18:19.000Z",
-          "wordCount": 319,
-          "title": "新玩意 082｜少数派的编辑们最近买了啥？"
-        },
-        {
-          "id": "https://sspai.com/post/69659",
-          "author": "PlatyHsu",
-          "description": "引言\n随着搭载 M1 Pro 和 M1 Max 芯片的新款 MacBook Pro 上市，Apple 历史上的第二次平台迁移已经打下了扎实的基础；M1 系列芯片的优秀表现，也让用户在选购时无需在其与 Intel 平台旧款间纠结。\n然而，如果说 M1 系列 Mac 机型目前还有什么制约用户、特别是办公用户选购的因素，那就是缺少运行 Windows 的完善方案。在过去，Mac 用户运行 Windows 的选择很多：既可以使用 Apple 官方支持的 BootCamp 安装双系统，也可以使用虚拟机。由于当时与主流 PC 同属 X86 架构，虚拟机工具选择也很多样，从付费的 Parallels Desktop 和 VMware Fusion，到免费的 VirtualBox、QEMU 都可堪此任。\n\n回到当下，BootCamp 已经被 Apple 抛弃，而虚拟机方案也因架构的鸿沟而进展迟缓。截至目前，只有新近发布的 Parallels Desktop 17 宣布支持 Windows 11 ARM64 版。这固然是利好消息，但不少用户可能对其较高的售价感到顾虑（每年 498 元，双十一期间折扣至 349 元；利益声明：通过前述链接购买，少数派将获得佣金）。\n那么，是否有在 M1 系列 Mac 上虚拟 Windows 11 的免费方案，它们的表现是否能满足日常使用的需求呢？这就是本文要回答的问题。\n请注意：\n\n本文适用于使用 M1、M1 Pro 或 M1 Max 芯片的 Mac 机型。对于使用 Intel 处理器的机型，一般建议直接使用免费且完善的 VMware Fusion Player 即可。本文亦不介绍使用 Parallels Desktop 17 安装 Windows 11 的步骤，因为该操作有完整的官方文档，且属于开发商技术支持范围。\n本文所述运行情况及方法步骤仅适用于写作时（…",
-          "link": "https://sspai.com/post/69659",
-          "publishedOn": "2021-11-04T07:57:10.000Z",
-          "wordCount": 597,
-          "title": "用硬苹果捏软柿子：M1 系列 Mac 虚拟 Windows 11 免费方法谈"
-        },
-        {
-          "id": "https://sspai.com/post/69611",
-          "author": "YFWoo",
-          "description": "2013 年 5 月 14 日，美国知名演员安吉丽娜·朱莉（Angelina Jolie）在《纽约时报》上发表《我的医疗决定（My Medical Choice）》一文，向外界披露了自己在早前的基因检测中得知，自己的基因组中携带了会大幅提高乳腺癌和卵巢癌患病率的缺陷基因—— BRCA1 基因，并于 2 月 2 日至 4 月 20 日期间接受一系列的治疗，让自己未来患上乳腺癌的几率从 87% 下降至不足 5%。手术成功后，朱莉继续活跃在影坛，为观众们奉上了许多优秀的作品。\n图为安吉丽娜·朱莉在手术 5 年后出演的电影《沉睡魔咒 2》海报\n根据世界卫生组织国际癌症研究机构（IARC）于本年初发布的 2020 年全球最新癌症负担数据，2020 年全球新发癌症病例共 1929 万例，其中乳腺癌以全球约 226 万的发病总人数，超过肺癌（全球发病人数 220 万）成为 2020 年的全球第一大癌症；因患乳腺癌而死亡的病例则有 68 万例，位居癌症死亡人数第五。\n目前临床有一系列用于评估乳腺癌患癌风险的因素，其中能很大程度上帮助评估早期患癌风险乃至辅助临床确诊的，就有通过 NGS（即 Next Generation Sequencing，又名High-Throughput Sequencing，高通量测序）测定乳腺癌基因突变这一项。\n注：有相关顾虑的读者可以借助 乳腺癌风险评估工具 进行自我评估。\n安吉丽娜·朱莉所接受的用于筛查乳腺癌基因的高通量测序，本质上就是一种基因检测技术，属于「医疗级的基因检测」，和我们平时在微信小程序、网商平台所见到的「消费级的基因检测」，是同一种技术在不同领域的运用。\n既然基因检测这么「神」的话，我们是否也可以通过寄一管唾液到检测机构，就查出来以后会患什么癌症并加以防范，或是给孩子做一次检测，就知道孩子有什么天赋从而以后着重从哪些方面去培养孩子呢？\n关于这些…",
-          "link": "https://sspai.com/post/69611",
-          "publishedOn": "2021-11-04T06:32:14.000Z",
-          "wordCount": 324,
-          "title": "「基因检测」，新时代算命谱还是预言书？"
-        },
-        {
-          "id": "https://sspai.com/post/69653",
-          "author": "catbaron",
-          "description": "Matrix 首页推荐\nMatrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。\n文章代表作者个人观点，少数派仅对标题和排版略作修改。\n\n最近某款笔记应用转到订阅制的新闻引起了很多人的关注。很多人表示想要迁移到别的笔记应用去。在这些讨论中我看到有人提到了 Notes Plus （后略称为 NP），这让我有些意外。在 iPad 上出现过很多优秀的笔记软件，在提到它们的时候，GoodNotes 和 Notability 是最常作为标杆被拿来做比对的，而 Notes Plus 则很少被提起。\nNP 是一款买断制的应用，这 10 年来一直没有停止更新和适配，也没有推出过大版本更新重新购买。我都不知道开发者在靠什么吃饭。所以当我发现它推出了 10 周年新版本（Notes Plus X，后略称为 NPX）的时候，确实感到了一些惊喜。\nNP 有一些很实用的功能。比如你可以画一个圈，然后可以选择让这个圈变成一个规则圆形。如果你的圈里面有你书写过的内容，这个圈还可以用来「选中」已写内容，然后对它进行进一步操作（比如移动/删除或者转换为文字）。当然，在你想要选中内容的时候，你并不需要真的画一个圈。只要画一个封闭的形状都可以完成选中操作。虽然自动绘制图形和选中书写内容都不是独家的功能，这一套操作流程是我目前用过的笔记应用中最便捷的设计。\n关于 Notes Plus 的更多功能和特性，在少数派已经有 一篇文章 详细地介绍过，我就不再赘述。这里我只想在那篇文章的基础之上做一些补充，介绍一下 NPX 具体有哪些变化。\n模板\n首先说一个旧文中没有提到的功能，即笔记本的模板。NP 提供了相当丰富的模板类型，从普通的横线个/网格，到日历，甚至到乐谱，应该可以满足大部分人的使用需求了。在此之上，NP …",
-          "link": "https://sspai.com/post/69653",
-          "publishedOn": "2021-11-04T03:29:48.000Z",
-          "wordCount": 195,
-          "title": "App+1 | 十年如一的老牌笔记应用：Notes Plus X 都有哪些新特性？"
-        },
-        {
-          "id": "https://sspai.com/post/69662",
-          "author": "少数派编辑部",
-          "description": "你可能错过的新鲜事\n微软公布 Office 生产力套件多项新变化\n11 月 2 日，微软公司召开本年度第二次 Ignite 大会，微软在本次大会上宣布了 Office 生产力套件的诸多新变化，其中包括推出全新协作应用 Microsoft Loop、针对 Microsoft Editor 编辑器可通过 Context IQ 几乎可以用来对后续操作进行预测，提供上下文和文件操作建议、基于 Web 的视频剪辑 Clipchamp 正式加入 Office 套件、PowerPoint 将加入一项名为「录音室」的新功能来帮助增强讲演效果、Excel 可以通过 JavaScript API 允许开发者自己创建自定义的数据类型等。来源\n此外，微软还公布了和网盘应用 OneDrive 相关的几个变化，如 12 月正式发布 M1 版 OneDrive 客户端、Windows 11 版 OneDrive 将可以集成在资源管理器内、OneDrive 网页版可以使用 PWA 应用等。来源\nGoogle 宣布将强制开启账户二步验证登录\nGoogle 公司于 11 月 3 日宣布，将从 2021 年 11 月 9 日起强制开启账户的两步验证登录，启动两步验证需要使用一部绑定 Google 账户的手机或者安装身份验证 app，也支持其它物理验证方式，比如使用实体安全密钥来登录。Google 表示保护用户账户安全的最好办法就是开启两步验证。来源\nMac 版 TestFlight 正式登陆 Mac App Store\nApple 公司日前正式面向所有 macOS 用户开放了 TestFlight 的下载权限，用户在 Mac App Store 搜索并 下载 Testflight 即可使用，但系统版本必须为 macOS Monterey。来源\nFacebook 宣布放弃使用人脸识别技术\n11 月 2 日，社交平…",
-          "link": "https://sspai.com/post/69662",
-          "publishedOn": "2021-11-04T00:47:20.000Z",
-          "wordCount": 282,
-          "title": "派早报：微软公布 Office 新变化、Google 将强制开启两步验证等"
         }
       ]
     },
@@ -4136,6 +4208,24 @@
       "feedUrl": "https://feeds.appinn.com/appinns",
       "siteUrl": "https://www.appinn.com",
       "articles": [
+        {
+          "id": "https://www.appinn.com/?p=40682",
+          "author": "青小蛙",
+          "description": "RSS+ 和 RSSHelper，是两款可以在当前网页右下角显示 RSS 地址的油猴脚本，以图标、圆形数字角标的方式显示，不干扰正常浏览，即点即用。@Appinn 感谢 @gsdg 和 @914066",
+          "link": "https://www.appinn.com/rss-plus-and-rsshelper/",
+          "publishedOn": "2021-12-03T08:07:15.000Z",
+          "wordCount": 712,
+          "title": "RSS+ & RSSHelper – 显示当前网站的 RSS  地址[2个油猴脚本]"
+        },
+        {
+          "id": "https://www.appinn.com/?p=40677",
+          "author": "青小蛙",
+          "description": "kmonad 是一款开源的高级键盘管理工具，支持 Windows、macOS 和 Linux，可以让你无限地定制和扩展几乎所有键盘功能，包括改建、配置组合键等功能。@Appinn 感谢 @z77572",
+          "link": "https://www.appinn.com/kmonad/",
+          "publishedOn": "2021-12-03T04:32:47.000Z",
+          "wordCount": 988,
+          "title": "Kmonad，一个自由改变键盘布局的软件"
+        },
         {
           "id": "https://www.appinn.com/?p=40669",
           "author": "青小蛙",
@@ -4613,33 +4703,6 @@
             "length": "140693",
             "type": "video/mp4"
           }
-        },
-        {
-          "id": "https://www.appinn.com/?p=40293",
-          "author": "青小蛙",
-          "description": "CountBoard 是一款开源的桌面日程倒数计日应用，能够实现亚克力与毛玻璃两种效果，可添加多个日程。@Appinn 来自发现频道，@Gaoyongxian666 同学的自荐： CountBoard",
-          "link": "https://www.appinn.com/countboard-for-windows/",
-          "publishedOn": "2021-11-04T08:30:01.000Z",
-          "wordCount": 749,
-          "title": "CountBoard – 桌面日程倒数计日工具[Windows]"
-        },
-        {
-          "id": "https://www.appinn.com/?p=40287",
-          "author": "青小蛙",
-          "description": "Google Pixel 6 是 Google 近期发布的新手机，近期 128GB 已经上架亚马逊英国，并可以通过亚马逊中国直邮国内。@Appinn 目前还没有 Pro 版本，以及现在的版本是原价，并",
-          "link": "https://www.appinn.com/google-pixel-6-amazon-uk/",
-          "publishedOn": "2021-11-04T05:14:45.000Z",
-          "wordCount": 904,
-          "title": "Google Pixel 6 上架亚马逊英国，可直邮国内"
-        },
-        {
-          "id": "https://www.appinn.com/?p=40281",
-          "author": "青小蛙",
-          "description": "BatteryStatusShow 是一款能够查询 Mac 与 iPhone 设备详细电池状态的小工具，包括电池容量、电压、当前功率、电池剩余寿命等信息，最重要的是当通过数据线连接过一次 iPhone",
-          "link": "https://www.appinn.com/batterystatusshow/",
-          "publishedOn": "2021-11-04T04:52:29.000Z",
-          "wordCount": 814,
-          "title": "BatteryStatusShow – 查看 Mac、iPhone（无线）电池状态的开源工具[macOS]"
         }
       ]
     },
@@ -4648,6 +4711,15 @@
       "feedUrl": "https://feeds.feedburner.com/ruanyifeng",
       "siteUrl": "http://www.ruanyifeng.com/blog/",
       "articles": [
+        {
+          "id": "http://www.ruanyifeng.com/blog/2021/12/weekly-issue-186.html",
+          "author": null,
+          "description": "这里记录每周值得分享的科技内容，周五发布。\n本杂志开源（GitHub: ruanyf/weekly），欢迎提交 issue，投稿或推荐科技内容。\n周刊讨论区的帖子《谁在招人？》，提供大量程序员就业信息，欢迎访问或发布工作/实习岗位。\n封面图\n\n西班牙巴塞罗那的圣家堂大教堂，本周在尖塔顶端安装了一颗12角玻璃星，将在新年前夕被聚光灯照亮。这座建筑是联合国世界遗产，已经造了130多年，估计还要好几年才能土建完工。（via）\n本周话题：低纬度，高海拔，气候优势\n上个月，我在四川旅行。离开成都以后，一路向南，就到了攀枝花。\n那是一个很奇特的地方，气候与周边截然不同。\n\n从成都开始，就一直是阴天，但到了攀枝花，天天都是阳光明媚的大晴天。而且很暖和，当时已经是10月底，北方都下雪了，那里白天的最高气温却还在25度以上，可以穿短袖。\n总之，天气好得让人怀疑。我就去查了，果然是有原因的，大家看下面这幅中国年平均气温图。\n\n上图中，颜色越深，年平均气温越高（越热）。注意看，在成都和昆明之间，箭头所指的地方，有一块异常的深色区域，气温显著高于周边，比南边的昆明还要高，接近西双版纳的颜色（温度）了。那就是攀枝花。\n为什么这里气温高？\n书上的解释是，主要原因是独特的地理环境，这里是 \"低纬度、高海拔的盆地\"。纬度低，接近北回归线，所以冬天不冷；平均海拔1000米以上，所以夏天不热；\n更主要的是，这里地处金沙江河谷，周围都是高山，空气不易流动，风比较小，所以比同纬度的地方更热。而且，高山挡住了水汽，所以很少下雨，晴天多。\n\n（图片说明：旅馆窗口望出去的景象，城市被高山包围。）\n这样的地理条件，使得冬天的气候非常舒服，暖洋洋的。当地政府现在把康养产业（养老）当作主要产业，一到冬天，大量外地人口涌入过冬。\n仔细想一下，国内符合\"低纬度、高海拔\"这个条件的城市，没有几个的，可能都在云贵高原。这些城市都非常…",
+          "link": "http://www.ruanyifeng.com/blog/2021/12/weekly-issue-186.html",
+          "publishedOn": "2021-12-03T00:40:23.000Z",
+          "wordCount": 860,
+          "title": "科技爱好者周刊（第 186 期）：低纬度，高海拔，气候优势"
+        },
         {
           "id": "http://www.ruanyifeng.com/blog/2021/11/weekly-issue-185.html",
           "author": null,
@@ -4725,6 +4797,114 @@
       "feedUrl": "https://www.zhihu.com/rss",
       "siteUrl": "http://www.zhihu.com",
       "articles": [
+        {
+          "id": "http://www.zhihu.com/question/502402042/answer/2254569535",
+          "author": "科学声音",
+          "description": "奥密克戎一发现就得到世卫组织的最高待遇，其中最关键的原因就是奥密克戎变种与原始的新冠病毒相比变异的地方特别特别多。\n奥密克戎至少有32处变异，而之前的德尔塔不过是2个变异。\n但这里我需要澄清一个广泛存在的误解，所谓的32处变异指的是通过基因测序，但这并不代表奥密克戎的刺突蛋白的外形的变化一定就会大过德尔塔。\n\n来源：知乎 www.zhihu.com\n科学声音\n点击下载\n48 个回答，查看全部。\n世卫组织称新冠 Delta 变异株正在成为全球主要流行的变异株，将带来哪些影响？\n如何看待南非新冠病毒 501.v2 型可能出现免疫逃脱的现象？这会导致疫苗或者现有的免疫疗法失效吗？",
+          "link": "http://www.zhihu.com/question/502402042/answer/2254569535?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
+          "publishedOn": "2021-12-03T12:34:08.000Z",
+          "wordCount": 21,
+          "title": "搅乱多国的“奥密克戎”威胁有多大？"
+        },
+        {
+          "id": "http://www.zhihu.com/question/503276127/answer/2254331660",
+          "author": "Gilles Beloeil",
+          "description": "（本文由天美同事帮忙翻译，相关配图在发布于个人主页和 Artstation 时已获育碧授权。）\n大家好，我是坐标蒙特利尔的 Gilles Beloeil，是一名有近 20 年经验的美术从业者，如今在天美 F1 工作室担任概念美术专家。\n\n蒙特利尔一直以 AAA 研发领域的人才密集和产业成熟而知名。过去数年，许多世界各地的游戏开发商来到蒙特利尔，在这里研发游戏，其中也有越来越多中国游戏公司的的身影。\n对身处蒙特利尔的从业者来说，中国游戏公司在规模和投入上的准备程度是以往很少见到的。这种投入往往意味着可以打造极好的团队，而好的团队是好作品必不可少的。中国研发工作室的到来无疑为蒙特利尔注入了新鲜血液。\n\n就我个人而言，决定加入天美是个天时地利人和的故事。此前，我在育碧蒙特利尔待了近 15 年的时间，有意尝试新的项目和环境。\n天美蒙特利尔工作室的 AAA 项目恰好是我感兴趣的类型。深入交流后，我发现双方志趣相投，也都希望打造一部好作品。综合考虑下，我来到了天美蒙特利尔，这里的一切正处于启动阶段，充满挑战与活力，让我感觉非常兴奋。\n目前，我负责为游戏设计概念图，探索游戏的美术风格和基调。由于仍在项目早期，所以人数尚少的概念美术团队可以充分发挥想象力，互相交流与克服困难，相互尊重专业，氛围非常融洽，我觉得这是个很好的开始。\n\nAAA 游戏的概念设计\n大家也许会好奇，AAA 游戏的概念美术设计过程是怎样的。其实并没有想象中复杂，我仅分享自己的一些个人经验。\n概念美术设计的第一步，往往是从美术总监处，得到关于设计需求的简报。我会根据这份简报，去尽可能提出问题，理解对方想要的画面。在这之后，我会去寻找各种参考素材，主要用于以下层面：设计，氛围，配色，光影，构图，灵感 …… 进而我要决定用什么路径方法。\n\n而路径方法的选择，取决于概念图的类型和目的：是用来展现氛围，还是具体设计？是游戏故事中的…",
+          "link": "http://www.zhihu.com/question/503276127/answer/2254331660?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
+          "publishedOn": "2021-12-03T07:17:13.000Z",
+          "wordCount": 304,
+          "title": "如何看待中国游戏公司在海外成立工作室，招募海外AAA人才？"
+        },
+        {
+          "id": "http://www.zhihu.com/question/502749269/answer/2254502395",
+          "author": "ASK ASK",
+          "description": "大家好，又是我。\n我是《大王饶命》的动画监制askask，感谢大家对这部动画的关注，希望大家喜欢这部动画。\n关于原作\n 我在知乎也混了挺长时间了，感觉知乎的网文用户还是挺多的，所以第一个问题就先来说说原作吧。\n其实我并不能算是一个传统的网文读者，除了很多年前追过一阵子紫川这种极早期作品之外，中间一直都没有关注过网文作品，《大王饶命》这本书老实讲也是因为工作相关才开始看的，但没想到一看就喜欢上了。那已经是几年前的事了，其实因为这本书我才去下载了起点app，然后这几年开始越来越关注新的网文作品，也追更了很多新的好书。\n熟悉我的朋友可能知道我是一个极老极老的“老二次元”了（可能是很多人阿姨辈的那种），这本书给我的第一印象就是非常适合“二次元”方向的改编，不管是人设、剧情、战斗体系的设定等各方面。熟悉国漫的朋友应该知道我们现在的动画改编还是有很大比例是倾向于使用3D制作的，但《大王饶命》这本书我是看完之后马上确定了使用2D制作，并且很快敲定了现在的动画制作团队，简直是太合适了。\n在制作中原作的改编其实有两个比较大的难点：一是搞笑，二是战斗戏。关于搞笑的问题上其实我们纠结了很久，可能更多的原著粉在看书的时候脑补出来吕树的怼人和比较贱的态度是会比较直接和更有冲击力的那种，但从人物的长线塑造和剧情角度考虑，我们还是处理成了现在的风格，前期PV放出的时候也注意到有些原作粉感到有些意外，但相信慢慢看下去，大家会逐渐理解我们的用意！而战斗戏份则是我们这一季重点打造的部分，尤其在后半进入遗迹之后，会有大量非常大规模的精彩战斗场面，为了这部分的制作导演已经跳楼几次被人民群众抬了回来（不是），最终还是让原作者替他摔断了腿（纯属胡扯）。没有啦，不过头发掉了大概有几车应该是真的。\n\n关于OPED\n这两天提前放出的OPED相信大家已经看到了，也掀起了不小的反响。\n大火鸟在上一次和我们合作的《一人之下第三季…",
+          "link": "http://www.zhihu.com/question/502749269/answer/2254502395?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
+          "publishedOn": "2021-12-03T05:56:34.000Z",
+          "wordCount": 67,
+          "title": "如何评价《大王饶命》正式动画化？"
+        },
+        {
+          "id": "http://www.zhihu.com/question/503270815/answer/2254452710",
+          "author": "韩之昱",
+          "description": "从07年初到现在，已经快15年了。还在这一行。就从我自身的经历说说行业这些年的变化，以及未来的趋势吧。\n第一份工作是在完美世界，进去的时候公司还叫完美时空。那时候全国比较知名的游戏公司是盛大、九城之类的代理公司，大型的游戏开发公司还是很少的。完美时空那时也只有200多人，上线的项目只有完美世界、武林外传、诛仙。直到我入职半年后公司才在纳斯达克上市，随后迅速扩张起来。\n那个时期可以说是3D端游刚刚在国内兴起，只要有技术能做出画面不错而且网络稳定的3dMMO，市场基本是随意收割的状态。完美当时采用的快速复制新产品抢占市场的方式，虽然被诟病为完美七胞胎，但确实是最适合当时国内游戏市场的打法。\n\n当然，好日子没几年就开始变了，入局MMO的公司越来越多，一次重要的转变是史玉柱的征途登场，买卖数值的模式越来越成为网游的收入重心，自动寻路等小白的操作和刺激玩家PK也渐渐取代了探索大世界的游戏内容为主的设计方式。\n\n另一个则是完美的老对头畅游的崛起，天龙八部的活动玩法和卖宝石等也迅速成为跟风对象。这两家京城游戏公司互相挖角也堪称一乐，双方的核心骨干基本都对着换了N次家。\n这个阶段大概持续了五六年左右，在业内的体验基本是MMO游戏的画面技术在提高，但设计整体在下沉化和氪金化。对那些怀着初衷要做暴雪式游戏的国内开发者来说，大多会感觉日子越来越不好过和行业世风日下。然而谁能想到再过几年真的暴雪也要黄了呢。\n但是随着竞争的激烈，因为大家都做了活动、卖数值，pk，社交这些容易模仿的下沉设计，这些设计也很快失去了异军突起的效果，于是大厂也出现了一股下血本提高品质的浪潮，不再急于推出项目，而是反复打磨游戏内的画面、战斗、副本等内容，以靠近国际水平。这时候有代表的作品比如腾讯的斗战神，西山居的剑3，网易的天下，完美的笑傲江湖等。如果按这个趋势发展下去，中国的端游确实是有可能走向国际3A的道路。\n可惜这个趋…",
+          "link": "http://www.zhihu.com/question/503270815/answer/2254452710?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
+          "publishedOn": "2021-12-03T05:56:08.000Z",
+          "wordCount": 61,
+          "title": "你进入游戏行业多久了？对未来有什么期待？"
+        },
+        {
+          "id": "http://www.zhihu.com/question/503354364/answer/2254409706",
+          "author": "董海阳Zero",
+          "description": "先说结论吧，在射击游戏的领域，游戏策划的门槛确实在逐渐提高。工作以来我一直在从事射击游戏的设计，快8年了，我自己也是FPS游戏的重度爱好者，能把爱好与工作完美的结合也是一件幸运和开心的事儿。那么就从射击游戏领域的游戏策划工作，聊一聊这些年面临的一些挑战吧。\n\n射击游戏一直是游戏的一大分支，从TGA近5年的获奖者来看，包含射击元素的游戏几乎占据了半壁江山，‘枪车球’的地位显而易见。并且每隔1-2年，都会有突破性的射击游戏产品诞生，TitanFall、OW、PUBG、2077等无一不给玩家带来相当程度的震撼。而像COD/BF这类超高质量的年货产品，更是牢牢占据领先的位置。射击品类可谓百花齐放。\n \n\n\n而作为一个非常成熟的品类，在全球研发领域，射击游戏已经有了近30年的研发历史，无论在设计理论、技术成熟度和生产管线上，都已经有非常惊人的积累。国内的射击游戏研发真正爆发，也大约是从BR（BattleRoyal）时代开始，越来越多的工作室投入了射击品类的研发，而国内最早一批自研射击游戏的项目，可以追溯到2008年大连金山团队的反恐行动，到逆战迎来了更大的影响力，紧接而来的手游时代将竞争战场转向了移动端。\n\n短短不到10年，国内的厂商通过努力似乎来到了弯道超车的拐点，但在移动端的超越更多是来自“端转手”的红利，随着越来越多的端游在移动端移植完毕，真正考验作游戏设计者的创造能力/设计能力的时代慢慢来临，能够脱颖而出的产品越来越难，尤其是在全球化市场的竞争中，新的手游甚至要以端游的品质或体验为目标，才能在这个时代获得成功。\n\n天美J3工作室在移动端做出了《使命召唤手游》《穿越火线手游》这样的射击游戏作品，在玩家和市场上都取得了不错的成绩，一群热爱射击游戏的人一直在这个方向积累深耕。\n随着射击品类的快速进化和走向全球游戏市场，我们也在布局新的产品方向，在开放世界、写实大战场和风格化游戏等领…",
+          "link": "http://www.zhihu.com/question/503354364/answer/2254409706?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
+          "publishedOn": "2021-12-03T05:52:06.000Z",
+          "wordCount": 83,
+          "title": "游戏策划的从业门槛是否正变得越来越高？"
+        },
+        {
+          "id": "http://www.zhihu.com/question/503276127/answer/2254216836",
+          "author": "Steven Rhee",
+          "description": "大家好，我是 Steven Rhee，韩国人，是一名坐标北美的灯光美术（lighting artist）。个人曾在 EA 和动视等公司任职，积累了 15 年的游戏光照设计经验，目前加入天美洛杉矶工作室，从事 AAA 项目研发。我不懂中文，所以请天美同事帮忙翻译，给大家分享一些我的看法。\n大家也许已经注意到，中国游戏厂商正在全球各地成立工作室，招募当地的 AAA 人才。在我看来，这本质是研发全球化的必然趋势，而且西方早就开始了。\n过去十年，游戏已成为当前科技领域最关键，最具创新能力的行业之一，为全球近 20 亿人提供了极具沉浸感与惊艳感的娱乐形式，也让“娱乐产业（entertainment industry）”这个词不再限于指代好莱坞和电影。\n随之而来的是，游戏研发的规模在不断扩大，尤其是对 AAA 级游戏而言，幕后成员往往超过上千人，需要多个工作室合作开发，才可能将游戏在规划期限内完成。早在许多年前，Rockstar Games、EA、育碧等厂商就已经开始在本土之外布局研发团队了。\n\n经过长时间的积累，不管是从中国市场还是全球市场看，中国游戏研发进展迅速。面向全球市场，中国游戏行业自然向着 AAA 游戏研发领域扩张。游戏公司也在通过全球化研发布局的方式扩充人才池，提升团队多元化程度，来建立自己的竞争优势。\n在个人层面，我认为研发人才加入新的开发环境是件很正常的事情，特别是受到资源、能力、决心的吸引。比如我，在跟天美接触中没有过多犹豫，我觉得加入天美会极大地帮助我个人的成长。\n全球协作研发和团队多元化\n我曾在 EA 和动视工作，负责多款游戏的光照效果，包括《星球大战：前线》以及《麦登橄榄球》，《战地》和《极品飞车》等系列。\n其中的 13 年里，我一直都是《麦登橄榄球》系列的灯光主美，因此与 EA 上海工作室有过多年的协作研发（Co-dev）经验。\n\n协作研发有不少优势，比如说…",
+          "link": "http://www.zhihu.com/question/503276127/answer/2254216836?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
+          "publishedOn": "2021-12-03T05:17:20.000Z",
+          "wordCount": 175,
+          "title": "如何看待中国游戏公司在海外成立工作室，招募海外AAA人才？"
+        },
+        {
+          "id": "http://www.zhihu.com/question/503275336/answer/2254284384",
+          "author": "Richard",
+          "description": "我从事游戏行业17年，先后任职于上海育碧和蒙特利尔育碧, 从PS2，Xbox时代的游戏开始，经历了PS3，PS4，Xbox 360，Xbox one等的变迁，也参与过多部当时所谓的“次世代”作品，比如《幽灵行动》，《I am alive》，《细胞分裂》和《孤岛惊魂》系列等等。做过关卡，VFX/shader TA，技术美术总监，期间负责过多个项目重大对外节点（如E3，gamescom等）的攻坚。\n接触天美J3还是2019年的时候，当时美术总监 @BrianTao 和技术总监 @Shadow 找到我，给我展示了目前在研的几款游戏，我为手机上能呈现如此的品质而惊叹！\n要知道出国前我对手游的印象还停留在《愤怒的小鸟》和《部落冲突》这类休闲品类上。之后我们又谈到了工作室今后的规划和发展，“大世界”，“工业化”是提到最多的关键词，这也正是与我过往的经验和想做的事不谋而合！\n由于疫情关系，我最终在2020年底回国，有幸加入了天美J3大家庭，目前担任技术美术负责人。\n说到工业化，虽然我经历过多款AAA“次世代”，但是从游戏的内容量品质，团队人员配置和流程上讲，它们同样有着天壤之别。行业也已经在过去这段时间里经历了几次重大革新。  记得早些年，在主机上（如PS2，Xbox）开发第一人称射击游戏，团队规模往往在百人以内，开发周期在1年左右。开发流程上也非常线性和简洁明了，比如游戏分为多个关卡，每个关卡由各自的关卡设计和关卡美术负责，在技术美术总监的指导下，效果得到艺术总监认可，性能在规定范围内就可以了。\n至于里面的细节，只要不是违背大的技术框架，可以由该关卡的负责人按照自己的习惯就行，而资产（source data/raw data）管理，流程管理等也并没有规定得那么死板。在开发中遇到的问题，可以通过非常灵活的定向研发的方法逐一攻破。\n\n之后来到Xbox 360时代，随着游戏制作体量的变大，团…",
+          "link": "http://www.zhihu.com/question/503275336/answer/2254284384?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
+          "publishedOn": "2021-12-03T05:16:46.000Z",
+          "wordCount": 99,
+          "title": "如何看待工业化对游戏产业发展的重要意义?"
+        },
+        {
+          "id": "http://www.zhihu.com/question/503275336/answer/2254478307",
+          "author": "知乎用户（登录查看详情）",
+          "description": "很多年前我在知乎给过一个论述，今天再稍微做一次复读机：\n工业水平决定爆款上限\n受众特质决定爆款呈现\n囿于写这个论述的时候，我对于游戏产业的工业化其实理解是有一定偏差的。所以今天我对这个论述稍微修正一下：\n在创意行业中，工业水准决定表达形态。\n当然还是要说明，我自己并非游戏开发，本职工作现在更接近发行；很多涉及开发本身的事情我的回答会显得班门弄斧，请大家多多指正。\n-\n如何定义工业化？\n我的定义就是在项目上建立高效的自动化系统，拥有成熟的开发技术栈，优化的开发工具，并利用成熟的系统高效地生产游戏内容。\n工业化其实更多是生产方式的区别，重点在于效率的提升，而并非是产出的游戏本身的大区别。——在这个意义上来说，某些大作其实并非工业化生产，或者最多是纺织工人用上了珍妮纺织机，但离真正意义上的工业化生产，还有很多距离。\n回归到问题“如何看待工业化对游戏产业发展的重要意义？“本身，在这个回答中，我想谈三个事情。\n其一，是产能的提升。\n产能其实是两个维度，第一是能做什么，第二是同样的时间能做多少。\n实际上是存在一个反-工业化的叙事的。那就是“小作坊”生产。而大家都在鼓吹工业化生产，或者至少认为工业化生产是一个好东西的时候，我们面临的现状是大多数的游戏开发都以小作坊式生产为主。\n这个倒不是说大家条件艰苦云云，而是说开发模式还是以堆人力，怼资源的模式为主。\n在这种情况下，决定产品上下限的，都是团队整体每一个人的能力。在这种情况下来说，人员的稳定性和能力水平就非常致命。\n同时，团队能力的下限也在非常大的程度上决定了你能做什么样的东西。\n而开发的工业化在一定程度上是能够解决这个问题的，成熟的开发管线可以让内容的生产效率更高，也让内容生产更不依赖于某个/些特定人才。\n这点在于游戏产品质量需求提升明显的今天，是尤其重要的：尽快完成开发工业化的厂商/工作室，一方面能够更快的追随市场的喜好，生产表现力更强的游戏产品；另一方面则显然能够有更大的腾挪空间，对市场的适应性更高。\n其二，是管理模式的改变。\n工业化的生产，势必引领更工业化的管理模式。这点在逻辑上还是很明显的。产能提升其实能够显著避免micro-management。项目管理的重要性也越来越多。\n倒不是说某一种或者某几种项目管理模式就一定行。但以往关键角色一言堂的情况，在更高的产能下，其实会有一定的衰减——因为在高产能的环境下，leverage资源比对项目直接bb要更紧迫。\n囿于我本身并非管理者，所以我对于这点的诠释并不全面。但我能够清楚且欣喜地看到，工业化能够带来的是更先进，也更能发挥每个人能力的管理模式。\n其三，则是成本以及行业场景的远期变化。\n有群友回答说，未来的游戏行业会有明显的两极分化现象。这点我非常同意——但是原因跟工业化的生产方式其实关系不大。更多的原因在于需求的变化：即使是在F2P领域，玩家亦需要表现力更佳的“大”游戏。\n诚然，对于多数厂商来说，将自己舒适区内的开发模式更替为更工业化的开发模式，确实会有段时间的成本上升以及转型的阵痛。但长期来看，工业化的产能是能够在一定程度上降低成本的。\n君不见EA，Ubi等等海外开发商，即使在海外他们的人力成本已经跟国内持平甚至更低了。但单纯从开发能力来看，国内还没有哪家公司敢说他们比海外厂商强的。\n更近一步讲。即使对于个人/独立开发者来说，工业化体系下催生的产品，也会对他们的开发提供便利——君不见，Unity的普及让我们其实前所未有地容易开始做游戏了（当然真不真的去做又是另一回事）。\n这最终导致的是游戏开发的商业电影-艺术电影分化，不肯找到自己真实地位的厂家被大浪淘沙。\n\n来源：知乎 www.zhihu.com\n知乎用户（登录查看详情）\n点击下载\n17 个回答，查看全部。\n原神2.0版本稻妻版本，能否说明米哈游原神制作组已经完成团队磨合，进入游戏工业化高产能状态?\n你为什么会觉得做独立游戏和做工业化游戏差不多呢?",
+          "link": "http://www.zhihu.com/question/503275336/answer/2254478307?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
+          "publishedOn": "2021-12-03T05:16:32.000Z",
+          "wordCount": 14,
+          "title": "如何看待工业化对游戏产业发展的重要意义?"
+        },
+        {
+          "id": "http://www.zhihu.com/question/503271992/answer/2254440450",
+          "author": "布里斯班的猫",
+          "description": "感谢邀请。确实，从目前趋势看，国内各大游戏厂商和工作室都陆续在海外布局，在海外设立自研工作室并大力引进海外高端人才。海外工作室的建立，可以一定程度上进行产能扩容，减轻游戏内容的研发压力。\n更重要的是，海外一线专家的加入，可以带来老牌游戏开发商在高品质内容生产上的方案和经验，对于快速完成生产管线改造和核心研发能力升级上有比较大的参考意义。对于国内游戏厂商来说，加入全球化研发无疑是加速团队成长与探索AAA生产模式的机遇。\n但挑战总是与机遇并存，全球化研发的趋势对游戏研发团队和个人，都会带来更多新的要求。不论是国内的游戏工作室，还是海外游戏厂商，目标都是建立“快速量产AAA品质游戏内容”的能力。只是各自的原始积累不一样，努力的方向也不尽相同。\n对于我们来说，想在游戏研发全球化的大趋下守住优势并脱颖而出，不论在技术与工具的积累和探索上，还是在生产模式的摸索和迭代上，都应该以兼容并包的心态，吸收国内外的先进经验，快速建立自己的产研优势。\n我们工作室在技术革新和前沿探索上一直比较积极，我自己也经历过数次大规模的技术升级和管线改造，目前也在负责新项目的技术迭代的规划和落地，可以分享一下我们在这个过程中的想法和经验，希望能提供给大家作个参考。\n准备一：搭建工业化管线 — 流程标准化与生产自动化\n随着玩家对高品质游戏内容量的需求增长，未来精品游戏项目的研发必然需要超大规模团队的承载和支撑，也呈现着跨地区多团队配合的趋势。这也正是全球化研发的本质。\n跟单一团队生产不一样，跨地区多团队的联合研发，对于生产流程标准化的要求会非常高，以避免低效沟通带来生产成本的极大代价。\n海外厂商在多地团队联合研发上有其经验和优势，值得我们借鉴和学习。 同时在游戏内容生产方面，自动化生成代替纯人工生产也将成为大趋势，通过程序化的方式可以大幅减少在内容生产上的人力成本，并提高整个项目的研发效率，以适应市场的快速变化。…",
+          "link": "http://www.zhihu.com/question/503271992/answer/2254440450?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
+          "publishedOn": "2021-12-03T05:16:18.000Z",
+          "wordCount": 76,
+          "title": "在全球化研发的浪潮面前，中国游戏从业者该如何做好准备？"
+        },
+        {
+          "id": "http://www.zhihu.com/question/503278678/answer/2254168830",
+          "author": "Inkling",
+          "description": "大家好，我是腾讯的游戏美术设计专家Inkling，年轻人都喜欢叫我in老师。我从剑3开始职业生涯，在腾讯J3参与过逆战和穿越火线手游，可以说，国内原创科幻游戏的星星之火正是由我们这拨人点燃的。\n我从小喜欢画画，更是个资深游戏玩家，从04年走出校园踏足游戏圈到现在，见证过国产游戏辉煌的成功，投身过行业中激烈竞争的战场......既然说到游戏美术的竞争力，我有些简单的想法想和大家分享。\n\n这个问题之前，我觉得先需要回答下什么是游戏美术，什么是美术。如果一说到游戏美术，大家只能想到引擎和渲染的话，那这个行业未免有点无趣。\n美术是一个大概念，游戏美术和其它几千年传统行业的美术，没什么本质区别。\n做的都是让 —— 大到世界，小到物件 —— 的外表“好看”的工作。\n让东西变好看的能力，每个人都有吗？如果我有这样的能力，怎么才能比别人更强？\n我觉得可以从三个方面去说：执行，判断，观点。美术的竞争力就是提高自己这三个方面的优势，游戏美术也一样。\n\n执行\n执行就是实际美术工作的熟练度，执行力就是控制的能力。控制的能力就是让元素出现在它们该出现的地方，能够让色彩不乱，线条漂亮。疏密关系、明暗对比，这些已经是老生常谈，真正落到实处的时候，就是经验和练习量。\n基础的战斗力，没有太多大道理可讲，选择行业需求的方向，尽最大可能花费时间锻炼。不管是软件技能还是绘画技法。所谓一万小时定律，说的就是机械的能力，而机械的能力就是靠机械的时间积累获得的。\n实际执行能力的竞争，无非就是投入时间的赛跑，同样资质的人，多投入时间的一方一定会胜利。资质不好怎么办？那就投入更多时间试试。同时也要注意，专注在一件事上是对的，但是也需要留意其它领域，一专多能 vs. 一专，永远有优势。\n\n判断\n判断就是能知道什么是好看的，什么是不好看的，有审美。这个已经超越了美术范畴，审美和一个人的知识储备和阅读量密切相关。\n我们不可能期待…",
+          "link": "http://www.zhihu.com/question/503278678/answer/2254168830?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
+          "publishedOn": "2021-12-03T02:51:27.000Z",
+          "wordCount": 95,
+          "title": "游戏美术越来越卷，从业者如何提升竞争力？"
+        },
+        {
+          "id": "http://www.zhihu.com/question/503276127/answer/2254155498",
+          "author": "Alan",
+          "description": "我是在传统老牌的西方 AAA 公司工作 15 年后加入中国游戏研发工作室的，我结合自己的观察和体验，尝试回答这个问题。\n近几年，中国的游戏公司有很大的变化，逐渐向重视原创、追求更高品质、打造具有中国文化特色的游戏产品转变。最近经常听到这样一句话“中国游戏玩家的口味越来越高，国内的游戏公司也开始卷起来了。”\n“卷”这个词用在这样的语境下，我认为不是件坏事，它代表着随着市场需求的变化，中国的游戏厂商对于品质的重视程度变得越来越高。\n国外的 AAA 厂商已经这样“卷”了十几年了：游戏的画面越来越接近影视化，内容丰富度和体量越来越高，争相进行技术上的探索和突破，同时创新的作品也层出不穷。我很高兴看到中国的游戏公司也以这样的方式“卷”起来，让中国的游戏产品在各个维度上与国外的 AAA 大作掰一掰手腕。\n\n我相信这样的转变，对于许多海内外从事 AAA 游戏开发的人才选择加入中国游戏公司，是一个至关重要的前提。 \nAAA 游戏的开发是一个先慢后快的过程。一个非常有经验的 AAA 游戏团队，也可能要花费 1-2 年的时间来完成概念和创意方面的探索，2-3 年左右的时间进行试生产（Pre-production），这里主要包括设计方面的验证和技术管线的搭建。\n所以，经常会出现游戏开发了 4、5 年，看起来却只有一个垂直切片以及一大堆白盒和临时资源的情况。但接下来会是神奇的一段时间，通常 80% 的游戏内容，都是在最后的 1 年到 1 年半时间里完成的。\n这种“神奇”有一个前提条件，就是整个团队可以沉下心来，完成前面提到的创意设计和试生产环节，否则最后的全面投产（Full-production）将会是一场灾难。\n每一部 AAA 游戏的开发都是一趟漫长的旅程，耐心，信心和决心三样缺一不可。而我已经在国内的游戏厂商中看到了这三样东西，所以我回来了。\n从 EA 到天美\n我在 2006 年加入 EA 上…",
+          "link": "http://www.zhihu.com/question/503276127/answer/2254155498?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
+          "publishedOn": "2021-12-03T02:43:14.000Z",
+          "wordCount": 285,
+          "title": "如何看待中国游戏公司在海外成立工作室，招募海外AAA人才？"
+        },
+        {
+          "id": "http://www.zhihu.com/question/503270815/answer/2254210412",
+          "author": "Qian",
+          "description": "游戏是我从一而“衷”的选择。我大学毕业就一头扎进了游戏行业，从业至今，由一名普通设计师成长为主美，大约16年多点。这份选择从最初到如今或是将来，都不会变，所以在这里，我用了衷于初心的“衷”而不是终点的“终”。\n游戏和动漫是我的两大爱好。与很多80后一样，在成长的时光里，我都是在棚里看别人玩《魂斗罗》，或是在街机厅打《街霸》中度过的。记得在作文作业里，我还写过一篇从8位机开始一路到当时的SFC 32位机的游戏主机发展史这种让老师一脸懵逼的作文。所以，我自认为一直是一名游戏爱好者。但可能喜好更偏向于动作，冒险且有剧情的游戏类型。\n与此同时，我对动漫的热情也从未减少。因此在读书阶段，自己的休息和考试奖励基本都是被允许画漫画和游戏里的角色。后来，我有了让中国动漫形象席卷全球的愿望。这个愿望或许有些太大了，但自己始终在期盼这一天的到来。\n大学毕业答辩时，我的论文题目是《如何推广中国卡通形象》。当时我感觉国内在这块的整个产业链还不完善，想要从动漫衍生出高认知，高流传度的形象或是文化理念会比较缓慢。所以在论文里，我是把游戏这样一个商业化相对成熟的产品放在第一推广位，然后再同步动漫周边等。这也是为什么我会直接选择游戏行业而不是其他行业。\n入行后，我在第一家公司做的是手游，现在自己仍在开发手机游戏，感觉有些事情可能确实讲究点机缘。加入腾讯之前，除手游外，我还参与过PC和各类掌机，以及08到11年期间所有主流主机游戏的开发。但始终我都在做欧美向的设计。\n直到进了腾讯，我才真正开始参与到国人自己的游戏研发中去。然而在刚开始的时候，我参与的项目在美术风格上依旧是偏欧美的。\n直到2012年末，我在天美开始参与第一批风格全民化的微信游戏开发。从那时起，通过一个又一个的项目，我才逐渐将自己的美术风格往亚洲审美上靠。\n最终在17年8月，我们研发的国风战争策略手游——《乱世王者》顺利上线了。（以下简称《乱世…",
+          "link": "http://www.zhihu.com/question/503270815/answer/2254210412?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
+          "publishedOn": "2021-12-03T02:40:59.000Z",
+          "wordCount": 250,
+          "title": "你进入游戏行业多久了？对未来有什么期待？"
+        },
         {
           "id": "http://www.zhihu.com/question/24034885/answer/2253343324",
           "author": "魏水华",
@@ -5345,24 +5525,6 @@
           "publishedOn": "2021-11-05T02:56:55.000Z",
           "wordCount": 374,
           "title": "国内有哪些适合度假的酒店？"
-        },
-        {
-          "id": "http://zhuanlan.zhihu.com/p/428672087",
-          "author": "人民海军",
-          "description": "由中央电视台、海军政治工作部、浙江省委宣传部联合出品的电视剧《和平之舟》，将于近期在中央电视台一套黄金时间播出，腾讯视频也将上线播出。\n\n\n电视剧《和平之舟》是中宣部、国家广电总局重点影视剧项目，是全军庆祝中国共产党成立100周年军事文艺重点选题，根据海军“和平方舟”号医院船执行国际人道主义医疗服务和救援任务先进事迹改编。\n\n\n▲电视剧《和平之舟》剧照\n\n\n该剧通过讲述海军“和平方舟”号医院船营救“菲尔”号货轮、勇斗“优雅”号商船毒贩、赴国外进行灾后救援、开展“万里海疆行”医疗服务、执行“和谐使命”任务等一系列精彩故事，生动刻画了海军“和平方舟”号医院船“生命之舟”“和平之舟”“友谊之舟”“文化之舟”的“中国名片”形象，热情讴歌了人民海军积极履行国际义务、努力维护世界和平的使命担当，生动展示了中国作为负责任大国的国家气度、国家力量。\n\n\n\n\n\n\n▲电视剧《和平之舟》剧照\n该剧由曹盾执导、冯骥编剧，陈坤、张天爱领衔主演，张萌、余皑磊、王强、赵魏、尹昉主演。于2019年12月份筹拍，2021年5月份杀青，创作拍摄近两年多时间，期间主创团队多次赴部队体验生活，采访“和谐使命”任务官兵，深入挖掘感人事迹，并进行艺术创作，努力打造一部兼具思想性、艺术性、观赏性的影视精品。\n\n\n更多精彩剧照来袭\n\n作者：苏毅 赵宇飞\n\n来源：知乎 www.zhihu.com\n人民海军\n点击下载",
-          "link": "http://zhuanlan.zhihu.com/p/428672087?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2021-11-04T04:49:35.000Z",
-          "wordCount": 180,
-          "title": "官宣：电视剧《和平之舟》定档央视一套黄金时间播出！"
-        },
-        {
-          "id": "http://www.zhihu.com/question/421031649/answer/2205192080",
-          "author": "空军在线",
-          "description": "空军在线\n点击下载\n1034 个回答，查看全部。\n如何评价抗美援朝及其影响？\n如何看待《2020英雄儿女——纪念中国人民志愿军抗美援朝出国作战70周年文艺晚会》？",
-          "link": "http://www.zhihu.com/question/421031649/answer/2205192080?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2021-11-04T04:47:20.000Z",
-          "wordCount": 20,
-          "title": "中国当代年轻人是如何看待并认识抗美援朝战争？"
         }
       ]
     },
@@ -5371,6 +5533,186 @@
       "feedUrl": "https://www.xda-developers.com/feed",
       "siteUrl": "https://www.xda-developers.com",
       "articles": [
+        {
+          "id": "https://www.xda-developers.com/?p=566371",
+          "author": "Corbin Davenport",
+          "description": "Fossil released its Gen 6 smartwatches earlier this year, with the latest Snapdragon Wear 4100+ chipsets and Google’s Wear OS 2. The watches started at $299 for 42mm sizes, and $319 for the 44mm options, but they have slowly fallen in price. They were on sale for Black Friday, with a $90 discount across both\nThe post Today only: Fossil Gen 6 smartwatches are cheaper now than on Black Friday appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/fossil-gen-6-smartwatch-deal/",
+          "publishedOn": "2021-12-03T21:24:04.000Z",
+          "wordCount": 811,
+          "title": "Today only: Fossil Gen 6 smartwatches are cheaper now than on Black Friday",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/08/Fossil-Gen-6-smartwatches-feature-2589125.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=566363",
+          "author": "Corbin Davenport",
+          "description": "Last year’s iPhone 12 series introduced MagSafe, and Apple has carried it over to the more recent iPhone 13 lineup. The technology allows you to magnetically attach chargers (and other accessories) to the back of an iPhone, and one of the more interesting MagSafe accessories has been Apple’s own Battery Pack, which sticks to the\nThe post Get a MagSafe Battery Pack for just $75 today ($24 off) appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/get-a-magsafe-battery-pack-for-just-75-today-24-off/",
+          "publishedOn": "2021-12-03T20:47:36.000Z",
+          "wordCount": 781,
+          "title": "Get a MagSafe Battery Pack for just $75 today ($24 off)",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/10/MagSafe-Battery-Pack-featured-image.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=566357",
+          "author": "Corbin Davenport",
+          "description": "Many photo management apps on Android devices have an option to lock certain photos behind a PIN or fingerprint, but Google has been slow to implement such a feature in its own products. Google Photos finally added a Locked Folder feature earlier this year, but it was initially exclusive to Pixel phones, and now it’s\nThe post Google Photos Locked Folder rolling out to non-Pixel phones appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/google-photos-locked-folder-rollout/",
+          "publishedOn": "2021-12-03T19:55:25.000Z",
+          "wordCount": 727,
+          "title": "Google Photos Locked Folder rolling out to non-Pixel phones",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/05/Google-Photos-logo-on-gradient-background-with-Google-colors.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=566343",
+          "author": "Corbin Davenport",
+          "description": "Xbox Game Pass has been a success for Microsoft, giving PC and Xbox players unlimited access to over 100 major games for a single monthly subscription. The service has also served as the groundwork for Microsoft’s attempt at cloud gaming, Xbox Game Streaming, which gives players instant access to titles from Game Pass. Now it\nThe post Sony reportedly working on PlayStation competitor to Xbox Game Pass appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/sony-playstation-competitor-xbox-game-pass/",
+          "publishedOn": "2021-12-03T18:18:14.000Z",
+          "wordCount": 742,
+          "title": "Sony reportedly working on PlayStation competitor to Xbox Game Pass",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/05/Sony-PlayStation-5-console-logo.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=566337",
+          "author": "Corbin Davenport",
+          "description": "Amazon has offered ‘Routines’ with its Alexa voice assistant for a while now, allowing people to set up multi-step automations that can be activated by a voice prompt or select other triggers (similar to Google Assistant routines and Apple Shortcuts). Alexa routines now have more options for sound-based triggers, including water running and appliances beeping.\nThe post Alexa smart speakers can now detect more types of sounds appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/alexa-smart-speakers-can-now-detect-more-types-of-sounds/",
+          "publishedOn": "2021-12-03T17:40:40.000Z",
+          "wordCount": 723,
+          "title": "Alexa smart speakers can now detect more types of sounds",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2018/07/amazon-alexa.png"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=559427",
+          "author": "Rich Woods",
+          "description": "Last week was MediaTek’s Executive Summit in Laguna Beach, and the company sponsored a group of journalists and influencers to head out there and hear what the firm had to say. While there were no new announcements related to the company’s Chromebook efforts, I got to sit down with Victor Tyan, who leads MediaTek’s compute\nThe post Chromebooks, Windows and how MediaTek plans to win computing appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/interview-mediatek-chromebooks-windows-victor-tyan/",
+          "publishedOn": "2021-12-03T14:00:04.000Z",
+          "wordCount": 3372,
+          "title": "Chromebooks, Windows and how MediaTek plans to win computing",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/11/MediaTek-Chromebook-5.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=566243",
+          "author": "Kishan Vyas",
+          "description": "While the Galaxy S21 series owners are already enjoying the goodness of One UI 4.0 and Android 12, many Galaxy phones are waiting for their turn to experience the new software. Samsung opened up the One UI 4.0 beta program for the Galaxy S20 and Galaxy Note 20 lineups last month, and now the South\nThe post Galaxy S10 owners can now try out One UI 4.0 based on Android 12 appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/galaxy-s10-series-one-ui-4-beta-program-korea/",
+          "publishedOn": "2021-12-03T13:50:19.000Z",
+          "wordCount": 754,
+          "title": "Galaxy S10 owners can now try out One UI 4.0 based on Android 12",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2019/04/Galaxy-S10-5G.png"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=566229",
+          "author": "João Carrasqueira",
+          "description": "Microsoft is reverting a change in Windows 11 that made it much harder to change your default browser through the system settings. With Windows 11 build 22509, which was released earlier this week, Microsoft has added a button to the Settings app that allows you to quickly change your default browser to whatever you prefer,\nThe post Windows 11 will let you change your default browser more easily again appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/windows-11-change-default-browser-button/",
+          "publishedOn": "2021-12-03T13:30:29.000Z",
+          "wordCount": 930,
+          "title": "Windows 11 will let you change your default browser more easily again",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/12/Windows-11-default-browser-settings-with-Vivaldi-set-as-the-default.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=565379",
+          "author": "Rich Woods",
+          "description": "For over a day now, the only laptop that I’ve been using is Qualcomm’s Snapdragon 8cx Gen 3 Reference Design. The only rule is that I can’t run benchmarks, so if that’s what you’re here to see, you won’t find them. I was OK with that though, because I’m really more interested in the experience.\nThe post A day with the future of connected PCs appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/snapdragon-8cx-gen-3-reference-design/",
+          "publishedOn": "2021-12-03T13:00:38.000Z",
+          "wordCount": 2567,
+          "title": "A day with the future of connected PCs",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/12/Snapdragon-8cx-Gen-3-Reference-Design-7.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=566093",
+          "author": "Kishan Vyas",
+          "description": "You can now finally enjoy Pokémon Go at buttery smooth 60fps/120fps on your iPhone. The game has just received a new update on iOS which adds a new option to unlock a higher frame rate on supported iPhones. After installing the latest update (via The Verge), you can find the new “Native Refresh Rate” within\nThe post You can now finally play Pokémon Go on your iPhone at a higher frame rate appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/you-can-now-finally-play-pokemon-go-on-your-iphone-at-a-higher-frame-rate/",
+          "publishedOn": "2021-12-03T11:34:38.000Z",
+          "wordCount": 763,
+          "title": "You can now finally play Pokémon Go on your iPhone at a higher frame rate",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2020/03/gobattleleague-season1.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=566051",
+          "author": "Pranob Mehrotra",
+          "description": "Samsung is hard at work releasing One UI 4 beta builds based on Android 12 to a bunch of its devices. Over the last few weeks, the company has released two One UI 4 beta builds to the Galaxy Note 20 series. The first beta update included all the new features introduced in Android 12,\nThe post Samsung Galaxy Note 20 series gets third One UI 4 beta with several bug fixes appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/samsung-galaxy-note-20-series-third-one-ui-4-beta/",
+          "publishedOn": "2021-12-03T11:17:16.000Z",
+          "wordCount": 801,
+          "title": "Samsung Galaxy Note 20 series gets third One UI 4 beta with several bug fixes",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2020/08/Galaxy-Note20-Ultra_Group.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=565967",
+          "author": "Pranob Mehrotra",
+          "description": "Google released a major UI update for the Android TV interface in February this year. The new interface resembled the Google TV UI and laid emphasis on helping users discover new content on the platform. However, it featured fewer tabs on the home screen. Google rolled out another update for this new discovery-focused UI in\nThe post Android TV’s discovery-focused UI is now rolling out to more TVs in more regions appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/android-tv-discovery-focused-ui-rolling-out-more-tv-more-regions/",
+          "publishedOn": "2021-12-03T10:15:24.000Z",
+          "wordCount": 759,
+          "title": "Android TV’s discovery-focused UI is now rolling out to more TVs in more regions",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/07/Android-TV-mockup-with-updated-Android-TV-Discover-tab.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=565953",
+          "author": "Kishan Vyas",
+          "description": "Signal, the privacy-focused instant messaging app that shot to popularity after WhatsApp’s controversial privacy policy change, is adding a new monetization feature into its app. Unlike its rival instant messaging services, Signal runs entirely on donations and this new feature will make it easier for users to make monetary contributions and support and sustain the\nThe post Signal’s new monetization feature makes it easier to make donations appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/signal-sustainer-program/",
+          "publishedOn": "2021-12-03T09:21:33.000Z",
+          "wordCount": 776,
+          "title": "Signal’s new monetization feature makes it easier to make donations",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/12/Signal-Sustainer-Program-.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=555061",
+          "author": "Pranob Mehrotra",
+          "description": "At I/O 2021 in May, Google announced a new feature to make finding and installing apps on Wear OS devices much easier. The feature added a drop-down menu to the Install button on the Google Play Store, giving users the option to install an app on their Wear OS smartwatch right from their phone. The\nThe post [Update: Wider rollout] Google is finally letting users initiate Android TV app installs from their phones appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/install-play-store-apps-android-tv-right-from-phone/",
+          "publishedOn": "2021-12-03T08:44:35.000Z",
+          "wordCount": 940,
+          "title": "[Update: Wider rollout] Google is finally letting users initiate Android TV app installs from their phones",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/11/Google-Play-Store-install-apps-Android-TV-drop-down-menu.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=565853",
+          "author": "Kishan Vyas",
+          "description": "The OnePlus Games app, previously OnePlus Game Space, is a one-stop shop for all your gaming needs. It comes pre-installed on most OnePlus phones and lets you access your game library, check out your game stats, enable optimizations and enhancements, and more from one centralized space. The app last received a major redesign last year,\nThe post OnePlus Games receives a minor visual refresh, preps a “Smart resolution” feature appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/oneplus-games-update-visual-refresh-smart-resolution-feature-coming/",
+          "publishedOn": "2021-12-03T07:03:00.000Z",
+          "wordCount": 1006,
+          "title": "OnePlus Games receives a minor visual refresh, preps a “Smart resolution” feature",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/12/OnePlus-Games-version-3.0.0-featured.jpg"
+          }
+        },
         {
           "id": "https://www.xda-developers.com/?p=565823",
           "author": "Corbin Davenport",
@@ -10552,186 +10894,6 @@
           "enclosure": {
             "url": "https://www.xda-developers.com/files/2021/11/Intel-Core-i9-12900K-7.jpg"
           }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=549251",
-          "author": "Adam Conway",
-          "description": "ASUS launched the ROG Phone 5s series back in August, though international availability was a big question mark. The ROG Phone 5s series consists of two phones: the ROG Phone 5s and the ROG Phone 5s Pro, both of which act as replacements for the standard ROG Phone 5 and the ROG Phone 5 Pro/Ultimate,\nThe post ASUS launches the ROG Phone 5s series in Europe appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/asus-launches-rog-phone-5s-series-europe/",
-          "publishedOn": "2021-11-04T12:10:07.000Z",
-          "wordCount": 889,
-          "title": "ASUS launches the ROG Phone 5s series in Europe",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/08/ASUS-ROG-Phone-5s-on-pink-and-blue-gradient-background.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=548597",
-          "author": "Team XDA",
-          "description": "Black Friday 2021 is already upon us with some great early Black Friday deals in 2021 to be had. Here's the best ones live so far!\nThe post These are the best early Black Friday deals right now appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/best-early-black-friday-deals-2021/",
-          "publishedOn": "2021-11-04T10:30:38.000Z",
-          "wordCount": 920,
-          "title": "These are the best early Black Friday deals right now",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/11/Best-Black-Friday-Deals-New.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=549145",
-          "author": "Mahmoud Itani",
-          "description": "Apple announced few months ago that its beta testing tool — TestFlight — is coming to macOS. It first released the app in beta for developers to test back in August, but the public can finally start using it now, too. Just like other Apple software, TestFlight is available to download from the Mac App\nThe post TestFlight finally lands on macOS Monterey for all users appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/testflight-lands-macos-all-users/",
-          "publishedOn": "2021-11-04T09:10:07.000Z",
-          "wordCount": 788,
-          "title": "TestFlight finally lands on macOS Monterey for all users",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/11/TestFlight-on-macOS-12-Monterey-1.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=547551",
-          "author": "Gaurav Shukla",
-          "description": "Several wireless display standards have popped up over the years. While some, like Intel WiDi, didn’t get much love from the consumers, others like Miracast have managed to stick around, thanks to their relatively wider adaption. But have you wondered about what exactly is Miracast and what it can do? This article will explain all\nThe post What is Miracast: Everything you need to know about the screen mirroring standard appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/miracast/",
-          "publishedOn": "2021-11-04T08:59:33.000Z",
-          "wordCount": 1550,
-          "title": "What is Miracast: Everything you need to know about the screen mirroring standard",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/11/What-is-Miracast.png"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=544977",
-          "author": "Gaurav Shukla",
-          "description": "The new AirPods (3rd-generation) bring a host of improvements over their predecessor. You get spatial audio with dynamic head tracking, sweat and water resistance, and a MagSafe charging case as new features. In addition, the battery life of the AirPods has increased to six hours, which goes up to 30 hours if you add the\nThe post These are the Best AirPods 3 Cases and Covers in 2021 appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/best-airpods-3-cases/",
-          "publishedOn": "2021-11-04T07:00:58.000Z",
-          "wordCount": 1209,
-          "title": "These are the Best AirPods 3 Cases and Covers in 2021",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/best_airpods_3_cases_covers.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=432595",
-          "author": "Ben Sin",
-          "description": "The idea of a foldable smartphone has seen its fair share of supporters and detractors, with the latter group mostly bemoaning their high prices and supposed fragility. Samsung’s taken major steps in addressing those concerns with the Galaxy Z Fold 3 and Galaxy Z Flip 3, two foldables that are priced lower than previous generations\nThe post Best Foldable Phones: The Top Folding Smartphones that you can buy in November 2021 appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/best-foldable-phones/",
-          "publishedOn": "2021-11-04T04:00:29.000Z",
-          "wordCount": 4248,
-          "title": "Best Foldable Phones: The Top Folding Smartphones that you can buy in November 2021",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/08/Samsung-Galaxy-Z-Fold-3-vs-Fold-2-vs-Fold3-511.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=548833",
-          "author": "Adam Conway",
-          "description": "Android 12 has a ton of visual changes, the biggest of which is Material You. Material You’s dynamic colors feature makes use of monet, a new theme engine introduced in Android 12 — and currently exclusive to Pixel phones — to extract colors from your wallpaper and generate a rich palette of pastel colors. Apps can then\nThe post How to quickly lose friends with Android 12 and wallpaper-based themes appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/android-12-material-you-lagging/",
-          "publishedOn": "2021-11-03T22:08:05.000Z",
-          "wordCount": 892,
-          "title": "How to quickly lose friends with Android 12 and wallpaper-based themes",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/05/Material-You-1.jpeg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=548687",
-          "author": "Adam Conway",
-          "description": "Following Facebook’s massive outage last month, the company’s messaging service is now down for many users globally. Currently, users across the world in the U.S., Europe, and Asia are reporting that both the Messenger website and the official apps are failing to send messages. Visting the website in your browser will display an error message,\nThe post [Update: Back online] It’s not just you, Facebook Messenger is down for many users globally appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/facebook-messenger-down-november-2021/",
-          "publishedOn": "2021-11-03T18:59:24.000Z",
-          "wordCount": 839,
-          "title": "[Update: Back online] It’s not just you, Facebook Messenger is down for many users globally",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2019/08/Facebook-Messenger.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=548623",
-          "author": "Corbin Davenport",
-          "description": "Once upon a time, Instagram links in tweets used to show a full-sized image preview, and tapping on the preview would take you to the post. However, Instagram later removed this ability, forcing anyone who wanted to see even a glimmer of the post to follow the link. After years of this annoyance, Instagram has\nThe post Instagram is bringing back link previews for Twitter appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/instagram-link-previews-twitter/",
-          "publishedOn": "2021-11-03T18:16:07.000Z",
-          "wordCount": 765,
-          "title": "Instagram is bringing back link previews for Twitter",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2019/08/Glyph-Icon-hero.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=546637",
-          "author": "Karthik Iyer",
-          "description": "If you’re running out of storage space on your computer or if you regularly move large files between two machines, we suggest you buy a speedy portable drive. In this article, we’ll be taking a look at some of the best portable SSDs you can buy in the market right now. Portable SSDs are more\nThe post The best portable SSDs you can buy right now appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/best-portable-ssd/",
-          "publishedOn": "2021-11-03T17:30:38.000Z",
-          "wordCount": 5540,
-          "title": "The best portable SSDs you can buy right now",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/Best-portable-SSDs.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=548599",
-          "author": "João Carrasqueira",
-          "description": "As typically happens on Wednesdays, Microsoft is rolling out a new build of Windows 11 to Insiders enrolled in the Dev channel today. Today’s Windows 11 build is 22494, and it brings a new feature in the form of a mute button on the taskbar. It also includes the usual array of fixes and known\nThe post Windows 11 build 22494 brings a mute button in the taskbar for Teams appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/windows-11-build-22494-mute-button/",
-          "publishedOn": "2021-11-03T17:25:10.000Z",
-          "wordCount": 1712,
-          "title": "Windows 11 build 22494 brings a mute button in the taskbar for Teams",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/06/Windows-11-option-2.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=548543",
-          "author": "Corbin Davenport",
-          "description": "Samsung just released a new lineup of smartwatches in August, but we haven’t seen too many Galaxy Watch 4 deals appear so far. Thankfully, that’s finally starting to change, as Samsung begins its pre-Black Friday sales. While the premium Galaxy Watch 4 Classic hasn’t dropped in price much, most variations of the regular Galaxy Watch\nThe post Samsung Galaxy Watch 4 now starts at just $199 ($51 off) appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/galaxy-watch-4-199-deal/",
-          "publishedOn": "2021-11-03T16:56:15.000Z",
-          "wordCount": 746,
-          "title": "Samsung Galaxy Watch 4 now starts at just $199 ($51 off)",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/08/Galaxy-Watch-4-Classic-1.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=548491",
-          "author": "Adam Conway",
-          "description": "Android 12 has a ton of visual changes, the biggest of which is Material You. Material You’s dynamic colors feature makes use of monet, a new theme engine introduced in Android 12 — and currently exclusive to Pixel phones — to extract colors from your wallpaper and generate a rich palette of pastel colors. Apps can then\nThe post Android 12’s lovely wallpaper-based themes will crash your games if you use automated wallpapers appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/android-12-game-crashing-automated-wallpapers/",
-          "publishedOn": "2021-11-03T16:27:02.000Z",
-          "wordCount": 857,
-          "title": "Android 12’s lovely wallpaper-based themes will crash your games if you use automated wallpapers",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/Android-12-easter-egg.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=548513",
-          "author": "Rich Woods",
-          "description": "Nearly a month after launching the release candidate, Stardock is releasing Start11 1.0. Like its predecessors Start10 and Start8, the utility is designed to allow you to customize your Start Menu. Indeed, Start8 was originally designed to fix the mess that was Windows 8, letting you bring back the old Windows 7 Start Menu. And\nThe post Start11 is out, letting you make the Windows 10 Start Menu look like Windows 11 appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/start11-is-out-letting-you-make-the-windows-10-start-menu-look-like-windows-11/",
-          "publishedOn": "2021-11-03T15:00:33.000Z",
-          "wordCount": 784,
-          "title": "Start11 is out, letting you make the Windows 10 Start Menu look like Windows 11",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/Start11-1.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=548465",
-          "author": "Adam Conway",
-          "description": "Niantic is the developer behind hit games like Pokémon GO and Ingress, but another game the company launched in 2017 was Harry Potter: Wizards Unite. The unique selling point of Wizards Unite was that it made use of the same augmented reality technology that the company’s other two games had implemented. However, it clearly wasn’t as\nThe post Niantic announces Harry Potter: Wizards Unite will close in January 2022 appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/niantic-harry-potter-wizards-unite-close-january-2022/",
-          "publishedOn": "2021-11-03T13:58:50.000Z",
-          "wordCount": 774,
-          "title": "Niantic announces Harry Potter: Wizards Unite will close in January 2022",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2017/11/wizardsunite.jpg"
-          }
         }
       ]
     },
@@ -11203,15 +11365,6 @@
           "publishedOn": "2021-11-05T08:22:02.000Z",
           "wordCount": null,
           "title": "Chaining Constructors in Java"
-        },
-        {
-          "id": "https://www.baeldung.com/?p=111744",
-          "author": "baeldung",
-          "description": "Finalizer deprecation, string improvements in Java 17, Kotlin support in protocol buffers, cache libraries on JVM, and software engineering principles.",
-          "link": "https://feeds.feedblitz.com/~/672151934/0/baeldung~Java-Weekly-Issue",
-          "publishedOn": "2021-11-03T19:48:27.000Z",
-          "wordCount": 703,
-          "title": "Java Weekly, Issue 410"
         }
       ]
     },
@@ -11220,6 +11373,24 @@
       "feedUrl": "https://feed.iplaysoft.com/",
       "siteUrl": "https://www.iplaysoft.com",
       "articles": [
+        {
+          "id": "https://www.iplaysoft.com/?post_type=news&p=3586",
+          "author": "X-Force",
+          "description": "「 前往查看原文.... 」\n\n异次元正版数字商城  |  异次元首页  |  微信公众号  |  iPcFun  |  关注微博  |  软件精选",
+          "link": "https://www.iplaysoft.com/news/3586",
+          "publishedOn": "2021-12-03T11:02:58.000Z",
+          "wordCount": 544,
+          "title": "支付宝红包大放水！杀疯了！人均 2-20 元 / 无套路每天能领"
+        },
+        {
+          "id": "https://www.iplaysoft.com/?p=5612",
+          "author": "X-Force",
+          "description": "苹果每年都会为 iOS 和 macOS 平台评选出最值得推荐的 Apps of The Year「年度最佳应用」以及 Games of The Year 「年度最佳游戏」榜单，2021 年当然也不例外。\n每年在苹果 iPhone / iPad / Mac 的 App Store 上架的精品应用和游戏数量非常惊人，在如此茫茫海洋里能脱颖而出获得苹果青睐的，肯定都是极具实力且相当用心的制作。对大家来说，这个 2021 年度最佳 App 榜单可以帮我们发现一些可能被错过的优秀 APP 应用和游戏……\n「 前往查看原文.... 」\n异次元还有这些值得一看：\n\n苹果评出 2018 年度最佳 iOS / Mac 应用与游戏 - App Store 精选推荐下载\n苹果 2020 应用设计大奖榜单 - 看看有没让你眼前一亮的 APP 和游戏吧！\n苹果 2017 应用设计大奖榜单 - 那些让人眼前一亮的 APP 和游戏都在这了！\n苹果的“奥斯卡”-  2016 应用设计大奖 APP 榜单公布 (Apple Design Awards 2016)\n\n异次元正版数字商城  |  异次元首页  |  微信公众号  |  iPcFun  |  关注微博  |  软件精选",
+          "link": "https://www.iplaysoft.com/appstore-awards-2021.html",
+          "publishedOn": "2021-12-03T10:11:34.000Z",
+          "wordCount": 649,
+          "title": "苹果评选 2021 年度最佳 iOS / Mac 应用与游戏 - App Store 推荐榜单"
+        },
         {
           "id": "https://www.iplaysoft.com/?p=5611",
           "author": "X-Force",
@@ -11433,6 +11604,15 @@
           "publishedOn": "2021-11-23T18:17:22.000Z",
           "wordCount": 32,
           "title": "Android 手把手带你搭建一个组件化项目架构"
+        },
+        {
+          "id": "https://juejin.cn/post/7033708048321347615",
+          "author": "Karl_wei",
+          "description": "highlight: a11y-dark\n前言：有做过完整项目的小伙伴应该都知道，随着业务的发展，app的运营需求会越来越多（比如：根据运营活动动态更换页面的UI）。这就要求我们的app要尽可能的满足市场的运营的动态化需求，通过这篇文章你将了解到：\n1. Flutter动态化的方案使用和效果对比；\n2. 针对中小型团队，该如何最小成本、最高效的实现app的动态化需求。\n动态化的常用方式和实现原理\n首先什么是动态化？即不依赖程序安装包，就能进行动态实时更新页面的技术。\n一般大家都会想到webview，这确实是最常用的方式，但也是动态化中最不稳定的方式；webview的体验比较差，同时需要做大量设备的兼容。\n基于 GPL 的 Native 增强。 GPL即通用编程语言，比如我们常见的Dart、JavaScript等，通过这些通用语言来为Native功能增强动态化能力。通俗的举个例子解释：运营者动态更改线上的js文件，Flutter应用通过网络拉取更新后动态渲染，这就是基于GPL的Native增强。\n基于 DSL 的 Native 增强。 DSL即专用领域语言，为了解决某些特定场景下的任务而专门设计的语言,比如xml、json、css、html。通过生成简单的DSL语言文件，通过解析协议对页面进行动态配置。\n腾讯开源的 MXFlutter\n58同城开源的 Flutter Fair\n阿里巴巴开源的 北海Kraken\n同时我还会介绍另外两种比较通用的方式：\nwebview增强 【植入腾讯 X5内核，模型升级改造】\nUI库模板化\n各大厂动态化架构对比\n\nFlutter Fair\nFair是“58同城”为Flutter设计的动态化框架，通过Fair Compiler工具实现JSON配置和原生Dart源文件的自动转化，从而动态更新Widget Tree和State。\n使用介绍\n官方并没有维…",
+          "link": "https://juejin.cn/post/7033708048321347615",
+          "publishedOn": "2021-11-23T02:20:29.000Z",
+          "wordCount": 31,
+          "title": "Flutter实现动态化更新-技术预研"
         },
         {
           "id": "https://juejin.cn/post/7032625978023084062",
@@ -11803,10 +11983,30 @@
           "id": "https://stratechery.com/2021/aws-reinvent-reinvent-announcements-of-interest/",
           "author": "Ben Thompson",
           "description": "AWS re:Invent keynote, with new CEO Adam Selipsky, charted a different path than that taken by Andy Jassy. Plus, the new announcements that caught my eye.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hd3MtcmVpbnZlbnQtcmVpbnZlbnQtYW5ub3VuY2VtZW50cy1vZi1pbnRlcmVzdC8.RKe9Oc6Ifa9t1VyLS4HKmW5h3rIvz3zVngJqoyntjx_Q2jGd5mE9TLFSVszA2J9tXIk_SHZChSpYv-b8krZ1CkZmmBMd95KvrZj5jjSaTokfAJRg7F7XNMwFdDElsWjxAx-Fph9ZNoXLSUBG0z4gtjQQP3sdquPCa0Y_XLwg5psuCoQ_HG5r49jjBC7plcqDUR7FkZFjlYQ95Ol0xbJOt5EKYbvQtWKMFij5eTm6tQFibtxAQzKsmLgIPhxqCEZbjkR5q_S6su6SoiaSielftsla-Yjs1M7SEayAg-Xv3HzTssmJLtCnTx5mgloCmS65E2dmch5ajh09zY4kBRKf3w",
+          "publishedOn": "2021-12-02T12:45:55.000Z",
+          "wordCount": null,
+          "title": "AWS re:Invent, re:Invent Announcements of Interest (Stratechery Update 12-2-2021)",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/aws-reinvent-reinvent-announcements-of-interest/",
+          "author": "Ben Thompson",
+          "description": "AWS re:Invent keynote, with new CEO Adam Selipsky, charted a different path than that taken by Andy Jassy. Plus, the new announcements that caught my eye.",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hd3MtcmVpbnZlbnQtcmVpbnZlbnQtYW5ub3VuY2VtZW50cy1vZi1pbnRlcmVzdC8.RbZ4-5k4VqsASGyLTEgIXwXjggdsHJVLjfUmq13-5vdgGPBil_udyecYi6IVzyc6bW_KS88qUz2BvL27y1BO4nYMMvIdG-LBKiWu5Io2Pbjp7JGmV4OFFll375ep78Er1lGT4W2ERYsHtwCXdtio5ASXdAOQcaO2lZm_HGzi4nQKW60IxGs8saK-14MBwryNudbtwU1oNPKI6CtqsBG_0nJmHFmdbYPaDqj1DL0aIAhAHNpKjYdAv9ylt1kybeqVcOa56ffQcA96v_6yz-GFZhwXk0NcYWT1kTahwwp2fvjy-CcfGZR4UEtppaGIKtVKmRi7KSbH0-BUeq4RaP1pcw",
           "publishedOn": "2021-12-02T12:45:55.000Z",
           "wordCount": null,
           "title": "AWS re:Invent, re:Invent Announcements of Interest (Stratechery Update 12-2-2021)",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/why-subscription-twitter-is-a-terrible-idea-twitter-bans-sharing-private-photos-and-videos-twitter-and-free-speech/",
+          "author": "Ben Thompson",
+          "description": "Why making Twitter into a subscription business would be a terrible idea, how Twitter's new policy is reactionary, and how the shows how much Twitter has changed",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS93aHktc3Vic2NyaXB0aW9uLXR3aXR0ZXItaXMtYS10ZXJyaWJsZS1pZGVhLXR3aXR0ZXItYmFucy1zaGFyaW5nLXByaXZhdGUtcGhvdG9zLWFuZC12aWRlb3MtdHdpdHRlci1hbmQtZnJlZS1zcGVlY2gv.jiZVmNFYSP0UjeNRrgzsAvNYHLKarmcDgLmjLE8qOHsFLZdVm9A4FTmOfD7ugM-dtNcWqf9E11OrWMLp1icB6czDCvABsYxHX8ps9WYz-5-LWbmqh0lvJ7zYNfwZd9CViCqUmB46cXlhH9_qOBF_lx8W0RaBLhS0WuTDQ4N0TDUgPSHIbQ2tgD4wj78CbHJyG51xDUoh4sW5v32I8feGni1JhYIdK7DXkcgHL2_kFUMdDGYqx1rCMXvRXSujzezeXuyuL5aB8anQmq7l5cHzZg5O7NRViKufB8gq1QQzlDsivYxDF1PY-nNSjZHv2iTbLR5iRBM1xMoUbeZW8r80Fg",
+          "publishedOn": "2021-12-01T13:26:05.000Z",
+          "wordCount": null,
+          "title": "Why Subscription Twitter is a Terrible Idea, Twitter Bans Sharing Private Photos and Videos, Twitter and Free Speech",
           "itunes": {}
         },
         {
@@ -11827,6 +12027,26 @@
           "publishedOn": "2021-12-01T13:26:05.000Z",
           "wordCount": null,
           "title": "Why Subscription Twitter is a Terrible Idea, Twitter Bans Sharing Private Photos and Videos, Twitter and Free Speech",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/stratechery-and-thanksgiving/",
+          "author": "Ben Thompson",
+          "description": "An update on Stratechery and why I'm particularly thankful this Thanksgiving.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9zdHJhdGVjaGVyeS1hbmQtdGhhbmtzZ2l2aW5nLw.abMmWHzSFynwfv4tDFUOqKpwNNm08KHCT99vdjrLDJpTGCS6Cv6UXbeBxOPO0nEm6rmrTUA4dZrEaAtmpJJgOvDyLGfcMLtyAwTCPb9oftGKOu4KM55tQRpsdubdf_IgoYM0OjjlwINEVX9yuzAtO8HDYRwDzIBwOsV65s0uBQ8zAYIYzyqA2xdHSuG4HdTD-chBsmUyRWbj19c7KjGmuWOvTuy_uOrdphOY3iSSa-LxxLO9FxRVT0Pql7tnF2Shh4i_2JQNU6SZGWBcxPBJgUgmB68iF2jxpjcY6Ru22Agxy1QASALGltZ9ONvdQDN3RKesBUPYY1Qq6sspxy93eA",
+          "publishedOn": "2021-11-23T13:21:00.000Z",
+          "wordCount": null,
+          "title": "Stratechery and Thanksgiving",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/stratechery-and-thanksgiving/",
+          "author": "Ben Thompson",
+          "description": "An update on Stratechery and why I'm particularly thankful this Thanksgiving.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9zdHJhdGVjaGVyeS1hbmQtdGhhbmtzZ2l2aW5nLw.KKlxIhDrRtZ581ojE6ra3lcDQoe03MLi_FSenTgcuYkUCB3G3BhEemlfjRdRqryWXUpQgGfwqjVwDYboNwrkEAyTgo6ZuBnoZDPvERu3aKu4W4m2dsBX_iGefST-dumIpxezCFEH__I0zn8KNkNoEG6UTbEGOCj6gGu9GknCkWt9HeCAyiS4GLwbe1eSW7URfS9FGnTV4AcnKIKTJ9RdjVJstW9QLDBwbyWxwEFO4oCbYA8dgmhpPSnZmeHtRuX8X_pFPiIiGE5YeRrInE1YyxYrsQbgHqbBitOjaKJhmRzvpx4Rv9DC1sDOWmdED6yD278iJEfVffAdvEMXT25xKA",
+          "publishedOn": "2021-11-23T13:21:00.000Z",
+          "wordCount": null,
+          "title": "TEST To Internal - Stratechery and Thanksgiving",
           "itunes": {}
         },
         {
@@ -12003,6 +12223,16 @@
           "id": "https://stratechery.com/2021/spotifys-earnings-spotifys-podcast-payoff-universal-taylor-swift-and-internet-power/",
           "author": "Ben Thompson",
           "description": "Spotify's earnings show that their strategy is working exactly as predicted; then, Universal is responding to Taylor Swift's leveraging of Internet power.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9zcG90aWZ5cy1lYXJuaW5ncy1zcG90aWZ5cy1wb2RjYXN0LXBheW9mZi11bml2ZXJzYWwtdGF5bG9yLXN3aWZ0LWFuZC1pbnRlcm5ldC1wb3dlci8.SRsj72bDEbOYsmQnr_vQ1pk3yqxYBCJ0mg8CxWtMFtIw4--I3xn5yO7bFFfirHKJMwHKH2ZgytcuIQnjHom8tHEb9HqxVTSsODxFz8MeDQ0U8eidoSGQJ8JBAANIecAmFC6Ph-YS3KK41QxSvOreal9baaQAnkuumW1_FVm4Ad7SKeElHL1Ie_vNDSfOp0gUEvxk9d63159mDe7Dez7cvExXeW8uwXBmdsQwZ6RYLkvi8kqmeU2cs3VMV3y7JIKO92Mm-UsGLb9kmucRkih2vNeHu2Xr4UTEZ7Ow-SIazgBRdaYbSmYa1s__CiWJLVH6OVMCAy7WuwRkyG7kimcJ0A",
+          "publishedOn": "2021-11-22T13:14:38.000Z",
+          "wordCount": null,
+          "title": "Spotify's Earnings; Spotify's Podcast Payoff; Universal, Taylor Swift, and Internet Power",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/spotifys-earnings-spotifys-podcast-payoff-universal-taylor-swift-and-internet-power/",
+          "author": "Ben Thompson",
+          "description": "Spotify's earnings show that their strategy is working exactly as predicted; then, Universal is responding to Taylor Swift's leveraging of Internet power.",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9zcG90aWZ5cy1lYXJuaW5ncy1zcG90aWZ5cy1wb2RjYXN0LXBheW9mZi11bml2ZXJzYWwtdGF5bG9yLXN3aWZ0LWFuZC1pbnRlcm5ldC1wb3dlci8.bvTux53mNkXhzrJbRUkUtRtKhtJnJNUzGdxhcfKGnsdR6vtV-K5xYWJN6PvmK0z-aLQ5wvGRFH6_c1VrJL8KIHaW-wAdbF8YjtgMBdeB11ReRFNEPttLaI4ifVJ_5glmGAgBEk-2rKyzwzWl7xBxU3ZA_YMXDe-8JwA1daK2D-V3BF6ISF_XkvlgVlYljglcOxcmwroG3R4HtYRskSsROx_6GJ7v8ESdVE_cBWP15Y3-dnGtXktanLc3DSq3tG_zRVNvFTR-Dr8smhh82L3SedtTgdZpDJlV44hMkFxjeKCtzwlBKe0_fu8Qcs-LkiSsCrmGIC2zfSGY47Uim7YGVw",
           "publishedOn": "2021-11-22T13:14:38.000Z",
           "wordCount": null,
@@ -12107,6 +12337,16 @@
           "publishedOn": "2021-11-22T13:14:38.000Z",
           "wordCount": null,
           "title": "Spotify's Earnings; Spotify's Podcast Payoff; Universal, Taylor Swift, and Internet Power",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/unity-buys-weta-digital-an-interview-with-unity-ceo-john-riccitiello/",
+          "author": "Ben Thompson",
+          "description": "The Weta acquisition, Unity’s ambitions, their advertising business and relationship with Apple, and why Riccitiello thinks my understanding of the metaverse isn’t quite right.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS91bml0eS1idXlzLXdldGEtZGlnaXRhbC1hbi1pbnRlcnZpZXctd2l0aC11bml0eS1jZW8tam9obi1yaWNjaXRpZWxsby8.kzN3Sev9IMDcxg_kxAio3ec_kUYXrEJXG7FZxVdsT2r_LWpTFPg_rYYriIQ4BzWlxYArxZhvg98wy7YdbfKmiZvF1nC3usnoDshVT-TWQXbyYaeL7zL_vVbATU6JEyhjNrl7Fw8DAh6GuZwyQxCY4qhAG7Lwp8wJfh7UAfteGECkCDWNxjKGdAfeWDUH4dQKP2EQHKEqF1mQxjd9g-HenT2U5faHsq1sVT5pMyI8XAc1ALZtfqnKBml0zyBq2pvhIZYXzUxoVcrOIJCkFKMN2btOrFfiNWHTyK7oT5ub0c-rFZeR-A5YbVeZbvfrM5odJdBKexDAHoRMg5S8r_0-Iw",
+          "publishedOn": "2021-11-17T09:34:06.000Z",
+          "wordCount": null,
+          "title": "Unity Buys Weta Digital, An Interview with Unity CEO John Riccitiello",
           "itunes": {}
         },
         {
@@ -12247,6 +12487,16 @@
           "publishedOn": "2021-11-17T09:34:06.000Z",
           "wordCount": null,
           "title": "Unity Buys Weta Digital, An Interview with Unity CEO John Riccitiello",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/constitutiondao-the-need-for-trust-memes-and-reality/",
+          "author": "Ben Thompson",
+          "description": "ConstitutionDAO is an interesting project to buy a physical good as a community; what is particularly interesting is what it says about the power of actualizing memes",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9jb25zdGl0dXRpb25kYW8tdGhlLW5lZWQtZm9yLXRydXN0LW1lbWVzLWFuZC1yZWFsaXR5Lw.CzscaGqoLjpFywF5SqxyWswlD-cljuk0601578IzuJiB-B2o1Mlr1hLYmnNymv0psKtQ2j2l3z9oUmtO5unYji0IkORz83a3rQbHAwJ6ftFBfge6k1yqHIalW3h84-q4HsYX7iWwXdLm0BRShaHfr2H2a0noQISoejn1OWJgdjhsGzLb6uvFPcZ6S5NH7xH6fqQJTwO63ZHZ_dNL2t7zuzZd6DFl8nYtCdhkBQ6i5nSFzRwoj0DS2Kodj36_Zdz2j9s-4r3DqC9JDUpClSR6YnX9lPR6w3itj37ZDfdwf84ZPNtGAsRBi03FqmspatUoOHcP6_B_FKOyHv6148-xHA",
+          "publishedOn": "2021-11-16T13:21:35.000Z",
+          "wordCount": null,
+          "title": "ConstitutionDAO, The Need for Trust, Memes and Reality",
           "itunes": {}
         },
         {
@@ -12407,6 +12657,16 @@
           "publishedOn": "2021-11-16T13:21:35.000Z",
           "wordCount": null,
           "title": "ConstitutionDAO, The Need for Trust, Memes and Reality",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/opendoor-earnings-opendoors-pricing-opendoors-scalability/",
+          "author": "Ben Thompson",
+          "description": "Opendoor's results suggest that the problem in the home-buying market was unique to Zillow's lack of expertise, not the model",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9vcGVuZG9vci1lYXJuaW5ncy1vcGVuZG9vcnMtcHJpY2luZy1vcGVuZG9vcnMtc2NhbGFiaWxpdHkv.Rt_R921c0Xmk3NrX6TVsclj398OcIlEQE5G6YSHKAMMbnkqDFYWBM6g-InGCxvEdbrx-s01QXevBal5SL2s_tAxCSsU_eKkF0CKmxrwNns_FO7QnBYuz4-VyjNuIZu9mW4I-MM5sMZXYfqQk_yc-XsaX6th8dRlHu2A1xkPg15HON0ZeNiB_c-7CvzEKFEYJCOh6hM0slPXq6rRz1UFhkv_1PrDhyUB6tTHlnFjN_6g6I1Gwd0NoGC-ocuGfUqyI_OXn5mlxxOhpbEOZ1mtRlY0n96sshgV35O6u2mvylnzJ2x5SGVytK4qrOKGzRwlYyKlouGmAR-cUgQWVQS3QrA",
+          "publishedOn": "2021-11-15T11:56:46.000Z",
+          "wordCount": null,
+          "title": "Opendoor Earnings, Opendoor's Pricing, Opendoor's Scalability",
           "itunes": {}
         },
         {
@@ -12577,6 +12837,16 @@
           "publishedOn": "2021-11-15T11:56:46.000Z",
           "wordCount": null,
           "title": "Opendoor Earnings, Opendoor's Pricing, Opendoor's Scalability",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
+          "author": "Ben Thompson",
+          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.ahJAiri6Fde58WSOroQrmcxQBvhMRMGJg8Dyw3NaEY6wtRatHVbwN0BuqkmFt0gWG45PyPZikNJ5DhaR2iwqKa12kF5NxLuCLnWdypZvtI6hp-rGfpZYQKyXkN5FmtE3-sfkMIw55isKclmFNc59JSav2A_dUDdTir-cttuqq8a2l9dcOdJ5lgBVqOlqFhSS-lpwjFcHLJVlqpdyGKFIeQ49gANmVQte5L7Ti66KER0B63HXSkIqQQZTH32b-6ovY_inqOACQAKv6yeAaRh9OTGRPzQEtOCUlNrMAwIbQdygnPsaB84TsaoGlowT9X9fKqp_vKsK0dj0ikibyiCYrQ",
+          "publishedOn": "2021-11-11T13:29:31.000Z",
+          "wordCount": null,
+          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
           "itunes": {}
         },
         {
@@ -12773,6 +13043,16 @@
           "id": "https://stratechery.com/2021/metaverse-follow-up-apple-denied-stay-in-epic-case-google-loses-eu-shopping-case-appeal/",
           "author": "Ben Thompson",
           "description": "Metaverse follow-up, and then both Apple and Google lose in court",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9tZXRhdmVyc2UtZm9sbG93LXVwLWFwcGxlLWRlbmllZC1zdGF5LWluLWVwaWMtY2FzZS1nb29nbGUtbG9zZXMtZXUtc2hvcHBpbmctY2FzZS1hcHBlYWwv.lpxyHyl8TsKHEmDP1LSS7eY8qxSoGMou7MRar8w1hxiDo6dReTrQIV8XCiA1EdQ3REw_SJHJmG6qHijq5GSu0mimx0CyyjZsGIXnyjJ1kcsTHGl-a6dm90bgEctTkOlCD70fLdEfnBAjgiFrxEQvICOf5J8TR6-NgOR62Ubyaw1lQ8GRX8ZgCgog8vM7dAkkFKiR_RoPJu-RAjMRL-csLuXBEMocwML-ZQQJ1Qbyseu0aS6TY1E513U84I3ilo3BXzVoBfo0T_eawvqfF4NlaJR9BFWhH_uWfikT1XPKHD5TUU6jlsyr_-ZNsC6GRl_ggBowMts-la2soxXSl8yEeQ",
+          "publishedOn": "2021-11-10T12:38:31.000Z",
+          "wordCount": null,
+          "title": "Metaverse Follow-up, Apple Denied Stay in Epic Case, Google Loses EU Shopping Case Appeal",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/metaverse-follow-up-apple-denied-stay-in-epic-case-google-loses-eu-shopping-case-appeal/",
+          "author": "Ben Thompson",
+          "description": "Metaverse follow-up, and then both Apple and Google lose in court",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9tZXRhdmVyc2UtZm9sbG93LXVwLWFwcGxlLWRlbmllZC1zdGF5LWluLWVwaWMtY2FzZS1nb29nbGUtbG9zZXMtZXUtc2hvcHBpbmctY2FzZS1hcHBlYWwv.RN9g1AXUPyM-fgpUThVLgGK_o8nip4PLYDwnOXMZJ-B8esi3truCH83Gq4z409P3OQpnXWhfjYbFFkXL-rVsUiGBErio4K1wpVVD8yekJaHov8iQJwBsfKgbji5pocMFgj2kKVaLZzKCzfb1qFuP89s_AOKfvXlZgKZkCHIi1pN9nhjaZ-lvG9dhQUdTWKQhHtvXPTBfuM9DJOmnH-iwUxqILk3hU5IlDh89DcVek5-SJ29NbN255rjOyczboRQruFM4l5IhgRgyZgnIyLjUhOcNuPSP_3K3AcUbjEfLTD-p4i7rmqTxg6gtrgmqcJs_qVk9B545h98GW064aoVFYA",
           "publishedOn": "2021-11-10T12:38:31.000Z",
           "wordCount": null,
@@ -12963,6 +13243,16 @@
           "id": "https://stratechery.com/2021/googles-south-korea-plan-no-duty-to-deal-developer-versus-customer-choice/",
           "author": "Ben Thompson",
           "description": "Google's response the South Korean App Store law, what that says about platform IP rights, and why markets should decide App Store policies.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9nb29nbGVzLXNvdXRoLWtvcmVhLXBsYW4tbm8tZHV0eS10by1kZWFsLWRldmVsb3Blci12ZXJzdXMtY3VzdG9tZXItY2hvaWNlLw.g51Pk1_rFNEy_pEn5lxE-cEK6dIpuyZFRbfkx9TsD1LF5w7BFsE-47_W0GN8E9Fen_j20nbIEdkd3ii_AdT4pxp5jhVzQ9gMqkVhOMzoigOT-zRDtSgrp4QuGat5mL1MEoCsfyYx7LA0gfaWOcNazUInKD0H0yj4_XjtOKHIxJzvWuBOoBtVENxslRuYPRefO8t3hI5In33pbizRfsG4WjhW_ws13l2pevmp2etxQXL-3QV3UiPFQERJfevSpVKclkmViF83P27ewWuyeThJrtdna6BHLPFg5VfG4I51PkSiFnPvK1iiHXF14vUW98vDuJV0w1lU5gn-B_Nb49L4yA",
+          "publishedOn": "2021-11-08T12:11:52.000Z",
+          "wordCount": null,
+          "title": "Google's South Korea Plan, No Duty to Deal, Developer Versus Customer Choice",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/googles-south-korea-plan-no-duty-to-deal-developer-versus-customer-choice/",
+          "author": "Ben Thompson",
+          "description": "Google's response the South Korean App Store law, what that says about platform IP rights, and why markets should decide App Store policies.",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9nb29nbGVzLXNvdXRoLWtvcmVhLXBsYW4tbm8tZHV0eS10by1kZWFsLWRldmVsb3Blci12ZXJzdXMtY3VzdG9tZXItY2hvaWNlLw.cb1kAtmRFYQCh_YL17N1ZAF0oLqrloYzF969NO6ZMFEWzvZXrpdgrO7YNsokqTewxSmp69Jx2iypsrtCY-U861Z6e3-71icM_seOG2-7YjzPJ9KFQFMInrhtFH9CIBp0T3WA5E5xJnThagJoXs7Sqy-VxHlV6Q5L8jvSN2o3Sh5841VmnF3Z6r1erg6ikW6oyKVlbuAoOWUfWNc9hQNv4n-oVssyPpBOfmgEVlOLC_EtjxVahcmAxL0qkVOZzVFaIJkLnZflh6gl-V1xRmwyJ0VqxRJOOr_cGxJzlfOUBKe71_JZybJb94VN8xRhMq350w342vIh1Fezhk6vz8WBVg",
           "publishedOn": "2021-11-08T12:11:52.000Z",
           "wordCount": null,
@@ -13147,196 +13437,6 @@
           "publishedOn": "2021-11-08T12:11:52.000Z",
           "wordCount": null,
           "title": "Google's South Korea Plan, No Duty to Deal, Developer Versus Customer Choice",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/an-interview-with-eric-seufert-about-the-impact-of-att/",
-          "author": "Ben Thompson",
-          "description": "An interview with Eric Seufert about the impact of ATT and the future of advertising, Apple, and Facebook.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hbi1pbnRlcnZpZXctd2l0aC1lcmljLXNldWZlcnQtYWJvdXQtdGhlLWltcGFjdC1vZi1hdHQv.DGIRfg-CswwtxAHlpfAhN9HN1STPGgO6a1yqwRn8JgQfOTYvRwBnZ9GtC05WV32GEuIkmFPeFkh-dxdvwNTy8ubfs3MZQGBtdzWlUBjg821onWNr8gvvfdngEBQYFr6q-e2HMmBbZ6bZW2I2ndZa78yo0Lf9B32wnG_yvEMzKPnl98KjGXXrONeJ9Qn-boc47wFEwevSwXCuNpqWkjRep5r5vMN8vEFnU5mWVrshZ3Lj-LKINzeMmBfhnBa4EATntBcAHMvht2b9oj3Wmc6POkEm0ngRhbuUaqayHB7H_BGj-4o7ISIXF483Ag-SRpIHpT4aOK0BjOKpb7z7PJ2-4g",
-          "publishedOn": "2021-11-04T11:09:45.000Z",
-          "wordCount": null,
-          "title": "An Interview with Eric Seufert about the Impact of ATT",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/an-interview-with-eric-seufert-about-the-impact-of-att/",
-          "author": "Ben Thompson",
-          "description": "An interview with Eric Seufert about the impact of ATT and the future of advertising, Apple, and Facebook.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hbi1pbnRlcnZpZXctd2l0aC1lcmljLXNldWZlcnQtYWJvdXQtdGhlLWltcGFjdC1vZi1hdHQv.tQTRAKqYmRDidIgh3KqQMQUcig2quw1wQXA1fLCfBaj1DxOkLXbJei0I_TEUTWyu1Y8uvXGpuFlzRfdkxLRw2K6djTMllZZh8APpdzIg3JFA1Fb8efCf1J7o92PqKVthniUPB4YUpt4dPq4dG5GCukuDAjFKWrqXnPXieiDelDTHpyY3HVPH-u8bEKUYSiK0qGSaTPKCHEzrIYU-BrJwLPd_H7AIsDKCJpDdxa0mYBl0qIudmRujHXvgokMHpkEDbfla6uODjnvYDLaKdUtBeIk4OA5gaULLqrfDk5BM8dr98cL5i4jtkFUnRsgd5dwhVH7FKmsgXfH3eMTirBkh_w",
-          "publishedOn": "2021-11-04T11:09:45.000Z",
-          "wordCount": null,
-          "title": "An Interview with Eric Seufert about the Impact of ATT",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/an-interview-with-eric-seufert-about-the-impact-of-att/",
-          "author": "Ben Thompson",
-          "description": "An interview with Eric Seufert about the impact of ATT and the future of advertising, Apple, and Facebook.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hbi1pbnRlcnZpZXctd2l0aC1lcmljLXNldWZlcnQtYWJvdXQtdGhlLWltcGFjdC1vZi1hdHQv.TX83Y4HLWtmGV00dhdg0oAw24976EQm5dIt4s7jsIKISkJJZpG_6DfyxY_xc2DaZjfRsrWaabbFraf57SD7JIRiG0ElauJKW71GWp6ucP2cmQZPcC9HrVVJSqZc_3Ye8q1FG4ak_oXpHPLt7ZLs_8GjLeyK_Ak2zYuweQcVM2C4Sjg5LQlU1oBBNzH91pnSPHz-jJ5xd4_3YVrLP6T-Sqxnfnfn3Mnhlq81070kUBompwdrmgD7FwhXMd1pjHro0mN2IA7bqqHtqzKGbqgvKS5S4wgu7ohN4kxr4zGRnlOpO-yI-T3cO-7Us0sVpuB31oQrvBexNsqDJjeTAtMfYyA",
-          "publishedOn": "2021-11-04T11:09:45.000Z",
-          "wordCount": null,
-          "title": "An Interview with Eric Seufert about the Impact of ATT",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/an-interview-with-eric-seufert-about-the-impact-of-att/",
-          "author": "Ben Thompson",
-          "description": "An interview with Eric Seufert about the impact of ATT and the future of advertising, Apple, and Facebook.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hbi1pbnRlcnZpZXctd2l0aC1lcmljLXNldWZlcnQtYWJvdXQtdGhlLWltcGFjdC1vZi1hdHQv.Q5IVBpZRNHuwIJ0EAZTtqT0bfVKfIAmtZQhZLw41E46U5uR6XMphyY9YevpS3ZcHv46NaRpmuiKNZeCNTgqYnxxhDrS7QPE3O6sYadZeXcuq9DcfO2V_OJrxyAl-QyQHIOCBFWBl5h8QwM3LwQnMwy5ou0SNveDaegTclpI58Duf7nBJGGxsq3UUwIsyr7yqUKskv0FHD8phffeoEwY155xgPgc6jKCU5NuaGN3h2xyob7aQjvx21u7vMj96QX1MR3xaDlvx534oDftfxiCX8ROa8c8UbEwXFwKwB5GzUWXsKHKYxPB7vx7RKe8ZYvS1b96FPKE86x84nOimebURWw",
-          "publishedOn": "2021-11-04T11:09:45.000Z",
-          "wordCount": null,
-          "title": "An Interview with Eric Seufert about the Impact of ATT",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/an-interview-with-eric-seufert-about-the-impact-of-att/",
-          "author": "Ben Thompson",
-          "description": "An interview with Eric Seufert about the impact of ATT and the future of advertising, Apple, and Facebook.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hbi1pbnRlcnZpZXctd2l0aC1lcmljLXNldWZlcnQtYWJvdXQtdGhlLWltcGFjdC1vZi1hdHQv.DTbItORGZsUeyPrcvppwWVMfJe2ExV4MI7c6uZFL7Qx4Ba10itFYdMUEeFL8e5pnoLmjuHMePJjMpbLbXLUULqb6BOlsr7krHd4OS_9SQisDOVSP2U4HuOg3sPLr-4LgVbXaTm4BUjyt3aToJqt_Wh86FJ2LLnE9RU5KOJ7k71la6DhKsdfZDTdmUH3OgcMPTyrJhodWG_lr3K-KcsTEnHFo3Km8xF4ylEN3n9y1nyr2mVgfauzWaILNVQ80EDidvR7aO4rmHD_0-vDvy_h0x5rkC3WpbC7J7hPAZN4n4qnp0TUiD3noPLAwXE0-L18lJLz-6xUp6RpSiv2rQ2xMgw",
-          "publishedOn": "2021-11-04T11:09:45.000Z",
-          "wordCount": null,
-          "title": "An Interview with Eric Seufert about the Impact of ATT",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/an-interview-with-eric-seufert-about-the-impact-of-att/",
-          "author": "Ben Thompson",
-          "description": "An interview with Eric Seufert about the impact of ATT and the future of advertising, Apple, and Facebook.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hbi1pbnRlcnZpZXctd2l0aC1lcmljLXNldWZlcnQtYWJvdXQtdGhlLWltcGFjdC1vZi1hdHQv.bxnulGLeBv-a7FY7zIKEvBkQWysKxIRRC85YvU1J4Gjtkj3GNg42FSF4nki6arGrMwBzbVXlhFj8aGdPXxshkVJxckwSu5engxl-a-7GjJs1uiNYJOmYuzA4dTGnlT_FO4TOkTcUuSAJpIV8CVapoa0T_WOuDTkJj8IPRd73FzzPn87I3xYWuPwyAhjcv212pFlZ5CTA4LwGrgKvpnwawWfUUKhikQx6TuL_KwLD1bB-cJh6_LyN9g2hwsY2ER4ER3GjhRTioNx0Ige1k9V9RYU9Qki-fe96Fy-LfNgPOTZY-Oh8W-qs9bHOcnlmsvNiBDI4_hRtC5TPEtWuu48fEQ",
-          "publishedOn": "2021-11-04T11:09:45.000Z",
-          "wordCount": null,
-          "title": "An Interview with Eric Seufert about the Impact of ATT",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/an-interview-with-eric-seufert-about-the-impact-of-att/",
-          "author": "Ben Thompson",
-          "description": "An interview with Eric Seufert about the impact of ATT and the future of advertising, Apple, and Facebook.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hbi1pbnRlcnZpZXctd2l0aC1lcmljLXNldWZlcnQtYWJvdXQtdGhlLWltcGFjdC1vZi1hdHQv.oPCRssWVRqn3eYXNIRGCLRZ-3Oi7NThsyfc-QvFQpRJeONF4xW4DtwibzJ8IhyyKnZnAIR-cwS36hWYZFMtfRdRo16hP5Vxzt195xSCm6HTRNvoFbLG3vgHbGHLbRUKUjObP3lKD1wHtNlVzHZK79RPwO0yyq0Vpc_OAi_Xxdbx0enJXDzs6NQtnoJrPa0gjX4QmfzIWWCPTbegmIejlckEgqTPaUkjbgh4gFgCJWdUBvha_Lakftf89y9mKN-Y5msuo6ecA4D5HzsLaQ4luxbKK7QacQwtQQm093_j7j1RjJglSowNZXYQAvZHjGqALh1IprgIvybOaxh7jcryBzA",
-          "publishedOn": "2021-11-04T11:09:45.000Z",
-          "wordCount": null,
-          "title": "An Interview with Eric Seufert about the Impact of ATT",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/an-interview-with-eric-seufert-about-the-impact-of-att/",
-          "author": "Ben Thompson",
-          "description": "An interview with Eric Seufert about the impact of ATT and the future of advertising, Apple, and Facebook.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hbi1pbnRlcnZpZXctd2l0aC1lcmljLXNldWZlcnQtYWJvdXQtdGhlLWltcGFjdC1vZi1hdHQv.aKvyTX6o0ds6WHMd2yPDrHPhBDid4auN8MfbDxH9W5PTfGSAOM4wtSwLa8mr-kIQq5sUJ3lh_rafHBbGNMflK8aYEg_jLndKwfvoZQHkaslrGmIdVYfVJy_zkCRVRjTFLbZyOlipTZaV5897JAHB8vRg69xMnZxVtN2dLX8uVkEZMjaxX2Iu249kPkg4JUC2eBWi364i-sjuYKMlg5iMqf71uizqERKQ9JeK7dw7PmSxm2ca8Gdwcz-jAoDy2HeCIz-sCMdMXRqNqTV_UP5JZ8rADkWClAEDFM9zSlTJRFLPxumVKZyNjV6D6alrp61l2TyQ1qFUyqNKDHqOPsyfEg",
-          "publishedOn": "2021-11-04T11:09:45.000Z",
-          "wordCount": null,
-          "title": "An Interview with Eric Seufert about the Impact of ATT",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/an-interview-with-eric-seufert-about-the-impact-of-att/",
-          "author": "Ben Thompson",
-          "description": "An interview with Eric Seufert about the impact of ATT and the future of advertising, Apple, and Facebook.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hbi1pbnRlcnZpZXctd2l0aC1lcmljLXNldWZlcnQtYWJvdXQtdGhlLWltcGFjdC1vZi1hdHQv.INsafsIctkAsoFzBtOj2znnR6JgdkX6HXJ23v4EN2aFcW2-Vjv5194awGzL4LeQuRQmjeQQWHGia4IPvHtNk0cJ7nMNG0dHRdaFMgXl9QHRwxbse5vQmdbikePy_16mMePCj0awhwGsZHF0sk4FQsVJ3z-9u5BtegwRfGop_5krbTF3niJPUWlxm6ULrCOSFbfAU1FyEedO0waXpfw7o8sha1ZqBa3uS3ZDhbvb3tNAonfbUzeeypFbh55JBgiIiMa0t4BkAZxrH0H1yStC3ymgC8COhlSTNuXcZJfs7mJoMHyXGe1ausy7HsiLISqfSjZFZAOCSxkSzxuF535EFPQ",
-          "publishedOn": "2021-11-04T11:09:45.000Z",
-          "wordCount": null,
-          "title": "An Interview with Eric Seufert about the Impact of ATT",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/an-interview-with-eric-seufert-about-the-impact-of-att/",
-          "author": "Ben Thompson",
-          "description": "An interview with Eric Seufert about the impact of ATT and the future of advertising, Apple, and Facebook.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hbi1pbnRlcnZpZXctd2l0aC1lcmljLXNldWZlcnQtYWJvdXQtdGhlLWltcGFjdC1vZi1hdHQv.rXHsRxPT5bc5W0u-PMyT3Z9RuJxeLYq7TK06cjdiowbPP1RztnrUKVPop7fymQyPfvcSRaFDfXF_94LfNmd_wbUMuibqhVFqRFrLxNvh8O4OIklOj29lJA7lsPwQ0P75oQp5bY4uWQY6ejlmo1bNzrYWs32WkIL80GOseBZbL53TPjWy4QBNYvfgj87bKoVvH5izpqWGTin9j9byRZJGDf5TV4yjoKSke66SOfWQdvNspBYdOnGJ5OfisLTa3fGPQerd9LqEcJK9C5WRz_0xQ4itYTOMiPkZ80DD3XTUvX3j629ZmIXlfY8lJKE3jhKtSr39xX4Kbg7nqdVOnL5uKg",
-          "publishedOn": "2021-11-04T11:09:45.000Z",
-          "wordCount": null,
-          "title": "An Interview with Eric Seufert about the Impact of ATT",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/an-interview-with-eric-seufert-about-the-impact-of-att/",
-          "author": "Ben Thompson",
-          "description": "An interview with Eric Seufert about the impact of ATT and the future of advertising, Apple, and Facebook.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hbi1pbnRlcnZpZXctd2l0aC1lcmljLXNldWZlcnQtYWJvdXQtdGhlLWltcGFjdC1vZi1hdHQv.WO5D-f_x5JB0Q0fNrsTRKeg0l5VnDD93Eh-dU2oKbbPklqLATb57w1d7E3xK8CjjbngbpICuJKvjoSZWmASa38wE2NtCpSmvTo7L4JWc5egz7piyJ8um9vMj0z07ZYqydUzFv7cXdA24y4YlwbdqybUpWH51UAlE2YFFR3aUb7wWlc1TNp3ZOGYkHNVy_SLtnBYPRNjhpUsI9K7L1ExUsQ_7ckSpmEOk4wLZyI4s2JxlWFhq-2OpvO1592GEc4nWFG1r14qSbF9TU5rP_Ht5mM86TPXJJASf3FupHmC7azIIvRZqOBilauHMXQXupQkraTjYdMh_DyPyUz9EePdilA",
-          "publishedOn": "2021-11-04T11:09:45.000Z",
-          "wordCount": null,
-          "title": "An Interview with Eric Seufert about the Impact of ATT",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/an-interview-with-eric-seufert-about-the-impact-of-att/",
-          "author": "Ben Thompson",
-          "description": "An interview with Eric Seufert about the impact of ATT and the future of advertising, Apple, and Facebook.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hbi1pbnRlcnZpZXctd2l0aC1lcmljLXNldWZlcnQtYWJvdXQtdGhlLWltcGFjdC1vZi1hdHQv.Mn7Q2Wloa1Jdz1G8DLs2phnkyFYaM55RnMJy_Y-c3phpA65EE_6TOaUE_B5pstRKVv9xR0EQZtRW0k_doPXa4BgchmTfG9ZoOMvOzErxczR0mQMsAuqvqgDjbO25mwxptZDBW8StEWnEUFHjOImbRFTrYxIoP4PstYqoBYrNRgf4BZX3oAvl8Ode8oqF0h4kO5ggIJtqRJfEzWZifSl9U1_bCr2TTFLKNiwiXfGmX-RZQrtb_X238eG76UQLmS48EpZDRpR6-pn-jDhLI6bLNLQva2_j968GZ1ORvoeYCmeT22sXtkEtjvfmr2VNTBXSpn9vs-3hOQfkdRgTaFA3dg",
-          "publishedOn": "2021-11-04T11:09:45.000Z",
-          "wordCount": null,
-          "title": "An Interview with Eric Seufert about the Impact of ATT",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/an-interview-with-eric-seufert-about-the-impact-of-att/",
-          "author": "Ben Thompson",
-          "description": "An interview with Eric Seufert about the impact of ATT and the future of advertising, Apple, and Facebook.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hbi1pbnRlcnZpZXctd2l0aC1lcmljLXNldWZlcnQtYWJvdXQtdGhlLWltcGFjdC1vZi1hdHQv.hYboq-_TnttAEsynSi2CpSoiy8CN1MBMlf9BH0ntjBecIoTfNpMWqe1ye_nSSLYSzwJ-c8kIqt2oesmp9UnIiXpuwhO43mEtoX6T8oZPFhWxKjxbr10PSloQLp3P8dNTa_oe8iCc_Sfg2HFJvrq7jFgdxydtDWm8rFa74FViIOyCA7JfBnFa1pP_ykCr4LbvMIpA0PNf7N50TKnZ-1HW1NNqiXs4LOyMg9qGShIFPEwxEOcrp9bqcxAjU4bs_Fx2SseSy_fA96aPEvStEH6nMmNgD0KsObq7XUAByq452CHXxsa1Tlpxta9_9verT2vx4vX4MnkE-9thdMr8Tk1Q1w",
-          "publishedOn": "2021-11-04T11:09:45.000Z",
-          "wordCount": null,
-          "title": "An Interview with Eric Seufert about the Impact of ATT",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/an-interview-with-eric-seufert-about-the-impact-of-att/",
-          "author": "Ben Thompson",
-          "description": "An interview with Eric Seufert about the impact of ATT and the future of advertising, Apple, and Facebook.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hbi1pbnRlcnZpZXctd2l0aC1lcmljLXNldWZlcnQtYWJvdXQtdGhlLWltcGFjdC1vZi1hdHQv.vpIb_ATnc4awVa6X2fWYV14vTwUz7GRDtlzThyFTM6vJSXQvOcDKGn9KryF7UcJtfviS18Cs-edC5tLC5DYrqCHMW9GLK_50o0jSCsoiCkOFl06CsTKbK3RZaSTUusFkC4L8xtKl4-G1nr5rd9Q7PWa-KV-piHEz9g3IEelPIzWN8IttGT5lzQpew6PU8U3RUoERe7d3wXwCno41HbdMJHU8cvuS0G8DREM0dde6T1Xq5zZWcrKtJMyjiEWTS8wzpH_KWKQcW7DetpJcEHIRIeb1wWqa9VcijqYLxfdc46nxmcsMK1bynjcoq79TnOuWyg9xLQdRmAs_b686lt0bQA",
-          "publishedOn": "2021-11-04T11:09:45.000Z",
-          "wordCount": null,
-          "title": "An Interview with Eric Seufert about the Impact of ATT",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/an-interview-with-eric-seufert-about-the-impact-of-att/",
-          "author": "Ben Thompson",
-          "description": "An interview with Eric Seufert about the impact of ATT and the future of advertising, Apple, and Facebook.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hbi1pbnRlcnZpZXctd2l0aC1lcmljLXNldWZlcnQtYWJvdXQtdGhlLWltcGFjdC1vZi1hdHQv.GHfYrOeLRsMOVo5MPI03ZpXh9LpxNhm0ssCx76YZdC4i2COVjbJZ2c5rPyauzsZIP4IBEGK4UhAKsPn2un3n4uDhTMGK_NgyI92a5CHzxiTntpnObyNWrEi0ka9LVVXdDnkQoe44p8LxfUNBgMYO38iaQHVR6XgURBO82pg8nTI9m9jbH4Yg6jW74XwjM9i96AEMpveJKFtOZNna814oo56nAQ_frGFXeW5rha3vmn8283Cth3ZR4cioSMxP_F7KTjH3Hc6U_djy7rqLatWkj26zsdvlS2S0ZRaWeNksF_C5vYulmM-j5FAhKZ7VtTZQomCJwXBSqxHRsB0sD0W5mw",
-          "publishedOn": "2021-11-04T11:09:45.000Z",
-          "wordCount": null,
-          "title": "An Interview with Eric Seufert about the Impact of ATT",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/an-interview-with-eric-seufert-about-the-impact-of-att/",
-          "author": "Ben Thompson",
-          "description": "An interview with Eric Seufert about the impact of ATT and the future of advertising, Apple, and Facebook.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hbi1pbnRlcnZpZXctd2l0aC1lcmljLXNldWZlcnQtYWJvdXQtdGhlLWltcGFjdC1vZi1hdHQv.vKYNlrme1zqSwyZrKcCbnkO50Zbx6lbTHfugf9_58v1CBephAxI7CL4o5Bmq4JE83mPpYXMAeI1c86SSqhEt3mFnw7oW_3RwjrrvGDg4B-cH_h378bS9xW6tTCVnkDH4IASCGwrh9tFWuJd0fLnRS6ZYfU1L5T780vEcRrY24XqxtLtDXDwtLREONsE2psxDgzulfgqKMsy_3A45YKIoQAnKa_n00UgMu5sJoIdqw-B0k31Y5GfiDMAvjoe2aw01RL6oodbxDZiWpG_gw7XRCfluB3EiS4Ap7EdpU97sVHodqc9Jv_7allNQvY3RIHdVmQeWcr8oBd0V6r_T8tfHYg",
-          "publishedOn": "2021-11-04T11:09:45.000Z",
-          "wordCount": null,
-          "title": "An Interview with Eric Seufert about the Impact of ATT",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/an-interview-with-eric-seufert-about-the-impact-of-att/",
-          "author": "Ben Thompson",
-          "description": "An interview with Eric Seufert about the impact of ATT and the future of advertising, Apple, and Facebook.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hbi1pbnRlcnZpZXctd2l0aC1lcmljLXNldWZlcnQtYWJvdXQtdGhlLWltcGFjdC1vZi1hdHQv.Cma4TdZHhz0HgUMbkE3gWe6eQQckJprhi9xlmIVtn14Tv18dE1FQhPQsCSD-dpNRBRmnGohktmn4jzAC_lYan7Urb4kt5iKm1-dNp7IR1WRIkLYu2TUxvuqEaubsL-ktC3q56-chGJZgqGo2fjqjJFR4CaD-UyA6ybyO_rsTIBQKpDqtl-QDpFVa0zQ3Rr3VreVL_fkDzwWyVQUrCoElIVeTsSTKnE5CJHlNLg7uYa6RVdJkht9WCTgx6M7MCj9fPYmpm2cBEQYWP4z_AcibhuVulQ7jzVtD7nTDIEhEwj0V4U7hYqcfI5ZpSoAAEKGWOab4JTdkkmY1WrCRLpToXg",
-          "publishedOn": "2021-11-04T11:09:45.000Z",
-          "wordCount": null,
-          "title": "An Interview with Eric Seufert about the Impact of ATT",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/an-interview-with-eric-seufert-about-the-impact-of-att/",
-          "author": "Ben Thompson",
-          "description": "An interview with Eric Seufert about the impact of ATT and the future of advertising, Apple, and Facebook.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hbi1pbnRlcnZpZXctd2l0aC1lcmljLXNldWZlcnQtYWJvdXQtdGhlLWltcGFjdC1vZi1hdHQv.BZGqKcsfN9Okrv3Bi5wcLdye4aCVT-0zBN8z16pYsVMydOW55c7rqSYkBlgWwdG4D9_8kRt3yufmFTdDNEZKKU2K4-61OPxgvgjHk7JZMZdN1_cPDVhrAx422LZ36VRwmRhkoCox1K7djND0E27HPPDHLTc-Umnlq2SbHY_ma2iwpDSvKoWDBl975R1Xoe2MlY9XcsH_qk57lYElUVkPVkbNULQZMV6vw6RGHtPwR5pz-IsWa632tv3ZY-rNFnmPU9q72bpKgckyOY5fzU12PigWAxroXfIz6SHoC28p4X7JyfWm_PUexpuDR6swHDsIB1jAGknM4wnOP-25P4zZxA",
-          "publishedOn": "2021-11-04T11:09:45.000Z",
-          "wordCount": null,
-          "title": "An Interview with Eric Seufert about the Impact of ATT",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/an-interview-with-eric-seufert-about-the-impact-of-att/",
-          "author": "Ben Thompson",
-          "description": "An interview with Eric Seufert about the impact of ATT and the future of advertising, Apple, and Facebook.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hbi1pbnRlcnZpZXctd2l0aC1lcmljLXNldWZlcnQtYWJvdXQtdGhlLWltcGFjdC1vZi1hdHQv.lxhbHWSBSju-OQRKPg26A4Y5sznFruu0DgT8ELoSjFVX3aXtQluQY5-BOApmyv7mNGd1TeMwlicyXKSHwQoK6bqM0hTc2bd2fVqqe2Z6EiBXiLAdVDTrWtcwhq64y9o_sQ0S4-u0Slqal1ncRvGqd9b0qYIWJYn4TXWa8k0FTQwCS7vD8LmNtfXvIjVcCkak4aiHs-gbDdcTnnxaDEie5sXe8BKbxSHupBO_5IFTstDlDAIN1DBOYstyhK4o_quT5S-5vYH9T_KquQVc5ssZFS8xw7OOvqpdmd9vVVWiA_F-mAPk-CaBENyvmJD0vmMIi3F4AmnaSgyLSzhYO7cXQA",
-          "publishedOn": "2021-11-04T11:09:45.000Z",
-          "wordCount": null,
-          "title": "An Interview with Eric Seufert about the Impact of ATT",
           "itunes": {}
         }
       ]
@@ -13993,6 +14093,141 @@
       "feedUrl": "https://reddit.buzzing.cc/rss.xml",
       "siteUrl": "https://reddit.buzzing.cc",
       "articles": [
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/funny/comments/r7ra1d/my_dog_chases_coyotes_but_wont_go_pee_in_the_rain/",
+          "author": null,
+          "description": "我的狗追赶土狼，但不会在雨中撒尿，除非我用塑料袋盖住它。",
+          "link": "https://reddit.buzzing.cc/reddit/r/funny/comments/r7ra1d/my_dog_chases_coyotes_but_wont_go_pee_in_the_rain/",
+          "publishedOn": "2021-12-03T23:29:36.000Z",
+          "wordCount": 31,
+          "title": "我的狗追赶土狼，但不会在雨中撒尿，除非我用塑料袋盖住它。"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/mildlyinteresting/comments/r7lb7k/these_ice_spheres_that_i_just_found_out_my_new/",
+          "author": null,
+          "description": "这些冰球(?)是我刚发现我的新冰箱做的。",
+          "link": "https://reddit.buzzing.cc/reddit/r/mildlyinteresting/comments/r7lb7k/these_ice_spheres_that_i_just_found_out_my_new/",
+          "publishedOn": "2021-12-03T23:13:02.000Z",
+          "wordCount": 26,
+          "title": "这些冰球(?)是我刚发现我的新冰箱做的。"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/r7wcyl/he_tricked_her_into_a_good_first_date/",
+          "author": null,
+          "description": "他把她骗到了一个很好的第一次约会!",
+          "link": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/r7wcyl/he_tricked_her_into_a_good_first_date/",
+          "publishedOn": "2021-12-03T22:42:40.000Z",
+          "wordCount": 22,
+          "title": "他把她骗到了一个很好的第一次约会!"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/r7wsmr/man_arrested_fordoing_exactly_what_he_was_told/",
+          "author": null,
+          "description": "男子因....，完全按要求行事而被捕",
+          "link": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/r7wsmr/man_arrested_fordoing_exactly_what_he_was_told/",
+          "publishedOn": "2021-12-03T20:17:42.000Z",
+          "wordCount": 22,
+          "title": "男子因....，完全按要求行事而被捕"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/r7o6vu/daughter_made_an_uber_note_for_dad_that_is_still/",
+          "author": null,
+          "description": "女儿为仍在学习英语的爸爸做了一张Uber纸条",
+          "link": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/r7o6vu/daughter_made_an_uber_note_for_dad_that_is_still/",
+          "publishedOn": "2021-12-03T19:02:19.000Z",
+          "wordCount": 26,
+          "title": "女儿为仍在学习英语的爸爸做了一张Uber纸条"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/Unexpected/comments/r7vxg7/title/",
+          "author": null,
+          "description": "标题",
+          "link": "https://reddit.buzzing.cc/reddit/r/Unexpected/comments/r7vxg7/title/",
+          "publishedOn": "2021-12-03T19:02:19.000Z",
+          "wordCount": 15,
+          "title": "标题"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/r7bq4x/mr_noble_prize_winner_the_mad_man/",
+          "author": null,
+          "description": "诺贝尔奖得主（疯子）先生",
+          "link": "https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/r7bq4x/mr_noble_prize_winner_the_mad_man/",
+          "publishedOn": "2021-12-03T15:47:06.000Z",
+          "wordCount": 22,
+          "title": "诺贝尔奖得主（疯子）先生"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/BlackPeopleTwitter/comments/r7bbow/dont_like_it_thatll_be_198/",
+          "author": null,
+          "description": "不喜欢它？那将是1.98美元",
+          "link": "https://reddit.buzzing.cc/reddit/r/BlackPeopleTwitter/comments/r7bbow/dont_like_it_thatll_be_198/",
+          "publishedOn": "2021-12-03T13:55:19.000Z",
+          "wordCount": 22,
+          "title": "不喜欢它？那将是1.98美元"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/r7iyw9/no_one_lets_it_happen/",
+          "author": null,
+          "description": "没有人 \"让 \"它发生",
+          "link": "https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/r7iyw9/no_one_lets_it_happen/",
+          "publishedOn": "2021-12-03T12:54:56.000Z",
+          "wordCount": 23,
+          "title": "没有人 \"让 \"它发生"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/pics/comments/r7i6c9/looks_like_even_the_richest_man_in_the_world_can/",
+          "author": null,
+          "description": "看来，即使是世界上最富有的人也会有一个中年危机",
+          "link": "https://reddit.buzzing.cc/reddit/r/pics/comments/r7i6c9/looks_like_even_the_richest_man_in_the_world_can/",
+          "publishedOn": "2021-12-03T09:17:18.000Z",
+          "wordCount": 30,
+          "title": "看来，即使是世界上最富有的人也会有一个中年危机"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/KidsAreFuckingStupid/comments/r77cys/the_pretty_mom_and_the_other_mom/",
+          "author": null,
+          "description": "漂亮的妈妈和另一个妈妈",
+          "link": "https://reddit.buzzing.cc/reddit/r/KidsAreFuckingStupid/comments/r77cys/the_pretty_mom_and_the_other_mom/",
+          "publishedOn": "2021-12-03T09:17:18.000Z",
+          "wordCount": 21,
+          "title": "漂亮的妈妈和另一个妈妈"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/r7ddt0/they_installed_a_roundabout_in_kentucky_it_did/",
+          "author": null,
+          "description": "他们在肯塔基州安装了一个环形路。它并不顺利",
+          "link": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/r7ddt0/they_installed_a_roundabout_in_kentucky_it_did/",
+          "publishedOn": "2021-12-03T07:29:55.000Z",
+          "wordCount": 25,
+          "title": "他们在肯塔基州安装了一个环形路。它并不顺利"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/r7gz05/surgeon_in_london_performs_remote_operation_on/",
+          "author": null,
+          "description": "伦敦的外科医生对加州的香蕉进行远程手术",
+          "link": "https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/r7gz05/surgeon_in_london_performs_remote_operation_on/",
+          "publishedOn": "2021-12-03T07:01:37.000Z",
+          "wordCount": 24,
+          "title": "伦敦的外科医生对加州的香蕉进行远程手术"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/news/comments/r78cwx/germany_announces_nationwide_lockdown_for_the/",
+          "author": null,
+          "description": "德国宣布在全国范围内对未接种疫苗的人进行封锁",
+          "link": "https://reddit.buzzing.cc/reddit/r/news/comments/r78cwx/germany_announces_nationwide_lockdown_for_the/",
+          "publishedOn": "2021-12-03T04:13:17.000Z",
+          "wordCount": 21,
+          "title": "德国宣布在全国范围内对未接种疫苗的人进行封锁"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/pics/comments/r7a3ax/before_the_god_thing/",
+          "author": null,
+          "description": "在神的事情之前",
+          "link": "https://reddit.buzzing.cc/reddit/r/pics/comments/r7a3ax/before_the_god_thing/",
+          "publishedOn": "2021-12-03T00:38:57.000Z",
+          "wordCount": 18,
+          "title": "在神的事情之前"
+        },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/r7974m/customer_caught_walked_in_on_staff_dancing_while/",
           "author": null,
@@ -15287,6 +15522,321 @@
       "feedUrl": "https://hn.buzzing.cc/rss.xml",
       "siteUrl": "https://hn.buzzing.cc",
       "articles": [
+        {
+          "id": "https://hn.buzzing.cc/hn/29430368",
+          "author": null,
+          "description": "展示HN：一个完全用SVG构建真实网站的工具",
+          "link": "https://hn.buzzing.cc/hn/29430368",
+          "publishedOn": "2021-12-03T23:29:11.000Z",
+          "wordCount": 31,
+          "title": "展示HN：一个完全用SVG构建真实网站的工具"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29434344",
+          "author": null,
+          "description": "YouTube删除批评他们隐藏不喜欢的数量的评论",
+          "link": "https://hn.buzzing.cc/hn/29434344",
+          "publishedOn": "2021-12-03T21:42:55.000Z",
+          "wordCount": 31,
+          "title": "YouTube删除批评他们隐藏不喜欢的数量的评论"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29434818",
+          "author": null,
+          "description": "马格努斯-卡尔森赢得有史以来最长的世界象棋锦标赛比赛",
+          "link": "https://hn.buzzing.cc/hn/29434818",
+          "publishedOn": "2021-12-03T21:35:40.000Z",
+          "wordCount": 32,
+          "title": "马格努斯-卡尔森赢得有史以来最长的世界象棋锦标赛比赛"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29433262",
+          "author": null,
+          "description": "德国。新政府计划 \"加密权",
+          "link": "https://hn.buzzing.cc/hn/29433262",
+          "publishedOn": "2021-12-03T20:01:14.000Z",
+          "wordCount": 29,
+          "title": "德国。新政府计划 \"加密权"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29432816",
+          "author": null,
+          "description": "K-12数学教育中一个令人震惊的趋势：一篇特邀文章和一封公开信",
+          "link": "https://hn.buzzing.cc/hn/29432816",
+          "publishedOn": "2021-12-03T19:36:39.000Z",
+          "wordCount": 35,
+          "title": "K-12数学教育中一个令人震惊的趋势：一篇特邀文章和一封公开信"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29432451",
+          "author": null,
+          "description": "搅拌机3.0",
+          "link": "https://hn.buzzing.cc/hn/29432451",
+          "publishedOn": "2021-12-03T18:56:18.000Z",
+          "wordCount": 23,
+          "title": "搅拌机3.0"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29430288",
+          "author": null,
+          "description": "永不使用黑色 (2012)",
+          "link": "https://hn.buzzing.cc/hn/29430288",
+          "publishedOn": "2021-12-03T18:13:18.000Z",
+          "wordCount": 27,
+          "title": "永不使用黑色 (2012)"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29428910",
+          "author": null,
+          "description": "Show HN：昨天我有一些时间，所以我做了一个GPT3播客来帮助你睡觉",
+          "link": "https://hn.buzzing.cc/hn/29428910",
+          "publishedOn": "2021-12-03T17:59:35.000Z",
+          "wordCount": 40,
+          "title": "Show HN：昨天我有一些时间，所以我做了一个GPT3播客来帮助你睡觉"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29432276",
+          "author": null,
+          "description": "美国国务院电话被以色列公司间谍软件入侵",
+          "link": "https://hn.buzzing.cc/hn/29432276",
+          "publishedOn": "2021-12-03T17:53:23.000Z",
+          "wordCount": 32,
+          "title": "美国国务院电话被以色列公司间谍软件入侵"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29429558",
+          "author": null,
+          "description": "Ask HN: 关于年迈父母的建议",
+          "link": "https://hn.buzzing.cc/hn/29429558",
+          "publishedOn": "2021-12-03T17:33:42.000Z",
+          "wordCount": 30,
+          "title": "Ask HN: 关于年迈父母的建议"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29430720",
+          "author": null,
+          "description": "Pg_GraphQL。用于PostgreSQL的GraphQL扩展",
+          "link": "https://hn.buzzing.cc/hn/29430720",
+          "publishedOn": "2021-12-03T17:33:42.000Z",
+          "wordCount": 29,
+          "title": "Pg_GraphQL。用于PostgreSQL的GraphQL扩展"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29430498",
+          "author": null,
+          "description": "Blender 3.0的二进制文件",
+          "link": "https://hn.buzzing.cc/hn/29430498",
+          "publishedOn": "2021-12-03T17:10:49.000Z",
+          "wordCount": 26,
+          "title": "Blender 3.0的二进制文件"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29426862",
+          "author": null,
+          "description": "OS X-KVM。在QEMU/KVM上运行macOS",
+          "link": "https://hn.buzzing.cc/hn/29426862",
+          "publishedOn": "2021-12-03T17:10:49.000Z",
+          "wordCount": 30,
+          "title": "OS X-KVM。在QEMU/KVM上运行macOS"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29429385",
+          "author": null,
+          "description": "现实中的细节令人惊讶 (2017)",
+          "link": "https://hn.buzzing.cc/hn/29429385",
+          "publishedOn": "2021-12-03T17:10:49.000Z",
+          "wordCount": 31,
+          "title": "现实中的细节令人惊讶 (2017)"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29429964",
+          "author": null,
+          "description": "乐高设计了一套不能拆开的装置",
+          "link": "https://hn.buzzing.cc/hn/29429964",
+          "publishedOn": "2021-12-03T15:34:41.000Z",
+          "wordCount": 31,
+          "title": "乐高设计了一套不能拆开的装置"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29428922",
+          "author": null,
+          "description": "告诉HN：失去了对谷歌账户的访问权，然后用正确的凭证重新获得了访问权",
+          "link": "https://hn.buzzing.cc/hn/29428922",
+          "publishedOn": "2021-12-03T15:34:41.000Z",
+          "wordCount": 33,
+          "title": "告诉HN：失去了对谷歌账户的访问权，然后用正确的凭证重新获得了访问权"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29426414",
+          "author": null,
+          "description": "空洞和误导性的沟通占据了组织 (2020)",
+          "link": "https://hn.buzzing.cc/hn/29426414",
+          "publishedOn": "2021-12-03T15:00:52.000Z",
+          "wordCount": 30,
+          "title": "空洞和误导性的沟通占据了组织 (2020)"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29429354",
+          "author": null,
+          "description": "美国起诉两名男子经营2000万美元的YouTube内容ID骗局",
+          "link": "https://hn.buzzing.cc/hn/29429354",
+          "publishedOn": "2021-12-03T14:36:29.000Z",
+          "wordCount": 33,
+          "title": "美国起诉两名男子经营2000万美元的YouTube内容ID骗局"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29413754",
+          "author": null,
+          "description": "如何好好休息",
+          "link": "https://hn.buzzing.cc/hn/29413754",
+          "publishedOn": "2021-12-03T13:42:28.000Z",
+          "wordCount": 24,
+          "title": "如何好好休息"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29426411",
+          "author": null,
+          "description": "建设者文化失败的一种方式",
+          "link": "https://hn.buzzing.cc/hn/29426411",
+          "publishedOn": "2021-12-03T13:13:14.000Z",
+          "wordCount": 27,
+          "title": "建设者文化失败的一种方式"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29412806",
+          "author": null,
+          "description": "阿维可以做任何事情",
+          "link": "https://hn.buzzing.cc/hn/29412806",
+          "publishedOn": "2021-12-03T12:54:25.000Z",
+          "wordCount": 30,
+          "title": "阿维可以做任何事情"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29428285",
+          "author": null,
+          "description": "Boox Mira Pro - 25.3\" E Ink显示器",
+          "link": "https://hn.buzzing.cc/hn/29428285",
+          "publishedOn": "2021-12-03T12:26:57.000Z",
+          "wordCount": 40,
+          "title": "Boox Mira Pro - 25.3\" E Ink显示器"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29427068",
+          "author": null,
+          "description": "埋藏在基础设施法案中的强制性后门杀毒开关是为你的汽车准备的",
+          "link": "https://hn.buzzing.cc/hn/29427068",
+          "publishedOn": "2021-12-03T10:58:24.000Z",
+          "wordCount": 41,
+          "title": "埋藏在基础设施法案中的强制性后门杀毒开关是为你的汽车准备的"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29425650",
+          "author": null,
+          "description": "谷歌 \"20%时间 \"志愿者一直在努力改写矩阵",
+          "link": "https://hn.buzzing.cc/hn/29425650",
+          "publishedOn": "2021-12-03T09:54:31.000Z",
+          "wordCount": 35,
+          "title": "谷歌 \"20%时间 \"志愿者一直在努力改写矩阵"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29422434",
+          "author": null,
+          "description": "微软Windows RCE漏洞让攻击者完全控制",
+          "link": "https://hn.buzzing.cc/hn/29422434",
+          "publishedOn": "2021-12-03T09:43:17.000Z",
+          "wordCount": 33,
+          "title": "微软Windows RCE漏洞让攻击者完全控制"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29421898",
+          "author": null,
+          "description": "巨大的搜索引擎",
+          "link": "https://hn.buzzing.cc/hn/29421898",
+          "publishedOn": "2021-12-03T09:16:54.000Z",
+          "wordCount": 24,
+          "title": "巨大的搜索引擎"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29423102",
+          "author": null,
+          "description": "我将WinUI改写为WPF",
+          "link": "https://hn.buzzing.cc/hn/29423102",
+          "publishedOn": "2021-12-03T08:49:22.000Z",
+          "wordCount": 27,
+          "title": "我将WinUI改写为WPF"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29417885",
+          "author": null,
+          "description": "RISC-V Int. 批准了15个新规格，为RISC-V设计提供了新的可能性",
+          "link": "https://hn.buzzing.cc/hn/29417885",
+          "publishedOn": "2021-12-03T08:23:31.000Z",
+          "wordCount": 38,
+          "title": "RISC-V Int. 批准了15个新规格，为RISC-V设计提供了新的可能性"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29417135",
+          "author": null,
+          "description": "Pybaobab - 决策树的可视化技术的Python实现",
+          "link": "https://hn.buzzing.cc/hn/29417135",
+          "publishedOn": "2021-12-03T05:38:52.000Z",
+          "wordCount": 37,
+          "title": "Pybaobab - 决策树的可视化技术的Python实现"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29425735",
+          "author": null,
+          "description": "展示HN: 表情符号的规模",
+          "link": "https://hn.buzzing.cc/hn/29425735",
+          "publishedOn": "2021-12-03T04:12:50.000Z",
+          "wordCount": 30,
+          "title": "展示HN: 表情符号的规模"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29412971",
+          "author": null,
+          "description": "Tvix: 我们正在重写尼克斯",
+          "link": "https://hn.buzzing.cc/hn/29412971",
+          "publishedOn": "2021-12-03T03:07:13.000Z",
+          "wordCount": 28,
+          "title": "Tvix: 我们正在重写尼克斯"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29418433",
+          "author": null,
+          "description": "安泰蓝十字会违规通知[pdf]",
+          "link": "https://hn.buzzing.cc/hn/29418433",
+          "publishedOn": "2021-12-03T02:46:32.000Z",
+          "wordCount": 27,
+          "title": "安泰蓝十字会违规通知[pdf]"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29418423",
+          "author": null,
+          "description": "面对住房危机，洛杉矶选民支持在独栋别墅区建造复式住宅",
+          "link": "https://hn.buzzing.cc/hn/29418423",
+          "publishedOn": "2021-12-03T01:43:34.000Z",
+          "wordCount": 31,
+          "title": "面对住房危机，洛杉矶选民支持在独栋别墅区建造复式住宅"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29418153",
+          "author": null,
+          "description": "新的SiFive RISC-V内核P650，IPC提高40%。",
+          "link": "https://hn.buzzing.cc/hn/29418153",
+          "publishedOn": "2021-12-03T00:38:24.000Z",
+          "wordCount": 31,
+          "title": "新的SiFive RISC-V内核P650，IPC提高40%。"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29417201",
+          "author": null,
+          "description": "Vivaldi浏览器5.0",
+          "link": "https://hn.buzzing.cc/hn/29417201",
+          "publishedOn": "2021-12-03T00:38:24.000Z",
+          "wordCount": 24,
+          "title": "Vivaldi浏览器5.0"
+        },
         {
           "id": "https://hn.buzzing.cc/hn/29420667",
           "author": null,
@@ -17409,6 +17959,150 @@
       "feedUrl": "https://youtube.buzzing.cc/rss.xml",
       "siteUrl": "https://youtube.buzzing.cc",
       "articles": [
+        {
+          "id": "https://youtube.buzzing.cc/youtube/L-SSO52vJXE",
+          "author": null,
+          "description": "When Pokémon Brilliant Diamond and Shining Pearl were announced... I knew what I had to do.\n[SPONSORED] Go to http://www.casetify.com/alpharad today to get 15% off on your new favorite phone case!\n\n➤ SUBSCRIBE FOR MORE: http://bit.ly/Sub2Alpharad\r\n➤ ALPHARAD MERCH: http://pleasebuymymerch.com\n\nThank to my good friend, @Jaiden Animations, who watched this penguin suffer\n\n➤ TWITTER: https://twitter.com/alpharad\r\n➤ INSTAGRAM: https://www.instagram.com/alpharad\r\n➤ BECOME A MEMBER (and see early videos): https://www.youtube.com/channel/UCBODyKF0JMbUd6D9Bklyzbw/join\n\nTHUMBNAIL:\n➤ Nova (2D Art): http://twitter.com/nova1duke\n➤ Aster (Editing): https://twitter.com/Asteryia\r\n\r\n#Pokemon #BrilliantDiamond #ShiningPearl #Piplup #Alpharad #DiamondPearl #PokemonDiamond #PokemonPearl #PokemonPlatinum",
+          "link": "https://youtube.buzzing.cc/youtube/L-SSO52vJXE",
+          "publishedOn": "2021-12-03T16:13:57.000Z",
+          "wordCount": 21,
+          "title": "你能只用Piplup就能打败Pokémon Brilliant Diamond吗？"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/jmTbW3lIZVM",
+          "author": null,
+          "description": "Para más contenido de la NFL en Español, suscríbete a https://www.youtube.com/mundonfl\n\nCheck out our other channels:\nNFL Fantasy Football https://www.youtube.com/nflfantasyfootball\nNFL Throwback http://www.youtube.com/nflvault\nNFL Network http://www.youtube.com/nflnetwork\nNFL Films http://www.youtube.com/nflfilms\nNFL Rush http://www.youtube.com/nflrush\nNFL Play Football https://www.youtube.com/playfootball\n\n\n#NFL #Football #AmericanFootball",
+          "link": "https://youtube.buzzing.cc/youtube/jmTbW3lIZVM",
+          "publishedOn": "2021-12-03T16:13:57.000Z",
+          "wordCount": 31,
+          "title": "牛仔队对圣徒队 第13周比赛花絮 | NFL 2021年比赛花絮"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/Zg544bFIaew",
+          "author": null,
+          "description": "Manchester United emerged with three points in a five-goal thriller against Arsenal, as Cristiano Ronaldo's brace inspired the Red Devils to a comeback win. #NBCSports #PremierLeague #ManchesterUnited #Arsenal\n» Subscribe to NBC Sports: https://www.youtube.com/nbcsports?sub_confirmation=1\n» Watch Live Sports on NBCSports.com: http://www.nbcsports.com/live\n» Get more Premier League news on NBC Sports: https://nbcsports.com/soccer/premier-league\n\nWant more Premier League? Check out Peacock Premium: https://peacocktv.com/premierleague\n\nNBC Sports Group serves sports fans 24/7 with premier live events, insightful studio shows, and compelling original programming. NBC Sports is an established leader in the sports media landscape with an unparalleled collection of sports properties that include …",
+          "link": "https://youtube.buzzing.cc/youtube/Zg544bFIaew",
+          "publishedOn": "2021-12-03T16:13:57.000Z",
+          "wordCount": 32,
+          "title": "曼联对阵阿森纳 | 超级联赛精彩片段 | 12/2/2021 | NBC Sports"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/EtP7FuAmBQw",
+          "author": null,
+          "description": "洽谈典当行",
+          "link": "https://youtube.buzzing.cc/youtube/EtP7FuAmBQw",
+          "publishedOn": "2021-12-03T16:13:57.000Z",
+          "wordCount": 30,
+          "title": "洽谈典当行"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/UJR5AR7hIJU",
+          "author": null,
+          "description": "Official audio for “Don’t Play” by Polo G feat. Lil Baby\n \nListen & Download ‘Hall Of Fame 2.0’ out now: https://polog.lnk.to/HOFDeluxe\n \nAmazon Music - https://polog.lnk.to/HOFDeluxe/amazonmusic\nApple Music - https://polog.lnk.to/HOFDeluxe/applemusic\nAudiomack - https://polog.lnk.to/HOFDeluxe/audiomack\nDeezer - https://polog.lnk.to/HOFDeluxe/deezer\niTunes - https://polog.lnk.to/HOFDeluxe/itunes\nSoundCloud - https://polog.lnk.to/HOFDeluxe/soundcloud\nSpotify - https://polog.lnk.to/HOFDeluxe/spotify\nYouTube Music - https://polog.lnk.to/HOFDeluxe/youtubemusic\n \nFollow Polo G\nFacebook - https://www.facebook.com/pologofficial\nInstagram - https://www.instagram.com/polo.capalot\nTwitter - https://twitter.com/Polo_Capalot\nTikTok - https://www.tiktok.com/@pologofficial\n \nFollow Lil Baby\nFacebook - https://www.facebook.com/4pflilbaby\nInstagram - https://www.instagram.com/lilbaby\nTwitter - https://twitter.com/lilbaby4PF\nTikTok - https://www.tiktok.com/@lilbaby\n \nhttps://www.polocapalot.com/\n \n#PoloG #LilBaby #HallOfFame\n\nhttp://vevo.ly/LESIPA",
+          "link": "https://youtube.buzzing.cc/youtube/UJR5AR7hIJU",
+          "publishedOn": "2021-12-03T16:13:57.000Z",
+          "wordCount": 32,
+          "title": "Polo G - Don't Play (Official Audio) ft. Lil Baby"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/djUTP-L6A58",
+          "author": null,
+          "description": "如果客户不付款，该怎么办？",
+          "link": "https://youtube.buzzing.cc/youtube/djUTP-L6A58",
+          "publishedOn": "2021-12-03T16:13:57.000Z",
+          "wordCount": 25,
+          "title": "如果客户不付款，该怎么办？"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/NvKjO-8DusE",
+          "author": null,
+          "description": "YoungBoy Never Broke Again –  \n‘Sincerely, Kentrell’ OUT NOW: https://youngboy.lnk.to/SincerelyKentrellID\n \nSubscribe for more official content from YoungBoy NBA: \nhttps://youngboy.lnk.to/Subscribe\n \nConnect with YoungBoy Never Broke Again: \nhttp://www.youngboynba.com\nhttps://www.facebook.com/nbayoungboy\nhttps://www.twitter.com/GGYOUNGBOY\nhttps://www.instagram.com/nba_youngboy\nhttps://www.soundcloud.com/nba-youngboy\n \nThe official YouTube channel of Atlantic Records artist YoungBoy Never Broke Again. Subscribe for the latest music videos, performances, and more. \n\n#YoungBoyNeverBrokeAgain #SincerelyKentrell #",
+          "link": "https://youtube.buzzing.cc/youtube/NvKjO-8DusE",
+          "publishedOn": "2021-12-03T16:13:57.000Z",
+          "wordCount": 20,
+          "title": "NBA小男孩 - 心灵与灵魂/鳄鱼漫步"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/SmOrhq_m0ZI",
+          "author": null,
+          "description": "Olivia Rodrigo performs “traitor” Live at Austin City Limits\n\nOlivia Rodrigo’s Austin City Limits performance premieres December 4 on PBS. Watch live or stream the episode at https://pbs.org/austincitylimits\n \nListen to “traitor” on SOUR, out now:\nhttp://oliviarodrigo.lnk.to/SOUR     \n \nFollow Olivia Rodrigo:\nInstagram: https://instagram.com/oliviarodrigo      \nTwitter: https://twitter.com/OliviaRodrigo     \nFacebook: https://www.facebook.com/OliviaRodrigoOfficial\nYouTube: https://youtube.com/oliviarodrigomusic      \nTikTok: https://tiktok.com/@livbedumb       \nStore: https://smarturl.it/oliviarodrigoshop    \n \nLyrics:\nBrown guilty eyes and\nLittle white lies yeah\nI played dumb but I always knew\nThat you talked to her maybe\nDid even worse\nI kept quiet so I could keep you\nAnd ain’t it funny\n…",
+          "link": "https://youtube.buzzing.cc/youtube/SmOrhq_m0ZI",
+          "publishedOn": "2021-12-03T10:35:48.000Z",
+          "wordCount": 21,
+          "title": "奥利维亚-罗德里戈 - 叛徒（来自奥斯汀城市界限的现场）。"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/KEjC5BsCQ_E",
+          "author": null,
+          "description": "21 YouTubers play Squid Game in real life with never before seen challenges to win $1000 for a subscriber. Watch until the end - it might be you! SUBSCRIBE & turn on POST NOTIFICATIONS for insane giveaways every week! 100K likes for a rematch!!\n\n3 DAYS LEFT TO SIGN UP FOR MY NEW PHOTOGRAPHY COURSE AND 1 PERSON WILL WIN A $1000 CAMERA (use code JORDAN99 for $50 off) : https://nasacademy.com/jordanmatter\n\nBuy Lizzie's new Team RAR merch: https://www.teamrar.com/\n\nTHANKS FOR LETTING US USE YOUR MANSION, TEAM RAR!! \n\nBuy Salish's OMGZ merch and she'll use the $ for Christmas gifts for underprivileged kids (really) https://shopjordanmatter.com/\n\nSubscribe to my son Hudson Matter: https://www.youtube.com/c/HudsonMatter?sub_confirmation=1\n\nSee last week's video: The Truth About Their Relationship…",
+          "link": "https://youtube.buzzing.cc/youtube/KEjC5BsCQ_E",
+          "publishedOn": "2021-12-03T01:44:08.000Z",
+          "wordCount": 18,
+          "title": "淘宝网上的网友在现实生活中玩水母游戏! *新的挑战*。"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/A_GUBourLrc",
+          "author": null,
+          "description": "It’s a pirate’s life for our Legends in the Raiders Collection Event! \n\nhttp://x.ea.com/71586\n\nWinter Express returns to Apex Legends: three squads board the World’s Edge train, but only one will conquer it!  Collect 24 event-limited cosmetics and turn your squad into a pirate crew. Get all 24, and you’ll unlock something shocking: Wattson’s Heirloom, the “Energy Reader”!\n\nApex Legends™ is a free-to-play hero shooter  game where legendary characters battle for glory, fame, and fortune on the fringes of the Frontier. Play for free now on PlayStation® 4, PlayStation 5, Xbox One, Xbox Series X|S, Nintendo Switch, and PC via Origin and Steam.\n\nLearn more about Apex Legends: Escape: http://x.ea.com/70896\n \nCheck out our YouTube channel: http://x.ea.com/56710.\nFollow us on Twitter: https://twitter.com/playapex.\nFollow us on Instagram: https://www.instagram.com/playapex/.\n\n#ApexLegendsRaiders #RaidersEvent  #ApexEscape #ApexLegends",
+          "link": "https://youtube.buzzing.cc/youtube/A_GUBourLrc",
+          "publishedOn": "2021-12-03T00:39:01.000Z",
+          "wordCount": 23,
+          "title": "Apex传奇。攻略集》活动预告片"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/59bdqLHHqLo",
+          "author": null,
+          "description": "Pre-Save \"Wandered To LA\": https://JuiceWrld.lnk.to/WanderedToLAPreSave\n\nGet your tickets to juice wrld day at Juicewrldday.com\nCheck out more Juice WRLD here:\nMerch- 999club.com\nSoundcloud - https://soundcloud.com/uiceheidd\nTwitter - https://twitter.com/JuiceWorlddd\nInsta - https://www.instagram.com/juicewrld999/\n\nFollow Justin: \nhttps://www.justinbiebermusic.com   \nhttps://facebook.com/JustinBieber \nhttps://twitter.com/justinbieber \nhttps://instagram.com/justinbieber \nhttps://www.tiktok.com/@justinbieber \n\n#JuiceWRLD #JustinBieber #WanderedToLA #999",
+          "link": "https://youtube.buzzing.cc/youtube/59bdqLHHqLo",
+          "publishedOn": "2021-12-03T00:39:01.000Z",
+          "wordCount": 32,
+          "title": "Juice WRLD & Justin Bieber - Wandered To LA（官方预告片）"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/qY3L1bPNBAw",
+          "author": null,
+          "description": "Please welcome to my channel: ADELE!!! - CAN SOMEONE PINCH ME?? I’ve been dreaming of working with Adele for YEARS now, so when she asked me to do her makeup to celebrate the launch of her new album “30”, I knew I had to come up with something special. I show the Power of Makeup on this icon, and she even tries my own brand Nimya(!!)… enjoy, and don’t forget to thumbs up and subscribe!\n\n🧡 YOU CAN ORDER NIMYA PRODUCTS HERE: https://www.nimya.com/ 💙\n\n🔥 PREVIOUS VIDEO • Ariana Grande, don’t hate me... R.E.M Beauty Review! → https://youtu.be/-qn_cTHvfOY 🔥\n\nMake sure you subscribe to my channel and hit the notification bell, so you don’t miss any of my new videos → http://bit.ly/SubscribeNikkieTutorials\n\n••••••••••••••••••••••••••••••••••••••••­­­•••••••••••\n\n▷ LET’S BECOME FRIENDS!!\nTWITTER ‣ http://www.twitter.com/Nikkietutorials\nINSTAGRAM ‣ https://instagram.com/nikkietutorials/\nTIKTOK ‣ https://www.tiktok.com/@nikkietutorials\nSNAPCHAT ‣ https://www.snapchat.com/add/nikkietutorials\n\n▷ OTHER VIDEOS YOU CAN CHECK OUT…….\n\n👑 THE POWER OF MAKEUP ► http://bit.ly/2scYIrE\n\n💻 Doing LADY GAGA’S Makeup! ► http://bit.ly/2M0moIy\n\n🎀 Doing My FIANCE’S Makeup! ► https://bit.ly/3bsgHxu\n\n🍑 POWER OF MAKEUP: KIM KARDASHIAN WEST ► http://bit.ly/2iz1RhT\n\n••••••••••••••••••••••••••••••••••••••••­­­•••••••••••\n\nDisclaimer ‣ This video is NOT sponsored. All thoughts mentioned are my own. No affiliate links are used. Honesty is key on my channel. Thank you for always supporting me!\n\nVisuals & sound by Studio Beng Beng: https://www.instagram.com/studiobengbeng/\nEditing by Roy Etman: https://bit.ly/3HvqRhw\n\nʕ•ᴥ•ʔ, I love you.",
+          "link": "https://youtube.buzzing.cc/youtube/qY3L1bPNBAw",
+          "publishedOn": "2021-12-03T00:39:01.000Z",
+          "wordCount": 27,
+          "title": "化妆品的力量：阿黛尔! | 妆容的力量：阿黛尔！｜NikkieTutorials"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/iAmiUfnU9OU",
+          "author": null,
+          "description": "its that time of the yearrrr vlogmas 2021 is here. today ash and i are decorating the house for christmas! who's excited for vlogmas?! xo -alisha marie\nParallel Apparel: https://www.parallelapparel.com\nBUY MY MERCH:: https://shopalishamarie.com/\nTwitter: @AlishaMarie + Instagram: @Alisha\nTikTok: @alishamarie \nSnapchat: LidaLu11\nChloe's Instagram: @itsmechloemae\n\nSubscribe to my Main Channel:::\nhttp://www.youtube.com/user/macbby11\n\nalishamarie@mattermediagroup.com",
+          "link": "https://youtube.buzzing.cc/youtube/iAmiUfnU9OU",
+          "publishedOn": "2021-12-03T00:39:01.000Z",
+          "wordCount": 18,
+          "title": "为圣诞节做装饰 2021！Vlogmas第一天"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/K1sPSpcpsVc",
+          "author": null,
+          "description": "Simu Liu is an actor who stars in 2021's highest-grossing box office film, Shang-Chi and the Legend of the Ten Rings, which you can currently find streaming on Disney+ and in stores on Blu-ray/DVD. You can also catch him on Kim’s Convenience on Netflix. But how is he with spicy food? Find out as the Marvel hero takes on the wings of death and discusses board games, Asian snacks, and the pros and cons of playing Spiderman at birthday parties.\n\nBUY HOT ONES TRUTH OR DAB THE GAME NOW: http://truthordabgame.com\n\nBUY HOT ONES HOT SAUCE NOW: http://bit.ly/HotOnesSaucesNEW\n\nHOT ONES MERCH AVAILABLE NOW: https://bit.ly/2AIS271\n\nSIGN UP FOR THE HOT ONES MONTHLY HOT SAUCE SUB BOX: https://bit.ly/2veY50P\n\nSIGN UP FOR THE FIRST WE FEAST NEWSLETTER: http://firstwefeast.com/signup\n\nSubscribe to First We Feast on YouTube: http://goo.gl/UxFzhK\n\nCheck out more of First We Feast here:\n\nhttp://firstwefeast.com/\n\nhttps://twitter.com/firstwefeast\n\nhttps://www.facebook.com/FirstWeFeast\n\nhttp://instagram.com/firstwefeast\n\nFirst We Feast videos offer an iconoclastic view into the culinary world, taking you behind-the-scenes with some of the country’s best chefs and finding the unexpected places where food and pop culture intersect. #HotOnes #SimuLiu",
+          "link": "https://youtube.buzzing.cc/youtube/K1sPSpcpsVc",
+          "publishedOn": "2021-12-02T23:32:46.000Z",
+          "wordCount": 15,
+          "title": "刘思敏边吃辣妹子边吃波霸|辣妹子"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/UxBc-dEAsbs",
+          "author": null,
+          "description": "One Last Chance\n\nJoin the TANK GANG ►http://bit.ly/1h6i9oR\nInstagram ► http://instagram.com/comedygamer\nTwitter ► https://twitter.com/Deji\nFacebook ► https://www.facebook.com/ComedyShortsGamerPage\n\nShout out to: https://www.instagram.com/bloodbrothermedia/",
+          "link": "https://youtube.buzzing.cc/youtube/UxBc-dEAsbs",
+          "publishedOn": "2021-12-02T21:38:14.000Z",
+          "wordCount": 14,
+          "title": "救赎"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/qgY9RYTO7Nw",
+          "author": null,
+          "description": "No matter how fast you run, your rivals are always one step ahead, pushing you to better your skills. Eventually, you’ll have to face your rival in your travels… for Barry, that time has come. \n\nVisit the Sinnoh region in Pokémon Evolutions Episode 5 and discover how Barry’s rivalry unfolds! \n\nOfficial site: https://www.pokemon.com\nShop: http://www.pokemoncenter.com\nFacebook: http://www.facebook.com/Pokemon\nTwitter: http://www.twitter.com/Pokemon\nInstagram: http://www.instagram.com/pokemon",
+          "link": "https://youtube.buzzing.cc/youtube/qgY9RYTO7Nw",
+          "publishedOn": "2021-12-02T21:38:14.000Z",
+          "wordCount": 14,
+          "title": "口袋妖怪进化论。第5集"
+        },
         {
           "id": "https://youtube.buzzing.cc/youtube/BUdG068uGl0",
           "author": null,
