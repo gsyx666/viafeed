@@ -793,33 +793,6 @@
           "publishedOn": "2021-11-12T17:47:24.000Z",
           "wordCount": 635,
           "title": "Why Does my WiFi Keep Disconnecting? [Solved on Windows 10 PC]"
-        },
-        {
-          "id": "618b035411d3cb08287a3f7d",
-          "author": null,
-          "description": "Hey, how are you doing? In this article, I'm going to show you how you can install Laravel 8 on your phone.  To get the most out of this guide, you should have some knowledge of PHP and you should know what Laravel is. But if you don't, don't worry",
-          "link": "https://www.freecodecamp.org/news/how-to-setup-laravel-8-on-android-phone/",
-          "publishedOn": "2021-11-11T16:34:04.000Z",
-          "wordCount": 946,
-          "title": "How to Set Up Laravel 8 on Your Android Phone"
-        },
-        {
-          "id": "618ca60511d3cb08287a474b",
-          "author": null,
-          "description": "In JavaScript, hoisting allows you to use functions and variables before they're declared. In this post, we'll learn what hoisting is and how it works. What is hoisting?Take a look at the code below and guess what happens when it runs: console.log(foo); var foo = 'foo'; It might",
-          "link": "https://www.freecodecamp.org/news/what-is-hoisting-in-javascript/",
-          "publishedOn": "2021-11-11T16:12:59.000Z",
-          "wordCount": 1533,
-          "title": "What is Hoisting in JavaScript?"
-        },
-        {
-          "id": "618a1b968bcfae07ca4e3a16",
-          "author": null,
-          "description": "These days, developers need to develop, ship, and run applications quicker than ever. And fortunately, there's a tool that helps you do that – Docker. With Docker, you can now easily ship, test, and deploy your code quickly while maintaining full control over your infrastructure. It significantly reduces how long it",
-          "link": "https://www.freecodecamp.org/news/how-to-dockerize-a-flask-app/",
-          "publishedOn": "2021-11-11T16:04:40.000Z",
-          "wordCount": 1490,
-          "title": "How to Dockerize a Flask Application"
         }
       ]
     },
@@ -828,6 +801,114 @@
       "feedUrl": "https://dev.to/feed",
       "siteUrl": "https://dev.to",
       "articles": [
+        {
+          "id": "https://dev.to/harshhhdev/custom-cursors-in-react-2c8",
+          "author": "Harsh Singh",
+          "description": "One thing I've seen across many designer/design studio websites are a cool custom cursor in place of your default computer one. Recently, I added one to my website aswell.\nI had to write one from scratch (using some internet resources of course!), since all the NPM libraries I found were either outdated, or didn't support SSR.\nAfter adding the cursor to my own website, I had an idea to create an NPM package for it for a while. This weekend, I had some freetime from school & got to work!\nThis library supports TypeScript, along with server-side rendering (Next.js & Remix)\nWant a demo? I setup a quick demo website to help you tweak & experiment around with values!\nTo download the library, head over to your terminal:\nyarn add custom-pointer-react\n\nNext, import the cursor component into your file & customise it! Don't forget to wrap your app in the context afterwards.\nimport { Cursor } from 'custom-pointer-react'\n...\nconst Cursor = () => {\n  return (\n    ...\n    <Cursor {...passParametersToCustomise} />\n    ...\n  )\n}\n...\nexport default App\n\nAll parameters are optional, & here's a list of the different parameters which you can customise: \n\n\n\nParameter\nDescription\nDefault\n\n\n\n\ncolor\nThe background colour of the cursor\n#000000\n\n\nshowRing\nControls whether to show the ring around the cursor\ntrue\n\n\nringSize\nControls the size of the ring around the cursor\n50px\n\n\ncursorSize\nControls the size of the cursor\n10px\n\n\nringBorder\nControls the width of the ring's border\n2px\n\n\n\nNeed help finding the right parameters? Check out the demo website!\nNow, go into your app & import the MouseContext provider.\nimport { MouseContextProvider } from 'custom-pointer-react'\n...\nReactDOM.render(\n  <MouseContextProvider>\n    <App />\n  </MouseContextProvider>,\n  document.getElementById('root')\n)\n...\n\nYour custom cursor should be good to go!",
+          "link": "https://dev.to/harshhhdev/custom-cursors-in-react-2c8",
+          "publishedOn": "2021-12-11T23:37:15.000Z",
+          "wordCount": 680,
+          "title": "Custom Cursors in React"
+        },
+        {
+          "id": "https://dev.to/faluzes/getting-canva-pro-free-for-lifetime-no-credit-card-5902",
+          "author": "Anouar Aissaoui",
+          "description": "Today I will show you how to get Canva Pro Free For Lifetime ! All you need to do is… Link Canva Pro\nCanva is a user-friendly graphic design tool that has simplified the process of designing and publishing graphics in a digital world.\nCanva has been used in advertising, marketing, and in other areas such as social media management. The company offers a free version and a paid version called Canva Premium.\nCANVA is one of the best free graphic design tools for startups and marketers. Plus, it has a lot of amazing features that will make your work easier.\nCanva Pro Free For Lifetime",
+          "link": "https://dev.to/faluzes/getting-canva-pro-free-for-lifetime-no-credit-card-5902",
+          "publishedOn": "2021-12-11T23:02:37.000Z",
+          "wordCount": 494,
+          "title": "Getting Canva Pro Free For Lifetime (No Credit Card)"
+        },
+        {
+          "id": "https://dev.to/canonic/how-to-build-a-twitter-youtube-analytics-dashboard-with-react-2p2d",
+          "author": "Kartik Grewal",
+          "description": "Integrations play a huge role in communicating across different services. In this guide, we'll build a marketing analytical dashboard with Twitter and Youtube integrations. This dashboard can be used to track stats across both platforms in a single view. \nWe're looking to build something like this 👇\n\nWe'll be using:\nReact for building the frontend.\nBlueprint as our UI Library\nBackend template from Canonic\nGraphQL for fetching the data.\nReact-chartjs-2 for building charts.\nStep 1: Getting started with the project\nTo create the project, we'll use create-react-app. Execute the command below in a terminal to create the basic boilerplate setup. We'll name our project marketing-dashboard.\nnpx create-react-app marketing-dashboard\n\nStep 2: Add the dependencies\nLet's add all the dependencies liste…",
+          "link": "https://dev.to/canonic/how-to-build-a-twitter-youtube-analytics-dashboard-with-react-2p2d",
+          "publishedOn": "2021-12-11T22:36:59.000Z",
+          "wordCount": 2374,
+          "title": "How to build a marketing dashboard (twitter & youtube) with React"
+        },
+        {
+          "id": "https://dev.to/rohitcodes/what-is-amazing-about-css-you-think-comment-down-please-3dal",
+          "author": "Rohit",
+          "description": "Hello world\nproject ideas💡. Which I can complete as a challenge until the end of this month and year also whoever will see this post let me know what can you suggest me. Comment down in comment section below 👇.\nResons why I'm posting this question on blog:\nDon't have audience on Twitter.\nTwitter\n\n\nNot either on instagram\nInstagram\n\n\nPart of amezing community😎.\n\n\n\nPlease let me know your idea in comment I'll share daily my experience on that projects with you.\nWith that said let's grow as community.\n_Nothing to prove, Everything to improve.\nThanks for reading peace out✌️.\nexit()",
+          "link": "https://dev.to/rohitcodes/what-is-amazing-about-css-you-think-comment-down-please-3dal",
+          "publishedOn": "2021-12-11T22:14:01.000Z",
+          "wordCount": 616,
+          "title": "Suggest me some web dev project Ideas💡in comments 👇"
+        },
+        {
+          "id": "https://dev.to/baenencalin/parsejs-update-tokens-are-now-sorted-by-length-and-dictionary-order-4e5b",
+          "author": "Calin Baenen",
+          "description": "A new commit was made to the ParseJS repository, it contains an update that will prevent smaller tokens from potentially wrongfully being placed.\nThis is the bug in question:\nparse_string(\"Hello, world!\", [\"Hell\", \"Hello\"]);\n// Produces: [Symbol(Hell), 'o', ',', ' ', 'w', ...]\n\n// But, this--\nparse_string(\"Hello, world!\", [\"Hello\", \"Hell\"]);\n// -- produces: [Symbol(Hello), ',', ' ', 'w', 'o', 'r', ...]\n\nNow, in this update, the order won't matter, the longer token is always chosen if it can be.",
+          "link": "https://dev.to/baenencalin/parsejs-update-tokens-are-now-sorted-by-length-and-dictionary-order-4e5b",
+          "publishedOn": "2021-12-11T21:58:07.000Z",
+          "wordCount": 465,
+          "title": "ParseJS update: Tokens are now sorted by length and dictionary order."
+        },
+        {
+          "id": "https://dev.to/tuanthanh2067/spo600-project-stage-2-4fl5",
+          "author": "Tuan Thanh Tan",
+          "description": "Introduction\n\n\nHello everyone, my name is Dustin. Today I'd like to talk about my process of working with project stage 2 in SPO600 course, and how I got it done, and the result.\nTODO\nTODO",
+          "link": "https://dev.to/tuanthanh2067/spo600-project-stage-2-4fl5",
+          "publishedOn": "2021-12-11T21:00:35.000Z",
+          "wordCount": 385,
+          "title": "SPO600 - Project Stage 2"
+        },
+        {
+          "id": "https://dev.to/antoniopk/clean-way-to-listen-to-events-from-children-components-in-angular-1cp9",
+          "author": "Antonio Pekeljevic",
+          "description": "I don't write much about Angular but as I am working on a project that uses Angular at the moment I thought why not share a thing or two that I found interesting.\nAs someone who is definitely not an Angular expert I was looking for a clean solution on how to listen for element events that are part of a child component's template.\nThis is of course quite a trivial thing but it might be of value to people who are starting with Angular and are facing the same problem.\nLet's start.\nSituation:\nWe want to listen to child component input element's events inside of the parent component. (do something with it in the parent)\nParent template code: (parent.component.html)\n<div>\n  <h1>Parent component</h1>\n  <angular-child></angular-child>\n</div>\n\nChild template code: (child.component.html)\n<div>\n  Chi…",
+          "link": "https://dev.to/antoniopk/clean-way-to-listen-to-events-from-children-components-in-angular-1cp9",
+          "publishedOn": "2021-12-11T19:28:37.000Z",
+          "wordCount": 866,
+          "title": "🧽 Clean Way to Listen to Events from Children Components in Angular"
+        },
+        {
+          "id": "https://dev.to/nicksaraev/1secondpainting-generate-realistic-art-in-one-click-3di5",
+          "author": "Nick Saraev",
+          "description": "Hi Devs,\nThis is sort of new for me. I've never really been a business guy - more the kind of dude that just codes away behind the scenes - but I've been working on a really cool project and thought it fit to show the community. We also hit #1 on Hacker News, so I figured there was a fair bit of crossover :-)\nShort description\n1SecondPainting is an artificial intelligence art generator that lets people create their own, stunning quality paintings in seconds.  You can then purchase canvas prints, framed posters, or digital downloads (for NFTs). Every painting sold is 100% unique - you're in full control of your art.\nI combined some pretty cutting edge ML with a proprietary post-processing pipeline to deliver probably the highest quality art of this kind (in my opinion, though of course I'm biased).\nA lot of people have called it unsettling & kind of scary, which I agree with! If you're interested, you can try it for yourself here. Let me know what you think :)\nThanks,\nNick",
+          "link": "https://dev.to/nicksaraev/1secondpainting-generate-realistic-art-in-one-click-3di5",
+          "publishedOn": "2021-12-11T19:13:45.000Z",
+          "wordCount": 932,
+          "title": "1SecondPainting: Generate realistic art in one click."
+        },
+        {
+          "id": "https://dev.to/asanchez/download-a-copy-of-an-entire-website-487m",
+          "author": "Antonio Sánchez",
+          "description": "I have created a simple yet powerful command-line application to easily download an entire copy of any online website. \nIt is coded with Go and it is available on my GitHub: https://github.com/antsanchez/go-download-web \nI normally use it to: \nBack up any website (at least the rendered part of the website)\nCreate copies of websites for accessing them offline\nIt also allows you to change the URL of the downloaded website, which can be very helpful when moving an existing static website from a domain to another. \nPull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.\nIf you need any help or have any questions, do not hesitate to contact me.",
+          "link": "https://dev.to/asanchez/download-a-copy-of-an-entire-website-487m",
+          "publishedOn": "2021-12-11T19:08:36.000Z",
+          "wordCount": 484,
+          "title": "Download a copy of an entire website"
+        },
+        {
+          "id": "https://dev.to/sciabarracom/you-can-run-kubectl-from-a-docker-container-with-docker-desktop-5728",
+          "author": "Michele Sciabarra",
+          "description": "In the process of setting up the development environment for Nuvolaris, I decided to switch from virtual machines to containers, leveraging the devcontainer feature of VSCode. Then I built a Docker image that is a perfect fit for our needs: there everything is in it to build our project.\nBut, I almost went on panic when I realized that, since a key component is an operator, and a cli that interacts with Kubernetes, we need to be able to access a Kubernetes cluster for development FROM a container.\nIn my initial plans, I would have setup a cluster Kubernetes in the virtual machine itself. But now, that everything is in a container? I actually felt initially very smart having the idea of setting up a Kubernetes cluster using kind. It is a tool that can build a Kubernetes cluster just using d…",
+          "link": "https://dev.to/sciabarracom/you-can-run-kubectl-from-a-docker-container-with-docker-desktop-5728",
+          "publishedOn": "2021-12-11T18:38:38.000Z",
+          "wordCount": 766,
+          "title": "You can run kubectl from a docker container with Docker Desktop"
+        },
+        {
+          "id": "https://dev.to/leon0824/pydantic-xiao-bi-ji-5be1",
+          "author": "Leon",
+          "description": "故事要從 Python 的語言特性說起，因為 Python 是動態型別的，所以一個在同一個區塊（命名空間）內的變數 x，可以一下是字串，一下是整數：\nx = 4\nprint(type(4)) # at this moment, x points to an integer\n\nx = \"Hello, world\"\nprint(type(x)) # and at this moment, x points to a string\n\n這樣的特性降低了 Python 的學習曲線，但在程式專案變複雜後，對於「值」與「型態」的掌握會越來越難以駕馭。\n大約在 Python 3.5 起引入了 type hints，華文叫類型提示或型態提示，它讓我們得以聲明變數的型態，也可以聲明函式回傳值的型態。\n有了 type hints，IDE 或是靜態分析工具就可以幫助我們偵測型態上的錯誤，也因為它只是 hints，所以它終究無法讓 Python 變成靜態型別語言，只是一種輔助而已。\n下面是最基本的 type hints 範例：\nname: str = \"world\"\n\ndef greeting(name: str) -> str:\n    return \"Hello \" + name\n\ngreeting(name)\n\n上面我們用 : str 聲明 name 為字串，以及在函式我們用 -> str 聲明 greeting() 回傳的也是字串，當然還有更複雜的用法，可以參見〈Python Type Hints 從入門到實踐〉。\n以上為前情提要，下面開始談本文的主角 Pydantic 。\nPydantic 是以 type hints 為基礎，幫我們做資料型態驗證的套件，我們可以用它定義「Model」：\nfrom pydantic import BaseModel\n\nclass EmployeeModel(…",
+          "link": "https://dev.to/leon0824/pydantic-xiao-bi-ji-5be1",
+          "publishedOn": "2021-12-11T18:23:38.000Z",
+          "wordCount": 707,
+          "title": "Pydantic 小筆記"
+        },
+        {
+          "id": "https://dev.to/aviyel/best-open-source-alternatives-for-paid-applications-2mfl",
+          "author": "Sankalp Swami",
+          "description": "We have complete freedom while using open-source applications, no terms no conditions, and if you are concerned about security, unarguably they are more secured than paid applications as their source code is open. Our data is safe with Open-Source applications and is not exploited like some of the paid applications. If you want to know more reasons, then this session is for you!\nRishav Raj is coming live on Aviyel where he will take you through the list of open-source alternatives for paid applications and why he prefers those over the others. Rishav is an inspiring developer, passionate about the open-source community, and always ready to ignite his knowledge in various techniques. Rishav currently works as a Junior Developer Intern at BotX Automations and is also a Technical Content Creator and a freelancer.\nJoin us to get hands-on experience on open-source!\nDate: December 22nd, 2021\n https://bit.ly/3DAzJit\nImpressed? Check out the rest of our events!\nRishav Raj’s Socials!\nTwitter: Rishav Raj\nRishav Raj\nRishav Raj\nRishav Raj\nRishav Raj",
+          "link": "https://dev.to/aviyel/best-open-source-alternatives-for-paid-applications-2mfl",
+          "publishedOn": "2021-12-11T18:19:34.000Z",
+          "wordCount": 649,
+          "title": "Best Open Source alternatives for paid applications."
+        },
         {
           "id": "https://dev.to/kch3coo/create-a-running-ec2-linux-instance-for-free-182c",
           "author": "MingJin Lu",
@@ -3797,6 +3878,33 @@
       "siteUrl": "https://sspai.com",
       "articles": [
         {
+          "id": "https://sspai.com/post/70308",
+          "author": "吃派的水獭",
+          "description": "一转眼就来到了 12 月，双十一仿佛还在昨天，双十二就又来了，而本獭又能找个理由继续促销卖货，实在是让人快乐。\n不过这一个月我们也没有偷懒，继双十一的泡泡骚卡包、Keychron K3 键盘后，我们又为你带来一款全新周边产品：少数派多用途挎包，三色可选，还有首发的优惠价格。\n除此之外，泡泡骚卡包也有小幅度的优惠，Keychron K3 键盘预售还在进行中，提前祝你买得开心 🌝\n活动时间：12.12 00:00 ~ 12.14 23:59\n活动优惠：\n\n淘宝跨店每满￥199 减￥25\n单笔订单实付满￥499 赠 少数派八周年单肩包 1 个\n\n🏬 进店看看 >\n新周边上架限时折扣\n少数派多用途挎包\n￥149 原价￥169（三色可选）\n🛒 点这买 >\n这是一款可以两用的包包，拥有展开 / 折叠两种形态，在展开状态下拥有更长的空间，可以容纳 MacBook Pro 14 寸、iPad Pro 12.9 寸等设备，而如果你日常物品不多，则可以对折变为单肩邮差包，卡扣拥有特殊的「容易扣上但不会轻易拽开」设计，更加安全可靠。拥有纯黑、黑绿、黑红三种颜色，使用低调的 π logo 进行点缀。\n\nKeychron K3 少数派联名机械键盘\n￥418 原价￥448（预售，预计 12 月底发货）\n🛒点这买 >\nKeychron 大家应该都不陌生了，我派也曾经销售过他们的 K2。而此次的联名定制我们选择了 Keychron K3，这是一把 84 键的矮轴机械键盘，采用了佳达隆轴体，青轴、茶轴、红轴可选，蓝牙 5.1 连接最多支持 3 个设备切换，不错的颜值、稳定的连接、Mac / Windows 切换的兼容性……都可能成为你喜爱它的理由。\n相关体验：少数派定制版 Keychron K3 体验：把键盘塞进苹果用户的背包里\n\n泡泡骚少数派定制 MagSafe 卡包\n￥234 原价￥259\n🛒…",
+          "link": "https://sspai.com/post/70308",
+          "publishedOn": "2021-12-11T08:01:17.000Z",
+          "wordCount": 226,
+          "title": "今年最后一次超低价促销，双十二也有新周边上市"
+        },
+        {
+          "id": "https://sspai.com/post/70309",
+          "author": "Kiririn",
+          "description": "Matrix 首页推荐\nMatrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。\n文章代表作者个人观点，少数派仅对标题和排版略作修改。\n\n年末囤货是广大人民群众喜闻乐见的一种娱乐形式，「双十一」的网购热潮还没完全消退，各大电商平台就已经纷纷开始为即将到来的「双十二」开启预热了。谈及两大购物节优惠力度最大的商品品类，笔记本电脑绝对是绕不过的话题。近年来，主流品牌的「静坐战争」、供应链的极尽成熟和 AMD Ryzen 处理器的强势崛起为众多非传统笔电厂商的入局创造了条件，因 COVID-19 新冠疫情防治工作而催生的居家办公和网课教育等专业需求则有力的推动了笔记本电脑的技术进步和市场细分，日薄西山的笔电行业竟在一夜之间「垂死病中惊坐起」，然而「铁马冰河入梦来」的滚滚矿潮很快将显卡乃至固态硬盘等核心硬件的缺货荒蔓延到了笔电市场，在市场价格与用户需求持续走高的大环境下，电商平台的年末大促俨然成了各大厂商的主战场，至于如何在这片战场上长驱直入和全身而退就成了用户需要考虑的问题。\n想要购买到一台让自己心仪的笔记本电脑，在按下「立刻购买」前需要做的准备工作无外乎理清需求、估计预算、比较规格和确认细节，而在实际选购的过程中，以上四点中的前两者为必要条件，后两者则为充分条件。考虑到现在的笔电产品在目标价位和硬件规格上的表现相对直观，所以本文将从容易受到忽视的产品定位和设计细节进行筛选，本着宁缺毋滥的原则，为少数派们推荐一些称心好用的笔电产品。\n本文内容具有时效性，硬件配置参数和测试数据来自互联网，仅供参考。\nQ & A\n今年双十二卡住的时间点比较特殊，一方面，采用全新架构的 12 代酷睿处理器刚刚亮相，其相对前代产品表现出的优秀能耗比令人不禁对 2022 年的笔电产品浮想联翩；另一方…",
+          "link": "https://sspai.com/post/70309",
+          "publishedOn": "2021-12-11T07:07:56.000Z",
+          "wordCount": 851,
+          "title": "乱花渐欲迷人眼？你可能需要这份「双十二笔电优选指南」"
+        },
+        {
+          "id": "https://sspai.com/post/70351",
+          "author": "瞎玩菌",
+          "description": "Matrix 首页推荐\nMatrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。\n文章代表作者个人观点，少数派仅对标题和排版略作修改。\n\n2021.12.10 尽量每周五更新\n《瞎玩菌的游戏周报》是我对游戏领域的观察和点评。具有以下特点：\n\n宁缺毋滥，为读者带来价值\n主观，但基于事实和数据\n有新鲜感，但时效性不强\n享受游戏，但反对沉迷游戏\n提升品位，但反对鄙视链\n\n享乐\n推荐好的游戏音乐，希望更多人因为音乐对游戏产生兴趣（我就是）。\nPlayStation 游戏音乐大奖获奖音乐 - 多位音乐人\n\n本期推荐 PlayStation 游戏音乐大奖 2021 的获奖原声音乐，来自《FF7 重制版》《原神》《怪物猎人 世界》《对马岛之鬼》《死亡搁浅》等多款游戏。评选标准是 Spotify 平台播放次数最多以及 mora 专辑下载数最多的前十位作品，也就是听众们用耳朵投票出来的结果。你可以在 Spotify 收听官方歌单，或者按名称在你喜欢的音乐服务中搜索。为方便在页面内播放，下面是在线播放版本：\n \n要闻\n游戏领域过去一周最重要的话题性事件，以及我的主观看法。\n快卷起来：PlayStation 将推出新订阅服务以对抗 XGP\n图为同名影视剧《Spartacus》（该剧与索尼无关），也许索尼想像斯巴达战士一样杀出一条血路\n彭博社 爆料，PlayStation 将在 2022 年春季推出代号为 Spartacus 的新订阅服务，以对抗风头正劲的 Xbox Game Pass。这项服务将包含现有的 PlayStation Plus 和 PlayStation Now，还有更多内容。预计分为三个级别：\n\nVIP：跟现在的 PlayStation Plus 一致。\nSVIP：包含一些…",
+          "link": "https://sspai.com/post/70351",
+          "publishedOn": "2021-12-11T02:25:31.000Z",
+          "wordCount": 525,
+          "title": "瞎玩菌的游戏周报：PS 新订阅服务对抗 XGP、TGA 2021 完整获奖名单等"
+        },
+        {
           "id": "https://sspai.com/post/70363",
           "author": "少数派编辑部",
           "description": "☕️ TL;DR\n\n近期佳作推荐：[国产剧] 谁是凶手、[电影] 扬名立万、[韩剧] 酒鬼都市女人们、[电影] 希德尼娅的骑士 编织爱的行星、[综艺] 新世界：虚拟货币争霸战、[英剧] 园艺杀手、[电影] 杰伊·比姆、[动画] 少女与战车 最终章 第 3 话、[电影] 小妈妈、[电影] 神之山岭\n几则精彩预告：《黑客帝国：矩阵重启》定档 2022 年 1 月 14 日、周冬雨、刘昊然主演电影《平原上的火焰》12 月 24 日上映、动画电影《泡泡》公布预告，2022 年 4 月上线 Netflix、《异星灾变》第二季 2022 年 2 月 3 日登陆 HBO Max、动画电影《我们的冬奥》发布定档预告，将于 1 月 15 日上映\n几则影视资讯：电影《误杀 2》12 月 17 日全国公映、漫威《暗夜博士：莫比亚斯》发布首张正式海报，明年 1 月 28 日北美上映、《侏罗纪世界 3：统治》发布新剧照，将于明年 6 月 10 日北美上映、印度电影《最初的梦想》发布定档海报，2022 年 1 月 7 日全国上映\n\n👀 N 部作品推荐\n根据读者反馈，如果推荐语涉及剧透（对故事核心、暗线、伏笔、结局等关键要素的透露），我们会在对应作品的标题前增加 🔦 的 Emoji。\n如有其他建议也欢迎在评论区提出，感谢大家对「看什么」栏目的喜爱和支持。\n[国产剧] 谁是凶手\n\n关键词：悬疑 / 犯罪\n片长：38 分钟（单集）× 16 集\n观看渠道：爱奇艺；豆瓣链接\n\n三人三色，好像每个人都有秘密。\n\n@潘誉晗：今年爱奇艺「迷雾剧场」的几部剧集口碑都很低迷，《谁是凶手》虽然没有像《隐秘的角落》和《沉默的真相》引起现象级的关注与讨论，但也算是给今年的「迷雾剧场」做了一个不错的收尾。\n故事讲述夏木从小被寄养在老师家中，十七年前老师惨遭杀害，给夏木留下了不小的阴影。当时接到神秘报警电话的冷小兵，是第一次到…",
@@ -4785,51 +4893,6 @@
           "publishedOn": "2021-11-13T03:50:38.000Z",
           "wordCount": 145,
           "title": "HapiGo 2.0：对中文搜索更友好的高颜值启动器"
-        },
-        {
-          "id": "https://sspai.com/post/69907",
-          "author": "少数派编辑部",
-          "description": "☕️ TL;DR\n\n近期佳作推荐：[动画] 英雄联盟：双城之战、[电影] 梅艳芳、[电影] 芬奇、[电影] 美好的世界、[美剧] 毒枭：墨西哥 第三季、[动画] 鲁邦三世 PART6、[日剧] 我的姐姐、[电影] 风信子之恋、[美剧] 狄金森 第三季\n几则精彩预告：《怪奇物语》第四季发布全新预告，2022 年夏季开播、《蜘蛛侠：英雄无归》12 月 17 日北美上映、华金·菲尼克斯主演新片《呼朋引伴》发布正式预告、《超能陆战队》衍生剧《大白！》首曝预告\n几则影视资讯：Netflix 公布《攻壳机动队》等多部动画新作、《海贼王》真人美剧公布选角阵容、《机动战士高达》真人电影公布首张概念图、《鱿鱼游戏》将拍摄第二季\n\n👀 N 部作品推荐\n根据读者反馈，如果推荐语涉及剧透（对故事核心、暗线、伏笔、结局等关键要素的透露），我们会在对应作品的标题前增加 🔦 的 Emoji。\n如有其他建议也欢迎在评论区提出，感谢大家对「看什么」栏目的喜爱和支持。\n[动画] 英雄联盟：双城之战\n\n关键词：动作 / 科幻 / 动画\n片长：40 分钟（单集）× 9 集\n观看渠道：腾讯视频；豆瓣链接\n\n把自己想象成英雄了吗？\n\n@Voyager_1：上上次觉得 CG 动画惊艳是 2005 年的《最终幻想Ⅶ：圣子降临》，我在玩过游戏几年后才看到这部作品，知晓制作年份时当即流露出「无比惊讶」+「难以置信」的表情；上一次被惊艳到是暴雪的《守望先锋》系列，在全片没一句台词的堡垒篇，我在机器和鸟儿的陪伴下观看了一部至今难以忘怀的短片；而这一次，陪伴我大学的游戏《英雄联盟》改编剧集《双城之战》也没有让我失望。\n故事建立在祖安这个城市，因为一次炼金炸药爆炸的意外导致祖安分割出了贵族出没的上城「皮尔特沃夫」和黑市横行的下城「祖安」，两个因为二城战争失去父母相依为命的姐妹被养父收留，在祖安生活、长大，逐渐认清世界的弱肉强食，…",
-          "link": "https://sspai.com/post/69907",
-          "publishedOn": "2021-11-12T09:30:28.000Z",
-          "wordCount": 486,
-          "title": "本周看什么丨最近值得一看的 9 部作品"
-        },
-        {
-          "id": "https://sspai.com/post/69888",
-          "author": "瞎玩菌",
-          "description": "Matrix 首页推荐\nMatrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。\n文章代表作者个人观点，少数派仅对标题和排版略作修改。\n\n2021.11.12 尽量每周五更新\n《瞎玩菌的游戏周报》是我对游戏领域的观察和点评。具有以下特点：\n\n宁缺毋滥，为读者带来价值\n主观，但基于事实和数据\n有新鲜感，但时效性不强\n享受游戏，但反对沉迷游戏\n提升品位，但反对鄙视链\n\n享乐\n「享乐（yuè ）」版块是为了推荐好的游戏音乐，「享」字体现「分享」音乐和「享受」音乐两重意思。我衷心希望也许有人因为音乐从而对游戏产生兴趣（我就是）。也欢迎读者评论推荐你们喜欢的游戏音乐，我将会在后续的游戏周报中分享。\n《Beneath the Mask -rain-》 - Lyn\n\n感谢读者@Zeon 的推荐！这是来自游戏《女神异闻录 5(Persona 5)》的原声音乐。你可以在 Apple Music | Spotify | QQ 音乐 | 网易云音乐 收听这首音乐，或者按名称在你喜欢的音乐服务中搜索。为方便你在文章页面内直接播放，下面是这首音乐的在线播放版本：\n \n要闻\n「要闻」版块为你带来游戏领域最重要的话题性事件，除了展示足够丰富的细节，还有我主观的点评、吐槽或提问。游戏本身就是一种互动娱乐，我非常鼓励读者通过评论互动的方式，参与到话题中来，而不是仅仅当个「读」者。\nGeforce Now 泄露《黑神话：悟空》《老滚6》等多款游戏发售日期\n\n《黑神话：悟空》将于 2023 年 5 月 30 日发售\n《上古卷轴 6》将于 2024 年 1 月 2 日发售\n《战争机器 6》将于 2022 年 11 月 10 日发售\n《神鬼寓言 4》将于 2023 年 10 月 12 日发售\n《孤岛危机 4…",
-          "link": "https://sspai.com/post/69888",
-          "publishedOn": "2021-11-12T07:32:46.000Z",
-          "wordCount": 593,
-          "title": "瞎玩菌的游戏周报：《老滚 6》等众多游戏泄露发售日期、PS5 或被破解等"
-        },
-        {
-          "id": "https://sspai.com/post/69901",
-          "author": "Microhoo",
-          "description": "编者注：\n因为原作者希望匿名，所以这篇文章由我代发。\n我们鼓励大家就文章内容积极讨论，但仍然希望大家秉持善意，互相尊重，不仅对作者，也对逝者。\n\n近日，Apple 的 iOS 15.2 Beta 增加了「数字遗产」处置的选项，用户可以在生前决定将自己的「数字遗产」展现给谁，他可以在用户身故后继承账户及相关数据。\n这个功能重新将我所经历的一段往事提出来，我不禁问自己——如果我去世了，我的「数字遗产」谁来处理，又由谁来继承。\n逝者有秘密，也有权坚守秘密：我处理「数字遗产」的故事\n在他因意外去世后的第 2 周，我的朋友圈收到了他的一条动态。\n那是一张是他一年前健身时的照片，我当时在下面评论吐槽了；而在这一天，他给自己点了一个「赞」。\n\n那也是他走后我第一次哭。强忍了那么多天，这一瞬间突然觉得「他并没有走」，我哭的停不下来。随后我们共同的朋友打电话给我；想必他们也收到了同样的提醒，都在试图在弄清楚这是怎么回事。\n许久后我冷静下来，这应该是他母亲在翻看他过往的朋友圈状态，用点赞表达追忆。但接下来几天，事情变得愈发失控：我不断收到朋友圈类似的提醒，他母亲甚至还回复了他的某条状态。\n我理解一位母亲在失去儿子后的痛苦，以及迫切想追忆他的过往。但这个「点赞」的举动，不论是对我、还是对他的朋友，都是一种巨大的打击。不得已之下，后来我通过他亲戚，委婉地转达他母亲：这样做可能会给大家带来更多的伤害。终于，他的朋友圈回归了平静。\n但这并不是他的微信在身后第一次被人登录。过世后没几个小时，他的微信朋友圈就发布了一份讣告。一瞬间所有的朋友都被他的突然离世所震惊，众多关心他的人，通过电话、短信、微信联系我，试图弄清楚这事情到底是怎么回事。\n原来，他的亲属取下了他的手机卡，通过短信验证码得以登陆微信，发出了讣告。之后很长一段时间，这个微信账号全在他某位亲属掌控下。接下来的日子里，他的朋友圈陆续发布了追思文、…",
-          "link": "https://sspai.com/post/69901",
-          "publishedOn": "2021-11-12T06:21:06.000Z",
-          "wordCount": 98,
-          "title": "愿君多修葺，此物最相思：从我的故事谈「数字遗产」保护"
-        },
-        {
-          "id": "https://sspai.com/post/69734",
-          "author": "Kiririn",
-          "description": "Matrix 首页推荐\nMatrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。\n文章代表作者个人观点，少数派仅对标题和排版略作修改。\n\n2018 年 5 月 30 日的宝可梦新作发布会上，任天堂的「第二方」工作室 干儿子 Game Freak 展示了旗下热门 IP「宝可梦」的最新游戏作品：《精灵宝可梦 Let`s Go! 皮卡丘·伊布》。本作以 1998 年 9 月 12 日在 Game Boy 平台发售的《精灵宝可梦 皮卡丘》——即国内老玩家所熟知的《口袋妖怪 黄》——为蓝本，利用 NS 的机能和特性对画面和玩法进行了全面重制，作为宝可梦 IP 在 NS 上的试水之作显得诚意十足。虽然《精灵宝可梦 Let`s Go》系列并非宝可梦 IP 的正统续作，但得益于原作的优秀质量，新作在剧情走向和养成系统等核心要素上的完成度相当之高，一经发售立刻受到了玩家和媒体的一致好评，甚至带动 NS 的销量持续走高，为即将结束的宝可梦第七世代画上了圆满的句号。\n这可能是玩家初见游戏时发现的第一个彩蛋。\n《精灵宝可梦 Let`s Go! 皮卡丘·伊布》是《精灵宝可梦 皮卡丘》的重制版，而《精灵宝可梦 皮卡丘》又是初代作品《精灵宝可梦 红·绿》的特别版，这么一款跨时空套娃式的作品中自然也少不了设置各种 Game Freak 用来「我致敬我自己」的彩蛋。在游戏刚刚开始的时候，玩家就会在自己的房间里发现一张耿鬼对战尼多利诺的海报，这张海报的内容其实就是《精灵宝可梦 红·绿》的开场一幕，由此可见其地位之崇高。令人意想不到的是，这部开启了宝可梦近三十年辉煌历程的初代作品竟也是任天堂炒过的冷饭，而且这碗饭一炒就炒到了现在。\n关联阅读：每天有多少玩家教任天堂做产品？|「世界主宰」的掌机之路 · 叁…",
-          "link": "https://sspai.com/post/69734",
-          "publishedOn": "2021-11-12T03:32:20.000Z",
-          "wordCount": 603,
-          "title": "任天堂的厨艺值几颗星？|「世界主宰」的掌机之路 · 肆"
-        },
-        {
-          "id": "https://sspai.com/post/69897",
-          "author": "少数派编辑部",
-          "description": "你可能错过的新鲜事\nNetflix 开始在电视上推出 AV1 解码器\nNetflix 于 11 月 11 日正式宣布，已经开始在电视上推出 AV1 流媒体服务，官方称使用这种先进的编码格式，有信心为会员提供更令人惊叹的体验。Netflix 表示，AV1 编码视频在电视平台上的播放依赖于硬件解决方案，通常需要更长的时间部署。Netflix 还与 YouTube 合作开发了一种开源解决方案，用于在游戏机上使用 AV1 解码器。由于 AV1 编码需要更多的 CPU 资源，Netflix 将首先对其最受欢迎的影片进行重新编码。来源\n\n3DMark 增加 SSD 测试项目\nUL 于 11 月 11 日正式推出 3DMark 存储基准测试，官方表示这是 3DMark 的全新 DLC，新增针对 SSD 游戏性能的评估测试。3DMark 存储基准测试支持所有最新的存储技术，并专注于真实世界的游戏性能。存储基准测试基于载入、保存、安装与录制精选热门游戏的各项测试来评估 SSD 的游戏性能。每项测试均使用从热门新款游戏记录的存储操作，为您提供准确、真实的结果。运行测试即可获得 SSD 的 3DMark 存储基准测试分数。更高分数意味着更佳性能。您还可获得 SSD 的详细带宽与平均访问时间指标数据。来源\n\nHandheld 发布三防 PDA Nautiz X9\n耐用型移动计算机制造商 Handheld 于 11 月 11 日推出旗下全新的三防级别 PDA 产品 Nautiz X9，产品的外壳采用镁合金材质，机身尺寸规格为 165mm x 86mm x 25mm，重量为 385g。屏幕采用一块 5 英寸的电容触控屏，可提供阳光下可视、手套触控以及雨天触控等功能，支持 IP67 等级防尘防水，且可以承受 1.5m 高度的跌落撞击。硬件上搭载一颗 500 万像素的前置摄像头以及一颗 1300 万像素的…",
-          "link": "https://sspai.com/post/69897",
-          "publishedOn": "2021-11-12T00:55:30.000Z",
-          "wordCount": 386,
-          "title": "派早报：Netflix 开始在电视上推出 AV1 解码器、3DMark 增加 SSD 测试项目等"
         }
       ]
     },
@@ -4838,6 +4901,15 @@
       "feedUrl": "https://feeds.appinn.com/appinns",
       "siteUrl": "https://www.appinn.com",
       "articles": [
+        {
+          "id": "https://www.appinn.com/?p=40774",
+          "author": "青小蛙",
+          "description": "来自中国国家图书馆，国家古籍保护中心公众号的消息：“中华古籍资源库” 10万部（件）古籍免登录浏览。@Appinn 《中华古籍资源库》网址： http://www.nlc.cn/pcab/zy/zhg",
+          "link": "https://www.appinn.com/zhonghuagujiziyuanku/",
+          "publishedOn": "2021-12-11T10:15:22.000Z",
+          "wordCount": 644,
+          "title": "中国国家图书馆发布《中华古籍资源库》可免登录浏览，包含 10 万部（件）古籍"
+        },
         {
           "id": "https://www.appinn.com/?p=40769",
           "author": "青小蛙",
@@ -5319,33 +5391,6 @@
           "publishedOn": "2021-11-13T08:18:04.000Z",
           "wordCount": 824,
           "title": "composerize – 将 Docker 命令行转换为 docker-compose 文件格式"
-        },
-        {
-          "id": "https://www.appinn.com/?p=40433",
-          "author": "青小蛙",
-          "description": "Windows 的刘海 是一款为 Windows 屏幕顶部添加刘海的免费小工具，仿最新款 Mac 屏幕，有大中小三个尺寸，会显示时间，虽然没什么用。@Appinn 来自微博的 @加油吧小笨 同学给我们",
-          "link": "https://www.appinn.com/windows-notch/",
-          "publishedOn": "2021-11-12T08:42:49.000Z",
-          "wordCount": 814,
-          "title": "Windows 的刘海 – 为 Windows  屏幕顶部添加刘海，3 种尺寸[真没什么用]"
-        },
-        {
-          "id": "https://www.appinn.com/?p=39241",
-          "author": "数码荔枝",
-          "description": "白描（miao），作为一款出色的 OCR 扫描识别神器。具备高准确度的文字识别、文字翻译、表格识别转 Excel、文件批量扫描等功能。目前正在双11优惠中，属于历史低价，普通会员 15 元，黄金会员",
-          "link": "https://www.appinn.com/baimiao-app-202107/",
-          "publishedOn": "2021-11-12T05:46:11.000Z",
-          "wordCount": 1133,
-          "title": "白描：OCR 扫描识别神器，永久会员 5 折，历史低价"
-        },
-        {
-          "id": "https://www.appinn.com/?p=40378",
-          "author": "青小蛙",
-          "description": "RunCat 是一只在 Windows 任务栏不断奔跑的猫，它会随着 CPU 使用率的增加而越跑越快，永不停息。还有一只鹦鹉，不断摇晃身体，可以在菜单中切换，适配浅色与深色主题。@Appinn 感谢",
-          "link": "https://www.appinn.com/runcat-for-windows/",
-          "publishedOn": "2021-11-12T03:51:21.000Z",
-          "wordCount": 900,
-          "title": "RunCat – 在 Windows 任务栏，随 CPU 越跑越快的猫"
         }
       ]
     },
@@ -5398,15 +5443,6 @@
           "publishedOn": "2021-11-19T00:39:35.000Z",
           "wordCount": 993,
           "title": "科技爱好者周刊（第 184 期）：政府的存储需求有多大？"
-        },
-        {
-          "id": "http://www.ruanyifeng.com/blog/2021/11/weekly-issue-183.html",
-          "author": null,
-          "description": "这里记录每周值得分享的科技内容，周五发布。\n本杂志开源（GitHub: ruanyf/weekly），欢迎提交 issue，投稿或推荐科技内容。\n周刊讨论区的帖子《谁在招人？》，提供大量程序员就业信息，欢迎访问或发布工作/实习岗位。\n封面图\n\n亚马逊公司在弗吉尼亚州的第二总部\"玻璃螺旋塔\"，高达22层107米，将于明年动工。它的设计是外部有一圈露天的步道盘旋而上，种满了树木，可以从地面一直走到楼顶。（via）\n本周话题：腾讯的员工退休福利\n本周，有一条程序员的大新闻：腾讯正式推出了员工退休福利。\n\n这好像是国内第一家，互联网大厂给退休金。\n具体方案是，员工在腾讯就职期间达到法定年龄退休时，可享受三项福利：\n（1）定制纪念品；\n（2）长期服务感谢金，金额为6个月的固定工资；\n（3）退休荣誉金，由员工在\"服务年限金\"和\"50%的未解禁股票期权\"两项之中，自由选择其一。\n这就是说，你到退休年龄了，腾讯会一次性发一笔钱。所以严格说，这不是退休待遇，因为后面就没了，不是每年都有的年金，跟退休工资是不同的概念。\n我觉得，这是一件好事，对于员工来说，多一笔收入。另一方面也显示，公司对员工退休问题是重视的，会给予一定的照顾。\n但是，我国的法定退休年龄，男性目前是60岁，可能很快就会调整到65岁。很难想象，程序员可以在腾讯干到这个年龄。我很怀疑，腾讯现在第一线的程序员，有没有达到60岁的，会不会一个都没有。\n正当大家以为，腾讯只是画了一个看得见、吃不到的大饼时，它又抛出了第二个更震撼的安排：员工入职满15年，就可选择提前解锁退休福利。\n\n这就是说，退休福利不需要等到60岁，只要在腾讯干满15年，就可以享受。算一下就会知道，如果大学或研究生毕业，第一份工作就入职腾讯，干满15年也不到40岁，这时公司就允许你退休了。\n这意味着两件事。\n首先，表示腾讯也认可，员工到了40岁左右，如果再待在第一线，…",
-          "link": "http://www.ruanyifeng.com/blog/2021/11/weekly-issue-183.html",
-          "publishedOn": "2021-11-12T00:40:13.000Z",
-          "wordCount": 822,
-          "title": "科技爱好者周刊（第 183 期）：腾讯的员工退休福利"
         }
       ]
     },
@@ -6177,24 +6213,6 @@
           "publishedOn": "2021-11-15T06:30:12.000Z",
           "wordCount": 90,
           "title": "敷面膜对皮肤真的有好处吗？"
-        },
-        {
-          "id": "http://www.zhihu.com/question/491369594/answer/2193335914",
-          "author": "丁三胖",
-          "description": "1\n龙公子找我买剑，五百两黄金要了玄铁定制版，都知道他是要跟张三比武，所以我要了一千。\n龙公子富家子弟、成名多年，张三籍籍无名，两个人本无任何交集，但据说因为龙公子调戏女侠被张三辱骂，下不来台，于是有三个月之后的生死决斗。\n江湖都知道龙公子拿了我的剑，都说张三败了。\n玄铁剑的锋利天下无双，连我也觉得张三败了。\n2\n店门口来了个买剑人，但是他没有钱。\n听说他三个月后与人有生死决斗。\n至于他是不是张三，我不感兴趣。\n他一定要我卖给他一把剑，于是我让他给我打工三个月。\n这三个月里，我一直让他去给龙公子铸剑。\n当然他不知道。\n这个钱赚的很舒服。\n3\n剑好了，但那小子今天出门用左脚，所以我告诉他三个月没工钱。只把那把他都磨秃了的锤子给了他。\n龙公子拿到剑很开心，又给了我很多钱。\n这把剑削铁如泥，举世无双，他必胜无疑。\n但他却败了。\n据说他败给了一把锤子。\n那个锤子跟剑击打的每一下，都打在了软肋上。\n好像是天生的克星。\n4\n石头城破了，石将军死了。\n石将军人如其名，跟茅坑里的石头一样，又臭又硬，刚正不阿，早就成了奸相的眼中钉。\n他被弄到石头城的时候，奸相故意拖了军饷，他无奈，甚至把家传的宝剑送到我这里，换了一百把良剑。\n我对宝剑的来历很好奇，他对我讲，当年他家遭灭门之灾，父母挡在他的身前，扔了宝剑给他，只来得及对他说了一句话。\n“孩子，活下去。”\n而那个屠杀他家的人，就是现在的宰相。\n所以奸相一直想要他死，\n于是他死了。\n5\n一个身穿破烂军衣的小兵出现在了我的门口。\n他是来跟我讨石将军的剑的。\n他说城破那晚，也是朝廷的御史来的那晚，有人打开了城门，放进了外面埋伏的异族。\n而这个御史是宰相派来的。\n我没有给他剑，因为他没有钱。\n我只是给他一块饼，问他将军是怎么死的。\n那个小兵说石将军最后挡在他的面前，张开双臂，身重数箭。\n到死也没有倒下。\n6\n小兵躲在死尸里活下来了，\n他要为所有人报仇。…",
-          "link": "http://www.zhihu.com/question/491369594/answer/2193335914?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2021-11-12T10:08:41.000Z",
-          "wordCount": 15,
-          "title": "如果你是天下第一铸剑坊的老板，却只想搞钱会发生什么剧情？"
-        },
-        {
-          "id": "http://www.zhihu.com/question/469697834/answer/2218464360",
-          "author": "空军在线",
-          "description": "空军在线\n点击下载\n149 个回答，查看全部。\n初音ミク V2，Append，V3，V4 是有不同性能优势，还是引擎越新性能越好？\n德国v1导弹现在是否有用武之地？",
-          "link": "http://www.zhihu.com/question/469697834/answer/2218464360?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2021-11-12T02:45:33.000Z",
-          "wordCount": 19,
-          "title": "唱首军歌给党听，你最喜欢的一首军歌是什么？"
         }
       ]
     },
@@ -6203,6 +6221,18 @@
       "feedUrl": "https://www.xda-developers.com/feed",
       "siteUrl": "https://www.xda-developers.com",
       "articles": [
+        {
+          "id": "https://www.xda-developers.com/?p=565391",
+          "author": "Sumukh Rao",
+          "description": "Generally, I start reviews by building some context around the product in question. This time, I’ve decided to start off with the verdict. The Redmi Note 11T is a typical mid-range 5G phone from 2021. It’s got a capable chipset with support for 5G, a large battery, a decent display, and an average set of\nThe post Redmi Note 11T 5G Review: Successfully carrying the burden of 5G in 2021 appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/redmi-note-11t-5g-review/",
+          "publishedOn": "2021-12-11T07:00:38.000Z",
+          "wordCount": 3929,
+          "title": "Redmi Note 11T 5G Review: Successfully carrying the burden of 5G in 2021",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/12/Redmi-Note-11T-1.jpg"
+          }
+        },
         {
           "id": "https://www.xda-developers.com/?p=569457",
           "author": "Adam Conway",
@@ -11542,234 +11572,6 @@
           "enclosure": {
             "url": "https://www.xda-developers.com/files/2021/11/ATT-Black-Friday-deals-featured.jpg"
           }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=553375",
-          "author": "Skanda Hazarika",
-          "description": "Android 12 is making the rounds everywhere now — be it in the form of official updates from OEMs or through community-made custom ROMs. In the aftermarket porting scene, we often stumble upon a few creative developers who like to cross the formal barrier and try to boot the latest iteration of Android on devices\nThe post Developer ports Android 12 to the Raspberry Pi 4 B, Pi 400, and Compute Module 4 appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/raspberry-pi-4-b-pi-400-compute-model-4-android-12-port/",
-          "publishedOn": "2021-11-12T12:30:45.000Z",
-          "wordCount": 952,
-          "title": "Developer ports Android 12 to the Raspberry Pi 4 B, Pi 400, and Compute Module 4",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/11/Raspberry-Pi-Android-12-featured.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=554209",
-          "author": "Kishan Vyas",
-          "description": "Samsung DeX is a feature on Samsung’s flagship phones that lets you extend your phone into a PC experience by connecting an external monitor, keyboard, and mouse. It was introduced on the Galaxy S8 series and is available on most high-end Galaxy phones and tablets. Samsung also has dedicated DeX apps for Windows and macOS,\nThe post Samsung is killing DeX for macOS and Windows 7 pretty soon appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/samsung-dex-for-windows-7-macos-support-ending/",
-          "publishedOn": "2021-11-12T12:10:17.000Z",
-          "wordCount": 719,
-          "title": "Samsung is killing DeX for macOS and Windows 7 pretty soon",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/11/Samsung-DeX-for-PC.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=554197",
-          "author": "João Carrasqueira",
-          "description": "Microsoft’s attempts to force Windows users to make Edge their default browser have been somewhat questionable. Since relatively early on in the life of Windows 10, links from Windows search and Cortana were directed to Edge, which is still happening today. This has become even more prominent with Windows 11, as links in the Widgets\nThe post Microsoft blocks Edge redirect tool in Windows 11, but there’s another option appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/microsoft-edge-redirect-windows-11/",
-          "publishedOn": "2021-11-12T11:45:13.000Z",
-          "wordCount": 844,
-          "title": "Microsoft blocks Edge redirect tool in Windows 11, but there’s another option",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/07/Microsoft-Edge-1.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=554141",
-          "author": "Pranob Mehrotra",
-          "description": "Early last month, Instagram announced two new features for Live creators — Live Scheduling and Practice Mode. The features aim to help make life easier for creators on the platform by giving them the option to schedule live streams up to 90 days in advance and test their connection, lighting, etc., before starting a live\nThe post Instagram might soon let you add moderators to live videos appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/instagram-add-moderators-live-videos/",
-          "publishedOn": "2021-11-12T11:27:06.000Z",
-          "wordCount": 745,
-          "title": "Instagram might soon let you add moderators to live videos",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2018/06/instagram-logo.png"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=548043",
-          "author": "A Word From Our Sponsors",
-          "description": "There are many situations that could lead to an iPhone that needs to be reset, but you might not know the Apple ID account information. Performing a factory reset can bring a phone back to its default state, ready to be set up with a new user. A phone that has an Apple ID registered\nThe post How to Factory Reset iPhone without Apple ID appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/how-to-factory-reset-iphone-without-apple-id/",
-          "publishedOn": "2021-11-12T11:00:39.000Z",
-          "wordCount": 1226,
-          "title": "How to Factory Reset iPhone without Apple ID",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/09/iPhone-13-and-12-XDA-lksdflkjsf-2523525.jpeg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=553793",
-          "author": "Corbin Davenport",
-          "description": "One of the most impressive new features in Android 12 is the automatic Material You theming system, which changes the appearance of your device (specifically, the colors of certain interface elements) based on the current wallpaper. Codenamed ‘Monet,’ the theming system is currently exclusive to Google’s own Pixel devices, but now we know at least\nThe post Nokia, OnePlus, OPPO, Motorola, and others will support Android 12 dynamic themes appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/android-12-oem-themes/",
-          "publishedOn": "2021-11-11T21:12:59.000Z",
-          "wordCount": 867,
-          "title": "Nokia, OnePlus, OPPO, Motorola, and others will support Android 12 dynamic themes",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/02/Android-12-Logo-option-7.png"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=553763",
-          "author": "A Word From Our Sponsors",
-          "description": "HUAWEI AI Life allows you to manage all of your smart devices from one easy-to-use app. You can control when your devices turn on and off, adjust the settings, or access the smart features with just a few clicks. Enjoy easy connections to your Huawei speakers, audio accessories, and Wi-Fi routers. Key Features: Network state view:\nThe post HUAWEI AI Life – The Smart Way to Control Life appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/huawei-ai-life/",
-          "publishedOn": "2021-11-11T20:22:57.000Z",
-          "wordCount": 866,
-          "title": "HUAWEI AI Life – The Smart Way to Control Life",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/11/huawei-ai-life-speaker-picture@2x.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=553723",
-          "author": "Corbin Davenport",
-          "description": "Google Chrome has been on a roll with new features lately, such as the new Android app widgets, easier password access on mobile, and an in-progress search side panel. Google added the ability to capture screenshots in Chrome for Android with the recent Chrome 94 update, but for the moment, there’s no screenshot tool for\nThe post Google Chrome will soon let you capture and edit screenshots appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/google-chrome-capture-edit-screenshots/",
-          "publishedOn": "2021-11-11T19:40:40.000Z",
-          "wordCount": 784,
-          "title": "Google Chrome will soon let you capture and edit screenshots",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/04/Google-Chrome-logo-Featured.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=553703",
-          "author": "Corbin Davenport",
-          "description": "Even though the Nintendo Switch has been out for almost five years now, there still aren’t many media services available on the platform. Hulu and YouTube are available for download, but Netflix, Spotify, Amazon Prime Video, and countless other video and audio platforms are still inaccessible. Thankfully, one more video app has just arrived: the\nThe post Twitch is now available on the Nintendo Switch appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/twitch-on-nintendo-switch/",
-          "publishedOn": "2021-11-11T18:47:43.000Z",
-          "wordCount": 735,
-          "title": "Twitch is now available on the Nintendo Switch",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/11/FD7gd2iXoAQuoHe.jpeg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=553693",
-          "author": "Adam Conway",
-          "description": "Google Fi, launched back in 2015, is an MVNO telecom service by Google, providing calls, SMS, and data services through networks operated by T-Mobile and US Cellular in the USA. It has a few headline features that separate it from the rest of the crowd, but it’s more or less just another mobile network. However,\nThe post Google Fi rolls out end-to-end encryption for phone calls between Fi users appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/google-fi-end-to-end-encryption/",
-          "publishedOn": "2021-11-11T18:21:40.000Z",
-          "wordCount": 805,
-          "title": "Google Fi rolls out end-to-end encryption for phone calls between Fi users",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/11/hero_private_calling_1.max-1000x1000-1.png"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=546903",
-          "author": "Karthik Iyer",
-          "description": "It’s already been around 4 years since the first signs of DDR5 memory started to emerge. But believe it or not, not much has actually happened since then. We’re nearing the end of 2021and it’s safe to say DDR5 memory is still very much in its infancy. Even after the first commercial release of DDR5\nThe post Best DDR5 RAM: Top memory kits for early adopters in 2021 appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/best-ddr5-ram/",
-          "publishedOn": "2021-11-11T18:00:47.000Z",
-          "wordCount": 4556,
-          "title": "Best DDR5 RAM: Top memory kits for early adopters in 2021",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/11/Best-DDR5-RAM.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=553675",
-          "author": "Kishan Vyas",
-          "description": "Last month Fitbit rolled out a big update to the Fitbit Luxe, bringing Always-on Display, SpO2 monitoring, the ability to change the font, and more. Now the company has released a new update for its most advanced tracker: the Fitbit Charge 5, which finally brings the ECG app and Daily Readiness Score. Fitbit has started\nThe post Fitbit finally adds the ECG app to Charge 5, introduces Daily Readiness Score appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/fitbit-finally-adds-the-ecg-app-to-charge-5-introduces-daily-readiness-score/",
-          "publishedOn": "2021-11-11T17:54:41.000Z",
-          "wordCount": 730,
-          "title": "Fitbit finally adds the ECG app to Charge 5, introduces Daily Readiness Score",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/08/Fitbit-Charge-5-feature-image.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=552659",
-          "author": "Karthik Iyer",
-          "description": "The Victus by HP laptop, if you ask me, breathes a new life into HP’s lineup of gaming laptops. Sure the Omen series of gaming notebooks are still widely available with the latest hardware, but they’ve been all over the place lately. The Victus series now sits below the Omen notebooks in the HP hierarchy,\nThe post HP Victus 16 review: Budget gaming prowess with a lack of personality appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/hp-victus-16-review/",
-          "publishedOn": "2021-11-11T16:00:00.000Z",
-          "wordCount": 3874,
-          "title": "HP Victus 16 review: Budget gaming prowess with a lack of personality",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/11/HP-Victus-16-gmaing-laptop-design.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=553567",
-          "author": "Adam Conway",
-          "description": "Did you get a notification on your Google Pixel telling you to update to Android 12, even though you already had? You’re not alone. Many users across the internet reported getting yet another large update to Android 12, with a changelog that matched what they had already upgraded to. As it turns out, Google accidentally\nThe post Google accidentally pushes Verizon Android 12 update to unlocked Pixel users appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/google-verzion-android-12-update-pixel/",
-          "publishedOn": "2021-11-11T15:20:03.000Z",
-          "wordCount": 757,
-          "title": "Google accidentally pushes Verizon Android 12 update to unlocked Pixel users",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/09/Android-12-Featured-Image.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=553479",
-          "author": "Adam Conway",
-          "description": "Netflix has announced that it’s bringing AV1 codec support to both the PlayStation 4 Pro and select TVs, after first bringing support to Android smartphones in February 2020. Netflix says that it has improved the video streaming experience, particularly under challenging network conditions, and that it’s also happy to see companies announce AV1 decoder chipsets\nThe post Netflix brings AV1 codec support to the PS4 Pro and select TVs appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/netflix-av1-ps4-pro-select-tvs/",
-          "publishedOn": "2021-11-11T14:40:32.000Z",
-          "wordCount": 839,
-          "title": "Netflix brings AV1 codec support to the PS4 Pro and select TVs",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2019/08/mi-tv-netflix.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=553481",
-          "author": "Adam Conway",
-          "description": "The Motorola Edge 30 Ultra was recently teased as the Motorola Edge X in China, and we already have a rough idea of what to expect. Now we’re getting our first real glimpse at the device, along with corroboration of some key specifications. Motorola isn’t quite the titan of the mobile industry it once was,\nThe post Motorola Edge 30 Ultra renders and key specs leak appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/motorola-edge-30-ultra-renders-key-specs-leak/",
-          "publishedOn": "2021-11-11T14:20:42.000Z",
-          "wordCount": 830,
-          "title": "Motorola Edge 30 Ultra renders and key specs leak",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/11/motorola-edge-30-ultra-1.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=551773",
-          "author": "Mahmoud Itani",
-          "description": "The war between iOS and Android fans goes way, way back. On online spaces and forums, you will always bump into enthusiasts of either OS. They’ll defend it, attack whoever criticizes it, and type long rants on how their favorite OS is the superior mobile operating system since sliced bread. While I’m very passionate about\nThe post Like it or not, iOS is a better OS than Android for the average user appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/ios-better-operating-system-android/",
-          "publishedOn": "2021-11-11T14:00:53.000Z",
-          "wordCount": 2939,
-          "title": "Like it or not, iOS is a better OS than Android for the average user",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/11/Google-Pixel-6-Pro-vs-iPhone-13-Pro-XDA-115.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=553411",
-          "author": "Kishan Vyas",
-          "description": "Cryptocurrencies and non-fungible tokens (NFTs) are all the rage nowadays. In an attempt to explore crypto, blockchains, and other emerging decentralized technologies, Twiter is setting up a dedicated crypto team called Twitter Crypto. Twitter describes its new crypto unit (via Engadget) as “a center of excellence for all things blockchain” that will set the “strategy\nThe post Twitter sets up cryptocurrency team, explores new NFT features appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/twitter-new-crypto-team/",
-          "publishedOn": "2021-11-11T13:20:50.000Z",
-          "wordCount": 725,
-          "title": "Twitter sets up cryptocurrency team, explores new NFT features",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/05/Twitter-Blue-subscription-service-featured-final.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=553409",
-          "author": "João Carrasqueira",
-          "description": "Microsoft is reportedly changing the game installation experience for games on the Microsoft Store and the Xbox app for PC, allowing you to install them on any folder you choose. This is a big step in making the Microsoft Store a platform more similar to Steam when it comes to PC gaming. The information comes\nThe post The Xbox app will let you install PC games on any folder you want [Update] appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/microsoft-store-xbox-pc-games-folder/",
-          "publishedOn": "2021-11-11T12:55:19.000Z",
-          "wordCount": 1051,
-          "title": "The Xbox app will let you install PC games on any folder you want [Update]",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/11/Xbox-app-home-page-1.jpg"
-          }
         }
       ]
     },
@@ -11778,6 +11580,51 @@
       "feedUrl": "https://feeds.feedblitz.com/baeldung",
       "siteUrl": "https://www.baeldung.com",
       "articles": [
+        {
+          "id": "https://www.baeldung.com/?p=113809",
+          "author": "Benedict Egima",
+          "description": "A practical guide to remote monitoring of Java applications with VisualVM.",
+          "link": "https://feeds.feedblitz.com/~/674894274/0/baeldung~Remote-Monitoring-with-VisualVM-and-JMX",
+          "publishedOn": "2021-12-11T10:45:09.000Z",
+          "wordCount": null,
+          "title": "Remote Monitoring with VisualVM and JMX"
+        },
+        {
+          "id": "https://www.baeldung.com/?p=113803",
+          "author": "Uzma Khan",
+          "description": "Learn how to build a simple event-driven Spring Boot application to process messages with Kafka Streams.",
+          "link": "https://feeds.feedblitz.com/~/674892726/0/baeldung~Kafka-Streams-With-Spring-Boot",
+          "publishedOn": "2021-12-11T10:35:22.000Z",
+          "wordCount": null,
+          "title": "Kafka Streams With Spring Boot"
+        },
+        {
+          "id": "https://www.baeldung.com/?p=113800",
+          "author": "Iulian-Cristian Manda",
+          "description": "Learn how to remove currently tracked files from a Git index after adding them to the .gitignore file.",
+          "link": "https://feeds.feedblitz.com/~/674892728/0/baeldung~Removing-Tracked-Files-With-gitignore",
+          "publishedOn": "2021-12-11T10:34:47.000Z",
+          "wordCount": null,
+          "title": "Removing Tracked Files With .gitignore"
+        },
+        {
+          "id": "https://www.baeldung.com/?p=113794",
+          "author": "baeldung",
+          "description": "Learn how to generate a PDF document from an OpenAPI Swagger definition using Maven plugins and the online Swagger To PDF tool.",
+          "link": "https://feeds.feedblitz.com/~/674892730/0/baeldung~Generate-PDF-from-Swagger-API-Documentation",
+          "publishedOn": "2021-12-11T10:25:24.000Z",
+          "wordCount": null,
+          "title": "Generate PDF from Swagger API Documentation"
+        },
+        {
+          "id": "https://www.baeldung.com/?p=113565",
+          "author": "baeldung",
+          "description": "Migrating to Java 17, i18n in Spring Boot, naming strategies in Hibernate 5, simple web server, and fully-managed load testing on Azure. Good stuff as we're getting closer to 2022.",
+          "link": "https://feeds.feedblitz.com/~/674889844/0/baeldung~Java-Weekly-Issue",
+          "publishedOn": "2021-12-11T08:54:25.000Z",
+          "wordCount": null,
+          "title": "Java Weekly, Issue 415"
+        },
         {
           "id": "https://www.baeldung.com/?p=113570",
           "author": "baeldung",
@@ -12160,24 +12007,6 @@
           "publishedOn": "2021-11-14T07:43:45.000Z",
           "wordCount": null,
           "title": "What Is OncePerRequestFilter?"
-        },
-        {
-          "id": "https://www.baeldung.com/?p=112226",
-          "author": "Benjamin Caure",
-          "description": "A quick investigation if stateless REST API can be vulnerable to CSRF attacks.",
-          "link": "https://feeds.feedblitz.com/~/672742176/0/baeldung~CSRF-With-Stateless-REST-API",
-          "publishedOn": "2021-11-12T08:05:34.000Z",
-          "wordCount": null,
-          "title": "CSRF With Stateless REST API"
-        },
-        {
-          "id": "https://www.baeldung.com/?p=112237",
-          "author": "Kai Yuan",
-          "description": "Learn how to remove all HTML tags and extract the text from an HTML document string",
-          "link": "https://feeds.feedblitz.com/~/672742178/0/baeldung~Remove-HTML-Tags-Using-Java",
-          "publishedOn": "2021-11-12T07:59:16.000Z",
-          "wordCount": null,
-          "title": "Remove HTML Tags Using Java"
         }
       ]
     },
@@ -12221,6 +12050,15 @@
           "publishedOn": "2021-12-06T12:11:41.000Z",
           "wordCount": 814,
           "title": "SetApp 正版 Mac 软件包月订阅 - 超低价入手正版 macOS 付费软件的新姿势"
+        },
+        {
+          "id": "https://www.iplaysoft.com/?post_type=news&p=4313",
+          "author": "X-Force",
+          "description": "看剧基本必备爱奇艺会员，相信不用多做介绍了；而如果你经常会在京东商城买东西，那么自然也知道京东 Plus 会员的各种好处！比如每月免邮运费券、全品类优惠券、Plus 特价商品、专享活动价、免费上门退换货等等特权。\n\n但原本爱奇艺 VIP 年卡定价 218 元，京东 PLUS 会员定价 299 元/年，正价购买还…… \n「 前往查看原文.... 」\n\n异次元正版数字商城  |  异次元首页  |  微信公众号  |  iPcFun  |  关注微博  |  软件精选",
+          "link": "https://www.iplaysoft.com/news/4313",
+          "publishedOn": "2021-12-05T03:20:32.000Z",
+          "wordCount": 846,
+          "title": "5 折！爱奇艺(电视端) VIP 年卡 + 京东Plus会员 = 123元起"
         },
         {
           "id": "https://www.iplaysoft.com/?post_type=news&p=3586",
@@ -12374,15 +12212,6 @@
           "publishedOn": "2021-11-13T13:09:17.000Z",
           "wordCount": 682,
           "title": "微软 Visual Studio 2022 中文正式版下载 - 最新 VS 编程开发 IDE 工具 (官方免费)"
-        },
-        {
-          "id": "https://www.iplaysoft.com/?p=5137",
-          "author": "X-Force",
-          "description": "最近很多操作系统都纷纷发布了新版本，比如 Windows 11、Ubuntu、Deepin、优麒麟、CentOS、Debian 等等，对喜欢玩系统的人来说绝对是盛宴。\n不过一般用 Rufus 等工具，一个 U 盘往往只能制作成一个系统的启动盘/安装盘，想要增加另一款系统，只能得重新刻录一遍，每次都要格式化超花时间。而最近发现了一款“多合一启动盘”的制作工具 Ventoy，简单到拷贝个 iso 文件进去就能用，堪称新一代的装机必备神器……\n「 前往查看原文.... 」\n异次元还有这些值得一看：\n\n微PE工具箱 (WePE) v2.2 - 大家都说好用的纯净 WinPE 启动盘/ U盘重装系统工具\n优启通 EasyU - 好用无广告纯净版 WinPE 系统启动盘 / U盘重装系统工具\nYUMI - 简单制作 Windows 与 Linux 多系统启动盘 (免费多合一U盘制作工具)\nWinSetupFromUSB - 超简单制作多合一系统安装启动U盘的工具 (支持Win/PE/Linux启动盘)\n\n异次元正版数字商城  |  异次元首页  |  微信公众号  |  iPcFun  |  关注微博  |  软件精选",
-          "link": "https://www.iplaysoft.com/ventoy.html",
-          "publishedOn": "2021-11-12T03:14:41.000Z",
-          "wordCount": 1094,
-          "title": "Ventoy 多合一启动盘制作工具神器 - 将多个系统 Win/PE/Linux 镜像装在1个U盘里"
         }
       ]
     },
@@ -12399,6 +12228,15 @@
           "publishedOn": "2021-11-28T16:23:31.000Z",
           "wordCount": 30,
           "title": "【2021年终总结】战胜拖延症的4种实用方法"
+        },
+        {
+          "id": "https://juejin.cn/post/7035645207278256165",
+          "author": "却把清梅嗅",
+          "description": "概述\n之前看到 自如团队 发布的 自如客APP裸眼3D效果的实现 ，非常有趣，不久后，社区内 Android 的开发者们陆续提供了 Flutter、 Android 原生 、Android Jetpack Compose 等不同的实现版本。\n很快我看到了一个好玩的评论：\n\n既然客户端都卷成这样了，干脆破罐破摔，把 Android OpenGL 的实现版本也补齐，毕竟 图形学或许会迟到，但绝不会缺席 。\n实现效果如下（图片来源），这一波属实参与到社区内裸眼3D的 客户端大满贯 了 ：\n原理简介 & OpenGL 的优势\n裸眼 3D 原理其它文章都拆解非常清晰了，本着不重复造轮子的原则，这里引用 Nayuta 和 付十一 文章中的部分内容，再次感谢。\n裸眼 3D 效果的本质是——将整个图片结构分为 3 层：上层、中层、以及底层。在手机左右上下旋转时，上层和底层的图片呈相反的方向进行移动，中层则不动，在视觉上给人一种 3D 的感觉：\n\n也就是说效果是由以下三张图构成的：\n前景\n中景(文字是白色的)\n背景\n\n\n\n\n\n\n\n\n\n\n接下来，如何感应手机的旋转状态，并将三层图片进行对应的移动呢？当然是使用设备自身提供各种各样优秀的传感器了，通过传感器不断回调获取设备的旋转状态，对 UI 进行对应地渲染即可。\n笔者最终选择了 Android 平台上的 OpenGL API 进行渲染，直接的原因是，无需将社区内已有的实现方案重复照搬。\n另一个重要的原因是，GPU 更适合图形、图像的处理，裸眼3D效果中有大量的缩放和位移操作，都可在 java 层通过一个 矩阵 对几何变换进行描述，通过 shader 小程序中交给 GPU 处理 ——因此，理论上 OpenGL 的渲染性能比其它几个方案更好一些。\n本文重点是描述 OpenGL 绘制时的思路描述，因此下文仅展示部分核心代码，对具体实现感兴趣的读者可参…",
+          "link": "https://juejin.cn/post/7035645207278256165",
+          "publishedOn": "2021-11-28T07:39:25.000Z",
+          "wordCount": 38,
+          "title": "卷起来了！Android OpenGL 仿自如 APP 裸眼 3D 效果"
         },
         {
           "id": "https://juejin.cn/post/7034178205728636941",
@@ -12473,6 +12311,15 @@
           "title": "用Kotlin Flow解决Android开发中的痛点问题"
         },
         {
+          "id": "https://juejin.cn/post/7031538527955320862",
+          "author": "岛上码农",
+          "description": "theme: channing-cyan\nhighlight: darcula\n「这是我参与11月更文挑战的第17天，活动详情查看：2021最后一次更文挑战」\n前言\n好的文档是代码编写成功的关键要素 —— 虽然在快速开发的当今，我们不爱写文档。但是实际上代码文档能够帮我们理顺思路，定义好输入输出参数，同时也能够帮助我们日后回顾代码，为团队其他人或是代码接手人提供第一手参考资料。比如，Flutter 的各个组件的注释就非常好，事实上，那些注释直接生成了 Flutter 的组件使用说明文档。\n当然，也不能为了写文档而写文档，代码应该本身就是一个好的文档，我们应该只在需要的地方写文档，而不是随意地写一些没有意义的内容。本篇来介绍 Dart 官方推荐的代码文档编写规范。\n注释\n在 Dart 代码中，注释是指那些不需要包括在自动生成文档里的对代码的补充说明。\n注释规范1：使用像句子那样的注释\n使用句子能够保持注释意思的上下文的完整性，而像短语、缩写这类的注释可能每个人的理解都不同。\n// 如果列表元素为空，则直接返回 false。\nif (_itemList.isEmpty) return false;\n\n注释规范2：不要使用块注释来当做文档\n// 正确示例\nvoid greet(String name) {\n  // 假设我们有一个有效的名字。\n  print('Hi, $name');\n}\n\n// 错误示例\nvoid greet(String name) {\n  /* 假设我们有一个有效的名字。 */\n  print('Hi, $name!');\n}\n\n可以在一个代码块外面使用/* ... */块注释，但代码其他地方应该使用 // 注释。\n文档注释\n由于可以通过 dartdoc 解析文档注释并生成漂亮的文档页面，使得文档注释特别方便。\n文档注释规范1：使用 /// 编写文档注释\n…",
+          "link": "https://juejin.cn/post/7031538527955320862",
+          "publishedOn": "2021-11-17T06:01:02.000Z",
+          "wordCount": 35,
+          "title": "Dart 代码注释和文档编写规范"
+        },
+        {
           "id": "https://juejin.cn/post/7031479214683455502",
           "author": "Android帅次",
           "description": "highlight: androidstudio\ntheme: cyanosis\n「这是我参与11月更文挑战的第3天，活动详情查看：2021最后一次更文挑战」\n🔥 介绍\n本文通过OkHttp+Retrofit+Rxjava+Hilt实现一个网络请求框。\n💥 最终代码\n        iWanAndroidService.register(map)\n                .compose(ResponseTransformer.obtain())\n                .subscribe(registerData -> {\n                    //请求成功\n                }, new ErrorConsumer() {\n                    @Override\n                    protected void error(ApiException e) {\n                        //请求失败\n                    }\n                });\n\n是不是特别省事。\n💥 项目结构\n\n🔥 OkHttp\n💥 OkHttp是什么\nOkHttp 是一个默认高效的 HTTP 客户端：\nHTTP/2 支持允许对同一主机的所有请求共享一个 socket。\n连接池减少了请求延迟（如果 HTTP/2 不可用）。\n透明 GZIP 可缩小下载大小。\n响应缓存完全避免网络重复请求。\n网路出现问题后，OkHttp会保持不变，自动从问题中恢复。\n官方文档\n简单使用+源码解读\nOkHttp的时候就不单独介绍了。\n缺陷：\n网络请求的接口配置繁琐，尤其是需要配置复杂请求body，请求头，参数的时候;\n数据解析过程需要用户手动拿到responsbody…",
@@ -12509,6 +12356,15 @@
           "title": "从零到一写一个完整的 Compose 版本的天气"
         },
         {
+          "id": "https://juejin.cn/post/7030799463975223303",
+          "author": "岛上码农",
+          "description": "theme: channing-cyan\nhighlight: darcula\n「这是我参与11月更文挑战的第15天，活动详情查看：2021最后一次更文挑战」\n前言\n我们之前介绍了 Dart 的命名规范，本篇来介绍 Dart 的代码次序和格式化规范。开篇还是重复那句话：代码是写给人看的。\nimport 导入次序\n导入次序本身并不会影响代码的执行，但是整齐的导入会让你的代码看起来更加舒适，也会让人感觉你的代码更有条理。官方对于导入的顺序建议如下图所示。\n\n而对于同级别的，建议是按字母次序排序（这个有点难😂）。下面是示例：\n// 正确示例\nimport 'dart:async';\nimport 'dart:html';\n\nimport 'package:bar/bar.dart';\nimport 'package:foo/foo.dart';\n\nimport '../components/buttons.dart';\nimport '../utils/http.dart';\n\n// 错误示例 （未按字母排序）\nimport 'package:foo/foo.dart';\nimport 'package:bar/bar.dart';\n\nimport 'foo/foo.dart';\nimport 'foo.dart';\n\nexport 应当排在所有 import 之后，并在二者之间空一行\n这个好理解，导出应当放在导入之后，而且为了区别，在之间空一行，下面是示例：\n// 正确示例\nimport 'src/error.dart';\nimport 'src/foo_bar.dart';\n\nexport 'src/error.dart';\n\n// 错误示例\nimport 'src/error.dart';\nexport 'src/error.dart';\nimport 'src/foo_…",
+          "link": "https://juejin.cn/post/7030799463975223303",
+          "publishedOn": "2021-11-15T06:14:43.000Z",
+          "wordCount": 36,
+          "title": "构建良好的 Dart 编码风格：导入导出次序和编码规范"
+        },
+        {
           "id": "https://juejin.cn/post/7030415720676589581",
           "author": "RicardoMJiang",
           "description": "theme: smartblue\nhighlight: a11y-dark\n前言\n了解过设计模式的同学都知道，设计模式家族成员非常庞大，具体可以分为3类共23种设计模式\n本文主要包括以下内容\n六大设计原则的介绍\n简单工厂、工厂方法与抽象工厂模式的区别\n代理，装饰与适配器模式的区别\n策略、状态与命令模式的区别\n设计原则介绍\n众所周知，5大设计原则一般有6个\n单一职责原则(Single Responsibility Principle, SRP)\n开闭原则(Open Close Principle, OCP)\n里氏替换原则(Liskov Substitution Principle, LSP)\n依赖倒置原则(Dependence Inversion Principle, DIP)\n接口隔离原则(Interface Segregation Principle, ISP)\n迪米特法则(Law of Demeter, LoD),又称最少知识原则(Principle of Least Knowledge)\n其中，前5个原则称为SOLID原则\n单一职责原则\n单一职责原则很简单也很好理解：类的职责应该单一，一个方法只做一件事,这里就不多说了\n开闭原则\n开闭原则是说程序对扩展开放，对修改关闭：当你的程序需要扩展时，不应该修改原来的代码，而是可以添加一个类来扩展。\ngetPrice 方法，也可以增加一个子类，重写getPrice方法，通过高层模块，在打折时使用子类。\n开闭原则的思想其实是将不变的地方封装起来，将可变的部分暴露出去，这样它们就不会混淆，还可以复用不变的部分，增加扩展性\n里氏替换原则\n里氏替换原则用一句话描述就是：所有引用基类的地方，必须能够使用其子类直接替换，换句话说，所有引用基类的地方必须透明地使用其子类对象。\nJava中，引用基类的地方，本来就可以用子类替换，为什么要提出个原…",
@@ -12518,6 +12374,15 @@
           "title": "那些容易混淆的设计模式，了解一下~"
         },
         {
+          "id": "https://juejin.cn/post/7030349801925378079",
+          "author": "岛上码农",
+          "description": "theme: channing-cyan\nhighlight: darcula\n「这是我参与11月更文挑战的第14天，活动详情查看：2021最后一次更文挑战」\n前言\n介绍了几篇 Hero 动画，我们来一个 Hero 动画应用案例。在一些应用中，列表的元素和详情的内容是一致的，这个时候利用 Hero 动画切换到详情会感觉无缝过渡，用户体验会更好。例如本篇我们要实现下面的效果：\n\n思路\n上面的效果是列表和详情共用了头像和头像的背景色。二者的组合是一个 Stack 组件，因此可以使用 Hero 组件完成。然后是 Hero 组件的移动，我们先做了水平移动，再做垂直方向移动，这样过渡体验会更好，这种可以用我们自定义的 RectTween 完成。下面是我们的各个部分的实现过程。\n列表元素\n列表元素我们定义一个 HeroListItem 类，整个列表元素需要点击进入详情，使用 GestureDetector 包裹。然后使用 Row 组件完成横向布局，而头像部分使用的是 Stack 组件。HeroListItem 的 build 方法如下：\nWidget build(BuildContext context) {\n  return GestureDetector(\n    child: Container(\n      padding: EdgeInsets.fromLTRB(0, 10.0, 10.0, 10.0),\n      child: Row(\n        children: [\n          Hero(\n            tag: heroTag,\n            createRectTween: (begin, end) {\n              return ListToDetailRectTween(\n                begi…",
+          "link": "https://juejin.cn/post/7030349801925378079",
+          "publishedOn": "2021-11-14T01:08:07.000Z",
+          "wordCount": 35,
+          "title": "Hero 动画应用之列表与详情页之间切换"
+        },
+        {
           "id": "https://juejin.cn/post/7030004413938794503",
           "author": "岛上码农",
           "description": "theme: channing-cyan\nhighlight: darcula\n「这是我参与11月更文挑战的第13天，活动详情查看：2021最后一次更文挑战」\n前言\n继续 Hero 组件的介绍，本篇来介绍 Hero 组件的另一个属性 flightShuttleBuilder 。这个属性用于设置飞行过程中的组件。默认的话 Hero 组件在飞行过程中是使用源页面的 Hero 子组件。有了flightShuttleBuilder，我们就可以在行过程中可以更换组件。\nflightShuttleBuilder 定义\nflightShuttleBuilder 是一个返回飞行过程中的方法，定义如下：\ntypedef HeroFlightShuttleBuilder = Widget Function(\n  BuildContext flightContext,\n  Animation animation,\n  HeroFlightDirection flightDirection,\n  BuildContext fromHeroContext,\n  BuildContext toHeroContext,\n);\n\n其中 flightDirection 是一个枚举，用于区分是 push 还是 pop。animation 原以为会在动画过程中变化，但是 debug 的时候发现只有一个起始值。三个 context 是在需要的时候可以使用，一般用不到。我们可以通过flightDirection 来定义 push 过程和 pop 过程中的组件。\n示例\n示例起始比较简单，我们这里使用了两个简单的色块作为飞行中的组件。\nflightShuttleBuilder: (_, animation, direction, __, ___) {\n  if (direction == HeroFlightDirec…",
@@ -12525,15 +12390,6 @@
           "publishedOn": "2021-11-13T02:48:38.000Z",
           "wordCount": 33,
           "title": "如何更改 Hero 组件的飞行过程的子组件？"
-        },
-        {
-          "id": "https://juejin.cn/post/7029517821004480549",
-          "author": "恋猫de小郭",
-          "description": "theme: smartblue\n本文将通过一个需求场景，介绍一个非常实用的 Flutter 列表滑动知识点，该问题来源于网友的咨询。\n如何在 Flutter 上实现一个聊天列表，相信大家都不会觉得有什么困难，不就是一个 ListView ，然后根据类型显示渲染数据吗？这有什么困难的？\n\n理论上确实没什么问题，但是有一个需求场景，却会出现一个无法修复的问题，那就是：聊天列表需要双向插入数据。\n双向插入数据会导致 ListView 什么问题？ 举个例子，首先我们使用常见的 ListView 绘制出一个模拟聊天列表，这里使用了 reverse 反转列表满足 UI 需求，让列表从底部开始网上布局滑动：\nListView.builder(\n        controller: scroller,\n        reverse: true,\n        itemBuilder: (context, index) {\n          var item = data[index];\n          if (item.type == \"Right\")\n            return renderRightItem(item);\n          else\n            return renderLeftItem(item);\n        },\n        itemCount: data.length,\n      )\n\n运行后效果如下图所示：\n\n首先添加红色的，模拟加载旧数据 list.add ，可以看到上面的数据出现了，没有问题；\n接着我们滑动一段距离，没有问题；\n接着添加绿色数据，模拟新收到新消息 list.insert，可以看到列表出现了跳动，没有停留在我们之前滑动的位置；\n我们继续滑动，模拟新收到新消息，列表继续出现跳动；\n有问题没有？如果…",
-          "link": "https://juejin.cn/post/7029517821004480549",
-          "publishedOn": "2021-11-11T19:19:50.000Z",
-          "wordCount": 35,
-          "title": "Flutter 实现完美的双向聊天列表效果，滑动列表的知识点"
         }
       ]
     },
@@ -12721,15 +12577,6 @@
           "publishedOn": "2021-11-13T03:32:34.000Z",
           "wordCount": 275,
           "title": "关于如何在win上优雅地使用MN"
-        },
-        {
-          "id": "https://bbs.marginnote.cn/t/topic/23415",
-          "author": "Wein\n            (Wen Yung)",
-          "description": "因為官方deepl插件太多不方便的地方，因此研究了兩三天搞出了個魔改版本。\n目前google版本只有iphone使用時才是最新版本翻譯，ipad版本因為marginnote本身的webview的user agent 設定依然停留在ios13.3 （“Mozilla/5.0 (iPhone; CPU iPhone OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148”，iphone 版本的為 “Mozilla/5.0 (iPhone; CPU iPhone OS 15_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148”） 因此翻譯結果會非常殘破（舊版google翻譯）。希望能用上新版google翻譯的大家就請跟我一起向官方反應這個狀況吧，這個插件是解決不了的。\np.s. 演示用的錄屏不知為何上傳不了，不過我想展開來時兩個按鈕，縮起來時一個按鈕，大家應該不太可能不會用，所以應該沒關係吧？\n列表条目\ndeepl side.mnaddon (5.8 KB)\ndeepl top.mnaddon (5.8 KB)\ngoogle side.mnaddon (5.8 KB)\ngoogle top.mnaddon (5.8 KB)\nbaidu top.mnaddon (5.8 KB)",
-          "link": "https://bbs.marginnote.cn/t/topic/23415",
-          "publishedOn": "2021-11-11T15:05:26.000Z",
-          "wordCount": 101,
-          "title": "［第三方NM插件］魔改版官方deepl插件"
         }
       ]
     },
@@ -12742,10 +12589,30 @@
           "id": "https://stratechery.com/2021/app-store-injunction-stayed-fingerprinting-on-ios-life360-and-apples-missing-leverage/",
           "author": "Ben Thompson",
           "description": "Apple wins in court, probably for good; meanwhile, its tracking rules aren't really being enforced, and probably can't be, which means Apple's overreach was a mistake.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hcHAtc3RvcmUtaW5qdW5jdGlvbi1zdGF5ZWQtZmluZ2VycHJpbnRpbmctb24taW9zLWxpZmUzNjAtYW5kLWFwcGxlcy1taXNzaW5nLWxldmVyYWdlLw.gH29vX_Df2ORcJO7HF2vsqUEszp7QRNSIm0qVR23UoxXZlb5B7ygyj1GvG6Vwa4GcRbkjPhn_L_lQcZsTvMIS64DR78b1nqDMaitBeoBebkwKE3N-DFzG5GIky_tAUUzuFYswPqV1E_AneYs3y2PnBwt-AEu98Q0iiNls8YkCgWz1_7ihfdRRtUo8Mix546CNP8SCtfBZCvXZjw-n9x-FsicWrfOiBL5ViDYe4DSJwVbaA_wAYrRw5-vYcyZG3F14WD3JajnebS5cisKlH9H0arLzYkBndckml1QNII3BSHya6MiPE95nSr2E2z-hoeOX0rE_eC7tClHqoyngLcL5Q",
+          "publishedOn": "2021-12-09T12:58:52.000Z",
+          "wordCount": null,
+          "title": "App Store Injunction Stayed, Fingerprinting on iOS, Life360 and Apple's Missing Leverage",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/app-store-injunction-stayed-fingerprinting-on-ios-life360-and-apples-missing-leverage/",
+          "author": "Ben Thompson",
+          "description": "Apple wins in court, probably for good; meanwhile, its tracking rules aren't really being enforced, and probably can't be, which means Apple's overreach was a mistake.",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hcHAtc3RvcmUtaW5qdW5jdGlvbi1zdGF5ZWQtZmluZ2VycHJpbnRpbmctb24taW9zLWxpZmUzNjAtYW5kLWFwcGxlcy1taXNzaW5nLWxldmVyYWdlLw.eVa2nXRwGweOYqaxgXqK_y1xoS_BXlBgtJxg2IngIVg1R3VBcsEGzu15JX27CduV6BE0sD4XqIEQ3zy68CObpBieYNQWfaHoMIRGc0wHjhnOa3LlPJqTXWGVO-XfDMwiN06QFo8aBZ8uajJVj2CDfHUddwE_DEBGV3ptzpYhMj-K3M91dSlgNfkvJaINvnQusU_QbkqzpDIvC1JwOar4pElzrwbsU2jckDRtNqCFLR0gaEkrzic76Iu9_HzgZt7U6IitRzWLUHkE8x4Nj8ovw5iwkW22yduK1JsiBLAFIxLCSXKh7bXMFNy1aJXcbGxuzPnQJwBKKAZbkFdjeyUHMg",
           "publishedOn": "2021-12-09T12:58:52.000Z",
           "wordCount": null,
           "title": "App Store Injunction Stayed, Fingerprinting on iOS, Life360 and Apple's Missing Leverage",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/the-information-on-apple-in-china-apples-deal-evaluating-apples-china-risk/",
+          "author": "Ben Thompson",
+          "description": "The Information has a report on a deal Apple made with the Chinese government; this explains multiple things over the last five years, and may indicate that Apple's position is fairly secure.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS90aGUtaW5mb3JtYXRpb24tb24tYXBwbGUtaW4tY2hpbmEtYXBwbGVzLWRlYWwtZXZhbHVhdGluZy1hcHBsZXMtY2hpbmEtcmlzay8.qohwZiz7JGC6blQWz9zp01EOZ9yFyB7j0XXjXKP80EaCI-oxUKlYc7L8MK9xnkyZHfjOSB5LSUi9BBxzAuXJx4QjRGUtW8og8t9drROhYRQux3y5kJss2uAtul7OyFFx_WKfhoN7LWLgA_2y5DnsyUeVADge-A4nuQ9WcH0GbenqBXV78-FaPixJCYKPOWcUyw6XBBEXKJ-oKw-OZr2gNpaK_090aIoeFaVgqSuy_QfTfs8YjA24N8HQQKRhfOLusPKB34sYLtM14PgCH_mBdH4Mn_TXXojZcy7cYSPxx_1tI3ldCvP0Za5qgPFCW3F6bbdIG3x6jZT60CCghQaZSg",
+          "publishedOn": "2021-12-08T11:36:12.000Z",
+          "wordCount": null,
+          "title": "The Information on Apple in China, Apple's Deal, Evaluating Apple's China Risk",
           "itunes": {}
         },
         {
@@ -12766,6 +12633,16 @@
           "publishedOn": "2021-12-08T11:36:12.000Z",
           "wordCount": null,
           "title": "The Information on Apple in China, Apple's Deal, Evaluating Apple's China Risk",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/ftc-sues-to-block-nvidia-arm-acquisition-innovation-and-the-data-center-arms-future/",
+          "author": "Ben Thompson",
+          "description": "The FTC is suing to block Nvidia's ARM acquisition; it is a plausible argument, although Nvidia can make a pro-innovation case. Regardless, ARM's future looks shakier than before.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9mdGMtc3Vlcy10by1ibG9jay1udmlkaWEtYXJtLWFjcXVpc2l0aW9uLWlubm92YXRpb24tYW5kLXRoZS1kYXRhLWNlbnRlci1hcm1zLWZ1dHVyZS8.P7Y1CFIpUb8DE2upECKA0cqi6bWxFfRinNQUHkryAQTGSHDbWFJko28Pjyq2A2tGCSwsssU_Hnmro4ScZN4OM9C2gCABsNQSS3DTouI52jRkhT3zam8IrkEy3pa8r3FxHH_JE3IiuMI-kOXDvSes5_jQGUfk4uHzdQjxzah7tLXB6syMbAB4dgL9nd7nSw8emP1VbI5gKygwgAb_boqigobuWmyY-T12d3ZuTeTV7z93eCJeZIJcR_UqRlkv5QPW9cRF7dBb8xkRC8-P6GdVOvH0BQ0f-fooOyjNrw_2fimyTSiwRNA_3Bh8g_cCDZ3_ovsTm8i3-86dNqGItlcxuw",
+          "publishedOn": "2021-12-07T13:47:48.000Z",
+          "wordCount": null,
+          "title": "FTC Sues to Block Nvidia ARM Acquisition, Innovation and the Data Center, ARM's Future",
           "itunes": {}
         },
         {
@@ -12796,6 +12673,16 @@
           "publishedOn": "2021-12-07T13:47:48.000Z",
           "wordCount": null,
           "title": "FTC Sues to Block Nvidia ARM Acquisition, Innovation and the Data Center, ARM's Future",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/aws-reinvent-reinvent-announcements-of-interest/",
+          "author": "Ben Thompson",
+          "description": "AWS re:Invent keynote, with new CEO Adam Selipsky, charted a different path than that taken by Andy Jassy. Plus, the new announcements that caught my eye.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hd3MtcmVpbnZlbnQtcmVpbnZlbnQtYW5ub3VuY2VtZW50cy1vZi1pbnRlcmVzdC8.GIySIXS_FCUx6rILWeQ7svLnO_CCgk4VBruvLNwBx8eGfwerlQjY6BF6LZygSBjl8Mh03PPLhpZx7gfaMauA6YpnMpXreKIXWcHpE99h4Evdt2dv0MNGX-o9cQ8y7v1xlQLud41NxpkAE-h1npJb1A9UTqCY4HYBmswKNzfnWWCIaQUtH3E8_zfANBoHnxLsBRWU7aFq21hyPFiTTmPQ4h3pnaXbNa84Qbe4oKKczXY54bT9QTOSQgH4t9Wx1nE_8xYXZfFT38p53OqiFC3f8aIxbvUeE00Kf-Ur4DhsP4gA6Zanwf-Fo4X0RC8ImuSy_jxsT_5Ej8TanZkhq0nW4Q",
+          "publishedOn": "2021-12-02T12:45:55.000Z",
+          "wordCount": null,
+          "title": "AWS re:Invent, re:Invent Announcements of Interest (Stratechery Update 12-2-2021)",
           "itunes": {}
         },
         {
@@ -12866,6 +12753,16 @@
           "publishedOn": "2021-12-02T12:45:55.000Z",
           "wordCount": null,
           "title": "AWS re:Invent, re:Invent Announcements of Interest (Stratechery Update 12-2-2021)",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/why-subscription-twitter-is-a-terrible-idea-twitter-bans-sharing-private-photos-and-videos-twitter-and-free-speech/",
+          "author": "Ben Thompson",
+          "description": "Why making Twitter into a subscription business would be a terrible idea, how Twitter's new policy is reactionary, and how the shows how much Twitter has changed",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS93aHktc3Vic2NyaXB0aW9uLXR3aXR0ZXItaXMtYS10ZXJyaWJsZS1pZGVhLXR3aXR0ZXItYmFucy1zaGFyaW5nLXByaXZhdGUtcGhvdG9zLWFuZC12aWRlb3MtdHdpdHRlci1hbmQtZnJlZS1zcGVlY2gv.rg1YNRFlN2o7kknho4ZFs1w9sA5KJL8SsorJGxpgzG-Y6rrk1oZQNqLwDZBDcxyoAUhqlQw-Rr7T-su4MvCOONOjjcjtzmva-qCF6WyTL20HHaNnPV_UneYGfJz-snPEEhLkWoyltymE7zHxBBqIwsm7s5viYE6fz3yFgpfID6-ydEiWABy3V3BDdSyo-qFw5a-ufbYl3dl8TqSf7RIuvNkGwME-bcrUliQ4pKl9HreG-a3Lcmm9BBmnTnMivRvDQ80t1Gh9ak-yCOHiaWvYgcaoiXcHjtPkYlzpc1Csn51Ycf4_aj8jvfOQZM9E-N2WxwKQpiaeo2XudVPfeGN3ZQ",
+          "publishedOn": "2021-12-01T13:26:05.000Z",
+          "wordCount": null,
+          "title": "Why Subscription Twitter is a Terrible Idea, Twitter Bans Sharing Private Photos and Videos, Twitter and Free Speech",
           "itunes": {}
         },
         {
@@ -12946,6 +12843,26 @@
           "publishedOn": "2021-12-01T13:26:05.000Z",
           "wordCount": null,
           "title": "Why Subscription Twitter is a Terrible Idea, Twitter Bans Sharing Private Photos and Videos, Twitter and Free Speech",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/stratechery-and-thanksgiving/",
+          "author": "Ben Thompson",
+          "description": "An update on Stratechery and why I'm particularly thankful this Thanksgiving.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9zdHJhdGVjaGVyeS1hbmQtdGhhbmtzZ2l2aW5nLw.nnJ0vjh7_CAmSir8eiR7z5g142InNm9zw4_-aJnl_Agr0sCT35by7CmdWIhwO8ctRuq92-uorciKoX2NXJLlDC8WpISsaCs1-mzlkpEdZ1br3SRosv_sJd0HkIImPIqV55WKkk_dkUS5q7YFqSzHUZNS7X7bN1f5DEgQCCWI1qr20POLVc6SpwwexLPvNRiz4pkhh5T8QGbRbOuHuxJ5B5yIxbRlprYG60Q_BQncT2K0g522PeearZ9PWjHB1PVblirr4LOz1pxWZE2G5F11_D6RbYEN_s4lopgTvqdPLztbyDj1GRT2ztsKZ3-mtg0LDU0IQ5fABcieVchdt-4FYQ",
+          "publishedOn": "2021-11-23T13:21:00.000Z",
+          "wordCount": null,
+          "title": "Stratechery and Thanksgiving",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/stratechery-and-thanksgiving/",
+          "author": "Ben Thompson",
+          "description": "An update on Stratechery and why I'm particularly thankful this Thanksgiving.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9zdHJhdGVjaGVyeS1hbmQtdGhhbmtzZ2l2aW5nLw.KlAzwmFKKQQntgkQbdmB7JFcAqxExd2I7PM6GZTTT_SqQXbP1Y5R3rIQtz1tClFYET_im_szd3McwQ7I3aUr0qSue7J1LQxpVP3gXayqI5h5l_nl57QZ-S_hv7feX2XWcf0K5jpIYMHqMGZk6R8Tp9xiaREbx5vNXTA1gdARJAXabGcnJfVRQmBKDKoKVUurqWgv78CggbYvL1YDXaK4Nwvs0Od11Z106HEwRRbxFIZtI49ADuFKPOlqTLKC75nfRuVQHI39tl98PpbpQ2NLPZiOldTUVfTsjB18RxIgDh1JNbCHbIum84OcMQc_XvmquUfbF3Tgv0M8_DPWEN1lhw",
+          "publishedOn": "2021-11-23T13:21:00.000Z",
+          "wordCount": null,
+          "title": "TEST To Internal - Stratechery and Thanksgiving",
           "itunes": {}
         },
         {
@@ -13242,6 +13159,16 @@
           "id": "https://stratechery.com/2021/spotifys-earnings-spotifys-podcast-payoff-universal-taylor-swift-and-internet-power/",
           "author": "Ben Thompson",
           "description": "Spotify's earnings show that their strategy is working exactly as predicted; then, Universal is responding to Taylor Swift's leveraging of Internet power.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9zcG90aWZ5cy1lYXJuaW5ncy1zcG90aWZ5cy1wb2RjYXN0LXBheW9mZi11bml2ZXJzYWwtdGF5bG9yLXN3aWZ0LWFuZC1pbnRlcm5ldC1wb3dlci8.pjJe9ZO5couVcOej2w-m_qeN-tUgDBf18yclT58FELU2qPsID7JXXhTuf2jNP32hbB7zGE1mfi-Uo5e4mbfq2tuLIWHZyMUbZGCrPUQ8OO5TmX96w89coxbS2SbZOJ4PPu7Bq72gMJJbdO3SJDj85hHhN5qxteIC4DzWf9OKSJvEQUmCEkuVULBdDVYM9BBtigMdAc3bSJn30RVAUm4udLTavF8QIsanS_9rqajYQYF_K9Wvwm5EML88TkPLkTIoAGxj6OLKvPKnGx1K4fBTnRriA8txXq3dLrHdOU_xj7m1lhoVHyloCT-pH_qAU0IcDM8gLTvxHzbXfnaeUfyDZA",
+          "publishedOn": "2021-11-22T13:14:38.000Z",
+          "wordCount": null,
+          "title": "Spotify's Earnings; Spotify's Podcast Payoff; Universal, Taylor Swift, and Internet Power",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/spotifys-earnings-spotifys-podcast-payoff-universal-taylor-swift-and-internet-power/",
+          "author": "Ben Thompson",
+          "description": "Spotify's earnings show that their strategy is working exactly as predicted; then, Universal is responding to Taylor Swift's leveraging of Internet power.",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9zcG90aWZ5cy1lYXJuaW5ncy1zcG90aWZ5cy1wb2RjYXN0LXBheW9mZi11bml2ZXJzYWwtdGF5bG9yLXN3aWZ0LWFuZC1pbnRlcm5ldC1wb3dlci8.ZZpPvjrLi-vhjq92a1FYZ-dgnHn3UIkRthLy8RLinZl44VZHNkeKSXwraMFJKpXd6MnGPFbUAxTIuN60k0-7ZwQ0tCziBRH21GwaJ6c1DgXTGhKA0yEYoWCnBWm3hhwZP6eswE-EMHQKa9WVb5QLsueEd1601mWyL5jH1YUam5VgNGpre0AXoprTrLRmwQ9wdjKUmNtgYX1gxWaSBxnYaSZNxLYpoWB4Ti786wPJ2iNXZ2SvREZo9OhRGTVNCZFTRN-XqIuIXnrIq8xgo5YpzjVPrJxP1lnsmX2eUVH9NuzrP1yfQb3IYBtzr3EI6s3VeM3yZANqmikxrvNefpz0UQ",
           "publishedOn": "2021-11-22T13:14:38.000Z",
           "wordCount": null,
@@ -13406,6 +13333,16 @@
           "publishedOn": "2021-11-22T13:14:38.000Z",
           "wordCount": null,
           "title": "Spotify's Earnings; Spotify's Podcast Payoff; Universal, Taylor Swift, and Internet Power",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/unity-buys-weta-digital-an-interview-with-unity-ceo-john-riccitiello/",
+          "author": "Ben Thompson",
+          "description": "The Weta acquisition, Unity’s ambitions, their advertising business and relationship with Apple, and why Riccitiello thinks my understanding of the metaverse isn’t quite right.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS91bml0eS1idXlzLXdldGEtZGlnaXRhbC1hbi1pbnRlcnZpZXctd2l0aC11bml0eS1jZW8tam9obi1yaWNjaXRpZWxsby8.ipk6OSsrN1FCL_6hnx6LjAe3kSHBtcQ5KG5N1n2pvrLC57qRZwXfWnKalmuEfTifuc5CHg3RfS7xCkIlcN9dFSfXniZWKOhp0ZI93Fg6C6EpTnv1Rwi8cqa8zpwp_1BpKPPPNjzm8HJu8GuK7Mbd-HrHwo9haJDxU5CZbLm7cMIFOiR_ERL28kF9baXq8-8k5_lnA1UCvbcwf9TkhBF-smKxXhLGU94KWigCFkvaRWb59WEsWrf8yvHVpuq3VnXSkR5RZJ-4uPJXiaMmbyRMsWsoRj4M1XIXXCgeZMTtnYiCVr867LREbouxGnx0mxKlgp6Z80mVRRtrcJ3KK7aNlQ",
+          "publishedOn": "2021-11-17T09:34:06.000Z",
+          "wordCount": null,
+          "title": "Unity Buys Weta Digital, An Interview with Unity CEO John Riccitiello",
           "itunes": {}
         },
         {
@@ -13606,6 +13543,16 @@
           "publishedOn": "2021-11-17T09:34:06.000Z",
           "wordCount": null,
           "title": "Unity Buys Weta Digital, An Interview with Unity CEO John Riccitiello",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/constitutiondao-the-need-for-trust-memes-and-reality/",
+          "author": "Ben Thompson",
+          "description": "ConstitutionDAO is an interesting project to buy a physical good as a community; what is particularly interesting is what it says about the power of actualizing memes",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9jb25zdGl0dXRpb25kYW8tdGhlLW5lZWQtZm9yLXRydXN0LW1lbWVzLWFuZC1yZWFsaXR5Lw.U5sRqVsUhnWrVL5v7_dYkHkrq8HBylHPpkVw22Qnq96z1cVNO956N4gkPXsERWelo5sdocg4Pf6_Ajbhbg9ouij4vjPZ0-HFUWkDP1QJv6HLqih6Mahd29SPJJjE92x6UclpEjoXF_6AsSmZs_UlC8FTN-Hq3I6d_DrbOL_x5Ts46jkuEZuzvcnfwOosDWKPcDq-zwccPdFMaqUFHu41XlZKWJeadAi6E7iWcBblqm0BQdwa35kqOKFTM7hnK87fNYRyq-jiq7aA842Ss0LI0wz8Qk_xl25EKTbwN51ylU8Y9j1D6pJLo_Oshe8qu677luz9J7SlYfkV-Jb_M4J7qA",
+          "publishedOn": "2021-11-16T13:21:35.000Z",
+          "wordCount": null,
+          "title": "ConstitutionDAO, The Need for Trust, Memes and Reality",
           "itunes": {}
         },
         {
@@ -13826,6 +13773,16 @@
           "publishedOn": "2021-11-16T13:21:35.000Z",
           "wordCount": null,
           "title": "ConstitutionDAO, The Need for Trust, Memes and Reality",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/opendoor-earnings-opendoors-pricing-opendoors-scalability/",
+          "author": "Ben Thompson",
+          "description": "Opendoor's results suggest that the problem in the home-buying market was unique to Zillow's lack of expertise, not the model",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9vcGVuZG9vci1lYXJuaW5ncy1vcGVuZG9vcnMtcHJpY2luZy1vcGVuZG9vcnMtc2NhbGFiaWxpdHkv.gYlH053fHSptr0mJdlpza1nt48iMwkjF9F6wzvobs3d69V-WrWhf56mQpIha_pprGrC9fofrqcFSPI0v8czCdGnedk9kWoL5Wby8vSiDHDOigRyP83lb_zU6944VpScxjVMbaz6dtddq0tMg0qDORPPMkVCLvmOfhx2tItFSITA26cMcyv_PLBpB-2WoOU9StL3rgPc2SyoOX8LGmIDG7qz3Hdu3eWEwHtHYPT4mdzcvus4xCGHtZfvluxRSmezpQWM6TW-xBkpA1dPR9p7Ad7u5gw7Dt-wa7hb0iZBxbhMUAzWQQOHrwsBdqQIp4AL2k1Yy2CHrOKDOHXlFkMHTwg",
+          "publishedOn": "2021-11-15T11:56:46.000Z",
+          "wordCount": null,
+          "title": "Opendoor Earnings, Opendoor's Pricing, Opendoor's Scalability",
           "itunes": {}
         },
         {
@@ -14056,256 +14013,6 @@
           "publishedOn": "2021-11-15T11:56:46.000Z",
           "wordCount": null,
           "title": "Opendoor Earnings, Opendoor's Pricing, Opendoor's Scalability",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
-          "author": "Ben Thompson",
-          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.WNdUJhHdwFSxhMlsonchLFn_ZkmN23Hq-YU97QME7FtE-6rtCsbcwne5qcptFJiW03Cz_NBHHB1uVvEicBZZ98lNXM8FI-BoOaq5uI1iM0Q-MygkvPWvlS977H9BF8d9HmgBQjDC54kzLgXo6XUXblUTb8DuRU0PzLXl9FLJvzD9c2pRQG7gqcAHtUvaffHnCyR-P3X2khVQXrmJSxs9DzwA4b6yJDQ7b849PyWDKBQ4hP9bb29DIHs1A-BEeqWIhqmnGGVLUtgwLKJMKAZiDnbA12niBaJ_48LHleyQEDk_UlAqbGj0UzSBaujF6jG3TWiLm2ayEKLWfvhTT3fOmQ",
-          "publishedOn": "2021-11-11T13:29:31.000Z",
-          "wordCount": null,
-          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
-          "author": "Ben Thompson",
-          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.N9O-X40o_98R6cYEyjXfWfqxTnGfN28smpo5V3i6-lFja0QlEf6zxJ43CddyxmiLsN-e11nTNvAusCATm4X320coSO8vMW6Fs_coHYFxb7Qf4lk4IKZ68Ibqz0Wsyw2HMq0XQSed4_WRatb8x3fHKbZATCn5gR9Yq9QnKcr9nkvUICzVhlDPgA0toi_MRG4tt-4YBojfcvSYGZwSQjoEg8SvO-AsqksLY84qiymrAbTzdueHP9mr2c3JnROy_Wnf7RjQjpsP5mkYlOrJE4hWD-XXQvuarwGtDFzCzRm5-UJ8fJ9mkyLEhOCQPN0IZ3VGq704FZe6o-6wTZaFIebSMQ",
-          "publishedOn": "2021-11-11T13:29:31.000Z",
-          "wordCount": null,
-          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
-          "author": "Ben Thompson",
-          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.HnSzVr5Ushcbgp3ntrVaPCQgcBl7kRpN7dMneAOs7mCb9cm7orbj14zK9CzZmMhgF6Xkz6WoS5x_tvvCRsbUfz6NFH2fH5779fD0TiltsA2uLerUxMKH5xbP0RfUeOl8VLkcJ15X_LgI4w7dy_I65ZcDbYNcWcInA5APjLZPC8v3c84Shav42S6GfQCV0js_nnQUqNLJYAtYA_UIXYEtTgd4vj0R_H78-0M0iRhyGkAxXx611KvTB6LA7uasmmzvjaGNvRBNC7NXRKth9vzlGkCYSrmEZRuyrbyZYK1TlOoR3OwMUYUlvh_AMqK9zrRhtE-qtCla0gf5H1fwTTyPCg",
-          "publishedOn": "2021-11-11T13:29:31.000Z",
-          "wordCount": null,
-          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
-          "author": "Ben Thompson",
-          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.jqFiiX0Ter9ShlpmWBc1qSu6LMu6VoI13ch6dJ8q3JfjnIEgkRRazLCHE57hxOTV_5F1p76_B26Y8XR36fyjgEsrw4wGqj7x4rpuLmbX2KDeJ7xh9T-XDDCkm-ZEK5EI2kE7H9sXcFNSh_KVq2Gl48MaSuxPHXgji6I8AxMVBu4o_seP1AtPpmWfqwzhw770x8PGdtPPo0lQH8_7yZm9imXO86Du3uaFDVn4OqkHEmCOWCbsKQtFUYWVTMUxsJR8I_O1ygmQJ4chn84EkZqTnqrgyUF7zSYWZ_X_2svtuCpTi_ikgCcfRQ7DXVyMTezfg6Qw6p4xinlhRaEW3wsIjg",
-          "publishedOn": "2021-11-11T13:29:31.000Z",
-          "wordCount": null,
-          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
-          "author": "Ben Thompson",
-          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.dHsMHLppeC-vkGlOVGG9O_86F2cxCcwNQN5TgQIO49VzU13YDeSEy7ZktLf7ic_J6RGcuwBrZlzWt9UQOSSejgWGz_GocMf3L_JB11fgFMrpTWes1gX6bl-2O9LzbYT-D7hDXqcHp2Xyq5HQDNHyRUGcvshUbsvDiDa05iuP2glnGGoZzL7m2fY8uhjuM7Bm0fLmLDJq3QGv1ZUb-AeDJrNtr-ZqP9Ow2uWUNgEkqq7CdCc-VD-mYNUWaW6KrXWuyjGJS8n_Yp_NFf1Kxrf_Fg4quv5ZOi7jlCOV7s2jZP0bMddoaEB8_6Mu2BfrNfOVzvv8Fw99OV_LEUaAVHGx5A",
-          "publishedOn": "2021-11-11T13:29:31.000Z",
-          "wordCount": null,
-          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
-          "author": "Ben Thompson",
-          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.ahJAiri6Fde58WSOroQrmcxQBvhMRMGJg8Dyw3NaEY6wtRatHVbwN0BuqkmFt0gWG45PyPZikNJ5DhaR2iwqKa12kF5NxLuCLnWdypZvtI6hp-rGfpZYQKyXkN5FmtE3-sfkMIw55isKclmFNc59JSav2A_dUDdTir-cttuqq8a2l9dcOdJ5lgBVqOlqFhSS-lpwjFcHLJVlqpdyGKFIeQ49gANmVQte5L7Ti66KER0B63HXSkIqQQZTH32b-6ovY_inqOACQAKv6yeAaRh9OTGRPzQEtOCUlNrMAwIbQdygnPsaB84TsaoGlowT9X9fKqp_vKsK0dj0ikibyiCYrQ",
-          "publishedOn": "2021-11-11T13:29:31.000Z",
-          "wordCount": null,
-          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
-          "author": "Ben Thompson",
-          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.OLSh0UtkZCdF_SGdk8XJbKSS8F3SquyKNwstlJyHBavd5bBIt4lUqTrZxEgoiNm0_vBbhzp8dX4BMWXqeLT0aICeenEY4Af61pLmLlmwy_HsNCn9NFzDC0gcZJHAQGep7vyQnFluz8cNgt95H2gxCBzzHzeebg7jpXYexhoP9VSzVrsS4DZrqG1B1M9LDrUsjwrynFmIMRAvZuzhk4vUo3SF_vgWkzdqYUs9ndbRIqGv3nwWH08hnoagVvSJP_TZMWA2bSw6YVh-eVW5lmPRICFQ8L3h8ChK-yTdTl2DELT6XSrOaI_925lUQDg941G9Kd0KRR5oPd8IMWE7SnnXpg",
-          "publishedOn": "2021-11-11T13:29:31.000Z",
-          "wordCount": null,
-          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
-          "author": "Ben Thompson",
-          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.Si9efMAPBnkt4u73c80jXQpngvygASHKf9j4FdkQwR9X9RK392rp_C18pakDh14Fs5KsgiocNIuZKAp73QZP9HQDTAckBRgOf-_MUVdJLjfHYHXn35KxYFx0PoeCaBkTuoaonRiP5gk09AzXrwbfXVj-FgJtm-O3dlpN-67-GbNK0AU_T1TgjwtgrRx6GxKiBl4J0TOwk8G1BEq3SDC1Vrh8VrXs2IOcq9zuDWiSCaYVqE4-84Laj_PciJYz0217t4Vr_0_A3MwmiI0u5btoOUgj2Oi8BBIAjSAafS9_41iKe0Ds-D9QBUrYYdrao9O52GvVZdFHCnnB7B_2AZuavQ",
-          "publishedOn": "2021-11-11T13:29:31.000Z",
-          "wordCount": null,
-          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
-          "author": "Ben Thompson",
-          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.pe9lcOX1VKHRCVd2TDT2MVAqui9edE_j49kWDAYoxtFftW5FbcedaCrwxRsz4fPgupj6Di0TRyLMg8fUyzi9zqaZpdJ4enwgytx3TkLWRWWdm9f5Bh-OGjqYNWslzrLrDM4LfgC46Z76aERCIAeuXzB0nEdA-YotqYof8mPlfWbYe25_wEImBBrOjoIdLRz2NHfUa2zBOsqddoRuA2y_uOFy1mrt778krII_JtoHCcDyG_dygKmGZop6p0aL6QbckqTnGYKRc4TdOZVWZ_5zHgN533ge_Ny15dijCHqi1EQkqupWiiSYGA-Yz1_lyv1-Pno7qejx_7nMgT78ziTZVA",
-          "publishedOn": "2021-11-11T13:29:31.000Z",
-          "wordCount": null,
-          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
-          "author": "Ben Thompson",
-          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.TLMb8DrECGAlDdiiKZAl4aeZTGLo0so2WmhC6tFSaOfCRIbkoZhTAgpXnvRnjYer-kN9TsrJ4iF7sB0eREaE57ceKlQZwNEkLGyuU4jTMYqI_pEYUHReo7JCXiAbeBOecJA2QujTN8yk5Vs1DcZUKbd4cxaJShEBiMJIJp8e_tdvJJBXn5FNsiAherwZT-BBf2BUsALM8O9lhr0TLHL-gxNoKzXRCx796f7qfpZnzPi4EomcGqqqjEenpxY8XOsHQrSOXKzKuuVeTAREu7azkm7qVXdJ7z7pcnjtqStmadIz2kO3yyngUSOPIEtDKSA4GQTRpUy2CXlTsLsvDr5SsQ",
-          "publishedOn": "2021-11-11T13:29:31.000Z",
-          "wordCount": null,
-          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
-          "author": "Ben Thompson",
-          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.BUBv5TYujzlWkbvxTJnlkCsDjVS3z2S3e0FqZ4pCxv58Tqy9wkD4NhVzwnBFEmfP6CU_Pr-uOaRgbABwHFbg64xlGD5mWQv5CuVf8w7BGfpz-BLfz2jd1Rfj2b7dQykx4O58KnmVTcHkPQa9c0vygJ321BDITnCP7mCgeE035nw18U442315SdrAv89rZloOtsV-lEuuOLLPyeJo_seB1HtvygDIcCxmSv8ArocfkHknide1x6FSesPK11SyDH13Rd2FztqL1BNKZeSfsVTyu7mBewsQCk6FLDqCGVDeZuSNtDZf7ixYFp16j-OMoo5ZKufK4ZvTPjtF7V0TQRM1gQ",
-          "publishedOn": "2021-11-11T13:29:31.000Z",
-          "wordCount": null,
-          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
-          "author": "Ben Thompson",
-          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.ccbyuUqOEgYeLHnXp6vrhgO9ThsZzOtPmik3LmU5Y75ovRRBCkVWxDQ1Q47upUXu9q3dhWXYa7i04urTNgdvo95nydfNWV-m0p-XeeJcVJhHJ7B51ICYZS3yIuKdFO3xxZuud7lIklugn93z8K5agMIMVKXP_LE-oqP-1EekEuttNjKJXdVgFCwB95YCRArVOS0HyAHkV3Kn3RzTjHnbpbYi1JupTtYbx4CU83PU-biwtY-UZXjUgGuH8RrxOHNwV_AVH59DAPBSnx0yd7IsJ8Bm4WsD9hsfSlaoCnwIgqMCTYK0H-8CONI2vT2qmsii17dDMEkrgU7Kdhlp6Ds8Eg",
-          "publishedOn": "2021-11-11T13:29:31.000Z",
-          "wordCount": null,
-          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
-          "author": "Ben Thompson",
-          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.BDjrZFYTolQViN-ejuVRI31imN5jhUYO4qcpNJ7iI73YEf_Ha31mGNmvDV8mWxZKygJ-EYzG1mOukriu9iWOQhO5sG93qBm2wCOi9x58GFTdKAW09axN1s55RSCxIL7TRUKY5QALEBYzkIiAQYVaGX1kavy4G-wP4Dyw04QLFAuKx5XmAo9e8JpI5MnzyP9Ca_5zKwYoWdh6twb9Y46NSlDUHfr31MXOIV8stxbhFtLImNT2OXUF04aE1zqWh-Bz3g73qiX0-aHzemlxYXGvuYmVYL6yrSqEu6xXuqokU9dtNmxbf1c6eabd8Kphv5As45F8NydSBPqSBbrt8HA-nQ",
-          "publishedOn": "2021-11-11T13:29:31.000Z",
-          "wordCount": null,
-          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
-          "author": "Ben Thompson",
-          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.fZtpES0pPABxJqcApp6wr-rA1YsyPk79kPdwgoSgTiyVfY7IVWwc3HBTZpO3ZQlTmWN3iyORfE9n1W0WfKgHTv9-rrkokq1OCq7XFKID0Bqz8xmY_mhO01jEWuV00Os0-TqrO4CZndriYxNONd2FtcQ_1Qvs_nwJFkZmr6X2rA5iIeQlRbvYAU2kuWIdlUjujB3ibdH28r4mSTvq9LZ3C9h8x_PTTvskrL1cb2FohLF9tON-7TuT7Jlj6R7vaPbUi8t5RmDjjoqOY-apWY9m_p7affznK8bvBhGNe_7UnCpuoQEhb-9yGTSFzLcA3_3y8lbPOXYDCaG_Ymw8eeaQOg",
-          "publishedOn": "2021-11-11T13:29:31.000Z",
-          "wordCount": null,
-          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
-          "author": "Ben Thompson",
-          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.iO_KFgNUd9oPvpYIL5859igWXwNjRe5couQ_ilwrVMOsRxOzD86VWn-Qt4bjC0NYJsVCsKdTDezyd-LSdM-Wz951LE_241CvIRyf6Q6UfP6ohdaHKTI_TaqAUXTfuD2aV_0GPGSjfqWFZY_uPoCKfpu6I2LGwlmHkCKVjvQMWWhO3qcinvtr0lj3qe5WbaVZz70yryAzxnBJpUgLzjdjEwbXZPA6kNjVhVEz_h7Yr-wwoPWJZrgV0xjOWGXL0u_3yD0raFWeE--THK9uTGuwmAeDTJg-tKGYKattHFD7-R8bnToqXlric_Sr8gQr0eLRcvKmDgqQmkFUmhqb-81VXA",
-          "publishedOn": "2021-11-11T13:29:31.000Z",
-          "wordCount": null,
-          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
-          "author": "Ben Thompson",
-          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.obQX2hdBuqeMdfRBWajZBZNfkleEV5roob4MxLh5W2XGAidtveApGNfeqfGFCZJv0JfEhKL-TdXYarGR23Z0DGA6RYptaeVsI_HoCqkL4A2QNwZVBP9X5ah8GJh_6Ym291syelZTVcrQWBiAdItgMKTeztL8ckUVkPVGWaxIQHg-KxLjEhCypKIniukkiOIbis8PJ6R21svKfzW-Q76XTSb3ptySs2995WlDa069CSN2mEYLb-b-DpCFJJT_MZDT8n2M7lf9FMvxQl9zgJQqjRjcqEO9bxYszIqZcoyzi_Z1mEPPVZdxqYmB8ZDm7580yj3mFRh7UnYJD8IuPUiJUg",
-          "publishedOn": "2021-11-11T13:29:31.000Z",
-          "wordCount": null,
-          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
-          "author": "Ben Thompson",
-          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.sKORAEmC6JP87mCi8G5VRahgkosBbgIi0S8q7_2xdRg2trdE6MBGS80xTAZRXkwyILH-bemcYTltSgBQP_Pln7TUzYrOHHmKtbx1OdZQ4phlEIfmFVEMAir9Zjo9ZgczpFAk8i1KdyEoy5PpWJtKHBuFKHenpcJcbMNdstGURpSTypqWymbVeu0nQv6GwzX5VvWIfAc1v09wntGgZpd10gUzrVX_P1Tmz7CsVkGXwKw85-GbPBewnfcuErynwAIpNgDliwF3wFMxDwqTX6iDojRNxv2gb_PlGThhlqzAOUV-uKpSWSB-BiDkOuk4oLcTwYzOgEuIEEGQzrxvEETOWw",
-          "publishedOn": "2021-11-11T13:29:31.000Z",
-          "wordCount": null,
-          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
-          "author": "Ben Thompson",
-          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.dsUduZgOX59e2LTPFaqUxi3qeLtEfbiJMRHoJC6wVM37l-D1WbLumlDpf2_9SCbC6og5r7xmpIewUDo-Iw2lcdcTQL_mobdw7pTm4Bbsk7sv_0ABKEmx5cCXTNKb90XrlGENQCyWOJvn5WD3rMyPVv53adILfrOKv-oaIKXKg0xZE5FRnBk9Kcq87uFFLtpATbDbblwR8UlKir2Bq7N3gAsrfmrmVN_FSU_bWrmnuocN5Mtzynn86_ePpJfJ8erbCfVJCG9E7Q6T7_SZj8R5vQFTv7S7E6Z1nm3cMovfoAHRGS-jUFtpV3LGN9gYbiGMh1XtlducUy2DUTpbntB9Lg",
-          "publishedOn": "2021-11-11T13:29:31.000Z",
-          "wordCount": null,
-          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
-          "author": "Ben Thompson",
-          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.BqoDwfpXvyfkbvwgkAgv2xPH1wF_SIka7m7g1CsQR_GjANAlB0dRa2dWQlMvmTouJBTARQC32v4BWH7M9oOZAOr4uesK9c8xRqKGP_iAluoU2vYCQ0uHF3g4XvpfpSdqHNi6H9yr4t298W46gH1brGIPkIfmdUZ98s0fIj7zt8PuR1lYbsV_osOHtziah8ib9AmMU8izQAGHb1NDbOrAUWmBC_uHmVwmozTklkyezof87a2dKdjQecruwn8sm-TAz-J_opbLlycpCJ8BCbFln1_gdPMbg3NBQP3kjxXiJR3XqLrCmFWr0VILFIOfthfPek9Wmy6b45n9rxOZspnn-g",
-          "publishedOn": "2021-11-11T13:29:31.000Z",
-          "wordCount": null,
-          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
-          "author": "Ben Thompson",
-          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.oWOltKGDFq9vXP74hWGTbwEBu7ZpkzUycV7C_8vTl7sWKVykwBwFxZ7Uy5GZo_Rsp3rTEtuz7uIUANdxHawTwvR3kNuUXZStaF8s0rVZW8pXmNs6qJVSuEN_WAihqKLlLMJ3lszb5-vy1V7Gtd1XiqZY-ZleQIgWqzxfBU2YGfq93g5f_Zqd2FyfGpjbixUGIn6mOv2TPSgbOO541XiftmVvooCRc8F_fSA1zMJuCjtzl8Aa6clb2JFDdTiNDMogT5xMQPsby4MLsKSBMSHZXipeBZro1MixCIq3pss7bG5kbq8f-ZV8WCvNeS5zpbDa1wG0-zZAqTP-kWiKZ34R_w",
-          "publishedOn": "2021-11-11T13:29:31.000Z",
-          "wordCount": null,
-          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
-          "author": "Ben Thompson",
-          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.J3CPE_VJSvSoah8tE0jBLinnQbU0DClpb9Vj61jihy3Z9tyRHIxATSN_MCdzg0fRMGAWrH0CcVElX7vlvj3PpGFq903ljBqPpZC4_7v7A4-KMix2BvSYCsH9Drfyqy7TDmv-Ye-1DWkwjYgnw5S3cvJ_x69WCpLrutzTd7_v38GJT8i9SrBaEolby7wslywWaQCcVHEuSOmjuogi0bZkdOUKz_D5_ppMv0lhHrO01nkod1xm15k3-Uwzu_xUNLY9RwycmSw79GA8K0_p9n6sZJjyEOfxazXoedAffTa216xoBcibgUlg3k-NAqOZ7hX7hi2cz4I3NcsQQK-FatfUnQ",
-          "publishedOn": "2021-11-11T13:29:31.000Z",
-          "wordCount": null,
-          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
-          "author": "Ben Thompson",
-          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.or5s0O92vw689d77GMDZ-Mik9OSa-ybzd3EwvPPYws6Iqm5mdUzwkRKxXnbZeJJu2-dGnoQaps3VUvhyTtZpAAsswKZmeZMyoyL7dyFT22AlzgCsLWwINrIUmzXwictXF9pjQbpwbzhEq-gNm1zTPjC8b2-x1JA1nH6U1D4-k6UQ-NdNnpVueXUE9ZjH4G6Cb3PaKXOzqP-ls7w4xZ_CVpXVRuW9jGuvy_ukLQFh9vPeHUplC6p05X0Or54BgHmeDK-ZHmS2BhNunYU4k3WYfQsvbkWcOH5vgAEVP51Sa4y296L_ePYUaTQJT_YdYqLs0r2OEzDvieEVI9CCdC04CQ",
-          "publishedOn": "2021-11-11T13:29:31.000Z",
-          "wordCount": null,
-          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
-          "author": "Ben Thompson",
-          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.gIND9MBrwY_4r-QmXp8OYFVgXGjgTXmIba5r2XjsfBorxlOWgUqALAdppADlZTP0heiYCytnAMQqwFtOooPqxXFzR8woAJKzD2QXicDJZK3Rfp_WLeI1B9z0Cs8yRjiX5DZ0wNZdRemn9RmurzUMl7ZTB5ameP7lgCoZq4AuHnSxM0JcUcNVFILILXB64EbTfpb7lUOaEF30IfSiKVPHoyb27Vndz6NE61HkEq7CoxxVmLEPNB_qIV0BSS4PM5d4VQ7ICdGG6Yd4550-NR1FlhRIELhKLcOySliqCxnQBfzHL-kYR_3HGb-4ubPzyHn5IW9rPHTwIugDlEq_Ke9PEQ",
-          "publishedOn": "2021-11-11T13:29:31.000Z",
-          "wordCount": null,
-          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
-          "author": "Ben Thompson",
-          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.jRf50SmNF0WBs4Lct9EvnZ1VbxpLx4JerfWNwNNlj5WlHUCNQc4qnbfHrX6O2V0rFu19NKMZWNHANtx1MPTq_Oz9yEAdYNpiU196q_DBEAKqL8uInt421apuyxPIw4KSFKwMAT8wg9nFnT4VF0DoDCSsvCX22yphjmBekNJ_p63aSv_NvOub1Fiw7GX9cYF6rgiRwrFgfuOIp7xdXjexfiCjLrk6ueiPl-JkiU-6qJqlkVdWGX3WylDBbd2Qh62kbiMnDS-Mq2lFGLyXKmOuhLnFx567M6hMuDcmG5fTmLW6QYKbJOK9Ni89WM-J6OZTkvG-A25QuqkD7SW2PJ5gzg",
-          "publishedOn": "2021-11-11T13:29:31.000Z",
-          "wordCount": null,
-          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2021/nvidias-gtc-keynote-the-nvidia-stack-the-omniverse/",
-          "author": "Ben Thompson",
-          "description": "Nvidia's can ship so many new things because it is building on a common foundation; then, Nvidia's Omniverse gives another way of thinking about the Metaverse.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9udmlkaWFzLWd0Yy1rZXlub3RlLXRoZS1udmlkaWEtc3RhY2stdGhlLW9tbml2ZXJzZS8.SNeDIY_AYepOYU_-r0Bbw7wu9HnZheVwki8Dbl8KAsQTSXF0nqejybCeJUJdIy4ul8nkkCwU3J8P1J_xcuBwW5A6GYVo1LW-GxCdZJfWnTVHKKKK-KAJwZ1AX5HFFEXqvjeOmRfw4WdaUVTalNO3fv-NZGAv0iSi0jOsKqjiAUeZ30QILMsMguUJVElLud3-fzZXcemgKxpX4D1UXwut0cVPdYE_jKUAJ1wAhkDNo2pOAd1mQl4TPsjed3zGMSWW8SybbNJidA4VNU2ZsJP1o9op_e9Va1OUJKpd_KcCjb-izM8vjFciKHJ9D6vdCG2G_PWcmzOjWBZZKM06oRBCSw",
-          "publishedOn": "2021-11-11T13:29:31.000Z",
-          "wordCount": null,
-          "title": "Nvidia's GTC Keynote, The Nvidia Stack, The Omniverse",
           "itunes": {}
         }
       ]
@@ -14971,6 +14678,105 @@
       "feedUrl": "https://reddit.buzzing.cc/rss.xml",
       "siteUrl": "https://reddit.buzzing.cc",
       "articles": [
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rdygdh/the_girlfriend_wasnt_expecting_this/",
+          "author": null,
+          "description": "女友没有料到会这样",
+          "link": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rdygdh/the_girlfriend_wasnt_expecting_this/",
+          "publishedOn": "2021-12-11T21:19:26.000Z",
+          "wordCount": 18,
+          "title": "女友没有料到会这样"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/dankmemes/comments/rdy8bd/very_interesting/",
+          "author": null,
+          "description": "非常有趣",
+          "link": "https://reddit.buzzing.cc/reddit/r/dankmemes/comments/rdy8bd/very_interesting/",
+          "publishedOn": "2021-12-11T20:50:43.000Z",
+          "wordCount": 16,
+          "title": "非常有趣"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/gaming/comments/rdohkz/this_is_not_a_real_photo_its_unreal_engine_5/",
+          "author": null,
+          "description": "这不是一张真实的照片。它是虚幻引擎5。",
+          "link": "https://reddit.buzzing.cc/reddit/r/gaming/comments/rdohkz/this_is_not_a_real_photo_its_unreal_engine_5/",
+          "publishedOn": "2021-12-11T19:22:51.000Z",
+          "wordCount": 24,
+          "title": "这不是一张真实的照片。它是虚幻引擎5。"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/memes/comments/rdxf6p/he_should_change_his_hairstyle/",
+          "author": null,
+          "description": "他应该改变他的发型",
+          "link": "https://reddit.buzzing.cc/reddit/r/memes/comments/rdxf6p/he_should_change_his_hairstyle/",
+          "publishedOn": "2021-12-11T17:34:10.000Z",
+          "wordCount": 19,
+          "title": "他应该改变他的发型"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/mildlyinteresting/comments/rdi56c/housekeeping_staff_found_an_owl_in_the_room_of_a/",
+          "author": null,
+          "description": "房务人员在昨天退房的客人的房间里发现了一只猫头鹰。",
+          "link": "https://reddit.buzzing.cc/reddit/r/mildlyinteresting/comments/rdi56c/housekeeping_staff_found_an_owl_in_the_room_of_a/",
+          "publishedOn": "2021-12-11T13:31:49.000Z",
+          "wordCount": 28,
+          "title": "房务人员在昨天退房的客人的房间里发现了一只猫头鹰。"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/Unexpected/comments/rdre1s/he_doctor_stranged_that_shit/",
+          "author": null,
+          "description": "他是个医生，他把那东西弄坏了",
+          "link": "https://reddit.buzzing.cc/reddit/r/Unexpected/comments/rdre1s/he_doctor_stranged_that_shit/",
+          "publishedOn": "2021-12-11T13:12:21.000Z",
+          "wordCount": 19,
+          "title": "他是个医生，他把那东西弄坏了"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/MurderedByWords/comments/rdjx05/winwin_situation/",
+          "author": null,
+          "description": "双赢的局面",
+          "link": "https://reddit.buzzing.cc/reddit/r/MurderedByWords/comments/rdjx05/winwin_situation/",
+          "publishedOn": "2021-12-11T13:12:21.000Z",
+          "wordCount": 16,
+          "title": "双赢的局面"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/rd6huu/im_adorable/",
+          "author": null,
+          "description": "我很可爱",
+          "link": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/rd6huu/im_adorable/",
+          "publishedOn": "2021-12-11T06:23:15.000Z",
+          "wordCount": 16,
+          "title": "我很可爱"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/rde885/a_winwin_situation_for_everyone/",
+          "author": null,
+          "description": "对所有人来说都是一个双赢的局面？",
+          "link": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/rde885/a_winwin_situation_for_everyone/",
+          "publishedOn": "2021-12-11T04:41:57.000Z",
+          "wordCount": 19,
+          "title": "对所有人来说都是一个双赢的局面？"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/pics/comments/rdffhk/i_see_your_school_lunch_and_i_raise_you_a_dinner/",
+          "author": null,
+          "description": "我看到你的学校午餐，我给你在美国海军舰艇上的晚餐。",
+          "link": "https://reddit.buzzing.cc/reddit/r/pics/comments/rdffhk/i_see_your_school_lunch_and_i_raise_you_a_dinner/",
+          "publishedOn": "2021-12-11T02:46:31.000Z",
+          "wordCount": 32,
+          "title": "我看到你的学校午餐，我给你在美国海军舰艇上的晚餐。"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/aww/comments/rdd570/had_an_adoption_reveal_photo_shoot_for_our_newly/",
+          "author": null,
+          "description": "为我们新收养的青少年拍摄了一张 \"收养揭秘 \"照片，其中包括青少年的翻白眼。",
+          "link": "https://reddit.buzzing.cc/reddit/r/aww/comments/rdd570/had_an_adoption_reveal_photo_shoot_for_our_newly/",
+          "publishedOn": "2021-12-11T01:29:46.000Z",
+          "wordCount": 34,
+          "title": "为我们新收养的青少年拍摄了一张 \"收养揭秘 \"照片，其中包括青少年的翻白眼。"
+        },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rd7iq9/a_teacher_shows_that_a_bull_in_a_square_full_of/",
           "author": null,
@@ -17372,6 +17178,285 @@
       "feedUrl": "https://hn.buzzing.cc/rss.xml",
       "siteUrl": "https://hn.buzzing.cc",
       "articles": [
+        {
+          "id": "https://hn.buzzing.cc/hn/29523608",
+          "author": null,
+          "description": "Log4j：在岩石和困难的地方之间",
+          "link": "https://hn.buzzing.cc/hn/29523608",
+          "publishedOn": "2021-12-11T22:55:47.000Z",
+          "wordCount": 27,
+          "title": "Log4j：在岩石和困难的地方之间"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29521324",
+          "author": null,
+          "description": "优秀世界锦标赛总决赛",
+          "link": "https://hn.buzzing.cc/hn/29521324",
+          "publishedOn": "2021-12-11T22:34:25.000Z",
+          "wordCount": 24,
+          "title": "优秀世界锦标赛总决赛"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29520200",
+          "author": null,
+          "description": "Space-shooter.c：用C语言编写的跨平台、自上而下的2D空间射击游戏。",
+          "link": "https://hn.buzzing.cc/hn/29520200",
+          "publishedOn": "2021-12-11T22:34:25.000Z",
+          "wordCount": 30,
+          "title": "Space-shooter.c：用C语言编写的跨平台、自上而下的2D空间射击游戏。"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29522941",
+          "author": null,
+          "description": "\"开放源码 \"被打破",
+          "link": "https://hn.buzzing.cc/hn/29522941",
+          "publishedOn": "2021-12-11T21:19:01.000Z",
+          "wordCount": 26,
+          "title": "\"开放源码 \"被打破"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29523510",
+          "author": null,
+          "description": "专业的维护者：一个警醒的信号",
+          "link": "https://hn.buzzing.cc/hn/29523510",
+          "publishedOn": "2021-12-11T20:36:46.000Z",
+          "wordCount": 26,
+          "title": "专业的维护者：一个警醒的信号"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29521506",
+          "author": null,
+          "description": "PDP-11启动",
+          "link": "https://hn.buzzing.cc/hn/29521506",
+          "publishedOn": "2021-12-11T20:09:40.000Z",
+          "wordCount": 23,
+          "title": "PDP-11启动"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29520415",
+          "author": null,
+          "description": "Apache Log4j中广泛存在的严重远程代码执行的漏洞",
+          "link": "https://hn.buzzing.cc/hn/29520415",
+          "publishedOn": "2021-12-11T19:22:25.000Z",
+          "wordCount": 34,
+          "title": "Apache Log4j中广泛存在的严重远程代码执行的漏洞"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29521714",
+          "author": null,
+          "description": "Ask HN: 拥有7年的.com，一家新公司用我的名字注册了.NET商标。",
+          "link": "https://hn.buzzing.cc/hn/29521714",
+          "publishedOn": "2021-12-11T18:30:44.000Z",
+          "wordCount": 40,
+          "title": "Ask HN: 拥有7年的.com，一家新公司用我的名字注册了.NET商标。"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29519679",
+          "author": null,
+          "description": "那些从未进入管理层的开发者会怎样？",
+          "link": "https://hn.buzzing.cc/hn/29519679",
+          "publishedOn": "2021-12-11T17:33:37.000Z",
+          "wordCount": 31,
+          "title": "那些从未进入管理层的开发者会怎样？"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29521258",
+          "author": null,
+          "description": "PSA：由于Manifestv3，Chrome上的uBlock/AdBlocks将失去功能",
+          "link": "https://hn.buzzing.cc/hn/29521258",
+          "publishedOn": "2021-12-11T16:55:36.000Z",
+          "wordCount": 30,
+          "title": "PSA：由于Manifestv3，Chrome上的uBlock/AdBlocks将失去功能"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29518955",
+          "author": null,
+          "description": "在Y分钟内学会X",
+          "link": "https://hn.buzzing.cc/hn/29518955",
+          "publishedOn": "2021-12-11T16:22:44.000Z",
+          "wordCount": 25,
+          "title": "在Y分钟内学会X"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29512302",
+          "author": null,
+          "description": "让我们把四元数从每个3D引擎中移除（2018）。",
+          "link": "https://hn.buzzing.cc/hn/29512302",
+          "publishedOn": "2021-12-11T15:25:00.000Z",
+          "wordCount": 28,
+          "title": "让我们把四元数从每个3D引擎中移除（2018）。"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29513812",
+          "author": null,
+          "description": "安德斯-海尔斯伯格关于德尔菲的访谈（1995）。",
+          "link": "https://hn.buzzing.cc/hn/29513812",
+          "publishedOn": "2021-12-11T14:57:11.000Z",
+          "wordCount": 27,
+          "title": "安德斯-海尔斯伯格关于德尔菲的访谈（1995）。"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29517021",
+          "author": null,
+          "description": "赛博朋克2077》奇怪的、未完成的传奇故事",
+          "link": "https://hn.buzzing.cc/hn/29517021",
+          "publishedOn": "2021-12-11T14:50:46.000Z",
+          "wordCount": 27,
+          "title": "赛博朋克2077》奇怪的、未完成的传奇故事"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29517182",
+          "author": null,
+          "description": "十年的经验，仍然是失败的电话屏幕",
+          "link": "https://hn.buzzing.cc/hn/29517182",
+          "publishedOn": "2021-12-11T14:44:34.000Z",
+          "wordCount": 28,
+          "title": "十年的经验，仍然是失败的电话屏幕"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29515064",
+          "author": null,
+          "description": "昆虫比它们看起来更敏感",
+          "link": "https://hn.buzzing.cc/hn/29515064",
+          "publishedOn": "2021-12-11T12:02:06.000Z",
+          "wordCount": 27,
+          "title": "昆虫比它们看起来更敏感"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29518449",
+          "author": null,
+          "description": "Jndi。一个不负责任的糟糕的日志库",
+          "link": "https://hn.buzzing.cc/hn/29518449",
+          "publishedOn": "2021-12-11T11:28:34.000Z",
+          "wordCount": 26,
+          "title": "Jndi。一个不负责任的糟糕的日志库"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29517459",
+          "author": null,
+          "description": "梅赛德斯-奔驰赢得在高速公路上进行三级自动驾驶的批准",
+          "link": "https://hn.buzzing.cc/hn/29517459",
+          "publishedOn": "2021-12-11T10:31:53.000Z",
+          "wordCount": 31,
+          "title": "梅赛德斯-奔驰赢得在高速公路上进行三级自动驾驶的批准"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29514322",
+          "author": null,
+          "description": "Imagor。用Go编写的快速、可用于Docker的图像处理服务器",
+          "link": "https://hn.buzzing.cc/hn/29514322",
+          "publishedOn": "2021-12-11T08:34:45.000Z",
+          "wordCount": 30,
+          "title": "Imagor。用Go编写的快速、可用于Docker的图像处理服务器"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29517694",
+          "author": null,
+          "description": "马格努斯-卡尔森在赢得一边倒的比赛后保住了头衔",
+          "link": "https://hn.buzzing.cc/hn/29517694",
+          "publishedOn": "2021-12-11T07:58:54.000Z",
+          "wordCount": 28,
+          "title": "马格努斯-卡尔森在赢得一边倒的比赛后保住了头衔"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29511773",
+          "author": null,
+          "description": "与Zig，一个BDFL运行的项目对接",
+          "link": "https://hn.buzzing.cc/hn/29511773",
+          "publishedOn": "2021-12-11T06:53:23.000Z",
+          "wordCount": 26,
+          "title": "与Zig，一个BDFL运行的项目对接"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29515087",
+          "author": null,
+          "description": "雅马哈DX7芯片逆向工程，第四部分：算法如何实现",
+          "link": "https://hn.buzzing.cc/hn/29515087",
+          "publishedOn": "2021-12-11T04:57:14.000Z",
+          "wordCount": 30,
+          "title": "雅马哈DX7芯片逆向工程，第四部分：算法如何实现"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29515996",
+          "author": null,
+          "description": "克鲁泡特金逃出监狱",
+          "link": "https://hn.buzzing.cc/hn/29515996",
+          "publishedOn": "2021-12-11T03:10:27.000Z",
+          "wordCount": 24,
+          "title": "克鲁泡特金逃出监狱"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29514521",
+          "author": null,
+          "description": "与Twitch百万富翁通宵达旦",
+          "link": "https://hn.buzzing.cc/hn/29514521",
+          "publishedOn": "2021-12-11T02:13:12.000Z",
+          "wordCount": 28,
+          "title": "与Twitch百万富翁通宵达旦"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29510978",
+          "author": null,
+          "description": "Freesound: 超过50万个CC许可的声音和效果样本的储存库",
+          "link": "https://hn.buzzing.cc/hn/29510978",
+          "publishedOn": "2021-12-11T01:29:17.000Z",
+          "wordCount": 34,
+          "title": "Freesound: 超过50万个CC许可的声音和效果样本的储存库"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29515882",
+          "author": null,
+          "description": "萨尔瓦多-达利作品中使用的睡眠技术",
+          "link": "https://hn.buzzing.cc/hn/29515882",
+          "publishedOn": "2021-12-11T01:29:17.000Z",
+          "wordCount": 28,
+          "title": "萨尔瓦多-达利作品中使用的睡眠技术"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29516482",
+          "author": null,
+          "description": "北弗吉尼亚州（美东-1）地区AWS服务事件的总结",
+          "link": "https://hn.buzzing.cc/hn/29516482",
+          "publishedOn": "2021-12-11T01:29:17.000Z",
+          "wordCount": 34,
+          "title": "北弗吉尼亚州（美东-1）地区AWS服务事件的总结"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29515050",
+          "author": null,
+          "description": "Better.com首席执行官Vishal Garg退居幕后，员工详述他如何 \"以恐惧为主导\"。",
+          "link": "https://hn.buzzing.cc/hn/29515050",
+          "publishedOn": "2021-12-11T00:15:18.000Z",
+          "wordCount": 39,
+          "title": "Better.com首席执行官Vishal Garg退居幕后，员工详述他如何 \"以恐惧为主导\"。"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29513318",
+          "author": null,
+          "description": "C64操作系统：让Commodore 64感到快速和实用",
+          "link": "https://hn.buzzing.cc/hn/29513318",
+          "publishedOn": "2021-12-11T00:15:18.000Z",
+          "wordCount": 35,
+          "title": "C64操作系统：让Commodore 64感到快速和实用"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29513547",
+          "author": null,
+          "description": "展示HN：去中心化、可变化、无服务器的Torrent Swarm网站",
+          "link": "https://hn.buzzing.cc/hn/29513547",
+          "publishedOn": "2021-12-11T00:15:18.000Z",
+          "wordCount": 31,
+          "title": "展示HN：去中心化、可变化、无服务器的Torrent Swarm网站"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29509454",
+          "author": null,
+          "description": "Python构建系统和Gentoo的未来",
+          "link": "https://hn.buzzing.cc/hn/29509454",
+          "publishedOn": "2021-12-11T00:15:18.000Z",
+          "wordCount": 29,
+          "title": "Python构建系统和Gentoo的未来"
+        },
         {
           "id": "https://hn.buzzing.cc/hn/29513946",
           "author": null,
@@ -21780,6 +21865,123 @@
       "feedUrl": "https://youtube.buzzing.cc/rss.xml",
       "siteUrl": "https://youtube.buzzing.cc",
       "articles": [
+        {
+          "id": "https://youtube.buzzing.cc/youtube/CTTjESBIxlk",
+          "author": null,
+          "description": "Y’all have been sending us viral resin hacks for years and it’s finally time to test them! Go to https://buyraycon.com/evanandkatelyn and use code HOLIDAY to get 15% off your Raycon order! Brought to you by Raycon. Check out the tools we used below! 👇\n\n🙏 Other sponsors:\nTotalBoat: check out the 2-part resin we use: http://totalboat.refr.cc/evankatelyn (search for high performance) (affiliate link)\nSophie & Toffee: check out the UVdiamond resin we use: https://sophieandtoffee.com/EvanandKatelyn \n\nCheck out the Patreon Aftershow for:\n- How many days it actually took to film\n- Brainstorming a cursed egg project\n- How we learned that sunlight can really warp thin resin\n- What we really think about life hacks in general\n- Our expectations vs how they turned out\n- Looking back, would we do any…",
+          "link": "https://youtube.buzzing.cc/youtube/CTTjESBIxlk",
+          "publishedOn": "2021-12-11T17:12:19.000Z",
+          "wordCount": 17,
+          "title": "树脂 \"专家 \"测试病毒式的树脂黑科技"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/mjME8KGYAks",
+          "author": null,
+          "description": "Good ol' nog from a century past. Some things needn't change :)\nMy TikTok: @bdylanhollis\n#Shorts",
+          "link": "https://youtube.buzzing.cc/youtube/mjME8KGYAks",
+          "publishedOn": "2021-12-11T06:03:17.000Z",
+          "wordCount": 17,
+          "title": "迪伦-霍利斯--1895年，EGGNOG"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/DLnVM22wZ44",
+          "author": null,
+          "description": "等待它......😱 #短裤",
+          "link": "https://youtube.buzzing.cc/youtube/DLnVM22wZ44",
+          "publishedOn": "2021-12-11T04:57:42.000Z",
+          "wordCount": 16,
+          "title": "等待它......😱 #短裤"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/A5KcZR-NvZY",
+          "author": null,
+          "description": "考试作弊...#故事时间#短裤",
+          "link": "https://youtube.buzzing.cc/youtube/A5KcZR-NvZY",
+          "publishedOn": "2021-12-11T02:46:36.000Z",
+          "wordCount": 17,
+          "title": "考试作弊...#故事时间#短裤"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/bqsLEkgLLiw",
+          "author": null,
+          "description": "“TRENDIFIER with Julian Dorey” Full Episode:\nhttps://www.youtube.com/watch?v=YD8gWnS3eXg&t=9854s\n\nLISTEN:\nApple Podcasts ▶ https://podcasts.apple.com/us/podcast/trendifier-with-julian-dorey/id1531416289 \nSpotify ▶ https://open.spotify.com/show/5skaSpDzq94Kh16so3c0uz \n\nJulian IG: https://www.instagram.com/julianddorey/\nTikTok: https://www.tiktok.com/@trendifier? \n\n#Shorts #LifeStory #Podcast",
+          "link": "https://youtube.buzzing.cc/youtube/bqsLEkgLLiw",
+          "publishedOn": "2021-12-11T01:29:50.000Z",
+          "wordCount": 18,
+          "title": "他告诉联邦调查局 \"不\"。😳 #Shorts"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/dhwvev7Tdp0",
+          "author": null,
+          "description": "Stream \"Life Of A Hotboii\" here: https://Hotboii.lnk.to/LifeOfAHotboii\n\nShot by: @DrewFilmedIt \n\nFollow Hotboii on Instagram: https://www.instagram.com/itshotboii438​\nTwitter: https://twitter.com/itshotboii438​\nSoundcloud: http://soundcloud.com/itshotboii​\n\n#Hotboii #42Dugg #MoneybaggYo #IReally",
+          "link": "https://youtube.buzzing.cc/youtube/dhwvev7Tdp0",
+          "publishedOn": "2021-12-11T01:29:50.000Z",
+          "wordCount": 16,
+          "title": "邓丽君：\"我真的很爱你\"，\"我真的很爱你\"，\"我真的很爱你\"，\"我真的很爱你\"。"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/OHbKGR7N1iI",
+          "author": null,
+          "description": "FREE JOSEPH\n\nBuy a Roborock - https://cli.fm/Roborock-S7dock-RyanTrahan-YT\n\nBuy a Roborock (Amazon) - https://cli.fm/Roborock-S7dock-RyanTrahan-YT-Amazon\n\nHope u enjoy this movie",
+          "link": "https://youtube.buzzing.cc/youtube/OHbKGR7N1iI",
+          "publishedOn": "2021-12-11T01:29:50.000Z",
+          "wordCount": 24,
+          "title": "我在现实的Minecraft中度过了100天"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/7yWJzPpaQA8",
+          "author": null,
+          "description": "A Boogie Wit da Hoodie - Man In the Mirror\n\n\"B4 AVA\" Out Now!\nDownload/Stream: https://ABoogie.lnk.to/B4AVA\n\nSubscribe for more official content from A Boogie: https://ABoogie.lnk.to/subscribe\n\nFollow A Boogie\nInstagram: https://www.instagram.com/aboogievsartist\nTwitter: https://twitter.com/ArtistHBTL\nFacebook: https://www.facebook.com/ArtistHBTL\nSoundcloud: https://soundcloud.com/a-boogie-wit-da-hoodie\nSpotify: https://open.spotify.com/artist/31W5EY0aAly4Qieq6OFu6\nWebsite: https://aboogiehbtl.com\n\nFollow HighBridge\nFacebook: https://facebook.com/HighBridgeOfficial\nTwitter: https://twitter.com/Highbridgelabel\nInstagram: https://instagram.com/highbridgethelabel\nSoundcloud: https://soundcloud.com/user-939666509\n\nThe official YouTube channel of multi-platinum rapper/singer-songwriter: Artist Dubose, known as A Boogie Wit Da Hoodie. He made waves with the breakout hit “Still Think About You” featured on his 2016 debut mixtape, ‘Artist.’ The mixtape also introduced fans to “My Shit” which went on to become RIAA certified platinum and was also listed as one of “The Best Songs of 2016” on Apple Music.\n\nA Boogie went on to release the 3x platinum “Drowning feat. Kodak Black” along with the platinum singles “Jungle” and “Timeless.” In fall 2017, A Boogie released his gold certified debut album, ‘The Bigger Artist,’ jumping into the Top 5 on Billboard’s Top 200 and #1 on Billboard’s Emerging Artists chart.\n\nHe is nominated for the 2018 BET Awards for “Best New Artist” and the release of his sophomore album, ‘Hoodie SZN’ spent two weeks as the #1 album on the Billboard 200.\n\nSubscribe for the latest official music videos, performances, behind the scenes and more from A Boogie: https://ABoogie.lnk.to/subscribe\n\n#ManIntheMirror #ABoogie #B4AVA #ABoogieWitDaHoodie #Atlantic #AtlanticRecords #HBTL #HighBridge",
+          "link": "https://youtube.buzzing.cc/youtube/7yWJzPpaQA8",
+          "publishedOn": "2021-12-10T21:07:48.000Z",
+          "wordCount": 34,
+          "title": "A Boogie Wit da Hoodie - Man In the Mirror [官方音频]"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/xyy9rqkEwc0",
+          "author": null,
+          "description": "#shorts",
+          "link": "https://youtube.buzzing.cc/youtube/xyy9rqkEwc0",
+          "publishedOn": "2021-12-10T21:07:48.000Z",
+          "wordCount": 28,
+          "title": "他拥有月亮"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/-IEAomO1Fac",
+          "author": null,
+          "description": "Warhammer 40,000: Space Marine 2 revealed with an epic trailer!\nThe legendary franchise returns for a spectacular, action-packed experience, bringing the Warhammer 40,000 universe to life like never before on Xbox Series.\n\nFocus Entertainment and Saber Interactive are proud to announce Warhammer 40,000: Space Marine 2, the new third-person action title from the cult-classic Space Marine franchise which recently celebrated the 10th anniversary of the original game.\n\nUnveiled at this year’s Game Awards, the world premiere reveal trailer of Space Marine 2 heralds the next installment for Captain Titus and mankind’s ultimate protectors, complete with a glimpse of brutal gameplay action. Heed the call of battle. For there is only war.\n\nThe galaxy is in peril. Entire worlds are falling. The Imperium needs you.\n\nEmbody the superhuman skill and brutality of a Space Marine, the greatest of the Emperor’s warriors, with Clive Standen (Vikings, Taken) as the iconic Captain Titus. Unleash deadly abilities and an arsenal of devastating weaponry to obliterate the relentless Tyranid hordes. \n\nHold at bay the horrors of the galaxy in epic battles on far-flung planets. Uncover dark secrets and drive back the everlasting night to prove your ultimate loyalty to humanity.\n\nSpace Marine 2 will be released on Xbox Series X|S.",
+          "link": "https://youtube.buzzing.cc/youtube/-IEAomO1Fac",
+          "publishedOn": "2021-12-10T20:38:19.000Z",
+          "wordCount": 25,
+          "title": "战锤40000：太空战舰2 - 揭幕预告片 | 2021年游戏大奖"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/n6OtGSTbPh0",
+          "author": null,
+          "description": "Rick Ross feat. Jazmine Sullivan & 21 Savage - Outlawz (Official Music Video)\n\n\"Richer Than I Ever Been\" available at: https://RickRoss.lnk.to/RicherThanIEverBeen\n\nRick Ross online:\nhttps://twitter.com/rickross\nhttps://www.instagram.com/richforever\nhttps://www.facebook.com/rickross/\n\nLyrics:\nGod is Great\n\nOutlawz\n\n[Hook]\nYou hold the gun I take the wheel\nIf you say go you know I will\nAnd though this love has its flaw\nWe’re forever outlaws\nYou Messed around but I forgave ya\nWhy do they still want me to hate ya\nCause if im choosing to forget it\nWhy cant they just mind they business\nCause I’m stuck, stuck like glue\nCause I can’t I can’t I can’t stop lovin you\n\nI wanna see my dawgs on the mountain tops\nThem niggas only ballin when they album drop\nI gotta line of cars wrap around the block\nAnd …",
+          "link": "https://youtube.buzzing.cc/youtube/n6OtGSTbPh0",
+          "publishedOn": "2021-12-10T20:08:42.000Z",
+          "wordCount": 25,
+          "title": "洛克-罗斯-不法分子（官方音乐视频）英尺。Jazmine Sullivan, 21 Savage"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/zWEqZDPqRjI",
+          "author": null,
+          "description": "Watch Tom and Zendaya's chat with Ali in full on BBC iPlayer in the UK: https://bbc.in/3rOThNW\n\nTom Holland and Zendaya join BBC Radio 1's film critic Ali Plumb to talk about new Marvel movie, Spider-Man: No Way Home. Tom reveals all about his Spider-Man WhatsApp group with Andrew Garfield and Tobey Maguire. Ali brings up Tom's blooper reaction face. And Zendaya does a perfect Peter Parker impression.\n\n#TomHolland #Zendaya #SpiderManNoWayHome \n\nWatch more of Movies with Ali Plumb on BBC iPlayer in the UK: https://www.bbc.co.uk/tv/radio1\nIncluding Movies That Made Me with some of the world's biggest movie stars.\n\n--\n\nOfficial Channel of BBC Radio 1\n\nHere you can find your favourite live performances, the biggest movie stars, amazing interviews and more...\n \nStill haven’t subscribed to Radio 1 on YouTube? ►► https://goo.gl/QSjLSr​​​​​​​​​​​​\n \nFollow us on socials:\n\nhttps://en-gb.facebook.com/bbcradio1/\nhttps://twitter.com/bbcr1​​​​​​​​​​​​\nhttps://www.instagram.com/bbcradio1/​\nhttps://www.tiktok.com/@bbcradio1",
+          "link": "https://youtube.buzzing.cc/youtube/zWEqZDPqRjI",
+          "publishedOn": "2021-12-10T19:46:04.000Z",
+          "wordCount": 19,
+          "title": "\"20分钟后我撞见了托比！\" 汤姆-霍兰德和赞达亚在蜘蛛侠WhatsApp群里🕷。"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/taNI_AVMpSo",
+          "author": null,
+          "description": "I spent a day with Tubbo to learn the truth about being one the biggest Minecrafters online. Sponsors ▸Go to http://purple.com/padilla to get 10% off any order of $200 or more! ▸Visit http://joinhoney.com/PADILLA to get Honey for FREE.\n\n🎙THE PODCAST\nSpotify ▸ https://open.spotify.com/show/5aOLuPenneHbhLh05fmkeu \nApple ▸ https://podcasts.apple.com/us/podcast/i-spent-a-day-with/id1550213250\n\n 💥NEW YOUTOOZ FIGURE: https://youtooz.com/products/anthony-padilla\n\n 🧨HUGE thank you to Tubbo:\n▸ TUBBO TWITCH - https://twitch.tv/tubbo \n▸ TUBBO YOUTUBE - https://youtube.com/c/tubbo \n▸ TUBBO TWITTER - https://twitter.com/tubbolive?lang=en  \n\n🗯RELATED EPISODES…\n▸ DREAM - https://youtu.be/3WAkPJ6654o \n▸ CORPSE - https://youtu.be/hP6KfYEr1w0\n▸ RANBOO, TOMMYINNIT, NIHACHU - https://youtu.be/_9JiBWwW3VE\n\n🎥Crew\n▸ Creator, Director, Writer, etc. - Anthony Padilla\n▸ Executive Producer - Alessandra Catanese\n▸ Producer, Co-writer & Research - Elise Felber\n▸ Director of Photography/Gaffer - Kai Byrd\n▸ Camera Operator - Laura Odermatt\n▸ Production Assistant - Cade Huseby\n▸ Editor - Mike “Mork Crispy” Criscimagna\n▸ Assistant Editor - Patrick Horba\n▸ Post PA / Assistant Editor - Ash Duckworth\n▸ Sound Editor - Gareth Hird\n\n🎵Theme Music Composer - Matt “The King of Emo” Good\n🖼Portrait painted by: Rhianna Robles - https://instagram.com/zerogattsu\n🦥Slade mascot built by: The Pastel Prince - http://instagram.com/theeepastelprince\n📺3D animations by: Jacob Dalton - https://twitter.com/jacobdaltonvfx\n\n📢BE ON THE SHOW\n▸ If you are part of an underrepresented subculture or live a lifestyle you feel is not widely understood and would like to be interviewed by me, email inquiry[at]pressalike.com with your subculture in the title of the email.\n\n❗️You dug this deep into the description. You owe it to yourself to subscribe ▶ https://youtube.com/subscription_center?add_user=AnthonyPadilla or get more at http://instagram.com/anthonypadilla & http://twitter.com/anthonypadilla",
+          "link": "https://youtube.buzzing.cc/youtube/taNI_AVMpSo",
+          "publishedOn": "2021-12-10T18:02:53.000Z",
+          "wordCount": 15,
+          "title": "我与TUBBO相处了一天"
+        },
         {
           "id": "https://youtube.buzzing.cc/youtube/uyZGZF8Nv_g",
           "author": null,
