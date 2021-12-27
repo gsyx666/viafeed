@@ -16,8 +16,776 @@
 <body>
 <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-12-27">2021-12-27</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://dev.to">DEV Community</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">2021/2022 MacBook -Quick Setup</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/kat_coding/new-macbook-quick-setup-2b48">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>Did anyone else get a new laptop this holiday season? 👀
+chflags nohidden ~/Library
+
+
+
+  
+  
+  2. Install brew
+
+
+/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
+Check your path and make sure path includes your brew location.
+
+
+Check path: echo $PATH | tr &quot;:&quot; &quot;\n&quot;\n
+
+Brew location: which brew
+
+(Probably something like /opt/homebrew/bin)
+If the location is missing, then add it to your ~/.zshrc, like this: export PATH&#x3D;/opt/homebrew/bin:$PATH
+
+
+
+
+
+
+
+
+  
+  
+  3. iTerm &amp; OhMyZsh &amp; Starship
+
+
+
+https://iterm2.com/
+$ sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;
+brew install starship
+echo &#x27;eval &quot;$(starship init zsh)&quot;&#x27; &gt;&gt; ~/.zshrc
+(Install font &amp; then change font in iTerm settings)
+
+
+brew tap homebrew/cask-fonts
+brew install --cask font-hack-nerd-font
+brew install node@16
+curl &quot;https://awscli.amazonaws.com/AWSCLIV2.pkg&quot; -o &quot;AWSCLIV2.pkg&quot;\nsudo installer -pkg AWSCLIV2.pkg -target /
+aws configure (assuming you already have credentials)
+npm install -g aws-cdk
+auto-complete:
+
+
+autoload bashcompinit &amp;&amp; bashcompinit
+autoload -Uz compinit &amp;&amp; compinit
+complete -C &#x27;/usr/local/bin/aws_completer&#x27; aws</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Top 10 Programming Languages You Must Know In 2022🔥</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/expoashish/top-10-programming-languages-you-must-know-in-2022-2ig4">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>In this blog we are going to see top 10 best programming languages for 2022. We will see which programming language is best and their features and application. If you like my post then follow me. Lets Start:-👇
+Top 10 Programming Languages You Must Know In 2022
+Best Websites for Blogging
+Python Complete Roadmap 2022
+Machine Learning Complete Roadmap 2022
+C++ Complete Roadmap 2022
+Java Complete Roadmap 2022
+Data Structure Complete Roadmap 2022
+Laravel 8 Interview Questions and Answers in 2022 (Part #1)
+Laravel 8 Interview Questions and Answers in 2022 (Part #2)
+Advance Laravel 8 Interview Questions and Answers 2022
+Everything About Laravel 8 Composer 2022 | Composer in Laravel 8
+Laravel Jetstream vs Laravel ui  vs Breeze
+10 Best Python Libraries For Machine Learning
+Alarm Clock in Python with GUI
+Tic Tac Toe Game Using Pygame in Python
+Thankyou for reading my blogs.
+CodexAshish</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2021-12-26">2021-12-26</time></h2>
     <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://dev.to">DEV Community</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Make the Disney.com Landing Page in 90 minutes</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/sebcodestheweb/make-the-disneycom-landing-page-in-90-minutes-c92">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>How to make the disney.com landing page in under 90 minutes - part 1
+
+
+Hello, and welcome to my awesome blog! 😊
+This blog is part 1, of my under 90 min YouTube tutorial where I am going to show you how you can copy the disney.com landing page only using vanilla html and css. This project also focuses heavily on flexbox, so if you want to get some practice with that then this is the perfect tutorial!
+https://www.youtube.com/watch?v&#x3D;6SUBhdvK31A 
+In this first part, I&#x27;m showing you how to set up the html, and the styling for the mobile version of the website. In the second part I am going to show you how to make the page fully responsive and look good on desktop.
+I have made a git repository that you can clone to follow along the tutorial (which I recommend)
+
+https://github.com/SebCodesTheWeb/disneyclone
+Hello! My name is Sebastian, and I&#x27;m a high-school student from Sweden. I have dabbled with some front-end development for the past few months. And since christmas brake finally arrived, I&#x27;ve decided to start a challenge for myself! I&#x27;m going to code for the coming 20 days.
+I&#x27;m following the front-end career path at Scrimba and I&#x27;m currently at module 8 (Flexbox, Grid and Fetch). I started this project to get some practice with css flexbox.
+By the end of the 20 days I&#x27;m hoping to have finished the front-end career path and have started with some backend Node.js development. I will be documenting my progress for the coming days, and filming myself and making tutorials on my 
+YouTube-channel .
+It would be awesome if you would follow along me on my journey and learn with me. You can follow my  blog  and subscribe to my  YouTube channel. And if you liked the YouTube video then it would really make my day if you left a comment or liked this post.
+
+Keep Coding.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Complete User Authentication with express and graphql....</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/suhakim/complete-user-authentication-with-express-and-graphql-opo">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(4 min)</span>
+                    <span>Hey guys,Today i am going to build a complete user authentication with express-graphql.So, Let&#x27;s get started....
+This is going to be our folder structure...
+
+After initializing your project install these dependencies...
+$ npm i bcrypt dotenv express express-graphql jsonwebtoken graphql mongoose
+
+Now use need to create some private and public key to make our token secure.To generate those key visit 
+generate keys
+Now we need to encode our key.To encode keys visits
+encode keys
+now add these key and port in out .env file
+PORT&#x3D;5000
+MONGODB_URL&#x3D;&#x27;mongodb://localhost:27017/graphql&#x27;
+PRIVATE_KEY&#x3D;&#x27;LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb1FJQkFBS0NBUUIySk01dDUxMmdKQytwcTM5TEN0RjZQRkVWZVIvd09LcHV4cUVxUHcvZ0lGNGtmWlFNCisyaGNiSDhQZ2Qvd3BnUHh2QUFxYXNRRmJyekNkK09EcGx5ajRYNUx5c0R0RWIyeERxTDVXK3Nua…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Basic OSI</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/braide/basic-osi-1pa4">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(5 min)</span>
+                    <span>What is OSI?
+
+
+OSI stands for Open System Interconnection, it’s a conceptual framework for how application communicate over a network. The purpose of the OSI model is to facilitate communication between different systems without requiring changes to the logic of the underlying hardware and software. OSI has a stack of seven layers within the model and the layers are used to help user identify what is happening within a networking system.
+What is OSI layer?
+
+
+The OSI layer are typically described from the top layer down. With the help of layering we decompose the problem of building a network into manageable components (layers), these layers help with modular design and easy troubleshooting. Going down and up the stack is called encapsulating and decapsulating respectfully. The layers are:
+…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">I have updated my WordPress REST API to set and return the number of views per post</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/muncey/i-have-updated-my-wordpress-rest-api-to-set-and-return-the-number-of-views-per-post-lm3">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(4 min)</span>
+                    <span>The next iteration or feature I have implemented in my react theme is a view counter which shows the number of views each one of my posts is getting on my WordPress site. The number of views is a number value that is held against each post on my WordPress site using what is known as post meta. Post meta is a mechanism that WordPress provides that will let you store some additional data with each post and is normally set behind the scenes for you by custom PHP code running in either a theme or a plugin.
+In my case I have set up a filter inside my functions.php file to increment a post views value by 1 each time a request is made to retrieve data for a specific post via the Rest API. The Rest API is a handy out of the box feature that WordPress provides that will let you access your pages an…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">JSON Schema Validation in Golang</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/franciscomendes10866/how-to-validate-data-in-golang-1f87">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(4 min)</span>
+                    <span>Overview
+
+
+One of the important things in creating a REST API is the validation of data coming from the frontend. That is, whenever our APIs are subject to receiving data from the request body (for example) it is always good to ensure that we are receiving the necessary properties and that the data types are correct.
+And in golang we have some libraries that help us with this purpose and in this article we are going to use the validator library, which besides being perhaps the most popular, is the one that contains a good number of resources for us to learn on the internet.
+In today&#x27;s example we&#x27;ll create a simple API, but then we&#x27;ll proceed with implementing a middleware to validate the data before proceeding to the next handler.
+First let&#x27;s install the following dependencies:
+go get gith…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Using Datasette for an ELT Personal Twitter Data Warehouse</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/swyx/using-datasette-for-an-elt-personal-twitter-data-warehouse-h6i">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(5 min)</span>
+                    <span>Twitter publishes some analytics for you, and I check them about once a month, but they are extremely limited when it comes to the important things, like exploring your follower graph.
+This is where Datasette comes in. Datasette is a great EDA (exploratory data analysis) tool for any arbitrary SQLite dataset. You can use it to build your own Twitter analytics!
+Today, at Simon Willison&#x27;s prompting, I decided to try to replicate his 2018 work in analyzing his own Twitter network.
+You can check out my own dataset here: https://swyx-twitter-datasette.glitch.me/twitter/tweets?_sort_desc&#x3D;favorite_count&amp;_facet&#x3D;retweeted&amp;_facet&#x3D;favorited&amp;_facet&#x3D;user&amp;user&#x3D;33521530&amp;retweeted&#x3D;1
+Things to try:
+check out the selected facets
+sort/hide individual columns
+search
+build up sql filters (eg favorite_count &gt; 1…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Dec 26: Dev Holidays Guide ⛄️</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/helengriffinjr/dec-26-dev-holidays-guide-3pkh">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>Bah Humbug Tips are my own way of coping &amp; recovering from burnout &amp; holiday stress.
+#BahHumbugTip: Wake up &amp; choose kindness. 👇🏾
+    
+❏ Try to be around people who bring the best out of you.
+❏ Pick questions &amp; people that can help you change the topic or shift the mood.
+❏ Create phrases that allow you to relinquish control for peace of mind.
+🎄  #BahHumbugTip 🎁 
+    
+You can find more tips here &amp; on Twitter. Let me know in the comments if any of these tips helps.
+If you&#x27;re struggling w/ burnout &amp; open to sharing your story, please take the State Of Devs survey. 🗳 Thanks!</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">The UNI Auth System</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/mahmoud_bebars/the-uni-auth-system-39kb">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>Merry Christmas every one
+a simple auth system made with node, express, react and some cool styling with tailwind
+you can make it your start for creating your next project
+I hope it helps you create something cool or make you improve your skills
+and tell me if there is something more I can add to the project to make it better
+check the project from here</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Week 5 of 100DaysOfCode JavaScript Challenge</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/arifiqbal/week-5-of-100daysofcode-javascript-challenge-32ek">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>This week I completed the Debugging module of the JavaScript course at FreeCodeCamp. Here is a recap of my week.
+Debugging JavaScript code - Day 20 of 100
+Arif Iqbal ・ Dec 21 ・ 2 min read
+#javascript
+        #programming
+        #webdev
+        #100daysofcode
+      
+Debugging JavaScript code - Day 21 of 100
+Arif Iqbal ・ Dec 22 ・ 3 min read
+#javascript
+        #programming
+        #webdev
+        #100
+      
+Thank you for following along with me. Stay tuned for the next article. Comments and suggestions are always appreciated and welcome.
+~ Happy Coding!</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">How to create a motherf*cking NFT using JavaScript</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/abdulrauf11/how-to-create-a-motherfcking-nft-using-javascript-2foj">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(6 min)</span>
+                    <span>In my previous post, I explained how you can mint an NFT using Solidity. But what if you don&#x27;t want to learn Solidity? 
+Ain&#x27;t nobody got time for that b*tch.
+You want to stick with your ol&#x27; pal JavaScript. Let me tell you that there&#x27;s a way to do it. I present to you thirdweb - a library of smart contracts, SDK, and UI components that developers can use in their app.
+How cool would it be if you could just call a mint function, give the token&#x27;s metadata as an argument, and it mints an NFT for you? All without writing a single line of Solidity code. Let&#x27;s see if that&#x27;s possible.
+The first thing you need to learn about is the concept of projects and modules. In short, projects are smart contracts that act as containers for your modules. On the other hand, modules are packages that contain sma…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://hn.buzzing.cc">Hacker News 热门</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">超媒体方法如何解决多页面应用程序的可用性问题</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29693571">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>超媒体方法如何解决多页面应用程序的可用性问题</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">淇凯德6.0.0</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29677773">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>淇凯德6.0.0</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">销售我自己的GPL软件，第一部分：很多的障碍</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29686862">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>销售我自己的GPL软件，第一部分：很多的障碍</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">用一个USB加密狗和开放源代码对你的DNA进行测序</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29695013">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>用一个USB加密狗和开放源代码对你的DNA进行测序</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">权力与魔法的英雄</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29692957">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>权力与魔法的英雄</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">经过多年的怀疑，核聚变接近的希望越来越大</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29684889">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>经过多年的怀疑，核聚变接近的希望越来越大</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">过反文化生活的反模仿策略</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29692848">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>过反文化生活的反模仿策略</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">容器节流的问题</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29690769">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>容器节流的问题</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">你在浏览器中屏蔽广告，为什么不在你的城市中屏蔽呢？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29691271">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>你在浏览器中屏蔽广告，为什么不在你的城市中屏蔽呢？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">我作为一名软件工程师的财务独立之路</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29691039">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>我作为一名软件工程师的财务独立之路</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">展示HN：我正在建立一个非营利性搜索引擎</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29690877">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>展示HN：我正在建立一个非营利性搜索引擎</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">反种族隔离的偶像德斯蒙德-图图去世，享年90岁</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29690775">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>反种族隔离的偶像德斯蒙德-图图去世，享年90岁</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">带有代码的论文</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29688214">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>带有代码的论文</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">DIY离网太阳能发电</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29688907">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>DIY离网太阳能发电</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">亚马逊推出Re:Post，AWS的 &quot;堆栈溢出&quot;。</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29685927">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>亚马逊推出Re:Post，AWS的 &quot;堆栈溢出&quot;。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">沉默的声音。美国的噪音地图。</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29688423">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>沉默的声音。美国的噪音地图。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">使用深层的假技术与你喜欢的角色说些什么</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29688048">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>使用深层的假技术与你喜欢的角色说些什么</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">买煤矿，开汽油车，以及其他反向逻辑的用途</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29685963">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>买煤矿，开汽油车，以及其他反向逻辑的用途</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">我们资助公共利益技术</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29683331">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>我们资助公共利益技术</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">一个新的相关系数</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29687613">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>一个新的相关系数</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">如果我们停止建造那么多楼梯，住房是否可以更便宜、更好？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29678706">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>如果我们停止建造那么多楼梯，住房是否可以更便宜、更好？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">JWST发射NASA现场直播</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29682051">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>JWST发射NASA现场直播</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">纽约市禁止在新建筑中使用天然气</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29686891">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>纽约市禁止在新建筑中使用天然气</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">威廉-D-波特号：二战中最不幸的船只</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29682149">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>威廉-D-波特号：二战中最不幸的船只</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://reddit.buzzing.cc">Reddit 热门</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">他看她的眼神让我死心了 🥺</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/romol5/the_way_he_looks_at_her_had_me_dead/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>他看她的眼神让我死心了 🥺</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">我要下地狱了。</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/HolUp/comments/roinnr/im_going_to_hell/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>我要下地狱了。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">直到明年</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/memes/comments/rom0vn/until_next_year/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>直到明年</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">我姐夫说......为什么带着步行器的小兔子有-6？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/funny/comments/roiiuj/my_brother_inlaw_said_why_does_the_bunny_rabbit/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>我姐夫说......为什么带着步行器的小兔子有-6？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">我已经死了。我刚刚给她买了一本书</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/gaming/comments/ro97nv/im_dead_i_just_bought_her_a_book/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>我已经死了。我刚刚给她买了一本书</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">是时候恨白人了，因为他们（检查笔记）在雨中行走？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/facepalm/comments/rogky2/time_to_hate_white_people_for_checks_notes/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>是时候恨白人了，因为他们（检查笔记）在雨中行走？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">圣诞快乐! 只剩下72小时的下载时间，可以玩他今天早上收到的圣诞礼物的游戏。</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/gaming/comments/rogyz8/happy_christmas_only_72_hours_left_of_downloading/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>圣诞快乐! 只剩下72小时的下载时间，可以玩他今天早上收到的圣诞礼物的游戏。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">孩子被照顾他过圣诞节的家庭收养了</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/roh7yv/child_gets_adopted_by_the_family_who_took_care_of/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>孩子被照顾他过圣诞节的家庭收养了</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">我妈妈在圣诞节时给我买了超级马里奥表。我今年22岁，已经在自己的公寓里住了4年，所以我看起来很困惑和失望。她说：&quot;什么，别人又不会看到你的床单。&quot;现在我不知道那是无知、侮辱还是无辜......</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/funny/comments/roex02/my_mom_got_me_super_mario_sheets_for_christmas_im/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>我妈妈在圣诞节时给我买了超级马里奥表。我今年22岁，已经在自己的公寓里住了4年，所以我看起来很困惑和失望。她说：&quot;什么，别人又不会看到你的床单。&quot;现在我不知道那是无知、侮辱还是无辜......</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">真的。</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/funny/comments/roagnt/really/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>真的。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">我在春天死于癌症与我快乐和健康地与我美丽的家人共度圣诞节的对比</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rogk5i/me_dying_of_cancer_over_the_spring_vs_me_happy/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>我在春天死于癌症与我快乐和健康地与我美丽的家人共度圣诞节的对比</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">这位UPS司机仍然是绝对的王者</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/pics/comments/ro8r26/this_ups_driver_remains_an_absolute_king/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>这位UPS司机仍然是绝对的王者</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://sspai.com">少数派</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">注意力使用不完全报告</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://sspai.com/post/70482">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>开始之前
+本文为《付费内容年度精选·2021》免费试读文章。《付费内容年度精选·2021》以超低的价格，精选了多篇会员、付费栏目和工具升值包等少数派出品的付费内容。本篇选自少数派会员第 12 期。
+
+这是一篇超过一万字的、内容严肃且枯燥的注意力报告，请先评估你此刻的环境和时间安排是否允许你认真阅读。
+如果当下不能阅读，请打开你的 To-do 工具，将「阅读本文」放进收件箱，并即刻标记一个你认为适合阅读的时间。记得把文章链接也插入 To-do，便于任务提醒时你能第一时间点击链接，进入本文。
+请在阅读前给自己一个提示：我想一口气读完这篇文章。
+关闭其它一切窗口，只保留本文的浏览器介面，开启全屏模式。
+找个安静或者你认为舒适的环境，开始阅读。
+
+专注力是一个我很想在《少数派报告》里分享的话题。作为一名 ADHD 患者，我一直都饱受注意力缺失的困扰，尤其在近两年工作压力增大之后，我甚至已经察觉到自己出现了阅读障碍。
+在研究和治疗 ADHD 的过程中，我也或主动或被动地了解和掌握了大量关于注意力的知识，并且积累了一些实践经验。当下，人类对于人脑的研究整体还处于较为初级的阶段，市面上关于注意力的图书和文献中的内容也或深或浅，各有说辞，没有绝对的定论。因此，在筹划本文的过程中，我的核心目标就是在尽可能不涉及专业术语和晦涩理论的前提下，清楚地将注意力的原理和概念阐释出来，带你以更简单的方式了解注意力的特点和由来。
+在这篇《注意力使用不完全报告》中，我会从注意力的基本概念出发，最终延伸到有效提升专注力的办法，希望可以帮你在学习和工作中提升状态，提高效率，减少失误。
+需要注意的是，文中的重点会集中在探讨注意力的底层原理，读起来可能会有些吃力。不要着急，放慢阅读速度。在理解了专注力从哪里来、到哪里去之后，相信你也能结合自身工作和学习环境，创造属于自己的专注力保持体系。
+我们开始吧。
+起点：注意力…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">城市漫步指南 · 苏州：阳澄湖不只有大闸蟹</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://sspai.com/post/70221">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>「城市风光」是一个很广义的词，大部分时候它不仅指代某一个地点，更是我们经历过、熟悉的并留下深刻回忆的地方。它的妙不可言或许人尽皆知一目了然，亦或许是深藏心底只有自己知道的秘密。
+回忆汹涌呼之欲出，且听作者们平和、真诚且娓娓道来。我们希望通过「城市漫步指南」这个系列，带你领略每一个有趣而又非凡的城市风光。
+
+当游船行驶到湖中，很容易就会想起梭罗在《瓦尔登湖》里写下的那句「天空跃于头顶，而又俯于足下」。
+阳澄湖
+若换成更具本土特色的说法，那就是「落霞与孤鹜齐飞，秋水共长天一色」。
+所剩无几的江南水乡
+阳澄湖的一潭湖水上承自古太湖水系的支脉，在江南风景里已涌动了数千年。湖水清澈，碧波荡漾。大闸蟹是这里享誉天下的特产，初秋季节的头等珍馐佳肴。每年金九银十，浩浩荡荡的顺丰冷链车就从上海和苏州市区驶来，驶过美人腿、莲花岛半岛，将蟹农们饲养一年的宝贝收集装箱，发往全国各地。肥美的蟹挥舞着蟹钳落入滚烫的蒸锅沸水里，捞起时飘香在空中的已是满屋蟹黄蟹膏的味道。
+名满天下的阳澄湖大闸蟹
+但可惜的是，世人只知名誉在外的大闸蟹，却忽视了阳澄湖本身的美。《沙家浜》有汪曾祺的名句：「朝霞映在阳澄湖上，芦花放稻谷香岸柳成行」。如今从阳澄湖上向四围望去，除了比人高的芦荡、临湖而立的大树，此岸与彼岸的土地上也多出了连绵成片的城市楼宇，苏州市区和昆山在这里拱湖相望。疏影横斜间，留下的是城市化进程中所剩无几的江南水乡。
+现代水乡
+本期游记，是我数次往返阳澄湖后的经验总结，希望能向你展示出一篇详尽的吃蟹指南，以及一幅不仅限于大闸蟹的阳澄湖的样貌。当然，作为一个没有那么标准化商业化的景点，阳澄湖并没有标准游玩路线，更不需要按点打卡。一个简单的周末，肆意地漫游，便是最适合阳澄湖的打开方式，也是我最推崇的旅行心态。散步在稻谷田野里，心情便像宁静的湖水一样，在日光云影下缓缓舒展开来。
+岛上漫游·路线图
+游玩阳澄湖的线路很多…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
       <li class="source">
         <section>
           <h3 class="source-name"><a class="source-name__link" href="http://www.netmeister.org/blog/">Signs of Triviality</a></h3>
@@ -764,6 +1532,277 @@ geschah es.&quot; Ja, so war das damals. [...]</span>
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
                     <span>Solaris 10: libstdc++.la empty</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.xda-developers.com">xda-developers</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">BLUETTI Unveils World’s First Sodium-ion Solar Generator</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/bluetti-sodium-ion-solar-generator/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>As climate change continues to push industries into a carbon-neutral world, the need for renewable energy systems is growing rapidly. Technology like chemical batteries and battery-powered machines are in high demand. Due to the increase in the need for lithium, there is a supply crunch for these types of batteries. This is why BLUETTI started
+The post BLUETTI Unveils World’s First Sodium-ion Solar Generator appeared first on xda-developers.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">How to set an audible “Low battery” or “Full battery” notification on iPhone</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/how-to-set-audible-battery-notification-iphone/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(5 min)</span>
+                    <span>In some ways, iOS and Android have become relatively similar operating systems. However, there are still plenty of differences between the two. One of the things I miss about Android is audible full battery notifications — which aren’t available by default on iPhones. There is a way to enable them, though, for both low and
+The post How to set an audible “Low battery” or “Full battery” notification on iPhone appeared first on xda-developers.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">How to message unsaved WhatsApp numbers on Android</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/how-to-message-unsaved-whatsapp-numbers-android/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(4 min)</span>
+                    <span>WhatsApp is one of the most widely used instant messaging services across the globe. Whether you’re texting a friend or creating a group chat with members of your family, WhatsApp is generally the preferred app since almost everyone uses it. Apart from texting known people, you may encounter several instances where you have to message
+The post How to message unsaved WhatsApp numbers on Android appeared first on xda-developers.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="http://www.zhihu.com">知乎每日精选</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">如何用一个词概括 2021 年？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="http://www.zhihu.com/question/508117339/answer/2286404162?utm_campaign&#x3D;rss&amp;utm_medium&#x3D;rss&amp;utm_source&#x3D;rss&amp;utm_content&#x3D;title">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>2021 年，我们曾穿透岁月，穿透质疑，穿透时光，穿透力量……
+我们为什么能穿透比钢铁还坚硬的阻隔和障碍？
+央视新闻联合知乎发布视频「穿透」，致敬 2021，那些「向上穿透」的力量。
+
+来源：知乎 www.zhihu.com
+央视新闻
+点击下载
+172 个回答，查看全部。
+2019，哪一刻让你发自内心地说了「我太难了」？
+脸上挂着笑，心却一下碎了是一种怎样的体验？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://youtube.buzzing.cc">Youtube 热门</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">第三章 没有回家的路</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/-Y6K7F58ee0">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Chapter 3 No Way Home
+
+ https://www.instagram.com/ceeday98/?hl&#x3D;en
+
+Please use my support a creator code: Ceedayy
+
+https://www.youtube.com/watch?v&#x3D;-QxmD6ISXXU
+
+Song: RageSound - Vortex (No Copyright Music)
+Music provided by Tunetank.
+Free Download:  https://bit.ly/3gfUxkP
+Video Link: https://youtu.be/7XsjoMXiQQs
+
+Song: Aliaksei Yukhnevich - End of the Abyss (No Copyright Music)
+Music provided by Tunetank.
+Free Download:  https://bit.ly/2xtEXR1
+Video Link: https://youtu.be/hoap3gfnrgo</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">詹姆斯-韦伯太空望远镜发射 - NASA官方广播</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/7nT7JGZMbtM">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Watch the launch of the James Webb Space Telescope—the most powerful space telescope ever made. This mission is scheduled to lift off at 7:20 a.m. EST (12:20 UTC), Dec. 25, 2021, aboard an Ariane 5 rocket from Europe’s Spaceport in French Guiana.
+
+With revolutionary technology, Webb will observe a part of space and time never seen before, providing a wealth of amazing views into an era when the very first stars and galaxies formed––over 13.5 billion years ago.
+
+It can explore our own solar system’s residents with exquisite new detail and study the atmospheres of distant worlds. From new forming stars to devouring black holes, Webb will reveal all this and more! It’s the world’s largest and most powerful space telescope ever built.
+
+Webb is an international collaboration between NASA, ESA (European Space Agency), and CSA (Canadian Space Agency). Thousands of engineers and hundreds of scientists worked to make Webb a reality, along with over 300 universities, organizations, and companies from 29 U.S. states and 14 countries!
+ 
+Ready to #UnfoldTheUniverse? The greatest origin story of all unfurls soon. Learn more at https://nasa.gov/jwst</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">史上最疯狂的家庭圣诞礼物开幕式!</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/NCvnC5GhSdA">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>MERRY CHRISTMAS FROM MY FAMILY TO YOU!
+I hope you all have an amazing &amp; blessed Christmas, and if you don&#x27;t celebrate Christmas, hope you&#x27;re having a great day!
+🔴 SUBSCRIBE FOR LIT VIDEOS ► http://bit.ly/SubToRug
+🔵 Try my G FUEL Flavor!! ► https://gfuel.ly/use-code-rug 
+
+GO SPAM MY OTHER PAGES!!
+Instagram ► https://www.instagram.com/fazerug/
+TikTok ► https://www.tiktok.com/@rug
+Twitter ► https://twitter.com/FaZeRug
+Snapchat ► &quot;thefazerug&quot;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">所以Snoop Dogg给我发了这个...</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/AoDtj4uZbR4">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>#shorts</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">圣诞快乐，爸爸！&quot;。</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/RX1ZM0Ew2I4">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Today I surprised Dad with a brand new 2022 Corvette for Christmas! 
+
+Subscribe: http://bit.ly/SubToRoman
+
+
+Follow Roman Atwood:
+Twitter: https://twitter.com/romanatwood
+Instagram: https://instagram.com/romanatwood
+Facebook: https://facebook.com/RomanAtwood/
+SnapChat: https://snapchat.com/add/RomanAtwood
+
+Follow Brittney:
+https://www.facebook.com/BrittneyDAtwood
+Twitter: https://twitter.com/BrittneyAtwood
+Instagram: https://instagram.com/BrittneyAtwood
+SnapChat: https://snapchat.com/add/BrittneyAtwood
+
+Smile More Store: http://RomanAtwood.com
+Smile More Twitter - https://twitter.com/SmileMoreStore
+Smile More Insta - https://www.instagram.com/smilemorestore
+
+Watch More Roman Atwood:
+Daily Vlogs: https://youtube.com/playlist?list&#x3D;PLItZ1aGL8ScA4RNpVQVekAv2AaNUMQWfi
+Popular Videos: https://youtube.com/playlist?list&#x3D;PLItZ1aGL8ScDPCi1yw-ZH_51vGZazpv7w
+Trips: https://youtube.com/user/RomanAtwoodVlogs/playlists?view&#x3D;50&amp;sort&#x3D;dd&amp;shelf_id&#x3D;11
+Latest Uploads: https://youtube.com/playlist?list&#x3D;PLItZ1aGL8ScArc7A-QTq8BpArqliaRCwD</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">剑桥公爵夫人和汤姆-沃克--&quot;为那些不能在这里的人&quot;@威斯敏斯特教堂，2021年</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/yw95R0Vl4_c">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Watch The Duchess of Cambridge and Tom Walker perform &#x27;For Those Who Can&#x27;t Be Here&#x27; at Westminster Abbey for Royal Carols: Together At Christmas.
+
+The performance took place in The Chapter House inside Westminster Abbey in December 2021. The song was played as part of the Royal Carols: Together At Christmas, a carol service that reflected upon the difficult past 18 months for people across our nation, and particularly for those who might be more vulnerable, isolated or have limited access to support.
+
+#TogetherAtChristmas was a moment to recognise those who have struggled during the pandemic, as well as to celebrate the individuals and organisations who carried out inspirational acts of kindness and incredible feats to help those in need in our communities. 
+
+With thanks to Tom Walker: https://www.youtube.com/c/iamtomwalker
+
+Watch more:
+Mental Health: https://www.youtube.com/playlist?list...
+Early Years: https://www.youtube.com/playlist?list...
+Engagements: https://www.youtube.com/watch?v&#x3D;CBeZm...
+
+Follow us on our other channels:
+Instagram: https://www.instagram.com/dukeandduchessofcambridge
+Twitter: https://twitter.com/KensingtonRoyal</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">当你要求额外的奶酪时😂</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/ti-EppKRtJs">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Subscribe Here for new #shorts:
+https://www.youtube.com/channel/UC_k6...
+
+THANKS FOR WATCHING!! LIKE, COMMENT, AND SUBSCRIBE FOR MORE VIDS!
+
+----------------------------------------------------------------------------------
+FIND ME ON:
+Instagram- https://www.instagram.com/adamw
+Facebook- https://www.facebook.com/itsAdamW
+TikTok- https://www.tiktok.com/@adamw</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">크리스마 오프닝 스페셜무대 &#x27;All I Want for Christmas Is You♬&#x27;ㅣ2021 SBS 가요대전(2021sbsgayo)ㅣSBS ENTER.</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/cZ8QC64Yytk">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>2021 SBS 가요대전
+
+SBS 예능 ‘2021 SBS 가요대전(2021sbsgayo)’
+☞ 12월 25일 오후 6시 본 방송
+
+#2021SBS가요대전 #크리스마스 #오프닝무대
+
+▶ Hompage : https://www.sbs.co.kr/tv/enter
+▶ Subscribe SBS Entertainment : https://bit.ly/2SpOhMC
+
+*프로그램 다시 보기
+
+✔ SBS홈페이지:
+https://programs.sbs.co.kr/tv/youtube?co&#x3D;youtube&amp;type&#x3D;tv&amp;content_id&#x3D;E458823289&amp;yt_channel&#x3D;SBSEntertainment
+✔ WAVVE:
+https://www.wavve.com/player/vod?contentid&#x3D;S01_E458823289.1&amp;utm_campaign&#x3D;2021_SBS&amp;utm_source&#x3D;youtube&amp;utm_medium&#x3D;movcon&amp;utm_contents&#x3D;SBSEntertainment</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">1周内将0.01美元变成房子--第2天</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/Ge96ORjwsic">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>penny → truck??? plz plz plz 
+sign up for shopify → https://shopify.com/ryantrahan</span>
                   </div>
                 </a>
               </details>
@@ -1783,6 +2822,164 @@ The post How to read deleted WhatsApp messages and recover them on Android appea
         <section>
           <h3 class="source-name"><a class="source-name__link" href="https://youtube.buzzing.cc">Youtube 热门</a></h3>
           <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">斑点哥特姆（SPOTEMGOTTEM）英尺 Tory Lanez - No Strings Attached (官方视频)</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/nftFUKNdVDQ">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Stream &quot;Back From The Dead&quot; Here: https://spotemgottem.lnk.to/Dead
+
+Follow SPOTEMGOTTEM:
+Instagram: https://www.instagram.com/spotemgotte...   
+Twitter: https://twitter.com/spotemgottem?lang&#x3D;en
+
+#SPOTEMGOTTEM #BackFromTheDead
+
+Video shot by @RookDirector</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">为什么蜜獾不惧怕上帝和狮子</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/nWfeFrLl6LM">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Download the world&#x27;s first ant&amp;insect themed simulation strategy game, THE ANTS: UNDERGROUND KINGDOM today! 
+http://bit.ly/Ants-CasualGeo
+Brand-new Super Ants have just been released and the new Ant Season is coming soon! Use code THEANTS777 now to receive free Xmas Rewards!
+
+CIA Otter Story Here ⬇️⬇️
+https://vm.tiktok.com/ZM8TUd2xQ/
+
+For more consistent content, make sure to follow my Tiktok and Instagram below
+
+TikTok: https://vm.tiktok.com/ZM8TDoghj/
+
+Instagram: https://www.instagram.com/mndiaye97/?hl&#x3D;en
+
+If you’d like to support the channel and earn access to exclusive content, check out my Patreon below 
+
+https://www.patreon.com/HoodNature
+
+Subscribe, turn on ALL post notifications and make sure to drink water and hug your mother.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">打电话给拜登的人：圣诞快乐，我们去布兰登吧</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/ETmlD0l4T3Y">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>As President Joe Biden and first lady Jill Biden were taking phone calls Christmas Eve for NORAD&#x27;s Santa tracker hotline, a father ended an otherwise pleasant conversation by telling the president, &quot;Merry Christmas and let&#x27;s go Brandon.&quot; (Dec. 24)
+
+Subscribe for more Breaking News: http://smarturl.it/AssociatedPress 
+Website: https://apnews.com 
+Twitter: https://twitter.com/AP 
+Facebook: https://facebook.com/APNews 
+Instagram: https://www.instagram.com/APNews/
+​
+
+You can license this story through AP Archive: http://www.aparchive.com/metadata/youtube/7f5a9b2bf6224aa3ab9304ed354cb113</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">SIMPSONS, BAD BUNNY - TE DESEO LO MEJOR (Video Oficial)</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/m3xFuFPxOnw">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>THE SIMPSONS, BAD BUNNY - TE DESEO LO MEJOR
+Trilogy Box Set - https://www.badbunnytrilogy.com/
+
+https://elultimotourdelmundo.com/
+
+Merch: https://shop.elultimotourdelmundo.com/
+
+Suscríbete al canal: https://rimas.io/ytbadbunny
+
+Más de Bad Bunny:
+EUTDM - https://rimas.io/EUTDM
+Una Vez ft. Mora - https://youtu.be/gSMYGP0TYC4
+
+Sigue a Bad Bunny:
+Spotify: https://rimas.io/spotifybb
+Apple Music: https://rimas.io/applemusicbb
+Instagram: https://www.instagram.com/badbunnypr
+
+Letra:
+[Verso 1]
+Yo sé que soy un c@brón
+Que no merezco tu perdón
+Te juro que no e&#x27; mi intención
+Pero si escucha&#x27; esta canción
+
+[Coro]
+Te deseo lo mejor
+Ojalá que te olvides de mí-í-í-í-í
+Yo sé que fui lo peor
+Y tú mereces ser feli&#x27;-i&#x27;-i&#x27;-i&#x27;
+Me voy antes de que sea tarde
+Y el corazón te destroce otra ve&#x27;
+Ya sé que soy un cobarde
+Si quiere&#x27; haz quе no me conoce&#x27;, está biеn
+
+[Verso 2]
+Otra ve&#x27; no cumplí lo que te prometí
+Otra ve&#x27; te fallé, otra ve&#x27; te mentí, eh-eh
+Otra ve&#x27; me toca ser el malo
+¿De qué valen la&#x27; flore&#x27; y lo&#x27; regalo&#x27;?
+Si soy culpable de tu dolor
+Y por mí ahora ere&#x27; peor
+No quiere&#x27; que más nadie te hable de amor
+Pero yo—
+
+[Coro]
+Te deseo lo mejor
+Ojalá que te olvides de mí-í-í-í-í
+Yo sé que fui lo peor
+Y tú mereces ser feli&#x27;-i&#x27;-i&#x27;-i&#x27;
+Me voy ante&#x27; de que sea tarde
+Y el corazón te destroce otra ve&#x27;
+Ya sé que soy un cobarde
+Si quiere&#x27; haz que no me conoce&#x27;, está bien, eh
+
+
+#BADBUNNY #THESIMPSONS #TEDESEOLOMEJOR 
+
+© 2021 Rimas Entertainment</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">班克斯家族的圣诞节!</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/4LbP500OIe0">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Desi Banks Presents a  short film  around his characters for this great Christmas holiday! Merry Christmas from BSimone Reginae Carter, Candace B Harris, Desi Banks, Alton Walker, Shuler King! love You Guys, Hope you enjoy!</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">我们给了布鲁克林她唯一想要的圣诞礼物.... JUSTIN *她哭了 *</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/D86wV2iqWgg">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>我们给了布鲁克林她唯一想要的圣诞礼物.... JUSTIN *她哭了 *</span>
+                  </div>
+                </a>
+              </details>
+            </article>
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">杰西卡-达罗-表面压力（来自 &quot;恩坎托&quot;）。</summary>
@@ -7744,6 +8941,17 @@ Dust On An Old Road
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">The Creator Opportunity, The Value of Abundance, TV and Sports Follow-up</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS90aGUtY3JlYXRvci1vcHBvcnR1bml0eS10aGUtdmFsdWUtb2YtYWJ1bmRhbmNlLXR2LWFuZC1zcG9ydHMtZm9sbG93LXVwLw.PQDLMaF-z09An043EAK7QpCKAQbT_WNGG6ndlDnQCx2XWlDnigvsE9h_y-Kyk0nNwk_NWU52CzoYU61WbY-orsdmjU78ZLkyOhq7gcBG0xr2Zxg3rIixn3FHPz1CTJm6adIkRtHb16a0n0Kol2kVyrNKZUUQH4GA-b-9XWclW15Zqmli8RX6AxeuY7gh4FenJNP3QKCvUeK9b5cEYl39VzRAtauaaJJZWLecQV33yeY_uT3N2MpIjNzL7pL38UKsqPGJaq7gV9ETixevk05QnBIF1pUUd-qsU4izGobKcqMl3lz-882OqgNpDmCaiMQHBUmMh_U_HssMpK_McRmVNw">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>It is fine to be excited about web3, but it doesn&#x27;t seem right to deny the real opportunities already afforded by the Internet. Plus, tying up loose ends on TV and sports.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">The Creator Opportunity, The Value of Abundance, TV and Sports Follow-up</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS90aGUtY3JlYXRvci1vcHBvcnR1bml0eS10aGUtdmFsdWUtb2YtYWJ1bmRhbmNlLXR2LWFuZC1zcG9ydHMtZm9sbG93LXVwLw.FlDdswS_zyXie0IxtTJv3r3sYns2Vff2pP0j2NucvrrYPs8kFUXVByLmRSTtizGk9L7AUfh2xA74X5-rviX3TFK80hCnp9CB1E76892RtnS9XLcJTsRlWhmf_p9KOqdpGl3ll-cLWlkojQEtr7N7YFMaCKKR40dHYIncsafRj8xPIEIVWIY0AZZ-yYpQf4hS9A-zXgqMewdkSp1EJ5UzAL6CKuxzBXnvbelWWjIfOXzH_v2KsB42Gbmnop8z5evok3bnZtKXQCUIKisdfFTqdDoD--l814_RGkKIycZC1i-W-3LvG_F6I5wYSUyE2z-EXTg--MPBhE0goaAIr3YCpA">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
@@ -10353,6 +11561,17 @@ While being on a steady rise for years, the COVID-19 pandemic has increased repo
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">Formula 1 and Netflix, Netflix and Sports, YouTube TV vs. ESPN</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9mb3JtdWxhLTEtYW5kLW5ldGZsaXgtbmV0ZmxpeC1hbmQtc3BvcnRzLXlvdXR1YmUtdHYtdnMtZXNwbi8.JAUOra0QewC66mrspL14nemgEE8m0D6AM9b_zi2y2PBBpmLwcNgssFR9D7wTH1RsrmfKUCVv-LTlmrwjqcv6gSYlcnfUrd87blEn_m5fwt8YNSO29xItqBB6JHIMcByHk7lM4lx9PeHfgccpUg-FObuSPui370eY2NHLBXVQogx5JkNzrkWH4Ff8BUDl2Ukye5E5UGvolB89R5yD7FPe9L5N5IaZg2W8JqEl_RxxcMgLNyFE7vQk8TWzuozdoMgS6dBn6YOY2Al3RXUKzN5bu5J3bDyDxqFDDXulyelnckZT9z42fO5bsn55anKJsRWcJ2Y0bAoDXZIOxeYpQgi8Rg">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>The increased popularity of F1 shows how sports can be valuable to Netflix, and why sports remain valuable to Disney.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Formula 1 and Netflix, Netflix and Sports, YouTube TV vs. ESPN</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9mb3JtdWxhLTEtYW5kLW5ldGZsaXgtbmV0ZmxpeC1hbmQtc3BvcnRzLXlvdXR1YmUtdHYtdnMtZXNwbi8.QRg0BO1zX_hMiUz8dumaBqtLVKk4b2VCGt3688CyZd8Z3_xA6DvkXSXb9RU_eUKgXeVQnG9S-Go9QjBTNch9vtr-hXPLjOIC77t-a1Rt_jFCMnddyJt9NllPkSPKmnJuhaQsHfpoKNY_u2FJbhLgz-uZjC-Pahi2NLfVUimNN3l7ag1rhCfWIOjrmSW2l4B_awTIsPgvLoqhkwoKDkok464IhVThzGmOoDOr0XBPHh8UEOEfRvZNCYSN0wf61TzGV1J6zAw1IER_W89U0PoeAELNUKAnaXmCQCM-ptCXjm_vOy5aLrJ_6Kuu-tr7hQpdEZJWNQ_6KaxXCupLzQ7wcw">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
@@ -11265,6 +12484,17 @@ Bu yazıda da Docker&#x27;dan daha yavaş çalışan, daha çok kaynak kullanan 
         <section>
           <h3 class="source-name"><a class="source-name__link" href="https://stratechery.com">Stratechery</a></h3>
           <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">The Great Bifurcation Follow-up, More on Intel and TSMC, Intel to Spin Out Mobileye</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS90aGUtZ3JlYXQtYmlmdXJjYXRpb24tZm9sbG93LXVwLW1vcmUtb24taW50ZWwtYW5kLXRzbWMtaW50ZWwtdG8tc3Bpbi1vdXQtbW9iaWxleWUv.dtF4yGgredY6xAMpLpTTNDzBsv9KmJQtTASqqPm-6AoTUsHW8f8sfi-1zeu0_JQLU7Ot9-P5lwN63YZ697lbqcCR5kjE2vTcyOwCKvG8EnDvPsnh29Nm9-Z3uzdsAI24o-KLelC5Ify9ypa2rU-UnFDw-i51P5zjZ5-E0kZjaTh82eP1UvLWkZjWL4QhAowViD3xf356sogSCJ-9u1SSTv5f3oF_xSmT8ghHZhQwyOHTm7i9GJ4_PVwoVVrlcOOybVAKmyUFoE_xR9LakKAgh1IpCZsxUK6_mIgzfXlmSpHZWmiaxWdTSKaASW5x-LbslS9BHzi9M6PYFeM-oPaV2Q">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Follow-up on &quot;The Great Bifurcation&quot;, then more on Intel&#x27;s relationship with TSMC, and why the latter needs the former. Plus, spinning out Mobileye is a great idea.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">The Great Bifurcation Follow-up, More on Intel and TSMC, Intel to Spin Out Mobileye</summary>
@@ -15239,6 +16469,17 @@ States of a Docker Container</span>
         <section>
           <h3 class="source-name"><a class="source-name__link" href="https://stratechery.com">Stratechery</a></h3>
           <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Intel vs. TSMC, How Samsung and TSMC Won, MAD Chips</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9pbnRlbC12cy10c21jLWhvdy1zYW1zdW5nLWFuZC10c21jLXdvbi1tYWQtY2hpcHMv.Bxp-bSH0lBPDjdDFJ_OfpTWMXDMENj5GJu9fN9tLNHXL_AkfKOskn2voKxEVsUgOl3xaTR6rilGloZ7iwUQ3ozPuxoyx1USso2_6WUUC3rZUcMVMjrxj3BAVJ5Fo8y93l_AS3FCxGBzjzE1wrduDoELO6SeeyvGKLMTDZaouk2-s3TblJQnITaPyH5zwBSJI8bKDH572njh0CC9qFAHqbfitI6Ae3qhsRjx7P5oGfXa8GWSrCF5AzlgUrlDjJv04ZUwn6n0Rj06ju86P5rjbPzFBBUq-JXC71ZaimMQt6uyiztCGX1grTYU7sAOHOp3AdjhisMrhQe2cVf6eHKH4XA">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Intel&#x27;s CEO is out campaigning for subsidies; his pitch doesn&#x27;t give sufficient credit to TSMC and Samsung for their success.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">Intel vs. TSMC, How Samsung and TSMC Won, MAD Chips</summary>
@@ -22050,6 +23291,17 @@ Now it&#x27;s time to create our component. So, let&#x27;s make that.
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">App Store Injunction Stayed, Fingerprinting on iOS, Life360 and Apple&#x27;s Missing Leverage</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hcHAtc3RvcmUtaW5qdW5jdGlvbi1zdGF5ZWQtZmluZ2VycHJpbnRpbmctb24taW9zLWxpZmUzNjAtYW5kLWFwcGxlcy1taXNzaW5nLWxldmVyYWdlLw.rtzifHjhZCNitVZITb3dRQ_vlmDm0lZxLYAfZTa2K8YHxAFMeLWOcRPG9Q5r41OzrbO26jVb_OSgivOg6Ff4RPupmelfnXh27d3qpyMAXgTiUCmdoNNsdJMcAqpFeQ3EN6WyopYOXzpzstqZ8ZcaxDvAiK4l2apsF0L3qtuOSRmVyJKvqx4jwCaLh_8Z9GqwmWpfLw3_7m7syejuDAHCPLkzkK95g372tB9-akgd5hrgm-QTKHtLih6FnDlibjtNCIlzGO9yXyevrRTWGg4HO3JtuI_t7TNOZQQfT56hlRqV_lGrCKaNRZzgsYrn8ZSWN7UQIakTqlsmkLTwR-pWlw">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Apple wins in court, probably for good; meanwhile, its tracking rules aren&#x27;t really being enforced, and probably can&#x27;t be, which means Apple&#x27;s overreach was a mistake.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">App Store Injunction Stayed, Fingerprinting on iOS, Life360 and Apple&#x27;s Missing Leverage</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hcHAtc3RvcmUtaW5qdW5jdGlvbi1zdGF5ZWQtZmluZ2VycHJpbnRpbmctb24taW9zLWxpZmUzNjAtYW5kLWFwcGxlcy1taXNzaW5nLWxldmVyYWdlLw.iYeq8qqvlSCjbByNOrNc2dRtvI4lkuADSLIs2gBE2zeTSVX6fq6liZ_kYp4zyGQG-Nf_MOrQjLBvNBW8WxHoc9X2UrwmkmsDktKybl715E907u8iZDuhV--sAARvslecu3Fzw8TQx6ig2DotMfzVsuPBXm4o8KQL-3jKFtE-jstvF_z0UPPbY-dPynMupODRBw8GRTLYVPpviHRJRIRvvP-03barpb7GE_92FBpE58Lpm5s72hYsm34Q0FfwihdhafQsCFsouVBgAHq6zeBqP0_yei8biUbjMqW4tog96WXNT_FvopAM0CKWbCiDOldkqdVPZwjFWgWv9oK1aReC7A">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
@@ -24217,6 +25469,17 @@ from googletra…</span>
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">The Information on Apple in China, Apple&#x27;s Deal, Evaluating Apple&#x27;s China Risk</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS90aGUtaW5mb3JtYXRpb24tb24tYXBwbGUtaW4tY2hpbmEtYXBwbGVzLWRlYWwtZXZhbHVhdGluZy1hcHBsZXMtY2hpbmEtcmlzay8.tlnEXBGVI1z3zaRTIJMmCn_ZYXS57gtpizXFQfm1j85xgG82B71dWLEEASY2X0Ubh3dFLTv8WaBIsDxIlXQzyQkDsDwnbC33cCbvd2ro2fSt-es--LmV65luHWqYhxP9ymNum-f6-D7yWnHFKF72Ga1lChs2k-OIhus1fmA5U57OmGsp91XhNBtJA1DbPdA-oT1ltsnA-Fc_aiDQKBqwSN2YsZRlLCm5IQO22_GyiJFSJT-jSRaN5YBgtubAfWCzhwXjnNe0BmvTxgiy8zVQTRpjYSRixokO7tZ3jGQNBTKtPvucY8IlSSQcCupE3acrxpwhWY_csKkDXV7W6OKCGA">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>The Information has a report on a deal Apple made with the Chinese government; this explains multiple things over the last five years, and may indicate that Apple&#x27;s position is fairly secure.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">The Information on Apple in China, Apple&#x27;s Deal, Evaluating Apple&#x27;s China Risk</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS90aGUtaW5mb3JtYXRpb24tb24tYXBwbGUtaW4tY2hpbmEtYXBwbGVzLWRlYWwtZXZhbHVhdGluZy1hcHBsZXMtY2hpbmEtcmlzay8.lFLXPu0CsW3qDuE7ewCrj2kRVhYfvVvkTOMvt6CYE_5IA1YggD3gZHQJHAN20IFvY4U9DD7oTHg2JOAqwn-YnDCS5XYlSfsAUDpTwiyxn_5NmTXtlIPxaSS523uq1DzAf237ORrZuli2J426-B_C2CSYPa7gn4YIJMXxNe_K_O7c8s3TQj9vcUBEx0nY2J8cdacYk2qa-hnjVxFWuJpOICOfFe9wXUHPMVPY_0DDtyfzWKoEhWvJQ_AgkqAaiultT1PG4VXsvJ_nWoeWudanlnRA5fZf_c44sFkuxBGw-0AeihxFYYZ8oNT2HeNGdAZ8-kDjTp7BF_S8bEbKh5MPmw">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
@@ -26219,6 +27482,17 @@ Web 1.0 是用户读取互联网，Web 2.0 是用户写入互联网，Web3 是�
         <section>
           <h3 class="source-name"><a class="source-name__link" href="https://stratechery.com">Stratechery</a></h3>
           <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">FTC Sues to Block Nvidia ARM Acquisition, Innovation and the Data Center, ARM&#x27;s Future</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9mdGMtc3Vlcy10by1ibG9jay1udmlkaWEtYXJtLWFjcXVpc2l0aW9uLWlubm92YXRpb24tYW5kLXRoZS1kYXRhLWNlbnRlci1hcm1zLWZ1dHVyZS8.uSFEDC4IFpJbz8K_eTdkcnOEA4_DqhOVpuaz3kBaeyCjJmbfWPpHjOT8ob_tciBKj2ogVYVwYptyESxAAJSwJ8fUxmOqk7LGD45XwTOIeauIVEiEUwl1MyndHOQ38rGnciXG-PbPeWvIHPQ4Ak1IBhCLwUuBjWyuVoCHcnrPvs4P_Ivv22aqZOsJStmEvyIHwyLh1JllO-LnWmvGXDBjAI1Do8gRvu0dnxS_1bWFyXnggSg6sS0FJywBwX1l-qlaHXXbKOMXPhaJvEEipr4ylwlj0-0uSq0b171kSZn0nGfryfWGMuIb71kd25fegKu6RryOaJf0Q784H_9_heciwg">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>The FTC is suing to block Nvidia&#x27;s ARM acquisition; it is a plausible argument, although Nvidia can make a pro-innovation case. Regardless, ARM&#x27;s future looks shakier than before.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">FTC Sues to Block Nvidia ARM Acquisition, Innovation and the Data Center, ARM&#x27;s Future</summary>
@@ -35053,6 +36327,17 @@ José Valim: Dynamically typed. I agree a lot with the response from the creator
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">AWS re:Invent, re:Invent Announcements of Interest (Stratechery Update 12-2-2021)</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hd3MtcmVpbnZlbnQtcmVpbnZlbnQtYW5ub3VuY2VtZW50cy1vZi1pbnRlcmVzdC8.RFvzbzYaOKBIgX4Vvqlj8GGVlBoQK6lBs4vztpgVcYQIKgUfF8nwLznq5GSHd-chQsXlc629k4PF06W5jVhpZ8K5KHVTNyUtwoOTjtPFOjnoxMkMs4XfuiOUzr3XGMrvEWjND0CtBDEhVNSolujltfBTwfsXQe-owHU6N7KyS30E5HyAnB0048vOTQyY-rcxe946eUQIym1WwJhVs2KAsKAGiauOmIYfB-aO0YZHRIRwsbZ4s58f5dyMew-bxM-sSEK8XNg1WhoqPTFh4cVjrcivv6rfMpq2SfVcJx0dhu1Gf-sGSBYaZJQVTHExtWs8sjvmjZkHwP7k5d0xfnboVw">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>AWS re:Invent keynote, with new CEO Adam Selipsky, charted a different path than that taken by Andy Jassy. Plus, the new announcements that caught my eye.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">AWS re:Invent, re:Invent Announcements of Interest (Stratechery Update 12-2-2021)</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hd3MtcmVpbnZlbnQtcmVpbnZlbnQtYW5ub3VuY2VtZW50cy1vZi1pbnRlcmVzdC8.YNoHYGXfRVVJr2-pCUskgqBuVG_S9j_L1Zn_kUo3-j4lSJsO276n5pHXIaB_LoVCx_1gh18Ao4tyKjdyai40NXVf3fT-ARpgQo6hpPlzZitXvjeBvO4jyQK4hTgyBoJWHeGjjM4Y1k37d62lwBdHFWZtBPa0q9C9fTjGhtmPdZ1CDD1EvTdA8aqoZKDtrb1eOsc0gnwYEiaX2-pOroGTABsV0RvUa4QjSR1GXzqeXyOHV-p-ENpGB23NaFJHR52kBFO48Aj-WNchw_RvT0x2-cltFS3xISAqSfBMDr8RMr7OzeFNow2CrjA4qzGK9g3SbMyjRymGqemR-RKiW3EGHg">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
@@ -36845,6 +38130,17 @@ They paint a completely wrong image of the web dev scene, too - being a web deve
         <section>
           <h3 class="source-name"><a class="source-name__link" href="https://stratechery.com">Stratechery</a></h3>
           <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Why Subscription Twitter is a Terrible Idea, Twitter Bans Sharing Private Photos and Videos, Twitter and Free Speech</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS93aHktc3Vic2NyaXB0aW9uLXR3aXR0ZXItaXMtYS10ZXJyaWJsZS1pZGVhLXR3aXR0ZXItYmFucy1zaGFyaW5nLXByaXZhdGUtcGhvdG9zLWFuZC12aWRlb3MtdHdpdHRlci1hbmQtZnJlZS1zcGVlY2gv.gEYkEjVvqpeXnIoAjRl5MLuWf43TdZPO6x7vZKrHtfyBnudwW7z9MfdoEuNUR-2RvusTu_5iC9d9PrzdHL-YdKs_vNIPfwWZ4LG_ec6hk1qCkcrz-1HysNkJZp-KEIOtcFSi5jsbCkDTLurnUsMpxLi4lFiq-VwaKTPtShA73xvT4v05bu5624DroyQyWNYW4Klhrky7s4qLqtW4w3_hopETR_JsBSMh7-kjEn0ZJEiWs17nAWWtQjkLYFarRXGUU2GL3zE_3Aj6K0IBgmYfFPKOrDO26E7xuwpTuk6nUkH9itTF4n1q59IS9zkn-GkhlJT8U21gsavtSIw_wZRMtQ">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Why making Twitter into a subscription business would be a terrible idea, how Twitter&#x27;s new policy is reactionary, and how the shows how much Twitter has changed</span>
+                  </div>
+                </a>
+              </details>
+            </article>
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">Why Subscription Twitter is a Terrible Idea, Twitter Bans Sharing Private Photos and Videos, Twitter and Free Speech</summary>
@@ -43230,63 +44526,6 @@ There is also this exotic possibility to check if it is …</span>
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Move WSL File System to another Drive</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/equiman/move-wsl-file-system-to-another-drive-2a3d">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>If the C: drive is running out of space, we can move our WSL2 file system to another drive in a few steps.
-If we are using an user different than root, we need to know it, running the whoami command (WSL side):
-
-Also we need to know the distro name and WSL version, running the wsl --list --verbose command on PowerShell (Windows Side):
-
-Knowing the username: equiman, the linux distribution: Ubuntu, and confirm that we are using the WSL 2 version, we are ready to...
-
-All next steep need to be done on PowerShell (Windows Side).
-First we need to shutdown WSL to avoid data corruption. Close all WSL terminals that are using it and then run the wsl --shutdown command.
-Next we are going to create a backup from our Ubuntu linux distribution.
-mkdir D:\backup
-wsl --export Ubuntu D:\backup\ubuntu.tar
-
-Don&#x27;t worry if you not see progress indicators. This can be take a while depending how much data you have. Maybe it&#x27;s good idea take a rest.
-
-When finish, we need to to unregister the linux distribution from C: drive. It will also release the disk space.
-wsl --unregister Ubuntu
-
-And then, import again on our new disk. I&#x27;ll use D: disk as an example.
-mkdir D:\WSL
-wsl --import Ubuntu D:\WSL\ D:\backup\ubuntu.tar
-
-By default Ubuntu will use root as default user, to switch to our user (equiman in my case) we need to run this commands.
-cd $env:USERPROFILE\AppData\Local\Microsoft\WindowsApps
-ubuntu config --default-user equiman
-
-Ensure replacing equiman with yours.
-Restart WSL running wsl command and it&#x27;s done.
-That’s All Folks!
-Happy Coding 🖖</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.appinn.com">小众软件</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">情绪指压 – 不用写的日记，按压就能记录心情[iPhone]</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.appinn.com/qingxuzhiya-for-iphone/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>情绪指压是一款通过按压力度和时间，来记录当下心情的小工具，可以缓解焦虑、情绪管理、记录生活，非常有意思。@Appinn 写日记最烦的是什么？当然是写日记啊。如果有一款不用写的日记… 可算有</span>
-                  </div>
-                </a>
-              </details>
-            </article>
         </section>
       </li>
       <li class="source">
@@ -43355,105 +44594,6 @@ Happy Coding 🖖</span>
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
                     <span>付费花园：iOS是广告软件 (2020)</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">这封PayPal的欺骗邮件是如何通过SPF、DKIM和DMARC的？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29357445">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>这封PayPal的欺骗邮件是如何通过SPF、DKIM和DMARC的？</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">银行转账作为一种支付方式</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29357215">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>银行转账作为一种支付方式</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">新颖的身心计划优于其他治疗慢性背痛的方法</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29357009">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>新颖的身心计划优于其他治疗慢性背痛的方法</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">AWS降低了向互联网传输数据的价格</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29355264">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>AWS降低了向互联网传输数据的价格</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Ask HN: 你曾经使用过的设计最好的东西是什么？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29353980">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Ask HN: 你曾经使用过的设计最好的东西是什么？</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">PyTorch。我们的方向以及为什么它看起来很像Julia（但不完全是）。</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29354474">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>PyTorch。我们的方向以及为什么它看起来很像Julia（但不完全是）。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">自学计算机科学 (2020)</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29353904">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>自学计算机科学 (2020)</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">加州港口卡车司机 &quot;淹没 &quot;在供应链的低效率中</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29355035">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>加州港口卡车司机 &quot;淹没 &quot;在供应链的低效率中</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">克鲁泡特金的 &quot;面包的征服</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29349688">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>克鲁泡特金的 &quot;面包的征服</span>
                   </div>
                 </a>
               </details>
@@ -43537,178 +44677,6 @@ Happy Coding 🖖</span>
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
                     <span>关于一个认为主持工作是全职工作的丈夫的帖子</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">史蒂夫-乔布斯并不超级诚实</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/r2npkc/steve_jobs_wasnt_super_honest/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>史蒂夫-乔布斯并不超级诚实</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">这些人喜欢在公共场合与随机的人合影留念。</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/r32fmx/these_guys_like_to_pose_for_pics_with_random/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>这些人喜欢在公共场合与随机的人合影留念。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">在我的电脑蓝屏后，一个网络摄像头出现在屏幕下方</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/oddlyterrifying/comments/r2toag/a_webcam_appeared_in_the_bottom_of_my_computer/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>在我的电脑蓝屏后，一个网络摄像头出现在屏幕下方</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">硬通</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/r2vple/hard_pass/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>硬通</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">这被称为镜头耀斑是有原因的。你应该只在通过步枪瞄准镜、双筒望远镜、挡风玻璃、玻璃窗等观察时看到折射的光线。</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/gaming/comments/r2uzsb/its_called_a_lens_flare_for_a_reason_you_should/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>这被称为镜头耀斑是有原因的。你应该只在通过步枪瞄准镜、双筒望远镜、挡风玻璃、玻璃窗等观察时看到折射的光线。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">酒吧的管理应该是这样的</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/r2r3sx/thats_how_management_in_a_bar_should_be/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>酒吧的管理应该是这样的</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">在部署期间收到了佐伊的这封信。她收到了。</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/funny/comments/r2tf3r/got_this_letter_from_zoe_while_deployed_she_gets/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>在部署期间收到了佐伊的这封信。她收到了。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">贾马尔和万达的年度感恩节传统仍在继续</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/pics/comments/r2sps4/annual_thanksgiving_tradition_for_jamal_and_wanda/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>贾马尔和万达的年度感恩节传统仍在继续</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">这是我建的:)</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/pics/comments/r2q2tp/i_built_that/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>这是我建的:)</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">我_女孩</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/me_irl/comments/r2op23/me_irl/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>我_女孩</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://sspai.com">少数派</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">「黑五」值得买：Steam、PS、Xbox 和 Switch 上值得关注的游戏优惠</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://sspai.com/post/70159">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>今年称得上是「游戏小年」，这点想必喜欢玩游戏的读者们都有同感；从去年同期到现在，整个业界尚未拿出一款投入高质量强，既叫好又叫座的高水平作品。那几款玩家们盼望已久的超级大作，发售后却接连遭遇口碑上的滑铁卢；而更多让人翘首以待的作品，全都抢着把发售档期排到了 2022 年。
-不过，虽然超大型制作没能带来亮眼表现，但今年值得一玩的作品并不少。它们要么内容扎实，可以支撑你玩上很长一段时间；要么有着独特的创意和新奇的玩法，能让你体验到特别的乐趣。
-每年的这个时候，都是游戏厂商们疯狂打折促销的日子，各个平台也会推出主题促销活动；有意思的是，今年 Steam 的秋季特卖还比之前延长了 1 天，12 月 1 日才会结束。
-这次我们也为大家整理了一些值得入手的史低游戏，不妨趁着「黑五」特惠，用便宜的价格买下几款心仪的作品；在为今年划上圆满句号的同时，也能用一颗充满期待的心去迎接未来。
-注意：不同平台的折扣截止日期不一致，具体详情请以对应平台的商店页面信息为准。
-双人成行
-
-想必这会是很多人心中的年度最佳作品之一，它拥有充满天马行空般想象力的关卡设计，以及令人眼花缭乱的各式玩法；而无论小游戏还是 Boss 战，它也充分利用了二人协作的机制，没有将这一卖点流于纸面。
-本作在 Steam、Xbox 和 PS 平台上皆有折扣，支持本地双人同屏或者联网游戏。值得一提的是，第二个玩家通过「好友通行证」即可和你一同畅玩，不需要买两份。
-此外，你也可以通过办理 EA Play 玩到本作。
-PC（国区 Steam）：
-购买链接（史低 -38%，￥198 →￥122.76）
-Xbox（港区）：
-购买链接（-40%，HK$318.5 → HK$191.10，支持智能分发）
-PS（港区）：
-购买链接（-38%，HK$319 → HK$197.78，PS4 &amp; PS5）
-生化危机 村庄
-
-继承了《生化危机 7》的第一…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Anytype 内测版初探：它不止是离线版 Notion</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://sspai.com/post/69975">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>Matrix 首页推荐
-Matrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。
-文章代表作者个人观点，少数派仅对标题和排版略作修改。
-
-前言
-如今市面上笔记类或者知识管理类软件太多，甚至每个月都能看见一款新产品的上线。工具本身并没有优劣，它们只是反映了工具使用者的需求和工作流。虽然不应该舍本逐末般沉迷于工具本身的研究，但依然不妨碍我们去探索和寻找新的工具来完善自己的信息管理。
-今年年初的时候，我偶然间知道了 Anytype 这款知识管理软件，瞬间被它的「本地化 Notion」的用户评价所吸引，于是立即填写 表格，加入 Anytype 的测试计划。
-Anytype 目前可以填写申请表格，每个月大概40-50人
-六月份的时候，我收到了测试邀请（onboarding program），但是由于时差的缘故没法参加在线介绍。当我在十一月收到新的测试邀请时，没有丝毫地犹豫就加入了。
-来自 Anytype 工程师的邀请邮件
-在产品说明会议里，CEO Zhanna Sharipova 简单介绍了 Anytype 的发展路径、当前主要功能以及未来愿景，工程师 Enda Crowley 实时展示了一些基本操作。
-产品介绍 Zoom 会议（Onboarding Session）
-会议结束之后，Enda 立即发送了 Anytype 的下载和对应社区邀请链接。有趣的是，本周Anytype 又推出了 iOS 测试版本。截至 2021 年 11 月，Anytype 目前支持桌面端有 MacOS、Windows 以及 Linux，移动平台有 Android 以及 iOS。
-
-Anytype 初探
-是什么？
-Anytype 宣称自己是一款数字对象的操作系统（an operating sytem f…</span>
                   </div>
                 </a>
               </details>
@@ -44399,1118 +45367,9 @@ BUSINESS E-MAIL:
       </li>
     </ul>
   </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2021-11-26">2021-11-26</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://dev.to">DEV Community</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">2 Ways to Implement Binding Adapters</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/vtsen/2-ways-to-implement-binding-adapters-4omc">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>One way is using function parameter and another way is using extension function.
-There could be more than 2 ways to implement binding adapters, but this is what I know. Let&#x27;s look at what binding adapters are first.
-Binding adapter is used for implementing custom attribute in your layout file. For example, instead of using the defaultandroid:text attribute, you want to customize it by creating a new attribute app:customText. 
-android:text
-
-
-
-
-
-
-
-app:customText
-
-
-
-
-
-
-
-To implemen…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Auto-fixable import sorting rules for ESLint</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/bmstefanski/auto-fixable-import-sorting-rules-for-eslint-laj">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>The pretty much standard way of sorting imports in JavaScript:
-3rd party imports first
-then local default exports
-and then local exports
-And here&#x27;s the snippet that sorts them in this exact order and 
-$ npm i --save-dev eslint-plugin-import  
-
-# or    
-
-$ yarn add -D eslint-plugin-import
-
-// .eslintrc.js  
-const fs &#x3D; require(&#x27;fs&#x27;)  
-
-const ignoredSortingDirectories &#x3D; [&#x27;.git&#x27;, &#x27;.next&#x27;, &#x27;.vscode&#x27;, &#x27;node_modules&#x27;]  
-
-module.exports &#x3D; {  
-  /// ... some other configurations  
-  rules: {  
-    // ... your rules  
-    &#x27;sort-imports&#x27;: [&#x27;error&#x27;, { ignoreCase: true, ignoreDeclarationSort: true }],  
-    &#x27;import/order&#x27;: [  
-      1,   
-      {  
-        groups: [&#x27;external&#x27;, &#x27;builtin&#x27;, &#x27;internal&#x27;, &#x27;sibling&#x27;, &#x27;parent&#x27;, &#x27;index&#x27;],  
-        pathGroups: [  
-          ...getDirectoriesToSort().map((singleDir) &#x3D;&gt; ({ pattern: &#x60;${singleDir}/**&#x60;, group: &#x27;internal&#x27; })),  
-          { pattern: &#x27;env&#x27;, group: &#x27;internal&#x27; },  
-          { pattern: &#x27;theme&#x27;, group: &#x27;internal&#x27; },  
-          { pattern: &#x27;public/**&#x27;, group: &#x27;internal&#x27;, position: &#x27;after&#x27; },  
-        ],  
-        pathGroupsExcludedImportTypes: [&#x27;internal&#x27;],  
-        alphabetize: {  
-          order: &#x27;asc&#x27;,  
-          caseInsensitive: true,  
-        },  
-      },  
-    ],  
-    // ... your rules  
-  },  
-}  
-
-function getDirectoriesToSort() {  
-  return getDirectories(process.cwd()).filter((f) &#x3D;&gt; !ignoredSortingDirectories.includes(f))  
-}  
-
-function getDirectories(path) {  
-  return fs.readdirSync(path).filter(function (file) {  
-    return fs.statSync(path + &#x27;/&#x27; + file).isDirectory()  
-  })  
-}</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Four tips for staying motivated while learning</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/zachsnoek/four-tips-for-staying-motivated-while-learning-473e">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(4 min)</span>
-                    <span>Introduction
-
-
-Software engineering is a field that is regularly changing. Thus, developers must be continual learners to stay sharp.
-However, motivating yourself to learn and creating a lasting habit can be difficult, especially if you&#x27;re self-studying outside of school or work.  Below are four techniques that I use to stay motivated while learning.
-Set deadlines
-Gamify
-Spice it up
-Identify the end goal
-Learning without structure can feel like an endless task with no end in sight; it&#x27;s often nice to have a sense of progress. I&#x27;ve found that artificial deadlines give me something to work toward and cleanly mark progress.
-Here are some examples of deadlines you could set for yourself:
-I will study Python for 30 minutes by the end of the day
-I will complete one module of my online JavaScript…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">What to charge for your app and what’s the value of it?</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/appmaster_io/what-to-charge-for-your-app-and-whats-the-value-of-it-ak6">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(6 min)</span>
-                    <span>We all want to see a return on our investment, especially when creating applications, which require significant resources.
-You spent money, your time, put in a lot of effort, and finally, your app is ready. Now comes the new challenge: what to charge for your app?
-The decision depends on many factors. The number of working hours, testing costs, marketing and promotion, purchase of any licenses are some aspects that define the overall cost of development. Calculate the costs first, then set the price for the app.
-To put an adequate price tag on your product, first, let&#x27;s look at the different pricing models.
-Understanding the pros and cons of pricing models will help you choose the best option for you.
-It is essential to find the balance between the price that customers are ready to pay and…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">How I send a gift coupon to my nerdy friend</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/xceed/how-i-send-a-gift-coupon-to-my-nerdy-friend-11b2">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(3 min)</span>
-                    <span>Context
-
-
-Our company has organized &quot;Secret Santa&quot;, pre-covid times. I got the name of a nerdy colleague and a friend. I decided to gift him Amazon gift coupon. Like people usually do - hiding gift somewhere in desk, I instead created an online puzzle like a treasure hunt using some automation. If he solves he will receive gift on his email.
-Printed a bar code on a paper and put it on my friend&#x27;s workstation desk. Upon scanning, it redirects to a simple website I&#x27;ve created using wixsite.com.
-Here&#x27;s the picture of printed barcode along with other gifts -
-
-
-The landing page shows following instruction -
- 
-To get your gift all you need is an email address.
-Before I tell you more, why don&#x27;t you give a try yourself to find the email address? Here&#x27;s the link after scanning barcode - https://turantsephele.wixsite.com/giftgenerator
-S
-C
-T
-O
-S
-E
-N
-E
-S
-T
-Once you click &quot;Get email address&quot;, it redirects you to another page which shows a timer and nothing else. And with a small hidden button somewhere in page.
-If you are able to find the button and click, it redirects you to brainfuck visualizer with some pre-populated code. 
-I&#x27;ve written this code in brainfuck and when you run it outputs next hint.
-That brainfuck code outputs a simple string -
-Decode:747572616e7473657068656c6540676d61696c2e636f6d
-
-After decoding, it gives you the email address.
-I have created a IFTTT flow which triggers when there is an incoming email with subject &quot;HOG RIEEDERRRRR&quot; and it is from my friend&#x27;s email address.
-Once this condition matches, IFTTT sends an email back with gift coupon details.
-Once timer ran out it reveals a link to brainfuck visualizer code.
-If he can&#x27;t solve the puzzle in 3 days, an email triggers and sent gift coupon details to friend&#x27;s email address. Again using IFTTT.
-That&#x27;s all folks!
-If you did something similar or have some idea like this, drop it in comments :)</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">GameOff #4 - Total destruction!</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/meatboy/gameoff-4-total-destruction-4pj4">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>Since the last post, we have added so much to the game! VFX is ready, with better character animations, new monsters and map tweaks. Over the map is flying now Santa Claus throwing gifts with weapons to players.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">How to Easily Add a Map to Your Website in Under 10 Minutes</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/ubahthebuilder/how-to-easily-add-a-map-to-your-website-in-under-10-minutes-4gkm">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(5 min)</span>
-                    <span>Many modern web platforms leverage on maps and location-based features to provide services to users. Some popular examples of this are Uber and Airbnb. 
-With the  TomTom Maps SDK , including a map in your website has never been easier. The toolkit enables access to various mapping features including street maps, real-time traffic conditions, fuzzy search and route planning for travellers.
-As a developer, you can leverage on TomTom&#x27;s APIs methods to build and customize maps in your web or mobile application.
-Let&#x27;s walkthrough the process of adding a map to your website using the TomTom Maps SDK. In the end, I&#x27;ll include a link to the source code for this project for reference.
-Using TomTom Maps SDK is both easy and free. First, you&#x27;ll need to  register a TomTom developer account  to get an …</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">First NPM Release</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/menghif/first-npm-release-34ni">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(3 min)</span>
-                    <span>This week I successfully published my Static Site Generator static-dodo as an NPM package.
-After creating an account at npmjs.com I used the command npm login from the terminal to link my npm account.
-I changed the version in package.json to 1.0.0 and also added a tag to my latest commit with:
-git tag -a v1.0.0 -m &quot;1.0.0 Release&quot;
-
-I then published my project using the command npm publish. 
-After I made some changes to the repo, I decided to unpublish the package and start from the beginning. I decided to rebrand the project from &quot;dodo-ssg&quot; to &quot;static-dodo&quot; and publish it with the new name.
-Gus McCallum tested the program on his computer by installing it with:
-npm install -g static-dodo
-
-It was interesting to see how a new user approaches getting and learning how to use the tool. Gus ran th…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Linear Regression using Normal Equation</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/_s_w_a_y_a_m_/linear-regression-using-normal-equation-21co">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(9 min)</span>
-                    <span>Overview
-
-
-Linear Regression is the first algorithm in the Demystifying Machine Learning series and in this article we&#x27;ll be discussing Linear Regression using Normal equation. This article covers what is Linear Regression, how it works, the maths behind the normal equation method, fixing some edge cases, handling overfitting and code implementation.
-Linear Regression in simple terms is fitting the best possible linear hypothesis (a line or a hyperplane) on the data having a linear relationship so that we can predict the new unknown data point with the least possible error. It&#x27;s not necessary to have a linear relationship in data but having such can lead to approximately close predictions. For a reference take a look at the below representation.
-
-In the above picture, only 1 feature (along…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Publishing my first npm package</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/andrewillomitzer/publishing-my-first-npm-package-38ad">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(3 min)</span>
-                    <span>The Project
-
-
-Eleven weeks ago when I started in Open Source Development 600 at Seneca I never thought I would get to the point of actually releasing something into the wild. Over the term we have been working on our individual static site generators. The purpose of these tools is to take a text file or Markdown file and parse it into a valid HTML document. 
-It can include a variety of features depending on the student, but some of the options for my own textToHTML include stylesheets, using a config file instead of the command line, and having an output option to specify a folder to put the HTML documents into.
-Throughout the weeks, we have been contributing to Open Source projects on GitHub and making pull requests. Included in this is the idea of contributing to each other&#x27;s SSG&#x27;s. Coll…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Client / Server Chat</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/sagordondev/client-server-chat-36bc">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>Github Repo
-
-# client_server_chat
-#   This is a program to demonstate a chat between client and server using UDP.
-#   Run this program and add either client or server as an argument.
-#   Once you have run both client and server you can chat between them.
-# by Scott Gordon with help from Educative.com
-
-import argparse, socket
-
-MAX_SIZE_BYTES &#x3D; 65535  # Mazimum size of a UDP datagram
-
-
-def server(port):
-    s &#x3D; socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    hostname &#x3D; &quot;127.0.0.1&quot;
-    s.bind((hostname, port))
-    print(&quot;Listening at {}&quot;.format(s.getsockname()))
-    while True:
-        data, clientAddress &#x3D; s.recvfrom(MAX_SIZE_BYTES)
-        message &#x3D; data.decode(&quot;ascii&quot;)
-        print(&quot;The client at {} says {!r}&quot;.format(clientAddress, message))
-        msg_to_send &#x3D; input(&quot;Input message to send to client:&quot;)
-        data &#x3D; msg_to_send.encode(&quot;ascii&quot;)
-        s.sendto(data, clientAddress)
-
-
-def client(port):
-    s &#x3D; socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    host &#x3D; &quot;127.0.0.1&quot;
-    while True:
-        s.connect((host, port))
-        message &#x3D; input(&quot;Input message to send to server:&quot;)
-        data &#x3D; message.encode(&quot;ascii&quot;)
-        s.send(data)
-        data &#x3D; s.recv(MAX_SIZE_BYTES)
-        text &#x3D; data.decode(&quot;ascii&quot;)
-        print(&quot;The server replied with {!r}&quot;.format(text))
-
-
-if __name__ &#x3D;&#x3D; &quot;__main__&quot;:
-    funcs &#x3D; {&quot;client&quot;: client, &quot;server&quot;: server}
-    parser &#x3D; argparse.ArgumentParser(description&#x3D;&quot;UDP client and server&quot;)
-    parser.add_argument(&quot;functions&quot;, choices&#x3D;funcs, help&#x3D;&quot;client or server&quot;)
-    parser.add_argument(
-        &quot;-p&quot;, metavar&#x3D;&quot;PORT&quot;, type&#x3D;int, default&#x3D;3000, help&#x3D;&quot;UDP port (default 3000)&quot;
-    )
-    args &#x3D; parser.parse_args()
-    function &#x3D; funcs[args.functions]
-    function(args.p)
-
-
-Verify my Python
-Photo by Kelvin Ang on Unsplash</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Bug killing development tips</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/intersystems/bug-killing-development-tips-292e">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(5 min)</span>
-                    <span>Does anyone NOT use a debugger? I can&#x27;t remember the last time I did. It&#x27;s not because I don&#x27;t dislike them, I just don&#x27;t need to use them. The main reason for this is because I have a certain development methodology that either produces less bugs, catches them at a unit test level, or makes tracking them down much easier.
-Here are my tips...
-1. Write your own COS cheat-sheet.
-This is mainly for anyone that is new to COS. One of the biggest bug hazards is not knowing how certain commands and functions work. Take the time to play with a language and try out all of its variances. The process of then documenting your own cheat-sheet will cement the knowledge and provide a quick reference review tool. Not only will you become more productive, but you will certainly write less of those a…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://hn.buzzing.cc">Hacker News 热门</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">多账户容器到 &quot;用Firefox以外的程序交换信息&quot;</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29347284">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>多账户容器到 &quot;用Firefox以外的程序交换信息&quot;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">新关注的变种。B.1.1.529</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29353770">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>新关注的变种。B.1.1.529</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">我伪造了大量的Covid通行证--&quot;现实世界中的弱密钥加密法&quot;</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29352160">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>我伪造了大量的Covid通行证--&quot;现实世界中的弱密钥加密法&quot;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">互联网是用口水和打包线固定在一起的。</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29353076">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>互联网是用口水和打包线固定在一起的。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Omicron的分类（B.1.1.529）。关注SARS-CoV-2变体</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29352433">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Omicron的分类（B.1.1.529）。关注SARS-CoV-2变体</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">微软为Edge推进有争议的 &quot;先买后付 &quot;功能</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29350239">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>微软为Edge推进有争议的 &quot;先买后付 &quot;功能</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">物理学家在大型强子对撞机上探测到中微子的迹象</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29349484">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>物理学家在大型强子对撞机上探测到中微子的迹象</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">暗器C大赛</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29347859">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>暗器C大赛</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">维生素D水平对Covid-19的影响。系统回顾Meta分析</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29350271">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>维生素D水平对Covid-19的影响。系统回顾Meta分析</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">盗版发行组织EVO &quot;指责 &quot;电影业的流行</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29351076">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>盗版发行组织EVO &quot;指责 &quot;电影业的流行</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">GetElementById㱮㱮vs.QuerySelector</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29346918">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>GetElementById㱮㱮vs.QuerySelector</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">展示HN：随机创建美丽的网站布局</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29349079">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>展示HN：随机创建美丽的网站布局</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">乌马雷尔</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29345604">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>乌马雷尔</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">锈蚀维护者的完美主义，或者，Alacritty的悲剧</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29349240">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>锈蚀维护者的完美主义，或者，Alacritty的悲剧</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">意大利莫卡咖啡壶的谦逊辉煌(2018)</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29347665">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>意大利莫卡咖啡壶的谦逊辉煌(2018)</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://reddit.buzzing.cc">Reddit 热门</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">勇敢的马来西亚士兵捕捉眼镜王蛇。</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/r2bsa3/brave_malaysian_soldier_catching_king_cobra/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>勇敢的马来西亚士兵捕捉眼镜王蛇。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">我们走吧</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/Unexpected/comments/r2jli2/lets_go/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>我们走吧</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">当你试图无缘无故地起诉一家餐馆而败诉时</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/facepalm/comments/r2e39w/when_you_try_to_sue_a_restaurant_for_no_reason/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>当你试图无缘无故地起诉一家餐馆而败诉时</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.xda-developers.com">xda-developers</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Grab DJI’s Mavic Mini drone for an incredible $200 off for Black Friday</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/grab-djis-mavic-mini-drone-for-an-incredible-200-off-for-black-friday/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>Today is Black Friday, and frankly, it’s almost over. That means that you’re running out of time to get those sweet, sweet deals. One of those is on DJI’s Mavic Mini drone, which is an incredible 40% off on Amazon. The deal isn’t going to last through the weekend though. It’s just for today and
-The post Grab DJI’s Mavic Mini drone for an incredible $200 off for Black Friday appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Get the Apple Beats Studio3 headphones for $170 today</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/get-the-apple-beats-studio3-headphones-for-170-today/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>Beats might not be as popular as it was a few years ago, especially given that its parent company Apple now sells over-ear headphones with its own brand, but Beats headphones are still great when they’re on sale. Now you can get the Beats Studio3 wireless headphones for $169.99 at multiple stores, which matches the
-The post Get the Apple Beats Studio3 headphones for $170 today appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Grab the Samsung Duo charging pad for just $35 today</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/samsung-duo-charging-pad-deal-november-2021/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>Samsung is one of many companies that sell wireless chargers with slots for two devices, but the Samsung Wireless Charger Duo is somewhat unique, as it supports charging Galaxy Watches. Now you can get the latest Wireless Charger Duo for $34.99 on Amazon, as part of Black Friday. That’s $25 below the original price, and
-The post Grab the Samsung Duo charging pad for just $35 today appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Get this Sega Genesis-style 8Bitdo controller for just $25.49 today</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/get-this-sega-genesis-style-8bitdo-controller-for-just-25-49-today/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>8Bitdo is one of the most popular names in custom game controllers right now, thanks to its modern Bluetooth gamepads with the physical design of classic controllers from Nintendo, Sega, and others. The 8Bitdo M30 is a multi-platform game controller modeled after the Sega Genesis and Mega Drive’s gamepads, and now it’s on sale for
-The post Get this Sega Genesis-style 8Bitdo controller for just $25.49 today appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">ASUS Chromebook Flip C433 has dropped to $330 ($150 off) for Black Friday</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/asus-chromebook-flip-c433-has-dropped-to-330-150-off-for-black-friday/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>Even though Chromebooks still fall short of traditional PC laptops in a few areas, they are incredibly popular for their ease-of-use, fast performance, and Android app support. ASUS has been a leader in the Chromebook arena for years, and now one of the company’s best models is on sale for Black Friday. The Chromebook Flip
-The post ASUS Chromebook Flip C433 has dropped to $330 ($150 off) for Black Friday appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Get this Spigen 100W USB Type-C charger for just $42 today</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/spigen-100w-charger-deal-november-2021/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>You might already have a few single-port USB Type-C chargers around your home, but multi-connector wall adapters can be handy, especially ones with higher power outputs. Spigen might be best known for its smartphone cases, but the company also produces a few chargers, including a powerful 100W wall adapter that can charge two devices at
-The post Get this Spigen 100W USB Type-C charger for just $42 today appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">WhatsApp wins approval to expand WhatsApp Pay to 40 million users in India</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/whatsapp-pay-approval-expand-40-million/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(3 min)</span>
-                    <span>WhatsApp has won regulatory approval from The National Payments Corporation of India (NCPI) to double the number of users it can offer its payments service in India to. This comes after the Facebook-owned (well, Meta-owned) company requested that it should not have a cap on the number of users that it can work with. WhatsApp
-The post WhatsApp wins approval to expand WhatsApp Pay to 40 million users in India appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Protect your digital identity with NordVPN and save 69% on the 2 year subscription</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/nordvpn-deal-november-2021/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>Protecting your digital identity is important, especially if you access the internet from public places. VPNs help with that and allow you to access regionally-blocked websites. NordVPN is an excellent service, and their Black Friday deals are live. You can now save 69% on the 2-year plan and get it for $89 only — instead
-The post Protect your digital identity with NordVPN and save 69% on the 2 year subscription appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">These DROP X Marvel Keycaps are 30% off on Amazon</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/drop-marvel-keycaps-30-off-amazon/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(3 min)</span>
-                    <span>This one is for the Marvel fanboys who also appreciate mechanical keyboards. The DROP X Marvel Black Panther, Captain America, Iron Man, and Infinity War keycaps are currently available at a 30% discount on Amazon. All sets feature 160 keycaps, including quite a few novelty options for the Caps Lock, Escape, Enter, and Shift keys.
-The post These DROP X Marvel Keycaps are 30% off on Amazon appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Black Friday gives you up to $600 off the Surface Pro 7 from Microsoft</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/surface-pro-7-black-friday-microsoft/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(3 min)</span>
-                    <span>Microsoft is giving a pretty significant discount to anyone interested in the Surface Pro 7 tablet. For Black Friday, you can grab a Surface Pro 7 with up to a massive $600 discount, which makes this tablet all far more tempting. This is still a very premium tablet with a very sharp high-quality screen, a
-The post Black Friday gives you up to $600 off the Surface Pro 7 from Microsoft appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Get up to $2,400 off HP laptops for Black Friday</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/hp-laptops-black-friday/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(3 min)</span>
-                    <span>HP is one of the top PC manufacturers in the world, and as you’d expect, the company has a whole range of PC deals for Black Friday. The good news is that there’s something here for everyone. Whether it’s a premium ultrabook like a Spectre x360 that you’re looking to grab on the cheap, a
-The post Get up to $2,400 off HP laptops for Black Friday appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Track your activity, sleep, and more with Amazon’s Halo Band for a mere $55</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/amazon-halo-band-deal-november-2021/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>The new year is right around the corner, and taking better care of your health is a wise resolution. Amazon’s Black Friday deals make it more affordable than ever to turn this into a reality. The Halo Band is currently on sale for just $55 — that’s 45% off its usual $100 price tag. This
-The post Track your activity, sleep, and more with Amazon’s Halo Band for a mere $55 appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Grab the mid-range Samsung Galaxy A52 5G for $400 ($100 off)</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/samsung-galaxy-a52-5g-black-friday-2021/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>If you’re looking for a new 5G smartphone, there aren’t many affordable options in the United States. There are a few options that you can choose from (Motorola has a ton of offerings) but they might not be powerful enough for your needs. However, you can’t go wrong with the Samsung Galaxy A52 5G if
-The post Grab the mid-range Samsung Galaxy A52 5G for $400 ($100 off) appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Grab the Galaxy S20 FE for just $550 ($150 off) this Black Friday</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/galaxy-s20-fe-black-friday-2021-deal/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>The future of the Galaxy S21 FE is still in limbo, but its predecessor, the Galaxy S20 FE, remains a great option for anyone looking for a decent flagship that doesn’t cost a fortune. And on this Black Friday, you can get it at its all-time low price. Originally launched at $699, the Galaxy S20
-The post Grab the Galaxy S20 FE for just $550 ($150 off) this Black Friday appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">HyperX CloudX Flight gaming headset is $60 off for Black Friday</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/hyperx-cloudx-flight-gaming-headset-is-60-off-for-black-friday/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>Even though sales have been running all month, Black Friday is finally here, so the final batch of sales are going live. HyperX sells some of the best PC gaming accessories around, from keyboards to headsets, and now the company’s CloudX Flight wireless headset is on sale for $99.99. That’s a discount of $60 from
-The post HyperX CloudX Flight gaming headset is $60 off for Black Friday appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Get $40 off on the TP-Link Deco Mesh Network and extend the range of your WiFi!</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/tp-link-deco-black-friday-deal/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(3 min)</span>
-                    <span>It’s hard to imagine a single day without WiFI or just the internet for that matter. What’s worse than no internet connection is intermittent disconnections. We’ve all been through that situation where we’re watching a show and all you see is a ring circling at the center while buffering. Maybe you’re too far from the
-The post Get $40 off on the TP-Link Deco Mesh Network and extend the range of your WiFi! appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Amazon has some great Black Friday deals on curved gaming monitors</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/amazon-curved-gaming-monitors-black-friday/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(3 min)</span>
-                    <span>During Black Friday, you can find great deals on pretty much anything, and if you’re in the market for a new gaming monitor, Amazon has some good deals for you today. A handful of relatively affordable monitors are seeing discounts, which brings their price down to anywhere from $190 to just under $380. These gaming
-The post Amazon has some great Black Friday deals on curved gaming monitors appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Save 30% on great home Wi-Fi with this Nest Wifi Black Friday deal</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/nest-wifi-black-friday-twin-pack/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(3 min)</span>
-                    <span>Google released a new mesh Wi-Fi system in late 2019, dubbed the Nest Wifi. It replaced the older Google Wifi and provides fast and reliable internet throughout your home, and there’s no limit on how many you can add so long as they’re in range of each other. The Nest Wifi is sold in either a
-The post Save 30% on great home Wi-Fi with this Nest Wifi Black Friday deal appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Here are the Best Black Friday 2021 Deals on Smartphones, Earbuds, &amp; more!</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/black-friday/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(8 min)</span>
-                    <span>Although some companies started offering early Black Friday deals right after Techtober wrapped up, the best Black Friday deals offering the biggest savings will be announced this week. To help you cash in on the offers, we’ve rounded up the best deals on phones, accessories, audio gear, and more in this post. So, if you’ve
-The post Here are the Best Black Friday 2021 Deals on Smartphones, Earbuds, &amp; more! appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Microsoft Office without a subscription is on sale for $100 right now ($50 off)</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/microsoft-office-deal-november-2021/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>Microsoft Office used to release a new upgrade every few years, which you would have to purchase each time if you wanted to stay up-to-date. The Microsoft 365 subscription (originally ‘Office 365’) now gives you the full Office suite and all updates for a recurring yearly cost, plus cloud storage, but not everyone wants yet
-The post Microsoft Office without a subscription is on sale for $100 right now ($50 off) appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://youtube.buzzing.cc">Youtube 热门</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">光环无限》令人沮丧和失望...... (第1/2部分)</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/ARNBtGn70ww">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Go to https://buyraycon.com/actman for 30% off your order! Brought to you by Raycon.
-
-Halo Infinite has officially launched but even though it has been 6 years since the release of Halo 5: Guardians, Infinite is STILL making the same mistakes. It is mind-boggling how I even have to talk about and discuss this stuff. 
-
-I saw a post on reddit that did a great job of explaining why there aren’t more modes in Halo Infinite and why you can’t choose what modes you play. If you have an Oddball challenge, then you have to queue and wait until you get an Oddball match to try and complete. It could be argued that the lack of modes/playlists is by design to FURTHER lengthen the time it takes to complete challenges.
-
-Halo 5 launched with so little content because (in my opinion) it encouraged people to play Warzone, the game mode designed around loot boxes and overpowered weapons. 
-
-So again, the fucking monetization is responsible for yet ANOTHER Halo games abysmal variety of content at release
-
-
-SUPPORT the Channel ► https://www.patreon.com/TheActMan 
-
-____TIME STAMPS____
-Introduction – 0:00 
-Disappointing News – 4:03
-Lack of Content – 7:23
-Game Modes &amp; Playlists – 11:08 
-Custom Games are Broken – 20:05
-Final Thoughts – 28:33
-
-✪ CONNECT WITH ME ✪ 
-Subscribe ↪ https://www.youtube.com/c/TheActMan?sub_confirmation&#x3D;1 
-Twitter ➤ https://twitter.com/TheActMan_YT 
-Act Man TV ➤ http://bit.ly/2kPXk7f  
-
-Discord ➤ https://discord.gg/yBABtkh  
-Instagram ➤ https://www.instagram.com/theactman_yt/ 
-Xbox Live Gamertag ➤ The Act Man</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">冠军女王加入战斗! (部落冲突官方)</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/zjy0dyXEGBE">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>The Clash of Clans World Finals are coming! Celebrate in style with the Champion Queen, a brand new in-game Challenge, and crazy offers and events! 
-
-
-
-Follow us on our Socials!
-Twitter ► https://twitter.com/ClashofClans/
-Instagram ►https://www.instagram.com/clashofclans 
-Facebook ►https://www.facebook.com/ClashofClans 
-
-Attack. Defend. Strategize. Download for free for mobile devices. http://supr.cl/ThisArmy
-
-From rage-­filled Barbarians with glorious mustaches to pyromaniac wizards, raise your own army and lead your clan to victory! Build your village to fend off raiders, battle against millions of players worldwide, and forge a powerful clan with others to destroy enemy clans.
-PLEASE NOTE! Clash of Clans is free to download and play, however some game items can also be purchased for real money 
-
-Also, under our Terms of Service and Privacy Policy, you must be at least 13 years of age to play or download Clash of Clans.
-A network connection is also required.
-
-FEATURES
-- Build your village into an unbeatable fortress 
-- Raise your own army of Barbarians, Archers, Hog Riders, Wizards, Dragons and other mighty fighters
-- Battle with players worldwide and take their Trophies
-- Join together with other players to form the ultimate Clan
-- Fight against rival Clans in epic Clan Wars 
-- Build 18 unique units with multiple levels of upgrades
-- Discover your favorite attacking army from countless combinations of troops, spells, Heroes and Clan reinforcements 
-- Defend your village with a multitude of Cannons, Towers, Mortars, Bombs, Traps and Walls
-- Fight against the Goblin King in a campaign through the realm
-
-Chief, are you having problems? Visit http://supercell.helpshift.com/a/clas...
-
-Privacy Policy:
-http://www.supercell.net/privacy-policy/
-
-Terms of Service:
-https://supercell.com/en/terms-of-service/
-
-Parent’s Guide:
-http://www.supercell.net/parents
-
-#clashofclans</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">我是如何在MrBeast的鱿鱼游戏中输掉45.6万美元的!</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/BKfjtFRTdhc">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>I competed in one of the biggest MrBeast videos on youtube... SQUID GAME In Real Life! This is the story of how I lost $456,000 but stole the world&#x27;s hearts!
-
-Check out MrBeast&#x27;s Video if you haven&#x27;t. Thanks Jimmy for the opportunity! :D
-https://www.youtube.com/watch?v&#x3D;0e3GPea1Tyg&amp;t&#x3D;1s&amp;ab_channel&#x3D;MrBeast
-
----------------------------------------------------------------------
-
-⭐ SUBSCRIBE HERE to be COOL! ➜https://goo.gl/7Xabn8
-🔔 Be sure to hit the bell and turn on notifications!
-
-BECOME A MEMBER! GET EPIC REWARDS AND PERKS TO THE CHANNEL!
-✅ JOIN HERE! ➜ https://www.youtube.com/channel/UCtghAMGOpNxMheOfWRRMe6A/join
-
----------------------------------------------------------------------
-
-👕 Nightfoxx Roblox Shirts ➜ http://bit.ly/FoxxRobloxStore
-🦊**NEW** FOXX MERCH ➜ https://nightfoxxshop.com
-
----------------------------------------------------------------------
-💙 SOCIAL MEDIA 💙
-Twitter ➜ http://www.twitter.com/MrNightfoxx
-Instagram ➜ http://www.instagram.com/mrnightfoxx
-
-💜 OFFICIAL DISCORD PARTNER! 💜
-Join our FREE Discord Server and talk to me and other members of the community! ➜ https://discord.gg/hqMMuf2
-
-Join My Roblox Group For a Chance to Win 100 Robux: http://bit.ly/FoxxRobloxGroup
----------------------------------------------------------------------
-Game Played in Vid: SQUID GAME IN REAL LIFE
-
-🔥 Follow Me on Roblox! ➜Night_Foxx
-
-You’ve made it to the end of my description. You are EPIC NOW!</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">穆拉对托特纳姆。延长赛亮点 | 欧洲杯小组赛MD5 | CBS Sports Golazo Europe</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/fPjJ9gVoFZA">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Tottenham beat Mura 5-1 last meeting behind a Harry Kane hat trick and a repeat result would put them in a good place to advance to the next round. Air Date: Nov 25, 2021
-
-Stream UEFA Matches on Paramount+: 
-https://www.paramountplus.com/shows/uefa-champions-league/
-https://www.paramountplus.com/shows/uefa-europa-league/
-https://www.paramountplus.com/shows/uefa-europa-conference-league/
-
-#soccer #uefa #uecl</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">P-5000动力装载机摧毁了所有的东西!</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/i50CX9z51AM">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Get Albion Online for free today! ►
-https://play.albiononline.com/JK4M/hacksmith
-
-Big thank you to our industry partners for making this project possible! Check them out below:
-Bosch Rexroth ► https://www.boschrexroth.com/
-Cat® Products ► https://www.cat.com/
-Kunbus Revolution Pi ► https://revolution.kunbus.com/
-FORT Robotics ► https://www.fortrobotics.com/
-
-Check out AlienGoBoom for more awesome Alien Destruction! ► https://www.youtube.com/c/aliengoboom
-
-GET MERCH ► https://www.Hacksmith.store
-
-Become a Hacksmith member get exclusive perks! ► https://www.youtube.com/channel/UCjgpFI5dU-D1-kh9H1muoxQ/join
-►Early video access 
-►Project design files (solidworks)
-►Merch Discounts 
-►Collaborate with us on our videos 
-
-SOCIAL
-Website ► http://www.hacksmith.tech
-Facebook ► http://www.facebook.com…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">从股灾中获利... 💥</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/Eyfb9dt2FVo">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Profit From A Stock Crash… 💥
-_______________________________________________
-Free Stuff:
-📈 GET YOUR FREE STOCK WORTH UP TO $1,000 ON PUBLIC (for USA): https://public.com/mark
-
-📈 GET YOUR FREE STOCK WORTH UP TO £200 ON FREETRADE (for UK): http://freetrade.io/marktilbury
-
-💰 Get $10 worth of Bitcoin with code &quot;TILBURY10&quot; when you sign up and verify your account on Coinbase. (For EVERYONE): https://coinbase-consumer.sjv.io/c/2553549/1154763/9251
-
-*The Info in this video is accurate as of the posting date. Offers are only available for a limited time*
-_______________________________________________
-My Links:
-➥ My Main Channel: https://www.YouTube.com/marktilbury
-➥ Snapchat: https://www.snapchat.com/add/marktilbury
-➥ My Podcast Channel: https://www.YouTube.com/c/likefatherlikesonpodcast
-➥ Twitter: https://twitter.com/marktilbury
-➥ Discord: https://discord.gg/hXjW6pY
-➥ Instagram: https://www.instagram.com/marktilbury
-________________________________________________
-CONTACT:
-For business inquires only, please use this email: mark@marktilburycoaching.com
-
-*Some of the links and other products that appear on this video are from companies which Mark Tilbury will earn an affiliate commission or referral bonus. The Info in this video is accurate as of the posting date. Some of the offers mentioned may no longer be available.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">2014年QB级别... 7年后</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/xVuiHP8tNbE">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Thank you to SeatGeek for sponsoring this video! Use code KTO for $20 off your first order. https://seatgeek.onelink.me/RrnK/KTO
-
-7 years ago, there were 5 quarterbacks selected in the first 2 rounds of the 2014 NFL draft. How did their careers go?
-
-Welcome to my channel! My videos are all things football. Hypothetical scenarios, game and player breakdowns, predictions, and football stories. If you like my videos be sure to subscribe and let me know what you think down below!
-
-Outro- The Fix by Aldous Young</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">谋杀所有贾尔斯的 &quot;天际 &quot;速跑</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/2bTt-qBgRoI">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>NEW DOUGDOUG PLUSHIE: https://www.makeship.com/products/dougdoug-gitd-plush
-Speedrun to make a new file, kill every leader as fast as possible.
-
-This was streamed live on Twitch! https://bit.ly/DougTwitch
-Full stream recording: https://www.youtube.com/watch?v&#x3D;wSqUM2y0Jm4
-
-My 2nd Channel: http://bit.ly/dougdoug2
-Twitter: https://twitter.com/DougDougFood
-Subscribe: https://bit.ly/dougdougsubsub
-
-More DugDug:
-Latest Uploads: https://www.youtube.com/watch?v&#x3D;rp4cH7mb4X4&amp;list&#x3D;PLzTxt5iYdhziB3Zf03HR_aZWgJ49ffj-d&amp;index&#x3D;2
-Explained with Food: https://www.youtube.com/playlist?list&#x3D;PLzTxt5iYdhzjMJF--_xpj4s4jgOPe0NWF
-DougDoug Challenges: https://www.youtube.com/playlist?list&#x3D;PLzTxt5iYdhzh_SW60_g3HPVjBupwUZOFA
-Popular Videos: https://www.youtube.com/playlist?list&#x3D;PLzTxt5iYdhzgrLpm-SQNNAVOw0gVs8Iu_
-
-MUSIC CREDITS:
-Bayonetta 2 - Shopping (B)
-Gran Turismo 3 - Race Results
-Mario Kart 8 - Lose Grand Prix
-Skyrim - Out of the Cold
-Skyrim - Boss Battle #3
-Xenoblade Chronicles 2 - Battle!! (Combat Theme 1)
-Zelda Skyward Sword - Opening
-Bayonetta 2 - Talking with Loki (A)
-Xenoblade Chronicles 2 - Crossing Swords
-Battlefield V - Legacy Theme
-Smash Bros Wii U - Gerudo Valley
-Metal Gear Solid 3 - Caution
-Xenoblade Chronicles 2 - Still, Move Forward! (Combat Theme 3)
-Xenoblade Chronicles 2 - Incoming!
-Skyrim - The Streets of Whiterun
-
-About DougDoug:
-Doug is a sentient bell pepper who was hired by the FBI to crack gaming challenges and also talk about things with food
-
-#Skyrim #Speedrun #Jarl</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">2021年 &quot;黑色星期五 &quot;最佳交易25强 🤑（每小时更新一次！）。</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/qpKE16se-OI">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>The brand new deals are crazy this Black Friday 2021! Here are all the top deals I found on the products you care about from Amazon, Target, Walmart and More!
-👇🏼 MY TOP 25 BLACK FRIDAY DEAL LIST: 👇🏼
-🤑 99 CENT HULU: https://hulu.tv/3mfUGHI
-🤑 Anker Emergency Portable Power Station: https://amzn.to/3CURf0F
-🤑 New Apple AirPods (3rd Generation): https://amzn.to/3xBKAHT
-🤑Beats Studio Buds: https://amzn.to/2ZoSzeD
-🤑 Ninja Mega Kitchen System: https://bit.ly/30NRcXE
-🤑 Top Rated $45 Juicer: https://bit.ly/3xnZDEC
-🤑 Onn 50” TV: https://bit.ly/30WnJea
-🤑 ASUS Chromebook: https://bit.ly/3nxCjRI
-🤑 SodaStream Terra: https://bit.ly/30TVHQx
-🤑 PowerXL Dual Basket Air Fryer: https://bit.ly/2ZryuEu
-🤑 30% OFF Green Works Outdoor Tools: https://amzn.to/3xmQpZr
-🤑 Google Nest Mini + Smart Plug: ht…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-    </ul>
-  </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2021-12-26T00:50:03.012Z">2021-12-26T00:50:03.012Z</time>
+    <time id="build-timestamp" datetime="2021-12-27T00:49:20.152Z">2021-12-27T00:49:20.152Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.11.3</a></span>
   </footer>
   <script src="index.js"></script>

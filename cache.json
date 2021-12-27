@@ -631,6 +631,114 @@
       "siteUrl": "https://dev.to",
       "articles": [
         {
+          "id": "https://dev.to/kat_coding/new-macbook-quick-setup-2b48",
+          "author": "Kitty code",
+          "description": "Did anyone else get a new laptop this holiday season? 👀\nchflags nohidden ~/Library\n\n\n\n  \n  \n  2. Install brew\n\n\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\nCheck your path and make sure path includes your brew location.\n\n\nCheck path: echo $PATH | tr \":\" \"\\n\"\\n\n\nBrew location: which brew\n\n(Probably something like /opt/homebrew/bin)\nIf the location is missing, then add it to your ~/.zshrc, like this: export PATH=/opt/homebrew/bin:$PATH\n\n\n\n\n\n\n\n\n  \n  \n  3. iTerm & OhMyZsh & Starship\n\n\n\nhttps://iterm2.com/\n$ sh -c \"$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\"\nbrew install starship\necho 'eval \"$(starship init zsh)\"' >> ~/.zshrc\n(Install font & then change font in iTerm settings)\n\n\nbrew tap homebrew/cask-fonts\nbrew install --cask font-hack-nerd-font\nbrew install node@16\ncurl \"https://awscli.amazonaws.com/AWSCLIV2.pkg\" -o \"AWSCLIV2.pkg\"\\nsudo installer -pkg AWSCLIV2.pkg -target /\naws configure (assuming you already have credentials)\nnpm install -g aws-cdk\nauto-complete:\n\n\nautoload bashcompinit && bashcompinit\nautoload -Uz compinit && compinit\ncomplete -C '/usr/local/bin/aws_completer' aws",
+          "link": "https://dev.to/kat_coding/new-macbook-quick-setup-2b48",
+          "publishedOn": "2021-12-27T00:30:43.000Z",
+          "wordCount": 534,
+          "title": "2021/2022 MacBook -Quick Setup"
+        },
+        {
+          "id": "https://dev.to/expoashish/top-10-programming-languages-you-must-know-in-2022-2ig4",
+          "author": "Ashish Yadav",
+          "description": "In this blog we are going to see top 10 best programming languages for 2022. We will see which programming language is best and their features and application. If you like my post then follow me. Lets Start:-👇\nTop 10 Programming Languages You Must Know In 2022\nBest Websites for Blogging\nPython Complete Roadmap 2022\nMachine Learning Complete Roadmap 2022\nC++ Complete Roadmap 2022\nJava Complete Roadmap 2022\nData Structure Complete Roadmap 2022\nLaravel 8 Interview Questions and Answers in 2022 (Part #1)\nLaravel 8 Interview Questions and Answers in 2022 (Part #2)\nAdvance Laravel 8 Interview Questions and Answers 2022\nEverything About Laravel 8 Composer 2022 | Composer in Laravel 8\nLaravel Jetstream vs Laravel ui  vs Breeze\n10 Best Python Libraries For Machine Learning\nAlarm Clock in Python with GUI\nTic Tac Toe Game Using Pygame in Python\nThankyou for reading my blogs.\nCodexAshish",
+          "link": "https://dev.to/expoashish/top-10-programming-languages-you-must-know-in-2022-2ig4",
+          "publishedOn": "2021-12-27T00:19:41.000Z",
+          "wordCount": 549,
+          "title": "Top 10 Programming Languages You Must Know In 2022🔥"
+        },
+        {
+          "id": "https://dev.to/sebcodestheweb/make-the-disneycom-landing-page-in-90-minutes-c92",
+          "author": "Sebastian",
+          "description": "How to make the disney.com landing page in under 90 minutes - part 1\n\n\nHello, and welcome to my awesome blog! 😊\nThis blog is part 1, of my under 90 min YouTube tutorial where I am going to show you how you can copy the disney.com landing page only using vanilla html and css. This project also focuses heavily on flexbox, so if you want to get some practice with that then this is the perfect tutorial!\nhttps://www.youtube.com/watch?v=6SUBhdvK31A \nIn this first part, I'm showing you how to set up the html, and the styling for the mobile version of the website. In the second part I am going to show you how to make the page fully responsive and look good on desktop.\nI have made a git repository that you can clone to follow along the tutorial (which I recommend)\n\nhttps://github.com/SebCodesTheWeb/disneyclone\nHello! My name is Sebastian, and I'm a high-school student from Sweden. I have dabbled with some front-end development for the past few months. And since christmas brake finally arrived, I've decided to start a challenge for myself! I'm going to code for the coming 20 days.\nI'm following the front-end career path at Scrimba and I'm currently at module 8 (Flexbox, Grid and Fetch). I started this project to get some practice with css flexbox.\nBy the end of the 20 days I'm hoping to have finished the front-end career path and have started with some backend Node.js development. I will be documenting my progress for the coming days, and filming myself and making tutorials on my \nYouTube-channel .\nIt would be awesome if you would follow along me on my journey and learn with me. You can follow my  blog  and subscribe to my  YouTube channel. And if you liked the YouTube video then it would really make my day if you left a comment or liked this post.\n\nKeep Coding.",
+          "link": "https://dev.to/sebcodestheweb/make-the-disneycom-landing-page-in-90-minutes-c92",
+          "publishedOn": "2021-12-26T23:03:58.000Z",
+          "wordCount": 708,
+          "title": "Make the Disney.com Landing Page in 90 minutes"
+        },
+        {
+          "id": "https://dev.to/suhakim/complete-user-authentication-with-express-and-graphql-opo",
+          "author": "sadiul hakim",
+          "description": "Hey guys,Today i am going to build a complete user authentication with express-graphql.So, Let's get started....\nThis is going to be our folder structure...\n\nAfter initializing your project install these dependencies...\n$ npm i bcrypt dotenv express express-graphql jsonwebtoken graphql mongoose\n\nNow use need to create some private and public key to make our token secure.To generate those key visit \ngenerate keys\nNow we need to encode our key.To encode keys visits\nencode keys\nnow add these key and port in out .env file\nPORT=5000\nMONGODB_URL='mongodb://localhost:27017/graphql'\nPRIVATE_KEY='LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb1FJQkFBS0NBUUIySk01dDUxMmdKQytwcTM5TEN0RjZQRkVWZVIvd09LcHV4cUVxUHcvZ0lGNGtmWlFNCisyaGNiSDhQZ2Qvd3BnUHh2QUFxYXNRRmJyekNkK09EcGx5ajRYNUx5c0R0RWIyeERxTDVXK3Nua…",
+          "link": "https://dev.to/suhakim/complete-user-authentication-with-express-and-graphql-opo",
+          "publishedOn": "2021-12-26T21:56:34.000Z",
+          "wordCount": 1228,
+          "title": "Complete User Authentication with express and graphql...."
+        },
+        {
+          "id": "https://dev.to/braide/basic-osi-1pa4",
+          "author": "Katerina Braide",
+          "description": "What is OSI?\n\n\nOSI stands for Open System Interconnection, it’s a conceptual framework for how application communicate over a network. The purpose of the OSI model is to facilitate communication between different systems without requiring changes to the logic of the underlying hardware and software. OSI has a stack of seven layers within the model and the layers are used to help user identify what is happening within a networking system.\nWhat is OSI layer?\n\n\nThe OSI layer are typically described from the top layer down. With the help of layering we decompose the problem of building a network into manageable components (layers), these layers help with modular design and easy troubleshooting. Going down and up the stack is called encapsulating and decapsulating respectfully. The layers are:\n…",
+          "link": "https://dev.to/braide/basic-osi-1pa4",
+          "publishedOn": "2021-12-26T21:31:16.000Z",
+          "wordCount": 1556,
+          "title": "Basic OSI"
+        },
+        {
+          "id": "https://dev.to/muncey/i-have-updated-my-wordpress-rest-api-to-set-and-return-the-number-of-views-per-post-lm3",
+          "author": "muncey",
+          "description": "The next iteration or feature I have implemented in my react theme is a view counter which shows the number of views each one of my posts is getting on my WordPress site. The number of views is a number value that is held against each post on my WordPress site using what is known as post meta. Post meta is a mechanism that WordPress provides that will let you store some additional data with each post and is normally set behind the scenes for you by custom PHP code running in either a theme or a plugin.\nIn my case I have set up a filter inside my functions.php file to increment a post views value by 1 each time a request is made to retrieve data for a specific post via the Rest API. The Rest API is a handy out of the box feature that WordPress provides that will let you access your pages an…",
+          "link": "https://dev.to/muncey/i-have-updated-my-wordpress-rest-api-to-set-and-return-the-number-of-views-per-post-lm3",
+          "publishedOn": "2021-12-26T21:30:23.000Z",
+          "wordCount": 1174,
+          "title": "I have updated my WordPress REST API to set and return the number of views per post"
+        },
+        {
+          "id": "https://dev.to/franciscomendes10866/how-to-validate-data-in-golang-1f87",
+          "author": "Francisco Mendes",
+          "description": "Overview\n\n\nOne of the important things in creating a REST API is the validation of data coming from the frontend. That is, whenever our APIs are subject to receiving data from the request body (for example) it is always good to ensure that we are receiving the necessary properties and that the data types are correct.\nAnd in golang we have some libraries that help us with this purpose and in this article we are going to use the validator library, which besides being perhaps the most popular, is the one that contains a good number of resources for us to learn on the internet.\nIn today's example we'll create a simple API, but then we'll proceed with implementing a middleware to validate the data before proceeding to the next handler.\nFirst let's install the following dependencies:\ngo get gith…",
+          "link": "https://dev.to/franciscomendes10866/how-to-validate-data-in-golang-1f87",
+          "publishedOn": "2021-12-26T20:53:02.000Z",
+          "wordCount": 1074,
+          "title": "JSON Schema Validation in Golang"
+        },
+        {
+          "id": "https://dev.to/swyx/using-datasette-for-an-elt-personal-twitter-data-warehouse-h6i",
+          "author": "swyx",
+          "description": "Twitter publishes some analytics for you, and I check them about once a month, but they are extremely limited when it comes to the important things, like exploring your follower graph.\nThis is where Datasette comes in. Datasette is a great EDA (exploratory data analysis) tool for any arbitrary SQLite dataset. You can use it to build your own Twitter analytics!\nToday, at Simon Willison's prompting, I decided to try to replicate his 2018 work in analyzing his own Twitter network.\nYou can check out my own dataset here: https://swyx-twitter-datasette.glitch.me/twitter/tweets?_sort_desc=favorite_count&_facet=retweeted&_facet=favorited&_facet=user&user=33521530&retweeted=1\nThings to try:\ncheck out the selected facets\nsort/hide individual columns\nsearch\nbuild up sql filters (eg favorite_count > 1…",
+          "link": "https://dev.to/swyx/using-datasette-for-an-elt-personal-twitter-data-warehouse-h6i",
+          "publishedOn": "2021-12-26T20:52:14.000Z",
+          "wordCount": 1387,
+          "title": "Using Datasette for an ELT Personal Twitter Data Warehouse"
+        },
+        {
+          "id": "https://dev.to/helengriffinjr/dec-26-dev-holidays-guide-3pkh",
+          "author": "Helen Griffin",
+          "description": "Bah Humbug Tips are my own way of coping & recovering from burnout & holiday stress.\n#BahHumbugTip: Wake up & choose kindness. 👇🏾\n    \n❏ Try to be around people who bring the best out of you.\n❏ Pick questions & people that can help you change the topic or shift the mood.\n❏ Create phrases that allow you to relinquish control for peace of mind.\n🎄  #BahHumbugTip 🎁 \n    \nYou can find more tips here & on Twitter. Let me know in the comments if any of these tips helps.\nIf you're struggling w/ burnout & open to sharing your story, please take the State Of Devs survey. 🗳 Thanks!",
+          "link": "https://dev.to/helengriffinjr/dec-26-dev-holidays-guide-3pkh",
+          "publishedOn": "2021-12-26T20:46:15.000Z",
+          "wordCount": 616,
+          "title": "Dec 26: Dev Holidays Guide ⛄️"
+        },
+        {
+          "id": "https://dev.to/mahmoud_bebars/the-uni-auth-system-39kb",
+          "author": "m.bebars",
+          "description": "Merry Christmas every one\na simple auth system made with node, express, react and some cool styling with tailwind\nyou can make it your start for creating your next project\nI hope it helps you create something cool or make you improve your skills\nand tell me if there is something more I can add to the project to make it better\ncheck the project from here",
+          "link": "https://dev.to/mahmoud_bebars/the-uni-auth-system-39kb",
+          "publishedOn": "2021-12-26T20:30:02.000Z",
+          "wordCount": 539,
+          "title": "The UNI Auth System"
+        },
+        {
+          "id": "https://dev.to/arifiqbal/week-5-of-100daysofcode-javascript-challenge-32ek",
+          "author": "Arif Iqbal",
+          "description": "This week I completed the Debugging module of the JavaScript course at FreeCodeCamp. Here is a recap of my week.\nDebugging JavaScript code - Day 20 of 100\nArif Iqbal ・ Dec 21 ・ 2 min read\n#javascript\n        #programming\n        #webdev\n        #100daysofcode\n      \nDebugging JavaScript code - Day 21 of 100\nArif Iqbal ・ Dec 22 ・ 3 min read\n#javascript\n        #programming\n        #webdev\n        #100\n      \nThank you for following along with me. Stay tuned for the next article. Comments and suggestions are always appreciated and welcome.\n~ Happy Coding!",
+          "link": "https://dev.to/arifiqbal/week-5-of-100daysofcode-javascript-challenge-32ek",
+          "publishedOn": "2021-12-26T19:53:13.000Z",
+          "wordCount": 499,
+          "title": "Week 5 of 100DaysOfCode JavaScript Challenge"
+        },
+        {
+          "id": "https://dev.to/abdulrauf11/how-to-create-a-motherfcking-nft-using-javascript-2foj",
+          "author": "Abdul Rauf (lilcoderman)",
+          "description": "In my previous post, I explained how you can mint an NFT using Solidity. But what if you don't want to learn Solidity? \nAin't nobody got time for that b*tch.\nYou want to stick with your ol' pal JavaScript. Let me tell you that there's a way to do it. I present to you thirdweb - a library of smart contracts, SDK, and UI components that developers can use in their app.\nHow cool would it be if you could just call a mint function, give the token's metadata as an argument, and it mints an NFT for you? All without writing a single line of Solidity code. Let's see if that's possible.\nThe first thing you need to learn about is the concept of projects and modules. In short, projects are smart contracts that act as containers for your modules. On the other hand, modules are packages that contain sma…",
+          "link": "https://dev.to/abdulrauf11/how-to-create-a-motherfcking-nft-using-javascript-2foj",
+          "publishedOn": "2021-12-26T19:40:26.000Z",
+          "wordCount": 1803,
+          "title": "How to create a motherf*cking NFT using JavaScript"
+        },
+        {
           "id": "https://dev.to/baenencalin/the-brain-interpreter-i-made-is-on-sololearn-15of",
           "author": "Calin Baenen",
           "description": "The Brain**** interpreter I made in my other post, \"How to make a simple Brainf**k interpreter using ParseJS. [CW: Light 'profanity'.]\", is now on SoloLearn for anyone and everyone to play around with. Even on mobile!\nHere's the URL: https://code.sololearn.com/WMO3B752fdOj.",
@@ -3068,123 +3176,6 @@
           "publishedOn": "2021-11-27T18:11:20.000Z",
           "wordCount": 780,
           "title": "You are an array"
-        },
-        {
-          "id": "https://dev.to/equiman/move-wsl-file-system-to-another-drive-2a3d",
-          "author": "Camilo Martinez",
-          "description": "If the C: drive is running out of space, we can move our WSL2 file system to another drive in a few steps.\nIf we are using an user different than root, we need to know it, running the whoami command (WSL side):\n\nAlso we need to know the distro name and WSL version, running the wsl --list --verbose command on PowerShell (Windows Side):\n\nKnowing the username: equiman, the linux distribution: Ubuntu, and confirm that we are using the WSL 2 version, we are ready to...\n\nAll next steep need to be done on PowerShell (Windows Side).\nFirst we need to shutdown WSL to avoid data corruption. Close all WSL terminals that are using it and then run the wsl --shutdown command.\nNext we are going to create a backup from our Ubuntu linux distribution.\nmkdir D:\\backup\nwsl --export Ubuntu D:\\backup\\ubuntu.tar\n\nDon't worry if you not see progress indicators. This can be take a while depending how much data you have. Maybe it's good idea take a rest.\n\nWhen finish, we need to to unregister the linux distribution from C: drive. It will also release the disk space.\nwsl --unregister Ubuntu\n\nAnd then, import again on our new disk. I'll use D: disk as an example.\nmkdir D:\\WSL\nwsl --import Ubuntu D:\\WSL\\ D:\\backup\\ubuntu.tar\n\nBy default Ubuntu will use root as default user, to switch to our user (equiman in my case) we need to run this commands.\ncd $env:USERPROFILE\\AppData\\Local\\Microsoft\\WindowsApps\nubuntu config --default-user equiman\n\nEnsure replacing equiman with yours.\nRestart WSL running wsl command and it's done.\nThat’s All Folks!\nHappy Coding 🖖",
-          "link": "https://dev.to/equiman/move-wsl-file-system-to-another-drive-2a3d",
-          "publishedOn": "2021-11-27T00:14:32.000Z",
-          "wordCount": 657,
-          "title": "Move WSL File System to another Drive"
-        },
-        {
-          "id": "https://dev.to/vtsen/2-ways-to-implement-binding-adapters-4omc",
-          "author": "Vincent T",
-          "description": "One way is using function parameter and another way is using extension function.\nThere could be more than 2 ways to implement binding adapters, but this is what I know. Let's look at what binding adapters are first.\nBinding adapter is used for implementing custom attribute in your layout file. For example, instead of using the defaultandroid:text attribute, you want to customize it by creating a new attribute app:customText. \nandroid:text\n\n\n\n\n\n<TextView\n    android:id=\"@+id/textView\"\n    android:layout_width=\"wrap_content\"\n    android:layout_height=\"wrap_content\"\n    android:text=\"Hello World!\"/>\n\napp:customText\n\n\n\n\n\n<TextView\n    android:id=\"@+id/textView\"\n    android:layout_width=\"wrap_content\"\n    android:layout_height=\"wrap_content\"\n    app:customText=\"@{`Hello World!`}\"/>\n\nTo implemen…",
-          "link": "https://dev.to/vtsen/2-ways-to-implement-binding-adapters-4omc",
-          "publishedOn": "2021-11-26T22:32:11.000Z",
-          "wordCount": 714,
-          "title": "2 Ways to Implement Binding Adapters"
-        },
-        {
-          "id": "https://dev.to/bmstefanski/auto-fixable-import-sorting-rules-for-eslint-laj",
-          "author": "Bartłomiej Stefański",
-          "description": "The pretty much standard way of sorting imports in JavaScript:\n3rd party imports first\nthen local default exports\nand then local exports\nAnd here's the snippet that sorts them in this exact order and \n$ npm i --save-dev eslint-plugin-import  \n\n# or    \n\n$ yarn add -D eslint-plugin-import\n\n// .eslintrc.js  \nconst fs = require('fs')  \n\nconst ignoredSortingDirectories = ['.git', '.next', '.vscode', 'node_modules']  \n\nmodule.exports = {  \n  /// ... some other configurations  \n  rules: {  \n    // ... your rules  \n    'sort-imports': ['error', { ignoreCase: true, ignoreDeclarationSort: true }],  \n    'import/order': [  \n      1,   \n      {  \n        groups: ['external', 'builtin', 'internal', 'sibling', 'parent', 'index'],  \n        pathGroups: [  \n          ...getDirectoriesToSort().map((singleDir) => ({ pattern: `${singleDir}/**`, group: 'internal' })),  \n          { pattern: 'env', group: 'internal' },  \n          { pattern: 'theme', group: 'internal' },  \n          { pattern: 'public/**', group: 'internal', position: 'after' },  \n        ],  \n        pathGroupsExcludedImportTypes: ['internal'],  \n        alphabetize: {  \n          order: 'asc',  \n          caseInsensitive: true,  \n        },  \n      },  \n    ],  \n    // ... your rules  \n  },  \n}  \n\nfunction getDirectoriesToSort() {  \n  return getDirectories(process.cwd()).filter((f) => !ignoredSortingDirectories.includes(f))  \n}  \n\nfunction getDirectories(path) {  \n  return fs.readdirSync(path).filter(function (file) {  \n    return fs.statSync(path + '/' + file).isDirectory()  \n  })  \n}",
-          "link": "https://dev.to/bmstefanski/auto-fixable-import-sorting-rules-for-eslint-laj",
-          "publishedOn": "2021-11-26T22:29:58.000Z",
-          "wordCount": 543,
-          "title": "Auto-fixable import sorting rules for ESLint"
-        },
-        {
-          "id": "https://dev.to/zachsnoek/four-tips-for-staying-motivated-while-learning-473e",
-          "author": "Zach Snoek",
-          "description": "Introduction\n\n\nSoftware engineering is a field that is regularly changing. Thus, developers must be continual learners to stay sharp.\nHowever, motivating yourself to learn and creating a lasting habit can be difficult, especially if you're self-studying outside of school or work.  Below are four techniques that I use to stay motivated while learning.\nSet deadlines\nGamify\nSpice it up\nIdentify the end goal\nLearning without structure can feel like an endless task with no end in sight; it's often nice to have a sense of progress. I've found that artificial deadlines give me something to work toward and cleanly mark progress.\nHere are some examples of deadlines you could set for yourself:\nI will study Python for 30 minutes by the end of the day\nI will complete one module of my online JavaScript…",
-          "link": "https://dev.to/zachsnoek/four-tips-for-staying-motivated-while-learning-473e",
-          "publishedOn": "2021-11-26T22:11:40.000Z",
-          "wordCount": 1051,
-          "title": "Four tips for staying motivated while learning"
-        },
-        {
-          "id": "https://dev.to/appmaster_io/what-to-charge-for-your-app-and-whats-the-value-of-it-ak6",
-          "author": "Appmaster.io",
-          "description": "We all want to see a return on our investment, especially when creating applications, which require significant resources.\nYou spent money, your time, put in a lot of effort, and finally, your app is ready. Now comes the new challenge: what to charge for your app?\nThe decision depends on many factors. The number of working hours, testing costs, marketing and promotion, purchase of any licenses are some aspects that define the overall cost of development. Calculate the costs first, then set the price for the app.\nTo put an adequate price tag on your product, first, let's look at the different pricing models.\nUnderstanding the pros and cons of pricing models will help you choose the best option for you.\nIt is essential to find the balance between the price that customers are ready to pay and…",
-          "link": "https://dev.to/appmaster_io/what-to-charge-for-your-app-and-whats-the-value-of-it-ak6",
-          "publishedOn": "2021-11-26T22:05:38.000Z",
-          "wordCount": 1722,
-          "title": "What to charge for your app and what’s the value of it?"
-        },
-        {
-          "id": "https://dev.to/xceed/how-i-send-a-gift-coupon-to-my-nerdy-friend-11b2",
-          "author": "Siddharth",
-          "description": "Context\n\n\nOur company has organized \"Secret Santa\", pre-covid times. I got the name of a nerdy colleague and a friend. I decided to gift him Amazon gift coupon. Like people usually do - hiding gift somewhere in desk, I instead created an online puzzle like a treasure hunt using some automation. If he solves he will receive gift on his email.\nPrinted a bar code on a paper and put it on my friend's workstation desk. Upon scanning, it redirects to a simple website I've created using wixsite.com.\nHere's the picture of printed barcode along with other gifts -\n\n\nThe landing page shows following instruction -\n \nTo get your gift all you need is an email address.\nBefore I tell you more, why don't you give a try yourself to find the email address? Here's the link after scanning barcode - https://turantsephele.wixsite.com/giftgenerator\nS\nC\nT\nO\nS\nE\nN\nE\nS\nT\nOnce you click \"Get email address\", it redirects you to another page which shows a timer and nothing else. And with a small hidden button somewhere in page.\nIf you are able to find the button and click, it redirects you to brainfuck visualizer with some pre-populated code. \nI've written this code in brainfuck and when you run it outputs next hint.\nThat brainfuck code outputs a simple string -\nDecode:747572616e7473657068656c6540676d61696c2e636f6d\n\nAfter decoding, it gives you the email address.\nI have created a IFTTT flow which triggers when there is an incoming email with subject \"HOG RIEEDERRRRR\" and it is from my friend's email address.\nOnce this condition matches, IFTTT sends an email back with gift coupon details.\nOnce timer ran out it reveals a link to brainfuck visualizer code.\nIf he can't solve the puzzle in 3 days, an email triggers and sent gift coupon details to friend's email address. Again using IFTTT.\nThat's all folks!\nIf you did something similar or have some idea like this, drop it in comments :)",
-          "link": "https://dev.to/xceed/how-i-send-a-gift-coupon-to-my-nerdy-friend-11b2",
-          "publishedOn": "2021-11-26T21:49:53.000Z",
-          "wordCount": 756,
-          "title": "How I send a gift coupon to my nerdy friend"
-        },
-        {
-          "id": "https://dev.to/meatboy/gameoff-4-total-destruction-4pj4",
-          "author": "Meat Boy",
-          "description": "Since the last post, we have added so much to the game! VFX is ready, with better character animations, new monsters and map tweaks. Over the map is flying now Santa Claus throwing gifts with weapons to players.",
-          "link": "https://dev.to/meatboy/gameoff-4-total-destruction-4pj4",
-          "publishedOn": "2021-11-26T21:45:25.000Z",
-          "wordCount": 445,
-          "title": "GameOff #4 - Total destruction!"
-        },
-        {
-          "id": "https://dev.to/ubahthebuilder/how-to-easily-add-a-map-to-your-website-in-under-10-minutes-4gkm",
-          "author": "Kingsley Ubah",
-          "description": "Many modern web platforms leverage on maps and location-based features to provide services to users. Some popular examples of this are Uber and Airbnb. \nWith the  TomTom Maps SDK , including a map in your website has never been easier. The toolkit enables access to various mapping features including street maps, real-time traffic conditions, fuzzy search and route planning for travellers.\nAs a developer, you can leverage on TomTom's APIs methods to build and customize maps in your web or mobile application.\nLet's walkthrough the process of adding a map to your website using the TomTom Maps SDK. In the end, I'll include a link to the source code for this project for reference.\nUsing TomTom Maps SDK is both easy and free. First, you'll need to  register a TomTom developer account  to get an …",
-          "link": "https://dev.to/ubahthebuilder/how-to-easily-add-a-map-to-your-website-in-under-10-minutes-4gkm",
-          "publishedOn": "2021-11-26T21:05:44.000Z",
-          "wordCount": 1353,
-          "title": "How to Easily Add a Map to Your Website in Under 10 Minutes"
-        },
-        {
-          "id": "https://dev.to/menghif/first-npm-release-34ni",
-          "author": "Francesco Menghi",
-          "description": "This week I successfully published my Static Site Generator static-dodo as an NPM package.\nAfter creating an account at npmjs.com I used the command npm login from the terminal to link my npm account.\nI changed the version in package.json to 1.0.0 and also added a tag to my latest commit with:\ngit tag -a v1.0.0 -m \"1.0.0 Release\"\n\nI then published my project using the command npm publish. \nAfter I made some changes to the repo, I decided to unpublish the package and start from the beginning. I decided to rebrand the project from \"dodo-ssg\" to \"static-dodo\" and publish it with the new name.\nGus McCallum tested the program on his computer by installing it with:\nnpm install -g static-dodo\n\nIt was interesting to see how a new user approaches getting and learning how to use the tool. Gus ran th…",
-          "link": "https://dev.to/menghif/first-npm-release-34ni",
-          "publishedOn": "2021-11-26T20:14:33.000Z",
-          "wordCount": 782,
-          "title": "First NPM Release"
-        },
-        {
-          "id": "https://dev.to/_s_w_a_y_a_m_/linear-regression-using-normal-equation-21co",
-          "author": "Swayam Singh",
-          "description": "Overview\n\n\nLinear Regression is the first algorithm in the Demystifying Machine Learning series and in this article we'll be discussing Linear Regression using Normal equation. This article covers what is Linear Regression, how it works, the maths behind the normal equation method, fixing some edge cases, handling overfitting and code implementation.\nLinear Regression in simple terms is fitting the best possible linear hypothesis (a line or a hyperplane) on the data having a linear relationship so that we can predict the new unknown data point with the least possible error. It's not necessary to have a linear relationship in data but having such can lead to approximately close predictions. For a reference take a look at the below representation.\n\nIn the above picture, only 1 feature (along…",
-          "link": "https://dev.to/_s_w_a_y_a_m_/linear-regression-using-normal-equation-21co",
-          "publishedOn": "2021-11-26T19:50:48.000Z",
-          "wordCount": 2666,
-          "title": "Linear Regression using Normal Equation"
-        },
-        {
-          "id": "https://dev.to/andrewillomitzer/publishing-my-first-npm-package-38ad",
-          "author": "Andre Willomitzer",
-          "description": "The Project\n\n\nEleven weeks ago when I started in Open Source Development 600 at Seneca I never thought I would get to the point of actually releasing something into the wild. Over the term we have been working on our individual static site generators. The purpose of these tools is to take a text file or Markdown file and parse it into a valid HTML document. \nIt can include a variety of features depending on the student, but some of the options for my own textToHTML include stylesheets, using a config file instead of the command line, and having an output option to specify a folder to put the HTML documents into.\nThroughout the weeks, we have been contributing to Open Source projects on GitHub and making pull requests. Included in this is the idea of contributing to each other's SSG's. Coll…",
-          "link": "https://dev.to/andrewillomitzer/publishing-my-first-npm-package-38ad",
-          "publishedOn": "2021-11-26T19:36:11.000Z",
-          "wordCount": 1004,
-          "title": "Publishing my first npm package"
-        },
-        {
-          "id": "https://dev.to/sagordondev/client-server-chat-36bc",
-          "author": "Scott Gordon",
-          "description": "Github Repo\n\n# client_server_chat\n#   This is a program to demonstate a chat between client and server using UDP.\n#   Run this program and add either client or server as an argument.\n#   Once you have run both client and server you can chat between them.\n# by Scott Gordon with help from Educative.com\n\nimport argparse, socket\n\nMAX_SIZE_BYTES = 65535  # Mazimum size of a UDP datagram\n\n\ndef server(port):\n    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\n    hostname = \"127.0.0.1\"\n    s.bind((hostname, port))\n    print(\"Listening at {}\".format(s.getsockname()))\n    while True:\n        data, clientAddress = s.recvfrom(MAX_SIZE_BYTES)\n        message = data.decode(\"ascii\")\n        print(\"The client at {} says {!r}\".format(clientAddress, message))\n        msg_to_send = input(\"Input message to send to client:\")\n        data = msg_to_send.encode(\"ascii\")\n        s.sendto(data, clientAddress)\n\n\ndef client(port):\n    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\n    host = \"127.0.0.1\"\n    while True:\n        s.connect((host, port))\n        message = input(\"Input message to send to server:\")\n        data = message.encode(\"ascii\")\n        s.send(data)\n        data = s.recv(MAX_SIZE_BYTES)\n        text = data.decode(\"ascii\")\n        print(\"The server replied with {!r}\".format(text))\n\n\nif __name__ == \"__main__\":\n    funcs = {\"client\": client, \"server\": server}\n    parser = argparse.ArgumentParser(description=\"UDP client and server\")\n    parser.add_argument(\"functions\", choices=funcs, help=\"client or server\")\n    parser.add_argument(\n        \"-p\", metavar=\"PORT\", type=int, default=3000, help=\"UDP port (default 3000)\"\n    )\n    args = parser.parse_args()\n    function = funcs[args.functions]\n    function(args.p)\n\n\nVerify my Python\nPhoto by Kelvin Ang on Unsplash",
-          "link": "https://dev.to/sagordondev/client-server-chat-36bc",
-          "publishedOn": "2021-11-26T18:50:14.000Z",
-          "wordCount": 557,
-          "title": "Client / Server Chat"
-        },
-        {
-          "id": "https://dev.to/intersystems/bug-killing-development-tips-292e",
-          "author": "InterSystems Developer",
-          "description": "Does anyone NOT use a debugger? I can't remember the last time I did. It's not because I <s>don't</s> dislike them, I just don't need to use them. The main reason for this is because I have a certain development methodology that either produces less bugs, catches them at a unit test level, or makes tracking them down much easier.\nHere are my tips...\n1. Write your own COS cheat-sheet.\nThis is mainly for anyone that is new to COS. One of the biggest bug hazards is not knowing how certain commands and functions work. Take the time to play with a language and try out all of its variances. The process of then documenting your own cheat-sheet will cement the knowledge and provide a quick reference review tool. Not only will you become more productive, but you will certainly write less of those a…",
-          "link": "https://dev.to/intersystems/bug-killing-development-tips-292e",
-          "publishedOn": "2021-11-26T18:43:15.000Z",
-          "wordCount": 1474,
-          "title": "Bug killing development tips"
         }
       ]
     },
@@ -3193,6 +3184,24 @@
       "feedUrl": "https://sspai.com/feed",
       "siteUrl": "https://sspai.com",
       "articles": [
+        {
+          "id": "https://sspai.com/post/70482",
+          "author": "张奕源Nick",
+          "description": "开始之前\n本文为《付费内容年度精选·2021》免费试读文章。《付费内容年度精选·2021》以超低的价格，精选了多篇会员、付费栏目和工具升值包等少数派出品的付费内容。本篇选自少数派会员第 12 期。\n\n这是一篇超过一万字的、内容严肃且枯燥的注意力报告，请先评估你此刻的环境和时间安排是否允许你认真阅读。\n如果当下不能阅读，请打开你的 To-do 工具，将「阅读本文」放进收件箱，并即刻标记一个你认为适合阅读的时间。记得把文章链接也插入 To-do，便于任务提醒时你能第一时间点击链接，进入本文。\n请在阅读前给自己一个提示：我想一口气读完这篇文章。\n关闭其它一切窗口，只保留本文的浏览器介面，开启全屏模式。\n找个安静或者你认为舒适的环境，开始阅读。\n\n专注力是一个我很想在《少数派报告》里分享的话题。作为一名 ADHD 患者，我一直都饱受注意力缺失的困扰，尤其在近两年工作压力增大之后，我甚至已经察觉到自己出现了阅读障碍。\n在研究和治疗 ADHD 的过程中，我也或主动或被动地了解和掌握了大量关于注意力的知识，并且积累了一些实践经验。当下，人类对于人脑的研究整体还处于较为初级的阶段，市面上关于注意力的图书和文献中的内容也或深或浅，各有说辞，没有绝对的定论。因此，在筹划本文的过程中，我的核心目标就是在尽可能不涉及专业术语和晦涩理论的前提下，清楚地将注意力的原理和概念阐释出来，带你以更简单的方式了解注意力的特点和由来。\n在这篇《注意力使用不完全报告》中，我会从注意力的基本概念出发，最终延伸到有效提升专注力的办法，希望可以帮你在学习和工作中提升状态，提高效率，减少失误。\n需要注意的是，文中的重点会集中在探讨注意力的底层原理，读起来可能会有些吃力。不要着急，放慢阅读速度。在理解了专注力从哪里来、到哪里去之后，相信你也能结合自身工作和学习环境，创造属于自己的专注力保持体系。\n我们开始吧。\n起点：注意力…",
+          "link": "https://sspai.com/post/70482",
+          "publishedOn": "2021-12-26T09:14:12.000Z",
+          "wordCount": 184,
+          "title": "注意力使用不完全报告"
+        },
+        {
+          "id": "https://sspai.com/post/70221",
+          "author": "拐子狼",
+          "description": "「城市风光」是一个很广义的词，大部分时候它不仅指代某一个地点，更是我们经历过、熟悉的并留下深刻回忆的地方。它的妙不可言或许人尽皆知一目了然，亦或许是深藏心底只有自己知道的秘密。\n回忆汹涌呼之欲出，且听作者们平和、真诚且娓娓道来。我们希望通过「城市漫步指南」这个系列，带你领略每一个有趣而又非凡的城市风光。\n\n当游船行驶到湖中，很容易就会想起梭罗在《瓦尔登湖》里写下的那句「天空跃于头顶，而又俯于足下」。\n阳澄湖\n若换成更具本土特色的说法，那就是「落霞与孤鹜齐飞，秋水共长天一色」。\n所剩无几的江南水乡\n阳澄湖的一潭湖水上承自古太湖水系的支脉，在江南风景里已涌动了数千年。湖水清澈，碧波荡漾。大闸蟹是这里享誉天下的特产，初秋季节的头等珍馐佳肴。每年金九银十，浩浩荡荡的顺丰冷链车就从上海和苏州市区驶来，驶过美人腿、莲花岛半岛，将蟹农们饲养一年的宝贝收集装箱，发往全国各地。肥美的蟹挥舞着蟹钳落入滚烫的蒸锅沸水里，捞起时飘香在空中的已是满屋蟹黄蟹膏的味道。\n名满天下的阳澄湖大闸蟹\n但可惜的是，世人只知名誉在外的大闸蟹，却忽视了阳澄湖本身的美。《沙家浜》有汪曾祺的名句：「朝霞映在阳澄湖上，芦花放稻谷香岸柳成行」。如今从阳澄湖上向四围望去，除了比人高的芦荡、临湖而立的大树，此岸与彼岸的土地上也多出了连绵成片的城市楼宇，苏州市区和昆山在这里拱湖相望。疏影横斜间，留下的是城市化进程中所剩无几的江南水乡。\n现代水乡\n本期游记，是我数次往返阳澄湖后的经验总结，希望能向你展示出一篇详尽的吃蟹指南，以及一幅不仅限于大闸蟹的阳澄湖的样貌。当然，作为一个没有那么标准化商业化的景点，阳澄湖并没有标准游玩路线，更不需要按点打卡。一个简单的周末，肆意地漫游，便是最适合阳澄湖的打开方式，也是我最推崇的旅行心态。散步在稻谷田野里，心情便像宁静的湖水一样，在日光云影下缓缓舒展开来。\n岛上漫游·路线图\n游玩阳澄湖的线路很多…",
+          "link": "https://sspai.com/post/70221",
+          "publishedOn": "2021-12-26T03:00:38.000Z",
+          "wordCount": 113,
+          "title": "城市漫步指南 · 苏州：阳澄湖不只有大闸蟹"
+        },
         {
           "id": "https://sspai.com/post/70586",
           "author": "Matrix机器人",
@@ -4002,24 +4011,6 @@
           "publishedOn": "2021-11-28T02:14:43.000Z",
           "wordCount": 278,
           "title": "大众集团：逃不掉的变革阵痛"
-        },
-        {
-          "id": "https://sspai.com/post/70159",
-          "author": "KeNNY",
-          "description": "今年称得上是「游戏小年」，这点想必喜欢玩游戏的读者们都有同感；从去年同期到现在，整个业界尚未拿出一款投入高质量强，既叫好又叫座的高水平作品。那几款玩家们盼望已久的超级大作，发售后却接连遭遇口碑上的滑铁卢；而更多让人翘首以待的作品，全都抢着把发售档期排到了 2022 年。\n不过，虽然超大型制作没能带来亮眼表现，但今年值得一玩的作品并不少。它们要么内容扎实，可以支撑你玩上很长一段时间；要么有着独特的创意和新奇的玩法，能让你体验到特别的乐趣。\n每年的这个时候，都是游戏厂商们疯狂打折促销的日子，各个平台也会推出主题促销活动；有意思的是，今年 Steam 的秋季特卖还比之前延长了 1 天，12 月 1 日才会结束。\n这次我们也为大家整理了一些值得入手的史低游戏，不妨趁着「黑五」特惠，用便宜的价格买下几款心仪的作品；在为今年划上圆满句号的同时，也能用一颗充满期待的心去迎接未来。\n注意：不同平台的折扣截止日期不一致，具体详情请以对应平台的商店页面信息为准。\n双人成行\n\n想必这会是很多人心中的年度最佳作品之一，它拥有充满天马行空般想象力的关卡设计，以及令人眼花缭乱的各式玩法；而无论小游戏还是 Boss 战，它也充分利用了二人协作的机制，没有将这一卖点流于纸面。\n本作在 Steam、Xbox 和 PS 平台上皆有折扣，支持本地双人同屏或者联网游戏。值得一提的是，第二个玩家通过「好友通行证」即可和你一同畅玩，不需要买两份。\n此外，你也可以通过办理 EA Play 玩到本作。\nPC（国区 Steam）：\n购买链接（史低 -38%，￥198 →￥122.76）\nXbox（港区）：\n购买链接（-40%，HK$318.5 → HK$191.10，支持智能分发）\nPS（港区）：\n购买链接（-38%，HK$319 → HK$197.78，PS4 & PS5）\n生化危机 村庄\n\n继承了《生化危机 7》的第一…",
-          "link": "https://sspai.com/post/70159",
-          "publishedOn": "2021-11-27T06:38:10.000Z",
-          "wordCount": 490,
-          "title": "「黑五」值得买：Steam、PS、Xbox 和 Switch 上值得关注的游戏优惠"
-        },
-        {
-          "id": "https://sspai.com/post/69975",
-          "author": "JasperJia",
-          "description": "Matrix 首页推荐\nMatrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。\n文章代表作者个人观点，少数派仅对标题和排版略作修改。\n\n前言\n如今市面上笔记类或者知识管理类软件太多，甚至每个月都能看见一款新产品的上线。工具本身并没有优劣，它们只是反映了工具使用者的需求和工作流。虽然不应该舍本逐末般沉迷于工具本身的研究，但依然不妨碍我们去探索和寻找新的工具来完善自己的信息管理。\n今年年初的时候，我偶然间知道了 Anytype 这款知识管理软件，瞬间被它的「本地化 Notion」的用户评价所吸引，于是立即填写 表格，加入 Anytype 的测试计划。\nAnytype 目前可以填写申请表格，每个月大概40-50人\n六月份的时候，我收到了测试邀请（onboarding program），但是由于时差的缘故没法参加在线介绍。当我在十一月收到新的测试邀请时，没有丝毫地犹豫就加入了。\n来自 Anytype 工程师的邀请邮件\n在产品说明会议里，CEO Zhanna Sharipova 简单介绍了 Anytype 的发展路径、当前主要功能以及未来愿景，工程师 Enda Crowley 实时展示了一些基本操作。\n产品介绍 Zoom 会议（Onboarding Session）\n会议结束之后，Enda 立即发送了 Anytype 的下载和对应社区邀请链接。有趣的是，本周Anytype 又推出了 iOS 测试版本。截至 2021 年 11 月，Anytype 目前支持桌面端有 MacOS、Windows 以及 Linux，移动平台有 Android 以及 iOS。\n\nAnytype 初探\n是什么？\nAnytype 宣称自己是一款数字对象的操作系统（an operating sytem f…",
-          "link": "https://sspai.com/post/69975",
-          "publishedOn": "2021-11-27T03:23:20.000Z",
-          "wordCount": 224,
-          "title": "Anytype 内测版初探：它不止是离线版 Notion"
         }
       ]
     },
@@ -4468,15 +4459,6 @@
           "publishedOn": "2021-11-28T04:38:24.000Z",
           "wordCount": 758,
           "title": "KeyboardHolder – 根据不同应用，自动切换输入法[macOS]"
-        },
-        {
-          "id": "https://www.appinn.com/?p=40603",
-          "author": "青小蛙",
-          "description": "情绪指压是一款通过按压力度和时间，来记录当下心情的小工具，可以缓解焦虑、情绪管理、记录生活，非常有意思。@Appinn 写日记最烦的是什么？当然是写日记啊。如果有一款不用写的日记… 可算有",
-          "link": "https://www.appinn.com/qingxuzhiya-for-iphone/",
-          "publishedOn": "2021-11-27T11:48:39.000Z",
-          "wordCount": 626,
-          "title": "情绪指压 – 不用写的日记，按压就能记录心情[iPhone]"
         }
       ]
     },
@@ -4565,6 +4547,15 @@
       "feedUrl": "https://www.zhihu.com/rss",
       "siteUrl": "http://www.zhihu.com",
       "articles": [
+        {
+          "id": "http://www.zhihu.com/question/508117339/answer/2286404162",
+          "author": "央视新闻",
+          "description": "2021 年，我们曾穿透岁月，穿透质疑，穿透时光，穿透力量……\n我们为什么能穿透比钢铁还坚硬的阻隔和障碍？\n央视新闻联合知乎发布视频「穿透」，致敬 2021，那些「向上穿透」的力量。\n\n来源：知乎 www.zhihu.com\n央视新闻\n点击下载\n172 个回答，查看全部。\n2019，哪一刻让你发自内心地说了「我太难了」？\n脸上挂着笑，心却一下碎了是一种怎样的体验？",
+          "link": "http://www.zhihu.com/question/508117339/answer/2286404162?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
+          "publishedOn": "2021-12-26T04:05:04.000Z",
+          "wordCount": 30,
+          "title": "如何用一个词概括 2021 年？"
+        },
         {
           "id": "http://www.zhihu.com/question/499338974/answer/2270772294",
           "author": "焱or淼",
@@ -5364,6 +5355,42 @@
       "feedUrl": "https://www.xda-developers.com/feed",
       "siteUrl": "https://www.xda-developers.com",
       "articles": [
+        {
+          "id": "https://www.xda-developers.com/?p=571007",
+          "author": "A Word From Our Sponsors",
+          "description": "As climate change continues to push industries into a carbon-neutral world, the need for renewable energy systems is growing rapidly. Technology like chemical batteries and battery-powered machines are in high demand. Due to the increase in the need for lithium, there is a supply crunch for these types of batteries. This is why BLUETTI started\nThe post BLUETTI Unveils World’s First Sodium-ion Solar Generator appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/bluetti-sodium-ion-solar-generator/",
+          "publishedOn": "2021-12-26T14:00:15.000Z",
+          "wordCount": 1032,
+          "title": "BLUETTI Unveils World’s First Sodium-ion Solar Generator",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/12/Bluetti-NA300-1.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=571757",
+          "author": "Mahmoud Itani",
+          "description": "In some ways, iOS and Android have become relatively similar operating systems. However, there are still plenty of differences between the two. One of the things I miss about Android is audible full battery notifications — which aren’t available by default on iPhones. There is a way to enable them, though, for both low and\nThe post How to set an audible “Low battery” or “Full battery” notification on iPhone appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/how-to-set-audible-battery-notification-iphone/",
+          "publishedOn": "2021-12-26T11:30:37.000Z",
+          "wordCount": 1371,
+          "title": "How to set an audible “Low battery” or “Full battery” notification on iPhone",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/11/battery-icon-on-iOS-15-wallpaper-1.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=568391",
+          "author": "Sumukh Rao",
+          "description": "WhatsApp is one of the most widely used instant messaging services across the globe. Whether you’re texting a friend or creating a group chat with members of your family, WhatsApp is generally the preferred app since almost everyone uses it. Apart from texting known people, you may encounter several instances where you have to message\nThe post How to message unsaved WhatsApp numbers on Android appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/how-to-message-unsaved-whatsapp-numbers-android/",
+          "publishedOn": "2021-12-26T08:00:09.000Z",
+          "wordCount": 1263,
+          "title": "How to message unsaved WhatsApp numbers on Android",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/09/WhatsApp-messenger-splash-screen-on-phone-in-hand.jpg"
+          }
+        },
         {
           "id": "https://www.xda-developers.com/?p=574481",
           "author": "Kishan Vyas",
@@ -9343,246 +9370,6 @@
           "enclosure": {
             "url": "https://www.xda-developers.com/files/2021/11/Black-Friday-Deals-on-TVs-and-Home-Audio.png"
           }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=562745",
-          "author": "Rich Woods",
-          "description": "Today is Black Friday, and frankly, it’s almost over. That means that you’re running out of time to get those sweet, sweet deals. One of those is on DJI’s Mavic Mini drone, which is an incredible 40% off on Amazon. The deal isn’t going to last through the weekend though. It’s just for today and\nThe post Grab DJI’s Mavic Mini drone for an incredible $200 off for Black Friday appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/grab-djis-mavic-mini-drone-for-an-incredible-200-off-for-black-friday/",
-          "publishedOn": "2021-11-26T23:30:15.000Z",
-          "wordCount": 634,
-          "title": "Grab DJI’s Mavic Mini drone for an incredible $200 off for Black Friday",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/11/DJI-Mavic-Mini.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=562739",
-          "author": "Corbin Davenport",
-          "description": "Beats might not be as popular as it was a few years ago, especially given that its parent company Apple now sells over-ear headphones with its own brand, but Beats headphones are still great when they’re on sale. Now you can get the Beats Studio3 wireless headphones for $169.99 at multiple stores, which matches the\nThe post Get the Apple Beats Studio3 headphones for $170 today appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/get-the-apple-beats-studio3-headphones-for-170-today/",
-          "publishedOn": "2021-11-26T22:53:07.000Z",
-          "wordCount": 622,
-          "title": "Get the Apple Beats Studio3 headphones for $170 today",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/11/Beats-Studio3-featured.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=562731",
-          "author": "Corbin Davenport",
-          "description": "Samsung is one of many companies that sell wireless chargers with slots for two devices, but the Samsung Wireless Charger Duo is somewhat unique, as it supports charging Galaxy Watches. Now you can get the latest Wireless Charger Duo for $34.99 on Amazon, as part of Black Friday. That’s $25 below the original price, and\nThe post Grab the Samsung Duo charging pad for just $35 today appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/samsung-duo-charging-pad-deal-november-2021/",
-          "publishedOn": "2021-11-26T22:20:10.000Z",
-          "wordCount": 631,
-          "title": "Grab the Samsung Duo charging pad for just $35 today",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/09/61B-fJDX6aL._AC_SL1500_.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=562717",
-          "author": "Corbin Davenport",
-          "description": "8Bitdo is one of the most popular names in custom game controllers right now, thanks to its modern Bluetooth gamepads with the physical design of classic controllers from Nintendo, Sega, and others. The 8Bitdo M30 is a multi-platform game controller modeled after the Sega Genesis and Mega Drive’s gamepads, and now it’s on sale for\nThe post Get this Sega Genesis-style 8Bitdo controller for just $25.49 today appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/get-this-sega-genesis-style-8bitdo-controller-for-just-25-49-today/",
-          "publishedOn": "2021-11-26T21:02:00.000Z",
-          "wordCount": 626,
-          "title": "Get this Sega Genesis-style 8Bitdo controller for just $25.49 today",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/11/91IVwgPw4iL._SL1500_.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=562703",
-          "author": "Corbin Davenport",
-          "description": "Even though Chromebooks still fall short of traditional PC laptops in a few areas, they are incredibly popular for their ease-of-use, fast performance, and Android app support. ASUS has been a leader in the Chromebook arena for years, and now one of the company’s best models is on sale for Black Friday. The Chromebook Flip\nThe post ASUS Chromebook Flip C433 has dropped to $330 ($150 off) for Black Friday appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/asus-chromebook-flip-c433-has-dropped-to-330-150-off-for-black-friday/",
-          "publishedOn": "2021-11-26T20:06:28.000Z",
-          "wordCount": 634,
-          "title": "ASUS Chromebook Flip C433 has dropped to $330 ($150 off) for Black Friday",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/11/ASUS-Chromebook-Flip-C433-featured-image.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=562661",
-          "author": "Corbin Davenport",
-          "description": "You might already have a few single-port USB Type-C chargers around your home, but multi-connector wall adapters can be handy, especially ones with higher power outputs. Spigen might be best known for its smartphone cases, but the company also produces a few chargers, including a powerful 100W wall adapter that can charge two devices at\nThe post Get this Spigen 100W USB Type-C charger for just $42 today appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/spigen-100w-charger-deal-november-2021/",
-          "publishedOn": "2021-11-26T19:11:06.000Z",
-          "wordCount": 627,
-          "title": "Get this Spigen 100W USB Type-C charger for just $42 today",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/10/51QJ-9uwZ3L._AC_SL1500_.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=562657",
-          "author": "Adam Conway",
-          "description": "WhatsApp has won regulatory approval from The National Payments Corporation of India (NCPI) to double the number of users it can offer its payments service in India to. This comes after the Facebook-owned (well, Meta-owned) company requested that it should not have a cap on the number of users that it can work with. WhatsApp\nThe post WhatsApp wins approval to expand WhatsApp Pay to 40 million users in India appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/whatsapp-pay-approval-expand-40-million/",
-          "publishedOn": "2021-11-26T19:08:19.000Z",
-          "wordCount": 760,
-          "title": "WhatsApp wins approval to expand WhatsApp Pay to 40 million users in India",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2020/11/WhatsApp-Pay-Feature-Image.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=562593",
-          "author": "Mahmoud Itani",
-          "description": "Protecting your digital identity is important, especially if you access the internet from public places. VPNs help with that and allow you to access regionally-blocked websites. NordVPN is an excellent service, and their Black Friday deals are live. You can now save 69% on the 2-year plan and get it for $89 only — instead\nThe post Protect your digital identity with NordVPN and save 69% on the 2 year subscription appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/nordvpn-deal-november-2021/",
-          "publishedOn": "2021-11-26T19:00:04.000Z",
-          "wordCount": 673,
-          "title": "Protect your digital identity with NordVPN and save 69% on the 2 year subscription",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/01/nordvpnlogo-100832330-large.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=562543",
-          "author": "Pranob Mehrotra",
-          "description": "This one is for the Marvel fanboys who also appreciate mechanical keyboards. The DROP X Marvel Black Panther, Captain America, Iron Man, and Infinity War keycaps are currently available at a 30% discount on Amazon. All sets feature 160 keycaps, including quite a few novelty options for the Caps Lock, Escape, Enter, and Shift keys.\nThe post These DROP X Marvel Keycaps are 30% off on Amazon appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/drop-marvel-keycaps-30-off-amazon/",
-          "publishedOn": "2021-11-26T18:45:19.000Z",
-          "wordCount": 807,
-          "title": "These DROP X Marvel Keycaps are 30% off on Amazon",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/11/DROP-X-Marvel-keycaps-deal-featured.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=562563",
-          "author": "João Carrasqueira",
-          "description": "Microsoft is giving a pretty significant discount to anyone interested in the Surface Pro 7 tablet. For Black Friday, you can grab a Surface Pro 7 with up to a massive $600 discount, which makes this tablet all far more tempting. This is still a very premium tablet with a very sharp high-quality screen, a\nThe post Black Friday gives you up to $600 off the Surface Pro 7 from Microsoft appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/surface-pro-7-black-friday-microsoft/",
-          "publishedOn": "2021-11-26T18:40:04.000Z",
-          "wordCount": 761,
-          "title": "Black Friday gives you up to $600 off the Surface Pro 7 from Microsoft",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/08/Surface-Pro-7-3.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=562501",
-          "author": "Rich Woods",
-          "description": "HP is one of the top PC manufacturers in the world, and as you’d expect, the company has a whole range of PC deals for Black Friday. The good news is that there’s something here for everyone. Whether it’s a premium ultrabook like a Spectre x360 that you’re looking to grab on the cheap, a\nThe post Get up to $2,400 off HP laptops for Black Friday appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/hp-laptops-black-friday/",
-          "publishedOn": "2021-11-26T18:30:53.000Z",
-          "wordCount": 768,
-          "title": "Get up to $2,400 off HP laptops for Black Friday",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/06/HP-Spectre-x360-Poseidon-Blue.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=562475",
-          "author": "Mahmoud Itani",
-          "description": "The new year is right around the corner, and taking better care of your health is a wise resolution. Amazon’s Black Friday deals make it more affordable than ever to turn this into a reality. The Halo Band is currently on sale for just $55 — that’s 45% off its usual $100 price tag. This\nThe post Track your activity, sleep, and more with Amazon’s Halo Band for a mere $55 appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/amazon-halo-band-deal-november-2021/",
-          "publishedOn": "2021-11-26T18:15:44.000Z",
-          "wordCount": 691,
-          "title": "Track your activity, sleep, and more with Amazon’s Halo Band for a mere $55",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/11/Amazon-Halo-Band-deal.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=562607",
-          "author": "Adam Conway",
-          "description": "If you’re looking for a new 5G smartphone, there aren’t many affordable options in the United States. There are a few options that you can choose from (Motorola has a ton of offerings) but they might not be powerful enough for your needs. However, you can’t go wrong with the Samsung Galaxy A52 5G if\nThe post Grab the mid-range Samsung Galaxy A52 5G for $400 ($100 off) appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/samsung-galaxy-a52-5g-black-friday-2021/",
-          "publishedOn": "2021-11-26T18:12:37.000Z",
-          "wordCount": 736,
-          "title": "Grab the mid-range Samsung Galaxy A52 5G for $400 ($100 off)",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/07/samsung_galaxy_a52_5g_2.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=562467",
-          "author": "Kishan Vyas",
-          "description": "The future of the Galaxy S21 FE is still in limbo, but its predecessor, the Galaxy S20 FE, remains a great option for anyone looking for a decent flagship that doesn’t cost a fortune. And on this Black Friday, you can get it at its all-time low price. Originally launched at $699, the Galaxy S20\nThe post Grab the Galaxy S20 FE for just $550 ($150 off) this Black Friday appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/galaxy-s20-fe-black-friday-2021-deal/",
-          "publishedOn": "2021-11-26T18:00:25.000Z",
-          "wordCount": 625,
-          "title": "Grab the Galaxy S20 FE for just $550 ($150 off) this Black Friday",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/03/Mobilehome_banner720-e1627921754365.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=562511",
-          "author": "Corbin Davenport",
-          "description": "Even though sales have been running all month, Black Friday is finally here, so the final batch of sales are going live. HyperX sells some of the best PC gaming accessories around, from keyboards to headsets, and now the company’s CloudX Flight wireless headset is on sale for $99.99. That’s a discount of $60 from\nThe post HyperX CloudX Flight gaming headset is $60 off for Black Friday appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/hyperx-cloudx-flight-gaming-headset-is-60-off-for-black-friday/",
-          "publishedOn": "2021-11-26T17:58:09.000Z",
-          "wordCount": 622,
-          "title": "HyperX CloudX Flight gaming headset is $60 off for Black Friday",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/11/HyperX-CloudX-Flight-featured.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=562463",
-          "author": "Sumukh Rao",
-          "description": "It’s hard to imagine a single day without WiFI or just the internet for that matter. What’s worse than no internet connection is intermittent disconnections. We’ve all been through that situation where we’re watching a show and all you see is a ring circling at the center while buffering. Maybe you’re too far from the\nThe post Get $40 off on the TP-Link Deco Mesh Network and extend the range of your WiFi! appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/tp-link-deco-black-friday-deal/",
-          "publishedOn": "2021-11-26T17:45:40.000Z",
-          "wordCount": 827,
-          "title": "Get $40 off on the TP-Link Deco Mesh Network and extend the range of your WiFi!",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/11/TP-link-mesh-network.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=562371",
-          "author": "João Carrasqueira",
-          "description": "During Black Friday, you can find great deals on pretty much anything, and if you’re in the market for a new gaming monitor, Amazon has some good deals for you today. A handful of relatively affordable monitors are seeing discounts, which brings their price down to anywhere from $190 to just under $380. These gaming\nThe post Amazon has some great Black Friday deals on curved gaming monitors appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/amazon-curved-gaming-monitors-black-friday/",
-          "publishedOn": "2021-11-26T17:15:44.000Z",
-          "wordCount": 861,
-          "title": "Amazon has some great Black Friday deals on curved gaming monitors",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/11/Acer-Nitro-XZ342CK-Gaming-Monitor-header.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=562459",
-          "author": "Adam Conway",
-          "description": "Google released a new mesh Wi-Fi system in late 2019, dubbed the Nest Wifi. It replaced the older Google Wifi and provides fast and reliable internet throughout your home, and there’s no limit on how many you can add so long as they’re in range of each other. The Nest Wifi is sold in either a\nThe post Save 30% on great home Wi-Fi with this Nest Wifi Black Friday deal appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/nest-wifi-black-friday-twin-pack/",
-          "publishedOn": "2021-11-26T17:14:28.000Z",
-          "wordCount": 861,
-          "title": "Save 30% on great home Wi-Fi with this Nest Wifi Black Friday deal",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2020/09/google-nest-wifi.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=558935",
-          "author": "Pranob Mehrotra",
-          "description": "Although some companies started offering early Black Friday deals right after Techtober wrapped up, the best Black Friday deals offering the biggest savings will be announced this week. To help you cash in on the offers, we’ve rounded up the best deals on phones, accessories, audio gear, and more in this post. So, if you’ve\nThe post Here are the Best Black Friday 2021 Deals on Smartphones, Earbuds, & more! appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/black-friday/",
-          "publishedOn": "2021-11-26T17:12:25.000Z",
-          "wordCount": 2302,
-          "title": "Here are the Best Black Friday 2021 Deals on Smartphones, Earbuds, & more!",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/11/Black-Friday-Deals.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=562385",
-          "author": "Corbin Davenport",
-          "description": "Microsoft Office used to release a new upgrade every few years, which you would have to purchase each time if you wanted to stay up-to-date. The Microsoft 365 subscription (originally ‘Office 365’) now gives you the full Office suite and all updates for a recurring yearly cost, plus cloud storage, but not everyone wants yet\nThe post Microsoft Office without a subscription is on sale for $100 right now ($50 off) appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/microsoft-office-deal-november-2021/",
-          "publishedOn": "2021-11-26T17:11:19.000Z",
-          "wordCount": 648,
-          "title": "Microsoft Office without a subscription is on sale for $100 right now ($50 off)",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2021/04/office-2.jpg"
-          }
         }
       ]
     },
@@ -9868,6 +9655,16 @@
           "id": "https://stratechery.com/2021/the-creator-opportunity-the-value-of-abundance-tv-and-sports-follow-up/",
           "author": "Ben Thompson",
           "description": "It is fine to be excited about web3, but it doesn't seem right to deny the real opportunities already afforded by the Internet. Plus, tying up loose ends on TV and sports.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS90aGUtY3JlYXRvci1vcHBvcnR1bml0eS10aGUtdmFsdWUtb2YtYWJ1bmRhbmNlLXR2LWFuZC1zcG9ydHMtZm9sbG93LXVwLw.PQDLMaF-z09An043EAK7QpCKAQbT_WNGG6ndlDnQCx2XWlDnigvsE9h_y-Kyk0nNwk_NWU52CzoYU61WbY-orsdmjU78ZLkyOhq7gcBG0xr2Zxg3rIixn3FHPz1CTJm6adIkRtHb16a0n0Kol2kVyrNKZUUQH4GA-b-9XWclW15Zqmli8RX6AxeuY7gh4FenJNP3QKCvUeK9b5cEYl39VzRAtauaaJJZWLecQV33yeY_uT3N2MpIjNzL7pL38UKsqPGJaq7gV9ETixevk05QnBIF1pUUd-qsU4izGobKcqMl3lz-882OqgNpDmCaiMQHBUmMh_U_HssMpK_McRmVNw",
+          "publishedOn": "2021-12-21T11:40:31.000Z",
+          "wordCount": null,
+          "title": "The Creator Opportunity, The Value of Abundance, TV and Sports Follow-up",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/the-creator-opportunity-the-value-of-abundance-tv-and-sports-follow-up/",
+          "author": "Ben Thompson",
+          "description": "It is fine to be excited about web3, but it doesn't seem right to deny the real opportunities already afforded by the Internet. Plus, tying up loose ends on TV and sports.",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS90aGUtY3JlYXRvci1vcHBvcnR1bml0eS10aGUtdmFsdWUtb2YtYWJ1bmRhbmNlLXR2LWFuZC1zcG9ydHMtZm9sbG93LXVwLw.FlDdswS_zyXie0IxtTJv3r3sYns2Vff2pP0j2NucvrrYPs8kFUXVByLmRSTtizGk9L7AUfh2xA74X5-rviX3TFK80hCnp9CB1E76892RtnS9XLcJTsRlWhmf_p9KOqdpGl3ll-cLWlkojQEtr7N7YFMaCKKR40dHYIncsafRj8xPIEIVWIY0AZZ-yYpQf4hS9A-zXgqMewdkSp1EJ5UzAL6CKuxzBXnvbelWWjIfOXzH_v2KsB42Gbmnop8z5evok3bnZtKXQCUIKisdfFTqdDoD--l814_RGkKIycZC1i-W-3LvG_F6I5wYSUyE2z-EXTg--MPBhE0goaAIr3YCpA",
           "publishedOn": "2021-12-21T11:40:31.000Z",
           "wordCount": null,
@@ -9898,6 +9695,16 @@
           "id": "https://stratechery.com/2021/formula-1-and-netflix-netflix-and-sports-youtube-tv-vs-espn/",
           "author": "Ben Thompson",
           "description": "The increased popularity of F1 shows how sports can be valuable to Netflix, and why sports remain valuable to Disney.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9mb3JtdWxhLTEtYW5kLW5ldGZsaXgtbmV0ZmxpeC1hbmQtc3BvcnRzLXlvdXR1YmUtdHYtdnMtZXNwbi8.JAUOra0QewC66mrspL14nemgEE8m0D6AM9b_zi2y2PBBpmLwcNgssFR9D7wTH1RsrmfKUCVv-LTlmrwjqcv6gSYlcnfUrd87blEn_m5fwt8YNSO29xItqBB6JHIMcByHk7lM4lx9PeHfgccpUg-FObuSPui370eY2NHLBXVQogx5JkNzrkWH4Ff8BUDl2Ukye5E5UGvolB89R5yD7FPe9L5N5IaZg2W8JqEl_RxxcMgLNyFE7vQk8TWzuozdoMgS6dBn6YOY2Al3RXUKzN5bu5J3bDyDxqFDDXulyelnckZT9z42fO5bsn55anKJsRWcJ2Y0bAoDXZIOxeYpQgi8Rg",
+          "publishedOn": "2021-12-16T12:23:59.000Z",
+          "wordCount": null,
+          "title": "Formula 1 and Netflix, Netflix and Sports, YouTube TV vs. ESPN",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/formula-1-and-netflix-netflix-and-sports-youtube-tv-vs-espn/",
+          "author": "Ben Thompson",
+          "description": "The increased popularity of F1 shows how sports can be valuable to Netflix, and why sports remain valuable to Disney.",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9mb3JtdWxhLTEtYW5kLW5ldGZsaXgtbmV0ZmxpeC1hbmQtc3BvcnRzLXlvdXR1YmUtdHYtdnMtZXNwbi8.QRg0BO1zX_hMiUz8dumaBqtLVKk4b2VCGt3688CyZd8Z3_xA6DvkXSXb9RU_eUKgXeVQnG9S-Go9QjBTNch9vtr-hXPLjOIC77t-a1Rt_jFCMnddyJt9NllPkSPKmnJuhaQsHfpoKNY_u2FJbhLgz-uZjC-Pahi2NLfVUimNN3l7ag1rhCfWIOjrmSW2l4B_awTIsPgvLoqhkwoKDkok464IhVThzGmOoDOr0XBPHh8UEOEfRvZNCYSN0wf61TzGV1J6zAw1IER_W89U0PoeAELNUKAnaXmCQCM-ptCXjm_vOy5aLrJ_6Kuu-tr7hQpdEZJWNQ_6KaxXCupLzQ7wcw",
           "publishedOn": "2021-12-16T12:23:59.000Z",
           "wordCount": null,
@@ -9922,6 +9729,16 @@
           "publishedOn": "2021-12-16T12:23:59.000Z",
           "wordCount": null,
           "title": "Formula 1 and Netflix, Netflix and Sports, YouTube TV vs. ESPN",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/the-great-bifurcation-follow-up-more-on-intel-and-tsmc-intel-to-spin-out-mobileye/",
+          "author": "Ben Thompson",
+          "description": "Follow-up on \"The Great Bifurcation\", then more on Intel's relationship with TSMC, and why the latter needs the former. Plus, spinning out Mobileye is a great idea.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS90aGUtZ3JlYXQtYmlmdXJjYXRpb24tZm9sbG93LXVwLW1vcmUtb24taW50ZWwtYW5kLXRzbWMtaW50ZWwtdG8tc3Bpbi1vdXQtbW9iaWxleWUv.dtF4yGgredY6xAMpLpTTNDzBsv9KmJQtTASqqPm-6AoTUsHW8f8sfi-1zeu0_JQLU7Ot9-P5lwN63YZ697lbqcCR5kjE2vTcyOwCKvG8EnDvPsnh29Nm9-Z3uzdsAI24o-KLelC5Ify9ypa2rU-UnFDw-i51P5zjZ5-E0kZjaTh82eP1UvLWkZjWL4QhAowViD3xf356sogSCJ-9u1SSTv5f3oF_xSmT8ghHZhQwyOHTm7i9GJ4_PVwoVVrlcOOybVAKmyUFoE_xR9LakKAgh1IpCZsxUK6_mIgzfXlmSpHZWmiaxWdTSKaASW5x-LbslS9BHzi9M6PYFeM-oPaV2Q",
+          "publishedOn": "2021-12-15T11:00:16.000Z",
+          "wordCount": null,
+          "title": "The Great Bifurcation Follow-up, More on Intel and TSMC, Intel to Spin Out Mobileye",
           "itunes": {}
         },
         {
@@ -9962,6 +9779,16 @@
           "publishedOn": "2021-12-15T11:00:16.000Z",
           "wordCount": null,
           "title": "The Great Bifurcation Follow-up, More on Intel and TSMC, Intel to Spin Out Mobileye",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/intel-vs-tsmc-how-samsung-and-tsmc-won-mad-chips/",
+          "author": "Ben Thompson",
+          "description": "Intel's CEO is out campaigning for subsidies; his pitch doesn't give sufficient credit to TSMC and Samsung for their success.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9pbnRlbC12cy10c21jLWhvdy1zYW1zdW5nLWFuZC10c21jLXdvbi1tYWQtY2hpcHMv.Bxp-bSH0lBPDjdDFJ_OfpTWMXDMENj5GJu9fN9tLNHXL_AkfKOskn2voKxEVsUgOl3xaTR6rilGloZ7iwUQ3ozPuxoyx1USso2_6WUUC3rZUcMVMjrxj3BAVJ5Fo8y93l_AS3FCxGBzjzE1wrduDoELO6SeeyvGKLMTDZaouk2-s3TblJQnITaPyH5zwBSJI8bKDH572njh0CC9qFAHqbfitI6Ae3qhsRjx7P5oGfXa8GWSrCF5AzlgUrlDjJv04ZUwn6n0Rj06ju86P5rjbPzFBBUq-JXC71ZaimMQt6uyiztCGX1grTYU7sAOHOp3AdjhisMrhQe2cVf6eHKH4XA",
+          "publishedOn": "2021-12-13T12:25:45.000Z",
+          "wordCount": null,
+          "title": "Intel vs. TSMC, How Samsung and TSMC Won, MAD Chips",
           "itunes": {}
         },
         {
@@ -10022,6 +9849,16 @@
           "publishedOn": "2021-12-13T12:25:45.000Z",
           "wordCount": null,
           "title": "Intel vs. TSMC, How Samsung and TSMC Won, MAD Chips",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/app-store-injunction-stayed-fingerprinting-on-ios-life360-and-apples-missing-leverage/",
+          "author": "Ben Thompson",
+          "description": "Apple wins in court, probably for good; meanwhile, its tracking rules aren't really being enforced, and probably can't be, which means Apple's overreach was a mistake.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hcHAtc3RvcmUtaW5qdW5jdGlvbi1zdGF5ZWQtZmluZ2VycHJpbnRpbmctb24taW9zLWxpZmUzNjAtYW5kLWFwcGxlcy1taXNzaW5nLWxldmVyYWdlLw.rtzifHjhZCNitVZITb3dRQ_vlmDm0lZxLYAfZTa2K8YHxAFMeLWOcRPG9Q5r41OzrbO26jVb_OSgivOg6Ff4RPupmelfnXh27d3qpyMAXgTiUCmdoNNsdJMcAqpFeQ3EN6WyopYOXzpzstqZ8ZcaxDvAiK4l2apsF0L3qtuOSRmVyJKvqx4jwCaLh_8Z9GqwmWpfLw3_7m7syejuDAHCPLkzkK95g372tB9-akgd5hrgm-QTKHtLih6FnDlibjtNCIlzGO9yXyevrRTWGg4HO3JtuI_t7TNOZQQfT56hlRqV_lGrCKaNRZzgsYrn8ZSWN7UQIakTqlsmkLTwR-pWlw",
+          "publishedOn": "2021-12-09T12:58:52.000Z",
+          "wordCount": null,
+          "title": "App Store Injunction Stayed, Fingerprinting on iOS, Life360 and Apple's Missing Leverage",
           "itunes": {}
         },
         {
@@ -10102,6 +9939,16 @@
           "publishedOn": "2021-12-09T12:58:52.000Z",
           "wordCount": null,
           "title": "App Store Injunction Stayed, Fingerprinting on iOS, Life360 and Apple's Missing Leverage",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/the-information-on-apple-in-china-apples-deal-evaluating-apples-china-risk/",
+          "author": "Ben Thompson",
+          "description": "The Information has a report on a deal Apple made with the Chinese government; this explains multiple things over the last five years, and may indicate that Apple's position is fairly secure.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS90aGUtaW5mb3JtYXRpb24tb24tYXBwbGUtaW4tY2hpbmEtYXBwbGVzLWRlYWwtZXZhbHVhdGluZy1hcHBsZXMtY2hpbmEtcmlzay8.tlnEXBGVI1z3zaRTIJMmCn_ZYXS57gtpizXFQfm1j85xgG82B71dWLEEASY2X0Ubh3dFLTv8WaBIsDxIlXQzyQkDsDwnbC33cCbvd2ro2fSt-es--LmV65luHWqYhxP9ymNum-f6-D7yWnHFKF72Ga1lChs2k-OIhus1fmA5U57OmGsp91XhNBtJA1DbPdA-oT1ltsnA-Fc_aiDQKBqwSN2YsZRlLCm5IQO22_GyiJFSJT-jSRaN5YBgtubAfWCzhwXjnNe0BmvTxgiy8zVQTRpjYSRixokO7tZ3jGQNBTKtPvucY8IlSSQcCupE3acrxpwhWY_csKkDXV7W6OKCGA",
+          "publishedOn": "2021-12-08T11:36:12.000Z",
+          "wordCount": null,
+          "title": "The Information on Apple in China, Apple's Deal, Evaluating Apple's China Risk",
           "itunes": {}
         },
         {
@@ -10192,6 +10039,16 @@
           "publishedOn": "2021-12-08T11:36:12.000Z",
           "wordCount": null,
           "title": "The Information on Apple in China, Apple's Deal, Evaluating Apple's China Risk",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/ftc-sues-to-block-nvidia-arm-acquisition-innovation-and-the-data-center-arms-future/",
+          "author": "Ben Thompson",
+          "description": "The FTC is suing to block Nvidia's ARM acquisition; it is a plausible argument, although Nvidia can make a pro-innovation case. Regardless, ARM's future looks shakier than before.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9mdGMtc3Vlcy10by1ibG9jay1udmlkaWEtYXJtLWFjcXVpc2l0aW9uLWlubm92YXRpb24tYW5kLXRoZS1kYXRhLWNlbnRlci1hcm1zLWZ1dHVyZS8.uSFEDC4IFpJbz8K_eTdkcnOEA4_DqhOVpuaz3kBaeyCjJmbfWPpHjOT8ob_tciBKj2ogVYVwYptyESxAAJSwJ8fUxmOqk7LGD45XwTOIeauIVEiEUwl1MyndHOQ38rGnciXG-PbPeWvIHPQ4Ak1IBhCLwUuBjWyuVoCHcnrPvs4P_Ivv22aqZOsJStmEvyIHwyLh1JllO-LnWmvGXDBjAI1Do8gRvu0dnxS_1bWFyXnggSg6sS0FJywBwX1l-qlaHXXbKOMXPhaJvEEipr4ylwlj0-0uSq0b171kSZn0nGfryfWGMuIb71kd25fegKu6RryOaJf0Q784H_9_heciwg",
+          "publishedOn": "2021-12-07T13:47:48.000Z",
+          "wordCount": null,
+          "title": "FTC Sues to Block Nvidia ARM Acquisition, Innovation and the Data Center, ARM's Future",
           "itunes": {}
         },
         {
@@ -10292,6 +10149,16 @@
           "publishedOn": "2021-12-07T13:47:48.000Z",
           "wordCount": null,
           "title": "FTC Sues to Block Nvidia ARM Acquisition, Innovation and the Data Center, ARM's Future",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/aws-reinvent-reinvent-announcements-of-interest/",
+          "author": "Ben Thompson",
+          "description": "AWS re:Invent keynote, with new CEO Adam Selipsky, charted a different path than that taken by Andy Jassy. Plus, the new announcements that caught my eye.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hd3MtcmVpbnZlbnQtcmVpbnZlbnQtYW5ub3VuY2VtZW50cy1vZi1pbnRlcmVzdC8.RFvzbzYaOKBIgX4Vvqlj8GGVlBoQK6lBs4vztpgVcYQIKgUfF8nwLznq5GSHd-chQsXlc629k4PF06W5jVhpZ8K5KHVTNyUtwoOTjtPFOjnoxMkMs4XfuiOUzr3XGMrvEWjND0CtBDEhVNSolujltfBTwfsXQe-owHU6N7KyS30E5HyAnB0048vOTQyY-rcxe946eUQIym1WwJhVs2KAsKAGiauOmIYfB-aO0YZHRIRwsbZ4s58f5dyMew-bxM-sSEK8XNg1WhoqPTFh4cVjrcivv6rfMpq2SfVcJx0dhu1Gf-sGSBYaZJQVTHExtWs8sjvmjZkHwP7k5d0xfnboVw",
+          "publishedOn": "2021-12-02T12:45:55.000Z",
+          "wordCount": null,
+          "title": "AWS re:Invent, re:Invent Announcements of Interest (Stratechery Update 12-2-2021)",
           "itunes": {}
         },
         {
@@ -10432,6 +10299,16 @@
           "publishedOn": "2021-12-02T12:45:55.000Z",
           "wordCount": null,
           "title": "AWS re:Invent, re:Invent Announcements of Interest (Stratechery Update 12-2-2021)",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/why-subscription-twitter-is-a-terrible-idea-twitter-bans-sharing-private-photos-and-videos-twitter-and-free-speech/",
+          "author": "Ben Thompson",
+          "description": "Why making Twitter into a subscription business would be a terrible idea, how Twitter's new policy is reactionary, and how the shows how much Twitter has changed",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS93aHktc3Vic2NyaXB0aW9uLXR3aXR0ZXItaXMtYS10ZXJyaWJsZS1pZGVhLXR3aXR0ZXItYmFucy1zaGFyaW5nLXByaXZhdGUtcGhvdG9zLWFuZC12aWRlb3MtdHdpdHRlci1hbmQtZnJlZS1zcGVlY2gv.gEYkEjVvqpeXnIoAjRl5MLuWf43TdZPO6x7vZKrHtfyBnudwW7z9MfdoEuNUR-2RvusTu_5iC9d9PrzdHL-YdKs_vNIPfwWZ4LG_ec6hk1qCkcrz-1HysNkJZp-KEIOtcFSi5jsbCkDTLurnUsMpxLi4lFiq-VwaKTPtShA73xvT4v05bu5624DroyQyWNYW4Klhrky7s4qLqtW4w3_hopETR_JsBSMh7-kjEn0ZJEiWs17nAWWtQjkLYFarRXGUU2GL3zE_3Aj6K0IBgmYfFPKOrDO26E7xuwpTuk6nUkH9itTF4n1q59IS9zkn-GkhlJT8U21gsavtSIw_wZRMtQ",
+          "publishedOn": "2021-12-01T13:26:05.000Z",
+          "wordCount": null,
+          "title": "Why Subscription Twitter is a Terrible Idea, Twitter Bans Sharing Private Photos and Videos, Twitter and Free Speech",
           "itunes": {}
         },
         {
@@ -11258,6 +11135,114 @@
       "feedUrl": "https://reddit.buzzing.cc/rss.xml",
       "siteUrl": "https://reddit.buzzing.cc",
       "articles": [
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/romol5/the_way_he_looks_at_her_had_me_dead/",
+          "author": null,
+          "description": "他看她的眼神让我死心了 🥺",
+          "link": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/romol5/the_way_he_looks_at_her_had_me_dead/",
+          "publishedOn": "2021-12-26T22:29:35.000Z",
+          "wordCount": 25,
+          "title": "他看她的眼神让我死心了 🥺"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/HolUp/comments/roinnr/im_going_to_hell/",
+          "author": null,
+          "description": "我要下地狱了。",
+          "link": "https://reddit.buzzing.cc/reddit/r/HolUp/comments/roinnr/im_going_to_hell/",
+          "publishedOn": "2021-12-26T18:11:36.000Z",
+          "wordCount": 19,
+          "title": "我要下地狱了。"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/memes/comments/rom0vn/until_next_year/",
+          "author": null,
+          "description": "直到明年",
+          "link": "https://reddit.buzzing.cc/reddit/r/memes/comments/rom0vn/until_next_year/",
+          "publishedOn": "2021-12-26T16:44:26.000Z",
+          "wordCount": 17,
+          "title": "直到明年"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/funny/comments/roiiuj/my_brother_inlaw_said_why_does_the_bunny_rabbit/",
+          "author": null,
+          "description": "我姐夫说......为什么带着步行器的小兔子有-6？",
+          "link": "https://reddit.buzzing.cc/reddit/r/funny/comments/roiiuj/my_brother_inlaw_said_why_does_the_bunny_rabbit/",
+          "publishedOn": "2021-12-26T13:33:11.000Z",
+          "wordCount": 28,
+          "title": "我姐夫说......为什么带着步行器的小兔子有-6？"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/gaming/comments/ro97nv/im_dead_i_just_bought_her_a_book/",
+          "author": null,
+          "description": "我已经死了。我刚刚给她买了一本书",
+          "link": "https://reddit.buzzing.cc/reddit/r/gaming/comments/ro97nv/im_dead_i_just_bought_her_a_book/",
+          "publishedOn": "2021-12-26T09:32:06.000Z",
+          "wordCount": 22,
+          "title": "我已经死了。我刚刚给她买了一本书"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/rogky2/time_to_hate_white_people_for_checks_notes/",
+          "author": null,
+          "description": "是时候恨白人了，因为他们（检查笔记）在雨中行走？",
+          "link": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/rogky2/time_to_hate_white_people_for_checks_notes/",
+          "publishedOn": "2021-12-26T09:15:17.000Z",
+          "wordCount": 27,
+          "title": "是时候恨白人了，因为他们（检查笔记）在雨中行走？"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/gaming/comments/rogyz8/happy_christmas_only_72_hours_left_of_downloading/",
+          "author": null,
+          "description": "圣诞快乐! 只剩下72小时的下载时间，可以玩他今天早上收到的圣诞礼物的游戏。",
+          "link": "https://reddit.buzzing.cc/reddit/r/gaming/comments/rogyz8/happy_christmas_only_72_hours_left_of_downloading/",
+          "publishedOn": "2021-12-26T08:36:52.000Z",
+          "wordCount": 34,
+          "title": "圣诞快乐! 只剩下72小时的下载时间，可以玩他今天早上收到的圣诞礼物的游戏。"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/roh7yv/child_gets_adopted_by_the_family_who_took_care_of/",
+          "author": null,
+          "description": "孩子被照顾他过圣诞节的家庭收养了",
+          "link": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/roh7yv/child_gets_adopted_by_the_family_who_took_care_of/",
+          "publishedOn": "2021-12-26T08:17:02.000Z",
+          "wordCount": 28,
+          "title": "孩子被照顾他过圣诞节的家庭收养了"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/funny/comments/roex02/my_mom_got_me_super_mario_sheets_for_christmas_im/",
+          "author": null,
+          "description": "我妈妈在圣诞节时给我买了超级马里奥表。我今年22岁，已经在自己的公寓里住了4年，所以我看起来很困惑和失望。她说：\"什么，别人又不会看到你的床单。\"现在我不知道那是无知、侮辱还是无辜......",
+          "link": "https://reddit.buzzing.cc/reddit/r/funny/comments/roex02/my_mom_got_me_super_mario_sheets_for_christmas_im/",
+          "publishedOn": "2021-12-26T04:43:28.000Z",
+          "wordCount": 69,
+          "title": "我妈妈在圣诞节时给我买了超级马里奥表。我今年22岁，已经在自己的公寓里住了4年，所以我看起来很困惑和失望。她说：\"什么，别人又不会看到你的床单。\"现在我不知道那是无知、侮辱还是无辜......"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/funny/comments/roagnt/really/",
+          "author": null,
+          "description": "真的。",
+          "link": "https://reddit.buzzing.cc/reddit/r/funny/comments/roagnt/really/",
+          "publishedOn": "2021-12-26T03:59:01.000Z",
+          "wordCount": 15,
+          "title": "真的。"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rogk5i/me_dying_of_cancer_over_the_spring_vs_me_happy/",
+          "author": null,
+          "description": "我在春天死于癌症与我快乐和健康地与我美丽的家人共度圣诞节的对比",
+          "link": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rogk5i/me_dying_of_cancer_over_the_spring_vs_me_happy/",
+          "publishedOn": "2021-12-26T02:13:17.000Z",
+          "wordCount": 32,
+          "title": "我在春天死于癌症与我快乐和健康地与我美丽的家人共度圣诞节的对比"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/pics/comments/ro8r26/this_ups_driver_remains_an_absolute_king/",
+          "author": null,
+          "description": "这位UPS司机仍然是绝对的王者",
+          "link": "https://reddit.buzzing.cc/reddit/r/pics/comments/ro8r26/this_ups_driver_remains_an_absolute_king/",
+          "publishedOn": "2021-12-26T02:13:17.000Z",
+          "wordCount": 21,
+          "title": "这位UPS司机仍然是绝对的王者"
+        },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/roc51m/the_heartwarming_moment_a_child_was_adopted_by/",
           "author": null,
@@ -14425,123 +14410,6 @@
           "publishedOn": "2021-11-27T14:55:01.000Z",
           "wordCount": 28,
           "title": "关于一个认为主持工作是全职工作的丈夫的帖子"
-        },
-        {
-          "id": "https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/r2npkc/steve_jobs_wasnt_super_honest/",
-          "author": null,
-          "description": "史蒂夫-乔布斯并不超级诚实",
-          "link": "https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/r2npkc/steve_jobs_wasnt_super_honest/",
-          "publishedOn": "2021-11-27T11:54:39.000Z",
-          "wordCount": 19,
-          "title": "史蒂夫-乔布斯并不超级诚实"
-        },
-        {
-          "id": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/r32fmx/these_guys_like_to_pose_for_pics_with_random/",
-          "author": null,
-          "description": "这些人喜欢在公共场合与随机的人合影留念。",
-          "link": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/r32fmx/these_guys_like_to_pose_for_pics_with_random/",
-          "publishedOn": "2021-11-27T11:15:34.000Z",
-          "wordCount": 26,
-          "title": "这些人喜欢在公共场合与随机的人合影留念。"
-        },
-        {
-          "id": "https://reddit.buzzing.cc/reddit/r/oddlyterrifying/comments/r2toag/a_webcam_appeared_in_the_bottom_of_my_computer/",
-          "author": null,
-          "description": "在我的电脑蓝屏后，一个网络摄像头出现在屏幕下方",
-          "link": "https://reddit.buzzing.cc/reddit/r/oddlyterrifying/comments/r2toag/a_webcam_appeared_in_the_bottom_of_my_computer/",
-          "publishedOn": "2021-11-27T09:57:19.000Z",
-          "wordCount": 28,
-          "title": "在我的电脑蓝屏后，一个网络摄像头出现在屏幕下方"
-        },
-        {
-          "id": "https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/r2vple/hard_pass/",
-          "author": null,
-          "description": "硬通",
-          "link": "https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/r2vple/hard_pass/",
-          "publishedOn": "2021-11-27T07:52:34.000Z",
-          "wordCount": 16,
-          "title": "硬通"
-        },
-        {
-          "id": "https://reddit.buzzing.cc/reddit/r/gaming/comments/r2uzsb/its_called_a_lens_flare_for_a_reason_you_should/",
-          "author": null,
-          "description": "这被称为镜头耀斑是有原因的。你应该只在通过步枪瞄准镜、双筒望远镜、挡风玻璃、玻璃窗等观察时看到折射的光线。",
-          "link": "https://reddit.buzzing.cc/reddit/r/gaming/comments/r2uzsb/its_called_a_lens_flare_for_a_reason_you_should/",
-          "publishedOn": "2021-11-27T05:34:47.000Z",
-          "wordCount": 39,
-          "title": "这被称为镜头耀斑是有原因的。你应该只在通过步枪瞄准镜、双筒望远镜、挡风玻璃、玻璃窗等观察时看到折射的光线。"
-        },
-        {
-          "id": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/r2r3sx/thats_how_management_in_a_bar_should_be/",
-          "author": null,
-          "description": "酒吧的管理应该是这样的",
-          "link": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/r2r3sx/thats_how_management_in_a_bar_should_be/",
-          "publishedOn": "2021-11-27T05:22:11.000Z",
-          "wordCount": 22,
-          "title": "酒吧的管理应该是这样的"
-        },
-        {
-          "id": "https://reddit.buzzing.cc/reddit/r/funny/comments/r2tf3r/got_this_letter_from_zoe_while_deployed_she_gets/",
-          "author": null,
-          "description": "在部署期间收到了佐伊的这封信。她收到了。",
-          "link": "https://reddit.buzzing.cc/reddit/r/funny/comments/r2tf3r/got_this_letter_from_zoe_while_deployed_she_gets/",
-          "publishedOn": "2021-11-27T04:45:08.000Z",
-          "wordCount": 24,
-          "title": "在部署期间收到了佐伊的这封信。她收到了。"
-        },
-        {
-          "id": "https://reddit.buzzing.cc/reddit/r/pics/comments/r2sps4/annual_thanksgiving_tradition_for_jamal_and_wanda/",
-          "author": null,
-          "description": "贾马尔和万达的年度感恩节传统仍在继续",
-          "link": "https://reddit.buzzing.cc/reddit/r/pics/comments/r2sps4/annual_thanksgiving_tradition_for_jamal_and_wanda/",
-          "publishedOn": "2021-11-27T02:03:39.000Z",
-          "wordCount": 24,
-          "title": "贾马尔和万达的年度感恩节传统仍在继续"
-        },
-        {
-          "id": "https://reddit.buzzing.cc/reddit/r/pics/comments/r2q2tp/i_built_that/",
-          "author": null,
-          "description": "这是我建的:)",
-          "link": "https://reddit.buzzing.cc/reddit/r/pics/comments/r2q2tp/i_built_that/",
-          "publishedOn": "2021-11-27T02:03:39.000Z",
-          "wordCount": 18,
-          "title": "这是我建的:)"
-        },
-        {
-          "id": "https://reddit.buzzing.cc/reddit/r/me_irl/comments/r2op23/me_irl/",
-          "author": null,
-          "description": "我_女孩",
-          "link": "https://reddit.buzzing.cc/reddit/r/me_irl/comments/r2op23/me_irl/",
-          "publishedOn": "2021-11-27T01:04:39.000Z",
-          "wordCount": 15,
-          "title": "我_女孩"
-        },
-        {
-          "id": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/r2bsa3/brave_malaysian_soldier_catching_king_cobra/",
-          "author": null,
-          "description": "勇敢的马来西亚士兵捕捉眼镜王蛇。",
-          "link": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/r2bsa3/brave_malaysian_soldier_catching_king_cobra/",
-          "publishedOn": "2021-11-26T23:07:50.000Z",
-          "wordCount": 19,
-          "title": "勇敢的马来西亚士兵捕捉眼镜王蛇。"
-        },
-        {
-          "id": "https://reddit.buzzing.cc/reddit/r/Unexpected/comments/r2jli2/lets_go/",
-          "author": null,
-          "description": "我们走吧",
-          "link": "https://reddit.buzzing.cc/reddit/r/Unexpected/comments/r2jli2/lets_go/",
-          "publishedOn": "2021-11-26T18:30:25.000Z",
-          "wordCount": 16,
-          "title": "我们走吧"
-        },
-        {
-          "id": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/r2e39w/when_you_try_to_sue_a_restaurant_for_no_reason/",
-          "author": null,
-          "description": "当你试图无缘无故地起诉一家餐馆而败诉时",
-          "link": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/r2e39w/when_you_try_to_sue_a_restaurant_for_no_reason/",
-          "publishedOn": "2021-11-26T16:38:42.000Z",
-          "wordCount": 26,
-          "title": "当你试图无缘无故地起诉一家餐馆而败诉时"
         }
       ]
     },
@@ -14550,6 +14418,222 @@
       "feedUrl": "https://hn.buzzing.cc/rss.xml",
       "siteUrl": "https://hn.buzzing.cc",
       "articles": [
+        {
+          "id": "https://hn.buzzing.cc/hn/29693571",
+          "author": null,
+          "description": "超媒体方法如何解决多页面应用程序的可用性问题",
+          "link": "https://hn.buzzing.cc/hn/29693571",
+          "publishedOn": "2021-12-26T22:29:10.000Z",
+          "wordCount": 30,
+          "title": "超媒体方法如何解决多页面应用程序的可用性问题"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29677773",
+          "author": null,
+          "description": "淇凯德6.0.0",
+          "link": "https://hn.buzzing.cc/hn/29677773",
+          "publishedOn": "2021-12-26T22:29:10.000Z",
+          "wordCount": 22,
+          "title": "淇凯德6.0.0"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29686862",
+          "author": null,
+          "description": "销售我自己的GPL软件，第一部分：很多的障碍",
+          "link": "https://hn.buzzing.cc/hn/29686862",
+          "publishedOn": "2021-12-26T22:29:10.000Z",
+          "wordCount": 31,
+          "title": "销售我自己的GPL软件，第一部分：很多的障碍"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29695013",
+          "author": null,
+          "description": "用一个USB加密狗和开放源代码对你的DNA进行测序",
+          "link": "https://hn.buzzing.cc/hn/29695013",
+          "publishedOn": "2021-12-26T22:29:10.000Z",
+          "wordCount": 31,
+          "title": "用一个USB加密狗和开放源代码对你的DNA进行测序"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29692957",
+          "author": null,
+          "description": "权力与魔法的英雄",
+          "link": "https://hn.buzzing.cc/hn/29692957",
+          "publishedOn": "2021-12-26T19:23:47.000Z",
+          "wordCount": 25,
+          "title": "权力与魔法的英雄"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29684889",
+          "author": null,
+          "description": "经过多年的怀疑，核聚变接近的希望越来越大",
+          "link": "https://hn.buzzing.cc/hn/29684889",
+          "publishedOn": "2021-12-26T17:45:15.000Z",
+          "wordCount": 31,
+          "title": "经过多年的怀疑，核聚变接近的希望越来越大"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29692848",
+          "author": null,
+          "description": "过反文化生活的反模仿策略",
+          "link": "https://hn.buzzing.cc/hn/29692848",
+          "publishedOn": "2021-12-26T17:45:15.000Z",
+          "wordCount": 27,
+          "title": "过反文化生活的反模仿策略"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29690769",
+          "author": null,
+          "description": "容器节流的问题",
+          "link": "https://hn.buzzing.cc/hn/29690769",
+          "publishedOn": "2021-12-26T16:43:54.000Z",
+          "wordCount": 24,
+          "title": "容器节流的问题"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29691271",
+          "author": null,
+          "description": "你在浏览器中屏蔽广告，为什么不在你的城市中屏蔽呢？",
+          "link": "https://hn.buzzing.cc/hn/29691271",
+          "publishedOn": "2021-12-26T15:09:32.000Z",
+          "wordCount": 31,
+          "title": "你在浏览器中屏蔽广告，为什么不在你的城市中屏蔽呢？"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29691039",
+          "author": null,
+          "description": "我作为一名软件工程师的财务独立之路",
+          "link": "https://hn.buzzing.cc/hn/29691039",
+          "publishedOn": "2021-12-26T14:45:57.000Z",
+          "wordCount": 29,
+          "title": "我作为一名软件工程师的财务独立之路"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29690877",
+          "author": null,
+          "description": "展示HN：我正在建立一个非营利性搜索引擎",
+          "link": "https://hn.buzzing.cc/hn/29690877",
+          "publishedOn": "2021-12-26T13:12:05.000Z",
+          "wordCount": 28,
+          "title": "展示HN：我正在建立一个非营利性搜索引擎"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29690775",
+          "author": null,
+          "description": "反种族隔离的偶像德斯蒙德-图图去世，享年90岁",
+          "link": "https://hn.buzzing.cc/hn/29690775",
+          "publishedOn": "2021-12-26T12:27:03.000Z",
+          "wordCount": 27,
+          "title": "反种族隔离的偶像德斯蒙德-图图去世，享年90岁"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29688214",
+          "author": null,
+          "description": "带有代码的论文",
+          "link": "https://hn.buzzing.cc/hn/29688214",
+          "publishedOn": "2021-12-26T11:41:29.000Z",
+          "wordCount": 23,
+          "title": "带有代码的论文"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29688907",
+          "author": null,
+          "description": "DIY离网太阳能发电",
+          "link": "https://hn.buzzing.cc/hn/29688907",
+          "publishedOn": "2021-12-26T08:16:36.000Z",
+          "wordCount": 25,
+          "title": "DIY离网太阳能发电"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29685927",
+          "author": null,
+          "description": "亚马逊推出Re:Post，AWS的 \"堆栈溢出\"。",
+          "link": "https://hn.buzzing.cc/hn/29685927",
+          "publishedOn": "2021-12-26T06:37:28.000Z",
+          "wordCount": 30,
+          "title": "亚马逊推出Re:Post，AWS的 \"堆栈溢出\"。"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29688423",
+          "author": null,
+          "description": "沉默的声音。美国的噪音地图。",
+          "link": "https://hn.buzzing.cc/hn/29688423",
+          "publishedOn": "2021-12-26T06:37:28.000Z",
+          "wordCount": 31,
+          "title": "沉默的声音。美国的噪音地图。"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29688048",
+          "author": null,
+          "description": "使用深层的假技术与你喜欢的角色说些什么",
+          "link": "https://hn.buzzing.cc/hn/29688048",
+          "publishedOn": "2021-12-26T05:35:06.000Z",
+          "wordCount": 31,
+          "title": "使用深层的假技术与你喜欢的角色说些什么"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29685963",
+          "author": null,
+          "description": "买煤矿，开汽油车，以及其他反向逻辑的用途",
+          "link": "https://hn.buzzing.cc/hn/29685963",
+          "publishedOn": "2021-12-26T04:14:11.000Z",
+          "wordCount": 34,
+          "title": "买煤矿，开汽油车，以及其他反向逻辑的用途"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29683331",
+          "author": null,
+          "description": "我们资助公共利益技术",
+          "link": "https://hn.buzzing.cc/hn/29683331",
+          "publishedOn": "2021-12-26T04:14:11.000Z",
+          "wordCount": 25,
+          "title": "我们资助公共利益技术"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29687613",
+          "author": null,
+          "description": "一个新的相关系数",
+          "link": "https://hn.buzzing.cc/hn/29687613",
+          "publishedOn": "2021-12-26T02:12:44.000Z",
+          "wordCount": 25,
+          "title": "一个新的相关系数"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29678706",
+          "author": null,
+          "description": "如果我们停止建造那么多楼梯，住房是否可以更便宜、更好？",
+          "link": "https://hn.buzzing.cc/hn/29678706",
+          "publishedOn": "2021-12-26T02:12:44.000Z",
+          "wordCount": 33,
+          "title": "如果我们停止建造那么多楼梯，住房是否可以更便宜、更好？"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29682051",
+          "author": null,
+          "description": "JWST发射NASA现场直播",
+          "link": "https://hn.buzzing.cc/hn/29682051",
+          "publishedOn": "2021-12-26T01:38:22.000Z",
+          "wordCount": 24,
+          "title": "JWST发射NASA现场直播"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29686891",
+          "author": null,
+          "description": "纽约市禁止在新建筑中使用天然气",
+          "link": "https://hn.buzzing.cc/hn/29686891",
+          "publishedOn": "2021-12-26T01:38:22.000Z",
+          "wordCount": 29,
+          "title": "纽约市禁止在新建筑中使用天然气"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29682149",
+          "author": null,
+          "description": "威廉-D-波特号：二战中最不幸的船只",
+          "link": "https://hn.buzzing.cc/hn/29682149",
+          "publishedOn": "2021-12-26T01:38:22.000Z",
+          "wordCount": 32,
+          "title": "威廉-D-波特号：二战中最不幸的船只"
+        },
         {
           "id": "https://hn.buzzing.cc/hn/29685021",
           "author": null,
@@ -20840,222 +20924,6 @@
           "publishedOn": "2021-11-27T12:59:28.000Z",
           "wordCount": 30,
           "title": "付费花园：iOS是广告软件 (2020)"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29357445",
-          "author": null,
-          "description": "这封PayPal的欺骗邮件是如何通过SPF、DKIM和DMARC的？",
-          "link": "https://hn.buzzing.cc/hn/29357445",
-          "publishedOn": "2021-11-27T09:30:35.000Z",
-          "wordCount": 32,
-          "title": "这封PayPal的欺骗邮件是如何通过SPF、DKIM和DMARC的？"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29357215",
-          "author": null,
-          "description": "银行转账作为一种支付方式",
-          "link": "https://hn.buzzing.cc/hn/29357215",
-          "publishedOn": "2021-11-27T08:37:46.000Z",
-          "wordCount": 26,
-          "title": "银行转账作为一种支付方式"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29357009",
-          "author": null,
-          "description": "新颖的身心计划优于其他治疗慢性背痛的方法",
-          "link": "https://hn.buzzing.cc/hn/29357009",
-          "publishedOn": "2021-11-27T07:27:31.000Z",
-          "wordCount": 30,
-          "title": "新颖的身心计划优于其他治疗慢性背痛的方法"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29355264",
-          "author": null,
-          "description": "AWS降低了向互联网传输数据的价格",
-          "link": "https://hn.buzzing.cc/hn/29355264",
-          "publishedOn": "2021-11-27T06:29:09.000Z",
-          "wordCount": 32,
-          "title": "AWS降低了向互联网传输数据的价格"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29353980",
-          "author": null,
-          "description": "Ask HN: 你曾经使用过的设计最好的东西是什么？",
-          "link": "https://hn.buzzing.cc/hn/29353980",
-          "publishedOn": "2021-11-27T04:59:56.000Z",
-          "wordCount": 34,
-          "title": "Ask HN: 你曾经使用过的设计最好的东西是什么？"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29354474",
-          "author": null,
-          "description": "PyTorch。我们的方向以及为什么它看起来很像Julia（但不完全是）。",
-          "link": "https://hn.buzzing.cc/hn/29354474",
-          "publishedOn": "2021-11-27T03:23:05.000Z",
-          "wordCount": 39,
-          "title": "PyTorch。我们的方向以及为什么它看起来很像Julia（但不完全是）。"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29353904",
-          "author": null,
-          "description": "自学计算机科学 (2020)",
-          "link": "https://hn.buzzing.cc/hn/29353904",
-          "publishedOn": "2021-11-27T03:23:05.000Z",
-          "wordCount": 29,
-          "title": "自学计算机科学 (2020)"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29355035",
-          "author": null,
-          "description": "加州港口卡车司机 \"淹没 \"在供应链的低效率中",
-          "link": "https://hn.buzzing.cc/hn/29355035",
-          "publishedOn": "2021-11-27T02:40:25.000Z",
-          "wordCount": 34,
-          "title": "加州港口卡车司机 \"淹没 \"在供应链的低效率中"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29349688",
-          "author": null,
-          "description": "克鲁泡特金的 \"面包的征服",
-          "link": "https://hn.buzzing.cc/hn/29349688",
-          "publishedOn": "2021-11-27T02:03:33.000Z",
-          "wordCount": 30,
-          "title": "克鲁泡特金的 \"面包的征服"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29347284",
-          "author": null,
-          "description": "多账户容器到 \"用Firefox以外的程序交换信息\"",
-          "link": "https://hn.buzzing.cc/hn/29347284",
-          "publishedOn": "2021-11-26T23:55:35.000Z",
-          "wordCount": 33,
-          "title": "多账户容器到 \"用Firefox以外的程序交换信息\""
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29353770",
-          "author": null,
-          "description": "新关注的变种。B.1.1.529",
-          "link": "https://hn.buzzing.cc/hn/29353770",
-          "publishedOn": "2021-11-26T23:43:08.000Z",
-          "wordCount": 25,
-          "title": "新关注的变种。B.1.1.529"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29352160",
-          "author": null,
-          "description": "我伪造了大量的Covid通行证--\"现实世界中的弱密钥加密法\"",
-          "link": "https://hn.buzzing.cc/hn/29352160",
-          "publishedOn": "2021-11-26T23:29:16.000Z",
-          "wordCount": 32,
-          "title": "我伪造了大量的Covid通行证--\"现实世界中的弱密钥加密法\""
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29353076",
-          "author": null,
-          "description": "互联网是用口水和打包线固定在一起的。",
-          "link": "https://hn.buzzing.cc/hn/29353076",
-          "publishedOn": "2021-11-26T22:20:53.000Z",
-          "wordCount": 30,
-          "title": "互联网是用口水和打包线固定在一起的。"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29352433",
-          "author": null,
-          "description": "Omicron的分类（B.1.1.529）。关注SARS-CoV-2变体",
-          "link": "https://hn.buzzing.cc/hn/29352433",
-          "publishedOn": "2021-11-26T21:30:35.000Z",
-          "wordCount": 30,
-          "title": "Omicron的分类（B.1.1.529）。关注SARS-CoV-2变体"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29350239",
-          "author": null,
-          "description": "微软为Edge推进有争议的 \"先买后付 \"功能",
-          "link": "https://hn.buzzing.cc/hn/29350239",
-          "publishedOn": "2021-11-26T21:13:55.000Z",
-          "wordCount": 36,
-          "title": "微软为Edge推进有争议的 \"先买后付 \"功能"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29349484",
-          "author": null,
-          "description": "物理学家在大型强子对撞机上探测到中微子的迹象",
-          "link": "https://hn.buzzing.cc/hn/29349484",
-          "publishedOn": "2021-11-26T20:53:42.000Z",
-          "wordCount": 31,
-          "title": "物理学家在大型强子对撞机上探测到中微子的迹象"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29347859",
-          "author": null,
-          "description": "暗器C大赛",
-          "link": "https://hn.buzzing.cc/hn/29347859",
-          "publishedOn": "2021-11-26T20:25:34.000Z",
-          "wordCount": 24,
-          "title": "暗器C大赛"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29350271",
-          "author": null,
-          "description": "维生素D水平对Covid-19的影响。系统回顾Meta分析",
-          "link": "https://hn.buzzing.cc/hn/29350271",
-          "publishedOn": "2021-11-26T19:47:26.000Z",
-          "wordCount": 33,
-          "title": "维生素D水平对Covid-19的影响。系统回顾Meta分析"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29351076",
-          "author": null,
-          "description": "盗版发行组织EVO \"指责 \"电影业的流行",
-          "link": "https://hn.buzzing.cc/hn/29351076",
-          "publishedOn": "2021-11-26T18:49:30.000Z",
-          "wordCount": 34,
-          "title": "盗版发行组织EVO \"指责 \"电影业的流行"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29346918",
-          "author": null,
-          "description": "GetElementById㱮㱮vs.QuerySelector",
-          "link": "https://hn.buzzing.cc/hn/29346918",
-          "publishedOn": "2021-11-26T18:30:18.000Z",
-          "wordCount": 25,
-          "title": "GetElementById㱮㱮vs.QuerySelector"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29349079",
-          "author": null,
-          "description": "展示HN：随机创建美丽的网站布局",
-          "link": "https://hn.buzzing.cc/hn/29349079",
-          "publishedOn": "2021-11-26T17:48:26.000Z",
-          "wordCount": 27,
-          "title": "展示HN：随机创建美丽的网站布局"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29345604",
-          "author": null,
-          "description": "乌马雷尔",
-          "link": "https://hn.buzzing.cc/hn/29345604",
-          "publishedOn": "2021-11-26T15:47:00.000Z",
-          "wordCount": 21,
-          "title": "乌马雷尔"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29349240",
-          "author": null,
-          "description": "锈蚀维护者的完美主义，或者，Alacritty的悲剧",
-          "link": "https://hn.buzzing.cc/hn/29349240",
-          "publishedOn": "2021-11-26T14:47:47.000Z",
-          "wordCount": 28,
-          "title": "锈蚀维护者的完美主义，或者，Alacritty的悲剧"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29347665",
-          "author": null,
-          "description": "意大利莫卡咖啡壶的谦逊辉煌(2018)",
-          "link": "https://hn.buzzing.cc/hn/29347665",
-          "publishedOn": "2021-11-26T13:31:43.000Z",
-          "wordCount": 29,
-          "title": "意大利莫卡咖啡壶的谦逊辉煌(2018)"
         }
       ]
     },
@@ -21064,6 +20932,141 @@
       "feedUrl": "https://youtube.buzzing.cc/rss.xml",
       "siteUrl": "https://youtube.buzzing.cc",
       "articles": [
+        {
+          "id": "https://youtube.buzzing.cc/youtube/-Y6K7F58ee0",
+          "author": null,
+          "description": "Chapter 3 No Way Home\n\n https://www.instagram.com/ceeday98/?hl=en\n\nPlease use my support a creator code: Ceedayy\n\nhttps://www.youtube.com/watch?v=-QxmD6ISXXU\n\nSong: RageSound - Vortex (No Copyright Music)\nMusic provided by Tunetank.\nFree Download:  https://bit.ly/3gfUxkP\nVideo Link: https://youtu.be/7XsjoMXiQQs\n\nSong: Aliaksei Yukhnevich - End of the Abyss (No Copyright Music)\nMusic provided by Tunetank.\nFree Download:  https://bit.ly/2xtEXR1\nVideo Link: https://youtu.be/hoap3gfnrgo",
+          "link": "https://youtube.buzzing.cc/youtube/-Y6K7F58ee0",
+          "publishedOn": "2021-12-26T14:46:21.000Z",
+          "wordCount": 17,
+          "title": "第三章 没有回家的路"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/7nT7JGZMbtM",
+          "author": null,
+          "description": "Watch the launch of the James Webb Space Telescope—the most powerful space telescope ever made. This mission is scheduled to lift off at 7:20 a.m. EST (12:20 UTC), Dec. 25, 2021, aboard an Ariane 5 rocket from Europe’s Spaceport in French Guiana.\n\nWith revolutionary technology, Webb will observe a part of space and time never seen before, providing a wealth of amazing views into an era when the very first stars and galaxies formed––over 13.5 billion years ago.\n\nIt can explore our own solar system’s residents with exquisite new detail and study the atmospheres of distant worlds. From new forming stars to devouring black holes, Webb will reveal all this and more! It’s the world’s largest and most powerful space telescope ever built.\n\nWebb is an international collaboration between NASA, ESA (European Space Agency), and CSA (Canadian Space Agency). Thousands of engineers and hundreds of scientists worked to make Webb a reality, along with over 300 universities, organizations, and companies from 29 U.S. states and 14 countries!\n \nReady to #UnfoldTheUniverse? The greatest origin story of all unfurls soon. Learn more at https://nasa.gov/jwst",
+          "link": "https://youtube.buzzing.cc/youtube/7nT7JGZMbtM",
+          "publishedOn": "2021-12-26T14:46:21.000Z",
+          "wordCount": 19,
+          "title": "詹姆斯-韦伯太空望远镜发射 - NASA官方广播"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/NCvnC5GhSdA",
+          "author": null,
+          "description": "MERRY CHRISTMAS FROM MY FAMILY TO YOU!\nI hope you all have an amazing & blessed Christmas, and if you don't celebrate Christmas, hope you're having a great day!\n🔴 SUBSCRIBE FOR LIT VIDEOS ► http://bit.ly/SubToRug\n🔵 Try my G FUEL Flavor!! ► https://gfuel.ly/use-code-rug \n\nGO SPAM MY OTHER PAGES!!\nInstagram ► https://www.instagram.com/fazerug/\nTikTok ► https://www.tiktok.com/@rug\nTwitter ► https://twitter.com/FaZeRug\nSnapchat ► \"thefazerug\"",
+          "link": "https://youtube.buzzing.cc/youtube/NCvnC5GhSdA",
+          "publishedOn": "2021-12-26T14:46:21.000Z",
+          "wordCount": 17,
+          "title": "史上最疯狂的家庭圣诞礼物开幕式!"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/AoDtj4uZbR4",
+          "author": null,
+          "description": "#shorts",
+          "link": "https://youtube.buzzing.cc/youtube/AoDtj4uZbR4",
+          "publishedOn": "2021-12-26T14:46:21.000Z",
+          "wordCount": 16,
+          "title": "所以Snoop Dogg给我发了这个..."
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/RX1ZM0Ew2I4",
+          "author": null,
+          "description": "Today I surprised Dad with a brand new 2022 Corvette for Christmas! \n\nSubscribe: http://bit.ly/SubToRoman\n\n\nFollow Roman Atwood:\nTwitter: https://twitter.com/romanatwood\nInstagram: https://instagram.com/romanatwood\nFacebook: https://facebook.com/RomanAtwood/\nSnapChat: https://snapchat.com/add/RomanAtwood\n\nFollow Brittney:\nhttps://www.facebook.com/BrittneyDAtwood\nTwitter: https://twitter.com/BrittneyAtwood\nInstagram: https://instagram.com/BrittneyAtwood\nSnapChat: https://snapchat.com/add/BrittneyAtwood\n\nSmile More Store: http://RomanAtwood.com\nSmile More Twitter - https://twitter.com/SmileMoreStore\nSmile More Insta - https://www.instagram.com/smilemorestore\n\nWatch More Roman Atwood:\nDaily Vlogs: https://youtube.com/playlist?list=PLItZ1aGL8ScA4RNpVQVekAv2AaNUMQWfi\nPopular Videos: https://youtube.com/playlist?list=PLItZ1aGL8ScDPCi1yw-ZH_51vGZazpv7w\nTrips: https://youtube.com/user/RomanAtwoodVlogs/playlists?view=50&sort=dd&shelf_id=11\nLatest Uploads: https://youtube.com/playlist?list=PLItZ1aGL8ScArc7A-QTq8BpArqliaRCwD",
+          "link": "https://youtube.buzzing.cc/youtube/RX1ZM0Ew2I4",
+          "publishedOn": "2021-12-26T11:06:52.000Z",
+          "wordCount": 15,
+          "title": "圣诞快乐，爸爸！\"。"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/yw95R0Vl4_c",
+          "author": null,
+          "description": "Watch The Duchess of Cambridge and Tom Walker perform 'For Those Who Can't Be Here' at Westminster Abbey for Royal Carols: Together At Christmas.\n\nThe performance took place in The Chapter House inside Westminster Abbey in December 2021. The song was played as part of the Royal Carols: Together At Christmas, a carol service that reflected upon the difficult past 18 months for people across our nation, and particularly for those who might be more vulnerable, isolated or have limited access to support.\n\n#TogetherAtChristmas was a moment to recognise those who have struggled during the pandemic, as well as to celebrate the individuals and organisations who carried out inspirational acts of kindness and incredible feats to help those in need in our communities. \n\nWith thanks to Tom Walker: https://www.youtube.com/c/iamtomwalker\n\nWatch more:\nMental Health: https://www.youtube.com/playlist?list...\nEarly Years: https://www.youtube.com/playlist?list...\nEngagements: https://www.youtube.com/watch?v=CBeZm...\n\nFollow us on our other channels:\nInstagram: https://www.instagram.com/dukeandduchessofcambridge\nTwitter: https://twitter.com/KensingtonRoyal",
+          "link": "https://youtube.buzzing.cc/youtube/yw95R0Vl4_c",
+          "publishedOn": "2021-12-26T11:06:52.000Z",
+          "wordCount": 14,
+          "title": "剑桥公爵夫人和汤姆-沃克--\"为那些不能在这里的人\"@威斯敏斯特教堂，2021年"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/ti-EppKRtJs",
+          "author": null,
+          "description": "Subscribe Here for new #shorts:\nhttps://www.youtube.com/channel/UC_k6...\n\nTHANKS FOR WATCHING!! LIKE, COMMENT, AND SUBSCRIBE FOR MORE VIDS!\n\n----------------------------------------------------------------------------------\nFIND ME ON:\nInstagram- https://www.instagram.com/adamw\nFacebook- https://www.facebook.com/itsAdamW\nTikTok- https://www.tiktok.com/@adamw",
+          "link": "https://youtube.buzzing.cc/youtube/ti-EppKRtJs",
+          "publishedOn": "2021-12-26T11:06:52.000Z",
+          "wordCount": 26,
+          "title": "当你要求额外的奶酪时😂"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/cZ8QC64Yytk",
+          "author": null,
+          "description": "2021 SBS 가요대전\n\nSBS 예능 ‘2021 SBS 가요대전(2021sbsgayo)’\n☞ 12월 25일 오후 6시 본 방송\n\n#2021SBS가요대전 #크리스마스 #오프닝무대\n\n▶ Hompage : https://www.sbs.co.kr/tv/enter\n▶ Subscribe SBS Entertainment : https://bit.ly/2SpOhMC\n\n*프로그램 다시 보기\n\n✔ SBS홈페이지:\nhttps://programs.sbs.co.kr/tv/youtube?co=youtube&type=tv&content_id=E458823289&yt_channel=SBSEntertainment\n✔ WAVVE:\nhttps://www.wavve.com/player/vod?contentid=S01_E458823289.1&utm_campaign=2021_SBS&utm_source=youtube&utm_medium=movcon&utm_contents=SBSEntertainment",
+          "link": "https://youtube.buzzing.cc/youtube/cZ8QC64Yytk",
+          "publishedOn": "2021-12-26T11:06:52.000Z",
+          "wordCount": 38,
+          "title": "크리스마 오프닝 스페셜무대 'All I Want for Christmas Is You♬'ㅣ2021 SBS 가요대전(2021sbsgayo)ㅣSBS ENTER."
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/Ge96ORjwsic",
+          "author": null,
+          "description": "penny → truck??? plz plz plz \nsign up for shopify → https://shopify.com/ryantrahan",
+          "link": "https://youtube.buzzing.cc/youtube/Ge96ORjwsic",
+          "publishedOn": "2021-12-26T11:06:52.000Z",
+          "wordCount": 33,
+          "title": "1周内将0.01美元变成房子--第2天"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/nftFUKNdVDQ",
+          "author": null,
+          "description": "Stream \"Back From The Dead\" Here: https://spotemgottem.lnk.to/Dead\n\nFollow SPOTEMGOTTEM:\nInstagram: https://www.instagram.com/spotemgotte...   \nTwitter: https://twitter.com/spotemgottem?lang=en\n\n#SPOTEMGOTTEM #BackFromTheDead\n\nVideo shot by @RookDirector",
+          "link": "https://youtube.buzzing.cc/youtube/nftFUKNdVDQ",
+          "publishedOn": "2021-12-25T18:33:22.000Z",
+          "wordCount": 28,
+          "title": "斑点哥特姆（SPOTEMGOTTEM）英尺 Tory Lanez - No Strings Attached (官方视频)"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/nWfeFrLl6LM",
+          "author": null,
+          "description": "Download the world's first ant&insect themed simulation strategy game, THE ANTS: UNDERGROUND KINGDOM today! \nhttp://bit.ly/Ants-CasualGeo\nBrand-new Super Ants have just been released and the new Ant Season is coming soon! Use code THEANTS777 now to receive free Xmas Rewards!\n\nCIA Otter Story Here ⬇️⬇️\nhttps://vm.tiktok.com/ZM8TUd2xQ/\n\nFor more consistent content, make sure to follow my Tiktok and Instagram below\n\nTikTok: https://vm.tiktok.com/ZM8TDoghj/\n\nInstagram: https://www.instagram.com/mndiaye97/?hl=en\n\nIf you’d like to support the channel and earn access to exclusive content, check out my Patreon below \n\nhttps://www.patreon.com/HoodNature\n\nSubscribe, turn on ALL post notifications and make sure to drink water and hug your mother.",
+          "link": "https://youtube.buzzing.cc/youtube/nWfeFrLl6LM",
+          "publishedOn": "2021-12-25T18:10:29.000Z",
+          "wordCount": 21,
+          "title": "为什么蜜獾不惧怕上帝和狮子"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/ETmlD0l4T3Y",
+          "author": null,
+          "description": "As President Joe Biden and first lady Jill Biden were taking phone calls Christmas Eve for NORAD's Santa tracker hotline, a father ended an otherwise pleasant conversation by telling the president, \"Merry Christmas and let's go Brandon.\" (Dec. 24)\r\n\r\nSubscribe for more Breaking News: http://smarturl.it/AssociatedPress \r\nWebsite: https://apnews.com \r\nTwitter: https://twitter.com/AP \r\nFacebook: https://facebook.com/APNews \r\nInstagram: https://www.instagram.com/APNews/\r\n​\r\n\r\nYou can license this story through AP Archive: http://www.aparchive.com/metadata/youtube/7f5a9b2bf6224aa3ab9304ed354cb113",
+          "link": "https://youtube.buzzing.cc/youtube/ETmlD0l4T3Y",
+          "publishedOn": "2021-12-25T18:10:29.000Z",
+          "wordCount": 23,
+          "title": "打电话给拜登的人：圣诞快乐，我们去布兰登吧"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/m3xFuFPxOnw",
+          "author": null,
+          "description": "THE SIMPSONS, BAD BUNNY - TE DESEO LO MEJOR\nTrilogy Box Set - https://www.badbunnytrilogy.com/\n\nhttps://elultimotourdelmundo.com/\n\nMerch: https://shop.elultimotourdelmundo.com/\n\nSuscríbete al canal: https://rimas.io/ytbadbunny\n\nMás de Bad Bunny:\nEUTDM - https://rimas.io/EUTDM\nUna Vez ft. Mora - https://youtu.be/gSMYGP0TYC4\n\nSigue a Bad Bunny:\nSpotify: https://rimas.io/spotifybb\nApple Music: https://rimas.io/applemusicbb\nInstagram: https://www.instagram.com/badbunnypr\n\nLetra:\n[Verso 1]\nYo sé que soy un c@brón\nQue no merezco tu perdón\nTe juro que no e' mi intención\nPero si escucha' esta canción\n\n[Coro]\nTe deseo lo mejor\nOjalá que te olvides de mí-í-í-í-í\nYo sé que fui lo peor\nY tú mereces ser feli'-i'-i'-i'\nMe voy antes de que sea tarde\nY el corazón te destroce otra ve'\nYa sé que soy un cobarde\nSi quiere' haz quе no me conoce', está biеn\n\n[Verso 2]\nOtra ve' no cumplí lo que te prometí\nOtra ve' te fallé, otra ve' te mentí, eh-eh\nOtra ve' me toca ser el malo\n¿De qué valen la' flore' y lo' regalo'?\nSi soy culpable de tu dolor\nY por mí ahora ere' peor\nNo quiere' que más nadie te hable de amor\nPero yo—\n\n[Coro]\nTe deseo lo mejor\nOjalá que te olvides de mí-í-í-í-í\nYo sé que fui lo peor\nY tú mereces ser feli'-i'-i'-i'\nMe voy ante' de que sea tarde\nY el corazón te destroce otra ve'\nYa sé que soy un cobarde\nSi quiere' haz que no me conoce', está bien, eh\n\n\n#BADBUNNY #THESIMPSONS #TEDESEOLOMEJOR \n\n© 2021 Rimas Entertainment",
+          "link": "https://youtube.buzzing.cc/youtube/m3xFuFPxOnw",
+          "publishedOn": "2021-12-25T18:10:29.000Z",
+          "wordCount": 32,
+          "title": "SIMPSONS, BAD BUNNY - TE DESEO LO MEJOR (Video Oficial)"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/4LbP500OIe0",
+          "author": null,
+          "description": "Desi Banks Presents a  short film  around his characters for this great Christmas holiday! Merry Christmas from BSimone Reginae Carter, Candace B Harris, Desi Banks, Alton Walker, Shuler King! love You Guys, Hope you enjoy!",
+          "link": "https://youtube.buzzing.cc/youtube/4LbP500OIe0",
+          "publishedOn": "2021-12-25T18:10:29.000Z",
+          "wordCount": 26,
+          "title": "班克斯家族的圣诞节!"
+        },
+        {
+          "id": "https://youtube.buzzing.cc/youtube/D86wV2iqWgg",
+          "author": null,
+          "description": "我们给了布鲁克林她唯一想要的圣诞礼物.... JUSTIN *她哭了 *",
+          "link": "https://youtube.buzzing.cc/youtube/D86wV2iqWgg",
+          "publishedOn": "2021-12-25T18:10:29.000Z",
+          "wordCount": 21,
+          "title": "我们给了布鲁克林她唯一想要的圣诞礼物.... JUSTIN *她哭了 *"
+        },
         {
           "id": "https://youtube.buzzing.cc/youtube/tQwVKr8rCYw",
           "author": null,
@@ -25050,87 +25053,6 @@
           "publishedOn": "2021-11-27T17:20:48.000Z",
           "wordCount": 21,
           "title": "9岁的野蛮人爸爸与恶霸"
-        },
-        {
-          "id": "https://youtube.buzzing.cc/youtube/ARNBtGn70ww",
-          "author": null,
-          "description": "Go to https://buyraycon.com/actman for 30% off your order! Brought to you by Raycon.\n\nHalo Infinite has officially launched but even though it has been 6 years since the release of Halo 5: Guardians, Infinite is STILL making the same mistakes. It is mind-boggling how I even have to talk about and discuss this stuff. \n\nI saw a post on reddit that did a great job of explaining why there aren’t more modes in Halo Infinite and why you can’t choose what modes you play. If you have an Oddball challenge, then you have to queue and wait until you get an Oddball match to try and complete. It could be argued that the lack of modes/playlists is by design to FURTHER lengthen the time it takes to complete challenges.\n\nHalo 5 launched with so little content because (in my opinion) it encouraged people to play Warzone, the game mode designed around loot boxes and overpowered weapons. \n\nSo again, the fucking monetization is responsible for yet ANOTHER Halo games abysmal variety of content at release\n\n\nSUPPORT the Channel ► https://www.patreon.com/TheActMan \n\n____TIME STAMPS____\nIntroduction – 0:00 \nDisappointing News – 4:03\nLack of Content – 7:23\nGame Modes & Playlists – 11:08 \nCustom Games are Broken – 20:05\nFinal Thoughts – 28:33\n\n✪ CONNECT WITH ME ✪ \nSubscribe ↪ https://www.youtube.com/c/TheActMan?sub_confirmation=1 \nTwitter ➤ https://twitter.com/TheActMan_YT \nAct Man TV ➤ http://bit.ly/2kPXk7f  \n\nDiscord ➤ https://discord.gg/yBABtkh  \nInstagram ➤ https://www.instagram.com/theactman_yt/ \nXbox Live Gamertag ➤ The Act Man",
-          "link": "https://youtube.buzzing.cc/youtube/ARNBtGn70ww",
-          "publishedOn": "2021-11-26T16:38:44.000Z",
-          "wordCount": 16,
-          "title": "光环无限》令人沮丧和失望...... (第1/2部分)"
-        },
-        {
-          "id": "https://youtube.buzzing.cc/youtube/zjy0dyXEGBE",
-          "author": null,
-          "description": "The Clash of Clans World Finals are coming! Celebrate in style with the Champion Queen, a brand new in-game Challenge, and crazy offers and events! \n\n\n\nFollow us on our Socials!\nTwitter ► https://twitter.com/ClashofClans/\nInstagram ►https://www.instagram.com/clashofclans \nFacebook ►https://www.facebook.com/ClashofClans \n\nAttack. Defend. Strategize. Download for free for mobile devices. http://supr.cl/ThisArmy\n\nFrom rage-­filled Barbarians with glorious mustaches to pyromaniac wizards, raise your own army and lead your clan to victory! Build your village to fend off raiders, battle against millions of players worldwide, and forge a powerful clan with others to destroy enemy clans.\nPLEASE NOTE! Clash of Clans is free to download and play, however some game items can also be purchased for real money \n\nAlso, under our Terms of Service and Privacy Policy, you must be at least 13 years of age to play or download Clash of Clans.\nA network connection is also required.\n\nFEATURES\n- Build your village into an unbeatable fortress \n- Raise your own army of Barbarians, Archers, Hog Riders, Wizards, Dragons and other mighty fighters\n- Battle with players worldwide and take their Trophies\n- Join together with other players to form the ultimate Clan\n- Fight against rival Clans in epic Clan Wars \n- Build 18 unique units with multiple levels of upgrades\n- Discover your favorite attacking army from countless combinations of troops, spells, Heroes and Clan reinforcements \n- Defend your village with a multitude of Cannons, Towers, Mortars, Bombs, Traps and Walls\n- Fight against the Goblin King in a campaign through the realm\n\nChief, are you having problems? Visit http://supercell.helpshift.com/a/clas...\n\nPrivacy Policy:\nhttp://www.supercell.net/privacy-policy/\n\nTerms of Service:\nhttps://supercell.com/en/terms-of-service/\n\nParent’s Guide:\nhttp://www.supercell.net/parents\n\n#clashofclans",
-          "link": "https://youtube.buzzing.cc/youtube/zjy0dyXEGBE",
-          "publishedOn": "2021-11-26T15:27:05.000Z",
-          "wordCount": 17,
-          "title": "冠军女王加入战斗! (部落冲突官方)"
-        },
-        {
-          "id": "https://youtube.buzzing.cc/youtube/BKfjtFRTdhc",
-          "author": null,
-          "description": "I competed in one of the biggest MrBeast videos on youtube... SQUID GAME In Real Life! This is the story of how I lost $456,000 but stole the world's hearts!\n\nCheck out MrBeast's Video if you haven't. Thanks Jimmy for the opportunity! :D\nhttps://www.youtube.com/watch?v=0e3GPea1Tyg&t=1s&ab_channel=MrBeast\n\n---------------------------------------------------------------------\n\n⭐ SUBSCRIBE HERE to be COOL! ➜https://goo.gl/7Xabn8\n🔔 Be sure to hit the bell and turn on notifications!\n\nBECOME A MEMBER! GET EPIC REWARDS AND PERKS TO THE CHANNEL!\n✅ JOIN HERE! ➜ https://www.youtube.com/channel/UCtghAMGOpNxMheOfWRRMe6A/join\n\n---------------------------------------------------------------------\n\n👕 Nightfoxx Roblox Shirts ➜ http://bit.ly/FoxxRobloxStore\n🦊**NEW** FOXX MERCH ➜ https://nightfoxxshop.com\n\n---------------------------------------------------------------------\n💙 SOCIAL MEDIA 💙\nTwitter ➜ http://www.twitter.com/MrNightfoxx\nInstagram ➜ http://www.instagram.com/mrnightfoxx\n\n💜 OFFICIAL DISCORD PARTNER! 💜\nJoin our FREE Discord Server and talk to me and other members of the community! ➜ https://discord.gg/hqMMuf2\n\nJoin My Roblox Group For a Chance to Win 100 Robux: http://bit.ly/FoxxRobloxGroup\n---------------------------------------------------------------------\nGame Played in Vid: SQUID GAME IN REAL LIFE\n\n🔥 Follow Me on Roblox! ➜Night_Foxx\n\nYou’ve made it to the end of my description. You are EPIC NOW!",
-          "link": "https://youtube.buzzing.cc/youtube/BKfjtFRTdhc",
-          "publishedOn": "2021-11-26T15:27:05.000Z",
-          "wordCount": 22,
-          "title": "我是如何在MrBeast的鱿鱼游戏中输掉45.6万美元的!"
-        },
-        {
-          "id": "https://youtube.buzzing.cc/youtube/fPjJ9gVoFZA",
-          "author": null,
-          "description": "Tottenham beat Mura 5-1 last meeting behind a Harry Kane hat trick and a repeat result would put them in a good place to advance to the next round. Air Date: Nov 25, 2021\n\nStream UEFA Matches on Paramount+: \nhttps://www.paramountplus.com/shows/uefa-champions-league/\nhttps://www.paramountplus.com/shows/uefa-europa-league/\nhttps://www.paramountplus.com/shows/uefa-europa-conference-league/\n\n#soccer #uefa #uecl",
-          "link": "https://youtube.buzzing.cc/youtube/fPjJ9gVoFZA",
-          "publishedOn": "2021-11-26T15:27:05.000Z",
-          "wordCount": 28,
-          "title": "穆拉对托特纳姆。延长赛亮点 | 欧洲杯小组赛MD5 | CBS Sports Golazo Europe"
-        },
-        {
-          "id": "https://youtube.buzzing.cc/youtube/i50CX9z51AM",
-          "author": null,
-          "description": "Get Albion Online for free today! ►\nhttps://play.albiononline.com/JK4M/hacksmith\n\nBig thank you to our industry partners for making this project possible! Check them out below:\nBosch Rexroth ► https://www.boschrexroth.com/\nCat® Products ► https://www.cat.com/\nKunbus Revolution Pi ► https://revolution.kunbus.com/\nFORT Robotics ► https://www.fortrobotics.com/\n\nCheck out AlienGoBoom for more awesome Alien Destruction! ► https://www.youtube.com/c/aliengoboom\n\nGET MERCH ► https://www.Hacksmith.store\n\nBecome a Hacksmith member get exclusive perks! ► https://www.youtube.com/channel/UCjgpFI5dU-D1-kh9H1muoxQ/join\n►Early video access \n►Project design files (solidworks)\n►Merch Discounts \n►Collaborate with us on our videos \n\nSOCIAL\nWebsite ► http://www.hacksmith.tech\nFacebook ► http://www.facebook.com…",
-          "link": "https://youtube.buzzing.cc/youtube/i50CX9z51AM",
-          "publishedOn": "2021-11-26T15:27:05.000Z",
-          "wordCount": 22,
-          "title": "P-5000动力装载机摧毁了所有的东西!"
-        },
-        {
-          "id": "https://youtube.buzzing.cc/youtube/Eyfb9dt2FVo",
-          "author": null,
-          "description": "Profit From A Stock Crash… 💥\n_______________________________________________\nFree Stuff:\n📈 GET YOUR FREE STOCK WORTH UP TO $1,000 ON PUBLIC (for USA): https://public.com/mark\n\n📈 GET YOUR FREE STOCK WORTH UP TO £200 ON FREETRADE (for UK): http://freetrade.io/marktilbury\n\n💰 Get $10 worth of Bitcoin with code \"TILBURY10\" when you sign up and verify your account on Coinbase. (For EVERYONE): https://coinbase-consumer.sjv.io/c/2553549/1154763/9251\n\n*The Info in this video is accurate as of the posting date. Offers are only available for a limited time*\n_______________________________________________\nMy Links:\n➥ My Main Channel: https://www.YouTube.com/marktilbury\n➥ Snapchat: https://www.snapchat.com/add/marktilbury\n➥ My Podcast Channel: https://www.YouTube.com/c/likefatherlikesonpodcast\n➥ Twitter: https://twitter.com/marktilbury\n➥ Discord: https://discord.gg/hXjW6pY\n➥ Instagram: https://www.instagram.com/marktilbury\n________________________________________________\nCONTACT:\nFor business inquires only, please use this email: mark@marktilburycoaching.com\n\n*Some of the links and other products that appear on this video are from companies which Mark Tilbury will earn an affiliate commission or referral bonus. The Info in this video is accurate as of the posting date. Some of the offers mentioned may no longer be available.",
-          "link": "https://youtube.buzzing.cc/youtube/Eyfb9dt2FVo",
-          "publishedOn": "2021-11-26T15:27:05.000Z",
-          "wordCount": 17,
-          "title": "从股灾中获利... 💥"
-        },
-        {
-          "id": "https://youtube.buzzing.cc/youtube/xVuiHP8tNbE",
-          "author": null,
-          "description": "Thank you to SeatGeek for sponsoring this video! Use code KTO for $20 off your first order. https://seatgeek.onelink.me/RrnK/KTO\n\n7 years ago, there were 5 quarterbacks selected in the first 2 rounds of the 2014 NFL draft. How did their careers go?\n\nWelcome to my channel! My videos are all things football. Hypothetical scenarios, game and player breakdowns, predictions, and football stories. If you like my videos be sure to subscribe and let me know what you think down below!\n\nOutro- The Fix by Aldous Young",
-          "link": "https://youtube.buzzing.cc/youtube/xVuiHP8tNbE",
-          "publishedOn": "2021-11-26T15:27:05.000Z",
-          "wordCount": 19,
-          "title": "2014年QB级别... 7年后"
-        },
-        {
-          "id": "https://youtube.buzzing.cc/youtube/2bTt-qBgRoI",
-          "author": null,
-          "description": "NEW DOUGDOUG PLUSHIE: https://www.makeship.com/products/dougdoug-gitd-plush\nSpeedrun to make a new file, kill every leader as fast as possible.\n\nThis was streamed live on Twitch! https://bit.ly/DougTwitch\nFull stream recording: https://www.youtube.com/watch?v=wSqUM2y0Jm4\n\nMy 2nd Channel: http://bit.ly/dougdoug2\nTwitter: https://twitter.com/DougDougFood\nSubscribe: https://bit.ly/dougdougsubsub\n\nMore DugDug:\nLatest Uploads: https://www.youtube.com/watch?v=rp4cH7mb4X4&list=PLzTxt5iYdhziB3Zf03HR_aZWgJ49ffj-d&index=2\nExplained with Food: https://www.youtube.com/playlist?list=PLzTxt5iYdhzjMJF--_xpj4s4jgOPe0NWF\nDougDoug Challenges: https://www.youtube.com/playlist?list=PLzTxt5iYdhzh_SW60_g3HPVjBupwUZOFA\nPopular Videos: https://www.youtube.com/playlist?list=PLzTxt5iYdhzgrLpm-SQNNAVOw0gVs8Iu_\n\nMUSIC CREDITS:\nBayonetta 2 - Shopping (B)\nGran Turismo 3 - Race Results\nMario Kart 8 - Lose Grand Prix\nSkyrim - Out of the Cold\nSkyrim - Boss Battle #3\nXenoblade Chronicles 2 - Battle!! (Combat Theme 1)\nZelda Skyward Sword - Opening\nBayonetta 2 - Talking with Loki (A)\nXenoblade Chronicles 2 - Crossing Swords\nBattlefield V - Legacy Theme\nSmash Bros Wii U - Gerudo Valley\nMetal Gear Solid 3 - Caution\nXenoblade Chronicles 2 - Still, Move Forward! (Combat Theme 3)\nXenoblade Chronicles 2 - Incoming!\nSkyrim - The Streets of Whiterun\n\nAbout DougDoug:\nDoug is a sentient bell pepper who was hired by the FBI to crack gaming challenges and also talk about things with food\n\n#Skyrim #Speedrun #Jarl",
-          "link": "https://youtube.buzzing.cc/youtube/2bTt-qBgRoI",
-          "publishedOn": "2021-11-26T15:27:05.000Z",
-          "wordCount": 22,
-          "title": "谋杀所有贾尔斯的 \"天际 \"速跑"
-        },
-        {
-          "id": "https://youtube.buzzing.cc/youtube/qpKE16se-OI",
-          "author": null,
-          "description": "The brand new deals are crazy this Black Friday 2021! Here are all the top deals I found on the products you care about from Amazon, Target, Walmart and More!\n👇🏼 MY TOP 25 BLACK FRIDAY DEAL LIST: 👇🏼\n🤑 99 CENT HULU: https://hulu.tv/3mfUGHI\n🤑 Anker Emergency Portable Power Station: https://amzn.to/3CURf0F\n🤑 New Apple AirPods (3rd Generation): https://amzn.to/3xBKAHT\n🤑Beats Studio Buds: https://amzn.to/2ZoSzeD\n🤑 Ninja Mega Kitchen System: https://bit.ly/30NRcXE\n🤑 Top Rated $45 Juicer: https://bit.ly/3xnZDEC\n🤑 Onn 50” TV: https://bit.ly/30WnJea\n🤑 ASUS Chromebook: https://bit.ly/3nxCjRI\n🤑 SodaStream Terra: https://bit.ly/30TVHQx\n🤑 PowerXL Dual Basket Air Fryer: https://bit.ly/2ZryuEu\n🤑 30% OFF Green Works Outdoor Tools: https://amzn.to/3xmQpZr\n🤑 Google Nest Mini + Smart Plug: ht…",
-          "link": "https://youtube.buzzing.cc/youtube/qpKE16se-OI",
-          "publishedOn": "2021-11-26T15:27:05.000Z",
-          "wordCount": 26,
-          "title": "2021年 \"黑色星期五 \"最佳交易25强 🤑（每小时更新一次！）。"
         }
       ]
     }
