@@ -2,10 +2,310 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gsyx666.github.io/action-osmosfeed/index.html</id>
     <title>gsyx::feed</title>
-    <updated>2022-01-01T00:48:56.903Z</updated>
+    <updated>2022-01-02T00:49:42.729Z</updated>
     <generator>osmosfeed 1.11.3</generator>
     <link rel="alternate" href="https://gsyx666.github.io/action-osmosfeed/index.html"/>
     <link rel="self" href="https://gsyx666.github.io/action-osmosfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[How to get a start in a software developer job, how to learn and what to know.]]></title>
+        <id>https://dev.to/ngamsomset/how-to-get-a-start-in-a-software-developer-job-how-to-learn-and-what-to-know-23mh</id>
+        <link href="https://dev.to/ngamsomset/how-to-get-a-start-in-a-software-developer-job-how-to-learn-and-what-to-know-23mh"/>
+        <updated>2022-01-01T23:24:16.000Z</updated>
+        <summary type="html"><![CDATA[In this blog, I will explain how to get started in a software development job. In this blog, I will be able to write only in terms of my point of view as a front-end web developer so if you found something unsure about what is expecting to learn please DM me.
+Well, this is a very broad question to start with. The answer would be millions of things to learn. But what you need to know is that "What is your end goal?" What do you want to do?
+Type of software developer jobs
+There are many types of software developer jobs from web developer to data science which is also included in the software field. You must be able to answer this question before you even sit down and start to work on something, as the details/knowledge that you need to know will be interestingly different. For example, most …]]></summary>
+        <author>
+            <name>Brian Ngamsom</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[#90DaysOfDevOps - Day 1]]></title>
+        <id>https://dev.to/michaelcade1/90daysofdevops-day-1-kn8</id>
+        <link href="https://dev.to/michaelcade1/90daysofdevops-day-1-kn8"/>
+        <updated>2022-01-01T22:46:18.000Z</updated>
+        <summary type="html"><![CDATA[This post originates from https://github.com/MichaelCade/90DaysOfDevOps 
+Day 1 of our 90 days and adventure to learn a good foundational understanding of DevOps and tools that help with a DevOps mindset. 
+This learning journey started for me a few years back but my focus then was around virtualisation platforms and cloud based technologies, I was looking mostly into Infrastructure as Code and Application configuration management with Terraform and Chef. 
+Fast forward to March 2021, I was given an amazing oppurtunity to concentrate my efforts around the Cloud Native strategy at Kasten by Veeam. Which was going to be a massive focus on Kubernetes and DevOps and the community surrounding these technologies. I started my learning journey and quickly realised there was a very wide world aside f…]]></summary>
+        <author>
+            <name>Michael Cade</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Convert images to mosaics in p5.js]]></title>
+        <id>https://dev.to/andyhaskell/convert-images-to-mosaics-in-p5js-2dlc</id>
+        <link href="https://dev.to/andyhaskell/convert-images-to-mosaics-in-p5js-2dlc"/>
+        <updated>2022-01-01T22:22:54.000Z</updated>
+        <summary type="html"><![CDATA[p5.js is a fun JavaScript library for drawing on an HTML5 canvas, and it has some of the clearest tutorials I have seen. It gives you functionality for things like image manipulation, drawing lines and shapes, displaying images, working with trigonometry, and more. And it is especially popular for generative art, such as fractals.
+In this tutorial, I will show you how to use p5.js to convert an image like this:
+
+to a mosaic of dots like this:
+
+This tutorial assumes a working knowledge of JavaScript and familiarity with pre-algebra, but prior knowledge of p5.js isn't strictly necessary. You can follow along on this by creating an account on the p5.js online editor and logging in. The finished product can be found here.
+As a basic p5.js program, let's start by making a canvas and drawing a s…]]></summary>
+        <author>
+            <name>&amp;y H. Golang (he/him)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[JavaScript Event Loop]]></title>
+        <id>https://dev.to/ejjraifihamza/javascript-event-loop-3kd4</id>
+        <link href="https://dev.to/ejjraifihamza/javascript-event-loop-3kd4"/>
+        <updated>2022-01-01T21:37:11.000Z</updated>
+        <summary type="html"><![CDATA[JavaScript single-threaded model
+
+
+everyone knows that JavaScript is a single-threaded programming language. In other words, JavaScript can do only one thing at a single point in time.
+The JavaScript engine executes a script from the top of the file and works its way down. JavaScript creates the execution contexts and pushes and pops functions onto and off the call stack in the execution process.
+If a function takes a long time to execute, you cannot interact with the web browser during the function’s execution because the page hangs.
+A function that takes a long time to complete is called a blocking function. Technically, a blocking function blocks all the interactions of the webpage, such as mouse click.
+A blocking function can be a function that downloads a file from a remote server or …]]></summary>
+        <author>
+            <name>Ejjraifi Hamza</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A Minimal Pluggy Example]]></title>
+        <id>https://dev.to/waylonwalker/a-minimal-pluggy-example-3mp0</id>
+        <link href="https://dev.to/waylonwalker/a-minimal-pluggy-example-3mp0"/>
+        <updated>2022-01-01T21:21:42.000Z</updated>
+        <summary type="html"><![CDATA[Pluggy makes it so easy to allow users to modify the behavior of a framework without thier specific feature needing to be implemented in the framework itself.
+I've really been loving the workflow of frameworks built with pluggy.  The first one that many python devs have experience with is pytest.  I've never created a pytest plugin, and honestly at the time I looked into how they were made was a long time ago and it went over my head.  I use a data pipelining framework called kedro, and have build many plugins for it.
+super easy to do
+As long as the framework document the hooks that are available and what it passes to them it's so easy to make a plugin.  Its just importing the
+hook_impl, making a class with a function that represents one of the hooks,
+from framework import hook_impl
+
+class…]]></summary>
+        <author>
+            <name>Waylon Walker</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2021 pnpm recap]]></title>
+        <id>https://dev.to/pnpm/2021-pnpm-recap-43a3</id>
+        <link href="https://dev.to/pnpm/2021-pnpm-recap-43a3"/>
+        <updated>2022-01-01T21:18:19.000Z</updated>
+        <summary type="html"><![CDATA[It is the end of the year and it was a good year for pnpm, so let's see how it went.
+My goal this year was to beat Bower by the number of downloads. We were able to achieve this goal in November:
+
+pnpm was downloaded about 3 times more in 2021 than in 2020:
+
+These stats don't even measure all the different ways that pnpm may be installed!
+pnpm npm package. This year we also added compiled binary versions of pnpm, which are shipped differently.
+We collect some unpersonalized stats from our docs using Google Analytics.
+
+Most of our users are from the United States and China.
+
+Our main GitHub repository received +5,000 stars this year.
+
+Our biggest new user this year is Bytedance (the company behind TikTok).
+Also, many great open-source projects started to use pnpm. Some switched to pnpm beca…]]></summary>
+        <author>
+            <name>Zoltan Kochan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Decorator in Ruby on Rails]]></title>
+        <id>https://dev.to/sturpin/decorator-in-ruby-on-rails-14kk</id>
+        <link href="https://dev.to/sturpin/decorator-in-ruby-on-rails-14kk"/>
+        <updated>2022-01-01T21:12:21.000Z</updated>
+        <summary type="html"><![CDATA[- English Version -
+
+
+
+
+
+Decorators provide a flexible alternative to subclassing for extending functionality. Simple! 😉
+There are several ways to implement it, but the easiest for me is using Draper gem.
+> rails new decorator-rails
+
+> bundle add draper
+
+Well, from this moment when we create a controller it will automatically create our decorator file in app/decorator folder.
+> rails g scaffold User first_name last_name
+
+Among other files, the file app/decorators/user_decorator.rb has been created automatically.
+# app/decorators/user_decorator.rb
+
+class UserDecorator < Draper::Decorator
+  delegate_all
+
+  def full_name
+    object.first_name + ' ' + object.last_name
+  end
+end
+
+That allows behavior to be added to an individual object without affecting the behavior of other objects from the s…]]></summary>
+        <author>
+            <name>Sergio Turpín</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[100 Languages Speedrun: Episode 42: Prolog]]></title>
+        <id>https://dev.to/taw/100-languages-speedrun-episode-42-prolog-nbc</id>
+        <link href="https://dev.to/taw/100-languages-speedrun-episode-42-prolog-nbc"/>
+        <updated>2022-01-01T20:18:41.000Z</updated>
+        <summary type="html"><![CDATA[The computing world had periods of obsession with "Artificial Intelligence" a few times. One such period was during the late 1970s and 1980s when "logic programming" was the big AI idea.
+It was so huge and it failed so dismally that by now not only it is largely forgotten, but people rarely even know it ever happened.
+Let's take a dive into the history of AI, and check Prolog - the language at the center of those AI attempts, and while it's not any in-depth analysis, we'll bump into a few reasons why it all failed.
+Prolog does logic programming, but it also has some basic ability to do regular programming like I/O and so on. Many Prologs also have builtin constraint solver libraries similar to Z3. I'll stay away from those parts and mostly focus on the core Prolog.
+The idea of Prolog is th…]]></summary>
+        <author>
+            <name>Tomasz Wegrzanowski</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Spring internal micro-service driven communication]]></title>
+        <id>https://dev.to/xrio/spring-internal-micro-service-driven-communication-5co8</id>
+        <link href="https://dev.to/xrio/spring-internal-micro-service-driven-communication-5co8"/>
+        <updated>2022-01-01T20:04:18.000Z</updated>
+        <summary type="html"><![CDATA[During the solution architecture phase, especially when we're talking micro-services, we need a sort of internal exchange
+OpenFeign!
+First, we add the OpenFeign dependency (inside the pom.xml file), so it will be imported by Maven (our dependency manager).
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-openfeign</artifactId>
+    <version>3.1.0</version>
+</dependency>
+
+<dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies…]]></summary>
+        <author>
+            <name>Elattar Saad</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Top 10 Most Useful Python Libraries For Data Scientists]]></title>
+        <id>https://dev.to/iayeshasahar/top-10-most-useful-python-libraries-for-data-scientists-1d3d</id>
+        <link href="https://dev.to/iayeshasahar/top-10-most-useful-python-libraries-for-data-scientists-1d3d"/>
+        <updated>2022-01-01T19:49:19.000Z</updated>
+        <summary type="html"><![CDATA[Table of Contents
+
+
+Introduction
+Pandas
+NumPy
+TensorFlow
+Scikit-learn
+Sci-Py
+Matplotlib
+Seaborn
+Keras
+Scrapy
+BeautifulSoup
+Introduction 
+
+
+As you guys know, Python is a popular language that is assisting developers in creating PC, games, mobile, and other types of applications. This is possible due to its libraries that are almost more than 137,000 in number. Crazy right? Moreover, in this world that revolves around data where buyers demand relevant information while buying, big companies or even small start-ups require "data scientists" to get valuable insights by processing massive data sets.
+The results of such an analysis guide them in critical decision making, business operations, and various other tasks that require valuable information to be completed efficiently. Now you might be t…]]></summary>
+        <author>
+            <name>Ayesha Sahar</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[🤪 Tell me how to build a duplicate detection system!]]></title>
+        <id>https://dev.to/williammcgonagle/how-should-i-build-a-duplicate-detection-system-22le</id>
+        <link href="https://dev.to/williammcgonagle/how-should-i-build-a-duplicate-detection-system-22le"/>
+        <updated>2022-01-01T19:47:08.000Z</updated>
+        <summary type="html"><![CDATA[I'm working on a linter right now, and one of the requested features for it was code duplication detection. I made an issue for it already, but I need to start working on it. And, that's where my question lies. 
+I can either build the system to detect the duplications based on plain text. This is how most systems work because it is the simpler of the two options. But, it is also the most failure prone. For instance, this system would fail if there was the same exact code in two places, but there was a comment in the middle of one of them- it would not register as a duplicate.  
+Alternatively, I can use an abstract syntax tree to detect the duplications. But, theres another problem there- what is the most-lightweight and all-around-best javascript parser out there? I'm planning on using the babel parser but I'm already running into a problem because it doesn't parse the comments in a way I would like. 
+So, if you have an opinion on what I should do, please leave a comment below. Also, please star the project and contribute if you have time. If you can, that would be amazing, and I thank you so much!]]></summary>
+        <author>
+            <name>William McGonagle</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Object Orientation Pillars]]></title>
+        <id>https://dev.to/jptkao/object-orientation-pillars-22c7</id>
+        <link href="https://dev.to/jptkao/object-orientation-pillars-22c7"/>
+        <updated>2022-01-01T19:34:17.000Z</updated>
+        <summary type="html"><![CDATA[In every lecture or tutorial about we come across these keywords: Object, Class, Abstraction, Encapsulation, Inheritance, Polymorphism. This is the universe of the OO Programmer… Or is it ?
+What is OO and why we use ?
+Lets begin with the “Pillars”
+Bundling data with the functionality that operate on that data, or the restricting of direct access to some components.
+Did we had encapsulation before the OO Languages ? Yes, in C we had perfect encapsulation. The header file contained the signatures of functions and data structures, on the other hand the a .c file would implement them.
+The users of our functions and data structures would include  the header file never knowing anything about our implementation. Code exemple:
+login.h
+void request_access(SecureKey key);
+
+login.c
+void request_acces…]]></summary>
+        <author>
+            <name>jptkao</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[从键盘中解放，重新拥抱平板 —— iPad mini 6 体验分享]]></title>
+        <id>https://sspai.com/post/70613</id>
+        <link href="https://sspai.com/post/70613"/>
+        <updated>2022-01-01T07:00:07.000Z</updated>
+        <summary type="html"><![CDATA[Matrix 首页推荐
+Matrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。
+文章代表作者个人观点，少数派仅对标题和排版略作修改。
+
+在使用 iPad mini 6 的这一个多月时间里，我发现我又重新拥有了平板电脑。
+是的，我太久没有使用过「平板电脑」了，这几年我一直都在使用 iPad Pro 12.9 搭配妙控键盘，它几乎一年 365 天没有离开键盘的时刻，我早已习惯地把 iPad Pro 当成一台触屏电脑使用，而不是可以捧在手中的平板。
+iPad mini 6 在我眼里就像是久而未见的老朋友，陌生却又熟悉，让我找回了平板最初的形态，很好地融入了生活。
+
+一.让我们聊聊尺寸
+这台小设备有许多可以聊的地方，我想先从「小」这个话题开始讲起，
+尺寸是一切
+iPad mini 6 的核心在于尺寸，8.3 吋是无压力手持的黄金尺寸。
+很多人形容 iPad mini 6 是一个「便携」设备，我觉得这个形容词不够准确。如果我每天都背双肩包上班，那我觉得 12.9 吋的 iPad Pro 很便携；如果我每天只背小挎包出街，那 iPad mini 6 称得上便携。如果我想每天无负担出门，那只有手机还算便携。所以你看，每个人的通勤场景都不一样，对于便携的理解是不一致的。
+
+我的定义是：这一个非常适合手持的阅读设备。无论是两只手捧着，还是单手举着，我都能找回以前看小开本书籍的感觉。
+我可以在通勤时拿起它看书，可以在如厕时捧着它消遣，也可以在睡觉前回顾信息。大尺寸 iPad 并不适合在这些场景下使用。
+
+只要我出门带包的情况下，我都会背着 iPad mini 6，因为我总能在包里找一个合适的位置放置它。一定程度上，携带一台 iPad mini 6 并不会给我带来太大负担，这也是 iP…]]></summary>
+        <author>
+            <name>一只兔子先生</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[日历集 – 包括万年历、国色日历在内的 8 合 1 日历应用[iPad/iPhone]]]></title>
+        <id>https://www.appinn.com/?p=40995</id>
+        <link href="https://www.appinn.com/riliji-for-ios/"/>
+        <updated>2022-01-01T03:15:24.000Z</updated>
+        <summary type="html"><![CDATA[日历集是一款集合了万年历、古诗词日历、国色日历（中国传统颜色）、进度日历、文字日历、月相日历、浮世绘日历、名画日历的日历应用，其中部分日历需要付费解锁。@Appinn 来自发现频道，@zjwen100]]></summary>
+        <author>
+            <name>青小蛙</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[少数派 2021 年度应用出炉，这些 App 是我们的「年度之选」]]></title>
+        <id>https://sspai.com/post/70710</id>
+        <link href="https://sspai.com/post/70710"/>
+        <updated>2022-01-01T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[又一年过去了，你的 2021 年过得怎么样？步入新的一年，少数派依然想与你对刚刚过去的 2021 年来一次回顾。今年依旧是特殊的一年，疫情的阴霾仍然没有散去，效率工作、个人健康、安全隐私等话题，仍然是许多人关心和关注的议题。
+从工具到服务、再到系统，少数派在过去的一年中崭露头角的多款 App 中，选出了 11 位「年度之选」。不管 2021 它们是否在你的主屏上留下了足迹，都希望新的一年，这些 App 能够帮你高效工作、品质生活。
+同时，我们还上线了 2021 年度盘点活动，除了年度应用盘点，我们还为你回顾了这一年里网站上最受大家欢迎的文章和专题，还带来了少数派编辑部和朋友们的年度好物推荐等。
+🎉 前往 2021 少数派年度盘点页面 >
+年度之选：跨平台服务
+Obsidian
+卡片笔记与双向链接的「出圈」，让笔记软件领域再开启新的篇章，而 Obsidian 无疑是一众同类软件中的佼佼者。尽管只有两位核心开发者，Obsidian 凭借其开放的架构设计、活跃的社区氛围，以及高频的功能更新与体验优化，逐渐成为了大众尝试卡片笔记与双向链接的最佳选择。
+关联阅读
+
+Obsidian 优质中文内容合集
+从卡片链接到大脑联想，基于 Obsidian 的卡片盒笔记法实践
+ 
+VS Code
+发布于 6 年前的 VS Code 能成为 2021 年的年度之选，正表明用户对它的喜爱不减。VS Code 在 2021 年持续进化，不断拓展自己的应用场景。
+尽管在实际开发工作流中的作用还有待验证，但 VS Code for the Web 可以让用户开始畅想属于未来的文本编辑器；不断优化与 Jupyter 结合使用体验（交互窗口，支持调试 Jupyter notebook 代码），让数据科学工作者更加得心应手；对于写作者最重要的 Markdown 方面，也实现了对 KaTeX 的支持，优化了图片…]]></summary>
+        <author>
+            <name>少数派编辑部</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Lessons Learned from Advent of Code (in JavaScript and Haskell)]]></title>
         <id>https://dev.to/sethcalebweeks/lessons-learned-from-aoc-2021-2b3b</id>
@@ -38375,2032 +38675,6 @@ The post A day with the future of connected PCs appeared first on xda-developers
         <link href="https://hn.buzzing.cc/hn/29412806"/>
         <updated>2021-12-03T12:54:25.000Z</updated>
         <summary type="html"><![CDATA[阿维可以做任何事情]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[搅乱多国的“奥密克戎”威胁有多大？]]></title>
-        <id>http://www.zhihu.com/question/502402042/answer/2254569535</id>
-        <link href="http://www.zhihu.com/question/502402042/answer/2254569535?utm_campaign=rss&amp;utm_medium=rss&amp;utm_source=rss&amp;utm_content=title"/>
-        <updated>2021-12-03T12:34:08.000Z</updated>
-        <summary type="html"><![CDATA[奥密克戎一发现就得到世卫组织的最高待遇，其中最关键的原因就是奥密克戎变种与原始的新冠病毒相比变异的地方特别特别多。
-奥密克戎至少有32处变异，而之前的德尔塔不过是2个变异。
-但这里我需要澄清一个广泛存在的误解，所谓的32处变异指的是通过基因测序，但这并不代表奥密克戎的刺突蛋白的外形的变化一定就会大过德尔塔。
-
-来源：知乎 www.zhihu.com
-科学声音
-点击下载
-48 个回答，查看全部。
-世卫组织称新冠 Delta 变异株正在成为全球主要流行的变异株，将带来哪些影响？
-如何看待南非新冠病毒 501.v2 型可能出现免疫逃脱的现象？这会导致疫苗或者现有的免疫疗法失效吗？]]></summary>
-        <author>
-            <name>科学声音</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Boox Mira Pro - 25.3" E Ink显示器]]></title>
-        <id>https://hn.buzzing.cc/hn/29428285</id>
-        <link href="https://hn.buzzing.cc/hn/29428285"/>
-        <updated>2021-12-03T12:26:57.000Z</updated>
-        <summary type="html"><![CDATA[Boox Mira Pro - 25.3" E Ink显示器]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[You can now finally play Pokémon Go on your iPhone at a higher frame rate]]></title>
-        <id>https://www.xda-developers.com/?p=566093</id>
-        <link href="https://www.xda-developers.com/you-can-now-finally-play-pokemon-go-on-your-iphone-at-a-higher-frame-rate/"/>
-        <updated>2021-12-03T11:34:38.000Z</updated>
-        <summary type="html"><![CDATA[You can now finally enjoy Pokémon Go at buttery smooth 60fps/120fps on your iPhone. The game has just received a new update on iOS which adds a new option to unlock a higher frame rate on supported iPhones. After installing the latest update (via The Verge), you can find the new “Native Refresh Rate” within
-The post You can now finally play Pokémon Go on your iPhone at a higher frame rate appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Kishan Vyas</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Samsung Galaxy Note 20 series gets third One UI 4 beta with several bug fixes]]></title>
-        <id>https://www.xda-developers.com/?p=566051</id>
-        <link href="https://www.xda-developers.com/samsung-galaxy-note-20-series-third-one-ui-4-beta/"/>
-        <updated>2021-12-03T11:17:16.000Z</updated>
-        <summary type="html"><![CDATA[Samsung is hard at work releasing One UI 4 beta builds based on Android 12 to a bunch of its devices. Over the last few weeks, the company has released two One UI 4 beta builds to the Galaxy Note 20 series. The first beta update included all the new features introduced in Android 12,
-The post Samsung Galaxy Note 20 series gets third One UI 4 beta with several bug fixes appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Pranob Mehrotra</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[埋藏在基础设施法案中的强制性后门杀毒开关是为你的汽车准备的]]></title>
-        <id>https://hn.buzzing.cc/hn/29427068</id>
-        <link href="https://hn.buzzing.cc/hn/29427068"/>
-        <updated>2021-12-03T10:58:24.000Z</updated>
-        <summary type="html"><![CDATA[埋藏在基础设施法案中的强制性后门杀毒开关是为你的汽车准备的]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[奥利维亚-罗德里戈 - 叛徒（来自奥斯汀城市界限的现场）。]]></title>
-        <id>https://youtube.buzzing.cc/youtube/SmOrhq_m0ZI</id>
-        <link href="https://youtube.buzzing.cc/youtube/SmOrhq_m0ZI"/>
-        <updated>2021-12-03T10:35:48.000Z</updated>
-        <summary type="html"><![CDATA[Olivia Rodrigo performs “traitor” Live at Austin City Limits
-
-Olivia Rodrigo’s Austin City Limits performance premieres December 4 on PBS. Watch live or stream the episode at https://pbs.org/austincitylimits
- 
-Listen to “traitor” on SOUR, out now:
-http://oliviarodrigo.lnk.to/SOUR     
- 
-Follow Olivia Rodrigo:
-Instagram: https://instagram.com/oliviarodrigo      
-Twitter: https://twitter.com/OliviaRodrigo     
-Facebook: https://www.facebook.com/OliviaRodrigoOfficial
-YouTube: https://youtube.com/oliviarodrigomusic      
-TikTok: https://tiktok.com/@livbedumb       
-Store: https://smarturl.it/oliviarodrigoshop    
- 
-Lyrics:
-Brown guilty eyes and
-Little white lies yeah
-I played dumb but I always knew
-That you talked to her maybe
-Did even worse
-I kept quiet so I could keep you
-And ain’t it funny
-…]]></summary>
-        <author>
-            <name>Youtube 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Android TV’s discovery-focused UI is now rolling out to more TVs in more regions]]></title>
-        <id>https://www.xda-developers.com/?p=565967</id>
-        <link href="https://www.xda-developers.com/android-tv-discovery-focused-ui-rolling-out-more-tv-more-regions/"/>
-        <updated>2021-12-03T10:15:24.000Z</updated>
-        <summary type="html"><![CDATA[Google released a major UI update for the Android TV interface in February this year. The new interface resembled the Google TV UI and laid emphasis on helping users discover new content on the platform. However, it featured fewer tabs on the home screen. Google rolled out another update for this new discovery-focused UI in
-The post Android TV’s discovery-focused UI is now rolling out to more TVs in more regions appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Pranob Mehrotra</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[呼风唤雨于指尖拳心：巧用辅助功能单手操作 Apple Watch]]></title>
-        <id>https://sspai.com/post/69134</id>
-        <link href="https://sspai.com/post/69134"/>
-        <updated>2021-12-03T10:02:48.000Z</updated>
-        <summary type="html"><![CDATA[注：本文原文为少数派会员专属文章，为配合我们的国际残疾人日专题，临时开放免费阅读。
-
-引言
-作为一部手腕上的计算设备，Apple Watch 能给我们的生活带来很多方便。遗憾的是，Apple Watch 本身的操作逻辑还有很大的改进空间。
-例如，从初代 Apple Watch 一路用上来，我始终困惑于为什么操作手表始终需要用到两只手：你必须把佩戴手表的手腕端正抬着，用另一只手在表盘的方寸江山上指点。
-即使是在双手空闲的情况下，这么操作也会显得窘迫，更不要提撑雨伞、提重物这种一只手被占据的情况了。（用鼻子或者下巴点过屏幕的读者请举手。）
-这个问题终于在今年得到了解决——尽管是通过一种「曲线救国」的方式。在 watchOS 8 中，Apple 将多种新的「辅助功能」带到了 Apple Watch 上，其中就包括 iOS 用户熟悉的「辅助触控」。
-在辅助触控的帮助下，用户可以用捏指、握拳等手势代替触控操作；换言之，用一只手就可以使用 Apple Watch 上的所有功能。
-先来看看 Apple 的官方介绍视频：
- 
-是不是颇有些「呼风唤雨」的魔术色彩？
-诚然，「辅助功能」的设计初衷是方便那些有肢体不便的用户，但这并不意味着普通用户不能从中受益；从某种意义上说，「一只手被占用」本身就是一种肢体不便的情形。本文中，我们就将介绍如何利用这一新增的辅助触控功能，单手掌控 Apple Watch。
-注： 请注意「辅助触控」功能仅适用于 2020 年起推出的型号，即 Apple Watch Series 6 或以上，以及 Apple Watch SE。
-开启手势和基本操作
-启用 Apple Watch 的辅助触控功能其实只需简单几步。在 iPhone 上打开 Watch App，进入「辅助功能」>「辅助触控」，然后打开「辅助触控」开关。接着，点击「手势」，再打开其中的「手势」开关。
-
-现在抬…]]></summary>
-        <author>
-            <name>PlatyHsu</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[谷歌 "20%时间 "志愿者一直在努力改写矩阵]]></title>
-        <id>https://hn.buzzing.cc/hn/29425650</id>
-        <link href="https://hn.buzzing.cc/hn/29425650"/>
-        <updated>2021-12-03T09:54:31.000Z</updated>
-        <summary type="html"><![CDATA[谷歌 "20%时间 "志愿者一直在努力改写矩阵]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[微软Windows RCE漏洞让攻击者完全控制]]></title>
-        <id>https://hn.buzzing.cc/hn/29422434</id>
-        <link href="https://hn.buzzing.cc/hn/29422434"/>
-        <updated>2021-12-03T09:43:17.000Z</updated>
-        <summary type="html"><![CDATA[微软Windows RCE漏洞让攻击者完全控制]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[本周看什么丨最近值得一看的 10 部作品]]></title>
-        <id>https://sspai.com/post/70282</id>
-        <link href="https://sspai.com/post/70282"/>
-        <updated>2021-12-03T09:42:40.000Z</updated>
-        <summary type="html"><![CDATA[☕️ TL;DR
-
-近期佳作推荐：[动画] JOJO 的奇妙冒险 石之海、[电影] 最后的决斗、[国产剧] 爱很美味、[综艺] 血战、[电影] 童一个世界、[台剧] 华灯初上、[纪录片] 征服 14 座高峰、[韩剧] 某一天、[台剧] 第一次遇见花香的那刻、[纪录片] 是这样的，法官
-几则精彩预告：文牧野执导、易烊千玺主演电影《奇迹》首爆预告、《星球大战》系列衍生剧集《波巴·费特之书》12 月 29 日上线 Disney+、《欲望都市》重启版限定剧《就这样...》12 月 9 日上线 HBO Max、电影《大怪兽的善后处理》公布预告，2022 年 2 月上映
-几则影视资讯：动画电影《名侦探柯南 万圣节的新娘》2022 年 4 月上映、华纳正式宣布《魔力麦克》拍第三部、HBO 宣布将推出权游衍生剧《邓肯与伊戈》
-
-👀 N 部作品推荐
-根据读者反馈，如果推荐语涉及剧透（对故事核心、暗线、伏笔、结局等关键要素的透露），我们会在对应作品的标题前增加 🔦 的 Emoji。
-如有其他建议也欢迎在评论区提出，感谢大家对「看什么」栏目的喜爱和支持。
-🔦 [动画] JOJO 的奇妙冒险 石之海
-
-关键词：漫画改 / 剧情 / 战斗 / 热血
-片长：24 分钟（单集）× 具体集数未知
-观看渠道：Netflix / 哔哩哔哩（存在严重影响观看体验的大幅删改）；豆瓣链接
-读原作：哔哩哔哩漫画 / 东立出版社
-
-我要从这片石之海获得自由！
-
-@SHY：时间是 2011 年，舞台是美国佛罗里达州。空条徐伦在与恋人兜风途中遭遇交通事故，而后被律师与法官联手陷害，因谋杀罪获刑 15 年，押入别名「水族馆」的州立绿海豚街重警备监狱。束手无策之际，徐伦却从父亲空条承太郎托付的护身符中觉醒了不可思议的力量。然而，将家族秘辛和盘托出的承太郎，在营救徐伦越狱时因失去主角光环遭到敌人暗算，沦为失去替身和记忆的植…]]></summary>
-        <author>
-            <name>少数派编辑部</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Signal’s new monetization feature makes it easier to make donations]]></title>
-        <id>https://www.xda-developers.com/?p=565953</id>
-        <link href="https://www.xda-developers.com/signal-sustainer-program/"/>
-        <updated>2021-12-03T09:21:33.000Z</updated>
-        <summary type="html"><![CDATA[Signal, the privacy-focused instant messaging app that shot to popularity after WhatsApp’s controversial privacy policy change, is adding a new monetization feature into its app. Unlike its rival instant messaging services, Signal runs entirely on donations and this new feature will make it easier for users to make monetary contributions and support and sustain the
-The post Signal’s new monetization feature makes it easier to make donations appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Kishan Vyas</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[看来，即使是世界上最富有的人也会有一个中年危机]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/pics/comments/r7i6c9/looks_like_even_the_richest_man_in_the_world_can/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/pics/comments/r7i6c9/looks_like_even_the_richest_man_in_the_world_can/"/>
-        <updated>2021-12-03T09:17:18.000Z</updated>
-        <summary type="html"><![CDATA[看来，即使是世界上最富有的人也会有一个中年危机]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[漂亮的妈妈和另一个妈妈]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/KidsAreFuckingStupid/comments/r77cys/the_pretty_mom_and_the_other_mom/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/KidsAreFuckingStupid/comments/r77cys/the_pretty_mom_and_the_other_mom/"/>
-        <updated>2021-12-03T09:17:18.000Z</updated>
-        <summary type="html"><![CDATA[漂亮的妈妈和另一个妈妈]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[巨大的搜索引擎]]></title>
-        <id>https://hn.buzzing.cc/hn/29421898</id>
-        <link href="https://hn.buzzing.cc/hn/29421898"/>
-        <updated>2021-12-03T09:16:54.000Z</updated>
-        <summary type="html"><![CDATA[巨大的搜索引擎]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[我将WinUI改写为WPF]]></title>
-        <id>https://hn.buzzing.cc/hn/29423102</id>
-        <link href="https://hn.buzzing.cc/hn/29423102"/>
-        <updated>2021-12-03T08:49:22.000Z</updated>
-        <summary type="html"><![CDATA[我将WinUI改写为WPF]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[Update: Wider rollout] Google is finally letting users initiate Android TV app installs from their phones]]></title>
-        <id>https://www.xda-developers.com/?p=555061</id>
-        <link href="https://www.xda-developers.com/install-play-store-apps-android-tv-right-from-phone/"/>
-        <updated>2021-12-03T08:44:35.000Z</updated>
-        <summary type="html"><![CDATA[At I/O 2021 in May, Google announced a new feature to make finding and installing apps on Wear OS devices much easier. The feature added a drop-down menu to the Install button on the Google Play Store, giving users the option to install an app on their Wear OS smartwatch right from their phone. The
-The post [Update: Wider rollout] Google is finally letting users initiate Android TV app installs from their phones appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Pranob Mehrotra</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Android 记账应用那么多，我为什么对小星记账一见钟情？]]></title>
-        <id>https://sspai.com/post/70275</id>
-        <link href="https://sspai.com/post/70275"/>
-        <updated>2021-12-03T08:30:00.000Z</updated>
-        <summary type="html"><![CDATA[作为不记账就会焦虑星人，我在使用 iPhone 时曾大力赞扬 MOZE 这款记账应用，不是因为 MOZE 有多强大或多完善，而是它具备了许多特别人性化、符合实际情况的功能细节。
-在回归 Android 平台后，我一直在「吹毛求疵」般寻找记账应用。可无论是大厂知名产品还是无数来自独立开发者之手的优秀作品，使用起来它们都有地方会让我皱一下眉头——并非是不够强大（有的产品甚至可以用于资产管理），而是缺少了那些贴心细节。所以当我体验到小星记账时，那些细节让我产生了一种「平行时空里的我开发了这样一款记账应用」的错觉。
-基础功能常规但足够好用
-从应用本身来看，小星记账仍然是常规的记账工具，它将账目概览、账户信息、统计报表这三个核心功能分成三个页面展示，低频和进阶功能则收纳进了侧滑菜单，整个记账流程足够顺畅，账目类型、金额分类以及附属信息在一个屏幕中就可以完成，结合规范的 UI 设计，日常使用使用起来逻辑感很强。
-不过有几个地方也能看出来小星记账有它自己的想法，比如它没有像大多数同类产品一样提供日历视图，以及它将四则运算收纳进了数字键盘的二级菜单中，记账老手们应该会比较不习惯，不过体验一段时间之后我发现，这两个功能似乎并没有我想象中那样常用。
-
-记账是为了了解自己的消费习惯，所以定期查阅详单和报表非常重要。小星记账在报表方面的逻辑也非常明确：概览和图表一目了然、详单可以通过筛选查看。小星记账也提供了收支差额（可以看作结余）的计算，另外每类图表下方还会「一言以蔽之」简要概括这段时间的财务状况。详单部分也比较完善，对应大类、小类、账户或者不同时间段的结余详单都能查看到。最近一次更新后小星记账在搜索功能中新增了「高级筛选」，用户可以通过自定义时间、金额、分类、账户等等信息筛选对应账单，完全可以满足我们统计和对账的使用需求了。
-
-除了常规功能，小星记账支持报销管理和周期事件，更新后也在记账页面提…]]></summary>
-        <author>
-            <name>Noah_Choi</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[RISC-V Int. 批准了15个新规格，为RISC-V设计提供了新的可能性]]></title>
-        <id>https://hn.buzzing.cc/hn/29417885</id>
-        <link href="https://hn.buzzing.cc/hn/29417885"/>
-        <updated>2021-12-03T08:23:31.000Z</updated>
-        <summary type="html"><![CDATA[RISC-V Int. 批准了15个新规格，为RISC-V设计提供了新的可能性]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[RSS+ & RSSHelper – 显示当前网站的 RSS  地址[2个油猴脚本]]]></title>
-        <id>https://www.appinn.com/?p=40682</id>
-        <link href="https://www.appinn.com/rss-plus-and-rsshelper/"/>
-        <updated>2021-12-03T08:07:15.000Z</updated>
-        <summary type="html"><![CDATA[RSS+ 和 RSSHelper，是两款可以在当前网页右下角显示 RSS 地址的油猴脚本，以图标、圆形数字角标的方式显示，不干扰正常浏览，即点即用。@Appinn 感谢 @gsdg 和 @914066]]></summary>
-        <author>
-            <name>青小蛙</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[他们在肯塔基州安装了一个环形路。它并不顺利]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/facepalm/comments/r7ddt0/they_installed_a_roundabout_in_kentucky_it_did/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/facepalm/comments/r7ddt0/they_installed_a_roundabout_in_kentucky_it_did/"/>
-        <updated>2021-12-03T07:29:55.000Z</updated>
-        <summary type="html"><![CDATA[他们在肯塔基州安装了一个环形路。它并不顺利]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[如何看待中国游戏公司在海外成立工作室，招募海外AAA人才？]]></title>
-        <id>http://www.zhihu.com/question/503276127/answer/2254331660</id>
-        <link href="http://www.zhihu.com/question/503276127/answer/2254331660?utm_campaign=rss&amp;utm_medium=rss&amp;utm_source=rss&amp;utm_content=title"/>
-        <updated>2021-12-03T07:17:13.000Z</updated>
-        <summary type="html"><![CDATA[（本文由天美同事帮忙翻译，相关配图在发布于个人主页和 Artstation 时已获育碧授权。）
-大家好，我是坐标蒙特利尔的 Gilles Beloeil，是一名有近 20 年经验的美术从业者，如今在天美 F1 工作室担任概念美术专家。
-
-蒙特利尔一直以 AAA 研发领域的人才密集和产业成熟而知名。过去数年，许多世界各地的游戏开发商来到蒙特利尔，在这里研发游戏，其中也有越来越多中国游戏公司的的身影。
-对身处蒙特利尔的从业者来说，中国游戏公司在规模和投入上的准备程度是以往很少见到的。这种投入往往意味着可以打造极好的团队，而好的团队是好作品必不可少的。中国研发工作室的到来无疑为蒙特利尔注入了新鲜血液。
-
-就我个人而言，决定加入天美是个天时地利人和的故事。此前，我在育碧蒙特利尔待了近 15 年的时间，有意尝试新的项目和环境。
-天美蒙特利尔工作室的 AAA 项目恰好是我感兴趣的类型。深入交流后，我发现双方志趣相投，也都希望打造一部好作品。综合考虑下，我来到了天美蒙特利尔，这里的一切正处于启动阶段，充满挑战与活力，让我感觉非常兴奋。
-目前，我负责为游戏设计概念图，探索游戏的美术风格和基调。由于仍在项目早期，所以人数尚少的概念美术团队可以充分发挥想象力，互相交流与克服困难，相互尊重专业，氛围非常融洽，我觉得这是个很好的开始。
-
-AAA 游戏的概念设计
-大家也许会好奇，AAA 游戏的概念美术设计过程是怎样的。其实并没有想象中复杂，我仅分享自己的一些个人经验。
-概念美术设计的第一步，往往是从美术总监处，得到关于设计需求的简报。我会根据这份简报，去尽可能提出问题，理解对方想要的画面。在这之后，我会去寻找各种参考素材，主要用于以下层面：设计，氛围，配色，光影，构图，灵感 …… 进而我要决定用什么路径方法。
-
-而路径方法的选择，取决于概念图的类型和目的：是用来展现氛围，还是具体设计？是游戏故事中的…]]></summary>
-        <author>
-            <name>Gilles Beloeil</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[OnePlus Games receives a minor visual refresh, preps a “Smart resolution” feature]]></title>
-        <id>https://www.xda-developers.com/?p=565853</id>
-        <link href="https://www.xda-developers.com/oneplus-games-update-visual-refresh-smart-resolution-feature-coming/"/>
-        <updated>2021-12-03T07:03:00.000Z</updated>
-        <summary type="html"><![CDATA[The OnePlus Games app, previously OnePlus Game Space, is a one-stop shop for all your gaming needs. It comes pre-installed on most OnePlus phones and lets you access your game library, check out your game stats, enable optimizations and enhancements, and more from one centralized space. The app last received a major redesign last year,
-The post OnePlus Games receives a minor visual refresh, preps a “Smart resolution” feature appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Kishan Vyas</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[伦敦的外科医生对加州的香蕉进行远程手术]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/r7gz05/surgeon_in_london_performs_remote_operation_on/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/r7gz05/surgeon_in_london_performs_remote_operation_on/"/>
-        <updated>2021-12-03T07:01:37.000Z</updated>
-        <summary type="html"><![CDATA[伦敦的外科医生对加州的香蕉进行远程手术]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[如何评价《大王饶命》正式动画化？]]></title>
-        <id>http://www.zhihu.com/question/502749269/answer/2254502395</id>
-        <link href="http://www.zhihu.com/question/502749269/answer/2254502395?utm_campaign=rss&amp;utm_medium=rss&amp;utm_source=rss&amp;utm_content=title"/>
-        <updated>2021-12-03T05:56:34.000Z</updated>
-        <summary type="html"><![CDATA[大家好，又是我。
-我是《大王饶命》的动画监制askask，感谢大家对这部动画的关注，希望大家喜欢这部动画。
-关于原作
- 我在知乎也混了挺长时间了，感觉知乎的网文用户还是挺多的，所以第一个问题就先来说说原作吧。
-其实我并不能算是一个传统的网文读者，除了很多年前追过一阵子紫川这种极早期作品之外，中间一直都没有关注过网文作品，《大王饶命》这本书老实讲也是因为工作相关才开始看的，但没想到一看就喜欢上了。那已经是几年前的事了，其实因为这本书我才去下载了起点app，然后这几年开始越来越关注新的网文作品，也追更了很多新的好书。
-熟悉我的朋友可能知道我是一个极老极老的“老二次元”了（可能是很多人阿姨辈的那种），这本书给我的第一印象就是非常适合“二次元”方向的改编，不管是人设、剧情、战斗体系的设定等各方面。熟悉国漫的朋友应该知道我们现在的动画改编还是有很大比例是倾向于使用3D制作的，但《大王饶命》这本书我是看完之后马上确定了使用2D制作，并且很快敲定了现在的动画制作团队，简直是太合适了。
-在制作中原作的改编其实有两个比较大的难点：一是搞笑，二是战斗戏。关于搞笑的问题上其实我们纠结了很久，可能更多的原著粉在看书的时候脑补出来吕树的怼人和比较贱的态度是会比较直接和更有冲击力的那种，但从人物的长线塑造和剧情角度考虑，我们还是处理成了现在的风格，前期PV放出的时候也注意到有些原作粉感到有些意外，但相信慢慢看下去，大家会逐渐理解我们的用意！而战斗戏份则是我们这一季重点打造的部分，尤其在后半进入遗迹之后，会有大量非常大规模的精彩战斗场面，为了这部分的制作导演已经跳楼几次被人民群众抬了回来（不是），最终还是让原作者替他摔断了腿（纯属胡扯）。没有啦，不过头发掉了大概有几车应该是真的。
-
-关于OPED
-这两天提前放出的OPED相信大家已经看到了，也掀起了不小的反响。
-大火鸟在上一次和我们合作的《一人之下第三季…]]></summary>
-        <author>
-            <name>ASK ASK</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[你进入游戏行业多久了？对未来有什么期待？]]></title>
-        <id>http://www.zhihu.com/question/503270815/answer/2254452710</id>
-        <link href="http://www.zhihu.com/question/503270815/answer/2254452710?utm_campaign=rss&amp;utm_medium=rss&amp;utm_source=rss&amp;utm_content=title"/>
-        <updated>2021-12-03T05:56:08.000Z</updated>
-        <summary type="html"><![CDATA[从07年初到现在，已经快15年了。还在这一行。就从我自身的经历说说行业这些年的变化，以及未来的趋势吧。
-第一份工作是在完美世界，进去的时候公司还叫完美时空。那时候全国比较知名的游戏公司是盛大、九城之类的代理公司，大型的游戏开发公司还是很少的。完美时空那时也只有200多人，上线的项目只有完美世界、武林外传、诛仙。直到我入职半年后公司才在纳斯达克上市，随后迅速扩张起来。
-那个时期可以说是3D端游刚刚在国内兴起，只要有技术能做出画面不错而且网络稳定的3dMMO，市场基本是随意收割的状态。完美当时采用的快速复制新产品抢占市场的方式，虽然被诟病为完美七胞胎，但确实是最适合当时国内游戏市场的打法。
-
-当然，好日子没几年就开始变了，入局MMO的公司越来越多，一次重要的转变是史玉柱的征途登场，买卖数值的模式越来越成为网游的收入重心，自动寻路等小白的操作和刺激玩家PK也渐渐取代了探索大世界的游戏内容为主的设计方式。
-
-另一个则是完美的老对头畅游的崛起，天龙八部的活动玩法和卖宝石等也迅速成为跟风对象。这两家京城游戏公司互相挖角也堪称一乐，双方的核心骨干基本都对着换了N次家。
-这个阶段大概持续了五六年左右，在业内的体验基本是MMO游戏的画面技术在提高，但设计整体在下沉化和氪金化。对那些怀着初衷要做暴雪式游戏的国内开发者来说，大多会感觉日子越来越不好过和行业世风日下。然而谁能想到再过几年真的暴雪也要黄了呢。
-但是随着竞争的激烈，因为大家都做了活动、卖数值，pk，社交这些容易模仿的下沉设计，这些设计也很快失去了异军突起的效果，于是大厂也出现了一股下血本提高品质的浪潮，不再急于推出项目，而是反复打磨游戏内的画面、战斗、副本等内容，以靠近国际水平。这时候有代表的作品比如腾讯的斗战神，西山居的剑3，网易的天下，完美的笑傲江湖等。如果按这个趋势发展下去，中国的端游确实是有可能走向国际3A的道路。
-可惜这个趋…]]></summary>
-        <author>
-            <name>韩之昱</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[游戏策划的从业门槛是否正变得越来越高？]]></title>
-        <id>http://www.zhihu.com/question/503354364/answer/2254409706</id>
-        <link href="http://www.zhihu.com/question/503354364/answer/2254409706?utm_campaign=rss&amp;utm_medium=rss&amp;utm_source=rss&amp;utm_content=title"/>
-        <updated>2021-12-03T05:52:06.000Z</updated>
-        <summary type="html"><![CDATA[先说结论吧，在射击游戏的领域，游戏策划的门槛确实在逐渐提高。工作以来我一直在从事射击游戏的设计，快8年了，我自己也是FPS游戏的重度爱好者，能把爱好与工作完美的结合也是一件幸运和开心的事儿。那么就从射击游戏领域的游戏策划工作，聊一聊这些年面临的一些挑战吧。
-
-射击游戏一直是游戏的一大分支，从TGA近5年的获奖者来看，包含射击元素的游戏几乎占据了半壁江山，‘枪车球’的地位显而易见。并且每隔1-2年，都会有突破性的射击游戏产品诞生，TitanFall、OW、PUBG、2077等无一不给玩家带来相当程度的震撼。而像COD/BF这类超高质量的年货产品，更是牢牢占据领先的位置。射击品类可谓百花齐放。
- 
-
-
-而作为一个非常成熟的品类，在全球研发领域，射击游戏已经有了近30年的研发历史，无论在设计理论、技术成熟度和生产管线上，都已经有非常惊人的积累。国内的射击游戏研发真正爆发，也大约是从BR（BattleRoyal）时代开始，越来越多的工作室投入了射击品类的研发，而国内最早一批自研射击游戏的项目，可以追溯到2008年大连金山团队的反恐行动，到逆战迎来了更大的影响力，紧接而来的手游时代将竞争战场转向了移动端。
-
-短短不到10年，国内的厂商通过努力似乎来到了弯道超车的拐点，但在移动端的超越更多是来自“端转手”的红利，随着越来越多的端游在移动端移植完毕，真正考验作游戏设计者的创造能力/设计能力的时代慢慢来临，能够脱颖而出的产品越来越难，尤其是在全球化市场的竞争中，新的手游甚至要以端游的品质或体验为目标，才能在这个时代获得成功。
-
-天美J3工作室在移动端做出了《使命召唤手游》《穿越火线手游》这样的射击游戏作品，在玩家和市场上都取得了不错的成绩，一群热爱射击游戏的人一直在这个方向积累深耕。
-随着射击品类的快速进化和走向全球游戏市场，我们也在布局新的产品方向，在开放世界、写实大战场和风格化游戏等领…]]></summary>
-        <author>
-            <name>董海阳Zero</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Pybaobab - 决策树的可视化技术的Python实现]]></title>
-        <id>https://hn.buzzing.cc/hn/29417135</id>
-        <link href="https://hn.buzzing.cc/hn/29417135"/>
-        <updated>2021-12-03T05:38:52.000Z</updated>
-        <summary type="html"><![CDATA[Pybaobab - 决策树的可视化技术的Python实现]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[如何看待中国游戏公司在海外成立工作室，招募海外AAA人才？]]></title>
-        <id>http://www.zhihu.com/question/503276127/answer/2254216836</id>
-        <link href="http://www.zhihu.com/question/503276127/answer/2254216836?utm_campaign=rss&amp;utm_medium=rss&amp;utm_source=rss&amp;utm_content=title"/>
-        <updated>2021-12-03T05:17:20.000Z</updated>
-        <summary type="html"><![CDATA[大家好，我是 Steven Rhee，韩国人，是一名坐标北美的灯光美术（lighting artist）。个人曾在 EA 和动视等公司任职，积累了 15 年的游戏光照设计经验，目前加入天美洛杉矶工作室，从事 AAA 项目研发。我不懂中文，所以请天美同事帮忙翻译，给大家分享一些我的看法。
-大家也许已经注意到，中国游戏厂商正在全球各地成立工作室，招募当地的 AAA 人才。在我看来，这本质是研发全球化的必然趋势，而且西方早就开始了。
-过去十年，游戏已成为当前科技领域最关键，最具创新能力的行业之一，为全球近 20 亿人提供了极具沉浸感与惊艳感的娱乐形式，也让“娱乐产业（entertainment industry）”这个词不再限于指代好莱坞和电影。
-随之而来的是，游戏研发的规模在不断扩大，尤其是对 AAA 级游戏而言，幕后成员往往超过上千人，需要多个工作室合作开发，才可能将游戏在规划期限内完成。早在许多年前，Rockstar Games、EA、育碧等厂商就已经开始在本土之外布局研发团队了。
-
-经过长时间的积累，不管是从中国市场还是全球市场看，中国游戏研发进展迅速。面向全球市场，中国游戏行业自然向着 AAA 游戏研发领域扩张。游戏公司也在通过全球化研发布局的方式扩充人才池，提升团队多元化程度，来建立自己的竞争优势。
-在个人层面，我认为研发人才加入新的开发环境是件很正常的事情，特别是受到资源、能力、决心的吸引。比如我，在跟天美接触中没有过多犹豫，我觉得加入天美会极大地帮助我个人的成长。
-全球协作研发和团队多元化
-我曾在 EA 和动视工作，负责多款游戏的光照效果，包括《星球大战：前线》以及《麦登橄榄球》，《战地》和《极品飞车》等系列。
-其中的 13 年里，我一直都是《麦登橄榄球》系列的灯光主美，因此与 EA 上海工作室有过多年的协作研发（Co-dev）经验。
-
-协作研发有不少优势，比如说…]]></summary>
-        <author>
-            <name>Steven Rhee</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[如何看待工业化对游戏产业发展的重要意义?]]></title>
-        <id>http://www.zhihu.com/question/503275336/answer/2254284384</id>
-        <link href="http://www.zhihu.com/question/503275336/answer/2254284384?utm_campaign=rss&amp;utm_medium=rss&amp;utm_source=rss&amp;utm_content=title"/>
-        <updated>2021-12-03T05:16:46.000Z</updated>
-        <summary type="html"><![CDATA[我从事游戏行业17年，先后任职于上海育碧和蒙特利尔育碧, 从PS2，Xbox时代的游戏开始，经历了PS3，PS4，Xbox 360，Xbox one等的变迁，也参与过多部当时所谓的“次世代”作品，比如《幽灵行动》，《I am alive》，《细胞分裂》和《孤岛惊魂》系列等等。做过关卡，VFX/shader TA，技术美术总监，期间负责过多个项目重大对外节点（如E3，gamescom等）的攻坚。
-接触天美J3还是2019年的时候，当时美术总监 @BrianTao 和技术总监 @Shadow 找到我，给我展示了目前在研的几款游戏，我为手机上能呈现如此的品质而惊叹！
-要知道出国前我对手游的印象还停留在《愤怒的小鸟》和《部落冲突》这类休闲品类上。之后我们又谈到了工作室今后的规划和发展，“大世界”，“工业化”是提到最多的关键词，这也正是与我过往的经验和想做的事不谋而合！
-由于疫情关系，我最终在2020年底回国，有幸加入了天美J3大家庭，目前担任技术美术负责人。
-说到工业化，虽然我经历过多款AAA“次世代”，但是从游戏的内容量品质，团队人员配置和流程上讲，它们同样有着天壤之别。行业也已经在过去这段时间里经历了几次重大革新。  记得早些年，在主机上（如PS2，Xbox）开发第一人称射击游戏，团队规模往往在百人以内，开发周期在1年左右。开发流程上也非常线性和简洁明了，比如游戏分为多个关卡，每个关卡由各自的关卡设计和关卡美术负责，在技术美术总监的指导下，效果得到艺术总监认可，性能在规定范围内就可以了。
-至于里面的细节，只要不是违背大的技术框架，可以由该关卡的负责人按照自己的习惯就行，而资产（source data/raw data）管理，流程管理等也并没有规定得那么死板。在开发中遇到的问题，可以通过非常灵活的定向研发的方法逐一攻破。
-
-之后来到Xbox 360时代，随着游戏制作体量的变大，团…]]></summary>
-        <author>
-            <name>Richard</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[如何看待工业化对游戏产业发展的重要意义?]]></title>
-        <id>http://www.zhihu.com/question/503275336/answer/2254478307</id>
-        <link href="http://www.zhihu.com/question/503275336/answer/2254478307?utm_campaign=rss&amp;utm_medium=rss&amp;utm_source=rss&amp;utm_content=title"/>
-        <updated>2021-12-03T05:16:32.000Z</updated>
-        <summary type="html"><![CDATA[很多年前我在知乎给过一个论述，今天再稍微做一次复读机：
-工业水平决定爆款上限
-受众特质决定爆款呈现
-囿于写这个论述的时候，我对于游戏产业的工业化其实理解是有一定偏差的。所以今天我对这个论述稍微修正一下：
-在创意行业中，工业水准决定表达形态。
-当然还是要说明，我自己并非游戏开发，本职工作现在更接近发行；很多涉及开发本身的事情我的回答会显得班门弄斧，请大家多多指正。
--
-如何定义工业化？
-我的定义就是在项目上建立高效的自动化系统，拥有成熟的开发技术栈，优化的开发工具，并利用成熟的系统高效地生产游戏内容。
-工业化其实更多是生产方式的区别，重点在于效率的提升，而并非是产出的游戏本身的大区别。——在这个意义上来说，某些大作其实并非工业化生产，或者最多是纺织工人用上了珍妮纺织机，但离真正意义上的工业化生产，还有很多距离。
-回归到问题“如何看待工业化对游戏产业发展的重要意义？“本身，在这个回答中，我想谈三个事情。
-其一，是产能的提升。
-产能其实是两个维度，第一是能做什么，第二是同样的时间能做多少。
-实际上是存在一个反-工业化的叙事的。那就是“小作坊”生产。而大家都在鼓吹工业化生产，或者至少认为工业化生产是一个好东西的时候，我们面临的现状是大多数的游戏开发都以小作坊式生产为主。
-这个倒不是说大家条件艰苦云云，而是说开发模式还是以堆人力，怼资源的模式为主。
-在这种情况下，决定产品上下限的，都是团队整体每一个人的能力。在这种情况下来说，人员的稳定性和能力水平就非常致命。
-同时，团队能力的下限也在非常大的程度上决定了你能做什么样的东西。
-而开发的工业化在一定程度上是能够解决这个问题的，成熟的开发管线可以让内容的生产效率更高，也让内容生产更不依赖于某个/些特定人才。
-这点在于游戏产品质量需求提升明显的今天，是尤其重要的：尽快完成开发工业化的厂商/工作室，一方面能够更快的追随市场的喜好，生产表现力更强的游戏产品；另一方面则显然能够有更大的腾挪空间，对市场的适应性更高。
-其二，是管理模式的改变。
-工业化的生产，势必引领更工业化的管理模式。这点在逻辑上还是很明显的。产能提升其实能够显著避免micro-management。项目管理的重要性也越来越多。
-倒不是说某一种或者某几种项目管理模式就一定行。但以往关键角色一言堂的情况，在更高的产能下，其实会有一定的衰减——因为在高产能的环境下，leverage资源比对项目直接bb要更紧迫。
-囿于我本身并非管理者，所以我对于这点的诠释并不全面。但我能够清楚且欣喜地看到，工业化能够带来的是更先进，也更能发挥每个人能力的管理模式。
-其三，则是成本以及行业场景的远期变化。
-有群友回答说，未来的游戏行业会有明显的两极分化现象。这点我非常同意——但是原因跟工业化的生产方式其实关系不大。更多的原因在于需求的变化：即使是在F2P领域，玩家亦需要表现力更佳的“大”游戏。
-诚然，对于多数厂商来说，将自己舒适区内的开发模式更替为更工业化的开发模式，确实会有段时间的成本上升以及转型的阵痛。但长期来看，工业化的产能是能够在一定程度上降低成本的。
-君不见EA，Ubi等等海外开发商，即使在海外他们的人力成本已经跟国内持平甚至更低了。但单纯从开发能力来看，国内还没有哪家公司敢说他们比海外厂商强的。
-更近一步讲。即使对于个人/独立开发者来说，工业化体系下催生的产品，也会对他们的开发提供便利——君不见，Unity的普及让我们其实前所未有地容易开始做游戏了（当然真不真的去做又是另一回事）。
-这最终导致的是游戏开发的商业电影-艺术电影分化，不肯找到自己真实地位的厂家被大浪淘沙。
-
-来源：知乎 www.zhihu.com
-知乎用户（登录查看详情）
-点击下载
-17 个回答，查看全部。
-原神2.0版本稻妻版本，能否说明米哈游原神制作组已经完成团队磨合，进入游戏工业化高产能状态?
-你为什么会觉得做独立游戏和做工业化游戏差不多呢?]]></summary>
-        <author>
-            <name>知乎用户（登录查看详情）</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[在全球化研发的浪潮面前，中国游戏从业者该如何做好准备？]]></title>
-        <id>http://www.zhihu.com/question/503271992/answer/2254440450</id>
-        <link href="http://www.zhihu.com/question/503271992/answer/2254440450?utm_campaign=rss&amp;utm_medium=rss&amp;utm_source=rss&amp;utm_content=title"/>
-        <updated>2021-12-03T05:16:18.000Z</updated>
-        <summary type="html"><![CDATA[感谢邀请。确实，从目前趋势看，国内各大游戏厂商和工作室都陆续在海外布局，在海外设立自研工作室并大力引进海外高端人才。海外工作室的建立，可以一定程度上进行产能扩容，减轻游戏内容的研发压力。
-更重要的是，海外一线专家的加入，可以带来老牌游戏开发商在高品质内容生产上的方案和经验，对于快速完成生产管线改造和核心研发能力升级上有比较大的参考意义。对于国内游戏厂商来说，加入全球化研发无疑是加速团队成长与探索AAA生产模式的机遇。
-但挑战总是与机遇并存，全球化研发的趋势对游戏研发团队和个人，都会带来更多新的要求。不论是国内的游戏工作室，还是海外游戏厂商，目标都是建立“快速量产AAA品质游戏内容”的能力。只是各自的原始积累不一样，努力的方向也不尽相同。
-对于我们来说，想在游戏研发全球化的大趋下守住优势并脱颖而出，不论在技术与工具的积累和探索上，还是在生产模式的摸索和迭代上，都应该以兼容并包的心态，吸收国内外的先进经验，快速建立自己的产研优势。
-我们工作室在技术革新和前沿探索上一直比较积极，我自己也经历过数次大规模的技术升级和管线改造，目前也在负责新项目的技术迭代的规划和落地，可以分享一下我们在这个过程中的想法和经验，希望能提供给大家作个参考。
-准备一：搭建工业化管线 — 流程标准化与生产自动化
-随着玩家对高品质游戏内容量的需求增长，未来精品游戏项目的研发必然需要超大规模团队的承载和支撑，也呈现着跨地区多团队配合的趋势。这也正是全球化研发的本质。
-跟单一团队生产不一样，跨地区多团队的联合研发，对于生产流程标准化的要求会非常高，以避免低效沟通带来生产成本的极大代价。
-海外厂商在多地团队联合研发上有其经验和优势，值得我们借鉴和学习。 同时在游戏内容生产方面，自动化生成代替纯人工生产也将成为大趋势，通过程序化的方式可以大幅减少在内容生产上的人力成本，并提高整个项目的研发效率，以适应市场的快速变化。…]]></summary>
-        <author>
-            <name>布里斯班的猫</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[为了更包容和便利的未来——国际残疾人日专题]]></title>
-        <id>https://sspai.com/post/70270</id>
-        <link href="https://sspai.com/post/70270"/>
-        <updated>2021-12-03T05:12:55.000Z</updated>
-        <summary type="html"><![CDATA[按：今天是 12 月 3 日，国际残疾人日。根据世界银行的数据，全球约 10 亿人患有某种形式的残疾。
-诚如联合国在今年纪念活动的说明中指出，技术和创新越发促进着可访问性（accessibility）和可用性（usability）；辅助设备和辅助技术对于残疾人士发挥着关键的「促进平等」作用。其实，早在 2006 年，联合国通过、中国参与签署的《残疾人权利公约》就承认，获得辅助技术是一项人权。
-在少数派，我们关注技术，也强调包容。在内容出品中，我们重视推广无障碍设计、介绍辅助工具的选题；与读者互动时，我们常常感动于那些虽然视听、行动不便，但依靠坚忍与才智活出别样精彩的故事。
-值此残疾人日之际，我们特将网站中无障碍相关的优秀内容以合集形式呈现，希望为促进无障碍方面助人和自助的意识和技能，略尽绵薄之力。
-
-一、无障碍技术综合讨论
-怎样打造互联网「无障碍」
-
-互联网为很多人打开了认识世界的另一扇门。对于残障人士来说，互联网不仅仅是丰富生活的方式，更是为了让他（她）们全身心投入到工作、生活、沟通、聆听、创作的桥梁。那么，为了实现这种互联网「无障碍」，厂商、社会组织都做了哪些努力？信息无障碍应当满足哪些标准？不同操作系统的无障碍设计和教程资源应该去哪查阅？本文一一为你解读。
-阅读全文：打造互联网「无障碍」，互联网厂商做了这些努力（作者：Eric_hong）
-我们为什么要关注包容性设计
-
-包容性设计（inclusive design）是「一种能够充分利用并实现人类多样性的方法」。它包含无障碍设计，但又高于无障碍设计。世卫组织指出，残疾是一种个人属性，不仅仅只是健康问题，而还是一个环境问题，反映了身体特征与社会特征之间的相互作用。因此，每个人都可能在某种场景下成为「残疾人」。这篇译文从设计角度出发，探讨了包容性设计的实践方式，但对于任何用户都可以产生启发和触动。
-阅读全文：译文 | 我们为…]]></summary>
-        <author>
-            <name>PlatyHsu</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Kmonad，一个自由改变键盘布局的软件]]></title>
-        <id>https://www.appinn.com/?p=40677</id>
-        <link href="https://www.appinn.com/kmonad/"/>
-        <updated>2021-12-03T04:32:47.000Z</updated>
-        <summary type="html"><![CDATA[kmonad 是一款开源的高级键盘管理工具，支持 Windows、macOS 和 Linux，可以让你无限地定制和扩展几乎所有键盘功能，包括改建、配置组合键等功能。@Appinn 感谢 @z77572]]></summary>
-        <author>
-            <name>青小蛙</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[德国宣布在全国范围内对未接种疫苗的人进行封锁]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/news/comments/r78cwx/germany_announces_nationwide_lockdown_for_the/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/news/comments/r78cwx/germany_announces_nationwide_lockdown_for_the/"/>
-        <updated>2021-12-03T04:13:17.000Z</updated>
-        <summary type="html"><![CDATA[德国宣布在全国范围内对未接种疫苗的人进行封锁]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[展示HN: 表情符号的规模]]></title>
-        <id>https://hn.buzzing.cc/hn/29425735</id>
-        <link href="https://hn.buzzing.cc/hn/29425735"/>
-        <updated>2021-12-03T04:12:50.000Z</updated>
-        <summary type="html"><![CDATA[展示HN: 表情符号的规模]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[瞎玩菌的游戏周报：XSS 黑五最畅销、索尼 PS 手柄夹手机新专利等]]></title>
-        <id>https://sspai.com/post/70255</id>
-        <link href="https://sspai.com/post/70255"/>
-        <updated>2021-12-03T03:24:40.000Z</updated>
-        <summary type="html"><![CDATA[Matrix 首页推荐
-Matrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。
-文章代表作者个人观点，少数派仅对标题和排版略作修改。
-
-2021.12.3 尽量每周五更新
-《瞎玩菌的游戏周报》是我对游戏领域的观察和点评。具有以下特点：
-
-宁缺毋滥，为读者带来价值
-主观，但基于事实和数据
-有新鲜感，但时效性不强
-享受游戏，但反对沉迷游戏
-提升品位，但反对鄙视链
-
-游戏本身就是一种互动娱乐，我非常鼓励读者通过评论互动参与进来，而不是仅仅当个「读」者。
-享乐
-推荐好的游戏音乐，希望更多人因为音乐对游戏产生兴趣（我就是）。
-Exo One Original Soundtrack - Rhys Lindsay
-
-这是来自新游戏《Exo One》的原声音乐，这款游戏现已发售，且首日加入 XGP。你可以在 Bandcamp | Spotify | YouTube Music | Steam 收听整张专辑（共 21 首曲目），或者按名称在你喜欢的音乐服务中搜索。为方便你在文章页面内直接播放，下面是这首音乐的在线播放版本：
- 
-要闻
-游戏领域过去一周最重要的话题性事件，以及我的主观看法。
-被迫畅销：Xbox Series S 成「黑五」期间最畅销游戏主机
-
-相比一货难求的 PS5、Xbox Series X 和 Switch OLED 机型，长得像一个音箱的 Xbox Series S 作为唯一可以不加价买到的游戏主机，毫无悬念地成为了今年「黑色星期五」促销期间的最畅销游戏主机。
-Xbox Series S 常年售价在 300 美元（国内售价约 2200 元），而且随时可以买到。由于近期 Xbox Game Pass 3 年 158 元的「特价」漏洞（目前已跌至 130 元左右），…]]></summary>
-        <author>
-            <name>瞎玩菌</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Tvix: 我们正在重写尼克斯]]></title>
-        <id>https://hn.buzzing.cc/hn/29412971</id>
-        <link href="https://hn.buzzing.cc/hn/29412971"/>
-        <updated>2021-12-03T03:07:13.000Z</updated>
-        <summary type="html"><![CDATA[Tvix: 我们正在重写尼克斯]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[游戏美术越来越卷，从业者如何提升竞争力？]]></title>
-        <id>http://www.zhihu.com/question/503278678/answer/2254168830</id>
-        <link href="http://www.zhihu.com/question/503278678/answer/2254168830?utm_campaign=rss&amp;utm_medium=rss&amp;utm_source=rss&amp;utm_content=title"/>
-        <updated>2021-12-03T02:51:27.000Z</updated>
-        <summary type="html"><![CDATA[大家好，我是腾讯的游戏美术设计专家Inkling，年轻人都喜欢叫我in老师。我从剑3开始职业生涯，在腾讯J3参与过逆战和穿越火线手游，可以说，国内原创科幻游戏的星星之火正是由我们这拨人点燃的。
-我从小喜欢画画，更是个资深游戏玩家，从04年走出校园踏足游戏圈到现在，见证过国产游戏辉煌的成功，投身过行业中激烈竞争的战场......既然说到游戏美术的竞争力，我有些简单的想法想和大家分享。
-
-这个问题之前，我觉得先需要回答下什么是游戏美术，什么是美术。如果一说到游戏美术，大家只能想到引擎和渲染的话，那这个行业未免有点无趣。
-美术是一个大概念，游戏美术和其它几千年传统行业的美术，没什么本质区别。
-做的都是让 —— 大到世界，小到物件 —— 的外表“好看”的工作。
-让东西变好看的能力，每个人都有吗？如果我有这样的能力，怎么才能比别人更强？
-我觉得可以从三个方面去说：执行，判断，观点。美术的竞争力就是提高自己这三个方面的优势，游戏美术也一样。
-
-执行
-执行就是实际美术工作的熟练度，执行力就是控制的能力。控制的能力就是让元素出现在它们该出现的地方，能够让色彩不乱，线条漂亮。疏密关系、明暗对比，这些已经是老生常谈，真正落到实处的时候，就是经验和练习量。
-基础的战斗力，没有太多大道理可讲，选择行业需求的方向，尽最大可能花费时间锻炼。不管是软件技能还是绘画技法。所谓一万小时定律，说的就是机械的能力，而机械的能力就是靠机械的时间积累获得的。
-实际执行能力的竞争，无非就是投入时间的赛跑，同样资质的人，多投入时间的一方一定会胜利。资质不好怎么办？那就投入更多时间试试。同时也要注意，专注在一件事上是对的，但是也需要留意其它领域，一专多能 vs. 一专，永远有优势。
-
-判断
-判断就是能知道什么是好看的，什么是不好看的，有审美。这个已经超越了美术范畴，审美和一个人的知识储备和阅读量密切相关。
-我们不可能期待…]]></summary>
-        <author>
-            <name>Inkling</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[安泰蓝十字会违规通知[pdf]]]></title>
-        <id>https://hn.buzzing.cc/hn/29418433</id>
-        <link href="https://hn.buzzing.cc/hn/29418433"/>
-        <updated>2021-12-03T02:46:32.000Z</updated>
-        <summary type="html"><![CDATA[安泰蓝十字会违规通知[pdf]]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[如何看待中国游戏公司在海外成立工作室，招募海外AAA人才？]]></title>
-        <id>http://www.zhihu.com/question/503276127/answer/2254155498</id>
-        <link href="http://www.zhihu.com/question/503276127/answer/2254155498?utm_campaign=rss&amp;utm_medium=rss&amp;utm_source=rss&amp;utm_content=title"/>
-        <updated>2021-12-03T02:43:14.000Z</updated>
-        <summary type="html"><![CDATA[我是在传统老牌的西方 AAA 公司工作 15 年后加入中国游戏研发工作室的，我结合自己的观察和体验，尝试回答这个问题。
-近几年，中国的游戏公司有很大的变化，逐渐向重视原创、追求更高品质、打造具有中国文化特色的游戏产品转变。最近经常听到这样一句话“中国游戏玩家的口味越来越高，国内的游戏公司也开始卷起来了。”
-“卷”这个词用在这样的语境下，我认为不是件坏事，它代表着随着市场需求的变化，中国的游戏厂商对于品质的重视程度变得越来越高。
-国外的 AAA 厂商已经这样“卷”了十几年了：游戏的画面越来越接近影视化，内容丰富度和体量越来越高，争相进行技术上的探索和突破，同时创新的作品也层出不穷。我很高兴看到中国的游戏公司也以这样的方式“卷”起来，让中国的游戏产品在各个维度上与国外的 AAA 大作掰一掰手腕。
-
-我相信这样的转变，对于许多海内外从事 AAA 游戏开发的人才选择加入中国游戏公司，是一个至关重要的前提。 
-AAA 游戏的开发是一个先慢后快的过程。一个非常有经验的 AAA 游戏团队，也可能要花费 1-2 年的时间来完成概念和创意方面的探索，2-3 年左右的时间进行试生产（Pre-production），这里主要包括设计方面的验证和技术管线的搭建。
-所以，经常会出现游戏开发了 4、5 年，看起来却只有一个垂直切片以及一大堆白盒和临时资源的情况。但接下来会是神奇的一段时间，通常 80% 的游戏内容，都是在最后的 1 年到 1 年半时间里完成的。
-这种“神奇”有一个前提条件，就是整个团队可以沉下心来，完成前面提到的创意设计和试生产环节，否则最后的全面投产（Full-production）将会是一场灾难。
-每一部 AAA 游戏的开发都是一趟漫长的旅程，耐心，信心和决心三样缺一不可。而我已经在国内的游戏厂商中看到了这三样东西，所以我回来了。
-从 EA 到天美
-我在 2006 年加入 EA 上…]]></summary>
-        <author>
-            <name>Alan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[你进入游戏行业多久了？对未来有什么期待？]]></title>
-        <id>http://www.zhihu.com/question/503270815/answer/2254210412</id>
-        <link href="http://www.zhihu.com/question/503270815/answer/2254210412?utm_campaign=rss&amp;utm_medium=rss&amp;utm_source=rss&amp;utm_content=title"/>
-        <updated>2021-12-03T02:40:59.000Z</updated>
-        <summary type="html"><![CDATA[游戏是我从一而“衷”的选择。我大学毕业就一头扎进了游戏行业，从业至今，由一名普通设计师成长为主美，大约16年多点。这份选择从最初到如今或是将来，都不会变，所以在这里，我用了衷于初心的“衷”而不是终点的“终”。
-游戏和动漫是我的两大爱好。与很多80后一样，在成长的时光里，我都是在棚里看别人玩《魂斗罗》，或是在街机厅打《街霸》中度过的。记得在作文作业里，我还写过一篇从8位机开始一路到当时的SFC 32位机的游戏主机发展史这种让老师一脸懵逼的作文。所以，我自认为一直是一名游戏爱好者。但可能喜好更偏向于动作，冒险且有剧情的游戏类型。
-与此同时，我对动漫的热情也从未减少。因此在读书阶段，自己的休息和考试奖励基本都是被允许画漫画和游戏里的角色。后来，我有了让中国动漫形象席卷全球的愿望。这个愿望或许有些太大了，但自己始终在期盼这一天的到来。
-大学毕业答辩时，我的论文题目是《如何推广中国卡通形象》。当时我感觉国内在这块的整个产业链还不完善，想要从动漫衍生出高认知，高流传度的形象或是文化理念会比较缓慢。所以在论文里，我是把游戏这样一个商业化相对成熟的产品放在第一推广位，然后再同步动漫周边等。这也是为什么我会直接选择游戏行业而不是其他行业。
-入行后，我在第一家公司做的是手游，现在自己仍在开发手机游戏，感觉有些事情可能确实讲究点机缘。加入腾讯之前，除手游外，我还参与过PC和各类掌机，以及08到11年期间所有主流主机游戏的开发。但始终我都在做欧美向的设计。
-直到进了腾讯，我才真正开始参与到国人自己的游戏研发中去。然而在刚开始的时候，我参与的项目在美术风格上依旧是偏欧美的。
-直到2012年末，我在天美开始参与第一批风格全民化的微信游戏开发。从那时起，通过一个又一个的项目，我才逐渐将自己的美术风格往亚洲审美上靠。
-最终在17年8月，我们研发的国风战争策略手游——《乱世王者》顺利上线了。（以下简称《乱世…]]></summary>
-        <author>
-            <name>Qian</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[淘宝网上的网友在现实生活中玩水母游戏! *新的挑战*。]]></title>
-        <id>https://youtube.buzzing.cc/youtube/KEjC5BsCQ_E</id>
-        <link href="https://youtube.buzzing.cc/youtube/KEjC5BsCQ_E"/>
-        <updated>2021-12-03T01:44:08.000Z</updated>
-        <summary type="html"><![CDATA[21 YouTubers play Squid Game in real life with never before seen challenges to win $1000 for a subscriber. Watch until the end - it might be you! SUBSCRIBE & turn on POST NOTIFICATIONS for insane giveaways every week! 100K likes for a rematch!!
-
-3 DAYS LEFT TO SIGN UP FOR MY NEW PHOTOGRAPHY COURSE AND 1 PERSON WILL WIN A $1000 CAMERA (use code JORDAN99 for $50 off) : https://nasacademy.com/jordanmatter
-
-Buy Lizzie's new Team RAR merch: https://www.teamrar.com/
-
-THANKS FOR LETTING US USE YOUR MANSION, TEAM RAR!! 
-
-Buy Salish's OMGZ merch and she'll use the $ for Christmas gifts for underprivileged kids (really) https://shopjordanmatter.com/
-
-Subscribe to my son Hudson Matter: https://www.youtube.com/c/HudsonMatter?sub_confirmation=1
-
-See last week's video: The Truth About Their Relationship…]]></summary>
-        <author>
-            <name>Youtube 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[面对住房危机，洛杉矶选民支持在独栋别墅区建造复式住宅]]></title>
-        <id>https://hn.buzzing.cc/hn/29418423</id>
-        <link href="https://hn.buzzing.cc/hn/29418423"/>
-        <updated>2021-12-03T01:43:34.000Z</updated>
-        <summary type="html"><![CDATA[面对住房危机，洛杉矶选民支持在独栋别墅区建造复式住宅]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[派早报：App Store Awards 获奖者揭晓、索尼 Airpeak S1 无人机开启预定等]]></title>
-        <id>https://sspai.com/post/70272</id>
-        <link href="https://sspai.com/post/70272"/>
-        <updated>2021-12-03T00:58:50.000Z</updated>
-        <summary type="html"><![CDATA[你可能错过的新鲜事
-App Store Awards 获奖者揭晓
-12 月 2 日，App Store 公布了 2021 年 App Store Awards 获奖者名单。其中，年度游戏为《英雄联盟手游》，年度 iPhone App 为《Toca Life: World》，年度 iPad App 为《LumaFusion》，年度 Mac App 为《Craft》，年度 Apple Watch App 为《CARROT Weather》。来源
-
-索尼 Airpeak S1 无人机开启预定
-12 月 2 日，索尼正式开启了 Airpeak S1 无人机的预定，该无人机配备独立云台，搭载 3D 视觉系统，可以完成避障或空间感知，最大飞行速度可达 90km/h，无负载续航为 22 分钟，售价 9000 美元，将于 12 月 24 日开始发货。来源
-
-中邮 Hi nova 9 系列正式发布
-12 月 2 日，中邮举办新品发布会，正式发布了 Hi nova 9 系列手机，该设备采用了 6.72 英寸 120Hz 超曲 OLED 显示屏，搭载了骁龙 778G 5G 处理器，配备了 5000 万像素的超感光镜头、一颗 800 万像素超广角镜头、一颗 200 万像素景深镜头，内置超高导热石墨烯以及双 VC 液冷散热，本次共提供 8/128GB 和 8/256GB 两个版本，拥有幻境森林、梦幻罗兰、梦幻星河和亮黑色四种配色方案，售价 2999 元起。来源
-
-OneDrive 新增在线照片滤镜功能
-12 月 1 日，微软宣布 OneDrive 继支持线上颜色调整、裁剪功能、旋转和翻转后，OneDrive 即将支持滤镜以及标记等新功能。来源
-
-高德地图上线停车雷达功能
-高德地图于 12 月 2 日上线「停车雷达」新功能，通过超过百万的全国停车场数据，可为用户智能推荐目的地附近的多个及首选停车场，用…]]></summary>
-        <author>
-            <name>少数派编辑部</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[科技爱好者周刊（第 186 期）：低纬度，高海拔，气候优势]]></title>
-        <id>http://www.ruanyifeng.com/blog/2021/12/weekly-issue-186.html</id>
-        <link href="http://www.ruanyifeng.com/blog/2021/12/weekly-issue-186.html"/>
-        <updated>2021-12-03T00:40:23.000Z</updated>
-        <summary type="html"><![CDATA[这里记录每周值得分享的科技内容，周五发布。
-本杂志开源（GitHub: ruanyf/weekly），欢迎提交 issue，投稿或推荐科技内容。
-周刊讨论区的帖子《谁在招人？》，提供大量程序员就业信息，欢迎访问或发布工作/实习岗位。
-封面图
-
-西班牙巴塞罗那的圣家堂大教堂，本周在尖塔顶端安装了一颗12角玻璃星，将在新年前夕被聚光灯照亮。这座建筑是联合国世界遗产，已经造了130多年，估计还要好几年才能土建完工。（via）
-本周话题：低纬度，高海拔，气候优势
-上个月，我在四川旅行。离开成都以后，一路向南，就到了攀枝花。
-那是一个很奇特的地方，气候与周边截然不同。
-
-从成都开始，就一直是阴天，但到了攀枝花，天天都是阳光明媚的大晴天。而且很暖和，当时已经是10月底，北方都下雪了，那里白天的最高气温却还在25度以上，可以穿短袖。
-总之，天气好得让人怀疑。我就去查了，果然是有原因的，大家看下面这幅中国年平均气温图。
-
-上图中，颜色越深，年平均气温越高（越热）。注意看，在成都和昆明之间，箭头所指的地方，有一块异常的深色区域，气温显著高于周边，比南边的昆明还要高，接近西双版纳的颜色（温度）了。那就是攀枝花。
-为什么这里气温高？
-书上的解释是，主要原因是独特的地理环境，这里是 "低纬度、高海拔的盆地"。纬度低，接近北回归线，所以冬天不冷；平均海拔1000米以上，所以夏天不热；
-更主要的是，这里地处金沙江河谷，周围都是高山，空气不易流动，风比较小，所以比同纬度的地方更热。而且，高山挡住了水汽，所以很少下雨，晴天多。
-
-（图片说明：旅馆窗口望出去的景象，城市被高山包围。）
-这样的地理条件，使得冬天的气候非常舒服，暖洋洋的。当地政府现在把康养产业（养老）当作主要产业，一到冬天，大量外地人口涌入过冬。
-仔细想一下，国内符合"低纬度、高海拔"这个条件的城市，没有几个的，可能都在云贵高原。这些城市都非常…]]></summary>
-        <author>
-            <name>阮一峰的网络日志</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Apex传奇。攻略集》活动预告片]]></title>
-        <id>https://youtube.buzzing.cc/youtube/A_GUBourLrc</id>
-        <link href="https://youtube.buzzing.cc/youtube/A_GUBourLrc"/>
-        <updated>2021-12-03T00:39:01.000Z</updated>
-        <summary type="html"><![CDATA[It’s a pirate’s life for our Legends in the Raiders Collection Event! 
-
-http://x.ea.com/71586
-
-Winter Express returns to Apex Legends: three squads board the World’s Edge train, but only one will conquer it!  Collect 24 event-limited cosmetics and turn your squad into a pirate crew. Get all 24, and you’ll unlock something shocking: Wattson’s Heirloom, the “Energy Reader”!
-
-Apex Legends™ is a free-to-play hero shooter  game where legendary characters battle for glory, fame, and fortune on the fringes of the Frontier. Play for free now on PlayStation® 4, PlayStation 5, Xbox One, Xbox Series X|S, Nintendo Switch, and PC via Origin and Steam.
-
-Learn more about Apex Legends: Escape: http://x.ea.com/70896
- 
-Check out our YouTube channel: http://x.ea.com/56710.
-Follow us on Twitter: https://twitter.com/playapex.
-Follow us on Instagram: https://www.instagram.com/playapex/.
-
-#ApexLegendsRaiders #RaidersEvent  #ApexEscape #ApexLegends]]></summary>
-        <author>
-            <name>Youtube 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Juice WRLD & Justin Bieber - Wandered To LA（官方预告片）]]></title>
-        <id>https://youtube.buzzing.cc/youtube/59bdqLHHqLo</id>
-        <link href="https://youtube.buzzing.cc/youtube/59bdqLHHqLo"/>
-        <updated>2021-12-03T00:39:01.000Z</updated>
-        <summary type="html"><![CDATA[Pre-Save "Wandered To LA": https://JuiceWrld.lnk.to/WanderedToLAPreSave
-
-Get your tickets to juice wrld day at Juicewrldday.com
-Check out more Juice WRLD here:
-Merch- 999club.com
-Soundcloud - https://soundcloud.com/uiceheidd
-Twitter - https://twitter.com/JuiceWorlddd
-Insta - https://www.instagram.com/juicewrld999/
-
-Follow Justin: 
-https://www.justinbiebermusic.com   
-https://facebook.com/JustinBieber 
-https://twitter.com/justinbieber 
-https://instagram.com/justinbieber 
-https://www.tiktok.com/@justinbieber 
-
-#JuiceWRLD #JustinBieber #WanderedToLA #999]]></summary>
-        <author>
-            <name>Youtube 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[化妆品的力量：阿黛尔! | 妆容的力量：阿黛尔！｜NikkieTutorials]]></title>
-        <id>https://youtube.buzzing.cc/youtube/qY3L1bPNBAw</id>
-        <link href="https://youtube.buzzing.cc/youtube/qY3L1bPNBAw"/>
-        <updated>2021-12-03T00:39:01.000Z</updated>
-        <summary type="html"><![CDATA[Please welcome to my channel: ADELE!!! - CAN SOMEONE PINCH ME?? I’ve been dreaming of working with Adele for YEARS now, so when she asked me to do her makeup to celebrate the launch of her new album “30”, I knew I had to come up with something special. I show the Power of Makeup on this icon, and she even tries my own brand Nimya(!!)… enjoy, and don’t forget to thumbs up and subscribe!
-
-🧡 YOU CAN ORDER NIMYA PRODUCTS HERE: https://www.nimya.com/ 💙
-
-🔥 PREVIOUS VIDEO • Ariana Grande, don’t hate me... R.E.M Beauty Review! → https://youtu.be/-qn_cTHvfOY 🔥
-
-Make sure you subscribe to my channel and hit the notification bell, so you don’t miss any of my new videos → http://bit.ly/SubscribeNikkieTutorials
-
-••••••••••••••••••••••••••••••••••••••••­­­•••••••••••
-
-▷ LET’S BECOME FRIENDS!!
-TWITTER ‣ http://www.twitter.com/Nikkietutorials
-INSTAGRAM ‣ https://instagram.com/nikkietutorials/
-TIKTOK ‣ https://www.tiktok.com/@nikkietutorials
-SNAPCHAT ‣ https://www.snapchat.com/add/nikkietutorials
-
-▷ OTHER VIDEOS YOU CAN CHECK OUT…….
-
-👑 THE POWER OF MAKEUP ► http://bit.ly/2scYIrE
-
-💻 Doing LADY GAGA’S Makeup! ► http://bit.ly/2M0moIy
-
-🎀 Doing My FIANCE’S Makeup! ► https://bit.ly/3bsgHxu
-
-🍑 POWER OF MAKEUP: KIM KARDASHIAN WEST ► http://bit.ly/2iz1RhT
-
-••••••••••••••••••••••••••••••••••••••••­­­•••••••••••
-
-Disclaimer ‣ This video is NOT sponsored. All thoughts mentioned are my own. No affiliate links are used. Honesty is key on my channel. Thank you for always supporting me!
-
-Visuals & sound by Studio Beng Beng: https://www.instagram.com/studiobengbeng/
-Editing by Roy Etman: https://bit.ly/3HvqRhw
-
-ʕ•ᴥ•ʔ, I love you.]]></summary>
-        <author>
-            <name>Youtube 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[为圣诞节做装饰 2021！Vlogmas第一天]]></title>
-        <id>https://youtube.buzzing.cc/youtube/iAmiUfnU9OU</id>
-        <link href="https://youtube.buzzing.cc/youtube/iAmiUfnU9OU"/>
-        <updated>2021-12-03T00:39:01.000Z</updated>
-        <summary type="html"><![CDATA[its that time of the yearrrr vlogmas 2021 is here. today ash and i are decorating the house for christmas! who's excited for vlogmas?! xo -alisha marie
-Parallel Apparel: https://www.parallelapparel.com
-BUY MY MERCH:: https://shopalishamarie.com/
-Twitter: @AlishaMarie + Instagram: @Alisha
-TikTok: @alishamarie 
-Snapchat: LidaLu11
-Chloe's Instagram: @itsmechloemae
-
-Subscribe to my Main Channel:::
-http://www.youtube.com/user/macbby11
-
-alishamarie@mattermediagroup.com]]></summary>
-        <author>
-            <name>Youtube 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[在神的事情之前]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/pics/comments/r7a3ax/before_the_god_thing/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/pics/comments/r7a3ax/before_the_god_thing/"/>
-        <updated>2021-12-03T00:38:57.000Z</updated>
-        <summary type="html"><![CDATA[在神的事情之前]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[新的SiFive RISC-V内核P650，IPC提高40%。]]></title>
-        <id>https://hn.buzzing.cc/hn/29418153</id>
-        <link href="https://hn.buzzing.cc/hn/29418153"/>
-        <updated>2021-12-03T00:38:24.000Z</updated>
-        <summary type="html"><![CDATA[新的SiFive RISC-V内核P650，IPC提高40%。]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Vivaldi浏览器5.0]]></title>
-        <id>https://hn.buzzing.cc/hn/29417201</id>
-        <link href="https://hn.buzzing.cc/hn/29417201"/>
-        <updated>2021-12-03T00:38:24.000Z</updated>
-        <summary type="html"><![CDATA[Vivaldi浏览器5.0]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[什么会在2022年进入公共领域？]]></title>
-        <id>https://hn.buzzing.cc/hn/29420667</id>
-        <link href="https://hn.buzzing.cc/hn/29420667"/>
-        <updated>2021-12-02T23:41:55.000Z</updated>
-        <summary type="html"><![CDATA[什么会在2022年进入公共领域？]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[刘思敏边吃辣妹子边吃波霸|辣妹子]]></title>
-        <id>https://youtube.buzzing.cc/youtube/K1sPSpcpsVc</id>
-        <link href="https://youtube.buzzing.cc/youtube/K1sPSpcpsVc"/>
-        <updated>2021-12-02T23:32:46.000Z</updated>
-        <summary type="html"><![CDATA[Simu Liu is an actor who stars in 2021's highest-grossing box office film, Shang-Chi and the Legend of the Ten Rings, which you can currently find streaming on Disney+ and in stores on Blu-ray/DVD. You can also catch him on Kim’s Convenience on Netflix. But how is he with spicy food? Find out as the Marvel hero takes on the wings of death and discusses board games, Asian snacks, and the pros and cons of playing Spiderman at birthday parties.
-
-BUY HOT ONES TRUTH OR DAB THE GAME NOW: http://truthordabgame.com
-
-BUY HOT ONES HOT SAUCE NOW: http://bit.ly/HotOnesSaucesNEW
-
-HOT ONES MERCH AVAILABLE NOW: https://bit.ly/2AIS271
-
-SIGN UP FOR THE HOT ONES MONTHLY HOT SAUCE SUB BOX: https://bit.ly/2veY50P
-
-SIGN UP FOR THE FIRST WE FEAST NEWSLETTER: http://firstwefeast.com/signup
-
-Subscribe to First We Feast on YouTube: http://goo.gl/UxFzhK
-
-Check out more of First We Feast here:
-
-http://firstwefeast.com/
-
-https://twitter.com/firstwefeast
-
-https://www.facebook.com/FirstWeFeast
-
-http://instagram.com/firstwefeast
-
-First We Feast videos offer an iconoclastic view into the culinary world, taking you behind-the-scenes with some of the country’s best chefs and finding the unexpected places where food and pop culture intersect. #HotOnes #SimuLiu]]></summary>
-        <author>
-            <name>Youtube 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[顾客在打扫卫生时撞见工作人员在跳舞，被抓个正着]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/r7974m/customer_caught_walked_in_on_staff_dancing_while/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/r7974m/customer_caught_walked_in_on_staff_dancing_while/"/>
-        <updated>2021-12-02T23:32:44.000Z</updated>
-        <summary type="html"><![CDATA[顾客在打扫卫生时撞见工作人员在跳舞，被抓个正着]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The long-rumored Pixel Watch might finally arrive next year]]></title>
-        <id>https://www.xda-developers.com/?p=565823</id>
-        <link href="https://www.xda-developers.com/the-long-rumored-pixel-watch-might-finally-arrive-next-year/"/>
-        <updated>2021-12-02T23:23:17.000Z</updated>
-        <summary type="html"><![CDATA[Google has been developing its own Wear OS software platform since 2014, but in all that time, the company has never sold a Google-branded smartwatch with the software. There have been rumors of a smartwatch with the Pixel brand (or simply Google’s name) for years, and according to a new report from Business Insider, it
-The post The long-rumored Pixel Watch might finally arrive next year appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Corbin Davenport</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[美国联邦贸易委员会起诉阻止400亿美元的半导体芯片合并案]]></title>
-        <id>https://hn.buzzing.cc/hn/29422071</id>
-        <link href="https://hn.buzzing.cc/hn/29422071"/>
-        <updated>2021-12-02T23:18:59.000Z</updated>
-        <summary type="html"><![CDATA[美国联邦贸易委员会起诉阻止400亿美元的半导体芯片合并案]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Web3 - The Ultimate Guide to Create your own Cryptocurrency Token with Solidity]]></title>
-        <id>https://dev.to/costamatheus97/web3-the-ultimate-guide-to-create-your-own-cryptocurrency-token-with-solidity-ne9</id>
-        <link href="https://dev.to/costamatheus97/web3-the-ultimate-guide-to-create-your-own-cryptocurrency-token-with-solidity-ne9"/>
-        <updated>2021-12-02T23:08:23.000Z</updated>
-        <summary type="html"><![CDATA[Old or new to the crypto world, you have probably already met with some cryptocurrencies. But how about creating one? That's what we're going to do in this tutorial.
-First, what is ERC-20? Some kind of android? No! Besides the difficult name, it is just a protocol to define what basic structure, rules and functionalities your fungible token (like crypto currencies) must have to properly interact with the world. But good news! You don't have to write it from scratch, because OpenZeppelin already has a bunch of secure boilerplate smart contracts written and audited by the community developers, so you just have to import it in your code and extend your contract so it inherits the ERC-20 basic properties and methods.
-To properly interact with the world your token needs some basic rules, such a…]]></summary>
-        <author>
-            <name>Matheus Costa</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Steering your submarine with Elixir, Leex and Yecc (AoC'21, day 2)]]></title>
-        <id>https://dev.to/katafrakt/steering-your-submarine-with-elixir-leex-and-yecc-aoc21-day-2-d7j</id>
-        <link href="https://dev.to/katafrakt/steering-your-submarine-with-elixir-leex-and-yecc-aoc21-day-2-d7j"/>
-        <updated>2021-12-02T22:22:46.000Z</updated>
-        <summary type="html"><![CDATA[After solving a Advent of Code challenge by treating the input as a program last year, I wanted more this year. The opportunity came today and I decided to take it. Instead of Parlet and Ruby, though, I decided to use Elixir/Erlang tooling to get the job done.
-In the Day 2 this year you need to pilot your submarine. This is done by a series of commands, such as this:
-forward 5
-down 5
-forward 8
-up 3
-down 8
-forward 2
-
-We have a command, followed by a number - one pair per line. There are three commands:
-forward moves the submarine horizontally by number
-
-
-down moves it down, increasing the depth we're at
-up does exactly the opposite of down
-
-
-
-A series of commands - that's a program! To execute it, we need basically 3 things: a lexer, a parser and an interpreter. Fortunately, Elixir gives us…]]></summary>
-        <author>
-            <name>Paweł Świątkowski</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[POCO X3 Pro was the best-selling phone in Europe on Amazon this Black Friday]]></title>
-        <id>https://www.xda-developers.com/?p=565805</id>
-        <link href="https://www.xda-developers.com/xiaomi-says-the-poco-x3-pro-was-europes-best-selling-phone-on-black-friday/"/>
-        <updated>2021-12-02T22:12:54.000Z</updated>
-        <summary type="html"><![CDATA[The Black November Friday shopping season is finally over, but device makers are still pouring over sales data from last month. One of the more interesting data points might be from Xiaomi, which shared on social media that the company’s Poco X3 Pro was the best-selling smartphone in several European countries over the Black Friday
-The post POCO X3 Pro was the best-selling phone in Europe on Amazon this Black Friday appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Corbin Davenport</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Would you opt to have your consciousness live forever on a computer? Tell us for an upcoming episode of our podcast! 🎧]]></title>
-        <id>https://dev.to/devteam/would-you-want-to-have-your-consciousness-live-forever-on-a-computer-tell-us-for-an-upcoming-episode-of-our-podcast-2je3</id>
-        <link href="https://dev.to/devteam/would-you-want-to-have-your-consciousness-live-forever-on-a-computer-tell-us-for-an-upcoming-episode-of-our-podcast-2je3"/>
-        <updated>2021-12-02T21:50:50.000Z</updated>
-        <summary type="html"><![CDATA[The DevDiscuss Podcast begins with an interview and ends with commentary from listeners — and we like to feature the actual voices from our community!
-To inform an upcoming episode of the show, we'd like to know...
-Would you opt-in to have your consciousness live forever on a computer? Why or why not?
-
-
-
-For your chance to hear your actual comments on an upcoming episode, answer the question above by:
-Calling our Google Voice at +1 (929)500-1513 and leave a message 📞
-
-
-Sending a voice memo to pod@dev.to 🎙
-
-
-OR, leaving a comment here (we'll read your response aloud for you) 🗣
-
-
-
-Please send in your recordings by Wednesday, December 8th at 9 AM, ET (1 PM UTC, 6 AM PT)
-Catch up on recent episodes of the show here 👀]]></summary>
-        <author>
-            <name>Gracie Gregory (she/her)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Computer Network Concepts - The one and only guide you need]]></title>
-        <id>https://dev.to/weifengnusceg/computer-network-concepts-the-one-and-only-guide-you-need-5d2k</id>
-        <link href="https://dev.to/weifengnusceg/computer-network-concepts-the-one-and-only-guide-you-need-5d2k"/>
-        <updated>2021-12-02T21:47:59.000Z</updated>
-        <summary type="html"><![CDATA["To become a Web Frontend Developer, we can never survive without Computer network knowledges. Frontend is never solely about Javascript or CSS. We work closely with network protocol and http request daily"
-1. Common HTTP request that we will use
-2. Inheritable and non-inheritable properties in CSS
-3. HTTP respond Header 
-4. Common HTTP respond status code 
-5. Key differences between HTTP=1.0, HTTP=1.1, 2.0 
-
-
-
-> - What is HTTP? Refer to the W3school for full detail
-The Hypertext Transfer Protocol (HTTP) is designed to enable communications between clients and servers.
-
-
-
-Request Method
-Explaination
-
-
-
-
-GET:
-GET is used to request data from a specified resource.
-
-
-POST：
-POST is used to send data to a server to create/update a resource.
-
-
-PUT：
-PUT is used to send data to a server to create/…]]></summary>
-        <author>
-            <name>WEI FENG</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[救赎]]></title>
-        <id>https://youtube.buzzing.cc/youtube/UxBc-dEAsbs</id>
-        <link href="https://youtube.buzzing.cc/youtube/UxBc-dEAsbs"/>
-        <updated>2021-12-02T21:38:14.000Z</updated>
-        <summary type="html"><![CDATA[One Last Chance
-
-Join the TANK GANG ►http://bit.ly/1h6i9oR
-Instagram ► http://instagram.com/comedygamer
-Twitter ► https://twitter.com/Deji
-Facebook ► https://www.facebook.com/ComedyShortsGamerPage
-
-Shout out to: https://www.instagram.com/bloodbrothermedia/]]></summary>
-        <author>
-            <name>Youtube 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[口袋妖怪进化论。第5集]]></title>
-        <id>https://youtube.buzzing.cc/youtube/qgY9RYTO7Nw</id>
-        <link href="https://youtube.buzzing.cc/youtube/qgY9RYTO7Nw"/>
-        <updated>2021-12-02T21:38:14.000Z</updated>
-        <summary type="html"><![CDATA[No matter how fast you run, your rivals are always one step ahead, pushing you to better your skills. Eventually, you’ll have to face your rival in your travels… for Barry, that time has come. 
-
-Visit the Sinnoh region in Pokémon Evolutions Episode 5 and discover how Barry’s rivalry unfolds! 
-
-Official site: https://www.pokemon.com
-Shop: http://www.pokemoncenter.com
-Facebook: http://www.facebook.com/Pokemon
-Twitter: http://www.twitter.com/Pokemon
-Instagram: http://www.instagram.com/pokemon]]></summary>
-        <author>
-            <name>Youtube 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[注意更聪明而不是更努力地工作]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/Unexpected/comments/r75ryi/paying_attention_to_work_smarter_and_not_harder/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/Unexpected/comments/r75ryi/paying_attention_to_work_smarter_and_not_harder/"/>
-        <updated>2021-12-02T21:38:10.000Z</updated>
-        <summary type="html"><![CDATA[注意更聪明而不是更努力地工作]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The FTC is suing NVIDIA in order to block its acquisition of Arm]]></title>
-        <id>https://www.xda-developers.com/?p=565779</id>
-        <link href="https://www.xda-developers.com/ftc-suing-nvidia-arm-acquisition/"/>
-        <updated>2021-12-02T21:25:57.000Z</updated>
-        <summary type="html"><![CDATA[NVIDIA has run into hurdle after hurdle in its acquisition of Arm, and it seems things are going to get a whole lot worse. The Federal Trade Commission in the U.S. is now suing NVIDIA in an attempt to prevent the deal, saying that it would “stifle competing next-generation technologies.” This adds the FTC to
-The post The FTC is suing NVIDIA in order to block its acquisition of Arm appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Adam Conway</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[新教的工作伦理是愚蠢的]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/antiwork/comments/r769cm/the_protestant_work_ethic_is_stupid/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/antiwork/comments/r769cm/the_protestant_work_ethic_is_stupid/"/>
-        <updated>2021-12-02T21:22:10.000Z</updated>
-        <summary type="html"><![CDATA[新教的工作伦理是愚蠢的]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to add Lottie animations to SwiftUI]]></title>
-        <id>https://dev.to/kfurjan/how-to-add-lottie-animations-to-swiftui-1j22</id>
-        <link href="https://dev.to/kfurjan/how-to-add-lottie-animations-to-swiftui-1j22"/>
-        <updated>2021-12-02T21:18:06.000Z</updated>
-        <summary type="html"><![CDATA[Using Lottie animations is an easy and popular way to add animations to your app to have that modern look and feel. All sorts of companies use Lottie animations, from startups all the way to the big boys, such as Google, Microsoft, Spotify, and Netflix to name the few.
-Using LottieFiles you have a choice to make your own animations using Lottie Editor, buying animations from creators on Lottie Marketplace or using Free Animations to get LottieFile(s) completely free of charge to add them into you project.
-Unfortunately, Lottie animations cannot be added directly to SwiftUI view without some work prior to that. In order to add Lottie animation to SwiftUI, you need to implement UIViewRepresentable protocol which is a wrapper for a UIKit view that you use to integrate Lottie view into your Sw…]]></summary>
-        <author>
-            <name>Kevin Furjan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Starting with tailwind css from scratch]]></title>
-        <id>https://dev.to/elabrava20/starting-with-tailwind-css-from-scratch-3hfb</id>
-        <link href="https://dev.to/elabrava20/starting-with-tailwind-css-from-scratch-3hfb"/>
-        <updated>2021-12-02T21:12:14.000Z</updated>
-        <summary type="html"><![CDATA[Starting with a new framework can be really tedious sometimes. Don't get me started about the starter files you have to build. 
-In this article, I'll show you how to set up tailwind css easy peasy, without having to dig too much through the internet. We'll start from making sure you have node installed in your computer, easy/awesome terminal tricks, right down to making sure you are set to start using tailwind in your code.
-Side note: You do not need any knowledge of node to use tailwind. We'll just use it for necessary installations.
-To check if you already have node installed, then run the following command in your terminal.
-node -v
-If node was previously installed, then it should display the current version after you hit enter. If it wasn't, then you'll have to install node. You can get…]]></summary>
-        <author>
-            <name>Bingeh Afumbom</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[披露与国家相关的信息业务，我们已经删除了]]></title>
-        <id>https://hn.buzzing.cc/hn/29414965</id>
-        <link href="https://hn.buzzing.cc/hn/29414965"/>
-        <updated>2021-12-02T21:05:23.000Z</updated>
-        <summary type="html"><![CDATA[披露与国家相关的信息业务，我们已经删除了]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA["RISC V是一个可怕的架构"]]></title>
-        <id>https://hn.buzzing.cc/hn/29420622</id>
-        <link href="https://hn.buzzing.cc/hn/29420622"/>
-        <updated>2021-12-02T21:05:23.000Z</updated>
-        <summary type="html"><![CDATA["RISC V是一个可怕的架构"]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[德国锁住未接种疫苗的人，因为领导人计划强制打针]]></title>
-        <id>https://hn.buzzing.cc/hn/29417601</id>
-        <link href="https://hn.buzzing.cc/hn/29417601"/>
-        <updated>2021-12-02T20:58:02.000Z</updated>
-        <summary type="html"><![CDATA[德国锁住未接种疫苗的人，因为领导人计划强制打针]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[OnePlus 6 and 6T now receiving November security patches]]></title>
-        <id>https://www.xda-developers.com/?p=565755</id>
-        <link href="https://www.xda-developers.com/oneplus-6-and-6t-now-receiving-november-security-patches/"/>
-        <updated>2021-12-02T20:49:55.000Z</updated>
-        <summary type="html"><![CDATA[OnePlus might be slow to update many of its phones to newer versions of Android, but the company still does a (mostly) decent job of keeping the security patches coming. The OnePlus 6 and 6T are three years old at this point, but security updates are still trickling out for both phones, and now the
-The post OnePlus 6 and 6T now receiving November security patches appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Corbin Davenport</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Optimising Code - The Devil Lies In the Details]]></title>
-        <id>https://dev.to/librapid/optimising-code-the-devil-lies-in-the-details-4j78</id>
-        <link href="https://dev.to/librapid/optimising-code-the-devil-lies-in-the-details-4j78"/>
-        <updated>2021-12-02T20:45:18.000Z</updated>
-        <summary type="html"><![CDATA[Optimising code for high performance can be exhausting; where can you squeeze that last bit of speed out of your code? How can you be faster than that one piece of code you found online?
-For that, let's take a look at the following example of our Rust crate:
-pub fn new(values: &Vec<f64>) -> MathVector {
-    let mut len: f64 = 0;
-    for i in values {
-        len += i * i;
-    }
-    MathVector { values:    values.clone(),
-                 dimension: values.len(),
-                 length:    len.sqrt() }
-}
-
-Among other things - like the for loop for example - one thing is the problem. Can you spot it? The answer is: len.sqrt(). Getting the square root of a number is performance-wise extremely expensive - how should we get rid of it? You might guess, that we could implement something like the…]]></summary>
-        <author>
-            <name>Maximilian</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Jack Dorsey Resigns, Apple Self-Repair, the Threat of Post-Quantum Cryptography, & more on DevNews!]]></title>
-        <id>https://dev.to/devteam/jack-dorsey-resigns-apple-self-repair-the-threat-of-post-quantum-cryptography-more-on-devnews-3pmb</id>
-        <link href="https://dev.to/devteam/jack-dorsey-resigns-apple-self-repair-the-threat-of-post-quantum-cryptography-more-on-devnews-3pmb"/>
-        <updated>2021-12-02T20:36:48.000Z</updated>
-        <summary type="html"><![CDATA[Is our cryptography ready for the quantum leap? We'll talk about that and more in this week's episode of DevNews 👀 
-S6:E5 - Jack Dorsey Resigns, Apple Self-Repair, and the Threat of Post-Quantum Cryptography
-1x
-    
-    
-      
-      
-      initializing...
-      ×
-    
-  
-Hosts: @saronyitbarek
- & @joshpuetz
- 
-Guest: 
-Dustin Moody is a mathematician in the National Institute of Standards and Technology (NIST) Computer Security Division, where he leads the post-quantum cryptography project. He received his Ph.D. from the University of Washington in 2009. His area of research deals with elliptic curves and their applications in cryptography.
-In this episode, we talk about the resignation of Twitter CEO Jack Dorsey, and Apple’s new self-service repair announcement. Then we explore the looming threat of post-quantum cryptography.
-You can follow DevNews to get episode notifications and listen right in your feed — or subscribe on your platform of choice! Plus, if you leave us a review, we'll send you a free pack of thank-you stickers. Details here. 
-Quick Listening Links
-
-
-
-Apple Podcasts
-Spotify
-Google
-Stitcher
-Listen Notes
-TuneIn
-RSS Feed
-DEV Pods website
-Acknowledgements
-
-
-
-
-@levisharpe
- for producing & mixing the show 
-Our Season 6 sponsors: Cosmos HackAtom & Microsoft Azure
-
-
-
-We hope you enjoy the show this week! 📰]]></summary>
-        <author>
-            <name>dev.to staff</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[What's your favorite notetaking app?]]></title>
-        <id>https://dev.to/jasterix/whats-your-favorite-notetaking-app-6mf</id>
-        <link href="https://dev.to/jasterix/whats-your-favorite-notetaking-app-6mf"/>
-        <updated>2021-12-02T20:09:58.000Z</updated>
-        <summary type="html"><![CDATA[Since starting as a full time SWE, I've found myself using multiple note-taking apps:
-Notion. Mostly use for meeting notes. I love the organization and search features. I love that you can add attendees and other properties. But the tablet app is painful to use with a stylus. And because it's so structured, I'm less likely to add notes that don't fit in a predefined section.
-Samsung Notes. For daily tasks and reminders. This replaced the Cambridge Quad notebooks I used to buy in bulk. I bought a Samsung tablet, and now I'm stuck. The handwriting recognition is the best of multiple apps I've tried. Unfortunately the people at Samsung make it impossible to access and edit your notes on desktop or the web.
-OneNote. Which I've been trying to use because it's there and easy to save random screenshots to. But the lack of basic editing features and plugins sucks. The forced notebook and page structure is also pretty limiting. I hate clicking around to find notes and the view easily feels cluttered.
-Random sticky notes. For random thoughts, customer service case numbers, git commands to refer back to, etc.
-I would love to use one app that does everything these 4 apps do:
-Organize my notes into groups and structures that I can easily search and get back to
-Be workable on tablet. I'm not asking for much here. Just let me take notes. Recognize my handwriting and let me edit on desktop or the web.
-Simple interface that doesn't inhibit random notes or reminders I want to jot down.
-Someone suggested Obsidian. Never used it before, but would love to get some feedback from those who have. If there's another app that you swear, please let me know!
-Photo by Polina Tankilevitch from Pexels]]></summary>
-        <author>
-            <name>Jasterix</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Protect Yourself Against SIM Swapping Attacks]]></title>
-        <id>5fff3e8b98be260817e495e9</id>
-        <link href="https://www.freecodecamp.org/news/protect-yourself-against-sim-swapping-attacks/"/>
-        <updated>2021-12-02T20:05:26.000Z</updated>
-        <summary type="html"><![CDATA[What is a SIM swap?SIM swapping is when a hacker convinces your cell phone carrier to switch your phone number to a different SIM - one that they own.  This is a relatively normal thing for a retail employee to do, which means that someone asking for a swap]]></summary>
-        <author>
-            <name>freeCodeCamp.org</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to add a notification banner or popup to your website]]></title>
-        <id>https://dev.to/canonic/how-to-add-a-notification-banner-or-popup-to-your-website-3kmf</id>
-        <link href="https://dev.to/canonic/how-to-add-a-notification-banner-or-popup-to-your-website-3kmf"/>
-        <updated>2021-12-02T20:02:04.000Z</updated>
-        <summary type="html"><![CDATA[A product's ability to capture the user's attention is crucial, and dynamic prompts/notification is one such efficient way to engage users.✨
-It allows you to communicate with users by directing their attention to the navigation bar and can be used for a variety of purposes, such as for announcing business news, showing off the best features, generating leads, and so on. 
-This article will guide you step by step to build your own Dynamic Prompts/Notifications bar. 👩‍💻
-We used React for the frontend, Canonic for the Part backend.
-Let's begin! 📌
-📝Step 1: Create-react-app
-Lets start with creating a new react project - Use create-react-app
-npx create-react-app dynamic-notifications
-
-Next, to create a basic skeleton, just edit src/App.js
-import React from "react";
-import "./App.css";
-
-functi…]]></summary>
-        <author>
-            <name>Kartik Grewal</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[XDA Basics: How to use the new 2FA code generator on iOS 15]]></title>
-        <id>https://www.xda-developers.com/?p=557873</id>
-        <link href="https://www.xda-developers.com/how-to-use-2fa-code-generator-ios/"/>
-        <updated>2021-12-02T20:00:07.000Z</updated>
-        <summary type="html"><![CDATA[For years, iPhone users had to depend on third-party apps to generate 2-Factor Authentication (2FA) codes. These codes act as an extra security layer for online accounts. When you enable 2FA, websites and apps will ask you to type an expiring, one-time code. The prompt typically appears after entering your email/username and password correctly. These
-The post XDA Basics: How to use the new 2FA code generator on iOS 15 appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Mahmoud Itani</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Tired of people missing out on your CSS animations? jQuery is the answer...]]></title>
-        <id>https://dev.to/code_jedi/tired-of-people-missing-out-on-your-css-animations-jquery-is-the-answer-1dgh</id>
-        <link href="https://dev.to/code_jedi/tired-of-people-missing-out-on-your-css-animations-jquery-is-the-answer-1dgh"/>
-        <updated>2021-12-02T19:59:49.000Z</updated>
-        <summary type="html"><![CDATA[You've probably been there... You've added a cool animation to one of your webpage's elements, but no-one sees it because the element is too far down the page, and by the time people scroll it into view, it's animation has already finished.
-Let's take a simple webpage.
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-  @keyframes floatin {
-    from { margin-left: 80% }
-    to { margin-left: 10% }
-  }
-  h1{
-    text-align: center;
-  }
-  p{
-    margin-left: 20%;
-    width: 60%;
-  }
-  .info{
-    position: absolute;
-    top: 1000px;
-    font-size: 25px;
-    margin-left: 80%;
-  }
-</style>
-</head>
-<body>
-<h1>The top content</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fringilla id justo ut tincidunt. Nullam in lectus ultrices, pretium velit sit amet, ullamcorper est. Suspendisse ma…]]></summary>
-        <author>
-            <name>Code_Jedi</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[这就是泰特-迈尔。他今年16岁，周二在试图解除一名在密歇根州牛津高中开枪的15岁嫌犯的武装时被枪杀。这就是英雄的模样。愿他在这段艰难的日子里，他的家人能得到安宁。]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/r77r9r/this_is_tate_myer_he_was_16_years_old_and_was/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/r77r9r/this_is_tate_myer_he_was_16_years_old_and_was/"/>
-        <updated>2021-12-02T19:45:26.000Z</updated>
-        <summary type="html"><![CDATA[这就是泰特-迈尔。他今年16岁，周二在试图解除一名在密歇根州牛津高中开枪的15岁嫌犯的武装时被枪杀。这就是英雄的模样。愿他在这段艰难的日子里，他的家人能得到安宁。]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The Surface Laptop Studio with a 512GB SSD is discounted to just $1,500 today only]]></title>
-        <id>https://www.xda-developers.com/?p=565737</id>
-        <link href="https://www.xda-developers.com/surface-laptop-studio-512gb-ssd-discount/"/>
-        <updated>2021-12-02T19:36:45.000Z</updated>
-        <summary type="html"><![CDATA[Black Friday and Cyber Monday may be over, but Best Buy is treating Microsoft fans to a pretty sweet deal for a very limited time. Right now, you can get the Surface Laptop Studio – yes, the one that launched just a couple of months ago – at a $300 discount, making it cost just
-The post The Surface Laptop Studio with a 512GB SSD is discounted to just $1,500 today only appeared first on xda-developers.]]></summary>
-        <author>
-            <name>João Carrasqueira</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[电影对话变得更加难以理解]]></title>
-        <id>https://hn.buzzing.cc/hn/29417309</id>
-        <link href="https://hn.buzzing.cc/hn/29417309"/>
-        <updated>2021-12-02T19:32:37.000Z</updated>
-        <summary type="html"><![CDATA[电影对话变得更加难以理解]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Does José Valim prefer dynamic typing or static typing?]]></title>
-        <id>https://dev.to/adolfont/does-jose-valim-prefer-dynamic-typing-or-static-typing-27fg</id>
-        <link href="https://dev.to/adolfont/does-jose-valim-prefer-dynamic-typing-or-static-typing-27fg"/>
-        <updated>2021-12-02T19:30:24.000Z</updated>
-        <summary type="html"><![CDATA[I am a member of Elixir em Foco, a podcast about Elixir in Portuguese. We were invited by the organizers of Elixir Brasil 2021 to interview José Valim, the creator of Elixir.
-You can watch the video below, if you understand Portuguese:
-
-
-
-
-I asked a question whose answer I would like to share. I am not a professional transcriber or translator, so take that into account when reading the following answer.
-Adolfo Neto: Do ​​you particularly prefer statically typed or dynamically typed languages ? If it were just for taste, not for saying what's better or worse for developers.
-José Valim: Dynamically typed. I agree a lot with the response from the creators of Erlang. When someone asks "why isn't Erlang statically typed?", a lot of people say it is "because the theory for statically typing ever…]]></summary>
-        <author>
-            <name>Adolfo Neto</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Samsung Galaxy S21 FE leaks again, this time with European pricing]]></title>
-        <id>https://www.xda-developers.com/?p=565685</id>
-        <link href="https://www.xda-developers.com/samsung-galaxys-21-fe-leak-europe/"/>
-        <updated>2021-12-02T19:27:30.000Z</updated>
-        <summary type="html"><![CDATA[Last year’s Galaxy S20 FE (for ‘Fan Edition’) was one of the best phones of 2020, at least in the United States, where it undercut many other flagship-class phones in pricing. Samsung has been working on a sequel, but the phone has been continuously delayed, and there has even been speculation that it was cancelled
-The post Samsung Galaxy S21 FE leaks again, this time with European pricing appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Corbin Davenport</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Ask HN: 为什么没有人创建一个可与2005年谷歌媲美的搜索引擎？]]></title>
-        <id>https://hn.buzzing.cc/hn/29417061</id>
-        <link href="https://hn.buzzing.cc/hn/29417061"/>
-        <updated>2021-12-02T19:19:22.000Z</updated>
-        <summary type="html"><![CDATA[Ask HN: 为什么没有人创建一个可与2005年谷歌媲美的搜索引擎？]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[亚马逊EC2 M1 Mac实例]]></title>
-        <id>https://hn.buzzing.cc/hn/29418532</id>
-        <link href="https://hn.buzzing.cc/hn/29418532"/>
-        <updated>2021-12-02T18:57:23.000Z</updated>
-        <summary type="html"><![CDATA[亚马逊EC2 M1 Mac实例]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Apple has released iOS 15.2 developer beta 4, here’s what’s new]]></title>
-        <id>https://www.xda-developers.com/?p=559111</id>
-        <link href="https://www.xda-developers.com/apple-has-released-ios-15-2-beta-4/"/>
-        <updated>2021-12-02T18:55:59.000Z</updated>
-        <summary type="html"><![CDATA[Apple has released the fourth beta of the upcoming iOS 15.2 to registered developers. This update comes packed with changes and tweaks aimed at user privacy and security. These features include some that Apple had teased during the iOS 15 reveal at WWDC21. App Privacy Report, Communication Safety, a tweaked Notification Summary, and more will
-The post Apple has released iOS 15.2 developer beta 4, here’s what’s new appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Mahmoud Itani</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Use Mixins in Sass and Pass Arguments – With Code Examples]]></title>
-        <id>61951bb111d3cb08287a7bae</id>
-        <link href="https://www.freecodecamp.org/news/how-to-pass-arguments-to-mixins/"/>
-        <updated>2021-12-02T18:45:59.000Z</updated>
-        <summary type="html"><![CDATA[Mixins are my favorite thing about Sass. They made my life so much easier, so I wanted to show you how they can do the same for you. Mixins can be a bit tricky to understand at first, but don't worry. You'll get the hang of it by practicing and]]></summary>
-        <author>
-            <name>freeCodeCamp.org</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Facebook will force you to use 2FA if you’re a person of interest]]></title>
-        <id>https://www.xda-developers.com/?p=565673</id>
-        <link href="https://www.xda-developers.com/facebook-will-force-2fa-if-youre-person-of-interest/"/>
-        <updated>2021-12-02T18:40:31.000Z</updated>
-        <summary type="html"><![CDATA[Meta-owned Facebook will be forcing users with a large number of followers to enable Facebook Protect. This feature is a password-strength check combined with 2-factor authentication (2FA). Highest-profile and highest-risk users will have until December 17 to enable this extra security layer. Otherwise, the company will lock them out of their accounts until they do
-The post Facebook will force you to use 2FA if you’re a person of interest appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Mahmoud Itani</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Make a Simple Async GET REST API call in SwiftUI]]></title>
-        <id>61a683330c0c7407b2b3e88f</id>
-        <link href="https://www.freecodecamp.org/news/make-rest-api-call-in-swiftui-in-2-minutes/"/>
-        <updated>2021-12-02T18:32:23.000Z</updated>
-        <summary type="html"><![CDATA[In this tutorial for beginners, you will learn the basics of using SwiftUI to make API calls using the popular Internet Chuck Norris DataBase (ICNDB) as an example. It will display a joke quickly and easily using Swift and SwiftUI.  You'll see how the cross-platform framework SwiftUI lets us use]]></summary>
-        <author>
-            <name>freeCodeCamp.org</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Here are the best video editors available for your Mac]]></title>
-        <id>https://www.xda-developers.com/?p=553679</id>
-        <link href="https://www.xda-developers.com/best-video-editor-mac/"/>
-        <updated>2021-12-02T18:00:51.000Z</updated>
-        <summary type="html"><![CDATA[Apple revealed the new MacBook Pro 2021 during its Unleashed Mac event last month. If you own a MacBook Pro, make sure to protect it with a case. macOS is a great operating system for handling media editing. There are plenty of tools out there to edit footages, for both basics and professional needs. Here are
-The post Here are the best video editors available for your Mac appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Mahmoud Itani</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[史蒂夫-西蒙宣布WTA决定暂停在中国举办的赛事]]></title>
-        <id>https://hn.buzzing.cc/hn/29412930</id>
-        <link href="https://hn.buzzing.cc/hn/29412930"/>
-        <updated>2021-12-02T17:47:34.000Z</updated>
-        <summary type="html"><![CDATA[史蒂夫-西蒙宣布WTA决定暂停在中国举办的赛事]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[程序员的理想显示器旋转]]></title>
-        <id>https://hn.buzzing.cc/hn/29417484</id>
-        <link href="https://hn.buzzing.cc/hn/29417484"/>
-        <updated>2021-12-02T17:41:10.000Z</updated>
-        <summary type="html"><![CDATA[程序员的理想显示器旋转]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Apple might still collect a commission from developers, even if they don’t use its payment system]]></title>
-        <id>https://www.xda-developers.com/?p=565621</id>
-        <link href="https://www.xda-developers.com/apple-might-still-collect-commission-from-developers/"/>
-        <updated>2021-12-02T17:40:59.000Z</updated>
-        <summary type="html"><![CDATA[You’re probably aware of the fact that Apple charges developers a 15-30% commission fee for using its billing system. This affects all in-app purchases of third-party apps published on the App Store. Epic Games sued Apple for that, and the Cupertino giant was ordered to allow competing payment platforms. A legal filing has revealed that
-The post Apple might still collect a commission from developers, even if they don’t use its payment system appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Mahmoud Itani</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[患有肌肽相关肌肉肥大症的家猫--一种导致肌肉过度增长的罕见疾病]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/r6yehn/house_cat_suffering_from_myostatinrelated_muscle/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/r6yehn/house_cat_suffering_from_myostatinrelated_muscle/"/>
-        <updated>2021-12-02T17:24:56.000Z</updated>
-        <summary type="html"><![CDATA[患有肌肽相关肌肉肥大症的家猫--一种导致肌肉过度增长的罕见疾病]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Steam for Chromebooks might finally be coming soon]]></title>
-        <id>https://www.xda-developers.com/?p=565623</id>
-        <link href="https://www.xda-developers.com/steam-chromebooks-might-come-soon/"/>
-        <updated>2021-12-02T17:24:06.000Z</updated>
-        <summary type="html"><![CDATA[Chromebooks are great for working and are typically affordable, lightweight, and have good battery life. Chrome OS has just enough functionality for most people but when it comes to gaming, they falter. Steam is one of the most popular gaming platforms on Windows, Mac, and Linux, and even if you have one of the best
-The post Steam for Chromebooks might finally be coming soon appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Adam Conway</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Java Weekly, Issue 414]]></title>
-        <id>https://www.baeldung.com/?p=113255</id>
-        <link href="https://feeds.feedblitz.com/~/674151844/0/baeldung~Java-Weekly-Issue"/>
-        <updated>2021-12-02T17:11:43.000Z</updated>
-        <summary type="html"><![CDATA[Modeling relations in Mongo, Java performance tips, new features in Java, warming caches at Netflix's scale and reimagining software architecures!]]></summary>
-        <author>
-            <name>baeldung</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[RTC Connecting Discord – How to Fix the Server Error]]></title>
-        <id>61a8e0bb0c0c7407b2b3f52a</id>
-        <link href="https://www.freecodecamp.org/news/rtc-connecting-discord-how-to-fix-the-server-error/"/>
-        <updated>2021-12-02T17:10:47.000Z</updated>
-        <summary type="html"><![CDATA[Discord is an instant messaging app that lets you communicate through voice, video, and texts. It is available in a web-based form, a desktop app, and a mobile app.  But sometimes, when you're trying to establish a voice call connection, you'll get an error that says “RTC Connecting Discord”. This]]></summary>
-        <author>
-            <name>freeCodeCamp.org</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[我在核燃料库中生存了50个小时]]></title>
-        <id>https://youtube.buzzing.cc/youtube/BUdG068uGl0</id>
-        <link href="https://youtube.buzzing.cc/youtube/BUdG068uGl0"/>
-        <updated>2021-12-02T17:02:34.000Z</updated>
-        <summary type="html"><![CDATA[RhinoShield Black Friday sale is still on! Up to 60% off + EXTRA 10% off with code: AIRRACK
-Shop All Cases: “https://bit.ly/Airrack-RS-BF”
-
-Follow for a new iPhone!👇
-INSTAGRAM ▶️ https://urlgeni.us/instagram/jBHg
-
-Luxury Bunker:
-https://www.airbnb.com/rooms/45816677?guests=1&adults=1&s=67&unique_share_id=074e1459-c4fd-4d0b-9003-d7d63f537ff3
-
-FOLLOW MY FRIENDS:
-Follow Mack: https://www.instagram.com/mack
-Fidias: https://www.youtube.com/c/FidiasPanayiotou
-Tyler: https://www.youtube.com/c/tylerblanchard
-
-PERFECT ROYALTY FREE MUSIC FOR YOUTUBE: free 30 day trial here: http://share.epidemicsound.com/airrack​
-http://share.mscbd.fm/Airrack​
-https://bit.ly/39m1FLh
-
-Awesome Stock Footage +  Templates for your YouTube videos! (ArtGrid/Storyblocks)
-http://bit.ly/3qXz9Wm
-https://bit.ly/3t5Gkxi
-
-Outtro song ▶️ Axel Thesleff - Bad Karma
-YouTube: https://bit.ly/3k6Uadj
-Spotify: https://spoti.fi/3odq3TN
-Instagram: https://bit.ly/3lsccaz]]></summary>
-        <author>
-            <name>Youtube 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[我是野兽先生的鱿鱼游戏中的一名警卫......。]]></title>
-        <id>https://youtube.buzzing.cc/youtube/qCNi5cUtnoU</id>
-        <link href="https://youtube.buzzing.cc/youtube/qCNi5cUtnoU"/>
-        <updated>2021-12-02T17:02:34.000Z</updated>
-        <summary type="html"><![CDATA[watch https://www.youtube.com/watch?v=0e3GPea1Tyg
-watch behind the scenes https://www.youtube.com/watch?v=VQcO_PYVx3o
-Today I talk about my Mr Beast squid game experience and how nice they all are and what being a guard was like lol]]></summary>
-        <author>
-            <name>Youtube 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Kodak Black - Closure [Official Music VIdeo]（官方音乐视频]]></title>
-        <id>https://youtube.buzzing.cc/youtube/MIvhuTmmVUQ</id>
-        <link href="https://youtube.buzzing.cc/youtube/MIvhuTmmVUQ"/>
-        <updated>2021-12-02T17:02:34.000Z</updated>
-        <summary type="html"><![CDATA[Kodak Black - Closure  [Official Music VIdeo]
- 
-Subscribe for more official content from Kodak Black:
-https://Atlantic.lnk.to/KBsubscribe
-
-Follow Kodak Black
-https://twitter.com/KodakBlack1k
-https://facebook.com/TheRealKodakBlack
-https://instagram.com/kodakblack
-https://soundcloud.com/kodak-black
-https://open.spotify.com/artist/46SHBwWsqBkxI7EeeBEQG7
-
-The official YouTube channel of Atlantic Records artist Kodak Black. Subscribe for the latest music videos, performances, and more.
-
-#KodakBlack #Closure]]></summary>
-        <author>
-            <name>Youtube 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[在Ace家庭的最后一天! **永远的再见**]]></title>
-        <id>https://youtube.buzzing.cc/youtube/v_9jZ8R9VRA</id>
-        <link href="https://youtube.buzzing.cc/youtube/v_9jZ8R9VRA"/>
-        <updated>2021-12-02T17:02:34.000Z</updated>
-        <summary type="html"><![CDATA[LAST DAY AT THE ACE FAMILY HOUSE! **BYE FOREVER**
-
-**ACE FAMILY MERCH HERE: shopacefamily.com
-
-LAST VIDEO: https://www.youtube.com/watch?v=Ud5xlPGK09w
-
-JOIN THE ACE FAMILY & SUBSCRIBE: http://bit.ly/THEACEFAMILY 
-
-*TURN ON OUR POST NOTIFICATIONS FOR SHOUTOUTS IN OUR VIDEOS*
-
-***BUSINESS INQUIRIES : INFO.THEACEFAMILY@GMAIL.COM
-
-MAKE SURE YOU LIKE, COMMENT, SHARE & SUBSCRIBE TO OUR YOUTUBE CHANNEL AND FOLLOW US ON OUR FAMILY ADVENTURES!
-
-WATCH MORE VIDEOS!!! 
-
-VLOGS: https://youtube.com/playlist?list=PLq...
-
-PRANKS: https://youtube.com/playlist?list=PLq...
-
-CHALLENGES: https://youtube.com/playlist?list=PLq...
-
-POPULAR VIDEOS: https://youtube.com/playlist?list=PLq...
-
-LATEST VIDEOS: https://youtube.com/playlist?list=PLq... 
-
-STALK US :)
-
-Catherine's Instagram: https://www.instagram.com/catherinepaiz/
-Catherine's Twitter: http://twitter.com/catherinepaiz
-Catherine's SnapChat: Catherinepaiz
-
-Austin's Instagram: https://www.instagram.com/austinmcbroom/
-Austin's Twitter: https://twitter.com/AustinMcbroom
-Austin's SnapChat: TheRealMcBroom
-
-Elle's Instagram: https://www.instagram.com/elle/
-
-Business inquires: info.theacefamily@gmail.com]]></summary>
-        <author>
-            <name>Youtube 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[永远不要像这样高压清洗房屋😳]]></title>
-        <id>https://youtube.buzzing.cc/youtube/gm5exIcAuOM</id>
-        <link href="https://youtube.buzzing.cc/youtube/gm5exIcAuOM"/>
-        <updated>2021-12-02T17:02:34.000Z</updated>
-        <summary type="html"><![CDATA[永远不要像这样高压清洗房屋😳]]></summary>
-        <author>
-            <name>Youtube 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Shawn Mendes - It'll Be Okay (Lyric Video)]]></title>
-        <id>https://youtube.buzzing.cc/youtube/q_HNcBjHlPY</id>
-        <link href="https://youtube.buzzing.cc/youtube/q_HNcBjHlPY"/>
-        <updated>2021-12-02T17:02:34.000Z</updated>
-        <summary type="html"><![CDATA[Listen to “It’ll Be Okay” Now: https://itllbeokay.lnk.to/outnow 
-
-Buy tickets to tour & sign up to be first to hear about more tour dates at https://wonderthetour.com
-
-Follow Shawn:
-Streaming Platforms: https://ShawnMendes.lnk.to/Profiles
-Facebook: https://www.facebook.com/ShawnMendesOfficial
-Twitter: https://twitter.com/ShawnMendes
-Instagram: https://www.instagram.com/shawnmendes
-Snap: https://www.snapchat.com/add/shawnmen
-TikTok: https://www.tiktok.com/@shawnmendes
-Website: https://www.shawnmendesofficial.com/]]></summary>
-        <author>
-            <name>Youtube 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[试图在百思买修复我的无法修复的电视￼。]]></title>
-        <id>https://youtube.buzzing.cc/youtube/3GJ-Z3SY7sI</id>
-        <link href="https://youtube.buzzing.cc/youtube/3GJ-Z3SY7sI"/>
-        <updated>2021-12-02T17:02:34.000Z</updated>
-        <summary type="html"><![CDATA[试图在百思买修复我的无法修复的电视￼。]]></summary>
-        <author>
-            <name>Youtube 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[UNHhhh第166集--婚姻]]></title>
-        <id>https://youtube.buzzing.cc/youtube/0WxqFtOTiBs</id>
-        <link href="https://youtube.buzzing.cc/youtube/0WxqFtOTiBs"/>
-        <updated>2021-12-02T17:02:34.000Z</updated>
-        <summary type="html"><![CDATA[Marriage, that blessed arrangement. Although fifty percent of marriages end in divorce. So we asked two unmarried crossdressers who live in sin for their advice on the subject. 
-
-Watch 30 days earlier, only on WOW Presents Plus: https://bit.ly/3cfNDfO
-
-Buy UNHhhh Merch: https://store.worldofwonder.com/collections/unhhhh
-
-Produced by
-Pete Williams
-
-Edited by
-Jeff Maccubbin
-Ron Hill
-
-Subscribe: http://youtube.com/subscription_center?add_user=wowpresents
-
-Read More at: http://worldofwonder.net/
-
-From World of Wonder, the producers of films and TV shows such as The Eyes of Tammy Faye, Party Monster, Liberty: Mother of Exiles, Backyard Envy, RuPaul's Drag Race, Werq The World, and Million Dollar Listing. Plus, creators of your favorite live events such as RuPaul's DragCon and RuPaul's Drag Race Live in Las Vegas. Looking to watch this content uncensored before it hits YouTube? Check out our streaming service, WOW Presents Plus.]]></summary>
-        <author>
-            <name>Youtube 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[安卓用户的问题= =。]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/memes/comments/r72728/android_user_problems/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/memes/comments/r72728/android_user_problems/"/>
-        <updated>2021-12-02T17:02:29.000Z</updated>
-        <summary type="html"><![CDATA[安卓用户的问题= =。]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[These are the best AMD CPUs you can buy in 2021]]></title>
-        <id>https://www.xda-developers.com/?p=558053</id>
-        <link href="https://www.xda-developers.com/best-amd-cpu/"/>
-        <updated>2021-12-02T17:00:39.000Z</updated>
-        <summary type="html"><![CDATA[AMD CPUs have evolved a lot over the years to become so much more than just an affordable alternative to Intel CPUs. In fact, they’ve been stomping on Intel chips for a few generations now, offering an incredible value for money with an appealing price to performance ratio. AMD CPUs are also dominating our collection
-The post These are the best AMD CPUs you can buy in 2021 appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Karthik Iyer</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Microsoft Edge now says Chrome “is so 2008” if you try to download it]]></title>
-        <id>https://www.xda-developers.com/?p=565601</id>
-        <link href="https://www.xda-developers.com/microsoft-edge-chrome-2008/"/>
-        <updated>2021-12-02T16:25:54.000Z</updated>
-        <summary type="html"><![CDATA[Microsoft has arguably gone too far already with forcing its new Edge browser on users by making it harder to switch your default browser on Windows 11, as well as blocking apps that redirect certain Windows links to your favorite browser. But it turns out things can always get worse, as Microsoft’s browser is now
-The post Microsoft Edge now says Chrome “is so 2008” if you try to download it appeared first on xda-developers.]]></summary>
-        <author>
-            <name>João Carrasqueira</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[斯泰西-艾布拉姆斯将于2022年竞选格鲁吉亚州长]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/politics/comments/r6o4m9/stacey_abrams_is_running_for_georgia_governor_in/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/politics/comments/r6o4m9/stacey_abrams_is_running_for_georgia_governor_in/"/>
-        <updated>2021-12-02T15:56:44.000Z</updated>
-        <summary type="html"><![CDATA[斯泰西-艾布拉姆斯将于2022年竞选格鲁吉亚州长]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[在纯CSS中对文本的突变效果]]></title>
-        <id>https://hn.buzzing.cc/hn/29412775</id>
-        <link href="https://hn.buzzing.cc/hn/29412775"/>
-        <updated>2021-12-02T15:56:19.000Z</updated>
-        <summary type="html"><![CDATA[在纯CSS中对文本的突变效果]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[100年，无论这将是什么]]></title>
-        <id>https://hn.buzzing.cc/hn/29416606</id>
-        <link href="https://hn.buzzing.cc/hn/29416606"/>
-        <updated>2021-12-02T15:50:18.000Z</updated>
-        <summary type="html"><![CDATA[100年，无论这将是什么]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[微软的新Windows提示试图阻止人们下载Chrome浏览器]]></title>
-        <id>https://hn.buzzing.cc/hn/29415031</id>
-        <link href="https://hn.buzzing.cc/hn/29415031"/>
-        <updated>2021-12-02T15:50:18.000Z</updated>
-        <summary type="html"><![CDATA[微软的新Windows提示试图阻止人们下载Chrome浏览器]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Use Redux for Application-Wide State Management]]></title>
-        <id>61a0677125888a07c3e1b835</id>
-        <link href="https://www.freecodecamp.org/news/how-to-use-redux-for-application-wide-state-management/"/>
-        <updated>2021-12-02T15:47:07.000Z</updated>
-        <summary type="html"><![CDATA[Let's face it – state management across multiple components isn't easy. Sometimes we might set up the state or logic handling properly, but fail to consume the states. Or we might get everything working, but clutter up the codebase in the process, making it hard to read, adapt, and extend.   The]]></summary>
-        <author>
-            <name>freeCodeCamp.org</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Microsoft Office’s Windows 11-inspired design is now available]]></title>
-        <id>https://www.xda-developers.com/?p=565575</id>
-        <link href="https://www.xda-developers.com/microosft-office-windows-11-design-update/"/>
-        <updated>2021-12-02T15:22:42.000Z</updated>
-        <summary type="html"><![CDATA[Microsoft has begun rolling out the new design for its Office suite of apps on Windows to the general public, the company announced today. Microsoft initially announced this new design for the Office apps back in the summer, and it’s meant to align with Windows 11, which launched just two months ago. The new design
-The post Microsoft Office’s Windows 11-inspired design is now available appeared first on xda-developers.]]></summary>
-        <author>
-            <name>João Carrasqueira</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Android 12L Developer Preview 1 arrives for the Lenovo P12 Pro]]></title>
-        <id>https://www.xda-developers.com/?p=565565</id>
-        <link href="https://www.xda-developers.com/android-12l-developer-preview-1-lenovo-p12-pro/"/>
-        <updated>2021-12-02T15:13:15.000Z</updated>
-        <summary type="html"><![CDATA[Android is constantly changing and improving, and the platform has matured over the years to be one of the most dominant operating systems in the world. Android 12 is the most recent Android version, arriving in an anti-climactic AOSP source code drop at the start of October. It was followed by a Pixel series rollout
-The post Android 12L Developer Preview 1 arrives for the Lenovo P12 Pro appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Adam Conway</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[如何评价佛山这座城市？]]></title>
-        <id>http://www.zhihu.com/question/24034885/answer/2253343324</id>
-        <link href="http://www.zhihu.com/question/24034885/answer/2253343324?utm_campaign=rss&amp;utm_medium=rss&amp;utm_source=rss&amp;utm_content=title"/>
-        <updated>2021-12-02T14:55:45.000Z</updated>
-        <summary type="html"><![CDATA[撰文 | 魏水华
-
-头图 |pixabay
-
-
-在中国现有的五座“世界美食之都”里，顺德是最特殊的。澳门的后缀是“特别行政区”，成都、扬州、淮安的后缀都是“市”，只有顺德的后缀是“区”。看起来，顺德似乎天生就比其他四位低上一级，更像一个“小地方”。很多人不知道的是，站在顺德区背后的，是佛山市——如果说顺德这个“小地方”，是粤菜皇冠上的明珠，那么佛山，就是皇冠本冠无疑。由高明濑粉、禅城柱侯牛杂、西樵牛奶浸鸡、大良野鸡卷、勒流水蛇羹、九江煎堆、三水蛋散、白坭冬瓜盅、伦教糕、石湾及第粥、盐步秋茄、三洲烧鹅、均安蒸猪、陈村粉等等所组成的佛山版“报菜名”，不仅反映了这里丰饶的物产和讲究的烹饪艺术，更彰显了深植于地理人文之上的，源远流长的饮食传统。
-
-
-
-
-
-
-No.1 壹
-在大多数人眼里，佛山是一座与黄飞鸿、叶问、李小龙高度绑定的城市，在文弱谦退的中国南方，它是少有的，被打上了尚武、悍勇标签的地方。一个不易察觉的细节是，这三位“武林高手”，似乎都没怎么饿过肚子：黄飞鸿十六岁开设武馆给人授艺，生意始终兴隆，早早当上了老板；叶问十七岁赴香港读书，接受西式教育，电影《叶问》一开场，他就过着喝茶、练武、住别墅的神仙日子；而李小龙，则从出生起就是美国华侨，在移民热土旧金山的独栋独院里长大。在那个多数中国人都挣扎在贫困线上的年代，这三位佛山人毫无疑问是“人上人”的代表。
-
-
-
-事实上，有钱有闲、生活洋派，不仅是黄飞鸿、叶问和李小龙的个人状态，更折射了佛山地区一直以来的富庶和开放。佛山的地理位置很特殊，珠江最重要的两大支流：西江和北江在此交汇，它们带来了南岭山区的大量腐殖质，并冲击出一片河网密布的巨大三角洲。相比上游城市清远、肇庆，佛山的土地平旷而肥沃；相比下游的江门、中山和珠海，这里又因为远离海洋而没有海蚀侵袭、土壤盐碱化的困扰。对农耕文明来说，这是一块不可多得的宜居区。
-
-
-
-很早以前，中原政…]]></summary>
-        <author>
-            <name>魏水华</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[在狗的陪伴下成长]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/r6vmzl/growing_up_with_a_dog_by_your_side/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/r6vmzl/growing_up_with_a_dog_by_your_side/"/>
-        <updated>2021-12-02T14:52:53.000Z</updated>
-        <summary type="html"><![CDATA[在狗的陪伴下成长]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[测试手机大小的法拉第袋]]></title>
-        <id>https://hn.buzzing.cc/hn/29413774</id>
-        <link href="https://hn.buzzing.cc/hn/29413774"/>
-        <updated>2021-12-02T14:24:41.000Z</updated>
-        <summary type="html"><![CDATA[测试手机大小的法拉第袋]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[JetBrains releases Compose Multiplatform 1.0 for creating Kotlin-based Android, desktop, and web apps]]></title>
-        <id>https://www.xda-developers.com/?p=565299</id>
-        <link href="https://www.xda-developers.com/jetbrains-releases-compose-multiplatform-1-0-for-creating-kotlin-based-android-desktop-and-web-apps/"/>
-        <updated>2021-12-02T14:00:52.000Z</updated>
-        <summary type="html"><![CDATA[JetBrains produces some of the most popular integrated development environments (IDEs) around for creating software with Java, PHP, Kotlin, and other programming languages. The company has also been working on JetBrains Compose Multiplatform, a framework for creating cross-platform applications based on the Kotlin language (and is connected to Google’s Jetpack Compose). Multiplatform has been in
-The post JetBrains releases Compose Multiplatform 1.0 for creating Kotlin-based Android, desktop, and web apps appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Corbin Davenport</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[这就是我认为ACAB的原因。]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/r6feoc/this_is_why_i_think_acab/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/r6feoc/this_is_why_i_think_acab/"/>
-        <updated>2021-12-02T13:57:54.000Z</updated>
-        <summary type="html"><![CDATA[这就是我认为ACAB的原因。]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[脸书推翻凯尔-瑞特豪斯的政策]]></title>
-        <id>https://hn.buzzing.cc/hn/29411364</id>
-        <link href="https://hn.buzzing.cc/hn/29411364"/>
-        <updated>2021-12-02T13:52:30.000Z</updated>
-        <summary type="html"><![CDATA[脸书推翻凯尔-瑞特豪斯的政策]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[密苏里州发现口罩任务有效，但没有公开调查结果]]></title>
-        <id>https://hn.buzzing.cc/hn/29413982</id>
-        <link href="https://hn.buzzing.cc/hn/29413982"/>
-        <updated>2021-12-02T13:52:30.000Z</updated>
-        <summary type="html"><![CDATA[密苏里州发现口罩任务有效，但没有公开调查结果]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[排名游戏]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/gaming/comments/r6pbkt/ranked_gaming/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/gaming/comments/r6pbkt/ranked_gaming/"/>
-        <updated>2021-12-02T13:40:26.000Z</updated>
-        <summary type="html"><![CDATA[排名游戏]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[迫在眉睫的 "云计算 "改革]]></title>
-        <id>https://hn.buzzing.cc/hn/29411566</id>
-        <link href="https://hn.buzzing.cc/hn/29411566"/>
-        <updated>2021-12-02T13:30:25.000Z</updated>
-        <summary type="html"><![CDATA[迫在眉睫的 "云计算 "改革]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[最快的FizzBuzz实施]]></title>
-        <id>https://hn.buzzing.cc/hn/29413656</id>
-        <link href="https://hn.buzzing.cc/hn/29413656"/>
-        <updated>2021-12-02T13:30:25.000Z</updated>
-        <summary type="html"><![CDATA[最快的FizzBuzz实施]]></summary>
         <author>
             <name>Hacker News 热门</name>
         </author>
