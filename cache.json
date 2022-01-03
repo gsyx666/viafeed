@@ -532,6 +532,114 @@
       "siteUrl": "https://dev.to",
       "articles": [
         {
+          "id": "https://dev.to/vangware/you-dont-need-null-3m4n",
+          "author": "LUKESHIRU",
+          "description": "While a lot of programming languages that have a \"nullish\" type (null, nil, etc.) debate about avoiding it, JavaScript is the only popular one that has two, you read that right, two nullish types. One of the most common recommendations is to stick to using only one, and my recommendation is to only use undefined and avoid null. In this article, we will go over the reasons you might also want to avoid null in JavaScript and TypeScript.\nAs Douglas Crockford put it in one of his talks, JavaScript itself uses undefined all the time, so let's use the one the language uses:\nlet something; // This is undefined!\n\nconst otherThing = {\n    foo: \"hi\",\n};\notherThing.bar; // This is also undefined\n\nconst aFunction = anArgument => {\n    // anArgument here is undefined if no value is passed\n};\n\nTo use nu…",
+          "link": "https://dev.to/vangware/you-dont-need-null-3m4n",
+          "publishedOn": "2022-01-02T23:20:06.000Z",
+          "wordCount": 1630,
+          "title": "You don't need null"
+        },
+        {
+          "id": "https://dev.to/isaacojeda/aspnet-core-6-autenticacion-jwt-y-identity-core-170i",
+          "author": "Isaac Ojeda",
+          "description": "Introducción\n\n\nEn este artículo exploraremos a fondo las características de los JSON Web Tokens, su composición y su implementación utilizando Minimal APIs y ASP.NET Identity.\nEl código de ejemplo lo podrás encontrar en este repositorio en mi github. Espero les sea de utilidad.\nUn JSON Web Token (JWT) es un estándar (RFC 7519) que define una forma segura y compacta de transmitir información entre dos entidades en forma de un objeto JSON.\nEsta información puede ser verificada y es confiable ya que está firmada digitalmente. Los JWTs pueden ser firmados utilizando una llave privada (con un algoritmo HMAC) o con llaves públicas y privadas utilizando RSA o ECDSA.\nAquí veremos un par de escenarios donde es útil y recomendable utilizar los JWTs:\nAutorización: Este es el caso de uso más común de …",
+          "link": "https://dev.to/isaacojeda/aspnet-core-6-autenticacion-jwt-y-identity-core-170i",
+          "publishedOn": "2022-01-02T23:09:08.000Z",
+          "wordCount": 3081,
+          "title": "ASP.NET Core 6: Autenticación JWT y Identity Core"
+        },
+        {
+          "id": "https://dev.to/coder/faster-jetbrains-ides-with-shared-indexes-10n1",
+          "author": "Ben Potter",
+          "description": "If you develop with IntelliJ IDEA, PyCharm, GoLand, or other JetBrains IDEs,  it’s likely you’ve waited for “indexing” to complete after opening a project. While this may be annoying, it’s necessary for IntelliJ and other heavy-weight IDEs to have features such as code search, highlighting, refactoring, and code completion.\nWaiting for an IDE to finish indexing a project might not be a big problem for many workflows. After the first load, indexes are cached and subsequent runs are faster. However, indexing time can be a huge blocker for developers, especially in these cases:\nlarge projects (monorepos, many dependencies, monolithic applications)\n\n\nrunning old/slow machines (indexing is CPU-intensive)\n\n\nephemeral developer workspaces (containers, remote IDEs)\n\n\n\n\nIn this post, we’ll cover ho…",
+          "link": "https://dev.to/coder/faster-jetbrains-ides-with-shared-indexes-10n1",
+          "publishedOn": "2022-01-02T21:53:11.000Z",
+          "wordCount": 1043,
+          "title": "Faster JetBrains IDEs with shared indexes"
+        },
+        {
+          "id": "https://dev.to/favourmark05/getting-started-with-open-source-ohm",
+          "author": "MFONIDO MARK",
+          "description": "OVERVIEW\n\n\nOpen source is a term that originally referred to open source software (OSS). Open-source software is code that is designed to be publicly accessible—anyone can see, modify, and distribute the code as they see fit. Open source refers to source code that is made available to the public to view, use, modify, and distribute under a license. It’s usually developed and maintained collaboratively by a community of its users. Some well-known open-source projects include Django, Postgres, MongoDB, Vue, Go, Ruby, TypeScript, Git and so many more.\nThere is a variety of good reasons to release something under an open-source license, from “more perspectives make better software” to “establishing a standard.” It is important to build a sustainable project to consider your reasons for publish…",
+          "link": "https://dev.to/favourmark05/getting-started-with-open-source-ohm",
+          "publishedOn": "2022-01-02T21:23:34.000Z",
+          "wordCount": 1306,
+          "title": "Getting started With Open Source"
+        },
+        {
+          "id": "https://dev.to/kw4ng/how-to-add-a-community-trading-bot-on-discord-7p2",
+          "author": "Kevin Wang",
+          "description": "At Blankly, we pride ourselves not just for the product that we are building, but also towards cultivating a community of quant enthusiasts which no one else is doing in this field right now. We identified a critical void that many Discord servers currently suffer from: low member engagement. That said, to elevate the overall experience of using the Blankly package and fix the problem identified earlier, we decided to roll out three Discord bots each of which specializes in something unique. We will dive into the Blankly Connect Bot in this article.\nTo give the users a taste of our product, we created this bot using a virtual sandbox and our in-house Blankly Connect API—the single source to connect, unify, and trade across all exchanges—which aims at simulating what the actual product will…",
+          "link": "https://dev.to/kw4ng/how-to-add-a-community-trading-bot-on-discord-7p2",
+          "publishedOn": "2022-01-02T21:10:01.000Z",
+          "wordCount": 1396,
+          "title": "How To Add A Community Trading Bot on Discord"
+        },
+        {
+          "id": "https://dev.to/williammcgonagle/how-to-get-more-stars-on-github-part-2-2pdk",
+          "author": "William McGonagle",
+          "description": "I’ve been working on eaf-linter for about a few days now, and it already has 6 stars and 2 forks. My other project that I've been working on, the Backend Server, has 14 stars, 9 forks, and nearly 10 outside contributors. That might not sound like a lot, but both of these projects are only about a week old.\nSo, how did I do it?\nThe most important thing has been issues, which I talked about here. But, the second most important thing has been designing a great readme. \nA good readme is the difference between someone staring your project and someone ignoring it. If you have badges, easily understandable features, and lots of images, you have a star worthy repository. \nFirst, you need to have badges. If you don't know what a badge is, it's the little image that says how many stars, downloads, etc. a project has. These are also known as shields, and you can get them from this website. If you have a ton of them and they all say good things, it increases the confidence that someone has in your project. \nSecondly, you need easily understandable features. If you look at my newest repository, eaf-linter, you will see that all of the features have a simple headline and they link to a new page. This is very important. If your feature can link to a more in depth description of the feature, it will increase the confidence that the possible contributor has in your project. \nFinally, images are super important. In my backend server, I have a ton of really eye-catching images. These images increase the likelihood that someone will keep looking through your readme, and the longer that the person stays on your page, the more likely they are to star your repository. \nThere will be more tips like this coming tomorrow and the day after, so if you liked hearing this, make sure to follow me, so you can see more tips as they come out.\nAlso, our open-source, non-profit is hiring right now if you're interested. Don't forget to follow us on LinkedIn.",
+          "link": "https://dev.to/williammcgonagle/how-to-get-more-stars-on-github-part-2-2pdk",
+          "publishedOn": "2022-01-02T21:05:05.000Z",
+          "wordCount": 860,
+          "title": "🥳 How to Get More Stars on Github! (Part 2)"
+        },
+        {
+          "id": "https://dev.to/nandorholozsnyak/jbang-quarkus-aws-lambda-terraform-3-4ahk",
+          "author": "Nándor Holozsnyák",
+          "description": "Have you ever wondered how can you utilize your Java skills in the serverless world?\nJBang.\nJBang\nProperly configured AWS CLI with Access and Secret key\nTerraform - latest/newest release would work.\nI would not like to go through how these tools should be installed, I assume these things are a piece of cake.\n❯ jbang version\n0.86.0\n❯ aws --version\naws-cli/1.22.5 Python/3.9.5 Linux/5.15.8-76051508-generic botocore/1.23.5\n❯ terraform -v\nTerraform v1.0.0\non linux_amd64\n\nJBang is a powerful tool which lets you create .java files with your requested dependencies, and with different commands you will be able to build and export .jar files and native binaries.\nOkay okay, we have Maven and Gradle, why would I need this?\nFor my answer for this is the following: If you really want to code just a smal…",
+          "link": "https://dev.to/nandorholozsnyak/jbang-quarkus-aws-lambda-terraform-3-4ahk",
+          "publishedOn": "2022-01-02T20:55:15.000Z",
+          "wordCount": 3433,
+          "title": "JBang + Quarkus + AWS Lambda + Terraform = <3"
+        },
+        {
+          "id": "https://dev.to/about14sheep/streaming-data-from-aws-s3-using-nodejs-stream-api-and-typescript-3dj0",
+          "author": "Austin Burger",
+          "description": "AWS s3 SDK and NodeJS read/write streams makes it easy to download files from an AWS bucket. However, what if you wanted to stream the files instead? \nThere is a timeout on connections to an AWS s3 instance set to 120000ms (2 minutes). Unless you have very small files, this just won't cut it for streaming. \nOne option is to simply raise that timeout, but then how much should you raise it? Since the timeout is for the total time a connection can last; you would have to either make the timeout some ridiculous amount, or guess how long it will take to stream the file and update the timeout accordingly. This is also not taking into account the stream closing due to HTTP(S)'s own timeout reasons as well.\nInstead of making guesses and fighting random bugs, we can make use of the NodeJS Stream AP…",
+          "link": "https://dev.to/about14sheep/streaming-data-from-aws-s3-using-nodejs-stream-api-and-typescript-3dj0",
+          "publishedOn": "2022-01-02T20:35:31.000Z",
+          "wordCount": 1750,
+          "title": "Streaming files from AWS S3 using NodeJS Stream API with Typescript"
+        },
+        {
+          "id": "https://dev.to/hananekacemi/symfony-doctrine-part-3-3odn",
+          "author": "Hanane Kacemi",
+          "description": "Previously, I talked about how to create easily an Entity (ex:JOB) using a simple command line make:Entity and answering a few question(fields,type…).\nThis article will be about saving data to, fetching data from, the database.\nTo do so, we need to use a service provided by Doctrine, called EntityManagerInterface. The command  symfony console  debug:autowiring doctrine shows all doctrine services available.\nType-hint an argument $em to EntityManagerInterface, create an Object (ex $job), set all its properties then call persist and flush methods.\n\nCalling persist() method tells Doctrine that we want to save the object, no query is executed yet. We call this method as many time as objects that we have, once we call flush() method, Doctrine execute the queries needed to insert to database.\nWe can check if data has been inserted with : symfony console doctrine:query:sql 'select * from job'\n\nGetting data(objects) from db is even easier, one way to do that is by using JobRepository $jobRepo as an argument in our method. \n\nThe repository class offers many helper methods to get our data from db like : findBy, findOneBy... We can also add custom methods to have complex queries, more about that in my next article. \nFinally, I like to mention that Profiler provides a lot of tools to use when developing an app, for doctrine, it shows all queries executed : \n\nThanks for reading and Happy new year :)",
+          "link": "https://dev.to/hananekacemi/symfony-doctrine-part-3-3odn",
+          "publishedOn": "2022-01-02T20:34:05.000Z",
+          "wordCount": 657,
+          "title": "Symfony & Doctrine: Part 3"
+        },
+        {
+          "id": "https://dev.to/dustinbrett/after-1-year-of-hard-work-my-new-ultimate-web-desktop-environment-is-ready-for-launch-2dnd",
+          "author": "Dustin Brett",
+          "description": "LIVE LINK: https://dustinbrett.com/\nHey everyone, thanks for checking out my article on my passion project for the last year (and several years prior in different forms/codebases).\nI've recently completed 52 weekly streams in 2021 as I worked on coding my app, from Hello World to what it is today.\n\n\n\n\nToday (Jan 2nd) was the day of my first stream one year ago so I felt it was a good day to do this release. I will be having a LIVE 🔴 Release Party Stream later TONIGHT, (Jan 2nd, 2022) at 9 PM PT to celebrate finally getting the code live and also to answer any questions or comments anyone may have.\n\n\n\n\nI'm also going to be answering questions throughout the 1st week of 2022 as I will post on several sub reddits that may find this project interesting. Today I have posted on /r/reactjs so fe…",
+          "link": "https://dev.to/dustinbrett/after-1-year-of-hard-work-my-new-ultimate-web-desktop-environment-is-ready-for-launch-2dnd",
+          "publishedOn": "2022-01-02T20:01:03.000Z",
+          "wordCount": 1344,
+          "title": "After 1 YEAR of hard work my NEW Ultimate Web Desktop Environment is ready for launch!!!!! 🎉🎉"
+        },
+        {
+          "id": "https://dev.to/ebdonato/desestruturacao-para-variaveis-ja-existentes-28je",
+          "author": "Eduardo Donato",
+          "description": "É possível utilizar desestruturação para variáveis ao invés de sempre criar novas.\nPor exemplo, caso tenhamos um objeto como o a seguir:\nconst user = { name: \"Eduardo\", age: 39 };\n\nPodemos fazer a desestruturação com a seguinte sintaxe:\nconst { name, age } = user;\n\nconsole.log(name); // Eduardo\n\nconsole.log(age); // 39\n\nPorém se as variáveis name e age já tiverem sido declaradas no mesmo escopo, será necessário desestruturar e renomear ao mesmo tempo:\nconst { name: newName, age: newAge } = user;\n\nconsole.log(newName); // Eduardo\n\nconsole.log(newAge); // 39\n\nPara atribuir a desestruturação para as variáveis declaradas anteriormente, utiliza-se a seguinte sintaxe (parênteses na declaração):\nlet name = \"Fulano\",\n  age = 22;\n\n({ name, age } = user);\n\nconsole.log(name); // Eduardo\n\nconsole.log(age); // 39",
+          "link": "https://dev.to/ebdonato/desestruturacao-para-variaveis-ja-existentes-28je",
+          "publishedOn": "2022-01-02T19:44:35.000Z",
+          "wordCount": 518,
+          "title": "Desestruturação para variáveis já existentes"
+        },
+        {
+          "id": "https://dev.to/amorriscode/12-products-in-12-months-4h62",
+          "author": "Anthony M.",
+          "description": "It's been a while since I've built anything for myself. One of the reasons I consider myself a \"product-focused engineer\" is because of my passion for building. Programming has enabled me to create something from nothing. Its turned me into a builder.\nMy partner and I have been talking about doing an ambitious project for 2022. We've decided to build 12 products in 12 months.\nThere are a lot of reasons I'm excited about this project. The first one was mentioned above.\nI'm a builder. Creating things excites me. It makes me feel alive. I love everything from naming products, designing logos, writing bits of code, and setting up deployments. Every bit of the process is a fun way to flex my creativity. It brings me joy.\nMy partner is a computer science student. She's been developing her coding…",
+          "link": "https://dev.to/amorriscode/12-products-in-12-months-4h62",
+          "publishedOn": "2022-01-02T19:38:29.000Z",
+          "wordCount": 1267,
+          "title": "12 Products in 12 Months"
+        },
+        {
           "id": "https://dev.to/this-is-angular/built-in-angular-pipes-part-1-23ec",
           "author": "Anubhab Mukherjee",
           "description": "Today we will be learning on a very important concept provided by Angular - Pipes\nwater filter. A water filter takes water as input and as an output it provides us clean water, so it basically does some transformation to the water inside it.\nreadability. \nAsyncPipe - (Will discuss when I will be covering Observables)\nCurrencyPipe \nDatePipe \nDecimalPipe \nI18nPluralPipe \nI18nSelectPipe \nJsonPipe \nKeyValuePipe \nLowerCasePipe \nPercentPipe \nSlicePipe \nTitleCasePipe \nUpperCasePipe\nSo first lets create a separate component and name it pipe-demo\nthis_post\nOur project structure would look like below -\n\nCurrencyPipe\nuse-case\nThe Syntax\n{{ value_expression | currency [ : currencyCode [ : display [ : digitsInfo \n\n\nLets understand the syntax before diving into the example -\nvalue_expression - The input…",
@@ -3176,24 +3284,6 @@
           "publishedOn": "2021-12-04T19:30:30.000Z",
           "wordCount": 1645,
           "title": "Implementing pagination with Next.js, MUI and react-query"
-        },
-        {
-          "id": "https://dev.to/ansigameengine/developing-a-game-engine-with-perl-part-7-fork-3acm",
-          "author": "Shawn Holland",
-          "description": "Pssssst... I DO NOT KNOW WHAT I AM DOING.\nIf you want to start reading from the beginning. Check out the first article in this series\nContinuing from our last post, I talked about how ANSI Game Engine is a colourful telnet server. We left off with needing to fork the engines telnet server.\nTime to level up our telnet server and make it multi-player with some knify forky.\n\nI've added in the strftime identifier from Perl's POSIX module to help with time stamping the output. The setsid identifier is for starting a new session and group ID for each forked process. A.K.A, the child process. :sys_wait_h is for returning without wait after the child process has exited, using the WNOHANG flag when calling waitpid(). This provides non-blocking wait for all pending zombie children.\n\nreaped. This wil…",
-          "link": "https://dev.to/ansigameengine/developing-a-game-engine-with-perl-part-7-fork-3acm",
-          "publishedOn": "2021-12-03T23:34:45.000Z",
-          "wordCount": 1342,
-          "title": "Developing A Game Engine with Perl: Part 7 - Fork"
-        },
-        {
-          "id": "https://dev.to/marcoservetto/advent-of-code-day-3-24pp",
-          "author": "Marco Servetto",
-          "description": "Ok, day 3 part one was nice and simple. FIrst I defined a couple of utility static methods, then just rolled over the data.\nPow2 = {class method I (I that) =\n  if that==0I 1I else 2I*This(that-1I) }\nIs1 = {class method Bool(S that, I i) =\n  that.startsWith(S\"1\" leftOffSet=i)}\nMainPart1 = (\n  input = Fs.Real.#$of().read(\\\"input\")\n  tot = I.List[0I;0I;0I;0I;0I;0I;0I;0I;0I;0I;0I;0I]\n  var size = 0I\n  for s in input.split(S.nl()) (\n    size+=1I\n    for var e in tot, i in Range(tot.size()) (\n      if Is1(s i=i) e:=e+1I //update the value inside of 'tot'\n      )\n    )\n  var gamma = 0I\n  var epsilon = 0I\n  for e in tot, i in Range(tot.size()).reverse() (\n    if e+e>size gamma+=Pow2(i) \n    else      epsilon+=Pow2(i)\n    )\n  Debug(gamma*epsilon)\n  )\n\nThe second part, I found it involved in a borin…",
-          "link": "https://dev.to/marcoservetto/advent-of-code-day-3-24pp",
-          "publishedOn": "2021-12-03T23:28:47.000Z",
-          "wordCount": 743,
-          "title": "Advent of code, day 3"
         }
       ]
     },
@@ -4020,24 +4110,6 @@
           "publishedOn": "2021-12-05T05:42:16.000Z",
           "wordCount": 560,
           "title": "谁会和任天堂相爱相杀？|「世界主宰」的掌机之路 · 伍"
-        },
-        {
-          "id": "https://sspai.com/post/70039",
-          "author": "啊桂酱AGuiJ",
-          "description": "写了两篇关于消费的文章，这次回归产品经理主业，聊聊个人管理。\n做好个人管理和做好产品经理这两件事在我看来是相辅相成的。首先，我们身边的大部分人都是毕业就开始打工（甚至还没毕业已经在打工了），大部分的时间都花在了工作上，一方面是为了生存，通过劳动我们会获得报酬，另一方面也可以说是实现自我价值或者其他你觉得重要的点。总之我们的生活方式以及整个人都在不知不觉间被工作塑造了。\n以我自己为例，产品经理这个岗位的其中一项职能是项目管理，虽然有的公司会细分出「项目经理」岗，但大部分中小型公司的产品都在兼任或曾经兼任过项目经理。所以在产品经理工作中，我逐渐养成了项目管理的思维模式：使项目能够在有限资源限定条件下，实现或超过设定的需求和期望的过程，而个人管理是我们每个人最独一无二的项目。\n\n百度百科：在个人管理中，个体既是管理者，也是被管理者。\n\n背景\n一开始我的个人管理诉求源于我对现实生活的不满，毕业后我留在家乡工作，住在家里。因为无法随时所欲地生活，就十分想拥有自己的住所，然后我制定了一个 3 年买房计划。可当时的我不知道个人管理怎么做，更没有认清现实，只是内心有一个很想实现的目标，其他全凭感觉，每天的日子还是过得浑浑噩噩，不仅没有缩短跟目标之间的距离，还在走弯路。\n工作中的管理实践\n所幸我的工作是自己喜欢的，因为能接触到更多的信息，并不断学习新东西。我需要每天在工作前明确当前是项目的什么阶段，写下今天要完成什么任务，要跟谁沟通以及得到怎样的结果，然后在每天结束工作后记录当天任务的完成情况并复盘：是否存在风险？该如何安排明天的工作？——当然你也可以把这些简称为「日报」。除此以外，我还要去了解行业发展趋势和热点，国内外优秀互联网公司最近又推出了什么新 App、新功能等等，就需要有工具去整理并归纳这些资料以及尽量高效。\n通过工作，我首先接触并掌握的个人管理内容是信息管理也可称为知识管理。\n这…",
-          "link": "https://sspai.com/post/70039",
-          "publishedOn": "2021-12-04T07:00:00.000Z",
-          "wordCount": 193,
-          "title": "零成本、无门槛的个人管理方案：8 年产品经理的心得"
-        },
-        {
-          "id": "https://sspai.com/post/68262",
-          "author": "笋加鲜",
-          "description": "「城市风光」是一个很广义的词，大部分时候它不仅指代某一个地点，更是我们经历过、熟悉的并留下深刻回忆的地方。它的妙不可言或许人尽皆知一目了然，亦或许是深藏心底只有自己知道的秘密。\n回忆汹涌呼之欲出，且听作者们平和、真诚且娓娓道来。我们希望通过「城市漫步指南」这个系列，带你领略每一个有趣而又非凡的城市风光。\n中山纪念堂\n「城市漫步」（citywalk）通常会有一个领队带十多个人在城市中走一段固定路线，以此观察和了解城市的历史、建筑和文化景观，这种旅行方式在日本和欧洲国家比较流行。但国内目前只有上海有比较多团队组织城市漫步活动，但其实中国还有很多城市同样特别适合漫步，比如中山。\n中山城区保留了许多老街老巷，历史丰富的老式民居藏匿于其中，路边是为行人遮阴的高高的行道树，城市中还有平靓正的美食，这些让中山成为一座十分适合行走的城市。而也我因为在中山生活而爱上了城市漫步，在中山生活的四年多时间里也走过许多的大大小小的街巷，喜欢上用行走的方式了解一座城市，去旅行的时候总是先往老城区的巷子里钻。于是我编辑了这篇文章来分享了自己在中山漫步经验，希望为大家认识城市提供一种新的视角。\n俯瞰中山\n一、以历史文化景观为中心的城市漫步\n中国东南沿海地区的许多建筑都受民国时期南洋华侨带来的建筑风潮的影响，比如下面要提到的碉楼和骑楼，以及随处可见的各式民居。这些建筑在吸收外来建筑审美的同时又结合了当地传统的文化，并在建造中因地制宜的产生了多种多样的形态，每栋建筑都有自己独特的个性，成为中山街头独特的风景，而这些都是只有通过城市漫步的方式才能体验到。\n\n民居\n漫步路线：仁厚里、永安里、龙母庙街、拱辰路、水关街、下河泊、弓箭巷、华贵坊、从善坊\n由于核心城区没有受到很大程度的开发，中山保留了大片的老住宅区，这些住宅区的交通网络交错纵横四通八达，许多历史悠久、形态各异的民居就扎根在这些街巷深处。中山现存的老民居不…",
-          "link": "https://sspai.com/post/68262",
-          "publishedOn": "2021-12-04T03:06:57.000Z",
-          "wordCount": 111,
-          "title": "城市漫步指南：打开中山有几种方式？"
         }
       ]
     },
@@ -5226,24 +5298,6 @@
           "publishedOn": "2021-12-04T14:16:32.000Z",
           "wordCount": 218,
           "title": "2021年，游戏行业有哪些能提升开发效率的“黑科技”，前景如何？"
-        },
-        {
-          "id": "http://www.zhihu.com/question/502749269/answer/2254744727",
-          "author": "危天行",
-          "description": "作为社恐人士，看看我这小眼神就知道我是自愿回答的！\n\n\n因为直到开播前都很兴奋，所以前几天都没怎么睡，思维到现在都还有点乱，就随便闲聊下吧。\n\n\n我们跟腾讯动漫算是合作很久了，他们在我们大火鸟还没什么名气的时候就给了很多机会，加上这次能得到《大王饶命》这个项目，真的很感激也很开心。\n\n\n我还记得当初ASK老师和我第一次说这个项目的时候，我就觉得这是我们团队的荣耀，而且碰巧ASK老师和肘子老师还有我三个都是白羊座,生日还刚好挨着，就觉得这缘分也太巧了。\n\n\n说来有点不好意思，在还没见到本人前，我以为肘子老师是那种特别严肃的老人家，没想到碰面后反而有种一见如故的感觉。于是我就追着他问了很多关于小说创作的事，一番交流下来，我算是深刻地领会到了什么叫头部作者。\n\n\n光是我们这几个小时的聊天就足够让我学到了很多平时压根不可能注意的故事创作细节，而且他最厉害的就是可以在极短的时间里想到一段非常有意思的梗，大王第一话开头的吕树怼糖葫芦师傅就是肘子老师几分钟内蹦出来的创意，真的是让人非常佩服。\n\n\n话说回来，虽说能接到这个项目很让人兴奋，但兴奋劲过头随之而来的就是不安了。因为这部小说的知名度很高，加上肘子老师对我们的期待很高，所以我们必须拿出全部实力去完成它才行。\n\n\n最终在燃尽了全部精力后，作品顺利上线了，从那刻起，我心里的不安也就渐渐消散了，真心希望大家能够喜欢上《大王饶命》的动画版。\n\n\n说起动画版的亮点，这两天被大家热议的OP肯定是一个重头戏。实话实说，其实我并没有刻意去做什么布局之类的、与创作无关的事。我只是给了一群爱玩的朋友一个足够的空间，让大家可以在其中尽情玩耍，玩得开心。\n\n\n我确实没想到会火到这个程度，毕竟我每次做OP/ED的初衷就是让创作者尽情表达自己的创作欲，我相信只有完全释放激情和灵感的作品才是好作品。这也是我为什么特别喜欢跟无念聊创作的事，因为每当我跟他聊起OP时，我能够感受到他眼里是有光的，这是他真心喜欢做的东西，就像他说在制作过程里并没有遇到什么太大的难题，反而更像是水到渠成。\n\n\n至于正片内容，对我来说比较难的是如何让吕树的怼人场景比较贴合我们的现实世界，因为如果过度追求搞笑效果的话，很容易就会变成那种烂大街的搞笑喜剧。然而这部作品的内核并不是搞笑，所以我们最初开始制作的时候就定下了偏写实的方向，只有这样才能让吕树这个角色显得更加立体。在初期讨论时尤其让我最印象深刻的是ASK老师说“麻烦导演你把第一季做的穷一些，要那种从里到外的穷感。”\n\n\n真是让人头大.jpg。\n\n\n一部好剧肯定少不了好细节，我们现在每次要制作新作时，在正式开始前都会去相关地点进行场景、道具的取材，《大王饶命》也不例外，这次为了构建出吕树的房子，我们收集了相当多的资料，所以最后出来的场景美术设定所有人看了都很满意。比较可惜的是我们没能赶上庙会的时间，所以没能体会到原汁原味的庙会氛围，有点可惜。\n\n\n除了吕树的房子外，像是比较重要的学校场景也在精心收集了很多资料后对它进行了高度的还原，尤其是道元班的设计，我是真的苦恼了很久，最终才定下了方案。而且因为疫情的缘故，在取材结束后我们就匆匆回到了广州，在那之后因为各种原因也没能再去一次，所以后面的很多场景就只能参考之前拍的照片，通过回忆和讨论尽可能地还原了。\n\n\n最后，再次感谢腾讯动漫，谢谢肘子老师，给了我们这次参与《大王饶命》动画化项目的机会！\n\n\n\n危天行\n点击下载\n62 个回答，查看全部。\n如何评价7doc七创社的新作品《凹凸世界》？\n如何评价《镜双城》正式动画化？",
-          "link": "http://www.zhihu.com/question/502749269/answer/2254744727?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2021-12-04T12:23:19.000Z",
-          "wordCount": 14,
-          "title": "如何评价《大王饶命》正式动画化？"
-        },
-        {
-          "id": "http://www.zhihu.com/question/470198314/answer/2256171695",
-          "author": "婺江墨客",
-          "description": "写在开头\n其实笔者本不想探讨关于《一人之下》中人战力高低的问题，因为这类问题往往会沦于骂战，但是看到题主的这个问法“十年空窗期打掉一众十年修为的”，笔者觉得有点意思。\n就在此处做一个小小分析，希望各位读者在看待一人之下中的战斗时能够从更多方面去考虑，也算是抛砖引玉了。\n先说结论——打架要靠脑子的\n张楚岚到底有多强？并不强。\n其实细细分析，张楚岚的各方面纸面战力其实都很一般，刨除个别本来就不擅长战斗的同龄人外(没觉醒双全手的吕良），甚至说可以比同龄人还略弱。\n但是真正面对战斗时，还包含很多因素，比如战斗智商、心性果决程度、布局算计以及悟性。\n而这些非纸面战力，都能够在具体的战斗中扭转乾坤，改变局面。\n\n何谓纸面战力：\n包括功法、修为年限、战斗经验、对各门各派功夫的熟悉程度以及肉体和灵魂的强韧程度。\n那么张楚岚的纸面战力怎么样呢？\n张楚岚现年19岁（虚岁），出生于1997年2月4日，由于并不知道张楚岚是几岁时候得炁开始修炼的，但是参考同龄的诸葛青7岁得炁开始修炼。张楚岚只能更早，假设是在5岁（2001年）。\n\n张楚岚7岁时，张怀义过世（2004年甲申年）。他就停止了修炼，连静功都停止了，从而瞒过公司，一直以普通人的身份活到了19岁。\n\n\n那么张楚岚的修炼总时长为：2001年-2004年期间，满打满算4年时间。\n\n功法：\n金光咒、雷法、老农功【相比其他门派的功法略强】\n修为年限：\n4年【同龄人10年起步】\n战斗经验：\n4-5次（罗天大醮期间）【同龄人大多有各门派切磋学习，经验远多于此】\n\n对各门各派功夫的熟悉程度：\n龙虎山本门（只教授了术法，没解释含义）、藏龙提供的少量其他门派情报【同龄人大多会有同门长辈传授经验典故】\n\n\n肉体和灵魂的强韧程度：\n由于并非训练肉体的横练或者是性命双修的全真龙门，张楚岚的肉身强度为一般水准，但是灵魂的坚韧强度在同龄人中是出类拔萃的。【同龄人被擤气攻…",
-          "link": "http://www.zhihu.com/question/470198314/answer/2256171695?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2021-12-04T11:46:12.000Z",
-          "wordCount": 249,
-          "title": "《一人之下》里为什么张楚岚好久没动过手了？十年空窗掉打一众十年修为的?"
         }
       ]
     },
@@ -8847,6 +8901,16 @@
           "id": "https://stratechery.com/2021/the-creator-opportunity-the-value-of-abundance-tv-and-sports-follow-up/",
           "author": "Ben Thompson",
           "description": "It is fine to be excited about web3, but it doesn't seem right to deny the real opportunities already afforded by the Internet. Plus, tying up loose ends on TV and sports.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS90aGUtY3JlYXRvci1vcHBvcnR1bml0eS10aGUtdmFsdWUtb2YtYWJ1bmRhbmNlLXR2LWFuZC1zcG9ydHMtZm9sbG93LXVwLw.dPYWF12yTTbroZ0UHo2kZietZdiKZKBhfolevdAo95COzZBJ4lQgiVrHpcD33B5N4uAh1xDkzGOX7KsMh_BI9lage89M_SPmXz9u3trNDDeblbwkOV9alLhs95OZ5NRAe-QQnbt9NmFBOww1gm99o9BKZ-tiZJqNvpDW7zmb3brg5wcQj05rZ3zDFx_82BSsy9atHCi3xNRv2-DB_aaIUc14GGy3s1bCtAgKUe2tVZbZC4dCjYAUFKwZ4hrDRSn_OXchw72ru7-wRnBkyTUjZZhQhS8UmRkEDgqv-AF6srrmBWFu3v6zypgjVV3WlSu76mPs1CyA1b324QQUJBE7HA",
+          "publishedOn": "2021-12-21T11:40:31.000Z",
+          "wordCount": null,
+          "title": "The Creator Opportunity, The Value of Abundance, TV and Sports Follow-up",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/the-creator-opportunity-the-value-of-abundance-tv-and-sports-follow-up/",
+          "author": "Ben Thompson",
+          "description": "It is fine to be excited about web3, but it doesn't seem right to deny the real opportunities already afforded by the Internet. Plus, tying up loose ends on TV and sports.",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS90aGUtY3JlYXRvci1vcHBvcnR1bml0eS10aGUtdmFsdWUtb2YtYWJ1bmRhbmNlLXR2LWFuZC1zcG9ydHMtZm9sbG93LXVwLw.kqTgKR0nGn-WIWRF7eD2im_R-N6IvvypFq9vg7PkJKnQIsgn2C_uZUhnDdNkWIYIaIGe1Q6Zw1dHSWHmpiMHYdEI_HnuFGFwLtwmmolxBsy4JxSvC-K-DhRETl6mHW-XN-lCEANTadzXLrmPlmUCy7QwFwsfoV1fibJYsMZOhuGA8wUzv9DcMLN4Sqjy6UrxMf-DQKpRmqXqcBwrFyg_iLD0eIMdZrp_OwUyzQxYj1hJvFwECYg3LsyH6htRWceyUudfkGbWdyYHt8myZZ4oV68knK2jts1bIxZKqzkndGkQHSZwJW7J9x2IrMIiiN5nU6vN7MdfmYJsasvOkuF_kg",
           "publishedOn": "2021-12-21T11:40:31.000Z",
           "wordCount": null,
@@ -8917,6 +8981,16 @@
           "id": "https://stratechery.com/2021/formula-1-and-netflix-netflix-and-sports-youtube-tv-vs-espn/",
           "author": "Ben Thompson",
           "description": "The increased popularity of F1 shows how sports can be valuable to Netflix, and why sports remain valuable to Disney.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9mb3JtdWxhLTEtYW5kLW5ldGZsaXgtbmV0ZmxpeC1hbmQtc3BvcnRzLXlvdXR1YmUtdHYtdnMtZXNwbi8.ZccODxmoN8ep9Ch1JNkzRq_iGvvzOHKKKV_xP4NcONHfCey8LP9irEmu10Q7KdZT4rt68tK-exfpPj9E9ww7rExxLsOcESMvJRAD9Aw045ozfc-78rKGU38eDSpdffljBHBHjre7MxaJaEZwNaitsQhYOdA_ss87ITQkdUDA2YZR9eR2OkCu1jhYrZ1Q9StcDcbyDwgyEIxgwN_CXNiOkdQxo226P0FhANEzpj5b31Ai7KyuQv3QLfmL1ICxW1McADOCZ-Zxgly4d-waChizNfIZqBigaem8HIQRnOrMmKVWqaHQSXjRD2liuOIxBX6jQsGXr46vW8EU337xPDoXxQ",
+          "publishedOn": "2021-12-16T12:23:59.000Z",
+          "wordCount": null,
+          "title": "Formula 1 and Netflix, Netflix and Sports, YouTube TV vs. ESPN",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/formula-1-and-netflix-netflix-and-sports-youtube-tv-vs-espn/",
+          "author": "Ben Thompson",
+          "description": "The increased popularity of F1 shows how sports can be valuable to Netflix, and why sports remain valuable to Disney.",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9mb3JtdWxhLTEtYW5kLW5ldGZsaXgtbmV0ZmxpeC1hbmQtc3BvcnRzLXlvdXR1YmUtdHYtdnMtZXNwbi8.X-rCVVhUnZTNEW3DXvkMGWFHeXIlXyTpCUves1-tTGzCleelW8llv93cZCfpDbdyoECnq13gr2dr0FpC9CtSH92Gdn6MWbfxoskC1BHFj8aBoEYOVTzFgWOGf1LAE5lMMQIs80IlGIezlcDwhqnRGt6H31EPEPVV-OiZFACcgvLAQMxoU0WxFUIdj4cxS61IWt2laN-FZUbgAmRu25rE5D8sYFgReMd5k7Nb2f70UL30AO1UM8MhKJk5-jUnKzGGU7MPR83sXUonM1ivU8cZt4gkV3mf7Is8wfSFmrMTKppLkppRIQqmMUMX_2B0CUencVwKjlS2z-r9XEaA3NVJqw",
           "publishedOn": "2021-12-16T12:23:59.000Z",
           "wordCount": null,
@@ -8981,6 +9055,16 @@
           "publishedOn": "2021-12-16T12:23:59.000Z",
           "wordCount": null,
           "title": "Formula 1 and Netflix, Netflix and Sports, YouTube TV vs. ESPN",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/the-great-bifurcation-follow-up-more-on-intel-and-tsmc-intel-to-spin-out-mobileye/",
+          "author": "Ben Thompson",
+          "description": "Follow-up on \"The Great Bifurcation\", then more on Intel's relationship with TSMC, and why the latter needs the former. Plus, spinning out Mobileye is a great idea.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS90aGUtZ3JlYXQtYmlmdXJjYXRpb24tZm9sbG93LXVwLW1vcmUtb24taW50ZWwtYW5kLXRzbWMtaW50ZWwtdG8tc3Bpbi1vdXQtbW9iaWxleWUv.LYU37gfC8qzCAdCH_IZdrUYC2e5g9WBcwLAogztDY7lToxp64yeLpqqj5VuUDDZ3hHyFOyX42fFQRy3pMyfOGHZMQqRLjm-XmN5olzDvQa6QWNpBMd9rqRtyn5voxc7Fp_3GKb7-GQUzzlSSJeZOX1EYrKEkyKF_4Q6ptw22AYZ_SYe6arg4bJWCQQy--8OljMzhSd269RQtlkBBs1CjR4ZZ-bSzgcWXDLKlqitieVXJ9exYQcdhAh4r-Je7sXmq_KXHFO6fPrNHxqGaSHolfTVMIW6Q_6a1TvbzgXV2frN1RMmKuij9YESC9SlhZkhGeuh7YFBxyMDifiwlesMd-Q",
+          "publishedOn": "2021-12-15T11:00:16.000Z",
+          "wordCount": null,
+          "title": "The Great Bifurcation Follow-up, More on Intel and TSMC, Intel to Spin Out Mobileye",
           "itunes": {}
         },
         {
@@ -9061,6 +9145,16 @@
           "publishedOn": "2021-12-15T11:00:16.000Z",
           "wordCount": null,
           "title": "The Great Bifurcation Follow-up, More on Intel and TSMC, Intel to Spin Out Mobileye",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/intel-vs-tsmc-how-samsung-and-tsmc-won-mad-chips/",
+          "author": "Ben Thompson",
+          "description": "Intel's CEO is out campaigning for subsidies; his pitch doesn't give sufficient credit to TSMC and Samsung for their success.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9pbnRlbC12cy10c21jLWhvdy1zYW1zdW5nLWFuZC10c21jLXdvbi1tYWQtY2hpcHMv.N112QlPMNCW5_iDXaqSSJxMt8yfGX1UzbJwgZVCzKZci7pglPGEKAFgpSI607gYq95_4PvXdsewkfOpESBcutp6gLP1osIVpU6sjbHXEPPWeYUqWfxcc-YszUp065tFC4ge-dvh9lj9zjm_zTPiKBONdDOi-H25-1XtUUEUY9XZSuoTIaikaSQnnUXlxBBcpqgfokrAbaeKpHpPMxRuyIche6gnOQy3J5Bb_EMUyid2Ui95EPdU4xTVHGRnbePnUgYStqvxFpCGUs__x-pGNO8Ofo7-6rh55qvSGCD-xeX1hfeRO-J-_Pdr1SZCcYT1EpW2FQhgm0TiX1LCQbLkAFA",
+          "publishedOn": "2021-12-13T12:25:45.000Z",
+          "wordCount": null,
+          "title": "Intel vs. TSMC, How Samsung and TSMC Won, MAD Chips",
           "itunes": {}
         },
         {
@@ -9161,6 +9255,16 @@
           "publishedOn": "2021-12-13T12:25:45.000Z",
           "wordCount": null,
           "title": "Intel vs. TSMC, How Samsung and TSMC Won, MAD Chips",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/app-store-injunction-stayed-fingerprinting-on-ios-life360-and-apples-missing-leverage/",
+          "author": "Ben Thompson",
+          "description": "Apple wins in court, probably for good; meanwhile, its tracking rules aren't really being enforced, and probably can't be, which means Apple's overreach was a mistake.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hcHAtc3RvcmUtaW5qdW5jdGlvbi1zdGF5ZWQtZmluZ2VycHJpbnRpbmctb24taW9zLWxpZmUzNjAtYW5kLWFwcGxlcy1taXNzaW5nLWxldmVyYWdlLw.JWCOWYAEnTNYuvvYPQj8qWlGp55RVrWoGTiVGUlMKIyRaD79rF0E5NUgn5PqyyxV97yg1oytPSt2ahNaceTmNxjj25BnDp1lU83-R0UI9tqsoosSfF8LeiqiNVZsWdH1YXOGwmf24NSG_IyMECfgSCV4uBC4oudFhkZ4vrjryIvoTzTKIw8ZogByx7hEt7IBx6R9Fo56G8fVSlaXGYQL78L2vqP0sP9H-paxQUC-LXDLmWKh3om4xLBArAibULNLXl8avLO-eznP0m_9cdnwf-v-Kc6hEDniRvRnwPMeg3FMM6DZoC9DAvuMPPONhmkk965TJKNc6bnX7mO0_djtXA",
+          "publishedOn": "2021-12-09T12:58:52.000Z",
+          "wordCount": null,
+          "title": "App Store Injunction Stayed, Fingerprinting on iOS, Life360 and Apple's Missing Leverage",
           "itunes": {}
         },
         {
@@ -9281,6 +9385,16 @@
           "publishedOn": "2021-12-09T12:58:52.000Z",
           "wordCount": null,
           "title": "App Store Injunction Stayed, Fingerprinting on iOS, Life360 and Apple's Missing Leverage",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/the-information-on-apple-in-china-apples-deal-evaluating-apples-china-risk/",
+          "author": "Ben Thompson",
+          "description": "The Information has a report on a deal Apple made with the Chinese government; this explains multiple things over the last five years, and may indicate that Apple's position is fairly secure.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS90aGUtaW5mb3JtYXRpb24tb24tYXBwbGUtaW4tY2hpbmEtYXBwbGVzLWRlYWwtZXZhbHVhdGluZy1hcHBsZXMtY2hpbmEtcmlzay8.uKwQQdQkYTJu-ufczepN1ZLQ5Rb_HsvsjfoQ3n05mnc173I99LQDT2TD33K5ioVdM1LPm4ITgdrX-SYo2Wtn9YF4WlOFzspmhMyd2-w1YWNBEKS9Y-iGiZYxSuxcne_iJpHtWT4ZScJPNtzpwTlRYlcC2lTxy79clPhRjq1hwK13v3SLrQ67mUPOyDH2bbSNtfUxG4boEsZnrrqBdZjbjJQo0ImziFo9IY4SkHJ6u1CUfpoZfmL7P4ThvItUQqd8UKYf6Y17DOcwiu0KG_ypT1I0I9KZmQMnO9FtzGM3D9zj_iy_UmV9M29BhFJGBB1Bd2uhi7oMXJeJG97ILmX0BQ",
+          "publishedOn": "2021-12-08T11:36:12.000Z",
+          "wordCount": null,
+          "title": "The Information on Apple in China, Apple's Deal, Evaluating Apple's China Risk",
           "itunes": {}
         },
         {
@@ -9411,6 +9525,16 @@
           "publishedOn": "2021-12-08T11:36:12.000Z",
           "wordCount": null,
           "title": "The Information on Apple in China, Apple's Deal, Evaluating Apple's China Risk",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2021/ftc-sues-to-block-nvidia-arm-acquisition-innovation-and-the-data-center-arms-future/",
+          "author": "Ben Thompson",
+          "description": "The FTC is suing to block Nvidia's ARM acquisition; it is a plausible argument, although Nvidia can make a pro-innovation case. Regardless, ARM's future looks shakier than before.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9mdGMtc3Vlcy10by1ibG9jay1udmlkaWEtYXJtLWFjcXVpc2l0aW9uLWlubm92YXRpb24tYW5kLXRoZS1kYXRhLWNlbnRlci1hcm1zLWZ1dHVyZS8.XzIGFq-d8_wA5ypmz_LPIfHmqoWvz63mtb8D4ZgmbBWnjLhuWi0ybcjWbItU07m6CY8C1lTDLD6E70zUtxvn6Gy9IXRym_4QbdAbdfMpOWVovzRLKqsnOTfWaT6vnteSGH9TVns-QnHKlf7du1iXxnHytjsxQC1Cco1KMjnx_41mCRXj_HKfq7THX2McfSGawXzlcIun6mztluucorSMghiHk-cXJO8JNEe3rQx2exLCctFZK6sLkAA_2MrMC50ONWnCrY-KdguM5on_FmAfqrQdVuEahlj6m1j2vQnW0GbAr3MK7CuPlk0YbsZ0R99oFvtubd4_yXanMajtT4MIiQ",
+          "publishedOn": "2021-12-07T13:47:48.000Z",
+          "wordCount": null,
+          "title": "FTC Sues to Block Nvidia ARM Acquisition, Innovation and the Data Center, ARM's Future",
           "itunes": {}
         },
         {
@@ -10258,10 +10382,28 @@
           "id": "https://reddit.buzzing.cc/reddit/r/me_irl/comments/rrymgl/me_irl/",
           "author": null,
           "description": "我_女孩",
+          "link": "https://reddit.buzzing.cc/reddit/r/me_irl/comments/rrymgl/me_irl/?score=75026&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fme_irl%2Fcomments%2Frrymgl%2Fme_irl%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fme_irl%2Fcomments%2Frrymgl%2Fme_irl%2F",
+          "publishedOn": "2021-12-31T05:51:02.000Z",
+          "wordCount": 15,
+          "title": "我_女孩"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/me_irl/comments/rrymgl/me_irl/",
+          "author": null,
+          "description": "我_女孩",
           "link": "https://reddit.buzzing.cc/reddit/r/me_irl/comments/rrymgl/me_irl/",
           "publishedOn": "2021-12-31T05:51:02.000Z",
           "wordCount": 14,
           "title": "我_女孩"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rs629y/its_really_not_so_difficult/",
+          "author": null,
+          "description": "这真的不难",
+          "link": "https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rs629y/its_really_not_so_difficult/?score=75305&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Frs629y%2Fits_really_not_so_difficult%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Frs629y%2Fits_really_not_so_difficult%2F",
+          "publishedOn": "2021-12-31T03:37:02.000Z",
+          "wordCount": 19,
+          "title": "这真的不难"
         },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rs629y/its_really_not_so_difficult/",
@@ -10276,10 +10418,37 @@
           "id": "https://reddit.buzzing.cc/reddit/r/rareinsults/comments/rs3ei0/you_know_he_is_a_good_bf_material/",
           "author": null,
           "description": "你知道他是一个好的男朋友的材料",
+          "link": "https://reddit.buzzing.cc/reddit/r/rareinsults/comments/rs3ei0/you_know_he_is_a_good_bf_material/?score=75622&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Frareinsults%2Fcomments%2Frs3ei0%2Fyou_know_he_is_a_good_bf_material%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Frareinsults%2Fcomments%2Frs3ei0%2Fyou_know_he_is_a_good_bf_material%2F",
+          "publishedOn": "2021-12-31T02:55:35.000Z",
+          "wordCount": 22,
+          "title": "你知道他是一个好的男朋友的材料"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/rareinsults/comments/rs3ei0/you_know_he_is_a_good_bf_material/",
+          "author": null,
+          "description": "你知道他是一个好的男朋友的材料",
           "link": "https://reddit.buzzing.cc/reddit/r/rareinsults/comments/rs3ei0/you_know_he_is_a_good_bf_material/",
           "publishedOn": "2021-12-31T02:55:35.000Z",
           "wordCount": 22,
           "title": "你知道他是一个好的男朋友的材料"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/funny/comments/rs8ibo/prince_harry_vs_prince_william/",
+          "author": null,
+          "description": "哈里王子对威廉王子",
+          "link": "https://reddit.buzzing.cc/reddit/r/funny/comments/rs8ibo/prince_harry_vs_prince_william/?score=76266&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffunny%2Fcomments%2Frs8ibo%2Fprince_harry_vs_prince_william%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffunny%2Fcomments%2Frs8ibo%2Fprince_harry_vs_prince_william%2F",
+          "publishedOn": "2021-12-31T02:29:28.000Z",
+          "wordCount": 19,
+          "title": "哈里王子对威廉王子"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/pics/comments/rrwvwh/this_is_what_a_human_hand_looks_like_under_a/",
+          "author": null,
+          "description": "这就是人的手在显微镜下的样子。",
+          "link": "https://reddit.buzzing.cc/reddit/r/pics/comments/rrwvwh/this_is_what_a_human_hand_looks_like_under_a/?score=75031&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fpics%2Fcomments%2Frrwvwh%2Fthis_is_what_a_human_hand_looks_like_under_a%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fpics%2Fcomments%2Frrwvwh%2Fthis_is_what_a_human_hand_looks_like_under_a%2F",
+          "publishedOn": "2021-12-31T02:29:28.000Z",
+          "wordCount": 25,
+          "title": "这就是人的手在显微镜下的样子。"
         },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/funny/comments/rs8ibo/prince_harry_vs_prince_william/",
@@ -10298,6 +10467,33 @@
           "publishedOn": "2021-12-31T02:29:28.000Z",
           "wordCount": 25,
           "title": "这就是人的手在显微镜下的样子。"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/memes/comments/rs58wd/all_that_money_and_no_style/",
+          "author": null,
+          "description": "所有的钱，没有风格",
+          "link": "https://reddit.buzzing.cc/reddit/r/memes/comments/rs58wd/all_that_money_and_no_style/?score=77287&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Frs58wd%2Fall_that_money_and_no_style%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Frs58wd%2Fall_that_money_and_no_style%2F",
+          "publishedOn": "2021-12-31T00:48:06.000Z",
+          "wordCount": 20,
+          "title": "所有的钱，没有风格"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/Unexpected/comments/rs3ksj/she_forgor/",
+          "author": null,
+          "description": "她忘记了💀。",
+          "link": "https://reddit.buzzing.cc/reddit/r/Unexpected/comments/rs3ksj/she_forgor/?score=79735&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FUnexpected%2Fcomments%2Frs3ksj%2Fshe_forgor%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FUnexpected%2Fcomments%2Frs3ksj%2Fshe_forgor%2F",
+          "publishedOn": "2021-12-31T00:48:06.000Z",
+          "wordCount": 17,
+          "title": "她忘记了💀。"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rs3frd/tiny_dog_saving_this_baby/",
+          "author": null,
+          "description": "小狗救了这个宝贝。",
+          "link": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rs3frd/tiny_dog_saving_this_baby/?score=77372&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Frs3frd%2Ftiny_dog_saving_this_baby%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Frs3frd%2Ftiny_dog_saving_this_baby%2F",
+          "publishedOn": "2021-12-31T00:48:06.000Z",
+          "wordCount": 19,
+          "title": "小狗救了这个宝贝。"
         },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/memes/comments/rs58wd/all_that_money_and_no_style/",
@@ -10330,10 +10526,28 @@
           "id": "https://reddit.buzzing.cc/reddit/r/HolUp/comments/rryatz/what_noise_do_you_make_in_bed/",
           "author": null,
           "description": "你在床上发出什么声音？",
+          "link": "https://reddit.buzzing.cc/reddit/r/HolUp/comments/rryatz/what_noise_do_you_make_in_bed/?score=75161&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FHolUp%2Fcomments%2Frryatz%2Fwhat_noise_do_you_make_in_bed%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FHolUp%2Fcomments%2Frryatz%2Fwhat_noise_do_you_make_in_bed%2F",
+          "publishedOn": "2021-12-30T22:48:47.000Z",
+          "wordCount": 21,
+          "title": "你在床上发出什么声音？"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/HolUp/comments/rryatz/what_noise_do_you_make_in_bed/",
+          "author": null,
+          "description": "你在床上发出什么声音？",
           "link": "https://reddit.buzzing.cc/reddit/r/HolUp/comments/rryatz/what_noise_do_you_make_in_bed/",
           "publishedOn": "2021-12-30T22:48:47.000Z",
           "wordCount": 20,
           "title": "你在床上发出什么声音？"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rs04iv/i_did_not_know_that_yikes/",
+          "author": null,
+          "description": "我不知道这一点。呀。",
+          "link": "https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rs04iv/i_did_not_know_that_yikes/?score=75057&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Frs04iv%2Fi_did_not_know_that_yikes%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Frs04iv%2Fi_did_not_know_that_yikes%2F",
+          "publishedOn": "2021-12-30T21:55:34.000Z",
+          "wordCount": 20,
+          "title": "我不知道这一点。呀。"
         },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rs04iv/i_did_not_know_that_yikes/",
@@ -10348,10 +10562,28 @@
           "id": "https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/rs2vx9/polio_vaccine_announcement_from_1955/",
           "author": null,
           "description": "1955年的脊髓灰质炎疫苗公告",
+          "link": "https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/rs2vx9/polio_vaccine_announcement_from_1955/?score=75097&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Frs2vx9%2Fpolio_vaccine_announcement_from_1955%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Frs2vx9%2Fpolio_vaccine_announcement_from_1955%2F",
+          "publishedOn": "2021-12-30T21:48:39.000Z",
+          "wordCount": 19,
+          "title": "1955年的脊髓灰质炎疫苗公告"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/rs2vx9/polio_vaccine_announcement_from_1955/",
+          "author": null,
+          "description": "1955年的脊髓灰质炎疫苗公告",
           "link": "https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/rs2vx9/polio_vaccine_announcement_from_1955/",
           "publishedOn": "2021-12-30T21:48:39.000Z",
           "wordCount": 19,
           "title": "1955年的脊髓灰质炎疫苗公告"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rrx1xd/someones_dog_approaches_homeless_man_and_seems_to/",
+          "author": null,
+          "description": "有人的狗接近流浪汉，似乎知道他需要什么。1个拥抱安慰了两颗心!",
+          "link": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rrx1xd/someones_dog_approaches_homeless_man_and_seems_to/?score=75239&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Frrx1xd%2Fsomeones_dog_approaches_homeless_man_and_seems_to%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Frrx1xd%2Fsomeones_dog_approaches_homeless_man_and_seems_to%2F",
+          "publishedOn": "2021-12-30T21:34:40.000Z",
+          "wordCount": 31,
+          "title": "有人的狗接近流浪汉，似乎知道他需要什么。1个拥抱安慰了两颗心!"
         },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rrx1xd/someones_dog_approaches_homeless_man_and_seems_to/",
@@ -10366,10 +10598,28 @@
           "id": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/rs04zv/this_girl_thinks_only_she_can_have_preferences/",
           "author": null,
           "description": "这个女孩认为只有她可以有偏好。",
+          "link": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/rs04zv/this_girl_thinks_only_she_can_have_preferences/?score=75952&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffacepalm%2Fcomments%2Frs04zv%2Fthis_girl_thinks_only_she_can_have_preferences%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffacepalm%2Fcomments%2Frs04zv%2Fthis_girl_thinks_only_she_can_have_preferences%2F",
+          "publishedOn": "2021-12-30T20:39:21.000Z",
+          "wordCount": 22,
+          "title": "这个女孩认为只有她可以有偏好。"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/rs04zv/this_girl_thinks_only_she_can_have_preferences/",
+          "author": null,
+          "description": "这个女孩认为只有她可以有偏好。",
           "link": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/rs04zv/this_girl_thinks_only_she_can_have_preferences/",
           "publishedOn": "2021-12-30T20:39:21.000Z",
           "wordCount": 22,
           "title": "这个女孩认为只有她可以有偏好。"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/memes/comments/rrvzzh/perhaps_the_opposite_gender/",
+          "author": null,
+          "description": "也许是相反的性别",
+          "link": "https://reddit.buzzing.cc/reddit/r/memes/comments/rrvzzh/perhaps_the_opposite_gender/?score=75096&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Frrvzzh%2Fperhaps_the_opposite_gender%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Frrvzzh%2Fperhaps_the_opposite_gender%2F",
+          "publishedOn": "2021-12-30T18:12:03.000Z",
+          "wordCount": 18,
+          "title": "也许是相反的性别"
         },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/memes/comments/rrvzzh/perhaps_the_opposite_gender/",
@@ -10384,10 +10634,28 @@
           "id": "https://reddit.buzzing.cc/reddit/r/technicallythetruth/comments/rrjutb/500_to_160000_with_nft/",
           "author": null,
           "description": "500美元至160,000美元的NFT",
+          "link": "https://reddit.buzzing.cc/reddit/r/technicallythetruth/comments/rrjutb/500_to_160000_with_nft/?score=77994&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ftechnicallythetruth%2Fcomments%2Frrjutb%2F500_to_160000_with_nft%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ftechnicallythetruth%2Fcomments%2Frrjutb%2F500_to_160000_with_nft%2F",
+          "publishedOn": "2021-12-30T14:26:25.000Z",
+          "wordCount": 19,
+          "title": "500美元至160,000美元的NFT"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/technicallythetruth/comments/rrjutb/500_to_160000_with_nft/",
+          "author": null,
+          "description": "500美元至160,000美元的NFT",
           "link": "https://reddit.buzzing.cc/reddit/r/technicallythetruth/comments/rrjutb/500_to_160000_with_nft/",
           "publishedOn": "2021-12-30T14:26:25.000Z",
           "wordCount": 19,
           "title": "500美元至160,000美元的NFT"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/mildlyinfuriating/comments/rrfg4a/my_father_forgot_to_tell_me_the_renovations_would/",
+          "author": null,
+          "description": "我父亲忘了告诉我，今天的装修会把楼梯拆掉。",
+          "link": "https://reddit.buzzing.cc/reddit/r/mildlyinfuriating/comments/rrfg4a/my_father_forgot_to_tell_me_the_renovations_would/?score=75138&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmildlyinfuriating%2Fcomments%2Frrfg4a%2Fmy_father_forgot_to_tell_me_the_renovations_would%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmildlyinfuriating%2Fcomments%2Frrfg4a%2Fmy_father_forgot_to_tell_me_the_renovations_would%2F",
+          "publishedOn": "2021-12-30T13:23:36.000Z",
+          "wordCount": 29,
+          "title": "我父亲忘了告诉我，今天的装修会把楼梯拆掉。"
         },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/mildlyinfuriating/comments/rrfg4a/my_father_forgot_to_tell_me_the_renovations_would/",
@@ -10402,10 +10670,28 @@
           "id": "https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/rrib1i/dam_breach_experiment/",
           "author": null,
           "description": "溃坝实验",
+          "link": "https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/rrib1i/dam_breach_experiment/?score=75249&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Frrib1i%2Fdam_breach_experiment%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Frrib1i%2Fdam_breach_experiment%2F",
+          "publishedOn": "2021-12-30T08:08:24.000Z",
+          "wordCount": 17,
+          "title": "溃坝实验"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/rrib1i/dam_breach_experiment/",
+          "author": null,
+          "description": "溃坝实验",
           "link": "https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/rrib1i/dam_breach_experiment/",
           "publishedOn": "2021-12-30T08:08:24.000Z",
           "wordCount": 17,
           "title": "溃坝实验"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rripz1/poor_joe/",
+          "author": null,
+          "description": "可怜的乔。",
+          "link": "https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rripz1/poor_joe/?score=76260&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Frripz1%2Fpoor_joe%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Frripz1%2Fpoor_joe%2F",
+          "publishedOn": "2021-12-30T04:47:35.000Z",
+          "wordCount": 16,
+          "title": "可怜的乔。"
         },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rripz1/poor_joe/",
@@ -10420,10 +10706,28 @@
           "id": "https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/rr9q9u/cokeoil_vs_mentos/",
           "author": null,
           "description": "可乐+石油与曼妥思的对比",
+          "link": "https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/rr9q9u/cokeoil_vs_mentos/?score=75165&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Frr9q9u%2Fcokeoil_vs_mentos%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Frr9q9u%2Fcokeoil_vs_mentos%2F",
+          "publishedOn": "2021-12-30T04:01:56.000Z",
+          "wordCount": 17,
+          "title": "可乐+石油与曼妥思的对比"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/rr9q9u/cokeoil_vs_mentos/",
+          "author": null,
+          "description": "可乐+石油与曼妥思的对比",
           "link": "https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/rr9q9u/cokeoil_vs_mentos/",
           "publishedOn": "2021-12-30T04:01:56.000Z",
           "wordCount": 17,
           "title": "可乐+石油与曼妥思的对比"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rr52oh/this_city_living_on_the_edge_of_the_river/",
+          "author": null,
+          "description": "这个生活在河边的城市。",
+          "link": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rr52oh/this_city_living_on_the_edge_of_the_river/?score=75084&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Frr52oh%2Fthis_city_living_on_the_edge_of_the_river%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Frr52oh%2Fthis_city_living_on_the_edge_of_the_river%2F",
+          "publishedOn": "2021-12-30T03:49:24.000Z",
+          "wordCount": 24,
+          "title": "这个生活在河边的城市。"
         },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rr52oh/this_city_living_on_the_edge_of_the_river/",
@@ -10438,10 +10742,28 @@
           "id": "https://reddit.buzzing.cc/reddit/r/news/comments/rrkb56/ghislaine_maxwell_found_guilty_in_sextrafficking/",
           "author": null,
           "description": "Ghislaine Maxwell在性贩运审判中被判有罪",
+          "link": "https://reddit.buzzing.cc/reddit/r/news/comments/rrkb56/ghislaine_maxwell_found_guilty_in_sextrafficking/?score=77608&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnews%2Fcomments%2Frrkb56%2Fghislaine_maxwell_found_guilty_in_sextrafficking%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnews%2Fcomments%2Frrkb56%2Fghislaine_maxwell_found_guilty_in_sextrafficking%2F",
+          "publishedOn": "2021-12-30T02:52:13.000Z",
+          "wordCount": 23,
+          "title": "Ghislaine Maxwell在性贩运审判中被判有罪"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/news/comments/rrkb56/ghislaine_maxwell_found_guilty_in_sextrafficking/",
+          "author": null,
+          "description": "Ghislaine Maxwell在性贩运审判中被判有罪",
           "link": "https://reddit.buzzing.cc/reddit/r/news/comments/rrkb56/ghislaine_maxwell_found_guilty_in_sextrafficking/",
           "publishedOn": "2021-12-30T02:52:13.000Z",
           "wordCount": 23,
           "title": "Ghislaine Maxwell在性贩运审判中被判有罪"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rrdhy4/guy_teaches_police_officers_about_the_law/",
+          "author": null,
+          "description": "盖伊向警察传授法律知识",
+          "link": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rrdhy4/guy_teaches_police_officers_about_the_law/?score=76217&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Frrdhy4%2Fguy_teaches_police_officers_about_the_law%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Frrdhy4%2Fguy_teaches_police_officers_about_the_law%2F",
+          "publishedOn": "2021-12-30T00:44:28.000Z",
+          "wordCount": 22,
+          "title": "盖伊向警察传授法律知识"
         },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rrdhy4/guy_teaches_police_officers_about_the_law/",
@@ -10456,10 +10778,28 @@
           "id": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rr79vz/he_will_remember_this_for_a_very_long_time/",
           "author": null,
           "description": "他将在很长一段时间内记住这一点",
+          "link": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rr79vz/he_will_remember_this_for_a_very_long_time/?score=75829&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Frr79vz%2Fhe_will_remember_this_for_a_very_long_time%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Frr79vz%2Fhe_will_remember_this_for_a_very_long_time%2F",
+          "publishedOn": "2021-12-29T22:33:12.000Z",
+          "wordCount": 23,
+          "title": "他将在很长一段时间内记住这一点"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rr79vz/he_will_remember_this_for_a_very_long_time/",
+          "author": null,
+          "description": "他将在很长一段时间内记住这一点",
           "link": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rr79vz/he_will_remember_this_for_a_very_long_time/",
           "publishedOn": "2021-12-29T22:33:12.000Z",
           "wordCount": 22,
           "title": "他将在很长一段时间内记住这一点"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/memes/comments/rr7mdv/he_is_the_messiah/",
+          "author": null,
+          "description": "他是弥赛亚",
+          "link": "https://reddit.buzzing.cc/reddit/r/memes/comments/rr7mdv/he_is_the_messiah/?score=75566&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Frr7mdv%2Fhe_is_the_messiah%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Frr7mdv%2Fhe_is_the_messiah%2F",
+          "publishedOn": "2021-12-29T21:26:02.000Z",
+          "wordCount": 18,
+          "title": "他是弥赛亚"
         },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/memes/comments/rr7mdv/he_is_the_messiah/",
@@ -10474,10 +10814,37 @@
           "id": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/rr118t/girl_pushes_friend_off_60foot_bridge_spends_two/",
           "author": null,
           "description": "女孩将朋友推下60英尺高的桥，在监狱里待了两天",
+          "link": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/rr118t/girl_pushes_friend_off_60foot_bridge_spends_two/?score=75201&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffacepalm%2Fcomments%2Frr118t%2Fgirl_pushes_friend_off_60foot_bridge_spends_two%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffacepalm%2Fcomments%2Frr118t%2Fgirl_pushes_friend_off_60foot_bridge_spends_two%2F",
+          "publishedOn": "2021-12-29T19:06:28.000Z",
+          "wordCount": 25,
+          "title": "女孩将朋友推下60英尺高的桥，在监狱里待了两天"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/rr118t/girl_pushes_friend_off_60foot_bridge_spends_two/",
+          "author": null,
+          "description": "女孩将朋友推下60英尺高的桥，在监狱里待了两天",
           "link": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/rr118t/girl_pushes_friend_off_60foot_bridge_spends_two/",
           "publishedOn": "2021-12-29T19:06:28.000Z",
           "wordCount": 25,
           "title": "女孩将朋友推下60英尺高的桥，在监狱里待了两天"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/blunderyears/comments/rqu0us/in_2004_i_won_a_contest_to_dj_at_my_very_small/",
+          "author": null,
+          "description": "2004年，我赢得了一场比赛，在我家乡非常小的易听广播电台做DJ。我接着播放了一个小时的Evanescence深层剪辑，毁了大家的早晨通勤。",
+          "link": "https://reddit.buzzing.cc/reddit/r/blunderyears/comments/rqu0us/in_2004_i_won_a_contest_to_dj_at_my_very_small/?score=75489&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fblunderyears%2Fcomments%2Frqu0us%2Fin_2004_i_won_a_contest_to_dj_at_my_very_small%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fblunderyears%2Fcomments%2Frqu0us%2Fin_2004_i_won_a_contest_to_dj_at_my_very_small%2F",
+          "publishedOn": "2021-12-29T17:26:15.000Z",
+          "wordCount": 45,
+          "title": "2004年，我赢得了一场比赛，在我家乡非常小的易听广播电台做DJ。我接着播放了一个小时的Evanescence深层剪辑，毁了大家的早晨通勤。"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/todayilearned/comments/rqulik/til_that_according_to_the_us_department_of/",
+          "author": null,
+          "description": "根据美国教育部的数据，54%的美国成年人缺乏识字能力，阅读能力低于六年级水平。",
+          "link": "https://reddit.buzzing.cc/reddit/r/todayilearned/comments/rqulik/til_that_according_to_the_us_department_of/?score=75174&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ftodayilearned%2Fcomments%2Frqulik%2Ftil_that_according_to_the_us_department_of%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ftodayilearned%2Fcomments%2Frqulik%2Ftil_that_according_to_the_us_department_of%2F",
+          "publishedOn": "2021-12-29T17:26:15.000Z",
+          "wordCount": 39,
+          "title": "根据美国教育部的数据，54%的美国成年人缺乏识字能力，阅读能力低于六年级水平。"
         },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/blunderyears/comments/rqu0us/in_2004_i_won_a_contest_to_dj_at_my_very_small/",
@@ -10501,10 +10868,28 @@
           "id": "https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/rqo284/catch_me_if_you_can/",
           "author": null,
           "description": "如果你能抓住我",
+          "link": "https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/rqo284/catch_me_if_you_can/?score=75250&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fwallstreetbets%2Fcomments%2Frqo284%2Fcatch_me_if_you_can%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fwallstreetbets%2Fcomments%2Frqo284%2Fcatch_me_if_you_can%2F",
+          "publishedOn": "2021-12-29T12:32:55.000Z",
+          "wordCount": 19,
+          "title": "如果你能抓住我"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/rqo284/catch_me_if_you_can/",
+          "author": null,
+          "description": "如果你能抓住我",
           "link": "https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/rqo284/catch_me_if_you_can/",
           "publishedOn": "2021-12-29T12:32:55.000Z",
           "wordCount": 19,
           "title": "如果你能抓住我"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/mildlyinteresting/comments/rql8y2/the_supermarket_i_work_at_sells_horizontally/",
+          "author": null,
+          "description": "我工作的超市卖的是横向切片的面包。",
+          "link": "https://reddit.buzzing.cc/reddit/r/mildlyinteresting/comments/rql8y2/the_supermarket_i_work_at_sells_horizontally/?score=75058&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmildlyinteresting%2Fcomments%2Frql8y2%2Fthe_supermarket_i_work_at_sells_horizontally%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmildlyinteresting%2Fcomments%2Frql8y2%2Fthe_supermarket_i_work_at_sells_horizontally%2F",
+          "publishedOn": "2021-12-29T09:56:12.000Z",
+          "wordCount": 24,
+          "title": "我工作的超市卖的是横向切片的面包。"
         },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/mildlyinteresting/comments/rql8y2/the_supermarket_i_work_at_sells_horizontally/",
@@ -10519,10 +10904,28 @@
           "id": "https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/rqogyd/worlds_fattest_man_in_1890_was_large_enough_to_be/",
           "author": null,
           "description": "1890年世界上最胖的人大到足以被认为是马戏团里的 \"怪胎\"。",
+          "link": "https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/rqogyd/worlds_fattest_man_in_1890_was_large_enough_to_be/?score=75007&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FDamnthatsinteresting%2Fcomments%2Frqogyd%2Fworlds_fattest_man_in_1890_was_large_enough_to_be%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FDamnthatsinteresting%2Fcomments%2Frqogyd%2Fworlds_fattest_man_in_1890_was_large_enough_to_be%2F",
+          "publishedOn": "2021-12-29T08:33:24.000Z",
+          "wordCount": 33,
+          "title": "1890年世界上最胖的人大到足以被认为是马戏团里的 \"怪胎\"。"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/rqogyd/worlds_fattest_man_in_1890_was_large_enough_to_be/",
+          "author": null,
+          "description": "1890年世界上最胖的人大到足以被认为是马戏团里的 \"怪胎\"。",
           "link": "https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/rqogyd/worlds_fattest_man_in_1890_was_large_enough_to_be/",
           "publishedOn": "2021-12-29T08:33:24.000Z",
           "wordCount": 33,
           "title": "1890年世界上最胖的人大到足以被认为是马戏团里的 \"怪胎\"。"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/WatchPeopleDieInside/comments/rqouov/when_you_took_your_gf_to_the_bar_with_your_friend/",
+          "author": null,
+          "description": "当你带着你的女朋友和你的朋友去酒吧的时候。",
+          "link": "https://reddit.buzzing.cc/reddit/r/WatchPeopleDieInside/comments/rqouov/when_you_took_your_gf_to_the_bar_with_your_friend/?score=77268&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWatchPeopleDieInside%2Fcomments%2Frqouov%2Fwhen_you_took_your_gf_to_the_bar_with_your_friend%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWatchPeopleDieInside%2Fcomments%2Frqouov%2Fwhen_you_took_your_gf_to_the_bar_with_your_friend%2F",
+          "publishedOn": "2021-12-29T07:11:59.000Z",
+          "wordCount": 26,
+          "title": "当你带着你的女朋友和你的朋友去酒吧的时候。"
         },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/WatchPeopleDieInside/comments/rqouov/when_you_took_your_gf_to_the_bar_with_your_friend/",
@@ -10537,10 +10940,28 @@
           "id": "https://reddit.buzzing.cc/reddit/r/oddlysatisfying/comments/rqocs7/this_frog_fully_opening_its_eyes/",
           "author": null,
           "description": "这只青蛙完全打开了它的眼睛",
+          "link": "https://reddit.buzzing.cc/reddit/r/oddlysatisfying/comments/rqocs7/this_frog_fully_opening_its_eyes/?score=75138&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Foddlysatisfying%2Fcomments%2Frqocs7%2Fthis_frog_fully_opening_its_eyes%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Foddlysatisfying%2Fcomments%2Frqocs7%2Fthis_frog_fully_opening_its_eyes%2F",
+          "publishedOn": "2021-12-29T05:51:21.000Z",
+          "wordCount": 20,
+          "title": "这只青蛙完全打开了它的眼睛"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/oddlysatisfying/comments/rqocs7/this_frog_fully_opening_its_eyes/",
+          "author": null,
+          "description": "这只青蛙完全打开了它的眼睛",
           "link": "https://reddit.buzzing.cc/reddit/r/oddlysatisfying/comments/rqocs7/this_frog_fully_opening_its_eyes/",
           "publishedOn": "2021-12-29T05:51:21.000Z",
           "wordCount": 20,
           "title": "这只青蛙完全打开了它的眼睛"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/memes/comments/rqk734/buddy_got_too_cocky/",
+          "author": null,
+          "description": "巴迪太自负了",
+          "link": "https://reddit.buzzing.cc/reddit/r/memes/comments/rqk734/buddy_got_too_cocky/?score=75318&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Frqk734%2Fbuddy_got_too_cocky%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Frqk734%2Fbuddy_got_too_cocky%2F",
+          "publishedOn": "2021-12-29T03:16:01.000Z",
+          "wordCount": 18,
+          "title": "巴迪太自负了"
         },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/memes/comments/rqk734/buddy_got_too_cocky/",
@@ -10555,10 +10976,28 @@
           "id": "https://reddit.buzzing.cc/reddit/r/pics/comments/rqhe9n/this_man_pulled_8_people_out_of_a_burning_bus_on/",
           "author": null,
           "description": "这个人在圣诞节前夕把8个人从燃烧的巴士中拉了出来。",
+          "link": "https://reddit.buzzing.cc/reddit/r/pics/comments/rqhe9n/this_man_pulled_8_people_out_of_a_burning_bus_on/?score=76792&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fpics%2Fcomments%2Frqhe9n%2Fthis_man_pulled_8_people_out_of_a_burning_bus_on%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fpics%2Fcomments%2Frqhe9n%2Fthis_man_pulled_8_people_out_of_a_burning_bus_on%2F",
+          "publishedOn": "2021-12-28T21:17:48.000Z",
+          "wordCount": 27,
+          "title": "这个人在圣诞节前夕把8个人从燃烧的巴士中拉了出来。"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/pics/comments/rqhe9n/this_man_pulled_8_people_out_of_a_burning_bus_on/",
+          "author": null,
+          "description": "这个人在圣诞节前夕把8个人从燃烧的巴士中拉了出来。",
           "link": "https://reddit.buzzing.cc/reddit/r/pics/comments/rqhe9n/this_man_pulled_8_people_out_of_a_burning_bus_on/",
           "publishedOn": "2021-12-28T21:17:48.000Z",
           "wordCount": 26,
           "title": "这个人在圣诞节前夕把8个人从燃烧的巴士中拉了出来。"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rqgruc/to_the_person_who_said_they_wanted_to_see_me/",
+          "author": null,
+          "description": "给那个说想看到我达到一年的人。看，我做到了。我成功了。",
+          "link": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rqgruc/to_the_person_who_said_they_wanted_to_see_me/?score=76059&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Frqgruc%2Fto_the_person_who_said_they_wanted_to_see_me%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Frqgruc%2Fto_the_person_who_said_they_wanted_to_see_me%2F",
+          "publishedOn": "2021-12-28T18:58:08.000Z",
+          "wordCount": 35,
+          "title": "给那个说想看到我达到一年的人。看，我做到了。我成功了。"
         },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rqgruc/to_the_person_who_said_they_wanted_to_see_me/",
@@ -10573,10 +11012,28 @@
           "id": "https://reddit.buzzing.cc/reddit/r/pics/comments/rq3yms/skateboarder_brooklinn_khoury_still_smiling_after/",
           "author": null,
           "description": "滑板运动员Brooklinn Khoury在被狗袭击失去上唇后仍然面带微笑",
+          "link": "https://reddit.buzzing.cc/reddit/r/pics/comments/rq3yms/skateboarder_brooklinn_khoury_still_smiling_after/?score=75193&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fpics%2Fcomments%2Frq3yms%2Fskateboarder_brooklinn_khoury_still_smiling_after%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fpics%2Fcomments%2Frq3yms%2Fskateboarder_brooklinn_khoury_still_smiling_after%2F",
+          "publishedOn": "2021-12-28T17:51:53.000Z",
+          "wordCount": 30,
+          "title": "滑板运动员Brooklinn Khoury在被狗袭击失去上唇后仍然面带微笑"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/pics/comments/rq3yms/skateboarder_brooklinn_khoury_still_smiling_after/",
+          "author": null,
+          "description": "滑板运动员Brooklinn Khoury在被狗袭击失去上唇后仍然面带微笑",
           "link": "https://reddit.buzzing.cc/reddit/r/pics/comments/rq3yms/skateboarder_brooklinn_khoury_still_smiling_after/",
           "publishedOn": "2021-12-28T17:51:53.000Z",
           "wordCount": 30,
           "title": "滑板运动员Brooklinn Khoury在被狗袭击失去上唇后仍然面带微笑"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/rq7fwe/movie_theater_tries_to_play_a_christmas_movie/",
+          "author": null,
+          "description": "电影院试图用亚马逊总理账户播放圣诞电影",
+          "link": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/rq7fwe/movie_theater_tries_to_play_a_christmas_movie/?score=77589&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffacepalm%2Fcomments%2Frq7fwe%2Fmovie_theater_tries_to_play_a_christmas_movie%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffacepalm%2Fcomments%2Frq7fwe%2Fmovie_theater_tries_to_play_a_christmas_movie%2F",
+          "publishedOn": "2021-12-28T16:23:35.000Z",
+          "wordCount": 28,
+          "title": "电影院试图用亚马逊总理账户播放圣诞电影"
         },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/rq7fwe/movie_theater_tries_to_play_a_christmas_movie/",
@@ -10591,10 +11048,28 @@
           "id": "https://reddit.buzzing.cc/reddit/r/Unexpected/comments/rpvmt7/i_guess_recreation_never_ended_well_with_animals/",
           "author": null,
           "description": "我想，娱乐活动在动物身上从来没有好结果",
+          "link": "https://reddit.buzzing.cc/reddit/r/Unexpected/comments/rpvmt7/i_guess_recreation_never_ended_well_with_animals/?score=75135&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FUnexpected%2Fcomments%2Frpvmt7%2Fi_guess_recreation_never_ended_well_with_animals%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FUnexpected%2Fcomments%2Frpvmt7%2Fi_guess_recreation_never_ended_well_with_animals%2F",
+          "publishedOn": "2021-12-28T12:59:36.000Z",
+          "wordCount": 24,
+          "title": "我想，娱乐活动在动物身上从来没有好结果"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/Unexpected/comments/rpvmt7/i_guess_recreation_never_ended_well_with_animals/",
+          "author": null,
+          "description": "我想，娱乐活动在动物身上从来没有好结果",
           "link": "https://reddit.buzzing.cc/reddit/r/Unexpected/comments/rpvmt7/i_guess_recreation_never_ended_well_with_animals/",
           "publishedOn": "2021-12-28T12:59:36.000Z",
           "wordCount": 24,
           "title": "我想，娱乐活动在动物身上从来没有好结果"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rpxjy6/wow_solar_energy_actually_working_as_designed/",
+          "author": null,
+          "description": "哇! 太阳能真的按设计工作! 令人难以置信的是，绿色能源实际上要好得多",
+          "link": "https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rpxjy6/wow_solar_energy_actually_working_as_designed/?score=75112&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Frpxjy6%2Fwow_solar_energy_actually_working_as_designed%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Frpxjy6%2Fwow_solar_energy_actually_working_as_designed%2F",
+          "publishedOn": "2021-12-28T10:00:05.000Z",
+          "wordCount": 33,
+          "title": "哇! 太阳能真的按设计工作! 令人难以置信的是，绿色能源实际上要好得多"
         },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rpxjy6/wow_solar_energy_actually_working_as_designed/",
@@ -10609,10 +11084,28 @@
           "id": "https://reddit.buzzing.cc/reddit/r/ProgrammerHumor/comments/rpojpb/i_have_been_attacked/",
           "author": null,
           "description": "我已经被攻击了。",
+          "link": "https://reddit.buzzing.cc/reddit/r/ProgrammerHumor/comments/rpojpb/i_have_been_attacked/?score=75045&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FProgrammerHumor%2Fcomments%2Frpojpb%2Fi_have_been_attacked%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FProgrammerHumor%2Fcomments%2Frpojpb%2Fi_have_been_attacked%2F",
+          "publishedOn": "2021-12-28T09:08:59.000Z",
+          "wordCount": 20,
+          "title": "我已经被攻击了。"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/ProgrammerHumor/comments/rpojpb/i_have_been_attacked/",
+          "author": null,
+          "description": "我已经被攻击了。",
           "link": "https://reddit.buzzing.cc/reddit/r/ProgrammerHumor/comments/rpojpb/i_have_been_attacked/",
           "publishedOn": "2021-12-28T09:08:59.000Z",
           "wordCount": 20,
           "title": "我已经被攻击了。"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/gaming/comments/rpu5ko/up_you_go_buddy/",
+          "author": null,
+          "description": "上去吧，伙计",
+          "link": "https://reddit.buzzing.cc/reddit/r/gaming/comments/rpu5ko/up_you_go_buddy/?score=75649&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fgaming%2Fcomments%2Frpu5ko%2Fup_you_go_buddy%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fgaming%2Fcomments%2Frpu5ko%2Fup_you_go_buddy%2F",
+          "publishedOn": "2021-12-28T06:38:12.000Z",
+          "wordCount": 18,
+          "title": "上去吧，伙计"
         },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/gaming/comments/rpu5ko/up_you_go_buddy/",
@@ -10627,10 +11120,28 @@
           "id": "https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/rpq728/it_is_a_small_world/",
           "author": null,
           "description": "这是个小世界",
+          "link": "https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/rpq728/it_is_a_small_world/?score=75161&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FDamnthatsinteresting%2Fcomments%2Frpq728%2Fit_is_a_small_world%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FDamnthatsinteresting%2Fcomments%2Frpq728%2Fit_is_a_small_world%2F",
+          "publishedOn": "2021-12-28T06:14:55.000Z",
+          "wordCount": 19,
+          "title": "这是个小世界"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/rpq728/it_is_a_small_world/",
+          "author": null,
+          "description": "这是个小世界",
           "link": "https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/rpq728/it_is_a_small_world/",
           "publishedOn": "2021-12-28T06:14:55.000Z",
           "wordCount": 19,
           "title": "这是个小世界"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rpvudv/remember_the_girl_that_threw_a_dog_at_this_guy/",
+          "author": null,
+          "description": "还记得那个把狗扔给这个人的女孩吗？那条狗现在已经好转了!",
+          "link": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rpvudv/remember_the_girl_that_threw_a_dog_at_this_guy/?score=78420&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Frpvudv%2Fremember_the_girl_that_threw_a_dog_at_this_guy%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Frpvudv%2Fremember_the_girl_that_threw_a_dog_at_this_guy%2F",
+          "publishedOn": "2021-12-28T04:33:37.000Z",
+          "wordCount": 31,
+          "title": "还记得那个把狗扔给这个人的女孩吗？那条狗现在已经好转了!"
         },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rpvudv/remember_the_girl_that_threw_a_dog_at_this_guy/",
@@ -10645,10 +11156,28 @@
           "id": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rpvwr0/160_lbs_lost_resolutions_can_actually_work/",
           "author": null,
           "description": "失去了160磅! 决心实际上可以发挥作用。",
+          "link": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rpvwr0/160_lbs_lost_resolutions_can_actually_work/?score=75028&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Frpvwr0%2F160_lbs_lost_resolutions_can_actually_work%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Frpvwr0%2F160_lbs_lost_resolutions_can_actually_work%2F",
+          "publishedOn": "2021-12-28T04:04:34.000Z",
+          "wordCount": 23,
+          "title": "失去了160磅! 决心实际上可以发挥作用。"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rpvwr0/160_lbs_lost_resolutions_can_actually_work/",
+          "author": null,
+          "description": "失去了160磅! 决心实际上可以发挥作用。",
           "link": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rpvwr0/160_lbs_lost_resolutions_can_actually_work/",
           "publishedOn": "2021-12-28T04:04:34.000Z",
           "wordCount": 23,
           "title": "失去了160磅! 决心实际上可以发挥作用。"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rpgqka/oscar_goes_to/",
+          "author": null,
+          "description": "奥斯卡奖颁给了...",
+          "link": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rpgqka/oscar_goes_to/?score=75295&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Frpgqka%2Foscar_goes_to%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Frpgqka%2Foscar_goes_to%2F",
+          "publishedOn": "2021-12-27T23:13:47.000Z",
+          "wordCount": 19,
+          "title": "奥斯卡奖颁给了..."
         },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rpgqka/oscar_goes_to/",
@@ -10663,10 +11192,28 @@
           "id": "https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rpnwbk/cant_wait/",
           "author": null,
           "description": "迫不及待",
+          "link": "https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rpnwbk/cant_wait/?score=75055&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Frpnwbk%2Fcant_wait%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Frpnwbk%2Fcant_wait%2F",
+          "publishedOn": "2021-12-27T22:59:45.000Z",
+          "wordCount": 16,
+          "title": "迫不及待"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rpnwbk/cant_wait/",
+          "author": null,
+          "description": "迫不及待",
           "link": "https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rpnwbk/cant_wait/",
           "publishedOn": "2021-12-27T22:59:45.000Z",
           "wordCount": 16,
           "title": "迫不及待"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/antiwork/comments/rpm9gr/so_this_is_why_were_protesting/",
+          "author": null,
+          "description": "所以这就是我们抗议的原因？",
+          "link": "https://reddit.buzzing.cc/reddit/r/antiwork/comments/rpm9gr/so_this_is_why_were_protesting/?score=75215&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fantiwork%2Fcomments%2Frpm9gr%2Fso_this_is_why_were_protesting%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fantiwork%2Fcomments%2Frpm9gr%2Fso_this_is_why_were_protesting%2F",
+          "publishedOn": "2021-12-27T22:32:53.000Z",
+          "wordCount": 20,
+          "title": "所以这就是我们抗议的原因？"
         },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/antiwork/comments/rpm9gr/so_this_is_why_were_protesting/",
@@ -10681,10 +11228,37 @@
           "id": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/rpi015/this_woman_talking_about_what_kind_of_men_she/",
           "author": null,
           "description": "这个女人在谈论她想要什么样的男人...",
+          "link": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/rpi015/this_woman_talking_about_what_kind_of_men_she/?score=75226&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffacepalm%2Fcomments%2Frpi015%2Fthis_woman_talking_about_what_kind_of_men_she%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffacepalm%2Fcomments%2Frpi015%2Fthis_woman_talking_about_what_kind_of_men_she%2F",
+          "publishedOn": "2021-12-27T20:29:02.000Z",
+          "wordCount": 24,
+          "title": "这个女人在谈论她想要什么样的男人..."
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/rpi015/this_woman_talking_about_what_kind_of_men_she/",
+          "author": null,
+          "description": "这个女人在谈论她想要什么样的男人...",
           "link": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/rpi015/this_woman_talking_about_what_kind_of_men_she/",
           "publishedOn": "2021-12-27T20:29:02.000Z",
           "wordCount": 24,
           "title": "这个女人在谈论她想要什么样的男人..."
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/oddlysatisfying/comments/rp5qqv/studio_ghiblis_depiction_of_food/",
+          "author": null,
+          "description": "吉卜力工作室对食物的描写",
+          "link": "https://reddit.buzzing.cc/reddit/r/oddlysatisfying/comments/rp5qqv/studio_ghiblis_depiction_of_food/?score=82712&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Foddlysatisfying%2Fcomments%2Frp5qqv%2Fstudio_ghiblis_depiction_of_food%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Foddlysatisfying%2Fcomments%2Frp5qqv%2Fstudio_ghiblis_depiction_of_food%2F",
+          "publishedOn": "2021-12-27T18:48:28.000Z",
+          "wordCount": 19,
+          "title": "吉卜力工作室对食物的描写"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/HumansBeingBros/comments/rp8s1c/this_restaurant_offers_food_for_free_if_you_cant/",
+          "author": null,
+          "description": "如果你买不起，这家餐厅提供免费的食物",
+          "link": "https://reddit.buzzing.cc/reddit/r/HumansBeingBros/comments/rp8s1c/this_restaurant_offers_food_for_free_if_you_cant/?score=81536&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FHumansBeingBros%2Fcomments%2Frp8s1c%2Fthis_restaurant_offers_food_for_free_if_you_cant%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FHumansBeingBros%2Fcomments%2Frp8s1c%2Fthis_restaurant_offers_food_for_free_if_you_cant%2F",
+          "publishedOn": "2021-12-27T18:48:28.000Z",
+          "wordCount": 25,
+          "title": "如果你买不起，这家餐厅提供免费的食物"
         },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/oddlysatisfying/comments/rp5qqv/studio_ghiblis_depiction_of_food/",
@@ -13295,87 +13869,6 @@
           "publishedOn": "2021-12-04T22:13:48.000Z",
           "wordCount": 23,
           "title": "大女儿的举重练习。"
-        },
-        {
-          "id": "https://reddit.buzzing.cc/reddit/r/aww/comments/r8bmk3/found_a_secret_hideout/",
-          "author": null,
-          "description": "找到了一个秘密的藏身之处",
-          "link": "https://reddit.buzzing.cc/reddit/r/aww/comments/r8bmk3/found_a_secret_hideout/",
-          "publishedOn": "2021-12-04T10:52:45.000Z",
-          "wordCount": 18,
-          "title": "找到了一个秘密的藏身之处"
-        },
-        {
-          "id": "https://reddit.buzzing.cc/reddit/r/HumansBeingBros/comments/r89l2m/dog_owner_helping_a_young_man_who_has_a_phobia_of/",
-          "author": null,
-          "description": "狗主人帮助一个有狗恐惧症的年轻人!",
-          "link": "https://reddit.buzzing.cc/reddit/r/HumansBeingBros/comments/r89l2m/dog_owner_helping_a_young_man_who_has_a_phobia_of/",
-          "publishedOn": "2021-12-04T09:49:58.000Z",
-          "wordCount": 26,
-          "title": "狗主人帮助一个有狗恐惧症的年轻人!"
-        },
-        {
-          "id": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/r80qyl/womens_speed_climbing_record_got_smashed_in_under/",
-          "author": null,
-          "description": "女子速攀记录被打破，时间不到7秒",
-          "link": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/r80qyl/womens_speed_climbing_record_got_smashed_in_under/",
-          "publishedOn": "2021-12-04T09:32:42.000Z",
-          "wordCount": 24,
-          "title": "女子速攀记录被打破，时间不到7秒"
-        },
-        {
-          "id": "https://reddit.buzzing.cc/reddit/r/antiwork/comments/r86aka/they_started_paying_us_15hr_last_week/",
-          "author": null,
-          "description": "他们上周开始付给我们15美元/小时。",
-          "link": "https://reddit.buzzing.cc/reddit/r/antiwork/comments/r86aka/they_started_paying_us_15hr_last_week/",
-          "publishedOn": "2021-12-04T05:58:28.000Z",
-          "wordCount": 21,
-          "title": "他们上周开始付给我们15美元/小时。"
-        },
-        {
-          "id": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/r8bzt2/someone_made_a_mistake_and_gas_was_priced_at/",
-          "author": null,
-          "description": "有人犯了一个错误，汽油的价格是0.014欧元/升，有人在芬兰装了1000升罐子。",
-          "link": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/r8bzt2/someone_made_a_mistake_and_gas_was_priced_at/",
-          "publishedOn": "2021-12-04T05:26:31.000Z",
-          "wordCount": 33,
-          "title": "有人犯了一个错误，汽油的价格是0.014欧元/升，有人在芬兰装了1000升罐子。"
-        },
-        {
-          "id": "https://reddit.buzzing.cc/reddit/r/funny/comments/r7ywvg/what_a_time_to_be_alive/",
-          "author": null,
-          "description": "生逢其时",
-          "link": "https://reddit.buzzing.cc/reddit/r/funny/comments/r7ywvg/what_a_time_to_be_alive/",
-          "publishedOn": "2021-12-04T05:26:31.000Z",
-          "wordCount": 20,
-          "title": "生逢其时"
-        },
-        {
-          "id": "https://reddit.buzzing.cc/reddit/r/funny/comments/r7ra1d/my_dog_chases_coyotes_but_wont_go_pee_in_the_rain/",
-          "author": null,
-          "description": "我的狗追赶土狼，但不会在雨中撒尿，除非我用塑料袋盖住它。",
-          "link": "https://reddit.buzzing.cc/reddit/r/funny/comments/r7ra1d/my_dog_chases_coyotes_but_wont_go_pee_in_the_rain/",
-          "publishedOn": "2021-12-03T23:29:36.000Z",
-          "wordCount": 31,
-          "title": "我的狗追赶土狼，但不会在雨中撒尿，除非我用塑料袋盖住它。"
-        },
-        {
-          "id": "https://reddit.buzzing.cc/reddit/r/mildlyinteresting/comments/r7lb7k/these_ice_spheres_that_i_just_found_out_my_new/",
-          "author": null,
-          "description": "这些冰球(?)是我刚发现我的新冰箱做的。",
-          "link": "https://reddit.buzzing.cc/reddit/r/mildlyinteresting/comments/r7lb7k/these_ice_spheres_that_i_just_found_out_my_new/",
-          "publishedOn": "2021-12-03T23:13:02.000Z",
-          "wordCount": 26,
-          "title": "这些冰球(?)是我刚发现我的新冰箱做的。"
-        },
-        {
-          "id": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/r7wcyl/he_tricked_her_into_a_good_first_date/",
-          "author": null,
-          "description": "他把她骗到了一个很好的第一次约会!",
-          "link": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/r7wcyl/he_tricked_her_into_a_good_first_date/",
-          "publishedOn": "2021-12-03T22:42:40.000Z",
-          "wordCount": 22,
-          "title": "他把她骗到了一个很好的第一次约会!"
         }
       ]
     },
@@ -13384,6 +13877,60 @@
       "feedUrl": "https://hn.buzzing.cc/rss.xml",
       "siteUrl": "https://hn.buzzing.cc",
       "articles": [
+        {
+          "id": "https://hn.buzzing.cc/hn/29772136/",
+          "author": null,
+          "description": "谷歌不再产生高质量的搜索结果",
+          "link": "https://hn.buzzing.cc/hn/29772136/?score=182&original_url=https%3A%2F%2Ftwitter.com%2Fmwseibel%2Fstatus%2F1477701120319361026&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29772136",
+          "publishedOn": "2022-01-02T19:47:13.000Z",
+          "wordCount": 29,
+          "title": "谷歌不再产生高质量的搜索结果"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29770105/",
+          "author": null,
+          "description": "我建了一个棚子 (2020)",
+          "link": "https://hn.buzzing.cc/hn/29770105/?score=162&original_url=https%3A%2F%2Feduardosasso.co%2Fblog%2Fhow-i-built-a-wfh-shed%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29770105",
+          "publishedOn": "2022-01-02T19:47:13.000Z",
+          "wordCount": 29,
+          "title": "我建了一个棚子 (2020)"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29767682/",
+          "author": null,
+          "description": "Ask HN: 为什么一个忙碌的人要建造一个棚子？",
+          "link": "https://hn.buzzing.cc/hn/29767682/?score=101&original_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29767682&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29767682",
+          "publishedOn": "2022-01-02T17:46:20.000Z",
+          "wordCount": 35,
+          "title": "Ask HN: 为什么一个忙碌的人要建造一个棚子？"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29769892/",
+          "author": null,
+          "description": "2021年期间，比特币总共消耗了134太瓦时",
+          "link": "https://hn.buzzing.cc/hn/29769892/?score=134&original_url=https%3A%2F%2Ftwitter.com%2Fdigieconomist%2Fstatus%2F1477420461122375683&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29769892",
+          "publishedOn": "2022-01-02T17:46:20.000Z",
+          "wordCount": 30,
+          "title": "2021年期间，比特币总共消耗了134太瓦时"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29769764/",
+          "author": null,
+          "description": "印第安纳州人寿保险公司首席执行官说，18-64岁的人中死亡人数增加了40%。",
+          "link": "https://hn.buzzing.cc/hn/29769764/?score=181&original_url=https%3A%2F%2Fwww.thecentersquare.com%2Findiana%2Findiana-life-insurance-ceo-says-deaths-are-up-40-among-people-ages-18-64%2Farticle_71473b12-6b1e-11ec-8641-5b2c06725e2c.html&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29769764",
+          "publishedOn": "2022-01-02T17:46:20.000Z",
+          "wordCount": 33,
+          "title": "印第安纳州人寿保险公司首席执行官说，18-64岁的人中死亡人数增加了40%。"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29742670/",
+          "author": null,
+          "description": "5MB的Electron替代品Sciter已经改用JavaScript。",
+          "link": "https://hn.buzzing.cc/hn/29742670/?score=102&original_url=https%3A%2F%2Fterrainformatica.com%2F2021%2F04%2F25%2Fsciter-uses-javascript-from-now-and-on%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29742670",
+          "publishedOn": "2021-12-31T05:14:05.000Z",
+          "wordCount": 30,
+          "title": "5MB的Electron替代品Sciter已经改用JavaScript。"
+        },
         {
           "id": "https://hn.buzzing.cc/hn/29742670/",
           "author": null,
@@ -13401,6 +13948,15 @@
           "publishedOn": "2021-12-31T05:14:05.000Z",
           "wordCount": 29,
           "title": "5MB的Electron替代品Sciter已经改用JavaScript。"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29743785/",
+          "author": null,
+          "description": "医院仍未遵守价格透明的规定",
+          "link": "https://hn.buzzing.cc/hn/29743785/?score=101&original_url=https%3A%2F%2Fwww.wsj.com%2Farticles%2Fhospital-price-public-biden-11640882507&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29743785",
+          "publishedOn": "2021-12-31T05:00:19.000Z",
+          "wordCount": 27,
+          "title": "医院仍未遵守价格透明的规定"
         },
         {
           "id": "https://hn.buzzing.cc/hn/29743785/",
@@ -13424,6 +13980,15 @@
           "id": "https://hn.buzzing.cc/hn/29742659/",
           "author": null,
           "description": "大风刮起的大火在博尔德县肆虐",
+          "link": "https://hn.buzzing.cc/hn/29742659/?score=101&original_url=https%3A%2F%2Fwww.dailycamera.com%2F2021%2F12%2F30%2Fboulder-county-grass-fires%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29742659",
+          "publishedOn": "2021-12-31T04:44:06.000Z",
+          "wordCount": 27,
+          "title": "大风刮起的大火在博尔德县肆虐"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29742659/",
+          "author": null,
+          "description": "大风刮起的大火在博尔德县肆虐",
           "link": "https://hn.buzzing.cc/hn/29742659/",
           "publishedOn": "2021-12-31T04:44:06.000Z",
           "wordCount": 27,
@@ -13437,6 +14002,15 @@
           "publishedOn": "2021-12-31T04:44:06.000Z",
           "wordCount": 27,
           "title": "大风刮起的大火在博尔德县肆虐"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29735187/",
+          "author": null,
+          "description": "大数据可能不知道你的名字，但它知道其他一切",
+          "link": "https://hn.buzzing.cc/hn/29735187/?score=100&original_url=https%3A%2F%2Fwww.wired.com%2Fstory%2Fbig-data-may-not-know-your-name-but-it-knows-everything-else%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29735187",
+          "publishedOn": "2021-12-31T04:15:40.000Z",
+          "wordCount": 32,
+          "title": "大数据可能不知道你的名字，但它知道其他一切"
         },
         {
           "id": "https://hn.buzzing.cc/hn/29735187/",
@@ -13460,6 +14034,15 @@
           "id": "https://hn.buzzing.cc/hn/29742682/",
           "author": null,
           "description": "彼得-泰尔雇用失宠的前奥地利总理塞巴斯蒂安-库尔茨",
+          "link": "https://hn.buzzing.cc/hn/29742682/?score=102&original_url=https%3A%2F%2Fnypost.com%2F2021%2F12%2F30%2Fpeter-thiel-hires-disgraced-ex-austrian-chancellor-sebastian-kurz%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29742682",
+          "publishedOn": "2021-12-31T02:55:10.000Z",
+          "wordCount": 29,
+          "title": "彼得-泰尔雇用失宠的前奥地利总理塞巴斯蒂安-库尔茨"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29742682/",
+          "author": null,
+          "description": "彼得-泰尔雇用失宠的前奥地利总理塞巴斯蒂安-库尔茨",
           "link": "https://hn.buzzing.cc/hn/29742682/",
           "publishedOn": "2021-12-31T02:55:10.000Z",
           "wordCount": 29,
@@ -13473,6 +14056,15 @@
           "publishedOn": "2021-12-31T02:55:10.000Z",
           "wordCount": 29,
           "title": "彼得-泰尔雇用失宠的前奥地利总理塞巴斯蒂安-库尔茨"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29742551/",
+          "author": null,
+          "description": "使用Linux 15年后的macOS设置",
+          "link": "https://hn.buzzing.cc/hn/29742551/?score=104&original_url=https%3A%2F%2Fhookrace.net%2Fblog%2Fmacos-setup%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29742551",
+          "publishedOn": "2021-12-31T02:29:03.000Z",
+          "wordCount": 29,
+          "title": "使用Linux 15年后的macOS设置"
         },
         {
           "id": "https://hn.buzzing.cc/hn/29742551/",
@@ -13496,6 +14088,15 @@
           "id": "https://hn.buzzing.cc/hn/29742977/",
           "author": null,
           "description": "Linux内核的RNG现在是Blake2而不是SHA1，速度快3倍",
+          "link": "https://hn.buzzing.cc/hn/29742977/?score=107&original_url=https%3A%2F%2Ftwitter.com%2FFiloSottile%2Fstatus%2F1476698207413493766&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29742977",
+          "publishedOn": "2021-12-31T00:47:34.000Z",
+          "wordCount": 33,
+          "title": "Linux内核的RNG现在是Blake2而不是SHA1，速度快3倍"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29742977/",
+          "author": null,
+          "description": "Linux内核的RNG现在是Blake2而不是SHA1，速度快3倍",
           "link": "https://hn.buzzing.cc/hn/29742977/",
           "publishedOn": "2021-12-31T00:47:34.000Z",
           "wordCount": 33,
@@ -13514,6 +14115,15 @@
           "id": "https://hn.buzzing.cc/hn/29739683/",
           "author": null,
           "description": "/R/PixelArt更新：NFT帖子现在被禁止了",
+          "link": "https://hn.buzzing.cc/hn/29739683/?score=100&original_url=https%3A%2F%2Fold.reddit.com%2Fr%2FPixelArt%2Fcomments%2Frrb8s8%2Frpixelart_update_nft_posts_are_now_banned%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29739683",
+          "publishedOn": "2021-12-30T23:47:57.000Z",
+          "wordCount": 28,
+          "title": "/R/PixelArt更新：NFT帖子现在被禁止了"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29739683/",
+          "author": null,
+          "description": "/R/PixelArt更新：NFT帖子现在被禁止了",
           "link": "https://hn.buzzing.cc/hn/29739683/",
           "publishedOn": "2021-12-30T23:47:57.000Z",
           "wordCount": 28,
@@ -13527,6 +14137,33 @@
           "publishedOn": "2021-12-30T23:47:57.000Z",
           "wordCount": 28,
           "title": "/R/PixelArt更新：NFT帖子现在被禁止了"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29735298/",
+          "author": null,
+          "description": "面向表格的编程 (2002)",
+          "link": "https://hn.buzzing.cc/hn/29735298/?score=100&original_url=https%3A%2F%2Fweb.archive.org%2Fweb%2F20121024051826%2Fhttp%3A%2F%2Fwww.geocities.com%2Ftablizer%2Ftop.htm&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29735298",
+          "publishedOn": "2021-12-30T23:14:36.000Z",
+          "wordCount": 28,
+          "title": "面向表格的编程 (2002)"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29741424/",
+          "author": null,
+          "description": "特斯拉召回近50万辆Model 3和Model S汽车",
+          "link": "https://hn.buzzing.cc/hn/29741424/?score=111&original_url=https%3A%2F%2Fwww.theverge.com%2F2021%2F12%2F30%2F22859717%2Ftesla-model-3-s-recall-trunk-latch-failure-nhtsa&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29741424",
+          "publishedOn": "2021-12-30T23:14:36.000Z",
+          "wordCount": 37,
+          "title": "特斯拉召回近50万辆Model 3和Model S汽车"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29739235/",
+          "author": null,
+          "description": "iPhone相机应用将人的头部替换为照片中的一片树叶",
+          "link": "https://hn.buzzing.cc/hn/29739235/?score=125&original_url=https%3A%2F%2Ftwitter.com%2Fmitchcohen%2Fstatus%2F1476351601862483968&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29739235",
+          "publishedOn": "2021-12-30T23:14:36.000Z",
+          "wordCount": 34,
+          "title": "iPhone相机应用将人的头部替换为照片中的一片树叶"
         },
         {
           "id": "https://hn.buzzing.cc/hn/29735298/",
@@ -13586,6 +14223,15 @@
           "id": "https://hn.buzzing.cc/hn/29736972/",
           "author": null,
           "description": "亚伦-斯沃茨的黑暗面 (2013)",
+          "link": "https://hn.buzzing.cc/hn/29736972/?score=100&original_url=https%3A%2F%2Fwww.newyorker.com%2Fmagazine%2F2013%2F03%2F11%2Frequiem-for-a-dream&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29736972",
+          "publishedOn": "2021-12-30T22:42:28.000Z",
+          "wordCount": 29,
+          "title": "亚伦-斯沃茨的黑暗面 (2013)"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29736972/",
+          "author": null,
+          "description": "亚伦-斯沃茨的黑暗面 (2013)",
           "link": "https://hn.buzzing.cc/hn/29736972/",
           "publishedOn": "2021-12-30T22:42:28.000Z",
           "wordCount": 29,
@@ -13604,6 +14250,15 @@
           "id": "https://hn.buzzing.cc/hn/29740016/",
           "author": null,
           "description": "女性在印度的iPhone工厂中推动变革",
+          "link": "https://hn.buzzing.cc/hn/29740016/?score=102&original_url=https%3A%2F%2Fwww.reuters.com%2Fworld%2Findia%2Fwomen-force-change-indian-iphone-plant-sick-bad-food-crowded-dorms-2021-12-30%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29740016",
+          "publishedOn": "2021-12-30T22:32:33.000Z",
+          "wordCount": 28,
+          "title": "女性在印度的iPhone工厂中推动变革"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29740016/",
+          "author": null,
+          "description": "女性在印度的iPhone工厂中推动变革",
           "link": "https://hn.buzzing.cc/hn/29740016/",
           "publishedOn": "2021-12-30T22:32:33.000Z",
           "wordCount": 28,
@@ -13617,6 +14272,24 @@
           "publishedOn": "2021-12-30T22:32:33.000Z",
           "wordCount": 28,
           "title": "女性在印度的iPhone工厂中推动变革"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29739349/",
+          "author": null,
+          "description": "一种基于mRNA的抗蜱虫疫苗",
+          "link": "https://hn.buzzing.cc/hn/29739349/?score=102&original_url=https%3A%2F%2Fwww.science.org%2Fdoi%2F10.1126%2Fscitranslmed.abm2504&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29739349",
+          "publishedOn": "2021-12-30T21:10:20.000Z",
+          "wordCount": 25,
+          "title": "一种基于mRNA的抗蜱虫疫苗"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29739147/",
+          "author": null,
+          "description": "SQL语言提案。JOIN FOREIGN",
+          "link": "https://hn.buzzing.cc/hn/29739147/?score=100&original_url=https%3A%2F%2Fgist.github.com%2Fjoelonsql%2F15b50b65ec343dce94db6249cfea8aaa&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29739147",
+          "publishedOn": "2021-12-30T21:10:20.000Z",
+          "wordCount": 27,
+          "title": "SQL语言提案。JOIN FOREIGN"
         },
         {
           "id": "https://hn.buzzing.cc/hn/29739349/",
@@ -13658,6 +14331,15 @@
           "id": "https://hn.buzzing.cc/hn/29738437/",
           "author": null,
           "description": "德国。数据保留将被废除",
+          "link": "https://hn.buzzing.cc/hn/29738437/?score=106&original_url=https%3A%2F%2Ftutanota.com%2Fblog%2Fposts%2Fdata-retention-germany%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29738437",
+          "publishedOn": "2021-12-30T20:08:05.000Z",
+          "wordCount": 27,
+          "title": "德国。数据保留将被废除"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29738437/",
+          "author": null,
+          "description": "德国。数据保留将被废除",
           "link": "https://hn.buzzing.cc/hn/29738437/",
           "publishedOn": "2021-12-30T20:08:05.000Z",
           "wordCount": 27,
@@ -13671,6 +14353,15 @@
           "publishedOn": "2021-12-30T20:08:05.000Z",
           "wordCount": 27,
           "title": "德国。数据保留将被废除"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29727411/",
+          "author": null,
+          "description": "德克萨斯州的一个学区禁止我的书。然后事情变得很糟糕",
+          "link": "https://hn.buzzing.cc/hn/29727411/?score=100&original_url=https%3A%2F%2Fwww.texasmonthly.com%2Fnews-politics%2Ftexas-school-district-banned-my-book%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29727411",
+          "publishedOn": "2021-12-30T19:57:51.000Z",
+          "wordCount": 31,
+          "title": "德克萨斯州的一个学区禁止我的书。然后事情变得很糟糕"
         },
         {
           "id": "https://hn.buzzing.cc/hn/29727411/",
@@ -13694,6 +14385,15 @@
           "id": "https://hn.buzzing.cc/hn/29737698/",
           "author": null,
           "description": "拥挤的宿舍，没有冲水马桶，iPhone工厂的食物爬满了虫子。",
+          "link": "https://hn.buzzing.cc/hn/29737698/?score=101&original_url=https%3A%2F%2Fwww.independent.ie%2Fworld-news%2Fasia-pacific%2Fcrowded-dorms-no-flush-toilets-and-worms-in-food-how-protest-forced-change-for-women-at-indian-iphone-plant-41194516.html&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29737698",
+          "publishedOn": "2021-12-30T19:39:10.000Z",
+          "wordCount": 32,
+          "title": "拥挤的宿舍，没有冲水马桶，iPhone工厂的食物爬满了虫子。"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29737698/",
+          "author": null,
+          "description": "拥挤的宿舍，没有冲水马桶，iPhone工厂的食物爬满了虫子。",
           "link": "https://hn.buzzing.cc/hn/29737698/",
           "publishedOn": "2021-12-30T19:39:10.000Z",
           "wordCount": 32,
@@ -13707,6 +14407,24 @@
           "publishedOn": "2021-12-30T19:39:10.000Z",
           "wordCount": 32,
           "title": "拥挤的宿舍，没有冲水马桶，iPhone工厂的食物爬满了虫子。"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29737973/",
+          "author": null,
+          "description": "LastPass博客。不正常的登录活动是由于错误造成的",
+          "link": "https://hn.buzzing.cc/hn/29737973/?score=100&original_url=https%3A%2F%2Fblog.lastpass.com%2F2021%2F12%2Funusual-attempted-login-activity-how-lastpass-protects-you%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29737973",
+          "publishedOn": "2021-12-30T19:19:01.000Z",
+          "wordCount": 29,
+          "title": "LastPass博客。不正常的登录活动是由于错误造成的"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29738371/",
+          "author": null,
+          "description": "世嘉意外公布AWS凭证为重大云漏洞的一部分",
+          "link": "https://hn.buzzing.cc/hn/29738371/?score=104&original_url=https%3A%2F%2Fvpnoverview.com%2Fnews%2Fsega-europe-suffers-major-security-breach%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29738371",
+          "publishedOn": "2021-12-30T19:19:01.000Z",
+          "wordCount": 31,
+          "title": "世嘉意外公布AWS凭证为重大云漏洞的一部分"
         },
         {
           "id": "https://hn.buzzing.cc/hn/29737973/",
@@ -13748,6 +14466,24 @@
           "id": "https://hn.buzzing.cc/hn/29734482/",
           "author": null,
           "description": "类别理论。讲义和在线书籍",
+          "link": "https://hn.buzzing.cc/hn/29734482/?score=101&original_url=https%3A%2F%2Fwww.logicmatters.net%2Fcategories%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29734482",
+          "publishedOn": "2021-12-30T18:50:19.000Z",
+          "wordCount": 29,
+          "title": "类别理论。讲义和在线书籍"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29737412/",
+          "author": null,
+          "description": "记者可能因使用 \"查看来源 \"而被起诉",
+          "link": "https://hn.buzzing.cc/hn/29737412/?score=102&original_url=https%3A%2F%2Fwww.stltoday.com%2Fnews%2Flocal%2Fgovt-and-politics%2Fparson-says-he-believes-prosecutor-will-bring-charges-in-post-dispatch-case%2Farticle_c4d88dae-fbf7-565f-a96c-e3589a626273.html&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29737412",
+          "publishedOn": "2021-12-30T18:50:19.000Z",
+          "wordCount": 32,
+          "title": "记者可能因使用 \"查看来源 \"而被起诉"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29734482/",
+          "author": null,
+          "description": "类别理论。讲义和在线书籍",
           "link": "https://hn.buzzing.cc/hn/29734482/",
           "publishedOn": "2021-12-30T18:50:19.000Z",
           "wordCount": 29,
@@ -13779,6 +14515,24 @@
           "publishedOn": "2021-12-30T18:50:19.000Z",
           "wordCount": 32,
           "title": "记者可能因使用 \"查看来源 \"而被起诉"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29738298/",
+          "author": null,
+          "description": "东京警方丢失两张载有公民个人信息的软盘",
+          "link": "https://hn.buzzing.cc/hn/29738298/?score=101&original_url=https%3A%2F%2Fmainichi.jp%2Fenglish%2Farticles%2F20211227%2Fp2a%2F00m%2F0na%2F072000c&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29738298",
+          "publishedOn": "2021-12-30T18:34:16.000Z",
+          "wordCount": 33,
+          "title": "东京警方丢失两张载有公民个人信息的软盘"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29736208/",
+          "author": null,
+          "description": "为什么不能在频率空间设计噪声？",
+          "link": "https://hn.buzzing.cc/hn/29736208/?score=104&original_url=https%3A%2F%2Fblog.demofox.org%2F2021%2F12%2F29%2Fwhy-cant-you-design-noise-in-frequency-space%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29736208",
+          "publishedOn": "2021-12-30T18:34:16.000Z",
+          "wordCount": 28,
+          "title": "为什么不能在频率空间设计噪声？"
         },
         {
           "id": "https://hn.buzzing.cc/hn/29738298/",
@@ -13820,6 +14574,24 @@
           "id": "https://hn.buzzing.cc/hn/29738140/",
           "author": null,
           "description": "斯坦福大学要求为所有学生注射强化疫苗",
+          "link": "https://hn.buzzing.cc/hn/29738140/?score=114&original_url=https%3A%2F%2Fstudentaffairs.stanford.edu%2Fresources-our-communities%2Fcovid-19-guidance-students%2Fwinter-break-return-testing-guide%2Fbooster-shot&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29738140",
+          "publishedOn": "2021-12-30T18:11:38.000Z",
+          "wordCount": 27,
+          "title": "斯坦福大学要求为所有学生注射强化疫苗"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29733648/",
+          "author": null,
+          "description": "MacOS版韦氏1913词典",
+          "link": "https://hn.buzzing.cc/hn/29733648/?score=100&original_url=https%3A%2F%2Fgithub.com%2Fcmod%2Fwebsters-1913&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29733648",
+          "publishedOn": "2021-12-30T18:11:38.000Z",
+          "wordCount": 25,
+          "title": "MacOS版韦氏1913词典"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29738140/",
+          "author": null,
+          "description": "斯坦福大学要求为所有学生注射强化疫苗",
           "link": "https://hn.buzzing.cc/hn/29738140/",
           "publishedOn": "2021-12-30T18:11:38.000Z",
           "wordCount": 27,
@@ -13856,6 +14628,15 @@
           "id": "https://hn.buzzing.cc/hn/29736369/",
           "author": null,
           "description": "现在是你的问题的礼物",
+          "link": "https://hn.buzzing.cc/hn/29736369/?score=103&original_url=https%3A%2F%2Fapenwarr.ca%2Flog%2F20211229&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29736369",
+          "publishedOn": "2021-12-30T17:44:08.000Z",
+          "wordCount": 27,
+          "title": "现在是你的问题的礼物"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29736369/",
+          "author": null,
+          "description": "现在是你的问题的礼物",
           "link": "https://hn.buzzing.cc/hn/29736369/",
           "publishedOn": "2021-12-30T17:44:08.000Z",
           "wordCount": 27,
@@ -13874,6 +14655,15 @@
           "id": "https://hn.buzzing.cc/hn/29737533/",
           "author": null,
           "description": "痴人说梦。一个令人不安的对未来的预言",
+          "link": "https://hn.buzzing.cc/hn/29737533/?score=120&original_url=https%3A%2F%2Fwww.theguardian.com%2Fculture%2F2021%2Fjul%2F19%2Fidiocracy-a-disturbingly-prophetic-look-at-the-future-of-america-and-our-era-of-stupidity&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29737533",
+          "publishedOn": "2021-12-30T17:24:41.000Z",
+          "wordCount": 28,
+          "title": "痴人说梦。一个令人不安的对未来的预言"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29737533/",
+          "author": null,
+          "description": "痴人说梦。一个令人不安的对未来的预言",
           "link": "https://hn.buzzing.cc/hn/29737533/",
           "publishedOn": "2021-12-30T17:24:41.000Z",
           "wordCount": 28,
@@ -13887,6 +14677,33 @@
           "publishedOn": "2021-12-30T17:24:41.000Z",
           "wordCount": 28,
           "title": "痴人说梦。一个令人不安的对未来的预言"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29734277/",
+          "author": null,
+          "description": "像1999年一样浏览网络",
+          "link": "https://hn.buzzing.cc/hn/29734277/?score=103&original_url=https%3A%2F%2Foldweb.today%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29734277",
+          "publishedOn": "2021-12-30T16:28:35.000Z",
+          "wordCount": 26,
+          "title": "像1999年一样浏览网络"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29735132/",
+          "author": null,
+          "description": "LastPass的主密码是如何被泄露的？",
+          "link": "https://hn.buzzing.cc/hn/29735132/?score=104&original_url=https%3A%2F%2Fpalant.info%2F2021%2F12%2F29%2Fhow-did-lastpass-master-passwords-get-compromised%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29735132",
+          "publishedOn": "2021-12-30T16:28:35.000Z",
+          "wordCount": 28,
+          "title": "LastPass的主密码是如何被泄露的？"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29736366/",
+          "author": null,
+          "description": "关于Emacs 28的上下文菜单和一般的Unix鼠标使用方法",
+          "link": "https://hn.buzzing.cc/hn/29736366/?score=101&original_url=https%3A%2F%2Fruzkuku.com%2Ftexts%2Femacs-mouse.html&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29736366",
+          "publishedOn": "2021-12-30T16:28:35.000Z",
+          "wordCount": 32,
+          "title": "关于Emacs 28的上下文菜单和一般的Unix鼠标使用方法"
         },
         {
           "id": "https://hn.buzzing.cc/hn/29734277/",
@@ -13946,6 +14763,15 @@
           "id": "https://hn.buzzing.cc/hn/29736636/",
           "author": null,
           "description": "DeepCreamPy--用深度神经网络对Hentai进行脱敏处理",
+          "link": "https://hn.buzzing.cc/hn/29736636/?score=109&original_url=https%3A%2F%2Fgithub.com%2Fliaoxiong3x%2FDeepCreamPy&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29736636",
+          "publishedOn": "2021-12-30T15:56:12.000Z",
+          "wordCount": 28,
+          "title": "DeepCreamPy--用深度神经网络对Hentai进行脱敏处理"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29736636/",
+          "author": null,
+          "description": "DeepCreamPy--用深度神经网络对Hentai进行脱敏处理",
           "link": "https://hn.buzzing.cc/hn/29736636/",
           "publishedOn": "2021-12-30T15:56:12.000Z",
           "wordCount": 28,
@@ -13959,6 +14785,24 @@
           "publishedOn": "2021-12-30T15:56:12.000Z",
           "wordCount": 28,
           "title": "DeepCreamPy--用深度神经网络对Hentai进行脱敏处理"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29734713/",
+          "author": null,
+          "description": "匿名的数据很少是匿名的",
+          "link": "https://hn.buzzing.cc/hn/29734713/?score=104&original_url=https%3A%2F%2Fflowingdata.com%2F2021%2F12%2F29%2Fanonymized-data-is-rarely-anonymous%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29734713",
+          "publishedOn": "2021-12-30T15:16:05.000Z",
+          "wordCount": 25,
+          "title": "匿名的数据很少是匿名的"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29736110/",
+          "author": null,
+          "description": "荷兰街道多年来的变化（相册）。",
+          "link": "https://hn.buzzing.cc/hn/29736110/?score=100&original_url=https%3A%2F%2Fimgur.com%2Fa%2FrffE0Oz&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29736110",
+          "publishedOn": "2021-12-30T15:16:05.000Z",
+          "wordCount": 30,
+          "title": "荷兰街道多年来的变化（相册）。"
         },
         {
           "id": "https://hn.buzzing.cc/hn/29734713/",
@@ -14000,6 +14844,15 @@
           "id": "https://hn.buzzing.cc/hn/29735392/",
           "author": null,
           "description": "一个用于CSV文件的快速SQLite PWA笔记本",
+          "link": "https://hn.buzzing.cc/hn/29735392/?score=100&original_url=https%3A%2F%2Fdirtylittlesql.com&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29735392",
+          "publishedOn": "2021-12-30T15:00:10.000Z",
+          "wordCount": 30,
+          "title": "一个用于CSV文件的快速SQLite PWA笔记本"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29735392/",
+          "author": null,
+          "description": "一个用于CSV文件的快速SQLite PWA笔记本",
           "link": "https://hn.buzzing.cc/hn/29735392/",
           "publishedOn": "2021-12-30T15:00:10.000Z",
           "wordCount": 30,
@@ -14018,6 +14871,15 @@
           "id": "https://hn.buzzing.cc/hn/29734471/",
           "author": null,
           "description": "80年代末的斯洛伐克数字游戏的可玩性英语本地化",
+          "link": "https://hn.buzzing.cc/hn/29734471/?score=103&original_url=https%3A%2F%2Fscd.sk%2Fclanky%2Fplayable-english-localizations-of-slovak-digital-games-from-the-late-80s-period%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29734471",
+          "publishedOn": "2021-12-30T14:25:58.000Z",
+          "wordCount": 33,
+          "title": "80年代末的斯洛伐克数字游戏的可玩性英语本地化"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29734471/",
+          "author": null,
+          "description": "80年代末的斯洛伐克数字游戏的可玩性英语本地化",
           "link": "https://hn.buzzing.cc/hn/29734471/",
           "publishedOn": "2021-12-30T14:25:58.000Z",
           "wordCount": 33,
@@ -14031,6 +14893,24 @@
           "publishedOn": "2021-12-30T14:25:58.000Z",
           "wordCount": 33,
           "title": "80年代末的斯洛伐克数字游戏的可玩性英语本地化"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29723068/",
+          "author": null,
+          "description": "铁路线曾经连接着中东地区",
+          "link": "https://hn.buzzing.cc/hn/29723068/?score=103&original_url=https%3A%2F%2Fwww.economist.com%2Fchristmas-specials%2F2021%2F12%2F18%2Frailway-lines-once-connected-the-middle-east&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29723068",
+          "publishedOn": "2021-12-30T13:39:14.000Z",
+          "wordCount": 27,
+          "title": "铁路线曾经连接着中东地区"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29734021/",
+          "author": null,
+          "description": "日本惠普公司意外删除京都大学超级计算系统的77TB数据",
+          "link": "https://hn.buzzing.cc/hn/29734021/?score=104&original_url=https%3A%2F%2Fwww.iimc.kyoto-u.ac.jp%2Fja%2Fwhatsnew%2Finformation%2Fdetail%2F211228056999.html&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29734021",
+          "publishedOn": "2021-12-30T13:39:14.000Z",
+          "wordCount": 31,
+          "title": "日本惠普公司意外删除京都大学超级计算系统的77TB数据"
         },
         {
           "id": "https://hn.buzzing.cc/hn/29723068/",
@@ -14072,6 +14952,24 @@
           "id": "https://hn.buzzing.cc/hn/29734933/",
           "author": null,
           "description": "1月1日将进入公共领域的内容",
+          "link": "https://hn.buzzing.cc/hn/29734933/?score=107&original_url=https%3A%2F%2Fwww.smithsonianmag.com%2Fsmart-news%2Fwhats-entering-the-public-domain-on-january-1-winnie-pooh-ernest-hemingway-180979299%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29734933",
+          "publishedOn": "2021-12-30T13:00:39.000Z",
+          "wordCount": 29,
+          "title": "1月1日将进入公共领域的内容"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29734242/",
+          "author": null,
+          "description": "你可能用错了字典 (2014)",
+          "link": "https://hn.buzzing.cc/hn/29734242/?score=107&original_url=https%3A%2F%2Fjsomers.net%2Fblog%2Fdictionary&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29734242",
+          "publishedOn": "2021-12-30T13:00:39.000Z",
+          "wordCount": 29,
+          "title": "你可能用错了字典 (2014)"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29734933/",
+          "author": null,
+          "description": "1月1日将进入公共领域的内容",
           "link": "https://hn.buzzing.cc/hn/29734933/",
           "publishedOn": "2021-12-30T13:00:39.000Z",
           "wordCount": 29,
@@ -14108,6 +15006,15 @@
           "id": "https://hn.buzzing.cc/hn/29717615/",
           "author": null,
           "description": "实际工作的模糊性",
+          "link": "https://hn.buzzing.cc/hn/29717615/?score=100&original_url=https%3A%2F%2Fsurfingcomplexity.blog%2F2021%2F12%2F28%2Fthe-ambiguity-of-real-work%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29717615",
+          "publishedOn": "2021-12-30T11:56:31.000Z",
+          "wordCount": 26,
+          "title": "实际工作的模糊性"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29717615/",
+          "author": null,
+          "description": "实际工作的模糊性",
           "link": "https://hn.buzzing.cc/hn/29717615/",
           "publishedOn": "2021-12-30T11:56:31.000Z",
           "wordCount": 26,
@@ -14121,6 +15028,15 @@
           "publishedOn": "2021-12-30T11:56:31.000Z",
           "wordCount": 26,
           "title": "实际工作的模糊性"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29735051/",
+          "author": null,
+          "description": "Northvolt在瑞典的千兆工厂组装了第一块锂离子电池单元",
+          "link": "https://hn.buzzing.cc/hn/29735051/?score=104&original_url=https%3A%2F%2Fnorthvolt.com%2Farticles%2Ffirst-cell%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29735051",
+          "publishedOn": "2021-12-30T11:31:47.000Z",
+          "wordCount": 29,
+          "title": "Northvolt在瑞典的千兆工厂组装了第一块锂离子电池单元"
         },
         {
           "id": "https://hn.buzzing.cc/hn/29735051/",
@@ -14144,6 +15060,15 @@
           "id": "https://hn.buzzing.cc/hn/29731297/",
           "author": null,
           "description": "Implant.ARM.iLOBleed.a",
+          "link": "https://hn.buzzing.cc/hn/29731297/?score=100&original_url=https%3A%2F%2Fthreats.amnpardaz.com%2Fen%2F2021%2F12%2F28%2Fimplant-arm-ilobleed-a%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29731297",
+          "publishedOn": "2021-12-30T10:46:56.000Z",
+          "wordCount": 21,
+          "title": "Implant.ARM.iLOBleed.a"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29731297/",
+          "author": null,
+          "description": "Implant.ARM.iLOBleed.a",
           "link": "https://hn.buzzing.cc/hn/29731297/",
           "publishedOn": "2021-12-30T10:46:56.000Z",
           "wordCount": 21,
@@ -14162,6 +15087,15 @@
           "id": "https://hn.buzzing.cc/hn/29734063/",
           "author": null,
           "description": "图形绘制和可视化手册",
+          "link": "https://hn.buzzing.cc/hn/29734063/?score=104&original_url=https%3A%2F%2Fcs.brown.edu%2Fpeople%2Frtamassi%2Fgdhandbook%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29734063",
+          "publishedOn": "2021-12-30T10:36:01.000Z",
+          "wordCount": 26,
+          "title": "图形绘制和可视化手册"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29734063/",
+          "author": null,
+          "description": "图形绘制和可视化手册",
           "link": "https://hn.buzzing.cc/hn/29734063/",
           "publishedOn": "2021-12-30T10:36:01.000Z",
           "wordCount": 26,
@@ -14175,6 +15109,15 @@
           "publishedOn": "2021-12-30T10:36:01.000Z",
           "wordCount": 26,
           "title": "图形绘制和可视化手册"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29725637/",
+          "author": null,
+          "description": "亚马逊的Alexa助手告诉一个孩子做一个可能致命的挑战",
+          "link": "https://hn.buzzing.cc/hn/29725637/?score=123&original_url=https%3A%2F%2Fwww.cnbc.com%2F2021%2F12%2F29%2Famazons-alexa-told-a-child-to-do-a-potentially-lethal-challenge.html&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29725637",
+          "publishedOn": "2021-12-30T07:56:54.000Z",
+          "wordCount": 32,
+          "title": "亚马逊的Alexa助手告诉一个孩子做一个可能致命的挑战"
         },
         {
           "id": "https://hn.buzzing.cc/hn/29725637/",
@@ -20178,132 +21121,6 @@
           "publishedOn": "2021-12-04T18:18:55.000Z",
           "wordCount": 24,
           "title": "死锁帝国"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29437717",
-          "author": null,
-          "description": "为使森林重新生长，美国需要数十亿的种子和更多的 \"种子猎人\"。",
-          "link": "https://hn.buzzing.cc/hn/29437717",
-          "publishedOn": "2021-12-04T11:30:41.000Z",
-          "wordCount": 35,
-          "title": "为使森林重新生长，美国需要数十亿的种子和更多的 \"种子猎人\"。"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29437712",
-          "author": null,
-          "description": "欺诈性供应链",
-          "link": "https://hn.buzzing.cc/hn/29437712",
-          "publishedOn": "2021-12-04T11:22:33.000Z",
-          "wordCount": 25,
-          "title": "欺诈性供应链"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29433896",
-          "author": null,
-          "description": "语法树的CRDT在哪里？",
-          "link": "https://hn.buzzing.cc/hn/29433896",
-          "publishedOn": "2021-12-04T09:42:53.000Z",
-          "wordCount": 29,
-          "title": "语法树的CRDT在哪里？"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29427883",
-          "author": null,
-          "description": "AWS Amplify Studio。从Figma设计到全栈应用",
-          "link": "https://hn.buzzing.cc/hn/29427883",
-          "publishedOn": "2021-12-04T08:34:19.000Z",
-          "wordCount": 32,
-          "title": "AWS Amplify Studio。从Figma设计到全栈应用"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29434307",
-          "author": null,
-          "description": "我买了上个月在HN上出现的那种AR骑行眼镜",
-          "link": "https://hn.buzzing.cc/hn/29434307",
-          "publishedOn": "2021-12-04T08:34:19.000Z",
-          "wordCount": 34,
-          "title": "我买了上个月在HN上出现的那种AR骑行眼镜"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29434097",
-          "author": null,
-          "description": "锌的搜索引擎。用Go编写的Elasticsearch的轻量级替代品",
-          "link": "https://hn.buzzing.cc/hn/29434097",
-          "publishedOn": "2021-12-04T06:34:17.000Z",
-          "wordCount": 31,
-          "title": "锌的搜索引擎。用Go编写的Elasticsearch的轻量级替代品"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29434740",
-          "author": null,
-          "description": "我犯过的常见基础设施错误",
-          "link": "https://hn.buzzing.cc/hn/29434740",
-          "publishedOn": "2021-12-04T05:58:01.000Z",
-          "wordCount": 27,
-          "title": "我犯过的常见基础设施错误"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29414763",
-          "author": null,
-          "description": "Ask HN: 你如何建立你的个人起始页？",
-          "link": "https://hn.buzzing.cc/hn/29414763",
-          "publishedOn": "2021-12-04T04:58:23.000Z",
-          "wordCount": 34,
-          "title": "Ask HN: 你如何建立你的个人起始页？"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29432683",
-          "author": null,
-          "description": "Privacy.com重新发行所有卡片",
-          "link": "https://hn.buzzing.cc/hn/29432683",
-          "publishedOn": "2021-12-04T04:58:23.000Z",
-          "wordCount": 26,
-          "title": "Privacy.com重新发行所有卡片"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29436562",
-          "author": null,
-          "description": "保持一个日志",
-          "link": "https://hn.buzzing.cc/hn/29436562",
-          "publishedOn": "2021-12-04T04:42:15.000Z",
-          "wordCount": 23,
-          "title": "保持一个日志"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29434150",
-          "author": null,
-          "description": "美国生产力放缓：整个经济和行业层面的分析",
-          "link": "https://hn.buzzing.cc/hn/29434150",
-          "publishedOn": "2021-12-04T03:28:32.000Z",
-          "wordCount": 29,
-          "title": "美国生产力放缓：整个经济和行业层面的分析"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29435091",
-          "author": null,
-          "description": "你的eBay账户已被暂停",
-          "link": "https://hn.buzzing.cc/hn/29435091",
-          "publishedOn": "2021-12-04T02:46:04.000Z",
-          "wordCount": 29,
-          "title": "你的eBay账户已被暂停"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29435760",
-          "author": null,
-          "description": "Rclone: 用于云存储的Rsync - 在云存储供应商之间进行同步的CLI",
-          "link": "https://hn.buzzing.cc/hn/29435760",
-          "publishedOn": "2021-12-04T01:32:17.000Z",
-          "wordCount": 39,
-          "title": "Rclone: 用于云存储的Rsync - 在云存储供应商之间进行同步的CLI"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29430368",
-          "author": null,
-          "description": "展示HN：一个完全用SVG构建真实网站的工具",
-          "link": "https://hn.buzzing.cc/hn/29430368",
-          "publishedOn": "2021-12-03T23:29:11.000Z",
-          "wordCount": 31,
-          "title": "展示HN：一个完全用SVG构建真实网站的工具"
         }
       ]
     },
@@ -23929,96 +24746,6 @@
           "publishedOn": "2021-12-04T18:19:32.000Z",
           "wordCount": 19,
           "title": "当你想做的只是在沃尔玛享受乐趣时"
-        },
-        {
-          "id": "https://youtube.buzzing.cc/youtube/cy89Q4hp-JE",
-          "author": null,
-          "description": "Stream Joyner Lucas now: \nEvolution Merch: https://joynerlucas.com/collections/e...\nWritten and Managed on Tully: https://www.tullyconnect.com",
-          "link": "https://youtube.buzzing.cc/youtube/cy89Q4hp-JE",
-          "publishedOn": "2021-12-04T10:36:28.000Z",
-          "wordCount": 20,
-          "title": "乔伊纳-卢卡斯和李杜克--兰博（官方音频）"
-        },
-        {
-          "id": "https://youtube.buzzing.cc/youtube/9VYj6CFnO08",
-          "author": null,
-          "description": "Cordae - Sinister (feat. Lil Wayne)\nStream/Download: https://cordae.lnk.to/Sinister\n\nFollow Cordae\nhttps://cordae.lnk.to/Facebook\nhttps://cordae.lnk.to/Instagram\nhttps://cordae.lnk.to/Twitter\nhttps://cordae.lnk.to/Soundcloud\nhttps://www.youtube.com/channel/UC_jN...\n\nProduction Company: Blank Square Productions\nDirector: Edgar Esteves\nProducer: Andres Garcia\nEditor: Joan Pabon | Digital Sword \n\nArt: Garabato\nColorist: Josh Bohoskey \nMarketing: Carla Pagano\nVideo Commissioner: Kareem Johnson / OverScene, LLC\n\nThe official YouTube channel of Cordae. Subscribe for the latest music videos, performances, and more.",
-          "link": "https://youtube.buzzing.cc/youtube/9VYj6CFnO08",
-          "publishedOn": "2021-12-04T04:58:49.000Z",
-          "wordCount": 26,
-          "title": "Cordae - Sinister (feat. Lil Wayne) [官方音乐视频]"
-        },
-        {
-          "id": "https://youtube.buzzing.cc/youtube/7zcqy6hjqUk",
-          "author": null,
-          "description": "Quando Rondo - \r\nStream/Download: \r\n\r\nSubscribe for more official content from Quando Rondo: https://1633.lnk.to/QuandoRondoSubscribe\r\n\r\nFollow Quando Rondo\r\nhttps://facebook.com/QuandoRondo\r\nhttps://instagram.com/quando_rondo\r\nhttps://twitter.com/quando_rondo\r\nhttps://soundcloud.com/quandorondo\r\n\r\nA natural talent, Quando Rondo was once a small child, secretly singing in the bathroom as a 9-year-old boy in Savannah, GA. His natural gravitation towards music lead to him to hip-hop; he began recording his fledgling verses on his cell phone. He quickly gained traction online, racking up millions of views on YouTube.\r\n\r\nFittingly, he titled his 2018 mixtape 'Life B4 Fame' with the hopes that things would change for the better once his career really took off. He was right—within two days, his mixtape had amassed more than one million streams on MyMixtapez. Things will only go up from there, and if the snippets from his forthcoming Rich Homie Quando project are any sign, he’s only only getting better with time.",
-          "link": "https://youtube.buzzing.cc/youtube/7zcqy6hjqUk",
-          "publishedOn": "2021-12-04T01:32:55.000Z",
-          "wordCount": 28,
-          "title": "昆多-隆多-JOG蓝图（官方音乐视频）"
-        },
-        {
-          "id": "https://youtube.buzzing.cc/youtube/Ro4DGX9Aw3w",
-          "author": null,
-          "description": "Watch the official music video for Yungeen Ace's \"Caterpillars to Butterflies\". \n\nStream/download \"Walk Away\" https://yungeenace.ffm.to/walkaway\nStream/download \"Life of Betrayal 2x\" https://yungeenace.ffm.to/lob-2x\nDirected by TEOShotThis\nText Yungeen Ace 904-204-4544\nShop ATK https://www.lifeofatk.com/​\n\nFollow Yungeen Ace:\nhttp://www.instagram.com/yungeenace/​​​​\nhttp://www.facebook.com/yungeenacemusic\nhttp://twitter.com/yungeenace​​​​\nhttp://soundcloud.com/yungeenace​​​​\nhttp://spoti.fi/2qlMNET​​​​\nhttps://apple.co/2mtKyRJ​​​​\n\n2021 Cinematic Music Group /ATK\n\n#yungeenace #caterpillarstobutterflies #walkaway",
-          "link": "https://youtube.buzzing.cc/youtube/Ro4DGX9Aw3w",
-          "publishedOn": "2021-12-04T01:32:55.000Z",
-          "wordCount": 30,
-          "title": "Yungeen Ace - Caterpillars To Butterflies (Official Music Video)"
-        },
-        {
-          "id": "https://youtube.buzzing.cc/youtube/_CRvJaWWsLs",
-          "author": null,
-          "description": "Zendaya talks about winning an Emmy for her role in Euphoria as Rue and being able to share that moment with her family.\n\n#GrahamNortonShow #GrahamNorton #TheGNShow #SPiderman #TomHolland #Zendaya\n\nFollow us here:\nFacebook: https://www.facebook.com/thegrahamnor...\nInstagram: https://www.instagram.com/thegrahamno...\nTwitter: https://twitter.com/TheGNShow\nTikTok: https://www.tiktok.com/@thegnshow\nSnapchat: https://www.snapchat.com/discover/The...",
-          "link": "https://youtube.buzzing.cc/youtube/_CRvJaWWsLs",
-          "publishedOn": "2021-12-04T00:21:53.000Z",
-          "wordCount": 22,
-          "title": "赞达亚让人穿着防毒服在她家门口等着，拿着艾美奖|格雷厄姆-诺顿秀"
-        },
-        {
-          "id": "https://youtube.buzzing.cc/youtube/n1t09wPatjQ",
-          "author": null,
-          "description": "Directed by @ShotbyJolo  \n\nText “Fredo Bang” to 225-244-6998 for Exclusive Updates 🦍 \n\nShop: https://www.fredobangshop.com/ \n\nFollow Fredo Bang:\nInstagram: https://instagram.com/fredobang\nFacebook: https://www.facebook.com/fredobangbiz/\nTwitter: https://twitter.com/fredobang\nTikTok: https://www.tiktok.com/@fredobangbigape \n\n#FredoBang #GetBack",
-          "link": "https://youtube.buzzing.cc/youtube/n1t09wPatjQ",
-          "publishedOn": "2021-12-03T23:46:13.000Z",
-          "wordCount": 16,
-          "title": "弗雷多-邦-得到回报（官方视频）"
-        },
-        {
-          "id": "https://youtube.buzzing.cc/youtube/YvUqogKqRYE",
-          "author": null,
-          "description": "Official video for “Young N Dumb” by Polo G \n\nListen & Download ‘Hall Of Fame 2.0’ out now: https://polog.lnk.to/HOFDeluxe\n \nAmazon Music - https://polog.lnk.to/HOFDeluxe/amazonmusic\nApple Music - https://polog.lnk.to/HOFDeluxe/applemusic\nAudiomack - https://polog.lnk.to/HOFDeluxe/audiomack\nDeezer - https://polog.lnk.to/HOFDeluxe/deezer\niTunes - https://polog.lnk.to/HOFDeluxe/itunes\nSoundCloud - https://polog.lnk.to/HOFDeluxe/soundcloud\nSpotify - https://polog.lnk.to/HOFDeluxe/spotify\nYouTube Music - https://polog.lnk.to/HOFDeluxe/youtubemusic\n\nDirected by Ryan Lynch\n \nFollow Polo G\nFacebook - https://www.facebook.com/pologofficial\nInstagram - https://www.instagram.com/polo.capalot\nTwitter - https://twitter.com/Polo_Capalot\nTikTok - https://www.tiktok.com/@pologofficial\n \nhttps://www.polocapalot.com/\n \n#PoloG #YoungNDumb #HallOfFame",
-          "link": "https://youtube.buzzing.cc/youtube/YvUqogKqRYE",
-          "publishedOn": "2021-12-03T23:46:13.000Z",
-          "wordCount": 18,
-          "title": "波罗G - 年轻的傻子（官方视频）"
-        },
-        {
-          "id": "https://youtube.buzzing.cc/youtube/_Ypn44b8hdg",
-          "author": null,
-          "description": "Zendaya endearingly worries about Tom Holland throwing up in his Spider-Man mask and what he'd do. \n\n#GrahamNortonShow #GrahamNorton #TheGNShow #TomHolland #Zendaya #Spiderman \n\nFollow us here:\nFacebook: https://www.facebook.com/thegrahamnor...\nInstagram: https://www.instagram.com/thegrahamno...\nTwitter: https://twitter.com/TheGNShow\nTikTok: https://www.tiktok.com/@thegnshow\nSnapchat: https://www.snapchat.com/discover/The...",
-          "link": "https://youtube.buzzing.cc/youtube/_Ypn44b8hdg",
-          "publishedOn": "2021-12-03T23:46:13.000Z",
-          "wordCount": 16,
-          "title": "汤姆-霍兰德通过他的蜘蛛侠面具的眼睛喝他的星冰乐｜格雷厄姆-诺顿秀"
-        },
-        {
-          "id": "https://youtube.buzzing.cc/youtube/qFZeZzcXoyg",
-          "author": null,
-          "description": "Tom Holland & Zendaya's height difference caused some issues on the set of Spider-Man No Way Home.\n\n#GrahamNortonShow #GrahamNorton #TheGNShow #TomHolland #Zendaya #Spiderman \n\nFollow us here:\nFacebook: https://www.facebook.com/thegrahamnor...\nInstagram: https://www.instagram.com/thegrahamno...\nTwitter: https://twitter.com/TheGNShow\nTikTok: https://www.tiktok.com/@thegnshow\nSnapchat: https://www.snapchat.com/discover/The...",
-          "link": "https://youtube.buzzing.cc/youtube/qFZeZzcXoyg",
-          "publishedOn": "2021-12-03T23:46:13.000Z",
-          "wordCount": 19,
-          "title": "汤姆-霍兰德身高不够，无法抓住赞达亚｜格雷厄姆-诺顿秀"
-        },
-        {
-          "id": "https://youtube.buzzing.cc/youtube/zFXmOl6JqRE",
-          "author": null,
-          "description": "SZA – “I Hate U” out now: https://smarturl.it/SZAIHateU\n\nComposer, Lyricist: Solána Rowe\nProducer: Rob Bisel\nComposer, Lyricist, Producer: Carter Lang\nComposer, Lyricist: Robert Bisel\nProducer: ThankGod4Cody\nComposer, Lyricist: Cody Fayne\nComposer, Lyricist, Producer: Dylan Patrice\n\nFollow SZA:\nhttp://szactrl.com\nhttp://instagram.com/sza\nhttp://twitter.com/sza\nhttp://facebook.com/sza\n\n#SZA #IHateU #RnB",
-          "link": "https://youtube.buzzing.cc/youtube/zFXmOl6JqRE",
-          "publishedOn": "2021-12-03T23:29:37.000Z",
-          "wordCount": 26,
-          "title": "SZA - I Hate U (音频)"
         }
       ]
     },
@@ -24052,6 +24779,15 @@
       "feedUrl": "https://hashnode.com/tag/java/rss",
       "siteUrl": "https://hashnode.com",
       "articles": [
+        {
+          "id": "https://puzpuzpuz.io/scalable-readers-writer-lock",
+          "author": "Andrey Pechkurov",
+          "description": "Locks, or mutexes (mutual exclusions), are one of the most basic concurrency primitives. It's hard to find a developer who won't be able to explain a mutex, at least on the fundamental level. Yet, mutexes are more than that. They may be:\n\nOS-level (t...",
+          "link": "https://puzpuzpuz.io/scalable-readers-writer-lock",
+          "publishedOn": "2022-01-02T11:30:39.000Z",
+          "wordCount": 2933,
+          "title": "Scalable Readers-Writer Lock"
+        },
         {
           "id": "https://ashishtechmill.com/monitoring-spring-boot-applications-part-1",
           "author": "Ashish Choudhary",

@@ -2,10 +2,313 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gsyx666.github.io/action-osmosfeed/index.html</id>
     <title>gsyx::feed</title>
-    <updated>2022-01-02T10:18:50.070Z</updated>
+    <updated>2022-01-03T00:47:06.198Z</updated>
     <generator>osmosfeed 1.11.3</generator>
     <link rel="alternate" href="https://gsyx666.github.io/action-osmosfeed/index.html"/>
     <link rel="self" href="https://gsyx666.github.io/action-osmosfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[You don't need null]]></title>
+        <id>https://dev.to/vangware/you-dont-need-null-3m4n</id>
+        <link href="https://dev.to/vangware/you-dont-need-null-3m4n"/>
+        <updated>2022-01-02T23:20:06.000Z</updated>
+        <summary type="html"><![CDATA[While a lot of programming languages that have a "nullish" type (null, nil, etc.) debate about avoiding it, JavaScript is the only popular one that has two, you read that right, two nullish types. One of the most common recommendations is to stick to using only one, and my recommendation is to only use undefined and avoid null. In this article, we will go over the reasons you might also want to avoid null in JavaScript and TypeScript.
+As Douglas Crockford put it in one of his talks, JavaScript itself uses undefined all the time, so let's use the one the language uses:
+let something; // This is undefined!
+
+const otherThing = {
+    foo: "hi",
+};
+otherThing.bar; // This is also undefined
+
+const aFunction = anArgument => {
+    // anArgument here is undefined if no value is passed
+};
+
+To use nu…]]></summary>
+        <author>
+            <name>LUKESHIRU</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ASP.NET Core 6: Autenticación JWT y Identity Core]]></title>
+        <id>https://dev.to/isaacojeda/aspnet-core-6-autenticacion-jwt-y-identity-core-170i</id>
+        <link href="https://dev.to/isaacojeda/aspnet-core-6-autenticacion-jwt-y-identity-core-170i"/>
+        <updated>2022-01-02T23:09:08.000Z</updated>
+        <summary type="html"><![CDATA[Introducción
+
+
+En este artículo exploraremos a fondo las características de los JSON Web Tokens, su composición y su implementación utilizando Minimal APIs y ASP.NET Identity.
+El código de ejemplo lo podrás encontrar en este repositorio en mi github. Espero les sea de utilidad.
+Un JSON Web Token (JWT) es un estándar (RFC 7519) que define una forma segura y compacta de transmitir información entre dos entidades en forma de un objeto JSON.
+Esta información puede ser verificada y es confiable ya que está firmada digitalmente. Los JWTs pueden ser firmados utilizando una llave privada (con un algoritmo HMAC) o con llaves públicas y privadas utilizando RSA o ECDSA.
+Aquí veremos un par de escenarios donde es útil y recomendable utilizar los JWTs:
+Autorización: Este es el caso de uso más común de …]]></summary>
+        <author>
+            <name>Isaac Ojeda</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Faster JetBrains IDEs with shared indexes]]></title>
+        <id>https://dev.to/coder/faster-jetbrains-ides-with-shared-indexes-10n1</id>
+        <link href="https://dev.to/coder/faster-jetbrains-ides-with-shared-indexes-10n1"/>
+        <updated>2022-01-02T21:53:11.000Z</updated>
+        <summary type="html"><![CDATA[If you develop with IntelliJ IDEA, PyCharm, GoLand, or other JetBrains IDEs,  it’s likely you’ve waited for “indexing” to complete after opening a project. While this may be annoying, it’s necessary for IntelliJ and other heavy-weight IDEs to have features such as code search, highlighting, refactoring, and code completion.
+Waiting for an IDE to finish indexing a project might not be a big problem for many workflows. After the first load, indexes are cached and subsequent runs are faster. However, indexing time can be a huge blocker for developers, especially in these cases:
+large projects (monorepos, many dependencies, monolithic applications)
+
+
+running old/slow machines (indexing is CPU-intensive)
+
+
+ephemeral developer workspaces (containers, remote IDEs)
+
+
+
+
+In this post, we’ll cover ho…]]></summary>
+        <author>
+            <name>Ben Potter</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Getting started With Open Source]]></title>
+        <id>https://dev.to/favourmark05/getting-started-with-open-source-ohm</id>
+        <link href="https://dev.to/favourmark05/getting-started-with-open-source-ohm"/>
+        <updated>2022-01-02T21:23:34.000Z</updated>
+        <summary type="html"><![CDATA[OVERVIEW
+
+
+Open source is a term that originally referred to open source software (OSS). Open-source software is code that is designed to be publicly accessible—anyone can see, modify, and distribute the code as they see fit. Open source refers to source code that is made available to the public to view, use, modify, and distribute under a license. It’s usually developed and maintained collaboratively by a community of its users. Some well-known open-source projects include Django, Postgres, MongoDB, Vue, Go, Ruby, TypeScript, Git and so many more.
+There is a variety of good reasons to release something under an open-source license, from “more perspectives make better software” to “establishing a standard.” It is important to build a sustainable project to consider your reasons for publish…]]></summary>
+        <author>
+            <name>MFONIDO MARK</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How To Add A Community Trading Bot on Discord]]></title>
+        <id>https://dev.to/kw4ng/how-to-add-a-community-trading-bot-on-discord-7p2</id>
+        <link href="https://dev.to/kw4ng/how-to-add-a-community-trading-bot-on-discord-7p2"/>
+        <updated>2022-01-02T21:10:01.000Z</updated>
+        <summary type="html"><![CDATA[At Blankly, we pride ourselves not just for the product that we are building, but also towards cultivating a community of quant enthusiasts which no one else is doing in this field right now. We identified a critical void that many Discord servers currently suffer from: low member engagement. That said, to elevate the overall experience of using the Blankly package and fix the problem identified earlier, we decided to roll out three Discord bots each of which specializes in something unique. We will dive into the Blankly Connect Bot in this article.
+To give the users a taste of our product, we created this bot using a virtual sandbox and our in-house Blankly Connect API—the single source to connect, unify, and trade across all exchanges—which aims at simulating what the actual product will…]]></summary>
+        <author>
+            <name>Kevin Wang</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[🥳 How to Get More Stars on Github! (Part 2)]]></title>
+        <id>https://dev.to/williammcgonagle/how-to-get-more-stars-on-github-part-2-2pdk</id>
+        <link href="https://dev.to/williammcgonagle/how-to-get-more-stars-on-github-part-2-2pdk"/>
+        <updated>2022-01-02T21:05:05.000Z</updated>
+        <summary type="html"><![CDATA[I’ve been working on eaf-linter for about a few days now, and it already has 6 stars and 2 forks. My other project that I've been working on, the Backend Server, has 14 stars, 9 forks, and nearly 10 outside contributors. That might not sound like a lot, but both of these projects are only about a week old.
+So, how did I do it?
+The most important thing has been issues, which I talked about here. But, the second most important thing has been designing a great readme. 
+A good readme is the difference between someone staring your project and someone ignoring it. If you have badges, easily understandable features, and lots of images, you have a star worthy repository. 
+First, you need to have badges. If you don't know what a badge is, it's the little image that says how many stars, downloads, etc. a project has. These are also known as shields, and you can get them from this website. If you have a ton of them and they all say good things, it increases the confidence that someone has in your project. 
+Secondly, you need easily understandable features. If you look at my newest repository, eaf-linter, you will see that all of the features have a simple headline and they link to a new page. This is very important. If your feature can link to a more in depth description of the feature, it will increase the confidence that the possible contributor has in your project. 
+Finally, images are super important. In my backend server, I have a ton of really eye-catching images. These images increase the likelihood that someone will keep looking through your readme, and the longer that the person stays on your page, the more likely they are to star your repository. 
+There will be more tips like this coming tomorrow and the day after, so if you liked hearing this, make sure to follow me, so you can see more tips as they come out.
+Also, our open-source, non-profit is hiring right now if you're interested. Don't forget to follow us on LinkedIn.]]></summary>
+        <author>
+            <name>William McGonagle</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[JBang + Quarkus + AWS Lambda + Terraform = <3]]></title>
+        <id>https://dev.to/nandorholozsnyak/jbang-quarkus-aws-lambda-terraform-3-4ahk</id>
+        <link href="https://dev.to/nandorholozsnyak/jbang-quarkus-aws-lambda-terraform-3-4ahk"/>
+        <updated>2022-01-02T20:55:15.000Z</updated>
+        <summary type="html"><![CDATA[Have you ever wondered how can you utilize your Java skills in the serverless world?
+JBang.
+JBang
+Properly configured AWS CLI with Access and Secret key
+Terraform - latest/newest release would work.
+I would not like to go through how these tools should be installed, I assume these things are a piece of cake.
+❯ jbang version
+0.86.0
+❯ aws --version
+aws-cli/1.22.5 Python/3.9.5 Linux/5.15.8-76051508-generic botocore/1.23.5
+❯ terraform -v
+Terraform v1.0.0
+on linux_amd64
+
+JBang is a powerful tool which lets you create .java files with your requested dependencies, and with different commands you will be able to build and export .jar files and native binaries.
+Okay okay, we have Maven and Gradle, why would I need this?
+For my answer for this is the following: If you really want to code just a smal…]]></summary>
+        <author>
+            <name>Nándor Holozsnyák</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Streaming files from AWS S3 using NodeJS Stream API with Typescript]]></title>
+        <id>https://dev.to/about14sheep/streaming-data-from-aws-s3-using-nodejs-stream-api-and-typescript-3dj0</id>
+        <link href="https://dev.to/about14sheep/streaming-data-from-aws-s3-using-nodejs-stream-api-and-typescript-3dj0"/>
+        <updated>2022-01-02T20:35:31.000Z</updated>
+        <summary type="html"><![CDATA[AWS s3 SDK and NodeJS read/write streams makes it easy to download files from an AWS bucket. However, what if you wanted to stream the files instead? 
+There is a timeout on connections to an AWS s3 instance set to 120000ms (2 minutes). Unless you have very small files, this just won't cut it for streaming. 
+One option is to simply raise that timeout, but then how much should you raise it? Since the timeout is for the total time a connection can last; you would have to either make the timeout some ridiculous amount, or guess how long it will take to stream the file and update the timeout accordingly. This is also not taking into account the stream closing due to HTTP(S)'s own timeout reasons as well.
+Instead of making guesses and fighting random bugs, we can make use of the NodeJS Stream AP…]]></summary>
+        <author>
+            <name>Austin Burger</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Symfony & Doctrine: Part 3]]></title>
+        <id>https://dev.to/hananekacemi/symfony-doctrine-part-3-3odn</id>
+        <link href="https://dev.to/hananekacemi/symfony-doctrine-part-3-3odn"/>
+        <updated>2022-01-02T20:34:05.000Z</updated>
+        <summary type="html"><![CDATA[Previously, I talked about how to create easily an Entity (ex:JOB) using a simple command line make:Entity and answering a few question(fields,type…).
+This article will be about saving data to, fetching data from, the database.
+To do so, we need to use a service provided by Doctrine, called EntityManagerInterface. The command  symfony console  debug:autowiring doctrine shows all doctrine services available.
+Type-hint an argument $em to EntityManagerInterface, create an Object (ex $job), set all its properties then call persist and flush methods.
+
+Calling persist() method tells Doctrine that we want to save the object, no query is executed yet. We call this method as many time as objects that we have, once we call flush() method, Doctrine execute the queries needed to insert to database.
+We can check if data has been inserted with : symfony console doctrine:query:sql 'select * from job'
+
+Getting data(objects) from db is even easier, one way to do that is by using JobRepository $jobRepo as an argument in our method. 
+
+The repository class offers many helper methods to get our data from db like : findBy, findOneBy... We can also add custom methods to have complex queries, more about that in my next article. 
+Finally, I like to mention that Profiler provides a lot of tools to use when developing an app, for doctrine, it shows all queries executed : 
+
+Thanks for reading and Happy new year :)]]></summary>
+        <author>
+            <name>Hanane Kacemi</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[After 1 YEAR of hard work my NEW Ultimate Web Desktop Environment is ready for launch!!!!! 🎉🎉]]></title>
+        <id>https://dev.to/dustinbrett/after-1-year-of-hard-work-my-new-ultimate-web-desktop-environment-is-ready-for-launch-2dnd</id>
+        <link href="https://dev.to/dustinbrett/after-1-year-of-hard-work-my-new-ultimate-web-desktop-environment-is-ready-for-launch-2dnd"/>
+        <updated>2022-01-02T20:01:03.000Z</updated>
+        <summary type="html"><![CDATA[LIVE LINK: https://dustinbrett.com/
+Hey everyone, thanks for checking out my article on my passion project for the last year (and several years prior in different forms/codebases).
+I've recently completed 52 weekly streams in 2021 as I worked on coding my app, from Hello World to what it is today.
+
+
+
+
+Today (Jan 2nd) was the day of my first stream one year ago so I felt it was a good day to do this release. I will be having a LIVE 🔴 Release Party Stream later TONIGHT, (Jan 2nd, 2022) at 9 PM PT to celebrate finally getting the code live and also to answer any questions or comments anyone may have.
+
+
+
+
+I'm also going to be answering questions throughout the 1st week of 2022 as I will post on several sub reddits that may find this project interesting. Today I have posted on /r/reactjs so fe…]]></summary>
+        <author>
+            <name>Dustin Brett</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[谷歌不再产生高质量的搜索结果]]></title>
+        <id>https://hn.buzzing.cc/hn/29772136/</id>
+        <link href="https://hn.buzzing.cc/hn/29772136/?score=182&amp;original_url=https%3A%2F%2Ftwitter.com%2Fmwseibel%2Fstatus%2F1477701120319361026&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29772136"/>
+        <updated>2022-01-02T19:47:13.000Z</updated>
+        <summary type="html"><![CDATA[谷歌不再产生高质量的搜索结果]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我建了一个棚子 (2020)]]></title>
+        <id>https://hn.buzzing.cc/hn/29770105/</id>
+        <link href="https://hn.buzzing.cc/hn/29770105/?score=162&amp;original_url=https%3A%2F%2Feduardosasso.co%2Fblog%2Fhow-i-built-a-wfh-shed%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29770105"/>
+        <updated>2022-01-02T19:47:13.000Z</updated>
+        <summary type="html"><![CDATA[我建了一个棚子 (2020)]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Desestruturação para variáveis já existentes]]></title>
+        <id>https://dev.to/ebdonato/desestruturacao-para-variaveis-ja-existentes-28je</id>
+        <link href="https://dev.to/ebdonato/desestruturacao-para-variaveis-ja-existentes-28je"/>
+        <updated>2022-01-02T19:44:35.000Z</updated>
+        <summary type="html"><![CDATA[É possível utilizar desestruturação para variáveis ao invés de sempre criar novas.
+Por exemplo, caso tenhamos um objeto como o a seguir:
+const user = { name: "Eduardo", age: 39 };
+
+Podemos fazer a desestruturação com a seguinte sintaxe:
+const { name, age } = user;
+
+console.log(name); // Eduardo
+
+console.log(age); // 39
+
+Porém se as variáveis name e age já tiverem sido declaradas no mesmo escopo, será necessário desestruturar e renomear ao mesmo tempo:
+const { name: newName, age: newAge } = user;
+
+console.log(newName); // Eduardo
+
+console.log(newAge); // 39
+
+Para atribuir a desestruturação para as variáveis declaradas anteriormente, utiliza-se a seguinte sintaxe (parênteses na declaração):
+let name = "Fulano",
+  age = 22;
+
+({ name, age } = user);
+
+console.log(name); // Eduardo
+
+console.log(age); // 39]]></summary>
+        <author>
+            <name>Eduardo Donato</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[12 Products in 12 Months]]></title>
+        <id>https://dev.to/amorriscode/12-products-in-12-months-4h62</id>
+        <link href="https://dev.to/amorriscode/12-products-in-12-months-4h62"/>
+        <updated>2022-01-02T19:38:29.000Z</updated>
+        <summary type="html"><![CDATA[It's been a while since I've built anything for myself. One of the reasons I consider myself a "product-focused engineer" is because of my passion for building. Programming has enabled me to create something from nothing. Its turned me into a builder.
+My partner and I have been talking about doing an ambitious project for 2022. We've decided to build 12 products in 12 months.
+There are a lot of reasons I'm excited about this project. The first one was mentioned above.
+I'm a builder. Creating things excites me. It makes me feel alive. I love everything from naming products, designing logos, writing bits of code, and setting up deployments. Every bit of the process is a fun way to flex my creativity. It brings me joy.
+My partner is a computer science student. She's been developing her coding…]]></summary>
+        <author>
+            <name>Anthony M.</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ask HN: 为什么一个忙碌的人要建造一个棚子？]]></title>
+        <id>https://hn.buzzing.cc/hn/29767682/</id>
+        <link href="https://hn.buzzing.cc/hn/29767682/?score=101&amp;original_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29767682&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29767682"/>
+        <updated>2022-01-02T17:46:20.000Z</updated>
+        <summary type="html"><![CDATA[Ask HN: 为什么一个忙碌的人要建造一个棚子？]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2021年期间，比特币总共消耗了134太瓦时]]></title>
+        <id>https://hn.buzzing.cc/hn/29769892/</id>
+        <link href="https://hn.buzzing.cc/hn/29769892/?score=134&amp;original_url=https%3A%2F%2Ftwitter.com%2Fdigieconomist%2Fstatus%2F1477420461122375683&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29769892"/>
+        <updated>2022-01-02T17:46:20.000Z</updated>
+        <summary type="html"><![CDATA[2021年期间，比特币总共消耗了134太瓦时]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[印第安纳州人寿保险公司首席执行官说，18-64岁的人中死亡人数增加了40%。]]></title>
+        <id>https://hn.buzzing.cc/hn/29769764/</id>
+        <link href="https://hn.buzzing.cc/hn/29769764/?score=181&amp;original_url=https%3A%2F%2Fwww.thecentersquare.com%2Findiana%2Findiana-life-insurance-ceo-says-deaths-are-up-40-among-people-ages-18-64%2Farticle_71473b12-6b1e-11ec-8641-5b2c06725e2c.html&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29769764"/>
+        <updated>2022-01-02T17:46:20.000Z</updated>
+        <summary type="html"><![CDATA[印第安纳州人寿保险公司首席执行官说，18-64岁的人中死亡人数增加了40%。]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Scalable Readers-Writer Lock]]></title>
+        <id>https://puzpuzpuz.io/scalable-readers-writer-lock</id>
+        <link href="https://puzpuzpuz.io/scalable-readers-writer-lock"/>
+        <updated>2022-01-02T11:30:39.000Z</updated>
+        <summary type="html"><![CDATA[Locks, or mutexes (mutual exclusions), are one of the most basic concurrency primitives. It's hard to find a developer who won't be able to explain a mutex, at least on the fundamental level. Yet, mutexes are more than that. They may be:
+
+OS-level (t...]]></summary>
+        <author>
+            <name>Andrey Pechkurov</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Built-In Angular Pipes - Part 1]]></title>
         <id>https://dev.to/this-is-angular/built-in-angular-pipes-part-1-23ec</id>
@@ -1200,11 +1503,31 @@ The onboarding screen is important as it he...]]></summary>
     <entry>
         <title type="html"><![CDATA[我_女孩]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/me_irl/comments/rrymgl/me_irl/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/me_irl/comments/rrymgl/me_irl/?score=75026&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fme_irl%2Fcomments%2Frrymgl%2Fme_irl%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fme_irl%2Fcomments%2Frrymgl%2Fme_irl%2F"/>
+        <updated>2021-12-31T05:51:02.000Z</updated>
+        <summary type="html"><![CDATA[我_女孩]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我_女孩]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/me_irl/comments/rrymgl/me_irl/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/me_irl/comments/rrymgl/me_irl/"/>
         <updated>2021-12-31T05:51:02.000Z</updated>
         <summary type="html"><![CDATA[我_女孩]]></summary>
         <author>
             <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[5MB的Electron替代品Sciter已经改用JavaScript。]]></title>
+        <id>https://hn.buzzing.cc/hn/29742670/</id>
+        <link href="https://hn.buzzing.cc/hn/29742670/?score=102&amp;original_url=https%3A%2F%2Fterrainformatica.com%2F2021%2F04%2F25%2Fsciter-uses-javascript-from-now-and-on%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29742670"/>
+        <updated>2021-12-31T05:14:05.000Z</updated>
+        <summary type="html"><![CDATA[5MB的Electron替代品Sciter已经改用JavaScript。]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
         </author>
     </entry>
     <entry>
@@ -1256,6 +1579,16 @@ The onboarding screen is important as it he...]]></summary>
     <entry>
         <title type="html"><![CDATA[医院仍未遵守价格透明的规定]]></title>
         <id>https://hn.buzzing.cc/hn/29743785/</id>
+        <link href="https://hn.buzzing.cc/hn/29743785/?score=101&amp;original_url=https%3A%2F%2Fwww.wsj.com%2Farticles%2Fhospital-price-public-biden-11640882507&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29743785"/>
+        <updated>2021-12-31T05:00:19.000Z</updated>
+        <summary type="html"><![CDATA[医院仍未遵守价格透明的规定]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[医院仍未遵守价格透明的规定]]></title>
+        <id>https://hn.buzzing.cc/hn/29743785/</id>
         <link href="https://hn.buzzing.cc/hn/29743785/"/>
         <updated>2021-12-31T05:00:19.000Z</updated>
         <summary type="html"><![CDATA[医院仍未遵守价格透明的规定]]></summary>
@@ -1276,6 +1609,16 @@ The onboarding screen is important as it he...]]></summary>
     <entry>
         <title type="html"><![CDATA[大风刮起的大火在博尔德县肆虐]]></title>
         <id>https://hn.buzzing.cc/hn/29742659/</id>
+        <link href="https://hn.buzzing.cc/hn/29742659/?score=101&amp;original_url=https%3A%2F%2Fwww.dailycamera.com%2F2021%2F12%2F30%2Fboulder-county-grass-fires%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29742659"/>
+        <updated>2021-12-31T04:44:06.000Z</updated>
+        <summary type="html"><![CDATA[大风刮起的大火在博尔德县肆虐]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[大风刮起的大火在博尔德县肆虐]]></title>
+        <id>https://hn.buzzing.cc/hn/29742659/</id>
         <link href="https://hn.buzzing.cc/hn/29742659/"/>
         <updated>2021-12-31T04:44:06.000Z</updated>
         <summary type="html"><![CDATA[大风刮起的大火在博尔德县肆虐]]></summary>
@@ -1289,6 +1632,16 @@ The onboarding screen is important as it he...]]></summary>
         <link href="https://hn.buzzing.cc/hn/29742659"/>
         <updated>2021-12-31T04:44:06.000Z</updated>
         <summary type="html"><![CDATA[大风刮起的大火在博尔德县肆虐]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[大数据可能不知道你的名字，但它知道其他一切]]></title>
+        <id>https://hn.buzzing.cc/hn/29735187/</id>
+        <link href="https://hn.buzzing.cc/hn/29735187/?score=100&amp;original_url=https%3A%2F%2Fwww.wired.com%2Fstory%2Fbig-data-may-not-know-your-name-but-it-knows-everything-else%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29735187"/>
+        <updated>2021-12-31T04:15:40.000Z</updated>
+        <summary type="html"><![CDATA[大数据可能不知道你的名字，但它知道其他一切]]></summary>
         <author>
             <name>Hacker News 热门</name>
         </author>
@@ -1324,6 +1677,16 @@ and how strlcat(3) prevents a possible buffer overflow
 here.]]></summary>
         <author>
             <name>Signs of Triviality</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[这真的不难]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rs629y/its_really_not_so_difficult/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rs629y/its_really_not_so_difficult/?score=75305&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Frs629y%2Fits_really_not_so_difficult%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Frs629y%2Fits_really_not_so_difficult%2F"/>
+        <updated>2021-12-31T03:37:02.000Z</updated>
+        <summary type="html"><![CDATA[这真的不难]]></summary>
+        <author>
+            <name>Reddit 热门</name>
         </author>
     </entry>
     <entry>
@@ -1393,11 +1756,31 @@ Bella's Instagram : https://www.instagram.com/bellaretamosa/]]></summary>
     <entry>
         <title type="html"><![CDATA[你知道他是一个好的男朋友的材料]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/rareinsults/comments/rs3ei0/you_know_he_is_a_good_bf_material/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/rareinsults/comments/rs3ei0/you_know_he_is_a_good_bf_material/?score=75622&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Frareinsults%2Fcomments%2Frs3ei0%2Fyou_know_he_is_a_good_bf_material%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Frareinsults%2Fcomments%2Frs3ei0%2Fyou_know_he_is_a_good_bf_material%2F"/>
+        <updated>2021-12-31T02:55:35.000Z</updated>
+        <summary type="html"><![CDATA[你知道他是一个好的男朋友的材料]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[你知道他是一个好的男朋友的材料]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/rareinsults/comments/rs3ei0/you_know_he_is_a_good_bf_material/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/rareinsults/comments/rs3ei0/you_know_he_is_a_good_bf_material/"/>
         <updated>2021-12-31T02:55:35.000Z</updated>
         <summary type="html"><![CDATA[你知道他是一个好的男朋友的材料]]></summary>
         <author>
             <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[彼得-泰尔雇用失宠的前奥地利总理塞巴斯蒂安-库尔茨]]></title>
+        <id>https://hn.buzzing.cc/hn/29742682/</id>
+        <link href="https://hn.buzzing.cc/hn/29742682/?score=102&amp;original_url=https%3A%2F%2Fnypost.com%2F2021%2F12%2F30%2Fpeter-thiel-hires-disgraced-ex-austrian-chancellor-sebastian-kurz%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29742682"/>
+        <updated>2021-12-31T02:55:10.000Z</updated>
+        <summary type="html"><![CDATA[彼得-泰尔雇用失宠的前奥地利总理塞巴斯蒂安-库尔茨]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
         </author>
     </entry>
     <entry>
@@ -1438,6 +1821,26 @@ Bonus: Can you solve ...]]></summary>
     <entry>
         <title type="html"><![CDATA[哈里王子对威廉王子]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/funny/comments/rs8ibo/prince_harry_vs_prince_william/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/funny/comments/rs8ibo/prince_harry_vs_prince_william/?score=76266&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffunny%2Fcomments%2Frs8ibo%2Fprince_harry_vs_prince_william%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffunny%2Fcomments%2Frs8ibo%2Fprince_harry_vs_prince_william%2F"/>
+        <updated>2021-12-31T02:29:28.000Z</updated>
+        <summary type="html"><![CDATA[哈里王子对威廉王子]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[这就是人的手在显微镜下的样子。]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/pics/comments/rrwvwh/this_is_what_a_human_hand_looks_like_under_a/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/pics/comments/rrwvwh/this_is_what_a_human_hand_looks_like_under_a/?score=75031&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fpics%2Fcomments%2Frrwvwh%2Fthis_is_what_a_human_hand_looks_like_under_a%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fpics%2Fcomments%2Frrwvwh%2Fthis_is_what_a_human_hand_looks_like_under_a%2F"/>
+        <updated>2021-12-31T02:29:28.000Z</updated>
+        <summary type="html"><![CDATA[这就是人的手在显微镜下的样子。]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[哈里王子对威廉王子]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/funny/comments/rs8ibo/prince_harry_vs_prince_william/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/funny/comments/rs8ibo/prince_harry_vs_prince_william/"/>
         <updated>2021-12-31T02:29:28.000Z</updated>
         <summary type="html"><![CDATA[哈里王子对威廉王子]]></summary>
@@ -1458,6 +1861,16 @@ Bonus: Can you solve ...]]></summary>
     <entry>
         <title type="html"><![CDATA[使用Linux 15年后的macOS设置]]></title>
         <id>https://hn.buzzing.cc/hn/29742551/</id>
+        <link href="https://hn.buzzing.cc/hn/29742551/?score=104&amp;original_url=https%3A%2F%2Fhookrace.net%2Fblog%2Fmacos-setup%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29742551"/>
+        <updated>2021-12-31T02:29:03.000Z</updated>
+        <summary type="html"><![CDATA[使用Linux 15年后的macOS设置]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[使用Linux 15年后的macOS设置]]></title>
+        <id>https://hn.buzzing.cc/hn/29742551/</id>
         <link href="https://hn.buzzing.cc/hn/29742551/"/>
         <updated>2021-12-31T02:29:03.000Z</updated>
         <summary type="html"><![CDATA[使用Linux 15年后的macOS设置]]></summary>
@@ -1473,6 +1886,36 @@ Bonus: Can you solve ...]]></summary>
         <summary type="html"><![CDATA[使用Linux 15年后的macOS设置]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[所有的钱，没有风格]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/memes/comments/rs58wd/all_that_money_and_no_style/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/memes/comments/rs58wd/all_that_money_and_no_style/?score=77287&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Frs58wd%2Fall_that_money_and_no_style%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Frs58wd%2Fall_that_money_and_no_style%2F"/>
+        <updated>2021-12-31T00:48:06.000Z</updated>
+        <summary type="html"><![CDATA[所有的钱，没有风格]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[她忘记了💀。]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/Unexpected/comments/rs3ksj/she_forgor/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/Unexpected/comments/rs3ksj/she_forgor/?score=79735&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FUnexpected%2Fcomments%2Frs3ksj%2Fshe_forgor%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FUnexpected%2Fcomments%2Frs3ksj%2Fshe_forgor%2F"/>
+        <updated>2021-12-31T00:48:06.000Z</updated>
+        <summary type="html"><![CDATA[她忘记了💀。]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[小狗救了这个宝贝。]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rs3frd/tiny_dog_saving_this_baby/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rs3frd/tiny_dog_saving_this_baby/?score=77372&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Frs3frd%2Ftiny_dog_saving_this_baby%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Frs3frd%2Ftiny_dog_saving_this_baby%2F"/>
+        <updated>2021-12-31T00:48:06.000Z</updated>
+        <summary type="html"><![CDATA[小狗救了这个宝贝。]]></summary>
+        <author>
+            <name>Reddit 热门</name>
         </author>
     </entry>
     <entry>
@@ -1503,6 +1946,16 @@ Bonus: Can you solve ...]]></summary>
         <summary type="html"><![CDATA[小狗救了这个宝贝。]]></summary>
         <author>
             <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux内核的RNG现在是Blake2而不是SHA1，速度快3倍]]></title>
+        <id>https://hn.buzzing.cc/hn/29742977/</id>
+        <link href="https://hn.buzzing.cc/hn/29742977/?score=107&amp;original_url=https%3A%2F%2Ftwitter.com%2FFiloSottile%2Fstatus%2F1476698207413493766&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29742977"/>
+        <updated>2021-12-31T00:47:34.000Z</updated>
+        <summary type="html"><![CDATA[Linux内核的RNG现在是Blake2而不是SHA1，速度快3倍]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
         </author>
     </entry>
     <entry>
@@ -1621,6 +2074,16 @@ Jonyk5 OUT!
     <entry>
         <title type="html"><![CDATA[/R/PixelArt更新：NFT帖子现在被禁止了]]></title>
         <id>https://hn.buzzing.cc/hn/29739683/</id>
+        <link href="https://hn.buzzing.cc/hn/29739683/?score=100&amp;original_url=https%3A%2F%2Fold.reddit.com%2Fr%2FPixelArt%2Fcomments%2Frrb8s8%2Frpixelart_update_nft_posts_are_now_banned%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29739683"/>
+        <updated>2021-12-30T23:47:57.000Z</updated>
+        <summary type="html"><![CDATA[/R/PixelArt更新：NFT帖子现在被禁止了]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[/R/PixelArt更新：NFT帖子现在被禁止了]]></title>
+        <id>https://hn.buzzing.cc/hn/29739683/</id>
         <link href="https://hn.buzzing.cc/hn/29739683/"/>
         <updated>2021-12-30T23:47:57.000Z</updated>
         <summary type="html"><![CDATA[/R/PixelArt更新：NFT帖子现在被禁止了]]></summary>
@@ -1651,6 +2114,36 @@ Payment Element: The new Payment Element lets you build a custom payment flow th
 Payment Links: Use Payment Links to sell a product or subscription in minutes. Create a full payment page in just a few clicks and embed the link or share it with your customers—no code re…]]></summary>
         <author>
             <name>Dawn Lambeth</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[面向表格的编程 (2002)]]></title>
+        <id>https://hn.buzzing.cc/hn/29735298/</id>
+        <link href="https://hn.buzzing.cc/hn/29735298/?score=100&amp;original_url=https%3A%2F%2Fweb.archive.org%2Fweb%2F20121024051826%2Fhttp%3A%2F%2Fwww.geocities.com%2Ftablizer%2Ftop.htm&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29735298"/>
+        <updated>2021-12-30T23:14:36.000Z</updated>
+        <summary type="html"><![CDATA[面向表格的编程 (2002)]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[特斯拉召回近50万辆Model 3和Model S汽车]]></title>
+        <id>https://hn.buzzing.cc/hn/29741424/</id>
+        <link href="https://hn.buzzing.cc/hn/29741424/?score=111&amp;original_url=https%3A%2F%2Fwww.theverge.com%2F2021%2F12%2F30%2F22859717%2Ftesla-model-3-s-recall-trunk-latch-failure-nhtsa&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29741424"/>
+        <updated>2021-12-30T23:14:36.000Z</updated>
+        <summary type="html"><![CDATA[特斯拉召回近50万辆Model 3和Model S汽车]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[iPhone相机应用将人的头部替换为照片中的一片树叶]]></title>
+        <id>https://hn.buzzing.cc/hn/29739235/</id>
+        <link href="https://hn.buzzing.cc/hn/29739235/?score=125&amp;original_url=https%3A%2F%2Ftwitter.com%2Fmitchcohen%2Fstatus%2F1476351601862483968&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29739235"/>
+        <updated>2021-12-30T23:14:36.000Z</updated>
+        <summary type="html"><![CDATA[iPhone相机应用将人的头部替换为照片中的一片树叶]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
         </author>
     </entry>
     <entry>
@@ -1778,6 +2271,16 @@ My Gatsby Site…]]></summary>
     <entry>
         <title type="html"><![CDATA[你在床上发出什么声音？]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/HolUp/comments/rryatz/what_noise_do_you_make_in_bed/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/HolUp/comments/rryatz/what_noise_do_you_make_in_bed/?score=75161&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FHolUp%2Fcomments%2Frryatz%2Fwhat_noise_do_you_make_in_bed%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FHolUp%2Fcomments%2Frryatz%2Fwhat_noise_do_you_make_in_bed%2F"/>
+        <updated>2021-12-30T22:48:47.000Z</updated>
+        <summary type="html"><![CDATA[你在床上发出什么声音？]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[你在床上发出什么声音？]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/HolUp/comments/rryatz/what_noise_do_you_make_in_bed/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/HolUp/comments/rryatz/what_noise_do_you_make_in_bed/"/>
         <updated>2021-12-30T22:48:47.000Z</updated>
         <summary type="html"><![CDATA[你在床上发出什么声音？]]></summary>
@@ -1811,6 +2314,16 @@ With the new remote situation came a few hurdles, though. And in this post I wan
     <entry>
         <title type="html"><![CDATA[亚伦-斯沃茨的黑暗面 (2013)]]></title>
         <id>https://hn.buzzing.cc/hn/29736972/</id>
+        <link href="https://hn.buzzing.cc/hn/29736972/?score=100&amp;original_url=https%3A%2F%2Fwww.newyorker.com%2Fmagazine%2F2013%2F03%2F11%2Frequiem-for-a-dream&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29736972"/>
+        <updated>2021-12-30T22:42:28.000Z</updated>
+        <summary type="html"><![CDATA[亚伦-斯沃茨的黑暗面 (2013)]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[亚伦-斯沃茨的黑暗面 (2013)]]></title>
+        <id>https://hn.buzzing.cc/hn/29736972/</id>
         <link href="https://hn.buzzing.cc/hn/29736972/"/>
         <updated>2021-12-30T22:42:28.000Z</updated>
         <summary type="html"><![CDATA[亚伦-斯沃茨的黑暗面 (2013)]]></summary>
@@ -1824,6 +2337,16 @@ With the new remote situation came a few hurdles, though. And in this post I wan
         <link href="https://hn.buzzing.cc/hn/29736972"/>
         <updated>2021-12-30T22:42:28.000Z</updated>
         <summary type="html"><![CDATA[亚伦-斯沃茨的黑暗面 (2013)]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[女性在印度的iPhone工厂中推动变革]]></title>
+        <id>https://hn.buzzing.cc/hn/29740016/</id>
+        <link href="https://hn.buzzing.cc/hn/29740016/?score=102&amp;original_url=https%3A%2F%2Fwww.reuters.com%2Fworld%2Findia%2Fwomen-force-change-indian-iphone-plant-sick-bad-food-crowded-dorms-2021-12-30%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29740016"/>
+        <updated>2021-12-30T22:32:33.000Z</updated>
+        <summary type="html"><![CDATA[女性在印度的iPhone工厂中推动变革]]></summary>
         <author>
             <name>Hacker News 热门</name>
         </author>
@@ -1851,6 +2374,16 @@ With the new remote situation came a few hurdles, though. And in this post I wan
     <entry>
         <title type="html"><![CDATA[我不知道这一点。呀。]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rs04iv/i_did_not_know_that_yikes/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rs04iv/i_did_not_know_that_yikes/?score=75057&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Frs04iv%2Fi_did_not_know_that_yikes%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Frs04iv%2Fi_did_not_know_that_yikes%2F"/>
+        <updated>2021-12-30T21:55:34.000Z</updated>
+        <summary type="html"><![CDATA[我不知道这一点。呀。]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我不知道这一点。呀。]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rs04iv/i_did_not_know_that_yikes/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rs04iv/i_did_not_know_that_yikes/"/>
         <updated>2021-12-30T21:55:34.000Z</updated>
         <summary type="html"><![CDATA[我不知道这一点。呀。]]></summary>
@@ -1868,6 +2401,16 @@ Optional
 You know how in java you must state the returned type of each function, in it's signature? Optional grants you some versatility. It allows dealing with null cases explicitly and clearly. Example: Let's say we write a function ...]]></summary>
         <author>
             <name>Roee Kishon</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[1955年的脊髓灰质炎疫苗公告]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/rs2vx9/polio_vaccine_announcement_from_1955/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/rs2vx9/polio_vaccine_announcement_from_1955/?score=75097&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Frs2vx9%2Fpolio_vaccine_announcement_from_1955%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Frs2vx9%2Fpolio_vaccine_announcement_from_1955%2F"/>
+        <updated>2021-12-30T21:48:39.000Z</updated>
+        <summary type="html"><![CDATA[1955年的脊髓灰质炎疫苗公告]]></summary>
+        <author>
+            <name>Reddit 热门</name>
         </author>
     </entry>
     <entry>
@@ -1909,6 +2452,16 @@ So, I’m getting rid of it. My entire linter system, code grading, beautifier, 
 I want to hear what struggles you have had with your “systems to boost efficiency”, or if you think I am completely wrong and should shut up.]]></summary>
         <author>
             <name>William McGonagle</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[有人的狗接近流浪汉，似乎知道他需要什么。1个拥抱安慰了两颗心!]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rrx1xd/someones_dog_approaches_homeless_man_and_seems_to/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rrx1xd/someones_dog_approaches_homeless_man_and_seems_to/?score=75239&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Frrx1xd%2Fsomeones_dog_approaches_homeless_man_and_seems_to%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Frrx1xd%2Fsomeones_dog_approaches_homeless_man_and_seems_to%2F"/>
+        <updated>2021-12-30T21:34:40.000Z</updated>
+        <summary type="html"><![CDATA[有人的狗接近流浪汉，似乎知道他需要什么。1个拥抱安慰了两颗心!]]></summary>
+        <author>
+            <name>Reddit 热门</name>
         </author>
     </entry>
     <entry>
@@ -2037,6 +2590,26 @@ U…]]></summary>
     <entry>
         <title type="html"><![CDATA[一种基于mRNA的抗蜱虫疫苗]]></title>
         <id>https://hn.buzzing.cc/hn/29739349/</id>
+        <link href="https://hn.buzzing.cc/hn/29739349/?score=102&amp;original_url=https%3A%2F%2Fwww.science.org%2Fdoi%2F10.1126%2Fscitranslmed.abm2504&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29739349"/>
+        <updated>2021-12-30T21:10:20.000Z</updated>
+        <summary type="html"><![CDATA[一种基于mRNA的抗蜱虫疫苗]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SQL语言提案。JOIN FOREIGN]]></title>
+        <id>https://hn.buzzing.cc/hn/29739147/</id>
+        <link href="https://hn.buzzing.cc/hn/29739147/?score=100&amp;original_url=https%3A%2F%2Fgist.github.com%2Fjoelonsql%2F15b50b65ec343dce94db6249cfea8aaa&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29739147"/>
+        <updated>2021-12-30T21:10:20.000Z</updated>
+        <summary type="html"><![CDATA[SQL语言提案。JOIN FOREIGN]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[一种基于mRNA的抗蜱虫疫苗]]></title>
+        <id>https://hn.buzzing.cc/hn/29739349/</id>
         <link href="https://hn.buzzing.cc/hn/29739349/"/>
         <updated>2021-12-30T21:10:20.000Z</updated>
         <summary type="html"><![CDATA[一种基于mRNA的抗蜱虫疫苗]]></summary>
@@ -2077,11 +2650,31 @@ U…]]></summary>
     <entry>
         <title type="html"><![CDATA[这个女孩认为只有她可以有偏好。]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/facepalm/comments/rs04zv/this_girl_thinks_only_she_can_have_preferences/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/facepalm/comments/rs04zv/this_girl_thinks_only_she_can_have_preferences/?score=75952&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffacepalm%2Fcomments%2Frs04zv%2Fthis_girl_thinks_only_she_can_have_preferences%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffacepalm%2Fcomments%2Frs04zv%2Fthis_girl_thinks_only_she_can_have_preferences%2F"/>
+        <updated>2021-12-30T20:39:21.000Z</updated>
+        <summary type="html"><![CDATA[这个女孩认为只有她可以有偏好。]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[这个女孩认为只有她可以有偏好。]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/facepalm/comments/rs04zv/this_girl_thinks_only_she_can_have_preferences/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/facepalm/comments/rs04zv/this_girl_thinks_only_she_can_have_preferences/"/>
         <updated>2021-12-30T20:39:21.000Z</updated>
         <summary type="html"><![CDATA[这个女孩认为只有她可以有偏好。]]></summary>
         <author>
             <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[德国。数据保留将被废除]]></title>
+        <id>https://hn.buzzing.cc/hn/29738437/</id>
+        <link href="https://hn.buzzing.cc/hn/29738437/?score=106&amp;original_url=https%3A%2F%2Ftutanota.com%2Fblog%2Fposts%2Fdata-retention-germany%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29738437"/>
+        <updated>2021-12-30T20:08:05.000Z</updated>
+        <summary type="html"><![CDATA[德国。数据保留将被废除]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
         </author>
     </entry>
     <entry>
@@ -2315,6 +2908,16 @@ www.youtube.com/titototter]]></summary>
     <entry>
         <title type="html"><![CDATA[德克萨斯州的一个学区禁止我的书。然后事情变得很糟糕]]></title>
         <id>https://hn.buzzing.cc/hn/29727411/</id>
+        <link href="https://hn.buzzing.cc/hn/29727411/?score=100&amp;original_url=https%3A%2F%2Fwww.texasmonthly.com%2Fnews-politics%2Ftexas-school-district-banned-my-book%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29727411"/>
+        <updated>2021-12-30T19:57:51.000Z</updated>
+        <summary type="html"><![CDATA[德克萨斯州的一个学区禁止我的书。然后事情变得很糟糕]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[德克萨斯州的一个学区禁止我的书。然后事情变得很糟糕]]></title>
+        <id>https://hn.buzzing.cc/hn/29727411/</id>
         <link href="https://hn.buzzing.cc/hn/29727411/"/>
         <updated>2021-12-30T19:57:51.000Z</updated>
         <summary type="html"><![CDATA[德克萨斯州的一个学区禁止我的书。然后事情变得很糟糕]]></summary>
@@ -2328,6 +2931,16 @@ www.youtube.com/titototter]]></summary>
         <link href="https://hn.buzzing.cc/hn/29727411"/>
         <updated>2021-12-30T19:57:51.000Z</updated>
         <summary type="html"><![CDATA[德克萨斯州的一个学区禁止我的书。然后事情变得很糟糕]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[拥挤的宿舍，没有冲水马桶，iPhone工厂的食物爬满了虫子。]]></title>
+        <id>https://hn.buzzing.cc/hn/29737698/</id>
+        <link href="https://hn.buzzing.cc/hn/29737698/?score=101&amp;original_url=https%3A%2F%2Fwww.independent.ie%2Fworld-news%2Fasia-pacific%2Fcrowded-dorms-no-flush-toilets-and-worms-in-food-how-protest-forced-change-for-women-at-indian-iphone-plant-41194516.html&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29737698"/>
+        <updated>2021-12-30T19:39:10.000Z</updated>
+        <summary type="html"><![CDATA[拥挤的宿舍，没有冲水马桶，iPhone工厂的食物爬满了虫子。]]></summary>
         <author>
             <name>Hacker News 热门</name>
         </author>
@@ -2377,6 +2990,26 @@ The post Google pauses December 2021 update for Pixel 6 and Pixel 6 Pro appeared
     <entry>
         <title type="html"><![CDATA[LastPass博客。不正常的登录活动是由于错误造成的]]></title>
         <id>https://hn.buzzing.cc/hn/29737973/</id>
+        <link href="https://hn.buzzing.cc/hn/29737973/?score=100&amp;original_url=https%3A%2F%2Fblog.lastpass.com%2F2021%2F12%2Funusual-attempted-login-activity-how-lastpass-protects-you%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29737973"/>
+        <updated>2021-12-30T19:19:01.000Z</updated>
+        <summary type="html"><![CDATA[LastPass博客。不正常的登录活动是由于错误造成的]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[世嘉意外公布AWS凭证为重大云漏洞的一部分]]></title>
+        <id>https://hn.buzzing.cc/hn/29738371/</id>
+        <link href="https://hn.buzzing.cc/hn/29738371/?score=104&amp;original_url=https%3A%2F%2Fvpnoverview.com%2Fnews%2Fsega-europe-suffers-major-security-breach%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29738371"/>
+        <updated>2021-12-30T19:19:01.000Z</updated>
+        <summary type="html"><![CDATA[世嘉意外公布AWS凭证为重大云漏洞的一部分]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[LastPass博客。不正常的登录活动是由于错误造成的]]></title>
+        <id>https://hn.buzzing.cc/hn/29737973/</id>
         <link href="https://hn.buzzing.cc/hn/29737973/"/>
         <updated>2021-12-30T19:19:01.000Z</updated>
         <summary type="html"><![CDATA[LastPass博客。不正常的登录活动是由于错误造成的]]></summary>
@@ -2417,6 +3050,26 @@ The post Google pauses December 2021 update for Pixel 6 and Pixel 6 Pro appeared
     <entry>
         <title type="html"><![CDATA[类别理论。讲义和在线书籍]]></title>
         <id>https://hn.buzzing.cc/hn/29734482/</id>
+        <link href="https://hn.buzzing.cc/hn/29734482/?score=101&amp;original_url=https%3A%2F%2Fwww.logicmatters.net%2Fcategories%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29734482"/>
+        <updated>2021-12-30T18:50:19.000Z</updated>
+        <summary type="html"><![CDATA[类别理论。讲义和在线书籍]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[记者可能因使用 "查看来源 "而被起诉]]></title>
+        <id>https://hn.buzzing.cc/hn/29737412/</id>
+        <link href="https://hn.buzzing.cc/hn/29737412/?score=102&amp;original_url=https%3A%2F%2Fwww.stltoday.com%2Fnews%2Flocal%2Fgovt-and-politics%2Fparson-says-he-believes-prosecutor-will-bring-charges-in-post-dispatch-case%2Farticle_c4d88dae-fbf7-565f-a96c-e3589a626273.html&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29737412"/>
+        <updated>2021-12-30T18:50:19.000Z</updated>
+        <summary type="html"><![CDATA[记者可能因使用 "查看来源 "而被起诉]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[类别理论。讲义和在线书籍]]></title>
+        <id>https://hn.buzzing.cc/hn/29734482/</id>
         <link href="https://hn.buzzing.cc/hn/29734482/"/>
         <updated>2021-12-30T18:50:19.000Z</updated>
         <summary type="html"><![CDATA[类别理论。讲义和在线书籍]]></summary>
@@ -2450,6 +3103,26 @@ The post Google pauses December 2021 update for Pixel 6 and Pixel 6 Pro appeared
         <link href="https://hn.buzzing.cc/hn/29737412"/>
         <updated>2021-12-30T18:50:19.000Z</updated>
         <summary type="html"><![CDATA[记者可能因使用 "查看来源 "而被起诉]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[东京警方丢失两张载有公民个人信息的软盘]]></title>
+        <id>https://hn.buzzing.cc/hn/29738298/</id>
+        <link href="https://hn.buzzing.cc/hn/29738298/?score=101&amp;original_url=https%3A%2F%2Fmainichi.jp%2Fenglish%2Farticles%2F20211227%2Fp2a%2F00m%2F0na%2F072000c&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29738298"/>
+        <updated>2021-12-30T18:34:16.000Z</updated>
+        <summary type="html"><![CDATA[东京警方丢失两张载有公民个人信息的软盘]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[为什么不能在频率空间设计噪声？]]></title>
+        <id>https://hn.buzzing.cc/hn/29736208/</id>
+        <link href="https://hn.buzzing.cc/hn/29736208/?score=104&amp;original_url=https%3A%2F%2Fblog.demofox.org%2F2021%2F12%2F29%2Fwhy-cant-you-design-noise-in-frequency-space%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29736208"/>
+        <updated>2021-12-30T18:34:16.000Z</updated>
+        <summary type="html"><![CDATA[为什么不能在频率空间设计噪声？]]></summary>
         <author>
             <name>Hacker News 热门</name>
         </author>
@@ -2507,11 +3180,41 @@ The post Google pauses December 2021 update for Pixel 6 and Pixel 6 Pro appeared
     <entry>
         <title type="html"><![CDATA[也许是相反的性别]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/memes/comments/rrvzzh/perhaps_the_opposite_gender/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/memes/comments/rrvzzh/perhaps_the_opposite_gender/?score=75096&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Frrvzzh%2Fperhaps_the_opposite_gender%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Frrvzzh%2Fperhaps_the_opposite_gender%2F"/>
+        <updated>2021-12-30T18:12:03.000Z</updated>
+        <summary type="html"><![CDATA[也许是相反的性别]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[也许是相反的性别]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/memes/comments/rrvzzh/perhaps_the_opposite_gender/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/memes/comments/rrvzzh/perhaps_the_opposite_gender/"/>
         <updated>2021-12-30T18:12:03.000Z</updated>
         <summary type="html"><![CDATA[也许是相反的性别]]></summary>
         <author>
             <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[斯坦福大学要求为所有学生注射强化疫苗]]></title>
+        <id>https://hn.buzzing.cc/hn/29738140/</id>
+        <link href="https://hn.buzzing.cc/hn/29738140/?score=114&amp;original_url=https%3A%2F%2Fstudentaffairs.stanford.edu%2Fresources-our-communities%2Fcovid-19-guidance-students%2Fwinter-break-return-testing-guide%2Fbooster-shot&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29738140"/>
+        <updated>2021-12-30T18:11:38.000Z</updated>
+        <summary type="html"><![CDATA[斯坦福大学要求为所有学生注射强化疫苗]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MacOS版韦氏1913词典]]></title>
+        <id>https://hn.buzzing.cc/hn/29733648/</id>
+        <link href="https://hn.buzzing.cc/hn/29733648/?score=100&amp;original_url=https%3A%2F%2Fgithub.com%2Fcmod%2Fwebsters-1913&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29733648"/>
+        <updated>2021-12-30T18:11:38.000Z</updated>
+        <summary type="html"><![CDATA[MacOS版韦氏1913词典]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
         </author>
     </entry>
     <entry>
@@ -2567,6 +3270,16 @@ The post Google pauses December 2021 update for Pixel 6 and Pixel 6 Pro appeared
     <entry>
         <title type="html"><![CDATA[现在是你的问题的礼物]]></title>
         <id>https://hn.buzzing.cc/hn/29736369/</id>
+        <link href="https://hn.buzzing.cc/hn/29736369/?score=103&amp;original_url=https%3A%2F%2Fapenwarr.ca%2Flog%2F20211229&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29736369"/>
+        <updated>2021-12-30T17:44:08.000Z</updated>
+        <summary type="html"><![CDATA[现在是你的问题的礼物]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[现在是你的问题的礼物]]></title>
+        <id>https://hn.buzzing.cc/hn/29736369/</id>
         <link href="https://hn.buzzing.cc/hn/29736369/"/>
         <updated>2021-12-30T17:44:08.000Z</updated>
         <summary type="html"><![CDATA[现在是你的问题的礼物]]></summary>
@@ -2587,6 +3300,16 @@ The post Google pauses December 2021 update for Pixel 6 and Pixel 6 Pro appeared
     <entry>
         <title type="html"><![CDATA[痴人说梦。一个令人不安的对未来的预言]]></title>
         <id>https://hn.buzzing.cc/hn/29737533/</id>
+        <link href="https://hn.buzzing.cc/hn/29737533/?score=120&amp;original_url=https%3A%2F%2Fwww.theguardian.com%2Fculture%2F2021%2Fjul%2F19%2Fidiocracy-a-disturbingly-prophetic-look-at-the-future-of-america-and-our-era-of-stupidity&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29737533"/>
+        <updated>2021-12-30T17:24:41.000Z</updated>
+        <summary type="html"><![CDATA[痴人说梦。一个令人不安的对未来的预言]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[痴人说梦。一个令人不安的对未来的预言]]></title>
+        <id>https://hn.buzzing.cc/hn/29737533/</id>
         <link href="https://hn.buzzing.cc/hn/29737533/"/>
         <updated>2021-12-30T17:24:41.000Z</updated>
         <summary type="html"><![CDATA[痴人说梦。一个令人不安的对未来的预言]]></summary>
@@ -2600,6 +3323,36 @@ The post Google pauses December 2021 update for Pixel 6 and Pixel 6 Pro appeared
         <link href="https://hn.buzzing.cc/hn/29737533"/>
         <updated>2021-12-30T17:24:41.000Z</updated>
         <summary type="html"><![CDATA[痴人说梦。一个令人不安的对未来的预言]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[像1999年一样浏览网络]]></title>
+        <id>https://hn.buzzing.cc/hn/29734277/</id>
+        <link href="https://hn.buzzing.cc/hn/29734277/?score=103&amp;original_url=https%3A%2F%2Foldweb.today%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29734277"/>
+        <updated>2021-12-30T16:28:35.000Z</updated>
+        <summary type="html"><![CDATA[像1999年一样浏览网络]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[LastPass的主密码是如何被泄露的？]]></title>
+        <id>https://hn.buzzing.cc/hn/29735132/</id>
+        <link href="https://hn.buzzing.cc/hn/29735132/?score=104&amp;original_url=https%3A%2F%2Fpalant.info%2F2021%2F12%2F29%2Fhow-did-lastpass-master-passwords-get-compromised%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29735132"/>
+        <updated>2021-12-30T16:28:35.000Z</updated>
+        <summary type="html"><![CDATA[LastPass的主密码是如何被泄露的？]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于Emacs 28的上下文菜单和一般的Unix鼠标使用方法]]></title>
+        <id>https://hn.buzzing.cc/hn/29736366/</id>
+        <link href="https://hn.buzzing.cc/hn/29736366/?score=101&amp;original_url=https%3A%2F%2Fruzkuku.com%2Ftexts%2Femacs-mouse.html&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29736366"/>
+        <updated>2021-12-30T16:28:35.000Z</updated>
+        <summary type="html"><![CDATA[关于Emacs 28的上下文菜单和一般的Unix鼠标使用方法]]></summary>
         <author>
             <name>Hacker News 热门</name>
         </author>
@@ -2667,6 +3420,16 @@ The post Google pauses December 2021 update for Pixel 6 and Pixel 6 Pro appeared
     <entry>
         <title type="html"><![CDATA[DeepCreamPy--用深度神经网络对Hentai进行脱敏处理]]></title>
         <id>https://hn.buzzing.cc/hn/29736636/</id>
+        <link href="https://hn.buzzing.cc/hn/29736636/?score=109&amp;original_url=https%3A%2F%2Fgithub.com%2Fliaoxiong3x%2FDeepCreamPy&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29736636"/>
+        <updated>2021-12-30T15:56:12.000Z</updated>
+        <summary type="html"><![CDATA[DeepCreamPy--用深度神经网络对Hentai进行脱敏处理]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DeepCreamPy--用深度神经网络对Hentai进行脱敏处理]]></title>
+        <id>https://hn.buzzing.cc/hn/29736636/</id>
         <link href="https://hn.buzzing.cc/hn/29736636/"/>
         <updated>2021-12-30T15:56:12.000Z</updated>
         <summary type="html"><![CDATA[DeepCreamPy--用深度神经网络对Hentai进行脱敏处理]]></summary>
@@ -2707,6 +3470,26 @@ The post Google pauses December 2021 update for Pixel 6 and Pixel 6 Pro appeared
     <entry>
         <title type="html"><![CDATA[匿名的数据很少是匿名的]]></title>
         <id>https://hn.buzzing.cc/hn/29734713/</id>
+        <link href="https://hn.buzzing.cc/hn/29734713/?score=104&amp;original_url=https%3A%2F%2Fflowingdata.com%2F2021%2F12%2F29%2Fanonymized-data-is-rarely-anonymous%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29734713"/>
+        <updated>2021-12-30T15:16:05.000Z</updated>
+        <summary type="html"><![CDATA[匿名的数据很少是匿名的]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[荷兰街道多年来的变化（相册）。]]></title>
+        <id>https://hn.buzzing.cc/hn/29736110/</id>
+        <link href="https://hn.buzzing.cc/hn/29736110/?score=100&amp;original_url=https%3A%2F%2Fimgur.com%2Fa%2FrffE0Oz&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29736110"/>
+        <updated>2021-12-30T15:16:05.000Z</updated>
+        <summary type="html"><![CDATA[荷兰街道多年来的变化（相册）。]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[匿名的数据很少是匿名的]]></title>
+        <id>https://hn.buzzing.cc/hn/29734713/</id>
         <link href="https://hn.buzzing.cc/hn/29734713/"/>
         <updated>2021-12-30T15:16:05.000Z</updated>
         <summary type="html"><![CDATA[匿名的数据很少是匿名的]]></summary>
@@ -2740,6 +3523,16 @@ The post Google pauses December 2021 update for Pixel 6 and Pixel 6 Pro appeared
         <link href="https://hn.buzzing.cc/hn/29736110"/>
         <updated>2021-12-30T15:16:05.000Z</updated>
         <summary type="html"><![CDATA[荷兰街道多年来的变化（相册）。]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[一个用于CSV文件的快速SQLite PWA笔记本]]></title>
+        <id>https://hn.buzzing.cc/hn/29735392/</id>
+        <link href="https://hn.buzzing.cc/hn/29735392/?score=100&amp;original_url=https%3A%2F%2Fdirtylittlesql.com&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29735392"/>
+        <updated>2021-12-30T15:00:10.000Z</updated>
+        <summary type="html"><![CDATA[一个用于CSV文件的快速SQLite PWA笔记本]]></summary>
         <author>
             <name>Hacker News 热门</name>
         </author>
@@ -2801,11 +3594,31 @@ We use MySQL database. The sample appli...]]></summary>
     <entry>
         <title type="html"><![CDATA[500美元至160,000美元的NFT]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/technicallythetruth/comments/rrjutb/500_to_160000_with_nft/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/technicallythetruth/comments/rrjutb/500_to_160000_with_nft/?score=77994&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ftechnicallythetruth%2Fcomments%2Frrjutb%2F500_to_160000_with_nft%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ftechnicallythetruth%2Fcomments%2Frrjutb%2F500_to_160000_with_nft%2F"/>
+        <updated>2021-12-30T14:26:25.000Z</updated>
+        <summary type="html"><![CDATA[500美元至160,000美元的NFT]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[500美元至160,000美元的NFT]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/technicallythetruth/comments/rrjutb/500_to_160000_with_nft/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/technicallythetruth/comments/rrjutb/500_to_160000_with_nft/"/>
         <updated>2021-12-30T14:26:25.000Z</updated>
         <summary type="html"><![CDATA[500美元至160,000美元的NFT]]></summary>
         <author>
             <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[80年代末的斯洛伐克数字游戏的可玩性英语本地化]]></title>
+        <id>https://hn.buzzing.cc/hn/29734471/</id>
+        <link href="https://hn.buzzing.cc/hn/29734471/?score=103&amp;original_url=https%3A%2F%2Fscd.sk%2Fclanky%2Fplayable-english-localizations-of-slovak-digital-games-from-the-late-80s-period%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29734471"/>
+        <updated>2021-12-30T14:25:58.000Z</updated>
+        <summary type="html"><![CDATA[80年代末的斯洛伐克数字游戏的可玩性英语本地化]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
         </author>
     </entry>
     <entry>
@@ -2853,6 +3666,26 @@ The post OnePlus 9 and 9 Pro get new OxygenOS 12 stable updates with bug fixes a
     <entry>
         <title type="html"><![CDATA[铁路线曾经连接着中东地区]]></title>
         <id>https://hn.buzzing.cc/hn/29723068/</id>
+        <link href="https://hn.buzzing.cc/hn/29723068/?score=103&amp;original_url=https%3A%2F%2Fwww.economist.com%2Fchristmas-specials%2F2021%2F12%2F18%2Frailway-lines-once-connected-the-middle-east&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29723068"/>
+        <updated>2021-12-30T13:39:14.000Z</updated>
+        <summary type="html"><![CDATA[铁路线曾经连接着中东地区]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[日本惠普公司意外删除京都大学超级计算系统的77TB数据]]></title>
+        <id>https://hn.buzzing.cc/hn/29734021/</id>
+        <link href="https://hn.buzzing.cc/hn/29734021/?score=104&amp;original_url=https%3A%2F%2Fwww.iimc.kyoto-u.ac.jp%2Fja%2Fwhatsnew%2Finformation%2Fdetail%2F211228056999.html&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29734021"/>
+        <updated>2021-12-30T13:39:14.000Z</updated>
+        <summary type="html"><![CDATA[日本惠普公司意外删除京都大学超级计算系统的77TB数据]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[铁路线曾经连接着中东地区]]></title>
+        <id>https://hn.buzzing.cc/hn/29723068/</id>
         <link href="https://hn.buzzing.cc/hn/29723068/"/>
         <updated>2021-12-30T13:39:14.000Z</updated>
         <summary type="html"><![CDATA[铁路线曾经连接着中东地区]]></summary>
@@ -2893,6 +3726,16 @@ The post OnePlus 9 and 9 Pro get new OxygenOS 12 stable updates with bug fixes a
     <entry>
         <title type="html"><![CDATA[我父亲忘了告诉我，今天的装修会把楼梯拆掉。]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/mildlyinfuriating/comments/rrfg4a/my_father_forgot_to_tell_me_the_renovations_would/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/mildlyinfuriating/comments/rrfg4a/my_father_forgot_to_tell_me_the_renovations_would/?score=75138&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmildlyinfuriating%2Fcomments%2Frrfg4a%2Fmy_father_forgot_to_tell_me_the_renovations_would%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmildlyinfuriating%2Fcomments%2Frrfg4a%2Fmy_father_forgot_to_tell_me_the_renovations_would%2F"/>
+        <updated>2021-12-30T13:23:36.000Z</updated>
+        <summary type="html"><![CDATA[我父亲忘了告诉我，今天的装修会把楼梯拆掉。]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我父亲忘了告诉我，今天的装修会把楼梯拆掉。]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/mildlyinfuriating/comments/rrfg4a/my_father_forgot_to_tell_me_the_renovations_would/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/mildlyinfuriating/comments/rrfg4a/my_father_forgot_to_tell_me_the_renovations_would/"/>
         <updated>2021-12-30T13:23:36.000Z</updated>
         <summary type="html"><![CDATA[我父亲忘了告诉我，今天的装修会把楼梯拆掉。]]></summary>
@@ -2908,6 +3751,26 @@ The post OnePlus 9 and 9 Pro get new OxygenOS 12 stable updates with bug fixes a
         <summary type="html"><![CDATA[One of the most common pitfalls in many programming languages, including Java, is that accessing a member of a null reference will result in a null reference exception. In Java, this would be the equivalent of a NullPointerException or an NPE for sho...]]></summary>
         <author>
             <name>Ameen Essa</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[1月1日将进入公共领域的内容]]></title>
+        <id>https://hn.buzzing.cc/hn/29734933/</id>
+        <link href="https://hn.buzzing.cc/hn/29734933/?score=107&amp;original_url=https%3A%2F%2Fwww.smithsonianmag.com%2Fsmart-news%2Fwhats-entering-the-public-domain-on-january-1-winnie-pooh-ernest-hemingway-180979299%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29734933"/>
+        <updated>2021-12-30T13:00:39.000Z</updated>
+        <summary type="html"><![CDATA[1月1日将进入公共领域的内容]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[你可能用错了字典 (2014)]]></title>
+        <id>https://hn.buzzing.cc/hn/29734242/</id>
+        <link href="https://hn.buzzing.cc/hn/29734242/?score=107&amp;original_url=https%3A%2F%2Fjsomers.net%2Fblog%2Fdictionary&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29734242"/>
+        <updated>2021-12-30T13:00:39.000Z</updated>
+        <summary type="html"><![CDATA[你可能用错了字典 (2014)]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
         </author>
     </entry>
     <entry>
@@ -2975,6 +3838,16 @@ The post XDA forums are now open for the Xiaomi 12, Xiaomi 12 Pro, and Realme GT
     <entry>
         <title type="html"><![CDATA[实际工作的模糊性]]></title>
         <id>https://hn.buzzing.cc/hn/29717615/</id>
+        <link href="https://hn.buzzing.cc/hn/29717615/?score=100&amp;original_url=https%3A%2F%2Fsurfingcomplexity.blog%2F2021%2F12%2F28%2Fthe-ambiguity-of-real-work%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29717615"/>
+        <updated>2021-12-30T11:56:31.000Z</updated>
+        <summary type="html"><![CDATA[实际工作的模糊性]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[实际工作的模糊性]]></title>
+        <id>https://hn.buzzing.cc/hn/29717615/</id>
         <link href="https://hn.buzzing.cc/hn/29717615/"/>
         <updated>2021-12-30T11:56:31.000Z</updated>
         <summary type="html"><![CDATA[实际工作的模糊性]]></summary>
@@ -3001,6 +3874,16 @@ The post XDA forums are now open for the Xiaomi 12, Xiaomi 12 Pro, and Realme GT
 The post Galaxy A51 is already receiving January 2022 security update appeared first on xda-developers.]]></summary>
         <author>
             <name>Kishan Vyas</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Northvolt在瑞典的千兆工厂组装了第一块锂离子电池单元]]></title>
+        <id>https://hn.buzzing.cc/hn/29735051/</id>
+        <link href="https://hn.buzzing.cc/hn/29735051/?score=104&amp;original_url=https%3A%2F%2Fnorthvolt.com%2Farticles%2Ffirst-cell%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29735051"/>
+        <updated>2021-12-30T11:31:47.000Z</updated>
+        <summary type="html"><![CDATA[Northvolt在瑞典的千兆工厂组装了第一块锂离子电池单元]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
         </author>
     </entry>
     <entry>
@@ -3037,6 +3920,16 @@ The post Samsung Galaxy Note 10 and Galaxy Fold are the latest to get the stable
     <entry>
         <title type="html"><![CDATA[Implant.ARM.iLOBleed.a]]></title>
         <id>https://hn.buzzing.cc/hn/29731297/</id>
+        <link href="https://hn.buzzing.cc/hn/29731297/?score=100&amp;original_url=https%3A%2F%2Fthreats.amnpardaz.com%2Fen%2F2021%2F12%2F28%2Fimplant-arm-ilobleed-a%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29731297"/>
+        <updated>2021-12-30T10:46:56.000Z</updated>
+        <summary type="html"><![CDATA[Implant.ARM.iLOBleed.a]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Implant.ARM.iLOBleed.a]]></title>
+        <id>https://hn.buzzing.cc/hn/29731297/</id>
         <link href="https://hn.buzzing.cc/hn/29731297/"/>
         <updated>2021-12-30T10:46:56.000Z</updated>
         <summary type="html"><![CDATA[Implant.ARM.iLOBleed.a]]></summary>
@@ -3050,6 +3943,16 @@ The post Samsung Galaxy Note 10 and Galaxy Fold are the latest to get the stable
         <link href="https://hn.buzzing.cc/hn/29731297"/>
         <updated>2021-12-30T10:46:56.000Z</updated>
         <summary type="html"><![CDATA[Implant.ARM.iLOBleed.a]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[图形绘制和可视化手册]]></title>
+        <id>https://hn.buzzing.cc/hn/29734063/</id>
+        <link href="https://hn.buzzing.cc/hn/29734063/?score=104&amp;original_url=https%3A%2F%2Fcs.brown.edu%2Fpeople%2Frtamassi%2Fgdhandbook%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29734063"/>
+        <updated>2021-12-30T10:36:01.000Z</updated>
+        <summary type="html"><![CDATA[图形绘制和可视化手册]]></summary>
         <author>
             <name>Hacker News 热门</name>
         </author>
@@ -3200,11 +4103,31 @@ Swift Playgrounds 更新了4.0大版本，可以在 iPad 中实现 App 的开发
     <entry>
         <title type="html"><![CDATA[溃坝实验]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/rrib1i/dam_breach_experiment/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/rrib1i/dam_breach_experiment/?score=75249&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Frrib1i%2Fdam_breach_experiment%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Frrib1i%2Fdam_breach_experiment%2F"/>
+        <updated>2021-12-30T08:08:24.000Z</updated>
+        <summary type="html"><![CDATA[溃坝实验]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[溃坝实验]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/rrib1i/dam_breach_experiment/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/rrib1i/dam_breach_experiment/"/>
         <updated>2021-12-30T08:08:24.000Z</updated>
         <summary type="html"><![CDATA[溃坝实验]]></summary>
         <author>
             <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[亚马逊的Alexa助手告诉一个孩子做一个可能致命的挑战]]></title>
+        <id>https://hn.buzzing.cc/hn/29725637/</id>
+        <link href="https://hn.buzzing.cc/hn/29725637/?score=123&amp;original_url=https%3A%2F%2Fwww.cnbc.com%2F2021%2F12%2F29%2Famazons-alexa-told-a-child-to-do-a-potentially-lethal-challenge.html&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29725637"/>
+        <updated>2021-12-30T07:56:54.000Z</updated>
+        <summary type="html"><![CDATA[亚马逊的Alexa助手告诉一个孩子做一个可能致命的挑战]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
         </author>
     </entry>
     <entry>
@@ -3488,6 +4411,16 @@ If you're reading this, leave a comment saying “Void Vibing 2.0". Also leave a
     <entry>
         <title type="html"><![CDATA[可怜的乔。]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rripz1/poor_joe/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rripz1/poor_joe/?score=76260&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Frripz1%2Fpoor_joe%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Frripz1%2Fpoor_joe%2F"/>
+        <updated>2021-12-30T04:47:35.000Z</updated>
+        <summary type="html"><![CDATA[可怜的乔。]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[可怜的乔。]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rripz1/poor_joe/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rripz1/poor_joe/"/>
         <updated>2021-12-30T04:47:35.000Z</updated>
         <summary type="html"><![CDATA[可怜的乔。]]></summary>
@@ -3503,6 +4436,16 @@ If you're reading this, leave a comment saying “Void Vibing 2.0". Also leave a
         <summary type="html"><![CDATA[与C不同，Python的mod运算符总是返回一个正数。]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[可乐+石油与曼妥思的对比]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/rr9q9u/cokeoil_vs_mentos/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/rr9q9u/cokeoil_vs_mentos/?score=75165&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Frr9q9u%2Fcokeoil_vs_mentos%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Frr9q9u%2Fcokeoil_vs_mentos%2F"/>
+        <updated>2021-12-30T04:01:56.000Z</updated>
+        <summary type="html"><![CDATA[可乐+石油与曼妥思的对比]]></summary>
+        <author>
+            <name>Reddit 热门</name>
         </author>
     </entry>
     <entry>
@@ -3727,6 +4670,16 @@ Tw…]]></summary>
     <entry>
         <title type="html"><![CDATA[这个生活在河边的城市。]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rr52oh/this_city_living_on_the_edge_of_the_river/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rr52oh/this_city_living_on_the_edge_of_the_river/?score=75084&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Frr52oh%2Fthis_city_living_on_the_edge_of_the_river%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Frr52oh%2Fthis_city_living_on_the_edge_of_the_river%2F"/>
+        <updated>2021-12-30T03:49:24.000Z</updated>
+        <summary type="html"><![CDATA[这个生活在河边的城市。]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[这个生活在河边的城市。]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rr52oh/this_city_living_on_the_edge_of_the_river/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rr52oh/this_city_living_on_the_edge_of_the_river/"/>
         <updated>2021-12-30T03:49:24.000Z</updated>
         <summary type="html"><![CDATA[这个生活在河边的城市。]]></summary>
@@ -3760,6 +4713,16 @@ Matrix 是少数派的写作社区，我们主张分享真实的产品体验，
 结构图：使用…]]></summary>
         <author>
             <name>Spike112</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ghislaine Maxwell在性贩运审判中被判有罪]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/news/comments/rrkb56/ghislaine_maxwell_found_guilty_in_sextrafficking/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/news/comments/rrkb56/ghislaine_maxwell_found_guilty_in_sextrafficking/?score=77608&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnews%2Fcomments%2Frrkb56%2Fghislaine_maxwell_found_guilty_in_sextrafficking%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnews%2Fcomments%2Frrkb56%2Fghislaine_maxwell_found_guilty_in_sextrafficking%2F"/>
+        <updated>2021-12-30T02:52:13.000Z</updated>
+        <summary type="html"><![CDATA[Ghislaine Maxwell在性贩运审判中被判有罪]]></summary>
+        <author>
+            <name>Reddit 热门</name>
         </author>
     </entry>
     <entry>
@@ -3810,6 +4773,16 @@ vulnerabilities.]]></summary>
 启动加速计划 C-Lab Outside 则会展出九个项目，分别为：基于人工智能的宠物生物识别解决方案 Petnow；可以用于移动设备的 3D 沉浸式音频 Digisonic；交互式元节音乐应用程序 Verses；自动驾驶和智慧城市的成像雷达技术解决方案 bitsensing；基于人工智能的数据收集和标记平台 SELECTSTAR；多功能模块化服务机器人 RGT Inc.；一种用于提高视障人士的可访问性和生产力的输入系统 MoreDream Inc.；车辆展示定制平台 Yellowknife 以及老年患者智能尿布护理解决方案…]]></summary>
         <author>
             <name>少数派编辑部</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[盖伊向警察传授法律知识]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rrdhy4/guy_teaches_police_officers_about_the_law/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rrdhy4/guy_teaches_police_officers_about_the_law/?score=76217&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Frrdhy4%2Fguy_teaches_police_officers_about_the_law%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Frrdhy4%2Fguy_teaches_police_officers_about_the_law%2F"/>
+        <updated>2021-12-30T00:44:28.000Z</updated>
+        <summary type="html"><![CDATA[盖伊向警察传授法律知识]]></summary>
+        <author>
+            <name>Reddit 热门</name>
         </author>
     </entry>
     <entry>
@@ -3999,6 +4972,16 @@ Get the PDF from my Git repos: https://github.com/tq-bit/dev-cheatsheets/blob/ma
     <entry>
         <title type="html"><![CDATA[他将在很长一段时间内记住这一点]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rr79vz/he_will_remember_this_for_a_very_long_time/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rr79vz/he_will_remember_this_for_a_very_long_time/?score=75829&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Frr79vz%2Fhe_will_remember_this_for_a_very_long_time%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Frr79vz%2Fhe_will_remember_this_for_a_very_long_time%2F"/>
+        <updated>2021-12-29T22:33:12.000Z</updated>
+        <summary type="html"><![CDATA[他将在很长一段时间内记住这一点]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[他将在很长一段时间内记住这一点]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rr79vz/he_will_remember_this_for_a_very_long_time/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rr79vz/he_will_remember_this_for_a_very_long_time/"/>
         <updated>2021-12-29T22:33:12.000Z</updated>
         <summary type="html"><![CDATA[他将在很长一段时间内记住这一点]]></summary>
@@ -4048,6 +5031,16 @@ The post Get the Samsung Galaxy S20 FE for only $525 today ($175 off) appeared f
         <summary type="html"><![CDATA[国税局。被盗财产必须作为收入报税]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[他是弥赛亚]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/memes/comments/rr7mdv/he_is_the_messiah/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/memes/comments/rr7mdv/he_is_the_messiah/?score=75566&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Frr7mdv%2Fhe_is_the_messiah%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Frr7mdv%2Fhe_is_the_messiah%2F"/>
+        <updated>2021-12-29T21:26:02.000Z</updated>
+        <summary type="html"><![CDATA[他是弥赛亚]]></summary>
+        <author>
+            <name>Reddit 热门</name>
         </author>
     </entry>
     <entry>
@@ -4250,6 +5243,16 @@ The post Tenorshare 4DDiG Overview: The Best Data Recovery Software for Windows 
     <entry>
         <title type="html"><![CDATA[女孩将朋友推下60英尺高的桥，在监狱里待了两天]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/facepalm/comments/rr118t/girl_pushes_friend_off_60foot_bridge_spends_two/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/facepalm/comments/rr118t/girl_pushes_friend_off_60foot_bridge_spends_two/?score=75201&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffacepalm%2Fcomments%2Frr118t%2Fgirl_pushes_friend_off_60foot_bridge_spends_two%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffacepalm%2Fcomments%2Frr118t%2Fgirl_pushes_friend_off_60foot_bridge_spends_two%2F"/>
+        <updated>2021-12-29T19:06:28.000Z</updated>
+        <summary type="html"><![CDATA[女孩将朋友推下60英尺高的桥，在监狱里待了两天]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[女孩将朋友推下60英尺高的桥，在监狱里待了两天]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/facepalm/comments/rr118t/girl_pushes_friend_off_60foot_bridge_spends_two/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/facepalm/comments/rr118t/girl_pushes_friend_off_60foot_bridge_spends_two/"/>
         <updated>2021-12-29T19:06:28.000Z</updated>
         <summary type="html"><![CDATA[女孩将朋友推下60英尺高的桥，在监狱里待了两天]]></summary>
@@ -4285,6 +5288,26 @@ The post Tenorshare 4DDiG Overview: The Best Data Recovery Software for Windows 
         <summary type="html"><![CDATA[Java is an object-oriented programming language. At some point developers will need object creation. Either because they want to pass through data, store data or transform data: in Java you need to construct your objects. Here are some ways that I've...]]></summary>
         <author>
             <name>Koen Wellens</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2004年，我赢得了一场比赛，在我家乡非常小的易听广播电台做DJ。我接着播放了一个小时的Evanescence深层剪辑，毁了大家的早晨通勤。]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/blunderyears/comments/rqu0us/in_2004_i_won_a_contest_to_dj_at_my_very_small/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/blunderyears/comments/rqu0us/in_2004_i_won_a_contest_to_dj_at_my_very_small/?score=75489&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fblunderyears%2Fcomments%2Frqu0us%2Fin_2004_i_won_a_contest_to_dj_at_my_very_small%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fblunderyears%2Fcomments%2Frqu0us%2Fin_2004_i_won_a_contest_to_dj_at_my_very_small%2F"/>
+        <updated>2021-12-29T17:26:15.000Z</updated>
+        <summary type="html"><![CDATA[2004年，我赢得了一场比赛，在我家乡非常小的易听广播电台做DJ。我接着播放了一个小时的Evanescence深层剪辑，毁了大家的早晨通勤。]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[根据美国教育部的数据，54%的美国成年人缺乏识字能力，阅读能力低于六年级水平。]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/todayilearned/comments/rqulik/til_that_according_to_the_us_department_of/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/todayilearned/comments/rqulik/til_that_according_to_the_us_department_of/?score=75174&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ftodayilearned%2Fcomments%2Frqulik%2Ftil_that_according_to_the_us_department_of%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ftodayilearned%2Fcomments%2Frqulik%2Ftil_that_according_to_the_us_department_of%2F"/>
+        <updated>2021-12-29T17:26:15.000Z</updated>
+        <summary type="html"><![CDATA[根据美国教育部的数据，54%的美国成年人缺乏识字能力，阅读能力低于六年级水平。]]></summary>
+        <author>
+            <name>Reddit 热门</name>
         </author>
     </entry>
     <entry>
@@ -4496,6 +5519,16 @@ The post OPPO Reno 5 and Reno 6 starts receiving stable ColorOS 12 update with A
     <entry>
         <title type="html"><![CDATA[如果你能抓住我]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/rqo284/catch_me_if_you_can/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/rqo284/catch_me_if_you_can/?score=75250&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fwallstreetbets%2Fcomments%2Frqo284%2Fcatch_me_if_you_can%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fwallstreetbets%2Fcomments%2Frqo284%2Fcatch_me_if_you_can%2F"/>
+        <updated>2021-12-29T12:32:55.000Z</updated>
+        <summary type="html"><![CDATA[如果你能抓住我]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如果你能抓住我]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/rqo284/catch_me_if_you_can/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/wallstreetbets/comments/rqo284/catch_me_if_you_can/"/>
         <updated>2021-12-29T12:32:55.000Z</updated>
         <summary type="html"><![CDATA[如果你能抓住我]]></summary>
@@ -4566,6 +5599,16 @@ The post These are the best ASUS PC cases you can buy in 2022 appeared first on 
 The post Here’s when you might get MIUI 13 on your phone appeared first on xda-developers.]]></summary>
         <author>
             <name>Kishan Vyas</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我工作的超市卖的是横向切片的面包。]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/mildlyinteresting/comments/rql8y2/the_supermarket_i_work_at_sells_horizontally/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/mildlyinteresting/comments/rql8y2/the_supermarket_i_work_at_sells_horizontally/?score=75058&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmildlyinteresting%2Fcomments%2Frql8y2%2Fthe_supermarket_i_work_at_sells_horizontally%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmildlyinteresting%2Fcomments%2Frql8y2%2Fthe_supermarket_i_work_at_sells_horizontally%2F"/>
+        <updated>2021-12-29T09:56:12.000Z</updated>
+        <summary type="html"><![CDATA[我工作的超市卖的是横向切片的面包。]]></summary>
+        <author>
+            <name>Reddit 热门</name>
         </author>
     </entry>
     <entry>
@@ -4657,6 +5700,16 @@ The post Samsung Galaxy S10 and Galaxy S20 FE get updated to Android 12 with One
     <entry>
         <title type="html"><![CDATA[1890年世界上最胖的人大到足以被认为是马戏团里的 "怪胎"。]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/rqogyd/worlds_fattest_man_in_1890_was_large_enough_to_be/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/rqogyd/worlds_fattest_man_in_1890_was_large_enough_to_be/?score=75007&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FDamnthatsinteresting%2Fcomments%2Frqogyd%2Fworlds_fattest_man_in_1890_was_large_enough_to_be%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FDamnthatsinteresting%2Fcomments%2Frqogyd%2Fworlds_fattest_man_in_1890_was_large_enough_to_be%2F"/>
+        <updated>2021-12-29T08:33:24.000Z</updated>
+        <summary type="html"><![CDATA[1890年世界上最胖的人大到足以被认为是马戏团里的 "怪胎"。]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[1890年世界上最胖的人大到足以被认为是马戏团里的 "怪胎"。]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/rqogyd/worlds_fattest_man_in_1890_was_large_enough_to_be/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/rqogyd/worlds_fattest_man_in_1890_was_large_enough_to_be/"/>
         <updated>2021-12-29T08:33:24.000Z</updated>
         <summary type="html"><![CDATA[1890年世界上最胖的人大到足以被认为是马戏团里的 "怪胎"。]]></summary>
@@ -4740,6 +5793,16 @@ The post Xiaomi Watch S1 launched alongside the True Wireless Earphones 3 appear
     <entry>
         <title type="html"><![CDATA[当你带着你的女朋友和你的朋友去酒吧的时候。]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/WatchPeopleDieInside/comments/rqouov/when_you_took_your_gf_to_the_bar_with_your_friend/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/WatchPeopleDieInside/comments/rqouov/when_you_took_your_gf_to_the_bar_with_your_friend/?score=77268&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWatchPeopleDieInside%2Fcomments%2Frqouov%2Fwhen_you_took_your_gf_to_the_bar_with_your_friend%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWatchPeopleDieInside%2Fcomments%2Frqouov%2Fwhen_you_took_your_gf_to_the_bar_with_your_friend%2F"/>
+        <updated>2021-12-29T07:11:59.000Z</updated>
+        <summary type="html"><![CDATA[当你带着你的女朋友和你的朋友去酒吧的时候。]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[当你带着你的女朋友和你的朋友去酒吧的时候。]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/WatchPeopleDieInside/comments/rqouov/when_you_took_your_gf_to_the_bar_with_your_friend/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/WatchPeopleDieInside/comments/rqouov/when_you_took_your_gf_to_the_bar_with_your_friend/"/>
         <updated>2021-12-29T07:11:59.000Z</updated>
         <summary type="html"><![CDATA[当你带着你的女朋友和你的朋友去酒吧的时候。]]></summary>
@@ -4795,6 +5858,16 @@ Craft eXtension，简称 Craft X，是 Craft 2.0 时代的重磅更新，为 Cra
         <summary type="html"><![CDATA[湾区的美国梦正处于生命支持阶段]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[这只青蛙完全打开了它的眼睛]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/oddlysatisfying/comments/rqocs7/this_frog_fully_opening_its_eyes/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/oddlysatisfying/comments/rqocs7/this_frog_fully_opening_its_eyes/?score=75138&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Foddlysatisfying%2Fcomments%2Frqocs7%2Fthis_frog_fully_opening_its_eyes%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Foddlysatisfying%2Fcomments%2Frqocs7%2Fthis_frog_fully_opening_its_eyes%2F"/>
+        <updated>2021-12-29T05:51:21.000Z</updated>
+        <summary type="html"><![CDATA[这只青蛙完全打开了它的眼睛]]></summary>
+        <author>
+            <name>Reddit 热门</name>
         </author>
     </entry>
     <entry>
@@ -4888,6 +5961,16 @@ Matrix 是少数派的写作社区，我们主张分享真实的产品体验，
         <summary type="html"><![CDATA[Remove web limits 是一款用来解除网页上禁止复制、剪切、选择文本、右键菜单限制的油猴脚本，用来替代疑似被加入监控代码的 Enable Copy 3.0 扩展。@Appinn 事情是这样]]></summary>
         <author>
             <name>青小蛙</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[巴迪太自负了]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/memes/comments/rqk734/buddy_got_too_cocky/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/memes/comments/rqk734/buddy_got_too_cocky/?score=75318&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Frqk734%2Fbuddy_got_too_cocky%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Frqk734%2Fbuddy_got_too_cocky%2F"/>
+        <updated>2021-12-29T03:16:01.000Z</updated>
+        <summary type="html"><![CDATA[巴迪太自负了]]></summary>
+        <author>
+            <name>Reddit 热门</name>
         </author>
     </entry>
     <entry>
@@ -5366,6 +6449,16 @@ For example, adding "example.com" to the buffer would look like t…]]></summary
     <entry>
         <title type="html"><![CDATA[这个人在圣诞节前夕把8个人从燃烧的巴士中拉了出来。]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/pics/comments/rqhe9n/this_man_pulled_8_people_out_of_a_burning_bus_on/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/pics/comments/rqhe9n/this_man_pulled_8_people_out_of_a_burning_bus_on/?score=76792&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fpics%2Fcomments%2Frqhe9n%2Fthis_man_pulled_8_people_out_of_a_burning_bus_on%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fpics%2Fcomments%2Frqhe9n%2Fthis_man_pulled_8_people_out_of_a_burning_bus_on%2F"/>
+        <updated>2021-12-28T21:17:48.000Z</updated>
+        <summary type="html"><![CDATA[这个人在圣诞节前夕把8个人从燃烧的巴士中拉了出来。]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[这个人在圣诞节前夕把8个人从燃烧的巴士中拉了出来。]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/pics/comments/rqhe9n/this_man_pulled_8_people_out_of_a_burning_bus_on/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/pics/comments/rqhe9n/this_man_pulled_8_people_out_of_a_burning_bus_on/"/>
         <updated>2021-12-28T21:17:48.000Z</updated>
         <summary type="html"><![CDATA[这个人在圣诞节前夕把8个人从燃烧的巴士中拉了出来。]]></summary>
@@ -5520,6 +6613,16 @@ The post How to generate a QR code on your iPhone while it’s offline appeared 
     <entry>
         <title type="html"><![CDATA[给那个说想看到我达到一年的人。看，我做到了。我成功了。]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rqgruc/to_the_person_who_said_they_wanted_to_see_me/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rqgruc/to_the_person_who_said_they_wanted_to_see_me/?score=76059&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Frqgruc%2Fto_the_person_who_said_they_wanted_to_see_me%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Frqgruc%2Fto_the_person_who_said_they_wanted_to_see_me%2F"/>
+        <updated>2021-12-28T18:58:08.000Z</updated>
+        <summary type="html"><![CDATA[给那个说想看到我达到一年的人。看，我做到了。我成功了。]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[给那个说想看到我达到一年的人。看，我做到了。我成功了。]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rqgruc/to_the_person_who_said_they_wanted_to_see_me/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rqgruc/to_the_person_who_said_they_wanted_to_see_me/"/>
         <updated>2021-12-28T18:58:08.000Z</updated>
         <summary type="html"><![CDATA[给那个说想看到我达到一年的人。看，我做到了。我成功了。]]></summary>
@@ -5576,6 +6679,16 @@ The post How to generate a QR code on your iPhone while it’s offline appeared 
 The post AMD Ryzen 7 5800X vs Intel Core i7-12700K: Battle of the high-end CPU appeared first on xda-developers.]]></summary>
         <author>
             <name>Karthik Iyer</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[滑板运动员Brooklinn Khoury在被狗袭击失去上唇后仍然面带微笑]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/pics/comments/rq3yms/skateboarder_brooklinn_khoury_still_smiling_after/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/pics/comments/rq3yms/skateboarder_brooklinn_khoury_still_smiling_after/?score=75193&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fpics%2Fcomments%2Frq3yms%2Fskateboarder_brooklinn_khoury_still_smiling_after%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fpics%2Fcomments%2Frq3yms%2Fskateboarder_brooklinn_khoury_still_smiling_after%2F"/>
+        <updated>2021-12-28T17:51:53.000Z</updated>
+        <summary type="html"><![CDATA[滑板运动员Brooklinn Khoury在被狗袭击失去上唇后仍然面带微笑]]></summary>
+        <author>
+            <name>Reddit 热门</name>
         </author>
     </entry>
     <entry>
@@ -5638,6 +6751,16 @@ The post Amazon Alexa’s web search results told a child to play with a power o
         <summary type="html"><![CDATA[DIY邮件]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[电影院试图用亚马逊总理账户播放圣诞电影]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/facepalm/comments/rq7fwe/movie_theater_tries_to_play_a_christmas_movie/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/facepalm/comments/rq7fwe/movie_theater_tries_to_play_a_christmas_movie/?score=77589&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffacepalm%2Fcomments%2Frq7fwe%2Fmovie_theater_tries_to_play_a_christmas_movie%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffacepalm%2Fcomments%2Frq7fwe%2Fmovie_theater_tries_to_play_a_christmas_movie%2F"/>
+        <updated>2021-12-28T16:23:35.000Z</updated>
+        <summary type="html"><![CDATA[电影院试图用亚马逊总理账户播放圣诞电影]]></summary>
+        <author>
+            <name>Reddit 热门</name>
         </author>
     </entry>
     <entry>
@@ -5801,6 +6924,16 @@ The post Get 5% cash back on select purchases on your new Apple Card appeared fi
     <entry>
         <title type="html"><![CDATA[我想，娱乐活动在动物身上从来没有好结果]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/Unexpected/comments/rpvmt7/i_guess_recreation_never_ended_well_with_animals/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/Unexpected/comments/rpvmt7/i_guess_recreation_never_ended_well_with_animals/?score=75135&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FUnexpected%2Fcomments%2Frpvmt7%2Fi_guess_recreation_never_ended_well_with_animals%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FUnexpected%2Fcomments%2Frpvmt7%2Fi_guess_recreation_never_ended_well_with_animals%2F"/>
+        <updated>2021-12-28T12:59:36.000Z</updated>
+        <summary type="html"><![CDATA[我想，娱乐活动在动物身上从来没有好结果]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我想，娱乐活动在动物身上从来没有好结果]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/Unexpected/comments/rpvmt7/i_guess_recreation_never_ended_well_with_animals/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/Unexpected/comments/rpvmt7/i_guess_recreation_never_ended_well_with_animals/"/>
         <updated>2021-12-28T12:59:36.000Z</updated>
         <summary type="html"><![CDATA[我想，娱乐活动在动物身上从来没有好结果]]></summary>
@@ -5892,6 +7025,16 @@ The post These are the best ASUS laptops you can buy in 2022 appeared first on x
     <entry>
         <title type="html"><![CDATA[哇! 太阳能真的按设计工作! 令人难以置信的是，绿色能源实际上要好得多]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rpxjy6/wow_solar_energy_actually_working_as_designed/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rpxjy6/wow_solar_energy_actually_working_as_designed/?score=75112&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Frpxjy6%2Fwow_solar_energy_actually_working_as_designed%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Frpxjy6%2Fwow_solar_energy_actually_working_as_designed%2F"/>
+        <updated>2021-12-28T10:00:05.000Z</updated>
+        <summary type="html"><![CDATA[哇! 太阳能真的按设计工作! 令人难以置信的是，绿色能源实际上要好得多]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[哇! 太阳能真的按设计工作! 令人难以置信的是，绿色能源实际上要好得多]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rpxjy6/wow_solar_energy_actually_working_as_designed/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rpxjy6/wow_solar_energy_actually_working_as_designed/"/>
         <updated>2021-12-28T10:00:05.000Z</updated>
         <summary type="html"><![CDATA[哇! 太阳能真的按设计工作! 令人难以置信的是，绿色能源实际上要好得多]]></summary>
@@ -5947,6 +7090,16 @@ BTR5 2021 还标配一个小夹子水晶壳，出街的时候可以非常方便�
 砂锅作为传统烹饪工具，在有时间的情况下选用它更能…]]></summary>
         <author>
             <name>毛仔</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我已经被攻击了。]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/ProgrammerHumor/comments/rpojpb/i_have_been_attacked/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/ProgrammerHumor/comments/rpojpb/i_have_been_attacked/?score=75045&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FProgrammerHumor%2Fcomments%2Frpojpb%2Fi_have_been_attacked%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FProgrammerHumor%2Fcomments%2Frpojpb%2Fi_have_been_attacked%2F"/>
+        <updated>2021-12-28T09:08:59.000Z</updated>
+        <summary type="html"><![CDATA[我已经被攻击了。]]></summary>
+        <author>
+            <name>Reddit 热门</name>
         </author>
     </entry>
     <entry>
@@ -6081,6 +7234,16 @@ Apple Music：2021 音乐回忆
 The post Third One UI 4.0 beta rolling out to the Galaxy S10 and Galaxy Note 10 series appeared first on xda-developers.]]></summary>
         <author>
             <name>Kishan Vyas</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[上去吧，伙计]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/gaming/comments/rpu5ko/up_you_go_buddy/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/gaming/comments/rpu5ko/up_you_go_buddy/?score=75649&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fgaming%2Fcomments%2Frpu5ko%2Fup_you_go_buddy%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fgaming%2Fcomments%2Frpu5ko%2Fup_you_go_buddy%2F"/>
+        <updated>2021-12-28T06:38:12.000Z</updated>
+        <summary type="html"><![CDATA[上去吧，伙计]]></summary>
+        <author>
+            <name>Reddit 热门</name>
         </author>
     </entry>
     <entry>
@@ -6302,6 +7465,16 @@ STAND or 幽波纹？
     <entry>
         <title type="html"><![CDATA[这是个小世界]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/rpq728/it_is_a_small_world/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/rpq728/it_is_a_small_world/?score=75161&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FDamnthatsinteresting%2Fcomments%2Frpq728%2Fit_is_a_small_world%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FDamnthatsinteresting%2Fcomments%2Frpq728%2Fit_is_a_small_world%2F"/>
+        <updated>2021-12-28T06:14:55.000Z</updated>
+        <summary type="html"><![CDATA[这是个小世界]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[这是个小世界]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/rpq728/it_is_a_small_world/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/rpq728/it_is_a_small_world/"/>
         <updated>2021-12-28T06:14:55.000Z</updated>
         <summary type="html"><![CDATA[这是个小世界]]></summary>
@@ -6454,9 +7627,29 @@ JVM stands for Java Virtual Machine.It is an abstract machine that provides the 
     <entry>
         <title type="html"><![CDATA[还记得那个把狗扔给这个人的女孩吗？那条狗现在已经好转了!]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rpvudv/remember_the_girl_that_threw_a_dog_at_this_guy/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rpvudv/remember_the_girl_that_threw_a_dog_at_this_guy/?score=78420&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Frpvudv%2Fremember_the_girl_that_threw_a_dog_at_this_guy%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Frpvudv%2Fremember_the_girl_that_threw_a_dog_at_this_guy%2F"/>
+        <updated>2021-12-28T04:33:37.000Z</updated>
+        <summary type="html"><![CDATA[还记得那个把狗扔给这个人的女孩吗？那条狗现在已经好转了!]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[还记得那个把狗扔给这个人的女孩吗？那条狗现在已经好转了!]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rpvudv/remember_the_girl_that_threw_a_dog_at_this_guy/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/rpvudv/remember_the_girl_that_threw_a_dog_at_this_guy/"/>
         <updated>2021-12-28T04:33:37.000Z</updated>
         <summary type="html"><![CDATA[还记得那个把狗扔给这个人的女孩吗？那条狗现在已经好转了!]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[失去了160磅! 决心实际上可以发挥作用。]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rpvwr0/160_lbs_lost_resolutions_can_actually_work/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rpvwr0/160_lbs_lost_resolutions_can_actually_work/?score=75028&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Frpvwr0%2F160_lbs_lost_resolutions_can_actually_work%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Frpvwr0%2F160_lbs_lost_resolutions_can_actually_work%2F"/>
+        <updated>2021-12-28T04:04:34.000Z</updated>
+        <summary type="html"><![CDATA[失去了160磅! 决心实际上可以发挥作用。]]></summary>
         <author>
             <name>Reddit 热门</name>
         </author>
@@ -6614,6 +7807,16 @@ One UI 4 修复在即，将重启推送
     <entry>
         <title type="html"><![CDATA[奥斯卡奖颁给了...]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rpgqka/oscar_goes_to/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rpgqka/oscar_goes_to/?score=75295&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Frpgqka%2Foscar_goes_to%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Frpgqka%2Foscar_goes_to%2F"/>
+        <updated>2021-12-27T23:13:47.000Z</updated>
+        <summary type="html"><![CDATA[奥斯卡奖颁给了...]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[奥斯卡奖颁给了...]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rpgqka/oscar_goes_to/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rpgqka/oscar_goes_to/"/>
         <updated>2021-12-27T23:13:47.000Z</updated>
         <summary type="html"><![CDATA[奥斯卡奖颁给了...]]></summary>
@@ -6643,6 +7846,16 @@ Learning Web in 2021 is not a straight line (Photo by Mark König on Unsplash)
 I want to start with the most basic and the important, as well as, sometimes, overlooked part of the Web — HTML. Why overlooked? Thanks to some great JavaScript frameworks, like React, web developers frequently deal with “components” rather than HTML elements. However, it is important to understand semantic HTML and accessibility and many…]]></summary>
         <author>
             <name>Aibol Kussain</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[迫不及待]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rpnwbk/cant_wait/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/rpnwbk/cant_wait/?score=75055&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Frpnwbk%2Fcant_wait%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Frpnwbk%2Fcant_wait%2F"/>
+        <updated>2021-12-27T22:59:45.000Z</updated>
+        <summary type="html"><![CDATA[迫不及待]]></summary>
+        <author>
+            <name>Reddit 热门</name>
         </author>
     </entry>
     <entry>
@@ -6685,6 +7898,16 @@ http {
       proxy_ca…]]></summary>
         <author>
             <name>Christian Seki</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[所以这就是我们抗议的原因？]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/antiwork/comments/rpm9gr/so_this_is_why_were_protesting/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/antiwork/comments/rpm9gr/so_this_is_why_were_protesting/?score=75215&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fantiwork%2Fcomments%2Frpm9gr%2Fso_this_is_why_were_protesting%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fantiwork%2Fcomments%2Frpm9gr%2Fso_this_is_why_were_protesting%2F"/>
+        <updated>2021-12-27T22:32:53.000Z</updated>
+        <summary type="html"><![CDATA[所以这就是我们抗议的原因？]]></summary>
+        <author>
+            <name>Reddit 热门</name>
         </author>
     </entry>
     <entry>
@@ -6964,6 +8187,16 @@ Nível de bateria, network que estava sendo utilizada no momento do crash, IP e 
         <summary type="html"><![CDATA[用6美元的树莓派相机录制660FPS视频(2019)]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[这个女人在谈论她想要什么样的男人...]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/facepalm/comments/rpi015/this_woman_talking_about_what_kind_of_men_she/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/facepalm/comments/rpi015/this_woman_talking_about_what_kind_of_men_she/?score=75226&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffacepalm%2Fcomments%2Frpi015%2Fthis_woman_talking_about_what_kind_of_men_she%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffacepalm%2Fcomments%2Frpi015%2Fthis_woman_talking_about_what_kind_of_men_she%2F"/>
+        <updated>2021-12-27T20:29:02.000Z</updated>
+        <summary type="html"><![CDATA[这个女人在谈论她想要什么样的男人...]]></summary>
+        <author>
+            <name>Reddit 热门</name>
         </author>
     </entry>
     <entry>
@@ -7326,6 +8559,26 @@ Charlotte Jafari - Set Designer
 Tom Ryan - Shire Music]]></summary>
         <author>
             <name>Youtube 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[吉卜力工作室对食物的描写]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/oddlysatisfying/comments/rp5qqv/studio_ghiblis_depiction_of_food/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/oddlysatisfying/comments/rp5qqv/studio_ghiblis_depiction_of_food/?score=82712&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Foddlysatisfying%2Fcomments%2Frp5qqv%2Fstudio_ghiblis_depiction_of_food%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Foddlysatisfying%2Fcomments%2Frp5qqv%2Fstudio_ghiblis_depiction_of_food%2F"/>
+        <updated>2021-12-27T18:48:28.000Z</updated>
+        <summary type="html"><![CDATA[吉卜力工作室对食物的描写]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如果你买不起，这家餐厅提供免费的食物]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/HumansBeingBros/comments/rp8s1c/this_restaurant_offers_food_for_free_if_you_cant/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/HumansBeingBros/comments/rp8s1c/this_restaurant_offers_food_for_free_if_you_cant/?score=81536&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FHumansBeingBros%2Fcomments%2Frp8s1c%2Fthis_restaurant_offers_food_for_free_if_you_cant%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FHumansBeingBros%2Fcomments%2Frp8s1c%2Fthis_restaurant_offers_food_for_free_if_you_cant%2F"/>
+        <updated>2021-12-27T18:48:28.000Z</updated>
+        <summary type="html"><![CDATA[如果你买不起，这家餐厅提供免费的食物]]></summary>
+        <author>
+            <name>Reddit 热门</name>
         </author>
     </entry>
     <entry>
@@ -16850,6 +18103,16 @@ TW: www.twitter.com/thenorthmanfilm
     <entry>
         <title type="html"><![CDATA[The Creator Opportunity, The Value of Abundance, TV and Sports Follow-up]]></title>
         <id>https://stratechery.com/2021/the-creator-opportunity-the-value-of-abundance-tv-and-sports-follow-up/</id>
+        <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS90aGUtY3JlYXRvci1vcHBvcnR1bml0eS10aGUtdmFsdWUtb2YtYWJ1bmRhbmNlLXR2LWFuZC1zcG9ydHMtZm9sbG93LXVwLw.dPYWF12yTTbroZ0UHo2kZietZdiKZKBhfolevdAo95COzZBJ4lQgiVrHpcD33B5N4uAh1xDkzGOX7KsMh_BI9lage89M_SPmXz9u3trNDDeblbwkOV9alLhs95OZ5NRAe-QQnbt9NmFBOww1gm99o9BKZ-tiZJqNvpDW7zmb3brg5wcQj05rZ3zDFx_82BSsy9atHCi3xNRv2-DB_aaIUc14GGy3s1bCtAgKUe2tVZbZC4dCjYAUFKwZ4hrDRSn_OXchw72ru7-wRnBkyTUjZZhQhS8UmRkEDgqv-AF6srrmBWFu3v6zypgjVV3WlSu76mPs1CyA1b324QQUJBE7HA"/>
+        <updated>2021-12-21T11:40:31.000Z</updated>
+        <summary type="html"><![CDATA[It is fine to be excited about web3, but it doesn't seem right to deny the real opportunities already afforded by the Internet. Plus, tying up loose ends on TV and sports.]]></summary>
+        <author>
+            <name>Ben Thompson</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Creator Opportunity, The Value of Abundance, TV and Sports Follow-up]]></title>
+        <id>https://stratechery.com/2021/the-creator-opportunity-the-value-of-abundance-tv-and-sports-follow-up/</id>
         <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS90aGUtY3JlYXRvci1vcHBvcnR1bml0eS10aGUtdmFsdWUtb2YtYWJ1bmRhbmNlLXR2LWFuZC1zcG9ydHMtZm9sbG93LXVwLw.kqTgKR0nGn-WIWRF7eD2im_R-N6IvvypFq9vg7PkJKnQIsgn2C_uZUhnDdNkWIYIaIGe1Q6Zw1dHSWHmpiMHYdEI_HnuFGFwLtwmmolxBsy4JxSvC-K-DhRETl6mHW-XN-lCEANTadzXLrmPlmUCy7QwFwsfoV1fibJYsMZOhuGA8wUzv9DcMLN4Sqjy6UrxMf-DQKpRmqXqcBwrFyg_iLD0eIMdZrp_OwUyzQxYj1hJvFwECYg3LsyH6htRWceyUudfkGbWdyYHt8myZZ4oV68knK2jts1bIxZKqzkndGkQHSZwJW7J9x2IrMIiiN5nU6vN7MdfmYJsasvOkuF_kg"/>
         <updated>2021-12-21T11:40:31.000Z</updated>
         <summary type="html"><![CDATA[It is fine to be excited about web3, but it doesn't seem right to deny the real opportunities already afforded by the Internet. Plus, tying up loose ends on TV and sports.]]></summary>
@@ -19046,6 +20309,16 @@ Spotify 的前产品经理有一天在推特发言，总结自己这些年在音
     <entry>
         <title type="html"><![CDATA[Formula 1 and Netflix, Netflix and Sports, YouTube TV vs. ESPN]]></title>
         <id>https://stratechery.com/2021/formula-1-and-netflix-netflix-and-sports-youtube-tv-vs-espn/</id>
+        <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9mb3JtdWxhLTEtYW5kLW5ldGZsaXgtbmV0ZmxpeC1hbmQtc3BvcnRzLXlvdXR1YmUtdHYtdnMtZXNwbi8.ZccODxmoN8ep9Ch1JNkzRq_iGvvzOHKKKV_xP4NcONHfCey8LP9irEmu10Q7KdZT4rt68tK-exfpPj9E9ww7rExxLsOcESMvJRAD9Aw045ozfc-78rKGU38eDSpdffljBHBHjre7MxaJaEZwNaitsQhYOdA_ss87ITQkdUDA2YZR9eR2OkCu1jhYrZ1Q9StcDcbyDwgyEIxgwN_CXNiOkdQxo226P0FhANEzpj5b31Ai7KyuQv3QLfmL1ICxW1McADOCZ-Zxgly4d-waChizNfIZqBigaem8HIQRnOrMmKVWqaHQSXjRD2liuOIxBX6jQsGXr46vW8EU337xPDoXxQ"/>
+        <updated>2021-12-16T12:23:59.000Z</updated>
+        <summary type="html"><![CDATA[The increased popularity of F1 shows how sports can be valuable to Netflix, and why sports remain valuable to Disney.]]></summary>
+        <author>
+            <name>Ben Thompson</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Formula 1 and Netflix, Netflix and Sports, YouTube TV vs. ESPN]]></title>
+        <id>https://stratechery.com/2021/formula-1-and-netflix-netflix-and-sports-youtube-tv-vs-espn/</id>
         <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9mb3JtdWxhLTEtYW5kLW5ldGZsaXgtbmV0ZmxpeC1hbmQtc3BvcnRzLXlvdXR1YmUtdHYtdnMtZXNwbi8.X-rCVVhUnZTNEW3DXvkMGWFHeXIlXyTpCUves1-tTGzCleelW8llv93cZCfpDbdyoECnq13gr2dr0FpC9CtSH92Gdn6MWbfxoskC1BHFj8aBoEYOVTzFgWOGf1LAE5lMMQIs80IlGIezlcDwhqnRGt6H31EPEPVV-OiZFACcgvLAQMxoU0WxFUIdj4cxS61IWt2laN-FZUbgAmRu25rE5D8sYFgReMd5k7Nb2f70UL30AO1UM8MhKJk5-jUnKzGGU7MPR83sXUonM1ivU8cZt4gkV3mf7Is8wfSFmrMTKppLkppRIQqmMUMX_2B0CUencVwKjlS2z-r9XEaA3NVJqw"/>
         <updated>2021-12-16T12:23:59.000Z</updated>
         <summary type="html"><![CDATA[The increased popularity of F1 shows how sports can be valuable to Netflix, and why sports remain valuable to Disney.]]></summary>
@@ -19981,6 +21254,16 @@ smeb是当时世界第一上单，即便在s8也能按着duke杀，和巅峰the 
         <summary type="html"><![CDATA[删除时代广场上的每一个广告]]></summary>
         <author>
             <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Great Bifurcation Follow-up, More on Intel and TSMC, Intel to Spin Out Mobileye]]></title>
+        <id>https://stratechery.com/2021/the-great-bifurcation-follow-up-more-on-intel-and-tsmc-intel-to-spin-out-mobileye/</id>
+        <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS90aGUtZ3JlYXQtYmlmdXJjYXRpb24tZm9sbG93LXVwLW1vcmUtb24taW50ZWwtYW5kLXRzbWMtaW50ZWwtdG8tc3Bpbi1vdXQtbW9iaWxleWUv.LYU37gfC8qzCAdCH_IZdrUYC2e5g9WBcwLAogztDY7lToxp64yeLpqqj5VuUDDZ3hHyFOyX42fFQRy3pMyfOGHZMQqRLjm-XmN5olzDvQa6QWNpBMd9rqRtyn5voxc7Fp_3GKb7-GQUzzlSSJeZOX1EYrKEkyKF_4Q6ptw22AYZ_SYe6arg4bJWCQQy--8OljMzhSd269RQtlkBBs1CjR4ZZ-bSzgcWXDLKlqitieVXJ9exYQcdhAh4r-Je7sXmq_KXHFO6fPrNHxqGaSHolfTVMIW6Q_6a1TvbzgXV2frN1RMmKuij9YESC9SlhZkhGeuh7YFBxyMDifiwlesMd-Q"/>
+        <updated>2021-12-15T11:00:16.000Z</updated>
+        <summary type="html"><![CDATA[Follow-up on "The Great Bifurcation", then more on Intel's relationship with TSMC, and why the latter needs the former. Plus, spinning out Mobileye is a great idea.]]></summary>
+        <author>
+            <name>Ben Thompson</name>
         </author>
     </entry>
     <entry>
@@ -23830,6 +25113,16 @@ The post AetherSX2 is the best way to play PlayStation 2 games on your Android s
         <summary type="html"><![CDATA[用Python和World3模型预测文明的崩溃]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Intel vs. TSMC, How Samsung and TSMC Won, MAD Chips]]></title>
+        <id>https://stratechery.com/2021/intel-vs-tsmc-how-samsung-and-tsmc-won-mad-chips/</id>
+        <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9pbnRlbC12cy10c21jLWhvdy1zYW1zdW5nLWFuZC10c21jLXdvbi1tYWQtY2hpcHMv.N112QlPMNCW5_iDXaqSSJxMt8yfGX1UzbJwgZVCzKZci7pglPGEKAFgpSI607gYq95_4PvXdsewkfOpESBcutp6gLP1osIVpU6sjbHXEPPWeYUqWfxcc-YszUp065tFC4ge-dvh9lj9zjm_zTPiKBONdDOi-H25-1XtUUEUY9XZSuoTIaikaSQnnUXlxBBcpqgfokrAbaeKpHpPMxRuyIche6gnOQy3J5Bb_EMUyid2Ui95EPdU4xTVHGRnbePnUgYStqvxFpCGUs__x-pGNO8Ofo7-6rh55qvSGCD-xeX1hfeRO-J-_Pdr1SZCcYT1EpW2FQhgm0TiX1LCQbLkAFA"/>
+        <updated>2021-12-13T12:25:45.000Z</updated>
+        <summary type="html"><![CDATA[Intel's CEO is out campaigning for subsidies; his pitch doesn't give sufficient credit to TSMC and Samsung for their success.]]></summary>
+        <author>
+            <name>Ben Thompson</name>
         </author>
     </entry>
     <entry>
@@ -30101,6 +31394,16 @@ The post Windows 11 features already in preview: Everything you can try right no
     <entry>
         <title type="html"><![CDATA[App Store Injunction Stayed, Fingerprinting on iOS, Life360 and Apple's Missing Leverage]]></title>
         <id>https://stratechery.com/2021/app-store-injunction-stayed-fingerprinting-on-ios-life360-and-apples-missing-leverage/</id>
+        <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hcHAtc3RvcmUtaW5qdW5jdGlvbi1zdGF5ZWQtZmluZ2VycHJpbnRpbmctb24taW9zLWxpZmUzNjAtYW5kLWFwcGxlcy1taXNzaW5nLWxldmVyYWdlLw.JWCOWYAEnTNYuvvYPQj8qWlGp55RVrWoGTiVGUlMKIyRaD79rF0E5NUgn5PqyyxV97yg1oytPSt2ahNaceTmNxjj25BnDp1lU83-R0UI9tqsoosSfF8LeiqiNVZsWdH1YXOGwmf24NSG_IyMECfgSCV4uBC4oudFhkZ4vrjryIvoTzTKIw8ZogByx7hEt7IBx6R9Fo56G8fVSlaXGYQL78L2vqP0sP9H-paxQUC-LXDLmWKh3om4xLBArAibULNLXl8avLO-eznP0m_9cdnwf-v-Kc6hEDniRvRnwPMeg3FMM6DZoC9DAvuMPPONhmkk965TJKNc6bnX7mO0_djtXA"/>
+        <updated>2021-12-09T12:58:52.000Z</updated>
+        <summary type="html"><![CDATA[Apple wins in court, probably for good; meanwhile, its tracking rules aren't really being enforced, and probably can't be, which means Apple's overreach was a mistake.]]></summary>
+        <author>
+            <name>Ben Thompson</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[App Store Injunction Stayed, Fingerprinting on iOS, Life360 and Apple's Missing Leverage]]></title>
+        <id>https://stratechery.com/2021/app-store-injunction-stayed-fingerprinting-on-ios-life360-and-apples-missing-leverage/</id>
         <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9hcHAtc3RvcmUtaW5qdW5jdGlvbi1zdGF5ZWQtZmluZ2VycHJpbnRpbmctb24taW9zLWxpZmUzNjAtYW5kLWFwcGxlcy1taXNzaW5nLWxldmVyYWdlLw.Ju3G_x1kirIZmEDlPPaes3y-fHMxBTISCwT7v1HyrxymiSVC6-gmXno_LlJjvOK-0IzsmZKkDyUMf2KxI1XitsGe53Wbk8jhMxfBgfbGp8IjpKE7SWDjNUoK3n517e8RC3ecnfjRm2ZnKBjgr28tHZI2uXivIzGcqrT4CKrjwecSkpPqG9u1ln0GBEaBExagNchXVHb-GrDQLrtbLHo1hctXCX0qJCH3KC7MG-u0arASqXg-9Z1Y1-2OpzuX6dTdArfiIJu5SQONh6vdmLqDgQPPO7Kl-WPFqbw0PWiC_2cL7J_0ImqDI9b2_VTbsKI1Kh6dhxb_HdLybqZRSH6cgw"/>
         <updated>2021-12-09T12:58:52.000Z</updated>
         <summary type="html"><![CDATA[Apple wins in court, probably for good; meanwhile, its tracking rules aren't really being enforced, and probably can't be, which means Apple's overreach was a mistake.]]></summary>
@@ -31884,6 +33187,16 @@ The post Google Docs gets new customization options for Tables appeared first on
     <entry>
         <title type="html"><![CDATA[The Information on Apple in China, Apple's Deal, Evaluating Apple's China Risk]]></title>
         <id>https://stratechery.com/2021/the-information-on-apple-in-china-apples-deal-evaluating-apples-china-risk/</id>
+        <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS90aGUtaW5mb3JtYXRpb24tb24tYXBwbGUtaW4tY2hpbmEtYXBwbGVzLWRlYWwtZXZhbHVhdGluZy1hcHBsZXMtY2hpbmEtcmlzay8.uKwQQdQkYTJu-ufczepN1ZLQ5Rb_HsvsjfoQ3n05mnc173I99LQDT2TD33K5ioVdM1LPm4ITgdrX-SYo2Wtn9YF4WlOFzspmhMyd2-w1YWNBEKS9Y-iGiZYxSuxcne_iJpHtWT4ZScJPNtzpwTlRYlcC2lTxy79clPhRjq1hwK13v3SLrQ67mUPOyDH2bbSNtfUxG4boEsZnrrqBdZjbjJQo0ImziFo9IY4SkHJ6u1CUfpoZfmL7P4ThvItUQqd8UKYf6Y17DOcwiu0KG_ypT1I0I9KZmQMnO9FtzGM3D9zj_iy_UmV9M29BhFJGBB1Bd2uhi7oMXJeJG97ILmX0BQ"/>
+        <updated>2021-12-08T11:36:12.000Z</updated>
+        <summary type="html"><![CDATA[The Information has a report on a deal Apple made with the Chinese government; this explains multiple things over the last five years, and may indicate that Apple's position is fairly secure.]]></summary>
+        <author>
+            <name>Ben Thompson</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Information on Apple in China, Apple's Deal, Evaluating Apple's China Risk]]></title>
+        <id>https://stratechery.com/2021/the-information-on-apple-in-china-apples-deal-evaluating-apples-china-risk/</id>
         <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS90aGUtaW5mb3JtYXRpb24tb24tYXBwbGUtaW4tY2hpbmEtYXBwbGVzLWRlYWwtZXZhbHVhdGluZy1hcHBsZXMtY2hpbmEtcmlzay8.FNLSN1Cbexjhfj1xJKA0xuPhRr17q4zsWLI7rCBgx2u8TNnHaHqvWHNvHKBLmbcqSENFR_GJ-xSxCGWjQLFb5iGUotr8fH6uWvcVQgGLho4AN68wzAjBbMLT6qetwalOk0nleGxnYbFhRewwCxhaIYUOZDRBWxYJVRsc8_0B5HJPTGsEgHpYlbdPnD4LTN5jjzjEvVGHHeuasXZaT8CVeMRfH0qavPCnUcRnAj2Ihp3CC4XQwer3vH__SlkVc7ge5k7e4LVg32XH8-F8aytIAQ_hevVRMjNjuB3QZI2S5WyvhBhyFW_ZgcDkr-0UQfyobjm88KeF3lWNIK5JHFbaGA"/>
         <updated>2021-12-08T11:36:12.000Z</updated>
         <summary type="html"><![CDATA[The Information has a report on a deal Apple made with the Chinese government; this explains multiple things over the last five years, and may indicate that Apple's position is fairly secure.]]></summary>
@@ -33646,6 +34959,16 @@ The post You can now make audio and video calls from the Gmail app appeared firs
         <summary type="html"><![CDATA[Django 4.0]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[FTC Sues to Block Nvidia ARM Acquisition, Innovation and the Data Center, ARM's Future]]></title>
+        <id>https://stratechery.com/2021/ftc-sues-to-block-nvidia-arm-acquisition-innovation-and-the-data-center-arms-future/</id>
+        <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMS9mdGMtc3Vlcy10by1ibG9jay1udmlkaWEtYXJtLWFjcXVpc2l0aW9uLWlubm92YXRpb24tYW5kLXRoZS1kYXRhLWNlbnRlci1hcm1zLWZ1dHVyZS8.XzIGFq-d8_wA5ypmz_LPIfHmqoWvz63mtb8D4ZgmbBWnjLhuWi0ybcjWbItU07m6CY8C1lTDLD6E70zUtxvn6Gy9IXRym_4QbdAbdfMpOWVovzRLKqsnOTfWaT6vnteSGH9TVns-QnHKlf7du1iXxnHytjsxQC1Cco1KMjnx_41mCRXj_HKfq7THX2McfSGawXzlcIun6mztluucorSMghiHk-cXJO8JNEe3rQx2exLCctFZK6sLkAA_2MrMC50ONWnCrY-KdguM5on_FmAfqrQdVuEahlj6m1j2vQnW0GbAr3MK7CuPlk0YbsZ0R99oFvtubd4_yXanMajtT4MIiQ"/>
+        <updated>2021-12-07T13:47:48.000Z</updated>
+        <summary type="html"><![CDATA[The FTC is suing to block Nvidia's ARM acquisition; it is a plausible argument, although Nvidia can make a pro-innovation case. Regardless, ARM's future looks shakier than before.]]></summary>
+        <author>
+            <name>Ben Thompson</name>
         </author>
     </entry>
     <entry>
@@ -38456,661 +39779,6 @@ PCG（Procedural content generation过程化内容生成）技术是最近比较
 The post The Apple Watch is praised for fitness, but it can do a lot more than that appeared first on xda-developers.]]></summary>
         <author>
             <name>Mahmoud Itani</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[如何评价《大王饶命》正式动画化？]]></title>
-        <id>http://www.zhihu.com/question/502749269/answer/2254744727</id>
-        <link href="http://www.zhihu.com/question/502749269/answer/2254744727?utm_campaign=rss&amp;utm_medium=rss&amp;utm_source=rss&amp;utm_content=title"/>
-        <updated>2021-12-04T12:23:19.000Z</updated>
-        <summary type="html"><![CDATA[作为社恐人士，看看我这小眼神就知道我是自愿回答的！
-
-
-因为直到开播前都很兴奋，所以前几天都没怎么睡，思维到现在都还有点乱，就随便闲聊下吧。
-
-
-我们跟腾讯动漫算是合作很久了，他们在我们大火鸟还没什么名气的时候就给了很多机会，加上这次能得到《大王饶命》这个项目，真的很感激也很开心。
-
-
-我还记得当初ASK老师和我第一次说这个项目的时候，我就觉得这是我们团队的荣耀，而且碰巧ASK老师和肘子老师还有我三个都是白羊座,生日还刚好挨着，就觉得这缘分也太巧了。
-
-
-说来有点不好意思，在还没见到本人前，我以为肘子老师是那种特别严肃的老人家，没想到碰面后反而有种一见如故的感觉。于是我就追着他问了很多关于小说创作的事，一番交流下来，我算是深刻地领会到了什么叫头部作者。
-
-
-光是我们这几个小时的聊天就足够让我学到了很多平时压根不可能注意的故事创作细节，而且他最厉害的就是可以在极短的时间里想到一段非常有意思的梗，大王第一话开头的吕树怼糖葫芦师傅就是肘子老师几分钟内蹦出来的创意，真的是让人非常佩服。
-
-
-话说回来，虽说能接到这个项目很让人兴奋，但兴奋劲过头随之而来的就是不安了。因为这部小说的知名度很高，加上肘子老师对我们的期待很高，所以我们必须拿出全部实力去完成它才行。
-
-
-最终在燃尽了全部精力后，作品顺利上线了，从那刻起，我心里的不安也就渐渐消散了，真心希望大家能够喜欢上《大王饶命》的动画版。
-
-
-说起动画版的亮点，这两天被大家热议的OP肯定是一个重头戏。实话实说，其实我并没有刻意去做什么布局之类的、与创作无关的事。我只是给了一群爱玩的朋友一个足够的空间，让大家可以在其中尽情玩耍，玩得开心。
-
-
-我确实没想到会火到这个程度，毕竟我每次做OP/ED的初衷就是让创作者尽情表达自己的创作欲，我相信只有完全释放激情和灵感的作品才是好作品。这也是我为什么特别喜欢跟无念聊创作的事，因为每当我跟他聊起OP时，我能够感受到他眼里是有光的，这是他真心喜欢做的东西，就像他说在制作过程里并没有遇到什么太大的难题，反而更像是水到渠成。
-
-
-至于正片内容，对我来说比较难的是如何让吕树的怼人场景比较贴合我们的现实世界，因为如果过度追求搞笑效果的话，很容易就会变成那种烂大街的搞笑喜剧。然而这部作品的内核并不是搞笑，所以我们最初开始制作的时候就定下了偏写实的方向，只有这样才能让吕树这个角色显得更加立体。在初期讨论时尤其让我最印象深刻的是ASK老师说“麻烦导演你把第一季做的穷一些，要那种从里到外的穷感。”
-
-
-真是让人头大.jpg。
-
-
-一部好剧肯定少不了好细节，我们现在每次要制作新作时，在正式开始前都会去相关地点进行场景、道具的取材，《大王饶命》也不例外，这次为了构建出吕树的房子，我们收集了相当多的资料，所以最后出来的场景美术设定所有人看了都很满意。比较可惜的是我们没能赶上庙会的时间，所以没能体会到原汁原味的庙会氛围，有点可惜。
-
-
-除了吕树的房子外，像是比较重要的学校场景也在精心收集了很多资料后对它进行了高度的还原，尤其是道元班的设计，我是真的苦恼了很久，最终才定下了方案。而且因为疫情的缘故，在取材结束后我们就匆匆回到了广州，在那之后因为各种原因也没能再去一次，所以后面的很多场景就只能参考之前拍的照片，通过回忆和讨论尽可能地还原了。
-
-
-最后，再次感谢腾讯动漫，谢谢肘子老师，给了我们这次参与《大王饶命》动画化项目的机会！
-
-
-
-危天行
-点击下载
-62 个回答，查看全部。
-如何评价7doc七创社的新作品《凹凸世界》？
-如何评价《镜双城》正式动画化？]]></summary>
-        <author>
-            <name>危天行</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[《一人之下》里为什么张楚岚好久没动过手了？十年空窗掉打一众十年修为的?]]></title>
-        <id>http://www.zhihu.com/question/470198314/answer/2256171695</id>
-        <link href="http://www.zhihu.com/question/470198314/answer/2256171695?utm_campaign=rss&amp;utm_medium=rss&amp;utm_source=rss&amp;utm_content=title"/>
-        <updated>2021-12-04T11:46:12.000Z</updated>
-        <summary type="html"><![CDATA[写在开头
-其实笔者本不想探讨关于《一人之下》中人战力高低的问题，因为这类问题往往会沦于骂战，但是看到题主的这个问法“十年空窗期打掉一众十年修为的”，笔者觉得有点意思。
-就在此处做一个小小分析，希望各位读者在看待一人之下中的战斗时能够从更多方面去考虑，也算是抛砖引玉了。
-先说结论——打架要靠脑子的
-张楚岚到底有多强？并不强。
-其实细细分析，张楚岚的各方面纸面战力其实都很一般，刨除个别本来就不擅长战斗的同龄人外(没觉醒双全手的吕良），甚至说可以比同龄人还略弱。
-但是真正面对战斗时，还包含很多因素，比如战斗智商、心性果决程度、布局算计以及悟性。
-而这些非纸面战力，都能够在具体的战斗中扭转乾坤，改变局面。
-
-何谓纸面战力：
-包括功法、修为年限、战斗经验、对各门各派功夫的熟悉程度以及肉体和灵魂的强韧程度。
-那么张楚岚的纸面战力怎么样呢？
-张楚岚现年19岁（虚岁），出生于1997年2月4日，由于并不知道张楚岚是几岁时候得炁开始修炼的，但是参考同龄的诸葛青7岁得炁开始修炼。张楚岚只能更早，假设是在5岁（2001年）。
-
-张楚岚7岁时，张怀义过世（2004年甲申年）。他就停止了修炼，连静功都停止了，从而瞒过公司，一直以普通人的身份活到了19岁。
-
-
-那么张楚岚的修炼总时长为：2001年-2004年期间，满打满算4年时间。
-
-功法：
-金光咒、雷法、老农功【相比其他门派的功法略强】
-修为年限：
-4年【同龄人10年起步】
-战斗经验：
-4-5次（罗天大醮期间）【同龄人大多有各门派切磋学习，经验远多于此】
-
-对各门各派功夫的熟悉程度：
-龙虎山本门（只教授了术法，没解释含义）、藏龙提供的少量其他门派情报【同龄人大多会有同门长辈传授经验典故】
-
-
-肉体和灵魂的强韧程度：
-由于并非训练肉体的横练或者是性命双修的全真龙门，张楚岚的肉身强度为一般水准，但是灵魂的坚韧强度在同龄人中是出类拔萃的。【同龄人被擤气攻…]]></summary>
-        <author>
-            <name>婺江墨客</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[为使森林重新生长，美国需要数十亿的种子和更多的 "种子猎人"。]]></title>
-        <id>https://hn.buzzing.cc/hn/29437717</id>
-        <link href="https://hn.buzzing.cc/hn/29437717"/>
-        <updated>2021-12-04T11:30:41.000Z</updated>
-        <summary type="html"><![CDATA[为使森林重新生长，美国需要数十亿的种子和更多的 "种子猎人"。]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[欺诈性供应链]]></title>
-        <id>https://hn.buzzing.cc/hn/29437712</id>
-        <link href="https://hn.buzzing.cc/hn/29437712"/>
-        <updated>2021-12-04T11:22:33.000Z</updated>
-        <summary type="html"><![CDATA[欺诈性供应链]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[找到了一个秘密的藏身之处]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/aww/comments/r8bmk3/found_a_secret_hideout/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/aww/comments/r8bmk3/found_a_secret_hideout/"/>
-        <updated>2021-12-04T10:52:45.000Z</updated>
-        <summary type="html"><![CDATA[找到了一个秘密的藏身之处]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[乔伊纳-卢卡斯和李杜克--兰博（官方音频）]]></title>
-        <id>https://youtube.buzzing.cc/youtube/cy89Q4hp-JE</id>
-        <link href="https://youtube.buzzing.cc/youtube/cy89Q4hp-JE"/>
-        <updated>2021-12-04T10:36:28.000Z</updated>
-        <summary type="html"><![CDATA[Stream Joyner Lucas now: 
-Evolution Merch: https://joynerlucas.com/collections/e...
-Written and Managed on Tully: https://www.tullyconnect.com]]></summary>
-        <author>
-            <name>Youtube 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[狗主人帮助一个有狗恐惧症的年轻人!]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/HumansBeingBros/comments/r89l2m/dog_owner_helping_a_young_man_who_has_a_phobia_of/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/HumansBeingBros/comments/r89l2m/dog_owner_helping_a_young_man_who_has_a_phobia_of/"/>
-        <updated>2021-12-04T09:49:58.000Z</updated>
-        <summary type="html"><![CDATA[狗主人帮助一个有狗恐惧症的年轻人!]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[语法树的CRDT在哪里？]]></title>
-        <id>https://hn.buzzing.cc/hn/29433896</id>
-        <link href="https://hn.buzzing.cc/hn/29433896"/>
-        <updated>2021-12-04T09:42:53.000Z</updated>
-        <summary type="html"><![CDATA[语法树的CRDT在哪里？]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[女子速攀记录被打破，时间不到7秒]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/r80qyl/womens_speed_climbing_record_got_smashed_in_under/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/r80qyl/womens_speed_climbing_record_got_smashed_in_under/"/>
-        <updated>2021-12-04T09:32:42.000Z</updated>
-        <summary type="html"><![CDATA[女子速攀记录被打破，时间不到7秒]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[AWS Amplify Studio。从Figma设计到全栈应用]]></title>
-        <id>https://hn.buzzing.cc/hn/29427883</id>
-        <link href="https://hn.buzzing.cc/hn/29427883"/>
-        <updated>2021-12-04T08:34:19.000Z</updated>
-        <summary type="html"><![CDATA[AWS Amplify Studio。从Figma设计到全栈应用]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[我买了上个月在HN上出现的那种AR骑行眼镜]]></title>
-        <id>https://hn.buzzing.cc/hn/29434307</id>
-        <link href="https://hn.buzzing.cc/hn/29434307"/>
-        <updated>2021-12-04T08:34:19.000Z</updated>
-        <summary type="html"><![CDATA[我买了上个月在HN上出现的那种AR骑行眼镜]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[零成本、无门槛的个人管理方案：8 年产品经理的心得]]></title>
-        <id>https://sspai.com/post/70039</id>
-        <link href="https://sspai.com/post/70039"/>
-        <updated>2021-12-04T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[写了两篇关于消费的文章，这次回归产品经理主业，聊聊个人管理。
-做好个人管理和做好产品经理这两件事在我看来是相辅相成的。首先，我们身边的大部分人都是毕业就开始打工（甚至还没毕业已经在打工了），大部分的时间都花在了工作上，一方面是为了生存，通过劳动我们会获得报酬，另一方面也可以说是实现自我价值或者其他你觉得重要的点。总之我们的生活方式以及整个人都在不知不觉间被工作塑造了。
-以我自己为例，产品经理这个岗位的其中一项职能是项目管理，虽然有的公司会细分出「项目经理」岗，但大部分中小型公司的产品都在兼任或曾经兼任过项目经理。所以在产品经理工作中，我逐渐养成了项目管理的思维模式：使项目能够在有限资源限定条件下，实现或超过设定的需求和期望的过程，而个人管理是我们每个人最独一无二的项目。
-
-百度百科：在个人管理中，个体既是管理者，也是被管理者。
-
-背景
-一开始我的个人管理诉求源于我对现实生活的不满，毕业后我留在家乡工作，住在家里。因为无法随时所欲地生活，就十分想拥有自己的住所，然后我制定了一个 3 年买房计划。可当时的我不知道个人管理怎么做，更没有认清现实，只是内心有一个很想实现的目标，其他全凭感觉，每天的日子还是过得浑浑噩噩，不仅没有缩短跟目标之间的距离，还在走弯路。
-工作中的管理实践
-所幸我的工作是自己喜欢的，因为能接触到更多的信息，并不断学习新东西。我需要每天在工作前明确当前是项目的什么阶段，写下今天要完成什么任务，要跟谁沟通以及得到怎样的结果，然后在每天结束工作后记录当天任务的完成情况并复盘：是否存在风险？该如何安排明天的工作？——当然你也可以把这些简称为「日报」。除此以外，我还要去了解行业发展趋势和热点，国内外优秀互联网公司最近又推出了什么新 App、新功能等等，就需要有工具去整理并归纳这些资料以及尽量高效。
-通过工作，我首先接触并掌握的个人管理内容是信息管理也可称为知识管理。
-这…]]></summary>
-        <author>
-            <name>啊桂酱AGuiJ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[锌的搜索引擎。用Go编写的Elasticsearch的轻量级替代品]]></title>
-        <id>https://hn.buzzing.cc/hn/29434097</id>
-        <link href="https://hn.buzzing.cc/hn/29434097"/>
-        <updated>2021-12-04T06:34:17.000Z</updated>
-        <summary type="html"><![CDATA[锌的搜索引擎。用Go编写的Elasticsearch的轻量级替代品]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[他们上周开始付给我们15美元/小时。]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/antiwork/comments/r86aka/they_started_paying_us_15hr_last_week/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/antiwork/comments/r86aka/they_started_paying_us_15hr_last_week/"/>
-        <updated>2021-12-04T05:58:28.000Z</updated>
-        <summary type="html"><![CDATA[他们上周开始付给我们15美元/小时。]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[我犯过的常见基础设施错误]]></title>
-        <id>https://hn.buzzing.cc/hn/29434740</id>
-        <link href="https://hn.buzzing.cc/hn/29434740"/>
-        <updated>2021-12-04T05:58:01.000Z</updated>
-        <summary type="html"><![CDATA[我犯过的常见基础设施错误]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[有人犯了一个错误，汽油的价格是0.014欧元/升，有人在芬兰装了1000升罐子。]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/r8bzt2/someone_made_a_mistake_and_gas_was_priced_at/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/r8bzt2/someone_made_a_mistake_and_gas_was_priced_at/"/>
-        <updated>2021-12-04T05:26:31.000Z</updated>
-        <summary type="html"><![CDATA[有人犯了一个错误，汽油的价格是0.014欧元/升，有人在芬兰装了1000升罐子。]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[生逢其时]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/funny/comments/r7ywvg/what_a_time_to_be_alive/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/funny/comments/r7ywvg/what_a_time_to_be_alive/"/>
-        <updated>2021-12-04T05:26:31.000Z</updated>
-        <summary type="html"><![CDATA[生逢其时]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Cordae - Sinister (feat. Lil Wayne) [官方音乐视频]]]></title>
-        <id>https://youtube.buzzing.cc/youtube/9VYj6CFnO08</id>
-        <link href="https://youtube.buzzing.cc/youtube/9VYj6CFnO08"/>
-        <updated>2021-12-04T04:58:49.000Z</updated>
-        <summary type="html"><![CDATA[Cordae - Sinister (feat. Lil Wayne)
-Stream/Download: https://cordae.lnk.to/Sinister
-
-Follow Cordae
-https://cordae.lnk.to/Facebook
-https://cordae.lnk.to/Instagram
-https://cordae.lnk.to/Twitter
-https://cordae.lnk.to/Soundcloud
-https://www.youtube.com/channel/UC_jN...
-
-Production Company: Blank Square Productions
-Director: Edgar Esteves
-Producer: Andres Garcia
-Editor: Joan Pabon | Digital Sword 
-
-Art: Garabato
-Colorist: Josh Bohoskey 
-Marketing: Carla Pagano
-Video Commissioner: Kareem Johnson / OverScene, LLC
-
-The official YouTube channel of Cordae. Subscribe for the latest music videos, performances, and more.]]></summary>
-        <author>
-            <name>Youtube 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Ask HN: 你如何建立你的个人起始页？]]></title>
-        <id>https://hn.buzzing.cc/hn/29414763</id>
-        <link href="https://hn.buzzing.cc/hn/29414763"/>
-        <updated>2021-12-04T04:58:23.000Z</updated>
-        <summary type="html"><![CDATA[Ask HN: 你如何建立你的个人起始页？]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Privacy.com重新发行所有卡片]]></title>
-        <id>https://hn.buzzing.cc/hn/29432683</id>
-        <link href="https://hn.buzzing.cc/hn/29432683"/>
-        <updated>2021-12-04T04:58:23.000Z</updated>
-        <summary type="html"><![CDATA[Privacy.com重新发行所有卡片]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[保持一个日志]]></title>
-        <id>https://hn.buzzing.cc/hn/29436562</id>
-        <link href="https://hn.buzzing.cc/hn/29436562"/>
-        <updated>2021-12-04T04:42:15.000Z</updated>
-        <summary type="html"><![CDATA[保持一个日志]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[美国生产力放缓：整个经济和行业层面的分析]]></title>
-        <id>https://hn.buzzing.cc/hn/29434150</id>
-        <link href="https://hn.buzzing.cc/hn/29434150"/>
-        <updated>2021-12-04T03:28:32.000Z</updated>
-        <summary type="html"><![CDATA[美国生产力放缓：整个经济和行业层面的分析]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[城市漫步指南：打开中山有几种方式？]]></title>
-        <id>https://sspai.com/post/68262</id>
-        <link href="https://sspai.com/post/68262"/>
-        <updated>2021-12-04T03:06:57.000Z</updated>
-        <summary type="html"><![CDATA[「城市风光」是一个很广义的词，大部分时候它不仅指代某一个地点，更是我们经历过、熟悉的并留下深刻回忆的地方。它的妙不可言或许人尽皆知一目了然，亦或许是深藏心底只有自己知道的秘密。
-回忆汹涌呼之欲出，且听作者们平和、真诚且娓娓道来。我们希望通过「城市漫步指南」这个系列，带你领略每一个有趣而又非凡的城市风光。
-中山纪念堂
-「城市漫步」（citywalk）通常会有一个领队带十多个人在城市中走一段固定路线，以此观察和了解城市的历史、建筑和文化景观，这种旅行方式在日本和欧洲国家比较流行。但国内目前只有上海有比较多团队组织城市漫步活动，但其实中国还有很多城市同样特别适合漫步，比如中山。
-中山城区保留了许多老街老巷，历史丰富的老式民居藏匿于其中，路边是为行人遮阴的高高的行道树，城市中还有平靓正的美食，这些让中山成为一座十分适合行走的城市。而也我因为在中山生活而爱上了城市漫步，在中山生活的四年多时间里也走过许多的大大小小的街巷，喜欢上用行走的方式了解一座城市，去旅行的时候总是先往老城区的巷子里钻。于是我编辑了这篇文章来分享了自己在中山漫步经验，希望为大家认识城市提供一种新的视角。
-俯瞰中山
-一、以历史文化景观为中心的城市漫步
-中国东南沿海地区的许多建筑都受民国时期南洋华侨带来的建筑风潮的影响，比如下面要提到的碉楼和骑楼，以及随处可见的各式民居。这些建筑在吸收外来建筑审美的同时又结合了当地传统的文化，并在建造中因地制宜的产生了多种多样的形态，每栋建筑都有自己独特的个性，成为中山街头独特的风景，而这些都是只有通过城市漫步的方式才能体验到。
-
-民居
-漫步路线：仁厚里、永安里、龙母庙街、拱辰路、水关街、下河泊、弓箭巷、华贵坊、从善坊
-由于核心城区没有受到很大程度的开发，中山保留了大片的老住宅区，这些住宅区的交通网络交错纵横四通八达，许多历史悠久、形态各异的民居就扎根在这些街巷深处。中山现存的老民居不…]]></summary>
-        <author>
-            <name>笋加鲜</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[你的eBay账户已被暂停]]></title>
-        <id>https://hn.buzzing.cc/hn/29435091</id>
-        <link href="https://hn.buzzing.cc/hn/29435091"/>
-        <updated>2021-12-04T02:46:04.000Z</updated>
-        <summary type="html"><![CDATA[你的eBay账户已被暂停]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[昆多-隆多-JOG蓝图（官方音乐视频）]]></title>
-        <id>https://youtube.buzzing.cc/youtube/7zcqy6hjqUk</id>
-        <link href="https://youtube.buzzing.cc/youtube/7zcqy6hjqUk"/>
-        <updated>2021-12-04T01:32:55.000Z</updated>
-        <summary type="html"><![CDATA[Quando Rondo - 
-Stream/Download: 
-
-Subscribe for more official content from Quando Rondo: https://1633.lnk.to/QuandoRondoSubscribe
-
-Follow Quando Rondo
-https://facebook.com/QuandoRondo
-https://instagram.com/quando_rondo
-https://twitter.com/quando_rondo
-https://soundcloud.com/quandorondo
-
-A natural talent, Quando Rondo was once a small child, secretly singing in the bathroom as a 9-year-old boy in Savannah, GA. His natural gravitation towards music lead to him to hip-hop; he began recording his fledgling verses on his cell phone. He quickly gained traction online, racking up millions of views on YouTube.
-
-Fittingly, he titled his 2018 mixtape 'Life B4 Fame' with the hopes that things would change for the better once his career really took off. He was right—within two days, his mixtape had amassed more than one million streams on MyMixtapez. Things will only go up from there, and if the snippets from his forthcoming Rich Homie Quando project are any sign, he’s only only getting better with time.]]></summary>
-        <author>
-            <name>Youtube 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Yungeen Ace - Caterpillars To Butterflies (Official Music Video)]]></title>
-        <id>https://youtube.buzzing.cc/youtube/Ro4DGX9Aw3w</id>
-        <link href="https://youtube.buzzing.cc/youtube/Ro4DGX9Aw3w"/>
-        <updated>2021-12-04T01:32:55.000Z</updated>
-        <summary type="html"><![CDATA[Watch the official music video for Yungeen Ace's "Caterpillars to Butterflies". 
-
-Stream/download "Walk Away" https://yungeenace.ffm.to/walkaway
-Stream/download "Life of Betrayal 2x" https://yungeenace.ffm.to/lob-2x
-Directed by TEOShotThis
-Text Yungeen Ace 904-204-4544
-Shop ATK https://www.lifeofatk.com/​
-
-Follow Yungeen Ace:
-http://www.instagram.com/yungeenace/​​​​
-http://www.facebook.com/yungeenacemusic
-http://twitter.com/yungeenace​​​​
-http://soundcloud.com/yungeenace​​​​
-http://spoti.fi/2qlMNET​​​​
-https://apple.co/2mtKyRJ​​​​
-
-2021 Cinematic Music Group /ATK
-
-#yungeenace #caterpillarstobutterflies #walkaway]]></summary>
-        <author>
-            <name>Youtube 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Rclone: 用于云存储的Rsync - 在云存储供应商之间进行同步的CLI]]></title>
-        <id>https://hn.buzzing.cc/hn/29435760</id>
-        <link href="https://hn.buzzing.cc/hn/29435760"/>
-        <updated>2021-12-04T01:32:17.000Z</updated>
-        <summary type="html"><![CDATA[Rclone: 用于云存储的Rsync - 在云存储供应商之间进行同步的CLI]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[赞达亚让人穿着防毒服在她家门口等着，拿着艾美奖|格雷厄姆-诺顿秀]]></title>
-        <id>https://youtube.buzzing.cc/youtube/_CRvJaWWsLs</id>
-        <link href="https://youtube.buzzing.cc/youtube/_CRvJaWWsLs"/>
-        <updated>2021-12-04T00:21:53.000Z</updated>
-        <summary type="html"><![CDATA[Zendaya talks about winning an Emmy for her role in Euphoria as Rue and being able to share that moment with her family.
-
-#GrahamNortonShow #GrahamNorton #TheGNShow #SPiderman #TomHolland #Zendaya
-
-Follow us here:
-Facebook: https://www.facebook.com/thegrahamnor...
-Instagram: https://www.instagram.com/thegrahamno...
-Twitter: https://twitter.com/TheGNShow
-TikTok: https://www.tiktok.com/@thegnshow
-Snapchat: https://www.snapchat.com/discover/The...]]></summary>
-        <author>
-            <name>Youtube 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[弗雷多-邦-得到回报（官方视频）]]></title>
-        <id>https://youtube.buzzing.cc/youtube/n1t09wPatjQ</id>
-        <link href="https://youtube.buzzing.cc/youtube/n1t09wPatjQ"/>
-        <updated>2021-12-03T23:46:13.000Z</updated>
-        <summary type="html"><![CDATA[Directed by @ShotbyJolo  
-
-Text “Fredo Bang” to 225-244-6998 for Exclusive Updates 🦍 
-
-Shop: https://www.fredobangshop.com/ 
-
-Follow Fredo Bang:
-Instagram: https://instagram.com/fredobang
-Facebook: https://www.facebook.com/fredobangbiz/
-Twitter: https://twitter.com/fredobang
-TikTok: https://www.tiktok.com/@fredobangbigape 
-
-#FredoBang #GetBack]]></summary>
-        <author>
-            <name>Youtube 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[波罗G - 年轻的傻子（官方视频）]]></title>
-        <id>https://youtube.buzzing.cc/youtube/YvUqogKqRYE</id>
-        <link href="https://youtube.buzzing.cc/youtube/YvUqogKqRYE"/>
-        <updated>2021-12-03T23:46:13.000Z</updated>
-        <summary type="html"><![CDATA[Official video for “Young N Dumb” by Polo G 
-
-Listen & Download ‘Hall Of Fame 2.0’ out now: https://polog.lnk.to/HOFDeluxe
- 
-Amazon Music - https://polog.lnk.to/HOFDeluxe/amazonmusic
-Apple Music - https://polog.lnk.to/HOFDeluxe/applemusic
-Audiomack - https://polog.lnk.to/HOFDeluxe/audiomack
-Deezer - https://polog.lnk.to/HOFDeluxe/deezer
-iTunes - https://polog.lnk.to/HOFDeluxe/itunes
-SoundCloud - https://polog.lnk.to/HOFDeluxe/soundcloud
-Spotify - https://polog.lnk.to/HOFDeluxe/spotify
-YouTube Music - https://polog.lnk.to/HOFDeluxe/youtubemusic
-
-Directed by Ryan Lynch
- 
-Follow Polo G
-Facebook - https://www.facebook.com/pologofficial
-Instagram - https://www.instagram.com/polo.capalot
-Twitter - https://twitter.com/Polo_Capalot
-TikTok - https://www.tiktok.com/@pologofficial
- 
-https://www.polocapalot.com/
- 
-#PoloG #YoungNDumb #HallOfFame]]></summary>
-        <author>
-            <name>Youtube 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[汤姆-霍兰德通过他的蜘蛛侠面具的眼睛喝他的星冰乐｜格雷厄姆-诺顿秀]]></title>
-        <id>https://youtube.buzzing.cc/youtube/_Ypn44b8hdg</id>
-        <link href="https://youtube.buzzing.cc/youtube/_Ypn44b8hdg"/>
-        <updated>2021-12-03T23:46:13.000Z</updated>
-        <summary type="html"><![CDATA[Zendaya endearingly worries about Tom Holland throwing up in his Spider-Man mask and what he'd do. 
-
-#GrahamNortonShow #GrahamNorton #TheGNShow #TomHolland #Zendaya #Spiderman 
-
-Follow us here:
-Facebook: https://www.facebook.com/thegrahamnor...
-Instagram: https://www.instagram.com/thegrahamno...
-Twitter: https://twitter.com/TheGNShow
-TikTok: https://www.tiktok.com/@thegnshow
-Snapchat: https://www.snapchat.com/discover/The...]]></summary>
-        <author>
-            <name>Youtube 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[汤姆-霍兰德身高不够，无法抓住赞达亚｜格雷厄姆-诺顿秀]]></title>
-        <id>https://youtube.buzzing.cc/youtube/qFZeZzcXoyg</id>
-        <link href="https://youtube.buzzing.cc/youtube/qFZeZzcXoyg"/>
-        <updated>2021-12-03T23:46:13.000Z</updated>
-        <summary type="html"><![CDATA[Tom Holland & Zendaya's height difference caused some issues on the set of Spider-Man No Way Home.
-
-#GrahamNortonShow #GrahamNorton #TheGNShow #TomHolland #Zendaya #Spiderman 
-
-Follow us here:
-Facebook: https://www.facebook.com/thegrahamnor...
-Instagram: https://www.instagram.com/thegrahamno...
-Twitter: https://twitter.com/TheGNShow
-TikTok: https://www.tiktok.com/@thegnshow
-Snapchat: https://www.snapchat.com/discover/The...]]></summary>
-        <author>
-            <name>Youtube 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Developing A Game Engine with Perl: Part 7 - Fork]]></title>
-        <id>https://dev.to/ansigameengine/developing-a-game-engine-with-perl-part-7-fork-3acm</id>
-        <link href="https://dev.to/ansigameengine/developing-a-game-engine-with-perl-part-7-fork-3acm"/>
-        <updated>2021-12-03T23:34:45.000Z</updated>
-        <summary type="html"><![CDATA[Pssssst... I DO NOT KNOW WHAT I AM DOING.
-If you want to start reading from the beginning. Check out the first article in this series
-Continuing from our last post, I talked about how ANSI Game Engine is a colourful telnet server. We left off with needing to fork the engines telnet server.
-Time to level up our telnet server and make it multi-player with some knify forky.
-
-I've added in the strftime identifier from Perl's POSIX module to help with time stamping the output. The setsid identifier is for starting a new session and group ID for each forked process. A.K.A, the child process. :sys_wait_h is for returning without wait after the child process has exited, using the WNOHANG flag when calling waitpid(). This provides non-blocking wait for all pending zombie children.
-
-reaped. This wil…]]></summary>
-        <author>
-            <name>Shawn Holland</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SZA - I Hate U (音频)]]></title>
-        <id>https://youtube.buzzing.cc/youtube/zFXmOl6JqRE</id>
-        <link href="https://youtube.buzzing.cc/youtube/zFXmOl6JqRE"/>
-        <updated>2021-12-03T23:29:37.000Z</updated>
-        <summary type="html"><![CDATA[SZA – “I Hate U” out now: https://smarturl.it/SZAIHateU
-
-Composer, Lyricist: Solána Rowe
-Producer: Rob Bisel
-Composer, Lyricist, Producer: Carter Lang
-Composer, Lyricist: Robert Bisel
-Producer: ThankGod4Cody
-Composer, Lyricist: Cody Fayne
-Composer, Lyricist, Producer: Dylan Patrice
-
-Follow SZA:
-http://szactrl.com
-http://instagram.com/sza
-http://twitter.com/sza
-http://facebook.com/sza
-
-#SZA #IHateU #RnB]]></summary>
-        <author>
-            <name>Youtube 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[我的狗追赶土狼，但不会在雨中撒尿，除非我用塑料袋盖住它。]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/funny/comments/r7ra1d/my_dog_chases_coyotes_but_wont_go_pee_in_the_rain/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/funny/comments/r7ra1d/my_dog_chases_coyotes_but_wont_go_pee_in_the_rain/"/>
-        <updated>2021-12-03T23:29:36.000Z</updated>
-        <summary type="html"><![CDATA[我的狗追赶土狼，但不会在雨中撒尿，除非我用塑料袋盖住它。]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[展示HN：一个完全用SVG构建真实网站的工具]]></title>
-        <id>https://hn.buzzing.cc/hn/29430368</id>
-        <link href="https://hn.buzzing.cc/hn/29430368"/>
-        <updated>2021-12-03T23:29:11.000Z</updated>
-        <summary type="html"><![CDATA[展示HN：一个完全用SVG构建真实网站的工具]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Advent of code, day 3]]></title>
-        <id>https://dev.to/marcoservetto/advent-of-code-day-3-24pp</id>
-        <link href="https://dev.to/marcoservetto/advent-of-code-day-3-24pp"/>
-        <updated>2021-12-03T23:28:47.000Z</updated>
-        <summary type="html"><![CDATA[Ok, day 3 part one was nice and simple. FIrst I defined a couple of utility static methods, then just rolled over the data.
-Pow2 = {class method I (I that) =
-  if that==0I 1I else 2I*This(that-1I) }
-Is1 = {class method Bool(S that, I i) =
-  that.startsWith(S"1" leftOffSet=i)}
-MainPart1 = (
-  input = Fs.Real.#$of().read(\"input")
-  tot = I.List[0I;0I;0I;0I;0I;0I;0I;0I;0I;0I;0I;0I]
-  var size = 0I
-  for s in input.split(S.nl()) (
-    size+=1I
-    for var e in tot, i in Range(tot.size()) (
-      if Is1(s i=i) e:=e+1I //update the value inside of 'tot'
-      )
-    )
-  var gamma = 0I
-  var epsilon = 0I
-  for e in tot, i in Range(tot.size()).reverse() (
-    if e+e>size gamma+=Pow2(i) 
-    else      epsilon+=Pow2(i)
-    )
-  Debug(gamma*epsilon)
-  )
-
-The second part, I found it involved in a borin…]]></summary>
-        <author>
-            <name>Marco Servetto</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[这些冰球(?)是我刚发现我的新冰箱做的。]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/mildlyinteresting/comments/r7lb7k/these_ice_spheres_that_i_just_found_out_my_new/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/mildlyinteresting/comments/r7lb7k/these_ice_spheres_that_i_just_found_out_my_new/"/>
-        <updated>2021-12-03T23:13:02.000Z</updated>
-        <summary type="html"><![CDATA[这些冰球(?)是我刚发现我的新冰箱做的。]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[他把她骗到了一个很好的第一次约会!]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/r7wcyl/he_tricked_her_into_a_good_first_date/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/r7wcyl/he_tricked_her_into_a_good_first_date/"/>
-        <updated>2021-12-03T22:42:40.000Z</updated>
-        <summary type="html"><![CDATA[他把她骗到了一个很好的第一次约会!]]></summary>
-        <author>
-            <name>Reddit 热门</name>
         </author>
     </entry>
 </feed>
