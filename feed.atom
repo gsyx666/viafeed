@@ -2,10 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gsyx666.github.io/action-osmosfeed/index.html</id>
     <title>gsyx::feed</title>
-    <updated>2022-01-11T07:39:45.072Z</updated>
+    <updated>2022-01-11T07:57:49.098Z</updated>
     <generator>osmosfeed 1.12.0</generator>
     <link rel="alternate" href="https://gsyx666.github.io/action-osmosfeed/index.html"/>
     <link rel="self" href="https://gsyx666.github.io/action-osmosfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Side Projects: React Digital Display - Part 1]]></title>
+        <id>https://dev.to/kamil7x/side-projects-react-digital-display-part-1-3g2m</id>
+        <link href="https://dev.to/kamil7x/side-projects-react-digital-display-part-1-3g2m"/>
+        <updated>2022-01-11T07:20:00.000Z</updated>
+        <summary type="html"><![CDATA[Think about this for a moment. You can find a great deal of reasons to make side projects – such as learning, having fun or creating something that will be used and appreciated by others. It requires an ample amount of creativity and hard work. 
+Even though some may disagree, I think that there is way more pros than cons to this. In this series, we are going to write a little bit of code together and see what can be accomplished.
+Our first project is called React Digital Display. As the name suggests, it is a React component, which displays text. Although it looks quite simple, we will add one lovely feature: it will be able to take different components as display modules and use them under the hood. For example, it can be a 7-segment module, or a dot matrix, or anything you can imagine. I…]]></summary>
+        <author>
+            <name>Kamil Trusiak</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Striver's SDE Sheet Journey - #12 Count inversions in an array]]></title>
         <id>https://dev.to/sachin26/strivers-sde-sheet-journey-12-count-inversions-in-an-array-4phl</id>
@@ -103,6 +115,24 @@ The post OnePlus 10 Pro launches in China with Snapdragon 8 Gen 1 and ColorOS 12
 The post Android 13 may ship with a redesigned audio output picker appeared first on xda-developers.]]></summary>
         <author>
             <name>Kishan Vyas</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[用电脑打原神、王者荣耀…… 为 Mac 装 iOS 应用还能这样玩：PlayCover]]></title>
+        <id>https://sspai.com/post/70602</id>
+        <link href="https://sspai.com/post/70602"/>
+        <updated>2022-01-11T06:44:45.000Z</updated>
+        <summary type="html"><![CDATA[让 macOS 直接运行 iOS 程序已经不是什么新鲜的事情了。自从 M1 系列的 Mac 问世以来，我们在 Mac App Store 甚至可以直接下载安装受支持的 iOS 应用，并用键盘鼠标来模拟触摸操作在 macOS 上使用这些 iOS 应用。虽然已经有很多 iOS 应用直接支持了在 macOS 上的安装，还是有一些应用开发者为了减少开发成本或者担心其他因素，选择将自己的 iOS 应用从 Mac App Store 上移除。
+如果我们依旧希望在系统架构完全支持的 M1 系列 Mac 上面使用这些应用，那么就需要特殊的手段 —— 旁加载，也就是 sideloading —— 才能安装这些 iOS 应用。这是 macOS 11.2.3 之前的常规操作，我们称这段时期为「前 macOS 旁加载」时代。
+显然，Apple 并不想让我们轻松地就将未经验证、不受支持的 iOS 应用直接在 macOS 上成功运行。曾被允许的简单「旁加载」在 macOS 11.3 的更新中被 Apple 禁用，自然最新的 macOS Monterey 12.1 也不受支持。因此，在「后 macOS 旁加载」时代，我们需要 PlayCover —— 一个专门用于在 M1 Mac 上安装 iOS 应用的辅助程序的帮助，才能够完整地在 M1 Mac 上面安装并体验未受支持的 iOS 应用。
+在 M1 Mac 上面运行由 PlayCover 安装的「原神」
+PlayCover 简介
+后 macOS 旁加载时代 PlayCover 的优势
+如前面提到，虽然依旧是「旁加载」的原理，但是 PlayCover 本身已经是一套完整的在 macOS 上运行 iOS 程序的辅助软件，相比于「前 macOS 旁加载」时代，PlayCover：
+
+能够非常方便地在 M1 Mac 上面通过解密的 IPA 来安装 iOS 应用；…]]></summary>
+        <author>
+            <name>SpencerWoo</name>
         </author>
     </entry>
     <entry>
@@ -345,6 +375,34 @@ Another collection of objects that happens to be very similar to the htmlCollect
 Being …]]></summary>
         <author>
             <name>Jima Victor</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[5 Big Mistakes Companies Make When Testing Software]]></title>
+        <id>https://dev.to/talina/5-big-mistakes-companies-make-when-testing-software-2604</id>
+        <link href="https://dev.to/talina/5-big-mistakes-companies-make-when-testing-software-2604"/>
+        <updated>2022-01-11T04:40:28.000Z</updated>
+        <summary type="html"><![CDATA[Most software companies struggle with releasing quality code that doesn't break critical user workflows.
+Companies invest significant dollars in testing their product to counter this but often ship a P0 bug anyway.
+Here are 5 root causes for software bugs.
+A common mistake and often a harder one to fix during the nascent phases of software.
+Naturally, if the pre-production environment never hits an edge case that can occur in production, it is impossible to validate enhancements accurately.
+Thought: Deploy a snapshot of the production environment as a pre-release environment.
+Engineering teams write code to work in the "present" and the "future", making version testing hard. Software should not be forward-facing.
+Example: Release #1 deploys software with a v1 dependency, and release #2 now uses a v2 version of the dependency. This change is non-idempotent - we wipe out a variable value by storing only the latest state. 
+What happens to the deployed state that works with a v1 dependency? Does it break or work with the new release?
+Thought: Always support X states of existing data. Streamline rollbacks.
+As more folks campaign for infrastructure as code, we move towards automating infrastructure deployments.
+But does a change in automation break existing infrastructure?
+Thought: Can backward compatibility testing solve this problem?
+Assuming the network behaves the same irrespective of time and region is a recipe for software failure.
+Thought: Can Edge Testing gauge pre-release software inconsistencies?
+With the microservices architecture, a change in one service can cause a failure in unrelated user functionality. Testing a new release in a silo for a fixed subset of features doesn't help.
+Thought: Replay tests for all critical user workflows for every release to generate an accurate failures heatmap.
+Let me know if you've solved any of these mistakes and how.
+Until later! :)]]></summary>
+        <author>
+            <name>Talina Shrotriya</name>
         </author>
     </entry>
     <entry>
@@ -2770,6 +2828,16 @@ This feature isn't required…]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[30 JavaScript Libraries to use in your Projects]]></title>
+        <id>https://dev.to/devdefinitive/30-javascript-libraries-to-use-in-your-projects-1gd3</id>
+        <link href="https://dev.to/devdefinitive/30-javascript-libraries-to-use-in-your-projects-1gd3"/>
+        <updated>2022-01-09T15:11:28.000Z</updated>
+        <summary type="html"><![CDATA[#webdev #javascript #programming #beginners]]></summary>
+        <author>
+            <name>devdefinitive</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[约翰迪尔推出完全自主的8R拖拉机]]></title>
         <id>https://hn.buzzing.cc/hn/29858679/</id>
         <link href="https://hn.buzzing.cc/hn/29858679/?score=100&amp;original_url=https%3A%2F%2Fwww.agriculture.com%2Fnews%2Ftechnology%2Fjohn-deere-unveils-fully-autonomous-8r-tractor&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29858679&amp;sensitive=false"/>
@@ -3219,6 +3287,16 @@ Matrix 是少数派的写作社区，我们主张分享真实的产品体验，
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[流言终结：为了验证武僧穿玻璃，几人直接请来少林武僧【第3集】]]></title>
+        <id>https://www.bilibili.com/video/av635592498</id>
+        <link href="https://www.bilibili.com/video/av635592498"/>
+        <updated>2022-01-09T01:06:24.000Z</updated>
+        <summary type="html"><![CDATA[Tags:打卡挑战]]></summary>
+        <author>
+            <name>子晗带你去探险</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[物联网提供了一种通过联网温度计跟踪 COVID-19 的方法]]></title>
         <id>https://linux.cn/article-14162-1.html?utm_source=rss&amp;utm_medium=rss</id>
         <link href="https://linux.cn/article-14162-1.html?utm_source=rss&amp;utm_medium=rss"/>
@@ -3378,6 +3456,20 @@ import (
         <summary type="html"><![CDATA[死亡时钟]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[打造童话般的生存庇护所，户外露营天然小屋、草皮屋顶、壁炉和楼梯]]></title>
+        <id>https://www.bilibili.com/video/av253026904</id>
+        <link href="https://www.bilibili.com/video/av253026904"/>
+        <updated>2022-01-08T23:12:59.000Z</updated>
+        <summary type="html"><![CDATA[https://www.youtube.com/watch?v=wnpQln3EMfQ&t=3s
+今天我用丛林风格的天然材料准备了一个营地和生活区。我用原始的方法制作了一个天然楼梯和一个天然壁炉。这是一个小而有效的庇护所。由于庇护所的背面是天然石材，因此它的温度非常好。在下一部分中，我将在这里喝咖啡，我将完成缺失的部分。
+
+
+Tags:野生技术协会,丛林,野外生存,户外,露营,烹饪,经验分享,避难所,庇护所,淘金]]></summary>
+        <author>
+            <name>宁静荒野</name>
         </author>
     </entry>
     <entry>
@@ -3580,6 +3672,19 @@ How exciting about Douala Cameroon | Benin who were formed in early 2021 and wen
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[男生在拥抱女生时，身体会有什么反应？]]></title>
+        <id>https://www.bilibili.com/video/av680501554</id>
+        <link href="https://www.bilibili.com/video/av680501554"/>
+        <updated>2022-01-08T20:33:22.000Z</updated>
+        <summary type="html"><![CDATA[男生在拥抱女生时，身体会有什么反应？
+
+
+Tags:知识分享官·新年特别篇,知识分享官,科普,涨知识,冷知识,男生,女生,科学,拥抱,情侣]]></summary>
+        <author>
+            <name>不正经学姐g</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[一头牛的绝对单位站在6英尺多高的地方]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/ryql2n/absolute_unit_of_a_cow_stands_over_6ft_tall/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/ryql2n/absolute_unit_of_a_cow_stands_over_6ft_tall/?score=75060&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Fryql2n%2Fabsolute_unit_of_a_cow_stands_over_6ft_tall%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Fryql2n%2Fabsolute_unit_of_a_cow_stands_over_6ft_tall%2F&amp;channel=nextfuckinglevel&amp;sensitive=false"/>
@@ -3610,6 +3715,24 @@ How exciting about Douala Cameroon | Benin who were formed in early 2021 and wen
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[【面试秘笈】想要100%拿到大厂Offer该怎么准备？简历优化+面试指导+现场录音+入职晋升【清华大佬马士兵带你全方位吊打面试官】]]></title>
+        <id>https://www.bilibili.com/video/av593060165</id>
+        <link href="https://www.bilibili.com/video/av593060165"/>
+        <updated>2022-01-08T20:13:33.000Z</updated>
+        <summary type="html"><![CDATA[距离2022年的面试黄金季还有不到三个月，打算找工作，或者打算跳槽的同学们要开始做好准备了~！
+这期视频从面试官的角度出发，讲了面试着重考察同学们的几种能力，以及如何去准备、答题，在面试的时候可以稳赢~包括入职之后该如何快速融入团队以及晋升，干货满满~
+配合往期「大厂必问技术点」食用效果更佳！
+JAVA面试必问的102个知识点：BV1bf4y1Q7Gn
+常见1000+面试题及答案精讲：BV1hf4y1h7R6
+Spring源码深度解析31精讲：BV1iZ4y137CZ
+
+
+Tags:计算机,互联网,编程,面试,求职,简历,面试技巧,经验分享,野生技术协会,JAVA面试,知识分享官·新年特别篇]]></summary>
+        <author>
+            <name>马士兵说</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[当他发现他的妈妈]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/ryvkqn/when_he_spots_his_mom/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/ryvkqn/when_he_spots_his_mom/?score=75019&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Fryvkqn%2Fwhen_he_spots_his_mom%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Fryvkqn%2Fwhen_he_spots_his_mom%2F&amp;channel=MadeMeSmile&amp;sensitive=false"/>
@@ -3627,6 +3750,34 @@ How exciting about Douala Cameroon | Benin who were formed in early 2021 and wen
         <summary type="html"><![CDATA[在阴凉处生长的可食用植物]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[带你看美军次世代步枪 -《大胡子说AR》第三集]]></title>
+        <id>https://www.bilibili.com/video/av850613764</id>
+        <link href="https://www.bilibili.com/video/av850613764"/>
+        <updated>2022-01-08T20:00:11.000Z</updated>
+        <summary type="html"><![CDATA[《大胡子说AR》系列第三集为大家带来短程活塞AR的讲解以及美军次世代步枪-MCX的介绍
+
+
+Tags:知识分享官·新年特别篇,知识分享官,战术,射击,军事,美军,特种部队,枪械,战争,战地,吃鸡]]></summary>
+        <author>
+            <name>Kerberus战术频道</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[古罗马人居然用鸽子粪染发？]]></title>
+        <id>https://www.bilibili.com/video/av295545650</id>
+        <link href="https://www.bilibili.com/video/av295545650"/>
+        <updated>2022-01-08T19:56:45.000Z</updated>
+        <summary type="html"><![CDATA[视频素材：https://historycollection.com/little-known-ancient-history-facts/8/
+https://en.wikipedia.org/wiki/Roman_hairstyles
+https://answerstoall.com/technology/did-people-dye-their-hair-in-the-1940s/
+
+
+Tags:猎奇,冷知识,金色,古罗马,染发,鸽子粪,老普林尼]]></summary>
+        <author>
+            <name>正经的知识</name>
         </author>
     </entry>
     <entry>
@@ -3657,6 +3808,28 @@ How exciting about Douala Cameroon | Benin who were formed in early 2021 and wen
         <summary type="html"><![CDATA[实用通用语言 (2005)]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【肉松】【Live2d】五轴超强可动性 表情总数350+个]]></title>
+        <id>https://www.bilibili.com/video/av253044723</id>
+        <link href="https://www.bilibili.com/video/av253044723"/>
+        <updated>2022-01-08T19:49:45.000Z</updated>
+        <summary type="html"><![CDATA[五轴分别指：
+X、Y、Z、平移、屏距
+还有一个轴是上下平移 但因为是映射的Y，所以没有单独算
+
+金主：@鹿玖鹿鹿鹿  
+画师：@凰明明明是一只学畜  
+模型师：我
+
+
+委托咨询qq641268874 目前排单到今年6月 价位在2k~3k （加好友记得备注
+
+
+Tags:肉松,Live2d,vup,vtb,虚拟主播,prprlive,furry,福瑞,facerig,面捕]]></summary>
+        <author>
+            <name>肉松owo</name>
         </author>
     </entry>
     <entry>
@@ -3730,6 +3903,21 @@ Be happy! ;)]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[我用古董示波器摆烂了你的AE作业！]]></title>
+        <id>https://www.bilibili.com/video/av978008259</id>
+        <link href="https://www.bilibili.com/video/av978008259"/>
+        <updated>2022-01-08T19:30:10.000Z</updated>
+        <summary type="html"><![CDATA[P1示波器信号音频来自UP：5632645
+他创作了很棒示波器的动画，快去看看！
+P2我自己尝试了一下~
+
+
+Tags:自制,特效,后期,示波器,UP TALK,过年随手拍]]></summary>
+        <author>
+            <name>翼翼飞鸢</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Uploading Media in Spring Boot Programmatically With Cloudinary]]></title>
         <id>https://dev.to/hackmamba/uploading-media-in-spring-boot-programmatically-with-cloudinary-35bm</id>
         <link href="https://dev.to/hackmamba/uploading-media-in-spring-boot-programmatically-with-cloudinary-35bm"/>
@@ -3762,6 +3950,19 @@ This tutorial walks you through the process of programmatically uploading media 
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[为什么现在部分985高校还在给大一上C语言课？知道真相的我裂开了]]></title>
+        <id>https://www.bilibili.com/video/av593108255</id>
+        <link href="https://www.bilibili.com/video/av593108255"/>
+        <updated>2022-01-08T19:20:16.000Z</updated>
+        <summary type="html"><![CDATA[同学们如果觉得有帮助的话，不要白嫖UP主的哦，给UP主点一个赞吧，这样可以让更多的同学看到！如果同学们还有什么计算机相关，互联网大厂求职，技术方向等等问题，都可以在评论区给UP主留言，或者关注UP主哈！
+
+
+Tags:知识分享官·新年特别篇,知识分享官,野生技术协会,计算机,C++,C语言,大学生,科技,经验分享,编程,程序员]]></summary>
+        <author>
+            <name>可乐喵想加糖</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[在1小时内拍摄的18张照片的时间片。]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/ryx7y7/time_slice_of_18_pictures_taken_over_a_1_hour/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/ryx7y7/time_slice_of_18_pictures_taken_over_a_1_hour/?score=76665&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Fryx7y7%2Ftime_slice_of_18_pictures_taken_over_a_1_hour%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Fryx7y7%2Ftime_slice_of_18_pictures_taken_over_a_1_hour%2F&amp;channel=interestingasfuck&amp;sensitive=false"/>
@@ -3769,6 +3970,22 @@ This tutorial walks you through the process of programmatically uploading media 
         <summary type="html"><![CDATA[在1小时内拍摄的18张照片的时间片。]]></summary>
         <author>
             <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2亿多年前地球上下了一场200万年的雨？恐龙的崛起契机在何时？盘点三叠纪的生物灭绝事件！【灭绝事件06】]]></title>
+        <id>https://www.bilibili.com/video/av380569974</id>
+        <link href="https://www.bilibili.com/video/av380569974"/>
+        <updated>2022-01-08T18:55:10.000Z</updated>
+        <summary type="html"><![CDATA[三叠纪的小灭绝事件：
+1.斯密斯-斯帕斯边界事件
+2.拉丁期大海退
+3.卡尼期洪积事件
+
+
+Tags:知识分享官·新年特别篇,知识分享官,生物,古生物,科普,恐龙,灭绝,三叠纪,海爬,卡尼期洪积事件,拉丁期大海退]]></summary>
+        <author>
+            <name>黑毛羊驼</name>
         </author>
     </entry>
     <entry>
@@ -3815,6 +4032,19 @@ GitHub actions are a set of events and workflow, whenever specified events ha…
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[网络热传长虫谣言(1)小蛇比大蛇更危险?这种说法正确吗?雄黄真的可以驱蛇吗?]]></title>
+        <id>https://www.bilibili.com/video/av722878562</id>
+        <link href="https://www.bilibili.com/video/av722878562"/>
+        <updated>2022-01-08T18:30:15.000Z</updated>
+        <summary type="html"><![CDATA[-
+
+
+Tags:知识分享官·新年特别篇,知识分享官,自然,生物,健康,科学,科普,打卡挑战,谣言,蛇,知识]]></summary>
+        <author>
+            <name>世界记忆大师龙雅</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[应该是这样的]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/gaming/comments/ryfx7j/as_it_should_be/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/gaming/comments/ryfx7j/as_it_should_be/?score=75168&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fgaming%2Fcomments%2Fryfx7j%2Fas_it_should_be%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fgaming%2Fcomments%2Fryfx7j%2Fas_it_should_be%2F&amp;channel=gaming&amp;sensitive=false"/>
@@ -3822,6 +4052,90 @@ GitHub actions are a set of events and workflow, whenever specified events ha…
         <summary type="html"><![CDATA[应该是这样的]]></summary>
         <author>
             <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【水水劳斯】揭秘网络热门视频里的科学原理｜第二十二集]]></title>
+        <id>https://www.bilibili.com/video/av592904146</id>
+        <link href="https://www.bilibili.com/video/av592904146"/>
+        <updated>2022-01-08T18:10:12.000Z</updated>
+        <summary type="html"><![CDATA[本期包含：光栅衍射眼镜、粉笔下落成三段、泼水成冰、过冷水、铝银原电池、铝碳原电池
+
+
+Tags:知识分享官·新年特别篇,知识分享官,化学,实验,物理,科学,科普,过冷水,光栅衍射眼镜,铝银原电池,铝碳原电池]]></summary>
+        <author>
+            <name>爆炸实验室BoomLab</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[稀碎一地啊...]]></title>
+        <id>https://www.bilibili.com/video/av252999825</id>
+        <link href="https://www.bilibili.com/video/av252999825"/>
+        <updated>2022-01-08T18:00:08.000Z</updated>
+        <summary type="html"><![CDATA[Tags:无限搞笑公司6.0,无限搞笑公司,野生技术协会,鉴定,博物馆,人文,学习]]></summary>
+        <author>
+            <name>天天鉴宝</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[大学计算机老师那么厉害，为什么他们不去大公司当程序员拿高薪？]]></title>
+        <id>https://www.bilibili.com/video/av295597968</id>
+        <link href="https://www.bilibili.com/video/av295597968"/>
+        <updated>2022-01-08T17:56:04.000Z</updated>
+        <summary type="html"><![CDATA[Tags:野生技术协会,编程学习,计算机专业,学习,经验分享,知识,大学生,计算机,代码,教育]]></summary>
+        <author>
+            <name>一个扎心的小指针</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我用实验室摆烂了你的AE作业]]></title>
+        <id>https://www.bilibili.com/video/av978043677</id>
+        <link href="https://www.bilibili.com/video/av978043677"/>
+        <updated>2022-01-08T17:52:57.000Z</updated>
+        <summary type="html"><![CDATA[所有视频材料均为废弃、过期材料，且没有浪费！老师你听我狡辩
+
+
+Tags:UP TALK,过年随手拍,生活,AE,过年,实验室,娱乐]]></summary>
+        <author>
+            <name>多场耦合悬臂梁</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[你见过雪天使吗？]]></title>
+        <id>https://www.bilibili.com/video/av508032224</id>
+        <link href="https://www.bilibili.com/video/av508032224"/>
+        <updated>2022-01-08T17:50:51.000Z</updated>
+        <summary type="html"><![CDATA[素材来源：
+https://www.youtube.com/watch?v=w4OH6gMN6vY&ab_channel=NatGeoWILD
+https://www.youtube.com/watch?v=GWUwGNBBFso&ab_channel=SylvainEckhardt
+
+
+Tags:生命,神奇,动物,趣闻,自然,冷知识,生物,涨知识,科学科普,打卡挑战]]></summary>
+        <author>
+            <name>夜话冷知识</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[南方不够冷？凭什么北方才有暖气！？]]></title>
+        <id>https://www.bilibili.com/video/av678120927</id>
+        <link href="https://www.bilibili.com/video/av678120927"/>
+        <updated>2022-01-08T17:43:48.000Z</updated>
+        <summary type="html"><![CDATA[南方不够冷？凭什么北方才有暖气！？
+
+
+Tags:知识分享官·新年特别篇,知识分享官,学习,科普,南方,北方,暖气,奇葩,搞笑]]></summary>
+        <author>
+            <name>橘右美美子</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AE神光棒出现教程（省流版）]]></title>
+        <id>https://www.bilibili.com/video/av423026726</id>
+        <link href="https://www.bilibili.com/video/av423026726"/>
+        <updated>2022-01-08T17:42:28.000Z</updated>
+        <summary type="html"><![CDATA[Tags:自制,教程,特摄,特效,后期,视频教程,制作过程,野生技术协会,知识分享官,知识分享官·新年特别篇]]></summary>
+        <author>
+            <name>见证琦基</name>
         </author>
     </entry>
     <entry>
@@ -3855,6 +4169,51 @@ GitHub actions are a set of events and workflow, whenever specified events ha…
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[【医学博士】一个方法解决全天不困 I 为什么咖啡越喝越困？]]></title>
+        <id>https://www.bilibili.com/video/av422995796</id>
+        <link href="https://www.bilibili.com/video/av422995796"/>
+        <updated>2022-01-08T17:30:04.000Z</updated>
+        <summary type="html"><![CDATA[如何解决一学习就困？为什么咖啡越喝越困？这期教你正确喝咖啡，避免成瘾！这期超多干货，还有贴心表格大放送，值得一个三连吧？谢谢饱饱们 peace~
+【减肥食谱】BV1tD4y1F7aj
+【隐形眼镜】BV1Wu411S7mr
+【菊花宝典】BV1WR4y1W7FY
+【掏耳隐患】BV1K3411t7Uy
+【武器强化】BV1hq4y1g7vr
+
+
+Tags:知识分享官·新年特别篇,医学,健康,搞笑,沙雕,咖啡,学习,记忆,工作,睡觉]]></summary>
+        <author>
+            <name>兔叭咯</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[猛男就是要头戴花花玩扑克牌！]]></title>
+        <id>https://www.bilibili.com/video/av338042678</id>
+        <link href="https://www.bilibili.com/video/av338042678"/>
+        <updated>2022-01-08T17:30:04.000Z</updated>
+        <summary type="html"><![CDATA[如果喜欢这副“TH梅”，可以到天猫“bicycle旗舰店”购买： https://m.tb.cn/h.fQTsUZ0?sm=70b067
+订单中备注暗号“咕咕星好帅”，可以额外赠送木质展示架
+
+
+Tags:知识分享官·新年特别篇,知识分享官,学习,自制,花切,开箱,咕咕星,搞笑]]></summary>
+        <author>
+            <name>一颗咕咕星</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[“烟囱效应”是什么？将圆筒罩在火焰上，难得一见的现象发生了]]></title>
+        <id>https://www.bilibili.com/video/av508116248</id>
+        <link href="https://www.bilibili.com/video/av508116248"/>
+        <updated>2022-01-08T17:15:05.000Z</updated>
+        <summary type="html"><![CDATA[不可思议的“烟囱效应”，加个圆筒就能拔高火焰，这是什么原理？
+
+
+Tags:知识分享官·新年特别篇,知识分享官,实验,物理,知识,科普,科学,流体力学,科学趣闻,神奇现象]]></summary>
+        <author>
+            <name>科学探照灯er</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[我的女儿第一次模仿我的妻子。]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/aww/comments/ryjbny/my_daughter_mimicking_my_wife_for_the_very_first/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/aww/comments/ryjbny/my_daughter_mimicking_my_wife_for_the_very_first/?score=75128&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Faww%2Fcomments%2Fryjbny%2Fmy_daughter_mimicking_my_wife_for_the_very_first%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Faww%2Fcomments%2Fryjbny%2Fmy_daughter_mimicking_my_wife_for_the_very_first%2F&amp;channel=aww&amp;sensitive=false"/>
@@ -3885,6 +4244,59 @@ GitHub actions are a set of events and workflow, whenever specified events ha…
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[不可思议的“脱位刀”，只有一点和冰鞋相连，为何能屡创佳绩？]]></title>
+        <id>https://www.bilibili.com/video/av678093827</id>
+        <link href="https://www.bilibili.com/video/av678093827"/>
+        <updated>2022-01-08T17:00:19.000Z</updated>
+        <summary type="html"><![CDATA[【冬奥科普系列·第六期】从无人问津到被怀疑再到“真香”的“脱位刀”
+
+文案：细米
+剪辑：细米
+配音：播伊
+素材来源于网络。
+
+
+Tags:科普,体育,冷知识,冬奥会,涨知识,速度滑冰,冰刀,知识分享官,知识分享官·新年特别篇,脱位刀,克莱普刀]]></summary>
+        <author>
+            <name>冷科普</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【公开课】斯坦福李飞飞教授教你计算机视觉，瞬间清晰透彻的【中文版】/CV课程(中英字幕)]]></title>
+        <id>https://www.bilibili.com/video/av508021736</id>
+        <link href="https://www.bilibili.com/video/av508021736"/>
+        <updated>2022-01-08T16:56:55.000Z</updated>
+        <summary type="html"><![CDATA[课件相关资料加WX：gupao-cola  暗号：666（免费领取哦）输入暗号必领取哦！
+
+还可领取一份200G人工智能学习资料礼包（内含：两大Pytorch、TensorFlow实战框架视频、图像识别、OpenCV、计算机视觉、深度学习与神经网络等等等等视频、代码、PPT以及深度学习书籍 ！你想要的里面都有！）
+
+源码、资料、文档、课件看up个人主页简介或动态置顶，有领取方式[OK]
+制作不易，大家记得点个关注！
+
+
+Tags:计算机,知识,人工智能,AI,斯坦福,计算机视觉,机器学习,经验分享,神经网络,深度学习]]></summary>
+        <author>
+            <name>哆啦美的AI</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[这可能是你见过的最花哨的纸牌.....]]></title>
+        <id>https://www.bilibili.com/video/av338040817</id>
+        <link href="https://www.bilibili.com/video/av338040817"/>
+        <updated>2022-01-08T16:50:40.000Z</updated>
+        <summary type="html"><![CDATA[拍摄时间大概是2021年的十月左右吧
+后来一直忘记剪了
+不过也杜绝了广告的嫌疑了
+因为人家早就卖完了
+哈哈哈
+
+
+Tags:跟着UP主创作吧（第二期）,我的隐藏技能,学习,野生技术协会,技术,魔术,纸牌,花切,yolo]]></summary>
+        <author>
+            <name>我是YOLO</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[每个IP地址在哪里？]]></title>
         <id>https://hn.buzzing.cc/hn/29848744/</id>
         <link href="https://hn.buzzing.cc/hn/29848744/?score=101&amp;original_url=https%3A%2F%2Ftech.marksblogg.com%2Fwhere-are-ip-addresses-ipinfo.html&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29848744&amp;sensitive=false"/>
@@ -3892,6 +4304,56 @@ GitHub actions are a set of events and workflow, whenever specified events ha…
         <summary type="html"><![CDATA[每个IP地址在哪里？]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【海贼王】这个白胡子建模TM要是火了，我手抄点赞这个视频的所有ID！！！]]></title>
+        <id>https://www.bilibili.com/video/av380535581</id>
+        <link href="https://www.bilibili.com/video/av380535581"/>
+        <updated>2022-01-08T16:29:22.000Z</updated>
+        <summary type="html"><![CDATA[up创建了一个学习交流的平台，QQ交流群：807534921 对建模感兴趣、有学游戏建模的小伙伴可以加入一起交流学习~ 在群里解答问题
+3DMAX全套教程集：https://www.bilibili.com/video/BV1H44y1r7kY
+ZBrush全套教程集：https://www.bilibili.com/video/BV1GB4y1F7Hn/
+群里面还有3DMAX 、zbrush、maya、C4D、bp、sp、八猴等等建模全流程软件（免费等你来嫖~）
+
+
+Tags:模型,Zbrush,3D建模,野生技术协会,制作过程,知识,技术宅,CG,海贼王,白胡子]]></summary>
+        <author>
+            <name>3D建模-板板</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[阿里面试“TCP/IP”网络协议23连问，23步告诉你，TCP/IP网络协议的最全面总结， 最好的网络协议教程，都帮你整理好了]]></title>
+        <id>https://www.bilibili.com/video/av295561300</id>
+        <link href="https://www.bilibili.com/video/av295561300"/>
+        <updated>2022-01-08T16:20:31.000Z</updated>
+        <summary type="html"><![CDATA[阿里面试“TCP/IP”网络协议23连问，23步告诉你，TCP/IP网络协议的最全面总结， 最好的网络协议教程，都帮你整理好了
+领取开篇“图解计算机、网络、操作系统”福利+教程对应笔记，请动动你的小手帮up三连一下，添加VX：① yunduoa2019 ② bjmsb666 任选其一（备注B站 ）免费获取，更可领取Java高频面试题资料和Java架构师学习路线图
+
+
+Tags:知识分享官·新年特别篇,JAVA,野生技术协会,IT,面试,技术宅,公开课,编程,程序员,架构,计算机]]></summary>
+        <author>
+            <name>Java马小萌</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[19岁女孩爱喝奶茶饮料，尿酸612，确诊痛风，全身多处关节堆积白茫茫的尿酸结晶盐]]></title>
+        <id>https://www.bilibili.com/video/av380490451</id>
+        <link href="https://www.bilibili.com/video/av380490451"/>
+        <updated>2022-01-08T16:08:58.000Z</updated>
+        <summary type="html"><![CDATA[Tags:生命,健康,科普,自制,原创,痛风]]></summary>
+        <author>
+            <name>痛风科陈建春</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[这样的痛风石你见过吗？外卖小哥尿酸800多，膝盖痛风石影响关节无法行走！！！]]></title>
+        <id>https://www.bilibili.com/video/av807766447</id>
+        <link href="https://www.bilibili.com/video/av807766447"/>
+        <updated>2022-01-08T16:08:44.000Z</updated>
+        <summary type="html"><![CDATA[Tags:科学,生命,健康,生物,痛风]]></summary>
+        <author>
+            <name>痛风科陈建春</name>
         </author>
     </entry>
     <entry>
@@ -3955,6 +4417,32 @@ GitHub actions are a set of events and workflow, whenever specified events ha…
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[如果你从飞船上掉入太空会怎样？【又见阿诺德】]]></title>
+        <id>https://www.bilibili.com/video/av765454784</id>
+        <link href="https://www.bilibili.com/video/av765454784"/>
+        <updated>2022-01-08T15:00:08.000Z</updated>
+        <summary type="html"><![CDATA[这里是阿诺德哔哩哔哩官方账号，请支持我们的很不容易活着得小伙子哟~
+
+
+Tags:科学,地球,科普,宇宙,天文,实验,知识分享官,又见阿诺德,知识分享官·新年特别篇]]></summary>
+        <author>
+            <name>又见阿诺德</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[玉兔二号终于抵达「神秘小屋」真相来了！「超级短片系列」]]></title>
+        <id>https://www.bilibili.com/video/av508005511</id>
+        <link href="https://www.bilibili.com/video/av508005511"/>
+        <updated>2022-01-08T14:59:25.000Z</updated>
+        <summary type="html"><![CDATA[月球上的神秘可才刚刚开始
+
+
+Tags:知识分享官·新年特别篇,知识分享官,玉兔二号,嫦娥四号,嫦娥探月工程,广寒宫,月球背面,玉兔月球车,航天科技]]></summary>
+        <author>
+            <name>房叔叨叨叨</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[D12 - StackOverflow contribution]]></title>
         <id>https://wadite.hashnode.dev/d12-stackoverflow-contribution</id>
         <link href="https://wadite.hashnode.dev/d12-stackoverflow-contribution"/>
@@ -4007,6 +4495,53 @@ Answered a question on SOF. The author needed an algorithm to permutate some val
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[How I built my second brain using Next.JS]]></title>
+        <id>https://dev.to/shaan_alam/how-i-built-my-second-brain-using-nextjs-56e7</id>
+        <link href="https://dev.to/shaan_alam/how-i-built-my-second-brain-using-nextjs-56e7"/>
+        <updated>2022-01-08T14:03:51.000Z</updated>
+        <summary type="html"><![CDATA[#javascript #webdev #beginners #programming]]></summary>
+        <author>
+            <name>Shaan Alam</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[免疫系统过强引起的“狼咬”疾病竟然千年无解！]]></title>
+        <id>https://www.bilibili.com/video/av678087868</id>
+        <link href="https://www.bilibili.com/video/av678087868"/>
+        <updated>2022-01-08T13:43:08.000Z</updated>
+        <summary type="html"><![CDATA[Tags:红斑狼疮,免疫系统,疾病,免疫,知识分享官,知识分享官·新年特别篇]]></summary>
+        <author>
+            <name>奇思诺想</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[清华教授用72小时讲完的python！2022最新版630集，拿走不谢，学不会退出IT界]]></title>
+        <id>https://www.bilibili.com/video/av893076367</id>
+        <link href="https://www.bilibili.com/video/av893076367"/>
+        <updated>2022-01-08T13:40:29.000Z</updated>
+        <summary type="html"><![CDATA[尚学堂官方
+制作不易，大家记得点个关注，一键三连呀【点赞、收藏、转发】感谢支持~
+1.更适合零基础学员：0基础从你适不适合开始讲起
+2.课程内容推陈出新：持续更新最新内容
+3.技术讲解更深入、更全面，代码量大、案例丰富、一路实战
+
+
+Tags:计算机,IT,PYTHON,python入门,python基础,python爬虫,PYTHON爬虫,人工智能,PYTHON教程,python数据分析]]></summary>
+        <author>
+            <name>林深时不见路</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to make full stack e-commerce website using HTML, CSS and JS | Part 01]]></title>
+        <id>https://dev.to/kunaal438/how-to-make-an-e-commerce-website-with-html-css-and-js-01-4m2h</id>
+        <link href="https://dev.to/kunaal438/how-to-make-an-e-commerce-website-with-html-css-and-js-01-4m2h"/>
+        <updated>2022-01-08T13:39:32.000Z</updated>
+        <summary type="html"><![CDATA[#html #css #javascript #webdev]]></summary>
+        <author>
+            <name>Modern Web</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[世界上40%的航运由要燃烧的化石燃料组成]]></title>
         <id>https://hn.buzzing.cc/hn/29850631/</id>
         <link href="https://hn.buzzing.cc/hn/29850631/?score=105&amp;original_url=https%3A%2F%2Fbillmckibben.substack.com%2Fp%2Fthe-happiest-number-ive-heard-in&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29850631&amp;sensitive=false"/>
@@ -4014,6 +4549,32 @@ Answered a question on SOF. The author needed an algorithm to permutate some val
         <summary type="html"><![CDATA[世界上40%的航运由要燃烧的化石燃料组成]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[一定要学的射牌！更快，更远？还能这样玩？]]></title>
+        <id>https://www.bilibili.com/video/av210499373</id>
+        <link href="https://www.bilibili.com/video/av210499373"/>
+        <updated>2022-01-08T13:00:08.000Z</updated>
+        <summary type="html"><![CDATA[射牌，学这一招就够了！牌王格林的绝招，学会它，再平平无奇的流程，也能超帅结尾！
+
+
+Tags:魔术,魔术教学]]></summary>
+        <author>
+            <name>会魔术</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[马斯克的星链计划，想要霸占整个地球上空]]></title>
+        <id>https://www.bilibili.com/video/av423020699</id>
+        <link href="https://www.bilibili.com/video/av423020699"/>
+        <updated>2022-01-08T12:38:36.000Z</updated>
+        <summary type="html"><![CDATA[埃隆·马斯克旗下公司发射的卫星，今年两次危险接近中国空间站，逼得空间站不得不紧急避让。马斯克这是想干嘛？
+
+
+Tags:知识分享官·新年特别篇,知识分享官,太空,星链计划,马斯克,卫星,SpaceX,空间站,美国]]></summary>
+        <author>
+            <name>赛雷三分钟</name>
         </author>
     </entry>
     <entry>
@@ -4049,6 +4610,75 @@ Fedora 36 考虑放弃对 ifcfg 脚本的支持
 老王点评：虽然这是一件好事，但是不可避免的，越来越多的老旧的、遵循古典 UNIX 哲学的东西会慢慢淘汰，这是 UNIX 哲学的没落么？]]></summary>
         <author>
             <name>linux@linux.cn (linux)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[建议火速上交...]]></title>
+        <id>https://www.bilibili.com/video/av722983030</id>
+        <link href="https://www.bilibili.com/video/av722983030"/>
+        <updated>2022-01-08T12:00:02.000Z</updated>
+        <summary type="html"><![CDATA[Tags:野生技术协会,鉴定,博物馆,人文,经验分享]]></summary>
+        <author>
+            <name>天天鉴宝</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[揭秘刘谦最神奇的魔术，戚薇被吓到直呼好可怕！]]></title>
+        <id>https://www.bilibili.com/video/av295529367</id>
+        <link href="https://www.bilibili.com/video/av295529367"/>
+        <updated>2022-01-08T11:50:12.000Z</updated>
+        <summary type="html"><![CDATA[-
+
+
+Tags:必剪创作,春晚魔术,刘谦,申林,街头魔术,戚薇]]></summary>
+        <author>
+            <name>魔术特白</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【文字转语音】人声相似度99.99%！免费白嫖超好用！]]></title>
+        <id>https://www.bilibili.com/video/av765560036</id>
+        <link href="https://www.bilibili.com/video/av765560036"/>
+        <updated>2022-01-08T11:33:54.000Z</updated>
+        <summary type="html"><![CDATA[好多粉丝催更的文字转语音教程来啦，大家多多三连支持哦！
+
+
+Tags:知识分享官·新年特别篇,野生技术协会,技术,知识,视频教程,经验分享,制作过程,人工智能,配音,技术宅]]></summary>
+        <author>
+            <name>zasking</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于早餐的几个误区，你中招了几个？]]></title>
+        <id>https://www.bilibili.com/video/av635547771</id>
+        <link href="https://www.bilibili.com/video/av635547771"/>
+        <updated>2022-01-08T11:28:37.000Z</updated>
+        <summary type="html"><![CDATA[-
+
+
+Tags:生活,科普,早餐,健康,知识分享官·新年特别篇]]></summary>
+        <author>
+            <name>刘加勇医生</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[大便吃起来不是臭的，也不是苦的，而是根本尝不出味道]]></title>
+        <id>https://www.bilibili.com/video/av253107633</id>
+        <link href="https://www.bilibili.com/video/av253107633"/>
+        <updated>2022-01-08T11:25:11.000Z</updated>
+        <summary type="html"><![CDATA[Tags:科学,科普,学习,健康,冷知识,大便,生物]]></summary>
+        <author>
+            <name>一小撮知识</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【小魔】狗为啥改不了吃S？]]></title>
+        <id>https://www.bilibili.com/video/av507968349</id>
+        <link href="https://www.bilibili.com/video/av507968349"/>
+        <updated>2022-01-08T11:10:10.000Z</updated>
+        <summary type="html"><![CDATA[Tags:知识分享官·新年特别篇,知识分享官,科普,打卡挑战,宠物,搞笑,生活,动画]]></summary>
+        <author>
+            <name>-我是小魔-</name>
         </author>
     </entry>
     <entry>
@@ -5279,6 +5909,16 @@ The post HP OMEN 45L Desktop review: It’s a beast of a rig appeared first on x
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[How to Start Using Typescript]]></title>
+        <id>https://dev.to/codesphere/how-to-start-using-typescript-3ki0</id>
+        <link href="https://dev.to/codesphere/how-to-start-using-typescript-3ki0"/>
+        <updated>2022-01-07T13:03:52.000Z</updated>
+        <summary type="html"><![CDATA[#typescript #webdev #javascript #programming]]></summary>
+        <author>
+            <name>Saji Wang, Codesphere Inc.</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[我曾经爱过的电脑]]></title>
         <id>https://hn.buzzing.cc/hn/29837696/</id>
         <link href="https://hn.buzzing.cc/hn/29837696/?score=123&amp;original_url=https%3A%2F%2Ftonsky.me%2Fblog%2Fsyncthing%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29837696&amp;sensitive=false"/>
@@ -5702,6 +6342,16 @@ KR2 学 database 学常见算法，学分布式
 KR3 500 lines 常见的完成]]></summary>
         <author>
             <name>RSS feed of yihong0618's gitblog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[10 Frameworks Software Developers can learn in 2022]]></title>
+        <id>https://dev.to/javinpaul/10-frameworks-software-developers-can-learn-in-2022-193o</id>
+        <link href="https://dev.to/javinpaul/10-frameworks-software-developers-can-learn-in-2022-193o"/>
+        <updated>2022-01-07T06:36:51.000Z</updated>
+        <summary type="html"><![CDATA[#java #programming #development #react]]></summary>
+        <author>
+            <name>javinpaul</name>
         </author>
     </entry>
     <entry>
@@ -13604,6 +14254,16 @@ The post Samsung Gaming Hub is a one-stop-shop for your cloud gaming needs, comi
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[React Component Testing]]></title>
+        <id>https://dev.to/ohdylan/react-component-testing-54ie</id>
+        <link href="https://dev.to/ohdylan/react-component-testing-54ie"/>
+        <updated>2022-01-03T08:02:43.000Z</updated>
+        <summary type="html"><![CDATA[#javascript #react #beginners #webdev]]></summary>
+        <author>
+            <name>Dylan Oh</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[12 年历史，免费 PDF 文档处理工具「PDF 补丁丁」开放源代码]]></title>
         <id>https://www.appinn.com/?p=41006</id>
         <link href="https://www.appinn.com/pdfpatcher/"/>
@@ -13855,6 +14515,16 @@ via: https://opensource.com/article/21/12/raspberry-pi-projects
 本文由 LCTT 原创编译，Linux中国 荣誉推出]]></summary>
         <author>
             <name>linux@linux.cn (linux)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[8 techniques to write cleaner  JavaScript code]]></title>
+        <id>https://dev.to/codewithahsan/8-techniques-to-write-cleaner-javascript-code-369e</id>
+        <link href="https://dev.to/codewithahsan/8-techniques-to-write-cleaner-javascript-code-369e"/>
+        <updated>2022-01-03T01:27:01.000Z</updated>
+        <summary type="html"><![CDATA[#javascript #webdev #node #beginners]]></summary>
+        <author>
+            <name>Muhammad Ahsan Ayaz</name>
         </author>
     </entry>
     <entry>
@@ -14434,6 +15104,16 @@ Instagram]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[10 Resources for Web Developers]]></title>
+        <id>https://dev.to/yigitsr/10-resources-for-web-developers-46g7</id>
+        <link href="https://dev.to/yigitsr/10-resources-for-web-developers-46g7"/>
+        <updated>2022-01-02T08:39:17.000Z</updated>
+        <summary type="html"><![CDATA[#webdev #css #html #opensource]]></summary>
+        <author>
+            <name>Yigit S</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[网络数字身份认证术]]></title>
         <id>https://coolshell.cn/?p=21708</id>
         <link href="https://coolshell.cn/articles/21708.html"/>
@@ -14570,6 +15250,16 @@ Git stash is a built-in command with the distributed version control tool in Git
 The stash can be thought of as a temporary storage for the changes you made, but did not commit. 
 The real-world use case for this feature would be when you are not done working on the changes, but need to pull the updates from the remote repository.
 To use stash, you need to add the fi…]]></summary>
+        <author>
+            <name>Tapajyoti Bose</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Advanced Git Concepts You Should Know]]></title>
+        <id>https://dev.to/ruppysuppy/advanced-git-concepts-you-should-know-nle</id>
+        <link href="https://dev.to/ruppysuppy/advanced-git-concepts-you-should-know-nle"/>
+        <updated>2022-01-02T06:34:05.000Z</updated>
+        <summary type="html"><![CDATA[#git #github #productivity #programming]]></summary>
         <author>
             <name>Tapajyoti Bose</name>
         </author>
@@ -15032,6 +15722,16 @@ The post 2021 letter appeared first on Dan Wang.]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[The Full-Stack Developer Vocabulary(The Full List!)]]></title>
+        <id>https://dev.to/code_jedi/the-full-stack-developer-vocabularythe-full-list-4n5d</id>
+        <link href="https://dev.to/code_jedi/the-full-stack-developer-vocabularythe-full-list-4n5d"/>
+        <updated>2022-01-01T14:49:12.000Z</updated>
+        <summary type="html"><![CDATA[#webdev #javascript #programming #react]]></summary>
+        <author>
+            <name>Code_Jedi</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[0101 - 迂回前进]]></title>
         <id>https://atjason.com/daily/2022-01-01.html</id>
         <link href="https://atjason.com/daily/2022-01-01.html"/>
@@ -15117,6 +15817,16 @@ Please Click here to read this blog👇:
 https://codexashish.blogspot.com/2021/12/top-5-programm...]]></summary>
         <author>
             <name>Ashish Yadav</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CSS tips on Images you need to know]]></title>
+        <id>https://dev.to/fidalmathew/css-tips-on-images-you-need-to-know-33b1</id>
+        <link href="https://dev.to/fidalmathew/css-tips-on-images-you-need-to-know-33b1"/>
+        <updated>2022-01-01T05:01:37.000Z</updated>
+        <summary type="html"><![CDATA[#css #webdev #beginners #javascript]]></summary>
+        <author>
+            <name>Fidal Mathew</name>
         </author>
     </entry>
     <entry>
@@ -15659,6 +16369,16 @@ The post Descendant 12 based on Android 12 is here for the POCO F3, POCO X3, and
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[🚀10 Trending projects on GitHub for web developers - 31st December 2021]]></title>
+        <id>https://dev.to/iainfreestone/10-trending-projects-on-github-for-web-developers-31st-december-2021-46c6</id>
+        <link href="https://dev.to/iainfreestone/10-trending-projects-on-github-for-web-developers-31st-december-2021-46c6"/>
+        <updated>2021-12-31T13:03:19.000Z</updated>
+        <summary type="html"><![CDATA[#react #javascript #webdev #productivity]]></summary>
+        <author>
+            <name>Iain Freestone</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Onboarding screen in Android Application]]></title>
         <id>https://iamvs2002.hashnode.dev/onboarding-screen-in-android-application</id>
         <link href="https://iamvs2002.hashnode.dev/onboarding-screen-in-android-application"/>
@@ -15695,6 +16415,16 @@ The onboarding screen is important as it he...]]></summary>
 很多人用「灵啊」来形容这部电影，不光因为这是一句上海话，也是对导演灵气的夸赞。作为一个外地人，她把上海的精致、文艺和包容力展现得…]]></summary>
         <author>
             <name>少数派编辑部</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[7 front-end interview processes I did in December 2021]]></title>
+        <id>https://dev.to/anabella/7-front-end-interview-processes-i-did-in-december-2021-5484</id>
+        <link href="https://dev.to/anabella/7-front-end-interview-processes-i-did-in-december-2021-5484"/>
+        <updated>2021-12-31T09:08:49.000Z</updated>
+        <summary type="html"><![CDATA[#career #webdev #javascript #react]]></summary>
+        <author>
+            <name>anabella</name>
         </author>
     </entry>
     <entry>
@@ -15930,6 +16660,16 @@ and how strlcat(3) prevents a possible buffer overflow
 here.]]></summary>
         <author>
             <name>Signs of Triviality</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Image Slider with Vanila JS]]></title>
+        <id>https://dev.to/j471n/image-slider-with-vanila-js-22bf</id>
+        <link href="https://dev.to/j471n/image-slider-with-vanila-js-22bf"/>
+        <updated>2021-12-31T04:01:18.000Z</updated>
+        <summary type="html"><![CDATA[#javascript #css #webdev #tutorial]]></summary>
+        <author>
+            <name>Jatin Sharma</name>
         </author>
     </entry>
     <entry>
@@ -19235,6 +19975,16 @@ Get the PDF from my Git repos: https://github.com/tq-bit/dev-cheatsheets/blob/ma
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[A printable, PDF - Git cheatsheet]]></title>
+        <id>https://dev.to/tqbit/a-printable-pdf-git-cheatsheet-33bd</id>
+        <link href="https://dev.to/tqbit/a-printable-pdf-git-cheatsheet-33bd"/>
+        <updated>2021-12-29T22:40:55.000Z</updated>
+        <summary type="html"><![CDATA[#git #github #webdev]]></summary>
+        <author>
+            <name>tq-bit</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[他将在很长一段时间内记住这一点]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rr79vz/he_will_remember_this_for_a_very_long_time/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rr79vz/he_will_remember_this_for_a_very_long_time/?score=75829&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Frr79vz%2Fhe_will_remember_this_for_a_very_long_time%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Frr79vz%2Fhe_will_remember_this_for_a_very_long_time%2F"/>
@@ -20185,6 +20935,16 @@ Craft eXtension，简称 Craft X，是 Craft 2.0 时代的重磅更新，为 Cra
         <summary type="html"><![CDATA[格罗克{山，水}*。了解生成艺术的来临]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to use Node.js to backup your personal files (and learn some webdev skills along the way)]]></title>
+        <id>https://dev.to/alexeagleson/how-to-use-nodejs-to-backup-your-personal-files-and-learn-some-webdev-skills-along-the-way-541a</id>
+        <link href="https://dev.to/alexeagleson/how-to-use-nodejs-to-backup-your-personal-files-and-learn-some-webdev-skills-along-the-way-541a"/>
+        <updated>2021-12-29T04:44:16.000Z</updated>
+        <summary type="html"><![CDATA[#node #javascript #linux #webdev]]></summary>
+        <author>
+            <name>Alex Eagleson</name>
         </author>
     </entry>
     <entry>
@@ -21556,6 +22316,16 @@ The post Third One UI 4.0 beta rolling out to the Galaxy S10 and Galaxy Note 10 
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[10 Helpful React Components Library For Developers.]]></title>
+        <id>https://dev.to/chetan_atrawalkar/10-helpful-react-components-library-for-developers-pim</id>
+        <link href="https://dev.to/chetan_atrawalkar/10-helpful-react-components-library-for-developers-pim"/>
+        <updated>2021-12-28T06:30:04.000Z</updated>
+        <summary type="html"><![CDATA[#react #javascript #webdev #codenewbie]]></summary>
+        <author>
+            <name>Chetan Atrawalkar</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[App+1｜移动设备上标注 PDF 有了「新选手」：Drawboard PDF 登陆 iOS 和 iPadOS]]></title>
         <id>https://sspai.com/post/70608</id>
         <link href="https://sspai.com/post/70608"/>
@@ -21941,6 +22711,16 @@ JVM stands for Java Virtual Machine.It is an abstract machine that provides the 
         <summary type="html"><![CDATA[还记得那个把狗扔给这个人的女孩吗？那条狗现在已经好转了!]]></summary>
         <author>
             <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Frontend Developer Resources 2022]]></title>
+        <id>https://dev.to/nickytonline/frontend-developer-resources-2022-4cp2</id>
+        <link href="https://dev.to/nickytonline/frontend-developer-resources-2022-4cp2"/>
+        <updated>2021-12-28T04:16:47.000Z</updated>
+        <summary type="html"><![CDATA[#javascript #html #css #typescript]]></summary>
+        <author>
+            <name>Nick Taylor</name>
         </author>
     </entry>
     <entry>
@@ -23045,6 +23825,16 @@ The post Lenovo exec confirms the Motorola Razr 3 is in the works appeared first
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Why TurboRepo Will Be The First Big Trend of 2022]]></title>
+        <id>https://dev.to/swyx/why-turborepo-will-be-the-first-big-trend-of-2022-4gfj</id>
+        <link href="https://dev.to/swyx/why-turborepo-will-be-the-first-big-trend-of-2022-4gfj"/>
+        <updated>2021-12-27T16:08:03.000Z</updated>
+        <summary type="html"><![CDATA[#devtools #summaries #javascript]]></summary>
+        <author>
+            <name>swyx</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[These are the best Fractal Design PC cases you can buy in 2022]]></title>
         <id>https://www.xda-developers.com/?p=571963</id>
         <link href="https://www.xda-developers.com/best-fractal-cases/"/>
@@ -23075,6 +23865,16 @@ The post Several affordable Galaxy devices are receiving the December 2021 secur
 The post How to add TPM on your VM for Windows 11: VMware, VirtualBox, Parallels Desktop, and Hyper-V appeared first on xda-developers.]]></summary>
         <author>
             <name>Skanda Hazarika</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Automatically Install NPM Dependencies on Git Pull]]></title>
+        <id>https://dev.to/zirkelc/automatically-install-npm-dependencies-on-git-pull-bg0</id>
+        <link href="https://dev.to/zirkelc/automatically-install-npm-dependencies-on-git-pull-bg0"/>
+        <updated>2021-12-27T14:47:50.000Z</updated>
+        <summary type="html"><![CDATA[#npm #node #git #github]]></summary>
+        <author>
+            <name>Chris</name>
         </author>
     </entry>
     <entry>
@@ -23769,6 +24569,26 @@ DAY4：俄罗斯布拉戈维申斯克市
 如果需要在赶路的时候拍照，拍到是最重要的。这个时候我一般把感光度设置成 400，采用程序优先模…]]></summary>
         <author>
             <name>Hermanchannn</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Git Commands Cheatsheet: Advanced (20+ Git Commands Advanced )]]></title>
+        <id>https://dev.to/aashiya123/git-commands-cheatsheet-advanced-20-git-commands-advanced--35i3</id>
+        <link href="https://dev.to/aashiya123/git-commands-cheatsheet-advanced-20-git-commands-advanced--35i3"/>
+        <updated>2021-12-27T06:19:49.000Z</updated>
+        <summary type="html"><![CDATA[#git #github #devops]]></summary>
+        <author>
+            <name>aashiya123</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[5 Best Online Courses to learn React.js with Hooks in 2022]]></title>
+        <id>https://dev.to/javinpaul/5-best-online-courses-to-learn-react-with-hooks-in-2022-26lf</id>
+        <link href="https://dev.to/javinpaul/5-best-online-courses-to-learn-react-with-hooks-in-2022-26lf"/>
+        <updated>2021-12-27T05:58:21.000Z</updated>
+        <summary type="html"><![CDATA[#react #javascript #webdev #development]]></summary>
+        <author>
+            <name>javinpaul</name>
         </author>
     </entry>
     <entry>
@@ -24936,6 +25756,16 @@ The post How to message unsaved WhatsApp numbers on Android appeared first on xd
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[React Interview Questions (Mid - Senior Level)]]></title>
+        <id>https://dev.to/frontendengineer/react-interview-questions-part-2-mid-senior-level-cal</id>
+        <link href="https://dev.to/frontendengineer/react-interview-questions-part-2-mid-senior-level-cal"/>
+        <updated>2021-12-26T07:36:44.000Z</updated>
+        <summary type="html"><![CDATA[#discuss #react #javascript #career]]></summary>
+        <author>
+            <name>Let&amp;#39;s Code</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[亚马逊推出Re:Post，AWS的 "堆栈溢出"。]]></title>
         <id>https://hn.buzzing.cc/hn/29685927</id>
         <link href="https://hn.buzzing.cc/hn/29685927"/>
@@ -24953,6 +25783,16 @@ The post How to message unsaved WhatsApp numbers on Android appeared first on xd
         <summary type="html"><![CDATA[沉默的声音。美国的噪音地图。]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[1000+ Web development resources]]></title>
+        <id>https://dev.to/codewhiteweb/1000-web-development-resources-24mb</id>
+        <link href="https://dev.to/codewhiteweb/1000-web-development-resources-24mb"/>
+        <updated>2021-12-26T05:42:16.000Z</updated>
+        <summary type="html"><![CDATA[#discuss #webdev #javascript #devops]]></summary>
+        <author>
+            <name>CodeWhiteWeb</name>
         </author>
     </entry>
     <entry>
@@ -25881,6 +26721,16 @@ What do you think about this new proposal?]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[if/else in CSS]]></title>
+        <id>https://dev.to/quentindamianino/ifelse-in-css-45f5</id>
+        <link href="https://dev.to/quentindamianino/ifelse-in-css-45f5"/>
+        <updated>2021-12-25T22:53:31.000Z</updated>
+        <summary type="html"><![CDATA[#news #css #webdev #beginners]]></summary>
+        <author>
+            <name>Damian Brdej</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[一个孩子被照顾他过圣诞节的家庭收养的感人时刻]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/roc51m/the_heartwarming_moment_a_child_was_adopted_by/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/roc51m/the_heartwarming_moment_a_child_was_adopted_by/"/>
@@ -26480,6 +27330,16 @@ The post First 10 things to do with a new Apple Watch appeared first on xda-deve
         <summary type="html"><![CDATA[从欧空局网络电视观看JWST发射实况]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Useful JavaScript Code Snippets for Common Problems 😎]]></title>
+        <id>https://dev.to/codewithtee/useful-javascript-code-snippets-for-common-problems-2lpc</id>
+        <link href="https://dev.to/codewithtee/useful-javascript-code-snippets-for-common-problems-2lpc"/>
+        <updated>2021-12-25T13:31:16.000Z</updated>
+        <summary type="html"><![CDATA[#javascript #webdev #codenewbie #beginners]]></summary>
+        <author>
+            <name>Tabassum Khanum</name>
         </author>
     </entry>
     <entry>
@@ -27814,6 +28674,16 @@ TikTok- https://www.tiktok.com/@adamw]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[You Don't Need To Learn ReactJS Now]]></title>
+        <id>https://dev.to/elijahtrillionz/you-dont-need-to-learn-reactjs-now-2an</id>
+        <link href="https://dev.to/elijahtrillionz/you-dont-need-to-learn-reactjs-now-2an"/>
+        <updated>2021-12-24T16:07:46.000Z</updated>
+        <summary type="html"><![CDATA[#react #webdev #javascript #beginners]]></summary>
+        <author>
+            <name>Elijah Trillionz</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[First 10 things to do with a new Samsung Galaxy Phone]]></title>
         <id>https://www.xda-developers.com/?p=573671</id>
         <link href="https://www.xda-developers.com/first-10-things-to-do-samsung-galaxy-phone/"/>
@@ -27925,6 +28795,16 @@ The post OPPO Find N Review: Combining the best of Samsung and Huawei’s foldab
         <summary type="html"><![CDATA[Mkrl/misbrands: 最讨厌的IT贴纸]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Web 1.0, Web 2.0 & Web3 Explained]]></title>
+        <id>https://dev.to/narottam04/web-10-web-20-web-30-explained-591n</id>
+        <link href="https://dev.to/narottam04/web-10-web-20-web-30-explained-591n"/>
+        <updated>2021-12-24T12:40:47.000Z</updated>
+        <summary type="html"><![CDATA[#beginners #blockchain #web3 #webdev]]></summary>
+        <author>
+            <name>Narottam04</name>
         </author>
     </entry>
     <entry>
@@ -29812,6 +30692,16 @@ Firefox 只限制了部分附加组件在 Android 端使用，Iceraven 支持更
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[How to make a QR Code generator using JavaScript?]]></title>
+        <id>https://dev.to/murtuzaalisurti/how-to-make-a-qr-code-generator-using-vanilla-javascript-3cla</id>
+        <link href="https://dev.to/murtuzaalisurti/how-to-make-a-qr-code-generator-using-vanilla-javascript-3cla"/>
+        <updated>2021-12-23T07:52:46.000Z</updated>
+        <summary type="html"><![CDATA[#webdev #javascript #tutorial #beginners]]></summary>
+        <author>
+            <name>murtuza</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[如果你不是美国人，很容易被混淆，tbh。]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/Unexpected/comments/rm89vf/if_youre_not_american_its_easy_to_get_confused_tbh/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/Unexpected/comments/rm89vf/if_youre_not_american_its_easy_to_get_confused_tbh/"/>
@@ -31101,6 +31991,16 @@ The post Don’t Overlook Security When it Comes to your Email appeared first on
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Stop Building Your UI Components like this❌]]></title>
+        <id>https://dev.to/harshkc/stop-building-your-ui-components-like-this-19il</id>
+        <link href="https://dev.to/harshkc/stop-building-your-ui-components-like-this-19il"/>
+        <updated>2021-12-22T13:56:02.000Z</updated>
+        <summary type="html"><![CDATA[#javascript #react #productivity #webdev]]></summary>
+        <author>
+            <name>Harsh Choudhary</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[啦啦队队长与日常工作脱节的最佳原因]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rltzif/cheerleader_out_of_step_with_routine_for_the_best/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rltzif/cheerleader_out_of_step_with_routine_for_the_best/"/>
@@ -31108,6 +32008,16 @@ The post Don’t Overlook Security When it Comes to your Email appeared first on
         <summary type="html"><![CDATA[啦啦队队长与日常工作脱节的最佳原因]]></summary>
         <author>
             <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introduction to Docker for Javascript Developers (feat Node.js and PostgreSQL)]]></title>
+        <id>https://dev.to/alexeagleson/docker-for-javascript-developers-41me</id>
+        <link href="https://dev.to/alexeagleson/docker-for-javascript-developers-41me"/>
+        <updated>2021-12-22T13:24:29.000Z</updated>
+        <summary type="html"><![CDATA[#javascript #webdev #docker #node]]></summary>
+        <author>
+            <name>Alex Eagleson</name>
         </author>
     </entry>
     <entry>
@@ -32040,6 +32950,16 @@ Twitter: http://www.twitter.com/dashiexp]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[I share my Notion template with over 440 pages of web development content]]></title>
+        <id>https://dev.to/colocodes/i-share-my-notion-template-with-over-440-pages-of-web-development-content-22cf</id>
+        <link href="https://dev.to/colocodes/i-share-my-notion-template-with-over-440-pages-of-web-development-content-22cf"/>
+        <updated>2021-12-21T19:59:58.000Z</updated>
+        <summary type="html"><![CDATA[#javascript #webdev #beginners #programming]]></summary>
+        <author>
+            <name>Damian Demasi</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Sublime Text 4 (Build 4126)]]></title>
         <id>https://hn.buzzing.cc/hn/29636194</id>
         <link href="https://hn.buzzing.cc/hn/29636194"/>
@@ -32372,6 +33292,16 @@ Check out http://shopify.com/markrober and get a 14 day free trial!]]></summary>
         <summary type="html"><![CDATA[<p>孩子不是因为优秀而被鼓励，而是因为鼓励而优秀。</p>]]></summary>
         <author>
             <name>Jason</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Build a Pomodoro Timer using HTML, CSS and Javascript]]></title>
+        <id>https://dev.to/sansk/build-a-pomodoro-timer-using-html-css-and-javascript-53do</id>
+        <link href="https://dev.to/sansk/build-a-pomodoro-timer-using-html-css-and-javascript-53do"/>
+        <updated>2021-12-21T13:45:22.000Z</updated>
+        <summary type="html"><![CDATA[#javascript #webdev #tutorial #css]]></summary>
+        <author>
+            <name>Sangy K</name>
         </author>
     </entry>
     <entry>
@@ -32947,6 +33877,16 @@ Wanwisa Chumngoen, Chih-Feng Chen and Fa-Jui Tan. (2017). Effects of moist- and 
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Top 7 Platforms to Master Coding in 2022]]></title>
+        <id>https://dev.to/thenomadevel/top-7-platforms-to-master-coding-in-2022-7d</id>
+        <link href="https://dev.to/thenomadevel/top-7-platforms-to-master-coding-in-2022-7d"/>
+        <updated>2021-12-21T09:38:14.000Z</updated>
+        <summary type="html"><![CDATA[#codenewbie #javascript #webdev #python]]></summary>
+        <author>
+            <name>Nomadev💻🔱</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[不读可以先收藏 06 | 本月值得一读的 7 篇好文]]></title>
         <id>https://sspai.com/post/70538</id>
         <link href="https://sspai.com/post/70538"/>
@@ -33309,6 +34249,16 @@ https://forms.gle/JDuGrSzM4F6mdo6D9
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[CSS isn't magic. All nuances about the display property]]></title>
+        <id>https://dev.to/melnik909/css-isnt-magic-all-nuances-about-the-display-property-3fok</id>
+        <link href="https://dev.to/melnik909/css-isnt-magic-all-nuances-about-the-display-property-3fok"/>
+        <updated>2021-12-20T19:33:46.000Z</updated>
+        <summary type="html"><![CDATA[#css #beginners #tutorial #webdev]]></summary>
+        <author>
+            <name>Stas Melnikov</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[千禧一代左派赢得智利下届总统选举]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/worldnews/comments/rk7rku/leftist_millennial_wins_election_as_chiles_next/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/worldnews/comments/rk7rku/leftist_millennial_wins_election_as_chiles_next/"/>
@@ -33614,6 +34564,26 @@ https://twitter.com/@UpchurchEnt]]></summary>
         <summary type="html"><![CDATA[购物者追赶在杂货店抢夺87岁妇女钱包的男子]]></summary>
         <author>
             <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Golang Tutorial for Beginners [FREE Course] 🎉]]></title>
+        <id>https://dev.to/techworld_with_nana/golang-tutorial-for-beginners-free-course-330</id>
+        <link href="https://dev.to/techworld_with_nana/golang-tutorial-for-beginners-free-course-330"/>
+        <updated>2021-12-20T15:13:23.000Z</updated>
+        <summary type="html"><![CDATA[#go #programming #beginners #tutorial]]></summary>
+        <author>
+            <name>Techworld with Nana</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Think With A Programmer's Brain]]></title>
+        <id>https://dev.to/rfornal/think-with-a-programmers-brain-2109</id>
+        <link href="https://dev.to/rfornal/think-with-a-programmers-brain-2109"/>
+        <updated>2021-12-20T15:05:01.000Z</updated>
+        <summary type="html"><![CDATA[#beginners #programming #productivity #100daysofcode]]></summary>
+        <author>
+            <name>bob.ts</name>
         </author>
     </entry>
     <entry>
@@ -34237,6 +35207,16 @@ If u read this far down in the desc I love u!]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Start Testing Your JavaScript Code with Jest]]></title>
+        <id>https://dev.to/ohdylan/start-testing-your-javascript-codes-with-jest-2gfm</id>
+        <link href="https://dev.to/ohdylan/start-testing-your-javascript-codes-with-jest-2gfm"/>
+        <updated>2021-12-19T13:56:48.000Z</updated>
+        <summary type="html"><![CDATA[#javascript #testing #webdev #programming]]></summary>
+        <author>
+            <name>Dylan Oh</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[在老旧设备上显示文字、时钟、句子、日历、倒数日[Web]]]></title>
         <id>https://www.appinn.com/?p=40862</id>
         <link href="https://www.appinn.com/simple-pages-dms/"/>
@@ -34305,6 +35285,16 @@ More Five Nights at Freddy's ► https://www.youtube.com/watch?v=iOztnsBPrAA&lis
 Horror Outro ► https://soundcloud.com/shurkofficial/haunted]]></summary>
         <author>
             <name>Youtube 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Life Pro Tips for TailwindCSS Projects]]></title>
+        <id>https://dev.to/wadecodez/tips-to-enhance-tailwindcss-projects-34ap</id>
+        <link href="https://dev.to/wadecodez/tips-to-enhance-tailwindcss-projects-34ap"/>
+        <updated>2021-12-19T01:51:44.000Z</updated>
+        <summary type="html"><![CDATA[#css #tailwindcss #webdev #javascript]]></summary>
+        <author>
+            <name>Wade Zimmerman</name>
         </author>
     </entry>
     <entry>
@@ -34601,6 +35591,16 @@ Click here for a free trial! 🡆 http://share.epidemicsound.com/TBNR
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[How to Create a React Typescript Monorepo with Git Submodules]]></title>
+        <id>https://dev.to/alexeagleson/how-to-create-a-node-and-react-monorepo-with-git-submodules-2g83</id>
+        <link href="https://dev.to/alexeagleson/how-to-create-a-node-and-react-monorepo-with-git-submodules-2g83"/>
+        <updated>2021-12-17T13:12:16.000Z</updated>
+        <summary type="html"><![CDATA[#webdev #react #javascript #git]]></summary>
+        <author>
+            <name>Alex Eagleson</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Java Weekly, Issue 416]]></title>
         <id>https://www.baeldung.com/?p=113944</id>
         <link href="https://feeds.feedblitz.com/~/675366894/0/baeldung~Java-Weekly-Issue"/>
@@ -34778,6 +35778,26 @@ Spotify 的前产品经理有一天在推特发言，总结自己这些年在音
 <p>问题在于，在这件事情上，我花了太多的时间精力，这]]></summary>
         <author>
             <name>Jason</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[9 Smart Ways To Stand Out As A Developer In A World Full Of Coders]]></title>
+        <id>https://dev.to/dragosnedelcu/9-smart-ways-to-stand-out-as-a-developer-in-a-world-full-of-coders-2b81</id>
+        <link href="https://dev.to/dragosnedelcu/9-smart-ways-to-stand-out-as-a-developer-in-a-world-full-of-coders-2b81"/>
+        <updated>2021-12-16T13:54:19.000Z</updated>
+        <summary type="html"><![CDATA[#webdev #programming #softwaredevelopment #career]]></summary>
+        <author>
+            <name>Dragos Nedelcu</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[🔥🤯 Amazing Portfolio website using HTML, CSS and JS.]]></title>
+        <id>https://dev.to/kunaal438/amazing-portfolio-website-using-html-css-and-js-l8f</id>
+        <link href="https://dev.to/kunaal438/amazing-portfolio-website-using-html-css-and-js-l8f"/>
+        <updated>2021-12-16T13:44:31.000Z</updated>
+        <summary type="html"><![CDATA[#html #css #javascript #webdev]]></summary>
+        <author>
+            <name>Modern Web</name>
         </author>
     </entry>
     <entry>
@@ -35171,6 +36191,16 @@ Use your favorite package manager to scaffold a new project and f…]]></summary
         <summary type="html"><![CDATA[This post was originally published for Codecast.
 Branding yourself online has become increasingly important as landing a role in the tech industry is constantly getting more competitive. If you want to freelance, creating a personal brand is the absolute best way to land roles, but it’s still important for those of us looking to gain more traditional roles. Creating a strong online presence that is clearly branded will help employers and clients understand exactly what you can do for them. It will also create a strong sense of skill and authenticity, as well as display your communication skills. Plus, it’s a great way to network.
 So what exactly goes into creating a personal brand? The good news is that you don’t need to be a marketing expert to accomplish this, you just need to spend a bi…]]></summary>
+        <author>
+            <name>Amy Oulton</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How To: Brand Yourself As A Developer]]></title>
+        <id>https://dev.to/amyoulton/how-to-brand-yourself-as-a-developer-397b</id>
+        <link href="https://dev.to/amyoulton/how-to-brand-yourself-as-a-developer-397b"/>
+        <updated>2021-12-15T22:24:56.000Z</updated>
+        <summary type="html"><![CDATA[#webdev #beginners #productivity #career]]></summary>
         <author>
             <name>Amy Oulton</name>
         </author>
@@ -36183,6 +37213,16 @@ smeb是当时世界第一上单，即便在s8也能按着duke杀，和巅峰the 
 考试，不管是四六级考试、研究生考试，还是职业资格考试、专业技术资格考试（职称考试）都会有各种各样的辅导班。不少人也会去选择报名这样的辅导班。当然无论辅导班是否对自己的考试有助力，最终的考…]]></summary>
         <author>
             <name>jijiali</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Why Every Developer should Learn Docker in 2022]]></title>
+        <id>https://dev.to/javinpaul/why-every-developer-should-learn-docker-in-2022-2ndi</id>
+        <link href="https://dev.to/javinpaul/why-every-developer-should-learn-docker-in-2022-2ndi"/>
+        <updated>2021-12-15T08:39:56.000Z</updated>
+        <summary type="html"><![CDATA[#docker #devops #programming #developer]]></summary>
+        <author>
+            <name>javinpaul</name>
         </author>
     </entry>
     <entry>
@@ -39253,6 +40293,16 @@ images.cv provide you with an easy way to build image datasets.
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Announcing the MongoDB Atlas Hackathon on DEV!]]></title>
+        <id>https://dev.to/devteam/announcing-the-mongodb-atlas-hackathon-on-dev-4b6m</id>
+        <link href="https://dev.to/devteam/announcing-the-mongodb-atlas-hackathon-on-dev-4b6m"/>
+        <updated>2021-12-13T19:27:24.000Z</updated>
+        <summary type="html"><![CDATA[#atlashackathon #mongodb]]></summary>
+        <author>
+            <name>Gracie Gregory (she/her), The DEV Team</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[JavaScript Classes – How They Work with Use Case Example]]></title>
         <id>61aca6a8946db661defb7a86</id>
         <link href="https://www.freecodecamp.org/news/javascript-classes-how-they-work-with-use-case/"/>
@@ -40173,6 +41223,16 @@ The post OnePlus Nord 2 CE might feature a MediaTek Dimensity 900 chip and 65W f
 The post These are the best cheap laptops under $600 in 2021 appeared first on xda-developers.]]></summary>
         <author>
             <name>Kunal Khullar</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Dark Side of Software Development]]></title>
+        <id>https://dev.to/vibalijoshi/the-dark-side-of-software-development-441e</id>
+        <link href="https://dev.to/vibalijoshi/the-dark-side-of-software-development-441e"/>
+        <updated>2021-12-13T10:57:17.000Z</updated>
+        <summary type="html"><![CDATA[#discuss #productivity #career]]></summary>
+        <author>
+            <name>vibalijoshi</name>
         </author>
     </entry>
     <entry>
@@ -41150,44 +42210,6 @@ Since Python is a dynamically typed language, coding modules for example a piece
         <summary type="html"><![CDATA[不使用服务时，Riot可能会在你的电脑后台运行程序。]]></summary>
         <author>
             <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Building a simple alarm clock with Dasha, Express, Ejs and tailwind which force user to wake up]]></title>
-        <id>https://dev.to/nerdjfpb/building-a-simple-alarm-clock-with-dasha-express-ejs-and-tailwind-which-force-user-to-wake-up-5b7a</id>
-        <link href="https://dev.to/nerdjfpb/building-a-simple-alarm-clock-with-dasha-express-ejs-and-tailwind-which-force-user-to-wake-up-5b7a"/>
-        <updated>2021-12-12T19:55:40.000Z</updated>
-        <summary type="html"><![CDATA[Most probably, the title doesn't give a good idea about what we will build together today! We are trying to build an alarm clock that will call users and solve a riddle. It'd not cut the call unless they got it correct. But there is a chance of saying no if they don't want to wake up at that point. This blog will be vast if I complete the full features. So I'll try to make a minimal version where we'll use Dasha(https://dasha.ai/) to make this. We are going to use 
-Npm (for installing packages)
-Express js (For the API development) 
-Ejs (templating language for HTML)
-TailwindCSS (for styling)
-Dasha (for making alarm clock interesting with the help of conversational AI)
-Vscode (code editor)
-Github (for getting dasha blank app)
-Let's start building, but before that, let's learn what it'll loo…]]></summary>
-        <author>
-            <name>Muhammad Ali (Nerdjfpb)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[加利福尼亚州是唯一隐藏其支出的州--每年近3000亿美元]]></title>
-        <id>https://hn.buzzing.cc/hn/29530203</id>
-        <link href="https://hn.buzzing.cc/hn/29530203"/>
-        <updated>2021-12-12T19:53:03.000Z</updated>
-        <summary type="html"><![CDATA[加利福尼亚州是唯一隐藏其支出的州--每年近3000亿美元]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Sierra Canyon (CA) vs. Perry (AZ) - 西部豪门 - ESPN转播片段]]></title>
-        <id>https://youtube.buzzing.cc/youtube/GetrLml0434</id>
-        <link href="https://youtube.buzzing.cc/youtube/GetrLml0434"/>
-        <updated>2021-12-12T19:47:10.000Z</updated>
-        <summary type="html"><![CDATA[Bronny James and Sierra Canyon look to close out Hoophall West with a win in the Pheonix Suns arena against a game Perry squad.]]></summary>
-        <author>
-            <name>Youtube 热门</name>
         </author>
     </entry>
 </feed>

@@ -24,6 +24,19 @@
           <section class="articles-per-source">
             <article>
               <details class="article-expander">
+                <summary class="article-expander__title">Side Projects: React Digital Display - Part 1</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/kamil7x/side-projects-react-digital-display-part-1-3g2m">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(6 min)</span>
+                    <span>Think about this for a moment. You can find a great deal of reasons to make side projects – such as learning, having fun or creating something that will be used and appreciated by others. It requires an ample amount of creativity and hard work. 
+Even though some may disagree, I think that there is way more pros than cons to this. In this series, we are going to write a little bit of code together and see what can be accomplished.
+Our first project is called React Digital Display. As the name suggests, it is a React component, which displays text. Although it looks quite simple, we will add one lovely feature: it will be able to take different components as display modules and use them under the hood. For example, it can be a 7-segment module, or a dot matrix, or anything you can imagine. I…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
                 <summary class="article-expander__title">Striver&#x27;s SDE Sheet Journey - #12 Count inversions in an array</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://dev.to/sachin26/strivers-sde-sheet-journey-12-count-inversions-in-an-array-4phl">
                   <div class="article-summary-box-inner">
@@ -251,6 +264,35 @@ Well, an htmlCollection is a live and ordered list of nodes that represents a co
 The htmlCollection may seem very much like an array, but it is not. That’s why whenever you try to use array methods like forEach(), push(), or join() on an htmlCollection, you get different types of errors similar to the one above.
 Another collection of objects that happens to be very similar to the htmlCollection, is the nodeList. While they may both be an array-like list of html elements, the htmlCollection is a live list while the nodeList can either be live or static.
 Being …</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">5 Big Mistakes Companies Make When Testing Software</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/talina/5-big-mistakes-companies-make-when-testing-software-2604">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>Most software companies struggle with releasing quality code that doesn&#x27;t break critical user workflows.
+Companies invest significant dollars in testing their product to counter this but often ship a P0 bug anyway.
+Here are 5 root causes for software bugs.
+A common mistake and often a harder one to fix during the nascent phases of software.
+Naturally, if the pre-production environment never hits an edge case that can occur in production, it is impossible to validate enhancements accurately.
+Thought: Deploy a snapshot of the production environment as a pre-release environment.
+Engineering teams write code to work in the &quot;present&quot; and the &quot;future&quot;, making version testing hard. Software should not be forward-facing.
+Example: Release #1 deploys software with a v1 dependency, and release #2 now uses a v2 version of the dependency. This change is non-idempotent - we wipe out a variable value by storing only the latest state. 
+What happens to the deployed state that works with a v1 dependency? Does it break or work with the new release?
+Thought: Always support X states of existing data. Streamline rollbacks.
+As more folks campaign for infrastructure as code, we move towards automating infrastructure deployments.
+But does a change in automation break existing infrastructure?
+Thought: Can backward compatibility testing solve this problem?
+Assuming the network behaves the same irrespective of time and region is a recipe for software failure.
+Thought: Can Edge Testing gauge pre-release software inconsistencies?
+With the microservices architecture, a change in one service can cause a failure in unrelated user functionality. Testing a new release in a silo for a fixed subset of features doesn&#x27;t help.
+Thought: Replay tests for all critical user workflows for every release to generate an accurate failures heatmap.
+Let me know if you&#x27;ve solved any of these mistakes and how.
+Until later! :)</span>
                   </div>
                 </a>
               </details>
@@ -639,6 +681,25 @@ Java is a general-purpose programming language. It has features that readily sup
         <section>
           <h3 class="source-name"><a class="source-name__link" href="https://sspai.com">少数派</a></h3>
           <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">用电脑打原神、王者荣耀…… 为 Mac 装 iOS 应用还能这样玩：PlayCover</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://sspai.com/post/70602">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>让 macOS 直接运行 iOS 程序已经不是什么新鲜的事情了。自从 M1 系列的 Mac 问世以来，我们在 Mac App Store 甚至可以直接下载安装受支持的 iOS 应用，并用键盘鼠标来模拟触摸操作在 macOS 上使用这些 iOS 应用。虽然已经有很多 iOS 应用直接支持了在 macOS 上的安装，还是有一些应用开发者为了减少开发成本或者担心其他因素，选择将自己的 iOS 应用从 Mac App Store 上移除。
+如果我们依旧希望在系统架构完全支持的 M1 系列 Mac 上面使用这些应用，那么就需要特殊的手段 —— 旁加载，也就是 sideloading —— 才能安装这些 iOS 应用。这是 macOS 11.2.3 之前的常规操作，我们称这段时期为「前 macOS 旁加载」时代。
+显然，Apple 并不想让我们轻松地就将未经验证、不受支持的 iOS 应用直接在 macOS 上成功运行。曾被允许的简单「旁加载」在 macOS 11.3 的更新中被 Apple 禁用，自然最新的 macOS Monterey 12.1 也不受支持。因此，在「后 macOS 旁加载」时代，我们需要 PlayCover —— 一个专门用于在 M1 Mac 上安装 iOS 应用的辅助程序的帮助，才能够完整地在 M1 Mac 上面安装并体验未受支持的 iOS 应用。
+在 M1 Mac 上面运行由 PlayCover 安装的「原神」
+PlayCover 简介
+后 macOS 旁加载时代 PlayCover 的优势
+如前面提到，虽然依旧是「旁加载」的原理，但是 PlayCover 本身已经是一套完整的在 macOS 上运行 iOS 程序的辅助软件，相比于「前 macOS 旁加载」时代，PlayCover：
+
+能够非常方便地在 M1 Mac 上面通过解密的 IPA 来安装 iOS 应用；…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">一抹微黄的无尽想象——与 Mini Cooper 共度的冲动时光</summary>
@@ -3644,6 +3705,40 @@ via: https://www.networkworld.com/article/3539058/iot-offers-a-way-to-track-cov
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.bilibili.com">bilibili 科学科普 最热视频</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">流言终结：为了验证武僧穿玻璃，几人直接请来少林武僧【第3集】</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av635592498">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>Tags:打卡挑战</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://dev.to/top/month">dev.to top (month)</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">30 JavaScript Libraries to use in your Projects</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/devdefinitive/30-javascript-libraries-to-use-in-your-projects-1gd3">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(10 min)</span>
+                    <span>#webdev #javascript #programming #beginners</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://sspai.com">少数派</a></h3>
           <section class="articles-per-source">
             <article>
@@ -4899,6 +4994,617 @@ import numpy as np
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
                     <span>科维德的宿命论已经开始了</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.bilibili.com">bilibili 野生技能协会 最热视频</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">打造童话般的生存庇护所，户外露营天然小屋、草皮屋顶、壁炉和楼梯</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av253026904">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>https://www.youtube.com/watch?v&#x3D;wnpQln3EMfQ&amp;t&#x3D;3s
+今天我用丛林风格的天然材料准备了一个营地和生活区。我用原始的方法制作了一个天然楼梯和一个天然壁炉。这是一个小而有效的庇护所。由于庇护所的背面是天然石材，因此它的温度非常好。在下一部分中，我将在这里喝咖啡，我将完成缺失的部分。
+
+
+Tags:野生技术协会,丛林,野外生存,户外,露营,烹饪,经验分享,避难所,庇护所,淘金</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">【面试秘笈】想要100%拿到大厂Offer该怎么准备？简历优化+面试指导+现场录音+入职晋升【清华大佬马士兵带你全方位吊打面试官】</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av593060165">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>距离2022年的面试黄金季还有不到三个月，打算找工作，或者打算跳槽的同学们要开始做好准备了~！
+这期视频从面试官的角度出发，讲了面试着重考察同学们的几种能力，以及如何去准备、答题，在面试的时候可以稳赢~包括入职之后该如何快速融入团队以及晋升，干货满满~
+配合往期「大厂必问技术点」食用效果更佳！
+JAVA面试必问的102个知识点：BV1bf4y1Q7Gn
+常见1000+面试题及答案精讲：BV1hf4y1h7R6
+Spring源码深度解析31精讲：BV1iZ4y137CZ
+
+
+Tags:计算机,互联网,编程,面试,求职,简历,面试技巧,经验分享,野生技术协会,JAVA面试,知识分享官·新年特别篇</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">带你看美军次世代步枪 -《大胡子说AR》第三集</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av850613764">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>《大胡子说AR》系列第三集为大家带来短程活塞AR的讲解以及美军次世代步枪-MCX的介绍
+
+
+Tags:知识分享官·新年特别篇,知识分享官,战术,射击,军事,美军,特种部队,枪械,战争,战地,吃鸡</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">【肉松】【Live2d】五轴超强可动性 表情总数350+个</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av253044723">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>五轴分别指：
+X、Y、Z、平移、屏距
+还有一个轴是上下平移 但因为是映射的Y，所以没有单独算
+
+金主：@鹿玖鹿鹿鹿  
+画师：@凰明明明是一只学畜  
+模型师：我
+
+
+委托咨询qq641268874 目前排单到今年6月 价位在2k~3k （加好友记得备注
+
+
+Tags:肉松,Live2d,vup,vtb,虚拟主播,prprlive,furry,福瑞,facerig,面捕</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">我用古董示波器摆烂了你的AE作业！</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av978008259">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>P1示波器信号音频来自UP：5632645
+他创作了很棒示波器的动画，快去看看！
+P2我自己尝试了一下~
+
+
+Tags:自制,特效,后期,示波器,UP TALK,过年随手拍</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">为什么现在部分985高校还在给大一上C语言课？知道真相的我裂开了</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av593108255">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>同学们如果觉得有帮助的话，不要白嫖UP主的哦，给UP主点一个赞吧，这样可以让更多的同学看到！如果同学们还有什么计算机相关，互联网大厂求职，技术方向等等问题，都可以在评论区给UP主留言，或者关注UP主哈！
+
+
+Tags:知识分享官·新年特别篇,知识分享官,野生技术协会,计算机,C++,C语言,大学生,科技,经验分享,编程,程序员</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">稀碎一地啊...</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av252999825">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>Tags:无限搞笑公司6.0,无限搞笑公司,野生技术协会,鉴定,博物馆,人文,学习</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">大学计算机老师那么厉害，为什么他们不去大公司当程序员拿高薪？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av295597968">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>Tags:野生技术协会,编程学习,计算机专业,学习,经验分享,知识,大学生,计算机,代码,教育</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">我用实验室摆烂了你的AE作业</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av978043677">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>所有视频材料均为废弃、过期材料，且没有浪费！老师你听我狡辩
+
+
+Tags:UP TALK,过年随手拍,生活,AE,过年,实验室,娱乐</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">AE神光棒出现教程（省流版）</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av423026726">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>Tags:自制,教程,特摄,特效,后期,视频教程,制作过程,野生技术协会,知识分享官,知识分享官·新年特别篇</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">猛男就是要头戴花花玩扑克牌！</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av338042678">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>如果喜欢这副“TH梅”，可以到天猫“bicycle旗舰店”购买： https://m.tb.cn/h.fQTsUZ0?sm&#x3D;70b067
+订单中备注暗号“咕咕星好帅”，可以额外赠送木质展示架
+
+
+Tags:知识分享官·新年特别篇,知识分享官,学习,自制,花切,开箱,咕咕星,搞笑</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">【公开课】斯坦福李飞飞教授教你计算机视觉，瞬间清晰透彻的【中文版】/CV课程(中英字幕)</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av508021736">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>课件相关资料加WX：gupao-cola  暗号：666（免费领取哦）输入暗号必领取哦！
+
+还可领取一份200G人工智能学习资料礼包（内含：两大Pytorch、TensorFlow实战框架视频、图像识别、OpenCV、计算机视觉、深度学习与神经网络等等等等视频、代码、PPT以及深度学习书籍 ！你想要的里面都有！）
+
+源码、资料、文档、课件看up个人主页简介或动态置顶，有领取方式[OK]
+制作不易，大家记得点个关注！
+
+
+Tags:计算机,知识,人工智能,AI,斯坦福,计算机视觉,机器学习,经验分享,神经网络,深度学习</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">这可能是你见过的最花哨的纸牌.....</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av338040817">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>拍摄时间大概是2021年的十月左右吧
+后来一直忘记剪了
+不过也杜绝了广告的嫌疑了
+因为人家早就卖完了
+哈哈哈
+
+
+Tags:跟着UP主创作吧（第二期）,我的隐藏技能,学习,野生技术协会,技术,魔术,纸牌,花切,yolo</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">【海贼王】这个白胡子建模TM要是火了，我手抄点赞这个视频的所有ID！！！</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av380535581">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>up创建了一个学习交流的平台，QQ交流群：807534921 对建模感兴趣、有学游戏建模的小伙伴可以加入一起交流学习~ 在群里解答问题
+3DMAX全套教程集：https://www.bilibili.com/video/BV1H44y1r7kY
+ZBrush全套教程集：https://www.bilibili.com/video/BV1GB4y1F7Hn/
+群里面还有3DMAX 、zbrush、maya、C4D、bp、sp、八猴等等建模全流程软件（免费等你来嫖~）
+
+
+Tags:模型,Zbrush,3D建模,野生技术协会,制作过程,知识,技术宅,CG,海贼王,白胡子</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">阿里面试“TCP/IP”网络协议23连问，23步告诉你，TCP/IP网络协议的最全面总结， 最好的网络协议教程，都帮你整理好了</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av295561300">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>阿里面试“TCP/IP”网络协议23连问，23步告诉你，TCP/IP网络协议的最全面总结， 最好的网络协议教程，都帮你整理好了
+领取开篇“图解计算机、网络、操作系统”福利+教程对应笔记，请动动你的小手帮up三连一下，添加VX：① yunduoa2019 ② bjmsb666 任选其一（备注B站 ）免费获取，更可领取Java高频面试题资料和Java架构师学习路线图
+
+
+Tags:知识分享官·新年特别篇,JAVA,野生技术协会,IT,面试,技术宅,公开课,编程,程序员,架构,计算机</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">清华教授用72小时讲完的python！2022最新版630集，拿走不谢，学不会退出IT界</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av893076367">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>尚学堂官方
+制作不易，大家记得点个关注，一键三连呀【点赞、收藏、转发】感谢支持~
+1.更适合零基础学员：0基础从你适不适合开始讲起
+2.课程内容推陈出新：持续更新最新内容
+3.技术讲解更深入、更全面，代码量大、案例丰富、一路实战
+
+
+Tags:计算机,IT,PYTHON,python入门,python基础,python爬虫,PYTHON爬虫,人工智能,PYTHON教程,python数据分析</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">一定要学的射牌！更快，更远？还能这样玩？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av210499373">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>射牌，学这一招就够了！牌王格林的绝招，学会它，再平平无奇的流程，也能超帅结尾！
+
+
+Tags:魔术,魔术教学</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">建议火速上交...</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av722983030">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>Tags:野生技术协会,鉴定,博物馆,人文,经验分享</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">揭秘刘谦最神奇的魔术，戚薇被吓到直呼好可怕！</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av295529367">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>-
+
+
+Tags:必剪创作,春晚魔术,刘谦,申林,街头魔术,戚薇</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">【文字转语音】人声相似度99.99%！免费白嫖超好用！</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av765560036">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>好多粉丝催更的文字转语音教程来啦，大家多多三连支持哦！
+
+
+Tags:知识分享官·新年特别篇,野生技术协会,技术,知识,视频教程,经验分享,制作过程,人工智能,配音,技术宅</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.bilibili.com">bilibili 科学科普 最热视频</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">男生在拥抱女生时，身体会有什么反应？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av680501554">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>男生在拥抱女生时，身体会有什么反应？
+
+
+Tags:知识分享官·新年特别篇,知识分享官,科普,涨知识,冷知识,男生,女生,科学,拥抱,情侣</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">古罗马人居然用鸽子粪染发？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av295545650">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>视频素材：https://historycollection.com/little-known-ancient-history-facts/8/
+https://en.wikipedia.org/wiki/Roman_hairstyles
+https://answerstoall.com/technology/did-people-dye-their-hair-in-the-1940s/
+
+
+Tags:猎奇,冷知识,金色,古罗马,染发,鸽子粪,老普林尼</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">2亿多年前地球上下了一场200万年的雨？恐龙的崛起契机在何时？盘点三叠纪的生物灭绝事件！【灭绝事件06】</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av380569974">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>三叠纪的小灭绝事件：
+1.斯密斯-斯帕斯边界事件
+2.拉丁期大海退
+3.卡尼期洪积事件
+
+
+Tags:知识分享官·新年特别篇,知识分享官,生物,古生物,科普,恐龙,灭绝,三叠纪,海爬,卡尼期洪积事件,拉丁期大海退</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">网络热传长虫谣言(1)小蛇比大蛇更危险?这种说法正确吗?雄黄真的可以驱蛇吗?</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av722878562">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>-
+
+
+Tags:知识分享官·新年特别篇,知识分享官,自然,生物,健康,科学,科普,打卡挑战,谣言,蛇,知识</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">【水水劳斯】揭秘网络热门视频里的科学原理｜第二十二集</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av592904146">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>本期包含：光栅衍射眼镜、粉笔下落成三段、泼水成冰、过冷水、铝银原电池、铝碳原电池
+
+
+Tags:知识分享官·新年特别篇,知识分享官,化学,实验,物理,科学,科普,过冷水,光栅衍射眼镜,铝银原电池,铝碳原电池</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">你见过雪天使吗？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av508032224">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>素材来源：
+https://www.youtube.com/watch?v&#x3D;w4OH6gMN6vY&amp;ab_channel&#x3D;NatGeoWILD
+https://www.youtube.com/watch?v&#x3D;GWUwGNBBFso&amp;ab_channel&#x3D;SylvainEckhardt
+
+
+Tags:生命,神奇,动物,趣闻,自然,冷知识,生物,涨知识,科学科普,打卡挑战</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">南方不够冷？凭什么北方才有暖气！？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av678120927">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>南方不够冷？凭什么北方才有暖气！？
+
+
+Tags:知识分享官·新年特别篇,知识分享官,学习,科普,南方,北方,暖气,奇葩,搞笑</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">【医学博士】一个方法解决全天不困 I 为什么咖啡越喝越困？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av422995796">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>如何解决一学习就困？为什么咖啡越喝越困？这期教你正确喝咖啡，避免成瘾！这期超多干货，还有贴心表格大放送，值得一个三连吧？谢谢饱饱们 peace~
+【减肥食谱】BV1tD4y1F7aj
+【隐形眼镜】BV1Wu411S7mr
+【菊花宝典】BV1WR4y1W7FY
+【掏耳隐患】BV1K3411t7Uy
+【武器强化】BV1hq4y1g7vr
+
+
+Tags:知识分享官·新年特别篇,医学,健康,搞笑,沙雕,咖啡,学习,记忆,工作,睡觉</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">“烟囱效应”是什么？将圆筒罩在火焰上，难得一见的现象发生了</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av508116248">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>不可思议的“烟囱效应”，加个圆筒就能拔高火焰，这是什么原理？
+
+
+Tags:知识分享官·新年特别篇,知识分享官,实验,物理,知识,科普,科学,流体力学,科学趣闻,神奇现象</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">不可思议的“脱位刀”，只有一点和冰鞋相连，为何能屡创佳绩？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av678093827">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>【冬奥科普系列·第六期】从无人问津到被怀疑再到“真香”的“脱位刀”
+
+文案：细米
+剪辑：细米
+配音：播伊
+素材来源于网络。
+
+
+Tags:科普,体育,冷知识,冬奥会,涨知识,速度滑冰,冰刀,知识分享官,知识分享官·新年特别篇,脱位刀,克莱普刀</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">19岁女孩爱喝奶茶饮料，尿酸612，确诊痛风，全身多处关节堆积白茫茫的尿酸结晶盐</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av380490451">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>Tags:生命,健康,科普,自制,原创,痛风</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">这样的痛风石你见过吗？外卖小哥尿酸800多，膝盖痛风石影响关节无法行走！！！</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av807766447">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Tags:科学,生命,健康,生物,痛风</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">如果你从飞船上掉入太空会怎样？【又见阿诺德】</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av765454784">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>这里是阿诺德哔哩哔哩官方账号，请支持我们的很不容易活着得小伙子哟~
+
+
+Tags:科学,地球,科普,宇宙,天文,实验,知识分享官,又见阿诺德,知识分享官·新年特别篇</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">玉兔二号终于抵达「神秘小屋」真相来了！「超级短片系列」</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av508005511">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>月球上的神秘可才刚刚开始
+
+
+Tags:知识分享官·新年特别篇,知识分享官,玉兔二号,嫦娥四号,嫦娥探月工程,广寒宫,月球背面,玉兔月球车,航天科技</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">免疫系统过强引起的“狼咬”疾病竟然千年无解！</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av678087868">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>Tags:红斑狼疮,免疫系统,疾病,免疫,知识分享官,知识分享官·新年特别篇</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">马斯克的星链计划，想要霸占整个地球上空</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av423020699">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>埃隆·马斯克旗下公司发射的卫星，今年两次危险接近中国空间站，逼得空间站不得不紧急避让。马斯克这是想干嘛？
+
+
+Tags:知识分享官·新年特别篇,知识分享官,太空,星链计划,马斯克,卫星,SpaceX,空间站,美国</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">关于早餐的几个误区，你中招了几个？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av635547771">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>-
+
+
+Tags:生活,科普,早餐,健康,知识分享官·新年特别篇</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">大便吃起来不是臭的，也不是苦的，而是根本尝不出味道</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av253107633">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Tags:科学,科普,学习,健康,冷知识,大便,生物</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">【小魔】狗为啥改不了吃S？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av507968349">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>Tags:知识分享官·新年特别篇,知识分享官,科普,打卡挑战,宠物,搞笑,生活,动画</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://dev.to/top/month">dev.to top (month)</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">How I built my second brain using Next.JS</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/shaan_alam/how-i-built-my-second-brain-using-nextjs-56e7">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(9 min)</span>
+                    <span>#javascript #webdev #beginners #programming</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">How to make full stack e-commerce website using HTML, CSS and JS | Part 01</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/kunaal438/how-to-make-an-e-commerce-website-with-html-css-and-js-01-4m2h">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(8 min)</span>
+                    <span>#html #css #javascript #webdev</span>
                   </div>
                 </a>
               </details>
@@ -6434,6 +7140,34 @@ KR3 500 lines 常见的完成</span>
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
                     <span>那是因为澳大利亚不是真的</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://dev.to/top/month">dev.to top (month)</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">How to Start Using Typescript</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/codesphere/how-to-start-using-typescript-3ki0">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(8 min)</span>
+                    <span>#typescript #webdev #javascript #programming</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">10 Frameworks Software Developers can learn in 2022</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/javinpaul/10-frameworks-software-developers-can-learn-in-2022-193o">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(14 min)</span>
+                    <span>#java #programming #development #react</span>
                   </div>
                 </a>
               </details>
@@ -15036,6 +15770,34 @@ via: https://opensource.com/article/21/12/raspberry-pi-projects
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://dev.to/top/month">dev.to top (month)</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">React Component Testing</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/ohdylan/react-component-testing-54ie">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(10 min)</span>
+                    <span>#javascript #react #beginners #webdev</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">8 techniques to write cleaner  JavaScript code</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/codewithahsan/8-techniques-to-write-cleaner-javascript-code-369e">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(15 min)</span>
+                    <span>#javascript #webdev #node #beginners</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://sspai.com">少数派</a></h3>
           <section class="articles-per-source">
             <article>
@@ -16366,6 +17128,34 @@ kubelet 和容器运行时不在容器中运行。
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://dev.to/top/month">dev.to top (month)</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">10 Resources for Web Developers</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/yigitsr/10-resources-for-web-developers-46g7">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(4 min)</span>
+                    <span>#webdev #css #html #opensource</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Advanced Git Concepts You Should Know</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/ruppysuppy/advanced-git-concepts-you-should-know-nle">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(7 min)</span>
+                    <span>#git #github #productivity #programming</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://sspai.com">少数派</a></h3>
           <section class="articles-per-source">
             <article>
@@ -17050,6 +17840,34 @@ via: https://news.itsfoss.com/maui-shell-unveiled/
 作者：Jacob Crume 选题：lujun9972 译者：imgradeone 校对：wxy
 
 本文由 LCTT 原创编译，Linux中国 荣誉推出</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://dev.to/top/month">dev.to top (month)</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">The Full-Stack Developer Vocabulary(The Full List!)</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/code_jedi/the-full-stack-developer-vocabularythe-full-list-4n5d">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(13 min)</span>
+                    <span>#webdev #javascript #programming #react</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">CSS tips on Images you need to know</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/fidalmathew/css-tips-on-images-you-need-to-know-33b1">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(6 min)</span>
+                    <span>#css #webdev #beginners #javascript</span>
                   </div>
                 </a>
               </details>
@@ -17937,6 +18755,45 @@ Bonus: Can you solve ...</span>
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
                     <span>小狗救了这个宝贝。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://dev.to/top/month">dev.to top (month)</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">🚀10 Trending projects on GitHub for web developers - 31st December 2021</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/iainfreestone/10-trending-projects-on-github-for-web-developers-31st-december-2021-46c6">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(15 min)</span>
+                    <span>#react #javascript #webdev #productivity</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">7 front-end interview processes I did in December 2021</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/anabella/7-front-end-interview-processes-i-did-in-december-2021-5484">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(17 min)</span>
+                    <span>#career #webdev #javascript #react</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Image Slider with Vanila JS</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/j471n/image-slider-with-vanila-js-22bf">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(13 min)</span>
+                    <span>#javascript #css #webdev #tutorial</span>
                   </div>
                 </a>
               </details>
@@ -22443,6 +23300,34 @@ One w...</span>
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://dev.to/top/month">dev.to top (month)</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">A printable, PDF - Git cheatsheet</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/tqbit/a-printable-pdf-git-cheatsheet-33bd">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(4 min)</span>
+                    <span>#git #github #webdev</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">How to use Node.js to backup your personal files (and learn some webdev skills along the way)</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/alexeagleson/how-to-use-nodejs-to-backup-your-personal-files-and-learn-some-webdev-skills-along-the-way-541a">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(20 min)</span>
+                    <span>#node #javascript #linux #webdev</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://sspai.com">少数派</a></h3>
           <section class="articles-per-source">
             <article>
@@ -23893,6 +24778,34 @@ JVM stands for Java Virtual Machine.It is an abstract machine that provides the 
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
                     <span>失去了160磅! 决心实际上可以发挥作用。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://dev.to/top/month">dev.to top (month)</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">10 Helpful React Components Library For Developers.</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/chetan_atrawalkar/10-helpful-react-components-library-for-developers-pim">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(7 min)</span>
+                    <span>#react #javascript #webdev #codenewbie</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Frontend Developer Resources 2022</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/nickytonline/frontend-developer-resources-2022-4cp2">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(13 min)</span>
+                    <span>#javascript #html #css #typescript</span>
                   </div>
                 </a>
               </details>
@@ -25740,6 +26653,56 @@ By default older versions of Netbean IDE like version 8.2 has the Derby Datab...
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://dev.to/top/month">dev.to top (month)</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Why TurboRepo Will Be The First Big Trend of 2022</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/swyx/why-turborepo-will-be-the-first-big-trend-of-2022-4gfj">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(8 min)</span>
+                    <span>#devtools #summaries #javascript</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Automatically Install NPM Dependencies on Git Pull</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/zirkelc/automatically-install-npm-dependencies-on-git-pull-bg0">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(6 min)</span>
+                    <span>#npm #node #git #github</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Git Commands Cheatsheet: Advanced (20+ Git Commands Advanced )</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/aashiya123/git-commands-cheatsheet-advanced-20-git-commands-advanced--35i3">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(7 min)</span>
+                    <span>#git #github #devops</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">5 Best Online Courses to learn React.js with Hooks in 2022</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/javinpaul/5-best-online-courses-to-learn-react-with-hooks-in-2022-26lf">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(9 min)</span>
+                    <span>#react #javascript #webdev #development</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://sspai.com">少数派</a></h3>
           <section class="articles-per-source">
             <article>
@@ -27508,6 +28471,34 @@ The first thing you need to learn about is the concept of projects and modules. 
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
                     <span>这位UPS司机仍然是绝对的王者</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://dev.to/top/month">dev.to top (month)</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">React Interview Questions (Mid - Senior Level)</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/frontendengineer/react-interview-questions-part-2-mid-senior-level-cal">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(8 min)</span>
+                    <span>#discuss #react #javascript #career</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">1000+ Web development resources</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/codewhiteweb/1000-web-development-resources-24mb">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(7 min)</span>
+                    <span>#discuss #webdev #javascript #devops</span>
                   </div>
                 </a>
               </details>
@@ -29649,6 +30640,34 @@ Anonymous -&gt; it has no name and is not stored variable.</span>
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://dev.to/top/month">dev.to top (month)</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">if/else in CSS</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/quentindamianino/ifelse-in-css-45f5">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(6 min)</span>
+                    <span>#news #css #webdev #beginners</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Useful JavaScript Code Snippets for Common Problems 😎</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/codewithtee/useful-javascript-code-snippets-for-common-problems-2lpc">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(4 min)</span>
+                    <span>#javascript #webdev #codenewbie #beginners</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://sspai.com">少数派</a></h3>
           <section class="articles-per-source">
             <article>
@@ -31012,6 +32031,34 @@ At least 1 GB of RAM (2 GB r…</span>
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
                     <span>这是个疯狂的</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://dev.to/top/month">dev.to top (month)</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">You Don&#x27;t Need To Learn ReactJS Now</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/elijahtrillionz/you-dont-need-to-learn-reactjs-now-2an">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(12 min)</span>
+                    <span>#react #webdev #javascript #beginners</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Web 1.0, Web 2.0 &amp; Web3 Explained</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/narottam04/web-10-web-20-web-30-explained-591n">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(8 min)</span>
+                    <span>#beginners #blockchain #web3 #webdev</span>
                   </div>
                 </a>
               </details>
@@ -32769,6 +33816,23 @@ https://carbon.now.sh/</span>
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
                     <span>他花了5次尝试才完成。詹姆斯-邦德的特技演员(1973)</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://dev.to/top/month">dev.to top (month)</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">How to make a QR Code generator using JavaScript?</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/murtuzaalisurti/how-to-make-a-qr-code-generator-using-vanilla-javascript-3cla">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(12 min)</span>
+                    <span>#webdev #javascript #tutorial #beginners</span>
                   </div>
                 </a>
               </details>
@@ -34624,6 +35688,34 @@ Kellogg&#x27;s…</span>
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://dev.to/top/month">dev.to top (month)</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Stop Building Your UI Components like this❌</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/harshkc/stop-building-your-ui-components-like-this-19il">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(21 min)</span>
+                    <span>#javascript #react #productivity #webdev</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Introduction to Docker for Javascript Developers (feat Node.js and PostgreSQL)</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/alexeagleson/docker-for-javascript-developers-41me">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(25 min)</span>
+                    <span>#javascript #webdev #docker #node</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://sspai.com">少数派</a></h3>
           <section class="articles-per-source">
             <article>
@@ -36238,6 +37330,45 @@ Dust On An Old Road
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://dev.to/top/month">dev.to top (month)</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">I share my Notion template with over 440 pages of web development content</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/colocodes/i-share-my-notion-template-with-over-440-pages-of-web-development-content-22cf">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(11 min)</span>
+                    <span>#javascript #webdev #beginners #programming</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Build a Pomodoro Timer using HTML, CSS and Javascript</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/sansk/build-a-pomodoro-timer-using-html-css-and-javascript-53do">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(9 min)</span>
+                    <span>#javascript #webdev #tutorial #css</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Top 7 Platforms to Master Coding in 2022</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/thenomadevel/top-7-platforms-to-master-coding-in-2022-7d">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(5 min)</span>
+                    <span>#codenewbie #javascript #webdev #python</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://sspai.com">少数派</a></h3>
           <section class="articles-per-source">
             <article>
@@ -37235,6 +38366,45 @@ Hit the LIKE , SHARE and SUBSCRIBE button ❤️
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://dev.to/top/month">dev.to top (month)</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">CSS isn&#x27;t magic. All nuances about the display property</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/melnik909/css-isnt-magic-all-nuances-about-the-display-property-3fok">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(9 min)</span>
+                    <span>#css #beginners #tutorial #webdev</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Golang Tutorial for Beginners [FREE Course] 🎉</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/techworld_with_nana/golang-tutorial-for-beginners-free-course-330">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(6 min)</span>
+                    <span>#go #programming #beginners #tutorial</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Think With A Programmer&#x27;s Brain</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/rfornal/think-with-a-programmers-brain-2109">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(10 min)</span>
+                    <span>#beginners #programming #productivity #100daysofcode</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://www.freecodecamp.org/news">freeCodeCamp.org</a></h3>
           <section class="articles-per-source">
             <article>
@@ -37819,6 +38989,34 @@ MB01R1QIDC7WN5D</span>
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(3 min)</span>
                     <span>淘汰的手机、平板，还有众所周知的泡面盖儿 Kindle、iPad，别让它们闲置了，摆在桌面上，显示个时间日历啥的，继续发挥余热吧。@Appinn 老鼠写了一些小页面来利用自己的旧设备，这里是入口： h</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://dev.to/top/month">dev.to top (month)</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Start Testing Your JavaScript Code with Jest</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/ohdylan/start-testing-your-javascript-codes-with-jest-2gfm">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(15 min)</span>
+                    <span>#javascript #testing #webdev #programming</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Life Pro Tips for TailwindCSS Projects</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/wadecodez/tips-to-enhance-tailwindcss-projects-34ap">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(7 min)</span>
+                    <span>#css #tailwindcss #webdev #javascript</span>
                   </div>
                 </a>
               </details>
@@ -38654,6 +39852,23 @@ Spotify 的前产品经理有一天在推特发言，总结自己这些年在音
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://dev.to/top/month">dev.to top (month)</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">How to Create a React Typescript Monorepo with Git Submodules</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/alexeagleson/how-to-create-a-node-and-react-monorepo-with-git-submodules-2g83">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(16 min)</span>
+                    <span>#webdev #react #javascript #git</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="http://www.zhihu.com">知乎每日精选</a></h3>
           <section class="articles-per-source">
             <article>
@@ -39112,6 +40327,34 @@ While being on a steady rise for years, the COVID-19 pandemic has increased repo
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
                     <span>The increased popularity of F1 shows how sports can be valuable to Netflix, and why sports remain valuable to Disney.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://dev.to/top/month">dev.to top (month)</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">9 Smart Ways To Stand Out As A Developer In A World Full Of Coders</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/dragosnedelcu/9-smart-ways-to-stand-out-as-a-developer-in-a-world-full-of-coders-2b81">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(13 min)</span>
+                    <span>#webdev #programming #softwaredevelopment #career</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">🔥🤯 Amazing Portfolio website using HTML, CSS and JS.</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/kunaal438/amazing-portfolio-website-using-html-css-and-js-l8f">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(16 min)</span>
+                    <span>#html #css #javascript #webdev</span>
                   </div>
                 </a>
               </details>
@@ -40221,6 +41464,34 @@ Bu yazıda da Docker&#x27;dan daha yavaş çalışan, daha çok kaynak kullanan 
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
                     <span>Follow-up on &quot;The Great Bifurcation&quot;, then more on Intel&#x27;s relationship with TSMC, and why the latter needs the former. Plus, spinning out Mobileye is a great idea.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://dev.to/top/month">dev.to top (month)</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">How To: Brand Yourself As A Developer</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/amyoulton/how-to-brand-yourself-as-a-developer-397b">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(10 min)</span>
+                    <span>#webdev #beginners #productivity #career</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Why Every Developer should Learn Docker in 2022</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/javinpaul/why-every-developer-should-learn-docker-in-2022-2ndi">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(10 min)</span>
+                    <span>#docker #devops #programming #developer</span>
                   </div>
                 </a>
               </details>
@@ -44409,6 +45680,34 @@ States of a Docker Container</span>
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://dev.to/top/month">dev.to top (month)</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Announcing the MongoDB Atlas Hackathon on DEV!</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/devteam/announcing-the-mongodb-atlas-hackathon-on-dev-4b6m">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(18 min)</span>
+                    <span>#atlashackathon #mongodb</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">The Dark Side of Software Development</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/vibalijoshi/the-dark-side-of-software-development-441e">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(10 min)</span>
+                    <span>#discuss #productivity #career</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://sspai.com">少数派</a></h3>
           <section class="articles-per-source">
             <article>
@@ -45662,25 +46961,6 @@ Since Python is a dynamically typed language, coding modules for example a piece
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Building a simple alarm clock with Dasha, Express, Ejs and tailwind which force user to wake up</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/nerdjfpb/building-a-simple-alarm-clock-with-dasha-express-ejs-and-tailwind-which-force-user-to-wake-up-5b7a">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(9 min)</span>
-                    <span>Most probably, the title doesn&#x27;t give a good idea about what we will build together today! We are trying to build an alarm clock that will call users and solve a riddle. It&#x27;d not cut the call unless they got it correct. But there is a chance of saying no if they don&#x27;t want to wake up at that point. This blog will be vast if I complete the full features. So I&#x27;ll try to make a minimal version where we&#x27;ll use Dasha(https://dasha.ai/) to make this. We are going to use 
-Npm (for installing packages)
-Express js (For the API development) 
-Ejs (templating language for HTML)
-TailwindCSS (for styling)
-Dasha (for making alarm clock interesting with the help of conversational AI)
-Vscode (code editor)
-Github (for getting dasha blank app)
-Let&#x27;s start building, but before that, let&#x27;s learn what it&#x27;ll loo…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
         </section>
       </li>
       <li class="source">
@@ -45727,17 +47007,6 @@ Let&#x27;s start building, but before that, let&#x27;s learn what it&#x27;ll loo
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
                     <span>不使用服务时，Riot可能会在你的电脑后台运行程序。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">加利福尼亚州是唯一隐藏其支出的州--每年近3000亿美元</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/29530203">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>加利福尼亚州是唯一隐藏其支出的州--每年近3000亿美元</span>
                   </div>
                 </a>
               </details>
@@ -45970,24 +47239,13 @@ B3K 5T9
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Sierra Canyon (CA) vs. Perry (AZ) - 西部豪门 - ESPN转播片段</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://youtube.buzzing.cc/youtube/GetrLml0434">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Bronny James and Sierra Canyon look to close out Hoophall West with a win in the Pheonix Suns arena against a game Perry squad.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
         </section>
       </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-01-11T07:39:45.000Z">2022-01-11T07:39:45.000Z</time>
+    <time id="build-timestamp" datetime="2022-01-11T07:57:48.971Z">2022-01-11T07:57:48.971Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.12.0</a></span>
   </footer>
   <script src="index.js"></script>

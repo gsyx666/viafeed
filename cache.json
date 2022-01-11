@@ -731,6 +731,15 @@
       "siteUrl": "https://dev.to",
       "articles": [
         {
+          "id": "https://dev.to/kamil7x/side-projects-react-digital-display-part-1-3g2m",
+          "author": "Kamil Trusiak",
+          "description": "Think about this for a moment. You can find a great deal of reasons to make side projects – such as learning, having fun or creating something that will be used and appreciated by others. It requires an ample amount of creativity and hard work. \nEven though some may disagree, I think that there is way more pros than cons to this. In this series, we are going to write a little bit of code together and see what can be accomplished.\nOur first project is called React Digital Display. As the name suggests, it is a React component, which displays text. Although it looks quite simple, we will add one lovely feature: it will be able to take different components as display modules and use them under the hood. For example, it can be a 7-segment module, or a dot matrix, or anything you can imagine. I…",
+          "link": "https://dev.to/kamil7x/side-projects-react-digital-display-part-1-3g2m",
+          "publishedOn": "2022-01-11T07:20:00.000Z",
+          "wordCount": 1882,
+          "title": "Side Projects: React Digital Display - Part 1"
+        },
+        {
           "id": "https://dev.to/sachin26/strivers-sde-sheet-journey-12-count-inversions-in-an-array-4phl",
           "author": "sachin26",
           "description": "Problem Statement :-\nGiven an array of N integers, count the inversion of the array.\nAn inversion is defined for a pair of integers in the array when the following two conditions are met.\nARR[i] > ARR[j]\ni < j\nInput :  array = [2, 5, 1, 3, 4]\nResult : 4\nExplanation: We have a total of 4 pairs which satisfy the condition of inversion. (2, 1), (5, 1), (5, 3) and (5, 4).\nSolution 1\n\n\nwe can solve this problem by using two nested loop,but it will cost n^2 time complexity.\nstep-1 initialise a variable pairs=0 .\nstep-2 run a loop from i=0 to n.\n1. run another loop from j=i+1 to n.\ncheck, if arr[i] > arr[j] is true, then increase the inversion count.\nstep-3 end.\npublic class Solution {\n    public static long getInversions(long arr[], int n) {\n        long pairs =0;\n\n     for(int i=0; i<arr.length…",
@@ -828,6 +837,15 @@
           "publishedOn": "2022-01-11T04:43:32.000Z",
           "wordCount": 850,
           "title": "HtmlCollection vs NodeList in Javascript"
+        },
+        {
+          "id": "https://dev.to/talina/5-big-mistakes-companies-make-when-testing-software-2604",
+          "author": "Talina Shrotriya",
+          "description": "Most software companies struggle with releasing quality code that doesn't break critical user workflows.\nCompanies invest significant dollars in testing their product to counter this but often ship a P0 bug anyway.\nHere are 5 root causes for software bugs.\nA common mistake and often a harder one to fix during the nascent phases of software.\nNaturally, if the pre-production environment never hits an edge case that can occur in production, it is impossible to validate enhancements accurately.\nThought: Deploy a snapshot of the production environment as a pre-release environment.\nEngineering teams write code to work in the \"present\" and the \"future\", making version testing hard. Software should not be forward-facing.\nExample: Release #1 deploys software with a v1 dependency, and release #2 now uses a v2 version of the dependency. This change is non-idempotent - we wipe out a variable value by storing only the latest state. \nWhat happens to the deployed state that works with a v1 dependency? Does it break or work with the new release?\nThought: Always support X states of existing data. Streamline rollbacks.\nAs more folks campaign for infrastructure as code, we move towards automating infrastructure deployments.\nBut does a change in automation break existing infrastructure?\nThought: Can backward compatibility testing solve this problem?\nAssuming the network behaves the same irrespective of time and region is a recipe for software failure.\nThought: Can Edge Testing gauge pre-release software inconsistencies?\nWith the microservices architecture, a change in one service can cause a failure in unrelated user functionality. Testing a new release in a silo for a fixed subset of features doesn't help.\nThought: Replay tests for all critical user workflows for every release to generate an accurate failures heatmap.\nLet me know if you've solved any of these mistakes and how.\nUntil later! :)",
+          "link": "https://dev.to/talina/5-big-mistakes-companies-make-when-testing-software-2604",
+          "publishedOn": "2022-01-11T04:40:28.000Z",
+          "wordCount": 718,
+          "title": "5 Big Mistakes Companies Make When Testing Software"
         },
         {
           "id": "https://dev.to/scottodea/4-ways-to-level-up-your-js-destructuring-and-spread-syntax-4eoo",
@@ -3987,15 +4005,6 @@
           "publishedOn": "2021-12-12T20:13:49.000Z",
           "wordCount": 988,
           "title": "Documentation in Python - Part 1"
-        },
-        {
-          "id": "https://dev.to/nerdjfpb/building-a-simple-alarm-clock-with-dasha-express-ejs-and-tailwind-which-force-user-to-wake-up-5b7a",
-          "author": "Muhammad Ali (Nerdjfpb)",
-          "description": "Most probably, the title doesn't give a good idea about what we will build together today! We are trying to build an alarm clock that will call users and solve a riddle. It'd not cut the call unless they got it correct. But there is a chance of saying no if they don't want to wake up at that point. This blog will be vast if I complete the full features. So I'll try to make a minimal version where we'll use Dasha(https://dasha.ai/) to make this. We are going to use \nNpm (for installing packages)\nExpress js (For the API development) \nEjs (templating language for HTML)\nTailwindCSS (for styling)\nDasha (for making alarm clock interesting with the help of conversational AI)\nVscode (code editor)\nGithub (for getting dasha blank app)\nLet's start building, but before that, let's learn what it'll loo…",
-          "link": "https://dev.to/nerdjfpb/building-a-simple-alarm-clock-with-dasha-express-ejs-and-tailwind-which-force-user-to-wake-up-5b7a",
-          "publishedOn": "2021-12-12T19:55:40.000Z",
-          "wordCount": 2687,
-          "title": "Building a simple alarm clock with Dasha, Express, Ejs and tailwind which force user to wake up"
         }
       ]
     },
@@ -4004,6 +4013,15 @@
       "feedUrl": "https://sspai.com/feed",
       "siteUrl": "https://sspai.com",
       "articles": [
+        {
+          "id": "https://sspai.com/post/70602",
+          "author": "SpencerWoo",
+          "description": "让 macOS 直接运行 iOS 程序已经不是什么新鲜的事情了。自从 M1 系列的 Mac 问世以来，我们在 Mac App Store 甚至可以直接下载安装受支持的 iOS 应用，并用键盘鼠标来模拟触摸操作在 macOS 上使用这些 iOS 应用。虽然已经有很多 iOS 应用直接支持了在 macOS 上的安装，还是有一些应用开发者为了减少开发成本或者担心其他因素，选择将自己的 iOS 应用从 Mac App Store 上移除。\n如果我们依旧希望在系统架构完全支持的 M1 系列 Mac 上面使用这些应用，那么就需要特殊的手段 —— 旁加载，也就是 sideloading —— 才能安装这些 iOS 应用。这是 macOS 11.2.3 之前的常规操作，我们称这段时期为「前 macOS 旁加载」时代。\n显然，Apple 并不想让我们轻松地就将未经验证、不受支持的 iOS 应用直接在 macOS 上成功运行。曾被允许的简单「旁加载」在 macOS 11.3 的更新中被 Apple 禁用，自然最新的 macOS Monterey 12.1 也不受支持。因此，在「后 macOS 旁加载」时代，我们需要 PlayCover —— 一个专门用于在 M1 Mac 上安装 iOS 应用的辅助程序的帮助，才能够完整地在 M1 Mac 上面安装并体验未受支持的 iOS 应用。\n在 M1 Mac 上面运行由 PlayCover 安装的「原神」\nPlayCover 简介\n后 macOS 旁加载时代 PlayCover 的优势\n如前面提到，虽然依旧是「旁加载」的原理，但是 PlayCover 本身已经是一套完整的在 macOS 上运行 iOS 程序的辅助软件，相比于「前 macOS 旁加载」时代，PlayCover：\n\n能够非常方便地在 M1 Mac 上面通过解密的 IPA 来安装 iOS 应用；…",
+          "link": "https://sspai.com/post/70602",
+          "publishedOn": "2022-01-11T06:44:45.000Z",
+          "wordCount": 542,
+          "title": "用电脑打原神、王者荣耀…… 为 Mac 装 iOS 应用还能这样玩：PlayCover"
+        },
         {
           "id": "https://sspai.com/post/65185",
           "author": "讴纪Grandalley",
@@ -23488,15 +23506,6 @@
           "publishedOn": "2021-12-12T20:00:05.000Z",
           "wordCount": 35,
           "title": "不使用服务时，Riot可能会在你的电脑后台运行程序。"
-        },
-        {
-          "id": "https://hn.buzzing.cc/hn/29530203",
-          "author": null,
-          "description": "加利福尼亚州是唯一隐藏其支出的州--每年近3000亿美元",
-          "link": "https://hn.buzzing.cc/hn/29530203",
-          "publishedOn": "2021-12-12T19:53:03.000Z",
-          "wordCount": 34,
-          "title": "加利福尼亚州是唯一隐藏其支出的州--每年近3000亿美元"
         }
       ]
     },
@@ -25673,15 +25682,6 @@
           "publishedOn": "2021-12-12T20:13:07.000Z",
           "wordCount": 26,
           "title": "承认吧，你至少有一次#短裤"
-        },
-        {
-          "id": "https://youtube.buzzing.cc/youtube/GetrLml0434",
-          "author": null,
-          "description": "Bronny James and Sierra Canyon look to close out Hoophall West with a win in the Pheonix Suns arena against a game Perry squad.",
-          "link": "https://youtube.buzzing.cc/youtube/GetrLml0434",
-          "publishedOn": "2021-12-12T19:47:10.000Z",
-          "wordCount": 35,
-          "title": "Sierra Canyon (CA) vs. Perry (AZ) - 西部豪门 - ESPN转播片段"
         }
       ]
     },
@@ -26923,6 +26923,801 @@
       "feedUrl": "https://greatdk.com/feed",
       "siteUrl": "https://greatdk.com",
       "articles": []
+    },
+    {
+      "title": "bilibili 科学科普 最热视频",
+      "feedUrl": "https://rsshub.app/bilibili/partion/ranking/201/3",
+      "siteUrl": "https://www.bilibili.com",
+      "articles": [
+        {
+          "id": "https://www.bilibili.com/video/av635592498",
+          "author": "子晗带你去探险",
+          "description": "Tags:打卡挑战",
+          "link": "https://www.bilibili.com/video/av635592498",
+          "publishedOn": "2022-01-09T01:06:24.000Z",
+          "wordCount": 151,
+          "title": "流言终结：为了验证武僧穿玻璃，几人直接请来少林武僧【第3集】"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av680501554",
+          "author": "不正经学姐g",
+          "description": "男生在拥抱女生时，身体会有什么反应？\n\n\nTags:知识分享官·新年特别篇,知识分享官,科普,涨知识,冷知识,男生,女生,科学,拥抱,情侣",
+          "link": "https://www.bilibili.com/video/av680501554",
+          "publishedOn": "2022-01-08T20:33:22.000Z",
+          "wordCount": 154,
+          "title": "男生在拥抱女生时，身体会有什么反应？"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av295545650",
+          "author": "正经的知识",
+          "description": "视频素材：https://historycollection.com/little-known-ancient-history-facts/8/\nhttps://en.wikipedia.org/wiki/Roman_hairstyles\nhttps://answerstoall.com/technology/did-people-dye-their-hair-in-the-1940s/\n\n\nTags:猎奇,冷知识,金色,古罗马,染发,鸽子粪,老普林尼",
+          "link": "https://www.bilibili.com/video/av295545650",
+          "publishedOn": "2022-01-08T19:56:45.000Z",
+          "wordCount": 156,
+          "title": "古罗马人居然用鸽子粪染发？"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av380569974",
+          "author": "黑毛羊驼",
+          "description": "三叠纪的小灭绝事件：\n1.斯密斯-斯帕斯边界事件\n2.拉丁期大海退\n3.卡尼期洪积事件\n\n\nTags:知识分享官·新年特别篇,知识分享官,生物,古生物,科普,恐龙,灭绝,三叠纪,海爬,卡尼期洪积事件,拉丁期大海退",
+          "link": "https://www.bilibili.com/video/av380569974",
+          "publishedOn": "2022-01-08T18:55:10.000Z",
+          "wordCount": 155,
+          "title": "2亿多年前地球上下了一场200万年的雨？恐龙的崛起契机在何时？盘点三叠纪的生物灭绝事件！【灭绝事件06】"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av722878562",
+          "author": "世界记忆大师龙雅",
+          "description": "-\n\n\nTags:知识分享官·新年特别篇,知识分享官,自然,生物,健康,科学,科普,打卡挑战,谣言,蛇,知识",
+          "link": "https://www.bilibili.com/video/av722878562",
+          "publishedOn": "2022-01-08T18:30:15.000Z",
+          "wordCount": 155,
+          "title": "网络热传长虫谣言(1)小蛇比大蛇更危险?这种说法正确吗?雄黄真的可以驱蛇吗?"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av592904146",
+          "author": "爆炸实验室BoomLab",
+          "description": "本期包含：光栅衍射眼镜、粉笔下落成三段、泼水成冰、过冷水、铝银原电池、铝碳原电池\n\n\nTags:知识分享官·新年特别篇,知识分享官,化学,实验,物理,科学,科普,过冷水,光栅衍射眼镜,铝银原电池,铝碳原电池",
+          "link": "https://www.bilibili.com/video/av592904146",
+          "publishedOn": "2022-01-08T18:10:12.000Z",
+          "wordCount": 158,
+          "title": "【水水劳斯】揭秘网络热门视频里的科学原理｜第二十二集"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av508032224",
+          "author": "夜话冷知识",
+          "description": "素材来源：\nhttps://www.youtube.com/watch?v=w4OH6gMN6vY&ab_channel=NatGeoWILD\nhttps://www.youtube.com/watch?v=GWUwGNBBFso&ab_channel=SylvainEckhardt\n\n\nTags:生命,神奇,动物,趣闻,自然,冷知识,生物,涨知识,科学科普,打卡挑战",
+          "link": "https://www.bilibili.com/video/av508032224",
+          "publishedOn": "2022-01-08T17:50:51.000Z",
+          "wordCount": 158,
+          "title": "你见过雪天使吗？"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av678120927",
+          "author": "橘右美美子",
+          "description": "南方不够冷？凭什么北方才有暖气！？\n\n\nTags:知识分享官·新年特别篇,知识分享官,学习,科普,南方,北方,暖气,奇葩,搞笑",
+          "link": "https://www.bilibili.com/video/av678120927",
+          "publishedOn": "2022-01-08T17:43:48.000Z",
+          "wordCount": 161,
+          "title": "南方不够冷？凭什么北方才有暖气！？"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av422995796",
+          "author": "兔叭咯",
+          "description": "如何解决一学习就困？为什么咖啡越喝越困？这期教你正确喝咖啡，避免成瘾！这期超多干货，还有贴心表格大放送，值得一个三连吧？谢谢饱饱们 peace~\n【减肥食谱】BV1tD4y1F7aj\n【隐形眼镜】BV1Wu411S7mr\n【菊花宝典】BV1WR4y1W7FY\n【掏耳隐患】BV1K3411t7Uy\n【武器强化】BV1hq4y1g7vr\n\n\nTags:知识分享官·新年特别篇,医学,健康,搞笑,沙雕,咖啡,学习,记忆,工作,睡觉",
+          "link": "https://www.bilibili.com/video/av422995796",
+          "publishedOn": "2022-01-08T17:30:04.000Z",
+          "wordCount": 889,
+          "title": "【医学博士】一个方法解决全天不困 I 为什么咖啡越喝越困？"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av508116248",
+          "author": "科学探照灯er",
+          "description": "不可思议的“烟囱效应”，加个圆筒就能拔高火焰，这是什么原理？\n\n\nTags:知识分享官·新年特别篇,知识分享官,实验,物理,知识,科普,科学,流体力学,科学趣闻,神奇现象",
+          "link": "https://www.bilibili.com/video/av508116248",
+          "publishedOn": "2022-01-08T17:15:05.000Z",
+          "wordCount": 155,
+          "title": "“烟囱效应”是什么？将圆筒罩在火焰上，难得一见的现象发生了"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av678093827",
+          "author": "冷科普",
+          "description": "【冬奥科普系列·第六期】从无人问津到被怀疑再到“真香”的“脱位刀”\n\n文案：细米\n剪辑：细米\n配音：播伊\n素材来源于网络。\n\n\nTags:科普,体育,冷知识,冬奥会,涨知识,速度滑冰,冰刀,知识分享官,知识分享官·新年特别篇,脱位刀,克莱普刀",
+          "link": "https://www.bilibili.com/video/av678093827",
+          "publishedOn": "2022-01-08T17:00:19.000Z",
+          "wordCount": 158,
+          "title": "不可思议的“脱位刀”，只有一点和冰鞋相连，为何能屡创佳绩？"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av380490451",
+          "author": "痛风科陈建春",
+          "description": "Tags:生命,健康,科普,自制,原创,痛风",
+          "link": "https://www.bilibili.com/video/av380490451",
+          "publishedOn": "2022-01-08T16:08:58.000Z",
+          "wordCount": 151,
+          "title": "19岁女孩爱喝奶茶饮料，尿酸612，确诊痛风，全身多处关节堆积白茫茫的尿酸结晶盐"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av807766447",
+          "author": "痛风科陈建春",
+          "description": "Tags:科学,生命,健康,生物,痛风",
+          "link": "https://www.bilibili.com/video/av807766447",
+          "publishedOn": "2022-01-08T16:08:44.000Z",
+          "wordCount": 148,
+          "title": "这样的痛风石你见过吗？外卖小哥尿酸800多，膝盖痛风石影响关节无法行走！！！"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av765454784",
+          "author": "又见阿诺德",
+          "description": "这里是阿诺德哔哩哔哩官方账号，请支持我们的很不容易活着得小伙子哟~\n\n\nTags:科学,地球,科普,宇宙,天文,实验,知识分享官,又见阿诺德,知识分享官·新年特别篇",
+          "link": "https://www.bilibili.com/video/av765454784",
+          "publishedOn": "2022-01-08T15:00:08.000Z",
+          "wordCount": 153,
+          "title": "如果你从飞船上掉入太空会怎样？【又见阿诺德】"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av508005511",
+          "author": "房叔叨叨叨",
+          "description": "月球上的神秘可才刚刚开始\n\n\nTags:知识分享官·新年特别篇,知识分享官,玉兔二号,嫦娥四号,嫦娥探月工程,广寒宫,月球背面,玉兔月球车,航天科技",
+          "link": "https://www.bilibili.com/video/av508005511",
+          "publishedOn": "2022-01-08T14:59:25.000Z",
+          "wordCount": 155,
+          "title": "玉兔二号终于抵达「神秘小屋」真相来了！「超级短片系列」"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av678087868",
+          "author": "奇思诺想",
+          "description": "Tags:红斑狼疮,免疫系统,疾病,免疫,知识分享官,知识分享官·新年特别篇",
+          "link": "https://www.bilibili.com/video/av678087868",
+          "publishedOn": "2022-01-08T13:43:08.000Z",
+          "wordCount": 156,
+          "title": "免疫系统过强引起的“狼咬”疾病竟然千年无解！"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av423020699",
+          "author": "赛雷三分钟",
+          "description": "埃隆·马斯克旗下公司发射的卫星，今年两次危险接近中国空间站，逼得空间站不得不紧急避让。马斯克这是想干嘛？\n\n\nTags:知识分享官·新年特别篇,知识分享官,太空,星链计划,马斯克,卫星,SpaceX,空间站,美国",
+          "link": "https://www.bilibili.com/video/av423020699",
+          "publishedOn": "2022-01-08T12:38:36.000Z",
+          "wordCount": 153,
+          "title": "马斯克的星链计划，想要霸占整个地球上空"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av635547771",
+          "author": "刘加勇医生",
+          "description": "-\n\n\nTags:生活,科普,早餐,健康,知识分享官·新年特别篇",
+          "link": "https://www.bilibili.com/video/av635547771",
+          "publishedOn": "2022-01-08T11:28:37.000Z",
+          "wordCount": 154,
+          "title": "关于早餐的几个误区，你中招了几个？"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av253107633",
+          "author": "一小撮知识",
+          "description": "Tags:科学,科普,学习,健康,冷知识,大便,生物",
+          "link": "https://www.bilibili.com/video/av253107633",
+          "publishedOn": "2022-01-08T11:25:11.000Z",
+          "wordCount": 148,
+          "title": "大便吃起来不是臭的，也不是苦的，而是根本尝不出味道"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av507968349",
+          "author": "-我是小魔-",
+          "description": "Tags:知识分享官·新年特别篇,知识分享官,科普,打卡挑战,宠物,搞笑,生活,动画",
+          "link": "https://www.bilibili.com/video/av507968349",
+          "publishedOn": "2022-01-08T11:10:10.000Z",
+          "wordCount": 156,
+          "title": "【小魔】狗为啥改不了吃S？"
+        }
+      ]
+    },
+    {
+      "title": "bilibili 野生技能协会 最热视频",
+      "feedUrl": "https://rsshub.app/bilibili/partion/ranking/122/3",
+      "siteUrl": "https://www.bilibili.com",
+      "articles": [
+        {
+          "id": "https://www.bilibili.com/video/av253026904",
+          "author": "宁静荒野",
+          "description": "https://www.youtube.com/watch?v=wnpQln3EMfQ&t=3s\n今天我用丛林风格的天然材料准备了一个营地和生活区。我用原始的方法制作了一个天然楼梯和一个天然壁炉。这是一个小而有效的庇护所。由于庇护所的背面是天然石材，因此它的温度非常好。在下一部分中，我将在这里喝咖啡，我将完成缺失的部分。\n\n\nTags:野生技术协会,丛林,野外生存,户外,露营,烹饪,经验分享,避难所,庇护所,淘金",
+          "link": "https://www.bilibili.com/video/av253026904",
+          "publishedOn": "2022-01-08T23:12:59.000Z",
+          "wordCount": 166,
+          "title": "打造童话般的生存庇护所，户外露营天然小屋、草皮屋顶、壁炉和楼梯"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av593060165",
+          "author": "马士兵说",
+          "description": "距离2022年的面试黄金季还有不到三个月，打算找工作，或者打算跳槽的同学们要开始做好准备了~！\n这期视频从面试官的角度出发，讲了面试着重考察同学们的几种能力，以及如何去准备、答题，在面试的时候可以稳赢~包括入职之后该如何快速融入团队以及晋升，干货满满~\n配合往期「大厂必问技术点」食用效果更佳！\nJAVA面试必问的102个知识点：BV1bf4y1Q7Gn\n常见1000+面试题及答案精讲：BV1hf4y1h7R6\nSpring源码深度解析31精讲：BV1iZ4y137CZ\n\n\nTags:计算机,互联网,编程,面试,求职,简历,面试技巧,经验分享,野生技术协会,JAVA面试,知识分享官·新年特别篇",
+          "link": "https://www.bilibili.com/video/av593060165",
+          "publishedOn": "2022-01-08T20:13:33.000Z",
+          "wordCount": 169,
+          "title": "【面试秘笈】想要100%拿到大厂Offer该怎么准备？简历优化+面试指导+现场录音+入职晋升【清华大佬马士兵带你全方位吊打面试官】"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av850613764",
+          "author": "Kerberus战术频道",
+          "description": "《大胡子说AR》系列第三集为大家带来短程活塞AR的讲解以及美军次世代步枪-MCX的介绍\n\n\nTags:知识分享官·新年特别篇,知识分享官,战术,射击,军事,美军,特种部队,枪械,战争,战地,吃鸡",
+          "link": "https://www.bilibili.com/video/av850613764",
+          "publishedOn": "2022-01-08T20:00:11.000Z",
+          "wordCount": 180,
+          "title": "带你看美军次世代步枪 -《大胡子说AR》第三集"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av253044723",
+          "author": "肉松owo",
+          "description": "五轴分别指：\nX、Y、Z、平移、屏距\n还有一个轴是上下平移 但因为是映射的Y，所以没有单独算\n\n金主：@鹿玖鹿鹿鹿  \n画师：@凰明明明是一只学畜  \n模型师：我\n\n\n委托咨询qq641268874 目前排单到今年6月 价位在2k~3k （加好友记得备注\n\n\nTags:肉松,Live2d,vup,vtb,虚拟主播,prprlive,furry,福瑞,facerig,面捕",
+          "link": "https://www.bilibili.com/video/av253044723",
+          "publishedOn": "2022-01-08T19:49:45.000Z",
+          "wordCount": 199,
+          "title": "【肉松】【Live2d】五轴超强可动性 表情总数350+个"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av978008259",
+          "author": "翼翼飞鸢",
+          "description": "P1示波器信号音频来自UP：5632645\n他创作了很棒示波器的动画，快去看看！\nP2我自己尝试了一下~\n\n\nTags:自制,特效,后期,示波器,UP TALK,过年随手拍",
+          "link": "https://www.bilibili.com/video/av978008259",
+          "publishedOn": "2022-01-08T19:30:10.000Z",
+          "wordCount": 166,
+          "title": "我用古董示波器摆烂了你的AE作业！"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av593108255",
+          "author": "可乐喵想加糖",
+          "description": "同学们如果觉得有帮助的话，不要白嫖UP主的哦，给UP主点一个赞吧，这样可以让更多的同学看到！如果同学们还有什么计算机相关，互联网大厂求职，技术方向等等问题，都可以在评论区给UP主留言，或者关注UP主哈！\n\n\nTags:知识分享官·新年特别篇,知识分享官,野生技术协会,计算机,C++,C语言,大学生,科技,经验分享,编程,程序员",
+          "link": "https://www.bilibili.com/video/av593108255",
+          "publishedOn": "2022-01-08T19:20:16.000Z",
+          "wordCount": 160,
+          "title": "为什么现在部分985高校还在给大一上C语言课？知道真相的我裂开了"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av252999825",
+          "author": "天天鉴宝",
+          "description": "Tags:无限搞笑公司6.0,无限搞笑公司,野生技术协会,鉴定,博物馆,人文,学习",
+          "link": "https://www.bilibili.com/video/av252999825",
+          "publishedOn": "2022-01-08T18:00:08.000Z",
+          "wordCount": 180,
+          "title": "稀碎一地啊..."
+        },
+        {
+          "id": "https://www.bilibili.com/video/av295597968",
+          "author": "一个扎心的小指针",
+          "description": "Tags:野生技术协会,编程学习,计算机专业,学习,经验分享,知识,大学生,计算机,代码,教育",
+          "link": "https://www.bilibili.com/video/av295597968",
+          "publishedOn": "2022-01-08T17:56:04.000Z",
+          "wordCount": 160,
+          "title": "大学计算机老师那么厉害，为什么他们不去大公司当程序员拿高薪？"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av978043677",
+          "author": "多场耦合悬臂梁",
+          "description": "所有视频材料均为废弃、过期材料，且没有浪费！老师你听我狡辩\n\n\nTags:UP TALK,过年随手拍,生活,AE,过年,实验室,娱乐",
+          "link": "https://www.bilibili.com/video/av978043677",
+          "publishedOn": "2022-01-08T17:52:57.000Z",
+          "wordCount": 160,
+          "title": "我用实验室摆烂了你的AE作业"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av423026726",
+          "author": "见证琦基",
+          "description": "Tags:自制,教程,特摄,特效,后期,视频教程,制作过程,野生技术协会,知识分享官,知识分享官·新年特别篇",
+          "link": "https://www.bilibili.com/video/av423026726",
+          "publishedOn": "2022-01-08T17:42:28.000Z",
+          "wordCount": 178,
+          "title": "AE神光棒出现教程（省流版）"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av338042678",
+          "author": "一颗咕咕星",
+          "description": "如果喜欢这副“TH梅”，可以到天猫“bicycle旗舰店”购买： https://m.tb.cn/h.fQTsUZ0?sm=70b067\n订单中备注暗号“咕咕星好帅”，可以额外赠送木质展示架\n\n\nTags:知识分享官·新年特别篇,知识分享官,学习,自制,花切,开箱,咕咕星,搞笑",
+          "link": "https://www.bilibili.com/video/av338042678",
+          "publishedOn": "2022-01-08T17:30:04.000Z",
+          "wordCount": 159,
+          "title": "猛男就是要头戴花花玩扑克牌！"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av508021736",
+          "author": "哆啦美的AI",
+          "description": "课件相关资料加WX：gupao-cola  暗号：666（免费领取哦）输入暗号必领取哦！\n\n还可领取一份200G人工智能学习资料礼包（内含：两大Pytorch、TensorFlow实战框架视频、图像识别、OpenCV、计算机视觉、深度学习与神经网络等等等等视频、代码、PPT以及深度学习书籍 ！你想要的里面都有！）\n\n源码、资料、文档、课件看up个人主页简介或动态置顶，有领取方式[OK]\n制作不易，大家记得点个关注！\n\n\nTags:计算机,知识,人工智能,AI,斯坦福,计算机视觉,机器学习,经验分享,神经网络,深度学习",
+          "link": "https://www.bilibili.com/video/av508021736",
+          "publishedOn": "2022-01-08T16:56:55.000Z",
+          "wordCount": 189,
+          "title": "【公开课】斯坦福李飞飞教授教你计算机视觉，瞬间清晰透彻的【中文版】/CV课程(中英字幕)"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av338040817",
+          "author": "我是YOLO",
+          "description": "拍摄时间大概是2021年的十月左右吧\n后来一直忘记剪了\n不过也杜绝了广告的嫌疑了\n因为人家早就卖完了\n哈哈哈\n\n\nTags:跟着UP主创作吧（第二期）,我的隐藏技能,学习,野生技术协会,技术,魔术,纸牌,花切,yolo",
+          "link": "https://www.bilibili.com/video/av338040817",
+          "publishedOn": "2022-01-08T16:50:40.000Z",
+          "wordCount": 166,
+          "title": "这可能是你见过的最花哨的纸牌....."
+        },
+        {
+          "id": "https://www.bilibili.com/video/av380535581",
+          "author": "3D建模-板板",
+          "description": "up创建了一个学习交流的平台，QQ交流群：807534921 对建模感兴趣、有学游戏建模的小伙伴可以加入一起交流学习~ 在群里解答问题\n3DMAX全套教程集：https://www.bilibili.com/video/BV1H44y1r7kY\nZBrush全套教程集：https://www.bilibili.com/video/BV1GB4y1F7Hn/\n群里面还有3DMAX 、zbrush、maya、C4D、bp、sp、八猴等等建模全流程软件（免费等你来嫖~）\n\n\nTags:模型,Zbrush,3D建模,野生技术协会,制作过程,知识,技术宅,CG,海贼王,白胡子",
+          "link": "https://www.bilibili.com/video/av380535581",
+          "publishedOn": "2022-01-08T16:29:22.000Z",
+          "wordCount": 171,
+          "title": "【海贼王】这个白胡子建模TM要是火了，我手抄点赞这个视频的所有ID！！！"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av295561300",
+          "author": "Java马小萌",
+          "description": "阿里面试“TCP/IP”网络协议23连问，23步告诉你，TCP/IP网络协议的最全面总结， 最好的网络协议教程，都帮你整理好了\n领取开篇“图解计算机、网络、操作系统”福利+教程对应笔记，请动动你的小手帮up三连一下，添加VX：① yunduoa2019 ② bjmsb666 任选其一（备注B站 ）免费获取，更可领取Java高频面试题资料和Java架构师学习路线图\n\n\nTags:知识分享官·新年特别篇,JAVA,野生技术协会,IT,面试,技术宅,公开课,编程,程序员,架构,计算机",
+          "link": "https://www.bilibili.com/video/av295561300",
+          "publishedOn": "2022-01-08T16:20:31.000Z",
+          "wordCount": 174,
+          "title": "阿里面试“TCP/IP”网络协议23连问，23步告诉你，TCP/IP网络协议的最全面总结， 最好的网络协议教程，都帮你整理好了"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av893076367",
+          "author": "林深时不见路",
+          "description": "尚学堂官方\n制作不易，大家记得点个关注，一键三连呀【点赞、收藏、转发】感谢支持~\n1.更适合零基础学员：0基础从你适不适合开始讲起\n2.课程内容推陈出新：持续更新最新内容\n3.技术讲解更深入、更全面，代码量大、案例丰富、一路实战\n\n\nTags:计算机,IT,PYTHON,python入门,python基础,python爬虫,PYTHON爬虫,人工智能,PYTHON教程,python数据分析",
+          "link": "https://www.bilibili.com/video/av893076367",
+          "publishedOn": "2022-01-08T13:40:29.000Z",
+          "wordCount": 171,
+          "title": "清华教授用72小时讲完的python！2022最新版630集，拿走不谢，学不会退出IT界"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av210499373",
+          "author": "会魔术",
+          "description": "射牌，学这一招就够了！牌王格林的绝招，学会它，再平平无奇的流程，也能超帅结尾！\n\n\nTags:魔术,魔术教学",
+          "link": "https://www.bilibili.com/video/av210499373",
+          "publishedOn": "2022-01-08T13:00:08.000Z",
+          "wordCount": 154,
+          "title": "一定要学的射牌！更快，更远？还能这样玩？"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av722983030",
+          "author": "天天鉴宝",
+          "description": "Tags:野生技术协会,鉴定,博物馆,人文,经验分享",
+          "link": "https://www.bilibili.com/video/av722983030",
+          "publishedOn": "2022-01-08T12:00:02.000Z",
+          "wordCount": 160,
+          "title": "建议火速上交..."
+        },
+        {
+          "id": "https://www.bilibili.com/video/av295529367",
+          "author": "魔术特白",
+          "description": "-\n\n\nTags:必剪创作,春晚魔术,刘谦,申林,街头魔术,戚薇",
+          "link": "https://www.bilibili.com/video/av295529367",
+          "publishedOn": "2022-01-08T11:50:12.000Z",
+          "wordCount": 157,
+          "title": "揭秘刘谦最神奇的魔术，戚薇被吓到直呼好可怕！"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av765560036",
+          "author": "zasking",
+          "description": "好多粉丝催更的文字转语音教程来啦，大家多多三连支持哦！\n\n\nTags:知识分享官·新年特别篇,野生技术协会,技术,知识,视频教程,经验分享,制作过程,人工智能,配音,技术宅",
+          "link": "https://www.bilibili.com/video/av765560036",
+          "publishedOn": "2022-01-08T11:33:54.000Z",
+          "wordCount": 155,
+          "title": "【文字转语音】人声相似度99.99%！免费白嫖超好用！"
+        }
+      ]
+    },
+    {
+      "title": "dev.to top (month)",
+      "feedUrl": "https://rsshub.app/dev.to/top/month",
+      "siteUrl": "https://dev.to/top/month",
+      "articles": [
+        {
+          "id": "https://dev.to/devdefinitive/30-javascript-libraries-to-use-in-your-projects-1gd3",
+          "author": "devdefinitive",
+          "description": "#webdev #javascript #programming #beginners",
+          "link": "https://dev.to/devdefinitive/30-javascript-libraries-to-use-in-your-projects-1gd3",
+          "publishedOn": "2022-01-09T15:11:28.000Z",
+          "wordCount": 2909,
+          "title": "30 JavaScript Libraries to use in your Projects"
+        },
+        {
+          "id": "https://dev.to/shaan_alam/how-i-built-my-second-brain-using-nextjs-56e7",
+          "author": "Shaan Alam",
+          "description": "#javascript #webdev #beginners #programming",
+          "link": "https://dev.to/shaan_alam/how-i-built-my-second-brain-using-nextjs-56e7",
+          "publishedOn": "2022-01-08T14:03:51.000Z",
+          "wordCount": 2592,
+          "title": "How I built my second brain using Next.JS"
+        },
+        {
+          "id": "https://dev.to/kunaal438/how-to-make-an-e-commerce-website-with-html-css-and-js-01-4m2h",
+          "author": "Modern Web",
+          "description": "#html #css #javascript #webdev",
+          "link": "https://dev.to/kunaal438/how-to-make-an-e-commerce-website-with-html-css-and-js-01-4m2h",
+          "publishedOn": "2022-01-08T13:39:32.000Z",
+          "wordCount": 2323,
+          "title": "How to make full stack e-commerce website using HTML, CSS and JS | Part 01"
+        },
+        {
+          "id": "https://dev.to/codesphere/how-to-start-using-typescript-3ki0",
+          "author": "Saji Wang, Codesphere Inc.",
+          "description": "#typescript #webdev #javascript #programming",
+          "link": "https://dev.to/codesphere/how-to-start-using-typescript-3ki0",
+          "publishedOn": "2022-01-07T13:03:52.000Z",
+          "wordCount": 2314,
+          "title": "How to Start Using Typescript"
+        },
+        {
+          "id": "https://dev.to/javinpaul/10-frameworks-software-developers-can-learn-in-2022-193o",
+          "author": "javinpaul",
+          "description": "#java #programming #development #react",
+          "link": "https://dev.to/javinpaul/10-frameworks-software-developers-can-learn-in-2022-193o",
+          "publishedOn": "2022-01-07T06:36:51.000Z",
+          "wordCount": 4079,
+          "title": "10 Frameworks Software Developers can learn in 2022"
+        },
+        {
+          "id": "https://dev.to/ohdylan/react-component-testing-54ie",
+          "author": "Dylan Oh",
+          "description": "#javascript #react #beginners #webdev",
+          "link": "https://dev.to/ohdylan/react-component-testing-54ie",
+          "publishedOn": "2022-01-03T08:02:43.000Z",
+          "wordCount": 3002,
+          "title": "React Component Testing"
+        },
+        {
+          "id": "https://dev.to/codewithahsan/8-techniques-to-write-cleaner-javascript-code-369e",
+          "author": "Muhammad Ahsan Ayaz",
+          "description": "#javascript #webdev #node #beginners",
+          "link": "https://dev.to/codewithahsan/8-techniques-to-write-cleaner-javascript-code-369e",
+          "publishedOn": "2022-01-03T01:27:01.000Z",
+          "wordCount": 4558,
+          "title": "8 techniques to write cleaner  JavaScript code"
+        },
+        {
+          "id": "https://dev.to/yigitsr/10-resources-for-web-developers-46g7",
+          "author": "Yigit S",
+          "description": "#webdev #css #html #opensource",
+          "link": "https://dev.to/yigitsr/10-resources-for-web-developers-46g7",
+          "publishedOn": "2022-01-02T08:39:17.000Z",
+          "wordCount": 1188,
+          "title": "10 Resources for Web Developers"
+        },
+        {
+          "id": "https://dev.to/ruppysuppy/advanced-git-concepts-you-should-know-nle",
+          "author": "Tapajyoti Bose",
+          "description": "#git #github #productivity #programming",
+          "link": "https://dev.to/ruppysuppy/advanced-git-concepts-you-should-know-nle",
+          "publishedOn": "2022-01-02T06:34:05.000Z",
+          "wordCount": 2032,
+          "title": "Advanced Git Concepts You Should Know"
+        },
+        {
+          "id": "https://dev.to/code_jedi/the-full-stack-developer-vocabularythe-full-list-4n5d",
+          "author": "Code_Jedi",
+          "description": "#webdev #javascript #programming #react",
+          "link": "https://dev.to/code_jedi/the-full-stack-developer-vocabularythe-full-list-4n5d",
+          "publishedOn": "2022-01-01T14:49:12.000Z",
+          "wordCount": 3767,
+          "title": "The Full-Stack Developer Vocabulary(The Full List!)"
+        },
+        {
+          "id": "https://dev.to/fidalmathew/css-tips-on-images-you-need-to-know-33b1",
+          "author": "Fidal Mathew",
+          "description": "#css #webdev #beginners #javascript",
+          "link": "https://dev.to/fidalmathew/css-tips-on-images-you-need-to-know-33b1",
+          "publishedOn": "2022-01-01T05:01:37.000Z",
+          "wordCount": 1672,
+          "title": "CSS tips on Images you need to know"
+        },
+        {
+          "id": "https://dev.to/iainfreestone/10-trending-projects-on-github-for-web-developers-31st-december-2021-46c6",
+          "author": "Iain Freestone",
+          "description": "#react #javascript #webdev #productivity",
+          "link": "https://dev.to/iainfreestone/10-trending-projects-on-github-for-web-developers-31st-december-2021-46c6",
+          "publishedOn": "2021-12-31T13:03:19.000Z",
+          "wordCount": 4607,
+          "title": "🚀10 Trending projects on GitHub for web developers - 31st December 2021"
+        },
+        {
+          "id": "https://dev.to/anabella/7-front-end-interview-processes-i-did-in-december-2021-5484",
+          "author": "anabella",
+          "description": "#career #webdev #javascript #react",
+          "link": "https://dev.to/anabella/7-front-end-interview-processes-i-did-in-december-2021-5484",
+          "publishedOn": "2021-12-31T09:08:49.000Z",
+          "wordCount": 4972,
+          "title": "7 front-end interview processes I did in December 2021"
+        },
+        {
+          "id": "https://dev.to/j471n/image-slider-with-vanila-js-22bf",
+          "author": "Jatin Sharma",
+          "description": "#javascript #css #webdev #tutorial",
+          "link": "https://dev.to/j471n/image-slider-with-vanila-js-22bf",
+          "publishedOn": "2021-12-31T04:01:18.000Z",
+          "wordCount": 3849,
+          "title": "Image Slider with Vanila JS"
+        },
+        {
+          "id": "https://dev.to/tqbit/a-printable-pdf-git-cheatsheet-33bd",
+          "author": "tq-bit",
+          "description": "#git #github #webdev",
+          "link": "https://dev.to/tqbit/a-printable-pdf-git-cheatsheet-33bd",
+          "publishedOn": "2021-12-29T22:40:55.000Z",
+          "wordCount": 1217,
+          "title": "A printable, PDF - Git cheatsheet"
+        },
+        {
+          "id": "https://dev.to/alexeagleson/how-to-use-nodejs-to-backup-your-personal-files-and-learn-some-webdev-skills-along-the-way-541a",
+          "author": "Alex Eagleson",
+          "description": "#node #javascript #linux #webdev",
+          "link": "https://dev.to/alexeagleson/how-to-use-nodejs-to-backup-your-personal-files-and-learn-some-webdev-skills-along-the-way-541a",
+          "publishedOn": "2021-12-29T04:44:16.000Z",
+          "wordCount": 6130,
+          "title": "How to use Node.js to backup your personal files (and learn some webdev skills along the way)"
+        },
+        {
+          "id": "https://dev.to/chetan_atrawalkar/10-helpful-react-components-library-for-developers-pim",
+          "author": "Chetan Atrawalkar",
+          "description": "#react #javascript #webdev #codenewbie",
+          "link": "https://dev.to/chetan_atrawalkar/10-helpful-react-components-library-for-developers-pim",
+          "publishedOn": "2021-12-28T06:30:04.000Z",
+          "wordCount": 2072,
+          "title": "10 Helpful React Components Library For Developers."
+        },
+        {
+          "id": "https://dev.to/nickytonline/frontend-developer-resources-2022-4cp2",
+          "author": "Nick Taylor",
+          "description": "#javascript #html #css #typescript",
+          "link": "https://dev.to/nickytonline/frontend-developer-resources-2022-4cp2",
+          "publishedOn": "2021-12-28T04:16:47.000Z",
+          "wordCount": 3909,
+          "title": "Frontend Developer Resources 2022"
+        },
+        {
+          "id": "https://dev.to/swyx/why-turborepo-will-be-the-first-big-trend-of-2022-4gfj",
+          "author": "swyx",
+          "description": "#devtools #summaries #javascript",
+          "link": "https://dev.to/swyx/why-turborepo-will-be-the-first-big-trend-of-2022-4gfj",
+          "publishedOn": "2021-12-27T16:08:03.000Z",
+          "wordCount": 2395,
+          "title": "Why TurboRepo Will Be The First Big Trend of 2022"
+        },
+        {
+          "id": "https://dev.to/zirkelc/automatically-install-npm-dependencies-on-git-pull-bg0",
+          "author": "Chris",
+          "description": "#npm #node #git #github",
+          "link": "https://dev.to/zirkelc/automatically-install-npm-dependencies-on-git-pull-bg0",
+          "publishedOn": "2021-12-27T14:47:50.000Z",
+          "wordCount": 1780,
+          "title": "Automatically Install NPM Dependencies on Git Pull"
+        },
+        {
+          "id": "https://dev.to/aashiya123/git-commands-cheatsheet-advanced-20-git-commands-advanced--35i3",
+          "author": "aashiya123",
+          "description": "#git #github #devops",
+          "link": "https://dev.to/aashiya123/git-commands-cheatsheet-advanced-20-git-commands-advanced--35i3",
+          "publishedOn": "2021-12-27T06:19:49.000Z",
+          "wordCount": 2221,
+          "title": "Git Commands Cheatsheet: Advanced (20+ Git Commands Advanced )"
+        },
+        {
+          "id": "https://dev.to/javinpaul/5-best-online-courses-to-learn-react-with-hooks-in-2022-26lf",
+          "author": "javinpaul",
+          "description": "#react #javascript #webdev #development",
+          "link": "https://dev.to/javinpaul/5-best-online-courses-to-learn-react-with-hooks-in-2022-26lf",
+          "publishedOn": "2021-12-27T05:58:21.000Z",
+          "wordCount": 2690,
+          "title": "5 Best Online Courses to learn React.js with Hooks in 2022"
+        },
+        {
+          "id": "https://dev.to/frontendengineer/react-interview-questions-part-2-mid-senior-level-cal",
+          "author": "Let&#39;s Code",
+          "description": "#discuss #react #javascript #career",
+          "link": "https://dev.to/frontendengineer/react-interview-questions-part-2-mid-senior-level-cal",
+          "publishedOn": "2021-12-26T07:36:44.000Z",
+          "wordCount": 2292,
+          "title": "React Interview Questions (Mid - Senior Level)"
+        },
+        {
+          "id": "https://dev.to/codewhiteweb/1000-web-development-resources-24mb",
+          "author": "CodeWhiteWeb",
+          "description": "#discuss #webdev #javascript #devops",
+          "link": "https://dev.to/codewhiteweb/1000-web-development-resources-24mb",
+          "publishedOn": "2021-12-26T05:42:16.000Z",
+          "wordCount": 2147,
+          "title": "1000+ Web development resources"
+        },
+        {
+          "id": "https://dev.to/quentindamianino/ifelse-in-css-45f5",
+          "author": "Damian Brdej",
+          "description": "#news #css #webdev #beginners",
+          "link": "https://dev.to/quentindamianino/ifelse-in-css-45f5",
+          "publishedOn": "2021-12-25T22:53:31.000Z",
+          "wordCount": 1713,
+          "title": "if/else in CSS"
+        },
+        {
+          "id": "https://dev.to/codewithtee/useful-javascript-code-snippets-for-common-problems-2lpc",
+          "author": "Tabassum Khanum",
+          "description": "#javascript #webdev #codenewbie #beginners",
+          "link": "https://dev.to/codewithtee/useful-javascript-code-snippets-for-common-problems-2lpc",
+          "publishedOn": "2021-12-25T13:31:16.000Z",
+          "wordCount": 1233,
+          "title": "Useful JavaScript Code Snippets for Common Problems 😎"
+        },
+        {
+          "id": "https://dev.to/elijahtrillionz/you-dont-need-to-learn-reactjs-now-2an",
+          "author": "Elijah Trillionz",
+          "description": "#react #webdev #javascript #beginners",
+          "link": "https://dev.to/elijahtrillionz/you-dont-need-to-learn-reactjs-now-2an",
+          "publishedOn": "2021-12-24T16:07:46.000Z",
+          "wordCount": 3741,
+          "title": "You Don't Need To Learn ReactJS Now"
+        },
+        {
+          "id": "https://dev.to/narottam04/web-10-web-20-web-30-explained-591n",
+          "author": "Narottam04",
+          "description": "#beginners #blockchain #web3 #webdev",
+          "link": "https://dev.to/narottam04/web-10-web-20-web-30-explained-591n",
+          "publishedOn": "2021-12-24T12:40:47.000Z",
+          "wordCount": 2331,
+          "title": "Web 1.0, Web 2.0 & Web3 Explained"
+        },
+        {
+          "id": "https://dev.to/murtuzaalisurti/how-to-make-a-qr-code-generator-using-vanilla-javascript-3cla",
+          "author": "murtuza",
+          "description": "#webdev #javascript #tutorial #beginners",
+          "link": "https://dev.to/murtuzaalisurti/how-to-make-a-qr-code-generator-using-vanilla-javascript-3cla",
+          "publishedOn": "2021-12-23T07:52:46.000Z",
+          "wordCount": 3737,
+          "title": "How to make a QR Code generator using JavaScript?"
+        },
+        {
+          "id": "https://dev.to/harshkc/stop-building-your-ui-components-like-this-19il",
+          "author": "Harsh Choudhary",
+          "description": "#javascript #react #productivity #webdev",
+          "link": "https://dev.to/harshkc/stop-building-your-ui-components-like-this-19il",
+          "publishedOn": "2021-12-22T13:56:02.000Z",
+          "wordCount": 6212,
+          "title": "Stop Building Your UI Components like this❌"
+        },
+        {
+          "id": "https://dev.to/alexeagleson/docker-for-javascript-developers-41me",
+          "author": "Alex Eagleson",
+          "description": "#javascript #webdev #docker #node",
+          "link": "https://dev.to/alexeagleson/docker-for-javascript-developers-41me",
+          "publishedOn": "2021-12-22T13:24:29.000Z",
+          "wordCount": 7640,
+          "title": "Introduction to Docker for Javascript Developers (feat Node.js and PostgreSQL)"
+        },
+        {
+          "id": "https://dev.to/colocodes/i-share-my-notion-template-with-over-440-pages-of-web-development-content-22cf",
+          "author": "Damian Demasi",
+          "description": "#javascript #webdev #beginners #programming",
+          "link": "https://dev.to/colocodes/i-share-my-notion-template-with-over-440-pages-of-web-development-content-22cf",
+          "publishedOn": "2021-12-21T19:59:58.000Z",
+          "wordCount": 3380,
+          "title": "I share my Notion template with over 440 pages of web development content"
+        },
+        {
+          "id": "https://dev.to/sansk/build-a-pomodoro-timer-using-html-css-and-javascript-53do",
+          "author": "Sangy K",
+          "description": "#javascript #webdev #tutorial #css",
+          "link": "https://dev.to/sansk/build-a-pomodoro-timer-using-html-css-and-javascript-53do",
+          "publishedOn": "2021-12-21T13:45:22.000Z",
+          "wordCount": 2717,
+          "title": "Build a Pomodoro Timer using HTML, CSS and Javascript"
+        },
+        {
+          "id": "https://dev.to/thenomadevel/top-7-platforms-to-master-coding-in-2022-7d",
+          "author": "Nomadev💻🔱",
+          "description": "#codenewbie #javascript #webdev #python",
+          "link": "https://dev.to/thenomadevel/top-7-platforms-to-master-coding-in-2022-7d",
+          "publishedOn": "2021-12-21T09:38:14.000Z",
+          "wordCount": 1510,
+          "title": "Top 7 Platforms to Master Coding in 2022"
+        },
+        {
+          "id": "https://dev.to/melnik909/css-isnt-magic-all-nuances-about-the-display-property-3fok",
+          "author": "Stas Melnikov",
+          "description": "#css #beginners #tutorial #webdev",
+          "link": "https://dev.to/melnik909/css-isnt-magic-all-nuances-about-the-display-property-3fok",
+          "publishedOn": "2021-12-20T19:33:46.000Z",
+          "wordCount": 2672,
+          "title": "CSS isn't magic. All nuances about the display property"
+        },
+        {
+          "id": "https://dev.to/techworld_with_nana/golang-tutorial-for-beginners-free-course-330",
+          "author": "Techworld with Nana",
+          "description": "#go #programming #beginners #tutorial",
+          "link": "https://dev.to/techworld_with_nana/golang-tutorial-for-beginners-free-course-330",
+          "publishedOn": "2021-12-20T15:13:23.000Z",
+          "wordCount": 1710,
+          "title": "Golang Tutorial for Beginners [FREE Course] 🎉"
+        },
+        {
+          "id": "https://dev.to/rfornal/think-with-a-programmers-brain-2109",
+          "author": "bob.ts",
+          "description": "#beginners #programming #productivity #100daysofcode",
+          "link": "https://dev.to/rfornal/think-with-a-programmers-brain-2109",
+          "publishedOn": "2021-12-20T15:05:01.000Z",
+          "wordCount": 2895,
+          "title": "Think With A Programmer's Brain"
+        },
+        {
+          "id": "https://dev.to/ohdylan/start-testing-your-javascript-codes-with-jest-2gfm",
+          "author": "Dylan Oh",
+          "description": "#javascript #testing #webdev #programming",
+          "link": "https://dev.to/ohdylan/start-testing-your-javascript-codes-with-jest-2gfm",
+          "publishedOn": "2021-12-19T13:56:48.000Z",
+          "wordCount": 4529,
+          "title": "Start Testing Your JavaScript Code with Jest"
+        },
+        {
+          "id": "https://dev.to/wadecodez/tips-to-enhance-tailwindcss-projects-34ap",
+          "author": "Wade Zimmerman",
+          "description": "#css #tailwindcss #webdev #javascript",
+          "link": "https://dev.to/wadecodez/tips-to-enhance-tailwindcss-projects-34ap",
+          "publishedOn": "2021-12-19T01:51:44.000Z",
+          "wordCount": 2184,
+          "title": "Life Pro Tips for TailwindCSS Projects"
+        },
+        {
+          "id": "https://dev.to/alexeagleson/how-to-create-a-node-and-react-monorepo-with-git-submodules-2g83",
+          "author": "Alex Eagleson",
+          "description": "#webdev #react #javascript #git",
+          "link": "https://dev.to/alexeagleson/how-to-create-a-node-and-react-monorepo-with-git-submodules-2g83",
+          "publishedOn": "2021-12-17T13:12:16.000Z",
+          "wordCount": 4856,
+          "title": "How to Create a React Typescript Monorepo with Git Submodules"
+        },
+        {
+          "id": "https://dev.to/dragosnedelcu/9-smart-ways-to-stand-out-as-a-developer-in-a-world-full-of-coders-2b81",
+          "author": "Dragos Nedelcu",
+          "description": "#webdev #programming #softwaredevelopment #career",
+          "link": "https://dev.to/dragosnedelcu/9-smart-ways-to-stand-out-as-a-developer-in-a-world-full-of-coders-2b81",
+          "publishedOn": "2021-12-16T13:54:19.000Z",
+          "wordCount": 4011,
+          "title": "9 Smart Ways To Stand Out As A Developer In A World Full Of Coders"
+        },
+        {
+          "id": "https://dev.to/kunaal438/amazing-portfolio-website-using-html-css-and-js-l8f",
+          "author": "Modern Web",
+          "description": "#html #css #javascript #webdev",
+          "link": "https://dev.to/kunaal438/amazing-portfolio-website-using-html-css-and-js-l8f",
+          "publishedOn": "2021-12-16T13:44:31.000Z",
+          "wordCount": 4927,
+          "title": "🔥🤯 Amazing Portfolio website using HTML, CSS and JS."
+        },
+        {
+          "id": "https://dev.to/amyoulton/how-to-brand-yourself-as-a-developer-397b",
+          "author": "Amy Oulton",
+          "description": "#webdev #beginners #productivity #career",
+          "link": "https://dev.to/amyoulton/how-to-brand-yourself-as-a-developer-397b",
+          "publishedOn": "2021-12-15T22:24:56.000Z",
+          "wordCount": 2937,
+          "title": "How To: Brand Yourself As A Developer"
+        },
+        {
+          "id": "https://dev.to/javinpaul/why-every-developer-should-learn-docker-in-2022-2ndi",
+          "author": "javinpaul",
+          "description": "#docker #devops #programming #developer",
+          "link": "https://dev.to/javinpaul/why-every-developer-should-learn-docker-in-2022-2ndi",
+          "publishedOn": "2021-12-15T08:39:56.000Z",
+          "wordCount": 2999,
+          "title": "Why Every Developer should Learn Docker in 2022"
+        },
+        {
+          "id": "https://dev.to/devteam/announcing-the-mongodb-atlas-hackathon-on-dev-4b6m",
+          "author": "Gracie Gregory (she/her), The DEV Team",
+          "description": "#atlashackathon #mongodb",
+          "link": "https://dev.to/devteam/announcing-the-mongodb-atlas-hackathon-on-dev-4b6m",
+          "publishedOn": "2021-12-13T19:27:24.000Z",
+          "wordCount": 5507,
+          "title": "Announcing the MongoDB Atlas Hackathon on DEV!"
+        },
+        {
+          "id": "https://dev.to/vibalijoshi/the-dark-side-of-software-development-441e",
+          "author": "vibalijoshi",
+          "description": "#discuss #productivity #career",
+          "link": "https://dev.to/vibalijoshi/the-dark-side-of-software-development-441e",
+          "publishedOn": "2021-12-13T10:57:17.000Z",
+          "wordCount": 2927,
+          "title": "The Dark Side of Software Development"
+        }
+      ]
     }
   ],
   "cliVersion": "1.12.0"
