@@ -2,10 +2,98 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gsyx666.github.io/action-osmosfeed/index.html</id>
     <title>gsyx::feed</title>
-    <updated>2022-01-11T06:53:46.813Z</updated>
+    <updated>2022-01-11T07:39:45.072Z</updated>
     <generator>osmosfeed 1.12.0</generator>
     <link rel="alternate" href="https://gsyx666.github.io/action-osmosfeed/index.html"/>
     <link rel="self" href="https://gsyx666.github.io/action-osmosfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Striver's SDE Sheet Journey - #12 Count inversions in an array]]></title>
+        <id>https://dev.to/sachin26/strivers-sde-sheet-journey-12-count-inversions-in-an-array-4phl</id>
+        <link href="https://dev.to/sachin26/strivers-sde-sheet-journey-12-count-inversions-in-an-array-4phl"/>
+        <updated>2022-01-11T07:17:33.000Z</updated>
+        <summary type="html"><![CDATA[Problem Statement :-
+Given an array of N integers, count the inversion of the array.
+An inversion is defined for a pair of integers in the array when the following two conditions are met.
+ARR[i] > ARR[j]
+i < j
+Input :  array = [2, 5, 1, 3, 4]
+Result : 4
+Explanation: We have a total of 4 pairs which satisfy the condition of inversion. (2, 1), (5, 1), (5, 3) and (5, 4).
+Solution 1
+
+
+we can solve this problem by using two nested loop,but it will cost n^2 time complexity.
+step-1 initialise a variable pairs=0 .
+step-2 run a loop from i=0 to n.
+1. run another loop from j=i+1 to n.
+check, if arr[i] > arr[j] is true, then increase the inversion count.
+step-3 end.
+public class Solution {
+    public static long getInversions(long arr[], int n) {
+        long pairs =0;
+
+     for(int i=0; i<arr.length…]]></summary>
+        <author>
+            <name>sachin26</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Language called Java]]></title>
+        <id>https://hashnode.com/post/the-language-called-java-cky9rhqtj19vl5ns1b36ugp54</id>
+        <link href="https://hashnode.com/post/the-language-called-java-cky9rhqtj19vl5ns1b36ugp54"/>
+        <updated>2022-01-11T06:57:34.000Z</updated>
+        <summary type="html"><![CDATA[In our world today, there are different computer languages, and there are numerous of them still widely used, and it’s safe to say Java is one of them.
+What is Java?
+Java is a general-purpose programming language. It has features that readily support...]]></summary>
+        <author>
+            <name>Oluwafisayomi Ogunyemi</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[OnePlus 10 Pro launches in China with Snapdragon 8 Gen 1 and ColorOS 12.1]]></title>
+        <id>https://www.xda-developers.com/?p=581367</id>
+        <link href="https://www.xda-developers.com/oneplus-10-pro-china-launch/"/>
+        <updated>2022-01-11T06:55:37.000Z</updated>
+        <summary type="html"><![CDATA[After months of leaks and weeks of teasing, the OnePlus 10 Pro has finally launched in China. The OnePlus 10 Pro arrives months ahead of its usual schedule, and the device is launching without its regular non-Pro variant in tow. So what has changed for OnePlus’s premier flagship? Let’s find out! OnePlus 10 Pro: Specifications
+The post OnePlus 10 Pro launches in China with Snapdragon 8 Gen 1 and ColorOS 12.1 appeared first on xda-developers.]]></summary>
+        <author>
+            <name>Aamir Siddiqui</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何评价国产动画《紫川》首创隐藏互动剧集？]]></title>
+        <id>http://www.zhihu.com/question/510345665/answer/2306308168</id>
+        <link href="http://www.zhihu.com/question/510345665/answer/2306308168?utm_campaign=rss&amp;utm_medium=rss&amp;utm_source=rss&amp;utm_content=title"/>
+        <updated>2022-01-11T06:54:59.000Z</updated>
+        <summary type="html"><![CDATA[谢邀！
+很荣幸能来和大家分享《紫川》的创作历程，我叫陈闻，我和李振锋李导，共同任职《紫川》项目的导演。首先跟大家同步一个消息，原本预定18号上线的互动剧第2章《血修罗》，在本周播出的第五集中，看“一”送“二”，提前和观众见面了，大家别忘记看哈！
+《紫川》上线以来，我和李导关注了平台上的各种反馈，对于观众的意见和建议，我们都一一记在了小本本上，很感谢大家的反馈，那些都是我们未来努力的方向。 其中有一个意外，那就是《紫川》讨论词条中的最多的竟然是“互动隐藏剧”，怎么说呢，这个意外真的很让人意外……其实，和大家评论的一样，《紫川》的互动形式，属于轻互动，就是在正集一些特殊的剧情点，增设了不影响主线的“隐藏剧集”按钮，观众老爷无论是选择“穿越”观看，还是看完正集，再返回来观看，都是可以的。（宝，你什么都是对的.jpg）
+“番剧互动”这样的概念，我们其实是在项目策划初期就已经提出。我们主要是想给观众更多的选择，但是经过测试，发现剧集暂停→观众选择→剧集播出→剧集暂停→观众选择，这样的形式，不仅影响剧情节奏，还非常废手，尤其是废的还是观众老爷的手，这就得慎重考量了。（正义由我来守护.jpg）
+之后，我们发现《紫川》第一部《紫川三杰》更偏群像戏，比如说，虽然紫川秀是男主角，但其他两位“斯特林”和“帝林”的戏份也非常重要，可是他们常常各自为战，主角紫川秀没有在他身边，导致剧情不是由主角推动的，这会让故事有割裂感。[让人头秃.jpg]
+综合考量后，团队决定将一些主角没有参与，但是非常重要的戏份，以及一些不同时间线的比较精彩的戏份，规划到了隐藏剧环节，比如隐藏互动剧《血修罗》中，冷酷铁血的帝林军团为了胜利，就地掠夺以战养战；为了永绝后患，将身高超过车轮的魔族全部杀掉，播种“恐惧”；为了保证军团作战利益最大化，将奴隶军团送上前线……这段故事中，有充满魅力的人设，外加大规模群集特效、丰富的兵种、血肉对拼的攻城战氛围，虽然游离在主角主线之外，非常经典可看！于是我们将这段戏份单独做成了隐藏互动剧集，和正集一起呈现给观众。
+可以这么理解，《紫川》中，正剧是还原原著剧情主线，互动隐藏剧主要是为了细化扩展重点人物故事！ [就这么愉快的决定了.jpg]
+ 好吧，编不下去了，我摊牌了！《紫川》看“一”送“二”的行为，纯粹就是为了能让观众老爷多看点！[不管你信不信，反正我信了.jpg]
+
+来源：知乎 www.zhihu.com
+无名
+点击下载
+3 个回答，查看全部。
+《紫川》动画版开播，如何评价前两集？
+如何评价《紫川》动画版第三集？]]></summary>
+        <author>
+            <name>无名</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[溢价不值得]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/memes/comments/s0gma7/the_premium_aint_worth_it/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/memes/comments/s0gma7/the_premium_aint_worth_it/?score=75136&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Fs0gma7%2Fthe_premium_aint_worth_it%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Fs0gma7%2Fthe_premium_aint_worth_it%2F&amp;channel=memes&amp;sensitive=false"/>
+        <updated>2022-01-11T06:51:07.000Z</updated>
+        <summary type="html"><![CDATA[溢价不值得]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Android 13 may ship with a redesigned audio output picker]]></title>
         <id>https://www.xda-developers.com/?p=581867</id>
@@ -39,6 +127,30 @@ Create one sample JSON file as given below, and save it as data.json
 Now, if you want to render any of the key-value pairs from …]]></summary>
         <author>
             <name>nikhil sharma</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to read file from test resources in java unit test]]></title>
+        <id>https://dev.to/codever/how-to-read-file-from-test-resources-in-java-unit-test-43b7</id>
+        <link href="https://dev.to/codever/how-to-read-file-from-test-resources-in-java-unit-test-43b7"/>
+        <updated>2022-01-11T06:16:44.000Z</updated>
+        <summary type="html"><![CDATA[Use the getClass().getClassLoader().getResourceAsStream() to get an InputStream for the wanted resource. In the following snippet we access the bookmark-example.xml file resource, which is placed directly in the  src/test/resources folder:
+@Test
+void shouldUnmarshallXmlToJava() throws JAXBException {
+    JAXBContext jaxbContext = JAXBContext.newInstance("dev.codepal.bookmark");
+    final var jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+
+    InputStream inStream = getClass().getClassLoader().getResourceAsStream(
+            "bookmark-example.xml");
+
+    JAXBElement<Bookmark> o = (JAXBElement<Bookmark>)jaxbUnmarshaller.unmarshal(inStream);
+    Bookmark bookmark = o.getValue();
+    assertThat(bookmark.getTitle(), equalTo("CodepediaOrg"));
+}
+
+Shared with ❤️ from Codever. Use 👉 copy to mine functionality to add it to your personal snippets collection.]]></summary>
+        <author>
+            <name>Adrian Matei</name>
         </author>
     </entry>
     <entry>
@@ -81,6 +193,30 @@ Do not invest your money in any cryptocurrency without doing your own research, 
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Complete Amazon SEO Guide for Sellers 2022]]></title>
+        <id>https://dev.to/bhavyashah/complete-amazon-seo-guide-for-sellers-2022-16ge</id>
+        <link href="https://dev.to/bhavyashah/complete-amazon-seo-guide-for-sellers-2022-16ge"/>
+        <updated>2022-01-11T05:35:05.000Z</updated>
+        <summary type="html"><![CDATA[Source Image was taken by this website: Complete Amazon Guide for sellers 2022
+Amazon is the big wheel of eCommerce. In 2021, it had more than 146,396 million U.S. dollars sales, which is expected to grow over 162K million U.S. Dollars by 2022. All the amazon businesses dream of being on page one, and it is obvious that the company listed on page one will have more visibility, so have more leads to convert. But how to hold a place on Amazon page one? The answer is- Amazon SEO. You need to learn and master Amazon Search Engine Optimization (SEO). This is the most reliable method to generate sales compared to Amazon PPC, influencer partnerships, other paid ads, etc. 
+Today’s post will discuss all the steps you need to know to master Amazon SEO. but before that, let us see what Amazon SEO is-…]]></summary>
+        <author>
+            <name>Bhavyashah</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[25 Day Check-In -- #100 Days of Code]]></title>
+        <id>https://dev.to/joshdevhub/25-day-check-in-100-days-of-code-837</id>
+        <link href="https://dev.to/joshdevhub/25-day-check-in-100-days-of-code-837"/>
+        <updated>2022-01-11T05:24:54.000Z</updated>
+        <summary type="html"><![CDATA[Hello again. Back with another update on my 100 days of code progress. I feel like I've gotten a lot done over these 5 days and have been feeling quite motivated and excited about coding coming off the holidays. So here's what's new:
+I mentioned this in my last update, but now I have a finished product. Like the other projects I'll mention in this update, this was done as part of The Odin Project. It's essentially a custom building of Ruby's built in enumerable module, which is a mixin that's included with 'iterable' standard classes like Array and Hash. 
+Technically each class that includes Enumerable implements its own #each. It wasn't in the specifications of the project to go about developing all that, so mine was mostly built with arrays in mind (and it's basically all I tested anythi…]]></summary>
+        <author>
+            <name>Josh Smith</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Cheat sheets]]></title>
         <id>https://dev.to/codewithpom/cheat-sheets-2imc</id>
         <link href="https://dev.to/codewithpom/cheat-sheets-2imc"/>
@@ -119,6 +255,53 @@ QuickEdit is a text editor from Rhythm Software. This text editor is a very stab
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[How to add your new project to GitHub in 10 easy steps]]></title>
+        <id>https://dev.to/sanjbhat/add-your-project-to-github-in-10-easy-steps-4cl9</id>
+        <link href="https://dev.to/sanjbhat/add-your-project-to-github-in-10-easy-steps-4cl9"/>
+        <updated>2022-01-11T05:17:06.000Z</updated>
+        <summary type="html"><![CDATA[Okay, I am fairly new to GitHub. And initially, I used to struggle a lot with adding my local projects to GitHub. 
+Git on your local machine
+Here is a neat article to help with that.
+Do not initialize .gitignore or readme at this point.
+In this file, add all the folder and the file extensions that you wouldn't want in the remote repository. 
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+#folders
+logs/
+target/
+
+#other
+*.classpath
+*.project
+*.settings
+*.pdf
+
+In your local, navigate to the project folder from your favorite command prompt 
+git init -b main
+git add .
+git status
+git commit -m "commit message"
+On a side note, it's a great practice to keep committing to your local in small increments. That way, if you see that a code change is breaking and don't know which line did that, it's easy to revert back to a stable version.
+git remote add origin https://github.com/username/repo
+git push origin main
+git pull origin main
+That's it, you did it :)]]></summary>
+        <author>
+            <name>Sanjana Bhat</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Authenticate in React with Firebase Auth]]></title>
         <id>https://dev.to/dmuraco3/authenticate-in-react-with-firebase-auth-p3n</id>
         <link href="https://dev.to/dmuraco3/authenticate-in-react-with-firebase-auth-p3n"/>
@@ -146,6 +329,22 @@ import {getAuth, GoogleAuthProvider, signInWithPopup,…]]></summary>
         <summary type="html"><![CDATA[Today marks the end of the second unit my software engineering course through Interapt/General Assembly. The past several weeks learning Java has been the most intellectually rigorous work that I've done in the past decade. (Bar review was summer of ...]]></summary>
         <author>
             <name>Abby Henes</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[HtmlCollection vs NodeList in Javascript]]></title>
+        <id>https://dev.to/jimajs/htmlcollection-vs-nodelist-in-javascript-4337</id>
+        <link href="https://dev.to/jimajs/htmlcollection-vs-nodelist-in-javascript-4337"/>
+        <updated>2022-01-11T04:43:32.000Z</updated>
+        <summary type="html"><![CDATA[At some point in your journey as a developer, you might have come across this error.
+
+The above error occurs as a result of trying to use the forEach array method on an htmlCollection.
+Well, an htmlCollection is a live and ordered list of nodes that represents a collection of HTML elements extracted from the DOM. 
+The htmlCollection may seem very much like an array, but it is not. That’s why whenever you try to use array methods like forEach(), push(), or join() on an htmlCollection, you get different types of errors similar to the one above.
+Another collection of objects that happens to be very similar to the htmlCollection, is the nodeList. While they may both be an array-like list of html elements, the htmlCollection is a live list while the nodeList can either be live or static.
+Being …]]></summary>
+        <author>
+            <name>Jima Victor</name>
         </author>
     </entry>
     <entry>

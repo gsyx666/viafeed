@@ -731,6 +731,15 @@
       "siteUrl": "https://dev.to",
       "articles": [
         {
+          "id": "https://dev.to/sachin26/strivers-sde-sheet-journey-12-count-inversions-in-an-array-4phl",
+          "author": "sachin26",
+          "description": "Problem Statement :-\nGiven an array of N integers, count the inversion of the array.\nAn inversion is defined for a pair of integers in the array when the following two conditions are met.\nARR[i] > ARR[j]\ni < j\nInput :  array = [2, 5, 1, 3, 4]\nResult : 4\nExplanation: We have a total of 4 pairs which satisfy the condition of inversion. (2, 1), (5, 1), (5, 3) and (5, 4).\nSolution 1\n\n\nwe can solve this problem by using two nested loop,but it will cost n^2 time complexity.\nstep-1 initialise a variable pairs=0 .\nstep-2 run a loop from i=0 to n.\n1. run another loop from j=i+1 to n.\ncheck, if arr[i] > arr[j] is true, then increase the inversion count.\nstep-3 end.\npublic class Solution {\n    public static long getInversions(long arr[], int n) {\n        long pairs =0;\n\n     for(int i=0; i<arr.length…",
+          "link": "https://dev.to/sachin26/strivers-sde-sheet-journey-12-count-inversions-in-an-array-4phl",
+          "publishedOn": "2022-01-11T07:17:33.000Z",
+          "wordCount": 1039,
+          "title": "Striver's SDE Sheet Journey - #12 Count inversions in an array"
+        },
+        {
           "id": "https://dev.to/sharma2288/get-javascript-objects-from-a-json-file-2c86",
           "author": "nikhil sharma",
           "description": "Introduction\n\n\nJSON stands for JavaScript Object Notation.JSON is a lightweight format for storing and transporting data.JSON is often used when data is sent from a server to a web page.JSON is \"self-describing\" and easy to understand. JavaScript objects are an integral part of the React app, so they need to get accessed from JSON files/data to be uses in components.\nThis blog will demonstrate how to get a JavaScript object from a JSON file or access it using a fetch() HTTP request.\nCreate one sample JSON file as given below, and save it as data.json\n{\n\"employees\":{\n\"employee1\": {\"firstName\":\"John\", \"lastName\":\"Doe\"},\n\"employee2\": {\"firstName\":\"Anna\", \"lastName\":\"Smith\"},\n\"employee3\": {\"firstName\":\"Peter\", \"lastName\":\"Jones\"}\n}\n}\n\nNow, if you want to render any of the key-value pairs from …",
@@ -740,6 +749,15 @@
           "title": "Get JavaScript Objects from a JSON File"
         },
         {
+          "id": "https://dev.to/codever/how-to-read-file-from-test-resources-in-java-unit-test-43b7",
+          "author": "Adrian Matei",
+          "description": "Use the getClass().getClassLoader().getResourceAsStream() to get an InputStream for the wanted resource. In the following snippet we access the bookmark-example.xml file resource, which is placed directly in the  src/test/resources folder:\n@Test\nvoid shouldUnmarshallXmlToJava() throws JAXBException {\n    JAXBContext jaxbContext = JAXBContext.newInstance(\"dev.codepal.bookmark\");\n    final var jaxbUnmarshaller = jaxbContext.createUnmarshaller();\n\n    InputStream inStream = getClass().getClassLoader().getResourceAsStream(\n            \"bookmark-example.xml\");\n\n    JAXBElement<Bookmark> o = (JAXBElement<Bookmark>)jaxbUnmarshaller.unmarshal(inStream);\n    Bookmark bookmark = o.getValue();\n    assertThat(bookmark.getTitle(), equalTo(\"CodepediaOrg\"));\n}\n\nShared with ❤️ from Codever. Use 👉 copy to mine functionality to add it to your personal snippets collection.",
+          "link": "https://dev.to/codever/how-to-read-file-from-test-resources-in-java-unit-test-43b7",
+          "publishedOn": "2022-01-11T06:16:44.000Z",
+          "wordCount": 462,
+          "title": "How to read file from test resources in java unit test"
+        },
+        {
           "id": "https://dev.to/shivashish/these-cryptocurrencies-combined-have-given-returns-of-over-2400-in-2021-4cdl",
           "author": "Shivashish Yadav",
           "description": "While crypto investors expected that the month of December will see some decent jump in crypto, but nothing like this happened. After touching, it's All-Time High (ATH) on 10th November, Bitcoin will see a lot of declines has been found.\nEven amid such an upsurge, from the beginning of 2021 till now, a lot of cryptocurrencies have made very good returns to their investors. According to data from Coinmatrics, there are 35 cryptocurrencies that have given an average return of 2,400% this year.\n\nOn top of this comes the name of Axie infinity, which is a Play To Earn Blockchain game that has given a tremendous 17,213% returns this year, same category Blockchain gaming project Sandbox has also given 13,832% returns.\nMatic, which is working on Ethereum's Layer 2 Solution, has given 12,133% to its investors. Investors' eyes are very much on Matic as it is contributing hugely to scaling Ethereum and right now Matic is also working on many projects. It is working, due to which the investor expects it will increase further.\nDuring so many difficulties, the world's largest cryptocurrency, Bitcoin, did not anger people too much, from the beginning of this year to the end, Bitcoin has given a return of 62%, while the second number cryptocurrency Ethereum has given a return of 433%.\nAs awareness is increasing among people about NFT, DeFi, its biggest advantage will be the leader cryptocurrency of this category, Ethereum. Everyone is eagerly waiting for Ethereum 2.0. With its arrival, Ethereum's network will see a lot of booms, and people will get rid of the high gas fees and its slow transaction speed.\nIts developers are working on Ethereum 2.0, it is expected that it will be completed by 2022, after which there will be no one to compete with Ethereum.\nDisclaimer\nDo not invest your money in any cryptocurrency without doing your own research, as you will find many crypto projects that will lure you to give you high returns, but you should not invest money anywhere without doing research.",
@@ -747,6 +765,24 @@
           "publishedOn": "2022-01-11T05:55:04.000Z",
           "wordCount": 741,
           "title": "These cryptocurrencies combined have given returns of over 2,400% in 2021"
+        },
+        {
+          "id": "https://dev.to/bhavyashah/complete-amazon-seo-guide-for-sellers-2022-16ge",
+          "author": "Bhavyashah",
+          "description": "Source Image was taken by this website: Complete Amazon Guide for sellers 2022\nAmazon is the big wheel of eCommerce. In 2021, it had more than 146,396 million U.S. dollars sales, which is expected to grow over 162K million U.S. Dollars by 2022. All the amazon businesses dream of being on page one, and it is obvious that the company listed on page one will have more visibility, so have more leads to convert. But how to hold a place on Amazon page one? The answer is- Amazon SEO. You need to learn and master Amazon Search Engine Optimization (SEO). This is the most reliable method to generate sales compared to Amazon PPC, influencer partnerships, other paid ads, etc. \nToday’s post will discuss all the steps you need to know to master Amazon SEO. but before that, let us see what Amazon SEO is-…",
+          "link": "https://dev.to/bhavyashah/complete-amazon-seo-guide-for-sellers-2022-16ge",
+          "publishedOn": "2022-01-11T05:35:05.000Z",
+          "wordCount": 1531,
+          "title": "Complete Amazon SEO Guide for Sellers 2022"
+        },
+        {
+          "id": "https://dev.to/joshdevhub/25-day-check-in-100-days-of-code-837",
+          "author": "Josh Smith",
+          "description": "Hello again. Back with another update on my 100 days of code progress. I feel like I've gotten a lot done over these 5 days and have been feeling quite motivated and excited about coding coming off the holidays. So here's what's new:\nI mentioned this in my last update, but now I have a finished product. Like the other projects I'll mention in this update, this was done as part of The Odin Project. It's essentially a custom building of Ruby's built in enumerable module, which is a mixin that's included with 'iterable' standard classes like Array and Hash. \nTechnically each class that includes Enumerable implements its own #each. It wasn't in the specifications of the project to go about developing all that, so mine was mostly built with arrays in mind (and it's basically all I tested anythi…",
+          "link": "https://dev.to/joshdevhub/25-day-check-in-100-days-of-code-837",
+          "publishedOn": "2022-01-11T05:24:54.000Z",
+          "wordCount": 815,
+          "title": "25 Day Check-In -- #100 Days of Code"
         },
         {
           "id": "https://dev.to/codewithpom/cheat-sheets-2imc",
@@ -767,6 +803,15 @@
           "title": "Top 5 text editors for mobile in India 2021"
         },
         {
+          "id": "https://dev.to/sanjbhat/add-your-project-to-github-in-10-easy-steps-4cl9",
+          "author": "Sanjana Bhat",
+          "description": "Okay, I am fairly new to GitHub. And initially, I used to struggle a lot with adding my local projects to GitHub. \nGit on your local machine\nHere is a neat article to help with that.\nDo not initialize .gitignore or readme at this point.\nIn this file, add all the folder and the file extensions that you wouldn't want in the remote repository. \n*.class\n\n# Mobile Tools for Java (J2ME)\n.mtj.tmp/\n\n# Package Files #\n*.jar\n*.war\n*.ear\n\n# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml\nhs_err_pid*\n\n#folders\nlogs/\ntarget/\n\n#other\n*.classpath\n*.project\n*.settings\n*.pdf\n\nIn your local, navigate to the project folder from your favorite command prompt \ngit init -b main\ngit add .\ngit status\ngit commit -m \"commit message\"\nOn a side note, it's a great practice to keep committing to your local in small increments. That way, if you see that a code change is breaking and don't know which line did that, it's easy to revert back to a stable version.\ngit remote add origin https://github.com/username/repo\ngit push origin main\ngit pull origin main\nThat's it, you did it :)",
+          "link": "https://dev.to/sanjbhat/add-your-project-to-github-in-10-easy-steps-4cl9",
+          "publishedOn": "2022-01-11T05:17:06.000Z",
+          "wordCount": 670,
+          "title": "How to add your new project to GitHub in 10 easy steps"
+        },
+        {
           "id": "https://dev.to/dmuraco3/authenticate-in-react-with-firebase-auth-p3n",
           "author": "Dylan Muraco",
           "description": "Authentication is something almost every modern web app needs. I've user Auth0 and Next Auth but Firebase seems to provide the easiest way to get authentication up and running.\nNow we need to create a new project in firebase. Navigate to Firebase Console and click Add project\n\nAfter creating this project and you are in the project console click on the Web icon to create a new web app. Follow the directions and copy the config which will look something like this.\n\nAfter creating this project navigate to the authentication tab and click Get Started. Then click Google\nnpm install firebase\n\ncreate a new folders in /src named /lib/auth. Inside this auth folder create a file index.js\nfirst lets import what we need and initialize our constants\nimport {getAuth, GoogleAuthProvider, signInWithPopup,…",
@@ -774,6 +819,15 @@
           "publishedOn": "2022-01-11T04:57:57.000Z",
           "wordCount": 793,
           "title": "Authenticate in React with Firebase Auth"
+        },
+        {
+          "id": "https://dev.to/jimajs/htmlcollection-vs-nodelist-in-javascript-4337",
+          "author": "Jima Victor",
+          "description": "At some point in your journey as a developer, you might have come across this error.\n\nThe above error occurs as a result of trying to use the forEach array method on an htmlCollection.\nWell, an htmlCollection is a live and ordered list of nodes that represents a collection of HTML elements extracted from the DOM. \nThe htmlCollection may seem very much like an array, but it is not. That’s why whenever you try to use array methods like forEach(), push(), or join() on an htmlCollection, you get different types of errors similar to the one above.\nAnother collection of objects that happens to be very similar to the htmlCollection, is the nodeList. While they may both be an array-like list of html elements, the htmlCollection is a live list while the nodeList can either be live or static.\nBeing …",
+          "link": "https://dev.to/jimajs/htmlcollection-vs-nodelist-in-javascript-4337",
+          "publishedOn": "2022-01-11T04:43:32.000Z",
+          "wordCount": 850,
+          "title": "HtmlCollection vs NodeList in Javascript"
         },
         {
           "id": "https://dev.to/scottodea/4-ways-to-level-up-your-js-destructuring-and-spread-syntax-4eoo",
@@ -5464,6 +5518,15 @@
       "siteUrl": "http://www.zhihu.com",
       "articles": [
         {
+          "id": "http://www.zhihu.com/question/510345665/answer/2306308168",
+          "author": "无名",
+          "description": "谢邀！\n很荣幸能来和大家分享《紫川》的创作历程，我叫陈闻，我和李振锋李导，共同任职《紫川》项目的导演。首先跟大家同步一个消息，原本预定18号上线的互动剧第2章《血修罗》，在本周播出的第五集中，看“一”送“二”，提前和观众见面了，大家别忘记看哈！\n《紫川》上线以来，我和李导关注了平台上的各种反馈，对于观众的意见和建议，我们都一一记在了小本本上，很感谢大家的反馈，那些都是我们未来努力的方向。 其中有一个意外，那就是《紫川》讨论词条中的最多的竟然是“互动隐藏剧”，怎么说呢，这个意外真的很让人意外……其实，和大家评论的一样，《紫川》的互动形式，属于轻互动，就是在正集一些特殊的剧情点，增设了不影响主线的“隐藏剧集”按钮，观众老爷无论是选择“穿越”观看，还是看完正集，再返回来观看，都是可以的。（宝，你什么都是对的.jpg）\n“番剧互动”这样的概念，我们其实是在项目策划初期就已经提出。我们主要是想给观众更多的选择，但是经过测试，发现剧集暂停→观众选择→剧集播出→剧集暂停→观众选择，这样的形式，不仅影响剧情节奏，还非常废手，尤其是废的还是观众老爷的手，这就得慎重考量了。（正义由我来守护.jpg）\n之后，我们发现《紫川》第一部《紫川三杰》更偏群像戏，比如说，虽然紫川秀是男主角，但其他两位“斯特林”和“帝林”的戏份也非常重要，可是他们常常各自为战，主角紫川秀没有在他身边，导致剧情不是由主角推动的，这会让故事有割裂感。[让人头秃.jpg]\n综合考量后，团队决定将一些主角没有参与，但是非常重要的戏份，以及一些不同时间线的比较精彩的戏份，规划到了隐藏剧环节，比如隐藏互动剧《血修罗》中，冷酷铁血的帝林军团为了胜利，就地掠夺以战养战；为了永绝后患，将身高超过车轮的魔族全部杀掉，播种“恐惧”；为了保证军团作战利益最大化，将奴隶军团送上前线……这段故事中，有充满魅力的人设，外加大规模群集特效、丰富的兵种、血肉对拼的攻城战氛围，虽然游离在主角主线之外，非常经典可看！于是我们将这段戏份单独做成了隐藏互动剧集，和正集一起呈现给观众。\n可以这么理解，《紫川》中，正剧是还原原著剧情主线，互动隐藏剧主要是为了细化扩展重点人物故事！ [就这么愉快的决定了.jpg]\n 好吧，编不下去了，我摊牌了！《紫川》看“一”送“二”的行为，纯粹就是为了能让观众老爷多看点！[不管你信不信，反正我信了.jpg]\n\n来源：知乎 www.zhihu.com\n无名\n点击下载\n3 个回答，查看全部。\n《紫川》动画版开播，如何评价前两集？\n如何评价《紫川》动画版第三集？",
+          "link": "http://www.zhihu.com/question/510345665/answer/2306308168?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
+          "publishedOn": "2022-01-11T06:54:59.000Z",
+          "wordCount": 17,
+          "title": "如何评价国产动画《紫川》首创隐藏互动剧集？"
+        },
+        {
           "id": "http://www.zhihu.com/question/510128037/answer/2301716848",
           "author": "segelas",
           "description": "非常简单地谈几句个人的看法。\n进入12月后，勇士队遭遇了一波进攻寒潮。11月，他们还能打出114.8分的百回合得分，而到了12月就只剩下了110.5分，在1月的三场比赛中更是低到了107.4分。相应地，球队核心库里也“难辞其咎”，个人百回合得分从11月的116.4分跌落到了12月的112.1、1月的110.2分，真实命中率更是从63.9%跌到了58.1%，1月份更是惨不忍睹的39.4%。\n对于造成勇士和库里如此下滑的原因，首先当然是库里个人的消耗问题。本赛季，库里在每回合之中、特别是进攻端的移动距离，比之17-18、18-19赛季，都有了一定的上涨。在曾经的勇士2.0时代，库里已经是一个拥有大量无球跑动、不断进行换位移动的进攻手，而本赛季的他则在本已不小的跑动量上进一步提高，来到了后卫中进攻跑动第九多的位置，且年过三十的年龄，也在加兰、科尔安东尼、德章泰穆雷等一众年轻人之中，显得格外突出。而在防守端，由于勇士一贯采取的集体换防策略，库里的跑动量自然也不会少，18-19赛季就有着后卫中第八多的防守移动，而本赛季也只是相对下降了0.07米。况且，我们还需要考虑到库里为了增强防守对位能力而采取的增重，对身体造成更大的负担。\n\n年龄的增加、体重的上升、移动的剧化，随着赛季的深入，这些问题逐渐开始影响库里，拉低了他的表现稳定性。这是每一个核心球星都必然面对的生涯阶段，出现波动，并不算非常离奇。而在此前的赛程中，勇士队也及时地找到了能为库里排忧解难、分担压力的替代者，乔丹普尔成为了球队的二号持球手，策动了相当比例的挡拆回合，也成为了比威少之于詹姆斯来得性价比远高的解压存在。\n然而，这样的良好趋势，却在12月开始，特别是到了1月份的几场比赛，开始出现了裂痕。对此，我们可以从阵容搭配中的变量来做初步把握。球队进攻最为气势如虹的11月，乔丹普尔场均拥有31.5分钟的出场时间，14.7次出手，…",
@@ -5992,6 +6055,18 @@
       "feedUrl": "https://www.xda-developers.com/feed",
       "siteUrl": "https://www.xda-developers.com",
       "articles": [
+        {
+          "id": "https://www.xda-developers.com/?p=581367",
+          "author": "Aamir Siddiqui",
+          "description": "After months of leaks and weeks of teasing, the OnePlus 10 Pro has finally launched in China. The OnePlus 10 Pro arrives months ahead of its usual schedule, and the device is launching without its regular non-Pro variant in tow. So what has changed for OnePlus’s premier flagship? Let’s find out! OnePlus 10 Pro: Specifications\nThe post OnePlus 10 Pro launches in China with Snapdragon 8 Gen 1 and ColorOS 12.1 appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/oneplus-10-pro-china-launch/",
+          "publishedOn": "2022-01-11T06:55:37.000Z",
+          "wordCount": 1572,
+          "title": "OnePlus 10 Pro launches in China with Snapdragon 8 Gen 1 and ColorOS 12.1",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2022/01/Volcanic-Black-1.jpg"
+          }
+        },
         {
           "id": "https://www.xda-developers.com/?p=581867",
           "author": "Kishan Vyas",
@@ -11563,6 +11638,15 @@
       "feedUrl": "https://reddit.buzzing.cc/rss.xml",
       "siteUrl": "https://reddit.buzzing.cc",
       "articles": [
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/memes/comments/s0gma7/the_premium_aint_worth_it/",
+          "author": null,
+          "description": "溢价不值得",
+          "link": "https://reddit.buzzing.cc/reddit/r/memes/comments/s0gma7/the_premium_aint_worth_it/?score=75136&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Fs0gma7%2Fthe_premium_aint_worth_it%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Fs0gma7%2Fthe_premium_aint_worth_it%2F&channel=memes&sensitive=false",
+          "publishedOn": "2022-01-11T06:51:07.000Z",
+          "wordCount": 19,
+          "title": "溢价不值得"
+        },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/s0lepo/a_western_journalist_and_african_tribe_women/",
           "author": null,
@@ -25640,6 +25724,15 @@
       "feedUrl": "https://hashnode.com/tag/java/rss",
       "siteUrl": "https://hashnode.com",
       "articles": [
+        {
+          "id": "https://hashnode.com/post/the-language-called-java-cky9rhqtj19vl5ns1b36ugp54",
+          "author": "Oluwafisayomi Ogunyemi",
+          "description": "In our world today, there are different computer languages, and there are numerous of them still widely used, and it’s safe to say Java is one of them.\nWhat is Java?\nJava is a general-purpose programming language. It has features that readily support...",
+          "link": "https://hashnode.com/post/the-language-called-java-cky9rhqtj19vl5ns1b36ugp54",
+          "publishedOn": "2022-01-11T06:57:34.000Z",
+          "wordCount": 425,
+          "title": "The Language called Java"
+        },
         {
           "id": "https://blog.abbyhenes.com/on-the-downhill-slope",
           "author": "Abby Henes",
