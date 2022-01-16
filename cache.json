@@ -236,6 +236,114 @@
       "siteUrl": "https://dev.to",
       "articles": [
         {
+          "id": "https://dev.to/sheriffderek/great-chat-with-devon-on-his-new-podcast-devcoder-tv-31id",
+          "author": "sheriffderek",
+          "description": "I've been following Devon's journey for a while while I lurk around Career Karma.\nWhen I heard he was starting a podcast, I reached out - and guess what! I got to be the first guest.\nIt was really nice to finally meet the real human and not just the avatar - and I think we had a great talk / and that you'd like it.\n@sherifferek Talks with Devon Curtis on DEVCODER TV: The Mindset of Becoming a Developer Listen here!\n: )",
+          "link": "https://dev.to/sheriffderek/great-chat-with-devon-on-his-new-podcast-devcoder-tv-31id",
+          "publishedOn": "2022-01-16T00:55:07.000Z",
+          "wordCount": 466,
+          "title": "Great chat with Devon on his new podcast DEVCODER TV"
+        },
+        {
+          "id": "https://dev.to/anxinyang/we-made-a-website-to-easily-share-links-between-our-devices-5h93",
+          "author": "AnxinYang",
+          "description": "My partner and I made a website to make us easily share links between our devices.\nhttps://www.linkshared.io/\nMany times when we found something interesting and wanted to share a link from one's phone or laptop to her desktop so we can both watch it on the big screen, we had to send the link by email, or sent to her phone via some app and she had to copy the link from her phone to the PC, Or we have to download some apps, etc.. The process was really annoying.\nTherefore, we decided to make a website that can allow people share link by simply visit our webpage.\nThis webpage will hold the shared link for 2 minutes, for now, and people can share the link via a share code so other people can access the shared text.\nSteps are very simple:\nShare your text on the website.\nUse the share code to get your text on other devices. If the text contains a URL, website will detect it and extract the link for you.\nWe used NextJS to implement both the frontend and backend API.\nWe opened a free Redislabs account so we can host our cache.\nWe used the free hosting service provide by Vercel.\nWe brought a domain name on Vercel for $70/yr.\nWe don't want to make a cloud storage.\nWe don't want to pay for a cloud storage.\nIn most use cases, this webpage just works like clipboard, so no long term storage is needed.\nWe don't want to pay for a cloud storage.\nPlease feel free to leave your comment!",
+          "link": "https://dev.to/anxinyang/we-made-a-website-to-easily-share-links-between-our-devices-5h93",
+          "publishedOn": "2022-01-15T23:31:25.000Z",
+          "wordCount": 647,
+          "title": "We made a website to  easily share links between our devices."
+        },
+        {
+          "id": "https://dev.to/knyzorg/the-state-of-copy-pasting-in-javascript-bnp",
+          "author": "Slava Knyazev",
+          "description": "I recently did some work on a VS Code extension whose purpose is to handle rich pastes. It prompted me to survey different copy-pasting libraries and the state of the NPM ecosystem as a whole.\nClipboards across different operating systems work essentially the same. For this reason, we will stick to looking at a single one -- Windows.\nA common misconception about how clipboards work is that they contain a single piece of data, such as text or an image. In reality, clipboards hold all the ways target software can represent the data.\nConsider if I copy the following webpage:\n\nHTML headings as rendered by Firefox\nWhen pasting it into Microsoft Word, it appears formatted as rich content:\n\nMicrosoft Word displays rich content exactly as Firefox does\nWhen pasting it into Notepad++, it appears as …",
+          "link": "https://dev.to/knyzorg/the-state-of-copy-pasting-in-javascript-bnp",
+          "publishedOn": "2022-01-15T22:55:34.000Z",
+          "wordCount": 1263,
+          "title": "The State of Copy-Pasting in JavaScript"
+        },
+        {
+          "id": "https://dev.to/aciklab/linux-uzerinde-intel-6-nesil-islemcilerdeki-titreme-sorunu-1fjf",
+          "author": "Ali Orhun Akkirman",
+          "description": "Intel 6. nesil işlemcilerin (Skylake) entegre ekran kartlarında \"Screen Flickering\" adı verilen ekranda hafif bir titreme sorunu bulunmakta. \nBu sorunu gidermenin en önemli yollarından birisi X11 üzerinde ekran kartı ayarlarının düzenlenmesi olarak görülmekte.\nSisteminizde yetkili kullanıcı olarak /usr/share/X11/xorg.conf.d/20-intel.conf dosyası oluşturup içeriğini aşağıdaki gibi yapabilirsiniz.\nSection \"Device\"\n    Identifier \"Intel Graphics\"\n    Driver \"intel\"\n    Option \"AccelMethod\" \"sna\"\n    Option \"TearFree\" \"true\"\n    Option \"DRI\" \"3\"\nEndSection\n\nDaha sonrasında X11 servisini yeniden başlatmak veya daha doğrusu olarak sistemi yeniden başlatmak gerekecektir.",
+          "link": "https://dev.to/aciklab/linux-uzerinde-intel-6-nesil-islemcilerdeki-titreme-sorunu-1fjf",
+          "publishedOn": "2022-01-15T22:48:18.000Z",
+          "wordCount": 436,
+          "title": "Linux üzerinde Intel 6. nesil işlemcilerdeki titreme sorunu"
+        },
+        {
+          "id": "https://dev.to/kerndesigns/how-to-install-docker-on-windows-os-ke0",
+          "author": "Kern Designs",
+          "description": "So you're getting started in web components. Maybe someone you know told you to work in docker. What does that mean? How do you even install it? What should you do with it? I'm going to walk you through an install with Windows 10. Then we'll talk about what to do with docker.\nBefore you even install and try to run docker, you should probably understand what it is. Docker is a light-weight way of running a program through containers and microservices. Monolith Server Architecture is a thing of the past because we traditionally hosted resources in one environment. This made it versatile, but also heavy and very difficult to update changes. Microservices are used to split up tasks into specific operations. In the picture below, you can see all the small microservices one interface may be runn…",
+          "link": "https://dev.to/kerndesigns/how-to-install-docker-on-windows-os-ke0",
+          "publishedOn": "2022-01-15T22:22:51.000Z",
+          "wordCount": 1018,
+          "title": "How to Install Docker On Windows OS"
+        },
+        {
+          "id": "https://dev.to/davidortinau/views-in-comet-3cb6",
+          "author": "David Ortinau",
+          "description": "Comet is a .NET experiment inspired by Flutter and Swift UI for building cross-platform apps with C#.\n / \n        Comet\n      \n    \nAll UI in Comet is a View, which makes things really simple, right? Other toolkits may split them into controls, layouts, components, widgets, etc. That makes sense since some are best used for containing and organizing, others best for accepting user input, and others for creating beautiful UI. \nLet's take a tour of what's available today in Comet and how you can quickly start composing your UI.\nThe layouts in Comet extend from ContainerView which itself is a View. These managed views arrange and space child views on the screen, and all adapt to whatever size and density the app runs on. The current layout views include:\nHStack, VStack, ZStack - these views w…",
+          "link": "https://dev.to/davidortinau/views-in-comet-3cb6",
+          "publishedOn": "2022-01-15T22:02:13.000Z",
+          "wordCount": 1867,
+          "title": "Views in Comet"
+        },
+        {
+          "id": "https://dev.to/janeori/an-innovative-idea-for-holding-state-in-css-23gh",
+          "author": "Jane Ori",
+          "description": "When it comes to CSS and HTML, application state falls into these categories:\ncascade state: classes/checkbox state/other dom\n\npseudo state: based on current user interaction\n\nanimation state: pre-determined series, triggered by cascade and/or pseudo state\n\ntransition state: easing between the cascade and/or pseudo states when they change\n\nThese are the building blocks for all UX that can be combined in an infinite number of ways[1]. These are all intertwined of course, and we can split hairs on how I've referred to them, but ultimately though; Either our state is static - derived from the current DOM, or it's temporary - derived from the user's current interaction.\n[1] except that animation state cannot be combined with animation state due to animation-tainting\n\"But wait, there's more!\"\n-…",
+          "link": "https://dev.to/janeori/an-innovative-idea-for-holding-state-in-css-23gh",
+          "publishedOn": "2022-01-15T21:16:03.000Z",
+          "wordCount": 1214,
+          "title": "An Innovative Idea for Holding State in CSS"
+        },
+        {
+          "id": "https://dev.to/codewithsadee/sunnyside-landing-page-using-html-css-js-26aa",
+          "author": "Sadee",
+          "description": "How to make sunnyside landing page using html css and javascript\nIn this video, I will show you how to create (mobile-first responsive) sunnyside landing page using html css and javascript.\nHI 👋\n📺 My Channel : codewithsadee\nsubscribe now\nAll Images\nText\nFont - Barlow\nFont - Fraunces\nIonicon\nSource Code\n0:00 - Demo\nTwitter : https://twitter.com/codewithsadee\nhttps://github.com/codewithsadee\ncodewithsadee\nhttps://www.buymeacoffee.com/codewithsadee\nhttps://www.patreon.com/codewithsadee",
+          "link": "https://dev.to/codewithsadee/sunnyside-landing-page-using-html-css-js-26aa",
+          "publishedOn": "2022-01-15T21:14:54.000Z",
+          "wordCount": 525,
+          "title": "Sunnyside Landing Page using HTML CSS JS"
+        },
+        {
+          "id": "https://dev.to/software_writer/classeval-vs-instanceeval-in-ruby-2i35",
+          "author": "Akshay Khot",
+          "description": "This post explains the difference between class_eval and instance_eval methods in Ruby. If you keep getting confused between them when reading or writing Ruby code, it should clarify things a little. \nConsider the Greeting class, which forms the basis of other examples.\n\nclass_eval evaluates the string or block in the context of the class, allowing you to reopen the class and define additional behavior on it.\nCreating a method inside the block defines an instance method on the class. All Greeting instances can call greet.\n\nThis is the same as explicitly defining the greet method in the Greeting class. The above code is equivalent to:\n\nBenefits\nThe first benefit of class_eval is that you can call it on a variable pointing to a class, allowing you to add behavior to a class dynamically.\nWhen…",
+          "link": "https://dev.to/software_writer/classeval-vs-instanceeval-in-ruby-2i35",
+          "publishedOn": "2022-01-15T20:19:49.000Z",
+          "wordCount": 801,
+          "title": "class_eval vs. instance_eval in Ruby"
+        },
+        {
+          "id": "https://dev.to/cyytrus/pt-br-rspec-ruby-do-go-horse-ao-tdd-10fh",
+          "author": "Paulo Castro",
+          "description": "Prólogo\n\n\nO que você irá ler abaixo são apenas alguns dos vários motivos para se usar testes, especialmente desenvolver guiado por testes.\nComo um desenvolvedor iniciante, sempre questionei internamente os porquês dos testes, mesmo com todos ao meu redor dizendo sua importância e valor, nunca havia posto em prática as técnicas necessárias para executar bons testes e/ou desenvolver algo totalmente guiado por eles, antes a vida era bem simples, era só montar no cavalo e escrever tudo às cegas, sem planejamento, sem pensar, o belo e não ideal eXtreme Go Horse. No entanto, com isso me vi perdendo produtividade, testar tudo de um código \"na unha\" se tornou cansativo demais, brechas e bugs apareciam com facilidade, foi nesse momento em que me dei conta, com a seguinte frase passando pela minha c…",
+          "link": "https://dev.to/cyytrus/pt-br-rspec-ruby-do-go-horse-ao-tdd-10fh",
+          "publishedOn": "2022-01-15T20:09:52.000Z",
+          "wordCount": 1248,
+          "title": "[PT-BR] - RSPEC & RUBY - DO GO HORSE AO TDD"
+        },
+        {
+          "id": "https://dev.to/midhunz/how-to-create-a-simple-chrome-extension-ijk",
+          "author": "Midhun",
+          "description": "Extensions are software programs, built on web technologies (such as HTML, CSS, and JavaScript) that enable users to customize the Chrome browsing experience.\nArchitecture overview\n\npopup.\nbackground.js\ncontentscript.js\nLet’s build your Chrome extension now.\n\nBy clicking the extension icon, we close all open tabs. When you click on the extension, the application should read all open tabs and remove them as well as create a new tab.\nSource Github.\nStep 1:\nCreate A New Directory\nOpen terminal, make a new directory called “close-all-tabs” and open your favorite text editor.\nmkdir close-all-tabs\nIn order for Chrome to load your plugin, the extension files need to be pointed to a folder on your computer. In this directory, you can add all of the files you need for your extension.\nStep 2\n{\n\n\nStep 3\nCreate a background.js\n// toolbar button event listener\n\n\nStep 4\n\"icons\": {\n\n\nStep 5\n\n1. Go to chrome://extensions in your browser\nTo enable Developer mode, check the box in the top right-hand corner, as shown above:\nTo load an unpacked extension, click Load unpacked extension to bring up the file selection dialog.\nThe extension will be loaded and active as soon as it is valid! A message will appear at the top of the page if it is invalid. Please correct the error and try again.\n\nIt’s now time to test our chrome extension\n\nPin Extension to browser\nOpen multiples tabs\nClick on the extension\nSource Code\nclose-all-tabs\nMore resources\nGoogle official starter guide — build a browse action chrome extension\nChrome Platform API Reference\nChrome Extension Architectural Overview",
+          "link": "https://dev.to/midhunz/how-to-create-a-simple-chrome-extension-ijk",
+          "publishedOn": "2022-01-15T20:02:19.000Z",
+          "wordCount": 1076,
+          "title": "Here's how I made a simple Chrome Extension to close all open tabs"
+        },
+        {
+          "id": "https://dev.to/sureshayyanna/sql-basics-zero-to-hero-part-01-53mi",
+          "author": "Suresh Ayyanna",
+          "description": "SQL - Structured Query Language\nA table is a collection of related data entries and it consists of columns and rows.\nEg: SELECT * FROM Customers;\n\n--> It will retrieve all records data from customer table.\nSemicolon is the standard way to separate each SQL statement in database systems that allow more than one SQL statement to be executed in the same call to the server.\nMost Important SQL Commands\nSELECT - extracts data from a database\nUPDATE - updates data in a database\nDELETE - deletes data from a database\nINSERT INTO - inserts new data into a database\nCREATE DATABASE - creates a new database\nALTER DATABASE - modifies a database\nCREATE TABLE - creates a new table\nALTER TABLE - modifies a table\nDROP TABLE - deletes a table\nCREATE INDEX - creates an index (search key)\nDROP INDEX - deletes …",
+          "link": "https://dev.to/sureshayyanna/sql-basics-zero-to-hero-part-01-53mi",
+          "publishedOn": "2022-01-15T19:24:52.000Z",
+          "wordCount": 1333,
+          "title": "SQL Basics (Zero to Hero)- Part 01"
+        },
+        {
           "id": "https://dev.to/cguttweb/how-to-add-blog-posts-to-github-readme-k39",
           "author": "Chloe",
           "description": "Hey so I have setup a Github Readme file however I would like to be able if possible to add my latest blog posts it seems asa though it is possibly could someone point me in the right directionm on how to do this?\nMy site is built with Nuxt if that makes a difference but I do have feed setup I assume I need to reference that?\nAny help much appreciated. Thanks!",
@@ -630,6 +738,24 @@
       "siteUrl": "https://sspai.com",
       "articles": [
         {
+          "id": "https://sspai.com/post/70973",
+          "author": "jijiali",
+          "description": "厨房，一个让人又爱又恨的地方。并不是每个人都能像 @Microhoo 一样在厨房随心所欲呼风唤雨。在制造美食带来快乐的同时，这里总会有这样那样的小问题让人抓耳挠腮，各种繁琐的重复任务层出不穷，没有经验的新手往往迷失在漫长的等待之中，要么没有安排好时间，和快焦糊的食物赛跑，要么没有顺手的工具，跟难用的基础套组较劲。\n我们找到了一些作者，请他们分享一些自己烹饪过程中最合手、最方便的厨房用具，希望他们的分享能让你的厨房生活起步更加顺畅，能更轻松地享受烹饪的快乐。\n搅拌机：剁什么剁，这玩意儿不好使吗？\n@jijiali：对于一个生活在北方的人来讲，饺子是最普通不过的一种食物。这不仅体现在日常中的三天两头吃饺子，饯行时的「上马馉饳（ɡǔ duo）下马面」，更体现在逢节就是饺子。如此多的场景之下，饺子馅几乎就得天天准备。\n作为一个一把菜刀打天下的人，在准备饺子馅儿的时候，我通常办法就是先把肉切成薄片，再把薄片切成肉条，随后把肉条切成小肉里，然后剁成肉馅。蔬菜也是类似的处理之法。最后把它们混合在一起。但是时间久了，也是感到剁个饺子馅太累；尤其是过年，三十晚上与初一连着两顿的饺子。所以，每当遇到饺子（包括馄饨）的时候，就特别的需要一个能代劳的设备。于是乎就有了接下来的这样几种搅拌设备。\n手动搅拌器\n\n这种塑料款的搅拌器在地摊上、网络上很常见。纯手工、不需要额外电力、节能环保，美中不足的是有时候需要大力出奇迹。使用时需要用手按住边缘，防止机器默走。整体来讲，少量的蔬菜、肉类还是可以的。当然食材需要预处理一下。\n把这款手动搅拌器小型化，把摇把换成拉绳，这样就得到了一个压蒜器。相对来说，这款小机器把大蒜、辣椒或者其他佐料打成蓉状还是比较方便的。\n搅拌器升级版——博朗 MQ525（600 瓦）\n\n相对于前面的手动版，勃朗手持式搅拌器由于有电驱动，自然功率会提升了不少。机器两档可调。我最初买这款机器…",
+          "link": "https://sspai.com/post/70973",
+          "publishedOn": "2022-01-15T07:49:45.000Z",
+          "wordCount": 116,
+          "title": "这些好用小物件，让厨房生活更方便"
+        },
+        {
+          "id": "https://sspai.com/post/70305",
+          "author": "Bell玩数码",
+          "description": "Matrix 首页推荐\nMatrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。\n文章代表作者个人观点，少数派仅对标题和排版略作修改。\n\n板绘新手大部分是看了动漫，或看到哪位大大画的成品图，因为想学而了解到的数位板、数位屏。那么，什么是数位板？如何选择一款适合自己的数位板？数位板和数位屏选哪个好？诸多问题常常让新手不知所措。这篇文章，我将为板绘初学者答疑解惑。\n初识数位板\n数位板，又名绘图板、绘画板、手绘板、手写板等，是连接电脑、手机、平板的一种输入设备，由一块板子、一支有压感的笔和一根线组成，主要用于数字绘画、写字、标注等。我们常在网络上看到的插画、漫画、动漫等，就是艺术家使用数位板或其它设备绘画而出。\n\n最重要的先说完：两个最直接的感官体验\n尺寸方面，需要根据自己的书桌/电脑桌子的大小，以及自己手的大小来选择适合自己的数位板。\n手感方面，数位板表面的画感，就是那层「膜」——有粗有细，喜欢素描纸的那种粗糙感，可以买粗一点，但粗糙的同时，笔芯也磨损的快。相反，喜欢铜版纸的那种光滑感，可以买细点，笔芯也相对画的久些。再者就是笔的手感，有软笔和硬笔之分，习惯画水彩或者平时画画或写字都不喜欢使劲的，建议买软笔手感，行程长，笔的压感容易得到释放。如果平时写字画画都比较用力，建议买硬笔，行程短，不容易压坏笔的同时，手感也更舒适。\n\n解读数位板详细参数\n读取速率\n读取速率也叫读取速度（单位：英文 PPS，中文是点/秒），目前常见的有 133、200、233、266、300 这几个配置可选，一般越高越好，这个参数影响到你画线跟不跟笔，一般 200 以上肉眼就很难看出有延迟情况，但也要看电脑的配置，配置不好，数位板的读取速率在高，也还是会延迟。（目前达到 300PPS 的数位板是绘…",
+          "link": "https://sspai.com/post/70305",
+          "publishedOn": "2022-01-15T03:48:34.000Z",
+          "wordCount": 276,
+          "title": "板绘入门第一步：如何挑选适合自己的数位板？"
+        },
+        {
           "id": "https://sspai.com/post/70952",
           "author": "少数派编辑部",
           "description": "☕️ TL;DR\n\n近期佳作推荐：[美剧] 亢奋 第二季、[电影] 呼朋引伴、[动画] 更衣人偶坠入爱河、[综艺] 单身即地狱 第一季、[美剧] 和平使者、[日剧] 勿言推理、[电影] 西区故事、[综艺] 奇遇·人间角落、[动画] 明日同学的水手服、[电影] 红色火箭\n几则精彩预告：唐顿庄园主创打造 HBO 虚构年代剧《镀金时代》、系列恐怖片《惊声尖叫 5》发布终极预告、游改动画《DOTA 龙之血》第二季预告、「神奇女侠」主演经典改编《尼罗河上的惨案》发布预告\n几则影视资讯：日漫改国产真人网剧《月刊少女》公布海报、《黑客帝国4：矩阵重启》发布中国独家海报，1 月 14 日全国上映、《早间新闻》正式宣布续订第三季、「荷兰弟」主演游戏改编电影《神秘海域》曝新海报\n\n根据读者反馈，如果推荐语涉及剧透（对故事核心、暗线、伏笔、结局等关键要素的透露），我们会在对应作品的标题前增加 🔦 的 Emoji。\n如有其他建议也欢迎在评论区提出，感谢大家对「看什么」栏目的喜爱和支持。\n剧集推荐\n[美剧] 亢奋 第二季\n\n关键词：剧情\n片长：60 分钟（单集）× 8 集；豆瓣链接\n\n堕落于日常的欲望，是不是真的就可以逃避现实呢？\n\n@潘誉晗：之前的《亢奋 特别篇》显然没有满足粉丝的「胃口」，第二季一上线就打破了 HBO 流媒体成立以来的收视记录，首播当天更是由于过于火爆而造成平台系统的短暂崩溃。\n本季的时间线设定在特别篇故事之后的一周，没有和茱尔丝一起离开的小茹最后还是复吸了，而两个人之间的纠葛注定不会因此就告一段落，她们的故事还将继续，而这种心里存在着小误会的青春隔阂，其实是动人的。\n比起其他兼具大尺度和话题度的青春剧，这部剧无疑更盛。酒精、毒药、性爱、跨性别等在剧中被多次提及只是小意思而已，更神奇的是，即使这部剧在美国因尺度过大而被投诉，可我们还是会被剧中的人物和故事所感动，因为我们知道，剧…",
@@ -816,6 +942,15 @@
       "feedUrl": "https://feeds.appinn.com/appinns",
       "siteUrl": "https://www.appinn.com",
       "articles": [
+        {
+          "id": "https://www.appinn.com/?p=41128",
+          "author": "青小蛙",
+          "description": "AlDente 是一款可以限制 Macbook Air / Pro 系列设备最大充电百分比的工具，它能让你的电脑在插着电源的情况下，保持电池容量在 80% 以下，以延长电池寿命。@Appinn 来自问",
+          "link": "https://www.appinn.com/aldente-for-mac/",
+          "publishedOn": "2022-01-15T04:59:00.000Z",
+          "wordCount": 710,
+          "title": "AlDente – 限制 MacBook Air/Pro 最大充电百分比工具，延长电池寿命"
+        },
         {
           "id": "https://www.appinn.com/?p=41122",
           "author": "青小蛙",
@@ -1181,6 +1316,30 @@
       "feedUrl": "https://www.xda-developers.com/feed",
       "siteUrl": "https://www.xda-developers.com",
       "articles": [
+        {
+          "id": "https://www.xda-developers.com/?p=579283",
+          "author": "Sumukh Rao",
+          "description": "Over the past few years, smartphone usage has skyrocketed across the world. Screen sizes have increased, battery capacities have increased, and along with it, the time spent by a user staring at their phone screen has also gone up. Especially with the onset of the pandemic leading to lockdowns, people have spent more time in\nThe post How to set up daily App Usage limits on Android and iOS appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/how-to-setup-daily-app-usage-limits-android-ios/",
+          "publishedOn": "2022-01-15T14:00:06.000Z",
+          "wordCount": 1611,
+          "title": "How to set up daily App Usage limits on Android and iOS",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2022/01/How-to-set-up-daily-App-Usage-limits-on-Android-and-iOS.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=584077",
+          "author": "Ben Sin",
+          "description": "The year 2021 was a very interesting one for OnePlus, for it was when the brand finally stopped the pretense of being an independent start-up with a management team compromising of entirely young, westernized Chinese. Instead, OnePlus has pulled the curtain back on the open secret (within the industry) that it is, essentially, a splinter\nThe post OnePlus 10 Pro First Impressions: Premium hardware, fast performance, and some OPPO touches appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/oneplus-10-pro-first-impressions/",
+          "publishedOn": "2022-01-15T08:00:32.000Z",
+          "wordCount": 3226,
+          "title": "OnePlus 10 Pro First Impressions: Premium hardware, fast performance, and some OPPO touches",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2022/01/oneplus-10-pro-XDa-1111.jpg"
+          }
+        },
         {
           "id": "https://www.xda-developers.com/?p=584035",
           "author": "Corbin Davenport",
@@ -1918,6 +2077,16 @@
           "id": "https://stratechery.com/2022/where-are-hit-podcasts-spotify-and-podcast-aggregation-protesting-rogan/",
           "author": "Ben Thompson",
           "description": "Why there aren't any new podcasts in the top 10, and why the podcast market looks like websites and YouTube. Plus, why Spotify's approach benefits most, for now.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi93aGVyZS1hcmUtaGl0LXBvZGNhc3RzLXNwb3RpZnktYW5kLXBvZGNhc3QtYWdncmVnYXRpb24tcHJvdGVzdGluZy1yb2dhbi8.R2DqgUWZVkzNmRtI19t3oyI7v7pNst0TbPg-niDiYEqPA5DUS0_4EWHz81jQitayre0ilVAFCojhZ4Rw5piyM5CJke3WVBFOjvDJshr8vMomHbC9sjsPbGr4ztZz_FWlOh9afJ21NrY-jzX-xvJGPCGvSqisEg93YMlbYRphtHLc0SyCwoDdNCk-R63ojrpsU6XUfuR0mPbffz6Iu3NJdBsDOJ2yG1g9sBLxGLEGjfojJqagTIEJnO2V98PCopEQpmC8YCJAeRNZq1aAUEr1DfytIDr-pRa0x7_g37hnoAufQJ1KQupuBmtwdhMOrrFjh9UnJVuu09WXhiMkcnK4JQ",
+          "publishedOn": "2022-01-13T12:59:06.000Z",
+          "wordCount": null,
+          "title": "Where Are Hit Podcasts?, Spotify and Podcast Aggregation, Protesting Rogan",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2022/where-are-hit-podcasts-spotify-and-podcast-aggregation-protesting-rogan/",
+          "author": "Ben Thompson",
+          "description": "Why there aren't any new podcasts in the top 10, and why the podcast market looks like websites and YouTube. Plus, why Spotify's approach benefits most, for now.",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi93aGVyZS1hcmUtaGl0LXBvZGNhc3RzLXNwb3RpZnktYW5kLXBvZGNhc3QtYWdncmVnYXRpb24tcHJvdGVzdGluZy1yb2dhbi8.wWpYbo6kiHUHS2cEOkSFd68GAiuCTz_X_Tedp3iHlFpDumZDvR3s55O4IBeIso2cuzURBq5otPzRBVPvVorqkeBwUji3GssEwlKr_jJDkew0C7hjILa9vQOcGv3yDWxUrzsSCCPQ6tkOD9VT360VM0ntE8bhY4PQmg5kbjDF6SW5VGP69ZAOiQaSOiUnz_Tm767x5h7oSBjk7LboL0ZQe6Hz6Uck1ODXzVh9JxK59Ph26hyjUcdFuLqUZFI0MoSSTq5uMjhC_asCKOJhQlIokLSPkT_0lZz5oBHDjz6okKTE0LN-3E1w8rfAh4UiAeBkAgY32I2_VTKT1a-UmVuo2g",
           "publishedOn": "2022-01-13T12:59:06.000Z",
           "wordCount": null,
@@ -1942,6 +2111,16 @@
           "publishedOn": "2022-01-13T12:59:06.000Z",
           "wordCount": null,
           "title": "Where Are Hit Podcasts?, Spotify and Podcast Aggregation, Protesting Rogan",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2022/follow-up-zynga-nyt-all-access-the-athletic-facebook-antitrust-and-apple-in-south-korea/",
+          "author": "Ben Thompson",
+          "description": "Follow-up on Zynga's financials, the New York Times All Access bundle, The Athletic's focus on quantity over quality, Facebook's antitrust loss, and Apple's South Korea App Store change",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9mb2xsb3ctdXAtenluZ2Etbnl0LWFsbC1hY2Nlc3MtdGhlLWF0aGxldGljLWZhY2Vib29rLWFudGl0cnVzdC1hbmQtYXBwbGUtaW4tc291dGgta29yZWEv.ELUjaG_53za1m4Mlg4Q6wbuR8z0IBasocIwp-IQjncBKEsJSPrPP98YmNtK7adsa_zKISoYX_c18qsY_Gr9LVDVFoEYqiiVd9mJ-fdh5XuBWwPqMnWG0vF1eDOpV2LRbZfmXFo7FJHs-jX1lFS0X18zz0SVGYgbRvEfAUvRyu-9L8cKmFARnvSxR067f8rkYngbUWfx42Lpms72Vf6u0ldCFVFV5qY0KHK8pDG_jaZg4ltWySyfmrsXFSfv3ye_x-pDZnoLVdCbAPriGGszfhpk0OuzkRg5j4NUY87xIasGpFscf7rhxOlPiEhT_DWIH7VDvFjkigRF5ATx3k05q0w",
+          "publishedOn": "2022-01-12T12:00:52.000Z",
+          "wordCount": null,
+          "title": "Follow-up: Zynga, NYT All Access, The Athletic, Facebook Antitrust, and Apple in South Korea",
           "itunes": {}
         },
         {
@@ -1988,6 +2167,16 @@
           "id": "https://stratechery.com/2022/take-two-acquires-zynga-the-new-york-times-buys-the-athletic/",
           "author": "Ben Thompson",
           "description": "Take-Two buys its way into mobile, and the New York Times re-bundles.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi90YWtlLXR3by1hY3F1aXJlcy16eW5nYS10aGUtbmV3LXlvcmstdGltZXMtYnV5cy10aGUtYXRobGV0aWMv.L0EsOtkTih9aDaOnbtG6BogjlY7Gdon6mgpenh29WoOnrgCYkbt6s7cKvtJ6TyY_IG0hdCeuEcvzvrQ4bKXzM_6NHl5l4bL_4PgHcuAKt454Ywx3G_ntoVEQHrxXqM4PN5rLIjtgQ3jc7aBF35YK512YC2RS6GkNUBWChso3RUVytMv-65gcwaPePXNV4ciBocBLmPp2UfQmL465wjy0NKv-sCbuh1IoKxtNxQOOXYyWRkCgF03vOG8QiDPvJX1DyYdvMh8W-Fkna9TGainA_ZlGykSh4_Oyznh6QgJJRZwxAppXzKS_OkngbQ03MyuUmQ420ac0riYDNLOJitsV6g",
+          "publishedOn": "2022-01-11T13:05:47.000Z",
+          "wordCount": null,
+          "title": "Take-Two Acquires Zynga, The New York Times Buys The Athletic",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2022/take-two-acquires-zynga-the-new-york-times-buys-the-athletic/",
+          "author": "Ben Thompson",
+          "description": "Take-Two buys its way into mobile, and the New York Times re-bundles.",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi90YWtlLXR3by1hY3F1aXJlcy16eW5nYS10aGUtbmV3LXlvcmstdGltZXMtYnV5cy10aGUtYXRobGV0aWMv.VD-_l96xBLtncFa_chus6kdYGfyCK6xDh6W8krYV1ZoURwsFnqDTE6LGYVys_Yz3h9652OtombJjJzJE0wIWwVVyF7EQsyn4lz8s1eADz1Zcw6Ll8sVdyjInNxgKT2eqZrnV9PstyGD_aIeH0gisOn_g6ka1OX5aA7d-Kjtj-M6WHyQa8wQuawfZCC31-hdy9RRAJaQYlF9P6Idd0xGn4_vezD_1QRE1JHntZdZDj0ZRoWoAjmRBDFDI39uRaKa3pF2oSDsPUUhaBnk16jYBLvEIPW0ouUEvlcnbdFfA9eqt4jpRM_AsFDebDtUh2hLcMg5k5gNGoinubrLJJIbPQw",
           "publishedOn": "2022-01-11T13:05:47.000Z",
           "wordCount": null,
@@ -2022,6 +2211,16 @@
           "publishedOn": "2022-01-11T13:05:47.000Z",
           "wordCount": null,
           "title": "Take-Two Acquires Zynga, The New York Times Buys The Athletic",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2022/npm-sabotage-convenience-matters-moxie-marlinspike-on-web3/",
+          "author": "Ben Thompson",
+          "description": "The sabotage of a Node.js package shows both the danger of supply chain attacks and the allure of convenience; this is a lesson being learned by Web3.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9ucG0tc2Fib3RhZ2UtY29udmVuaWVuY2UtbWF0dGVycy1tb3hpZS1tYXJsaW5zcGlrZS1vbi13ZWIzLw.D-mvVSH8I5fQjiEETdD0ornpFqI9TOc3SXflaxsRwB2ivNtqbdrin561QfCD8l2GpIqlDhCtmoeszOcmg3DP0o5yfFUw5vZSKF6iAdk8SjnccWXkUTXm-a_edGv4HGeVtw5CReWr94oz5A2yJ0RS8G3eIIfHZCAwO_W3tGnt5odlgCFPN8dUyV0vAu_8hMgOS7pmqCjNqW2y884M7zDqy080CO8wOntgPQLHkwnN_M_1YhAXUOdAwqzyHVg4GdMraf-XKzisRWTtTPyDeh3EeKdTW_Pdr83e_DewCZoqMs8PmBGdbFsQSYq9rVl1absidX-5i8Q0RdN8g5rWcb9k6A",
+          "publishedOn": "2022-01-10T12:40:16.000Z",
+          "wordCount": null,
+          "title": "NPM Sabotage, Convenience Matters, Moxie Marlinspike on Web3",
           "itunes": {}
         },
         {
@@ -2068,6 +2267,16 @@
           "id": "https://stratechery.com/2022/facebook-and-xros-xros-vs-vros-why-vros/",
           "author": "Ben Thompson",
           "description": "Facebook is moving forward with the Android-derived VROS instead of the brand new AROS.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9mYWNlYm9vay1hbmQteHJvcy14cm9zLXZzLXZyb3Mtd2h5LXZyb3Mv.dt25g-jOE4P6z8nWBZhe5ldcOIAHRkdu91FVsrUZucBChcgk2JxYA9nPoqgPF6_XMrDCnPWrJOKB9DLqExPo8R35BoFcW3j5WqBfcWLDonbwJsHqoFuOqjGxwvQVwKwpaixmSiCh0Kvb0EnXqC-9xHXYqzjdiSIhXwhIV_7guNvEJJPkqCMPB8RmY1FeZb7oNhPsBWc1zEg8r3PoegAnPvZvvDM-d1T3whW3i8M-276hONa3vLS3JTUdZiSeped9QLLCzVG6-J9CMYL_oP4COyuq_e_kg-qhwsu5FykySXJ2rKJicB1X1FKujleg5Y_EuPl8tdEOJBzIeYayol4UAA",
+          "publishedOn": "2022-01-06T12:21:45.000Z",
+          "wordCount": null,
+          "title": "Facebook and XROS, XROS vs VROS, Why VROS",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2022/facebook-and-xros-xros-vs-vros-why-vros/",
+          "author": "Ben Thompson",
+          "description": "Facebook is moving forward with the Android-derived VROS instead of the brand new AROS.",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9mYWNlYm9vay1hbmQteHJvcy14cm9zLXZzLXZyb3Mtd2h5LXZyb3Mv.KwyTQUMXNmeLC-vcjDKDhFxCtrIiIgPD0nOS8-eMT3JpBiRX_3f3QZagYItm_vmFLivMSkcWL_u7VWtKJoxIAHuk6tcnlow5o9xRIDVYy3nkCUA2OtXdN6suY-jSEUJ68GZsY98mhMi5gX91SS6pMQqogcxW1691VIUMMZVtEuCZTJCN12y2jSZYovzK4mYXHTWPVgiusvCf2pKbxiP0JR8oG4j2K-KBBC-S8AXgSwWEkTyWX2GJV0LKptGMTBaI7lhx9qJm2eZGLONynHoHWLpGD92W-OLvSaSMH9DsKbvU2YgMnR-mp-pmiiTL3xIykqUdoWdWvzZm_5ScJDd22w",
           "publishedOn": "2022-01-06T12:21:45.000Z",
           "wordCount": null,
@@ -2102,6 +2311,16 @@
           "publishedOn": "2022-01-06T12:21:45.000Z",
           "wordCount": null,
           "title": "Facebook and XROS, XROS vs VROS, Why VROS",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2022/opensea-raises-money-bans-nfts-openseas-value-cryptos-aggregators/",
+          "author": "Ben Thompson",
+          "description": "OpenSea is positioned as another Aggregator, which is evidence that Web 3 is a layer on top of the Internet, not a replacement.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9vcGVuc2VhLXJhaXNlcy1tb25leS1iYW5zLW5mdHMtb3BlbnNlYXMtdmFsdWUtY3J5cHRvcy1hZ2dyZWdhdG9ycy8.BAIctElM-yREe5AX9Hg_ia0Enjmd5EryMw0GIznkGUbnwWsjfNVpVuH8LC_esKwm8MEiE6jJDys6kxUfVP2moaHAwWQFNuj6qNChW7CdfVL3VD3HP3g6vPioYoSGvvzZuZiOzyZo2dG_iIxlOWt67WDByiVgYY5AbXicLyZe6V0txEdEeYKSNoqtkg7mTfvyi-POOaNmV7wJsiyFUNuuidBgvk7Uie6v9cqIClFIY-qgTD70uyvPvziuMtNo4Cqal4t_bYT2IZ5JU3MnCobQa0hqxj_bj6XApX_xx3BOacDYKucu8b8ChJP_fpuHRbaJIbrAW7fE_udwDy0o1LnCkw",
+          "publishedOn": "2022-01-05T13:56:03.000Z",
+          "wordCount": null,
+          "title": "OpenSea, Web3, and Aggregation Theory",
           "itunes": {}
         },
         {
@@ -2798,6 +3017,195 @@
       "feedUrl": "https://reddit.buzzing.cc/rss.xml",
       "siteUrl": "https://reddit.buzzing.cc",
       "articles": [
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/s4jboo/this_is_the_most_american_shit_ever/",
+          "author": null,
+          "description": "这是最美国的狗屎",
+          "link": "https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/s4jboo/this_is_the_most_american_shit_ever/?score=75942&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Fs4jboo%2Fthis_is_the_most_american_shit_ever%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Fs4jboo%2Fthis_is_the_most_american_shit_ever%2F&channel=WhitePeopleTwitter&sensitive=false",
+          "publishedOn": "2022-01-16T00:54:07.000Z",
+          "wordCount": 22,
+          "title": "这是最美国的狗屎"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/s4gzlk/moment_of_happiness/",
+          "author": null,
+          "description": "幸福时刻 ....",
+          "link": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/s4gzlk/moment_of_happiness/?score=75042&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Fs4gzlk%2Fmoment_of_happiness%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Fs4gzlk%2Fmoment_of_happiness%2F&channel=nextfuckinglevel&sensitive=false",
+          "publishedOn": "2022-01-16T00:54:07.000Z",
+          "wordCount": 20,
+          "title": "幸福时刻 ...."
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/s49fl1/running_into_his_opponents_mom_moments_after/",
+          "author": null,
+          "description": "在击败对手并夺走他的腰带后不久就撞见了对手的母亲",
+          "link": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/s49fl1/running_into_his_opponents_mom_moments_after/?score=75208&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Fs49fl1%2Frunning_into_his_opponents_mom_moments_after%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Fs49fl1%2Frunning_into_his_opponents_mom_moments_after%2F&channel=nextfuckinglevel&sensitive=false",
+          "publishedOn": "2022-01-15T23:12:06.000Z",
+          "wordCount": 28,
+          "title": "在击败对手并夺走他的腰带后不久就撞见了对手的母亲"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/gifs/comments/s4imrz/tongas_hunga_tonga_volcano_just_had_one_of_the/",
+          "author": null,
+          "description": "汤加的亨加汤加火山刚刚发生了有史以来在卫星上捕捉到的最猛烈的火山爆发之一。2022年1月15日",
+          "link": "https://reddit.buzzing.cc/reddit/r/gifs/comments/s4imrz/tongas_hunga_tonga_volcano_just_had_one_of_the/?score=76355&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fgifs%2Fcomments%2Fs4imrz%2Ftongas_hunga_tonga_volcano_just_had_one_of_the%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fgifs%2Fcomments%2Fs4imrz%2Ftongas_hunga_tonga_volcano_just_had_one_of_the%2F&channel=gifs&sensitive=false",
+          "publishedOn": "2022-01-15T22:08:19.000Z",
+          "wordCount": 34,
+          "title": "汤加的亨加汤加火山刚刚发生了有史以来在卫星上捕捉到的最猛烈的火山爆发之一。2022年1月15日"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/mildlyinfuriating/comments/s4n18j/oh_fuck_off/",
+          "author": null,
+          "description": "哦，滚开",
+          "link": "https://reddit.buzzing.cc/reddit/r/mildlyinfuriating/comments/s4n18j/oh_fuck_off/?score=75348&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmildlyinfuriating%2Fcomments%2Fs4n18j%2Foh_fuck_off%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmildlyinfuriating%2Fcomments%2Fs4n18j%2Foh_fuck_off%2F&channel=mildlyinfuriating&sensitive=false",
+          "publishedOn": "2022-01-15T21:49:13.000Z",
+          "wordCount": 17,
+          "title": "哦，滚开"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/antiwork/comments/s4lcun/capitalism_kills/",
+          "author": null,
+          "description": "资本主义杀戮。",
+          "link": "https://reddit.buzzing.cc/reddit/r/antiwork/comments/s4lcun/capitalism_kills/?score=76519&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fantiwork%2Fcomments%2Fs4lcun%2Fcapitalism_kills%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fantiwork%2Fcomments%2Fs4lcun%2Fcapitalism_kills%2F&channel=antiwork&sensitive=false",
+          "publishedOn": "2022-01-15T20:59:32.000Z",
+          "wordCount": 16,
+          "title": "资本主义杀戮。"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/s4jbgp/perks_of_working_from_home/",
+          "author": null,
+          "description": "在家工作的好处",
+          "link": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/s4jbgp/perks_of_working_from_home/?score=75507&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Fs4jbgp%2Fperks_of_working_from_home%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Fs4jbgp%2Fperks_of_working_from_home%2F&channel=MadeMeSmile&sensitive=false",
+          "publishedOn": "2022-01-15T19:17:49.000Z",
+          "wordCount": 19,
+          "title": "在家工作的好处"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/memes/comments/s4j66l/ill_never_financially_recover_from_this_coral/",
+          "author": null,
+          "description": "\"我将永远无法在经济上恢复，珊瑚......！\"",
+          "link": "https://reddit.buzzing.cc/reddit/r/memes/comments/s4j66l/ill_never_financially_recover_from_this_coral/?score=78119&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Fs4j66l%2Fill_never_financially_recover_from_this_coral%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Fs4j66l%2Fill_never_financially_recover_from_this_coral%2F&channel=memes&sensitive=false",
+          "publishedOn": "2022-01-15T18:45:58.000Z",
+          "wordCount": 21,
+          "title": "\"我将永远无法在经济上恢复，珊瑚......！\""
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/HolUp/comments/s4e881/holup_leo_dicaprio/",
+          "author": null,
+          "description": "好了，里奥-迪卡普里奥......!",
+          "link": "https://reddit.buzzing.cc/reddit/r/HolUp/comments/s4e881/holup_leo_dicaprio/?score=75592&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FHolUp%2Fcomments%2Fs4e881%2Fholup_leo_dicaprio%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FHolUp%2Fcomments%2Fs4e881%2Fholup_leo_dicaprio%2F&channel=HolUp&sensitive=false",
+          "publishedOn": "2022-01-15T17:55:52.000Z",
+          "wordCount": 17,
+          "title": "好了，里奥-迪卡普里奥......!"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/dankmemes/comments/s4f166/now_touch_both_exposed_proms_with_a_pair_of/",
+          "author": null,
+          "description": "现在，用一把剪刀触摸两个暴露的突起部分",
+          "link": "https://reddit.buzzing.cc/reddit/r/dankmemes/comments/s4f166/now_touch_both_exposed_proms_with_a_pair_of/?score=75958&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fdankmemes%2Fcomments%2Fs4f166%2Fnow_touch_both_exposed_proms_with_a_pair_of%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fdankmemes%2Fcomments%2Fs4f166%2Fnow_touch_both_exposed_proms_with_a_pair_of%2F&channel=dankmemes&sensitive=false",
+          "publishedOn": "2022-01-15T17:41:32.000Z",
+          "wordCount": 25,
+          "title": "现在，用一把剪刀触摸两个暴露的突起部分"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/gaming/comments/s4bqd1/every_once_in_a_while_i_remember_kirby_dev_team/",
+          "author": null,
+          "description": "每隔一段时间，我都会想起 \"Kirby开发团队试图用手来画他\"，从来没有令人失望过。",
+          "link": "https://reddit.buzzing.cc/reddit/r/gaming/comments/s4bqd1/every_once_in_a_while_i_remember_kirby_dev_team/?score=76301&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fgaming%2Fcomments%2Fs4bqd1%2Fevery_once_in_a_while_i_remember_kirby_dev_team%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fgaming%2Fcomments%2Fs4bqd1%2Fevery_once_in_a_while_i_remember_kirby_dev_team%2F&channel=gaming&sensitive=false",
+          "publishedOn": "2022-01-15T17:15:06.000Z",
+          "wordCount": 34,
+          "title": "每隔一段时间，我都会想起 \"Kirby开发团队试图用手来画他\"，从来没有令人失望过。"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/pics/comments/s4b3e2/emma_stone_and_andrew_garfield_hiding_from_the/",
+          "author": null,
+          "description": "艾玛-斯通和安德鲁-加菲尔德像专业人士一样躲避狗仔队的追捕",
+          "link": "https://reddit.buzzing.cc/reddit/r/pics/comments/s4b3e2/emma_stone_and_andrew_garfield_hiding_from_the/?score=75090&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fpics%2Fcomments%2Fs4b3e2%2Femma_stone_and_andrew_garfield_hiding_from_the%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fpics%2Fcomments%2Fs4b3e2%2Femma_stone_and_andrew_garfield_hiding_from_the%2F&channel=pics&sensitive=false",
+          "publishedOn": "2022-01-15T16:53:05.000Z",
+          "wordCount": 26,
+          "title": "艾玛-斯通和安德鲁-加菲尔德像专业人士一样躲避狗仔队的追捕"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/Unexpected/comments/s46jnc/wholesome_prank/",
+          "author": null,
+          "description": "健康的恶作剧",
+          "link": "https://reddit.buzzing.cc/reddit/r/Unexpected/comments/s46jnc/wholesome_prank/?score=76076&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FUnexpected%2Fcomments%2Fs46jnc%2Fwholesome_prank%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FUnexpected%2Fcomments%2Fs46jnc%2Fwholesome_prank%2F&channel=Unexpected&sensitive=false",
+          "publishedOn": "2022-01-15T09:37:54.000Z",
+          "wordCount": 16,
+          "title": "健康的恶作剧"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/Unexpected/comments/s3rftg/scan_to_cure_your_addiction/",
+          "author": null,
+          "description": "扫一扫，治治你的瘾!",
+          "link": "https://reddit.buzzing.cc/reddit/r/Unexpected/comments/s3rftg/scan_to_cure_your_addiction/?score=75066&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FUnexpected%2Fcomments%2Fs3rftg%2Fscan_to_cure_your_addiction%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FUnexpected%2Fcomments%2Fs3rftg%2Fscan_to_cure_your_addiction%2F&channel=Unexpected&sensitive=false",
+          "publishedOn": "2022-01-15T09:22:32.000Z",
+          "wordCount": 20,
+          "title": "扫一扫，治治你的瘾!"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/s3zv73/dutch_supermarket_chain_opens_slower_chat/",
+          "author": null,
+          "description": "荷兰连锁超市开设慢速 \"聊天结账\"，努力消除老年人的孤独感",
+          "link": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/s3zv73/dutch_supermarket_chain_opens_slower_chat/?score=75120&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Fs3zv73%2Fdutch_supermarket_chain_opens_slower_chat%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Fs3zv73%2Fdutch_supermarket_chain_opens_slower_chat%2F&channel=MadeMeSmile&sensitive=false",
+          "publishedOn": "2022-01-15T08:14:16.000Z",
+          "wordCount": 32,
+          "title": "荷兰连锁超市开设慢速 \"聊天结账\"，努力消除老年人的孤独感"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/worldnews/comments/s3uq20/us_intelligence_indicates_russia_preparing/",
+          "author": null,
+          "description": "美国情报显示俄罗斯正在准备行动以证明入侵乌克兰的合理性",
+          "link": "https://reddit.buzzing.cc/reddit/r/worldnews/comments/s3uq20/us_intelligence_indicates_russia_preparing/?score=75202&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fworldnews%2Fcomments%2Fs3uq20%2Fus_intelligence_indicates_russia_preparing%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fworldnews%2Fcomments%2Fs3uq20%2Fus_intelligence_indicates_russia_preparing%2F&channel=worldnews&sensitive=false",
+          "publishedOn": "2022-01-15T06:11:37.000Z",
+          "wordCount": 26,
+          "title": "美国情报显示俄罗斯正在准备行动以证明入侵乌克兰的合理性"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/s3qrda/fishermen_found_a_huge_anaconda/",
+          "author": null,
+          "description": "渔民发现一条巨大的大蟒蛇。",
+          "link": "https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/s3qrda/fishermen_found_a_huge_anaconda/?score=75178&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Fs3qrda%2Ffishermen_found_a_huge_anaconda%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Fs3qrda%2Ffishermen_found_a_huge_anaconda%2F&channel=interestingasfuck&sensitive=false",
+          "publishedOn": "2022-01-15T05:52:41.000Z",
+          "wordCount": 19,
+          "title": "渔民发现一条巨大的大蟒蛇。"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/Unexpected/comments/s3ouwy/just_a_guy_punching_a_tree/",
+          "author": null,
+          "description": "只是一个人在打一棵树",
+          "link": "https://reddit.buzzing.cc/reddit/r/Unexpected/comments/s3ouwy/just_a_guy_punching_a_tree/?score=75117&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FUnexpected%2Fcomments%2Fs3ouwy%2Fjust_a_guy_punching_a_tree%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FUnexpected%2Fcomments%2Fs3ouwy%2Fjust_a_guy_punching_a_tree%2F&channel=Unexpected&sensitive=false",
+          "publishedOn": "2022-01-15T04:28:03.000Z",
+          "wordCount": 20,
+          "title": "只是一个人在打一棵树"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/s422m3/this_dad_has_one_great_son/",
+          "author": null,
+          "description": "这位父亲有一个伟大的儿子",
+          "link": "https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/s422m3/this_dad_has_one_great_son/?score=83160&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Fs422m3%2Fthis_dad_has_one_great_son%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Fs422m3%2Fthis_dad_has_one_great_son%2F&channel=WhitePeopleTwitter&sensitive=false",
+          "publishedOn": "2022-01-15T02:31:27.000Z",
+          "wordCount": 20,
+          "title": "这位父亲有一个伟大的儿子"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/s3pjqz/a_parrots_tongue/",
+          "author": null,
+          "description": "鹦鹉的舌头",
+          "link": "https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/s3pjqz/a_parrots_tongue/?score=76462&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Fs3pjqz%2Fa_parrots_tongue%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Fs3pjqz%2Fa_parrots_tongue%2F&channel=interestingasfuck&sensitive=false",
+          "publishedOn": "2022-01-15T01:46:35.000Z",
+          "wordCount": 17,
+          "title": "鹦鹉的舌头"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/worldnews/comments/s3lz9g/novak_djokovics_visa_cancelled_tennis_player_to/",
+          "author": null,
+          "description": "诺瓦克-德约科维奇的签证被取消，网球运动员将被驱逐出境",
+          "link": "https://reddit.buzzing.cc/reddit/r/worldnews/comments/s3lz9g/novak_djokovics_visa_cancelled_tennis_player_to/?score=75930&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fworldnews%2Fcomments%2Fs3lz9g%2Fnovak_djokovics_visa_cancelled_tennis_player_to%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fworldnews%2Fcomments%2Fs3lz9g%2Fnovak_djokovics_visa_cancelled_tennis_player_to%2F&channel=worldnews&sensitive=false",
+          "publishedOn": "2022-01-15T01:46:35.000Z",
+          "wordCount": 23,
+          "title": "诺瓦克-德约科维奇的签证被取消，网球运动员将被驱逐出境"
+        },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/HumansBeingBros/comments/s3uri7/local_hvac_contractor_dives_to_catch_my_1_year_old/",
           "author": null,
@@ -3642,6 +4050,429 @@
       "feedUrl": "https://hn.buzzing.cc/rss.xml",
       "siteUrl": "https://hn.buzzing.cc",
       "articles": [
+        {
+          "id": "https://hn.buzzing.cc/hn/29950006/",
+          "author": null,
+          "description": "价值6万美元的VO2 Max机器的便携替代品",
+          "link": "https://hn.buzzing.cc/hn/29950006/?score=114&original_url=https%3A%2F%2Fwww.instructables.com%2FAccurate-VO2-Max-for-Zwift-and-Strava%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29950006&sensitive=false",
+          "publishedOn": "2022-01-16T00:53:43.000Z",
+          "wordCount": 30,
+          "title": "价值6万美元的VO2 Max机器的便携替代品"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29948616/",
+          "author": null,
+          "description": "谁在使用待办事项清单？",
+          "link": "https://hn.buzzing.cc/hn/29948616/?score=104&original_url=https%3A%2F%2Farunkprasad.com%2Flog%2Fwho-uses-todo-lists%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29948616&sensitive=false",
+          "publishedOn": "2022-01-16T00:53:43.000Z",
+          "wordCount": 25,
+          "title": "谁在使用待办事项清单？"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29950498/",
+          "author": null,
+          "description": "独自饮酒的禅意",
+          "link": "https://hn.buzzing.cc/hn/29950498/?score=118&original_url=https%3A%2F%2Fdrunkard.com%2Fthe-zen-of-drinking-alone%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29950498&sensitive=false",
+          "publishedOn": "2022-01-16T00:53:43.000Z",
+          "wordCount": 25,
+          "title": "独自饮酒的禅意"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29946486/",
+          "author": null,
+          "description": "用Elixir和Nerves建立一个气象站",
+          "link": "https://hn.buzzing.cc/hn/29946486/?score=100&original_url=https%3A%2F%2Fpragprog.com%2Ftitles%2Fpassweather%2Fbuild-a-weather-station-with-elixir-and-nerves%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29946486&sensitive=false",
+          "publishedOn": "2022-01-15T23:29:07.000Z",
+          "wordCount": 28,
+          "title": "用Elixir和Nerves建立一个气象站"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29950092/",
+          "author": null,
+          "description": "谷歌帮助科学论派亿万富翁鲍勃-杜根隐藏一个黑暗的家庭秘密（2015年）",
+          "link": "https://hn.buzzing.cc/hn/29950092/?score=102&original_url=https%3A%2F%2Ftonyortega.org%2F2015%2F06%2F13%2Fgoogle-helps-scientology-billionaire-bob-duggan-hide-a-dark-family-secret%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29950092&sensitive=false",
+          "publishedOn": "2022-01-15T22:57:45.000Z",
+          "wordCount": 32,
+          "title": "谷歌帮助科学论派亿万富翁鲍勃-杜根隐藏一个黑暗的家庭秘密（2015年）"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29948843/",
+          "author": null,
+          "description": "λ-立方体",
+          "link": "https://hn.buzzing.cc/hn/29948843/?score=102&original_url=https%3A%2F%2Fen.wikiversity.org%2Fwiki%2FFoundations_of_Functional_Programming%2FThe_%25CE%25BB-cube&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29948843&sensitive=false",
+          "publishedOn": "2022-01-15T22:38:04.000Z",
+          "wordCount": 23,
+          "title": "λ-立方体"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29950152/",
+          "author": null,
+          "description": "从macOS切换到Pop _OS",
+          "link": "https://hn.buzzing.cc/hn/29950152/?score=112&original_url=https%3A%2F%2Fsupport.system76.com%2Farticles%2Fswitch-from-macos-to-popos%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29950152&sensitive=false",
+          "publishedOn": "2022-01-15T22:08:02.000Z",
+          "wordCount": 28,
+          "title": "从macOS切换到Pop _OS"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29948473/",
+          "author": null,
+          "description": "开放式基础设施地图",
+          "link": "https://hn.buzzing.cc/hn/29948473/?score=102&original_url=https%3A%2F%2Fopeninframap.org%2F%232%2F26%2F12&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29948473&sensitive=false",
+          "publishedOn": "2022-01-15T21:48:57.000Z",
+          "wordCount": 25,
+          "title": "开放式基础设施地图"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29949728/",
+          "author": null,
+          "description": "特斯拉Model 3车主发现汽车交付时缺少一个刹车片",
+          "link": "https://hn.buzzing.cc/hn/29949728/?score=112&original_url=https%3A%2F%2Fwww.thedrive.com%2Fnews%2F43876%2Ftesla-model-3-owner-discovers-car-was-delivered-missing-a-brake-pad&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29949728&sensitive=false",
+          "publishedOn": "2022-01-15T21:48:57.000Z",
+          "wordCount": 36,
+          "title": "特斯拉Model 3车主发现汽车交付时缺少一个刹车片"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29948866/",
+          "author": null,
+          "description": "Hiccupfx.js - 客户端渲染感觉",
+          "link": "https://hn.buzzing.cc/hn/29948866/?score=108&original_url=https%3A%2F%2Fhiccupfx.telnet.asia%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29948866&sensitive=false",
+          "publishedOn": "2022-01-15T20:59:15.000Z",
+          "wordCount": 31,
+          "title": "Hiccupfx.js - 客户端渲染感觉"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29945952/",
+          "author": null,
+          "description": "如何做一个无用的人",
+          "link": "https://hn.buzzing.cc/hn/29945952/?score=102&original_url=https%3A%2F%2Fpsyche.co%2Fguides%2Fhow-to-wander-free-and-easy-through-life-by-being-useless&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29945952&sensitive=false",
+          "publishedOn": "2022-01-15T20:40:20.000Z",
+          "wordCount": 26,
+          "title": "如何做一个无用的人"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29947320/",
+          "author": null,
+          "description": "设置一个几乎免费的CDN",
+          "link": "https://hn.buzzing.cc/hn/29947320/?score=107&original_url=https%3A%2F%2Fgist.github.com%2Fcharlesroper%2Ff2da6152d6789fa6f25e9d194a42b889&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29947320&sensitive=false",
+          "publishedOn": "2022-01-15T19:33:08.000Z",
+          "wordCount": 26,
+          "title": "设置一个几乎免费的CDN"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29946362/",
+          "author": null,
+          "description": "用于深空探测的自我复制的辐射防护。辐射性真菌",
+          "link": "https://hn.buzzing.cc/hn/29946362/?score=104&original_url=https%3A%2F%2Fwww.biorxiv.org%2Fcontent%2F10.1101%2F2020.07.16.205534v6&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29946362&sensitive=false",
+          "publishedOn": "2022-01-15T19:01:13.000Z",
+          "wordCount": 27,
+          "title": "用于深空探测的自我复制的辐射防护。辐射性真菌"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29947295/",
+          "author": null,
+          "description": "Hellofresh员工的公开薪酬倡议",
+          "link": "https://hn.buzzing.cc/hn/29947295/?score=103&original_url=https%3A%2F%2Fhfsalary.org%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29947295&sensitive=false",
+          "publishedOn": "2022-01-15T18:12:15.000Z",
+          "wordCount": 25,
+          "title": "Hellofresh员工的公开薪酬倡议"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29945797/",
+          "author": null,
+          "description": "苹果遵守荷兰的裁决，允许约会应用程序使用其他支付系统",
+          "link": "https://hn.buzzing.cc/hn/29945797/?score=104&original_url=https%3A%2F%2Fnltimes.nl%2F2022%2F01%2F15%2Fapple-complies-dutch-regulators-ruling-allowing-apps-use-payment-systems&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29945797&sensitive=false",
+          "publishedOn": "2022-01-15T17:55:35.000Z",
+          "wordCount": 32,
+          "title": "苹果遵守荷兰的裁决，允许约会应用程序使用其他支付系统"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29946938/",
+          "author": null,
+          "description": "单反相机已死，而镜头永远不会相同",
+          "link": "https://hn.buzzing.cc/hn/29946938/?score=106&original_url=https%3A%2F%2Fnofilmschool.com%2Fcanon-kills-dslr&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29946938&sensitive=false",
+          "publishedOn": "2022-01-15T17:55:35.000Z",
+          "wordCount": 32,
+          "title": "单反相机已死，而镜头永远不会相同"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29946377/",
+          "author": null,
+          "description": "在过去30年中没有改变的协议",
+          "link": "https://hn.buzzing.cc/hn/29946377/?score=107&original_url=https%3A%2F%2Fdmitryelj.medium.com%2Ftired-of-the-modern-web-discover-some-retro-protocols-you-still-can-use-today-30bbca48d3f2&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29946377&sensitive=false",
+          "publishedOn": "2022-01-15T17:41:06.000Z",
+          "wordCount": 30,
+          "title": "在过去30年中没有改变的协议"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29946144/",
+          "author": null,
+          "description": "掌握SSH隧道概念的免费书籍",
+          "link": "https://hn.buzzing.cc/hn/29946144/?score=110&original_url=https%3A%2F%2Fgithub.com%2Fopsdisk%2Fthe_cyber_plumbers_handbook&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29946144&sensitive=false",
+          "publishedOn": "2022-01-15T16:52:41.000Z",
+          "wordCount": 28,
+          "title": "掌握SSH隧道概念的免费书籍"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29947396/",
+          "author": null,
+          "description": "Safari 15中的IndexedDB实时泄露了你的浏览活动",
+          "link": "https://hn.buzzing.cc/hn/29947396/?score=110&original_url=https%3A%2F%2Ffingerprintjs.com%2Fblog%2Findexeddb-api-browser-vulnerability-safari-15%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29947396&sensitive=false",
+          "publishedOn": "2022-01-15T16:52:41.000Z",
+          "wordCount": 33,
+          "title": "Safari 15中的IndexedDB实时泄露了你的浏览活动"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29945848/",
+          "author": null,
+          "description": "Rich是一个Python库，用于在终端进行丰富的文本和漂亮的格式化。",
+          "link": "https://hn.buzzing.cc/hn/29945848/?score=100&original_url=https%3A%2F%2Fgithub.com%2FTextualize%2Frich&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29945848&sensitive=false",
+          "publishedOn": "2022-01-15T15:09:49.000Z",
+          "wordCount": 35,
+          "title": "Rich是一个Python库，用于在终端进行丰富的文本和漂亮的格式化。"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29945181/",
+          "author": null,
+          "description": "GNU广播",
+          "link": "https://hn.buzzing.cc/hn/29945181/?score=103&original_url=https%3A%2F%2Fgithub.com%2Fgnuradio%2Fgnuradio&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29945181&sensitive=false",
+          "publishedOn": "2022-01-15T14:27:37.000Z",
+          "wordCount": 22,
+          "title": "GNU广播"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29945919/",
+          "author": null,
+          "description": "谷歌和Facebook高管被指批准在他们之间划分广告市场",
+          "link": "https://hn.buzzing.cc/hn/29945919/?score=105&original_url=https%3A%2F%2Fwww.theregister.com%2F2022%2F01%2F15%2Fgoogles_facebook_advertising%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29945919&sensitive=false",
+          "publishedOn": "2022-01-15T14:27:37.000Z",
+          "wordCount": 31,
+          "title": "谷歌和Facebook高管被指批准在他们之间划分广告市场"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29931446/",
+          "author": null,
+          "description": "前神童露丝-斯伦琴斯卡将在97岁时发行新专辑",
+          "link": "https://hn.buzzing.cc/hn/29931446/?score=103&original_url=https%3A%2F%2Fwww.bbc.com%2Fnews%2Fentertainment-arts-59986543&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29931446&sensitive=false",
+          "publishedOn": "2022-01-15T14:11:45.000Z",
+          "wordCount": 35,
+          "title": "前神童露丝-斯伦琴斯卡将在97岁时发行新专辑"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29939471/",
+          "author": null,
+          "description": "南极冰层下生活着迄今发现的最大的筑巢鱼群",
+          "link": "https://hn.buzzing.cc/hn/29939471/?score=102&original_url=https%3A%2F%2Fwww.sciencenews.org%2Farticle%2Fice-fish-nest-antarctica-breeding-colony-largest-group&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29939471&sensitive=false",
+          "publishedOn": "2022-01-15T12:56:00.000Z",
+          "wordCount": 32,
+          "title": "南极冰层下生活着迄今发现的最大的筑巢鱼群"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29935939/",
+          "author": null,
+          "description": "我的煤气灶有多糟？(第二部分)",
+          "link": "https://hn.buzzing.cc/hn/29935939/?score=102&original_url=https%3A%2F%2Fcarbonswitch.co%2Fhow-bad-is-my-gas-stove-part-two&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29935939&sensitive=false",
+          "publishedOn": "2022-01-15T10:47:12.000Z",
+          "wordCount": 32,
+          "title": "我的煤气灶有多糟？(第二部分)"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29932821/",
+          "author": null,
+          "description": "Tek Fog in Action: 以女记者为目标",
+          "link": "https://hn.buzzing.cc/hn/29932821/?score=109&original_url=https%3A%2F%2Fthewire.in%2Ftekfog%2Fen%2F3.html&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29932821&sensitive=false",
+          "publishedOn": "2022-01-15T10:32:53.000Z",
+          "wordCount": 35,
+          "title": "Tek Fog in Action: 以女记者为目标"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29933277/",
+          "author": null,
+          "description": "GravityLight--来自举重的光",
+          "link": "https://hn.buzzing.cc/hn/29933277/?score=101&original_url=https%3A%2F%2Fdeciwatt.global%2Fgravitylight&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29933277&sensitive=false",
+          "publishedOn": "2022-01-15T10:13:22.000Z",
+          "wordCount": 33,
+          "title": "GravityLight--来自举重的光"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29929516/",
+          "author": null,
+          "description": "不要再做英雄了",
+          "link": "https://hn.buzzing.cc/hn/29929516/?score=101&original_url=https%3A%2F%2Fwww.productlessons.xyz%2F%2Farticle%2Fstop-being-hero&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29929516&sensitive=false",
+          "publishedOn": "2022-01-15T09:22:13.000Z",
+          "wordCount": 24,
+          "title": "不要再做英雄了"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29942712/",
+          "author": null,
+          "description": "Python共产主义革命",
+          "link": "https://hn.buzzing.cc/hn/29942712/?score=101&original_url=https%3A%2F%2Fgithub.com%2Fjokteur%2Fpython_communism&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29942712&sensitive=false",
+          "publishedOn": "2022-01-15T09:22:13.000Z",
+          "wordCount": 23,
+          "title": "Python共产主义革命"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29944527/",
+          "author": null,
+          "description": "汤加附近发生大爆炸，在新西兰听到。汤加和斐济发生海啸",
+          "link": "https://hn.buzzing.cc/hn/29944527/?score=102&original_url=https%3A%2F%2Fearthquake.usgs.gov%2Fearthquakes%2Feventpage%2Fpt22015050%2Fexecutive&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29944527&sensitive=false",
+          "publishedOn": "2022-01-15T09:07:21.000Z",
+          "wordCount": 34,
+          "title": "汤加附近发生大爆炸，在新西兰听到。汤加和斐济发生海啸"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29940435/",
+          "author": null,
+          "description": "新理论提出 \"遗忘 \"是一种学习形式",
+          "link": "https://hn.buzzing.cc/hn/29940435/?score=101&original_url=https%3A%2F%2Fwww.tcd.ie%2Fnews_events%2Farticles%2Fwhy-do-we-forget-new-theory-proposes-forgetting-is-actually-a-form-of-learning%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29940435&sensitive=false",
+          "publishedOn": "2022-01-15T09:07:21.000Z",
+          "wordCount": 33,
+          "title": "新理论提出 \"遗忘 \"是一种学习形式"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29943517/",
+          "author": null,
+          "description": "美国海盗党",
+          "link": "https://hn.buzzing.cc/hn/29943517/?score=101&original_url=https%3A%2F%2Fuspirates.org%2Ffaq%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29943517&sensitive=false",
+          "publishedOn": "2022-01-15T08:34:54.000Z",
+          "wordCount": 26,
+          "title": "美国海盗党"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29939191/",
+          "author": null,
+          "description": "认知负荷理论及其在学习中的应用",
+          "link": "https://hn.buzzing.cc/hn/29939191/?score=100&original_url=https%3A%2F%2Fwww.scotthyoung.com%2Fblog%2F2022%2F01%2F04%2Fcognitive-load-theory%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29939191&sensitive=false",
+          "publishedOn": "2022-01-15T07:40:57.000Z",
+          "wordCount": 28,
+          "title": "认知负荷理论及其在学习中的应用"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29943733/",
+          "author": null,
+          "description": "现在并非仍是区块链的早期阶段",
+          "link": "https://hn.buzzing.cc/hn/29943733/?score=120&original_url=https%3A%2F%2Fblog.mollywhite.net%2Fits-not-still-the-early-days%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29943733&sensitive=false",
+          "publishedOn": "2022-01-15T06:55:31.000Z",
+          "wordCount": 29,
+          "title": "现在并非仍是区块链的早期阶段"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29939890/",
+          "author": null,
+          "description": "Jailer: 一个用于数据库子集、模式和数据浏览的工具",
+          "link": "https://hn.buzzing.cc/hn/29939890/?score=100&original_url=https%3A%2F%2Fwisser.github.io%2FJailer%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29939890&sensitive=false",
+          "publishedOn": "2022-01-15T05:52:23.000Z",
+          "wordCount": 32,
+          "title": "Jailer: 一个用于数据库子集、模式和数据浏览的工具"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29940117/",
+          "author": null,
+          "description": "作为CI任务的Grep单行线",
+          "link": "https://hn.buzzing.cc/hn/29940117/?score=102&original_url=https%3A%2F%2Fphili.pe%2Fposts%2Fusing-grep-for-simple-ci-tasks%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29940117&sensitive=false",
+          "publishedOn": "2022-01-15T05:06:58.000Z",
+          "wordCount": 26,
+          "title": "作为CI任务的Grep单行线"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29943172/",
+          "author": null,
+          "description": "室外的猫把价值500美元的星联卫星天线当作自热床使用",
+          "link": "https://hn.buzzing.cc/hn/29943172/?score=110&original_url=https%3A%2F%2Fwww.smithsonianmag.com%2Fsmart-news%2Foutdoor-cats-are-using-500-starlink-satellite-dishes-as-self-heating-beds-180979401%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29943172&sensitive=false",
+          "publishedOn": "2022-01-15T05:06:58.000Z",
+          "wordCount": 31,
+          "title": "室外的猫把价值500美元的星联卫星天线当作自热床使用"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29942463/",
+          "author": null,
+          "description": "明天你会和我们一起写HTML吗？",
+          "link": "https://hn.buzzing.cc/hn/29942463/?score=104&original_url=http%3A%2F%2Fhtml.energy%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29942463&sensitive=false",
+          "publishedOn": "2022-01-15T04:51:56.000Z",
+          "wordCount": 27,
+          "title": "明天你会和我们一起写HTML吗？"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29942637/",
+          "author": null,
+          "description": "加拿大卫生部批准将迷幻药用于治疗",
+          "link": "https://hn.buzzing.cc/hn/29942637/?score=105&original_url=https%3A%2F%2Fwww.gazette.gc.ca%2Frp-pr%2Fp2%2F2022%2F2022-01-05%2Fhtml%2Fsor-dors271-eng.html&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29942637&sensitive=false",
+          "publishedOn": "2022-01-15T04:27:44.000Z",
+          "wordCount": 27,
+          "title": "加拿大卫生部批准将迷幻药用于治疗"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29941801/",
+          "author": null,
+          "description": "大、小调音阶的互动钢琴参考",
+          "link": "https://hn.buzzing.cc/hn/29941801/?score=102&original_url=https%3A%2F%2Fmuted.io%2Fmajor-minor-scales%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29941801&sensitive=false",
+          "publishedOn": "2022-01-15T04:11:31.000Z",
+          "wordCount": 28,
+          "title": "大、小调音阶的互动钢琴参考"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29940520/",
+          "author": null,
+          "description": "不予翻译",
+          "link": "https://hn.buzzing.cc/hn/29940520/?score=100&original_url=https%3A%2F%2Fdoesnottranslate.com%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29940520&sensitive=false",
+          "publishedOn": "2022-01-15T03:23:42.000Z",
+          "wordCount": 26,
+          "title": "不予翻译"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29933858/",
+          "author": null,
+          "description": "Deta Cloud - 方便开发者的云平台",
+          "link": "https://hn.buzzing.cc/hn/29933858/?score=100&original_url=https%3A%2F%2Fwww.deta.sh%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29933858&sensitive=false",
+          "publishedOn": "2022-01-15T03:00:30.000Z",
+          "wordCount": 32,
+          "title": "Deta Cloud - 方便开发者的云平台"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29937678/",
+          "author": null,
+          "description": "脸书文字提示的僵尸之地",
+          "link": "https://hn.buzzing.cc/hn/29937678/?score=103&original_url=https%3A%2F%2Fwww.garbageday.email%2Fp%2Fviral-content-optimized-to-piss-off&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29937678&sensitive=false",
+          "publishedOn": "2022-01-15T02:31:02.000Z",
+          "wordCount": 29,
+          "title": "脸书文字提示的僵尸之地"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29940434/",
+          "author": null,
+          "description": "dwm",
+          "link": "https://hn.buzzing.cc/hn/29940434/?score=103&original_url=https%3A%2F%2Fdwm.suckless.org&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29940434&sensitive=false",
+          "publishedOn": "2022-01-15T02:31:02.000Z",
+          "wordCount": 22,
+          "title": "dwm"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29939789/",
+          "author": null,
+          "description": "FFmpeg 5.0",
+          "link": "https://hn.buzzing.cc/hn/29939789/?score=100&original_url=https%3A%2F%2Fgithub.com%2FFFmpeg%2FFFmpeg%2Fblob%2Frelease%2F5.0%2FChangelog&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29939789&sensitive=false",
+          "publishedOn": "2022-01-15T01:46:12.000Z",
+          "wordCount": 24,
+          "title": "FFmpeg 5.0"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29936393/",
+          "author": null,
+          "description": "用Rust重写我的玩具区块链",
+          "link": "https://hn.buzzing.cc/hn/29936393/?score=100&original_url=https%3A%2F%2Fezzeriesa.notion.site%2FRewriting-my-toy-blockchain-in-Rust-9a130f225666488491ba497004821fbb&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29936393&sensitive=false",
+          "publishedOn": "2022-01-15T01:46:12.000Z",
+          "wordCount": 29,
+          "title": "用Rust重写我的玩具区块链"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29929438/",
+          "author": null,
+          "description": "Simple.css - 一个无类的CSS框架",
+          "link": "https://hn.buzzing.cc/hn/29929438/?score=125&original_url=https%3A%2F%2Fsimplecss.org&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29929438&sensitive=false",
+          "publishedOn": "2022-01-15T01:46:12.000Z",
+          "wordCount": 31,
+          "title": "Simple.css - 一个无类的CSS框架"
+        },
         {
           "id": "https://hn.buzzing.cc/hn/29938520/",
           "author": null,
@@ -4914,6 +5745,15 @@
       "siteUrl": "https://hashnode.com",
       "articles": [
         {
+          "id": "https://madcodes.hashnode.dev/types-of-variables-in-java",
+          "author": "Madan",
+          "description": "What are variables?\nVariables are integral storage components in Java. They can be understood as memory locations. A variable can either be a single memory location or a combination of multiple locations that form a unit. Variables are used to identi...",
+          "link": "https://madcodes.hashnode.dev/types-of-variables-in-java",
+          "publishedOn": "2022-01-15T10:16:34.000Z",
+          "wordCount": 1320,
+          "title": "Types of Variables in Java"
+        },
+        {
           "id": "https://practicingprogrammer.hashnode.dev/understanding-injectmocks-for-private-field-mocking",
           "author": "Lance Alexander",
           "description": "Recently I've been working on getting unit tests set up for a decent chunk of java code. The existing tests were more of a placeholder until the team I work with could set up more rigorous testing. The majority of the code hasn't updated very much bu...",
@@ -5227,6 +6067,42 @@
       "siteUrl": "https://linux.cn/",
       "articles": [
         {
+          "id": "https://linux.cn/article-14184-1.html?utm_source=rss&utm_medium=rss",
+          "author": "linux@linux.cn (linux)",
+          "description": "Ansible 是一个开源的自动化工具，可以以多种方式使用。以下是几个去年最受欢迎的 Ansible 教程和故事。\n\r\n\r\n\n\r\n自动化不断改善着 IT 团队中每个人的生活。Ansible 可以帮助任何使用 IT 自动化的人，不管是为了保持文件的有序性还是配置打印机，或者是为了任何其他可以想象和构建的东西。这些是 2021 年我们分享的一些最引人注目的使用案例和经验。\n\r\n无论你是第一次听说 Ansible，还是一个经验丰富的用户，这些文章都会有你的收获。\n\r\n\r\nAnsible 的创始人 Michael DeHaan 分享了他对自己如何被引向 IT 自动化的想法。这篇访谈对 Ansible 是如何诞生的 以及随着时间的推移而发展的信息和见解都非常好。\n\r\n当你作为一个系统管理员可以将许多日常任务自动化时，自动化可以节省一天的时间。了解如何使用 Ansible 为 五个日常的系统管理员任务 实现自动化流程。\n\r\n你的下载文件夹中充满了垃圾吗？介绍一个简单的方法，用一个简单的剧本来清理你系统上的文件。它很容易扩展，计划好后，就会按照你的要求频繁运行。了解更多关于 用 Ansible 删除文件。\n\r\n如果你正在 写 Ansible 剧本，可以用四行代码改善它们。想想下一个用户，特别是当你在一个项目上合作的时候。一个小的努力可以防止大的问题。\n\r\nAnsible 社区已经采取了措施，通过审查其代码库和更新语言，使该项目更具包容性。请看 Ansible 术语变化 的总结。\n\r\n从你的 Ansible 剧本中调用 API，就像一个专业人员一样！找出每个人都应该知道的关于 利用剧本中的 REST API。\n\r\n有一些应该每天、每周或每月运行的计划任务？使用 Ansible 和 anacron 来设置任务，利用时间戳而不是计划时间，所以即使你的机器在计划时间关闭，它也会在重新开启时运行。\n\r\n如果你刚刚开始使用 Ansible，也许你需要一些方向来开始。这里有 每个人都可以使用 Ansible 的 10 种方法。\n\r\n当社区一起工作时，奇迹就会发生。这不仅仅是代码：了解 Ansible 如何构建设计系统，创建可重用的品牌资产以供社区使用。如果你是设计师或社区经理，你会特别欣赏这个故事。\n\r\n\r\n\r\nvia: https://opensource.com/article/22/1/learn-ansible\n\r\n作者：Sumantro Mukherjee 选题：lujun9972 译者：geekpi 校对：wxy\n\r\n本文由 LCTT 原创编译，Linux中国 荣誉推出",
+          "link": "https://linux.cn/article-14184-1.html?utm_source=rss&utm_medium=rss",
+          "publishedOn": "2022-01-16T00:32:00.000Z",
+          "wordCount": 99,
+          "title": "2021 总结：学习 Ansible 的 9 种方法"
+        },
+        {
+          "id": "https://linux.cn/article-14183-1.html?utm_source=rss&utm_medium=rss",
+          "author": "linux@linux.cn (linux)",
+          "description": "如果你曾经尝试过使用 Arch Linux，你就知道如果没有适当的文档和 Linux 知识，几乎不可能安装它。而实际上，这就是 Arch Linux 的 魅力。\n\r\n但由于 Arch Linux 属于专业级的 Linux 发行版，因此有几个 基于 Arch 的发行版，它们试图让普通人可以更轻松地使用它们。\n\r\n当谈到 “基于 Arch 的 Arch 替代品” 时，Manjaro 和 EndeavourOS 是两个最受欢迎的选择。\n\r\n所以让我们来看看这两个的区别。为什么你要选择其中一个而不是另一个？\n\r\n\n\r\n桌面变体\n\r\n这两个发行版都有多种桌面风格。Manjaro 有三种官方风格：Xfce、KDE 和 GNOME。此外还有社区版：Budgie、Cinnamon、Deepin、Mate、Sway 和 i3。\n\r\nEndeavour OS 官方提供了更多的变体。除了 Manjaro 所拥有的那些，它还有 LXQT、BSPWM、Openbox 和 Qtile。\n\r\n由于每种风格都有不同的 桌面环境（DE）及特定于该桌面的捆绑应用程序。这就导致了没有一个“严格”的最低系统要求基线。\n\r\n根据 EndeavourOS 的网站，下面是每种桌面环境对内存的系统要求清单（对 Manjaro 也应该是一样的）：\n\r\n\r\nXfce - 至少 2GB 内存，但建议 4GB。\n\r\nMate - 至少 2GB 内存，但建议 4GB。\n\r\nCinnamon - 需要至少 4GB 的内存\n\r\nGnome - 至少需要 4GB 的内存（假设对 KDE 相同）\n\r\nBudgie - 至少需要 4GB 的内存\n\r\nPlasma - 至少需要 4GB 的内存\n\r\nLXQT - 至少需要 2GB 的内存，但建议 4GB\n\r\n\r\n获取 ISO\n\r\n正如我上面提到的，Manjaro 和 EndeavourOS 有…",
+          "link": "https://linux.cn/article-14183-1.html?utm_source=rss&utm_medium=rss",
+          "publishedOn": "2022-01-16T00:08:00.000Z",
+          "wordCount": 446,
+          "title": "EndeavourOS vs. Manjaro：两个基于 Arch Linux 的最佳发行版之间的深度比较"
+        },
+        {
+          "id": "https://linux.cn/article-14182-1.html?utm_source=rss&utm_medium=rss",
+          "author": "linux@linux.cn (linux)",
+          "description": "24 小时自毁网站已经运行了近两年\n\r\n2020 年 4 月，一个名为“这个网站会自毁”的网站悄悄上线了。它的自毁可以被网友们拯救：“你可以向我发送信息。如果 24 小时内我没有收到信息，将会永久自毁。”不过快两年过去了，它依然活着。这个网站上有各种各样的留言，你留言之后不但可以给这个网站续命，而且可以随机看到一条别人的留言。\n\r\n\r\n老王点评：很有趣的一个社会实验，或许这个网站自毁的一天就是人类对自己已经失望的一天吧。\n\r\n\r\n\n\r\nUbuntu 22.04 LTS 计划坚守 Linux 内核 5.15\n\r\n昨天我们发的 文章 中预测 Ubuntu 22.04 中可能会使用 Linux 内核 5.17。但是在关于 Ubuntu 22.04 的 GNOME 计划的讨论中，Canonical 提到 “计划是在 LTS 中使用 5.15，但是 OEM 和 HWE 版本将在某个时候升级到 5.17”。也就是说，在 2023 年，Ubuntu 22.04.2 LTS 将使用 Ubuntu 22.10 的 HWE 内核，而 Ubuntu 的 OEM 合作伙伴，如戴尔也能够为他们最新的 Linux 预装系统提供更新的内核。之所以采用 5.15，是因为这个版本也是 LTS 的，虽然已经发布了半年了。\n\r\n\r\n老王点评：LTS 发行版采用 LTS 内核是应有之义，至于最新硬件支持，这个其实对于 LTS 版本来说并不是最关键的。\n\r\n\r\n\n\r\nPCIe 6.0 规范发布，但 PCIe 4.0 才只有 10% 的份额\n\r\nAMD 在 2019 年的锐龙 3000 系列处理器上首发了 PCIe 4.0 技术，现在各大 SSD 厂商也都有 PCIe 4.0 旗舰级硬盘上市。在 2020 年的时候，SATA SSD 硬盘份额超过了 1/3，PCIe 4.0 只占 3% 份额，2021 年才提高到了 10%，今年的普及速度还会加快，但份额预计只有 30% 左右。PCIe 5.0 硬盘的速度可从目前的 7GB/s 提升到 14GB/s，性能轻松翻倍。而 PCI-SIG 组织刚刚 发布 了 PCIe 6.0 标准，速度再次翻倍到 64GT/s，PCIe x16 可以提供高达 256GB/s 的带宽，用于 SSD 的话 PCIe 6.0 x4 可提供最高 32GB/s 的速度。\n\r\n\r\n老王点评：硬件的发展真是日新月异，感觉没多久就淘汰了。",
+          "link": "https://linux.cn/article-14182-1.html?utm_source=rss&utm_medium=rss",
+          "publishedOn": "2022-01-15T04:46:01.000Z",
+          "wordCount": 142,
+          "title": "硬核观察 #517 24 小时自毁网站已经运行了近两年"
+        },
+        {
+          "id": "https://linux.cn/article-14181-1.html?utm_source=rss&utm_medium=rss",
+          "author": "linux@linux.cn (linux)",
+          "description": "在你学习 Linux 命令行或练习新的编程语言时，请随身携带这些方便的备忘单。\n\r\n\r\n\n\r\n你不可能记住每一个你需要使用的命令或快捷方式。我们都是普通人，通常情况下，我把笔记放在不同的纸片上和笔记本里。这导致我的办公桌上有些过分紊乱。到处都是一些五年前的杂乱无章的潦草文字。这这些 2021 年的备忘单将把混乱降低一个档次。从 JavaScript 到 Linux，这个列表中都有适合你的东西。\n\r\n如何编写你的第一段 JavaScript 代码\n\r\n这篇 文章 是为那些今年想尝试学习一门新语言的初来乍到者准备的。Seth Kenlon 介绍了如何安装 JavaScript 和开始制作一个简单的 HTML 页面。虽然 Seth 解释说 JavaScript 并不只用于网站，但所有主要的网页浏览器都有一个运行你的代码的 JavaScript 引擎。在整个演练过程中，Seth 涵盖了语法、变量和函数，让你开始创建一个新的应用。最后，在分享 备忘录 之前，Seth 还介绍了用 JavaScript 进行跨平台的能力。\n\r\nLinux 软件包管理\n\r\n在 Chris Hermanse 的 文章 中，在他分享他的 备忘录 之前，我们对使用 apt 做了简要预览。许多人日常在家里和办公室使用基于 Debian 的 Linux。在这篇入门文章中，我们可以了解一下 apt 的用途，首先是用 apt 在软件包系统中寻找软件，也可以用另一个命令查看这些软件包的元数据。接下来，Chris 介绍了查看一个软件包是否包括安装过程中需要的文件（软件包依赖）。最后，Chris 介绍了如何用 apt 命令删除软件包。这份详尽的备忘录可以给你带来比 Linux 的日常软件包管理更多的东西。如果 apt 不适合你，你也可以看看 dnf 备忘录。\n\r\n用 DOS conio 开始编程\n\r\n你是否想在明年涉足 DOS？如果是的话，你已经准备好创建令人兴奋的新应用，Jim Hall 为你准备了一份 备忘录。在这篇 文章 中定义了 conio，在分享备忘录之前，Jim 介绍了如何制作你自己的彩色文本用户界面。Jim 解释说，你可以用你的应用做更多的事情，使其更具互动性和刺激性。现在你有了这个备忘录，你就可以用 DOS conio 创建你自己的应用了。\n\r\n学习 SQLite3\n\r\n与这种常见的数据库一起工作？下面是你如何通过这个 备忘录 成为一个资深用户。在这个 实践教程 中，Klaatu 从安装和与 SQLite3 互动开始，然后在分享备忘录之前创建了一个带表的数据库。Klaatu 还用一段很简单的文字解释了数据类型和日期时间戳功能。Klaatu 在本教程中增加了更多详细的功能，包括查看表格、改变表格等等。如果你想继续使用 SQLite3 数据库并使其变得强大，或者只是想学习如何使用它，这个备忘录就适合你。\n\r\n更多的 Linux 备忘录\n\r\n虽然我只是蜻蜓点水地提及了这些备忘单，但我想提到一些值得称赞的地方，其中包括 Seth Kenlon 的 Linux 备忘单：\n\r\n\r\nSeth 对 grep 的高级用法对各种场合都很有用。\n\r\nfind 命令备忘录对于我不想花大量时间在目录中徘徊的时候特别有帮助。\n\r\nwget 备忘录对于那些你需要从互联网上获取东西的时候是很方便的。\n\r\n\r\n以回顾 2021 年开始 2022 年\n\r\n2021 年是备忘录的辉煌之年，其中许多是关于 Linux 的，但也有一些备忘录甚至让你从一种全新的语言开始。我强烈建议你打印出这些备忘录，在 2022 年开始学习新东西。我们欢迎各种经验水平的作者，请通过 给我们发送文章或备忘录 告诉我们你是如何学习新技能的。\n\r\n\r\nvia: https://opensource.com/article/22/1/open-source-cheat-sheets\n\r\n作者：Jessica Cherry 选题：lujun9972 译者：geekpi 校对：wxy\n\r\n本文由 LCTT 原创编译，Linux中国 荣誉推出",
+          "link": "https://linux.cn/article-14181-1.html?utm_source=rss&utm_medium=rss",
+          "publishedOn": "2022-01-15T03:36:48.000Z",
+          "wordCount": 150,
+          "title": "2021 总结：必备的开源备忘单"
+        },
+        {
           "id": "https://linux.cn/article-14180-1.html?utm_source=rss&utm_medium=rss",
           "author": "linux@linux.cn (linux)",
           "description": "从静态页面到 JAM 栈，CMS 的历史就是开源和 Web 变迁的核心。\n\r\n\r\n\n\r\n内容管理系统Content Management System（CMS）是一个多产的软件类别，其涵盖了所有创建和修改数字内容的应用程序。因此，CMS 的历史可以追溯到由 蒂姆-伯纳斯-李 在 1990 年建立的历史上的第一个网站也就不足为奇了，该网站是以基于互联网的超文本系统 HTML 为模型，只包含了文本和链接。\n\r\n\n\r\n万维网（WWW）的雏形是静态网站，无需后端数据库即可提供内容。它们消耗的计算资源很少，所以加载速度很快 —— 因为没有数据库查询、没有模板渲染、也没有客户端-服务器请求的处理。鉴于那时很少有人经常“上网冲浪”，特别是与今天相比，Web 流量也很少。\n\r\n当然，促进了这种互操作性都是开源软件。事实上，开源在 CMS 的演变中一直扮演着重要的角色。\n\r\nCMS 的崛起\n\r\n快进到九十年代中期，随着万维网的普及和网站对频繁更新的需求的增加 —— 这与它最初托管手册式的静态内容有所不同。这导致了大量的 CMS 产品的出现，如 FileNet、Vignette 的StoryBuilder、Documentum 和其他许多产品。这些都是专有的闭源产品，这在那个时期并不罕见。\n\r\n然而，在 21 世纪初，开源的 CMS 替代品出现了，这包括 WordPress、Drupal 和 Joomla。WordPress 包含一个可扩展的插件架构，并提供了可用于建立网站的模板，而不要求用户具备 HTML 和 CSS 知识。WordPress CMS 软件安装在 Web 服务器上，通常与 MySQL 或 MariaDB 数据库（当然，两者都是开源的）配合。CMS 是开源的这一事实在一定程度上加速了向 WordPress 的重大转变。\n\r\n即使在今天，仍有大约三分之一的网站是使用这些第一代内容…",
@@ -5414,7 +6290,17 @@
       "title": "扯氮集",
       "feedUrl": "http://weiwuhui.com/feed",
       "siteUrl": "http://weiwuhui.com",
-      "articles": []
+      "articles": [
+        {
+          "id": "http://weiwuhui.com/?p=8593",
+          "author": "魏武挥",
+          "description": "（停业中的霓裳茶舞静安寺店，画面来自央视新闻） 一 “霓裳茶舞”这个店堂面积不过区区20平的普通奶茶店，它的大 更多...",
+          "link": "http://weiwuhui.com/8593.html",
+          "publishedOn": "2022-01-15T12:30:02.000Z",
+          "wordCount": 632,
+          "title": "精准防控的底色 是螺蛳壳里做道场的精明精细与精致"
+        }
+      ]
     },
     {
       "title": "RSS feed of yihong0618's gitblog",
@@ -5556,15 +6442,6 @@
           "publishedOn": "2022-01-02T14:00:00.000Z",
           "wordCount": 62,
           "title": "0102 - 用屁股坐死你"
-        },
-        {
-          "id": "https://atjason.com/daily/2022-01-01.html",
-          "author": null,
-          "description": "<p>有时，要往南，先往北。</p>\n<p>举个反例，国际援助非洲医疗，大大提高了当地的医疗水平，却也大大摧毁了当地药企。一旦援助停止，当地医疗水平可能比援助前更差，因为当地医疗体系被破坏了。</p>\n<p>援助的目的，是提高医疗水平。直接给医给药，当然见效快，却也有饮鸩止渴的感",
-          "link": "https://atjason.com/daily/2022-01-01.html",
-          "publishedOn": "2022-01-01T14:00:00.000Z",
-          "wordCount": 62,
-          "title": "0101 - 迂回前进"
         }
       ]
     },
@@ -5580,6 +6457,15 @@
       "siteUrl": "https://www.bilibili.com",
       "articles": [
         {
+          "id": "https://www.bilibili.com/video/av680648394",
+          "author": "每日盆景",
+          "description": "Tags:生活,生命,科普,水果,自然,哈密瓜,延时摄影,生物,园艺,知识分享官",
+          "link": "https://www.bilibili.com/video/av680648394",
+          "publishedOn": "2022-01-13T23:10:54.000Z",
+          "wordCount": 151,
+          "title": "家里种哈密瓜，等了101天，最后我笑了"
+        },
+        {
           "id": "https://www.bilibili.com/video/av635638425",
           "author": "不正经学姐g",
           "description": "丁字裤是什么？为什么有人爱穿丁字裤？丁字裤前世今生（上集）！\n\n\nTags:知识分享官,科普,涨知识,冷知识,丁字裤,内裤,男生,女生,穿搭",
@@ -5587,6 +6473,15 @@
           "publishedOn": "2022-01-13T20:45:01.000Z",
           "wordCount": 157,
           "title": "丁字裤是什么？为什么有人爱穿丁字裤？丁字裤前世今生（上集）！"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av723198738",
+          "author": "球村冷知识",
+          "description": "透视真相，你看不见的光！\n\n\nTags:知识分享官,透视,红外线,可见光,不可见光,冷知识",
+          "link": "https://www.bilibili.com/video/av723198738",
+          "publishedOn": "2022-01-13T20:10:31.000Z",
+          "wordCount": 151,
+          "title": "透视真相，你看不见的光！"
         },
         {
           "id": "https://www.bilibili.com/video/av680645757",
@@ -5598,6 +6493,15 @@
           "title": "宝 宝 巴 适"
         },
         {
+          "id": "https://www.bilibili.com/video/av253142723",
+          "author": "科学团长",
+          "description": "把40℃的水烧开，是种怎样的体验？\n\n\nTags:科学,科普,物理,实验,科学实验,科普知识,物理实验,初中物理,物理知识,知识分享官",
+          "link": "https://www.bilibili.com/video/av253142723",
+          "publishedOn": "2022-01-13T18:41:23.000Z",
+          "wordCount": 155,
+          "title": "把40℃的水烧开，是种怎样的体验？"
+        },
+        {
           "id": "https://www.bilibili.com/video/av678149788",
           "author": "李文娟农业科普",
           "description": "-\n\n\nTags:自然,健康,北欧,打卡挑战,李文娟",
@@ -5605,6 +6509,24 @@
           "publishedOn": "2022-01-13T18:33:06.000Z",
           "wordCount": 156,
           "title": "北欧是人间仙境？这个视频让你改变想法"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av593201873",
+          "author": "阿飘有只猫",
+          "description": "Tags:科普一下,内容真实,打卡挑战,知识分享官",
+          "link": "https://www.bilibili.com/video/av593201873",
+          "publishedOn": "2022-01-13T18:10:15.000Z",
+          "wordCount": 152,
+          "title": "黑丝yyds？白丝不香吗？？？"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av508209334",
+          "author": "缸灿食话",
+          "description": "一键三连不算多，去不了美国新加坡，一键三连不算贵，视频不好看还包退！\n\n\nTags:知识分享官,美食,科普,保健品,能量饮料",
+          "link": "https://www.bilibili.com/video/av508209334",
+          "publishedOn": "2022-01-13T18:00:09.000Z",
+          "wordCount": 148,
+          "title": "富豪沉迷“能量饮料”，脑袋喝出个洞"
         },
         {
           "id": "https://www.bilibili.com/video/av380661518",
@@ -5616,6 +6538,24 @@
           "title": "为什么意大利花477亿在海中放块黄色板子，把海水一分为二"
         },
         {
+          "id": "https://www.bilibili.com/video/av808115988",
+          "author": "牙医橘子",
+          "description": "-\n\n\nTags:必剪创作,洗牙,牙结石,牙医,健康,强迫症,解压,减压",
+          "link": "https://www.bilibili.com/video/av808115988",
+          "publishedOn": "2022-01-13T17:11:20.000Z",
+          "wordCount": 152,
+          "title": "这牙结石，是没刷过牙吧！"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av338187648",
+          "author": "科学大魔王",
+          "description": "我国用来喂猪的“蘑菇”，为啥在国外卖到40万一斤，今天我们就来认识下，餐桌上的黑钻石，黑松露!\n\n\nTags:知识分享官,科学,科普,植物,松露,美食",
+          "link": "https://www.bilibili.com/video/av338187648",
+          "publishedOn": "2022-01-13T17:10:17.000Z",
+          "wordCount": 150,
+          "title": "同样是松露，为啥国外卖到40万一斤，在中国沦落成猪饲料？"
+        },
+        {
           "id": "https://www.bilibili.com/video/av338208680",
           "author": "芳斯塔芙",
           "description": "一个从小双目失明的人是怎么一步步成为贝类学研究泰斗的，请看本期科学八卦史：海尔特·弗尔迈伊（Geerat Vermeij）。\n不会吧，不会真的有人会复制简介吧。\n\n\nTags:故事档案馆,弗尔迈伊,科学史,贝类,科学家",
@@ -5623,6 +6563,24 @@
           "publishedOn": "2022-01-13T17:00:07.000Z",
           "wordCount": 238,
           "title": "【科学八卦史】双目失明丝毫不影响我钻研科学，因为……"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av550644748",
+          "author": "小冷黑知识",
+          "description": "Tags:动画,科普,QQ,冷知识",
+          "link": "https://www.bilibili.com/video/av550644748",
+          "publishedOn": "2022-01-13T16:17:38.000Z",
+          "wordCount": 151,
+          "title": "QQ以前叫这个名字，还能发现你的新世界！"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av850628105",
+          "author": "这知识好冷",
+          "description": "一夜白头是真的吗？真有那么快吗？\n\n\nTags:知识分享官,自然,冷知识,涨知识,科普向,压力,情绪,心理",
+          "link": "https://www.bilibili.com/video/av850628105",
+          "publishedOn": "2022-01-13T14:50:10.000Z",
+          "wordCount": 155,
+          "title": "一夜白头是真的吗？真有那么快吗？"
         },
         {
           "id": "https://www.bilibili.com/video/av765618597",
@@ -5634,6 +6592,24 @@
           "title": "痛风八年，尿酸641，双脚长多处小石头"
         },
         {
+          "id": "https://www.bilibili.com/video/av423133129",
+          "author": "六层楼先生",
+          "description": "这就是那个原本以为很简单，但是越挖越深，发现行业漏洞……的科普内容！\n\n请留意视频里提到的那些药物种类，如果家里有人正在使用那些药物，请务必查看说明书，并且避开视频里提到的那些水果及制品。\n\n我是六层楼，我爱这个世界。\n\n\nTags:知识分享官,女性,健康,科普,知识,生活,饮食,水果,药物,医药",
+          "link": "https://www.bilibili.com/video/av423133129",
+          "publishedOn": "2022-01-13T12:07:48.000Z",
+          "wordCount": 154,
+          "title": "柚子也不能吃？！这事有点儿深了……"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av423190054",
+          "author": "科技兽哦",
+          "description": "-\n\n\nTags:知识分享官,必剪创作,科普,科学,枪械,物理,实验",
+          "link": "https://www.bilibili.com/video/av423190054",
+          "publishedOn": "2022-01-13T11:14:35.000Z",
+          "wordCount": 153,
+          "title": "这些枪你都知道是干嘛的吗？可以拐弯的枪！"
+        },
+        {
           "id": "https://www.bilibili.com/video/av508057436",
           "author": "怪奇说",
           "description": "据不完全估计，除去病毒之外，地球上的生物物种数量超过了一万亿，它们虽然形态各异，但却有着一个共同的名称——碳基生命。  \n 但你是否想过，元素种类繁多，为什么地球却偏偏选择了碳元素作为生命基础，而在地球之外，还可能存在哪些颠覆认知的生命形式呢？\n本期视频从原子层面出发，带你领略生命世界的瑰奇绚丽。\n\n\nTags:科学,地球,科普,宇宙,天文,外星人,人类,碳基生命,硅基生命,知识分享官",
@@ -5641,6 +6617,15 @@
           "publishedOn": "2022-01-13T10:57:10.000Z",
           "wordCount": 156,
           "title": "地球为什么选择了碳基生命，而不是硅基生命？硅基生命究竟长什么样？"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av678041971",
+          "author": "只想快乐的傻露",
+          "description": "医学视频\n\n\nTags:科普,健康,医学",
+          "link": "https://www.bilibili.com/video/av678041971",
+          "publishedOn": "2022-01-13T10:45:57.000Z",
+          "wordCount": 156,
+          "title": "【医学视频】无器具前列腺高潮原理科普(搬运 侵删)"
         },
         {
           "id": "https://www.bilibili.com/video/av550569432",
@@ -6001,6 +6986,60 @@
       "siteUrl": "https://www.bilibili.com",
       "articles": [
         {
+          "id": "https://www.bilibili.com/video/av550640674",
+          "author": "CG阳阳",
+          "description": "好莱坞MP数字绘景技术系统特训营\n\n课程链接：https://www.yiihuu.com/a_11060.html?TG=4555917\n\n主讲老师——周节：从2012年赴美国、加拿大专注于数字绘景工作学习至今10年。现任新西兰Weta Digital数字绘景师，曾就职Scanline VFX温哥华分部，美国洛杉矶特效公司A52 VFX, The Mill 洛杉矶分部等。\n\nA站：jzhou11.artstation.com\n个人网站：www.jie\n\n\nTags:知识分享官,特效,后期,数字绘景,绘景,MP数字绘景,MP绘景,影视后期,影视,影视特效",
+          "link": "https://www.bilibili.com/video/av550640674",
+          "publishedOn": "2022-01-13T21:58:53.000Z",
+          "wordCount": 108,
+          "title": "好莱坞十年老鸟——JIeZ-告诉你数字绘景的作用及工作流程"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av765735749",
+          "author": "前端研究院",
+          "description": "你也想制作这样的动画吗？快来裙里领取学习资料视频哦！！\n不会的小伙伴们不要怕，来裙里领取配套教材和资料，学习后你也可以做出来！！！\n制作不容易，记得点个关注 有帮助请长按三连：点赞+投币+收藏，谢谢伙伴们支持！！！！\n\n\nTags:知识分享官,野生技术协会,学习,大学生,科技,技术,计算机,WEB前端,前端,视频教程",
+          "link": "https://www.bilibili.com/video/av765735749",
+          "publishedOn": "2022-01-13T20:38:49.000Z",
+          "wordCount": 168,
+          "title": "这效果，让甲方爸爸高攀不起【HTML5+CSS3+JS滑动切换的注册登录界面】"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av978218281",
+          "author": "黑白间设计",
+          "description": "Tags:教程,学习,PPT,设计,老黑,PPT教程,平滑,黑白间设计,PPT创意,知识分享官",
+          "link": "https://www.bilibili.com/video/av978218281",
+          "publishedOn": "2022-01-13T20:00:19.000Z",
+          "wordCount": 66,
+          "title": "PPT最神操作的平方"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av765730575",
+          "author": "牛牛爱鉴宝",
+          "description": "-\n\n\nTags:天天鉴宝,牛道德,涨姿势,古董,搞笑,古玩",
+          "link": "https://www.bilibili.com/video/av765730575",
+          "publishedOn": "2022-01-13T19:47:57.000Z",
+          "wordCount": 155,
+          "title": "【天天鉴宝】牛老师直播间现圭援戈"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av935545330",
+          "author": "黑客情报局",
+          "description": "Tags:娱乐,翻墙,黑客,故事档案馆",
+          "link": "https://www.bilibili.com/video/av935545330",
+          "publishedOn": "2022-01-13T19:45:13.000Z",
+          "wordCount": 155,
+          "title": "VPN翻墙不做违法的事就不会警察盯上？？？你太天真了..."
+        },
+        {
+          "id": "https://www.bilibili.com/video/av893163911",
+          "author": "摸鱼的知识",
+          "description": "Tags:手机,科技,数码,冷知识,涨知识,小技巧,经验分享,手机技巧",
+          "link": "https://www.bilibili.com/video/av893163911",
+          "publishedOn": "2022-01-13T19:15:38.000Z",
+          "wordCount": 156,
+          "title": "清理手机内存的两个方法"
+        },
+        {
           "id": "https://www.bilibili.com/video/av893181469",
           "author": "卡卡宝贝贝_",
           "description": "-\n\n\nTags:拍照技巧,餐厅拍照",
@@ -6019,6 +7058,15 @@
           "title": "神奇的硬币分身，男人撩妹必学！"
         },
         {
+          "id": "https://www.bilibili.com/video/av210691250",
+          "author": "代码编织的世界",
+          "description": "-\n\n\nTags:计算机,IT,互联网,码农,程序猿",
+          "link": "https://www.bilibili.com/video/av210691250",
+          "publishedOn": "2022-01-13T18:18:34.000Z",
+          "wordCount": 155,
+          "title": "公司挖来的一位大佬程序员，听说年入百万，连老板都不敢惹，直到今天我看到了他的操作，这谁顶的住？"
+        },
+        {
           "id": "https://www.bilibili.com/video/av593024867",
           "author": "天天鉴宝",
           "description": "Tags:无限搞笑公司6.0,无限搞笑公司,学习心得,技术",
@@ -6028,6 +7076,24 @@
           "title": "如何鉴别真假翡翠？"
         },
         {
+          "id": "https://www.bilibili.com/video/av678070795",
+          "author": "菜菜TsaiTsai",
+          "description": "【获取完整课件&代码&数据加vx littlebird_0229】\n\n2022新版集成学习专题来啦！集成学习是当今机器学习算法中最为强大、实用的技能，也是在人工智能浪潮当中唯一能与深度学习技术分庭抗礼的领域。在2022年度新版集成学习中，我将带来7大集成算法随机森林、AdaBoost、GBDT、XGBoost、LightGBM，CatBoost的详解。我将会节选每个算法中前30分钟~1小时内容不断在B站公开，请关注更新~\n\n本内容节选自《机器学习实战》正课，完整目录见评论区！\n\n\nTags:知识分享官,人工智能,计算机技术,集成学习,随机森林,Python,科学,科技,机器学习,2022新版集成学习系列",
+          "link": "https://www.bilibili.com/video/av678070795",
+          "publishedOn": "2022-01-13T17:30:14.000Z",
+          "wordCount": 171,
+          "title": "【技术干货】集成算法专题：Bagging与随机森林（2022新版）"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av210650437",
+          "author": "余胜军",
+          "description": "程序员简历不要写这些项目，写了根本找不到工作！\n\n\nTags:JAVA,IT,架构师,计算机,面试,经验分享,it,简历模板,互联网,编程",
+          "link": "https://www.bilibili.com/video/av210650437",
+          "publishedOn": "2022-01-13T17:28:56.000Z",
+          "wordCount": 165,
+          "title": "程序员简历不要写这些项目，写了根本找不到工作！"
+        },
+        {
           "id": "https://www.bilibili.com/video/av380684509",
           "author": "老大南",
           "description": "年底了，赶紧修点水泵挣点达不溜，好回家过年#手工#机电#电机#电工#水泵#机械#解压#猎奇#技术\n\n\nTags:知识分享官,手工,机电,电机,电工,水泵,机械,解压,猎奇,技术",
@@ -6035,6 +7101,42 @@
           "publishedOn": "2022-01-13T17:23:26.000Z",
           "wordCount": 154,
           "title": "年底了，赶紧修点水泵挣点达不溜，好回家过年"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av680699384",
+          "author": "天庭魔术",
+          "description": "开心果瞬间穿越杯子魔术详细教学过程，望各位三连支持一下谢谢\n\n\nTags:教学,知识,魔术,近景魔术,魔术教学,知识分享官",
+          "link": "https://www.bilibili.com/video/av680699384",
+          "publishedOn": "2022-01-13T16:55:14.000Z",
+          "wordCount": 156,
+          "title": "开心果穿越杯子，韩国帅哥美女都懵了，但是原理你肯定想不到这么简单！"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av338181242",
+          "author": "文周程序员",
+          "description": "Tags:计算机,科技,程序员,IT,编程,程序猿,代码,编程学习,计算机技术,写代码",
+          "link": "https://www.bilibili.com/video/av338181242",
+          "publishedOn": "2022-01-13T16:21:28.000Z",
+          "wordCount": 11,
+          "title": "当程序员用手写代码时..."
+        },
+        {
+          "id": "https://www.bilibili.com/video/av808008935",
+          "author": "战争挖掘者",
+          "description": "这次德国货不少，小东西也挺有意思的！\n\n\nTags:知识分享官,野生技术协会,军事,二战,战争遗迹,历史,武器,苏联,军事历史,德国",
+          "link": "https://www.bilibili.com/video/av808008935",
+          "publishedOn": "2022-01-13T14:00:09.000Z",
+          "wordCount": 158,
+          "title": "河里好多德国武器！还有一艘“鱼雷艇”"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av935704094",
+          "author": "一张有思想的钱",
+          "description": "-\n\n\nTags:科普,危险,技巧,自救,经验分享,野生技术协会",
+          "link": "https://www.bilibili.com/video/av935704094",
+          "publishedOn": "2022-01-13T12:51:44.000Z",
+          "wordCount": 150,
+          "title": "不小心掉进5米的深坑，没有工具能实现自救吗?看完我学会了！"
         },
         {
           "id": "https://www.bilibili.com/video/av423106866",
@@ -6053,6 +7155,15 @@
           "publishedOn": "2022-01-13T09:06:15.000Z",
           "wordCount": 161,
           "title": "【JalexRosa】我是如何利用视觉特效将自己变成《火影忍者》中的佐助的"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av423043291",
+          "author": "美陆狮",
+          "description": "win11 安卓子系统大更新，支持调用gpu显卡，gtx3080跑分炸天了\n\n\nTags:win11教程,安卓子系统,gtx3080跑分炸天了,支持调用gpu显卡",
+          "link": "https://www.bilibili.com/video/av423043291",
+          "publishedOn": "2022-01-13T00:33:43.000Z",
+          "wordCount": 178,
+          "title": "win11 安卓子系统大更新，支持调用gpu显卡，gtx3080跑分炸天了"
         },
         {
           "id": "https://www.bilibili.com/video/av850568306",
@@ -6395,6 +7506,15 @@
       "siteUrl": "https://dev.to/top/month",
       "articles": [
         {
+          "id": "https://dev.to/render/git-organized-a-better-git-flow-56go",
+          "author": "Annie Sexton, Render",
+          "description": "#tutorial #productivity #git",
+          "link": "https://dev.to/render/git-organized-a-better-git-flow-56go",
+          "publishedOn": "2022-01-13T18:58:36.000Z",
+          "wordCount": 5203,
+          "title": "Git Organized: A Better Git Flow"
+        },
+        {
           "id": "https://dev.to/codewithpom/cheat-sheets-2imc",
           "author": "Padmashree Jha",
           "description": "#c #cpp #go #react",
@@ -6512,6 +7632,15 @@
           "title": "8 techniques to write cleaner  JavaScript code"
         },
         {
+          "id": "https://dev.to/dustinbrett/after-1-year-of-hard-work-my-new-ultimate-web-desktop-environment-is-ready-for-launch-2dnd",
+          "author": "Dustin Brett",
+          "description": "#react #webdev #javascript #programming",
+          "link": "https://dev.to/dustinbrett/after-1-year-of-hard-work-my-new-ultimate-web-desktop-environment-is-ready-for-launch-2dnd",
+          "publishedOn": "2022-01-02T20:01:03.000Z",
+          "wordCount": 4104,
+          "title": "After 1 YEAR of hard work my NEW Ultimate Web Desktop Environment is ready for launch!!!!! 🎉🎉"
+        },
+        {
           "id": "https://dev.to/yigitsr/10-resources-for-web-developers-46g7",
           "author": "Yigit S",
           "description": "#webdev #css #html #opensource",
@@ -6537,15 +7666,6 @@
           "publishedOn": "2022-01-01T14:49:12.000Z",
           "wordCount": 3723,
           "title": "The Full-Stack Developer Vocabulary(The Full List!)"
-        },
-        {
-          "id": "https://dev.to/fidalmathew/css-tips-on-images-you-need-to-know-33b1",
-          "author": "Fidal Mathew",
-          "description": "#css #webdev #beginners #javascript",
-          "link": "https://dev.to/fidalmathew/css-tips-on-images-you-need-to-know-33b1",
-          "publishedOn": "2022-01-01T05:01:37.000Z",
-          "wordCount": 1669,
-          "title": "CSS tips on Images you need to know"
         }
       ]
     },
@@ -6792,6 +7912,312 @@
       "feedUrl": "https://rsshub.app/v2ex/topics/latest",
       "siteUrl": "https://www.v2ex.com/",
       "articles": [
+        {
+          "id": "828512",
+          "author": "asde111",
+          "description": "asde111: \n现象：例如水深火热节点中的帖子，未登录时访问会 302 到 https://www.v2ex.com/restricted ，再 302 到登录页面，此时地址是 https://www.v2ex.com/signin?next=%2Frestricted ，导致登录完会跳转回 https://www.v2ex.com/restricted 而不是原帖子\n预期：未登录时访问应该先 302 到登录页面 https://www.v2ex.com/signin?next=/t/xxxxxx ，登录后跳转回原帖子，再根据用户的权限决定是否跳转到 https://www.v2ex.com/restricted",
+          "link": "https://www.v2ex.com/t/828512",
+          "publishedOn": "2022-01-15T18:12:38.000Z",
+          "wordCount": 102,
+          "title": "未登录时访问受限制节点中的主题的跳转问题"
+        },
+        {
+          "id": "828510",
+          "author": "RichardY",
+          "description": "RichardY: \n我有个海外版电视盒子，安装了影视类的应用来看剧，但看着看着就会出现看 10 秒卡 2 秒（出现一个加载的圈）。我不清楚到底是什么原因造成的，不同的剧都会出现这个问题，不同的 app 也都出现这个问题，而且由于我担心是无限路由器原因（盒子只能用无线网，路由器距离电视盒子也不远，并且没有墙），所以路由器也换过（固件也试过原装的和自己刷 openwrt ），仍然还是有这个问题，想请教是为什么？\n顺便还想问一下有没有什么能刷 openwrt 的，信号好的路由器推荐？\n谢谢",
+          "link": "https://www.v2ex.com/t/828510",
+          "publishedOn": "2022-01-15T16:36:36.000Z",
+          "wordCount": null,
+          "title": "无线路由器及电视盒子问题"
+        },
+        {
+          "id": "828509",
+          "author": "abc8678",
+          "description": "abc8678: 每次想看一下范围边界，或者想看看禁停点。双击或两指放大之后，如果要拖动或继续放大的话，手就要很快才行，或者用一个手指固定住。不然地图就立刻自动缩放，把整个城市缩为一个小点。我再次放大，它又自动缩回去了。有没有办法锁住它？滴水到屏幕上按住吗？\n有时候想看着边界，走到边角再下来锁车，结果一路上不仅要拿着手机，还要一直按着屏幕，不然地图的比例尺又立刻变化了",
+          "link": "https://www.v2ex.com/t/828509",
+          "publishedOn": "2022-01-15T16:28:00.000Z",
+          "wordCount": null,
+          "title": "某某出行 APP，如何避免自动缩放地图？"
+        },
+        {
+          "id": "828507",
+          "author": "LonnyWong",
+          "description": "LonnyWong: \ntmux 不支持 rz / sz ，于是有一个兼容 tmux 的 trz / tsz ( trzsz )，可以与 iTerm2 一起用，还有一个不错的进度条。\nGitHub： https://github.com/trzsz/trzsz\n开源软件： https://www.oschina.net/p/trzsz",
+          "link": "https://www.v2ex.com/t/828507",
+          "publishedOn": "2022-01-15T15:40:30.000Z",
+          "wordCount": null,
+          "title": "tmux 不支持 rz / sz ，于是有一个兼容 tmux 的 trz / tsz ( trzsz )，可以与 iTerm2 一起用，还有一个不错的进度条。"
+        },
+        {
+          "id": "828505",
+          "author": "weixiaoyun",
+          "description": "weixiaoyun: \n由于最近公司微服务开始用 springcloud ，用的 feign 。 于是,我封装了做公共的 DTO 层来做服务之间的数据传输,简单的来说如下\n\n\n    org.springframework.cloud\n    spring-cloud-starter-openfeign\n\n\n    io.github.openfeign\n    feign-httpclient\n\n\n公共传输类大致如下\npublic class RPCRequest implements Serializable {\n/** 数据 */\nprivate T data;\n}\n\nfeign 接口\n@FeignClient(\"test.engine\")\npublic interface TestClient {\n    @PostMapping(value = \"/rest/test/a\")\n    RPCResult test(@RequestBody RPCRequest request);\n\n}\n\n问题来了，为啥客户端调用服务端接口时获取的 TestDTO 的数据为 null ？ feign 不支持泛型操作？大佬求解",
+          "link": "https://www.v2ex.com/t/828505",
+          "publishedOn": "2022-01-15T15:22:42.000Z",
+          "wordCount": null,
+          "title": "请教一个 feign 泛型问题"
+        },
+        {
+          "id": "828503",
+          "author": "lidiostic",
+          "description": "lidiostic: \nwolai 这个软件，有必要吗？\n我用它来存放色色的东西怎么了，我自己看看而已，关你“我来”什么事儿，管这么宽！\n我还没放任何东西呢，就取了个名字就给我封账号了？\n还什么注重用户隐私，注重隐私怎么还封禁用户\n学国内银行的尿性冻结别人账户是不是？\n下一步是不是要学腾讯支付宝一样了，我来，我劝你别学贱畜！！！",
+          "link": "https://www.v2ex.com/t/828503",
+          "publishedOn": "2022-01-15T15:10:45.000Z",
+          "wordCount": 440,
+          "title": "《我来》什么狗屎注重用户隐私，根本就是狗屁！"
+        },
+        {
+          "id": "828502",
+          "author": "zuhuang1034",
+          "description": "zuhuang1034: \n想在下雨的时候一个人看江发呆，顺便看看书，思考人生。",
+          "link": "https://www.v2ex.com/t/828502",
+          "publishedOn": "2022-01-15T15:08:54.000Z",
+          "wordCount": null,
+          "title": "广州天河附近哪里可以看江看雨？"
+        },
+        {
+          "id": "828501",
+          "author": "stephen2009",
+          "description": "stephen2009: 这样的小主机怎么样？当作 htpc ，播放蓝光 4k hdr 电影。\nhttps://item.taobao.com/item.htm?id=666325696401\nhttps://imgur.com/a/bvSQyRc\nhttps://imgur.com/a/Uf2SiaB",
+          "link": "https://www.v2ex.com/t/828501",
+          "publishedOn": "2022-01-15T14:59:38.000Z",
+          "wordCount": null,
+          "title": "这样的小主机怎么样？当作 htpc，播放蓝光 4k hdr 电影。"
+        },
+        {
+          "id": "828500",
+          "author": "mafeifan",
+          "description": "mafeifan: 我本地使用 oracle vm virtualbox 虚拟机安装 Ubuntu 20.04 server 到最后一步走不动了 好像在下载东西。怎么在安装界面使用中国源？",
+          "link": "https://www.v2ex.com/t/828500",
+          "publishedOn": "2022-01-15T14:56:10.000Z",
+          "wordCount": null,
+          "title": "本地安装 Ubuntu Server 奇慢"
+        },
+        {
+          "id": "828499",
+          "author": "zorn",
+          "description": "zorn: \n项目地址：https://github.com/chenzn1/express-fast-framework\n其中用到的技术有\nExpress\nTypeScript\nMySQL\nJest\nEslint / Prettier\nDocker\nJWT\nSwagger\n这里是集合了多年的开发习惯和用得舒服的的库，个人感觉整体架构相对来说还是比较清晰。\n欢迎大家来吐槽",
+          "link": "https://www.v2ex.com/t/828499",
+          "publishedOn": "2022-01-15T14:46:01.000Z",
+          "wordCount": null,
+          "title": "基于 Express 和 TypeScript 写了一个快速开发的 API Server"
+        },
+        {
+          "id": "828497",
+          "author": "klementina",
+          "description": "klementina: \n尼玛的，什么玩意儿，除了能接受信息，在 Apple Watch 上操作，简直是灾难。",
+          "link": "https://www.v2ex.com/t/828497",
+          "publishedOn": "2022-01-15T14:31:37.000Z",
+          "wordCount": null,
+          "title": "watchOS 版的微信是史上最垃圾的应用，没有之一。"
+        },
+        {
+          "id": "828494",
+          "author": "JasonLaw",
+          "description": "JasonLaw: \n假设现在有商城和会员两个服务，用户在商城使用积分购买商品，但是用户的积分是存储在会员服务的。\n现在的流程如下：\n\n扣减积分发生在会员服务中，创建订单及修改订单状态为已支付发生在商城服务中，所以会出现“扣减了积分，但是没有成功创建订单”这种情况。\n应该怎么解决这个问题呢？",
+          "link": "https://www.v2ex.com/t/828494",
+          "publishedOn": "2022-01-15T13:51:44.000Z",
+          "wordCount": null,
+          "title": "如何避免“扣减了积分，但是没有成功创建订单”？ - 分布式事务相关"
+        },
+        {
+          "id": "828493",
+          "author": "NatsumeMio",
+          "description": "NatsumeMio: \n客服回答：\nFirst of all, we're sorry for any inconvenience this may have caused. As discussed, it shows that your listed Merchant Category Code (MCC) is listed as -- Computer Network Services 4816, which falls into a category that is prohibited by Stripe's Terms of Service for Alipay here:\nhttps://stripe.com/alipay/legal\n请问做 IDC 大类的各位 V2EX 大神，stripe 应该选哪一类才能成功开通支付宝？",
+          "link": "https://www.v2ex.com/t/828493",
+          "publishedOn": "2022-01-15T13:49:25.000Z",
+          "wordCount": null,
+          "title": "Stripe 电脑网络服务大类无法申请支付宝"
+        },
+        {
+          "id": "828492",
+          "author": "anbobi",
+          "description": "anbobi: 家里有条电信宽带 1000M 下，100M 上的协议网速，结果网速不达标，电信总共三次上门测速，确定不达标。承诺更换卡板解决。要求我等 15-30 天。我如约等到电信承诺日期，还是没有给更换，并且反悔不给更换，提出免费拆机赔偿 140 块话费。后来经过我投诉到省通信管理局，电信回复答应更换卡板，但是也是拖了好多天，最后找通信管理局督办才在今天给更换 10G EPON 卡板。\n我是 GPON 本以为正常是升级 XG PON ，谁知道电信不按常理出牌，给我换了个 10G EPON ，也不知道电信咋想的，估计这个 10G EPON 只有我一家用。光率也从-24 到了-15 。\n今儿换完后还是没弄利索，直接沿用原来的 LOID ，拨号后网速只有 100M ，明儿电信线路员接着来我家弄。\nPS：其实我的真实意图是跟电信砍砍价，把资费给我降个三五十块就行，因为就这点破事拖了近两个月时间，我也拖够了，再有就是下行对我来说也无所的，多 200M 300M 和少 200M 300M 也没啥分别，下行带宽本来就是不值钱的东西。谁成想电信就是不跟我提用降低资费的解决这茬，最后还真给我换了。",
+          "link": "https://www.v2ex.com/t/828492",
+          "publishedOn": "2022-01-15T13:48:54.000Z",
+          "wordCount": null,
+          "title": "将近两个月时间电信终于把卡板给我换了"
+        },
+        {
+          "id": "828491",
+          "author": "swhoro",
+          "description": "swhoro: \n在 android 学习中，学习 activity 返回获取结果，有这样的代码\noverride fun onActivityResult(\n        requestCode: Int,\n        resultCode: Int,\n        data: Intent?\n    ) {\n        super.onActivityResult(requestCode, resultCode, data)\n        when (requestCode) {\n            1 -> if (resultCode == RESULT_OK) {\n                val returnedData = data?.getStringExtra(\"data_return\")\n                Log.d(\"FirstActivity\", \"returned data is $returnedData\")\n            }\n        }\n    }\n\n在 result = RESULT_OK 中，RESULT_OK 是定义在 android.app.activity ，且为 public static final 修饰。\n我自定义类为 FirstActivity （也是重写的 onActivityResult 所在的类），继承自 AppCompatActivity ，而 AppCompatActivity 是从 android.app.activity 一路继承下来的，那我的理解就是我自己定义的 FirstActivity 也有 RESULT_OK 这个常量。那么按理来说应该这个语句可以写为：\nresult = AppCompatActivity.RESULT_OK\n或\nresult = FirstActivity.RESULT_OK\n但是实际上只有result = AppCompatActivity.RESULT_OK不报错（但是会显示为灰色，估计意思是写 AppCompatActivity 是多余的），而result = FirstActivity.RESULT_OK报错\n就想问 FirstActivity 应该也继承了 RESULT_OK ，为什么会报错呢\n详细问题： https://segmentfault.com/q/1010000041289012",
+          "link": "https://www.v2ex.com/t/828491",
+          "publishedOn": "2022-01-15T13:48:21.000Z",
+          "wordCount": null,
+          "title": "问下 kotlin 中的继承问题"
+        },
+        {
+          "id": "828490",
+          "author": "freddie0",
+          "description": "freddie0: RT/\n前天去 Genius Bar 换了 MacBook 的 Top Case ，结果今天拿回来发现在 system information 里面电池的 capacity 还是之前的容量。\n傻眼，致电 Apple 新建了案例还没有得到 Genius Bar 的回复。\n请问 TopCase 包括电池吗？他的的确确给我换了个新的 C 面、键盘和触控板。\n(MacBook Air M1, 2020)",
+          "link": "https://www.v2ex.com/t/828490",
+          "publishedOn": "2022-01-15T13:44:20.000Z",
+          "wordCount": null,
+          "title": "Genius Bar 更换 TopCase 结果电池没换..."
+        },
+        {
+          "id": "828487",
+          "author": "aiz",
+          "description": "aiz: \n#使用 PLesk+litespeed 加速你的 wordpress 博客\n##1.基础配置\nlinux 服务器一台\nPLesk 管理面板\nlitespeed web 服务器\n​      litespeed 和 redis 配合 LScache 缓存插件可以实现 wordpress 内容的快速缓存，而且可以通过 PLesk 面板管理 litespeed 服务器，对新手有更友好，而且安全可靠\n##2.控制面板 Plesk\n###2.1 系统需求\n请确认你的服务器系统是不是 Plesk 所要求的！截止到我写完这篇文章为止，最新版的 debian11 还没有被支持\n下图是 Plesk obsidian 版本一键脚本支持的系统，具体需求见(Software Requirements for Plesk Obsidian)\n2.2 安装 Plesk\n由于 PLesk 官方提供一键安装脚本，所以我们很轻松地就可以安装 Plesk （注意必须是干净的系统）\nsh \n安装成功后 root 界面输入“plesk”命令会有如下回显\n\n默认会安装\nMariaDB\nPHP7.3 和 PHP7.4（扩展基本上都装好了）\nApache 和 nginx web 服务器\n想安装其他东西的话可以自己去 plesk installer 安装\n##3 设置 plesk\n访问   https://你的 ip  你会看到 PLesk 的登陆界面 ，使用服务器 root 和密码登录后，这里提示会让你激活 plesk 需要 key 输入即可\nTips:关于 PLesk 的 key 可以去良心云的云市场看看，他们一般都会提供免费的 PLesk one 的 key ，实际也够用了\n4.更换 web 服务器为 litespeed\n4.1 更换条件\n根据 litespeed 的政策：需要更换为 litespeed…",
+          "link": "https://www.v2ex.com/t/828487",
+          "publishedOn": "2022-01-15T13:20:52.000Z",
+          "wordCount": null,
+          "title": "自己 的 wordpress 加速方案"
+        },
+        {
+          "id": "828480",
+          "author": "pikaqiu555",
+          "description": "pikaqiu555: 「监测知乎、XX 、牛客等职场社区平台雇主舆情情况，甄别敏感信息，即时反馈并处理负面舆情」\n「立足于人力资源，参与 Shopee 的雇主品牌建设，传递“虾厂”的雇主形象」\n\n这岗位描述是真的秀\n这家公司最近有啥内部大变动吗",
+          "link": "https://www.v2ex.com/t/828480",
+          "publishedOn": "2022-01-15T12:38:04.000Z",
+          "wordCount": null,
+          "title": "某东南亚公司，招起了「舆情」「监测」相关的岗位"
+        },
+        {
+          "id": "828479",
+          "author": "cfpod",
+          "description": "cfpod: \n如下 code ，先配置好 confluence 后，docker cp 数据出来做预期做持久化。\n 10         volumes:\n 11           - /home/zh/bin/confluence/backup/mysql:/var/lib/mysql\n...\n 26         volumes:\n 27           - /home/zh/bin/confluence/backup/var/atlassian:/var/atlassian\n 28           - /home/zh/bin/confluence/backup/opt/atlassian:/opt/atlassian",
+          "link": "https://www.v2ex.com/t/828479",
+          "publishedOn": "2022-01-15T12:29:33.000Z",
+          "wordCount": null,
+          "title": "confluence docker 数据如何持久化请教？"
+        },
+        {
+          "id": "828478",
+          "author": "love642285",
+          "description": "love642285: \n微信更新 8.0.17 之后，Apple Watch S7 发语音没有发送按钮的 bug 好像终于修复了，还能用全键盘滑动输入回复消息，消息通知也比之前即时了很多，之前版本手机收到消息过了好久手表才收到。",
+          "link": "https://www.v2ex.com/t/828478",
+          "publishedOn": "2022-01-15T12:28:00.000Z",
+          "wordCount": null,
+          "title": "微信更新之后 Apple Watch 版好像更好用了"
+        },
+        {
+          "id": "828477",
+          "author": "anchao951220",
+          "description": "anchao951220: \n豆瓣电影资源神器 在豆瓣电影页面上提供当前电影的各种免费资源链接，直接点击在线观看。\n使用链接：豆瓣电影资源神器\n你点开了你非常喜欢的电影「色戒」，你想要的资源就在界面右侧，触手即达，在线观看\n\n亲测了下，电影资源还是挺丰富的，个人平时经常在豆瓣上找电影、纪录片等，但因为很多资源国内都没有，就得自己去找，还是挺麻烦的，发现这个脚本挺好用的，可以试试。",
+          "link": "https://www.v2ex.com/t/828477",
+          "publishedOn": "2022-01-15T12:27:29.000Z",
+          "wordCount": null,
+          "title": "[电影资源] 最近发现一个比较豆瓣电影的油猴脚本，用起来很方便，分享给大家"
+        },
+        {
+          "id": "828476",
+          "author": "zjvbqla",
+          "description": "zjvbqla: \n买卡充错邮件了，中国客服处理不了，让我打美国客服，打过去问听不懂。。咋整啊。",
+          "link": "https://www.v2ex.com/t/828476",
+          "publishedOn": "2022-01-15T12:06:03.000Z",
+          "wordCount": 218,
+          "title": "苹果美国官网有中文客服吗？打过去听不懂啊。"
+        },
+        {
+          "id": "828475",
+          "author": "JL1990",
+          "description": "JL1990: \n请教 V 站的大帅 b ，如下代码举例，函数中如何根据传入的不同类型字符串，解析成对应的结构体呢？有没有相关代码可以参考学习的。\njsonText1 := \"{\\\"name\\\":\\\"jack\\\"}\"\njsonText2 := \"{\\\"age\\\": 13}\"\n\ntype V1 struct {\nName string`json:\"name\"`\n}\ntype V2 struct {\nAge int`json:\"age\"`\n}\n\nfunc parse(jsonString string) (i interface{}) {\nif err := json.Unmarshal([]byte(jsonText1), &i); err != nil {\npanic(err)\n}\nreturn\n}",
+          "link": "https://www.v2ex.com/t/828475",
+          "publishedOn": "2022-01-15T12:02:31.000Z",
+          "wordCount": null,
+          "title": "golang 中 json 如何解析不同的结构体"
+        },
+        {
+          "id": "828474",
+          "author": "ColdBird",
+          "description": "ColdBird: 其实也没啥感，一个宅男怎才能脱单啊，好想谈恋爱啊。但是不够帅，而且对于自己的农村出身有点自卑。",
+          "link": "https://www.v2ex.com/t/828474",
+          "publishedOn": "2022-01-15T11:56:54.000Z",
+          "wordCount": null,
+          "title": "观《花束般的恋爱》有感"
+        },
+        {
+          "id": "828473",
+          "author": "Newyorkcity",
+          "description": "Newyorkcity: 我 订阅了 报纸，或者说，我向某家报纸发行商订阅了每日晨报。\n->\nI subscribe a newspaper or I subscribe a \n\n那在 Rx 的概念里，newspaper company 有数据（也就是每日晨报）要发送，是一个可订阅或者说可 Observe 的东西，所以应该是 Observable 的一个实例）。\n而『我』抽象出来的话应该是一个 Observer 类型（具有订阅的能力，并且在获得到订阅的东西后有一些行为）\n所以写成代码后应该是 I.subscribe(newspaperCompany)\n然而\ninterface Observable {\n    Subscription subscribe( Observer s )\n}\n所以 RxJava 里应该写成 newspaperCompany.subscribe(I)\n就让我非常难顶。\n实在不行，这个方法名能不能从 subscribe 改成 register 啊，\nnewspaperCompany.register(I)  --> 报纸发行商把订阅报纸的我注册在要发每日晨报的名单里了  我一下子就觉得好理解和舒服得多\n这里为什么这么设计呢？\n谢谢",
+          "link": "https://www.v2ex.com/t/828473",
+          "publishedOn": "2022-01-15T11:56:31.000Z",
+          "wordCount": null,
+          "title": "大家是否在初学 Rx（响应式扩展，经典如 RxJs， RxJava）时，觉得它的写法反过来会更好理解？"
+        },
+        {
+          "id": "828472",
+          "author": "JsonTu",
+          "description": "JsonTu: 我不知道这站合不合法，合不合规。当我发现访问不了后，去社区看了官方消息，感觉很无奈，很无助。后面尝试搜索过域名解析的 IP ，找到三个都无法访问。哎，我想抛开一切，远走他乡，但这也很不现实的事。祝好",
+          "link": "https://www.v2ex.com/t/828472",
+          "publishedOn": "2022-01-15T11:51:10.000Z",
+          "wordCount": null,
+          "title": "fsou 无法访问了"
+        },
+        {
+          "id": "828471",
+          "author": "fansvista",
+          "description": "fansvista: \n之前银联官网上还写着 Apple pay 卡码合一即将上线，现在干脆把这句话删了。\n现在除了苹果外别的 pay 都有了，三星也有，究竟什么原因不能上？",
+          "link": "https://www.v2ex.com/t/828471",
+          "publishedOn": "2022-01-15T11:41:25.000Z",
+          "wordCount": null,
+          "title": "Apple pay 银联卡码合一难产了？"
+        },
+        {
+          "id": "828470",
+          "author": "zyEros",
+          "description": "zyEros: \n试用地址： https://www.fastyotest.com/demo\n在我们自己做的一些副业产品中，常常需要对一些业务场景进行滑动验证码的接入，例如：登录注册、抢购秒杀、发帖风控 等，但前期我们针对目前已存在的产品调研了很久，发现了他们存在许多的问题，其中包括：\nrecaptcha 即使替换了域名，也会有部分用户反馈无法使用\nvaptcha 需要绘制曲线，门槛太高，大部分用户不了解如何使用\n极验 /腾讯防水墙 /网易云盾等免费版各种使用限制，很难愉快使用\n极验 /腾讯防水墙 /网易云盾等高级版年收费很高，没有按量付费\n极验 /网易云盾等不提供多维数据，仅有通过与否一个字段供接入方判断\n......\n同时我们看到 V2EX 上偶尔会有人寻求相关的产品，因此我们就着手做了一整套验证码服务 - 友验。\n那么 友验 和其他产品有哪些不同呢？\n按月重置的免费额度 + 按量付费（免费版每月 5W 免费验证额度）\n基于风险评分体系，我们提供包括 检测得分、IP 风险、设备指纹 等多个维度数据\n编写了包含微信小程序 /PC/H5/iOS/Android...等 SDK 方便你快速接入 \n我们从零使用 JavaScript 编写了 JavaScript 编译和解释器用于 VMP ，并且部分开源提供大家使用 \n使用公开的浏览器特征和 DOM 规范数据用来训练特征模型，用来识别 puppeteer/selenium/playwright 等 Headless 的伪装 \n目前友验已稳定运行，帮助 12 家小公司和 39 名个人开发者抵御了每天总 6 百万次的请求。如果有被薅羊毛、恶意灌水、恶意注册、恶意爬虫所困扰的朋友不妨尝试使用一下 友验 。",
+          "link": "https://www.v2ex.com/t/828470",
+          "publishedOn": "2022-01-15T11:40:32.000Z",
+          "wordCount": null,
+          "title": "做了一个基于 JavaScript VMP 的滑动验证系统"
+        },
+        {
+          "id": "828469",
+          "author": "leonme",
+          "description": "leonme: iphone 联网：小米 AX6000 连接软路由 Lan 口做 AP ，手机通过无线连接 AP 上网\napple tv 联网：如果直接有线连接软路由 Lan 口，那么 iphone 和 apple tv 是无法通信的；但是如果直接无线连接 AP ，那么 iphone 和 apple tv 是可以直接通信的\n想问下，有没有可能 apple tv 通过有线连接软路由的 Lan 口，iphone 通过无线连接 AP ，使这两者可以直接通信呢？",
+          "link": "https://www.v2ex.com/t/828469",
+          "publishedOn": "2022-01-15T11:23:03.000Z",
+          "wordCount": null,
+          "title": "软路由+AP 下 apple tv 和 iPhone 无法通信"
+        },
+        {
+          "id": "828468",
+          "author": "pipixia",
+          "description": "pipixia: \n\n如图，有点崩溃，设置添加语言的选项都不正常显示了，实际内容是啥我也不知道，Dev 版本 22533.1001",
+          "link": "https://www.v2ex.com/t/828468",
+          "publishedOn": "2022-01-15T11:17:31.000Z",
+          "wordCount": null,
+          "title": "Win11 这个 BUG 有点崩溃"
+        },
+        {
+          "id": "828467",
+          "author": "LiuJiang",
+          "description": "LiuJiang: 支付宝被封 14 天，老哥们有啥办法快速解封？",
+          "link": "https://www.v2ex.com/t/828467",
+          "publishedOn": "2022-01-15T11:13:11.000Z",
+          "wordCount": null,
+          "title": "支付宝被封了咋办？"
+        },
+        {
+          "id": "828466",
+          "author": "huangjovin",
+          "description": "huangjovin:",
+          "link": "https://www.v2ex.com/t/828466",
+          "publishedOn": "2022-01-15T11:09:07.000Z",
+          "wordCount": null,
+          "title": "fsou.cc 是不是崩了？"
+        },
+        {
+          "id": "828465",
+          "author": "Building",
+          "description": "Building: \n打着计算机旗号的爱情片，把狗骗进影院杀，看得我真是一脸尴尬，不要分析什么虚拟现实，超能力就是爱情，这和国产剧烂片有什么区别？",
+          "link": "https://www.v2ex.com/t/828465",
+          "publishedOn": "2022-01-15T11:03:58.000Z",
+          "wordCount": null,
+          "title": "请问黑客帝国系列讲的是什么俗气的爱情故事吗？"
+        },
+        {
+          "id": "828464",
+          "author": "YoungKing6",
+          "description": "YoungKing6:",
+          "link": "https://www.v2ex.com/t/828464",
+          "publishedOn": "2022-01-15T11:01:33.000Z",
+          "wordCount": null,
+          "title": "用了多年的 17 年 MBP，想等明年 M2 的 MBA。"
+        },
         {
           "id": "828367",
           "author": "leeyuky",
@@ -8033,6 +9459,15 @@
       "siteUrl": "https://juejin.im/android?sort=weekly_hottest",
       "articles": [
         {
+          "id": "https://juejin.cn/post/7052636741462655012",
+          "author": "DemoonLucck",
+          "description": "项目环境切换问题：\n遇到的问题：\n1.项目网络环境很多，包括5楼环境（网络地址和MQTT地址不同）、12楼环境（网络地址和MQTT地址相同）、新部署环境等，每次打包修改地址容易出错且耗时\n2.APP的自动更新依赖于版本名和VersionCode，项目依赖的AAR包经常更新\n解决方案：\n利用gradle构建工具的特性，修改build.gradle脚本，实现网络环境根据版本名自动切换，这样查看APK文件名就能知道网络环境，且不需要反复修改地址代码\n使用manifestPlaceholders控制网络切换:\n\n\n效果：\n以前切换网络环境、切换AAR、发布版本需要修改内容：\n\n\n\n\n需要修改4个文件的6处内容\n重构后切换网络环境、切换AAR、发布版本需要修改内容：\n\n只需修改一个文件的两处内容：一个是AAR版本，一个是版本名\n版本号、AAR依赖、网络环境会自动根据以上两处进行切换，只需根据注释修改\n代码实现\n1.在manifest文件的Application标签内增加：\n\n\n2.在java代码中增加：\npublic static int getMetaDataInt(String metaName, int defaultValue) {\n    try {\n        return MyApplication.getInstance().getPackageManager()\n                .getApplicationInfo(MyApplication.getInstance().getPackageName(), PackageManager.GET_META_DATA)\n                .metaData.getInt(metaName, defaultValue);\n    } catch (PackageManager.NameNotFoundException e) {\n        e.printStackTrace();\n        return defaultValue;\n    }\n}\n\n3.在app的build.gradle中使用：\n//----------------------根据versionName自动配置网络->->->->->->-------------------\ndef hospital_net = 0, floor_12 = 1, new_env = 2\ndef network_env\nif (versionName.toString().startsWith(\"2\")) {\n    network_env = floor_12\n} else if (versionName.toString().startsWith(\"3\")) {\n    network_env = new_env\n} else {\n    network_env = hospital_net\n}\nmanifestPlaceholders = [network_env: network_env,]\n\nversionName '1.2.04' // 1开头是院内环境，2开头就是12楼环境，3开头是新部署环境\n//------",
+          "link": "https://juejin.cn/post/7052636741462655012",
+          "publishedOn": "2022-01-13T02:33:23.000Z",
+          "wordCount": 36,
+          "title": "发布APK：改一下versionName即可切换网络环境"
+        },
+        {
           "id": "https://juejin.cn/post/7052625610295738382",
           "author": "字节跳动技术团队",
           "description": "theme: juejin\n介绍\nbtrace（又名 RheaTrace） 是抖音基础技术团队自研的一款高性能 Android Trace 工具，它基于 Systrace 实现，并针对 Systrace 不足之处加以改进，核心改进点如下。\n效率提升：编译期间为 App 方法自动注入自定义事件，并提供高效、灵活配置规则。\n性能提升：改进 Systrace 文件实时写 atrace 数据方式，性能提升最大 400 % 以上。\n实用性提升：额外提供更详细 IO 等数据，大幅提升方法耗时归因效率；使用独创方案彻底来解决方法因执行异常引起 trace 数据不闭合问题。\n项目地址：\nhttps://github.com/bytedance/btrace\n目前字节跳动已有多款 App 接入，包括抖音、TikTok、今日头条、幸福里等均已接入 RheaTrace，并为其体验优化提供强有力支持。借助 RheaTrace 将为您的 App 带来极致流畅体验，RheaTrace 使用效果如下（因保密原则，每个方法用 ID 表示）。\n\nSystrace 简介\n如果我们使用过 Systrace 分析应用性能，我们都知道 Systrace 提供 Category 配置让用户决定采集哪些系统 atrace 数据，如下命令，从 sched 开始后续是不同类别的 atrace 数据。\npython systrace.py -o mynewtrace.html sched freq idle am wm gfx view \\\n    binder_driver hal dalvik camera input res\n\natrace 的数据类型见下图：\n\n其中，用户空间 atrace 类型包括应用层自定义 Trace 事件、系统层 gfx 渲染相关 Trace、系统层锁相关 Trace 信息等，其最终都是通过调…",
@@ -8060,6 +9495,15 @@
           "title": "拯救OOM！字节自研 Android 虚拟机内存管理优化黑科技 mSponge"
         },
         {
+          "id": "https://juejin.cn/post/7052527857045782565",
+          "author": "Time_sun",
+          "description": "本文翻译自 👉Staggered animations，是官方给出的最后一个动画教程——交错动画。看完本篇让你的动画不再单一，可以在淡入的过程中让尺寸变大，可以在尺寸变化的同时让形状变化。\n本篇的内容\n交错动画可以是一个前后衔接的动画序列，也可以是重叠在一起的动画效果\n交错动画的创建需要使用多个 Animation 对象，这些动画对象的控制只有一个\n每一个动画对象都需要指定一个 Interval，来表明该动画在整个动画序列的起止时刻\n使用 Tween 来创建每一个动画\n交错动画是一个很直接的概念：页面上的动画效果是一系列的动画，而不是一个动画一个动画手动加上去的。动画可能是纯粹的系列动画，动画之间前后衔接。也可能动画之间部分或者完全的重叠。也可能是空白动画，啥也没发生。\n本篇就介绍如何在 Flutter 中构建交错动画。\n案例\n本篇文章使用基本的交错案例，更复杂的案例可以参考staggered_pic_selection。\nbasic_staggered_animation\nstaggered_pic_selection\n我们完成的效果是这样的：\n\n交错动画的基本结构\n所有的动画都是被同一个 AnimationController 驱动的\n不管动画持续的时间，controller 的值必须在0-1的闭区间。\n每一个动画都有一个 0-1 闭区间 的Interval 的值\n单个的动画叫做 interval ，每一个 interval 创建一个 Tween ，Tween 指定了开始\nTween 会创建动画并且动画由 controller 管理\n下图演示了代码示例中 Interval 的使用，需要注意到以下的几点:\n透明度的改变占据了整个动画时长的10%\n透明度动画和宽度动画之间有一个小小的空档期\n在时间线的最后25%的时间内没有任何动画\nPadding动画和高度变化动画是完全重…",
+          "link": "https://juejin.cn/post/7052527857045782565",
+          "publishedOn": "2022-01-12T19:30:51.000Z",
+          "wordCount": 38,
+          "title": "Flutter 最后一个动画交错动画"
+        },
+        {
           "id": "https://juejin.cn/post/7052269576851030030",
           "author": "limuyang2",
           "description": "废话不多说，直接开始。\n启动协程的时候，我们的基本写法是这样的：\nlifecycleScope.launch { \n    \n}\n\n或者\n\nviewModelScope.launch { \n    \n}\n\n\n这会存在一个问题，如果launch里面发生错误，会直接导致崩溃，这是不安全的。\n1. 于是最笨的方法诞生了：\nlifecycleScope.launch { \n    try {\n    // 加个异常捕获\n    } catch(e: Throwable) {\n    }\n}\n\n问题解决了，但是并不优雅。每次launch的时候都要去写try也是很难受的。\n2. 于是进阶方法诞生了，原型如下（各种变形不再列举）：\n// 扩展方法\nfun CoroutineScope.xxxLaunch(\n    onError: ((Throwable) -> Unit)? = null,\n    onLaunchBlock: () -> Unit\n) {\n    // 新增一个异常处理的 CoroutineContext\n    val handler = CoroutineExceptionHandler { _, throwable ->\n        onError?.invoke(throwable)\n    }\n\n    this.launch(handler) {\n        onLaunchBlock.invoke()\n    }\n}\n\n使用的时候就是这样：\nlifecycleScope.xxxLaunch(\n    onError = {\n\n    },\n    onLaunchBlock = {\n\n    }\n)\n\n为了简单说明，直接传递了方法参数，DSL的使用是一样的，只是再封装了一层而已。\n感觉怎么样，是不是觉得高级了不少。不管你们怎么感觉，反正我感觉还是…",
@@ -8085,6 +9529,15 @@
           "publishedOn": "2022-01-11T18:13:00.000Z",
           "wordCount": 39,
           "title": "让每一年都在变强的路上 | 三年安卓的年度总结"
+        },
+        {
+          "id": "https://juejin.cn/post/7051933760702382094",
+          "author": "Time_sun",
+          "description": "theme: channing-cyan\n本篇文章翻译自 👉Hero animations，向开发者介绍了 Hero 动画的用处和分类，不同类型的 Hero 动画的创建。\n其实在我们的开发过程中，我们可能已经看见过 Hero 动画了，比如像电商类 App 的一个典型场景，商品列表页到商品详情页，列表页的缩略图需要带到详情页，并且带的过程中可能有大小，位置等的变化。在 Flutter 中，这种页面简直共有元素的动画就叫做 Hero 动画 ，有的时候也叫做 共享元素动画。\nFlutter 官方的每周组件也介绍了 Hero 组件：👉 Hero 组件介绍\n本文就演示如何构建标准的 Hero 动画，以及在页面过渡过程中将图像从圆形转换为方形的 Hero 动画。\n可以使用 Hero 组件来创建这种动画。随着Hero动画从源路由到目标路由，目标路由也会在这一过程中淡入到视图上。一般来说，Hero 组件是两个页面 UI 的一部分，比如图片等等。从用户体验的角度来说，Hero 组件是从源路由飞到了目标路由。我们就用代码实现下面的 Hero 效果。\nStandard hero animations\n标准的 Hero 动画是 Hero 元素从一个页面飞到另一个页面，并且一般情况下位置和尺寸会有变化。比如是这样的：\n\n第一个页面图片是在中间的，到了第二个蓝色页面，图片的位置和大小都发生了变化。从第二个页面到第一个页面，图片又还原到最初的样子。\nRadial hero animations\n在 radial hero 动画中， 随着页面的过渡，Hero的形状会发生变化从圆形到矩形。比如下面的效果：\n\n上面的效果就是一个radial hero 动画，底部的三个元素，依次展示到第二个页面的中间，并且形状从圆形到矩形。从第二个页面回到第一个页面，图片元素还原到最初的样子。\nHero 动画的基本结构\n在…",
+          "link": "https://juejin.cn/post/7051933760702382094",
+          "publishedOn": "2022-01-11T05:07:45.000Z",
+          "wordCount": 39,
+          "title": "不知不觉到了 Hero 动画"
         },
         {
           "id": "https://juejin.cn/post/7051907516380217374",
@@ -8273,6 +9726,15 @@
       "feedUrl": "https://opensource.com/feed",
       "siteUrl": "https://opensource.com/frontpage",
       "articles": [
+        {
+          "id": "https://opensource.com/article/22/1/raspberry-pi-business",
+          "author": "peppe8o",
+          "description": "With the pandemic changing the way we're working, job decentralization is becoming an important challenge for all companies.\nread more",
+          "link": "https://opensource.com/article/22/1/raspberry-pi-business",
+          "publishedOn": "2022-01-15T08:00:00.000Z",
+          "wordCount": 1365,
+          "title": "Why use a Raspberry Pi to power your business"
+        },
         {
           "id": "https://opensource.com/article/22/1/linux-sustainable-os",
           "author": "Don Watkins",
