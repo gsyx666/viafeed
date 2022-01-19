@@ -353,6 +353,114 @@
       "siteUrl": "https://dev.to",
       "articles": [
         {
+          "id": "https://dev.to/basicpixel/how-to-host-a-django-project-on-heroku-for-free-1d1",
+          "author": "Basic Pixel",
+          "description": "This step-by-step beginner tutorial will teach you how to host your local Django project on Heroku for free. I haven't found many easy to follow tutorials on this topic so I decided to make my own after hosting many projects with the mentioned steps. Enjoy!\nCreate and activate a virtualenv, install dependancies.\n\n\n\n\npython -m venv <env_name> # Windows\npython3 -m venv <env_name> # Other\n\nenv\\Scripts\\activate # Windows\nsource venv/bin/activate # Other\n\nInitialize a git repository (git init)\nAdd a .gitignore file\nSuggested gitignore for Django\nAdd the following to settings.py:\n\n\n\n\nSTATIC_ROOT = os.path.join(BASE_DIR, 'static')\n\nCreate a heroku account, login and install heroku CLI (choco install heroku-cli on windows)\n\n\nCreate runtime.py and add your project python version. Example:\n\n\n\n\npython-3.10.1\n\nInstall gunicorn:\n\n\n\n\npip install gunicorn\n\nCreate Procfile and add the following:\n\n\n\n\nweb: gunicorn myproject.wsgi\n\nInstall django-on-heroku:\n\n\n\n\npip install django-on-heroku\n\nAdd the following to settings.py:\n\n\n\n\n# Configure Django App for Heroku.\nimport django_on_heroku\ndjango_on_heroku.settings(locals())\n\nAdd requirements.txt by running:\n\n\n\n\npip freeze > requirements.txt\n\nCommit your changes:\n\n\n\n\ngit add .\ngit commit -m \"Init commit\"\n\nLogin to heroku from the command line:\n\n\n\n\nheroku login\n\nCreate a new app:\n\n\n\n\nheroku create app_name\n\nAdd your heroku app to ALLOWED_HOSTS:\n\n\n\n\nALLOWED_HOSTS = ['your_app_name.herokuapp.com', ...]\n\nCommit your changes:\n\n\n\n\ngit add .\ngit commit -m \"Configure ALLOWED_HOSTS\"\n\nPush your changes to heroku branch:\n\n\n\n\ngit push heroku master # Or branch name\n\nMigrate your database:\n\n\n\n\nheroku run python manage.py migrate\n\nMake sure you have DEBUG = False in your settings.py file.\nOpen your app online:\n\n\n\n\nheroku open\n\nCreate admin account:\n\n\n\n\nheroku run python manage.py createsuperuser\n\nIf you have static files, run:\n\n\n\n\nheroku run python manage.py collectstatic",
+          "link": "https://dev.to/basicpixel/how-to-host-a-django-project-on-heroku-for-free-1d1",
+          "publishedOn": "2022-01-19T11:02:50.000Z",
+          "wordCount": 758,
+          "title": "How to host a Django project on Heroku (for free)"
+        },
+        {
+          "id": "https://dev.to/morcosgad/new-php-enum-in-laravel-1015",
+          "author": "Morcos Gad",
+          "description": "I've always been a fan of PHP Enum. I found an article https://medium.com/code16/how-to-use-the-new-php-enum-in-laravel-7e94515b9b4e explaining how to use it with laravel and wanted to share it with you.\nnamespace App\\Enums;\n\nenum BlogpostState: string\n{\n    case DRAFT = 'state_draft';\n    case PUBLISHED = 'state_published';\n}\n\nWhen creating your database\npublic function up()\n{\n    Schema::create('blogposts', function (Blueprint $table) {\n        ...\n        $table->string('state');\n    });\n}\n\nYou can use the new casting in your Blogpost model and it allows your state model attribute to be casted to/from an Enum\nnamespace App\\Models;\nclass Blogpost extends Model\n{\n    protected $casts = [\n       'state' => BlogpostState::class,\n    ];\n}\n\nSo for example you can now compare the state to the …",
+          "link": "https://dev.to/morcosgad/new-php-enum-in-laravel-1015",
+          "publishedOn": "2022-01-19T10:55:39.000Z",
+          "wordCount": 702,
+          "title": "New PHP Enum in Laravel"
+        },
+        {
+          "id": "https://dev.to/developerbishwas/fiverr-api-scrape-fiverr-in-seconds-5fim",
+          "author": "New Linux Helper",
+          "description": "Fiverr API v0.0.8 - Scrapes Fiverr profile\n\n\nFiverr API (Newer Version) - This Fiverr scrapping API is capable of getting all the info from a gig in Fiverr.\nUse the package manager pip to install fiverr-api.\npip install fiverr-api\n\nGitHub Repo, Issue A Bug and ask for help in Webmatrices Forum!\nfrom fiverr_api import Scrape\n\n# the gig you wanna scrape\ngig_url = \"https://www.fiverr.com/otem_global/your-kajabi-teachable-\"\\\n    \"website-expert-fix-your-pipeline-set-up-online-courses\"\n\n# the profile you wanna scrape\nprofile_url = \"https://www.fiverr.com/otem_global/\"\n\n# initialize fiverr scrapper\nscraper = Scrape()\n\n# returns the scraped gig's data in dictory or json format\ngig_data = scraper.gig_scrape(gig_url)\n\n# returns the scraped profile's data in dictory or json format\nprofile_data = scr…",
+          "link": "https://dev.to/developerbishwas/fiverr-api-scrape-fiverr-in-seconds-5fim",
+          "publishedOn": "2022-01-19T10:46:42.000Z",
+          "wordCount": 1101,
+          "title": "Fiverr API: Scrape Fiverr in seconds"
+        },
+        {
+          "id": "https://dev.to/sourcegraph/parsing-dev-markdown-within-a-laravel-tailwind-application-34ee",
+          "author": "Erika Heidi",
+          "description": "In a previous part of our series, we saw how to create an Artisan command to import your latest DEV articles and save them as markdown files within the storage folder of your Laravel application. The only thing missing now is to exhibit these posts in the main page of the demo application.\nIn this post, you'll learn how to parse the DEV markdown using the librarianphp/parsed library, which enables support for liquid tags in addition to parsing the front matter to obtain metadata related to the post.\n\nDisclaimer: this methodology works only with posts that are created with the classic markdown DEV editor, which uses a Jekyll front matter within the markdown body of the article. If you use the rich editor, you'll need to generate a valid front matter based on the returning API information fo…",
+          "link": "https://dev.to/sourcegraph/parsing-dev-markdown-within-a-laravel-tailwind-application-34ee",
+          "publishedOn": "2022-01-19T10:08:29.000Z",
+          "wordCount": 1975,
+          "title": "Parsing DEV markdown within a Laravel Tailwind application"
+        },
+        {
+          "id": "https://dev.to/ozgur/java-thread-sinifi-1od0",
+          "author": "Özgür Akıncı",
+          "description": "Thread yapısı, aynı anda ve birbirini beklemeden birden çok işin gerçekleşebildiği yapıdır.\nThread oluştururken, java'da thread sınıfı extend edilebilir ya da runnable implementasyonu tercih edilebilir.\nJava'da sadece bir sınıf extend edilebildiği ve daha fazla esneklik sağlamak için runnable implementasyonu daha avantajlıdır.\nÖnemli tanımlar\nRunnable: Thread tanımlarının ne yapması gerektiğini açıklayan bir arayüzdür. \nRun: Ana thread bekleme yaparak, diğer thread'ler çalışır. \nStart: Ana thread bekleme yapmadan, diğer threadler ile birlikte çalışır.\nJoin: Mevcut thread işini bitirmeden, diğer thread işine başlayamaz.,\nSynchronized: Method'a ulaşmak isteyen threadler method'a sıra ile girerler ve bir thread method'u bitirmeden diğer thread başlayamaz. (Kilitleme mekanizması vardır. Özetle…",
+          "link": "https://dev.to/ozgur/java-thread-sinifi-1od0",
+          "publishedOn": "2022-01-19T09:48:50.000Z",
+          "wordCount": 642,
+          "title": "Java Thread Sınıfı"
+        },
+        {
+          "id": "https://dev.to/kavyaj/how-to-get-noticed-by-tech-recruiters-a1b",
+          "author": "kavyaj",
+          "description": "I attended a webinar by Codementor yesterday about tech hiring, where the speaker Jeff Lam shared these insightful gems on creating resumes that help candidates stand out:\nRegardless of ATS (applicant tracking system) or a human reviewing your application, here's what they look for:\nyour tech stacks\nrelevant experience for the role\nclear & concise profile/resume (if too long, recruiters may even skip reading it)\nmake it easy to read with bullets, tech stacks, project details\nkeep it short & concise, don't overwhelm with info\nrecruiters (& ATS) are experts at keyword search. Add relevant ones\nadd tech stack at the bottom of every employment\n\ngive personality to your professional profile: it could be through choice of words, colour, font or anything else\nbe active in tech communities and link it to your resume: Github, LinkedIn, Twitter\n\ndon't just write responsibilities. Write about something challenging you've worked on, any projects.\noptimize content for the role. The more relevant it is, there's a higher chance of getting shortlisted\nreach out to key decision makers in the company you're applying for.\nadd numbers and quantify wherever you can. Specify the duration of employment. Recruiters (and ATS) are not technical experts but they use them to derive your degree of skill level & understand your seniority\nIn short, it's not difficult but takes some effort to optimize :)\nRecently, I launched a product which helps candidates to create resumes with these elements easily. It's now live here: Resumey.Pro.\nFeel free to  let me know what you think in the comments below 👇",
+          "link": "https://dev.to/kavyaj/how-to-get-noticed-by-tech-recruiters-a1b",
+          "publishedOn": "2022-01-19T09:46:51.000Z",
+          "wordCount": 655,
+          "title": "How to get noticed by tech recruiters?"
+        },
+        {
+          "id": "https://dev.to/100mslive/building-zoom-clone-in-flutter-with-100ms-sdk-27eg",
+          "author": "Nilay Jayswal",
+          "description": "Today, Zoom is the most popular video and audio conferencing app. From interacting with co-workers to organising events like workshops and webinars, Zoom is everywhere.\nThis content was originally published - HERE\nThis post will take you through a step by step guide on how to build a basic Zoom like app using Flutter and 100ms' live audio-video SDK in the following way -\nAdd 100ms to a Flutter app\nJoin a room\nLeave a room\nShow video tiles with the user’s name\nShow Screenshare tile\nhand Raised\nMute/Unmute\nCamera off/on\nToggle Front/Back camera\nChatting with everyone in the room\nBy the end of this blog, this is how your app will look like:\n\nBefore proceeding, make sure you have the following requirements:\nFlutter v2.0.0 or later (stable)\n100ms Account (Create 100ms Account)\nDownload the star…",
+          "link": "https://dev.to/100mslive/building-zoom-clone-in-flutter-with-100ms-sdk-27eg",
+          "publishedOn": "2022-01-19T09:25:55.000Z",
+          "wordCount": 2893,
+          "title": "Building Zoom clone in Flutter with 100ms SDK"
+        },
+        {
+          "id": "https://dev.to/patrickweb/the-rise-of-browser-os-5e0",
+          "author": "Patrick Waweru",
+          "description": "Why is chrome so heavy? The all to famous question and meme. Well I have the answer. See chrome and other web browsers are more of operating systems than browsers. Lets look at it from this perspective, websites these days are being referred to as web apps, why? Well, maybe because they are more of like apps. Is Gmail a website or a web app? What about github? I'll do you one better, what about figma or gravit designer? The days where web developers were \"looked down on\" by the developer community is long gone. Web developers(backend and frontend) are building some seriously complex systems. \nFigma If you are on a chromium based browser press Shift +  Esc to open your browser's task and check how much memory and cpu Figma is using. Here is mine 👇\n\n\nWhat's the point? The point is that webs…",
+          "link": "https://dev.to/patrickweb/the-rise-of-browser-os-5e0",
+          "publishedOn": "2022-01-19T08:56:34.000Z",
+          "wordCount": 926,
+          "title": "The Rise of Browser Os"
+        },
+        {
+          "id": "https://dev.to/ironsoftware/c-pdf-viewers-1a7h",
+          "author": "IronSoftware",
+          "description": "Viewing PDFs in applications is a common request that is easily solved with the PDF Library for .NET.\nStep 1\nUse NuGet package manager to install IronPDF:\nhttps://www.nuget.org/packages/IronPdf\nPM > Install-Package IronPdf\nIronPDF DLL can also be downloaded and manually installed.\nHow to Tutorial\nWe are working on a visual framework for viewing PDFs in C#/.Net - in the mean time you have lots of viable free options without resorting to Adobe Acrobat.\nFor web applications - PDFs can be viewed in a browser window or iframe. You may also use the amazing pdf.js library from mozilla to leverage a full PDF viewer written in pure javascript code.\nhttps://mozilla.github.io/pdf.js/\nFor viewing PDF documents directly in WPF you can use the native WebBrowser control.\nFor viewing PDF documents directly in windows forms (WinForms) applications the WebBrowser control is also a good choice.\nTo open a PDF from any application in an external window, we may use a trick involving System.Diagnostics.Process.Start.\nThis will generally open the PDF in the default web browser which supports viewing PDF content, or Adobe Acrobat if installed.\nC#:\n// Render any HTML fragment or document to HTML\nvar Renderer = new IronPdf.ChromePdfRenderer();\nvar PDF = Renderer.RenderHtmlAsPdf(\"<h1>Hello IronPdf</h1>\");\nvar OutputPath = \"ChromePdfRenderer.pdf\";\nPDF.SaveAs(OutputPath);\n// This neat trick opens our PDF file so we can see the result in our default PDF viewer\nSystem.Diagnostics.Process.Start(OutputPath);\n\nVB:\n' Render any HTML fragment or document to HTML\nDim Renderer = New IronPdf.ChromePdfRenderer()\nDim PDF = Renderer.RenderHtmlAsPdf(\"<h1>Hello IronPdf</h1>\")\nDim OutputPath = \"ChromePdfRenderer.pdf\"\nPDF.SaveAs(OutputPath)\n' This neat trick opens our PDF file so we can see the result in our default PDF viewer\nSystem.Diagnostics.Process.Start(OutputPath)",
+          "link": "https://dev.to/ironsoftware/c-pdf-viewers-1a7h",
+          "publishedOn": "2022-01-19T08:49:14.000Z",
+          "wordCount": 661,
+          "title": "C# PDF Viewers"
+        },
+        {
+          "id": "https://dev.to/ironsoftware/memorystream-to-pdf-c-1mgo",
+          "author": "IronSoftware",
+          "description": "We can load, create, and export MemoryStream to PDF files in C# .NET without even touching the file system. This is possible through the MemoryStream object present inside the System.IO .NET namespace. Follow the tutorial below to find out how to export HTML to PDF in your C# project.\nStep 1\nIn this tutorial, we'll be using IronPDF's C# PDF Library to save MemoryStream files to PDF in C#. You can download it free or install to Visual Studio with NuGet.\nPM > Install-Package IronPdf\nHow to Tutorial\nA new instance of IronPdf.PdfDocument can be initialized in any of these .NET in-memory-objects:\nA MemoryStream\nA FileSteam\nBinary Data as a Byte array (byte[])\nHere is an example of reading a URL directly into a stream, then saving the PDF file to disk by using C#:\nC#:\n​    private void ReadViaMe…",
+          "link": "https://dev.to/ironsoftware/memorystream-to-pdf-c-1mgo",
+          "publishedOn": "2022-01-19T08:38:22.000Z",
+          "wordCount": 763,
+          "title": "MemoryStream to PDF C#"
+        },
+        {
+          "id": "https://dev.to/sandordargo/the-big-stl-algorithms-tutorial-numeric-scans-17b7",
+          "author": "Sandor Dargo",
+          "description": "In this next part of the big STL algorithm tutorial, we are going to talk about the 4 algorithms in the <numeric> header that we haven't discussed yet:\nexclusive_scan\ninclusive_scan\ntransform_exclusive_scan\ntransform_inclusive_scan\nThey all end with _scan? But what do they scan? Let's have a closer look.\nexclusive_scan\n\n\nstd::exclusive_scan resembles a lot to std::partial_sum that we discussed in the previous episode. It takes an input range denoted by its beginning and its end, an output range defined by its beginning and an initial value for the summing.\nExclusive in the name means that the given *i*th element is excluded from the partial sum. To see this perfectly, we can have a look at the first element of the output which is the initial value instead of the first element of the input.…",
+          "link": "https://dev.to/sandordargo/the-big-stl-algorithms-tutorial-numeric-scans-17b7",
+          "publishedOn": "2022-01-19T08:31:44.000Z",
+          "wordCount": 2014,
+          "title": "The big STL Algorithms tutorial: \"numeric\" scans"
+        },
+        {
+          "id": "https://dev.to/ironsoftware/c-print-pdf-documents-241m",
+          "author": "IronSoftware",
+          "description": "You can easily print a PDF in .NET applications with the help of Visual Basic or C# code. This tutorial will walk you through how to use C# print PDF capabilities to print programmatically.\nDownload the Print to PDF C# Library\nChoose a PDF file from your computer\nSelect specific printer to print and set resolution\nCheck your PDF output from your printer\nTrack your printing processes using C#\nStep 1 - Install the IronPDF C# PDF Library for all the programmatic printing functionalities you'll see in this tutorial. Download the DLL free for development, otherwise you can also install with NuGet and open the library in your Visual Studio project.\nPM > Install-Package IronPdf\nHow to Tutorial\nYou can send a PDF document directly to a printer silently or create a System.Drawing.Printing.PrintDocu…",
+          "link": "https://dev.to/ironsoftware/c-print-pdf-documents-241m",
+          "publishedOn": "2022-01-19T08:26:56.000Z",
+          "wordCount": 1278,
+          "title": "C# Print PDF Documents"
+        },
+        {
           "id": "https://dev.to/dailydevtips1/crud-operations-with-prisma-and-fastify-4njc",
           "author": "Chris Bongers",
           "description": "You might have heard of CRUD. It's a concept of data manipulation which stands for:\nC: Create\nR: Read\nU: Update\nD: Delete\nWhich these four steps, we are generally able to create complete applications.\nWe'll learn how to handle CRUD operations on a Prisma database for today's article while using Fastify as our server.\nWe won't be making this project from scratch. If you are interested in setting up Prisma, check out this article.\nIn this article, we created two models, the User and the Hobby model.\nIf you like to follow along, download the following GitHub repo.\nThe very first thing we'll want to do is install Fastify.\nnpm i fastify\n\nI've also taken the liberty to add a start script for our application in the package.json file.\n\"scripts\": {\n    \"start\": \"ts-node index.ts\",\n    \"test\": \"echo…",
@@ -1557,6 +1665,33 @@
       "siteUrl": "https://sspai.com",
       "articles": [
         {
+          "id": "https://sspai.com/post/71033",
+          "author": "福利派",
+          "description": "随着 2022 春节的临近，少数派会员和付费教程的相关活动终于拉开帷幕。在全场打折的同时，购买付费教程还能额外获赠少数派微信红包封面，加入少数派会员则可以获得会员专属版红包封面。诸多优惠玩法，一起来看看吧！\n少数派会员：超值新春 Bundle 上线、定制红包封面免费领\n少数派会员 & Microsoft 365 新春特别 Bundle\n🎁 活动时间：1 月 19 日–1 月 30 日\n随着新年到来，不少小伙伴的 Microsoft 365（原 Office 365）服务又要续费了，为了让大家更划算地获得更多好内容，我们特别推出了少数派会员 & Microsoft 365 新春 Bundle：只需 549 / 579 元，即可获得原价 365 元的少数派会员（第一季）+ 329 元（个人版，15 个月）/ 359 元（家庭版，15 个月）的 Microsoft 365（一年订阅），以及配套赠送的工具升值包专属教程内容，工具升值包栏目阅读权益将于 1 月 31 日统一发放。\n\n👉 购买 少数派会员 & Microsoft 365 新春 Bundle\n👉 正版软件淘宝店：个人版 Bundle / 家庭版 Bundle\n\n还没加入少数派会员且正在使用 Microsoft 365 服务的朋友们，这是最划算的入坑机会啦！\n小提示：已经加入少数派会员的朋友请留意，会员资格目前还不能叠加，所以不要重复购买。我们会在今年春季公布少数派会员第二季的相关消息 :）\n另外，针对只需要续订服务，无需加入会员的 Microsoft 365 老用户，我们也推出了专属续订优惠：\n\n如果你在 2021 年 2 月 1 日至 4 月 30 日之间在 少数派网站 购买过任意版本的 Microsoft 365 工具升值包，且希望单独购买 Microsoft 365 工具升值包——网站专属 20 元优惠券已经…",
+          "link": "https://sspai.com/post/71033",
+          "publishedOn": "2022-01-19T10:05:41.000Z",
+          "wordCount": 302,
+          "title": "少数派会员 & 付费教程新春大促｜超值 Bundle、礼盒及工具升值包上线"
+        },
+        {
+          "id": "https://sspai.com/post/70986",
+          "author": "EstrellaXD",
+          "description": "Matrix 首页推荐\nMatrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。\n文章代表作者个人观点，少数派仅对标题和排版略作修改。\n\n由于 HAP（HomeKit Accessories Protocol）的开放性质1，配合 HomeBridge / HomeAssistant 庞大的插件库，几乎做到了万物皆可 HomeKit 的程度。今天我们就来把家中的 PlayStation 游戏机的唤醒和休眠加入到 「家庭」应用中并控制。\n\n本文以 HomeBridge 为例，HomeBridge 运行在 Ubuntu 系统的树莓派上。安装和使用 HomeBridge 请参考这篇文章：HomeBridge 操作指南：从零开始，将你的米家设备接入 Homekit\n本次接入的原理是根据 Github 上开源的 PlayStation 唤醒软件进行配置，再接入到 HomeBridge 调用运行配置好的唤醒软件。从而达到曲线救国的 PlayStation 的 HomeKit 化，接下来我们就分步骤进行安装与配置。\n安装控制软件\n本方法使用 playactor 控制软件来操控 PlayStation 系统。由于 PlayStation 并不支持传统的 WoL ，现在有的方法原理都是基于索尼自家的 PS Remote Play 这款软件的原理进行开发的。\n\n根据 playactor 项目的文档，本项目支持 PS4 的全部操作和 PS5 的部分操作。在加入 HomeKit 之后我们仅需要用到 Wake 与 Standby 两个指令即可。\n\n\n PS4PS5\nWake✅✅\nStandby✅✅\nKeyboard control✅❌\nKey/Button press✅❌\nApp/Game s…",
+          "link": "https://sspai.com/post/70986",
+          "publishedOn": "2022-01-19T07:59:46.000Z",
+          "wordCount": 283,
+          "title": "一日一技｜借助 HomeBridge 让 PlayStation 联动智能家居"
+        },
+        {
+          "id": "https://sspai.com/post/71024",
+          "author": "XavierWang",
+          "description": "2022 年 1 月 17 日，春运正式拉开帷幕，共计 40 天，同时也是进入疫情防控常态化以来的第二个春运。1 月 15 日，铁路公安机关在铁路 12306 App 中试点上线「电子临时乘车身份证明」，方便未携带 / 丢失身份证的乘客及时搭乘列车。\n而搭乘飞机的乘客，可通过民航公安于 2019 年正式上线的「民航临时乘机证明」小程序办理「电子临时乘机证明」，在值机与安检时使用。\n🚆 通过 12306 App 申请电子临时乘车身份证明\n注意事项\n\n「电子临时乘车身份证明」仅限持有中国居民身份证的乘客办理。购买优惠客票的旅客，取票时仍需提供有效证件证明优惠资格（如学生证等）。\n电子证明的二维码为动态生成，每 60 秒自动更新，当准备通过闸机时，请及时切换到二维码页面，并将屏幕调至最亮，避免因为二维码过期或网络原因、手机卡顿，在闸机前停留过久。\n电子证明在有效期内（审核成功后的 24 小时）无需重新申请，一个自然月内可申请 3 次。\n申请电子证明超过 3 次的，或未办理中国居民身份证、不便使用手机的旅客（如婴幼儿、老年人），需前往站内的公安制证窗口办理「纸质临时乘车身份证明」，具体地点请询问站内工作人员。\n申请还是有点麻烦的，要弄介个弄辣个，不会捣腾的且着急准备上车的，快向身边的工作人员求助，要不您就准备改签吧。\n\n安装 App\n第一步，在手机中安装 铁路 12306 App。安装完成后，打开 app，输入账号、密码登录，并根据提示完成短信核验或人脸核验。如需为他人申请或情况紧急，可跳过此步骤。\n \n办理临时身份证明\n在首页中，点击应用导航中的「温馨服务 → 乘坐旅客列车临时身份证明」。此处需允许 app 使用手机的定位权限。（目前铁路 12306 App 爱心版界面暂不支持办理。）\n\n进入到申请页面，app 会自动填充当前登录用户的身份信息，如有需要，通过更改为他人的身份信…",
+          "link": "https://sspai.com/post/71024",
+          "publishedOn": "2022-01-19T06:30:00.000Z",
+          "wordCount": 168,
+          "title": "忘带身份证的你，该如何登上回家的飞机 / 高铁 / 火车"
+        },
+        {
           "id": "https://sspai.com/post/70967",
           "author": "腾飞Love",
           "description": "Matrix 首页推荐\nMatrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。\n文章代表作者个人观点，少数派仅对标题和排版略作修改。\n\n认真生活的人，从来不会被辜负。\n\n大家好，我带着这款有些不一样的日记 App「你的一天」和大家见面了。开发这款 App 的最初想法是，可以用模块化、流水账的形式，记录每一天的普普通通的生活。同时，也可以用它帮助和督促自己认真对待生活、记录生活。\n普通而又独特的「日记」\n\n早上起来，大雨。\n心情很糟，今天是周一，还要去上班，又要把鞋子弄得湿漉漉了。\n公司的午餐好好吃，天气也放晴了，好开心。\n\n像上面的这段简单的日记一样，每天的心情、地点、天气都是随时间变化的，我特别希望能够随时、随手记录这样的变化，这也是我希望做到的，记录和观察生活的方式。\n所以，「你的一天」来了。\n图片由「你的一天」生成\n像上面一样，可以分别使用文字、图片、声音、位置、天气、心情六种基础模块，帮助你构筑每一个专属于自己的普通而又独特的一天。\n日记使用小技巧\n接下来，我来悄悄的告诉你一些使用「你的一天」记录日记的小技巧，帮助你更好地使用它。\n日记元素排序\n每一个日记元素都支持长按拖拽排序，你可以任意组织它们的顺序，甚至还支持跨天移动。\niPad 拖拽添加照片\n如果这时候，你的手中恰巧还有一台 iPad，还可以直接拖拽照片进来，拖拽文字也是可以的。这项功能在 iPhone 上也是可以使用的，不过在 iPad 上，使用起来会更加方便。\n最棒的是，你不必担心 iPhone 和 iPad 的数据同步，我们使用 iCloud 帮你把所有数据管理起来，这从你第一次打开 App 的时候，就是默认支持的了，不用担心数据的遗失。\n筛选记录\n如果你已经使用它很长时间了，那么一些有特殊意…",
@@ -1906,6 +2041,24 @@
       "siteUrl": "https://www.appinn.com",
       "articles": [
         {
+          "id": "https://www.appinn.com/?p=41170",
+          "author": "青小蛙",
+          "description": "PushDeer 是一款由 Server酱 开发者 @Easy 牵头的众筹开源项目，实现了一个可「自行架设的无 APP 推送服务」，基于 iOS 轻 App（App Clips）、Android 快应",
+          "link": "https://www.appinn.com/pushdeer-app-clips/",
+          "publishedOn": "2022-01-19T10:08:17.000Z",
+          "wordCount": 751,
+          "title": "PushDeer – 「轻 App」自定义推送服务：无需安装 App 获得自定义推送通知[iOS App Clips]"
+        },
+        {
+          "id": "https://www.appinn.com/?p=41166",
+          "author": "青小蛙",
+          "description": "Shottr 是一款新鲜的 macOS 免费截图工具，它可以滚动截屏、在截图上直接标记、模糊，支持中文 OCR，可定制快捷键，最大特色是缩放，以及屏幕标尺功能，可显示截图中不同位置的距离，并标记在截图",
+          "link": "https://www.appinn.com/shottr-for-macos/",
+          "publishedOn": "2022-01-19T07:59:23.000Z",
+          "wordCount": 672,
+          "title": "Shottr – 滚屏、OCR、标记、屏幕标尺、智能橡皮擦：新的 macOS 免费截图工具"
+        },
+        {
           "id": "https://www.appinn.com/?p=41157",
           "author": "青小蛙",
           "description": "如果，我是说如果，在某些情况下，你需要下载某一个公众号的历史文章，有什么好的、快的、批量的办法么？ 感谢 @WM 的推荐。 当然，如果能带评论下载回来就更好了。 WeChatDownload：批量下载",
@@ -2012,69 +2165,6 @@
           "publishedOn": "2022-01-10T08:57:24.000Z",
           "wordCount": 796,
           "title": "Lively Wallpaper – 为 Windows 创建动态桌面壁纸：视频、网页、流媒体等"
-        },
-        {
-          "id": "https://www.appinn.com/?p=41086",
-          "author": "青小蛙",
-          "description": "AltTab 是一款 macOS 应用，它可以让你的 Mac 像 Windows 一样使用 Alt + Tab 切换窗口时，可以预览窗口内容，快捷键是 option ⌥ + tab。原生支持 M1 芯",
-          "link": "https://www.appinn.com/alttab-windows-alt-tab-on-macos/",
-          "publishedOn": "2022-01-09T07:28:56.000Z",
-          "wordCount": 925,
-          "title": "AltTab – 让 Mac 像 Windows 一样使用 Alt + Tab 切换窗口"
-        },
-        {
-          "id": "https://www.appinn.com/?p=41083",
-          "author": "青小蛙",
-          "description": "iTab 新标签页 是一款 Chrome、Edge 新标签页扩展，一个让你不受广告干扰的个性化卡片式极简起始页插件，可以自定义精美日历、炫酷天气、每日头条、海量壁纸、常用网址等等。@Appinn 来自",
-          "link": "https://www.appinn.com/itab-new-tabs-for-chrome/",
-          "publishedOn": "2022-01-08T11:03:07.000Z",
-          "wordCount": 904,
-          "title": "iTab 新标签页：2022 值得一试的浏览器新标签页扩展[Chrome/Edge]"
-        },
-        {
-          "id": "https://www.appinn.com/?p=41076",
-          "author": "青小蛙",
-          "description": "Refgen 是一款 Chrome 浏览器扩展，它主要为当前标签页或选中的文本，生成标记语言格式的引用链接，支持 Markdown、AsciiDoc、RST、MediaWiki 等格式。@Appinn",
-          "link": "https://www.appinn.com/refgen/",
-          "publishedOn": "2022-01-07T10:08:40.000Z",
-          "wordCount": 759,
-          "title": "Refgen – 为个人知识整理和笔记生成来源引用链接[Chrome]"
-        },
-        {
-          "id": "https://www.appinn.com/?p=41067",
-          "author": "青小蛙",
-          "description": "Blush 是一款可以免费使用的在线插画工具，拥有 Figma、Sketch 插件，只需要先选取风格库中的主题，然后定制定制插画，包括背景、物品、人物形象等内容，就能生成 PNG 或 SVG 格式的图",
-          "link": "https://www.appinn.com/blush-online/",
-          "publishedOn": "2022-01-07T05:21:51.000Z",
-          "wordCount": 695,
-          "title": "Blush – 在线卡通头像生成器，免费、可商用，无需注明出处"
-        },
-        {
-          "id": "https://www.appinn.com/?p=41060",
-          "author": "青小蛙",
-          "description": "Portfolio Returns 是一款使用简单的开源财务应用软件，按月记录投资组合下各账户的资产余额以及现金流变化，自动计算各种回报率。@Appinn 来自发现频道，@ashchan 同学的自荐。",
-          "link": "https://www.appinn.com/portfolio-returns/",
-          "publishedOn": "2022-01-06T10:33:19.000Z",
-          "wordCount": 747,
-          "title": "Portfolio Returns – 2个步骤，记录投资并自动计算回报率[macOS]"
-        },
-        {
-          "id": "https://www.appinn.com/?p=41049",
-          "author": "青小蛙",
-          "description": "Pika 是一款开源的在线工具，它能够 1 键为截图添加背景渐变色，调整阴影，添加圆角，调整间距等效果，用来快速美化屏幕截图。@Appinn 感觉这种工具就是专门为青小蛙打造的呢，每天要创建那么多截图",
-          "link": "https://www.appinn.com/pika-online/",
-          "publishedOn": "2022-01-06T05:46:14.000Z",
-          "wordCount": 633,
-          "title": "Pika – 1 键美化截图，添加背景渐变色、阴影、圆角等[Web]"
-        },
-        {
-          "id": "https://www.appinn.com/?p=41043",
-          "author": "青小蛙",
-          "description": "Relingo 是一款 Chrome 浏览器扩展，它能够在你阅读英文文章，或观看带有英文字幕的视频时，根据分级自动标示生词，并支持划词翻译，让你可以「基于兴趣阅读，不知不觉掌握词汇」。@Appinn",
-          "link": "https://www.appinn.com/relingo-for-chrome/",
-          "publishedOn": "2022-01-05T08:05:56.000Z",
-          "wordCount": 773,
-          "title": "Relingo – 自动为文章与视频标示英文生词[Chrome]"
         }
       ]
     },
@@ -2091,15 +2181,6 @@
           "publishedOn": "2022-01-14T00:39:50.000Z",
           "wordCount": 388,
           "title": "科技爱好者周刊（第 192 期）：最大的机会来自新技术"
-        },
-        {
-          "id": "http://www.ruanyifeng.com/blog/2022/01/weekly-issue-191.html",
-          "author": null,
-          "description": "这里记录每周值得分享的科技内容，周五发布。\n本杂志开源（GitHub: ruanyf/weekly），欢迎提交 issue，投稿或推荐科技内容。\n周刊讨论区的帖子《谁在招人？》，提供大量程序员就业信息，欢迎访问或发布工作/实习岗位。\n封面图\n\n美国的 RobotReport 网站，评选波士顿动力公司的跳跃机器人为2021年度技术突破之一。根据8月份的视频，该公司的机器人已经可以跳跃了，只见它双手一甩，从左边的台子挺身跃起，稳稳落在右边的桌子上。（via）\n本周话题：一个程序员的财务独立之路\n本周，推荐一篇美国程序员的文章。\n作者20岁时第一次当实习生，发现在 IT 行业，普通人有可能在30多岁就实现\"财务独立\"，不再为维持生计和支付日常账单而劳碌。以前，他一直以为每个人都需要工作到退休。\n从此，他就将财务独立作为自己的人生目标。\n\n2009年，他大学毕业了，没有任何积蓄，进入英特尔公司担任初级工程师。当时的年薪是10万美元，年支出3.8万美元，再扣掉税，第一年就有了3.5万美元的净资产。\n以后，他每年都记账。在这篇文章里面，他公开了收入和支出（见下表）。十二年以后的2021年，他已经是亚马逊的高级工程师，年薪62.5万美元（含股票），年支出7.8万美元，净资产达到了240万美元（含股票）。\n\n他详细说了，自己怎么经过十二年的奋斗，在35岁做到财务独立，我觉得很有借鉴意义。\n（1）首要的努力方向，就是追求工资提升。 普通人的收入来源，主要还是本职工作，如果工资很低，根本不可能实现财务独立，所以必须想方设法提高工资。\n一般来说，大厂的高级职位可以拿到稳定的高工资。所以，他要求自己一定要进大厂，并且做到高级工程师。\n（2）每过三年，就到别处面试。 他一般三年换一家公司，这样可以获得显著的加薪和晋升。他说每次换公司，收入至少增加30%。另外，还可以让自己始终拥有一种进取的心态，不断…",
-          "link": "http://www.ruanyifeng.com/blog/2022/01/weekly-issue-191.html",
-          "publishedOn": "2022-01-07T00:34:18.000Z",
-          "wordCount": 1061,
-          "title": "科技爱好者周刊（第 191 期）：一个程序员的财务独立之路"
         }
       ]
     },
@@ -2113,17 +2194,7 @@
       "title": "Android Performance",
       "feedUrl": "https://www.androidperformance.com/atom.xml",
       "siteUrl": "/atom.xml",
-      "articles": [
-        {
-          "id": "https://androidperformance.com/2022/01/07/The-Performace-1-Performance-Tools/",
-          "author": null,
-          "description": "<p><img src=\"/images/The-Performace-1-Performance-Tools/cc4162d9-7c2b-43b1-b9a1-f14d5c8e8605.jpg\" alt=\"黑客与画家\"></p>\n<blockquote>\n<p>Paul Graham 在其著作 &lt;黑客与画家&gt; 中断言：“不同语言的执行效率差距正变得越来越大，所以性能分析器（profiler）将变得越来越重要。目前，性能分析并没有受到重视。许多人好像仍然相信，程序运行速度提升的关键在于开发出能够生成更快速代码的编译器。代码效率与机器性能的差距正在不断加大，我们将会越来越清楚地看到，应用软件运行速度提升的关键在于有一个好的性能分析器帮助指导程序开发。”<br>by Paul Graham 黑客与画家 </p>\n</blockquote>\n<p>谷歌搜索 「Android 优化工具」，你会找到很多与此相关的内容。他们的问题在于要么是内容高度重复、要么是直接讲使用方法，很少会给你介绍整体性的架构，一不小心就会让人会种「一个工具搞定一切」的错误认知。以笔者团队的多年经验来看，在性能分析领域这种银弹级别的工具是不存在的。工具在发展，老问题会以新的方式变样出现，不掌握核心逻辑的话始终会让你浮于技术的表面。 </p>\n<p>本文首先系统性的梳理性能分析中的可观测性技术，它涵盖数据类型、抓取方法以及分析方法等三部分内容，之后是介绍谷歌提供的「三大件」分析工具。目的是想让你了解不变的理论性的知识，以及与之对应的在安卓环境中可用的工具，这些可以让你少走一些弯路，直接复用前辈们的经验。 </p>\n<p>需要特别说明的是，对于性能优化肯定不止有这三个工具可用，但这个三个工具是我们平时用到的「第一手工具」。进行进一步分析之前，你都需要依赖这三个工具进行瓶颈定位，之后才应不同领域特性选择对应的工具进行下钻分析。 </p>",
-          "link": "https://androidperformance.com/2022/01/07/The-Performace-1-Performance-Tools/",
-          "publishedOn": "2022-01-06T16:42:03.000Z",
-          "wordCount": 1593,
-          "title": "Android 性能优化的术、道、器"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "Labno3",
@@ -2136,6 +2207,24 @@
       "feedUrl": "https://www.zhihu.com/rss",
       "siteUrl": "http://www.zhihu.com",
       "articles": [
+        {
+          "id": "http://www.zhihu.com/question/512059376/answer/2316898782",
+          "author": "默默-KG",
+          "description": "很多问题不只有一种答案，比如这一个。\n既可以就全新蒙迪欧设计和竞争力作答，也可以就全新蒙迪欧演变以及为何这般作答。两个答案都可以回答这个问题。只不过第一种回答是「鱼」，第二种回答是「渔」，需要读者自行判断，提炼答案。\n我们尝试以第二种回答方式入手。\n全新蒙迪欧并不是一款出人意料的车。\n未真正亮相前，全新蒙迪欧大抵会有两种结果：一、由美国人（欧洲人）操刀继续做这款车真正意义上的迭代，在中美两国市场投放；二、按照EVOS的外观设计，衍生出轿车版的中级轿车，并命名为蒙迪欧。\n关于全新蒙迪欧外观，实际上已经建立了两种预期，剩下的就是待全新蒙迪欧揭晓，告诉我们最终选择了哪一种。这就是为什么没有出人意料。\n回过头去，美国人设计的蒙迪欧会是什么样子？\n如果推测美国人设计的蒙迪欧，就必须先回到全新一代福克斯以及即将中期改款的福克斯上来。这是一款非常重要的车子。\n2018年，全新一代福克斯在中国上市。作为福特全球车型，福克斯没有太多中国市场的元素。当时福特在中国的设计中心也没有成立，但随着福特中国战略的逐步推进，在福克斯这款车上，看到了越来越多的中国元素。\n现在的福克斯拥有两套设计，一种为标准版，小开嘴、三角灯，大灯中间回形标；另一种是猎装版，大灯保持不变，但中网开始靠近EVOS以及蒙迪欧。\n\n\n中控也是如此。新福克斯上市时采用了全球统一的内饰，但福特中国研发出了SYNC+车机系统之后，福特在华销售的车型都同步更换了这套车机，以至于个别车型出现了些审美上的问题。\n\n\n按照历代福克斯和蒙迪欧之间设计上的关联，海外媒体的好事者曾经做出过下一代产品的假想图，只是这个假想图在今天看来，变成了Mustang Mach-E，但蒙迪欧也可以是这样。\n\n\n\n那么，为什么会出现这种情况？\n大的原因是——\n中国市场和美国市场在消费需求上正在割裂，表现为通用、福特全力推动SUV品类的建设，逐步取消了轿车产品的研发…",
+          "link": "http://www.zhihu.com/question/512059376/answer/2316898782?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
+          "publishedOn": "2022-01-19T10:05:40.000Z",
+          "wordCount": 167,
+          "title": "如何评价全新福特蒙迪欧的外观设计？这款产品在现阶段 B 级车市场有竞争力吗？"
+        },
+        {
+          "id": "http://www.zhihu.com/question/272241991/answer/2316813666",
+          "author": "婺江墨客",
+          "description": "写在开头\n人物志系列停更许久，笔者本想先把陈朵人物志写完，但是思来想去，这个人物实在太火了，还是不凑那个热闹吧。\n回望作品，笔者发现王也这个角色总能让人感触颇深，米二也愿意为他花费笔墨描绘他的人生轨迹，细腻之处甚至让笔者怀疑，王也就是米二理想中的自己。\n他就像你我身边的一个朋友，在面上活得潇洒，混不吝，遇事有能量，有手段，年纪轻轻便走到了物质和精神两个层面的高峰。在骨子里他也温润如玉，豁达自在，哪怕怀璧其罪没有惶恐不安，哪怕力有未逮也始终放不下天下苍生， @天师道的白山正 说他和周圣合称”内圣外王“，这个”王“便是王也所行的王道。而在笔者看来，王也这个人物不仅仅是有其崇高的一面，他也有凡俗人的一面，相比“藏巧于贱”的张楚岚和“飞蛾扑火”的诸葛青，他向往逍遥世间的偷闲，也更是不愿沾染这世间的因果。\n在笔者看来，王也其人，配得上”无为而无不为“一语。\n\n生于安乐窝\n王也作为中海集团老板王卫国的三公子，他的身家算得上出道即巅峰，投的一手好胎。\n父亲的生意家大业大，父母还非常恩爱，生了三个儿子不够（王亦、王又、王也，瞧瞧这名字起的，啧啧啧），还想继续生闺女，甚至还有能助兴的蓝色小药丸，不得不说也总有一个幸福的原生家庭。\n\n王卫国原型\n此处有个小细节，王也的父亲叫做王卫国，出身行伍，上过边境，在部队里面也曾是吆五喝六的人物，其原型则是真实世界的两位牛人的混合体。\n一位是王校长他爸，16岁就参军，17岁就到吉林省集安县的鸭绿江边成为了一名侦察兵，25岁就晋升排长进陆军学院进修，35岁则转业下海，62岁时登顶华人首富。这份经历和王卫国的人设不能说完全一致，只能说一毛一样。\n\n另一位原型人物则是“玉帝专业户”，国家一级演员·真·王卫国。\n先后在《西游记续集》、《宝莲灯》及《宝莲灯续集》中，饰演玉皇大帝一角，因此被广大观众熟知。有趣的是，正是因为王卫国扮演玉皇大帝的形象让人过目难忘，在以后的…",
+          "link": "http://www.zhihu.com/question/272241991/answer/2316813666?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
+          "publishedOn": "2022-01-19T07:57:57.000Z",
+          "wordCount": 387,
+          "title": "为什么大家都很喜欢《一人之下》的王也道长？"
+        },
         {
           "id": "http://www.zhihu.com/question/511763417/answer/2315773403",
           "author": "妖刀王",
@@ -2315,51 +2404,6 @@
           "publishedOn": "2022-01-11T06:54:59.000Z",
           "wordCount": 15,
           "title": "如何评价国产动画《紫川》首创隐藏互动剧集？"
-        },
-        {
-          "id": "http://www.zhihu.com/question/510128037/answer/2301716848",
-          "author": "segelas",
-          "description": "非常简单地谈几句个人的看法。\n进入12月后，勇士队遭遇了一波进攻寒潮。11月，他们还能打出114.8分的百回合得分，而到了12月就只剩下了110.5分，在1月的三场比赛中更是低到了107.4分。相应地，球队核心库里也“难辞其咎”，个人百回合得分从11月的116.4分跌落到了12月的112.1、1月的110.2分，真实命中率更是从63.9%跌到了58.1%，1月份更是惨不忍睹的39.4%。\n对于造成勇士和库里如此下滑的原因，首先当然是库里个人的消耗问题。本赛季，库里在每回合之中、特别是进攻端的移动距离，比之17-18、18-19赛季，都有了一定的上涨。在曾经的勇士2.0时代，库里已经是一个拥有大量无球跑动、不断进行换位移动的进攻手，而本赛季的他则在本已不小的跑动量上进一步提高，来到了后卫中进攻跑动第九多的位置，且年过三十的年龄，也在加兰、科尔安东尼、德章泰穆雷等一众年轻人之中，显得格外突出。而在防守端，由于勇士一贯采取的集体换防策略，库里的跑动量自然也不会少，18-19赛季就有着后卫中第八多的防守移动，而本赛季也只是相对下降了0.07米。况且，我们还需要考虑到库里为了增强防守对位能力而采取的增重，对身体造成更大的负担。\n\n年龄的增加、体重的上升、移动的剧化，随着赛季的深入，这些问题逐渐开始影响库里，拉低了他的表现稳定性。这是每一个核心球星都必然面对的生涯阶段，出现波动，并不算非常离奇。而在此前的赛程中，勇士队也及时地找到了能为库里排忧解难、分担压力的替代者，乔丹普尔成为了球队的二号持球手，策动了相当比例的挡拆回合，也成为了比威少之于詹姆斯来得性价比远高的解压存在。\n然而，这样的良好趋势，却在12月开始，特别是到了1月份的几场比赛，开始出现了裂痕。对此，我们可以从阵容搭配中的变量来做初步把握。球队进攻最为气势如虹的11月，乔丹普尔场均拥有31.5分钟的出场时间，14.7次出手，…",
-          "link": "http://www.zhihu.com/question/510128037/answer/2301716848?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2022-01-07T11:48:48.000Z",
-          "wordCount": 93,
-          "title": "库里在 2022 年初连续 2 场比赛手感奇差，原因是什么？这对他竞争本赛季 MVP 造成了哪些影响？"
-        },
-        {
-          "id": "http://www.zhihu.com/question/509823711/answer/2300589425",
-          "author": "三斤哥",
-          "description": "《让子弹飞》版解读\n\n砸了你们！砸啦！\n兔子都知道不吃窝边草\n三百多个人，转头你们就发布了新车\n还换了名字\n呸！恶心\n我都降价清库存\n这种事儿你们可以花点儿钱嘛\n花点儿\n哪怕送点儿礼品呢\n花不了多少钱！\n哪怕卖期货呢\n简直就是土匪，土匪都不如\n还说让人家车主念你们好\n就是一句话！恶心！\n钱肯定是挣不着啦\n恶心！恶心！\n\n好了，抖机灵结束，回归正题。\n与2021款理想One上市时刚买了老款的车主维权类似，这两件事的背后其实都反映了同一个问题——在脱离了传统的4S店销售模式后，新入局的玩家们如何在销售端处理好新老车型交替。\n问题根源是没处理好车型新老交替时的销售策略\n传统车企是怎么做的\n俗话说“早买早享受，晚买有折扣”。\n以往，传统车企在新款车型上市前夕，一般都会对店内库存的老款车型进行降价促销，用0库存来迎接新车的到来，否则新车上市后老车就砸手里了。\n比如在新款奥迪A3上市前，老款A3的裸车价一度低至14万。\n等新款上市后，初期一直都保持着20万的价格，即使到现在，最低报价也仍然在18万左右。\n因此，虽然新A3相比老A3升级了很多内容，但是买老A3的用户看在6万块的差价上也不会觉得自己亏了。\n当然，也有部分车型销量异常的好，直至生命周期末尾可能都没有优惠，但是这类车待新款上市后往往都需要加价排队提车。\n所以老款还是会比新款便宜。\n新势力们有哪些区别\n但是随着越来越多的新势力入局之后，原先“车厂——4S店；4S店——用户”的交付链路变成了如今的“车厂——直营店/app——用户”。\n车辆的终端售价也由原先“车企和4S店共同决定”变成了现在的“车企单独决定”。\n但是为了保持品牌形象，新势力往往又不会主动选择在老款车型即将停产时降价。\n再加上如今随着电动化、智能化的快速发展，汽车更新换代速度也明显要比以前快得多，消费者根本想不到一台车这么快就会成为老款。\n这两个因素一叠加，在新款上市之际原价买了老款的用户自然觉得自己是被割了韭菜。\n所以对于选择直营的企业来说，如果管理好用户的预期非常重要。\n是不是所有新势力都没处理好？\n也并不是，比如蔚来在这方面我认为还是处理得不错的。\n一方面，蔚来通过“卖期货”这种方式让潜在消费者了解自己在未来半年或一年内的产品发布规划，防止打用户一个措手不及。\n比如蔚来在2021年一月份就发布了ET7，并且开放了预定，而直到2022年1月才启动锁单。\n对于ET7的潜在用户来说，如果在这期间看上了别的车，随时可以退预定金；而对于预定现有NT1.0产品的用户，他们也一定是在权衡了新技术和早提车之后才做出了选择。\n另一方面，虽然蔚来不会主动调整车辆指导价，但是当现有老款车型竞争力不足时，蔚来会采用置换补贴、贴息以及其他商业优惠来变相降价。\n因此，直营并不代表就无法妥善处理新老交替导致的销售问题。\n售后问题\n至于售后，老车主们还真不用太担心，毕竟赛力斯只是改了个名字，运营主体并没有变。\n问界就是赛力斯，赛力斯就是问界。\n\n我是@三斤哥，一个新能源、变速箱、智能网联都有涉足的汽车主机厂工程师。有兴趣的朋友可以关注我，我会从汽车工程师的角度给大家分享相关知识、解读热点问题。\n\n\n三斤哥\n点击下载\n537 个回答，查看全部。\n华为手机售后怎么样？\n华为售后服务怎么样 可不可靠？",
-          "link": "http://www.zhihu.com/question/509823711/answer/2300589425?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2022-01-07T03:40:37.000Z",
-          "wordCount": 32,
-          "title": "网传华为赛力斯停产，首批用户成最后一批用户，售后问题如何解决?"
-        },
-        {
-          "id": "http://www.zhihu.com/question/499623438/answer/2232133486",
-          "author": "安然吃梨吗",
-          "description": "【已完结】\n靠着长达一年的马屁，我成了导师的得意门生。\n谁料，我却在庆功宴上喝多，当众亲了他儿子。\n1.\n我的研究生导师，是业界响当当的大牛。\n一年多的鞍前马后，我终于成了他的“得意门生”。\n但就在一场庆功宴上，我喝高了。\n“明教授，有这样的成果全仰仗您的指导，您就是我再生父亲。啊不，亲爸爸。”\n导师也喝了不少，没和我计较。\n所以晕晕乎乎的我转向了他一旁安静吃菜的儿子：“明奕。”\n对方诧异地转过头挑了挑眉。\n“得空多替我谢谢咱爸。”\n此话一出，四座皆惊。\n只有当事人仍然淡定，轻轻一笑，微点了点头。\n然后，我一时忘形，俯下身捧着他的脸吻了上去。\n第二天早上，头脑仍有些昏昏沉沉的我打开微信，看到置顶消息顿时清醒：\n“唐倩，解释一下昨天晚上跟我儿子的事情。”\n我心凉了。\n老师，我说我馋他很久了，会被您开除吗？\n2.\n在这次社死之前，我发誓，我原本的形象一直都是内向文静的。\n直到遇到明奕才破了功。\n一年前那场沉闷尴尬的破冰宴，在他到来的一刻全然变了景象。\n“各位别客气，全部由明教授买单。”\n我原本正扮隐形人，手里却莫名被塞了一份菜单。\n“学妹喜欢吃什么啊？这个虾怎么样？”这个剑眉星目的浓颜帅哥自来熟得仿佛小区相亲角的大妈。\n“都，都行。”\n我向来都不擅长跟陌生人交际，瞬间红了脸。\n他自问自答着在我身边落座，又去招呼其他人，靠着无比强大的社交技能带动了全场的氛围。\n后来，我们甚至互相敬起了酒。\n3.\n饭后玩真心话大冒险时，我比先前放松了不少，但抽中“亲在场任意异性一口”还是原地石化。\n周围人看到我瞬间面色又变得通红，愈发来了劲，起哄催我抓紧。\n“我豁出去了。”明奕伸手点了点我肩膀，微微一笑，“我不跟你们导师，多半见不到，不怕尴尬。”\n“快快快亲一个！”\n于是，我眼睛一闭，横下心，嘴唇在他脸颊一侧轻轻一印。\n接近他的那一刻，鼻端被一阵似有似无的薄荷香气萦绕。只是短短的一瞬，却好像在分开…",
-          "link": "http://www.zhihu.com/question/499623438/answer/2232133486?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2022-01-06T07:21:50.000Z",
-          "wordCount": 20,
-          "title": "当「社交牛逼症」男生爱上「社交恐惧症」女生，会发生什么有意思的故事呢？"
-        },
-        {
-          "id": "http://www.zhihu.com/question/22077989/answer/2297303182",
-          "author": "简单心理",
-          "description": "常常有小伙伴在问到底该如何选择心理咨询师呢？我来为大家简单介绍一下选择心理咨询师的几个要点。\n \n其实可以分为三个阶段来判断心理咨询师是否靠谱：咨询前、咨询中以及咨询后。\n\n\nPart 1|咨询前\n 确认专业资质和能力 \n\n1. 教育经历\n 在一些西方国家，心理咨询师的培养已经有相对完善的机制，大多是学历培养和继续教育相结合的模式。\n比如美国各州对想要从事心理咨询行业的最低学历要求是硕士，而且基本上是从偏临床心理学或咨询心理学专业毕业的硕士；台湾地区也是要求硕士学历起。\n而在中国大陆，非学历培训是心理咨询从业人员的主要培养方式（张婕等，2011），相关部门/机构也没有出台统一的法律或制度规定从业人员的学历要求。\n\n\n\n国内从事心理咨询的人群主要包括以下几类（刘勉等，2012）：\n\n精神科医生（医学背景，主要在精神专科医院或综合医院的精神/心理科工作）；\n临床心理治疗师（医学或心理学背景，主要在综合医院的医学心理科/心理咨询室工作）；\n学校心理咨询师（心理学或教育学背景，主要在高校心理健康中心及中小学工作）；\n私人执业心理咨询师（各种学科背景都有）。\n\n在选择咨询师时，优先考虑心理学、医学、教育学、社会学背景的人群。考虑到国内临床心理学类的学历教育十分有限，且在学历教育中，对科研训练的重视也高于临床训练。硕士博士等学历水平以及副教授教授等职称，更多时候是代表着科研能力而非临床执业能力，所以只能说高学历高职称相对有保障，但并不绝对。\n2.执业资格\n除了学历和心理学相关专业，还需要考虑咨询师是否具有法律规定的执业资格。\n2018年前国内的咨询师需要通过人力资源保障部门的心理咨询师考试（该考试分为三级和二级），取得证书后咨询师才正式入门，开始执业。为了心理咨询行业更规范地发展，2017年下半年颁布新政策取消了国家心理咨询师等级考试（之前考到的证书仍然有效）。\n\n\n\n但即便有证书，也…",
-          "link": "http://www.zhihu.com/question/22077989/answer/2297303182?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2022-01-05T08:20:38.000Z",
-          "wordCount": 236,
-          "title": "如何找到一个适合自己的心理咨询师？"
-        },
-        {
-          "id": "http://www.zhihu.com/question/403295295/answer/2296736994",
-          "author": "Chase游戏面包房",
-          "description": "众所周知，MOBA游戏网络效应好、社区属性强，自然增长极快。然而其初期推广难、用户累积慢、运营成本高等问题又总是令让众多厂商纷纷折戟。到今天，纵观市场，似乎只有《王者荣耀》和《无尽对决》曾杀出重围，获得人气与价值的双丰收。其他产品却没有这样好的运气了，不管是网易的《决战！平安京》，还是腾讯的《Arena of Valor》，纵使承载着极高期望和投入，却都没能够翻起太大水花，最终也不过是淹没于茫茫游戏之海，被众人所遗忘。\n\n2020年6月，腾讯和Pokemon Company共同宣布联手打造基于宝可梦IP的轻度MOBA手游《宝可梦大集结》，欲二度冲击海外市场。游戏于2021年7月登录Switch平台，同年9月登录移动端平台。令人惊讶的是，本作并没有照搬腾讯天美信手拈来的Dota式核心战斗模式，而是迎合轻度玩家喜好，从诸如《风暴英雄》和《Splatoon 2》的类MOBA游戏中汲取灵感，将游戏的重心，从杀敌推塔，转移到了收集能量、达阵得分上，让MOBA游戏走上了休闲娱乐的全新道路。腾讯希望依赖宝可梦的全球影响力来吸引到IP粉丝/泛用户，逐步扩圈，培养出更大的欧美MOBA玩家市场。那么，此番采用全新玩法与独特画风、针对不同目标用户群的《宝可梦大集结》，有没有帮助腾讯再下一城呢？\n\n从数据来看，上线三个月的《宝可梦大集结》在海外市场的表现可谓是高开低走。在声势浩大的首周发布后，游戏逐步暴露出新用户获取乏力、现有用户流失多、长期付费不如意等问题。这究竟是什么原因呢？本期《庖丁解游》就将为大家解析一下这款游戏：《宝可梦大集结》。\n\n\n（一）游戏循环：单局对战贯穿始终\n\n《宝可梦大集结》游戏核心循环示意如图，MOBA类游戏的核心循环简单明了，主要以单局对战为基础，在对战—变强—继续对战的链条上衍生诸多其他机制。对《宝可梦大集结》来说，在对战之外，玩家还可以在对战中累计胜场、获得金币，从而…",
-          "link": "http://www.zhihu.com/question/403295295/answer/2296736994?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2022-01-05T05:27:57.000Z",
-          "wordCount": 225,
-          "title": "如何评价宝可梦大集结（Pokemon Unite）？"
         }
       ]
     },
@@ -2368,6 +2412,66 @@
       "feedUrl": "https://www.xda-developers.com/feed",
       "siteUrl": "https://www.xda-developers.com",
       "articles": [
+        {
+          "id": "https://www.xda-developers.com/?p=585481",
+          "author": "Pranob Mehrotra",
+          "description": "In October last year, Google started testing new features to improve the search experience in Google Chrome. The new Side Search feature added a side panel to the browser, allowing users to view a page from their search results along with other results simultaneously, while the Journeys feature gave users access to all related pages\nThe post Chrome will soon let you search through your history, bookmarks, and settings from the Omnibox using new search tags appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/chrome-search-history-bookmarks-settings-omnibox/",
+          "publishedOn": "2022-01-19T11:27:58.000Z",
+          "wordCount": 733,
+          "title": "Chrome will soon let you search through your history, bookmarks, and settings from the Omnibox using new search tags",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2020/01/google-chrome-logo.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=585345",
+          "author": "Corbin Davenport",
+          "description": "MediaTek had a lot to talk about near the end of 2021, including the Dimensity 7000 chipset, plans for more MediaTek-powered Chromebooks and Windows laptops, and smart TV hardware. Now the company is working on hardware to support the upcoming Wi-Fi 7 standard, which could start showing up in devices as early as next year.\nThe post MediaTek says it’s testing Wi-Fi 7 technology, first products could arrive in 2023 appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/mediatek-wifi-7-testing/",
+          "publishedOn": "2022-01-19T11:00:18.000Z",
+          "wordCount": 758,
+          "title": "MediaTek says it’s testing Wi-Fi 7 technology, first products could arrive in 2023",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/05/MediaTek-Dimensity-900-launch-featured.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=585463",
+          "author": "Pranob Mehrotra",
+          "description": "YouTube has introduced new annual subscription plans for YouTube Premium and YouTube Music. The new plans are currently available at a discounted price, but the promotion ends soon. If you’re a YouTube Premium or YouTube Music subscriber, you should check out the new annual subscription plans below and consider subscribing before the offer ends. According\nThe post YouTube introduces annual YouTube Premium & Music plans at a discounted price appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/youtube-premium-music-annual-plans-discounted-price/",
+          "publishedOn": "2022-01-19T10:00:39.000Z",
+          "wordCount": 867,
+          "title": "YouTube introduces annual YouTube Premium & Music plans at a discounted price",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2019/11/YouTube-Premium-featured.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=585441",
+          "author": "Pranob Mehrotra",
+          "description": "Qualcomm today demonstrated a working smartphone featuring the next-gen integrated SIM (iSIM) technology in partnership with Vodafone and Thales. The new technology integrates the functionality offered by a physical SIM card to the main processor, which allows for “greater system integration, higher performance, and increased memory capacity.” Integrating the SIM with the main processor also frees up\nThe post Qualcomm, Vodafone, and Thales demonstrate major development in iSIM technology appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/qualcomm-vodafone-thales-demonstrate-major-development-isim-technology/",
+          "publishedOn": "2022-01-19T08:56:13.000Z",
+          "wordCount": 789,
+          "title": "Qualcomm, Vodafone, and Thales demonstrate major development in iSIM technology",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2022/01/Qualcomm-iSIM-marketing-image-featured.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=585415",
+          "author": "Pranob Mehrotra",
+          "description": "After launching the Xiaomi 11T series in Europe back in September last year, Xiaomi is now bringing the Xiaomi 11T Pro to the Indian market. The flagship device features Qualcomm’s Snapdragon 888 chip, a large, high refresh rate AMOLED display, up to 12GB LPDDR5 RAM, and up to 256GB of UFS 3.1 storage. The phone\nThe post Xiaomi 11T Pro with Snapdragon 888, 120W fast charging launched in India appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/xiaomi-11t-pro-india-launch/",
+          "publishedOn": "2022-01-19T07:14:16.000Z",
+          "wordCount": 995,
+          "title": "Xiaomi 11T Pro with Snapdragon 888, 120W fast charging launched in India",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2022/01/Xiaomi-11T-Pro-featured.jpg"
+          }
+        },
         {
           "id": "https://www.xda-developers.com/?p=473633",
           "author": "Rich Woods",
@@ -3633,6 +3737,16 @@
           "id": "https://stratechery.com/2022/where-are-hit-podcasts-spotify-and-podcast-aggregation-protesting-rogan/",
           "author": "Ben Thompson",
           "description": "Why there aren't any new podcasts in the top 10, and why the podcast market looks like websites and YouTube. Plus, why Spotify's approach benefits most, for now.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi93aGVyZS1hcmUtaGl0LXBvZGNhc3RzLXNwb3RpZnktYW5kLXBvZGNhc3QtYWdncmVnYXRpb24tcHJvdGVzdGluZy1yb2dhbi8.pq5IbiRuEAb2pxRaMj4y8F8RhXsRHVlkQgAJUNFra9ahwXsF4S04fAz9gsD-1XQdzwxGS8_3NTqUPe_MJ_mEXRznqP_Su_qQdgkmHEPvJ1J_BkHG1FsqcQuAMUPasXrEyt4smAha6jAta-2tckkxBaXmzar8xNHPTvhh05GjB4YcfGnnJR3TK2TAOxKSdocE8BJh8rul0zZ9G0LhBs2t2fuLUZPPgxFntWm6EJp0OW_Xho4_C6FYDIGUF61RCrFR7isEFGWNiSkELeoPdl1bZh_CdIJ8LljHkUOX6BWWhW-cfd6chLjWqM4K7PXgcwTxEVQMQD27NlefG_EysnvNNw",
+          "publishedOn": "2022-01-13T12:59:06.000Z",
+          "wordCount": null,
+          "title": "Where Are Hit Podcasts?, Spotify and Podcast Aggregation, Protesting Rogan",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2022/where-are-hit-podcasts-spotify-and-podcast-aggregation-protesting-rogan/",
+          "author": "Ben Thompson",
+          "description": "Why there aren't any new podcasts in the top 10, and why the podcast market looks like websites and YouTube. Plus, why Spotify's approach benefits most, for now.",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi93aGVyZS1hcmUtaGl0LXBvZGNhc3RzLXNwb3RpZnktYW5kLXBvZGNhc3QtYWdncmVnYXRpb24tcHJvdGVzdGluZy1yb2dhbi8.ZFEmLQkN1hfIe2Q_NJxV_0Zge1kk2zAKloR239G08w_cSEMpCPt3EWOQp1ldXYt5xIaiAQgTzgeOshMh_FC-ndY1GV1zcTpMqjvF5zjgp36GpyXSmq8ZhPFjqTjfFqu1YTCTcmAvxCk6TS5wp9MzuocGKr3MnQQPmuESEhh_NCuCmGoSFITo1_BRCVrfprusiWeC7uXQbQQZCEgag0GpmLUPOsN4XKNFiGxeS6cBn5OwccfL1rDyT6yBsg8XCZ_Db3O3PfRND_KSrn4OM3369-XvITmeBZYxtdexYCgWL0wz1hBEbLZRaytmfjfYCAMD0NFxYGmqxY1acJslBYreTw",
           "publishedOn": "2022-01-13T12:59:06.000Z",
           "wordCount": null,
@@ -3707,6 +3821,16 @@
           "publishedOn": "2022-01-13T12:59:06.000Z",
           "wordCount": null,
           "title": "Where Are Hit Podcasts?, Spotify and Podcast Aggregation, Protesting Rogan",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2022/follow-up-zynga-nyt-all-access-the-athletic-facebook-antitrust-and-apple-in-south-korea/",
+          "author": "Ben Thompson",
+          "description": "Follow-up on Zynga's financials, the New York Times All Access bundle, The Athletic's focus on quantity over quality, Facebook's antitrust loss, and Apple's South Korea App Store change",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9mb2xsb3ctdXAtenluZ2Etbnl0LWFsbC1hY2Nlc3MtdGhlLWF0aGxldGljLWZhY2Vib29rLWFudGl0cnVzdC1hbmQtYXBwbGUtaW4tc291dGgta29yZWEv.S1-xGvetW2Yl5b6dImZ4sKciLz0UjXM1zIzpBr7gct3BMf7xKIDHVCwL7j4aaFaExjDko9Tu-RWgaxA2-97sff_VUTH2K7z3VxrWIKolNJgM9NFLqm88ZNG2SFtnzjmWJbgKojW9g1NOdHzhzSuDkPkrlLn3uWT97guzNViTTIhLpyiZUHhK-dbS-5L9oHQUWBd3mYp6NmcXw_yYiUNj-1A54qSAftJZmZS1bZq01R-AD8EwlsZFAWT7dlaxE2ImfscrDmbcBgsXi31NJwPSIZ4V902e0mP4JQ8jBDcgHpzTxB06_pKUrmbXY7dZIFRFZiCX9L2A4sN-I6yv3FiZuw",
+          "publishedOn": "2022-01-12T12:00:52.000Z",
+          "wordCount": null,
+          "title": "Follow-up: Zynga, NYT All Access, The Athletic, Facebook Antitrust, and Apple in South Korea",
           "itunes": {}
         },
         {
@@ -3803,6 +3927,16 @@
           "id": "https://stratechery.com/2022/take-two-acquires-zynga-the-new-york-times-buys-the-athletic/",
           "author": "Ben Thompson",
           "description": "Take-Two buys its way into mobile, and the New York Times re-bundles.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi90YWtlLXR3by1hY3F1aXJlcy16eW5nYS10aGUtbmV3LXlvcmstdGltZXMtYnV5cy10aGUtYXRobGV0aWMv.UaiHnxf5Lmh7b59a038ny7_NFf8hof5CqNVuLGLiyU5n-GXJAY3ud2JlbO8pIDMRch8VRuQNEapyh7FsH8Bm8VO_ySWIZ2Mq_ChcfqhRDrJbWtXi6uhSQN3_tXUQP3SMc1EdOBuyC0_lsmGzv-b9gfv5KM63Hgw1oBqw510IBNiR4lyAogPBWol6YzCt9rqkfcAdO02wA9BMPwblAx28a5o5K1swsLY8YoNv0j155qxKXZFBUtdWfmuuDDJlinpLdZ_diXQHqjg7hi0WFHSv2daI1GDzaYLVPeuQ3f3yrlw9JUC8-Pm3RWkPHxG_eWqW0sLQOmF9ojvXWDrKv9uXqA",
+          "publishedOn": "2022-01-11T13:05:47.000Z",
+          "wordCount": null,
+          "title": "Take-Two Acquires Zynga, The New York Times Buys The Athletic",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2022/take-two-acquires-zynga-the-new-york-times-buys-the-athletic/",
+          "author": "Ben Thompson",
+          "description": "Take-Two buys its way into mobile, and the New York Times re-bundles.",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi90YWtlLXR3by1hY3F1aXJlcy16eW5nYS10aGUtbmV3LXlvcmstdGltZXMtYnV5cy10aGUtYXRobGV0aWMv.ojNGWrlaBzvxQ_48mvmhOjRNeQlQ_zOlqfJtzevobd24heZExYK5KLlKIK093OihMt87MuUzvKX4amPP9R6jWbL3_TuSfGpxLNE0RMN2o-ycymswHo4hlRcj1n8h83pQwv5QcDQFBgaO_2_l-y8cfkYRPcwhXvjKMJN-wMgeI7vIpzBTnKgK7S9BpcxjQJ-fRqQ1V8PILoqKuzCHAkegVC4Gf6XQ2knM6NelCkuNQbS3OPQhdafPUpm-r9LqoyhSWWaBsunTceArpXH6xcKTnzbbuHT0V4yaU6HCTv1t1_wdpEVMY7WwyPVwzfmdsfNfwTEqWm5k2cBE-33HXVC7Og",
           "publishedOn": "2022-01-11T13:05:47.000Z",
           "wordCount": null,
@@ -3893,6 +4027,16 @@
           "id": "https://stratechery.com/2022/npm-sabotage-convenience-matters-moxie-marlinspike-on-web3/",
           "author": "Ben Thompson",
           "description": "The sabotage of a Node.js package shows both the danger of supply chain attacks and the allure of convenience; this is a lesson being learned by Web3.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9ucG0tc2Fib3RhZ2UtY29udmVuaWVuY2UtbWF0dGVycy1tb3hpZS1tYXJsaW5zcGlrZS1vbi13ZWIzLw.JvPG7FC3S6JmRa6nWhr767OO2hiXAttF-vV88efjiLQCrBmeqeN6ik9uuMpbj0yhOSwShbeaV25XFZEzH47iJ-79TGxo2i4YZH-8s2VXKU4y5HTq6NPbAOYp_nrnPQfLpM2R7cNLaMWRam9NGHXxyVnz5MovT3BMpY5gU5_UaiTyRjfWnvBSBWx8y6pAiSy3HgPT550lRkxqfe-xhB1jWJNtnuzPaehMvxMI_9xYVs6q7i2rJl0BoPS8Uwys3gBrVuQRsWbUE5JMI4tcg43w7ANcMLxLmL8UhjU-7Xdkbji1mchniPggOqxIh3NLVLbVJcGamDZ20Hq-mWzKcQQGGw",
+          "publishedOn": "2022-01-10T12:40:16.000Z",
+          "wordCount": null,
+          "title": "NPM Sabotage, Convenience Matters, Moxie Marlinspike on Web3",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2022/npm-sabotage-convenience-matters-moxie-marlinspike-on-web3/",
+          "author": "Ben Thompson",
+          "description": "The sabotage of a Node.js package shows both the danger of supply chain attacks and the allure of convenience; this is a lesson being learned by Web3.",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9ucG0tc2Fib3RhZ2UtY29udmVuaWVuY2UtbWF0dGVycy1tb3hpZS1tYXJsaW5zcGlrZS1vbi13ZWIzLw.tBg9ZJtGI-_jUHP1t6rvDGmBtX4NXZses7pj87jMyJKDXylGNYJaRpfevrGWpQJtYs-bWQlGjr64YWZgZLT4icT-ZtMIqu5prmL2VqtQ2Aa3ZCQqJwEIwqDJDU-8TxzQaYbVP-oxV3jJPq-ZPixI6vdYH4aks2QE90RgI08lOebGT5kLVhTQ1C5YDbGYk6InUqH4Ig97ofuwZTkR3JyszyvTFXpI8y37IJgnweYcBbqoF_bHdb8k35ZucgNl2oz6AbEUhLGGeaPPM7ljA4wM1vtIPmnhquvA_uXGWqMxuT1VTXWaZp_AJWWrnCvVGkyEsC9-UroMBM-8WH8AQfm4_A",
           "publishedOn": "2022-01-10T12:40:16.000Z",
           "wordCount": null,
@@ -3977,186 +4121,6 @@
           "publishedOn": "2022-01-10T12:40:16.000Z",
           "wordCount": null,
           "title": "NPM Sabotage, Convenience Matters, Moxie Marlinspike on Web3",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/facebook-and-xros-xros-vs-vros-why-vros/",
-          "author": "Ben Thompson",
-          "description": "Facebook is moving forward with the Android-derived VROS instead of the brand new AROS.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9mYWNlYm9vay1hbmQteHJvcy14cm9zLXZzLXZyb3Mtd2h5LXZyb3Mv.wQPiddO2vTlH1GLLVXlZ9isNjx3EBtQu7rV3LYn7s2m5Y6FsLvI04DpYFqg7yWAwiQO3isW4h6tym_bVHiMDjmfFsX1qLzCR0atCJ96zEI_OiCZlFovUsF5YAxdJuNqlBadooCOJuoWi03cebums95U_vzV-LJzimgj1kXrn-QTDqMHm4jNHI3QnB-UEKBtw2qwkugfpAevd-xbmv-O_sG0dsJLN4E55qXUNSsCcoazYiI8sTMJ_9ErYglDyKCGacXFqL9Av4_9VUrus8FW5CaEx33c-NQejG3HX-KoLc2AnVik04Qeg-P9j40w6OwJvPv3f-0CE7-8E0s-b0RjBVg",
-          "publishedOn": "2022-01-06T12:21:45.000Z",
-          "wordCount": null,
-          "title": "Facebook and XROS, XROS vs VROS, Why VROS",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/facebook-and-xros-xros-vs-vros-why-vros/",
-          "author": "Ben Thompson",
-          "description": "Facebook is moving forward with the Android-derived VROS instead of the brand new AROS.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9mYWNlYm9vay1hbmQteHJvcy14cm9zLXZzLXZyb3Mtd2h5LXZyb3Mv.Ads5ZJosvZbRxcVG04cT8uNw-fVzF31NzUSDAUE5lABdG0frBtP3N3MwfPkBAPcg_BV77LaaC_EV2ho7LlS84Ytq1i8ZyiFSoEApBP9Qj1UoRfAAGd5R8FvB22kxzhb3wJnfwc-_OKVTcfw0pZdlUTQAD1FK_QWtXd6AyZURYtVEuqBeXkQwSHZ7sL1UPe4aHTf6dufQ5EDNxxgzeeuI3_Gg6TtVSFhd1NXfjG8z2ZdZFONtdD_kM4VoxkVr61JPxfdQ9HTPqSAj9j0EpQv3DjnyC1Wwwbui_246vwfobC0wu_RTxZHC4GyM6uG982fcKTzlSi8JHF9JtRtmqstC0g",
-          "publishedOn": "2022-01-06T12:21:45.000Z",
-          "wordCount": null,
-          "title": "Facebook and XROS, XROS vs VROS, Why VROS",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/facebook-and-xros-xros-vs-vros-why-vros/",
-          "author": "Ben Thompson",
-          "description": "Facebook is moving forward with the Android-derived VROS instead of the brand new AROS.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9mYWNlYm9vay1hbmQteHJvcy14cm9zLXZzLXZyb3Mtd2h5LXZyb3Mv.hFnl3oBKLaq4D57f0Ie50TzvPwaHWKiOMca8EmoaDh2qLFGW-I1n4SDKMKTMHwLZCRiqY_z0NtoMrSyotKb5yUz_Yl421xpr2RmZd65EajCs0ehVg5BATRlt6uOPtv9jRz7bUaoj7Tx2YXbcQ71nM84SZeT036jteTsM0mi_yzXQnej-5UaRW8jIU6XC9h3SGeQBvhEGZsg9JuQwuNZW8YNOzNbLF-HbhjwLwwK5eWev6WVPNfcIfnv7z5GBKIW8zx0STJ_BokPAPrVUHhe3-z6kHCkyaWngT-TIJrJNAWPJG5KVH5ug6BPI309RJDsBUTGH-Zuyv01a1JZ13tc5dw",
-          "publishedOn": "2022-01-06T12:21:45.000Z",
-          "wordCount": null,
-          "title": "Facebook and XROS, XROS vs VROS, Why VROS",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/facebook-and-xros-xros-vs-vros-why-vros/",
-          "author": "Ben Thompson",
-          "description": "Facebook is moving forward with the Android-derived VROS instead of the brand new AROS.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9mYWNlYm9vay1hbmQteHJvcy14cm9zLXZzLXZyb3Mtd2h5LXZyb3Mv.JecUUChl2mDNTKtGSSbZ8rX3-mzev6Iy9eIT1Mvp_q8mDkLRgpr0BMp8QxZkqJqivh7U-krkQwvmmnbGZXh2J5wQ3FBHaOb9rPgX81ua0xSe_wX-JIiXvfXDf0C1gHBtjZrQleN8FtKd6oH7jJ_4DQSoYCS95UekXW0D4G905lEWdLl0v5qI2JYFNnpApuOi9w-vrSQ7VGwv9GqQrsS-ctDV-MWglU3L1Dmt2Z0P_mbg1vKn2kZDk0gMFG1S_Ykh059JHrK-26xBM-S2TDho1tz3hDJxSiJdA6ahbcU5XalCmEyEatzelakQSP-WqaILZUkVV0jpv0-JL58D16P8vQ",
-          "publishedOn": "2022-01-06T12:21:45.000Z",
-          "wordCount": null,
-          "title": "Facebook and XROS, XROS vs VROS, Why VROS",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/facebook-and-xros-xros-vs-vros-why-vros/",
-          "author": "Ben Thompson",
-          "description": "Facebook is moving forward with the Android-derived VROS instead of the brand new AROS.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9mYWNlYm9vay1hbmQteHJvcy14cm9zLXZzLXZyb3Mtd2h5LXZyb3Mv.dt25g-jOE4P6z8nWBZhe5ldcOIAHRkdu91FVsrUZucBChcgk2JxYA9nPoqgPF6_XMrDCnPWrJOKB9DLqExPo8R35BoFcW3j5WqBfcWLDonbwJsHqoFuOqjGxwvQVwKwpaixmSiCh0Kvb0EnXqC-9xHXYqzjdiSIhXwhIV_7guNvEJJPkqCMPB8RmY1FeZb7oNhPsBWc1zEg8r3PoegAnPvZvvDM-d1T3whW3i8M-276hONa3vLS3JTUdZiSeped9QLLCzVG6-J9CMYL_oP4COyuq_e_kg-qhwsu5FykySXJ2rKJicB1X1FKujleg5Y_EuPl8tdEOJBzIeYayol4UAA",
-          "publishedOn": "2022-01-06T12:21:45.000Z",
-          "wordCount": null,
-          "title": "Facebook and XROS, XROS vs VROS, Why VROS",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/facebook-and-xros-xros-vs-vros-why-vros/",
-          "author": "Ben Thompson",
-          "description": "Facebook is moving forward with the Android-derived VROS instead of the brand new AROS.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9mYWNlYm9vay1hbmQteHJvcy14cm9zLXZzLXZyb3Mtd2h5LXZyb3Mv.KwyTQUMXNmeLC-vcjDKDhFxCtrIiIgPD0nOS8-eMT3JpBiRX_3f3QZagYItm_vmFLivMSkcWL_u7VWtKJoxIAHuk6tcnlow5o9xRIDVYy3nkCUA2OtXdN6suY-jSEUJ68GZsY98mhMi5gX91SS6pMQqogcxW1691VIUMMZVtEuCZTJCN12y2jSZYovzK4mYXHTWPVgiusvCf2pKbxiP0JR8oG4j2K-KBBC-S8AXgSwWEkTyWX2GJV0LKptGMTBaI7lhx9qJm2eZGLONynHoHWLpGD92W-OLvSaSMH9DsKbvU2YgMnR-mp-pmiiTL3xIykqUdoWdWvzZm_5ScJDd22w",
-          "publishedOn": "2022-01-06T12:21:45.000Z",
-          "wordCount": null,
-          "title": "Facebook and XROS, XROS vs VROS, Why VROS",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/facebook-and-xros-xros-vs-vros-why-vros/",
-          "author": "Ben Thompson",
-          "description": "Facebook is moving forward with the Android-derived VROS instead of the brand new AROS.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9mYWNlYm9vay1hbmQteHJvcy14cm9zLXZzLXZyb3Mtd2h5LXZyb3Mv.VwBAwN7GD-UkvX0FYklr7PctgiW3b1vU-VKi7FFnYYe31yx75FhpA4XNC_s92z-EUequfBKpK4xIfCHdTR0fUgn1E-NJq-mKjgl6Zbk3FHF_3jxthc1VoKkU1GPl5__YeKlVX5ZipA-bTm9kw-dHr-sIyhsP3HWjDYYetEClqZUQLHJYNJV1rtimqqM-zJaSw7orUGHT8LCOAHb97qRVMFksv2pCApmTbf94zySDMPQB3-swX_egE-hwSVcpV3PpJVBbNfnasJYqZm4Fso4a1VJQ1OxGl2daO89GRQmkRNe2VQ8MmXP9jj9tXe9KpJQGa16RqBrcONwO43OWqBUW0w",
-          "publishedOn": "2022-01-06T12:21:45.000Z",
-          "wordCount": null,
-          "title": "Facebook and XROS, XROS vs VROS, Why VROS",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/facebook-and-xros-xros-vs-vros-why-vros/",
-          "author": "Ben Thompson",
-          "description": "Facebook is moving forward with the Android-derived VROS instead of the brand new AROS.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9mYWNlYm9vay1hbmQteHJvcy14cm9zLXZzLXZyb3Mtd2h5LXZyb3Mv.ssLl8I4LPq4NRP8s3Zp6YToU150_mIfcQcNPKJiRFnJEpdz8rG86zuKMilMn8Piz-Bgv9wpsc8W2vVcZJ8DQ-nOv446_Njle48mIy7lMm8NT4GRPhE6hB2Cn2mRYkgh2ACirJquQYoU5CpEWiRVpJfMPeLC9lB252Q5wh2JQET_BYxoSh5apZVf0dU39pYcHs3tCmSjpyUkjcanzZlak6gW3Sb5_6toJ-OBwaFbtF5SEoyIyg4wccs0YM5VqOa0ct6-sQ5Oh6DIDhoI-dnDTBccsLF3GPnKA50gwv0uMGBTo4e59_ngYi3KOrWElcbYFxqnr7ugSAlc68wGcR_GnCA",
-          "publishedOn": "2022-01-06T12:21:45.000Z",
-          "wordCount": null,
-          "title": "Facebook and XROS, XROS vs VROS, Why VROS",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/facebook-and-xros-xros-vs-vros-why-vros/",
-          "author": "Ben Thompson",
-          "description": "Facebook is moving forward with the Android-derived VROS instead of the brand new AROS.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9mYWNlYm9vay1hbmQteHJvcy14cm9zLXZzLXZyb3Mtd2h5LXZyb3Mv.Lqj_Or0l8FCdmXfglmjBmWc3pvxIEgE1UEnYvp79_5_z61_3cv0pjBGVjCwOunKWXXlcvfcdFtPbc_zvLf_HeOTZwj-hsVNPI0nN4-IkYW92EmP4jBRVMi1JNFrKOVeStIK4oQuJ2X1JBmMqjUu1l70TvGGwqgnE2OO1hjd1eiXtA6_AANxYbtHX0iFUEHBkwIJlXWR5vYT5iE-oyIu83tXyTOuVTIkdrjPevxp2-WyyMtjdzgLx8efy3qXq3flmxbXVxrqOggh44cDWCFCBwlJHjzLxhQRk6SlBnJnfhTtiiYghe4BVhog6KfCpLVPuCgYG9ii3eowhtWDSjFjovQ",
-          "publishedOn": "2022-01-06T12:21:45.000Z",
-          "wordCount": null,
-          "title": "Facebook and XROS, XROS vs VROS, Why VROS",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/opensea-raises-money-bans-nfts-openseas-value-cryptos-aggregators/",
-          "author": "Ben Thompson",
-          "description": "OpenSea is positioned as another Aggregator, which is evidence that Web 3 is a layer on top of the Internet, not a replacement.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9vcGVuc2VhLXJhaXNlcy1tb25leS1iYW5zLW5mdHMtb3BlbnNlYXMtdmFsdWUtY3J5cHRvcy1hZ2dyZWdhdG9ycy8.Oq6aDMBq_Cs7KFYxEoraBT5zeul-GmbcYRz5oIRoQQYQaz_10XPEWHuhDeZyk3NR2C6JehWJpuHbzkIv2T7IqJHQLn_itkH8ICk8ixy3A9Pi43MFnS4u-QoksLY39H3DSIidbq4yI9nyxZAYlzhvKEmmPE73-PojJJjfroUBTztFxWOFc4XtAdwEYU9JFYDvTw9omOWNll6FwqZznQlAFNye1qxrdzI6wu581r3trnEGjZNGfIxKar7KpuOluv3u5xk898dXJOkDK07Eiprjz56N0p_S-BSZK-9x9J_K9DL7hkC22JJAs5s0oR4eQWESnCE4vG0jvAxqB5FeKV7mIQ",
-          "publishedOn": "2022-01-05T13:56:03.000Z",
-          "wordCount": null,
-          "title": "OpenSea, Web3, and Aggregation Theory",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/opensea-raises-money-bans-nfts-openseas-value-cryptos-aggregators/",
-          "author": "Ben Thompson",
-          "description": "OpenSea is positioned as another Aggregator, which is evidence that Web 3 is a layer on top of the Internet, not a replacement.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9vcGVuc2VhLXJhaXNlcy1tb25leS1iYW5zLW5mdHMtb3BlbnNlYXMtdmFsdWUtY3J5cHRvcy1hZ2dyZWdhdG9ycy8.A_YljXvZdnTd1JQFJdOOSBXETRT9Nm4dLTXT0GepR6g8vFSHkVqSzP-TobmBqeM1jSMXiXuEJD9tjLwSnwbwNnr_IAh9thoxTqQ7n8pgAhcf8gkJSQaHc-dxMAE4kadW27kYiY_qPCmO2Wq9eAu7h_Sz1gWbb3qz9TG526W0RjOJZe6ZLWfg9qHvGWrp-N5hAT92QlzZ--85C5kyit8ID03tHHWkJZiWjRFRHbTxKQ-_hoGe4iS2SHfepHNNI7QNKAbe58lOc-Dn_FGHLXOotb4iRbC696OPi1voAl3JrO3OOA26yZ4B74L6JZaiUJDo-VW3tCeuKuvj6CNmeRRXCA",
-          "publishedOn": "2022-01-05T13:56:03.000Z",
-          "wordCount": null,
-          "title": "OpenSea, Web3, and Aggregation Theory",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/opensea-raises-money-bans-nfts-openseas-value-cryptos-aggregators/",
-          "author": "Ben Thompson",
-          "description": "OpenSea is positioned as another Aggregator, which is evidence that Web 3 is a layer on top of the Internet, not a replacement.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9vcGVuc2VhLXJhaXNlcy1tb25leS1iYW5zLW5mdHMtb3BlbnNlYXMtdmFsdWUtY3J5cHRvcy1hZ2dyZWdhdG9ycy8.cdxEPOl3JfTwH4vpsmeMC_OcfGJubPdwri82Kb20PGSczdEAyAHEtW2l1lKSfSPfyQL14jTVv8Rpgr36Nl4yXfhi1wbLCRmTEErHMHyHxdvOp5Hnz3lr1EWLGeFmIsJVZ3TLrOJdvvgri4NveFJ1uFwqxdqHS2OpNNCkuFeAfHonR5KxAdN31v-bjx-_PC7SID_-D-KUQj2xolBc3mcjKVnPzS7ixOo2p64xX7lvanc_Z0yRBFDfrA7dxiDhBa2O5OXiR9KDzfABjBFO9eVdp9SutJQOA_q59_gBACQtriFxTxZlVtS1tcHtBi1Gb6XOEyHas4BKKnSbOT5MRmR0_g",
-          "publishedOn": "2022-01-05T13:56:03.000Z",
-          "wordCount": null,
-          "title": "OpenSea, Web3, and Aggregation Theory",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/opensea-raises-money-bans-nfts-openseas-value-cryptos-aggregators/",
-          "author": "Ben Thompson",
-          "description": "OpenSea is positioned as another Aggregator, which is evidence that Web 3 is a layer on top of the Internet, not a replacement.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9vcGVuc2VhLXJhaXNlcy1tb25leS1iYW5zLW5mdHMtb3BlbnNlYXMtdmFsdWUtY3J5cHRvcy1hZ2dyZWdhdG9ycy8.CfQVmhs5F081pKbCY3KjG_1RUsMk27Enml20p1M5nZfgHA4-3ip0eRvXY7yjIfSxmWEnl5wKbKcBfNoMfXRq8ciMjRju7gF53QBMsDnuECyoX9ArAr2ffcLbK7GarUGHzQF7ZIdTYAWz-V4pOA8XJaLtcyl1U4f7DfY_2rxoc-I-29CHZ8fQSnisfelZRO0jSbopr-YRFKdWsrEGYNcdSiAQK4NvKarVaQuaLvwemx-HmbGh1OdjmOcOndWQNyqc5ogibipLMTJV9Fcnhwq1agKRIs9zc-urQro95TXEupWhUUgSe476aY3-Ws5wU_W32vuSHmFztnckp7qZAmf-8w",
-          "publishedOn": "2022-01-05T13:56:03.000Z",
-          "wordCount": null,
-          "title": "OpenSea, Web3, and Aggregation Theory",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/opensea-raises-money-bans-nfts-openseas-value-cryptos-aggregators/",
-          "author": "Ben Thompson",
-          "description": "OpenSea is positioned as another Aggregator, which is evidence that Web 3 is a layer on top of the Internet, not a replacement.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9vcGVuc2VhLXJhaXNlcy1tb25leS1iYW5zLW5mdHMtb3BlbnNlYXMtdmFsdWUtY3J5cHRvcy1hZ2dyZWdhdG9ycy8.BAIctElM-yREe5AX9Hg_ia0Enjmd5EryMw0GIznkGUbnwWsjfNVpVuH8LC_esKwm8MEiE6jJDys6kxUfVP2moaHAwWQFNuj6qNChW7CdfVL3VD3HP3g6vPioYoSGvvzZuZiOzyZo2dG_iIxlOWt67WDByiVgYY5AbXicLyZe6V0txEdEeYKSNoqtkg7mTfvyi-POOaNmV7wJsiyFUNuuidBgvk7Uie6v9cqIClFIY-qgTD70uyvPvziuMtNo4Cqal4t_bYT2IZ5JU3MnCobQa0hqxj_bj6XApX_xx3BOacDYKucu8b8ChJP_fpuHRbaJIbrAW7fE_udwDy0o1LnCkw",
-          "publishedOn": "2022-01-05T13:56:03.000Z",
-          "wordCount": null,
-          "title": "OpenSea, Web3, and Aggregation Theory",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/opensea-raises-money-bans-nfts-openseas-value-cryptos-aggregators/",
-          "author": "Ben Thompson",
-          "description": "OpenSea is positioned as another Aggregator, which is evidence that Web 3 is a layer on top of the Internet, not a replacement.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9vcGVuc2VhLXJhaXNlcy1tb25leS1iYW5zLW5mdHMtb3BlbnNlYXMtdmFsdWUtY3J5cHRvcy1hZ2dyZWdhdG9ycy8.RaoMq5AhN6oFCvUKR1xlnGf0HGV_hrK8O0u57IpVILgDoe3t-wt80Kjl2RpJ5bZT1hcoBD9iwbpVrn4pukjd3SZo5l82pyMf_0dHOOBnBGthsWCdwQGg0i9omkfsyIQXDmLBmC4IclDyK4Wn6jAn46NczpFyp6aBiXrVPzgTlyk189E_Okw-D8lcvhRlqcAeTfX6GqBWKadan6vDTpIJRvjOWirtg4vfgfknhMTSBFRWmyTiPvz8iyVNPl27TdUNdEU_pUQkJ11MDqr72bpAbe2QSvgto4_8Pg9n7eLYaFuvVNu1dOzNvlxC-dGynZTOanrSaEYWqCu5oJPD5R-iyg",
-          "publishedOn": "2022-01-05T13:56:03.000Z",
-          "wordCount": null,
-          "title": "OpenSea, Web3, and Aggregation Theory",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/opensea-raises-money-bans-nfts-openseas-value-cryptos-aggregators/",
-          "author": "Ben Thompson",
-          "description": "OpenSea is positioned as another Aggregator, which is evidence that Web 3 is a layer on top of the Internet, not a replacement.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9vcGVuc2VhLXJhaXNlcy1tb25leS1iYW5zLW5mdHMtb3BlbnNlYXMtdmFsdWUtY3J5cHRvcy1hZ2dyZWdhdG9ycy8.Y0qbuox81wgzfBj_cgCTaDEhbJZlhfw-KXFdQLp0EmCBn683D3vfK3_pVdqvb-ctnPBexJFnmZhyvYuYxFvLxLN853_u2eVFdzDdvp6LAMcSqf5avvma02KZJ_oThd4EMZ2QDgOTBDacMJEtEJz8gXN9KPf11lLYufkMSa2XT5DIeHFxEs1x9h6rkRLyGEiYKMVZ3IswHaC0N3BxA1IoO3uHPudofJl6zbuaxKf99c5pKJsQvW4JdwrTmVlheiBtesp3u4dmIIzNRQRPaRG1GInrYYtCDbaHrjlmMvcfc98VDf1Za4gY5ziVuYaqi8Vo8kx54RfQd5Uw8cdBkkVN1A",
-          "publishedOn": "2022-01-05T13:56:03.000Z",
-          "wordCount": null,
-          "title": "OpenSea, Web3, and Aggregation Theory",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/opensea-raises-money-bans-nfts-openseas-value-cryptos-aggregators/",
-          "author": "Ben Thompson",
-          "description": "OpenSea is positioned as another Aggregator, which is evidence that Web 3 is a layer on top of the Internet, not a replacement.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9vcGVuc2VhLXJhaXNlcy1tb25leS1iYW5zLW5mdHMtb3BlbnNlYXMtdmFsdWUtY3J5cHRvcy1hZ2dyZWdhdG9ycy8.DDOKYWp5d0SV--F468xleIk5FRGWHY3WsnjhwPH67QSgbx1gQuroy8Xx6fRzLMzvAantkNvc41jsMPcyBfi_ZtGeOxNc1nh_T_c2bDQz0FAizMkJzUsi0ameIVCt9kUEdd0R1Xn4xYWuMUAQaBrftG0rgzZziWBPGhp3AiS6OVaca9P_fSjCuzmTf73q-6S6XUwYR25KS7MyIV6dFjMWF4YXbDISzd2osJ6khufYf1Uo5KOxuvj7DfgHJwhUzhMDD4wQ_Aypa7nZ50HHS3gb9pfx2PLrACbafwNZY73XRORJtuMni40ZhZ5lQNdYqkv_nI1w83tEdgPcgL0071wILg",
-          "publishedOn": "2022-01-05T13:56:03.000Z",
-          "wordCount": null,
-          "title": "OpenSea, Web3, and Aggregation Theory",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/opensea-raises-money-bans-nfts-openseas-value-cryptos-aggregators/",
-          "author": "Ben Thompson",
-          "description": "OpenSea is positioned as another Aggregator, which is evidence that Web 3 is a layer on top of the Internet, not a replacement.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9vcGVuc2VhLXJhaXNlcy1tb25leS1iYW5zLW5mdHMtb3BlbnNlYXMtdmFsdWUtY3J5cHRvcy1hZ2dyZWdhdG9ycy8.om4GDK8XaMMku71-SQsQxemlXAH58plv96AJtljICPt25RIVrRoqw4KFEIZFS-93Boy1r1XOqleBilocVfIpeHfCGpW_wWO8iiIT6cCH7wO4RUuCinhqincr1TF93oblDW67jhid3FgjsnwuQBmVkcvgwNd1EVDqWzoOuQUjCrLqLzCKyGfeN1eRmE11S_xVjQooIY6tcFsaCZA5LAinYd_1pRO10f7gB72HiJZv9GiomCrxC2V1qorx4DInFQ-fFOugRXLB_ujLTSTIRcPNzh7tG_d713kB83ie_hn3bphi_ilz39V4YqXyWdJrVRaclIMZm54pzFehSzhZg1s50A",
-          "publishedOn": "2022-01-05T13:56:03.000Z",
-          "wordCount": null,
-          "title": "OpenSea, Web3, and Aggregation Theory",
           "itunes": {}
         }
       ]
@@ -4795,6 +4759,15 @@
       "feedUrl": "https://reddit.buzzing.cc/rss.xml",
       "siteUrl": "https://reddit.buzzing.cc",
       "articles": [
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/BlackPeopleTwitter/comments/s73zvx/they_shouldnt_be_allowed_to/",
+          "author": null,
+          "description": "他们不应该被允许",
+          "link": "https://reddit.buzzing.cc/reddit/r/BlackPeopleTwitter/comments/s73zvx/they_shouldnt_be_allowed_to/?score=75223&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FBlackPeopleTwitter%2Fcomments%2Fs73zvx%2Fthey_shouldnt_be_allowed_to%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FBlackPeopleTwitter%2Fcomments%2Fs73zvx%2Fthey_shouldnt_be_allowed_to%2F&channel=BlackPeopleTwitter&sensitive=false",
+          "publishedOn": "2022-01-19T06:41:59.000Z",
+          "wordCount": 19,
+          "title": "他们不应该被允许"
+        },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/funny/comments/s74nft/some_of_my_wifes_clothes_require_lvl_100_folding/",
           "author": null,
@@ -6288,33 +6261,6 @@
           "publishedOn": "2022-01-10T03:18:41.000Z",
           "wordCount": 18,
           "title": "为我们的教师支付更多的工资!"
-        },
-        {
-          "id": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/rzqc2x/cop_punches_a_man_on_a_stretcher_being_put_in_an/",
-          "author": null,
-          "description": "警察殴打被送上救护车的担架上的男子",
-          "link": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/rzqc2x/cop_punches_a_man_on_a_stretcher_being_put_in_an/?score=75293&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffacepalm%2Fcomments%2Frzqc2x%2Fcop_punches_a_man_on_a_stretcher_being_put_in_an%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffacepalm%2Fcomments%2Frzqc2x%2Fcop_punches_a_man_on_a_stretcher_being_put_in_an%2F&channel=facepalm&sensitive=false",
-          "publishedOn": "2022-01-09T23:27:03.000Z",
-          "wordCount": 26,
-          "title": "警察殴打被送上救护车的担架上的男子"
-        },
-        {
-          "id": "https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/rzv4hw/astronaut_mark_kelly_once_smuggled_a_full_gorilla/",
-          "author": null,
-          "description": "宇航员马克-凯利曾经在国际空间站上偷带了一套完整的大猩猩衣服。他没有告诉任何人这件事。有一天，在没有人知道的情况下，他穿上了它。",
-          "link": "https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/rzv4hw/astronaut_mark_kelly_once_smuggled_a_full_gorilla/?score=79593&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FDamnthatsinteresting%2Fcomments%2Frzv4hw%2Fastronaut_mark_kelly_once_smuggled_a_full_gorilla%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FDamnthatsinteresting%2Fcomments%2Frzv4hw%2Fastronaut_mark_kelly_once_smuggled_a_full_gorilla%2F&channel=Damnthatsinteresting&sensitive=false",
-          "publishedOn": "2022-01-09T20:36:43.000Z",
-          "wordCount": 44,
-          "title": "宇航员马克-凯利曾经在国际空间站上偷带了一套完整的大猩猩衣服。他没有告诉任何人这件事。有一天，在没有人知道的情况下，他穿上了它。"
-        },
-        {
-          "id": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rz4uua/the_way_she_runs_off_at_the_end/",
-          "author": null,
-          "description": "她最后逃跑的方式",
-          "link": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/rz4uua/the_way_she_runs_off_at_the_end/?score=75120&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Frz4uua%2Fthe_way_she_runs_off_at_the_end%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Frz4uua%2Fthe_way_she_runs_off_at_the_end%2F&channel=MadeMeSmile&sensitive=false",
-          "publishedOn": "2022-01-09T16:33:31.000Z",
-          "wordCount": 22,
-          "title": "她最后逃跑的方式"
         }
       ]
     },
@@ -6323,6 +6269,51 @@
       "feedUrl": "https://hn.buzzing.cc/rss.xml",
       "siteUrl": "https://hn.buzzing.cc",
       "articles": [
+        {
+          "id": "https://hn.buzzing.cc/hn/29990427/",
+          "author": null,
+          "description": "关于E.O.威尔逊遗产的一封公开信",
+          "link": "https://hn.buzzing.cc/hn/29990427/?score=102&original_url=https%3A%2F%2Frazib.substack.com%2Fp%2Fsetting-the-record-straight-open&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29990427&sensitive=false",
+          "publishedOn": "2022-01-19T11:07:09.000Z",
+          "wordCount": 29,
+          "title": "关于E.O.威尔逊遗产的一封公开信"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29991585/",
+          "author": null,
+          "description": "Bitwarden - 最值得信赖的企业开源密码管理器",
+          "link": "https://hn.buzzing.cc/hn/29991585/?score=102&original_url=https%3A%2F%2Fbitwarden.com%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29991585&sensitive=false",
+          "publishedOn": "2022-01-19T11:07:09.000Z",
+          "wordCount": 35,
+          "title": "Bitwarden - 最值得信赖的企业开源密码管理器"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29978036/",
+          "author": null,
+          "description": "我花了几百个小时在VR领域工作",
+          "link": "https://hn.buzzing.cc/hn/29978036/?score=103&original_url=https%3A%2F%2Fwww.wired.com%2Fstory%2Fhours-working-vr-tips%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29978036&sensitive=false",
+          "publishedOn": "2022-01-19T09:45:47.000Z",
+          "wordCount": 30,
+          "title": "我花了几百个小时在VR领域工作"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29983702/",
+          "author": null,
+          "description": "问HN：有人知道FlexOS/386的源代码的下落吗？",
+          "link": "https://hn.buzzing.cc/hn/29983702/?score=100&original_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29983702&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29983702&channel=ASK+HN&sensitive=false",
+          "publishedOn": "2022-01-19T09:28:37.000Z",
+          "wordCount": 37,
+          "title": "问HN：有人知道FlexOS/386的源代码的下落吗？"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/29988951/",
+          "author": null,
+          "description": "BCHS: OpenBSD, C, httpd和SQLite网络栈",
+          "link": "https://hn.buzzing.cc/hn/29988951/?score=100&original_url=https%3A%2F%2Flearnbchs.org%2Findex.html&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29988951&sensitive=false",
+          "publishedOn": "2022-01-19T07:11:40.000Z",
+          "wordCount": 34,
+          "title": "BCHS: OpenBSD, C, httpd和SQLite网络栈"
+        },
         {
           "id": "https://hn.buzzing.cc/hn/29988800/",
           "author": null,
@@ -9690,105 +9681,6 @@
           "publishedOn": "2022-01-10T10:01:38.000Z",
           "wordCount": 593,
           "title": "What's the difference between a PUT and PATCH request in Spring Boot?"
-        },
-        {
-          "id": "https://frankel.hashnode.dev/comparison-fault-tolerance-libraries",
-          "author": "Nicolas Fränkel",
-          "description": "If you're implementing microservices or not, the chances are that you're calling HTTP endpoints. With HTTP calls, a lot of things can go wrong. Experienced developers plan for this and design beyond just the happy path. In general, fault tolerance en...",
-          "link": "https://frankel.hashnode.dev/comparison-fault-tolerance-libraries",
-          "publishedOn": "2022-01-09T14:35:32.000Z",
-          "wordCount": 1014,
-          "title": "A tentative comparison of fault tolerance libraries on the JVM"
-        },
-        {
-          "id": "https://puzpuzpuz.io/benchmarking-non-shared-locks-in-java",
-          "author": "Andrey Pechkurov",
-          "description": "Last time we discussed scalability of j.u.c.l.ReentrantReadWriteLock and some alternatives. Some of the alternatives used a simple CAS (compare-and-swap) based spinlock as the internal writer lock. So, I was curious whether such custom spinlock makes...",
-          "link": "https://puzpuzpuz.io/benchmarking-non-shared-locks-in-java",
-          "publishedOn": "2022-01-09T13:36:19.000Z",
-          "wordCount": 1633,
-          "title": "Benchmarking Non-shared Locks in Java"
-        },
-        {
-          "id": "https://blog.vyarus.ru/testing-junit-5-extensions",
-          "author": "Vyacheslav Rusakov",
-          "description": "Testing extensions always requires testing parallel/non-parallel execution and post-test callbacks validation. It is impossible to do with regular tests, but, thankfully, JUnit 5 provides a TestKit for running and recording test execution (so you can...",
-          "link": "https://blog.vyarus.ru/testing-junit-5-extensions",
-          "publishedOn": "2022-01-09T12:06:12.000Z",
-          "wordCount": 727,
-          "title": "Testing JUnit 5 extensions"
-        },
-        {
-          "id": "https://niteshdandale.hashnode.dev/a-journey-from-mechanical-engineer-to-software-engineer",
-          "author": "Nitesh Dandale",
-          "description": "Hi all,\nThis is a Journey from an Average Mechanical Engineer to a Software Developer. This post is for those who want to switch their career from any engineering field to the software engineer/software developer field.\nI completed my Bachelor's Degr...",
-          "link": "https://niteshdandale.hashnode.dev/a-journey-from-mechanical-engineer-to-software-engineer",
-          "publishedOn": "2022-01-09T06:35:33.000Z",
-          "wordCount": 859,
-          "title": "A Journey from Mechanical Engineer to Software Engineer"
-        },
-        {
-          "id": "https://wadite.hashnode.dev/d13-stackoverflow-contribution",
-          "author": "Roee Kishon",
-          "description": "StackOverflow, Java, Data Structures\nStackOverflow contribution\nAnswered a question on a singly linked list implementation. The question was not very clear since the author is inexperienced. I actually edited my initial post 3 times as the author edi...",
-          "link": "https://wadite.hashnode.dev/d13-stackoverflow-contribution",
-          "publishedOn": "2022-01-08T23:00:55.000Z",
-          "wordCount": 134,
-          "title": "D13 - StackOverflow contribution"
-        },
-        {
-          "id": "https://wadite.hashnode.dev/d12-stackoverflow-contribution",
-          "author": "Roee Kishon",
-          "description": "StackOverflow, Software, Java, Algorithms, Recursion\nStackOverflow contribution\nAnswered a question on SOF. The author needed an algorithm to permutate some values within a class. It took a while since recursive solutions always need that extra think...",
-          "link": "https://wadite.hashnode.dev/d12-stackoverflow-contribution",
-          "publishedOn": "2022-01-08T14:54:33.000Z",
-          "wordCount": 121,
-          "title": "D12 - StackOverflow contribution"
-        },
-        {
-          "id": "https://riteshpanigrahi.hashnode.dev/java-oops-polymorphism-method-overriding",
-          "author": "Ritesh Panigrahi",
-          "description": "Welcome to the 7th article of this series, we will learn about method overriding and some rules while overriding and in the end, we will also see the comparison between overload and overriding.  \nWhen a subclass (child class) is created from its Pare...",
-          "link": "https://riteshpanigrahi.hashnode.dev/java-oops-polymorphism-method-overriding",
-          "publishedOn": "2022-01-07T03:35:08.000Z",
-          "wordCount": 971,
-          "title": "Java OOPS - Polymorphism - Part 3"
-        },
-        {
-          "id": "https://3sticksofram.hashnode.dev/turning-idiomatic-java-into-idiomatic-kotlin",
-          "author": "Rowan Marshall",
-          "description": "Converting Java to Kotlin can be a tricky thing. The languages aren't a million miles from each other, and the Java-to-Kotlin converter provided by JetBrains does an admirable job, but direct conversions like these often fail to account for idiomatic...",
-          "link": "https://3sticksofram.hashnode.dev/turning-idiomatic-java-into-idiomatic-kotlin",
-          "publishedOn": "2022-01-07T01:50:32.000Z",
-          "wordCount": 536,
-          "title": "Turning idiomatic Java, into idiomatic Kotlin"
-        },
-        {
-          "id": "https://bwgjoseph.com/how-to-configure-lombok-extension-to-play-well-with-vscode",
-          "author": "Joseph Gan",
-          "description": "Background\nI was trying to figure out how to use an immutable object using Lombok @Value and  @Jacksonized  to play well with Jackson in spring-boot using VSCode\nThis is the sample code\n@Value\n@Builder\n@Jacksonized\npublic class Flight {\n    private S...",
-          "link": "https://bwgjoseph.com/how-to-configure-lombok-extension-to-play-well-with-vscode",
-          "publishedOn": "2022-01-06T17:44:24.000Z",
-          "wordCount": 976,
-          "title": "How to configure Lombok extension to play well with VSCode"
-        },
-        {
-          "id": "https://hodeemmiller.com/blog/abstraction-encapsulation-and-inheritance-1",
-          "author": "Hodeem",
-          "description": "Hopefully, these explanations make the principles easier to understand. In this article, I'll tackle Abstraction, Encapsulation and Inheritance and illustrate them with examples written in Java.\nPolymorphism deserves an article for itself, so I'll pu...",
-          "link": "https://hodeemmiller.com/blog/abstraction-encapsulation-and-inheritance-1",
-          "publishedOn": "2022-01-06T13:33:16.000Z",
-          "wordCount": null,
-          "title": "Abstraction, Encapsulation & Inheritance"
-        },
-        {
-          "id": "https://hodeemmiller.com/blog/abstraction-encapsulation-and-inheritance-1",
-          "author": "Hodeem",
-          "description": "Hopefully, these explanations make the principles easier to understand. In this article, I'll tackle Abstraction, Encapsulation and Inheritance and illustrate them with examples written in Java.\nPolymorphism deserves an article for itself, so I'll pu...",
-          "link": "https://hodeemmiller.com/blog/abstraction-encapsulation-and-inheritance-1",
-          "publishedOn": "2022-01-06T13:32:38.000Z",
-          "wordCount": null,
-          "title": "Abstraction, Encapsulation & Inheritance"
         }
       ]
     },
@@ -9797,6 +9689,15 @@
       "feedUrl": "https://linux.cn/rss.xml",
       "siteUrl": "https://linux.cn/",
       "articles": [
+        {
+          "id": "https://linux.cn/article-14194-1.html?utm_source=rss&utm_medium=rss",
+          "author": "linux@linux.cn (linux)",
+          "description": "这些文章包含了黑科技、鲜为人知的事实，以及在使用 Git 时可以派上用场的技巧和窍门。\n\r\n\r\n\n\r\nGit 是代码协作开发工作流程中不可或缺的一部分。无论你是初学者还是专家，第一件事就是在使用开源代码时需要学习这个功能强大的版本控制系统。对于 Git，不需要知道所有事情，但是了解一些特殊的黑科技可以让你在 GitLab 等平台上更轻松地分享代码，因此你可以与不同地方的开发人员协作。如果有什么没把握的地方，git --help 可以帮助你。\n\r\n我每天都为了解 Git 所提供的控制能力而感到惊讶。没有哪种情况是你无法恢复到早期版本的，无论你所处的情况是多么不可能或棘手。\n\r\n在 2021 年我们发布了大量 Git 的文章；我只汇总了其中前 10 篇，这些文章包含了各种黑科技、鲜为人知的事实，以及在使用 Git 时可以派上用场的技巧和窍门。\n\r\n使用 git stash 命令的实用指南\n\r\nRamakrishna Pattnaik 解释了 git stash 命令 的功能。这篇文章重点介绍 git stash 如何帮助你列出、检查、保存和恢复更改，以确保切换分支时的无忧体验。它还可以帮助你跟踪在本地无需提交的更改，而同时保持干净的工作目录。\n\r\n5 个让你的 Git 技能更上一层楼的 Git 命令\n\r\nSeth Kenlon 详细介绍了 五个鲜为人知的 Git 命令，它们可以让你的生活更轻松。开发人员可以使用 git whatchanged、git stash、git worktree 和 git cherry-pick 等命令来节省时间。\n\r\nGit cherry-pick 简介\n\r\nRajeev Bera 教程将引导你了解 git cherry-pick 命令 是什么，为什么和如何使用它，并列出 git cherry-pick 可以帮助你避免棘手的情况所有用例。\n\r\n3 个使用 git cherry-pick 命令的原因\n\r\n我分享了 利用 git cherry-pick 如何帮助你避免冗余，一次性处理多个提交并恢复丢失的更改。\n\r\n使用 git worktree 自由地尝试你的代码\n\r\ngit stash 命令负责将更改保存到工作目录。Seth Kenlon 向我们介绍了 git worktree 和几个 git worktree 用例，它们可以帮助你将存储库恢复到已知状态。\n\r\nGit 上下文切换的 4 个技巧\n\r\nOlaf Alders 的这篇文章讨论了使用 Git 时 切换分支的四种不同方式 的利弊。这些选项将帮助你简化工作流程，并保持干净的工作目录，而不会丢失你的更改。\n\r\n查找 Git 提交中的更改\n\r\nSeth Kenlon 解释了如何利用如 git log 和 git whatchanged 等简单命令来提取有关 Git 提交内容中更改的特定信息。这是一个有用的快捷方式，而且名字很容易记住。\n\r\n管理主目录的 7 个 Git 技巧\n\r\nSeth Kenlon 分享了 使用 Git 管理和组织 $HOME 变量 的注意事项，并解释了它如何让他的跨设备生活更实用。更好的是，这让他可以自由地尝试新想法，因为他知道他可以轻松地将它们回滚。\n\r\nGitOps 与 DevOps：有什么区别？\n\r\nBryant Son 向你介绍了 GitOps，他将其描述为 DevOps 的进化版本，它使用 Git 作为单一事实来源。这篇文章还列出了其它有用资源，可用于学习 DevOps 并在开源领域找到工作。\n\r\n开始使用 Argo CD\n\r\nAyush Sharma 详细介绍了 Argo CD 的优势，这是一种基于拉取式的 GitOps 开发工具。Argo CD 通过在 Git 中管理 Kubernetes 清单并将它们同步到集群中，为你提供两全其美的体验。\n\r\n你能想到其他让你的生活更轻松的 Git 技巧吗？请在评论中告诉我们。\n\r\n\r\nvia: https://opensource.com/article/22/1/git-tutorials\n\r\n作者：Manaswini Das 选题：lujun9972 译者：stevenzdg988 校对：wxy\n\r\n本文由 LCTT 原创编译，Linux中国 荣誉推出",
+          "link": "https://linux.cn/article-14194-1.html?utm_source=rss&utm_medium=rss",
+          "publishedOn": "2022-01-19T09:13:50.000Z",
+          "wordCount": 201,
+          "title": "2021 总结：提升 Git 技能的 10 篇指南"
+        },
         {
           "id": "https://linux.cn/article-14193-1.html?utm_source=rss&utm_medium=rss",
           "author": "linux@linux.cn (linux)",
@@ -10117,17 +10018,7 @@
       "title": "RSS feed of yihong0618's gitblog",
       "feedUrl": "https://raw.githubusercontent.com/yihong0618/gitblog/master/feed.xml",
       "siteUrl": "https://github.com/yihong0618/gitblog",
-      "articles": [
-        {
-          "id": "https://github.com/yihong0618/gitblog/issues/229",
-          "author": null,
-          "description": "虽然很爱看大家的年终总结，但今年自己还是不写了吧，因为或多或少每天都在总结。\n翻看自己去年年初的 #202 (2021 的 3 个小目标) 发现很多都没完成，去年的目标不知不觉又变成了今年的目标，但我还是相信这一点，无论怎样，烂计划都是强于无计划的。\n前些时候看到了一篇文章，触动到谈不上，但真的从中获益了很多，这种获益体现在，此刻我在打这篇文章 -- 我的个人 OKR 实践 01, 是的，一直随心所欲的我今年也开始定 OKR 了，对于 OKR 我更多的是关注自身，希望自己不会因为年龄的增长变得油腻，变得世故，变成了曾经眼里的傻逼\n关于奖励\n完成这三个的 KR1 就奖励自己个 AirPods Pro 吧\n完成这三个的 KR2 就奖励自己个 HHKB 吧\n完成这三个的 KR3 就奖励自己个 XBOX 吧\nOKR1 学日语\n自己想学好日语太久了，也放弃太多次了，最多的一次学到初级下第 3 课，从小时候玩游戏，读村上春树开始就一直想学好，不用受汉化的束缚，回忆起来，大一时候第一次背 50 音图，10 多年过去了，还是没学成，不想说什么最好的时候就是 10 年前和今天 ，但真的想学学，嗯。现在水平是初级上，希望今年能多进步些，作为 OKR1 也代表自己的决心吧。\nKR1 每天背单词，总结语法，过三级，7月份考\nKR2 过三级后坚持每天学习，看 1-2 集动漫，额外学习 1 小时\nKR3 考 2级\nOKR2 身体\n虽然天天跑步，天天做俯卧撑，但自己也天天喝酒，搞的自己成了个健壮的胖子，体检报告也开始不理想，虽然一年也没生病，但看到好的身材快的速度还是羡慕，哎，又减肥了\nKR1 瘦到 140 并保持 --> 具体的跑步和饮食计划（评论）\nKR2 瘦到 125\nKR3 回到自己 ins 头像的身材，或者更好 ins --> https://www.instagram.com/yihonghaha/\nOKR3 编程\n不多解释，吃饭和兴趣\nKR1 学习 Rust, 自己项目保持更新，多贡献好玩的项目，写日语命令行的新项目\nKR2 学 database 学常见算法，学分布式\nKR3 500 lines 常见的完成",
-          "link": "https://github.com/yihong0618/gitblog/issues/229",
-          "publishedOn": "2022-01-07T06:54:02.000Z",
-          "wordCount": 562,
-          "title": "二零二二的三个小目标"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "小胡子哥的个人网站",
@@ -10219,17 +10110,7 @@
       "title": "Android Performance",
       "feedUrl": "https://www.androidperformance.com/atom.xml",
       "siteUrl": "/atom.xml",
-      "articles": [
-        {
-          "id": "https://androidperformance.com/2022/01/07/The-Performace-1-Performance-Tools/",
-          "author": null,
-          "description": "<p><img src=\"/images/The-Performace-1-Performance-Tools/cc4162d9-7c2b-43b1-b9a1-f14d5c8e8605.jpg\" alt=\"黑客与画家\"></p>\n<blockquote>\n<p>Paul Graham 在其著作 &lt;黑客与画家&gt; 中断言：“不同语言的执行效率差距正变得越来越大，所以性能分析器（profiler）将变得越来越重要。目前，性能分析并没有受到重视。许多人好像仍然相信，程序运行速度提升的关键在于开发出能够生成更快速代码的编译器。代码效率与机器性能的差距正在不断加大，我们将会越来越清楚地看到，应用软件运行速度提升的关键在于有一个好的性能分析器帮助指导程序开发。”<br>by Paul Graham 黑客与画家 </p>\n</blockquote>\n<p>谷歌搜索 「Android 优化工具」，你会找到很多与此相关的内容。他们的问题在于要么是内容高度重复、要么是直接讲使用方法，很少会给你介绍整体性的架构，一不小心就会让人会种「一个工具搞定一切」的错误认知。以笔者团队的多年经验来看，在性能分析领域这种银弹级别的工具是不存在的。工具在发展，老问题会以新的方式变样出现，不掌握核心逻辑的话始终会让你浮于技术的表面。 </p>\n<p>本文首先系统性的梳理性能分析中的可观测性技术，它涵盖数据类型、抓取方法以及分析方法等三部分内容，之后是介绍谷歌提供的「三大件」分析工具。目的是想让你了解不变的理论性的知识，以及与之对应的在安卓环境中可用的工具，这些可以让你少走一些弯路，直接复用前辈们的经验。 </p>\n<p>需要特别说明的是，对于性能优化肯定不止有这三个工具可用，但这个三个工具是我们平时用到的「第一手工具」。进行进一步分析之前，你都需要依赖这三个工具进行瓶颈定位，之后才应不同领域特性选择对应的工具进行下钻分析。 </p>",
-          "link": "https://androidperformance.com/2022/01/07/The-Performace-1-Performance-Tools/",
-          "publishedOn": "2022-01-06T16:42:03.000Z",
-          "wordCount": 1593,
-          "title": "Android 性能优化的术、道、器"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "Jason",
@@ -10241,7 +10122,17 @@
       "title": "王登科-DK博客",
       "feedUrl": "https://greatdk.com/feed",
       "siteUrl": "https://greatdk.com",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://greatdk.com/?p=1801",
+          "author": "DK",
+          "description": "从海南度假回来有 2 个月了，但我仍然时常想起在海口的最后一个夜晚，那个大爷真是给我留下了深刻的印象。\r\n\r\n在到海口之前，我已经在三亚和万宁待了挺长时间，对海滩，寄居蟹，椰子和清补凉已经不再像刚来时候那么热衷，而寒冷，干燥，昂贵又逼仄的北京，却非常奇怪的对我产生了越来越大的吸引力，总之，我是想回去了。\r\n\r\n最后一个晚上，是在海口，我找了机场附近的一个民宿，好在第二天天亮之后更方便的去机场，然后回到阔别已久的北京。\r\n\r\n民宿在一片别墅区里，即便是在别墅区里，这样的一座4层的小楼，也显得很有气派，装修的不算豪华，但很舒服。院子里则停着 4 辆奔驰 GLS。我在订这个民宿的时候，看到评论里说，这个民宿会免费用奔驰接送机，我倒不是图这个，主要是想，虽然有点不可思议，但能用奔驰接送机的民宿，其他方面按理不应该太差。\r\n\r\n我被安排到了 4 楼的房间，我简单收拾了一下，出门遛了个弯。\r\n\r\n遛弯结束后，我没立刻回房间，一楼有一个挺大的餐厅，我准备把中午没喝完的粥继续喝两口，进餐厅的时候我发现，已经坐了两个人，一个年纪大点，是个大爷，一个年纪小点，是个大叔，他们前面也摆了好些菜，不过这餐桌这么大，也不妨碍我，我坐到离他们稍远些的位置，然后开始喝粥。\r\n\r\n为什么不到房间里喝呢？因为刚入住的时候，前台就告诉我，为了保持整体清洁，老板禁止客人在房间里吃饭。\r\n\r\n喝了几口粥后，桌上的大爷跟我闲聊，问我从哪来，玩几天，什么时候走，我应付了两句之后，问他，你是这里的老板吧？大爷听到我的话一愣，然后哈哈大笑，说我不是，我是个打杂的，老板是旁边这个。\r\n\r\n旁边的大叔连连摆手，说大爷才是老板，自己只是打工的。\r\n\r\n聊了两句之后，大爷似乎有点兴致，邀请我一起喝酒，我注意到大爷已经开了一瓶红酒，但我不太好意思，就推辞了一下，大爷很热情，直接让大叔给我倒上了一杯端了过来，然后大叔有事就先走了。\r\n…",
+          "link": "https://greatdk.com/1801.html",
+          "publishedOn": "2022-01-19T10:01:38.000Z",
+          "wordCount": 217,
+          "title": "海南大爷"
+        }
+      ]
     },
     {
       "title": "bilibili 科学科普 最热视频",
@@ -10265,6 +10156,15 @@
           "publishedOn": "2022-01-17T19:58:14.000Z",
           "wordCount": 160,
           "title": "emoji里的冰淇淋，是便便做的吗?"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av210668280",
+          "author": "男科专家陈红医生",
+          "description": "血气方刚的小伙子都以为啪啪是享受，殊不知女伴欲望强烈顶不住是多么难受，更不知中老年夫妻，面对交公粮时的恐惧，这样做，让你不再害怕交公粮\n\n\nTags:男性健康,中医男科,两性健康,健康解密,涨姿势,健康科普,中医养生,早泄,阳痿,肾虚",
+          "link": "https://www.bilibili.com/video/av210668280",
+          "publishedOn": "2022-01-17T15:30:17.000Z",
+          "wordCount": 156,
+          "title": "女伴欲望强，频繁要求交公粮怎么办？"
         },
         {
           "id": "https://www.bilibili.com/video/av253155503",
@@ -11309,6 +11209,24 @@
           "title": "好像...不太聪明的亚子..."
         },
         {
+          "id": "https://www.bilibili.com/video/av338207843",
+          "author": "妙笔齐修",
+          "description": "-\n\n\nTags:知识分享官,打卡挑战,视频教程,手工,修复",
+          "link": "https://www.bilibili.com/video/av338207843",
+          "publishedOn": "2022-01-17T10:00:18.000Z",
+          "wordCount": 158,
+          "title": "#知识分享官#汽车真皮被烟烫洞，如何才能做到无痕修复"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av978135307",
+          "author": "爱搞电子产品的东西",
+          "description": "-\n\n\nTags:BILIBILI,哔哩哔哩,升级,B站,等级,野生技术协会",
+          "link": "https://www.bilibili.com/video/av978135307",
+          "publishedOn": "2022-01-17T08:22:07.000Z",
+          "wordCount": 170,
+          "title": "教大家B站如何快速升级lv6！"
+        },
+        {
           "id": "https://www.bilibili.com/video/av850719654",
           "author": "程欢欢的智能控制集",
           "description": "努力用通俗的道理，描述PID\n让更多的人学会PID，以及自动控制\n时长有点多了，望耐心\n能力有限，我...尽力了...\nQQ群：245234784\n源码百度云：https://pan.baidu.com/s/1eQcPJFjkjrKu4gpu_lu2jQ\n提取码：2022\n\n\nTags:知识分享官,野生技术协会,机器人,黑科技,技术宅,DIY,自动化,PID,算法,开源,平衡",
@@ -12126,78 +12044,6 @@
           "publishedOn": "2022-01-10T12:00:19.000Z",
           "wordCount": 81,
           "title": "这可不兴绿啊..."
-        },
-        {
-          "id": "https://www.bilibili.com/video/av508124622",
-          "author": "简纶廷_Eric",
-          "description": "来到了#点赞！达人秀#总决赛的舞台，这个魔术我筹备了三年，是我为高中老师设计的，感谢他在我心中留下了魔术的种子！希望更多人可以通过我的表演爱上魔术，相信这个世界上有魔法！ \n\n↓↓更多精彩请关注↓↓\n围脖：@简纶廷_Eric\nins：@ecsleight\nTB: Eric Chien魔术店\n\n\nTags:冬日娱乐嘉年华,综艺,娱乐,真人秀,明星,生活,现场,魔术,近景魔术",
-          "link": "https://www.bilibili.com/video/av508124622",
-          "publishedOn": "2022-01-09T21:19:42.000Z",
-          "wordCount": 169,
-          "title": "小树苗成长为参天大树，筹备三年的魔术终于大放光彩！"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av893026955",
-          "author": "nca做模型",
-          "description": "盘点那些被我打爆的3d模型\n\n\nTags:3D,视频教程,制作,经验分享,野生技术协会,自制,教程,DIY,原创,3d打印",
-          "link": "https://www.bilibili.com/video/av893026955",
-          "publishedOn": "2022-01-09T20:15:54.000Z",
-          "wordCount": 165,
-          "title": "盘点那些被我打爆的3d模型"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av635615263",
-          "author": "老大南",
-          "description": "上个视频翻车了，今天再来斥巨资，尝试一下制作七彩琉璃珠！#猎奇#科学实验#高能#手工#妈见打#熔炼#炼丹#七彩琉璃珠#翻车#搞笑\n\n\nTags:猎奇,科学实验,高能,手工,妈见打,熔炼,七彩琉璃珠,翻车,高温,搞笑",
-          "link": "https://www.bilibili.com/video/av635615263",
-          "publishedOn": "2022-01-09T18:14:50.000Z",
-          "wordCount": 154,
-          "title": "上个视频翻车了，今天再来斥巨资，尝试一下制作七彩琉璃珠！"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av550456487",
-          "author": "天天鉴宝",
-          "description": "Tags:野生技术协会,鉴定,博物馆,人文,学习",
-          "link": "https://www.bilibili.com/video/av550456487",
-          "publishedOn": "2022-01-09T18:00:14.000Z",
-          "wordCount": 160,
-          "title": "有啥疑难杂症还是得找牛道长..."
-        },
-        {
-          "id": "https://www.bilibili.com/video/av337991422",
-          "author": "复古锻造shurap",
-          "description": "本期视频用了陨石做大马士革刀，所以它见证了星星的诞生和死亡。\n这里是复古锻造shurap的官方频道，喜欢我的视频的话记得三连+关注哦，每周二四六定时更新。\n\n\nTags:跟着UP主创作吧（第二期）,我的隐藏技能,制作,野生技术协会,制作过程,大马士革,锻造,铁匠,打铁,手工,创作加成计划",
-          "link": "https://www.bilibili.com/video/av337991422",
-          "publishedOn": "2022-01-09T14:00:10.000Z",
-          "wordCount": 172,
-          "title": "用陨石做大马士革刀，星星诞生和死亡的见证者！"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av935583269",
-          "author": "一网一匠",
-          "description": "简单几步，教你苹果图书导入PDF格式的书籍，安卓查找图书资源，导入图书资源\n求点赞，求三连～\n求点赞，求三连～\n求点赞，求三连～\n求点赞，求三连～\n求点赞，求三连～\n求点赞，求三连～\n\n\nTags:知识分享官·新年特别篇,知识分享官,iphone,小说,电子书,安卓,野生技术协会,学习,图书,读书,数码,技巧",
-          "link": "https://www.bilibili.com/video/av935583269",
-          "publishedOn": "2022-01-09T12:05:14.000Z",
-          "wordCount": 168,
-          "title": "内含940w本电子书，实现图书自由，你们都应该知道！"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av252890223",
-          "author": "天天鉴宝",
-          "description": "Tags:野生技术协会,鉴定,博物馆,人文,学习",
-          "link": "https://www.bilibili.com/video/av252890223",
-          "publishedOn": "2022-01-09T12:00:15.000Z",
-          "wordCount": 160,
-          "title": "说不清道不明了..."
-        },
-        {
-          "id": "https://www.bilibili.com/video/av680402607",
-          "author": "战争挖掘者",
-          "description": "这是一位获得勋章的士兵，列宁格勒保卫战的勋章\n真希望上面可以写着数字，再写着，为了我们的祖国苏联\n\n\nTags:知识分享官·新年特别篇,知识分享官,野生技术协会,军事,二战,战争遗迹,历史,武器,苏联,军事历史",
-          "link": "https://www.bilibili.com/video/av680402607",
-          "publishedOn": "2022-01-09T09:20:10.000Z",
-          "wordCount": 66,
-          "title": "河里找到一位战士，他曾获得列宁格勒保卫战的勋章！"
         }
       ]
     },
@@ -12250,87 +12096,6 @@
           "publishedOn": "2022-01-11T05:23:34.000Z",
           "wordCount": 651,
           "title": "Cheat sheets"
-        },
-        {
-          "id": "https://dev.to/devdefinitive/30-javascript-libraries-to-use-in-your-projects-1gd3",
-          "author": "devdefinitive",
-          "description": "#webdev #javascript #programming #beginners",
-          "link": "https://dev.to/devdefinitive/30-javascript-libraries-to-use-in-your-projects-1gd3",
-          "publishedOn": "2022-01-09T15:11:28.000Z",
-          "wordCount": 2995,
-          "title": "30 JavaScript Libraries to use in your Projects"
-        },
-        {
-          "id": "https://dev.to/alexeagleson/how-to-connect-a-react-app-to-a-notion-database-51mc",
-          "author": "Alex Eagleson",
-          "description": "#javascript #react #webdev #node",
-          "link": "https://dev.to/alexeagleson/how-to-connect-a-react-app-to-a-notion-database-51mc",
-          "publishedOn": "2022-01-09T02:23:44.000Z",
-          "wordCount": 4248,
-          "title": "How to Connect a React App to a Notion Database"
-        },
-        {
-          "id": "https://dev.to/shaan_alam/how-i-built-my-second-brain-using-nextjs-56e7",
-          "author": "Shaan Alam",
-          "description": "#javascript #webdev #beginners #programming",
-          "link": "https://dev.to/shaan_alam/how-i-built-my-second-brain-using-nextjs-56e7",
-          "publishedOn": "2022-01-08T14:03:51.000Z",
-          "wordCount": 2860,
-          "title": "How I built my second brain using Next.JS"
-        },
-        {
-          "id": "https://dev.to/kunaal438/how-to-make-an-e-commerce-website-with-html-css-and-js-01-4m2h",
-          "author": "Modern Web",
-          "description": "#html #css #javascript #webdev",
-          "link": "https://dev.to/kunaal438/how-to-make-an-e-commerce-website-with-html-css-and-js-01-4m2h",
-          "publishedOn": "2022-01-08T13:39:32.000Z",
-          "wordCount": 2329,
-          "title": "How to make full stack e-commerce website using HTML, CSS and JS | Part 01"
-        },
-        {
-          "id": "https://dev.to/jeremiahjacinth13/memory-leaks-how-to-avoid-them-in-a-react-app-1g5e",
-          "author": "Lena Jeremiah",
-          "description": "#react #javascript #webdev #tutorial",
-          "link": "https://dev.to/jeremiahjacinth13/memory-leaks-how-to-avoid-them-in-a-react-app-1g5e",
-          "publishedOn": "2022-01-08T09:58:39.000Z",
-          "wordCount": 1975,
-          "title": "Memory Leaks, How to avoid them in a React App."
-        },
-        {
-          "id": "https://dev.to/codewithpom/dev-book-store-c6l",
-          "author": "Padmashree Jha",
-          "description": "#atlashackathon #nextjs #javascript #node",
-          "link": "https://dev.to/codewithpom/dev-book-store-c6l",
-          "publishedOn": "2022-01-07T15:11:43.000Z",
-          "wordCount": 1766,
-          "title": "DEV Book store"
-        },
-        {
-          "id": "https://dev.to/codesphere/how-to-start-using-typescript-3ki0",
-          "author": "Saji Wang, Codesphere Inc.",
-          "description": "#typescript #webdev #javascript #programming",
-          "link": "https://dev.to/codesphere/how-to-start-using-typescript-3ki0",
-          "publishedOn": "2022-01-07T13:03:52.000Z",
-          "wordCount": 2581,
-          "title": "How to Start Using Typescript"
-        },
-        {
-          "id": "https://dev.to/javinpaul/10-frameworks-software-developers-can-learn-in-2022-193o",
-          "author": "javinpaul",
-          "description": "#java #programming #development #react",
-          "link": "https://dev.to/javinpaul/10-frameworks-software-developers-can-learn-in-2022-193o",
-          "publishedOn": "2022-01-07T06:36:51.000Z",
-          "wordCount": 4198,
-          "title": "10 Frameworks Software Developers can learn in 2022"
-        },
-        {
-          "id": "https://dev.to/thatanjan/how-to-make-image-responsive-using-aspect-ratio-no-media-queries-are-needed-2oj2",
-          "author": "Anjan Shomooder",
-          "description": "#webdev #nextjs #react #css",
-          "link": "https://dev.to/thatanjan/how-to-make-image-responsive-using-aspect-ratio-no-media-queries-are-needed-2oj2",
-          "publishedOn": "2022-01-06T18:39:23.000Z",
-          "wordCount": 1553,
-          "title": "How to make Image responsive using Aspect ratio? No media queries are needed"
         }
       ]
     },
@@ -12542,132 +12307,6 @@
           "publishedOn": "2022-01-10T09:52:37.000Z",
           "wordCount": 159,
           "title": "「告别效率，回归工具」聊一聊我用过的几个笔记类软件"
-        },
-        {
-          "id": "https://sspai.com/post/70859",
-          "author": "任启超",
-          "description": "引子：这一次，咱们来聊聊摩托车\n首先，作为少数派 Matrix 社区的新人作者，在新的一年里，向大家问好。\n关注少数派很长时间了，有幸能看到这么多优秀的人和优秀的文章，也许是由于少数派是以科技和效率为主的网站，尽管在分享「生活方式」的文章中，有关「摩托」的话题也不是很多。（当然除了摩托罗拉），所以在这里我想和各位少数派的朋友分享一下「我为什么骑摩托车」。\n不得不说，确实是刘德华主演的电影《烈火战车》给我埋下了摩托车的种子，但是在家人眼中，摩托车常常与「危险、浮躁、不正经」等贬义词挂钩。好在我从没提过想骑摩托车，所以也免去了在购买前和家人辩论的过程。\n《烈火战车》剧照，图片来自豆瓣\n随着近几年短视频的兴起，机车文化得到了一定的传播和发展，并且得益于各地「禁摩令」不同程度地取消，摩托车也成为了越来越多人的出行和生活方式，如果你也有兴趣入坑机车，那本文会有我的一些建议可供参考，另外为了提升易读性，本文不涉及动力、扭矩等参数。推荐入坑前可以关注「哈罗摩托」、「骑士网」等相关网站获取更专业的信息。如果有问题也可以直接在评论或私信中向我提问。\n从复古车型到入手爱车\n尽管很多摩友入坑的多数目的是追求速度与激情，但是我一直认为速度附带的刺激程度和危险系数是同等的，刺激和危险并不能形成对冲关系，所以在选购方面，我第一时间排除了仿赛车型（偏速度），只留意复古车型。\n\nCafe Racer 风格：分离式车把、瘦长的油箱、后置脚蹬、驼峰后座，这是独属于每个咖啡骑士的标志，咖啡骑士文化也应运而生。\nCafe Racer 风格机车\nBobber 风格：车身中心集中紧凑并且底矮，造型给人前冲的感觉，整体有力量感，改装风格是「能简则简」，「不必要就拆掉」也是该风格诞生之初最大的特点。\nBobber 风格机车\nChopper 风格：八十年代在美国兴起，前叉加长，车身修长，涂装讲究奢华，整体视觉冲击力强，浮夸…",
-          "link": "https://sspai.com/post/70859",
-          "publishedOn": "2022-01-09T11:51:41.000Z",
-          "wordCount": 189,
-          "title": "有人说我们不配，但我们仍自称「骑士」"
-        },
-        {
-          "id": "https://sspai.com/post/70837",
-          "author": "夜游船",
-          "description": "过去的两年里，由于国内外的疫情，优秀的产品层出不穷。眼花缭乱的软件中，我们如何找到真正能帮到自己的软件呢？\n一口气随便写的软件表列\n发现\nProduct Hunt\nProduct Hunt 是一个供用户分享和发现产品的网站，有类似 Hacker News 或 Reddit 的留言系统。在一天中取得最高票的产品在当天的列表中排序最高，便于我们发现热门且高质量的最新产品。\n如果你想要快人一步发现最新的软件、工具的话，Product Hunt 是肯定不会让你失望。\n\n我们的时间是宝贵的，不必每天浏览网站，你可以订阅 Product Hunt Daily 来获取每周的最热门产品和产品精选集的资讯。\nGitHub Trending\nGitHub 想来大家都不陌生，其实有些好用的工具并没有官网，而是开源在 GitHub ，或者在 GitHub 上有不少 Star，我们就可以 GitHub 的 Explore 里面找到 Trending 面板。\n\nGithub Trending 显示了项目每日、每周和每月被用户加星的排名，如果你经常逛 Github，不妨找找有什么令人兴奋的开源工具吧！\nNoteApps.info\n如果你对新的笔记软件有兴趣，却不知道从哪里下手，可以去浏览一下 NoteApps.info 这个网站，它就像一个笔记应用的维基百科，把市面上热门的笔记软件和他们的功能全部囊括其中，进入软件的词条，它的功能、支持系统一目了然。\n\n更厉害的是，NoteApps.info 也统计了笔记软件支持插入的格式，例如是否可以插入文件、PDF、表格或者 Twitter，还统计了笔记的反馈渠道和社群等等。\n可以说这个网站囊括笔记软件的方方面面，刚开始选软件的朋友值得参考，选中了之后就可以仔细研究，短时间可以不用换了。\nNewsletter\n这里推荐一个我个人很喜欢的推荐产品的 Newslette…",
-          "link": "https://sspai.com/post/70837",
-          "publishedOn": "2022-01-09T11:49:52.000Z",
-          "wordCount": 159,
-          "title": "关注一个新产品，我们该关注什么？"
-        },
-        {
-          "id": "https://sspai.com/post/70807",
-          "author": "ViviGoodenough",
-          "description": "时间如飞般流逝，我们挥别2021，迎来了2022，又到了一年回首的时刻。回顾过去，记录文字，不仅能让我汲取力量，更好地应对现在与未来，它也是一种我试图与消逝的时间相抗衡的方式，想要留下一些更久远隽永的东西。\n回首2021，我所践行的生活信条用一个词形容，大概是「平衡」，这篇文章我将谈谈我的平衡生活方式理念、打造方法与各方面的收获感悟。文章较长，大家如果无法阅读完全文，可以大概扫一下各级标题和加粗文字，希望能够给你启发与共鸣。\n\n为什么选择平衡\n选择 平衡 or 极致，是一个价值观取向的问题，毕竟，life is all about trade-off，人生是一个取舍的过程。而就我个人而言，我不喜欢「all or nothing」的价值观，我更相信平衡才能走得更远。\n极度的专注于某事确实能让人获得“专注红利”，可能给我们带来更高的回报，但另一方面，它也可能导致“管窥”心态，产生“隧道视野”，我们的视野变窄，那些存在于“管子”视野之外的事物被抑制了，其他重要但不紧急的事就会被我们搁置，譬如专注于工作而忽视身体与家人，等出现意外状况才发现得不偿失，在我看来，这样的生活方式是不具备反脆弱性的，就像投资，all in 押注于某一个标的，可能暴富也可能承受毁灭性打击。\n我所理解的平衡生活\n那平衡就是生活各个方面平均分配时间精力吗？并不是这样。我所理解的平衡生活，不是平均分配，而是把人生的各个重要方面拉入我们的视野，构成我们的日常生活，分配的比重可以根据我们的偏好与状态决定。虽然分配比例不一，但每一项都有一个最低限度需要达到，实际上在一些事务上我们只要坚持投入小的时间精力就能有不错的改善（帕累托法则），可以避免出现过度倾斜与失衡。\n哪些是生活的重要方面？每个人的定义与分类都不同，以我自己为例。我在《一份个人复盘指南——成为更好的自己》中提到过一个生命之花模型，将生活分为了8个板块：\n身心…",
-          "link": "https://sspai.com/post/70807",
-          "publishedOn": "2022-01-09T05:25:21.000Z",
-          "wordCount": 102,
-          "title": "打造我的平衡生活体系"
-        },
-        {
-          "id": "https://sspai.com/post/70849",
-          "author": "非走不可TravelThink",
-          "description": "这个系列的文章，是笔者和朋友在30天自驾环游中国西线时候所发生的故事。希望你能从我们的故事中获得一些有用的信息。也希望这些旅途中的见闻和思考能带动各位观众和读者能够自己去探索自己旅途中的故事。\n本期我们主要讲述一下，解决完矛盾之后我们前往广西的所见所闻，本篇我们讲述的时间线是2021年1月15日-1月16日，承接上一个篇章，即我们在渡轮上发生矛盾之后的事情。由于我们也知道当天是没有办法在拍摄到日出了，所以我们就直接不去桂林了，而是直接前往了阳朔西街，在阳朔西街逗留了片刻，然后去相公山住宿，第二天拍摄一下相公山的山水景色。在本篇中，你将会获取一些我们在阳朔西街和相公山两个地方的一些信息，虽然会有些碎片化，但是还是正在阅读的你们能够获取到一些有用的信息，在未来能够应用到自己的旅行中去。\n本系列在B站上也做了视频，如果大家喜欢影音接收信息的话，可以移步到B站观看我们的视频栏目，如果你是偏好文字的读者，在这里你也可以获取我们的节目内容，这里也可以看成是对视频做的一种笔记。\n本篇在B站的视频地址是：https://www.bilibili.com/video/BV1vb4y1e7Ki/\n  \n \n本文采取核心内容+感性叙述的方式来展现，文章的前半部分主要分享核心的信息点给大家，文章的后半部分主要从我个人的视角来叙述内容和过程，感性部分比较多。大家可以根据自己的阅读偏好，来选择阅读到哪里。\n当日计划\n2021年1月15日，我们从徐闻港的渡轮下来之后，已经是当天的12点半，准备好出发已经将近一点钟。得益于上一期矛盾的解决，我和“不可”在那之后的行动方案非常统一。于是我们商量好，当天15号的任务是，放弃桂林的日落，直接去阳朔西街看看，毕竟已经来不及赶到桂林了。在完成阳朔西街的游历后，当天晚上直接去到相公山住下，第二天爬山，然后拍一些山水风景的画面。\n“不可”也表示同意，服从安排。于是我们当…",
-          "link": "https://sspai.com/post/70849",
-          "publishedOn": "2022-01-08T15:01:14.000Z",
-          "wordCount": 66,
-          "title": "【快闪环游07】30天环游半个中国—广西篇"
-        },
-        {
-          "id": "https://sspai.com/post/70847",
-          "author": "makoto",
-          "description": "阅读之选\n钱浩：《是什么让我们难以领略音乐的艺术》\n\n音乐是我们生活中不可或缺的事物，但是人们对于音乐的理解总是欠缺的。这种缺憾在于我们对音乐的认知与了解实在有限。对于音乐的各类术语——调性、节奏、曲式等，我们实在很难说出一二三来，这就使得我们在很多情况下无法辨别音乐的“好坏”。我记得Mr.Miss的杜凯在节目结束之后，曾说自己受到很大打击：自己认为最好的作品反向平平（《你怎么不上天呢》），但自己无奈加入专辑中的糊口作品却受到观众的喜爱（秋别）。而钱浩在书中给读者给出了一个问题的答案，就是我们如何学习欣赏音乐的作品，尤其是更为复杂的音乐作品。\n在我看来，作者最有价值的地方在于点出了我们欣赏范式的陈旧，以及我们对于旋律的执着。书中举的例子主要是古典乐。为何古典乐的门槛高？在某种程度上，它的艺术创作动机是非自然的，所以需要一定的练习才能欣赏。一如，我们需要学习才能理解人类的某个方向上的钻研与突破。作者在书中强烈推荐读者一定要学习“和声学”，而我也在这种“学习”的思路下，买了后浪出版的大部头——[美] 罗杰·凯密恩的《听音乐》。\n其实，在十多年前，当年的好朋友曾送给我一本《All of Music》（好像是这一本），但是我却一直未曾读过，惭愧惭愧。\n刘勃：《司马迁的记忆之野》《失败者的春秋》\n\n刘勃的历史文化随笔，非常接地气，同时又非常具有现代性。从阅读的友好度来说，刘勃的作品算是十分不错的科普读物。去年读了这个系列写作中的两本，阅读体验都非常好。在读库的作者群中，刘勃的作品总给人带来一些惊喜。作为一个历史作家，刘勃作品中的文学性是专业研究者在面向大众写作时需要学习的部分。一如在2021年过世的史景迁，以一种非虚构的文学性的创作手法，来展现自己的历史研究。\n有关历史的作品，总是会吸引我们读下去的。大家的“吃瓜”心理不仅会投射在现代人物上，也会投射在历史人物身上，从两千年前到现在，…",
-          "link": "https://sspai.com/post/70847",
-          "publishedOn": "2022-01-08T11:37:39.000Z",
-          "wordCount": 108,
-          "title": "2021 书影音年度之选"
-        },
-        {
-          "id": "https://sspai.com/post/70846",
-          "author": "Lilyann",
-          "description": "本文首发自北京大学社会化媒体研究中心，作者 Lilyann。\n从日本综艺的小窗口 wipe 演出，到各路吃播、热剧、综艺、舞台，甚至当你点进一个直播间，主播都有可能正在看别的主播直播，再附加自己的点评......这种双视窗画面的视频对当下的我们来说并不陌生。在此文中，我们将其称为反应类视频（Reaction video）。\n本文将反应类视频的生产与观众的互动当作一类互联网文化实验，试图分析上传者的诉求，以及在“Watching People Watching People Watching”链条背后的受众心态。\n一个关于蛋炒饭的 Reaction 视频，怎么就引发了全网议论？\n似乎很难想到，一碗蛋炒饭也能够成为学术研究的对象。在刚刚过去的11月，武汉大学媒体发展研究中心推送了国内跨文化传播学者的一篇研究论文，在其中，对炒饭教程的 reaction 视频被比喻成为“参与式狂欢”的样本，助推了一起典型跨文化事件在舆论场上的发酵与热议。\n一顿香喷喷的蛋炒饭，怎么就激发了东西文化差异的争论？先让我们将时钟拨回两年前，缕情事情的来由。\n故事最初发生在2019年4月，当时 BBC Food 频道在 Facebook 上发布了一条4分钟的炒饭视频。视频中，印度美食博主 Hersha Patel 展示着从煮饭到滤水，再到炒饭出锅的全过程，起初并没有受到太多讨论。\n而在一年多之后，一名马来西亚华裔喜剧演员 Nigel Ng 在自己的 Youtube 上发布了一则 Reaction 视频，直指原视频里的做法“不正宗”，完全是“老外蛋炒饭”。在视频里，他坐在桌子前，与电脑中的视频画面同步做出各种或惊讶或“槽多无口”的表情。\n例如，在最初加水的环节，观众就能感受到博主小哥的“暴躁”：他一边紧盯着自己的手指，一边说“为什么用英国茶杯量水？要用手指量啊！”\n\n当看到美食博主用滤网沥米饭的时候，Ng 的…",
-          "link": "https://sspai.com/post/70846",
-          "publishedOn": "2022-01-08T10:50:14.000Z",
-          "wordCount": 215,
-          "title": "万物皆可 Reaction？我们为什么越来越喜欢看别人看视频了？"
-        },
-        {
-          "id": "https://sspai.com/post/70805",
-          "author": "花生酱先生",
-          "description": "写在前面\n大家好，我是喜欢“用产品思维解构生活”的，花生酱。你也可以叫我Jeff。\n2022年的我，是一枚7岁的产品经理，也是一个公众号的主理人，同时还是一名效率产品领域的作家。我曾对信息获取、方法论总结如痴如狂，却从未对“获得信息”感到满足。\n截止到去年，我已经读了产品领域90%的书籍，订阅了500+公众号及付费阅读产品，并且还在持续每周花50小时在电子设备上摄取内容。但我仍然觉得空虚，焦虑，以及，不满足。\n海量的信息在我脑海飘过，我害怕错失任何一点点“有用”的部分，试图抓住全部，却几乎遗忘了全部。\n但最近半年，我好多了。\n我重新审视了自己的工具、方法，以及自己对信息的期待、和信息的关系，进而找到了一些蛛丝马迹，并进一步对自己的“效率生活”进行了重构，终于和“信息处理”步入了近乎“握手言和”的阶段。\n所以，这篇文章，想讲讲这一路的心得，供君参考。\n从“刚下飞机”聊起\n不记得什么时候开始，“刚下飞机”，已经成为了一个经典的时间点。\n这种叙事来自于：“万物互联”和“移动化”这两件事，已经把我们的生活搬到了飞速向前的生产线滑轨上。而“飞机上”这个断网的环境，或许是现阶段共识的、唯一可以打破这种互联的场景。所以“刚下飞机”这样的表述，多多少少表现出，我们对“飞速向前和海量信息”的应对方式（至少我），是略显被动和僵硬的。\n信息太多，没有办法专心。概念太多，没有办法熟悉。更多的情况下，我们被“无限降低的注意力门槛”拖着走，看着最热内容里面一个个光鲜的“头部案例”，感觉自己知晓了一切，而自己的生活却仍是马太效应中的长尾典型。\n信息从脑海中穿堂而过，不留丝毫停歇。而人本身，更像是一个站在白雾茫茫中，吹着四面八方来风的旗子，四处飘扬，等于没在飘扬。\n本能的反应是，我们要追逐效率。只要处理得够快，信息就追不上我们。\n我们试图用工具和方法论，让自己快速清理掉这些信息。比如试图用“5秒的短视频”…",
-          "link": "https://sspai.com/post/70805",
-          "publishedOn": "2022-01-08T10:15:29.000Z",
-          "wordCount": 80,
-          "title": "放弃工具和方法后，我收获了效率生活 | 2021 年度征文"
-        },
-        {
-          "id": "https://sspai.com/post/70841",
-          "author": "Struggle心安",
-          "description": "自从 Struggle with Me 开始关注记笔记这个话题， 我们经常收到朋友们关于如何记笔记的问题。粗略概括一下，这些问题大概分为三类：\n\n我也试过记笔记，但是对我没什么帮助。记笔记到底有什么用呢？\n我发现记笔记对我是有帮助的，但是很麻烦，效果也没有大家说得那么神奇。记笔记到底怎样才能简单又高效呢？\n我看了不少人的笔记经验介绍都觉得特别好，但自己一用就觉得不顺手。怎样打造一套适合自己的简单又高效的笔记系统呢？\n\n这篇文章就结合我们这几年记笔记的心得，简要地回答这几个问题。希望能帮到对记笔记有疑惑的朋友。\n一、记笔记有什么用？\n没用的笔记各有各的没用，有用的笔记只需做到两件事：收集和整理。收集帮助我们清空大脑，专注当下；整理帮助我们连接笔记，加速知识的积累和碰撞。\n收集\n收集，就是把我们所有的想法都捡起来放在一起。\n我周边很多朋友都对收集自己的想法嗤之以鼻。大学的时候有一位朋友会在酒席饭桌上随时掏出笔记本来写两句。周围的人都笑他：你是天才嘛？有什么灵感必须这会儿记下来？这是好多人都有的思维误区。大家以为只有天才需要随时随地记笔记；因为只有天才才有灵感，而只有灵感才值得记录。其实，值得记下来的不仅仅是灵感。最需要记笔记的或许不是天才，而是我们这些普通人。\n我们可以试着先问一下自己，忙碌的间隙，我们都想了些什么呢？好多人会说：「我在想今天吃什么。」没错，大脑就是天生的规划狂魔，无时不刻不在设想下一步该做什么。所以我们很多有意无意的想法都跟未来有关，包括但不限于计划、提醒、担心和问题。而所谓的灵感，通常只占其中很小的一部分。反倒是那些琐碎的计划、提醒、担心、问题等等占据了我们的大脑。只有把这些琐碎的念头都记下来，我们的大脑才能轻装上阵。\n举两个啰嗦的例子做对比，方便大家明白。\n例子一，没有收集想法的工作日上午。\n早晨六点半，我醒来，开始查微信消息。国内已经是中午了，我看到 S…",
-          "link": "https://sspai.com/post/70841",
-          "publishedOn": "2022-01-08T09:47:31.000Z",
-          "wordCount": 176,
-          "title": "两步打造适合自己的笔记系统，简单又高效"
-        },
-        {
-          "id": "https://sspai.com/post/70830",
-          "author": "Z0PH3A",
-          "description": "最初的标题是「试论学习效率」，但仔细一想又觉得技巧与工具大同小异，讲与效率相关的拖延症也是老生常谈。因此在这里试图抛砖引玉，探讨这个至今我难以解答的问题：为什么我们会对有关「提高效率」，「提升自我」这一课题无法自拔。\n为什么关注效率？\n首先，为什么要关心效率？自我反省下来，原因不多：\n\n人一生的时间是有限的。\n每个人的一天都是24个小时\n为了在更短的时间内，比别人学得更多，然后获得某种意义上的胜利。\n\n最后一点的无奈之处在于，只有「更多」才能在他人面前表现出来。因为即便是浅层的理解，通常在面试和聊天环境下也不会过于深入的讨论。\n但是我们都清楚， 质量更为重要。\n高效率 = 完成更多；高效率 ≠ 高质量？\n在这集 How to Structure Your Writing Day with Francesco Cirillo @ Become a Writer Today 播客里，主持人邀请了番茄钟的创始人来分享他对时间管理的看法：「我们应该把时间看作朋友而不是敌人，否则就失去了对自我的掌控。」\n在博客里，他分享了番茄钟常见的错误使用：\n\n设置超长番茄钟：把一个番茄钟的时常限制在40分钟以内的原因是为了能让今天的第一个番茄钟和最后一个番茄钟能进行同等质量的工作。\n忽视短休息的重要性：人们通常跳过短休息，亦或者在休息期间没有放空大脑（依旧想着手头上的事）。\n\n产生这两个错误的原因归根结底其实就是害怕会打断心流，害怕我们要因为重新酝酿（或等待）「动力」而浪费时间，但是往往这么做反而让自身在工作面前失去了掌控力。因为当你开始害怕被打断时，时间就成为了你的敌人，而你要让时间成为你的盟友。\n在 Paul Graham 的 博客 How to Work Hard 里提到，努力最重要的是质量，时间（effort）和天赋（talent）占比不大。这与卡尔·纽波特的《深度工作》核心观点一致，其…",
-          "link": "https://sspai.com/post/70830",
-          "publishedOn": "2022-01-08T07:44:53.000Z",
-          "wordCount": 201,
-          "title": "重估效率"
-        },
-        {
-          "id": "https://sspai.com/post/70831",
-          "author": "蔚伊斯",
-          "description": "引子\n在文章的开始，若要简单讲述我要叙说的「在地感」关于什么，是不需耗费多少笔墨的：它的核心即为强调人与特定生活场景的联系，以达到「在此地，做某事，生何情」的状态。我们或许听说过「不要在卧室做别的事情，有助于快速入睡」的生活实用贴士，也听说过 「 自由职业的危险主要来自于床和桌子离得太近  」 的段子，常常涉及的「工作和生活分区」就是我要讲述的「在地感」的其中一个部分。\n在将近两年有意无意的尝试中，我已经基本建立了自己的一套系统和模式。在我的观念中，「在地感（A Sense of Place）」的营造不仅仅局限于地理空间与空间设置，而有意识地使用设备、注重设备使用方法和频繁自我沟通同样是可行的好办法。\n本文将探讨我对于将「在地感」引入个人生活尤其数字生活的缘起和经历。注意：该名称并非本意即指这样的生活管理方法论，而类似于“工作生活分区”这样的思想也早就存在，我试图做到的是用该术语代指更为概括化的此类方法论，从而让其适用更为广泛，形成一个类似于「数字极简」、「低碳生活」等有明确所指的简洁词汇，便于分享与实行。\n写作本篇文章时，正处于西安封城期间，在公寓里有限的空间里我通过这种意识，还算没有失去正常生活的节奏：这种节奏感无论于心理健康还是生活趣味都极为关键。我将会在简单阐述这种意识后，说一说我是如何实际操作并且从中受益的。\n\n \n那么究竟什么是「在地感」？\n「Sense of Place」在维基百科中文词条显示为「 场所感 」。它在各个学科、不同领域均有相似内核而具备不同细节的内涵，而我最初接触该术语起源于文化遗产管理领域。在文化遗产管理中，人们会对于文化遗产的所在地具备情感、故事、私人联系，以及围绕着场景产生的故事；而在 2012 年，有 学者 提出，在环境心理学中人们通常对于地点具备依恋感（attachment），并且使地点具备其意义。\n在我眼中，人与社会具备相对健康的联系…",
-          "link": "https://sspai.com/post/70831",
-          "publishedOn": "2022-01-07T15:43:58.000Z",
-          "wordCount": 110,
-          "title": "在容膝之地寻找「在地感」：多设备与多环境中寻找与实际地点的联系"
-        },
-        {
-          "id": "https://sspai.com/post/70802",
-          "author": "Wonz",
-          "description": "写在前面\n老实说这篇年终总结一开始写得并不顺利，一直没有什么好的思路。\n简单回忆了一下 2021 年经历的几件大事：跳槽、离职旅行、搬家、爷爷去世。现在心境相比 2021 年初已经有了很大的改变，可能这就是所谓的「成长」吧。\n这次打算用「重新认识自己」——「继续热爱生活」——「做自己」——「变优秀」——「学会和自己和解」来组成这篇年终总结。\n重新认识自己\n工作\n在 2021 年的 6 月我结束了毕业后的第一份工作，选择从国企离职，进入了一家互联网公司。国企与互联网带给我的工作体验是完全不一样的，详情写在了这里：从国企到互联网，一个初入职场将近一年半工作经验程序员的「得」与「失」。\n但在新公司待了快半年，意识到其实自己也不喜欢现在的这份工作。因为带自己的 mentor 被裁，导致自己平时工作遇到难点几乎找不到同事寻求帮助，一而再地受到打击，得不到工作上的成就感，渐渐地自己开始厌倦现在这份工作以及这个职业。其实自己也知道，又有多少人真正喜欢工作呢，打工还不是为了混口饭吃。但是我觉得自己还年轻，还想多尝试尝试。\n想起来之前和一位朋友讨论过职业规划的问题，我觉得大部分人没有一定阅历是规划不出什么的，因为不知道自己真正喜欢的是什么，但是不规划怎么又能有丰富的阅历做支撑呢。我觉得这是一个悖论，唯一的解决方法是有一个你信得过且对你很了解的前辈告诉你应该选什么方向做什么类型的工作，但是这样就不是自己的人生了。\n比如我之前在国企，做的是 ToG 相关的工作，经历过后发现一点也不喜欢条条框框的限制。现在在一家互联网公司做内部系统开发，氛围很自由，只是当前的工作内容并不太喜欢。\n但依然没有想好自己真正想做什么，可能还是不敢勇敢迈出那一步吧。还需要多找些行业前辈进行交流与请教，过来人的经验真的很有用。最近和一位做产品的朋友交流，意识到各行各业都没有外人看上去那么光鲜亮丽，不要抱有太高的期望，结果往…",
-          "link": "https://sspai.com/post/70802",
-          "publishedOn": "2022-01-06T15:20:19.000Z",
-          "wordCount": 246,
-          "title": "Wonz 的 2021 年终总结"
-        },
-        {
-          "id": "https://sspai.com/post/70791",
-          "author": "ROB1N",
-          "description": "在使用飞书以前，我是如何网络授课的\n2020年一月，一场疫情将人类社会冻结。工作冻结、生活冻结。人们被关在家里没法出门，也不能参与到工作当中。也正是因为这样，催生出了「远程办公」这样的模式，让一直不被大家重视的「协同办公」走到了历史的舞台最前方，展现出了不一样的魅力。\n传统的协同办公，自然要提到 Google Workspace 这个远程协同办公的老大哥。在日本的公司里，经常需要讨论教案或者上课的一些新方法，有些时候需要整理成文档。公司有订阅 Workspace ，所以我们都在其上面讨论或者通过文档来交流对于教案的看法。\n同样因为疫情受到影响的，还有我们上课的流程。以往都是线下面授课，疫情期间全部改为用 Zoom 给学生上网课，这个时候就涉及到了板书问题。线下可以写在白板上，线上怎么办呢？在使用飞书以前，我的解决办法是用 iPad 加入会议，然后再用 iPad 来共享屏幕进行板书。这样确实很方便，却也存在一个不可调和的问题——画面同步差到极致。往往一个流畅的书写过程被卡顿的屏幕共享硬生生切成了三个分解动作；往后流畅地翻页被其分解成了 PPT 没有过度特效的翻页。\n总之，一切的一切，都迫使我停止使用 iPad 来作为板书工具，并且急需一个替代品。这个代替品既能起到「板书」的作用，同时还能兼顾 PDF 阅读器的职能。最好还能在 PDF 文件上做标记。\n开始尝试使用飞书\n需求有了，接下来就是对比市面上的产品了。学生年龄在初中阶段，用 Coda 或者 Worspace 不太合适，他们可能并没有太多精力去研究这两个东西到底怎么用；用 Notion 的话导入 PDF 又非常不便； iPad 更是不再考虑，它最多只能作为一个辅助性的工具。\n找到飞书是个巧合，完全是在研究工作流的时候碰到了飞书，并且被这个远程办公的模式启发，觉得可以用在我的课堂上。说干就干，于是我从本地将我目前保留的教案全…",
-          "link": "https://sspai.com/post/70791",
-          "publishedOn": "2022-01-06T03:00:08.000Z",
-          "wordCount": 155,
-          "title": "除了用飞书进行远程办公，还能用它做什么"
-        },
-        {
-          "id": "https://sspai.com/post/70778",
-          "author": "bakamio",
-          "description": "前言\n我之前在 Newsletter 里分享了用 Craft X Snippets 记录晨间日记的方法，评论区收到一个关于 Daily Notes 如何归档整理的小问题，回复中也思考了一番 Craft 这个应用本身。作为我在过去的一年中最喜爱、又带给我很大帮助的应用，想在新年伊始为它当一回「传教者」，在此展开讲讲，它有哪些特别之处，我为何喜欢它，以及一些使用上的研究和小技巧；当然，也会有它的不足。\n\nCraft 是去年 Apple 评选的 Mac App of the Year，也获得了 Apple Design Award「交互」赛道提名，足以说明它一定有值得称道之处。少数派在 App Store Awards 2021 这篇文章中说它是：\n\n虽然上线仅一年，Craft 的功能和体验却完全不输许多老牌笔记工具。在过去的一年多时间里，Craft 以非常高的迭代速度陆续带来了网页版本、实时协作、Daily Notes 等特性，几乎每个月都会推出新的重要功能。此次获得奖项，可谓实至名归。\n\n是的，Craft 在 2020 年 11 月正式上线，到今天也就差不多一年的工夫。团队的精心打磨，使得它一上线就有着非常高的完成度。而过去一年中又陆续发布了 21 个大更新和 26 个小更新，也就是说，几乎每 2-2.5 周就会有一个大更新。我是从 iOS App Store 推荐知道它的，抱着试一试的态度，拿到手就被教学关近乎完美的动效吸引。在花了一点点时间探索，并看了帮助文档后，知道了很多令人心动的小细节，不免对这个应用心生好感，随即陆续把自己的笔记都搬了过来。\n在使用 Craft 的一年里，时不时收到官方发来的「我们又更新了」的邮件，带来许多令人欣喜的 feature（很多时候刚好在想「要是有 xx 功能就好了」，结果真的更新了），并且他们的 更新说明 写得非常漂亮，读起来是一种享受，…",
-          "link": "https://sspai.com/post/70778",
-          "publishedOn": "2022-01-05T06:52:35.000Z",
-          "wordCount": 901,
-          "title": "展开讲讲 Craft｜我的 2021 年度应用"
-        },
-        {
-          "id": "https://sspai.com/post/70771",
-          "author": "鑫仔啊",
-          "description": "跨保读研半年，周围人对我的评价多围绕：理智有计划，做事有条理。但深入追踪我的决策与执行会发现，相比于一个模糊的目标，一个清晰地有符合科学依据的计划更不容易被我执行。\n换句话说，我有能力制定一个完美的计划，但产生之后，我不愿意去执行它。\n这就很难搞。\n然后我发现我会倾向于先有一个清晰的终点目标，然后将实现路径模糊化，保持大方向是对的，剩下就随机碰撞，这样的计划很不完美，很不符合SMART原则和OKP法则，但对我很有效。\n同时又产生了另一个问题，实现路径的模糊化很容易带来得过且过、自欺欺人和自我感动，于是又想出了另一个办法，在执行时忠实地记录。\n所以记录下这个红黑榜，更多的是面对真实的我，没有自负，也不自我贬低。\n完美的对立面不是不完美，而是真实。\n  红榜  \n\n\n\n01\n\n看了一些书，并且开始有深度\n\n\n也犯过急于求成的毛病啊，想标榜自己一年看完很多很多书，再不济也可以做到一周一本。\n但我很快发现这样看书很容易让数量掩盖另一些可能性：比如深度，比如多线并开式读书（我看书看累了会换一本书看，但想到一周的时间不够了就会犹豫）。\n后来在B站上看【哈佛john】的视频时发现一周一本书还会让自己在选择书籍时倾向于选择一周能读完的书，觉得分析得很透彻，然后就放弃掉追求数量的想法。\n还会在自己看书特别快的时候敲一下自己的脑壳，慢下来，贪多嚼不烂。\n这样下来我实际看完的书反而比原定计划要多，有些一气呵成的小说（比如《卡拉马佐夫兄弟》）读起来也一气呵成，有些可以碎片化阅读的文字（比如《戴老师的魔性诗词课》）也没花什么专门的功夫就读完了。或许这就是无痛阅读？\n\n\n\n  \n红榜  \n\n\n\n02\n\n不动笔墨不读书\n\n\n \n这是很早以前就从书中汲取到的知识，今年终于逐渐形成了习惯。\n一方面是因为希望通过记录想法让读书的节奏慢下来，另一方面是隔一段时间再看由某本书引发的思考，觉得“哇，这么厉害的话居然…",
-          "link": "https://sspai.com/post/70771",
-          "publishedOn": "2022-01-05T03:03:16.000Z",
-          "wordCount": 129,
-          "title": "研论 | 2021年度决策与执行红黑榜"
         }
       ]
     },
@@ -12676,6 +12315,312 @@
       "feedUrl": "https://rsshub.app/v2ex/topics/latest",
       "siteUrl": "https://www.v2ex.com/",
       "articles": [
+        {
+          "id": "829279",
+          "author": "jklzhu",
+          "description": "jklzhu: \n想知道哪里可以打第三针送东西的，最好离虹桥近一些",
+          "link": "https://www.v2ex.com/t/829279",
+          "publishedOn": "2022-01-19T09:18:58.000Z",
+          "wordCount": 89,
+          "title": "在线问上海哪里可以打第三针(可以送奖品)"
+        },
+        {
+          "id": "829278",
+          "author": "KarlChen2015",
+          "description": "KarlChen2015: \n2021 年，对于互联网公司，是过去十年最差的一年，却是未来十年最好的一年。\n话不多说，请看以下：\n联想，滴滴\n新东方，好未来，高途\n阿里，美团，蚂蚁金服\n苏宁",
+          "link": "https://www.v2ex.com/t/829278",
+          "publishedOn": "2022-01-19T09:18:24.000Z",
+          "wordCount": null,
+          "title": "2021 年，对于互联网公司，是过去十年最差的一年，却是未来十年最好的一年。"
+        },
+        {
+          "id": "829277",
+          "author": "lijianxxxpz12138",
+          "description": "lijianxxxpz12138: \n任职要求\n. 本科及以上学历，计算机相关专业 （前端 react 方向 ｜ 后端 Java ｜ NFV 、OVS 、存储，虚拟化网络）\n. 扎实的编程基础 良好的代码风格、面向对象的设计思路。对常用的数据算法、数据结构有一定的见解\n. 对项目负责、有高效的沟通能力和团队的协作精神\n. P5 、P6 、P7 都可以\n公司介绍\n. 工作时间弹性不打卡  双休 、包早晚饭、加班不多、全额的公积金和社保。 团队非常 nice\n. 研发团队在杭州\n有需要或者要换环境的小伙伴看过来, 非常欢迎大家的加入\n联系方式： jian.li@zenlayer.com or 18334946806@163.com （简历发邮箱时请说明 V2EX ）",
+          "link": "https://www.v2ex.com/t/829277",
+          "publishedOn": "2022-01-19T09:17:08.000Z",
+          "wordCount": 193,
+          "title": "前端、后端、运维、测试、大数据的同学大家看过来了， zenlayer 研发团队扩招了，可以年后入职"
+        },
+        {
+          "id": "829274",
+          "author": "zoomcmj",
+          "description": "zoomcmj: \n换了个新工作，干安卓，之前一直 vue 和 iOS 。\n安卓自己看了些，包括\n各种 ui 、布局、recyclerview 、webview 、各种 adapter 、viewmodel 、rxjava 、databinding 、viewbinding 、glide 、retrofit 、oktttp\n还有啥要看的，才不会被开？？",
+          "link": "https://www.v2ex.com/t/829274",
+          "publishedOn": "2022-01-19T08:58:23.000Z",
+          "wordCount": 126,
+          "title": "IOS/Vue 开发者转战 Android 了，如何才能不被开除，求指教！"
+        },
+        {
+          "id": "829272",
+          "author": "Showfom",
+          "description": "Showfom: \nSM.MS 图床与2015 年成立，在本站拥有庞大的用户群体，为了避免滥用和降低运营成本，我们决定关闭游客上传，免费用户仍可使用我们的服务\n免费用户和收费会员的区别\nhttps://sm.ms/pricing\n免费用户图片链接，可使用 img 标签外链，否则会跳转图片页面\nhttps://s2.loli.net/2022/01/19/ATuIaMf1BcjUXby.jpg\n免费用户图片页面，带广告\nhttps://sm.ms/image/ATuIaMf1BcjUXby\n付费用户图片链接，可直接外链\nhttps://vip2.loli.io/2022/01/19/d4kJTcxR5hUsHea.jpg\n付费用户图片页面，无广告\nhttps://sm.ms/image/d4kJTcxR5hUsHea\n终身会员仅需 29 美元，使用优惠码 VMP6OUXH24 购买即可享受 VIP 服务，购买链接\nhttps://sa.net/r/12\n优惠活动仅限前 100 个订单，用完即止",
+          "link": "https://www.v2ex.com/t/829272",
+          "publishedOn": "2022-01-19T08:48:46.000Z",
+          "wordCount": 168,
+          "title": "SM.MS 图床新年优惠，终身会员仅需 29 美元！"
+        },
+        {
+          "id": "829271",
+          "author": "2696284032",
+          "description": "2696284032:",
+          "link": "https://www.v2ex.com/t/829271",
+          "publishedOn": "2022-01-19T08:42:31.000Z",
+          "wordCount": 86,
+          "title": "学大数据现在还有搞头吗？"
+        },
+        {
+          "id": "829269",
+          "author": "Roykira",
+          "description": "Roykira: 过去一个朋友在借款的时候，写了我的电话号码作为紧急联系人。但是最近他可能没有按时还款，这个借贷公司天天打电话来询问我是否能联系上这个人。\n一开始我还会接听一下电话，现在已经麻木了。而且除了电话，还有各种威胁性质的短信。比如调取了他本人的手机通讯录要联系这些人;一会又是什么要通知街道居委会。前几天，我通过一个中间朋友传话给这个旧友，他的原话是说这个催债电话和短信都是诈骗性质的，说让我无视就好了。我本以为他是好面子，找了个借口自己偷偷去还上了钱。但是没想到这几天电话短信还是在发来，而且有板有眼。还有什么律师告涵什么的。\n1 、有没有什么可以屏蔽这些骚扰电话的办法啊？\n2 、这个事情能不能有什么投诉的渠道？\n3 、这真的是诈骗电话？如果是诈骗电话，对方没有直接表示让我去代替这个朋友还款。\n对方这几天打电话来，我选择性接听一下，然后都是直接告诉对方，你们要去拉横幅就去拉好了，不要再来骚扰我了。",
+          "link": "https://www.v2ex.com/t/829269",
+          "publishedOn": "2022-01-19T08:36:03.000Z",
+          "wordCount": 220,
+          "title": "过去的朋友借款写了我作为紧急联系人，最近我开始被骚扰了。"
+        },
+        {
+          "id": "829267",
+          "author": "hertzry",
+          "description": "hertzry:",
+          "link": "https://www.v2ex.com/t/829267",
+          "publishedOn": "2022-01-19T08:30:49.000Z",
+          "wordCount": 180,
+          "title": "有没有强制新标签打开链接并自动跳转的浏览器插件或者脚本省的同时按 Ctrl+Shift"
+        },
+        {
+          "id": "829266",
+          "author": "rss3",
+          "description": "rss3: 如果有天堂，那一定是图书馆的模样。那里信息自由地流通，书籍自由地出版，人与人自由地讨论。\n人类生产，传播和分发信息的权利不应该被掌握在任何数据和互联网平台手中，这是属于数字人类的基本权利。\n我们都意识到现在互联网还与这种理想相差甚远，如果你愿意为它做出亿点点改变，一起来吧 🌍\n我们是谁？\n我们是 Natural Selection Labs 自然选择实验室，致力于打造一个信息自由流通的互联网。\n我们**所有作品都会开源**在 GitHub：[https://github.com/NaturalSelectionLabs]\n我们致力于信息自由所以当然也会帮助成员自身获得最大的自由度：\n我们是个分布式组织，支持所有成员永久**远程工作**，成员分布在中国、日本、新西兰、英国、美国、加拿大等地，我们鼓励成员自由流通，不管在哪，我们都会尽力提供包括但不限于签证绿卡移民协助和可以在当地自由舒适生活的待遇。我们提倡**弹性工作时间**，喜欢白天睡觉晚上工作或者白天玩耍晚上工作的机械人也完全没问题。\n我们的团队**平等开放和自由**，这是我们共同创造的文化，我们为此感到骄傲。在这个特殊组织中，我们有神秘的三好学生📖和全能的超级人类联盟，超能控场的巴拉巴拉小魔仙，麻瓜看不见的组和气泡飞舞的曲率引擎工程协会。\n我们明白我们选择的道路将会困难重重，但我们有信心齐心协力解决沿途遇到的问题，致力于让世界变得更好。我们拥有着最高效率但也尊重彼此的建议，不会甩锅也拒绝内耗。\n我们刚结束了由 CoinShares 和 Coinbase 等资本联合领投的新一轮融资，这是我们实现理想的一小步，但我们明白前方还有更远更险的路。一个人可以走的很快，一群人可以走的更远。我们渴望和更多志同道合的伙伴一起探索新的旅程，我们有足够的资本给予符合我们期待的人才最大的尊重。\n我们具体在做什么？\n喊口号、做梦…",
+          "link": "https://www.v2ex.com/t/829266",
+          "publishedOn": "2022-01-19T08:29:25.000Z",
+          "wordCount": 320,
+          "title": "[开源/远程] RSS3 提供最酷最理想最自由的工作"
+        },
+        {
+          "id": "829265",
+          "author": "mokevip",
+          "description": "mokevip: \n因为要做阿里云 oss 文件批量压缩下载\n目前 OSS 文件已经下载为 Buffer 数据\n但是目前好像没有找到方法能 gzip 压缩多个文件\nconst result = data['source-files'].map(item=>client.get(item))\nPromise.all(result).then(res=>{\n    resp.setHeader('content-type', 'gzip');\n    resp.send(Buffer.from(zlib.gzipSync(res[0].content)))\n},err=>{\n    resp.send('fail');\n}).catch(err=>{\n    resp.send('fail');\n})\n\n另外，下载下来的 GZIP 里的文件名也没有找到方法可以定义，求问有没有老哥有这方面经验的",
+          "link": "https://www.v2ex.com/t/829265",
+          "publishedOn": "2022-01-19T08:29:17.000Z",
+          "wordCount": 170,
+          "title": "nodejs zlib 库，怎么压缩多个 Buffer"
+        },
+        {
+          "id": "829263",
+          "author": "defia",
+          "description": "defia: \n如题，我看了下似乎 API 层面可以实现的？使用微信的付款码支付接口或者支付宝的当面付接口\n流程大概如下：\n顾客出示付款码->商家打开小程序->使用小程序扫描获取到该付款码->小程序调用后台接口传递付款码->后台调用付款接口，如 https://pay.weixin.qq.com/wiki/doc/api/micropay.php?chapter=5_4  完成支付\n不知道会不会有一些审核或者政策上的风险？\n另外该功能我们是想作为小程序插件提供给我们的客户的，不知道是否可行",
+          "link": "https://www.v2ex.com/t/829263",
+          "publishedOn": "2022-01-19T08:24:29.000Z",
+          "wordCount": null,
+          "title": "微信小程序可以作为商家的收银设备，扫描顾客手上的付款码（如微信，支付宝）进行收款么？"
+        },
+        {
+          "id": "829262",
+          "author": "nmap",
+          "description": "nmap: \n这种可靠吗 有风险吗",
+          "link": "https://www.v2ex.com/t/829262",
+          "publishedOn": "2022-01-19T08:21:08.000Z",
+          "wordCount": 158,
+          "title": "苹果 AppStore 某游戏，解锁一个地图要十多块钱， tb 上有几块钱全解锁的，什么原理？"
+        },
+        {
+          "id": "829261",
+          "author": "VKRUSSIA",
+          "description": "VKRUSSIA: \n阿里 java 开发手册里也没提到。大家是怎样命名的？是以 Pattern 结尾还是 Regular 结尾？",
+          "link": "https://www.v2ex.com/t/829261",
+          "publishedOn": "2022-01-19T08:20:31.000Z",
+          "wordCount": 128,
+          "title": "Java 正则变量有什么命名规范吗"
+        },
+        {
+          "id": "829260",
+          "author": "zxcvzxcv444",
+          "description": "zxcvzxcv444: \n类似于 win 上的 Deskpins",
+          "link": "https://www.v2ex.com/t/829260",
+          "publishedOn": "2022-01-19T08:18:06.000Z",
+          "wordCount": 106,
+          "title": "请问 MacOS 上有什么软件能让一个窗口始终保持在前？"
+        },
+        {
+          "id": "829257",
+          "author": "itechnology",
+          "description": "itechnology: 公司用了第三方供应商的智能电表，约定由他们每天凌晨向我们的系统推送电表读数，但是他们的推送很不稳定，有的电表大半个月都没推送读数过来了，有的电表推送的读数相差很大，前一天还是 500 多度，下一天就 3000 多度了……\n这个问题要解决的话，两方不管哪一方做监控就行，但这个锅是谁的呢？\n（个人倾向于供应商，因为现在出了问题都是我们主动向他们反应了，他们才知道）",
+          "link": "https://www.v2ex.com/t/829257",
+          "publishedOn": "2022-01-19T08:06:30.000Z",
+          "wordCount": null,
+          "title": "第三方供应商长时间没有推送数据，这到底是我们自己的锅还是供应商的锅？"
+        },
+        {
+          "id": "829254",
+          "author": "dunn",
+          "description": "dunn: \n投递方式\n前端\n后端",
+          "link": "https://www.v2ex.com/t/829254",
+          "publishedOn": "2022-01-19T08:02:25.000Z",
+          "wordCount": 127,
+          "title": "[网易] 游戏周边商城前后端岗位招新同学了"
+        },
+        {
+          "id": "829253",
+          "author": "Kiriri",
+          "description": "Kiriri: 苦于看英文文档有些吃力，想提升一下自己的英文水平，只为了看懂英文的内容，所以重点不在听力。\n这样的需求需要多高的英文水平呢，顺便希望各位 v 友给一些学习路线的建议。\n本人四级不到的水平，让各位见笑了...🥲",
+          "link": "https://www.v2ex.com/t/829253",
+          "publishedOn": "2022-01-19T07:58:08.000Z",
+          "wordCount": 454,
+          "title": "什么样的英文水平可以流畅地阅读英文书籍和文档，顺便求个学习路线"
+        },
+        {
+          "id": "829251",
+          "author": "betaYii",
+          "description": "betaYii: \n不想被工作室垄断搞得乌烟瘴气所烦扰，编了个 github 上的 60 开源模拟器，求大佬们指点指点，如何设置比较合理的规则，能约上一帮人不那么苦手但又比较耐玩的一起 happy 呢？",
+          "link": "https://www.v2ex.com/t/829251",
+          "publishedOn": "2022-01-19T07:49:09.000Z",
+          "wordCount": 112,
+          "title": "想好好体验个 60 的 wow，求规则推荐"
+        },
+        {
+          "id": "829250",
+          "author": "MaMimi",
+          "description": "MaMimi: \n我承认他们费心费力维护文档用爱发电, 但是这个语气为什么一定要这样, 有种小学 6 年级学生和 1 年级学生讲话时的内心戏的感觉",
+          "link": "https://www.v2ex.com/t/829250",
+          "publishedOn": "2022-01-19T07:43:59.000Z",
+          "wordCount": 626,
+          "title": "为什么有些文档的作者这么人上人"
+        },
+        {
+          "id": "829249",
+          "author": "xiayushengfan",
+          "description": "xiayushengfan: 1.php amqp 扩展 有没有 Publisher Confirms 机制\n2.使用的是原生的，没有使用 php-amqplib\n3.感觉原生的事务机制傻傻的，没看出来有什么用",
+          "link": "https://www.v2ex.com/t/829249",
+          "publishedOn": "2022-01-19T07:42:46.000Z",
+          "wordCount": 115,
+          "title": "PHP amqp 的扩展 疑问"
+        },
+        {
+          "id": "829246",
+          "author": "phlips5437",
+          "description": "phlips5437: 现在 CPU 都有成品的风冷和一体水冷套件，买了大多都能直接用\n请问下卡的话是否也能这样？我看到比较多的是显卡与一体水冷打包出售\n不知道如果想自己给显卡配一体水冷的话需要注意些什么？",
+          "link": "https://www.v2ex.com/t/829246",
+          "publishedOn": "2022-01-19T07:35:22.000Z",
+          "wordCount": 152,
+          "title": "请问下大家，成品显卡能否自己买一体水冷散热器给装上？"
+        },
+        {
+          "id": "829244",
+          "author": "LierD",
+          "description": "LierD: \n业务简介：\nShopee 好友动态是一个基于用户在 shopee 的好友关系的购物、生活分享平台。用户可以在这里分享购物产品、产品评论、开箱体验以及他们在 Shopee 中喜欢的内容。\n职责：\n负责好友动态核心业务产品后台研发；\n参与亿级用户量的 C 端业务产品研发，挑战业务垂直拆分、数据分库分表、数据扩容、迁移等难题；\n解决高并发场景下服务高性能和高可用难题，平稳应对活动大促；\n研究前沿技术，运用前沿技术参与服务的设计、优化和重构；\n要求：\n计算机相关专业；\n本科及以上，3 年以上工作经验\n精通一门编程语言，例如 Go 、Python 、Java 等，语言不限；\n熟悉服务端 RPC 框架的使用；\n精通 MySQL 、Redis 和相关的数据库技术；\n有社交平台、内容产品相关行业经验优先；\n有高并发、高性能和高可用软件系统研发经验优先；\n具备较强的责任感和主动性，代码严谨，良好的沟通能力和团队协作精神；\n有独立思维判断力，有敏锐的数据分析能力和钻研能力优先；\n参考薪资范围：20K-40K\n联系方式： jiajun.lai@shopee.com",
+          "link": "https://www.v2ex.com/t/829244",
+          "publishedOn": "2022-01-19T07:29:01.000Z",
+          "wordCount": 160,
+          "title": "[Shopee] 后台开发工程师(深圳)-content- [Friends 方向]"
+        },
+        {
+          "id": "829243",
+          "author": "JimmyLX",
+          "description": "JimmyLX: 说好的小而美呢，天天想着法子往里面塞新功能\n基本的沟通功能都没做好，电脑上一段时间没登录，登录上就一直收取中........\n等了五分钟消息还没同步完，离谱啊！！！\n手机端也经常收取中一直转菊花，并不是网不好啊！为啥啊",
+          "link": "https://www.v2ex.com/t/829243",
+          "publishedOn": "2022-01-19T07:28:15.000Z",
+          "wordCount": 93,
+          "title": "微信 (电脑端) 消息加载时间越来越离谱了"
+        },
+        {
+          "id": "829242",
+          "author": "ophl",
+          "description": "ophl: \n手机上已经有了 google 框架，可以装 youtube 。\n但现在打算装 youtube vanced ，但安装后提示没有 microg 是不能够登陆的。\n请问哪位有知道的给说一声有没有冲突，担心装坏了，之前的服务们也都用不了了",
+          "link": "https://www.v2ex.com/t/829242",
+          "publishedOn": "2022-01-19T07:26:28.000Z",
+          "wordCount": 144,
+          "title": "请问手机上装 microg 和原有的 google 框架会不会冲突"
+        },
+        {
+          "id": "829241",
+          "author": "xt1990xt19900",
+          "description": "xt1990xt19900: \n之前因为用 chrome 看了一下 youtube 的 8k 视频，卡顿，所以后来用 safari 看了一下是可以流畅播放的。\n但是今天再想看的的时候发现不管是之前看过的还是新的 8k 选项怎么都消失了，chrome 的还在，safari 的最高只能看 4k 了",
+          "link": "https://www.v2ex.com/t/829241",
+          "publishedOn": "2022-01-19T07:24:13.000Z",
+          "wordCount": 154,
+          "title": "M1 Max MacOS 12.1 在 Safari 没了 youtube 的 8k 视频选项"
+        },
+        {
+          "id": "829240",
+          "author": "celisee",
+          "description": "celisee: \n买东西\n虽然知道天猫上面假货多，但是我在一个药房买到假货还是震惊不已。\n在人的朴素认知下（尤其是国内），药房这种地方不会卖假货，更不用说是在天猫上开的药房旗舰店。\n双 11 在瑞康大药房旗舰店（天猫）买了两瓶芙丽芳丝洗面奶，一直到近两天才开始用（之前的用完了）。\n打开之后就闻到了异味，第一个念头是过期了？\n随后看了下生产日期和保质期，25 年过期。\n按下怀疑的心，用了一次，和以前的产品使用体验相差很大。\n查评价\n我去查了下这个产品的评价，差评看不见，但是网友们在问题回答里面普遍说是假货。\n投诉\n然后在淘宝 app 上发起了退款--原因为：夸大虚假功效描述，与商品宣称不符。\n因为当我想选假货投诉时，app 提示仅能对淘宝和 1688 商户发起。\n随即就不得不赞叹，天猫就是一个“真货”认证保障，当你想投诉时，人家已经把假货选项屏蔽了，怪不得假货横行（花钱就行）。\n淘小二的处理\n淘小二联系我，判决人家胜了。因为商户上传了商品授权书。（有商品授权书就代表他卖的一定是真货吗？这是什么逻辑。）\n这家进货企业是：深圳市鑫洁峰实业有限公司。授权企业为仪菲（上海）品牌管理有限公司。\n让我去专柜验货，并且拿到假货的凭证。\n去专柜验货这种说法真的是无知啊（提这种说法的人心都是坏），我不是对专柜卖货人员有啥意见，而事实是很多都是流动性很大的，所以他们几乎无法给你什么参考意见，更遑论去鉴真假。\n我随即放弃了这个选项，每天生活都把精力耗尽了，哪有时间和精力为了这 100 多块钱去讨一个非常不力甚至无结果的结局？\n结局\n我能做的只是告诉身边的朋友，在天猫上买东西要小心。同时曝光这个店铺。\n当一个斗升小民遇到一件事时，他往往会自认倒霉，因为他光是要生存都要费劲全力。\nPS：以上假货的认定都是个人使用产品后的体验不同所得出的结论，没有专员机构去认证。仅供大家参考。",
+          "link": "https://www.v2ex.com/t/829240",
+          "publishedOn": "2022-01-19T07:19:16.000Z",
+          "wordCount": null,
+          "title": "天猫有假货吗？当我在一家药店买到假货时，管中窥豹。"
+        },
+        {
+          "id": "829239",
+          "author": "GM",
+          "description": "GM:",
+          "link": "https://www.v2ex.com/t/829239",
+          "publishedOn": "2022-01-19T07:15:47.000Z",
+          "wordCount": 225,
+          "title": "套路云不但是全球最大的中文内容农场，还是全球最大的垃圾内容农场"
+        },
+        {
+          "id": "829237",
+          "author": "datian9966",
+          "description": "datian9966: 提问前我也进行了一定的资料查询，分清了什么是“钱”什么是“钱包”。\n但是我还是没能搞清楚到底有什么意义？\n有人举例说现在的钱是放在银行的 or 微信支付宝的，数字人民币是放在自己手上的，放在自己手上安全 max ，银行也可以倒闭的，而且最多保底 50w\n但是何必呢？我把钱放在四大行里，还能有利息，在不在我手上很重要吗...",
+          "link": "https://www.v2ex.com/t/829237",
+          "publishedOn": "2022-01-19T06:57:32.000Z",
+          "wordCount": 525,
+          "title": "数字人民币到底有什么作用(存在的意义)？"
+        },
+        {
+          "id": "829236",
+          "author": "BlackAdlerChi",
+          "description": "BlackAdlerChi: \n硬性要求\n屏幕 PPI > 220\n屏幕刷新率 >= 90Hz\n高色域 \n屏幕比例为 16:10 或 3:2\n屏幕尺寸区间：[13\", 15\")\n带 DC 调光 \nAMD 处理器\n预置 Windows 11\n有这样的笔记本电脑吗？",
+          "link": "https://www.v2ex.com/t/829236",
+          "publishedOn": "2022-01-19T06:55:05.000Z",
+          "wordCount": 158,
+          "title": "想买笔电求推荐"
+        },
+        {
+          "id": "829235",
+          "author": "GTim",
+          "description": "GTim: \n小弟我国庆期间因为 B 圈的问题团队解散了，然后回到城市边缘装修房子，装完后不想进城找工作，就找了一远程的岗位。\n之前熟悉 PHP 、Golang 、Python 、Javascript 、HTML 、CSS 等，对 Vue 一知半解，没想到找的远程竟然是负责 C# API 接口和 uni-app 。 经过 2 个月的试用和磨合期，算是正式成为团队一员。\n目前看起来没啥大的变化，感觉唯 N 的变化就是：\n使用 coding.net 的 issue 作为项目和 bug 管理工具。\n所有任务，北京的主管会拆解成一个一个 issue ，然后大家开会讨论，讨论结束就按照 issue 一个一个完成就好。\n项目会有大概的工期，但这之前不会催促，只要不落下，人家根本不管你在做什么。\n于是小弟的工作时间差不多是 6:30 - 8:30 -  吃早餐 - 9:10-9:45 开早会  - 工作到 11:30 做饭吃午餐午休到 14:00 - 17:00 做饭吃晚餐 19:30-22:00 工作。晚上时间挺自由，不自由就是做的事千万不要出问题，否则会有夺命连环 call.\n薪水降了 60% 左右，他们的意思是就是房贷+吃饭，其它给股份，感觉也不错。\n工资发的非常及时，1 月 10 日发 12 月工资的时候顺带把 1 月份的都发了。\n我自己有公司交五险一金，公司会把五险一金折合成 RMB 打到卡上。\n这种情况下，要是有精力还可以做点其它事情，我比较懒，又到年关了，就没折腾了。",
+          "link": "https://www.v2ex.com/t/829235",
+          "publishedOn": "2022-01-19T06:52:18.000Z",
+          "wordCount": 1,
+          "title": "说说我最近远程的情况"
+        },
+        {
+          "id": "829234",
+          "author": "ciddechan",
+          "description": "ciddechan: \n最近想用 go 实现图片合成视频，无奈只合成了无音频的 avi 视频。用的 gocv （牛刀杀鸡），其实也就是 opencv 的 VideoWriter ，opencv 底层还是 ffmpeg 。\n也可用 go 的 exec.Command （）执行 ffmpeg 命令实现五花八门的功能，但是使用命令行的方式使我内心“十分不安”。\n想问一下 V 友有无最小的实现方案=>仅需实现几张尺寸类型不同的图片合成有简单过渡特效加背景音乐的 mp4 文件。\n这里有个 MiniProgram 挺让我好奇他的实现方式，MP 搜“图片合成视频”，有很丰富的处理功能，还是个个人开发者（作者名字居然和我领导名字一样，天啊）\n或者，提供一个不错的方案？",
+          "link": "https://www.v2ex.com/t/829234",
+          "publishedOn": "2022-01-19T06:47:40.000Z",
+          "wordCount": 187,
+          "title": "图片合成视频的技术方案"
+        },
+        {
+          "id": "829233",
+          "author": "cwjwgg",
+          "description": "cwjwgg: \n迫于有时候要测试点东西，用手机拍视频。但是经常在手机里找不到哪个视频是哪个问题。所以想把视频插入记本事。这样就知道对应问题的视频了",
+          "link": "https://www.v2ex.com/t/829233",
+          "publishedOn": "2022-01-19T06:45:51.000Z",
+          "wordCount": 103,
+          "title": "求推荐一款可插入视频的安卓便签记本事"
+        },
+        {
+          "id": "829232",
+          "author": "zwade",
+          "description": "zwade: \n论坛里关于笔记软件的讨论已经很多了，有很多老哥都自己搭服务存笔记，所以我想问问自建笔记服务的各位笔记里都会记些什么东西呢，如果有博客的话如何处理笔记和博客之间的关系。",
+          "link": "https://www.v2ex.com/t/829232",
+          "publishedOn": "2022-01-19T06:42:54.000Z",
+          "wordCount": 121,
+          "title": "各位的自建笔记里都会记点什么"
+        },
+        {
+          "id": "829230",
+          "author": "fighterhit",
+          "description": "fighterhit: \n事情是这样的，本地 containerd 的版本是 1.2.13 ，发现 run 的时候没有--device 参数，在 github 上找到了添加该参数的 MR https://github.com/containerd/containerd/pull/3424 ，但下面没有相关信息是合并到哪个版本（ release ）发布了，有没有比较快的方法找到是在哪个版本呢？\n平常我是把代码 download 下来，goland 搜到这个 commit 然后网上找 tag ，但感觉略显笨拙，还有更快的方法吗？",
+          "link": "https://www.v2ex.com/t/829230",
+          "publishedOn": "2022-01-19T06:35:28.000Z",
+          "wordCount": 156,
+          "title": "github 怎么看某个 mr 合在哪个版本(release)发布了?"
+        },
         {
           "id": "829211",
           "author": "RealGM",
@@ -16750,177 +16695,6 @@
           "publishedOn": "2022-01-10T00:02:57.000Z",
           "wordCount": 35,
           "title": "Handler 底层原理"
-        },
-        {
-          "id": "https://juejin.cn/post/7051463827233177630",
-          "author": "道爷",
-          "description": "theme: github\n背景是这样的，\n我们对外提供了一个 sdk，收到客户的反馈，说他们监控平台监测到 sdk 内部的一个接口 A 经常有耗时，最多能达到 10 几秒。\n可从我们自己的平台看，接口 A 的耗时是正常范围的，而且使用的网络库 timeout = 8s，不太可能出现耗时 10 几秒的问题。\n由于客户也没有稳定的复现场景，也不排除是对方统计工具的问题，就卡住了。\n进展，\n重新回到代码中，经过又一番的代码走查，注意到了该接口有使用 AsyncTask ，点进 AsyncTask 源码一看，突然有种玄学变科学的感觉：\n    private static final int CORE_POOL_SIZE = 1;\n    private static final int MAXIMUM_POOL_SIZE = 20;\n    private static final int KEEP_ALIVE_SECONDS = 3;\n    public static final Executor THREAD_POOL_EXECUTOR;\n    ...\n\n    static {\n        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(\n                CORE_POOL_SIZE, MAXIMUM_POOL_SIZE, KEEP_ALIVE_SECONDS, TimeUnit.SECONDS,\n                new SynchronousQueue(), sThreadFactory);\n        threadPoolExecutor.setRejectedExecutionHandler(sRunOnSerialPolicy);\n        THREAD_POOL_EXECUTOR = threadPoolExecutor;\n    }\n\n了解线程池的应该都知道，\nCORE_POOL_SIZE : 核心线程数。核心线程只有在 allowCoreThreadTimeOut = true 时，才会被回收，否则不会被回收掉的，即使没有任务执行，也会保持空闲状态。\nMAXIMUM_POOL_SIZE : 线程池最大允许创建的线程数。当线程数量达到 corePoolSize， 且 workQueue 队列塞满后，才会继续创建线程；当创建的线程达到 MAXIMUM_POOL_SIZE 时，新来的任务会执行拒绝策略。\nKEEP_ALIVE_SECONDS : 表示非核心线程在没有任务执行时，最多能保持多少时间会被回收。\nSynchronousQueue\n直接在网上找了一段容易理解的定义：\n“ SynchronousQueue 是一个不存储元素的阻塞队列，消费者线程调用 take() 方法的时候就会发生阻塞，直到有一个生产者线程生产了一个元素，消费者线程就可以拿到这个元素并返回；生产者线程调用put()方法的时候就会发生阻塞，直到有一个消费者线程消费了一个元素，生产者才会返回。”\n结论\n由于 CORE_POOL_SIZE = 1, 且阻塞队列为 SynchronousQueue，所以 AsyncTask 执行的任务为串行执行。而其 THREAD_POOL_EXECUTOR 线程池又是静态的，所以不同 AsyncTask 对象会共用该线程池。所以我们应当避免使用 AsyncTask，尤其是在 sdk 开发中。\n经过全局查找，发现项目内还有一个鉴权接口 B 也使用了 AsyncTask，所以该事故原因为，在网络环境较差时，接口 B 请求服务，会阻塞接口 A 请求, 导致客户统计耗时增加，最大耗时 2 * timeout。\n方案\n规范代码，使用统一的线程池。ThreadPoolSchedulers 就不细贴了，就是创建了一个 Executor\n    asyncTask.executeOnExecutor(ThreadPoolSchedulers.io());\n\n文章完。",
-          "link": "https://juejin.cn/post/7051463827233177630",
-          "publishedOn": "2022-01-09T22:41:47.000Z",
-          "wordCount": 39,
-          "title": "Android修炼系列（30），一个由 AsyncTask 引起的线上问题"
-        },
-        {
-          "id": "https://juejin.cn/post/7051439506817286181",
-          "author": "Android_开发者",
-          "description": "从 2008 年开始，Widget 就一直是 Android 系统的一个重要组成部分，也是自定义主屏幕的一个重要方面。您可以将 Widget 理解为一个 \"一目了然\" 的应用视图，让用户在无需从主屏幕打开应用的前提下，就能对应用数据和核心功能一览无余。但是从 Android 推出至今，AppWidget 的 API 基本就没有什么大的变化，从 2012 年到 2021 年更是只有一个 Android 版本包含了对 AppWidget API 的更新。而随着 Android 12 的推出，也带来了 Widget API 一些亟需改进的更新。\n本文我们就来介绍一下 Android 12 中带来了哪些关于 Widget API 的更新，以及有哪些好用的工具可以让开发应用 Widget 变得更加出色。如果您更喜欢通过视频了解此内容，请 点击此处 查看。\nWidget 工作原理\nWidget 运行在一个名为 AppWidgetHost 的远端进程中，比如 Home Screen Launcher，也正因如此，它的运行受到了一些限制。我们来看看 Widget 的工作原理。\n\n在前端，应用首先注册 AppWidgetProvider 来定义 Widget 行为，以及注册 AppWidgetProviderInfo 来定义元数据。然后 AndroidManifest 引用这些信息，让操作系统通过 AndroidManifest 读取元数据，例如 Widget 初始的布局和默认尺寸，并提供 Widget 的预览，紧接着，provider 会使用链接账户来更新布局并对 Widget 进行更新。这里需要注意的是，应用于 Widget 的构建次数有限，所以操作系统是通过接收方的广播事件 (包含了更新信息) 对 Widget 进行更新，这也意味着 Widget 是定期接收来自应用的信息进行更新的。\n…",
-          "link": "https://juejin.cn/post/7051439506817286181",
-          "publishedOn": "2022-01-09T21:08:55.000Z",
-          "wordCount": 39,
-          "title": "在 Android 12 中构建更现代的应用 Widget"
-        },
-        {
-          "id": "https://juejin.cn/post/7051437444062773285",
-          "author": "Cnoke",
-          "description": "Kotlin 协程+Retrofit 最优雅的网络请求使用\n1.简介\nRetrofit对协程的支持非常的简陋。在kotlin中使用不符合kotlin的优雅\ninterface TestServer {\n    @GET(\"banner/json\")\n    suspend fun banner(): ApiResponse>\n}\n\n//实现并行捕获异常的网络请求\n fun oldBanner(){\n        viewModelScope.launch {\n            //传统模式使用retrofit需要try catch\n\n            val bannerAsync1 = async {\n                var result : ApiResponse>? = null\n                kotlin.runCatching {\n                   service.banner()\n                }.onFailure {\n                    Log.e(\"banner\",it.toString())\n                }.onSuccess {\n                    result = it \n                }\n                result\n            }\n\n            val bannerAsync2 = async {\n                var result : ApiResponse>? = null\n                kotlin.runCatching {\n                    service.banner()\n  …",
-          "link": "https://juejin.cn/post/7051437444062773285",
-          "publishedOn": "2022-01-09T21:01:57.000Z",
-          "wordCount": 36,
-          "title": "Kotlin 协程+Retrofit 最优雅的网络请求使用"
-        },
-        {
-          "id": "https://juejin.cn/post/7051384812753879054",
-          "author": "fenfei331",
-          "description": "一、目标\n李老板： 奋飞呀，据说某电商App升级了，搞出了一个64位的sign。更牛的是入参都加密了！\n奋飞：这么拉风，拉出来咱们盘盘。\n\nv10.3.2\n二、步骤\n32位和64位\n我们掌握了那么多方法，先搜字符串呢？还是先Hook呢？\n子曾经曰过：看到32位签名就要想起MD5和HmacSHA1，看到64位签名就要想起HmacSHA256。\n那就先搞搞java的密码学相关函数:\nvar secretKeySpec = Java.use('javax.crypto.spec.SecretKeySpec');\nsecretKeySpec.$init.overload('[B','java.lang.String').implementation = function (a,b) {\nvar result = this.$init(a, b);\n    console.log(\">>> 算法名\" + b);\n    return result;\n}\n\n// /*\nvar mac = Java.use('javax.crypto.Mac');\nmac.getInstance.overload('java.lang.String').implementation = function (a) {\n    // showStacks();\n    var result = this.getInstance(a);\n    console.log(\"mac ======================================\");\n    console.log(\"算法名：\" + a);\n    return result;\n}\n\nmac.doFinal.overload('[B').implementation = function (a) {\n    // showStack…",
-          "link": "https://juejin.cn/post/7051384812753879054",
-          "publishedOn": "2022-01-09T17:34:34.000Z",
-          "wordCount": 35,
-          "title": "某电商App sign签名算法解析(五)"
-        },
-        {
-          "id": "https://juejin.cn/post/7051383308613058591",
-          "author": "fundroid",
-          "description": "theme: orange\nhighlight: vs\n前言\n现代的 Android 项目都是 Gradle 工程，所以大家都习惯于用 Gradle Module 来划分和组织代码，Module 的大量使用也带来一个问题，一个大项目往往几十上百的 Module，但是当数量众多的 Module 之间的依赖关系不合理时，仍然会严重拖慢工程的编译速度，如何更科学地组织 Gradle Module 是 Android 开发领域的普遍需求。\n从事 Android 开发的同学可能都听说过 Clean Architecture，即所谓整洁架构。Google 推荐大家使用它对 MVVM 进行更合理的分层。整洁架构的概念出自以下这本书（国内译本：代码整洁之道），关于这本书以及作者 Bob 大叔的大名这里就不多介绍了，说这是软件架构方面的圣经也不为过。\n\n除了优化 MVVM 这样的业务架构，这本书在组件设计方面也产出了不少最佳实践和方法论，可用来优化 Gradle 这样的工程架构。本文就来讨论如何基于整洁架构中的各种设计原则来设计我们的 Gradle Module。\n文章目录如下：\nModule 粒度划分\n\n复用发布等价原则（REP）\n共同封闭原则（CCP）\n共同复用原则（CRP）\n三原则的权衡\nModule 依赖关系\n\n无环依赖原则（ADP）\n稳定依赖原则（SDP）\n\n稳定度公式\n稳定抽象原则（SAP）\n\n抽象度公式\n不稳定度与抽象度的关系\n\n痛苦区与无用区\n总结\nModule 粒度划分\n参考 Clean Architecture 中对组件的定义：\n组件是软件的部署单元，是整个软件系统在部署过程中可以独立完成部署的最小实体。例如，对于 Java 来说，它的组件是 jar 文件。而在 Ruby 中，它们是 gem 文件。在 .Net 中，它们则是 DLL 文件。\nAndroid 中 Gradl…",
-          "link": "https://juejin.cn/post/7051383308613058591",
-          "publishedOn": "2022-01-09T17:29:12.000Z",
-          "wordCount": 39,
-          "title": "使用整洁架构优化你的 Gradle Module"
-        },
-        {
-          "id": "https://juejin.cn/post/7051359738134544415",
-          "author": "唐子玄",
-          "description": "多态\n多态是编程语言支持的一种特性，这种特性使得静态的代码运行时可能产生动态的行为，这样一来编程时不需要为类型所烦恼，可以编写统一的处理逻辑而不是依赖特定的类型。”\n在星巴克消费的时候就会发生多态，多态方便了顾客。不管是现金，支付宝，亦或是微信，顾客不需要关心每种支付背后的细节，只需递交支付工具即可。收银员是产生多态行为的关键，他把同样的递交行为在结账机上动态地和不同的支付方式做了对接。\n深入结账机内部，假设它使用如下方式实现支付的多态：\nclass PayManager {\n    fun pay(type: String){\n        if (type == 现金){\n            payByCash()\n        } else if (type == 支付宝) {\n            payByAli()\n        } else if (type == 微信) {\n            payByWechat()\n        }\n    }\n}\n\n通过 if-else 实现，其实称不上多态，而且这样实现会遇到不少麻烦。\nif-else 之殇：无扩展性\n新增支付方式时，得重新生产结账机。\n因为if-else是在编译时新增行为，即当代码编译完成后，就生成了一张PayManager.pay()的 PDF 快照，它无法在运行时动态地改变，要新增行为就得重新编译，所以这种新增行为是静态的，无扩展性可言。\n与 编译时新增行为 对应的是运行时新增行为，即当运行不同的上层代码，PayManager.pay()会表现出不同的行为（多态）。\n策略模式就适用于当前场景，策略模式将具体的行为和行为的使用者隔离，当行为发生变化时，行为的使用者不需要随之而变。\n// 用接口定义抽象支付行为\ninterface Pay {\n    fun pay()\n}\n\n/…",
-          "link": "https://juejin.cn/post/7051359738134544415",
-          "publishedOn": "2022-01-09T16:07:24.000Z",
-          "wordCount": 38,
-          "title": "如何“好好利用多态”写出又臭又长又难以维护的代码？"
-        },
-        {
-          "id": "https://juejin.cn/post/7051222120331739143",
-          "author": "程序员江同学",
-          "description": "theme: smartblue\nhighlight: a11y-dark\n前言\n了解过Compose的同学都知道，只需要添加一个@Compose注解就可以将函数转化成Compose函数，同时Compose函数也只能在Compose函数中运行。这看起来似乎跟协程比较像，@Compose是不是也像协程一样，往函数中添加了一些参数呢？\n我们就一起来看下，@Compose到底做了什么，又是怎么做到的。\n前置知识\n一看到@Compose注解，我们很容易就想到注解处理器，但是@Compose的解析并不是通过注解处理器来实现的，因为注解处理器只能生成代码，不能修改代码\nKCP（Kotlin Compiler Plugin）：即kotlin编译插件，支持跨平台，android开发可以将它类比为kapt+transform机制，既可以生成代码，也可以修改代码\n@Compose注解的解析就是通过KCP来实现的\n什么是KCP\nKotlin编译过程简单来说，就是将Kotlin源码编译成字节码的过程，具体步骤如下所示：\n\n而Kotlin编译期插件则在编译过程中提供Hook时机，让我们可以解析符号，修改字节码生成结果等。\nKotlin库中的不少语法糖都用到了KCP，比如Kotlin-android-extension，@Parcelize等，@Compose注解同样也是通过KCP解析的\n相比KAPT，KCP主要有以下优点：\nKAPT是基于注解处理器的，它需要将Kotlin代码转化成Stub再解析注解生成代码，常常转化成Stub的时间比生成代码还要长，而KCP则是直接解析Kotlin的符号，因此在编译速度上KCP比KAPT要强的多\nKAPT只能生成代码，不能修改代码，而KCP不仅可以生成代码，也可以修改代码，可以看作是kapt+transorm机制\n而KCP的缺点则在于，KCP 的开发成本太高，涉及 …",
-          "link": "https://juejin.cn/post/7051222120331739143",
-          "publishedOn": "2022-01-09T07:05:14.000Z",
-          "wordCount": 37,
-          "title": "@Compose 注解到底做了什么？了解一下~"
-        },
-        {
-          "id": "https://juejin.cn/post/7051139976095858725",
-          "author": "易保山",
-          "description": "一、前言\n结构型模式(Structural Pattern)描述如何将类或者对象结合在一起形成更大的结构，就像搭积木，可以通过简单的组合形成复杂的、功能更为强大的结构。\n结构型模式的实现可以分为两种，类结构型模式和对象结构型模式，其中：\n类结构型模式关心类的组合，由多个类可以组合成一个更大的系统，在类结构型模式中一般只存在继承关系和接口实现关系。\n对象结构型模式关心类与对象的组合，通过关联关系使得在一个类中定义另一个类的实例对象，然后通过该对象调用其方法。根据“合成复用原则”，在系统中尽量使用关联关系来替代继承关系，因此大部分结构型模式都是对象结构型模式。\n本文将会介绍几种常见的结构型模式，他们分别是：\n享元模式(Flyweight)\n代理模式(Proxy)\n装饰模式(Decorator)\n适配器模式(Adapter)\n桥接模式(Bridge)\n外观模式(Facade)\n同时，为了更加方便的理解结构型模式的设计思想，本文将加入一个项目阶段的概念：\n开发中，也包含开发前期，一般是代码未发布可以随意更改的阶段\n开发完成，已发布/封装完成，或是没有源码，只能补救的阶段\n不同的开发阶段所能适用的设计模式也不同，在理解设计者的意图时，这一点尤其重要\n另外，本篇文章是笔者个人对结构型模式的理解，由于结构型模式的概念有些抽象(相较于创建型模式)，每个人的理解也不尽相同，因此，若您发现笔者的描述有不准确甚至完全错误的地方，请到这里进行反馈，感谢\n二、结构型模式：享元模式\n1、模式定义\n享元模式(又称蝇量模式)是对象池的一种实现，它的英文名称叫做Flyweight，代表轻量级的意思。\n享元模式用来尽可能减少内存使用量，它适合用于可能存在大量重复对象的场景，来缓存可共享的对象，达到对象共享、避免创建过多对象的效果，这样一来就可以提升性能，是典型的以空间换时间的设计模式。\n享元模式的设计思想比较…",
-          "link": "https://juejin.cn/post/7051139976095858725",
-          "publishedOn": "2022-01-09T01:50:02.000Z",
-          "wordCount": 35,
-          "title": "漫谈设计模式（二）：结构型模式"
-        },
-        {
-          "id": "https://juejin.cn/post/7051110739724992542",
-          "author": "安安安安卓",
-          "description": "theme: awesome-green\nhighlight: a11y-dark\nPK创意闹新春，我正在参加「春节创意投稿大赛」，详情请看：春节创意投稿大赛\n起因\n新年要来了，看电影是我们新年中必不可少的娱乐项目，那么看电影的时候你是否有想过选座位的空间是如何实现的呢，今天就带你研究。\ncompose的绘制系列在两个月前就已经学习完成了，但是仅限于api的熟练，因此今天打算做一个仿淘票票选电影座位的自定义ui。\n效果查看\n先看一下支付宝客户端的实现吧\n\n我们发现选座位的主要点就是座位的绘制、选择座位的逻辑、双指手势缩放、单指长按后拖动效果\n既然说到这里了提取吧我们实现的效果也放出来吧：\n\n实现要点\n绘制座位\n本身绘制座位我么可以使用drawRoundRect api来实现，不过为了增加难度本例中我是使用path拼接而成的座位。这样做的目标也是为了方便将来将座位扩展成其它形状\n构建path的代码：\nval path = Path().apply {\n        moveTo(boundStart.x, boundStart.y + radius)\n        addArc(//绘制圆弧\n            Rect(Offset(boundStart.x + radius, boundStart.y + radius), radius),\n            180f,\n            90f,\n        )\n        lineTo(boundEnd.x - radius, boundStart.y)\n        arcTo(\n            Rect(Offset(boundEnd.x - radius, boundStart.y + radius), radius),\n            270f,\n            90f,\n            false\n        )\n        lineTo(boundEnd.x, boundEnd.y - radius)\n        arcTo(Rect(Offset(boundEnd.x - radius, boundEnd.y - radius), radius), 0f, 90f, false)\n        lineTo(boundStart.x + radius, boundEnd.y)\n        arcTo(Rect(Offset(boundStart.x + radius, boundEnd.y - radius), radius), 90f, 90f, false)\n        close()\n    }\n\ndrawpath：\ndrawPath(\n        path,\n        if (seat.type == 0) Color(0xfff4d9bd) else Color(0xffc3d9e9),\n        style = Stroke(strokeWidth)//使用Stroke可以保证我们的path绘制出来是线妆的效果\n    )\n\n双指操作手势\n手势的使用可以参考之前我写过的文章，传送门\n使用双指手势需要使用如下两个Modifier操作符：\n.graphicsLayer\n.transformable(state = state)\n\n实现代码如下：\n var scale by remember { mutableStateOf(1f) }\n    var offset by remember { mutableStateOf(Offset.Zero) }\n    val state = rememberTransformableState { zoomChange, offsetChange, rotationChange ->\n        scale *= zoomChange\n        offset += offsetChange\n    }\n    Box(\n        Modifier\n            .fillMaxSize(),\n\n        contentAlignment = Alignment.Center\n    ) {\n       内容部分\n       ....\n    }\n\n代码：https://github.com/ananananzhuo-blog/MovieSeatProject",
-          "link": "https://juejin.cn/post/7051110739724992542",
-          "publishedOn": "2022-01-08T23:52:07.000Z",
-          "wordCount": 37,
-          "title": "使用Compose实现淘票票选择电影座位的ui效果"
-        },
-        {
-          "id": "https://juejin.cn/post/7051007715002286094",
-          "author": "java李杨勇",
-          "description": "theme: condensed-night-purple\nhighlight: a11y-dark\n​\n从解码渲染层面对比 PAG 与 lottie\n最近由于业务需求，需要调研一下业界的知名动画渲染框架。经过一些时间的调研与探索，我将目光聚焦在两款不错的动画框架上。一款是知名的 lottie，一款是腾讯出品的 PAG。\nlottie 相信大部分端上的研发都会或多或少的听过， lottie 是 airbnb 开源的一款业界知名的开源动画框架,通过 AE 制作动画之后，通过附带的插件 bodymovin 导出 动画的 json 文件，端上再通过 json 解析渲染。\nlottie 不单单包含端上的渲染 SDK，其实是一套完整的动画制作工作流。\nPAG（Portable Animated Graphics）是腾讯自主研发的一套完整的动画工作流解决方案。\n我会通过以下几点的调研来评估哪个框架对于我们的业务而言是更好的选择。\n工作流\n我们先来看一下使用 lottie 的简单流程。\n​\n\nPAG 的流程。\n​\n\n从两个框架的流程图可以看出，工作流大体相似，如\n由 AE 生成动画\n附带 AE 插件，可以通过插件导出动画\nlottie 的 bodymovin\nPAG 的 PAG Exporter\n预览\n导出文件\n端上的渲染 SDK\n配置文件\n工作流两者大体相似。所以我将注意力放在了两者中很显著的不同点。即 AE 导出的配置文件。\nlottie 选择了 json\nPAG 选择了类似于 protocolbuff 的自研二进制文件。\n本篇文章会着重从配置文件的大小和解析性能等角度来分析两者的性能。\nlottie 的 json 配置文件与 PAG 二进制配置文件\n先看一个简单动画。\n​\n\n动画大致流程如下：\n0s 至 3s，scale 属性值从 100% 变到 50%。\n3s 至 6s，scal…",
-          "link": "https://juejin.cn/post/7051007715002286094",
-          "publishedOn": "2022-01-08T17:15:40.000Z",
-          "wordCount": 39,
-          "title": "从解码渲染层面对比 PAG 与 lottie"
-        },
-        {
-          "id": "https://juejin.cn/post/7050762284758466567",
-          "author": "瓜瓜李",
-          "description": "目录\n一. Android渲染知识\n1.1 绘制原理\n1.2 掉帧\n1.3 为什么是60Fps？\n1.4 垃圾回收\n1.5 UI 线程\n1.6 垂直同步\n1.7 UI 绘制机制与栅格化\n二. 检测和解决\n2.1 检测维度\n2.2 调试工具\n2.3 如何解决\n三. 界面过度绘制\n3.1 过度绘制概念\n3.2 追踪过度绘制\n3.3 过度绘制的根源\n3.4 不合理的xml布局对绘制的影响\n3.5 源码相关\n四. 渲染性能\n4.1 渲染性能概念\n4.2 追踪渲染性能\n4.3 渲染性能差的根源\n4.4 检测说明\n4.5 UI绘制机制的补充说明\n五. 布局边界合理性\n六. 给开发的界面优化建议\n6.1 优化布局的结构\n6.2 优化处理逻辑\n6.3 善用 DEBUG 工具\n一. Android渲染知识\n1.1 绘制原理\nAndroid系统要求每一帧都要在 16ms 内绘制完成，平滑的完成一帧意味着任何特殊的帧需要执行所有的渲染代码（包括 framework 发送给 GPU 和 CPU 绘制到缓冲区的命令）都要在 16ms 内完成，保持流畅的体验。这个速度允许系统在动画和输入事件的过程中以约 60 帧每秒（ 1秒 / 0.016帧每秒 = 62.5帧/秒 ）的平滑帧率来渲染。\n\n如果你的应用没有在 16ms 内完成这一帧的绘制，假设你花了 24ms 来绘制这一帧，那么就会出现掉帧的情况。\n\n系统准备将新的一帧绘制到屏幕上，但是这一帧并没有准备好，所有就不会有绘制操作，画面也就不会刷新。反馈到用户身上，就是用户盯着同一张图看了 32ms 而不是 16ms ，也就是说掉帧发生了。\n1.2 掉帧\n掉帧是用户体验中一个非常核心的问题。丢弃了当前帧，并且之后不能够延续之前的帧率，这种不连续的间隔会容易会引起用户的注意，也就是我们常说的卡顿、不流畅。引起掉帧的原因非常多，比如：\n花了非常多时间重新绘制…",
-          "link": "https://juejin.cn/post/7050762284758466567",
-          "publishedOn": "2022-01-08T01:19:17.000Z",
-          "wordCount": 35,
-          "title": "Android界面性能优化必读"
-        },
-        {
-          "id": "https://juejin.cn/post/7050753697051050021",
-          "author": "lwlizhe",
-          "description": "theme: condensed-night-purple\n前言\n这次更新进度时间间隔有点长，主要原因呢，找可用的API数据源，这玩意竟然占了耗时大头……最终效果还未知，到时候再说吧……另外，由于阅读器模块的基本结束，所以开发方向转向整体APP开发，所以设计搭建框架，选择合适的辅助工具，思考该做成什么样子，也占用了一定时间；\n当然以上不是为了给天天摸🐟 找借口，你们要信我啊；\n回正题，在APP设计上，我想在首页上仿Soul的那个星球效果来做个推荐页面，这次就来实践一下\n设计\n首先呢，搜了下 github 好像并没有相关的Flutter控件可以直接拿来用，不过如果放宽到 Android 上面，倒是有一大批，那么这块实现方案也不用自己设计了，直接照抄就完事了；\n不过抄的过程中，发现这玩意好像也没那么好抄～～抄这玩意的第一件事，是翻出曾经的数学课本，预习一下向量和空间坐标这部分的东西；\n不过所幸，核心原理其实不复杂，用一句话就能说明：\n全程围绕 罗德里格旋转矢量公式 来搞，通过更新向量、旋转角度，并带进公式中，就能实现需要的效果；\n实现与踩坑\n实现部分：\n在实现方式上：使用的是 Stack 做主体，结合 Transform 来处理位移、缩放、透明度等部分；其build方法就这样：\n\n在 initState 的时候初始化AnimationController，通过设置监听器的方式调用 setState 来更新UI：\n\n计算逻辑就是用那个公式来搞就完事了：\n\n一些小坑\n虽然上面说的挺轻松的样子，但是其中还是遇到了一些小坑需要处理：\n由于引入了Z轴的概念，所以正如第一张图中注释说的那样，要根据Z轴重新排个序，来正确处理点击事件等部分；\n\n手势竞争这块还有个小问题，由于最外层是一个TabBarView，所以是可以左右滑动的，而星球本身是可以任意方向拖动的，由此带来了一个横向的手势冲突问题：\n这个问题的解决方法有很多，不过我使用的是修改Pan手势竞争器判断阈值的方式来做的处理，用这种做法的人应该比较少吧：\n\n结语\n现在来看下效果：\n\n好像debug模式下在30fps左右，虽说及格线吧，但是明显手动拖动的时候好很多，可能也是20张图片+transform有点多？也有可能图片这块可以做下优化？后续看看profile模式下的表现，分析下表现耗时再看看；\n这次看看标题写的装逼点，效果咋样，不过可没做标题党，说300行就300行，没有故意压缩行数，用的AS的通用代码模版，甚至到最后还有一点空余：",
-          "link": "https://juejin.cn/post/7050753697051050021",
-          "publishedOn": "2022-01-08T00:47:49.000Z",
-          "wordCount": 36,
-          "title": "【Flutter】小说阅读器改版记录 —— 算上注释，300行实现Soul的星球效果"
-        },
-        {
-          "id": "https://juejin.cn/post/7050412734311038989",
-          "author": "AceChen",
-          "description": "theme: cyanosis\nhighlight: arta\n前言\n刚把 MVC , MVP , MVVM 深入理解了一波,最近又开始各种推送 MVI 的文章,碰巧谷歌又发布了最新的 Android应用架构指南 ,大致看了下发现正式最近正火的 MVI ！这可真是巧巧的妈妈生巧巧,于是上手实践了一下,只能说有规范就是好,真香\n指南帮助我解决了以前开发过程中遇到的很多疑惑点,再也不怕和小伙伴争论了,直接指南怼脸，舒坦\n架构概述\n最新架构基于 界面和数据分离 和 数据模型驱动界面 两个原则,将应用分为三层\n\n其中最主要的是 界面层 和 数据层\n界面层\n职责\n将应用数据转换为界面数据,显示在UI上\n提供状态容器(ViewModel)\n处理界面事件\n重点\n业务逻辑和界面逻辑\n业务逻辑决定着如何处理状态变化。业务逻辑通常位于网域层或数据层中，但绝不能位于界面层中。\n界面行为逻辑(界面逻辑) 决定着如何在屏幕上显示状态变化。例如点击按钮跳转,消息提示等\n界面逻辑（尤其是在涉及 Context 等界面类型时）应位于界面中，而非ViewModel中.\n同一应用的业务逻辑在不同移动平台或设备类型上保持不变，但界面行为逻辑在实现方面可能有所不同。界面层页定义了这些类型的逻辑\n界面事件处理\n事件划分\n界面事件：应在界面层处理的操作\n用户事件：用户在与应用互动时生成的事件\nViewModel 通常负责处理特定用户事件的业务逻辑\n事件决策树\n\n如果操作是在界面树中比较靠下一层生成的，例如在 RecyclerView 项或自定义 View 中，ViewModel 应仍是处理用户事件的操作。\n界面状态和状态容器\n界面状态\n界面状态需要包含界面显示的全部信息\n界面状态定义不可变\n只有数据源或数据所有者才应负责更新其公开的数据\n状态容器\n负责提供界面状态，并且包含执行相应任务所必需的逻辑。状态容器有多种大小…",
-          "link": "https://juejin.cn/post/7050412734311038989",
-          "publishedOn": "2022-01-07T02:44:42.000Z",
-          "wordCount": 35,
-          "title": "重学架构-MVI"
-        },
-        {
-          "id": "https://juejin.cn/post/7050404740760354829",
-          "author": "FashionLazy",
-          "description": "小伙伴们应该都知道，UI绘制优化是性能优化中非常重要的一部分，因为用户在使用应用过程的中，优秀的交互体验是我们留住用户不可或缺的一部分。如果说设计美观舒适的交互是产品经理与UI设计师的工作，那么如何将交互实现则是攻城狮们要做的咯，而UI绘制优化的原因则是为了给用户带去丝滑般的使用体验而进行的。\n一、绘制原理\n在Android中，每个View都有三个固定的核心步骤，并依次去执行。它们分别是measure、layout以及draw，通过Measure和Layout来确定当前需要绘制的View所在的大小和位置，再通过绘制（Draw）到surface。measure、layout和draw方法主要是运行在系统的应用框架层，而真正将数据渲染到屏幕上的则是系统Nativie层的SurfaceFlinger服务来完成的。\n1.1 应用层\nMeasure\n用深度优先原则递归得到所有视图（View）的宽、高；获取当前View的正确宽度childWidthMeasureSpec和高度childHeightMeasureSpec之后，可以调用它的成员函数Measure来设置它的大小。如果当前正在测量的子视图child是一个视图容器，那么它又会重复执行操作，直到它的所有子孙视图的大小都测量完成为止。\nLayout\n位置计算的递归原理跟测量的差不多，用深度优先原则递归得到所有视图（View）的位置；当一个子View在应用程序窗口左上角的位置确定之后，再结合它在前面测量过程中确定的宽度和高度，就可以完全确定它在应用程序窗口中的布局。\nDraw\n目前Android支持了两种绘制方式：软件绘制（CPU）和硬件加速（GPU），其中硬件加速在Android 3.0开始已经全面支持，很明显，硬件加速在UI的显示和绘制的效率远远高于CPU绘制，但硬件加速并非如大家所想的那么完善，它也存在明显的缺点：\n耗电：GPU…",
-          "link": "https://juejin.cn/post/7050404740760354829",
-          "publishedOn": "2022-01-07T02:12:20.000Z",
-          "wordCount": 35,
-          "title": "安卓性能优化---绘制优化篇"
-        },
-        {
-          "id": "https://juejin.cn/post/7050401051647672350",
-          "author": "Blue0376",
-          "description": "ComePose 是 JetPack 推出的 Android 及其他平台的全新 UI 框架，抛弃 Android XML 的编写方式，以声明式方法开发，下面介绍将 Compose 集成到现有项目中。\nCompose 官方地址：https://developer.android.com/jetpack/compose/documentation\n集成 ComPose 需要的相关版本配置\nIDE：Android Studio Arctic Fox 版本，官方地址： https://developer.android.com/studio ，下载最新的就是。\nGradle：7.0 +\nTargetSdk / CompileSdk：31 +\nMinSdk：21 +\nKotlin：1.5.31（目前 Compose 最新稳定版本适配的 Kotlin 版本，后续随着 ComPose 的版本增加，Kotlin 版本也会增加）\nCompose：1.0.5（目前最新稳定版本），版本地址：https://developer.android.com/jetpack/androidx/releases/compose\n集成到现有项目中\n升级对应的 Gradle 版本\n打开 Project 下的 build.gradle 文件配置插件版本：\nbuildscript {\n    repositories {\n        google()\n        mavenCentral()\n    }\n    dependencies {\n        // Gradle 版本 7.0 +\n        classpath \"com.android.tools.build:gradle:7.0.4\"\n        // Kotlin 版本（对应 compose 的版本）\n        classp…",
-          "link": "https://juejin.cn/post/7050401051647672350",
-          "publishedOn": "2022-01-07T01:57:17.000Z",
-          "wordCount": 39,
-          "title": "Android JetPack ComPose 开发之路 —— 集成到现有项目中"
-        },
-        {
-          "id": "https://juejin.cn/post/7050284133519458318",
-          "author": "AnRFDev",
-          "description": "市面上常见的摄像头悬浮窗，如微信、手机QQ的视频通话功能，有如下特点：\n整屏页面能切换到一个小的悬浮窗\n悬浮窗能运行在其他app上方\n悬浮窗能跳回整屏页面，并且悬浮窗消失\n我们探讨过用CameraX打开摄像头预览，结合可改变大小和浮动的activity，实现了应用内摄像头预览悬浮Activity。这个悬浮Activity是在应用内使用的。要让悬浮窗在其他app上，需要结合悬浮窗 System Alert Window。\n本文用CameraX实现摄像头预览悬浮窗，能显示在其他app上方，可拖动，可跳回activity。\n\n这个例子的相关代码放进了单独的模块。使用时注意gradle里的细微差别。\n引入依赖\n模块gradle的一些配置，使用的Android SDK版本为31，启用databinding\nplugins {\n    id 'com.android.library'\n    id 'kotlin-android'\n    id 'kotlin-android-extensions'\n    id 'kotlin-kapt'\n}\n\nandroid {\n    compileSdk 31\n\n    defaultConfig {\n        minSdk 21\n        targetSdk 31\n        versionCode 1\n        versionName \"1.0\"\n\n        testInstrumentationRunner \"androidx.test.runner.AndroidJUnitRunner\"\n        consumerProguardFiles \"consumer-rules.pro\"\n    }\n    dataBinding {\n        enabled = true\n    }\n    buil…",
-          "link": "https://juejin.cn/post/7050284133519458318",
-          "publishedOn": "2022-01-06T18:23:55.000Z",
-          "wordCount": 36,
-          "title": "Android 摄像头预览悬浮窗，可拖动，可显示在其他app上方"
-        },
-        {
-          "id": "https://juejin.cn/post/7050037712451010567",
-          "author": "xujl",
-          "description": "1.1.1.  什么是点击防抖？\n  在应用日常使用过程中，短时间内超过一次点击某个按钮会触发多次这个按钮的后续逻辑代码运行，这时加入某些手段屏蔽掉除第一次以外的点击事件去重复触发逻辑的控制称为点击防抖。\n1.1.2.  为什么需要添加点击防抖?\n  正如上面介绍的，在没有添加点击防抖的情况下短时间内多次点击某按钮会多次触发相关逻辑，比如多次打开某个页面，多次提交某些网络请求等等，这些通常不是我们所期望的，而且有些逻辑多次触发也有可能引起程序卡顿、数据异常、应用崩溃等问题。\n  综上所述，我们在某些场景下是需要添加点击防抖的，以此来进行限制用户有意或无意的短时间内频繁点击按钮的操作，来规避由此产生的期望外的运行结果。\n1.1.3.  点击防抖的间隔\n  点击防抖的间隔是否越长越好呢？当然不是，过长的点击防抖间隔会给用户造成按钮点击无效的感觉，通常点击防抖的间隔不宜大于500ms。\n  点击防抖的间隔是否越短越好呢？当然也不是，间隔过短，点击防抖也就失去了意义，点击防抖本身的意义就是通过屏蔽短时间的连续点击来规避异常逻辑，如果点击防抖间隔过短，那这个设置本身就失去了他自身的意义。通常点击防抖的间隔应大于100ms。\n  综上所述，通常情况下点击防抖间隔应取100ms到500ms之间，但是这个值并非固定值，需要根据实际的业务场景进行调整，一般原则是和你的点击事件处理逻辑时间成正比，逻辑处理时间越长，则点击间隔应该越长，逻辑处理时间越短，则点击间隔应该尽量短。比如点击逻辑是打开页面，这个逻辑只有100ms，则点击间隔应该尽量短，比如点击逻辑是打开蓝牙，这个逻辑有800ms，则点击间隔就需要适量增加。\n\n1.1.4.  是否所有点击都需要点击防抖？\n  并不是，通常我们需要添加点击防抖都是根据实际业务去填加，并不建议所有按钮都统一添加，这是因为有很多按钮都是实时操作的，如果添加了点…",
-          "link": "https://juejin.cn/post/7050037712451010567",
-          "publishedOn": "2022-01-06T02:30:09.000Z",
-          "wordCount": 35,
-          "title": "安卓点击防抖优化手册（非代码层指导）"
-        },
-        {
-          "id": "https://juejin.cn/post/7049998517015674893",
-          "author": "今阳",
-          "description": "Java内存模型 & JVM内存分区\n线程之间的通信\n在命令式编程中，线程之间的通信机制有两种共享内存和消息传递。\n共享内存：线程之间通过写-读内存中的公共状态来隐式进行通信，典型的共享内存通信方式就是通过共享对象进行通信。\n消息传递：线程之间没有公共状态，线程之间必须通过明确的发送消息来显式进行通信，在java中典型的消息传递方式就是wait()和notify()，notifyAll()。\nJava内存模型\nJava的并发采用的是共享内存模型，JMM决定一个线程对共享变量的写入何时对另一个线程可见。\nJMM(Java Memory Model)是Java虚拟机规范定义的，用来屏蔽掉Java程序在各种不同的硬件和操作系统对内存的访问的差异。\nJava虚拟机规范中试图定义一种Java内存模型来屏蔽掉各种硬件和操作系统的内存访问差异。\n---《深入理解Java虚拟机》\n\n这组规则是控制程序中各个变量在共享数据区域和私有数据区域的访问方式，围绕原子性，有序性、可见性展开；Java内存模型中规定所有变量都存储在主内存， 主内存是共享内存区域，所有线程都可以访问，但线程对变量的操作(读取赋值等)必须在工作内存中进行;\n线程之间的共享变量存储在主内存（main memory）中，每个线程都有一个私有的本地内存（local memory），本地内存中存储了该线程以读/写共享变量的副本。本地内存是JMM的一个抽象概念，并不真实存在。它涵盖了缓存，写缓冲区，寄存器以及其他的硬件和编译器优化。\n如何从工作内存同步到主内存之间的实现细节，Java内存模型定义了以下八种操作来完成,而且这8个操作必须是原子性的。\n数据同步八大原子操作\nlock（锁定）：作用于主内存的变量，把一个变量标识为一条线程独占状态。\nunlock（解锁）：作用于主内存变量，把一个处于锁定状态的变量释放出来，释放后的变量才可以…",
-          "link": "https://juejin.cn/post/7049998517015674893",
-          "publishedOn": "2022-01-05T23:55:29.000Z",
-          "wordCount": 38,
-          "title": "重学Java系列-2. JVM内存模型 & 类加载机制"
-        },
-        {
-          "id": "https://juejin.cn/post/7049924379865530398",
-          "author": "Android_开发者",
-          "description": "欢迎阅读 MAD Skills 系列 之 Gradle 与 AGP 构建 API 的第三篇文章。在上一篇文章《Gradle 与 AGP 构建 API: 如何编写插件》中，您学习了如何编写您自己的插件，以及如何使用 Variants API。\n如果您更喜欢通过视频了解此内容，请 点击此处 查看。\n在本文中，您将会学习 Gradle 的 Task、Provider、Property 以及使用 Task 进行输入与输出。同时您也将进一步完善您的插件，并学习如何使用新的 Artifact API 访问各种构建产物。\nProperty\n假设我想要创建一个插件，该插件可以使用 Git 版本自动更新应用清单文件中指定的版本号。为了达到这一目标，我需要为构建添加两个 Task。第一个 Task 会获取 Git 版本，而第二个 Task 将会使用该 Git 版本来更新清单文件。\n让我们从创建名为 GitVersionTask 的新任务开始。GitVersionTask 需要继承 DefaultTask，同时实现带有注解的 taskAction 函数。下面是查询 Git 树顶端信息的代码。\nabstract class GitVersionTask: DefaultTask() {\n   @TaskAction\n   fun taskAction(){\n       // 这里是获取树版本顶端的代码\n       val process = ProcessBuilder(\n           \"git\",\n           \"rev-parse --short HEAD\"\n       ).start()\n       val error = process.errorStream.readBytes().toString()\n       if (error.isNotBlank())…",
-          "link": "https://juejin.cn/post/7049924379865530398",
-          "publishedOn": "2022-01-05T19:07:56.000Z",
-          "wordCount": 40,
-          "title": "Gradle 与 AGP 构建 API: 进一步完善您的插件！"
         }
       ]
     },
@@ -16929,6 +16703,24 @@
       "feedUrl": "https://opensource.com/feed",
       "siteUrl": "https://opensource.com/frontpage",
       "articles": [
+        {
+          "id": "https://opensource.com/article/22/1/manage-passwords-linux-terminal",
+          "author": "sethkenlon",
+          "description": "These days, we all have a few dozen passwords. Fortunately, the bulk of those passwords are probably for websites, and you probably access most websites through your internet browser, and most browsers have a built-in password manager. The most common internet browsers also have a synchronization feature to help you distribute your passwords between the browsers you run across all your devices, so you're never without your login information when you need it.\nread more",
+          "link": "https://opensource.com/article/22/1/manage-passwords-linux-terminal",
+          "publishedOn": "2022-01-19T08:01:00.000Z",
+          "wordCount": 2017,
+          "title": "Manage your passwords in the Linux terminal"
+        },
+        {
+          "id": "https://opensource.com/article/22/1/php-website-bouncer-crowdsec",
+          "author": "Philippe Humeau",
+          "description": "PHP is a widely-used programming language on the web, and it's estimated that nearly 80% of all websites use it. My team at CrowdSec decided that we needed to provide server admins with a PHP bouncer to help ward away bots and bad actors who may attempt to interact with PHP files.\nread more",
+          "link": "https://opensource.com/article/22/1/php-website-bouncer-crowdsec",
+          "publishedOn": "2022-01-19T08:00:00.000Z",
+          "wordCount": 1854,
+          "title": "Protect your PHP website from bots with this open source tool"
+        },
         {
           "id": "https://opensource.com/article/22/1/unit-testing-googletest-ctest",
           "author": "hANSIc99",
@@ -17045,33 +16837,6 @@
           "publishedOn": "2022-01-10T08:00:00.000Z",
           "wordCount": 2204,
           "title": "Why we built an open source testing framework"
-        },
-        {
-          "id": "https://opensource.com/article/22/1/learn-ansible",
-          "author": "sumantro",
-          "description": "Automation just keeps improving the lives of everyone on the IT team. Ansible helps anyone who uses IT automation, whether for keeping files organized or configuring printers, or for anything else someone can imagine and build. These are some of the most notable use cases and experiences shared on Opensource.com in 2021.\nIf you are hearing about Ansible for the first time, or if you're a seasoned user, these articles will have something for you.\nread more",
-          "link": "https://opensource.com/article/22/1/learn-ansible",
-          "publishedOn": "2022-01-09T08:00:00.000Z",
-          "wordCount": 1118,
-          "title": "9 ways to learn Ansible this year"
-        },
-        {
-          "id": "https://opensource.com/article/22/1/open-source-eco-friendly",
-          "author": "lauren-pritchett",
-          "description": "For governments and large organizations, open source continued to be a critical component for policy decisions and sustainability goals in 2021. The United Nations is one such organization that is relying on open source to reach its goals across a wide spectrum of issues including climate change. While it is crucial for world leaders to make big decisions to save the planet, many average citizens are also eager to contribute to the cause.\nread more",
-          "link": "https://opensource.com/article/22/1/open-source-eco-friendly",
-          "publishedOn": "2022-01-08T08:00:00.000Z",
-          "wordCount": 1240,
-          "title": "11 open source ideas for being more eco-friendly in 2022"
-        },
-        {
-          "id": "https://opensource.com/article/22/1/cameras-usb-ports-obs",
-          "author": "sethkenlon",
-          "description": "If you stream with OBS with multiple cameras on Linux, you might notice that cameras are loaded as they are detected during boot. You probably don't give it much thought, normally, but if you have a permanent streaming setup with complex OBS templates, you need to know which camera in the physical world is going to show up in which screen in the virtual one. In other words, you don't want to assign one device as Camera A today only to have it end up as Camera B tomorrow.\nread more",
-          "link": "https://opensource.com/article/22/1/cameras-usb-ports-obs",
-          "publishedOn": "2022-01-07T08:01:00.000Z",
-          "wordCount": 1918,
-          "title": "Lock your camera to a specific USB port in OBS"
         }
       ]
     },
@@ -17238,15 +17003,6 @@
           "publishedOn": "2022-01-10T16:45:00.000Z",
           "wordCount": 224,
           "title": "15 Years Since the iPhone Announcement"
-        },
-        {
-          "id": "https://www.macsparky.com/?p=11580",
-          "author": "David Sparks",
-          "description": "Sometimes the news can make you feel old. The iMac G4 turning 20 is one of those things for me. It does not seem that long ago to me that Apple came out with that cute little flat-screened flower-looking computer. Stephen Hackett made a great video celebrating the G4 iMac and today is the day... Continue reading →\nThe post The iMac G4 Turns 20 appeared first on MacSparky.",
-          "link": "https://www.macsparky.com/blog/2022/01/the-imac-g4-turns-20/",
-          "publishedOn": "2022-01-07T20:00:00.000Z",
-          "wordCount": 143,
-          "title": "The iMac G4 Turns 20"
         }
       ]
     },
@@ -17270,6 +17026,271 @@
       "title": "Wait But Why",
       "feedUrl": "https://waitbutwhy.com/feed",
       "siteUrl": "https://waitbutwhy.com",
+      "articles": []
+    },
+    {
+      "title": "Julia Evans",
+      "feedUrl": "https://jvns.ca/atom.xml",
+      "siteUrl": "http://jvns.ca/atom.xml",
+      "articles": [
+        {
+          "id": "https://jvns.ca/blog/2022/01/15/some-ways-dns-can-break/",
+          "author": null,
+          "description": "When I first learned about it, DNS didn’t seem like it should be THAT\ncomplicated. Like, there are DNS records, they’re stored on a server, what’s\nthe big deal?\nBut with DNS, reading about how it works in a textbook doesn’t prepare you for\nthe sheer volume of different ways DNS can break your system in practice. It’s\nnot just caching problems!\nSo I asked people on Twitter for\nexample of DNS problems they’ve run into, especially DNS problems that didn’t\ninitially appear to be DNS problems. (the popular “it’s always DNS” meme)\nI’m not going to discuss how to solve or avoid any of these problems in this\npost, but I’ve linked to webpages discussing the problem where I could find\nthem.\nproblem: slow network requests\nYour network requests are a little bit slower than expected, and it’s actually\n…",
+          "link": "https://jvns.ca/blog/2022/01/15/some-ways-dns-can-break/",
+          "publishedOn": "2022-01-15T12:25:37.000Z",
+          "wordCount": 1651,
+          "title": "Some ways DNS can break"
+        },
+        {
+          "id": "https://jvns.ca/blog/2022/01/11/how-to-find-a-domain-s-authoritative-nameserver/",
+          "author": null,
+          "description": "Here’s a very quick “how to” post on how to find your domain’s authoritative\nnameserver.\nI’m writing this because if you made a DNS update and it didn’t work, there are 2 options:\nYour authoritative nameserver doesn’t have the correct record\nYour authoritative nameserver does have the correct record, but an old record is cached and you need to wait for the cache to expire\nTo be able to tell which one is happening (do you need to make a change, or do\nyou just need to wait?), you need to be able to find your domain’s\nauthoritative nameserver and query it to see what records it has.\nBut when I looked up “how to find a domain’s authoritative nameserver” to see\nwhat advice was out there, I found a lot of different methods being mentioned,\nsome of which can give you the wrong answer.\nSo let’s wa…",
+          "link": "https://jvns.ca/blog/2022/01/11/how-to-find-a-domain-s-authoritative-nameserver/",
+          "publishedOn": "2022-01-11T08:30:16.000Z",
+          "wordCount": 1304,
+          "title": "How to find a domain's authoritative nameservers"
+        }
+      ]
+    },
+    {
+      "title": "Bartosz Ciechanowski",
+      "feedUrl": "https://ciechanow.ski/atom.xml",
+      "siteUrl": "https://ciechanow.ski/",
+      "articles": [
+        {
+          "id": "https://ciechanow.ski/gps/",
+          "author": null,
+          "description": "Global Positioning System is, without a doubt, one of the most useful inventions of the late 20th century. It made it significantly easier for ships, airplanes, cars, and hikers to figure out where they are with high degree of accuracy.\nOne of the most exciting aspects of this system are the satellites surrounding Earth. Here’s a current constellation of active satellites, you can drag the view around to see it from different angles:\nThis article has many interactive demonstrations which are best seen on the website.",
+          "link": "https://ciechanow.ski/gps/",
+          "publishedOn": "2022-01-18T12:00:00.000Z",
+          "wordCount": 9627,
+          "title": "GPS"
+        }
+      ]
+    },
+    {
+      "title": "fasterthanli.me",
+      "feedUrl": "https://fasterthanli.me/index.xml",
+      "siteUrl": "https://fasterthanli.me",
+      "articles": []
+    },
+    {
+      "title": "Martin Kleppmann's blog",
+      "feedUrl": "https://feeds.feedburner.com/martinkl",
+      "siteUrl": "http://martin.kleppmann.com/",
+      "articles": []
+    },
+    {
+      "title": "Matt Mullenweg",
+      "feedUrl": "https://ma.tt/feed/atom/",
+      "siteUrl": "https://ma.tt",
+      "articles": []
+    },
+    {
+      "title": "All Things Distributed",
+      "feedUrl": "https://www.allthingsdistributed.com/atom.xml",
+      "siteUrl": "https://www.allthingsdistributed.com/",
+      "articles": []
+    },
+    {
+      "title": "John D. Cook",
+      "feedUrl": "https://www.johndcook.com/blog/feed",
+      "siteUrl": "https://www.johndcook.com/blog",
+      "articles": [
+        {
+          "id": "https://www.johndcook.com/blog/?p=94796",
+          "author": "John",
+          "description": "The previous post presented an approximation for the steady-state wait time in queue with a general probability distribution for inter-arrival times and for service times, i.e. a G/G/s queue where s is the number of servers. This post will give an upper bound for the wait time. Let σ²A be the variance on the inter-arrival […]\nUpper bound on wait time for general queues first appeared on John D. Cook.",
+          "link": "https://www.johndcook.com/blog/2022/01/18/upper-bound-on-wait-time/",
+          "publishedOn": "2022-01-19T01:26:57.000Z",
+          "wordCount": 337,
+          "title": "Upper bound on wait time for general queues"
+        },
+        {
+          "id": "https://www.johndcook.com/blog/?p=94481",
+          "author": "John",
+          "description": "Textbook presentations of queueing theory start by assuming that the time between customer arrivals and the time to serve a customer are both exponentially distributed. Maybe these assumptions are realistic enough, but maybe not. For example, maybe there’s a cutoff on service time. If someone takes too long, you tell them there’s no more you […]\nMultiserver queues with general probability distributions first appeared on John D. Cook.",
+          "link": "https://www.johndcook.com/blog/2022/01/15/ggs/",
+          "publishedOn": "2022-01-15T19:48:20.000Z",
+          "wordCount": 657,
+          "title": "Multiserver queues with general probability distributions"
+        },
+        {
+          "id": "https://www.johndcook.com/blog/?p=94476",
+          "author": "John",
+          "description": "If a single server is being pushed to the limit, adding a second server can drastically reduce wait times. This is true whether the server is a human serving food or a computer serving web pages. I first wrote about this here and I give more details here. What if you add an extra server […]\nQueueing and Economies of Scale first appeared on John D. Cook.",
+          "link": "https://www.johndcook.com/blog/2022/01/15/queueing-and-scale/",
+          "publishedOn": "2022-01-15T15:36:14.000Z",
+          "wordCount": 689,
+          "title": "Queueing and Economies of Scale"
+        },
+        {
+          "id": "https://www.johndcook.com/blog/?p=94430",
+          "author": "John",
+          "description": "Linear logic has connectives not used in classical logic. The connectives ⊗and & are conjunctions, ⊕ and ⅋ are disjunctions, and ! and ? are analogous to the modal operators ◻ and ◇ (necessity and possibility). Another way to classify the connectives is to say ⊕ and & are called additive, ⊗ and ⅋ are […]\nLinear logic arithmetic first appeared on John D. Cook.",
+          "link": "https://www.johndcook.com/blog/2022/01/15/linear-logic-arithmetic/",
+          "publishedOn": "2022-01-15T11:49:11.000Z",
+          "wordCount": 385,
+          "title": "Linear logic arithmetic"
+        },
+        {
+          "id": "https://www.johndcook.com/blog/?p=94271",
+          "author": "John",
+          "description": "The other day I wrote about orthogonal Latin squares. Two Latin squares are orthogonal if the list of pairs of corresponding elements in the two squares contains no repeats. A self-orthogonal Latin square (SOLS) is a Latin square that is orthogonal to its transpose. Here’s an example of a self-orthogonal Latin square: 1 7 6 […]\nSelf-Orthogonal Latin Squares first appeared on John D. Cook.",
+          "link": "https://www.johndcook.com/blog/2022/01/13/self-orthogonal-latin-squares/",
+          "publishedOn": "2022-01-13T17:36:20.000Z",
+          "wordCount": 824,
+          "title": "Self-Orthogonal Latin Squares"
+        },
+        {
+          "id": "https://www.johndcook.com/blog/?p=94279",
+          "author": "John",
+          "description": "There’s a rule of systems thinking that improving part of a system can often make the system as a whole worse. One example of this is Braess’ Paradox that adding roads can make traffic worse, and closing roads can improve traffic. Another example is the paradox of enrichment: Increasing the food available to an ecosystem […]\nBetter parts, worse system first appeared on John D. Cook.",
+          "link": "https://www.johndcook.com/blog/2022/01/13/better-parts-worse-system/",
+          "publishedOn": "2022-01-13T13:07:02.000Z",
+          "wordCount": 524,
+          "title": "Better parts, worse system"
+        },
+        {
+          "id": "https://www.johndcook.com/blog/?p=94256",
+          "author": "John",
+          "description": "A blog post about queueing theory that I wrote back in 2008 continues to be popular. The post shows that when a system is close to capacity, adding another server dramatically reduces the wait time. In that example, going from one teller to two tellers doesn’t make service twice as fast but 93 times as […]\nQueueing theory equations first appeared on John D. Cook.",
+          "link": "https://www.johndcook.com/blog/2022/01/12/mm2/",
+          "publishedOn": "2022-01-12T19:08:35.000Z",
+          "wordCount": 599,
+          "title": "Queueing theory equations"
+        },
+        {
+          "id": "https://www.johndcook.com/blog/?p=91481",
+          "author": "John",
+          "description": "Swanson’s rule of thumb [1] says that the mean of a moderately skewed probability distribution can be approximated by the weighted average of the 10th, 50th, and 90th percentile, with weights 0.3, 0.4, and 0.3 respectively. Because it is based on percentiles, the rule is robust to outliers. Swanson’s rule is used in the oil […]\nSwanson’s rule of thumb first appeared on John D. Cook.",
+          "link": "https://www.johndcook.com/blog/2022/01/12/swansons-rule/",
+          "publishedOn": "2022-01-12T15:46:45.000Z",
+          "wordCount": 615,
+          "title": "Swanson’s rule of thumb"
+        },
+        {
+          "id": "https://www.johndcook.com/blog/?p=58085",
+          "author": "John",
+          "description": "I was stunned when my client said that a database query that I asked them to run would cost the company $100,000 per year. I had framed my question in the most natural way, not thinking that at the company’s scale it would be worth spending some time thinking about the query. Things have somewhat […]\nRandom sampling to save money first appeared on John D. Cook.",
+          "link": "https://www.johndcook.com/blog/2022/01/11/random-sampling/",
+          "publishedOn": "2022-01-11T22:12:43.000Z",
+          "wordCount": 493,
+          "title": "Random sampling to save money"
+        },
+        {
+          "id": "https://www.johndcook.com/blog/?p=94145",
+          "author": "John",
+          "description": "Suppose you create an n × n Latin square filled with the first n letters of the Roman alphabet. This means that each letter appears exactly once in each row and in each column. You could repeat the same exercise only using the Greek alphabet. Is it possible to find two n × n Latin […]\nGreco-Latin squares and magic squares first appeared on John D. Cook.",
+          "link": "https://www.johndcook.com/blog/2022/01/11/greco-latin-squares/",
+          "publishedOn": "2022-01-11T17:10:02.000Z",
+          "wordCount": 794,
+          "title": "Greco-Latin squares and magic squares"
+        },
+        {
+          "id": "https://www.johndcook.com/blog/?p=94135",
+          "author": "John",
+          "description": "In a n×n Latin square, each of the numbers 1 through n appears exactly once in each row and column. For example, the 5 × 5 square below is a Latin square. If we placed a rook on each square numbered 1, the rooks would not attack each other since no two rooks would be […]\nLatin squares and 3D chess first appeared on John D. Cook.",
+          "link": "https://www.johndcook.com/blog/2022/01/10/latin-squares-and-3d-chess/",
+          "publishedOn": "2022-01-11T01:18:01.000Z",
+          "wordCount": 542,
+          "title": "Latin squares and 3D chess"
+        },
+        {
+          "id": "https://www.johndcook.com/blog/?p=94125",
+          "author": "John",
+          "description": "Five years ago I recommended the book Learning Base R. Here’s the last paragraph of my review: Now there are more books on R, and some are more approachable to non-statisticians. The most accessible one I’ve seen so far is Learning Base R by Lawrence Leemis. It gets into statistical applications of R—that is ultimately why […]\nNew R book first appeared on John D. Cook.",
+          "link": "https://www.johndcook.com/blog/2022/01/10/new-r-book/",
+          "publishedOn": "2022-01-11T00:18:02.000Z",
+          "wordCount": 402,
+          "title": "New R book"
+        },
+        {
+          "id": "https://www.johndcook.com/blog/?p=94087",
+          "author": "John",
+          "description": "A while back I wrote about computational survivalism, being prepared to work productively in a restricted environment. The first time I ran into computational survivalism was when someone said to me “I prefer Emacs, but I use vi because I only want to use tools I can count on being installed everywhere.” I thought that […]\nComputational asceticism first appeared on John D. Cook.",
+          "link": "https://www.johndcook.com/blog/2022/01/10/computational-asceticism/",
+          "publishedOn": "2022-01-10T15:01:32.000Z",
+          "wordCount": 897,
+          "title": "Computational asceticism"
+        }
+      ]
+    },
+    {
+      "title": "Feross.org",
+      "feedUrl": "https://feross.org/atom.xml",
+      "siteUrl": "https://feross.org",
+      "articles": []
+    },
+    {
+      "title": "ridiculous_fish",
+      "feedUrl": "https://ridiculousfish.com/blog/atom.xml",
+      "siteUrl": "http://ridiculousfish.com/blog/",
+      "articles": []
+    },
+    {
+      "title": "the morning paper",
+      "feedUrl": "https://blog.acolyer.org/feed/",
+      "siteUrl": "https://blog.acolyer.org",
+      "articles": []
+    },
+    {
+      "title": "Coding Horror",
+      "feedUrl": "https://blog.codinghorror.com/rss/",
+      "siteUrl": "https://blog.codinghorror.com/",
+      "articles": []
+    },
+    {
+      "title": "Hundred Rabbits",
+      "feedUrl": "https://100r.co/links/rss.xml",
+      "siteUrl": "https://100r.co",
+      "articles": []
+    },
+    {
+      "title": "journal.stuffwithstuff.com",
+      "feedUrl": "https://journal.stuffwithstuff.com/rss.xml",
+      "siteUrl": "http://journal.stuffwithstuff.com/",
+      "articles": []
+    },
+    {
+      "title": "Tristan Hume",
+      "feedUrl": "https://thume.ca/atom.xml",
+      "siteUrl": "https://thume.ca/atom.xml",
+      "articles": []
+    },
+    {
+      "title": "Eli Bendersky's website",
+      "feedUrl": "https://eli.thegreenplace.net/feeds/all.atom.xml",
+      "siteUrl": "https://eli.thegreenplace.net/",
+      "articles": [
+        {
+          "id": "https://eli.thegreenplace.net/2022/in-defense-of-books/",
+          "author": null,
+          "description": "<p>When I'm asked &quot;what podcasts do you listen to?&quot;, after an uncomfortable pause\nI'm forced to answer that &quot;I usually don't&quot;. The full explanation is almost\nalways too long for a brief friendly chat, but I did manage to articulate it to\nfriends a couple of times in recent history …</p>",
+          "link": "https://eli.thegreenplace.net/2022/in-defense-of-books/",
+          "publishedOn": "2022-01-17T17:27:00.000Z",
+          "wordCount": 624,
+          "title": "In defense of books"
+        }
+      ]
+    },
+    {
+      "title": "Computing Education Research Blog",
+      "feedUrl": "https://computinged.wordpress.com/feed/",
+      "siteUrl": "https://computinged.wordpress.com",
+      "articles": []
+    },
+    {
+      "title": "Embedded in Academia",
+      "feedUrl": "https://blog.regehr.org/feed/atom",
+      "siteUrl": "https://blog.regehr.org",
+      "articles": []
+    },
+    {
+      "title": "Ben Hoyt's technical writing",
+      "feedUrl": "https://benhoyt.com/writings/rss.xml",
+      "siteUrl": "https://benhoyt.com/writings/",
       "articles": []
     }
   ],
