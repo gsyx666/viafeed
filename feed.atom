@@ -2,10 +2,1197 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gsyx666.github.io/action-osmosfeed/index.html</id>
     <title>gsyx::feed</title>
-    <updated>2022-01-22T01:54:44.536Z</updated>
+    <updated>2022-01-22T09:22:46.250Z</updated>
     <generator>osmosfeed 1.12.0</generator>
     <link rel="alternate" href="https://gsyx666.github.io/action-osmosfeed/index.html"/>
     <link rel="self" href="https://gsyx666.github.io/action-osmosfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Day 0: Joined dev.to!]]></title>
+        <id>https://dev.to/nandanwewhare/day-0-joined-devto-16md</id>
+        <link href="https://dev.to/nandanwewhare/day-0-joined-devto-16md"/>
+        <updated>2022-01-22T08:52:43.000Z</updated>
+        <summary type="html"><![CDATA[Joined dev.to, aiming to write posts everyday here. The posts will be quite informal and maybe I'll try and use dev.to as a daily blog.
+Working on a full stack project, will update more on this in the coming posts. Technically haven't written a single line of code for this but design and stack is ready.
+Feeling a bit down on health side, let's see when I open the IDE 😜.
+Here's to beginnings 🍺]]></summary>
+        <author>
+            <name>Nandan Wewhare</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[请问国内大厂有没有 cpu 开 vtx 的 vps 主机出售，不要裸金属]]></title>
+        <id>829938</id>
+        <link href="https://www.v2ex.com/t/829938"/>
+        <updated>2022-01-22T08:40:35.000Z</updated>
+        <summary type="html"><![CDATA[minlearn: 
+普通 vps 就行
+限大厂，不要没听说过的小厂家
+不要裸金属，太贵
+谢谢回答]]></summary>
+        <author>
+            <name>minlearn</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[求把"王二到底爱不爱陈清扬”这十个字生成 ttf 格式字体的工具]]></title>
+        <id>829937</id>
+        <link href="https://www.v2ex.com/t/829937"/>
+        <updated>2022-01-22T08:27:38.000Z</updated>
+        <summary type="html"><![CDATA[turtlekey: 
+如题。目前的需求是只将以上十个字生成 ttf 格式的字体（只用得上这十个字，中文字体库太大了，网页加载很慢🤷‍♂️），有哪些工具可以做到呢，最好是在线工具。
+先行谢过各位大佬🙏🏼]]></summary>
+        <author>
+            <name>turtlekey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[娶妻 生子真的是必须吗？]]></title>
+        <id>829936</id>
+        <link href="https://www.v2ex.com/t/829936"/>
+        <updated>2022-01-22T08:24:01.000Z</updated>
+        <summary type="html"><![CDATA[qnyh: 萌生了不娶妻生子的想法
+感觉自己的水平根本负担不起娶妻生子后的开支，生个孩子也是跟我一起遭罪
+现实是连父母那边给的压力都顶不住  
+最近挺迷茫的，看不到方向 唉]]></summary>
+        <author>
+            <name>qnyh</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[一日一技 | SSH 下跨系统连通剪贴板]]></title>
+        <id>https://sspai.com/post/71018</id>
+        <link href="https://sspai.com/post/71018"/>
+        <updated>2022-01-22T08:13:52.000Z</updated>
+        <summary type="html"><![CDATA[终端是很多人日常打交道的工具之一。比如，深度学习是目前一个大热的研究课题，由于训练和推理过程需要强大的 GPU，研究生们共享 GPU 服务器，并通过终端使用 SSH 连接并编写代码。而公司中的运维人员，也需要通过 SSH 进行远程访问服务器，对系统或服务进行维护。
+在日常操作中，最大的问题就是如何优雅地从远程主机中复制文本并粘贴到本机中。
+问题：跨平台系统剪贴板不通
+远程主机一般我们不能直接通过显示器和键盘控制，也没有图形界面，所有的操作都需要通过 SSH 访问并在终端操作。
+而本机和远程主机都各自有自己的一套剪切板，在命令操作中复制的文本只会保存在远程主机的剪贴板中。那我们通过终端的图形界面选择并复制不可以吗？
+
+上图是一个非常日常的场景，我们需要从一个配置文件里复制一行或是多行的代码，这里我们选择的工具是 VIM。但我们真的开始复制时就会遇到如下的困难：
+
+困难一：如果只想要复制正文，那么左侧的代码行号也不得不被选择。尽管这个可以通过绑定快捷键快速开关行号。
+困难二：细心观察，图中文本的第三行超过了终端的宽度，自动换行到下一行展示。如果同时选择这两行，粘贴出来的效果也会是两行而不是它本该的一行。
+困难三：整份文档并不只有 24 行，如果想要复制整份文档，则不得不分几次逐次选择并复制全终端屏幕。
+
+而这些情况也的确困扰了我很久。
+解决方案：OSC codes
+OSC 代表的是 Operating System Controls, 是一种约定俗成的用于终端程序中的逃逸序列表达，终端会根据 OSC codes 所定义的行文处理方式处理它所包围的文本。
+而正巧的是就有一种定义决定了「如何从终端中复制内容到系统剪贴板中」，那就是 OSC 52 escape sequence。
+OSC 52 一次最长接受 100000 个字节，其中前 7 个字节为 "\033]52;c;"，中间 …]]></summary>
+        <author>
+            <name>正弦定理</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Top 5 Websites To Find Great Illustrations]]></title>
+        <id>https://dev.to/sachinchaurasiya/top-5-websites-to-find-great-illustrations-1kal</id>
+        <link href="https://dev.to/sachinchaurasiya/top-5-websites-to-find-great-illustrations-1kal"/>
+        <updated>2022-01-22T08:13:15.000Z</updated>
+        <summary type="html"><![CDATA[When we work with website designing and development we might need to add some illustrations to give some visuals so that users can visualize what we are designing and developing.
+To add illustrations we need to find or create one that matches our requirements. creating illustrations from scratch is time-consuming and takes a lot of effort, so instead of creating our own illustrations, we can get them from illustrations websites that are available for free plus (we can buy paid ones if required).
+In this article, I'm going to share the top 5 illustrations website where you can find different kinds of great illustrations for your next project.
+Let's get started.
+
+Storyset is a cool collection of illustrations to power up your next project. there are 5 different styles available in Storyset. you can choose one and customize it as you want then export it as SVG or PNG.
+Link for storyset
+
+
+## Open Doodles
+
+Open Doodle is an open-source collection of free illustrations. it allows you to download illustrations in 
+It also provides you with the generator to generate doodles 
+### Link for open doodles
+
+Themeisle is a great website to get high-quality, free and delightful illustrations to use in your next project.
+Link for theme isle
+
+
+
+  
+  
+  Humaaans
+
+
+
+Humaaans is a great website to get illustrations of people with a design library. You can edit all the illustrations using blush editor.
+Link for humaaans
+
+
+
+  
+  
+  Drawkit
+
+
+
+Drawkit comes with various types of illustrations like Health & Medical Illustrations, Digital marketing Illustrations, Marketing and ads Illustrations and etc.
+Link for drawkit
+
+
+
+  
+  
+  UnDraw
+
+
+
+UnDraw is an OpenSource illustration project with beautiful SVG images that you can use completely free and without attribution.
+Link for undraw
+
+
+
+  
+  
+  Summary
+
+
+To summarize we talked about the top 5 illustration websites, some of them are open source and some of them are freemium.
+And that’s it for this topic. Thank you for reading.
+LinkedIn | Twitter]]></summary>
+        <author>
+            <name>Sachin Chaurasiya</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[在极少数情况下，冠状病毒疫苗可能会引起类似于龙科威的症状]]></title>
+        <id>https://hn.buzzing.cc/hn/30032418/</id>
+        <link href="https://hn.buzzing.cc/hn/30032418/?score=100&amp;original_url=https%3A%2F%2Fwww.science.org%2Fcontent%2Farticle%2Frare-cases-coronavirus-vaccines-may-cause-long-covid-symptoms&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30032418&amp;sensitive=false"/>
+        <updated>2022-01-22T08:07:51.000Z</updated>
+        <summary type="html"><![CDATA[在极少数情况下，冠状病毒疫苗可能会引起类似于龙科威的症状]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Intro new book on Svelte]]></title>
+        <id>829934</id>
+        <link href="https://www.v2ex.com/t/829934"/>
+        <updated>2022-01-22T08:03:18.000Z</updated>
+        <summary type="html"><![CDATA[fujohnwang: 
+Simple Svelte 正式发售，博客， 面包多，Gumroad 三平台同时上架， 欢迎’光林‘[Grin]
+https://afoo.me/books.html
+https://mianbaoduo.com/o/bread/YpeTkp1s
+https://wfq.gumroad.com/l/simple_svelte]]></summary>
+        <author>
+            <name>fujohnwang</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[让NPC和你跑得一样快的开发者真了不起]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/gaming/comments/s9ln0d/developers_who_make_the_npc_run_the_same_speed_as/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/gaming/comments/s9ln0d/developers_who_make_the_npc_run_the_same_speed_as/?score=75058&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fgaming%2Fcomments%2Fs9ln0d%2Fdevelopers_who_make_the_npc_run_the_same_speed_as%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fgaming%2Fcomments%2Fs9ln0d%2Fdevelopers_who_make_the_npc_run_the_same_speed_as%2F&amp;channel=gaming&amp;sensitive=false"/>
+        <updated>2022-01-22T08:02:01.000Z</updated>
+        <summary type="html"><![CDATA[让NPC和你跑得一样快的开发者真了不起]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[小米手机 怎么限制应用使用时间]]></title>
+        <id>829933</id>
+        <link href="https://www.v2ex.com/t/829933"/>
+        <updated>2022-01-22T08:00:27.000Z</updated>
+        <summary type="html"><![CDATA[zyxk: 
+儿童放假了.而风筝守护也下线了. 用什么可以限制儿童使用时间呢,
+现在大人都忍不住不停的看手机, 更别说不到 10 岁的儿童了.
+miui 的儿童模式是完全是为学前儿童设置的低幼版,完全没法用.
+针对青少年和老人有一个亲情守护功能,就是独立的风筝守护应用, 在信息保护法发布前突然下线了.不能限制应用时长了,完全不能用了
+在屏幕使用时间里,可以设置各应用的使用时间限制,但是.但是,时间到了之后,单击延长时间,连密码都不用输入就又可以玩了..
+第三方 app, 系统限制,需要给各种权限后,可能是系统限制? 使用虚拟桌面, 不停刷新 /切换等来进行限制,实在是体验不好.
+之前 miui 系统作为人性化的代表,现在华为 苹果都可以很方便的限制应用时长,
+而 miui 自己多年前都有的,并且简单好用的功能,现在怎么做成这个样子了呢
+不换手机,各位有什么方法,或好用的 app 推荐吗?]]></summary>
+        <author>
+            <name>zyxk</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Our favorite Linux commands to use just for fun]]></title>
+        <id>https://opensource.com/article/22/1/fun-linux-commands</id>
+        <link href="https://opensource.com/article/22/1/fun-linux-commands"/>
+        <updated>2022-01-22T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In November, we shared the article 7 Linux commands to use just for fun and asked you to tell us what "for fun" Linux command you recommend—and why?
+Some Opensource.com contributors shared their favorites below.
+My favorites:
+read more]]></summary>
+        <author>
+            <name>admin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[超详细的 ARM 架构适配介绍！]]></title>
+        <id>829931</id>
+        <link href="https://www.v2ex.com/t/829931"/>
+        <updated>2022-01-22T07:52:06.000Z</updated>
+        <summary type="html"><![CDATA[Cloudpods: 
+Cloudpods 是一个开源的 Golang 实现的云原生的多云和混合云融合平台。
+Cloudpods 不仅可以管理本地的虚拟机和物理机资源，还可以管理其他公有云和私有云平台的资源。
+GitHub: https://github.com/yunionio/cloudpods，欢迎大家使用+star
+本文主要介绍云联壹云平台如何适配 ARM ，并运行在 ARM CPU 架构的机器上。
+背景介绍
+1 、平台服务运行架构
+云联壹云平台采用容器化，分布式的架构运行在 Kubernetes （ K8s ）之上。下面是平台服务运行的架构图：
+
+在多个节点之上，我们会构建 Kubernetes 的集群 ，它是一个容器管理的平台。
+在 Kubernetes 的平台之上，后端服务都是容器化的，是以容器的方式去分布式运行。
+通过 K8s 去做调度的管理，然后将服务自动地打散到多个节点上运行，总结两点是服务容器化，并依靠 K8s 来提供容器分布式运行的环境。
+另外，底层的节点是有类型的，控制层面的服务运行在控制节点，平台内置了一个私有云，提供了完整的私有云功能。
+若要使用私用云这个功能，则还需要一些计算节点，计算节点上会跑虚拟化相关的软件，提供私有云虚拟化的功能，总结来说就是计算节点运行私有云的虚拟机。
+2 、CPU 架构简介
+大家熟悉的服务器或者台式机都是 X86 架构的 CPU ，X86 架构的 CPU 特点是性能高，并且软件的兼容性很好。
+大家平常工作中使用的大部分是英特尔等提供的 X86 架构的 CPU ，对于英特尔和 AMD 大家都不陌生，这两家厂商专门生产 X86 架构 CPU 。
+另外 X86 64 位这种架构的 CPU 存在别名，例如 x86_64 或者 amd64 都代表 X86 架构的 64 位 CPU 。
+
+与 X86 不同的是还有另一种称为 ARM 的架构，这是本文的主题，那么 ARM 架构的 CPU 和 X86 架构的 CPU 相比有何不同？
+它的制造成本更低，ARM 架构的芯片的功耗也很低，代表性的厂商和使用者是苹果和华为。
+苹果将生产的 ARM 芯片用到笔记本或 IMAC 上，ARM 架构的 CPU 越来越普及。
+国内的华为会生产基于 ARM 架构的服务器，64 位 ARM 架构 CPU 也有别名，例如 arm64 、aarch64 ，这两种叫法表达同一个意思。
+3 、为什么适配 ARM
+因为 ARM 的 CPU 普及是大环境下的发展趋势，例如在国际上，苹果将 ARM 架构的 CPU 投入到笔记本和台式机上，在国产化方面，国内有鲲鹏和飞腾 CPU ，国产的基于 ARM 架构的服务器，现在市场上主流的是鲲鹏和飞腾。 在国产化上，使用 ARM 架构也是一个趋势。
+另外是适配了 ARM 架构能够提升产品的竞争力，竞争力体现在能够支持管理基于 ARM64 位和 X86_64 架构的虚拟化混合部署。
+
+这种混合部署的意思是可以同时把服务运行在 ARM 和 X86 的服务器上，同时运行各自的虚拟化，可以通过我们平台统一部署和管理。
+接下来还有如何适配 ARM64 和技术细节的超详细介绍，篇幅所限，了解全文请看： https://mp.weixin.qq.com/s/v-kxWac16wsfmuUAhhNExQ
+GitHub: https://github.com/yunionio/cloudpods]]></summary>
+        <author>
+            <name>Cloudpods</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[实话说，我心中最完美的笔记本是 MacBook 12"]]></title>
+        <id>829927</id>
+        <link href="https://www.v2ex.com/t/829927"/>
+        <updated>2022-01-22T07:47:19.000Z</updated>
+        <summary type="html"><![CDATA[Themyth: 
+现在摸着 12 寸的 MacBook ，这手感，这轻薄度，这便携性。。。
+除了键盘问题，续航问题，性能问题，其他简直完美。
+如果换成了 miniled 屏幕，就算配上刘海，外观尺寸不变屏幕变成 13 寸。
+然后换上哪怕是 m1 芯片。。。
+那。。。真是我心中最理想的笔记本电脑了。
+可惜。。库克怎么会听到我这种心声。。]]></summary>
+        <author>
+            <name>Themyth</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[还有什么网盘能像蓝奏云一样可以直接在线安装 ipa 的]]></title>
+        <id>829926</id>
+        <link href="https://www.v2ex.com/t/829926"/>
+        <updated>2022-01-22T07:44:07.000Z</updated>
+        <summary type="html"><![CDATA[soLLasi: 
+如题，要上传大于 200m 的 ipa ，蓝奏云会员有点贵]]></summary>
+        <author>
+            <name>soLLasi</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Make Your First Contribution To Open Source]]></title>
+        <id>https://dev.to/susmitadey/make-your-first-contribution-to-open-source-ono</id>
+        <link href="https://dev.to/susmitadey/make-your-first-contribution-to-open-source-ono"/>
+        <updated>2022-01-22T07:44:05.000Z</updated>
+        <summary type="html"><![CDATA[Open Source is something awesome. It will make you fall in love with it.
+
+
+
+  
+  
+  Read the following steps to know more:-
+
+
+
+
+It increases your level of confidence and helps you to connect with people from various countries.
+
+
+It makes you to learn how to contribute on any project and collaborate together.
+
+
+It increases your communication skills.
+
+
+It can also give you a remote job and connect with your clients if you're freelancing as your side hustle.
+
+
+Open Source is not just about code; it's more than  connecting and collaborating with people and working on a project (maybe it's small or big doesn't matter) together; creating issues and pull requests, documenting the README file, etc.
+
+
+
+Conclusion:-
+@eddiejaoude and joined his amazing #EddieHub Community on GitHub and did my first contribution there.
+💡Important One:-
+GitHub profile link
+connect with me 😊]]></summary>
+        <author>
+            <name>Susmita Dey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[火影世界网页游戏，谁还知道这游戏]]></title>
+        <id>829925</id>
+        <link href="https://www.v2ex.com/t/829925"/>
+        <updated>2022-01-22T07:42:54.000Z</updated>
+        <summary type="html"><![CDATA[biaocun123: 
+这游戏倒闭十多年了，谁知道，是蓝港在线公司开发运营的，横版网页游戏。
+现在想找这游戏的源代码或者一键端。
+不知道雪藏在哪个大神手里了。
+我想高价收。
+VX：biaocun123]]></summary>
+        <author>
+            <name>biaocun123</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[各位有没有觉得时间过的很快啊]]></title>
+        <id>829923</id>
+        <link href="https://www.v2ex.com/t/829923"/>
+        <updated>2022-01-22T07:26:27.000Z</updated>
+        <summary type="html"><![CDATA[wuzhidexiaolang: 
+2021 过去了，明天就要回家了，一年结束了。钱也没赚到，也没什么太多收获。2022 希望好一些吧。先回家吧，就这样吧]]></summary>
+        <author>
+            <name>wuzhidexiaolang</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[敲锣打鼓， QQ 终于不当人了（吐槽向）]]></title>
+        <id>829922</id>
+        <link href="https://www.v2ex.com/t/829922"/>
+        <updated>2022-01-22T07:26:20.000Z</updated>
+        <summary type="html"><![CDATA[xinghen57: 
+无意间看了看 App Store 中 QQ 的更新信息，惊喜（讶）的发现 iOS 15.2.1 下，QQ 8.8.68 大小到了 923.8 MB 。
+于是顺手有看了下
+微信 8.0.17 ，491.3MB
+QQ 音乐 11.2.0 ，434.6 MB
+这，app 开启比大小年代了？
+看来腾讯系的王者还是 QQ 。
+姜还是老的辣。]]></summary>
+        <author>
+            <name>xinghen57</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[许多捐赠的衣物最终被丢弃在非洲的垃圾堆中]]></title>
+        <id>https://hn.buzzing.cc/hn/30031664/</id>
+        <link href="https://hn.buzzing.cc/hn/30031664/?score=101&amp;original_url=https%3A%2F%2Fexpmag.com%2F2022%2F01%2Fwhat-fast-fashion-costs-the-world%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30031664&amp;sensitive=false"/>
+        <updated>2022-01-22T07:16:40.000Z</updated>
+        <summary type="html"><![CDATA[许多捐赠的衣物最终被丢弃在非洲的垃圾堆中]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CSS Pseudo-classes: Links]]></title>
+        <id>https://dev.to/dailydevtips1/css-pseudo-classes-links-bm5</id>
+        <link href="https://dev.to/dailydevtips1/css-pseudo-classes-links-bm5"/>
+        <updated>2022-01-22T07:14:17.000Z</updated>
+        <summary type="html"><![CDATA[We already had a look at CSS pseudo-elements, and even how to use pseudo-elemtns in Tailwind CSS.
+But then I realized I've never talked about pseudo-classes, and they are pretty substantial as we use them all the time in web development.
+So this article is dedicated to pseudo-classes.
+Pseudo-classes can be used to style based on a certain state of an element.
+I've split this up into a series of four, where this is the first part about link pseudo-states.
+The other parts:
+Link pseudo-states (this one 💖)
+Form pseudo states (coming soon)
+Element state selectors (coming soon)
+Other pseudo states (coming soon)
+One of the more common use-cases is to apply styling to link elements.
+The options we get here are as follows:
+:link: Unvisited links
+:visited: Visited links
+:active: Currently interacti…]]></summary>
+        <author>
+            <name>Chris Bongers</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[请教一下， PHP 能否实现这样的操作？]]></title>
+        <id>829920</id>
+        <link href="https://www.v2ex.com/t/829920"/>
+        <updated>2022-01-22T07:11:16.000Z</updated>
+        <summary type="html"><![CDATA[Msxx: 环境是在 WordPress 。现有一个.cdb 后缀的数据库，需要一段 php 代码来实现：
+用户在发文编辑器中填写‘张三’后，发布文章。
+文章在渲染给用户看时，会从 cdb 数据库读取张三的照片、姓名、年龄、简介等信息，并且可视化的呈现给读者。
+这能实现么？如果能的话，希望懂 php 或 WP 的大佬写一下，可以细聊，有偿，感谢。Q1161178080 （加时说一下 V2EX 哈）]]></summary>
+        <author>
+            <name>Msxx</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[给长辈用的大屏手机求推荐，原先是小米 Max3 6.9 英寸，家人表示很舒服。最近屏幕坏了，感觉换屏不如买新。预算不超过两千。最好仍是小米。]]></title>
+        <id>829919</id>
+        <link href="https://www.v2ex.com/t/829919"/>
+        <updated>2022-01-22T07:06:35.000Z</updated>
+        <summary type="html"><![CDATA[Newyorkcity: 多谢大家]]></summary>
+        <author>
+            <name>Newyorkcity</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[iptables 如何快速查看 rule 属于哪一个规则表？]]></title>
+        <id>829918</id>
+        <link href="https://www.v2ex.com/t/829918"/>
+        <updated>2022-01-22T07:04:36.000Z</updated>
+        <summary type="html"><![CDATA[notgoda: 
+比如执行 iptables -L OUTPUT -v -n ，
+会显示一个规则清单，因为表 NAT ,RAW ,MANGIE 同时都有 output 链，如何快速知道里面的 rule 属于哪一个表呢？谢谢大家
+因为规则表之间的优先执行顺序：是 nat 大于 filter ，所以如果一条 forward 的规则 jump 到 output 链(-j OUTPUT ) ,这种情况是不是先执行 NAT 下的 OUTPUT 链，再执行 FILTER 的？]]></summary>
+        <author>
+            <name>notgoda</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我以为 apple id 被封了...]]></title>
+        <id>829917</id>
+        <link href="https://www.v2ex.com/t/829917"/>
+        <updated>2022-01-22T07:00:52.000Z</updated>
+        <summary type="html"><![CDATA[MrBearin: 之前为了用某些 app, 注册了美区账号, 用双币信用卡自己买了礼品卡充值到账号里; 日常还是用的国区账号, 后来一次想更新下美区下载的 app, 切换了账号发现没办法更新应用了, 提示账号在 apple store 和 itunes 被禁用. 周末闲来无事想试试解决下;
+参考其他老哥的经验( https://v2ex.com/t/804799), 但是如果选择的问题是"your account has been disabled in the app store and itunes", 就只有电话支持, 没有在线聊天; 这时候选择另一个能支持在线聊天的问题就行了; 能在线聊就行, 毕竟英文烂的一 b, 电话是绝对不能电话的.
+之后蹩脚的英文扯了下(全部高中词汇)...最后发现..我的美区账号下载新应用和更新其它应用都 ok 的, 唯独更新某火箭不行, 客服建议, 先卸载, 再重新下载...然后...成了...所以, 我这账号被禁用不是真的被禁用(狗头)]]></summary>
+        <author>
+            <name>MrBearin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[OnePlus 9RT Review: A solid package overshadowed by fierce competition]]></title>
+        <id>https://www.xda-developers.com/?p=585411</id>
+        <link href="https://www.xda-developers.com/oneplus-9rt-review/"/>
+        <updated>2022-01-22T07:00:48.000Z</updated>
+        <summary type="html"><![CDATA[Over the years, OnePlus had cemented its place in the Indian market as a brand catering to enthusiasts. It didn’t take long for OnePlus to achieve the premium tag thanks in large to top-end specifications and more importantly, clean software. OxygenOS was a fan favorite due to multiple reasons — it felt close to stock
+The post OnePlus 9RT Review: A solid package overshadowed by fierce competition appeared first on xda-developers.]]></summary>
+        <author>
+            <name>Sumukh Rao</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ULA RA 和 DHCPV6 PD 路由优先级的问题]]></title>
+        <id>829916</id>
+        <link href="https://www.v2ex.com/t/829916"/>
+        <updated>2022-01-22T07:00:20.000Z</updated>
+        <summary type="html"><![CDATA[terencect: 家里用的 unifi udm pro
+给内网的 vlan 分配了一个自己的 ula ，一个上游来的 pd
+但是经常出现一个问题，iphone 经常 ipv6 不通，不通的时候用 tracerout6 看了下，第一跳没有走 pd 的网关，走了 ula 的网关
+这个怎么解决呢？把 ra 优先级改低？]]></summary>
+        <author>
+            <name>terencect</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[京东申请价保，点进去商品页明明没有降价，系统却提示我价保成功！]]></title>
+        <id>829915</id>
+        <link href="https://www.v2ex.com/t/829915"/>
+        <updated>2022-01-22T06:58:18.000Z</updated>
+        <summary type="html"><![CDATA[justrand: 
+比如这块显卡（ https://item.jd.com/100015378541.html ）]]></summary>
+        <author>
+            <name>justrand</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hyper-V 虚拟机使用详解]]></title>
+        <id>https://sspai.com/prime/story/hyper-v-tutorial</id>
+        <link href="https://sspai.com/prime/story/hyper-v-tutorial"/>
+        <updated>2022-01-22T06:56:22.000Z</updated>
+        <summary type="html"><![CDATA[很多用户都会在不同场合用到虚拟机。本文介绍现代版本 Windows 内置的虚拟机功能 Hyper-V，带领读者了解使用 Hyper-V 安装和使用 Windows 10、Windows 7 和 Ubuntu 等常用虚拟机系统的方法，然后介绍一些 Hyper-V 的常见问题和使用技巧，以便读者更全面地理解和掌握该工具。
+[......]
+本文为会员文章，出自《科技漫游0x08》，订阅后可阅读全文。
+© 本文著作权归作者所有，并授权少数派独家使用，未经少数派许可，不得转载使用。]]></summary>
+        <author>
+            <name>柯帕</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[爸爸的终极笑话？]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/s9mfrc/the_ultimate_dad_joke/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/s9mfrc/the_ultimate_dad_joke/?score=75065&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Fs9mfrc%2Fthe_ultimate_dad_joke%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Fs9mfrc%2Fthe_ultimate_dad_joke%2F&amp;channel=MadeMeSmile&amp;sensitive=false"/>
+        <updated>2022-01-22T06:55:34.000Z</updated>
+        <summary type="html"><![CDATA[爸爸的终极笑话？]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MX Keys fn 键跟 mbp 原生键盘的 fn 不同吗～]]></title>
+        <id>829914</id>
+        <link href="https://www.v2ex.com/t/829914"/>
+        <updated>2022-01-22T06:51:05.000Z</updated>
+        <summary type="html"><![CDATA[AdamMing: 
+请教个问题～我发现 MX Keys 的 fn 跟 mbp 的 fn 不一样，比如，mbp 的 fn+f 可以实现全屏，mx keys 就不可以～怎么破～？]]></summary>
+        <author>
+            <name>AdamMing</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Run CI Tests with GitHub Actions ⚙️]]></title>
+        <id>https://dev.to/pierre/create-ci-unit-tests-github-actions-52p3</id>
+        <link href="https://dev.to/pierre/create-ci-unit-tests-github-actions-52p3"/>
+        <updated>2022-01-22T06:48:47.000Z</updated>
+        <summary type="html"><![CDATA[Thanks to GitHub Actions, we can now setup workflows for our git repository very easily without any configuration from the GitHub platform. Indeed, we just need to create a specific .yml file in .github/workflows folder of your repository.
+Having a CI running on every "git pull" (or scheduled with a cron setting in the GitHub Action) increases the quality for each pull request made against your project. You can run performance (PHPStan), code analysis tools (eslint/prettier),  formatting scripts (PHP CS/CodeSniffer), unit tests, etc.
+In this article, we will create a GitHub action that runs the unit tests of your application. However, you can literally create any kind of GitHub actions for the workflow of your repository 😃 
+First, go to your GitHub repository, and then create a .github/wo…]]></summary>
+        <author>
+            <name>Pierre-Henry Soria ✨</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于 tls 卸载的问题]]></title>
+        <id>829910</id>
+        <link href="https://www.v2ex.com/t/829910"/>
+        <updated>2022-01-22T06:29:49.000Z</updated>
+        <summary type="html"><![CDATA[stephenxiaxy: 
+想问下大家在做 tls 服务的时候，是把 tls 卸载应用程序里面，还是在应用前加一个 Nginx 或者 Haproxy 用来卸载 tls 流量]]></summary>
+        <author>
+            <name>stephenxiaxy</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于 Rust 的参数和配置读取的最佳实践问题]]></title>
+        <id>829909</id>
+        <link href="https://www.v2ex.com/t/829909"/>
+        <updated>2022-01-22T06:27:52.000Z</updated>
+        <summary type="html"><![CDATA[YuiTH: 想要写一个命令行程序，拥有多个启动模式或者说主要的子功能，类似于 git pull, git commit 一类的。每个不同的子功能有自己的一套参数，最复杂的一个子功能希望用一个完整的 yaml 文件读入参数，并可以通过一些参数覆盖其中的一部分。求助：
+1. 如何用 clap （或者不是 clap ）实现这个功能？
+2. Rust 如何在全局传播这样的配置变量？全局变量没法动态初始化，lazy_static 我没搞清楚如何将命令行读入的参数用来初始化全局配置。
+另外求助 Rust 有没有好用的 OCR 模块和图像匹配模块推荐？]]></summary>
+        <author>
+            <name>YuiTH</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何搜索 b 站属于一个播放列表的视频？]]></title>
+        <id>829907</id>
+        <link href="https://www.v2ex.com/t/829907"/>
+        <updated>2022-01-22T06:22:31.000Z</updated>
+        <summary type="html"><![CDATA[golangLover: 最近想看一些教程，联想到教程肯定不会单独一集的，就想着搜某些关键字。但发现是混杂在一起的，过滤不到那些属于播放集合的影片。
+
+想请问大家有没有好的方法，只搜那些存在于一个播放列表的影片？可能只有某一集的一个关键字符合要求，那也会显示。现在手动点完每一页太累了
+
+谢谢网友们。]]></summary>
+        <author>
+            <name>golangLover</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MacOS 系统更新]]></title>
+        <id>829906</id>
+        <link href="https://www.v2ex.com/t/829906"/>
+        <updated>2022-01-22T06:22:16.000Z</updated>
+        <summary type="html"><![CDATA[webberone: 
+MacOS 更新系统时一直提示正在检查更新，问问大佬们有啥解决的法子么
+大佬们有遇到类似的问题么，怎么解决的呀
+感觉是网络问题连不上苹果的更新服务器或者是连接比较慢]]></summary>
+        <author>
+            <name>webberone</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Win10 上 terminal 中 SSH 命令显示不全或错误？]]></title>
+        <id>829904</id>
+        <link href="https://www.v2ex.com/t/829904"/>
+        <updated>2022-01-22T06:20:55.000Z</updated>
+        <summary type="html"><![CDATA[jZEdn7k4: 在 win10 上使用 terminal 如 tabby, windows terminal 远程 SSH 连接服务器使用时，有时候有些命令会包含较长的路径或者文件名，运行一次后，按↑键，此时修改这个命令（例如，修改部分路径）再次运行，terminal 中显示的修改后的命令没有什么问题，但实际上 terminal 发送到服务器的命令有一些偏差（比如要删掉的字符没有删掉，要新增的字符位置略有偏差等），运行会报错，然后再次按↑键就可以发现上次修改后运行的命令和自己的预想并不一致。问下有大佬遇到过这个问题吗？怎么解决？]]></summary>
+        <author>
+            <name>jZEdn7k4</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[广州一般去哪里找租房和转租信息？]]></title>
+        <id>829903</id>
+        <link href="https://www.v2ex.com/t/829903"/>
+        <updated>2022-01-22T06:16:58.000Z</updated>
+        <summary type="html"><![CDATA[ivanrres: 
+你们在广州一般去哪里找租房和转租信息？
+RT ，豆瓣都哪些群组，有点乱啊。]]></summary>
+        <author>
+            <name>ivanrres</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[K40 12 版本的 PE]]></title>
+        <id>829902</id>
+        <link href="https://www.v2ex.com/t/829902"/>
+        <updated>2022-01-22T06:13:05.000Z</updated>
+        <summary type="html"><![CDATA[Weyeeep: K40 PixelExperience 版本 12 第一版已推出，有哪位大哥试水]]></summary>
+        <author>
+            <name>Weyeeep</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Git Commands Every Dev MUST know]]></title>
+        <id>https://dev.to/mursalfk/git-commands-every-dev-must-know-53c3</id>
+        <link href="https://dev.to/mursalfk/git-commands-every-dev-must-know-53c3"/>
+        <updated>2022-01-22T06:04:57.000Z</updated>
+        <summary type="html"><![CDATA[Hello and Good Morning ☕
+Initialize local git repository
+
+
+
+git init
+Add a particular file to a repository
+
+
+
+git add git_commands.md
+Add all uncommitted files to the repository
+
+
+
+git add .
+Set Repository
+
+
+
+git config --global user.name 'mursalfk'
+
+
+
+
+Add message to your commit
+
+
+
+git commit -m "You can add a message to your commit like this"
+See commit history
+
+
+
+git log
+Add remote Name/URL
+
+
+
+git remote add origin 'https://github.com/mursalfk/mursalfk.git'
+Push your changes to remote repository
+
+
+
+git push origin master
+Clone any repository
+
+
+
+git clone 'https://github.com/mursalfk/mursalfk.git'
+Update the current working directory
+
+
+
+git pull origin master
+Tired already? Come on... It's not that long 😉
+ 
+Check difference in between commits
+
+
+
+git diff HEAD~1 HEAD
+Download files from any repository
+
+
+
+git fetch origin master
+Create a new branch
+
+
+
+git branch branchName
+Create a new branch inside a folder
+
+
+
+git branch branchFolder/branchName
+Switch to another branch
+
+
+
+git checkout branchName
+Switch to another branch present in another folder
+
+
+
+git checkout branchFolder/branchName
+Create and checkout to the new branch at the same time
+
+
+
+git checkout -b branchName
+Create and checkout to the new branch present in another folder at the same time
+
+
+
+git checkout branchFolder/branchName
+Merge to a new branch
+
+
+
+git merge master]]></summary>
+        <author>
+            <name>Mursal Furqan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[这套程序谁知道是什么程序吗]]></title>
+        <id>829900</id>
+        <link href="https://www.v2ex.com/t/829900"/>
+        <updated>2022-01-22T05:58:14.000Z</updated>
+        <summary type="html"><![CDATA[biaocun123: 
+cgcbbs.we378.com
+看着风格不错。我也想要一套。]]></summary>
+        <author>
+            <name>biaocun123</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[脱离电网--百兔图]]></title>
+        <id>https://hn.buzzing.cc/hn/30031472/</id>
+        <link href="https://hn.buzzing.cc/hn/30031472/?score=103&amp;original_url=http%3A%2F%2F100r.co%2Fsite%2Foff_the_grid.html&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30031472&amp;sensitive=false"/>
+        <updated>2022-01-22T05:57:20.000Z</updated>
+        <summary type="html"><![CDATA[脱离电网--百兔图]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Self-Taught Developer Journal, Day 45: TOP Building Rock Paper Scissors UI cont.]]></title>
+        <id>https://dev.to/jennifer_tieu/self-taught-developer-journal-day-45-top-building-rock-paper-scissors-ui-cont-48pj</id>
+        <link href="https://dev.to/jennifer_tieu/self-taught-developer-journal-day-45-top-building-rock-paper-scissors-ui-cont-48pj"/>
+        <updated>2022-01-22T05:44:26.000Z</updated>
+        <summary type="html"><![CDATA[Today...
+I am still working on the Rock Paper Scissors UI for The Odin Project.
+I designed a rough mock up of what I plan to create for the game. 
+
+Since we already created the logic for the game in JavaScript, I don't have to worry about the script right now. So I am going to focus on creating the HTML elements first and use CSS to set them in the desired locations. Then I will add the DOM manipulation methods and events in my JavaScript code because I'll have something to select. 
+After testing the game, I will go back and add the CSS to style. I am not sure yet on the exact design, but I will decide that after I get the game working on the webpage.
+The Odin Project
+Revisiting Rock Paper Scissors]]></summary>
+        <author>
+            <name>Jennifer Tieu</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[最近搞了几个小程序，想知道大家都搞过哪些小程序？欢迎评论分享]]></title>
+        <id>829897</id>
+        <link href="https://www.v2ex.com/t/829897"/>
+        <updated>2022-01-22T05:29:15.000Z</updated>
+        <summary type="html"><![CDATA[lkkl007: 
+我先来，哈哈
+[知乎日报] 
+
+[ ToDoList ] 
+
+[垃圾分类拍照识别]]]></summary>
+        <author>
+            <name>lkkl007</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[golang csp 模型和单纯的协程框架在 web 上性能上哪个更好点]]></title>
+        <id>829896</id>
+        <link href="https://www.v2ex.com/t/829896"/>
+        <updated>2022-01-22T05:28:16.000Z</updated>
+        <summary type="html"><![CDATA[liuxu: 
+并发和 cpu 、内存资源的消耗，哪个更有优势一点
+golang 写 web ，原生异步，组件开发者一般注意这点
+但是目前压测 php swoole ，2c4g 的配置，压性能排行榜长期霸榜第一的 actix-web （ rust ），以及和 fiber （ golang ）相差的并不多，这两个 40kqps ，swoole 30 多 kqps
+php 的组件多的用不完，不过很多都是基于 fpm 开发，用在异步框架上有小毛病
+所以最近想换个新的轻量异步框架，1kqps 内存消耗不超过 100mb ，个人项目，普通 curd web ，技术激进点也可以（个人 k3s 中，放 2 个 pod ）
+ps:压测用的 wrk2 ，处理过协调遗漏，ab 应该会更高一点
+顺便问下和 kernel bypass (io_uring)的对比，有 benchmark 最好。目前看只有人移植到了 nginx ，内存占用可观，swoole 的 issue 说似乎不准备加入这个，golang 中有移植好可用的项目不]]></summary>
+        <author>
+            <name>liuxu</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[一咬牙买了只布偶，提前晒一下]]></title>
+        <id>829893</id>
+        <link href="https://www.v2ex.com/t/829893"/>
+        <updated>2022-01-22T05:17:16.000Z</updated>
+        <summary type="html"><![CDATA[Chad0000: 
+本来是想领养的但救助中心的猫很少有对得上眼的，好不容易对上眼的但不适合小孩。最终还是一咬牙买了一只（从私人手里），明天准备领回家。
+两只小猫都挺可爱的，选来选去挺纠结的，最终选了 Girl （右边那个）。
+坐标新西兰。花了 1500 刀（合计￥ 6500 ），考虑这个费用也就一年养猫成本，觉得值。
+
+后续领回家后如果 V 友们喜欢会晒更多出来。]]></summary>
+        <author>
+            <name>Chad0000</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[创客是硬件开发+软件开发？ 创客的门槛高吗？]]></title>
+        <id>829892</id>
+        <link href="https://www.v2ex.com/t/829892"/>
+        <updated>2022-01-22T05:13:01.000Z</updated>
+        <summary type="html"><![CDATA[James369: 
+经常在视频网站看到各种创客的开发，AI 小车啦，智能设备啦，，比如野生钢铁侠这样的知名 up 主，看他们做的东西很炫酷很有趣。
+那么创客既要做硬件开发，也要做软件开发，真全栈啊，感觉技术门槛还是很高的。不过似乎也没有用到很高端的工艺，比如示波器。也有很多直接用开源的方案，比如开源硬件，开源软件，驱动好像也是现成的，各种现成模块的拼装。
+所以，创客的门槛到底多高，或者说以后的趋势，大众化？]]></summary>
+        <author>
+            <name>James369</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[做了一个低聚城市的逛街游戏 demo]]></title>
+        <id>829889</id>
+        <link href="https://www.v2ex.com/t/829889"/>
+        <updated>2022-01-22T05:03:39.000Z</updated>
+        <summary type="html"><![CDATA[jamfer: 最后忽然对做游戏感兴趣起来，学了一周的 unity 和 threejs ，写了个逛街的小 demo （其实就像搭积木一样，没啥技术含量）
+WASD 控制移动，鼠标左键调整视角，鼠标滚轮调整视野远近
+地址： http://o.jamfer.com
+注：因为还没有引入物理引擎，所以可以穿模=_=... 不知道大家有没有不错的物理引擎推荐
+
+希望最终能做出一款真正意义的具有可玩性的游戏出来。]]></summary>
+        <author>
+            <name>jamfer</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How Can Blockchain Development Reduce Business Costs And Improve Company Management?]]></title>
+        <id>https://dev.to/codezeros/how-can-blockchain-development-reduce-business-costs-and-improve-company-management-389b</id>
+        <link href="https://dev.to/codezeros/how-can-blockchain-development-reduce-business-costs-and-improve-company-management-389b"/>
+        <updated>2022-01-22T04:59:57.000Z</updated>
+        <summary type="html"><![CDATA[A post by Codezeros]]></summary>
+        <author>
+            <name>Codezeros</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[年度征文 | 成为少数派作者的这一年]]></title>
+        <id>https://sspai.com/post/71011</id>
+        <link href="https://sspai.com/post/71011"/>
+        <updated>2022-01-22T04:57:47.000Z</updated>
+        <summary type="html"><![CDATA[编注：
+本文是少数派 2021 年度征文 活动 #生活 21 标签下的入围文章。本文仅代表作者本人观点，少数派对标题和排版略作调整。
+和往年不同，今年文章的数据表现将很大程度上决定征文活动的最终走向，包括「双倍稿酬（由飞书赞助）」活动奖励、最终票选名单以及征文奖品类型。如果你喜欢这篇文章，不妨通过充电或评论的方式支持作者。
+
+前言
+收到我人生最大的一笔单篇稿费的这天晚上，我失眠了。
+当然不是因为钱多烧的，而是白天咖啡喝多了 2021 年最后一篇稿子赚来的稿酬成功让我回想起了成为少数派作者的这一年。
+我是 Leslie，一个致力于让没有医学背景的人听懂医生在说啥的科普作者，一年以前，我还只是一个潜水的小透明，现在却混进了少数派的作者群。不过和作者群里两百多个大佬不一样，我不太厉害。在「高效工作」领域，我是个吊车尾，不会编程，不会拆电脑修手机，不会摄影，不会录播客，不会剪视频；在「品质生活」方面，我不会马伽术，不会做厉害的咖啡或是诱人的饭菜，不会种菜，不会俄语，没有惊人的读书量和阅片量，去过的地方也很少。在以上知识技能和经历方面相信很多读者都可以来无情地碾压我。而且我还是个内向的「社恐」。
+但你既然已经读到了这篇文章，说明我对这个社区还是有一点点价值的。一直以来我写的多是具体的医学健康话题，这次，我想讲点柔软的，讲讲在成为了少数派作者的这一年，我这样的普通人在坚持写作之后，在网络上终于开始 reach out 之后，有了什么样的改变和思考。希望可以鼓励到和我有着类似渴望或相同困境的读者。
+在关系中成长——和编辑的故事
+正如《也许你该找个人聊聊》的作者所说，人和人是在关系中成长的。
+我向来习惯在现实生活和社交网络中对陌生人保持缄默，而在少数派上写稿、加入作者群，让我产生了新的和人的联结，我认识了好多编辑，有的勇敢，有的善良，有的很宽容，有的很硬汉。在这样的交流中我除了交了十几篇稿…]]></summary>
+        <author>
+            <name>刀客特Leslie</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SmartSystemMenu – 为窗口标题栏菜单新增 17 个新功能[Windows]]]></title>
+        <id>https://www.appinn.com/?p=41208</id>
+        <link href="https://www.appinn.com/smart-system-menu/"/>
+        <updated>2022-01-22T04:48:39.000Z</updated>
+        <summary type="html"><![CDATA[SmartSystemMenu 是一款简单实用的 Windows 窗口增强工具，它可以为窗口的标题栏右键菜单新增 17 个新功能，包括卷起、毛玻璃效果、置顶、优先级、启动程序等。@Appinn 来自发]]></summary>
+        <author>
+            <name>青小蛙</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[苏联的北美和英国军事地图]]></title>
+        <id>https://hn.buzzing.cc/hn/30030346/</id>
+        <link href="https://hn.buzzing.cc/hn/30030346/?score=100&amp;original_url=https%3A%2F%2Fwww.sovietmaps.com%2Fnode%2F2&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30030346&amp;sensitive=false"/>
+        <updated>2022-01-22T04:04:30.000Z</updated>
+        <summary type="html"><![CDATA[苏联的北美和英国军事地图]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Some laughs for the evening]]></title>
+        <id>https://dev.to/nickytonline/some-laughs-for-the-evening-12jp</id>
+        <link href="https://dev.to/nickytonline/some-laughs-for-the-evening-12jp"/>
+        <updated>2022-01-22T04:01:14.000Z</updated>
+        <summary type="html"><![CDATA[I'm laughing at my own joke tonight, so to lighten the mood, what's some funny things you've come across recently?
+@nickytonline
+      
+Also, if you don't know who Vanilla Ice is, Wikipedia has you covered.
+Remember to keep it clean. 😎]]></summary>
+        <author>
+            <name>Nick Taylor</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[在满是猫的房子里过冬....]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/aww/comments/s9b9qq/winter_in_a_house_full_of_cats/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/aww/comments/s9b9qq/winter_in_a_house_full_of_cats/?score=75270&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Faww%2Fcomments%2Fs9b9qq%2Fwinter_in_a_house_full_of_cats%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Faww%2Fcomments%2Fs9b9qq%2Fwinter_in_a_house_full_of_cats%2F&amp;channel=aww&amp;sensitive=false"/>
+        <updated>2022-01-22T03:41:48.000Z</updated>
+        <summary type="html"><![CDATA[在满是猫的房子里过冬....]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2021 总结：尝试 FreeDOS]]></title>
+        <id>https://linux.cn/article-14204-1.html?utm_source=rss&amp;utm_medium=rss</id>
+        <link href="https://linux.cn/article-14204-1.html?utm_source=rss&amp;utm_medium=rss"/>
+        <updated>2022-01-22T03:28:54.000Z</updated>
+        <summary type="html"><![CDATA[为这个自由操作系统的新用户和老用户提供 15 种资源。
+
+
+
+
+在整个上世纪 80 年代和 90 年代，DOS 是桌面之王。世界各地的程序员不满足于 DOS 的专有版本，他们共同创建了一个名为 FreeDOS 的开源版本，该版本于 1994 年首次推出。FreeDOS 项目 在 2021 年及以后还在继续发展。
+
+我们发表了几篇关于 FreeDOS 的文章，以帮助新用户开始使用 FreeDOS 和学习新程序。以下是去年我们最受欢迎的几篇 FreeDOS 文章。
+
+初学 FreeDOS
+
+你是 FreeDOS 的新手吗？如果你想了解如何启动和运行 FreeDOS 的基本知识，请查看这些文章：
+
+
+开始使用 FreeDOS：它看起来像复古计算时代，但 FreeDOS 是一个现代的操作系统，你可以用它来完成事情。
+
+FreeDOS 如何启动：了解你的计算机是如何引导和启动 FreeDOS 的，从开机到命令行提示符。
+
+用纯文本配置 FreeDOS：学习如何用 fdconfig.sys 文件来配置 FreeDOS。
+
+如何用 CD 和 DIR 浏览 FreeDOS：只需掌握两个命令，DIR 和 CD，你就可以在命令行中浏览你的 FreeDOS 系统。
+
+在 FreeDOS 中设置和使用环境变量：环境变量在几乎所有的命令行环境中都有用，包括 FreeDOS。
+
+
+Linux 用户的 FreeDOS
+
+如果你已经熟悉了 Linux 的命令行，你可能想试试这些在 FreeDOS 上创造类似环境的命令和程序：
+
+
+给 Linux 爱好者的 FreeDOS 命令：如果你已经熟悉了 Linux 的命令行，可以试试这些命令来帮助你轻松进入 FreeDOS。
+
+在 FreeDOS 中像 Emacs 一样编辑文本：如果你已经熟悉了 GNU Emacs，你应该在 Freemacs 中感到很自在。
+
+在 Linux 和 FreeDOS 之间复制文件：学习如何在 FreeDOS 虚拟机和 Linux 桌面系统之间传输文件。
+
+如何在 FreeDOS 上归档文件：这是 FreeDOS 版本的 tar，在 DOS 上归档的标准方法是 Zip 和 Unzip。
+
+在 FreeDOS 上使用这个怀旧的文本编辑器：让人联想到 Linux ed(1)，当你想用老式的方法编辑文本时，Edlin 是一种乐趣。
+
+
+使用 FreeDOS
+
+当你启动进入 FreeDOS，你可以使用这些很棒的工具和应用来完成工作或安装其他软件：
+
+
+如何使用 FreeDOS 的文本编辑器：FreeDOS 提供了一个用户友好的文本编辑器，叫做 FreeDOS Edit。
+
+在 FreeDOS 上听音乐：Mplayer 是一个开源的媒体播放器，通常可以在 Linux、Windows、Mac 和 DOS 上找到。
+
+在 FreeDOS 上安装和删除软件包：了解如何使用 FDIMPLES，即 FreeDOS 包管理器，在你的 FreeDOS 系统上安装和删除软件包。
+
+为什么我喜欢用 GW-BASIC 在 FreeDOS 上编程：BASIC 是我进入计算机编程的起点。我已经很多年没有写过 BASIC 代码了，但我对 BASIC 和 GW-BASIC 永远怀有好感。
+
+用 Bywater BASIC 在 FreeDOS 上编程：在你的 FreeDOS 系统上安装 Bywater BASIC，并开始尝试使用 BASIC 编程。
+
+
+在其近 30 年的历程中，FreeDOS 一直试图成为一个现代 DOS。如果你想了解更多，你可以在 FreeDOS 简史 中阅读关于 FreeDOS 的起源和发展。另外，请看 Don Watkins 关于 FreeDOS 的采访：一个大学生是如何创立一个自由和开源的操作系统。
+
+如果你想尝试 FreeDOS，请下载 2021 年 12 月发布的 FreeDOS 1.3 RC5。这个版本有大量的新变化和改进，包括更新的内核和命令 shell，新的程序和游戏，更好的国际支持，以及网络支持。从 FreeDOS 网站下载 FreeDOS 1.3 RC5。
+
+
+via: https://opensource.com/article/22/1/try-freedos
+
+作者：Jim Hall 选题：lujun9972 译者：geekpi 校对：wxy
+
+本文由 LCTT 原创编译，Linux中国 荣誉推出]]></summary>
+        <author>
+            <name>linux@linux.cn (linux)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ask HN: 谷歌怎么了？]]></title>
+        <id>https://hn.buzzing.cc/hn/30031672/</id>
+        <link href="https://hn.buzzing.cc/hn/30031672/?score=107&amp;original_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30031672&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30031672&amp;channel=ASK+HN&amp;sensitive=false"/>
+        <updated>2022-01-22T03:24:17.000Z</updated>
+        <summary type="html"><![CDATA[Ask HN: 谷歌怎么了？]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于离开Facebook]]></title>
+        <id>https://hn.buzzing.cc/hn/30032316/</id>
+        <link href="https://hn.buzzing.cc/hn/30032316/?score=111&amp;original_url=https%3A%2F%2Ffrantic.im%2Fleaving-facebook%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30032316&amp;sensitive=false"/>
+        <updated>2022-01-22T03:24:17.000Z</updated>
+        <summary type="html"><![CDATA[关于离开Facebook]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[System76 的 COSMIC 桌面面板看起来很清爽！]]></title>
+        <id>https://linux.cn/article-14203-1.html?utm_source=rss&amp;utm_medium=rss</id>
+        <link href="https://linux.cn/article-14203-1.html?utm_source=rss&amp;utm_medium=rss"/>
+        <updated>2022-01-22T03:03:51.000Z</updated>
+        <summary type="html"><![CDATA[System76 分享了其即将推出的使用 Rust 开发的 COSMIC 桌面的顶部面板草图。看起来令人惊叹！
+
+
+
+
+System76 令人兴奋的用 Rust 开发的 COSMIC 桌面的开发工作现在正在进行中。
+
+虽然我们已经用早期的代码 试过了，但我们现在可以看到更多的东西。从其 GitHub 仓库 和 Figma 文档 的一些原型中，我们可以看到它的更多信息。
+
+值得注意的是，我们可以看到顶部面板和系统托盘，正如你在 COSMIC 桌面上所期望的那样。
+
+这仍是一项正在进行的工作，可能会有变化。
+
+COSMIC 桌面的顶部面板
+
+Pop!_OS 依赖于 GNOME 扩展来通过顶部面板或系统托盘图标提供更多的功能。
+
+随着即将推出的使用 Rust 开发的 COSMIC 桌面，看起来他们正在创建新的小程序，与当前的外观相融合，并提供更多的功能。
+
+开发者 Eduardo Flores 分解研究 了它，发现了关键的区别以及 System76 的目标是如何使其发挥作用。
+
+而且，这也是它更有趣的地方：
+
+
+看起来 System76 正在摆脱传统的“扩展”，计划为第三方小程序设计一个 API，这与 KDE、XFce 和其他公司的做法类似。
+
+这是一个令人兴奋的消息，将使 COSMIC 成为一个更强大的桌面环境，使其可以扩展和定制。
+
+
+另外，似乎这些小程序也可以和顶部面板一起放在坞站里。我们会在其未来的某个测试版中看到更多的实际情况。
+
+在这里，让我重点介绍一下从现有的草图中观察到的基本变化：
+
+1、声音小程序
+
+
+
+与我们现在所拥有的相比，COSMIC 的目标是增加细化的控制，如选择输入/输出设备、在顶部面板上切换媒体控制的选项、控制媒体播放，以及访问声音设置。
+
+虽然草图没有显示专辑封面，但在发布前会包括它。
+
+作为参考，以下是 Pop!_OS 顶部面板选项现在的样子。
+
+
+
+2、电源小程序
+
+
+
+很高兴看到有一个专门的电源按钮来快速访问系统设置、锁屏和注销。
+
+另外，暂停、重启和关机的按钮应该可以提高可用性，关闭计算机不用额外的点击。
+
+3、网络小程序
+
+虽然你可以很容易地打开或关闭有线、无线网络，但会弹出一个占据了整个屏幕的单独窗口来选择 Wi-Fi 网络并输入密码。
+
+
+
+但是，看起来我们终于可以在这里输入密码，连接到可用的无线网络，并重试失败的连接，而不必从活动窗口分心。所有这些都发生在系统托盘上的网络小程序上，如上面的截图所示。
+
+同样，你可以看到关于你的有线连接的更多信息，包括 IP 地址和速度。
+
+4、日期、时间和日历小程序
+
+
+
+最重要的日历小程序看起来更加实用，信息量更大。通知区不再驻留在这里（它现在有一个单独的小程序），使它的体验更干净，可以把注意力放在你关注的东西上。
+
+一些细微的视觉改进，比如用重点颜色来突出日历中的某一行，应该会使它更容易理解。
+
+5、通知中心
+
+
+
+正如我前面提到的，通知现在有一个独立的空间。通知小程序会将所有的通知堆积起来，并允许你在需要时展开它们，或者将它们全部清除。
+
+我们仍然有“请勿打扰”开关，并可以快速访问通知设置。
+
+6、图形模式小程序
+
+
+
+这对笔记本电脑用户来说应该是非常有用的，可以在图形模式之间无缝切换，并可以看到当前使用的哪种模式。
+
+除了所有这些，还有一个蓝牙小程序、一个电池电源模式小程序，以及一些其他的东西，比如改变输入语言或输入源的能力。
+
+
+
+
+
+鉴于这是初次看到使用 Rust 开发 COSMIC 桌面顶部面板的外观，看来我们有很多东西要去看了。
+
+总结
+
+总的来说，System76 正准备为我们提供一个高度可定制但又简化的 COSMIC 桌面版本。
+
+而所有这些都应该有助于形成一种独特的桌面体验。当然，明年你就得在 Pop!_OS 中和 GNOME 说再见了。
+
+你怎么看？请在下面的评论中告诉我你的想法！
+
+
+via: https://news.itsfoss.com/system76-cosmic-panel/
+
+作者：Ankush Das 选题：lujun9972 译者：wxy 校对：wxy
+
+本文由 LCTT 原创编译，Linux中国 荣誉推出]]></summary>
+        <author>
+            <name>linux@linux.cn (linux)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[谷歌可能因免费的G套件传统账户关闭而面临集体诉讼]]></title>
+        <id>https://hn.buzzing.cc/hn/30030608/</id>
+        <link href="https://hn.buzzing.cc/hn/30030608/?score=102&amp;original_url=https%3A%2F%2Fwww.androidpolice.com%2Fgoogle-gsuite-free-legacy-class-action-investigation%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30030608&amp;sensitive=false"/>
+        <updated>2022-01-22T01:29:35.000Z</updated>
+        <summary type="html"><![CDATA[谷歌可能因免费的G套件传统账户关闭而面临集体诉讼]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我的自我托管基础设施，完全自动化]]></title>
+        <id>https://hn.buzzing.cc/hn/30030991/</id>
+        <link href="https://hn.buzzing.cc/hn/30030991/?score=106&amp;original_url=https%3A%2F%2Fgithub.com%2Fkhuedoan%2Fhomelab&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30030991&amp;sensitive=false"/>
+        <updated>2022-01-22T01:29:35.000Z</updated>
+        <summary type="html"><![CDATA[我的自我托管基础设施，完全自动化]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Create A React Router App in 5 Minutes]]></title>
+        <id>https://dev.to/ayubf/create-a-react-router-app-in-5-minutes-3ccp</id>
+        <link href="https://dev.to/ayubf/create-a-react-router-app-in-5-minutes-3ccp"/>
+        <updated>2022-01-22T01:28:23.000Z</updated>
+        <summary type="html"><![CDATA[Have you ever created a React app and wondered what it would take to add routes? Have, let's say, a seperate 
+Before you can start you should make sure you have the proper packages and tools installed. 
+
+
+
+
+  
+  
+  Node & NPM
+
+
+    Node is the environment that runs JavaScript frameworks and libraries like React and is essential for projects like these. NPM is the package manager for Node, and that basically means NPM installs the required files to use React and other libraries. We will use it later in this article to install libraries.
+Install Node.js
+    To put it simply, a text editor is just the application on your computer that will edit the text files to create the React app. My personal choice is one called VSCode, but there are other good options like Sublime Text, Notepad++, & Atom…]]></summary>
+        <author>
+            <name>ayubf</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[So you want to know about Web Workers?]]></title>
+        <id>https://dev.to/wardellbagby/so-you-want-to-know-about-web-workers-4aoe</id>
+        <link href="https://dev.to/wardellbagby/so-you-want-to-know-about-web-workers-4aoe"/>
+        <updated>2022-01-21T23:55:31.000Z</updated>
+        <summary type="html"><![CDATA[Hey! Wardell here! So you've got yourself a website and you're interested in potentially off-loading some of your heavy-hitting computations to another thread?
+Sounds like you want a Web Worker!
+is a Web Worker?
+
+
+
+Web Workers are a simple means for web content to run scripts in background threads.
+Before I tell you how to use a Web Worker, let's first go over things to consider before deciding to use a Web Worker.
+You've profiled your website and discovered what you're considering putting in a Web Worker is actually slow.
+Don't bother with a Web Worker if you don't actually need it. Adding an extra thread to communicate with will complicate your code, and if you aren't getting noticeable performance gains from it, it's an unnecessary complication.
+The work you want to offload can be done …]]></summary>
+        <author>
+            <name>Wardell Bagby</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[猫🤝人]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/memes/comments/s9fbhh/catman/</id>
@@ -460,6 +1647,17 @@ Im always happy to hear feedback on it!!(good or bad)
 coreystevens.xyz]]></summary>
         <author>
             <name>Corey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Intel Announces Ohio Location for Massive New Silicon Fab]]></title>
+        <id>https://www.extremetech.com/?p=330818</id>
+        <link href="https://www.extremetech.com/computing/330818-intel-announces-ohio-location-for-massive-new-silicon-fab"/>
+        <updated>2022-01-21T20:15:45.000Z</updated>
+        <summary type="html"><![CDATA[Intel intends to create the "Silicon Heartland" with a new fab in the midwest; the first of its kind. 
+The post Intel Announces Ohio Location for Massive New Silicon Fab appeared first on ExtremeTech.]]></summary>
+        <author>
+            <name>Josh Norem</name>
         </author>
     </entry>
     <entry>
@@ -982,6 +2180,17 @@ The post Intel is spending $20 billion to build a new chip manufacturing “mega
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[YouTuber Accused of Crashing Plane for Views]]></title>
+        <id>https://www.extremetech.com/?p=330804</id>
+        <link href="https://www.extremetech.com/extreme/330804-youtuber-accused-of-crashing-plane-for-views"/>
+        <updated>2022-01-21T16:10:51.000Z</updated>
+        <summary type="html"><![CDATA[Because if there's anything famous YouTubers are good at, it's causing controversy. 
+The post YouTuber Accused of Crashing Plane for Views appeared first on ExtremeTech.]]></summary>
+        <author>
+            <name>Adrianna Nine</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[HP Elite Dragonfly Chromebook: Release date, specs, and everything else]]></title>
         <id>https://www.xda-developers.com/?p=585675</id>
         <link href="https://www.xda-developers.com/hp-elite-dragonfly-chromebook/"/>
@@ -1481,6 +2690,17 @@ However it's a great language that's continuously evolving and it's an absolute 
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Amazon Set to Open its First High Tech Apparel Store in Los Angeles]]></title>
+        <id>https://www.extremetech.com/?p=330783</id>
+        <link href="https://www.extremetech.com/internet/330783-amazon-set-to-open-its-first-high-tech-apparel-store-in-los-angeles"/>
+        <updated>2022-01-21T12:28:19.000Z</updated>
+        <summary type="html"><![CDATA[The company's first physical apparel store will offer smartphone and touchscreen interfaces for shopping and browsing, among other innovations. 
+The post Amazon Set to Open its First High Tech Apparel Store in Los Angeles appeared first on ExtremeTech.]]></summary>
+        <author>
+            <name>Josh Norem</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[魔都去苏州打折真的这么厉害吗]]></title>
         <id>829804</id>
         <link href="https://www.v2ex.com/t/829804"/>
@@ -1530,6 +2750,17 @@ const m: Message = {
 }]]></summary>
         <author>
             <name>iPhone12</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[NASA Offering $1 Million Prize for Better Space Food]]></title>
+        <id>https://www.extremetech.com/?p=330775</id>
+        <link href="https://www.extremetech.com/extreme/330775-nasa-offering-1-million-prize-for-better-space-food"/>
+        <updated>2022-01-21T12:19:25.000Z</updated>
+        <summary type="html"><![CDATA[NASA has announced a new round of Deep Space Food Challenge, and this round of the competition comes with $1 million in prizes for teams that can come up with innovative foods that can be prepared in space.
+The post NASA Offering $1 Million Prize for Better Space Food appeared first on ExtremeTech.]]></summary>
+        <author>
+            <name>Ryan Whitwam</name>
         </author>
     </entry>
     <entry>
@@ -1751,6 +2982,17 @@ IBM 推出了 System/360 系列的大型计算机。不同的型号有其独特�
 这部由正午阳光出品，腾讯独播的开年网剧真的「炸」了，虽然同类型的作品早有《土拨鼠之日》《源代码》和《明日边缘》珠玉在前，可毕竟这是国内第一部循环向的剧集，所以总归有一些带着担忧的期待，但一口气看完八集的感觉很好。而本剧又是以 2013 年的厦门公交爆炸案为原型，所以…]]></summary>
         <author>
             <name>少数派编辑部</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How Will Microsoft’s Activision Blizzard Buy Impact Sony?]]></title>
+        <id>https://www.extremetech.com/?p=330782</id>
+        <link href="https://www.extremetech.com/gaming/330782-how-will-microsofts-activision-blizzard-buy-impact-sony"/>
+        <updated>2022-01-21T10:00:39.000Z</updated>
+        <summary type="html"><![CDATA[Microsoft's decision to buy Activision Blizzard has raised questions regarding what kind of support Sony PlayStation customers can expect in the future. 
+The post How Will Microsoft’s Activision Blizzard Buy Impact Sony? appeared first on ExtremeTech.]]></summary>
+        <author>
+            <name>Joel Hruska</name>
         </author>
     </entry>
     <entry>
@@ -2927,6 +4169,17 @@ A 地内网主机 X(10.0.0.1)，B 地内网主机 Y(11.0.0.2)
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[AMD’s New Radeon RX 6500 XT Tested with PCIe 3.0 and the Results Aren’t Pretty]]></title>
+        <id>https://www.extremetech.com/?p=330755</id>
+        <link href="https://www.extremetech.com/gaming/330755-amds-new-radeon-rx-6500-xt-tested-with-pcie-3-0-and-the-results-arent-pretty"/>
+        <updated>2022-01-20T18:56:40.000Z</updated>
+        <summary type="html"><![CDATA[This week AMD launched launched the first “budget friendly” RX 6000-series GPU with its RDNA2 technology, the RX 6500 XT. The launch was not without controversy however, as in order for AMD to hit its desired $199 price point it neutered the Navi24 GPU to the point where it is missing a lot of features…
+The post AMD’s New Radeon RX 6500 XT Tested with PCIe 3.0 and the Results Aren’t Pretty appeared first on ExtremeTech.]]></summary>
+        <author>
+            <name>Josh Norem</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[ig 直连了]]></title>
         <id>829587</id>
         <link href="https://www.v2ex.com/t/829587"/>
@@ -3014,6 +4267,17 @@ Tags:计算机,知识,IT,华为,人工智能,PYTHON,野生技术协会,PYTHON爬
         <summary type="html"><![CDATA[Working with JavaScript arrays and objects can be more fun if you destructure them. This helps when you're fetching stored data. In this article, you will learn how you can take destructuring to the next level in JavaScript arrays and objects. Table of contents:What is an array?What is]]></summary>
         <author>
             <name>freeCodeCamp.org</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Google Releases Very Limited Beta of Android Games on Windows]]></title>
+        <id>https://www.extremetech.com/?p=330757</id>
+        <link href="https://www.extremetech.com/gaming/330757-google-releases-very-limited-beta-of-android-games-on-windows"/>
+        <updated>2022-01-20T18:22:47.000Z</updated>
+        <summary type="html"><![CDATA[Microsoft has its Android framework in Windows 11, but Google is not going to be outdone. It's launching an early beta of Google Play Games, which will bring mobile games to Windows PCs… eventually. So far, only a few regions have access to the beta. 
+The post Google Releases Very Limited Beta of Android Games on Windows appeared first on ExtremeTech.]]></summary>
+        <author>
+            <name>Ryan Whitwam</name>
         </author>
     </entry>
     <entry>
@@ -3785,6 +5049,17 @@ Android 9 及以上加密 dns 设置为 security-filter-dns.cleanbrowsing.org �
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Roku Shamed For Running Banner Ads On Top of Live TV]]></title>
+        <id>https://www.extremetech.com/?p=330740</id>
+        <link href="https://www.extremetech.com/internet/330740-roku-put-to-shame-for-running-banner-ads-on-top-of-live-tv"/>
+        <updated>2022-01-20T13:00:29.000Z</updated>
+        <summary type="html"><![CDATA[Ads aren't new to the streaming experience, but this is truly something else.
+The post Roku Shamed For Running Banner Ads On Top of Live TV appeared first on ExtremeTech.]]></summary>
+        <author>
+            <name>Adrianna Nine</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Automate your Vacuum and Mopping Sessions with the New obode P8]]></title>
         <id>https://www.xda-developers.com/?p=583567</id>
         <link href="https://www.xda-developers.com/new-obode-p8/"/>
@@ -3958,6 +5233,17 @@ Tags:飞行,战斗机,飞行器,DCS,A-10,疣猪,地面攻击机]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[AT&T and Verizon Launch Mid-Band 5G, Agree to Even More Airport Restrictions]]></title>
+        <id>https://www.extremetech.com/?p=330729</id>
+        <link href="https://www.extremetech.com/extreme/330729-att-and-verizon-launch-mid-band-5g-agree-to-even-more-airport-restrictions"/>
+        <updated>2022-01-20T12:00:51.000Z</updated>
+        <summary type="html"><![CDATA[The carriers made a number of concessions late last year and earlier this month to assuage the FAA's fears of C-band interference with airplane electronics, but in the end, AT&T and Verizon have agreed to shut off C-band around all US airports for the time being. 
+The post AT&T and Verizon Launch Mid-Band 5G, Agree to Even More Airport Restrictions appeared first on ExtremeTech.]]></summary>
+        <author>
+            <name>Ryan Whitwam</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[iPad 闪退，如何解決]]></title>
         <id>829549</id>
         <link href="https://www.v2ex.com/t/829549"/>
@@ -4111,6 +5397,18 @@ The post Instagram starts testing new subscription features in the US appeared f
 为了探寻这个问题，我开始对 GTD 思想进行深入了解，之后结合自身实际场景，付费购买了几款价格略能接受的 App 去做实际体验，如 Clear 等，实际体验了几…]]></summary>
         <author>
             <name>不懂网络</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Astronauts Going to Mars Could Get ‘Space Anemia’]]></title>
+        <id>https://www.extremetech.com/?p=330714</id>
+        <link href="https://www.extremetech.com/extreme/330714-astronauts-going-to-mars-could-get-space-anemia"/>
+        <updated>2022-01-20T11:00:38.000Z</updated>
+        <summary type="html"><![CDATA[Credit: NASA
+A study from the Canadian Space Agency (CSA) points to the effects of weightlessness on the blood as yet another issue that will complicate long-term human space missions. So-called "space anemia" could cause health problems during and after an extended trip like going to Mars. 
+The post Astronauts Going to Mars Could Get ‘Space Anemia’ appeared first on ExtremeTech.]]></summary>
+        <author>
+            <name>Ryan Whitwam</name>
         </author>
     </entry>
     <entry>
@@ -5463,6 +6761,19 @@ This is a sorting algorithm that takes a group of items, pi…]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[不洗车新理由：开车更省油【高尔夫球效应】]]></title>
+        <id>https://www.bilibili.com/video/av508373914</id>
+        <link href="https://www.bilibili.com/video/av508373914"/>
+        <updated>2022-01-19T21:53:20.000Z</updated>
+        <summary type="html"><![CDATA[《流言终结者》（MythBusters）是一个美国的科普电视。 由特效专家 Adam Savage 和 Jamie Hyneman 主持，他们利用自身的专业和技巧，针对各种广为流传的流言和都市传奇进行实验。更多完整版剧集：B站搜索“流言终结者”。
+
+
+Tags:知识分享官,实验,物理,科学,科普,流体力学,空气动力学,省油,流言终结者,纪录片]]></summary>
+        <author>
+            <name>真探_ForRea1</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Roblox。]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/shitposting/comments/s7itw7/roblox/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/shitposting/comments/s7itw7/roblox/?score=75100&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fshitposting%2Fcomments%2Fs7itw7%2Froblox%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fshitposting%2Fcomments%2Fs7itw7%2Froblox%2F&amp;channel=shitposting&amp;sensitive=false"/>
@@ -6096,6 +7407,19 @@ Uncaught ReferenceError: exports is not defined
         <summary type="html"><![CDATA[当我的妻子患上阿尔茨海默病时，我们的婚姻故事使我们保持联系]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[报绘画班前须知]你需要了解的事之如何不被割🥬]]></title>
+        <id>https://www.bilibili.com/video/av678288764</id>
+        <link href="https://www.bilibili.com/video/av678288764"/>
+        <updated>2022-01-19T17:07:22.000Z</updated>
+        <summary type="html"><![CDATA[每天都有不同的人问我,什么课程好.什么画画机构好,你需要看看这些
+
+
+Tags:画画,原画,插画,野生技术协会,procreate,零基础学画画,自学画画,iPad画画,软件自学,知识分享官]]></summary>
+        <author>
+            <name>JUJU艺赶紧下凡画画</name>
         </author>
     </entry>
     <entry>
@@ -10138,6 +11462,17 @@ Project: https://github.com/wlucha/angular-nest-nx]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Understanding Linux's True and False Commands]]></title>
+        <id>61e73661940ea6ea1472cdb8</id>
+        <link href="https://coderoasis.com/understanding-linuxs-true-and-false/"/>
+        <updated>2022-01-18T22:43:18.000Z</updated>
+        <summary type="html"><![CDATA[True and False are the most common concepts in all forms of computing. They’re so highly critical to Boolean logic, but did you know that true and false are also even commands on Linux? 
+There is a simple explanation. This is that the true command generates an exit]]></summary>
+        <author>
+            <name>Traven West</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[公司发电脑 19 年 MacBook Pro16 和 21 年 Pro13 选哪个?]]></title>
         <id>829112</id>
         <link href="https://www.v2ex.com/t/829112"/>
@@ -10901,6 +12236,29 @@ git URL re-writing
 The main advantage of this approach is that it doesn't require any additional work to get it right. You will not need to change remote URLs or remember to clone things differentl…]]></summary>
         <author>
             <name>Simon Osipov</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Android遛一遛春节返乡的小火车]]></title>
+        <id>https://juejin.cn/post/7054743435562975262</id>
+        <link href="https://juejin.cn/post/7054743435562975262"/>
+        <updated>2022-01-18T18:48:09.000Z</updated>
+        <summary type="html"><![CDATA[theme: cyanosis
+highlight: a11y-dark
+PK创意闹新春，我正在参加「春节创意投稿大赛」，详情请看：春节创意投稿大赛
+前言
+春节临近，在深圳干活的打工人们却在为疫情烦恼，最近出了不少病例，希望赶紧平息，能开开心心回家吧~
+这几天翻了翻好久都没有维护过了的hexo博客 苍耳的博客，自从换工作后就没有时间摸鱼和学习了，博客也自然而然就停滞了下来，一到双休日只想着睡觉。。。好了，言归正传，翻到了19年刚毕业的时候做的一个跟 Termux 相关的需求，疫情严重，返乡难定，跟大家分享一个挺可爱的嘟嘟火车吧~在 Android 设备上遛一遛。
+没啥技术难度，纯粹图一乐~
+Termux
+这是 Android 设备上的一款终端扩展软件，可以用来扩展 Android 设备上被阉割的 shell 功能，开源且不需要 root(工作空间就在app的私有目录下)，它支持 apt 管理软件包，并拥有自己的 apt 仓库源，这点就很舒服了，Termux 会维护他们的软件仓库源，仓库里有很多常用的软件包，比如说 curl, python 等等，因此可以实现支持 Python, PHP, Go, Nodejs, MySQL 等的功能环境。
+简单使用
+Termux 的GitHub仓库地址，可以在这里面查看安装方式。安装成功后第一次打开它会下载解压 bootstrap 包，主要用来在应用的私有目录下设置一个类 Linux 的文件结构，并设置环境变量等等。初始化完成后在 termux app 的私有目录下会解压出以下文件结构：
+初始化完成后可以看到它就是一个 Linux Terminal 一样的界面，可以在里面跑 shell 命令了。然后还可以通过 apt 来安装管理软件，记得先 apt update 更新一下哈~
+小火车
+接下来试试在 Android 手机上的小火车效果，作为一…]]></summary>
+        <author>
+            <name>苍耳叔叔</name>
         </author>
     </entry>
     <entry>
@@ -18338,6 +19696,17 @@ Tags:搞笑]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Big Tech wants to make Open Source Software more Secure]]></title>
+        <id>61e4adb9f2e4bf075d6f68a3</id>
+        <link href="https://coderoasis.com/open-source-to-be-more-secure/"/>
+        <updated>2022-01-16T23:58:34.000Z</updated>
+        <summary type="html"><![CDATA[The major technology companies of the United States – names such as Google, Microsoft, Apple, and Facebook – came together at an important White House Summit over the weekend to discuss the ways to make the open source software space more secure in light of recent disastrous vulnerabilities.
+The new]]></summary>
+        <author>
+            <name>Traven West</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[为什么没有一种通用的履历表数据格式？]]></title>
         <id>https://hn.buzzing.cc/hn/29960279/</id>
         <link href="https://hn.buzzing.cc/hn/29960279/?score=106&amp;original_url=https%3A%2F%2Ftoot.cat%2F%40woozle%2F107634232290378715&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29960279&amp;sensitive=false"/>
@@ -24377,6 +25746,16 @@ https://game.udn.com/game/story/122089/5884797]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[🚀10 Trending projects on GitHub for web developers - 14th January 2022]]></title>
+        <id>https://dev.to/iainfreestone/10-trending-projects-on-github-for-web-developers-14th-january-2022-3k2a</id>
+        <link href="https://dev.to/iainfreestone/10-trending-projects-on-github-for-web-developers-14th-january-2022-3k2a"/>
+        <updated>2022-01-14T14:45:14.000Z</updated>
+        <summary type="html"><![CDATA[#javascript #webdev #productivity #react]]></summary>
+        <author>
+            <name>Iain Freestone</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[设置浏览器的默认下载目录为“桌面”时，提示：桌面 没有供标记使用的对象。]]></title>
         <id>828346</id>
         <link href="https://www.v2ex.com/t/828346"/>
@@ -26739,6 +28118,17 @@ Tags:知识分享官,野生技术协会,学习,大学生,科技,技术,计算机
         <summary type="html"><![CDATA[SSH堡垒主机最佳实践]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Understanding Generics in Go Programming Language]]></title>
+        <id>61e08207f2e4bf075d6f67dc</id>
+        <link href="https://coderoasis.com/understanding-generics-in-go-lang/"/>
+        <updated>2022-01-13T20:21:24.000Z</updated>
+        <summary type="html"><![CDATA[The majority of programming languages have the concept of generic functions — code that can easily and efficiently accept one of a range of types without needing any specialization for each one – as long as those types all implement certain types of behaviors.
+Generics are a massive time-saver. If]]></summary>
+        <author>
+            <name>Traven West</name>
         </author>
     </entry>
     <entry>
@@ -30495,1280 +31885,6 @@ Online classes have not only increased the burden on students but on educators e
         <summary type="html"><![CDATA[哦，不! 无论如何...]]></summary>
         <author>
             <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[伟大的AA碱性电池测试(2016)]]></title>
-        <id>https://hn.buzzing.cc/hn/29910710/</id>
-        <link href="https://hn.buzzing.cc/hn/29910710/?score=105&amp;original_url=https%3A%2F%2Fgoughlui.com%2F2016%2F12%2F19%2Fgreat-aa-alkaline-battery-test-pt-1-battery-testing-fundamentals%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29910710&amp;sensitive=false"/>
-        <updated>2022-01-12T21:13:54.000Z</updated>
-        <summary type="html"><![CDATA[伟大的AA碱性电池测试(2016)]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Use Windows Data Protection API with Python for handling credentials.]]></title>
-        <id>https://dev.to/samklingdev/use-windows-data-protection-api-with-python-for-handling-credentials-5d4j</id>
-        <link href="https://dev.to/samklingdev/use-windows-data-protection-api-with-python-for-handling-credentials-5d4j"/>
-        <updated>2022-01-12T21:01:15.000Z</updated>
-        <summary type="html"><![CDATA[As a IT Tech, I do alot of automation scripting, both in Powershell and Python against various systems and Ive never liked how I had to handle credentials in scripts.
-I dont want to have any credentials or API-keys in plain text on a server that others have access to, so I saved it as environment variables like most of us do.
-When I looked for a better solution I found this gem for Powershell!
-All commands below are run from PowerShell.
-Prompt for Username and Password and save to file
-PS C:\> Get-Credential | Export-Clixml -Path "cred.xml"
-
-Import the credentials from a file to a PSCredential object.
-PS C:\> $cred = Import-Clixml -Path "cred.xml"
-PS C:\> $cred
-
-UserName                     Password
---------                     --------
-samkling System.Security.SecureString
-PS C:\> Convert…]]></summary>
-        <author>
-            <name>Samuel Kling</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[TypeScript Serverless API on AWS]]></title>
-        <id>https://dev.to/mxro/typescript-serverless-api-on-aws-509p</id>
-        <link href="https://dev.to/mxro/typescript-serverless-api-on-aws-509p"/>
-        <updated>2022-01-12T20:53:38.000Z</updated>
-        <summary type="html"><![CDATA[There are many ways to stand up a REST API. Nearly every programming language provides a way for us to develop a simple web server, such as Express.js, Go Gin or Python Flask. However, with the advent of serverless computing, we need to rethink some of the fundamentals of how APIs are developed and deployed. Chiefly:
-Traditionally APIs are packaged into one deliverable; serverless architecture encourages to divide solutions up into many smaller units that are packaged and deployed individually.
-Traditionally APIs are stateful applications that are started and stopped infrequently; serverless architecture encourages to start up compute tasks only on demand.
-In this article, I will describe a way to develop a serverless API in TypeScript. The motivation is to develop a solution that makes it…]]></summary>
-        <author>
-            <name>Max Rohde</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Twitter Bot Challenge  by Kenya Twitter Developer Community]]></title>
-        <id>https://dev.to/veldakiara/twitter-bot-challenge-by-kenya-twitter-developer-community-38g6</id>
-        <link href="https://dev.to/veldakiara/twitter-bot-challenge-by-kenya-twitter-developer-community-38g6"/>
-        <updated>2022-01-12T20:51:32.000Z</updated>
-        <summary type="html"><![CDATA[Image by Alexander Shatov.
-Twitter is a social media site whose purpose is to connect people and allow people to share their thoughts with other users globally. 
-Twitter allows users to:
-Discover stories regarding news and events
-Follow people and companies that post content they enjoy consuming
-Have live audio conversations through spaces
-Simply communicate with friends. 
- Twitter API 
-
-
-
-The Twitter API is a set of programmatic endpoints that can be used to understand or build the conversation on Twitter. 
-Tweets
-Users
-Spaces
-Direct Messages
-Lists
-Trends
-Media
-Places
-Use Cases
-
-
-
-There are different use cases for using the Twitter API.
-Build for businesses: using the API to help your business listen, act, and discover.
-Build for consumers: build for people on Twitter, to enhance and impr…]]></summary>
-        <author>
-            <name>Velda Kiara</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Usando <script setup> no vueJS3]]></title>
-        <id>https://dev.to/italobarrosme/usando-no-vuejs3-4co1</id>
-        <link href="https://dev.to/italobarrosme/usando-no-vuejs3-4co1"/>
-        <updated>2022-01-12T20:50:15.000Z</updated>
-        <summary type="html"><![CDATA[No dia a dia do desenvolvimento buscamos sempre escrever menos e entregar mais, no vue3 utilizo do Composition API para buscar alcançar esse objetivo e a um tempo mudei minha abordagem de escrever e definir componentes Vue utilizando da feature <script setup>.
-
-O VueJS 3 introduziu o <script setup>que é um syntax sugar para reduzir a verbosidade no Composition API dentro de componentes de arquivos únicos (SFCs) além de reduzir a verbosidade outros benefícios ele nos traz.
-Capacidade de declarar props e eventos emitidos usando TypeScript puro
-Melhor desempenho de tempo de execução.
-Código mais enxutos com menos clichês
-Exemplo de código SEM o <script setup>
-
-Exemplo de código COM o <script setup>
-
-Observe como o mesmo código ficou bem mais enxuto!
-Ao usar <script setup>, quaisquer “top-leve…]]></summary>
-        <author>
-            <name>Italo Barros</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Python strip() – How to Trim a String or Line]]></title>
-        <id>61def1f8b837d507ba0a06cd</id>
-        <link href="https://www.freecodecamp.org/news/python-strip-how-to-trim-a-string-or-line/"/>
-        <updated>2022-01-12T20:48:03.000Z</updated>
-        <summary type="html"><![CDATA[In this article, you'll learn how to trim a string in Python using the .strip() method.  You'll also see how to use the .lstrip() and .rstrip() methods, which are the counterparts to .strip().  Let's get started!  How to trim a string in Python Python has three built-in methods for trimming]]></summary>
-        <author>
-            <name>freeCodeCamp.org</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Track Your Time with Timing (Sponsor)]]></title>
-        <id>https://www.macsparky.com/?p=11602</id>
-        <link href="https://www.macsparky.com/blog/2022/01/track-your-time-with-timing-sponsor-2/"/>
-        <updated>2022-01-12T20:35:14.000Z</updated>
-        <summary type="html"><![CDATA[This week MacSparky is sponsored by Timing. Timing is a time tracking app that records your time automatically and then reviews it for you later. It’s a new year and time to get rolling with some new habits. The problem is that your perception of how you are spending your time is a lot different from... Continue reading →
-The post Track Your Time with Timing (Sponsor) appeared first on MacSparky.]]></summary>
-        <author>
-            <name>David Sparks</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Temperature Sensing with Raspberry Pi into Mongodb]]></title>
-        <id>https://dev.to/kafechew/temperature-sensing-with-raspberry-pi-into-mongodb-3ho3</id>
-        <link href="https://dev.to/kafechew/temperature-sensing-with-raspberry-pi-into-mongodb-3ho3"/>
-        <updated>2022-01-12T20:24:14.000Z</updated>
-        <summary type="html"><![CDATA[Overview of My Submission
-
-
-Manual labor and monitoring on water quality affected the mortality of the fishes.
-Fixed location sensors are installed to multiple fish ponds for water quality monitoring and optimal predictive maintenance scheduling.
-The potential outcomes: A smart fish pond monitoring system to produce good quality fish and aquatic plants.
-Our PoC was built purely based on temperature sensor only (later we can add more sensors, like electrical conductivity (EC), dissolved oxygen (DO), pH, salinity, carbon dioxide, ammonia, nitrite, hardness, turbidity and biochemical oxygen demand (BOD) of water). 
-Temperature is an important water quality parameter. It can affect fish and shrimp metabolism, feeding rates and the degree of ammonia toxicity. Temperature also has a direct impac…]]></summary>
-        <author>
-            <name>Kai Chew</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[自行车保持平衡真的是未解之谜吗？【差评君】]]></title>
-        <id>https://www.bilibili.com/video/av338032488</id>
-        <link href="https://www.bilibili.com/video/av338032488"/>
-        <updated>2022-01-12T20:20:29.000Z</updated>
-        <summary type="html"><![CDATA[过去一个多世纪的时间里，看似简单的“自行车为什么不会倒”这个问题，困扰了无数科学家，网上许多文章甚至把“自行车为什么不会倒”写成了“世纪未解之谜”....今天跟大家聊聊一个发生在自行车身上的科学原理。
-
-
-Tags:科学,科普,物理,自行车,陀螺,山地自行车,公路自行车,平衡性,知识分享官]]></summary>
-        <author>
-            <name>差评君</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[USB 外接蓝牙，有什么推荐吗？]]></title>
-        <id>827930</id>
-        <link href="https://www.v2ex.com/t/827930"/>
-        <updated>2022-01-12T20:16:53.000Z</updated>
-        <summary type="html"><![CDATA[yingbo: 
-在用 macbook pro ，intel 的，蓝牙信号不好。想买一个外接到 USB 到，信号好一些。要接耳机（音乐、开会）、键盘和鼠标。
-我搜了搜，好像 5.x 的基本没有，偶尔有也是只能走音频，而且一对话音质就下来了。音频、数据都能走的只有 4.0 的。请问有人知道 5.0 以上好使的吗？]]></summary>
-        <author>
-            <name>yingbo</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[MongShare - Share Code]]></title>
-        <id>https://dev.to/rajvirsingh1313/mongshare-share-code-3hea</id>
-        <link href="https://dev.to/rajvirsingh1313/mongshare-share-code-3hea"/>
-        <updated>2022-01-12T20:15:18.000Z</updated>
-        <summary type="html"><![CDATA[Overview of My Submission
-
-
-MongShare helps with sharing your code. Users can share the code with others through a link, and the code would be editable with a password created by the author.
-MongShare uses the MongoDB Atlas as a database and Next.js as a frontend.
-Choose Your Own Adventure
- / 
-        MongShare
-      
-    
-
-
-
-
-
-
-Sharing Code With MongShare!
-
-
-About
-MongShare helps with sharing your code. It is made with MongoDB & Next.js. MongShare is a hackathon project for MongoDB Atlas Hackathon on DEV.
-git clone https://github.com/rajvirsingh1313/mongshare
-cd mongshare
-module.exports = {
-  env: {
-    ATLAS_URI:
-      "mongodb+srv://:@cluster0.lydaj.mongodb.net/mongshare?retryWrites=true&w=majority",
-    DOMAIN: "http://localhost:3000",
-  },
-};
-npm i
-npm run dev
-# or
-yarn dev
-Open http://localhost:3000 with your browser to see the result.
-View on GitHub
-
-
-I want to thanks the open source community for making my life easy. I also want to thanks the Dev.to and MongoDB for hosting this hackathon.]]></summary>
-        <author>
-            <name>Rajvir Singh</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[大叔筷子悬浮，学不会我来打你！]]></title>
-        <id>https://www.bilibili.com/video/av850568306</id>
-        <link href="https://www.bilibili.com/video/av850568306"/>
-        <updated>2022-01-12T20:15:07.000Z</updated>
-        <summary type="html"><![CDATA[-
-
-
-Tags:街头魔术,刘谦,春晚魔术,古彩戏法,申林,必剪创作]]></summary>
-        <author>
-            <name>魔术特白</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Apple Silicon 下的 Parallels Desktop 怎么选择 manjaro 的版本?]]></title>
-        <id>827929</id>
-        <link href="https://www.v2ex.com/t/827929"/>
-        <updated>2022-01-12T20:07:04.000Z</updated>
-        <summary type="html"><![CDATA[shiftvector: 
-由于 Linux 下有一些很好用的软件, 所以我使用 Parallels Desktop 装了 Fedora arm 版本. 但是 Fedora 下有一点小毛病, 所以想试试名气比较大的 manjaro (之前也试了 ubutu 但是毛病比 Fedora 还大). 但是我发现 manjaro arm 的版本太多了, 让人看的眼花缭乱:
-Khadas Vim 2
-Khadas Vim 3
-Odroid C4
-Odroid HC4
-Odroid N2
-Odroid N2+
-Pine H64
-Pine64 LTS
-Pinebook
-Pinebook Pro
-Radxa Zero
-Raspberry Pi 4
-Rock64
-RockPro64
-请问这么多版本里面哪一个才适合 MacBook? 谢谢!]]></summary>
-        <author>
-            <name>shiftvector</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Dell XPS 13 Plus vs MacBook Air M1: Which minimalistic notebook should you buy?]]></title>
-        <id>https://www.xda-developers.com/?p=581361</id>
-        <link href="https://www.xda-developers.com/dell-xps-13-plus-vs-macbook-air/"/>
-        <updated>2022-01-12T20:00:43.000Z</updated>
-        <summary type="html"><![CDATA[Finding the best laptop to buy can be confusing — for there are endless models to consider, offered by companies like Dell, Apple, and others. However, if you have a budget and certain expectations in mind, you can start eliminating options, until you eventually settle for one. This is the Dell XPS 13 Plus vs Apple
-The post Dell XPS 13 Plus vs MacBook Air M1: Which minimalistic notebook should you buy? appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Mahmoud Itani</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[不说一摸一样简直毫不相干]]></title>
-        <id>https://www.bilibili.com/video/av253000442</id>
-        <link href="https://www.bilibili.com/video/av253000442"/>
-        <updated>2022-01-12T20:00:11.000Z</updated>
-        <summary type="html"><![CDATA[Tags:无限搞笑公司6.0,无限搞笑公司]]></summary>
-        <author>
-            <name>天天鉴宝</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Parcel CSS。一个新的CSS解析器、编译器和粉碎器]]></title>
-        <id>https://hn.buzzing.cc/hn/29909533/</id>
-        <link href="https://hn.buzzing.cc/hn/29909533/?score=112&amp;original_url=https%3A%2F%2Fparceljs.org%2Fblog%2Fparcel-css%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29909533&amp;sensitive=false"/>
-        <updated>2022-01-12T19:57:35.000Z</updated>
-        <summary type="html"><![CDATA[Parcel CSS。一个新的CSS解析器、编译器和粉碎器]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[人们在无聊的时候会有更多虐待狂的行为]]></title>
-        <id>https://hn.buzzing.cc/hn/29909087/</id>
-        <link href="https://hn.buzzing.cc/hn/29909087/?score=105&amp;original_url=https%3A%2F%2Fdigest.bps.org.uk%2F2022%2F01%2F12%2Fpeople-behave-more-sadistically-when-theyre-bored%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29909087&amp;sensitive=false"/>
-        <updated>2022-01-12T19:57:35.000Z</updated>
-        <summary type="html"><![CDATA[人们在无聊的时候会有更多虐待狂的行为]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Wine on Wayland年终更新：功能和稳定性得到改善]]></title>
-        <id>https://hn.buzzing.cc/hn/29905142/</id>
-        <link href="https://hn.buzzing.cc/hn/29905142/?score=101&amp;original_url=https%3A%2F%2Fwww.collabora.com%2Fnews-and-blog%2Fblog%2F2021%2F12%2F22%2Fwine-on-wayland-year-end-update-improved-functionality-stability%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29905142&amp;sensitive=false"/>
-        <updated>2022-01-12T19:57:35.000Z</updated>
-        <summary type="html"><![CDATA[Wine on Wayland年终更新：功能和稳定性得到改善]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[有潮汕人吗？这里集合集合]]></title>
-        <id>827928</id>
-        <link href="https://www.v2ex.com/t/827928"/>
-        <updated>2022-01-12T19:48:45.000Z</updated>
-        <summary type="html"><![CDATA[cqs:]]></summary>
-        <author>
-            <name>cqs</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[奇怪的“游泳”方式]]></title>
-        <id>https://www.bilibili.com/video/av295516596</id>
-        <link href="https://www.bilibili.com/video/av295516596"/>
-        <updated>2022-01-12T19:39:34.000Z</updated>
-        <summary type="html"><![CDATA[视频素材：https://phys.org/news/2017-11-scallops-eyes-function-telescope.html
-https://www.smithsonianmag.com/science-nature/what-scallops-many-eyes-can-teach-us-about-evolution-vision-180972099/
-科学杂志https://www.youtube.com/watch?v=bbNfV2zoodU
-https://www.youtu
-
-
-Tags:冷知识,猎奇,扇贝,海星,章鱼,海葵,螃蟹,游泳,涨姿势]]></summary>
-        <author>
-            <name>正经的知识</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[看了各位吐槽 Mac 的帖子，真的弱爆了]]></title>
-        <id>827927</id>
-        <link href="https://www.v2ex.com/t/827927"/>
-        <updated>2022-01-12T19:36:46.000Z</updated>
-        <summary type="html"><![CDATA[xuegy: 是时候拿出我珍藏多年的音频给大家乐呵乐呵了
-剧情是这样的，基友的女朋友买了 2018 款 MBP ，结果买回来发现触控板不会用，而且连剪切都没有，大哭了一场。]]></summary>
-        <author>
-            <name>xuegy</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Flutter 最后一个动画交错动画]]></title>
-        <id>https://juejin.cn/post/7052527857045782565</id>
-        <link href="https://juejin.cn/post/7052527857045782565"/>
-        <updated>2022-01-12T19:30:51.000Z</updated>
-        <summary type="html"><![CDATA[本文翻译自 👉Staggered animations，是官方给出的最后一个动画教程——交错动画。看完本篇让你的动画不再单一，可以在淡入的过程中让尺寸变大，可以在尺寸变化的同时让形状变化。
-本篇的内容
-交错动画可以是一个前后衔接的动画序列，也可以是重叠在一起的动画效果
-交错动画的创建需要使用多个 Animation 对象，这些动画对象的控制只有一个
-每一个动画对象都需要指定一个 Interval，来表明该动画在整个动画序列的起止时刻
-使用 Tween 来创建每一个动画
-交错动画是一个很直接的概念：页面上的动画效果是一系列的动画，而不是一个动画一个动画手动加上去的。动画可能是纯粹的系列动画，动画之间前后衔接。也可能动画之间部分或者完全的重叠。也可能是空白动画，啥也没发生。
-本篇就介绍如何在 Flutter 中构建交错动画。
-案例
-本篇文章使用基本的交错案例，更复杂的案例可以参考staggered_pic_selection。
-basic_staggered_animation
-staggered_pic_selection
-我们完成的效果是这样的：
-
-交错动画的基本结构
-所有的动画都是被同一个 AnimationController 驱动的
-不管动画持续的时间，controller 的值必须在0-1的闭区间。
-每一个动画都有一个 0-1 闭区间 的Interval 的值
-单个的动画叫做 interval ，每一个 interval 创建一个 Tween ，Tween 指定了开始
-Tween 会创建动画并且动画由 controller 管理
-下图演示了代码示例中 Interval 的使用，需要注意到以下的几点:
-透明度的改变占据了整个动画时长的10%
-透明度动画和宽度动画之间有一个小小的空档期
-在时间线的最后25%的时间内没有任何动画
-Padding动画和高度变化动画是完全重…]]></summary>
-        <author>
-            <name>Time_sun</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Ask HN: 你必须使用LinkedIn才能被聘用吗？]]></title>
-        <id>https://hn.buzzing.cc/hn/29906328/</id>
-        <link href="https://hn.buzzing.cc/hn/29906328/?score=106&amp;original_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29906328&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29906328&amp;channel=ASK+HN&amp;sensitive=false"/>
-        <updated>2022-01-12T19:19:05.000Z</updated>
-        <summary type="html"><![CDATA[Ask HN: 你必须使用LinkedIn才能被聘用吗？]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[New OneDrive Files On-Demand experience is now available on macOS]]></title>
-        <id>https://www.xda-developers.com/?p=582845</id>
-        <link href="https://www.xda-developers.com/onedrive-files-on-demand-update-macos/"/>
-        <updated>2022-01-12T19:12:50.000Z</updated>
-        <summary type="html"><![CDATA[Microsoft has announced that its new OneDrive Files On-Demand experience for macOS is rolling out today. This new experience is built on Apple’s File provider platform, offering tighter integration with the OS and better app compatibility, along with other improvements. The new OneDrive Files On-Demand experience was first announced last June, alongside a handful of
-The post New OneDrive Files On-Demand experience is now available on macOS appeared first on xda-developers.]]></summary>
-        <author>
-            <name>João Carrasqueira</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Queueing theory equations]]></title>
-        <id>https://www.johndcook.com/blog/?p=94256</id>
-        <link href="https://www.johndcook.com/blog/2022/01/12/mm2/"/>
-        <updated>2022-01-12T19:08:35.000Z</updated>
-        <summary type="html"><![CDATA[A blog post about queueing theory that I wrote back in 2008 continues to be popular. The post shows that when a system is close to capacity, adding another server dramatically reduces the wait time. In that example, going from one teller to two tellers doesn’t make service twice as fast but 93 times as […]
-Queueing theory equations first appeared on John D. Cook.]]></summary>
-        <author>
-            <name>John</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[最强白嫖攻略：这27个网站让你彻底告别资源付费！]]></title>
-        <id>https://www.bilibili.com/video/av253063284</id>
-        <link href="https://www.bilibili.com/video/av253063284"/>
-        <updated>2022-01-12T19:05:13.000Z</updated>
-        <summary type="html"><![CDATA[本期视频推荐：Unsplash、Pexels、pixabay、wallhaven、Wallpaper Abyss、极简壁纸、iconfont、ICONFINDER、pngimage、CLEANPNG、Tenor、GIPHY、SOOGIF、100font、fontspace、mixkit、coverr、videvo、audio library、audionautix、哔哩哔哩、耳聆网、淘声网、OfficePLUS、51PPT、优品PPT、PPT超级市场
-
-
-Tags:技术宅,电脑,科普,学习,黑科技,人文,冷知识,经验分享,野生技术协会,知识分享官]]></summary>
-        <author>
-            <name>取景框看世界</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Samsung reportedly working on another smart speaker that definitely won’t get cancelled]]></title>
-        <id>https://www.xda-developers.com/?p=582805</id>
-        <link href="https://www.xda-developers.com/samsung-galaxy-home-mini-2-rumor/"/>
-        <updated>2022-01-12T18:52:37.000Z</updated>
-        <summary type="html"><![CDATA[Samsung has had a troubled history when it comes to producing smart speakers with its Bixby voice assistant. The company has yet to widely release a Bixby-powered speaker after two (public) attempts, but the third time might be the charm — new reports indicate Samsung is working on yet another smart speaker. Max Jambor, a
-The post Samsung reportedly working on another smart speaker that definitely won’t get cancelled appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Corbin Davenport</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Courtney Love在2005年对Harvey Weinstein的警告]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/s26eyd/courtney_love_warning_about_harvey_weinstein_in/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/s26eyd/courtney_love_warning_about_harvey_weinstein_in/?score=78100&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FDamnthatsinteresting%2Fcomments%2Fs26eyd%2Fcourtney_love_warning_about_harvey_weinstein_in%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FDamnthatsinteresting%2Fcomments%2Fs26eyd%2Fcourtney_love_warning_about_harvey_weinstein_in%2F&amp;channel=Damnthatsinteresting&amp;sensitive=false"/>
-        <updated>2022-01-12T18:42:30.000Z</updated>
-        <summary type="html"><![CDATA[Courtney Love在2005年对Harvey Weinstein的警告]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[阿米什黑客 (2009)]]></title>
-        <id>https://hn.buzzing.cc/hn/29905288/</id>
-        <link href="https://hn.buzzing.cc/hn/29905288/?score=103&amp;original_url=https%3A%2F%2Fkk.org%2Fthetechnium%2Famish-hackers-a%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29905288&amp;sensitive=false"/>
-        <updated>2022-01-12T18:42:06.000Z</updated>
-        <summary type="html"><![CDATA[阿米什黑客 (2009)]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Apple has released iOS 15.2.1 with bug fixes]]></title>
-        <id>https://www.xda-developers.com/?p=582793</id>
-        <link href="https://www.xda-developers.com/apple-released-ios-15-2-1/"/>
-        <updated>2022-01-12T18:36:22.000Z</updated>
-        <summary type="html"><![CDATA[Apple has released iOS 15.2.1 to all users with supported iPhones globally. The update focuses on bug fixes revolving around HomeKit, the Messages app, and CarPlay. It’s still unclear if this build introduces any new features, but that’s unlikely — considering it’s a X.X.1 update. Despite that, it comes with a relatively large download size,
-The post Apple has released iOS 15.2.1 with bug fixes appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Mahmoud Itani</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Android 12L Beta 2 goes live for Google Pixel phones]]></title>
-        <id>https://www.xda-developers.com/?p=582801</id>
-        <link href="https://www.xda-developers.com/android-12l-beta-2-live/"/>
-        <updated>2022-01-12T18:33:31.000Z</updated>
-        <summary type="html"><![CDATA[Android 12 arrived in October and was shortly followed by an Android 12L developer preview. Android 12L is a feature-drop update specifically designed to bring several optimizations and improvements for foldables and large screen devices. Back before the full release of Android 12, we talked about an Android 12.1 update in September this year. At the time, we learned that
-The post Android 12L Beta 2 goes live for Google Pixel phones appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Adam Conway</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【网络热门动物谣言6】独眼巨人的原型是个迷你象？巴西蜘蛛的毒性竟然有这种神奇功效？孕妇养猫会感染弓形虫？]]></title>
-        <id>https://www.bilibili.com/video/av893038722</id>
-        <link href="https://www.bilibili.com/video/av893038722"/>
-        <updated>2022-01-12T18:30:16.000Z</updated>
-        <summary type="html"><![CDATA[嗝~
-
-
-Tags:生物,古生物,弓形虫,独眼巨人,网络热门,巴西流浪蜘蛛,鲸爆,知识分享官,动物谣言,河马汗酸]]></summary>
-        <author>
-            <name>黑毛羊驼</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[New Windows 11 preview finally redesigns the volume and brightness flyouts]]></title>
-        <id>https://www.xda-developers.com/?p=582787</id>
-        <link href="https://www.xda-developers.com/new-windows-11-preview-finally-redesigns-the-volume-and-brightness-flyouts/"/>
-        <updated>2022-01-12T18:27:38.000Z</updated>
-        <summary type="html"><![CDATA[It’s Wednesday, and like clockwork, Microsoft has a new Windows 11 Insider Preview for testers on the Dev channel. The build number is 22533, and while it doesn’t have a whole lot of changes, it has some notable ones. Most notable is that Microsoft is finally redesigning the flyouts for when you use hardware to adjust
-The post New Windows 11 preview finally redesigns the volume and brightness flyouts appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Rich Woods</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[光速制作工作表，一千多个人，也只用10秒！]]></title>
-        <id>https://www.bilibili.com/video/av210563937</id>
-        <link href="https://www.bilibili.com/video/av210563937"/>
-        <updated>2022-01-12T18:18:03.000Z</updated>
-        <summary type="html"><![CDATA[今天分享一个Word的实用技巧
-
-
-Tags:知识分享官,学习,教育,视频教程,经验分享,Office,Excel,Word]]></summary>
-        <author>
-            <name>秋叶Excel</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The iPhone 14 Pro might replace the notch with a hole and a pill cutout]]></title>
-        <id>https://www.xda-developers.com/?p=582771</id>
-        <link href="https://www.xda-developers.com/iphone-14-pro-replace-notch-with-hole-and-pill/"/>
-        <updated>2022-01-12T18:15:43.000Z</updated>
-        <summary type="html"><![CDATA[When Apple released the iPhone X, people had mixed reactions — the edge-to-edge screen is stunning, but the notch comes in the way. Eventually, the criticism and memes revolving around it faded away (for the most part). Users adapt to change, and the notch is no exception. However, it seems like a similar occurrence might
-The post The iPhone 14 Pro might replace the notch with a hole and a pill cutout appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Mahmoud Itani</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[范进之志，何止举人！课文没说完的范进后续]]></title>
-        <id>https://www.bilibili.com/video/av635548646</id>
-        <link href="https://www.bilibili.com/video/av635548646"/>
-        <updated>2022-01-12T18:13:45.000Z</updated>
-        <summary type="html"><![CDATA[素材来源网络
-
-
-Tags:历史,励志,语文,趣闻,人文,冷知识,涨知识,科学科普,打卡挑战]]></summary>
-        <author>
-            <name>夜话冷知识</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Apple releases iOS 15.3 beta 2 to registered developers]]></title>
-        <id>https://www.xda-developers.com/?p=578029</id>
-        <link href="https://www.xda-developers.com/apple-releases-ios-15-3-beta-2-developers/"/>
-        <updated>2022-01-12T18:10:52.000Z</updated>
-        <summary type="html"><![CDATA[Apple has seeded the second beta of iOS 15.3 to registered developers. This comes after the release of iOS 15.2.1 to the public earlier today. This second beta build of the upcoming iOS release is now available to download as an over-the-air (OTA) update if you have the beta profile installed on your iPhone. We
-The post Apple releases iOS 15.3 beta 2 to registered developers appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Mahmoud Itani</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Ubuntu Linux 22.04 will be faster than ever on Raspberry Pi computers]]></title>
-        <id>https://www.xda-developers.com/?p=582777</id>
-        <link href="https://www.xda-developers.com/ubuntu-22-04-raspberry-pi/"/>
-        <updated>2022-01-12T18:06:52.000Z</updated>
-        <summary type="html"><![CDATA[The Raspberry Pi series of single-board computers might be the most popular Linux-based PCs of all time, thanks to their super-low prices, educational resources, and versatility. The first few models weren’t that great at functioning like desktop computers, due to the low-power processors and limited RAM, but newer iterations (like the Raspberry Pi 4 with
-The post Ubuntu Linux 22.04 will be faster than ever on Raspberry Pi computers appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Corbin Davenport</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[这生存多是一件美事捏【啮齿目下】]]></title>
-        <id>https://www.bilibili.com/video/av635586924</id>
-        <link href="https://www.bilibili.com/video/av635586924"/>
-        <updated>2022-01-12T18:04:22.000Z</updated>
-        <summary type="html"><![CDATA[bgm：Agent In Shanghai
-Laura Shigihara - Ultimate Battle 
-春之声圆舞曲.mp3
-吴应炬 - 葫芦娃 (Arrange version).mp3 Zone Music Medley.mp3 
-Zone Music Medley.mp3
-热拉尔·罗贝尔 - 中华小子(instrumental).mp3
-苏卡不列
-
-
-Tags:跟着UP主创作吧（第二期）,沙雕动物在哪里,动物,生物,鼠,啮齿目,自然,宠物,龙女之声,搞笑,萌宠]]></summary>
-        <author>
-            <name>龙女之声</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[摸金校尉的标配...]]></title>
-        <id>https://www.bilibili.com/video/av210378035</id>
-        <link href="https://www.bilibili.com/video/av210378035"/>
-        <updated>2022-01-12T18:00:16.000Z</updated>
-        <summary type="html"><![CDATA[Tags:野生技术协会,鉴定,博物馆,人文]]></summary>
-        <author>
-            <name>天天鉴宝</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[神奇的小木棍，据说每一百个人只有一个人能挑战成功！]]></title>
-        <id>https://www.bilibili.com/video/av423030875</id>
-        <link href="https://www.bilibili.com/video/av423030875"/>
-        <updated>2022-01-12T18:00:16.000Z</updated>
-        <summary type="html"><![CDATA[-
-
-
-Tags:打卡挑战,益智,烧脑,创意]]></summary>
-        <author>
-            <name>踩鸟玩家</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Gigabyte Z690 Aorus Pro DDR5 motherboard review: A solid Alder Lake Platform]]></title>
-        <id>https://www.xda-developers.com/?p=582101</id>
-        <link href="https://www.xda-developers.com/gigabyte-z690-aorus-pro-review/"/>
-        <updated>2022-01-12T18:00:09.000Z</updated>
-        <summary type="html"><![CDATA[Intel pulled the trigger on its latest Z690 motherboard chipset to support the launch of its new 12th-gen Alder Lake processors. These new motherboards carry the new LGA 1700 CPU socket along with some other advancements including PCIe Gen 5 as well as DDR5 memory support. It’s been a few months since the arrival of
-The post Gigabyte Z690 Aorus Pro DDR5 motherboard review: A solid Alder Lake Platform appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Karthik Iyer</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[大规模、半自动化的Go GC调整]]></title>
-        <id>https://hn.buzzing.cc/hn/29902825/</id>
-        <link href="https://hn.buzzing.cc/hn/29902825/?score=100&amp;original_url=https%3A%2F%2Feng.uber.com%2Fhow-we-saved-70k-cores-across-30-mission-critical-services%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29902825&amp;sensitive=false"/>
-        <updated>2022-01-12T17:54:43.000Z</updated>
-        <summary type="html"><![CDATA[大规模、半自动化的Go GC调整]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[美国法院裁定，旨在瓦解Facebook小组Meta的诉讼可以继续进行]]></title>
-        <id>https://hn.buzzing.cc/hn/29906953/</id>
-        <link href="https://hn.buzzing.cc/hn/29906953/?score=118&amp;original_url=https%3A%2F%2Fwww.theguardian.com%2Ftechnology%2F2022%2Fjan%2F12%2Flawsuit-aiming-to-break-up-facebook-group-meta-can-go-ahead-us-court-rules&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29906953&amp;sensitive=false"/>
-        <updated>2022-01-12T17:54:43.000Z</updated>
-        <summary type="html"><![CDATA[美国法院裁定，旨在瓦解Facebook小组Meta的诉讼可以继续进行]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2022年网络刮削的现状]]></title>
-        <id>https://hn.buzzing.cc/hn/29905799/</id>
-        <link href="https://hn.buzzing.cc/hn/29905799/?score=103&amp;original_url=https%3A%2F%2Fscrapeops.io%2Fblog%2Fthe-state-of-web-scraping-2022%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29905799&amp;sensitive=false"/>
-        <updated>2022-01-12T17:54:43.000Z</updated>
-        <summary type="html"><![CDATA[2022年网络刮削的现状]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[世界上最轻的树，密度只有水的八分之一。]]></title>
-        <id>https://www.bilibili.com/video/av893071283</id>
-        <link href="https://www.bilibili.com/video/av893071283"/>
-        <updated>2022-01-12T17:50:58.000Z</updated>
-        <summary type="html"><![CDATA[Tags:科普,植物,自然,轻木,打卡挑战]]></summary>
-        <author>
-            <name>林深见物</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2022 年了 我的 dlc 呢？]]></title>
-        <id>827926</id>
-        <link href="https://www.v2ex.com/t/827926"/>
-        <updated>2022-01-12T17:38:09.000Z</updated>
-        <summary type="html"><![CDATA[tk1184: 阉割了太多了 快点来几个付费 dlc 补补吧 不要让我的银手白死了]]></summary>
-        <author>
-            <name>tk1184</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Ask HN: 我的数学很差，该从哪里开始？]]></title>
-        <id>https://hn.buzzing.cc/hn/29905554/</id>
-        <link href="https://hn.buzzing.cc/hn/29905554/?score=102&amp;original_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29905554&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29905554&amp;channel=ASK+HN&amp;sensitive=false"/>
-        <updated>2022-01-12T17:36:35.000Z</updated>
-        <summary type="html"><![CDATA[Ask HN: 我的数学很差，该从哪里开始？]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[发布IPython 8.0]]></title>
-        <id>https://hn.buzzing.cc/hn/29906774/</id>
-        <link href="https://hn.buzzing.cc/hn/29906774/?score=103&amp;original_url=https%3A%2F%2Fblog.jupyter.org%2Frelease-of-ipython-8-0-6e034ff122ef%3Fgi%3D5efbb52d543e&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29906774&amp;sensitive=false"/>
-        <updated>2022-01-12T17:36:35.000Z</updated>
-        <summary type="html"><![CDATA[发布IPython 8.0]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[大哥们，我在 Esxi 上装了 ubuntu，怎么在 ubuntu 上用鼠标的侧键呢？]]></title>
-        <id>827925</id>
-        <link href="https://www.v2ex.com/t/827925"/>
-        <updated>2022-01-12T17:25:45.000Z</updated>
-        <summary type="html"><![CDATA[zjsegzhf: 
-主要是想在 Ubuntu 上装 goland ，然后在看代码的时候发现鼠标侧键的前进后退没法用。鼠标是罗技 GPW 。
-有啥办法呢？
-或者换个思路，有啥好的解决方案，我想搞个开发机，在哪连上都能直接用，之前就装了 Ubuntu 在用（主要是直接编译啥的就很方便，而且 24 小时开机，Linux 好像比 windows 省电）。（ Vim 不会，Vim 大佬求放过]]></summary>
-        <author>
-            <name>zjsegzhf</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[被网红博主咬过的芝士轮，究竟有多贵？让店家不惜冒险轮回使用！]]></title>
-        <id>https://www.bilibili.com/video/av465598508</id>
-        <link href="https://www.bilibili.com/video/av465598508"/>
-        <updated>2022-01-12T17:25:18.000Z</updated>
-        <summary type="html"><![CDATA[被网红博主咬过的芝士轮，究竟有多贵？让店家不惜冒险轮回使用！
-
-
-Tags:知识分享官,科学,科普,美食,芝士,工厂]]></summary>
-        <author>
-            <name>科学大魔王</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【沉浸式洗牙】洗牙结石全过程，强迫症的福音！]]></title>
-        <id>https://www.bilibili.com/video/av808098703</id>
-        <link href="https://www.bilibili.com/video/av808098703"/>
-        <updated>2022-01-12T17:20:13.000Z</updated>
-        <summary type="html"><![CDATA[Tags:知识分享官,健康,口腔,牙医,洗牙,牙结石,解压,强迫症,口臭]]></summary>
-        <author>
-            <name>牙医橘子</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[我没有女朋友]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/Unexpected/comments/s23psi/i_dont_have_a_girlfriend/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/Unexpected/comments/s23psi/i_dont_have_a_girlfriend/?score=76406&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FUnexpected%2Fcomments%2Fs23psi%2Fi_dont_have_a_girlfriend%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FUnexpected%2Fcomments%2Fs23psi%2Fi_dont_have_a_girlfriend%2F&amp;channel=Unexpected&amp;sensitive=false"/>
-        <updated>2022-01-12T17:10:20.000Z</updated>
-        <summary type="html"><![CDATA[我没有女朋友]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[在MySQL中，永远不要使用 "utf8"。使用 "utf8mb4"。]]></title>
-        <id>https://hn.buzzing.cc/hn/29907551/</id>
-        <link href="https://hn.buzzing.cc/hn/29907551/?score=141&amp;original_url=https%3A%2F%2Fadamhooper.medium.com%2Fin-mysql-never-use-utf8-use-utf8mb4-11761243e434&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29907551&amp;sensitive=false"/>
-        <updated>2022-01-12T17:10:03.000Z</updated>
-        <summary type="html"><![CDATA[在MySQL中，永远不要使用 "utf8"。使用 "utf8mb4"。]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Figma for Developers]]></title>
-        <id>https://dev.to/kathryngrayson/figma-for-developers-6op</id>
-        <link href="https://dev.to/kathryngrayson/figma-for-developers-6op"/>
-        <updated>2022-01-12T17:01:58.000Z</updated>
-        <summary type="html"><![CDATA[#ux #ui #webdev #frontend]]></summary>
-        <author>
-            <name>Kathryn Grayson Nanz</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[高盛投资2.5亿美元于压缩空气储能领域]]></title>
-        <id>https://hn.buzzing.cc/hn/29907101/</id>
-        <link href="https://hn.buzzing.cc/hn/29907101/?score=123&amp;original_url=https%3A%2F%2Fwww.canarymedia.com%2Farticles%2Flong-duration-energy-storage%2Fgoldman-sachs-just-made-a-record-setting-investment-in-long-duration-energy-storage&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29907101&amp;sensitive=false"/>
-        <updated>2022-01-12T16:46:57.000Z</updated>
-        <summary type="html"><![CDATA[高盛投资2.5亿美元于压缩空气储能领域]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[美国消费者价格在过去一年飙升7%，为1982年以来之最]]></title>
-        <id>https://hn.buzzing.cc/hn/29906496/</id>
-        <link href="https://hn.buzzing.cc/hn/29906496/?score=100&amp;original_url=https%3A%2F%2Fapnews.com%2Farticle%2Fconsumer-prices-inflation-c1bfd93ed1719cf0135420f4fd0270f9&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29906496&amp;sensitive=false"/>
-        <updated>2022-01-12T16:46:57.000Z</updated>
-        <summary type="html"><![CDATA[美国消费者价格在过去一年飙升7%，为1982年以来之最]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[官宣！正式淘汰挖矿，从运营商精准断网开始]]></title>
-        <id>https://www.bilibili.com/video/av210562121</id>
-        <link href="https://www.bilibili.com/video/av210562121"/>
-        <updated>2022-01-12T16:29:59.000Z</updated>
-        <summary type="html"><![CDATA[Tags:学习,知识分享官]]></summary>
-        <author>
-            <name>小屋pro</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Code a Full Stack Instagram Clone with Flutter and Firebase]]></title>
-        <id>61df0010b837d507ba0a0840</id>
-        <link href="https://www.freecodecamp.org/news/code-a-full-stack-instagram-clone-with-flutter-and-firebase/"/>
-        <updated>2022-01-12T16:29:13.000Z</updated>
-        <summary type="html"><![CDATA[Flutter and Firebase can work well together to create a full stack app. We just published a course on the freeCodeCamp.org YouTube channel that will teach you how to build an Instagram clone using Flutter on the front end and Firebase on the back end. After this tutorial, you]]></summary>
-        <author>
-            <name>freeCodeCamp.org</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Amazon will give you a $100 gift card if you buy a Galaxy S21 FE]]></title>
-        <id>https://www.xda-developers.com/?p=582737</id>
-        <link href="https://www.xda-developers.com/galaxy-s21-fe-deal-amazon-jan-2022/"/>
-        <updated>2022-01-12T16:25:59.000Z</updated>
-        <summary type="html"><![CDATA[Samsung has finally released the Galaxy S21 FE, which will likely serve as a cheaper alternative to the upcoming Galaxy S22 series. Even though the initial retail price of $699 seems like a relatively good deal, the sales and promotions are starting immediately, just as they did for the S20 FE. Case in point: if
-The post Amazon will give you a $100 gift card if you buy a Galaxy S21 FE appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Corbin Davenport</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[罗技 MX Master3 和妙控板，你更推荐哪一个？]]></title>
-        <id>827923</id>
-        <link href="https://www.v2ex.com/t/827923"/>
-        <updated>2022-01-12T16:10:12.000Z</updated>
-        <summary type="html"><![CDATA[Chandleric: 
-最近新入了 MacBook Pro ，感觉苹果的触控板做的确实很棒。现在纠结搭配外设的话选择罗技 MX Master3 还是妙控板。
-我看到有很多人推荐 MX Master3 ，但是鲜有人会在类似的帖子下推荐妙控板。外置的妙控板使用体验如何，与笔记本上的触控板体验相同或者更好吗？在 MX Mater3 和妙控板中间选择一个的话你会选择哪个？]]></summary>
-        <author>
-            <name>Chandleric</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[谷歌雇佣破坏工会的顾问来说服员工 "工会很糟糕"]]></title>
-        <id>https://hn.buzzing.cc/hn/29906713/</id>
-        <link href="https://hn.buzzing.cc/hn/29906713/?score=108&amp;original_url=https%3A%2F%2Farstechnica.com%2Ftech-policy%2F2022%2F01%2Fgoogle-hired-union-busting-consultants-to-convince-employees-unions-suck%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29906713&amp;sensitive=false"/>
-        <updated>2022-01-12T16:02:18.000Z</updated>
-        <summary type="html"><![CDATA[谷歌雇佣破坏工会的顾问来说服员工 "工会很糟糕"]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Stardock’s Start11 1.1 lets you put folders in your Start Menu]]></title>
-        <id>https://www.xda-developers.com/?p=582347</id>
-        <link href="https://www.xda-developers.com/stardocks-start11-1-1-lets-you-put-folders-in-your-start-menu/"/>
-        <updated>2022-01-12T16:00:22.000Z</updated>
-        <summary type="html"><![CDATA[A few months ago, Stardock released Start11, a utility that lets you make your Windows 11 Start Menu look more like the one on Windows 10 or Windows 7. It works the other way around too, letting you make your Windows 10 Start Menu look like the one from Windows 11. The company has a
-The post Stardock’s Start11 1.1 lets you put folders in your Start Menu appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Rich Woods</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Intel 12th-gen Alder Lake vs Apple M1 processors: Which one’s better?]]></title>
-        <id>https://www.xda-developers.com/?p=582447</id>
-        <link href="https://www.xda-developers.com/intel-12th-gen-vs-apple-m1/"/>
-        <updated>2022-01-12T16:00:18.000Z</updated>
-        <summary type="html"><![CDATA[Intel’s new 12th-gen Alder Lake processors are now official. The company unveiled its complete Alder Lake CPU lineup at CES 2022, adding as many as 22 desktop processors to the mix. On the notebook side, the new Alder Lake chips are split into three different series based on the performance: U-series goes up to 15W,
-The post Intel 12th-gen Alder Lake vs Apple M1 processors: Which one’s better? appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Karthik Iyer</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[水烧开后可以再烧第二次吗？]]></title>
-        <id>https://www.bilibili.com/video/av765529727</id>
-        <link href="https://www.bilibili.com/video/av765529727"/>
-        <updated>2022-01-12T15:58:35.000Z</updated>
-        <summary type="html"><![CDATA[水烧开后可以再烧第二次吗？
-
-
-Tags:知识分享官,自然,生物,健康,冷知识,涨知识,科普向]]></summary>
-        <author>
-            <name>这知识好冷</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Swanson’s rule of thumb]]></title>
-        <id>https://www.johndcook.com/blog/?p=91481</id>
-        <link href="https://www.johndcook.com/blog/2022/01/12/swansons-rule/"/>
-        <updated>2022-01-12T15:46:45.000Z</updated>
-        <summary type="html"><![CDATA[Swanson’s rule of thumb [1] says that the mean of a moderately skewed probability distribution can be approximated by the weighted average of the 10th, 50th, and 90th percentile, with weights 0.3, 0.4, and 0.3 respectively. Because it is based on percentiles, the rule is robust to outliers. Swanson’s rule is used in the oil […]
-Swanson’s rule of thumb first appeared on John D. Cook.]]></summary>
-        <author>
-            <name>John</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[改用N95口罩可使Covid防护能力提高75倍]]></title>
-        <id>https://hn.buzzing.cc/hn/29906232/</id>
-        <link href="https://hn.buzzing.cc/hn/29906232/?score=130&amp;original_url=https%3A%2F%2Fwww.axios.com%2Fn95-mask-protection-covid-958039c9-07f1-45a1-81e7-b7436707fee5.html&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29906232&amp;sensitive=false"/>
-        <updated>2022-01-12T15:45:58.000Z</updated>
-        <summary type="html"><![CDATA[改用N95口罩可使Covid防护能力提高75倍]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[铁路 12306 如何取消学生身份]]></title>
-        <id>https://sspai.com/post/70917</id>
-        <link href="https://sspai.com/post/70917"/>
-        <updated>2022-01-12T15:38:30.000Z</updated>
-        <summary type="html"><![CDATA[明明已经毕业了，买火车票的时候还是每次都弹出来「是否购买学生票」的选项，甚至有时候就因为这一两秒耽搁，票就抢没了，上网搜半天都找不到一个靠谱的办法，但这次，我终于发现了正确的设置流程，年关将近，希望能为大家抢票节省一点时间。
-首先，在12306里进入「我的」页面，点击「乘车人」，找到自己的名字后点击最右边的修改按钮，如果是自己的账户，一般都在第一行的当前用户里。
-
-接着，点击右上角的「修改」，然后拖动到最后一行，你会发现这里写着「学生」，点击这里。下图中写着成人是因为我自己的账户已经改过了。
-
-最后，把学生切换成成人，输入12306的密码和验证码后，点击「完成」即可，从此以后买票就再也不会弹出「是否购买学生票」的选项了。
-
- 
-
-
-
-
-
-
-4
-0
-
-
-
-
-
-扫码分享]]></summary>
-        <author>
-            <name>书藏</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[每天在b站看书一小时，25天挣了7434，适合没口才的新手做，详细教程]]></title>
-        <id>https://www.bilibili.com/video/av210522855</id>
-        <link href="https://www.bilibili.com/video/av210522855"/>
-        <updated>2022-01-12T15:30:49.000Z</updated>
-        <summary type="html"><![CDATA[每天在b站看书一小时，25天挣了7434，适合没口才的新手做，详细教程
-
-
-Tags:知识分享官,野生技术协会,自媒体,赚钱,副业,创业,影视剪辑,视频剪辑,vlog,短视频]]></summary>
-        <author>
-            <name>玩B站的阿涛</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2022年的锈蚀]]></title>
-        <id>https://hn.buzzing.cc/hn/29903930/</id>
-        <link href="https://hn.buzzing.cc/hn/29903930/?score=103&amp;original_url=https%3A%2F%2Fwww.ncameron.org%2Fblog%2Frust-in-2022-2%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D29903930&amp;sensitive=false"/>
-        <updated>2022-01-12T15:28:21.000Z</updated>
-        <summary type="html"><![CDATA[2022年的锈蚀]]></summary>
-        <author>
-            <name>Hacker News 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[为什么安卓阵营都抛弃了弹出式摄像头]]></title>
-        <id>827922</id>
-        <link href="https://www.v2ex.com/t/827922"/>
-        <updated>2022-01-12T15:22:32.000Z</updated>
-        <summary type="html"><![CDATA[dongdongdong: 最新发布的安卓手机都是挖孔屏，强迫症的我有点难受，我觉得弹出式真的是一个不错的解决方法？作为一个直男，前置摄像头一年都不打开几次，也没那么容易坏！
-最近一直等一个弹出式的旗舰，看样子是没戏了。]]></summary>
-        <author>
-            <name>dongdongdong</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[笔记本电池鼓包是苹果的专利还是普遍存在的问题？]]></title>
-        <id>827921</id>
-        <link href="https://www.v2ex.com/t/827921"/>
-        <updated>2022-01-12T15:20:03.000Z</updated>
-        <summary type="html"><![CDATA[Phishion: 
-假设是专利，这个也太傻了吧为什么这么多年不改进，有时候看还挺吓人的
-如果是锂电池技术的必然现象为什么我印象中全部都是 MacBook 有这样的毛病？]]></summary>
-        <author>
-            <name>Phishion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[15岁少女辍学3年，感染6种HPV病毒，导致宫颈病变，操碎了妈妈的心]]></title>
-        <id>https://www.bilibili.com/video/av635607292</id>
-        <link href="https://www.bilibili.com/video/av635607292"/>
-        <updated>2022-01-12T15:19:42.000Z</updated>
-        <summary type="html"><![CDATA[15岁少女辍学3年，感染6种HPV病毒，导致宫颈病变，操碎了妈妈的心
-
-
-Tags:健康]]></summary>
-        <author>
-            <name>地坛医院刘彦春</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Samsung confirms the Exynos 2200 will launch alongside the Galaxy S22]]></title>
-        <id>https://www.xda-developers.com/?p=582709</id>
-        <link href="https://www.xda-developers.com/samsung-confirms-exynos-2200-galaxy-s22/"/>
-        <updated>2022-01-12T15:18:38.000Z</updated>
-        <summary type="html"><![CDATA[Something weird has happened with the Exynos 2200. Yesterday, the company was supposed to host an event for just the chipset, though it quietly deleted its tweet announcing the event and didn’t say a word. It’s rare for companies to cancel launch events and presentations, and it’s even rarer for companies to do it without
-The post Samsung confirms the Exynos 2200 will launch alongside the Galaxy S22 appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Adam Conway</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[魅族浏览器， V2EX 移动版网页，右上角登录的三个点失效]]></title>
-        <id>827920</id>
-        <link href="https://www.v2ex.com/t/827920"/>
-        <updated>2022-01-12T15:17:04.000Z</updated>
-        <summary type="html"><![CDATA[coolan: 
-今天需要重新登录，结果右上角点击没反应了,只好切换到桌面网站模式登录，登录进去点击右上角的头像也一样没反应。浏览器内核是 chrome 73.0.3683.121,之前是可以的，是最近更新导致的吧？还会兼容老浏览器吗？]]></summary>
-        <author>
-            <name>coolan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[知乎的前端 er 请进来看一下]]></title>
-        <id>827919</id>
-        <link href="https://www.v2ex.com/t/827919"/>
-        <updated>2022-01-12T15:16:47.000Z</updated>
-        <summary type="html"><![CDATA[echooo0: 
-不知道 v2 里面有没有知乎的前端开发 er ，这个 bug 之前反馈给知乎的客服，但是好像并没有啥用
-前情提要 https://v2ex.com/t/820221
-简而言之就是，在 chrome 浏览器上装了个护眼的插件后，刷知乎的问答页面总是会报错(这个 bug 好像只会在问答页面, 鼠标向下滚动的时候复现)，其他网站没有这个情况。
-护眼插件的地址:
-https://chrome.google.com/webstore/detail/eye-protector/fgadnbmmolnmbkbklpaojbogcopipopl?hl=zh-CN
-报错内容:
-
-init.js:1 Error: Minified React error #62; visit https://reactjs.org/docs/error-decoder.html?invariant=62&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
-控制台报错截图:]]></summary>
-        <author>
-            <name>echooo0</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Rust 搜索半年总结]]></title>
-        <id>827918</id>
-        <link href="https://www.v2ex.com/t/827918"/>
-        <updated>2022-01-12T15:04:45.000Z</updated>
-        <summary type="html"><![CDATA[Wichna: 
-你总共搜索了 1200+ 次 Rust 文档，节省了 2 个多小时的宝贵时间👍
-标准库和 docs.rs 是你最常搜索的内容，离开它们感觉你都不会写 rust 代码了🤪
-你还搜索过 rust 编译器的文档，不知道你要干嘛🙄
-你搜索过 100 多次的 rust 错误码，你应该不会忘记和编译器斗争时焦头烂额的心情吧😭
-你最常搜索的第三方库是 tokio，搜索了 60 次，这个库看起来对你很重要呀🥳
-每周二、每月 10 号，每天下午 2 点是你搜索频率最高的时段，看起来不像是一个 996 的娃😉
-你最早一次搜索 rust 文档的时间是凌晨 6 点，那天早上你是要干嘛？😂
-
-我是 Rust Search Extension 的作者，分享一下我过去半年使用这个插件搜索 Rust 文档的数据。同时也非常欢迎大家下载体验： https://rust.extension.sh/, 你也可以看到自己的搜索数据。]]></summary>
-        <author>
-            <name>Wichna</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[PCIe 6.0 specification announced with up to 256GB/s of bandwidth]]></title>
-        <id>https://www.xda-developers.com/?p=582685</id>
-        <link href="https://www.xda-developers.com/pcie-gen-6-specification-announced-double-bandwidth/"/>
-        <updated>2022-01-12T15:01:24.000Z</updated>
-        <summary type="html"><![CDATA[PCI Express, or PCIe, 5.0 has barely started making its way to consumer products, but version 6.0 is already on the horizon. The PCI Special Interest Group (PCI-SIG) announced the finalized version of the upcoming standard this week, once again doubling the bandwidth of the previous generation. Arriving less than three years after PCIe 5.0
-The post PCIe 6.0 specification announced with up to 256GB/s of bandwidth appeared first on xda-developers.]]></summary>
-        <author>
-            <name>João Carrasqueira</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[See How the vivo V23 Series Sparks Joy]]></title>
-        <id>https://www.xda-developers.com/?p=580729</id>
-        <link href="https://www.xda-developers.com/the-vivo-v23-series/"/>
-        <updated>2022-01-12T15:00:40.000Z</updated>
-        <summary type="html"><![CDATA[vivo brings a color-changing finish to a phone that also has exceptional camera capabilities The challenges that people have experienced in the last two years have touched everyone in one way or another. People are looking to have fun again, and want experiences that bring them joy. For situations like this, remember to look for
-The post See How the vivo V23 Series Sparks Joy appeared first on xda-developers.]]></summary>
-        <author>
-            <name>A Word From Our Sponsors</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[家庭网络布线求解]]></title>
-        <id>827917</id>
-        <link href="https://www.v2ex.com/t/827917"/>
-        <updated>2022-01-12T15:00:11.000Z</updated>
-        <summary type="html"><![CDATA[eccentric579: 
-朋友家的三层自建房，怎样布线组网
-线缆：6 类线及以上
-线缆接通要求：必须 4 对双绞线全部接通，满足 POE 要求，严禁双绞线拆分
-布线  
-以光纤入户处为起点
-起点与客厅电视处布置 5 线（ IPTV/NAS/TV/AP/）
-起点与各个房间布置单线，特殊高网络需求房屋可布置双线
-监控处预留网线
-中央空调检修口预留吸顶 AP 网线
-预埋投影仪 HDMI 线
-无线组网方式: AC+AP 或者 有线回程 mesh  
-我这样回复可以么
-谢谢]]></summary>
-        <author>
-            <name>eccentric579</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[遇到这样的情况你还不知道该怎么解决吗？]]></title>
-        <id>https://www.bilibili.com/video/av723102220</id>
-        <link href="https://www.bilibili.com/video/av723102220"/>
-        <updated>2022-01-12T14:59:45.000Z</updated>
-        <summary type="html"><![CDATA[遇到这样的情况你还不知道该怎么解决吗？
-
-
-Tags:野生技术协会,自制,冷知识,黑科技,知识,科技,经验分享,制作过程,打卡挑战]]></summary>
-        <author>
-            <name>设计师南笙</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[夸克这广告实在是太 low 了吧.]]></title>
-        <id>827916</id>
-        <link href="https://www.v2ex.com/t/827916"/>
-        <updated>2022-01-12T14:56:41.000Z</updated>
-        <summary type="html"><![CDATA[dhou45: 
-之前听说过这个 app, 刚推出那会儿口碑貌似还不错. 怎么现在这个吃相了??]]></summary>
-        <author>
-            <name>dhou45</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[失眠速进！如何在2分钟内睡成死猪？【知心一分钟】]]></title>
-        <id>https://www.bilibili.com/video/av935547288</id>
-        <link href="https://www.bilibili.com/video/av935547288"/>
-        <updated>2022-01-12T14:45:46.000Z</updated>
-        <summary type="html"><![CDATA[失眠福利，建议收藏！
-
-
-Tags:知识分享官,经验分享,黑科技,生活经验,失眠,睡眠,睡觉,休息,安眠,科普]]></summary>
-        <author>
-            <name>知心者联盟</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[开发 sdk 的问题]]></title>
-        <id>827915</id>
-        <link href="https://www.v2ex.com/t/827915"/>
-        <updated>2022-01-12T14:44:33.000Z</updated>
-        <summary type="html"><![CDATA[dengshen: 
-需要开发一个 sdk, 在里面提供了一些函数, 函数里面会有 ajax 接口相关的操作(接口地址是写死的).
-打包后提供给 web 端开发用时调用方法会产生跨域. 一般这个问题是哪里解决?
-让使用者解决感觉不太优雅, 让提供者解决就只能放开跨域的限制,也不太好]]></summary>
-        <author>
-            <name>dengshen</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[v6 公共 dns 请求记录 2000ms]]></title>
-        <id>827914</id>
-        <link href="https://www.v2ex.com/t/827914"/>
-        <updated>2022-01-12T14:31:47.000Z</updated>
-        <summary type="html"><![CDATA[vtoex0000000002: 
-
-server=240C::6666
-server=240C::6644
-
-
-root@OpenWrt:~# dig www.baidu.com @240C::6666
-
-; > DiG 9.17.20 > www.baidu.com @240C::6666
-;; global options: +cmd
-;; Got answer:
-;; ->>HEADER]]></summary>
-        <author>
-            <name>vtoex0000000002</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Anthem is an iOS app that TikTokifies your Spotify experience]]></title>
-        <id>https://www.xda-developers.com/?p=582629</id>
-        <link href="https://www.xda-developers.com/anthem-ios-tiktokifies-spotify/"/>
-        <updated>2022-01-12T14:27:25.000Z</updated>
-        <summary type="html"><![CDATA[In our ever-evolving digital world, everyone wants to become a TikTok. What’s a TikTok? It’s an endless, vertical stream of brief content that you find yourself absorbed into. Instagram copied it, YouTube did, Snapchat as well — heck, even Twitter followed suit. There’s a certain appeal to this format, especially amongst the younger generations. You
-The post Anthem is an iOS app that TikTokifies your Spotify experience appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Mahmoud Itani</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[目前国内 Angular 的形式怎么样？流行吗？]]></title>
-        <id>827913</id>
-        <link href="https://www.v2ex.com/t/827913"/>
-        <updated>2022-01-12T14:20:12.000Z</updated>
-        <summary type="html"><![CDATA[shadowfish0: 
-目前会 Vue ，碰到个单子老板要求用 Angular 写，开发 APP ，说是国外用的多，但是我好像在国内只知道 Vue 、React 用的很多，Angular 这个框架值得现在为了这单子去学下吗]]></summary>
-        <author>
-            <name>shadowfish0</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[甚至没有你们大多数人的一半好，但我仍然想分享我的鹦鹉的这张照片]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/pics/comments/s1sy6h/not_even_half_as_good_as_most_of_you_guys_but_i/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/pics/comments/s1sy6h/not_even_half_as_good_as_most_of_you_guys_but_i/?score=75187&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fpics%2Fcomments%2Fs1sy6h%2Fnot_even_half_as_good_as_most_of_you_guys_but_i%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fpics%2Fcomments%2Fs1sy6h%2Fnot_even_half_as_good_as_most_of_you_guys_but_i%2F&amp;channel=pics&amp;sensitive=false"/>
-        <updated>2022-01-12T14:17:05.000Z</updated>
-        <summary type="html"><![CDATA[甚至没有你们大多数人的一半好，但我仍然想分享我的鹦鹉的这张照片]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Homebrew 比直接 safari 下载慢好多]]></title>
-        <id>827912</id>
-        <link href="https://www.v2ex.com/t/827912"/>
-        <updated>2022-01-12T14:14:50.000Z</updated>
-        <summary type="html"><![CDATA[AsianChampion: 挂了 Clash 全局代理，80 多 M 的软件，Homebrew 安装时每秒 0.1%，我用 Safari 直接到 github 下载，几秒就下完了，这是什么原因啊？]]></summary>
-        <author>
-            <name>AsianChampion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[老板，别再让打工人写文档和注释了]]></title>
-        <id>827911</id>
-        <link href="https://www.v2ex.com/t/827911"/>
-        <updated>2022-01-12T14:12:02.000Z</updated>
-        <summary type="html"><![CDATA[leontung: 
-害，我真是忍不住了，要 Code Review 我能理解（已经在求助大家有没有提效的方案了），但还要求写注释和文档，说是为了方便知识共享和新人入职。
-WTF ？也不看看我们的业绩压力，万一不巧被裁下个月就去喝西北风了，新人关我 P 事。
-索性吐槽一下看看大家想法：
-我经历过小中大厂，经历的大部分代码是没有注释的，某些写得像屎山的代码，看起来十分费劲，重构不好还要挨刀子背锅，被骂出 bug
-我花力气看懂了，好心写了注释，好像也没人关心？老板也不怎么来 code review ，都是同事之间+1 和 LGTM ，感觉我吃力不讨好
-我发现其他人写的 bug ，我都是飞书告诉他要修掉或者我自己默默修掉了，如果我再和老板说 xxx 的代码有问题，感觉有点像背后捅一刀？给老板感觉也不好，为了鸡毛蒜皮的事情邀功？
-之前在一家外企用那破 Confluence 让我抓狂，现在公司用飞书文档体验好了，但维护起来麻烦啊，代码更新了 Readme 和文档也要更新
-年底了，就问问大家，大家写文档和注释有年终奖不？（逃…
-正经时间：
-其实我打心底觉得写文档和注释是个好习惯，毕竟咱们是靠代码吃饭的，但在公司内部有业绩压力有时候是心有余力不足，况且好多时候工具和代码是割裂的。
-因此我正在写一个 VSCode 的插件，做一款基于代码的协作和知识分享，而不是现在基于文档（ README 、飞书等）。
-就目前而言，我希望先实现：
-在代码仓库里写注释的时候，如果看到有价值的信息，可以在 IDE 里同步到飞书文档 /Github 的 Readme 里等（这块还在想）
-IDE 里顺手创建一个 Github/Gitlab issue ，再分配给我的同事（这个已经在做）
-同步消息到飞书群 /钉钉群大家都能看到，显得我中立一点不要像是个打小报和为了这件事打报告的人
-老板，咱们有锅背锅，有功拿奖行不行。
-不知道大家是否感兴趣？如果感兴趣的话留个联系方式，等我开发完之后发给大家做 beta 测试。也可以给我提点意见。
-真是难为我这个写 Golang 的后端，每天下班后啃前端代码（不说了，去写了...
-附带效果：
-选择代码块
-
-在插件上写个标题就能创建一个 Github Issue]]></summary>
-        <author>
-            <name>leontung</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[招聘 - 深圳 ] 招聘前端啦，我会在下方列出公司的优缺点，大家斟酌考虑]]></title>
-        <id>827910</id>
-        <link href="https://www.v2ex.com/t/827910"/>
-        <updated>2022-01-12T14:03:39.000Z</updated>
-        <summary type="html"><![CDATA[skySurest: 地址：深圳西丽万科云城
-待遇:  ~ - 15 (一般来说 13-15 ) - 看你的情况决定咯
-因为是小公司，公司给到的工资可能最多 13 - 15
-岗位性质: 前端 (vue 2 、vue 3) - 未来 react 、react-native 或者 flutter 
-可能目前只招一人
-加班情况: 无 (一般来说我最多晚走 30 分钟, 6.30, 没什么大事的话，7 点走光了, 有大事也是因为开会而不是开发问题)
-公司情况: 开发人员比较少，公司人员也比较少，比较和谐，不会有任何压抑和压力的情况，工作内容视你自己安排的情况决定，秉持原则：先上线 - 再优化 ，下班基本不会有任何打扰你的情况，除非很急的事情 
-是一家在线教育招聘平台，名称先不说了，我们主要是挣老外的钱和 B 端用户的钱
-我们希望您
-(这里的不列很厉害的技术)
-- vue
-- 原生 js
-- 能独立开发能力 ( 不是要你独立开发，大家一起干 )
-- 能良好沟通和理解需求的能力 （不要闷闷的）
-- 能够主动学习，善于学习 (就是对目前的技术方向 敏感一点，主动去了解 - 面了许多人，都这不懂那不懂的，只会 vue ，这样的就不好了)
-- 对一些没用过的技术有兴趣，并且有主动学习的能力 - 例如不仅仅局限于 前端的 vue jquery ，可能 react  或者其他的
-因为我们和招聘平台是竞争关系，招不到人所以来这里了，如有打扰，感谢理解~~~
-希望你能拿出匹配你工作年限的水平，我们公司比较人文主义，生活大于工作 ，不止于你~]]></summary>
-        <author>
-            <name>skySurest</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Nvidia officially releases Android TV 11 for Shield TV]]></title>
-        <id>https://www.xda-developers.com/?p=582341</id>
-        <link href="https://www.xda-developers.com/nvidia-shield-android-tv-11/"/>
-        <updated>2022-01-12T14:00:58.000Z</updated>
-        <summary type="html"><![CDATA[Nvidia is probably best known for its graphics cards, but the company has also sold set-top boxes powered by Android TV under the ‘Shield’ name since 2015. Even though Nvidia has refreshed the hardware a few times since then (and made a separate stick model), all Shield TV devices are still supported by software updates.
-The post Nvidia officially releases Android TV 11 for Shield TV appeared first on xda-developers.]]></summary>
-        <author>
-            <name>Corbin Davenport</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[现在我在这里不知道该如何对待生活]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/memes/comments/s1e85j/now_im_here_not_knowing_what_to_do_with_life/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/memes/comments/s1e85j/now_im_here_not_knowing_what_to_do_with_life/?score=75061&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Fs1e85j%2Fnow_im_here_not_knowing_what_to_do_with_life%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Fs1e85j%2Fnow_im_here_not_knowing_what_to_do_with_life%2F&amp;channel=memes&amp;sensitive=false"/>
-        <updated>2022-01-12T13:57:48.000Z</updated>
-        <summary type="html"><![CDATA[现在我在这里不知道该如何对待生活]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[如何让 19 intel 的 mbp 显示 4k 分辨率？独显是 5300m]]></title>
-        <id>827908</id>
-        <link href="https://www.v2ex.com/t/827908"/>
-        <updated>2022-01-12T13:56:47.000Z</updated>
-        <summary type="html"><![CDATA[richarddingcn: 
-家里的显示器是 4k144 的 xv282k 不指望他能显示 4k144 但是分辨率最高只能选到 2560x1440 也就是 2k 导致整个显示的都很模糊 请问各位大佬有什么办法让他显示成 4k 吗]]></summary>
-        <author>
-            <name>richarddingcn</name>
         </author>
     </entry>
 </feed>
