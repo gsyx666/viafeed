@@ -12,6 +12,15 @@
       "siteUrl": "https://www.freecodecamp.org/news",
       "articles": [
         {
+          "id": "61e88961183181284a191dac",
+          "author": "Ihechikara Vincent Abba",
+          "description": "Making your Windows taskbar transparent is a pretty cool thing to do. It looks great, and it's one of the few ways you can personalize your taskbar. Some resources about this topic require you to install different software to accomplish it. But in this tutorial we'll see how to make",
+          "link": "https://www.freecodecamp.org/news/transparent-taskbar-how-to-make-a-task-bar-transparent-in-windows-10-pc-2/",
+          "publishedOn": "2022-01-26T00:11:44.000Z",
+          "wordCount": 776,
+          "title": "Transparent Taskbar – How to Make a Task Bar Transparent in Windows 10 PC"
+        },
+        {
           "id": "61eebd80f2ed6b06db5a37e5",
           "author": "Kolade Chris",
           "description": "If you're a Windows user, you've probably had your PC randomly shut down. This can be frustrating and negatively impact your productivity as it interrupts important tasks and activities. This random shutdown might be caused by software or hardware issues, or both on some occasions. I have researched 4 ways",
@@ -171,6 +180,114 @@
       "feedUrl": "https://dev.to/feed",
       "siteUrl": "https://dev.to",
       "articles": [
+        {
+          "id": "https://dev.to/0prvona2lupchiq/best-no-code-app-builders-1g47",
+          "author": "Liudmila Klimusheuskaja",
+          "description": "A no-code app builder is a great resource for creating your own application without programming skills or a huge budget. These platforms often have the pre-built templates, drag-and-drop functionality to design UI, and integrations with  databases, so they can ultimately be deployed as your own mobile or web app.\nThere are many no-code app builders on the market, and it can be hard to find the best option, especially because you can often only see a landing page, marketing information, and exciting slogans. \nSerhii Pospielov, AI Practice Head at Exadel, reviewed several no-code app builders from a developer's point of view. He tried to create MVPs on 13 different platforms, but only managed to achieve that on five (this doesn’t mean that the other eight aren’t good platforms – just that they didn’t meet his particular business need).  Serhii’s favorite no-code app builders were: \nAppery.io, \nAppGyver, \nCheck out his Best No-Code App Builders (Part 1) on Medium and see the other top platforms in his list along with their screenshots of interfaces. \nYou’ll also find concrete information about the difference between no-code and low-code mobile app builders, the role of back end on a mobile application, the key stages in developing a mobile app, and more things to consider when evaluating the costs of no-code app builders.",
+          "link": "https://dev.to/0prvona2lupchiq/best-no-code-app-builders-1g47",
+          "publishedOn": "2022-01-26T07:18:15.000Z",
+          "wordCount": 565,
+          "title": "Best No-Code App Builders"
+        },
+        {
+          "id": "https://dev.to/vincenius/weekly-web-development-resources-106-1k55",
+          "author": "Vincent Will",
+          "description": "TinyBase\n\n\n\nedit.photo\n\n\n\nPolka Dot Generator\n\n\n\nTidy Free\n\n\n\nForm Validation\n\n\n\nCompress Images Online\n\n\n\nTwo.js\n\n\n\nCharm\n\n\n\nBeercss\n\n\n\nGit History\n\n\n\nShapefest\n\n\n\nChirpy\n\n\n\nTo see all the weeklies check: wweb.dev/weekly",
+          "link": "https://dev.to/vincenius/weekly-web-development-resources-106-1k55",
+          "publishedOn": "2022-01-26T06:52:00.000Z",
+          "wordCount": 499,
+          "title": "Weekly web development resources #106"
+        },
+        {
+          "id": "https://dev.to/this-is-learning/javascript-ternary-operator-3kc2",
+          "author": "Lorenzo Zarantonello",
+          "description": "JavaScript list of operators containing question marks might surprise new developers approaching the language for the first time. \nnullish coalescing operator (??) works. \nFollowing MDN definition, \"The conditional (ternary) operator is the only JavaScript operator that takes three operands: a condition followed by a question mark (?), then an expression to execute if the condition is truthy followed by a colon (:), and finally the expression to execute if the condition is falsy\".\ncondition ? expression1 : expression2\n\nYou can read this operator as follow: IF the condition is true execute expression1 else execute expression2. \nThis is not entirely accurate but before diving into truthy and falsy let's see an example with a condition that can only be true or false.\nlet condition = true;\nconsole.log(condition ? 'exp 1' : 'exp 2'); // exp 1\n\nSince we defined a variable called condition as true, the ternary operator executes the first expression which is a simple string \"exp 1\". \nThe console.log() around the ternary operator logs the result of the ternary operator and it logs \"exp 1\".\nAs I said above, you can read this operator as follow: IF the condition is true execute expression1 else execute expression2. But this is not entirely accurate!\nSo, what is the problem?\nWhen talking about Javascript Ternary Operator, MDN talks about truthy and falsy instead of true and false.\ncondition ? expression1 : expression2\n\nIF the condition is truthy execute expression1 else (falsy) execute expression2.\nIn simple terms, \nTruthy values are equal or can be converted to true. Which values are truthy? All values unless they are defined as falsy. Thanks…\nFalsy values are equal or can be converted to false. (i.e. false, 0, -0, 0n, \"\", null, undefined, and NaN).\n\nSee some more examples using the ternary operator with strings and numbers.",
+          "link": "https://dev.to/this-is-learning/javascript-ternary-operator-3kc2",
+          "publishedOn": "2022-01-26T06:44:47.000Z",
+          "wordCount": 732,
+          "title": "JavaScript Ternary Operator"
+        },
+        {
+          "id": "https://dev.to/codever/how-to-access-submitted-form-data-value-from-request-in-expressjs-knf",
+          "author": "Adrian Matei",
+          "description": "Project: Codever - File:  user.router.js\nThe values are present in the request.body which contains key-value pairs of data submitted in the request body.\nIn our case we access the userDisplayName with the following expression request.body.userDisplayName as in the example below:\nusersRouter.post('/:userId/bookmarks/upload', keycloak.protect(),\n  uploadBookmarks.single(\"bookmarks\" /* name attribute of <file> element in your form */),\n  async (request, response) => {\n    userIdTokenValidator.validateUserId(request);\n\n    const userDisplayName = request.body.userDisplayName;\n    const importResponse = await browserBookmarksImportService.imporBrowserBookmarks(request.params.userId, request.file.buffer, userDisplayName);\n\n    const str = JSON.stringify(importResponse, null, 2); // spacing level = 2\n    console.log(str);\n\n    return response.status(HttpStatus.OK).send(importResponse);\n  }\n);\n\nIn angular the userDisplayName value has been appended to the FormData and submitted to a post request\n  uploadBookmarks(userId: String, bookmarks: File, userDisplayName: string): Observable<any> {\n    const formData = new FormData();\n    formData.append('bookmarks', bookmarks);\n    formData.append('userDisplayName', userDisplayName);\n\n    return this.httpClient.post(`${this.usersApiBaseUrl}/${userId}/bookmarks/upload`, formData);\n  }\n\n\nReference - \n\n     https://expressjs.com/en/api.html#req.body\n\n\n\n\n\n\nShared with ❤️ from Codever. Use 👉 copy to mine functionality to add it to your personal snippets collection.",
+          "link": "https://dev.to/codever/how-to-access-submitted-form-data-value-from-request-in-expressjs-knf",
+          "publishedOn": "2022-01-26T06:44:02.000Z",
+          "wordCount": 544,
+          "title": "How to access submitted form data value from request in ExpressJS"
+        },
+        {
+          "id": "https://dev.to/apoorvtyagi/solid-principles-in-java-18ag",
+          "author": "Apoorv Tyagi",
+          "description": "In software engineering, SOLID is an acronym for 5 design principles intended to make software designs more understandable, flexible, robust, and maintainable. Adopting these practices can contribute to avoiding code smells too.\nThe 5 SOLID principles are:\n  S - The single-responsibility principle\n  O - The open-closed principle\n  L - The Liskov substitution principle\n  I - The interface segregation principle\n  D - The dependency inversion principle\nAlthough the SOLID principles apply to any programming language, in further section I will be explaining each of them with examples written specifically in JAVA.\nThis principle states that “a class should have only one reason to change” which means every class should have a single responsibility.\npublic class Vehicle {\n    public void details()…",
+          "link": "https://dev.to/apoorvtyagi/solid-principles-in-java-18ag",
+          "publishedOn": "2022-01-26T06:14:11.000Z",
+          "wordCount": 1783,
+          "title": "SOLID Principles in Java"
+        },
+        {
+          "id": "https://dev.to/developertharun/solved-gpgkeys-protocol-https-not-supported-gmo",
+          "author": "Tharun Shiv",
+          "description": "Problem:\nsudo apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'\nExecuting: /tmp/tmp.o2I4wt3O3r/gpg.1.sh --fetch-keys\nhttps://mariadb.org/mariadb_release_signing_key.asc\ngpgkeys: protocol `https' not supported\ngpg: no handler for keyserver scheme `https'\ngpg: WARNING: unable to fetch URI https://mariadb.org/mariadb_release_signing_key.asc: keyserver error\n\nMethod 1: Install gnupg-curl\napt-get update\napt-get install gnupg-curl\n\nMethod 2: If the above does not resolve the issue, then get the key using CURL and add it manually\ncurl 'https://mariadb.org/mariadb_release_signing_key.asc' | apt-key add -\n\nMethod 3: If you trust the server, then use -k option to skip CA cert verification\ncurl -k 'https://mariadb.org/mariadb_release_signing_key.asc' | apt-key add -\n\nThe method 2 worked for me on Ubuntu Xenial.\nComment if it helped you or if you are aware of a better solution.\nThanks.",
+          "link": "https://dev.to/developertharun/solved-gpgkeys-protocol-https-not-supported-gmo",
+          "publishedOn": "2022-01-26T06:12:22.000Z",
+          "wordCount": 534,
+          "title": "[Solved] gpgkeys: protocol `https' not supported"
+        },
+        {
+          "id": "https://dev.to/developertharun/solved-e-unable-to-correct-problems-you-have-held-broken-packages-3p5k",
+          "author": "Tharun Shiv",
+          "description": "$ apt-get install mariadb-server\nReading package lists... Done\nBuilding dependency tree       \nReading state information... Done\nSome packages could not be installed. This may mean that you have\nrequested an impossible situation or if you are using the unstable\ndistribution that some required packages have not yet been created\nor been moved out of Incoming.\nThe following information may help to resolve the situation:\n\nThe following packages have unmet dependencies.\n mariadb-server : Depends: mariadb-server-10.5 (>= 1:10.5.13+maria~focal) but it is not going to be installed\nN: Ignoring file 'maria.key' in directory '/etc/apt/sources.list.d/' as it has an invalid filename extension\nN: Ignoring file 'apt-key' in directory '/etc/apt/sources.list.d/' as it has no filename extension\nE: Unable to correct problems, you have held broken packages\n\nsudo apt-get install aptitude\n\nsudo aptitude install mariadb-server\n\nUse the Yes or No options to find the right combinations of the packages and set them up.\nComment if you know any other efficient solutions.\nthanks.",
+          "link": "https://dev.to/developertharun/solved-e-unable-to-correct-problems-you-have-held-broken-packages-3p5k",
+          "publishedOn": "2022-01-26T06:07:28.000Z",
+          "wordCount": 574,
+          "title": "[Solved] E: Unable to correct problems, you have held broken packages."
+        },
+        {
+          "id": "https://dev.to/sourishkrout/use-vs-code-to-check-in-with-yourself-1824",
+          "author": "Sebastian Tiedtke",
+          "description": "Even before the prevalence of hybrid and distributed-first working, the regular standup meeting has established itself as the pulse that keeps our teams moving. The name “standup” is an artifact from the intentional activity of conducting the team meeting while standing together.\nIf you want to skip ahead please install this free extension to enable VS Code to regularly apprise you of progress.\nIf you don't regularly attend team meetings such as standups, checking in with yourself regularly is still useful. It will help you understand if your efforts are helping to achieve your goals and enable you to identify distractions.\nThese days, it’s safe to say that most of us (accelerated by this global pandemic) are joining standups sitting in a chair from the comfort of our home via Zoom. What we’ve come up with is basically a way for VS Code to automate your standup contributions. Right from within VS Code.\n\nIf you are a native of terminal. We've got you covered, too. You should give the standup CLI a spin. Install instructions for both CLI and the VS Code extension are available here.\n\nWe intentional decided to release Stateful early to get your feedback. Please don’t hesitate. The good, the bad, and, of course, the funny. Email us at hello@stateful.com, leave a comment, or find us on Twitter at @statefulhq.\nCheers,\nSebastian",
+          "link": "https://dev.to/sourishkrout/use-vs-code-to-check-in-with-yourself-1824",
+          "publishedOn": "2022-01-26T06:02:35.000Z",
+          "wordCount": 633,
+          "title": "Use VS Code 💡😆 to check in with yourself"
+        },
+        {
+          "id": "https://dev.to/alexdodonov/mezon-html-template-engine-4api",
+          "author": "alexdodonov",
+          "description": "This class provides routine for HTML pages generation. Works fast and quite simple in use.\nIt is a part of Mezon Framework and used in the Application class\nLink to repository\nMore information can be found here:\nTwitter\ndev.to\nIt will be great if you will contribute something to this project. Documentation, sharing the project in your social media, bug fixing, refactoring, or even submitting issue with question or feature request. Thanks anyway )\nJust type\ncomposer require mezon/html-template\n\nFirst of all you need to create object.\nuse Mezon\\HtmlTemplate\\HtmlTemplate;\n\n$template = new HtmlTemplate('./main-template/');\n\nThis code assumes that you have all template resources in the directory ./main-template/.\nBut you can also specify a list of paths, and while template compilation they all …",
+          "link": "https://dev.to/alexdodonov/mezon-html-template-engine-4api",
+          "publishedOn": "2022-01-26T05:55:43.000Z",
+          "wordCount": 1247,
+          "title": "Mezon HTML Template Engine"
+        },
+        {
+          "id": "https://dev.to/atulcodex/how-to-make-text-responsive-55b4",
+          "author": "Atul Prajapati",
+          "description": "Currently was developing a furniture website landing page which is but at that time i was struggling to make text responsive.\nAnd just found a perfect result on google from W3Schools.\n\nWe can use \"viewport width\" to make any text responsive on web page.\nclick checkout whole experiment with output",
+          "link": "https://dev.to/atulcodex/how-to-make-text-responsive-55b4",
+          "publishedOn": "2022-01-26T05:54:49.000Z",
+          "wordCount": 450,
+          "title": "How to make text responsive"
+        },
+        {
+          "id": "https://dev.to/sktanwar2014/whats-new-in-chromes-devtools-4pg",
+          "author": "Shahrukh Khan",
+          "description": "The different teams working on DevTools have been busy to built a lot of new things for us to use. From powerful productivity improvements to entire new panels, they’ve been continuing to close the parity gap and innovate with new means of debugging and improving our web experiences.\nThe Chrome team just released a new panel that makes it very straightforward to record and replay user flows: the Recorder panel.\nThat means it’s high time for another Chrome's DevTool update, so let’s jump right in!\nIf you’ve ever found yourself having to repeat the same navigation steps over and over again in a web app in order to investigate a bug, then this might change your life!\n\nBut there’s more! Once the steps are recorded, you can replay them while measuring performance. This way, you can work on opti…",
+          "link": "https://dev.to/sktanwar2014/whats-new-in-chromes-devtools-4pg",
+          "publishedOn": "2022-01-26T05:36:17.000Z",
+          "wordCount": 984,
+          "title": "What’s New In Chrome's DevTools?"
+        },
+        {
+          "id": "https://dev.to/sh20raj/optimize-and-resize-image-urls-effortlessly-load-website-faster-3c8d",
+          "author": "Shaswat Raj",
+          "description": "The fast and easy way to make your websites load faster\n\n\n\n  \n  \n  Optimize and resize images effortlessly\n\n\n\n\n\nStatically.io :- https://statically.io/\nhttps://youtu.be/uhK1Lh8HMv8\n\n\n\n\n\n\n\nQuick start\nGET https://cdn.statically.io/img/:domain/:image\nResize image by width (w=:pixel)\nGET https://cdn.statically.io/img/:domain/w=:pixel/:image\nResize image by height (h=:pixel)\nGEThttps://cdn.statically.io/img/:domain/h=:pixel/:image\nEnable auto-WebP (f=auto)\nGET https://cdn.statically.io/img/:domain/f=auto/:image\nAdjust quality (q=:percentage)\nGET https://cdn.statically.io/img/:domain/q=:percentage/:image\nCombine params\nGET https://cdn.statically.io/img/:domain/f=auto,w=:pixel/:image\nGEThttps://cdn.statically.io/img/:domain/h=:pixel,q=:percentage/:image\nLive demo\nGET https://cdn.statically.io/img/staticsite.fun/w=300,h=500/cat.jpg\nGET https://cdn.statically.io/img/staticsite.fun/f=auto,w=600,h=400/dog.jpg\nGurImg - Free Image Hosting :- https://gurimg.sh20raj.repl.co/",
+          "link": "https://dev.to/sh20raj/optimize-and-resize-image-urls-effortlessly-load-website-faster-3c8d",
+          "publishedOn": "2022-01-26T03:36:54.000Z",
+          "wordCount": 459,
+          "title": "Optimize and resize image urls effortlessly - load website faster"
+        },
         {
           "id": "https://dev.to/scc33/how-the-metaverse-could-change-the-world-forever-or-how-it-could-be-the-next-technological-flop-5a6d",
           "author": "Sean Coughlin",
@@ -503,6 +620,24 @@
       "siteUrl": "https://sspai.com",
       "articles": [
         {
+          "id": "https://sspai.com/post/71153",
+          "author": "李奇奇奇奇",
+          "description": "按：本文原发布于作者的竹白专栏「The Quibbler」，少数派经授权编校转载。竹白是支持邮箱、微信等多种订阅方式的创作工具。\n作为本文讨论对象，Web3 系指一种基于区块链的万维网形态，目前暂无明确定义，名称拼写细节亦无共同标准。本文采相对常用的拼法「Web3」，即首字母大写且不含空格。\n\n吸引创作者的底层逻辑：流量与收益\n经过快 20 年的产品迭代，内容产品/社区吸引创作者已经有了非常标准且清晰的「底层逻辑」：要么有流量，要么有钱赚，至少做好一个就能到一定规模。\n有流量，简单解释就是：1）在新场景中高效率产生新内容，例如手机、VR 等；2）在新需求中高效率生产旧内容，例如 B 站、知乎、小红书等。\n有钱赚比较好理解，即创作者可以通过自己的作品获得或多或少的收入。在过去的逻辑中，流量是一切的前提。\n流量哪来？\n创作者生产的内容最终目的都是给目标用户消费，两者会在不同的地方达成严肃（付费）或松散（关注）的契约关系，但在实际履行这些契约时会面临两个具体的问题：\n\n两个同样喜欢周杰伦但使用不同音乐 app 的粉丝天然是不平等的：QQ 音乐的周杰伦粉丝可以随时收听他的音乐，但网易云音乐的粉丝却无法做到，有钱也不行。这与渠道方签署独家协议类似：作为一个创作者，是否愿意放弃履行在其他渠道的契约？\n不同的内容发布渠道有各自的规则，因为日活、关注 feed 渗透率、算法以及平台运营和管理方向的关系，只有非常少的渠道可以让创作者发布的内容稳定送达给订阅者，因此我们总是会听到「我是不是被限流了」「怎么没有看到你的更新」这样的声音，让成功履约变的困难。\n\n「流量 = 影响力，影响力 = 收入」已经成为当前创作者的金科玉律，目前市面上的流量一共就三种类型：公共流量（广点通、穿山甲等广告平台，花钱就能买）、平台流量（内容平台内部流量，算法和运营想给谁就给谁）、社交流量（微信、QQ 等自己可控的社…",
+          "link": "https://sspai.com/post/71153",
+          "publishedOn": "2022-01-26T06:11:17.000Z",
+          "wordCount": 148,
+          "title": "流量、收益与金融化：Web3 如何影响创作者？"
+        },
+        {
+          "id": "https://sspai.com/post/71054",
+          "author": "JLDUAN",
+          "description": "Matrix 首页推荐\nMatrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。\n文章代表作者个人观点，少数派仅对标题和排版略作修改。\n\n为了能够用两个微信彻底分离工作和生活，又苦于 iPhone 不能双开微信，我开始使用 Android 手机作为工作备用机，无奈之下加入了双机党的阵营。\n我有两个号码： A 和 B，因为号码 A 流量多，就把它留在了主力机上，号码 B 挪到了备用机。可大部分服务都是用号码 B 注册的，使用主力机时，时常因为各种原因，需要填写号码 B 收到的短信验证码，此时又得拿起备用机查看验证码。如此反复，真的令人非常不爽。\n为此我开始寻找 Android 短信转发的解决方案，最终通过 SmsForwarder + Bark 解决了这个问题，经过一段时间的使用，效果非常不错。现在我把这个 Android 手机短信转发给 iPhone 的方案分享给大家，有需要的朋友可以作为参考。\n短信转发至 iPhone 效果\n在 iPhone 中安装 Bark App\n🔗 下载地址：App Store\nBark 是一款 Apple 生态内的自定义推送服务，它充分利用了 Apple 推送通知服务 (APNs) 进行工作，原理是将自定义推送内容通过 发送端 > Bark 服务端 > 苹果 APNs 服务器 > 你的设备 > Bark 进行传递。由于完全依赖 Apple 推送通知服务，app 本身无需前台运行，几乎不会对 iPhone 的续航产生影响。\n第一次打开 Bark 时，会自动为你的设备生成 key ，复制 app 首页自动生成的第一个带有 key 参数的 URL 备用。\nBark\n在 Android 手机中安装短信转发器 SmsForwarder\n🔗 下载…",
+          "link": "https://sspai.com/post/71054",
+          "publishedOn": "2022-01-26T03:32:35.000Z",
+          "wordCount": 217,
+          "title": "巧用开源方案，零成本实现验证码短信转发"
+        },
+        {
           "id": "https://sspai.com/post/71149",
           "author": "少数派编辑部",
           "description": "你可能错过的新鲜事\n三星 Galaxy S22 系列发布日期确定\n1 月 25 日，三星通过官方网站及媒体邀请函确认，2022 年 Galaxy Unpacked 活动将于北京时间 2 月 9 日晚 11 点举行，届时三星将正式推出 Galaxy S 系列的多款新品，包括此前发布的 预热文章 中曾暗示或正式取代 Galaxy Note 系列的 Galaxy S22 Ultra。来源\n\nApple 发起 Shot on iPhone 微距摄影大赛\n1 月 25 日，Apple 宣布发起 Shot on iPhone 微距摄影大赛，大赛从 1 月 25 日起持续至 2 月 17 日，参赛用户在通过 iPhone 13 Pro/Pro Max 拍摄参赛作品后，带上 #ShotoniPhone# 和 #iPhone微距摄影挑战# 话题发布微博即可参与。Apple 将与由业界专家组成的评委小组一起评选出 10 幅获胜作品，获奖照片名单将在 4 月公布。来源\nGoogle 推出 Topics API 用以替代 FLoC\n1 月 25 日，Google 发布博文宣布推出新的 Topics API 用于广告追踪，以此替代此前饱受争议的 FLoC 技术。Topics API 通过用户的浏览历史周期性生成一定数量的、最能代表用户个性化偏好的兴趣话题，这些话题完全基于浏览器本地生成，不包含性别、种族等敏感信息并且会定期更新轮换，相关网站在用户访问时，可获取到其中 3 个话题来提供相应的广告服务。Google 预计将在 2022 年第一季度结束前推出面向网站和广告行业的 Topics API 开发者测试。来源\nFLoC 为何遭到抵制？点击这里了解更多：如果不用第三方 Cookie，Google FLoC 会是更好的替代者吗？\n第三方 cookies 与 Topics API 话题管理对比示意图 |…",
@@ -681,6 +816,15 @@
       "siteUrl": "https://www.appinn.com",
       "articles": [
         {
+          "id": "https://www.appinn.com/?p=41250",
+          "author": "青小蛙",
+          "description": "1Timer 是一款非常实用的语音定时器应用，支持 iPhone、iPad、Android、Mac 设备，作为一款语音定时器，它可以在倒计时的中途，多次语音提醒剩余时间，比如在倒计时 5 分钟以内时，",
+          "link": "https://www.appinn.com/1timer/",
+          "publishedOn": "2022-01-26T05:34:09.000Z",
+          "wordCount": 701,
+          "title": "1Timer – 支持中途语音提醒的语音定时器[iOS/Android/macOS]"
+        },
+        {
           "id": "https://www.appinn.com/?p=41242",
           "author": "青小蛙",
           "description": "来自微软的 @WEIWEI98 同学昨天在发现频道发布了微软电脑管家 v.1.0 内测版本，当大家都很疑惑的时候，青小蛙帮大家确认下：没错，就叫「微软电脑管家」。@Appinn 以下为原文：https",
@@ -839,6 +983,15 @@
       "feedUrl": "https://www.zhihu.com/rss",
       "siteUrl": "http://www.zhihu.com",
       "articles": [
+        {
+          "id": "http://www.zhihu.com/question/513444321/answer/2325345743",
+          "author": "游戏科学GameScience",
+          "description": "去年的麻烦事全放一放\n新的一年会有新的希望\n愿你和家人平安如常\n大家笑起来健健康康\n真心的祝福都没什么两样\n遇到了爱就是家乡\n@游戏科学GameScience 全体成员，祝大家在虎年，明心见性，铁骨铜筋！\n（本故事纯属虚构，与真实人物、团体、事件无关，亦与游戏实际开发方式与剧情无关）\n\n\n前往官网：http://www.heishenhua.com\n招聘链接：https://www.lagou.com/gongsi/36721.html\n《阶段成果》：游戏科学虎年贺岁小短片\n\n游戏科学GameScience\n点击下载\n228 个回答，查看全部。\n如何看待 YouTube 主播 David Jaffe 对游戏《黑神话：悟空》的评价?\n游戏《黑神话：悟空》的土地公为什么做的那么丑？",
+          "link": "http://www.zhihu.com/question/513444321/answer/2325345743?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
+          "publishedOn": "2022-01-26T02:17:49.000Z",
+          "wordCount": 13,
+          "title": "《黑神话：悟空》发布拜年视频，有哪些有意思的细节？"
+        },
         {
           "id": "http://www.zhihu.com/question/512458621/answer/2323876380",
           "author": "留德华叫兽",
@@ -1135,15 +1288,6 @@
           "publishedOn": "2022-01-17T03:17:17.000Z",
           "wordCount": 221,
           "title": "有哪些适合春节「炸场子」的口红色号？"
-        },
-        {
-          "id": "http://zhuanlan.zhihu.com/p/457799505",
-          "author": "Denzel",
-          "description": "21年颇为戏剧和魔幻，事情太多；上下半年的行业巨变，好像经历了两个年头：迟迟没有想好应该怎么做个小结。\n回头看，投资似乎是一个不错的固定视角，贯穿全年，总算有点话讲。\n\n\n往期内容\n20年：年终小结：从跨端到内容平台\n19年：年终小结，赛道思考与机会判断\n\n一\n彼时还没有元宇宙，我在20年Epic Games的哲学与抱负里把metaverse翻作“元世界”（起名的本事真差）。21年开年clubhouse爆红，给metaverse浇了一把新油。\n一场上海游戏圈大佬们的秉烛夜谈吸引了无数人在clubhouse围观，Dash老板那句“腾讯的社交不过是纸老虎”言犹在耳（笑），但Steven老板很客气、中肯地作了总结发言。末了，我们听出来了：腾讯心里只有育碧、动视之流；眼里，是半个米哈游。\n但在国内，其实还有字节在腾讯眼皮上跳动。\n\n\n二\n都知道字节要做游戏，但in house自建就得尊重内容产业的规律，大力出不了奇迹；于是字节开始一路买买买，从拿产品到买管线，并且高价搅动市场行情。\n所以20年下半年开始，腾讯就全面加强在国内的游戏投资，21年尤甚，实行“三不原则”，不干涉经营决策、不主导项目、不寻求发行权。但很多权益上要求排“他”，不要和那谁玩。\n神仙打架，跑马圈地，其他厂商也坐不住，只能纷纷跟注。卷起来了，有人就出更高的价钱，拿更少的权益，比口袋深度，卷死你们。战略投资人纷纷退化成了财务投资人，甚至不在乎财务回报的财务投资人（?）；财务机构一看，咱们起跑线一致了，也抓住机会纷纷入局。一时间好不热闹。\n当然，钱不迷路，总有人赚。别管是面子还是里子，天底下只有你情我愿的买卖。win-win，都赢麻了。\n\n\n三\n不好说各家成绩单，但加总算下来过去一年超过200个团队拿到钱吧。\n对买家来说，有人拿到二次元最后的门票，国产3A的门面，有人拿到成熟的管线、海量的用户，其实价格不重要。\n更重要…",
-          "link": "http://zhuanlan.zhihu.com/p/457799505?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2022-01-16T14:49:31.000Z",
-          "wordCount": 11,
-          "title": "2021游戏投资潮起潮落"
         }
       ]
     },
@@ -1819,10 +1963,30 @@
           "id": "https://stratechery.com/2022/free-netflix-follow-up-the-senate-tech-bill/",
           "author": "Ben Thompson",
           "description": "More on Netflix's earnings and valuation, and three observations about the tech competition bill being encouraged in the Senate.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9mcmVlLW5ldGZsaXgtZm9sbG93LXVwLXRoZS1zZW5hdGUtdGVjaC1iaWxsLw.SexAZRiomGPfg5CtkF7yM68aBYdzyA8OtXbtfphukCxxVDZP7ZOcxvmXr-eNBcHbArBGQ9tq3E7PJoa7X57YOpA-ICcfmX89WNd4m-v47JmGXXbIhWZ3kKD2Vt2LcR_BhEnXCynZEIHkaeigmfn0_45qKzvTzUXimxOZYfVgVCJS2FFeY4jWXudc_pIw0ucYZLc6P9rAa_XB8TmI0c3Ukt13CRh7zCizYn4eG9dWxCUrTkI2QxT-eJ5r_GIgt4_JIKx-l2dzzS4r1SNuTOR5vWsIa-k6BjsVFiriXfdjUB6JFjpRGxd-cXJuMJB4bzVj0u6kxNN7lPY-lXFJqhEkmQ",
+          "publishedOn": "2022-01-25T13:41:27.000Z",
+          "wordCount": null,
+          "title": "[FREE] Netflix Follow-Up, The Senate Tech Bill",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2022/free-netflix-follow-up-the-senate-tech-bill/",
+          "author": "Ben Thompson",
+          "description": "More on Netflix's earnings and valuation, and three observations about the tech competition bill being encouraged in the Senate.",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9mcmVlLW5ldGZsaXgtZm9sbG93LXVwLXRoZS1zZW5hdGUtdGVjaC1iaWxsLw.KkNM9LcLHEBjivbP33tT0vAbK4BIIk4bGtlaZVpOL5IP12MvR69-SlUddo0-dt4F1lZk0QqfID8-54bcWMXv9-eNBE-84bRzL03eGp_RppMwWrKgSTBtwjOxdmuj2rdvGAvzahbyDjToN_EhS1WUvflGINlFaU1NYXacETjgnULQQnR2js4eM6jCD6CcV0glFpFum8_Ck1-Tyz-MCe9vUod8cb3CpBAxE_JbDUGHRco8vwbvFoFyhQjck8KiaqHfT9mC_tKcZM5SRg0Ls5-7uBXyqVOu5vhnV-pS5hIyV-e0BoAQMmDyQ-wWGL9hJ20O2oWqVt7rwKqMU4ToaFbFLQ",
           "publishedOn": "2022-01-25T13:41:27.000Z",
           "wordCount": null,
           "title": "[FREE] Netflix Follow-Up, The Senate Tech Bill",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2022/netflix-earnings-the-competition-question-netflixs-long-term-value/",
+          "author": "Ben Thompson",
+          "description": "Netflix's earnings were disappointing because of the subscriber numbers, but does the company have a bigger concern in terms of long-term profitability?",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9uZXRmbGl4LWVhcm5pbmdzLXRoZS1jb21wZXRpdGlvbi1xdWVzdGlvbi1uZXRmbGl4cy1sb25nLXRlcm0tdmFsdWUv.WlUk5qkifNSwP4BJOePY_foLAllGI0g_wL83t3t7nClrPQrIAJFlRPbgaCL6JU70-1zIW9iJK2GSKn8_VmuNLje1qFMSJ6HOcqz3BeWQr7eYcI2FOJlg9HixXzghtt749yMjyAvPsvfGyCq3LEpwiG1M1ablU0d3aFBtqLc44401NpvpbPsqa_pD-MscqYg2-f8Y9fHXUUAY_sKL_DxTfqAQ5HWP-RZGeRqMbTBKbzls3wIUBPtl9LmuZy8AMpS-I9IiqhwfWntwOhKHEP18WJ1e0AkO4GWV1q5XWd_nzaRLXOsPVP9g8fNZ88R8pUtP1ntS36M2uML-4ACsJBoPbw",
+          "publishedOn": "2022-01-24T13:32:50.000Z",
+          "wordCount": null,
+          "title": "Netflix Earnings, The Competition Question, Netflix's Long-Term Value",
           "itunes": {}
         },
         {
@@ -1843,6 +2007,16 @@
           "publishedOn": "2022-01-24T13:32:50.000Z",
           "wordCount": null,
           "title": "Netflix Earnings, The Competition Question, Netflix's Long-Term Value",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2022/mr-cisc-vs-mr-risc-arm-and-amd-threats-gelsingers-three-tenets/",
+          "author": "Ben Thompson",
+          "description": "The best way to understand Pat Gelsingers thinking about the threats posed by ARM and AMD is to go back to his arguments in favor of CISC over RISC",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9tci1jaXNjLXZzLW1yLXJpc2MtYXJtLWFuZC1hbWQtdGhyZWF0cy1nZWxzaW5nZXJzLXRocmVlLXRlbmV0cy8.I7MeTmdD97LfR45uXiIiHU2oBhI8Yxhdjc_JJIOP79MCG5WVd0ZFSiGPtQyZgdUapWLRRY5am7YrkFFHjtFSz27Z4sd_ki6G0PSiL-lXhebdExO_5o2u5xOCfaNkScaeIQq2BClJdsglSUt7yWSMhVHE4F9-1Fb2I481a2-MlgI28dc6vasKKPThZUrL_xmeLW33iwzJ-WdS533GPfZplVkic4w2TagC9BAHmCGjXa8FEQVE-ZahW8b8_qRBJJs7l-r2ZxYR7WjxDmeX2PD3VDSzCaqSHNjb1lDd1w2yGy1swIhD1mk3VAXaxmucgRm9LIJ9Kh9rTFwchPa1NyNHfQ",
+          "publishedOn": "2022-01-20T10:43:08.000Z",
+          "wordCount": null,
+          "title": "Mr. CISC vs. Mr. RISC, ARM and AMD Threats, Gelsinger's Three Tenets",
           "itunes": {}
         },
         {
@@ -1873,6 +2047,16 @@
           "publishedOn": "2022-01-20T10:43:08.000Z",
           "wordCount": null,
           "title": "Mr. CISC vs. Mr. RISC, ARM and AMD Threats, Gelsinger's Three Tenets",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2022/microsoft-acquires-activision-blizzard-notes-on-the-acquisition-an-interview-with-microsoft-gaming-ceo-phil-spencer/",
+          "author": "Ben Thompson",
+          "description": "Breaking down Microsoft's acquisition of Activision Blizzard, plus an interview with Microsoft Gaming CEO Phil Spencer",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9taWNyb3NvZnQtYWNxdWlyZXMtYWN0aXZpc2lvbi1ibGl6emFyZC1ub3Rlcy1vbi10aGUtYWNxdWlzaXRpb24tYW4taW50ZXJ2aWV3LXdpdGgtbWljcm9zb2Z0LWdhbWluZy1jZW8tcGhpbC1zcGVuY2VyLw.jV8oQeu0PXi5BRTfa8X4tvqPoZNt7wVCF1KJ2qUVDzlBjnM5A-M2WbrmK-QFwsASDyU8JLXWVzTXArEeZd9SgZ9Mz4YGdon28GEjE06jk4FlaNIT-MrOS5y2xOLBis1xlPpE7cgVY2Q4r38NDBYh2RqsamZET2naYv-3REvbXrEQ38vdAS6eUx07AmPNDn-YjAXCLk5NTML0HEzEOHLV7z4qZs96PEh3dJohvC5kr_1T4k3prE_moB7B4iF27Q4n2QGNxVScZinr3-Z65ruKd7UvAEDsjS2kb0nDBP3JMVZfZA7RlB1ouBbKQJ7bTiKlXEHIITnYnjfm6rIS-YSelA",
+          "publishedOn": "2022-01-19T12:15:36.000Z",
+          "wordCount": null,
+          "title": "Microsoft Acquires Activision Blizzard, Notes on the Acquisition, An Interview With Microsoft Gaming CEO Phil Spencer",
           "itunes": {}
         },
         {
@@ -2550,6 +2734,42 @@
       "feedUrl": "https://reddit.buzzing.cc/rss.xml",
       "siteUrl": "https://reddit.buzzing.cc",
       "articles": [
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/shitposting/comments/sccokf/sigma_male/",
+          "author": null,
+          "description": "西格玛男",
+          "link": "https://reddit.buzzing.cc/reddit/r/shitposting/comments/sccokf/sigma_male/?score=75112&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fshitposting%2Fcomments%2Fsccokf%2Fsigma_male%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fshitposting%2Fcomments%2Fsccokf%2Fsigma_male%2F&channel=shitposting&sensitive=false",
+          "publishedOn": "2022-01-26T05:50:18.000Z",
+          "wordCount": 16,
+          "title": "西格玛男"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/scejou/8_events_in_8_days_at_the_wells_fargo_center/",
+          "author": null,
+          "description": "在富国银行中心的8天中有8场活动。",
+          "link": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/scejou/8_events_in_8_days_at_the_wells_fargo_center/?score=75054&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Fscejou%2F8_events_in_8_days_at_the_wells_fargo_center%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Fscejou%2F8_events_in_8_days_at_the_wells_fargo_center%2F&channel=nextfuckinglevel&sensitive=false",
+          "publishedOn": "2022-01-26T05:28:36.000Z",
+          "wordCount": 24,
+          "title": "在富国银行中心的8天中有8场活动。"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/scao1d/certain_materials_feature_a_shape_memory_effect/",
+          "author": null,
+          "description": "某些材料具有形状记忆效应--在变形后，它们在加热后会恢复到原来的形状。",
+          "link": "https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/scao1d/certain_materials_feature_a_shape_memory_effect/?score=75060&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Fscao1d%2Fcertain_materials_feature_a_shape_memory_effect%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Fscao1d%2Fcertain_materials_feature_a_shape_memory_effect%2F&channel=interestingasfuck&sensitive=false",
+          "publishedOn": "2022-01-26T05:28:36.000Z",
+          "wordCount": 32,
+          "title": "某些材料具有形状记忆效应--在变形后，它们在加热后会恢复到原来的形状。"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/scl0is/1950s_kitchen_of_the_future/",
+          "author": null,
+          "description": "1950年代的未来厨房!",
+          "link": "https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/scl0is/1950s_kitchen_of_the_future/?score=75765&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Fscl0is%2F1950s_kitchen_of_the_future%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Fscl0is%2F1950s_kitchen_of_the_future%2F&channel=interestingasfuck&sensitive=false",
+          "publishedOn": "2022-01-26T03:50:25.000Z",
+          "wordCount": 19,
+          "title": "1950年代的未来厨房!"
+        },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/news/comments/scejd2/boston_hospital_refuses_heart_transplant_for_man/",
           "author": null,
@@ -3340,6 +3560,51 @@
       "feedUrl": "https://hn.buzzing.cc/rss.xml",
       "siteUrl": "https://hn.buzzing.cc",
       "articles": [
+        {
+          "id": "https://hn.buzzing.cc/hn/30081034/",
+          "author": null,
+          "description": "自然-神经科学》提供开放存取出版，每篇文章11,390美元。",
+          "link": "https://hn.buzzing.cc/hn/30081034/?score=101&original_url=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41593-021-00995-2&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30081034&sensitive=false",
+          "publishedOn": "2022-01-26T06:19:18.000Z",
+          "wordCount": 31,
+          "title": "自然-神经科学》提供开放存取出版，每篇文章11,390美元。"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30077380/",
+          "author": null,
+          "description": "结束贫困的历史刚刚开始",
+          "link": "https://hn.buzzing.cc/hn/30077380/?score=100&original_url=https%3A%2F%2Fourworldindata.org%2Fhistory-of-poverty-has-just-begun&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30077380&sensitive=false",
+          "publishedOn": "2022-01-26T05:28:17.000Z",
+          "wordCount": 30,
+          "title": "结束贫困的历史刚刚开始"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30080523/",
+          "author": null,
+          "description": "阿加莎-克里斯蒂买得起女佣和保姆，却买不起汽车",
+          "link": "https://hn.buzzing.cc/hn/30080523/?score=100&original_url=https%3A%2F%2Ffullstackeconomics.com%2Fwhy-agatha-christie-could-afford-a-maid-and-a-nanny-but-not-a-car%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30080523&sensitive=false",
+          "publishedOn": "2022-01-26T04:24:12.000Z",
+          "wordCount": 33,
+          "title": "阿加莎-克里斯蒂买得起女佣和保姆，却买不起汽车"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30080472/",
+          "author": null,
+          "description": "两周后，大卫-班尼特还活着，他的猪的心脏在酣畅地跳动。",
+          "link": "https://hn.buzzing.cc/hn/30080472/?score=111&original_url=https%3A%2F%2Fwww.irishtimes.com%2Flife-and-style%2Fhealth-family%2Ftwo-weeks-after-his-operation-david-bennett-is-alive-his-pig-s-heart-beating-soundly-1.4783776&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30080472&sensitive=false",
+          "publishedOn": "2022-01-26T03:32:55.000Z",
+          "wordCount": 32,
+          "title": "两周后，大卫-班尼特还活着，他的猪的心脏在酣畅地跳动。"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30074400/",
+          "author": null,
+          "description": "研究人员建立了能建立人工智能的人工智能",
+          "link": "https://hn.buzzing.cc/hn/30074400/?score=102&original_url=https%3A%2F%2Fwww.quantamagazine.org%2Fresearchers-build-ai-that-builds-ai-20220125%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30074400&sensitive=false",
+          "publishedOn": "2022-01-26T02:45:23.000Z",
+          "wordCount": 28,
+          "title": "研究人员建立了能建立人工智能的人工智能"
+        },
         {
           "id": "https://hn.buzzing.cc/hn/30076082/",
           "author": null,
@@ -4558,6 +4823,15 @@
       "siteUrl": "https://hashnode.com",
       "articles": [
         {
+          "id": "https://apoorvtyagi.tech/solid-principles-in-java",
+          "author": "Apoorv Tyagi",
+          "description": "In software engineering, SOLID is an acronym for 5 design principles intended to make software designs more understandable, flexible, robust, and maintainable. Adopting these practices can contribute to avoiding code smells too.\nThe 5 SOLID principle...",
+          "link": "https://apoorvtyagi.tech/solid-principles-in-java",
+          "publishedOn": "2022-01-26T05:33:07.000Z",
+          "wordCount": 1552,
+          "title": "SOLID Principles in Java"
+        },
+        {
           "id": "https://pragmatic-coding.hashnode.dev/demystifying-pseudo-classes-in-javafx",
           "author": "Dave Barrett",
           "description": "Pseudo Classes are the best way to handle on/off state changes in a Node in JavaFX.  But it's very badly explained in the JavaDocs and hard to understand.  This article should clear that up.\nWhat's a PseudoClass?\nHave you ever noticed how a Button ch...",
@@ -4880,6 +5154,15 @@
       "siteUrl": "https://linux.cn/",
       "articles": [
         {
+          "id": "https://linux.cn/article-14215-1.html?utm_source=rss&utm_medium=rss",
+          "author": "linux@linux.cn (linux)",
+          "description": "“上游upstream” 和 “下游downstream”这两个术语是相当模糊的，我认为一般人并不会真正使用它们。如果你只是一个 Linux 用户，并且不编写或维护软件，那么很有可能这些术语对你来说毫无意义，但它们对 Linux 世界中各个社区之间的交流方式有益的。\n\r\n这些术语被用于网络、编程、内核，甚至在非计算机领域，如供应链。当我们谈论上游和下游的时候，讨论背景是很重要的。\n\r\n在其最简单的形式中，上游和下游是信息流动的方向。\n\r\n由于我们都是在连接到互联网的情况下阅读这篇文章的，让我们看看适用于互联网服务提供商（ISP）的上游/下游例子。这里，ISP 关注的是流量。上游流量是指数据是从不同的 ISP 的用户处传来的。例如，如果你有一个提供订阅通讯的网站，我发送的订阅信息就是上游数据。\n\r\n下游流量是指从一个用户发送到不同 ISP 的另一个用户的数据，它被认为是下游流量。使用同样的订阅例子，假设我的订阅请求被批准，我在一封邮件中收到“欢迎”说明，在又一封邮件中收到最新的新闻简报。在这种情况下，数据是顺流而下的，因为它是由你（好吧，可能是作为代表你进行操作的自动化软件）发送给我，一个来自另外 ISP 的用户。\n\r\n总结：我需要或想要的东西（你的通讯）是上游的。你提供给我的东西（欢迎词和实际的通讯）是下游的。\n\r\n数据是在上游还是在下游，对我们用户来说可能并不重要，但对监控带宽使用的服务器管理员，以及发行商distributor（发行版的制作者）和程序员来说却很重要。\n\r\n在 Linux 世界里，上游和下游有两个主要背景。一个是关于内核的，另一个是关于应用程序的。还有其他的，但我希望我可以通过这两个来表达我的想法。\n\r\nLinux 内核背景下的上游和下游\n\r\nLinux 就是 内核。在创建发行版时，Linux 发行版首先使用未经修改的内核源代码。然后添加必要的补丁，对内核…",
+          "link": "https://linux.cn/article-14215-1.html?utm_source=rss&utm_medium=rss",
+          "publishedOn": "2022-01-26T02:47:48.000Z",
+          "wordCount": 125,
+          "title": "Linux 黑话解释：什么是上游和下游？"
+        },
+        {
           "id": "https://linux.cn/article-14214-1.html?utm_source=rss&utm_medium=rss",
           "author": "linux@linux.cn (linux)",
           "description": "Meta 正在建造世界上最快的 AI 超算\n\r\nFacebook 母公司 Meta 宣布 它正在建造世界上最快的 AI 超算 RSC。Meta 研究人员表示，新超算将能处理有数万亿参数的神经网络，相比之下 OpenAI 的自然语言处理神经网络 GPT-3 有 1750 亿个参数。新超算计划在今年年中完成建造，将使用 16000 个 GPU，储存容量达到 1 EB，能每秒处理 16 Tbps 的数据。\n\r\n\r\n老王点评：这是为 Meta 宇宙准备的吧。\n\r\n\r\n\n\r\n俄罗斯自研操作系统 Phantom OS 预计今年问世\n\r\n俄罗斯花了 12 年研发的 Phantom OS 始于 2010 年，计划在今年推出原型操作系统，并创建基于 Genode 微内核的操作系统。其定位于 Linux 系统的竞争者，主打更好的性能，主要用于可穿戴及嵌入式设备。它有一个独特的“永不停机”的设计理念，可以将指定状态的快照存储到永久性存储设备中，一旦断电或者出现其他意外情况，系统可以回滚到最后一次状态并继续工作，好像一切都没发生过。\n\r\n\r\n老王点评：所有宣称取代 Linux 的，最终都不了了之。\n\r\n\r\n\n\r\n去年发生的数据泄漏事件远超历史记录\n\r\n据一份 新发布的《2021 数据泄露报告》，在过去一年中共发生了 1862 起数据泄露事件，刷新了 2020 年（1108 起）和 2017 年（1506 起）的最高记录。报告还指出，涉及勒索软件的攻击在过去两年中每年都增加一倍，占 2021 年报告的网络攻击总数的 22%，按照这种增长速度，勒索软件攻击将超过网络钓鱼。\n\r\n\r\n老王点评：勒索软件威胁已经成为了头号威胁，不过似乎国内企业对此的感受不深。",
@@ -5139,6 +5422,96 @@
       "feedUrl": "https://rsshub.app/bilibili/partion/ranking/201/3",
       "siteUrl": "https://www.bilibili.com",
       "articles": [
+        {
+          "id": "https://www.bilibili.com/video/av550954670",
+          "author": "黑毛羊驼",
+          "description": "Tags:恐龙,生物,古生物,始祖鸟,开端,中华龙鸟,热河生物群,虚骨龙,知识分享官,羽毛演化",
+          "link": "https://www.bilibili.com/video/av550954670",
+          "publishedOn": "2022-01-24T20:12:44.000Z",
+          "wordCount": 339,
+          "title": "震惊中外的古生物发现！我国辽西被誉为世界上第一只鸟起飞的地方？恐龙是从何时变成毛茸茸的？【恐龙时代】 #兽脚类篇17"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av978450430",
+          "author": "每天涨知识",
+          "description": "参考资料：\nhttps://improbable.com/2014/02/04/sad-news-dr-fesmire-of-digital-rectal-massage-to-cure-hiccups-fame-is-gone/\nhttps://www.newscientist.com/article/dn10207-ig-nobel-prizes-hail-digital-rectal-massage/\n视频素材来自于网络\n\n\nTags:猎奇,人物,趣闻,健康,打嗝,冷知识,医学,搞笑诺贝尔奖,治疗打嗝,止嗝",
+          "link": "https://www.bilibili.com/video/av978450430",
+          "publishedOn": "2022-01-24T19:49:15.000Z",
+          "wordCount": 78,
+          "title": "这恐怕是最硬核的治疗方法"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av893450733",
+          "author": "正经的知识",
+          "description": "Tags:冷知识,猎奇,订书机,久钉,装订,装订方式",
+          "link": "https://www.bilibili.com/video/av893450733",
+          "publishedOn": "2022-01-24T19:32:53.000Z",
+          "wordCount": 148,
+          "title": "论订书机的两种装订方式"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av635896572",
+          "author": "地球探险队",
+          "description": "在西方备受欢迎，却被中国吃货嫌弃！火鸡肉真的那么难吃吗？\n\n\nTags:知识分享官,生物,奇闻,揭秘,探秘,火鸡,吃货,美食,鸡肉",
+          "link": "https://www.bilibili.com/video/av635896572",
+          "publishedOn": "2022-01-24T19:30:20.000Z",
+          "wordCount": 63,
+          "title": "在西方备受欢迎，却被中国吃货嫌弃！火鸡肉真的那么难吃吗？"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av893438407",
+          "author": "酋知鱼",
+          "description": "一个看似无厘头但也值得随口一说的小问题\n\n\nTags:地球,生命,自然,生物,知识分享官",
+          "link": "https://www.bilibili.com/video/av893438407",
+          "publishedOn": "2022-01-24T19:17:57.000Z",
+          "wordCount": 143,
+          "title": "植物系的怪物为什么不可能出现？动物与植物间不可逾越的壁垒究竟是什么？"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av295974305",
+          "author": "画渣花小烙",
+          "description": "跟遗传有很大关系，只能改善不能根治！哭……\n\n\nTags:知识分享官,科普,知识,鸡皮肤,遗传,去角质,花小烙,健康",
+          "link": "https://www.bilibili.com/video/av295974305",
+          "publishedOn": "2022-01-24T18:22:13.000Z",
+          "wordCount": 61,
+          "title": "“鸡皮肤”究竟是什么原因导致的？"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av508482679",
+          "author": "饭能",
+          "description": "有好听的bgm可以在评论区分享一下，我发现我曲库空了\n这期有点赶，没整那每一段的小作文，下次给大家整，\n\n\nTags:历史,苏联,科普,建筑,苏维埃,人文,魔幻,格局,知识分享官",
+          "link": "https://www.bilibili.com/video/av508482679",
+          "publishedOn": "2022-01-24T14:27:30.000Z",
+          "wordCount": 74,
+          "title": "又来看看前苏联的神级建筑，把格局真正打开！"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av935993731",
+          "author": "肖恩的野外冒险故事",
+          "description": "Tags:地球,科普,全程高能,垃圾,自然,海洋,环境,潜水,地理,知识分享官",
+          "link": "https://www.bilibili.com/video/av935993731",
+          "publishedOn": "2022-01-24T13:45:12.000Z",
+          "wordCount": 151,
+          "title": "在海底潜水时的意外发现：场面令人窒息！"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av508407506",
+          "author": "乌鸦儿呦",
+          "description": "发完视频我就要和媳妇儿去吃潮汕牛火锅啦\n嘿嘿嘿嘿0v0\n快过年啦，各位要健健康康呀~\n\n\nTags:科普,宝石,博物馆,商人,矿石,珠宝,世界最大,首饰,海蓝宝,知识分享官",
+          "link": "https://www.bilibili.com/video/av508407506",
+          "publishedOn": "2022-01-24T11:34:56.000Z",
+          "wordCount": 156,
+          "title": "哥们，这海蓝宝石多少钱一斤啊？？"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av678448875",
+          "author": "科普探长",
+          "description": "洗澡搓下来的黑泥到底是什么？显微镜放大100倍，画面不忍直视\n\n\nTags:知识分享官,科普,科学,洗澡,搓泥",
+          "link": "https://www.bilibili.com/video/av678448875",
+          "publishedOn": "2022-01-24T10:46:30.000Z",
+          "wordCount": 142,
+          "title": "洗澡搓下来的黑泥到底是什么？显微镜放大100倍，画面不忍直视"
+        },
         {
           "id": "https://www.bilibili.com/video/av593404133",
           "author": "地球百科君",
@@ -5543,6 +5916,60 @@
       "siteUrl": "https://www.bilibili.com",
       "articles": [
         {
+          "id": "https://www.bilibili.com/video/av550796129",
+          "author": "天天鉴宝",
+          "description": "Tags:制作,学习,课程,制造,经验分享,野生技术协会,知识分享官",
+          "link": "https://www.bilibili.com/video/av550796129",
+          "publishedOn": "2022-01-24T18:00:06.000Z",
+          "wordCount": 150,
+          "title": "曲折离奇的龙牌..."
+        },
+        {
+          "id": "https://www.bilibili.com/video/av935895371",
+          "author": "踩鸟玩家",
+          "description": "-\n\n\nTags:玩具,神操作,难题,烧脑,打卡挑战,解决问题神操作大赏",
+          "link": "https://www.bilibili.com/video/av935895371",
+          "publishedOn": "2022-01-24T17:55:02.000Z",
+          "wordCount": 158,
+          "title": "球状puzzle，第二弹！！"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av550952353",
+          "author": "游戏建模3D",
+          "description": "欢迎加入白嫖Q群：1143336232【资料，软件，教程，模型】多会在群里分享出来给大家学习\nUP主VX：iulaoshi\nzbrush安装教程：https://www.bilibili.com/video/BV15b4y1Z76S\n如果没有zbrush安装包的同学请加Q群：1143336232自行下载！\n记得关注UP主哦\n\n\nTags:3D,莫娜,野生技术协会,游戏建模,zbrush,3dmax,原神,原神莫娜",
+          "link": "https://www.bilibili.com/video/av550952353",
+          "publishedOn": "2022-01-24T17:06:37.000Z",
+          "wordCount": 11,
+          "title": "【原神】这个莫娜建模要是火了，我TM手抄点赞这个视频的所有ID！！！"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av253397844",
+          "author": "周小冰的魔术",
+          "description": "-\n\n\nTags:揭秘,魔术,打卡挑战",
+          "link": "https://www.bilibili.com/video/av253397844",
+          "publishedOn": "2022-01-24T16:04:25.000Z",
+          "wordCount": 145,
+          "title": "揭秘魔术背后真相，你看懂了吗？"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av935864276",
+          "author": "天天鉴宝",
+          "description": "Tags:知识分享官,经验分享,野生技术协会,课程",
+          "link": "https://www.bilibili.com/video/av935864276",
+          "publishedOn": "2022-01-24T12:00:02.000Z",
+          "wordCount": 63,
+          "title": "言多必失，小心吃公家饭..."
+        },
+        {
+          "id": "https://www.bilibili.com/video/av423464599",
+          "author": "奇萌物语001",
+          "description": "牛蹄里面有小虫子全是洞，修蹄师傅越刮越惊讶，过程十分解压助眠\n\n\nTags:跟着UP主创作吧（第二期）,必剪创作,打卡挑战,修牛蹄,极度舒适,野生技术协会,解压",
+          "link": "https://www.bilibili.com/video/av423464599",
+          "publishedOn": "2022-01-24T09:08:34.000Z",
+          "wordCount": 181,
+          "title": "牛蹄里面有小虫子全是洞，修蹄师傅越刮越惊讶，过程十分解压助眠"
+        },
+        {
           "id": "https://www.bilibili.com/video/av935675916",
           "author": "5-MinuteCrafts中文",
           "description": "Tags:跟着UP主创作吧（第二期）,我的隐藏技能,野生技术协会,生活小妙招,生活小技巧,创意,手工,制作过程,视频教程,彩虹,解压",
@@ -5937,6 +6364,15 @@
       "siteUrl": "https://dev.to/top/month",
       "articles": [
         {
+          "id": "https://dev.to/madza/17-killer-websites-you-should-use-to-increase-productivity-2enk",
+          "author": "Madza",
+          "description": "#webdev #productivity #javascript #css",
+          "link": "https://dev.to/madza/17-killer-websites-you-should-use-to-increase-productivity-2enk",
+          "publishedOn": "2022-01-25T15:03:38.000Z",
+          "wordCount": 2105,
+          "title": "17 Killer Web Apps You Should Use to Increase Productivity 🚀💯"
+        },
+        {
           "id": "https://dev.to/ruppysuppy/the-complete-react-roadmap-1ho4",
           "author": "Tapajyoti Bose",
           "description": "#react #javascript #typescript #webdev",
@@ -6025,15 +6461,6 @@
           "publishedOn": "2022-01-16T19:48:41.000Z",
           "wordCount": 3608,
           "title": "Running macOS inside Linux with Docker-OSX"
-        },
-        {
-          "id": "https://dev.to/puritanic/ive-read-the-pragmatic-programmer-2bn9",
-          "author": "Darkø Tasevski",
-          "description": "#books #programming #beginners #career",
-          "link": "https://dev.to/puritanic/ive-read-the-pragmatic-programmer-2bn9",
-          "publishedOn": "2022-01-16T18:24:51.000Z",
-          "wordCount": 3498,
-          "title": "I've read... The Pragmatic Programmer"
         }
       ]
     },
@@ -6048,6 +6475,42 @@
       "feedUrl": "https://rsshub.app/sspai/matrix",
       "siteUrl": "https://sspai.com/matrix",
       "articles": [
+        {
+          "id": "https://sspai.com/post/71144",
+          "author": "Tiger5G",
+          "description": "这次要重新测试一台机子，因为在上个月这台机子更新了一个重大功能，就是独显直连，这个功能算这台机子之前仅有的遗憾之一，也是不少发烧硬核用户特别关注的功能，所以这次特意借了一台机子更新测试，方便准备购机或者之前已购买的用户参考，这就是来自雷神的ZERO 英特尔酷睿版。\n\n \n01/ 独显直连影响的不只是游戏\na.如何更新实现【独显直连】\n雷神ZERO要实现【独显直连】功能，只能通过更新机子主板的【BIOS】（TP151或更新版）来实现，我这边简单说下整个流程供参考，具体也可以直接咨询官方技术客服。\n1，更新BIOS：BIOS文件跟具体更新方式，直接咨询官方店铺客服或加官方群咨询管理员，按提示操作\n2，确定更新成功后，关机，然后开机，开机过程反复按【F2】（不是一直按着）进入BIOS界面\n3，进入BIOS界面后，方向键选择【advanced】菜单，第一个选项就可以选择独显模式为【Hybrid混合模式】或者【Discrete独显直连】，选择【独显模式】后，按【F10】保存退出，机子就成功切换为【独显直连】模式了。\n\n开启【独显模式】之后，驱动界面就多了众多功能设置菜单\n\nb.实现【独显直连】后有什么区别\n如果你搜索【独显直连】，会告诉你这个功能主要影响是一些高帧数的竞技类游戏，比如FPS和MOBA类游戏，而对3A大型游戏影响不大，那么实际结果怎样，伴随这次更新，我顺带一起测试了【竞技类网游】、【3A大型游戏】、【GPU基准测试】跟【生产力应用】，综合看下这个功能带来的影响。\n130W满血版RTX3060：雷神ZERO的性能释放算是挺大的优点，甚至可以说是TGL-H45+RTX30系列这一万金油组合的典范机型，无论CPU或者GPU或者组合功耗给的上限空间都算优异，比如GPU部分，专门针对 Dynamic Boost 2.0 进行了散热器的优化设计，既可以实现GPU130W满血释放，也…",
+          "link": "https://sspai.com/post/71144",
+          "publishedOn": "2022-01-25T14:35:01.000Z",
+          "wordCount": 115,
+          "title": "免费的性能升级：支持独显直连后的雷神ZERO英特尔酷睿i7版"
+        },
+        {
+          "id": "https://sspai.com/post/71141",
+          "author": "JamesHopbourn",
+          "description": "月初，高中学校的体协指导老师联系我，问说下周日是否有时间来当个裁判？接力赛缺个裁判员。具体要求就是做技术支持，即时给出比赛数据，制作成绩证书。觉得难度不大，虽然没有学过 Excel，但是现学现卖应该是没有问题的。所以接下了这个 case，并开始了准备工作。\n先说结果，34 个队伍，204 名运动员，没有人对比赛成绩提出疑议。相比起去年人工计算时差、排名算了几天的情况，今年在比赛结束后 30 分钟左右，就发出了所有成绩排名。相比起同类小型赛事，没有制作成绩证书。本次比赛给每位运动员都制作了成绩证书，部分跑友还将证书一并发在了朋友圈，或者微信群中，大家对这次的比赛满意度较高。\n首先介绍一下赛事背景，因为这是一场马拉松接力赛，正常马拉松全程是 42.195 公里，如果把它办成一场接力赛。一个队伍 6 个人，每个人需要跑 7 公里。而在我们区里，正好有这样的一个 U 字形场地，来回一圈刚刚好是 7 公里左右。\n\n裁判组会分为 3 组，每组裁判配 4 个人，3 个人分工按下秒表计时，1 个人摄像记录对应的队伍。所以这样就会生成两组数据，一组是计时时间，一组是对应的队伍名字。而我的工作，就是将这两组数据汇总对应起来，然后填入 Excel 表格中对应的位置，最后计算出相关的时差、配速数据。\n表格制作\n明确需求\n基本情况介绍完了之后，再看看老师安排的需求：\n\n因为报过来的是总时间，所以需要计算每名运动员的个人计时\n然后自动求出每位运动员的配速\n在比赛结束后，给出个人全体排名、团队排名、男子组排名、女子组排名\n给每位运动员制作完赛成绩证书\n\n设计表格\n需求明确之后，就可以开始设计表格了。先填入所有需要记录的关键信息，如下图所示。\n\n其中跑团战队名称、姓名、性别前面三项是固定的，在此之前已经通过其他表格收集了这些信息，所以现在要做的，就是将这三项信息复制进来，得到以下结果。\n\n参赛号码\n由于每…",
+          "link": "https://sspai.com/post/71141",
+          "publishedOn": "2022-01-25T12:41:04.000Z",
+          "wordCount": 606,
+          "title": "用 Excel 和 Python 做好马拉松技术支持保障"
+        },
+        {
+          "id": "https://sspai.com/post/71130",
+          "author": "GLB1031",
+          "description": "作为一名重度数码发烧友来讲，我每天都会花很多的时间呆在我的书桌前摆弄各种数码产品。最近新房子装修完毕，各种家具都陆续到了我也开始我新桌面搭建的过程。这里也和大家分享一波从0到1的桌面搭建过程，也分享一下这一波我的新桌面都有哪些数码好物。\n这次桌面搭建有了之前多次的经验所以在选择上有不少产品是我之前就一直在用的，这次搬入新家之后复购的产品。对我内容有印象的小伙伴应该对下面这个桌面有印象，这大概是2020年的时候在我原先家里卧室搭建的一套让我用了很久的桌面。当时的人体工学座椅就是网易严选之前的明星产品，被老罗卖爆了的网易严选经典款以及网易严选的电动升降桌面。\n\n \n有了之前的良好体验，所以这次就复购了这款电动升降桌。毕竟之前附送免费上门安装、以及双电机的稳定体验都给我留下了深刻的印象。而且这次复购也没让我失望，当然如果现在网易严选这款电动升降桌可以推出一款更大尺寸的我就更开心了。毕竟相比网易严选的人体工学座椅的更新频率来讲，距离上次购买也一年多的时间了。这款网易严选的电动升降桌依旧也只有1.2m和1.4米、白色和胡桃色两种配色可选。在这个价格上都已经安排双电机了，为什么不升级一个1.6m甚至1.8m 桌面尺寸的版本给用户选择呢？\n\n \n桌面清单：\n\n主机：MBP 16.1 2019款+各种PC主机\n显示器：明基PD2705U\n充电设备：贝尔金108W四口氮化镓快充+15W苹果magsafe磁吸二合一无线充电器\n灯光：飞利浦 Hue 照明组合\n外设：海盗船RGB航海主题机械键盘+K65 RGB Mini+DARK CORE RGB PRO SE暗影（可以无线充电的无线鼠标）\n桌面：网易严选电动升降桌 白色 1.4m*0.7m\n座驾：网易严选星舰特别定制人体工学座椅（之前就有）\n\n相比之前的桌面风格来讲，这次最大的变化可能就是 RGB 灯光元素的加入。自己一直很想做的就是给桌面增加…",
+          "link": "https://sspai.com/post/71130",
+          "publishedOn": "2022-01-25T05:34:07.000Z",
+          "wordCount": 201,
+          "title": "2022桌面搭建分享：这些好物也许你也会心动"
+        },
+        {
+          "id": "https://sspai.com/post/71128",
+          "author": "尼古拉斯lalala",
+          "description": "序言\n这一年和去年一样，在工作上并没有多少的起色，反倒是越睡越晚，不到3点完全不困。而当花了好几K在医院全身折腾了一遍，最终被诊断为神经衰弱后，你会发现或许平平淡淡也不错吧。然后就是强身健体，改变饮食节构，尽量早睡早起不熬夜。\n\n这些唠叨其实和我接下来的内容没啥关系，只是提醒各位小伙伴要注意身体，少点外卖多泡脚。\n\n接下来的内容源自前段时间有小伙伴在私下问，楼主，请问你桌面上的那个睡猫是啥？\n见问的朋友多了，我就干脆开一篇小合集，解答这个睡猫的问题，顺便展示一下我手头用的一些小玩意，以及兼职型设计师的心头好物。\n\n\nJXK嗜睡猫模型\n\n我选的是三花猫，但居然有蛋蛋，在我印象中三花不是母的吗？感觉很特别。\n\n模型使用树脂一体成型，开箱并无异味。表面的毛发细节相当优秀，不过也导致很容易沾染灰尘。脸部细节刻画很优秀，不过那胡子和眉毛是粘上去的，万千不要扯它。\n\n平时没事就拿刷子给它刷一下，深夜工作时看着它睡得这么舒服，很想知道今晚它又梦见了什么。作为一个桌面摆件很值得入手，价格方面包含了底部的毛绒布垫。\n\n5键够用，有线迷你键盘\n并不是自嘲讽，而是真的只有5个键的迷你键盘。开始是考虑用3键就行了，毕竟也就Ctrl+C，再Ctrl+V，但感觉多个Ctrl+Z撤销会更好用，然后第5个键还可以加个ESC。\n\n如果按价格来说，这迷你键盘并不便宜，一个键约9元左右，可以选青轴、红轴、茶轴、黑轴等各种轴体。当然，手感上面不要太过追求，但整体又相较普通键盘好用些。\n\n5个键位可以通过软件自由调整，可以设定为任何键位，包括功能键、鼠标、媒体键和组合键，也就是说其实并不需要同时按下两个键，只单按一个键也可达成Ctrl+V的效果，只不过两个键更具仪式感。\n\n光效方面支持按下点亮和跑马灯效，深夜使用时也还不错。\n\n拍照前放个立方蜘蛛或色卡\n而为了后期更省事些，在拍照时我都会摆放一个Datacolor的…",
+          "link": "https://sspai.com/post/71128",
+          "publishedOn": "2022-01-25T04:47:18.000Z",
+          "wordCount": 107,
+          "title": "哪有什么灵感枯竭，不过是CtrlV：我的21生活，我的12件好物"
+        },
         {
           "id": "https://sspai.com/post/71054",
           "author": "JLDUAN",
@@ -6245,24 +6708,6 @@
           "publishedOn": "2022-01-17T00:57:28.000Z",
           "wordCount": 107,
           "title": "3台笔记本，如何保持屏幕色彩同步？红蜘蛛校色仪使用教程"
-        },
-        {
-          "id": "https://sspai.com/post/70986",
-          "author": "EstrellaXD",
-          "description": "Matrix 首页推荐\nMatrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。\n文章代表作者个人观点，少数派仅对标题和排版略作修改。\n\n由于 HAP（HomeKit Accessories Protocol）的开放性质1，配合 HomeBridge / HomeAssistant 庞大的插件库，几乎做到了万物皆可 HomeKit 的程度。今天我们就来把家中的 PlayStation 游戏机的唤醒和休眠加入到 「家庭」应用中并控制。\n\n本文以 HomeBridge 为例，HomeBridge 运行在 Ubuntu 系统的树莓派上。安装和使用 HomeBridge 请参考这篇文章：HomeBridge 操作指南：从零开始，将你的米家设备接入 Homekit\n本次接入的原理是根据 Github 上开源的 PlayStation 唤醒软件进行配置，再接入到 HomeBridge 调用运行配置好的唤醒软件。从而达到曲线救国的 PlayStation 的 HomeKit 化，接下来我们就分步骤进行安装与配置。\n安装控制软件\n本方法使用 playactor 控制软件来操控 PlayStation 系统。由于 PlayStation 并不支持传统的 WoL ，现在有的方法原理都是基于索尼自家的 PS Remote Play 这款软件的原理进行开发的。\n\n根据 playactor 项目的文档，本项目支持 PS4 的全部操作和 PS5 的部分操作。在加入 HomeKit 之后我们仅需要用到 Wake 与 Standby 两个指令即可。\n\n\n PS4PS5\nWake✅✅\nStandby✅✅\nKeyboard control✅❌\nKey/Button press✅❌\nApp/Game s…",
-          "link": "https://sspai.com/post/70986",
-          "publishedOn": "2022-01-16T14:16:30.000Z",
-          "wordCount": 286,
-          "title": "一日一技｜把 PlayStation 加入 HomeKit"
-        },
-        {
-          "id": "https://sspai.com/post/70988",
-          "author": "Kostya",
-          "description": "Matrix 首页推荐\nMatrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。\n文章代表作者个人观点，少数派仅对标题和排版略作修改。\n\n我还记得自己第一次见到 Surface Laptop Go 是在北京三里屯的一家顺电。对自己的 MacBook Pro 早已审美疲劳的我，说实话，对 Surface 系列的设计一直都是十分欣赏的。3:2 的 12.4 英寸屏幕比例、舒适的键盘和触控板，以及触摸屏 —— Surface Laptop Go 符合一切我对于上网本的期待。只不过，当时的我只是简简单单的欣赏，并没有什么购买欲。\n情况在今年发生了改变。首先是，我把用了多年的 2016 款 13 英寸 MacBook Pro 出掉了，换了 M1 的 Mac mini 作为日常使用的 Mac 机器。这是因为，尽管 MacBook Pro 十分便携，它的性能早已跟不上我的需要了。至于移动办公的需求，单位配发的 Dell Latitude 7390 实际上体验尚可，如果它不是那么快就坏掉了的话。\nLOL，线过于杂乱，请勿介意\n如今的轻薄笔记本，其实有不少的选择。一来，MacBook Air 因为配备了 M1 处理器而变得性能强劲且续航优秀；二来，在 Windows 阵营，联想小新、小米、华为等一众国产品牌推出的轻薄款笔记本无论是性能还是价格都还不错。至于我为什么最终选择了 Surface Laptop Go，主要原因是这样的：首先，我也已经提到了我对这款笔记本的设计钟爱有加。考虑到 12.4 英寸 3:2 的屏幕，它看起来小巧精致，但是在内容的显示上倒是也毫不含糊，相比 16:9 或者 16:10 的传统比例，能够显示的内容更多。其次，最近对于 Excel 的高需求，让我无法安心使…",
-          "link": "https://sspai.com/post/70988",
-          "publishedOn": "2022-01-16T14:14:33.000Z",
-          "wordCount": 461,
-          "title": "Surface Laptop Go 使用体验：或许还有更好的上网本"
         }
       ]
     },
@@ -6271,6 +6716,339 @@
       "feedUrl": "https://rsshub.app/v2ex/topics/latest",
       "siteUrl": "https://www.v2ex.com/",
       "articles": [
+        {
+          "id": "830669",
+          "author": "mrgblues",
+          "description": "mrgblues: \n在学前端，发现样式看起来简单写起来难。\n大佬们有没有类似那种可以学习写样式技巧，一个个案例去实现的学习课程，\n或者其他推荐的 css 入门 /进阶方式。",
+          "link": "https://www.v2ex.com/t/830669",
+          "publishedOn": "2022-01-26T03:00:55.000Z",
+          "wordCount": 322,
+          "title": "有没有写 css 样式的教学类内容"
+        },
+        {
+          "id": "830668",
+          "author": "blackbookbj277",
+          "description": "blackbookbj277: xbox 选的节点是香港节点，也需要科学上网 me?",
+          "link": "https://www.v2ex.com/t/830668",
+          "publishedOn": "2022-01-26T02:59:53.000Z",
+          "wordCount": null,
+          "title": "昨天 xbox 到货，接上 wifi，下游戏， wifi 是华硕路由器当 AP 接入 R2S 软路由，结果一天把我的微皮恩的流量干没了。"
+        },
+        {
+          "id": "830667",
+          "author": "mcnultytrek",
+          "description": "mcnultytrek: \n我的想法是，推出免费版本和付费版本，免费版本适合平时就用搜索引擎轻度搜索，可以理解为浅显的回答你搜索出来的问题，没有广告和诱导，能够基本解决你的问题，但是对于一些有深度的内容无法搜索出来。而付费版本则可以针对不同人群，你可以组合购买各类行业或者学科的搜索引擎，不同定位不同价格，每个人都可以根据自己的情况定制自己的搜索引擎。搜索引擎公司也可以与各大网站进行深度对接搜索，拒绝不同网站间搞对立和隔阂。",
+          "link": "https://www.v2ex.com/t/830667",
+          "publishedOn": "2022-01-26T02:56:55.000Z",
+          "wordCount": 346,
+          "title": "天下苦百度久矣，那么关于搜索引擎有什么能引入良心循环的盈利方式呢？"
+        },
+        {
+          "id": "830665",
+          "author": "wuruxu",
+          "description": "wuruxu: \n这个问题一直都存在，以前家里的老人手机总会遇到各种奇怪的问题，怎么描述，老人也听不明白\n家里老人的手机是 redmi 6x 刷了一个 lineageos ，定制了一个 dropbear 开机自动运行，路由器添加 DNAT 规则 把 22 和 5555 端口 redirect 到路由器的 2022 和 15555 端口， 可以通过证书远程登录手机。\n每次访问手机，ssh 登录手机，然后\nsetprop service.adb.tcp.port 5555\nstart adbd\n\n在你的电脑上 \nadb connect $opwrt_public_ip:15555\n\n这样就完成 adb 远程连接到手机 ，接下来可以通过 scrcpy 来直接访问手机界面\nstop adbd\n\n个人使用下来，速度还挺快，很适合远程解决问题，而且不需要对方点击同意",
+          "link": "https://www.v2ex.com/t/830665",
+          "publishedOn": "2022-01-26T02:52:39.000Z",
+          "wordCount": 173,
+          "title": "通过 wireguard 和 openwrt 路由器远程管理老人用的 Android 手机"
+        },
+        {
+          "id": "830664",
+          "author": "TongTX",
+          "description": "TongTX: StackEdit 是一个功能齐全的开源 Markdown 编辑器。\n官方支持在线体验，访问这个链接即可： https://stackedit.io/app# （不支持硬件自定义）\n这里提供一个可以自定义运行硬件配置并快速安装体验 StackEdit 的方法。\n先介绍下实现这一过程的工具：\nTeamCode Tin 是一个能够快速从源码构建可运行实例的工具。Tin 应用已将 StackEdit 所需的运行环境打包成容器，用户使用 Tin 应用即可直接在云端运行 StackEdit ，用户还可以自定义 StackEdit 运行时的硬件配置，以达到自己的其他需求。\n操作步骤：\n1.点击 StackEdit 的 Tin 链接\nhttps://www.teamcode.com/tin/clone?applicationId=273128516352372736\n2.点击后进入 TeamCode 登录页面完成登录（已登录用户可跳过该步骤）。你可以选择邮件、手机号、google 账户、微信以及 QQ 进行快速登录。\n注册 TeamCode 的用户，每个月都有一定的免费额度可以使用。\n\n3.点击 Clone ，将 StackEdit 克隆到自己的 Tin 工作空间。\n4.点击 RUN NOW ，Tin 应用会立即运行。\n5.点击 Endpoint Lists ，可以看到访问 StackEdit 的入口。\n6.点击 Endpoint 入口（图中红框的链接），即可立即访问 StackEdit 。\n7.立即体验 StackEdit 。\n8.在 Tin 的概览页自定义运行时硬件配置。\n如果你想同样快速的安装使用其他开源项目，跳过环境安装配置过程，可以在 TeamCode 官网查看 Tin 的详细使用指南 https://www.teamcode.com/docs/tin/create-tin ，更多功能等你发现。",
+          "link": "https://www.v2ex.com/t/830664",
+          "publishedOn": "2022-01-26T02:44:40.000Z",
+          "wordCount": 152,
+          "title": "使用 Tin 快速安装 StackEdit"
+        },
+        {
+          "id": "830663",
+          "author": "Amazone",
+          "description": "Amazone: \n背景：今日零点深圳卫建委发出深圳全市摘星公告\n故事线：\n1 ）原定于 28 号的高铁票在 8 天前退了（当时家乡的返乡政策异常苛刻，加上深圳每日还有新增案例）\n2 ）本周一（ 01.24 ）看到深圳有好转的苗头，眼看高铁票无望，立马安排了 30 号的机票(内心依旧忐忑)\n3 ）期间陆续收到家里寄过来的年货（四川腊肠、腊肉、年糕等），家里人基本已放弃我能回家的可能性了\n4 ）本来都打算放弃回家的念头准备大扫除迎接新年了，但是、我真的低估了深圳速度（褒义），一早起床收到这个消息一直蹦跶到现在，终于能回家啦😋，30 号回家也是好处多多，人也不挤，回家还不用搞卫生，直接过新年\n5 ）最后，祝各位新年快乐，阖家欢乐，深圳 NICE",
+          "link": "https://www.v2ex.com/t/830663",
+          "publishedOn": "2022-01-26T02:43:54.000Z",
+          "wordCount": 198,
+          "title": "深圳摘星--后续"
+        },
+        {
+          "id": "830662",
+          "author": "OMGZui",
+          "description": "OMGZui: \n村里来电话了，喜提 7 天居家隔离，emo 了",
+          "link": "https://www.v2ex.com/t/830662",
+          "publishedOn": "2022-01-26T02:43:08.000Z",
+          "wordCount": null,
+          "title": "杭州 这个节骨点上出疫情，我干"
+        },
+        {
+          "id": "830661",
+          "author": "GalaxyVIP",
+          "description": "GalaxyVIP: \n举个例子，比如说我和你用微信聊天，我们俩提前线下约定好了一个密钥，然后聊天的时候全用密文，这种情况合法吗？",
+          "link": "https://www.v2ex.com/t/830661",
+          "publishedOn": "2022-01-26T02:42:46.000Z",
+          "wordCount": null,
+          "title": "端到端加密在大陆合法吗？"
+        },
+        {
+          "id": "830660",
+          "author": "Jason001",
+          "description": "Jason001: \n能可以直接安装微信中发送的 .apk 文件 ，因为某些原因在微信发送 APK 文件会添加  .1 后缀导致无法正常识别安装，需要自己导出到文件夹内然后修改后缀在进行安装 总之挺麻烦的。\n应用不需要联网权限，仅需要读取存储和安装应用权限，应用权限如下：\nandroid.permission.REQUEST_INSTALL_PACKAGES\nandroid.permission.READ_EXTERNAL_STORAGE\n实现方式也挺简单：注册匹配 apk.* 格式的的 intent-filter ，接收到 intent 获取到文件 URI ，copy 一份然后修改文件后缀，调用系统安装 API 进行安装就可以\n有需要的可以尝试下：\nhttps://play.google.com/store/apps/details?id=com.jason.wxapk",
+          "link": "https://www.v2ex.com/t/830660",
+          "publishedOn": "2022-01-26T02:42:20.000Z",
+          "wordCount": 242,
+          "title": "分享一个之前写的辅助安装微信内发送的 APK 的工具"
+        },
+        {
+          "id": "830659",
+          "author": "AlphaRobert",
+          "description": "AlphaRobert: \n深色模式下我偶然发现了未高亮的菜单项的文字颜色比高亮的亮得多，但截图出来看他们又是一样亮的。技术上来讲即 NSVisualEffectView 上 .allowsVibrancy == true 的 subview ，其亮度能高于 SDR 的 #fff 。\n当前系统为 macOS Catalina 10.15.7 ，后来发现是开启了 Final Cut Pro 导致的 HDR 显示。此前的任何系统版本都没发现（或没注意到）这种现象。\n在 YouTube 上找了个全白的 HDR 测试视频，发现 Chrome 确实支持 HDR ，在视频 3:00 画面明显亮于网页背景。Safari 测试下来不支持 HRD 。YouTube 上其他的测试视频都指证了我的显示器支持 HDR 。\n依照 Apple Support，只有 MBP 2018 及以上等支持 HDR 。",
+          "link": "https://www.v2ex.com/t/830659",
+          "publishedOn": "2022-01-26T02:35:17.000Z",
+          "wordCount": 206,
+          "title": "MBP 2017 内建显示器离奇地拥有 HDR"
+        },
+        {
+          "id": "830658",
+          "author": "yurong333333",
+          "description": "yurong333333: \n想法：就是想踩车锻炼身体，但需要的时候可以供电骑一骑。\n主要功能：和自行车一样可以踩。\n次要功能：踩车的时候，可以给车蓄电。实在是累的时候，就使用电能直接开。\n拒绝直接开小电驴。",
+          "link": "https://www.v2ex.com/t/830658",
+          "publishedOn": "2022-01-26T02:31:37.000Z",
+          "wordCount": 218,
+          "title": "有没有这么一种自行车？"
+        },
+        {
+          "id": "830656",
+          "author": "Coeus999",
+          "description": "Coeus999: \n以下为猎头职位，合作北京、上海多家国际一线量化私募，投资产品股票衍生品以及数字货币。\n本行业薪资有很大空间，远超 Intel 华为等软硬件企业。福利全方位覆盖，而且工作生活能较好平衡。\n欢迎各行各业的朋友们踊跃咨询，这是我的联系方式: lucy.chen@bo-le.com  或请直接联系我 v: ArcoDeTriunfo\n除了金融行业，其他可转入行业有：互联网后端 /服务端、通信网络、编译器云计算。\n唯一硬性要求：第一学历为统招本科。\n资深开发工程师（高性能）\n熟悉计算机系统结构，了解 x86_64 处理器核心及 SOC 结构，熟悉主流服务器的 NUMA 架构，AVX2/FMA 等扩展指令；\n熟练掌握 GNU 编译调试工具链，具备面向 OS/CPU 软硬件结合的高性能低延迟低抖动程序开发能力；\n熟练掌握 Linux C/C++高性能编程（多机多进程多线程），有一定的 Linux 平台 debug/profile/tuning 经验。\n加分：1.Linux 内核开发调优经验； 2.cython/boostpython 混合语言开发经验； 3.python/c++ TB~PB 级大规模数据处理经验； 4.MPI/infiniband/RDMA/RoCE 高性能分布式计算系统开发经验； 5.CUDA 高并发计算程序开发经验； 6.Torch/TF 等分布式 DL 框架开发调优经验； 7.TCP/IP Socket 开发调优经验。\n高性能研究员（实验室）\n负责设计、研发，具有高性能，高可用的关键系统服务；\n负责 C++编程框架、分布式系统架构的设计和研发；\n负责关键技术攻关、新技术预研；\n全球领先的高频交易系统案例研究。\n岗位要求：\n有扎实的 C/C++编码能力，扎实的计算机理论基础，精通 Linux 平台高并发,多线程编程；\n精通网络协议,具有丰富的 TCP,UDP 网络编程经验和框架设计经验；\n精通 ZeroMQ 、Kafka 、Infomatica 、Tibco 等常见消息中间件中的一种实现细节，熟悉分布式系统常见的灾备设计、高性能设计、弹性可扩展设计；\n沟通表达能力良好，研究学习能力强，对技术有好奇心；\n有国内外极速证券 /衍生品交易系统开发经验，熟悉国内外证券 /衍生品交易业务流程或交易所技术优先考虑；\n有分布式中间件研发，Linux 内核研发，网络协议栈研发设计经验者优先考虑；\n有高性能计算、异构计算经验者优先考虑。",
+          "link": "https://www.v2ex.com/t/830656",
+          "publishedOn": "2022-01-26T02:28:35.000Z",
+          "wordCount": 199,
+          "title": "C++高性能篇 [量化多金行业+上海北京]"
+        },
+        {
+          "id": "830655",
+          "author": "miting0207",
+          "description": "miting0207: \n之前用过的很老很好用的软件，作者在软件里面说得了绝症，希望用户能够量力捐款，如果他现在还活着的话，估计已经有 30 多岁了。",
+          "link": "https://www.v2ex.com/t/830655",
+          "publishedOn": "2022-01-26T02:27:39.000Z",
+          "wordCount": 93,
+          "title": "有人知道千宇智能关机的作者后来怎么样了吗"
+        },
+        {
+          "id": "830654",
+          "author": "lvming6816077",
+          "description": "lvming6816077: \n最近面试时都遇到了不少算法题，但大部分答的都不是很完美，所以对算法的解答标准有了以下疑问：\n在面试官出完题目后，先把解题思路讲了下，也得到了认可，但是编码过程中，一些边界条件或者是 if 判断有 bug ，由于白板编程，不能调试，导致一些一些无法预知的测试用例没法通过。\n这样的结果能算是算法解题通过么？还是说必须是解答全部 AC 才算真正通过？",
+          "link": "https://www.v2ex.com/t/830654",
+          "publishedOn": "2022-01-26T02:26:16.000Z",
+          "wordCount": 206,
+          "title": "[面试]面试时对于算法题的通过标准"
+        },
+        {
+          "id": "830653",
+          "author": "moohng",
+          "description": "moohng: \n花了一个星期的摸鱼时间，搞了我的第一个小程序\n可是身边的人都不懂，这份喜悦也不知道跟随分享，希望来这里能找一点安慰吧\n虽然看起来简单，不过也踩了很多坑在里面，后面有时间再整理一篇小程序Canvas相关的技术文章\n年后抽时间再加一些新的功能进去，敬请期待\n微信搜索** [涂图了] **即可体验\n现在唯一的特色功能应该就是可以将绘图的笔记保存起来，然后再自动将图模拟绘制出来。不过感觉这个功能还是有点单调，少了一些可玩性\n程序员的头脑只会技术😅😅😅",
+          "link": "https://www.v2ex.com/t/830653",
+          "publishedOn": "2022-01-26T02:25:34.000Z",
+          "wordCount": 272,
+          "title": "摸鱼摸了一个小程序"
+        },
+        {
+          "id": "830652",
+          "author": "horseInBlack",
+          "description": "horseInBlack: 目前情况：\n父亲 67 周岁，年前发烧住院三周。\n母亲 64 周岁，无住院史无体检异常。\n父母都有医保。\n之前跟保险经纪公司小雨伞聊过，说父亲这种情况大概率被拒绝投保，但其实也不是什么大病，有什么医疗保险或者大病医疗可以买。\n母亲这个岁数有没有什么长期的医疗保险可以购买。",
+          "link": "https://www.v2ex.com/t/830652",
+          "publishedOn": "2022-01-26T02:23:03.000Z",
+          "wordCount": 212,
+          "title": "有适合 65 岁以上和 65 周岁左右购买的医疗保险吗"
+        },
+        {
+          "id": "830651",
+          "author": "qping",
+          "description": "qping: 这是一个推荐贴，完全主观感受\n买了\n1 、华强北洛达 1536u  ¥128\n2 、漫步者 lolipods  ¥87\n3 、QCY T8s  ¥138\n需求是 100 左右的无线耳机，能看看视频听听歌就好，实际用下来还是 QCY 体验最好（还是看 v 友之前帖子推荐的），\n有入耳检测，没有左右耳不同步。\n买了这些也快 300 多了。。。同样需求的可以参考，不要浪费钱了",
+          "link": "https://www.v2ex.com/t/830651",
+          "publishedOn": "2022-01-26T02:21:04.000Z",
+          "wordCount": 239,
+          "title": "百元左右的耳机推荐"
+        },
+        {
+          "id": "830650",
+          "author": "iovekkk",
+          "description": "iovekkk: \n作为罗翔老师的十年老粉，以这个视角来看《开端》的结局，实际上还是令人可惜\n首先王兴德夫妇，故意杀人未遂，危害社会安全(情节特别严重)，袭警（开车撞警车），数罪并罚之下，大概有生之年是出不来了，即便是出来这辈子也差不多到头了。\n再看那个猥琐眼镜男，猥亵罪，过失致人死亡（都不知道算不算，毕竟让王萌萌下车的是司机不是他），判个十年顶天了吧，出来以后也许还会继续为非作歹。\n再看结局王兴德与眼镜男的对视，本来我以为这会是王兴德的死亡凝视，接下来他一定会找机会弄死眼镜男。\n后来我才想起来，这是为了呼应之前的剧情：女主最终说服王兴德的话是，王兴德要活下来代替王萌萌去看到眼镜男伏法受到制裁。基于这个设定，王兴德可能就会释然，因为罪犯伏法受到制裁了。\n而且要给眼镜男定罪，光凭照片肯定是不行的，拍照片的那个学姐肯定还是要出庭作证的，江警官的不泄露她的身份的保证就是屁话。\n眼镜男坐了不到十年牢出来以后，会不会报复拍照学姐甚至是男女主，很难讲啊",
+          "link": "https://www.v2ex.com/t/830650",
+          "publishedOn": "2022-01-26T02:19:20.000Z",
+          "wordCount": 352,
+          "title": "以罗翔的视角聊一聊《开端》的结局"
+        },
+        {
+          "id": "830649",
+          "author": "umumu",
+          "description": "umumu: \n前端渣渣，闲时无聊，写了个图片处理在线工具，目前支持：图片压缩，图片大小调整，图片裁剪，图片格式转换。后续还会加些其他功能。\n家人们，有什么好的建议吗？\nhttps://getimg.co/",
+          "link": "https://www.v2ex.com/t/830649",
+          "publishedOn": "2022-01-26T02:19:17.000Z",
+          "wordCount": 349,
+          "title": "写了个图片批量处理工具，会有人用吗？"
+        },
+        {
+          "id": "830645",
+          "author": "Suonna",
+          "description": "Suonna: https://www.bilibili.com/video/BV1844y1s7Nk?spm_id_from=444.41.0.0\nedit：原来是整活 lol",
+          "link": "https://www.v2ex.com/t/830645",
+          "publishedOn": "2022-01-26T02:10:54.000Z",
+          "wordCount": 171,
+          "title": "黑神话悟空发新片了！"
+        },
+        {
+          "id": "830644",
+          "author": "qdwang",
+          "description": "qdwang: \nGPL 协议大概讲的就是，如果你用了它的代码，你的软件也要用 GPL 发布并且开源。\n这里有一些争议点不太明白。\n假设有库 A 是 C++写的 GPL ，现在要写个库 B 是 C#。我们发现库 A 里的一个函数叫 func 特别有用，想弄到库 B 里。\n直接 1：1 把 A 里的 func 代码转成 C#放到 B 里。据我所知，这种情况下，B 必须开源并且是 GPL 协议。\n把 A 里的 func 代码重构成 C#, 并且做很多抽象+改动，改的面目全非。据我所以，这种情况下，有争议。有的人认为这仍然是必须遵守 GPL ，有的人认为这可以不用遵守 GPL 了。\n找到一篇文章，描述了 A 是如何写成的 func 。根据文章的原理来写 C#代码。这种情况下，如果 C#代码逻辑步骤和 A 里 C++代码一样，应该怎么判定？是必须遵守 GPL 还是完全不用管他？\nGPL 中，关于 B 到底有没有用 A 的代码的判定界限，到底是在哪里？",
+          "link": "https://www.v2ex.com/t/830644",
+          "publishedOn": "2022-01-26T02:10:28.000Z",
+          "wordCount": 261,
+          "title": "关于 GPL 协议的一些疑问"
+        },
+        {
+          "id": "830643",
+          "author": "xuesumin",
+          "description": "xuesumin: 请教一个问题，Clash X 在 MacOS 上使用，之前翻墙都正常，更新之后，必须使用全局模式才能翻墙，如果使用规则模式，发现日志显示 youtube 地址都走直连了，咋回事？\n谢谢！",
+          "link": "https://www.v2ex.com/t/830643",
+          "publishedOn": "2022-01-26T02:10:06.000Z",
+          "wordCount": null,
+          "title": "请教一个问题， Clash X 在 MacOS 上使用，全局模式才能翻墙了，咋回事"
+        },
+        {
+          "id": "830642",
+          "author": "murmur",
+          "description": "murmur: \n个人情况：国企前端，未婚，公积金贷款，没车，父母离异，独生，家人有退休金和保险\n前几个月不是发帖说母亲卵巢 ca 确诊么，现在已经是第六个疗程结束，用的多柔比星脂质体+卡铂减量姑息方案，现在肿瘤标志物正常，CT 没有转移，B 超基本无腹水胸水，医生评定部分缓解，准备 8 个疗程后行卵巢癌细胞减灭术，后续 PRAP 抑制剂靶向维持。\n结果这次化疗后第十天血小板特别低，推片复查 30 多，这个我也有心理准备，不是第一次了，按以前特比澳+海曲泊帕（这个最近进了医保，正版药只要 1700 多，比阿伐曲泊帕和艾曲泊帕便宜多），按计划入院，结果复查血小板只有 9 （正常 110 ，这个算 4 度血小板减少），给与 2 天输血小板，特比澳+口服药 4 天，现在血小板才 30 多。\n9 那天医生说血小板报病危值，去医院陪了一天，南方医院内科的楼很老，房间也很旧，不说别的一股压抑的气氛\n一个屋四个病人，有一个肺癌靶向药+化疗，第二天准备出院，一直在抱怨贵，有一个卵巢癌的，天天睡觉，什么也不说，还一个血小板只有 2 ，乳腺癌术后 4 年复发转移，腿脚水肿，基本上全身没一个好的，对面病房更是各种 combo ，什么高血压+癌，糖尿病+癌\n今天听我妈说那个卵巢癌和乳腺癌的都签字回去了，都是回去吃中药等 4\n现在不知道没结婚是不是幸运，首先房子需求没那么大，房贷压力也不高，然后资金没有问题，可以都留给我妈治病，唯一的问题是陪护，南方医院的 1v1 陪护太难找，可能手术都得找一个好陪护的医院，我本身腰椎有问题，没法负重，你让我给病人翻身抬床真是难为我\n你以为生了孩子有人照顾你，1v1 还好，我现在是 1v2 ，家里还有个 80 多的老人，虽然老人身体还不错，能自己做饭，就是有时候忘了做饭糊锅\n估计有人会提醒我买保险，我在当时无知的情况下去医院做了检查，因为长期无症状血尿（未穿刺）确诊了隐匿性的肾炎（也叫慢性肾炎，这东西不准确），估计现在已经过不了健康申报了",
+          "link": "https://www.v2ex.com/t/830642",
+          "publishedOn": "2022-01-26T02:09:02.000Z",
+          "wordCount": 930,
+          "title": "联动前几天生不生娃，分享一下在肿瘤科一天的经历，不知道自己有这么脆弱"
+        },
+        {
+          "id": "830641",
+          "author": "v2ka",
+          "description": "v2ka: \n白噪音由人耳可以感知的 20 ～ 2000 赫兹的声音构成，是一种单调的、有规律性的声音。\n大脑对外界单调的、有规律的声音会产生谐振。这种谐振会使大脑处于一种安静、相对不活跃的状态。\n因此，白噪音具有舒缓情绪和辅助睡眠的作用。\n在 iOS 15 系统中，iPhone 已经自带了白噪音功能，名叫「背景音」。\n背景音的开启路径为：设置–辅助功能–音频 /视觉–背景音\n可选的白噪音种类有：平衡噪音 /亮噪音 /暗噪音 /海洋 /雨声 /溪流。\n不用单独下载 APP 也不用访问网站，对于大部分用户来说，这些白噪音基本上够用了。\n由于背景音功能的访问路径较长，开启和关闭背景音都很不方便。\n推荐通过快捷指令进行使用 https://www.icloud.com/shortcuts/97a9e4060ed7426e8d5e39028f212ff7\n此快捷指令可以一键开启或关闭背景音（点击一次开启，再点击关闭）。\n也提供了，音量控制和白噪音曲目种类的选择功能，将会大大简化使用背景音的繁琐。\n重度用户，还可将快捷指令发送到桌面图标（路径：快捷指令–分享–添加到主屏幕），控制起来更加方便。\n以上，希望对您有所帮助。",
+          "link": "https://www.v2ex.com/t/830641",
+          "publishedOn": "2022-01-26T02:08:54.000Z",
+          "wordCount": 237,
+          "title": "iPhone 自带白噪音快捷指令"
+        },
+        {
+          "id": "830640",
+          "author": "louchenabc",
+          "description": "louchenabc: Kinopio is your spatial thinking tool for new ideas and hard problems 。\n之前 hacker news 上推的 https://kinopio.club/ (Kinopio is your spatial thinking tool for new ideas and hard problems) ，还是挺好用的，有类似这样的工具吗？",
+          "link": "https://www.v2ex.com/t/830640",
+          "publishedOn": "2022-01-26T02:07:35.000Z",
+          "wordCount": 169,
+          "title": "之前 hacker news 上推的 https://kinopio.club/ 还是挺好用的，有类似这样的工具吗？"
+        },
+        {
+          "id": "830638",
+          "author": "ydpro",
+          "description": "ydpro: \n// 原话题修改\n迫于过年游戏荒，射击游戏最佳",
+          "link": "https://www.v2ex.com/t/830638",
+          "publishedOn": "2022-01-26T02:03:01.000Z",
+          "wordCount": 662,
+          "title": "各位过年有推荐的游戏吗"
+        },
+        {
+          "id": "830637",
+          "author": "V9NN",
+          "description": "V9NN: 准 Pixel 一代的机子，应该是 5 、6 年前的了。\n原生系统，不安装任何一个国产 App ，经常使用的是 Twitter 、Chrome 、YouTube 、以及外文新闻 App 。\n上面安装的 app 也基本上跟着 play 更新。\n现在系统 Google 已经停止更新维护了，但是操作各种软件仍然很流畅。\n像 Twitter 、YouTube 这种大型 App ，人家也发展了这么多年，为啥它们基本都很流畅（说丝般顺滑可能被你们骂），国内的如微信、支付宝、淘宝、美团……都卡得怀疑人生？",
+          "link": "https://www.v2ex.com/t/830637",
+          "publishedOn": "2022-01-26T01:58:22.000Z",
+          "wordCount": 493,
+          "title": "我如果说 Pixel 一代现在使用还很流畅，会不会被很多人打？"
+        },
+        {
+          "id": "830635",
+          "author": "echooo0",
+          "description": "echooo0: \n微信 windows 电脑版从 3.4.0 开始，打开图片就是个缩略图，都看不清图片上的字\n这都半年过去了，还没修复这个问题，都不知道是怎么发版的，没有测试么。。。。\n性能问题就不说了，用起来卡卡卡。各种小 bug 基本上是经常出现，感觉就像是外包出去的\n而且腾讯系的产品，联系客服还贼困难。。。。",
+          "link": "https://www.v2ex.com/t/830635",
+          "publishedOn": "2022-01-26T01:53:00.000Z",
+          "wordCount": 345,
+          "title": "微信电脑版的体验真是一坨**"
+        },
+        {
+          "id": "830634",
+          "author": "idisliuyan",
+          "description": "idisliuyan: 使用 vue-print-nb ，printJS ，html2canvas 实现页面打印功能，当前页面既有 el-form 表单又有 el-table 表格，打印时，由于有滚动条所以打印不全，有没有大佬解决这个问题的",
+          "link": "https://www.v2ex.com/t/830634",
+          "publishedOn": "2022-01-26T01:52:53.000Z",
+          "wordCount": null,
+          "title": "vue 打印功能"
+        },
+        {
+          "id": "830633",
+          "author": "BMAO",
+          "description": "BMAO: \n我有一个国外 vps ，公司电信网 SSH 登录一点问题没有，家里移动网死活不行，手机移动流量也一样。用 ping.pe 一查移动宽带丢包率 50%以上，电信联通全正常。这可咋搞？",
+          "link": "https://www.v2ex.com/t/830633",
+          "publishedOn": "2022-01-26T01:52:50.000Z",
+          "wordCount": null,
+          "title": "移动宽带单独封锁 IP？"
+        },
+        {
+          "id": "830632",
+          "author": "K120",
+          "description": "K120: \nGithub 仓库地址\n用于管理存储图库，如果您合理的使用，可以当做图床、文件分享，不错吧！\n个人觉得还不错，本身是给自己管理图库的，同事看到说挺好，就分享出来。\n特性\n支持 Github / Gitee\n无需部署，2 步开始\n开箱即用，用完即走\n支持拖拽、粘贴上传\n多个 CDN 加速\n可以当做文件分享\n自定义文件上传方案\n支持在线新建文本文件\n\n像数 1, 2, 3 一样容易\n创建一个仓库 （或者已有仓库）\n打开 https://boomb.cn\nGithub 仓库地址",
+          "link": "https://www.v2ex.com/t/830632",
+          "publishedOn": "2022-01-26T01:51:29.000Z",
+          "wordCount": 313,
+          "title": "基于 Github/Gitee 轻松管理您的存储图库"
+        },
+        {
+          "id": "830631",
+          "author": "BeyondBouds",
+          "description": "BeyondBouds: 过年不回家了\n家里宽带路由器连不上了\n我想让我爸开热点给电脑，电脑通过网线连接路由器，\n然后我远程电脑，可以用电脑访问路由器么？",
+          "link": "https://www.v2ex.com/t/830631",
+          "publishedOn": "2022-01-26T01:51:24.000Z",
+          "wordCount": null,
+          "title": "远程配置老家路由器问题"
+        },
+        {
+          "id": "830630",
+          "author": "PrilgrimLi",
+          "description": "PrilgrimLi: \n官方说有 10 小时，我自己看 bilibili ，外加 Books 看书，5 小时不到就耗了 80%的电量，亮度 80%。表现还不如我初代的 iPad pro 。各位彦祖们，你们的 iPad pro 也这样吗？",
+          "link": "https://www.v2ex.com/t/830630",
+          "publishedOn": "2022-01-26T01:42:19.000Z",
+          "wordCount": null,
+          "title": "M1 iPad pro 12.9 的续航真的拉胯"
+        },
+        {
+          "id": "830628",
+          "author": "vtoex0000000002",
+          "description": "vtoex0000000002: \nRT ，\n宽带好久没用了，欠费 200+，客服说可以减免。准备带证件去销户\n那么问题来了，大家如何解决过年上网问题？\n我目前用的是： 闲置 5s ，电信 4g 卡，通过 usb 共享 给 N1 软路由，N1 再通过 lan 口，给路由器。\n下载速度 1M 左右。浏览网页应该足够。",
+          "link": "https://www.v2ex.com/t/830628",
+          "publishedOn": "2022-01-26T01:33:32.000Z",
+          "wordCount": null,
+          "title": "过年回老家，如何解决宽带无线网的"
+        },
+        {
+          "id": "830626",
+          "author": "HENQIGUAI",
+          "description": "HENQIGUAI: \n如题。",
+          "link": "https://www.v2ex.com/t/830626",
+          "publishedOn": "2022-01-26T01:29:29.000Z",
+          "wordCount": null,
+          "title": "没人讨论一下佳能卡片机这波裁员补偿吗。"
+        },
+        {
+          "id": "830623",
+          "author": "Removable",
+          "description": "Removable: https://upload.wikimedia.org/wikipedia/commons/7/78/Contemporary_playing_cards.svg\n最近在做一个扑克游戏跟朋友们玩，然后找到了如上一套挺好看的扑克的 svg 素材。但是我发现这是一整个 svg 文件，每张牌是单独的 g 标签，请问有什么方法能比较方便地把每个扑克单独保存为一个 svg 文件么？",
+          "link": "https://www.v2ex.com/t/830623",
+          "publishedOn": "2022-01-26T01:22:32.000Z",
+          "wordCount": null,
+          "title": "请教一个有关 SVG 的问题"
+        },
+        {
+          "id": "830621",
+          "author": "destinism",
+          "description": "destinism: 从微信迁移到 WeChat ，打开 CallKit 以后就经常遇到这种情况，麦克风权限是开的，也重装过 WeChat ，有没有人遇到类似的情况？",
+          "link": "https://www.v2ex.com/t/830621",
+          "publishedOn": "2022-01-26T01:05:05.000Z",
+          "wordCount": 283,
+          "title": "WeChat 语音通话，对面经常听不到声音"
+        },
         {
           "id": "830618",
           "author": "dingwen07",
@@ -7323,6 +8101,24 @@
       "siteUrl": "https://juejin.im/android?sort=weekly_hottest",
       "articles": [
         {
+          "id": "https://juejin.cn/post/7057327684388388901",
+          "author": "恋猫de小郭",
+          "description": "theme: smartblue\n原文链接：https://developer.android.google.cn/studio/releases\nAndroid Studio Bumblebee 作为一个新的大版本更新，其中包含许多新功能和改进。\n支持 KMP 测试执行\n现在可以在 Android Studio Bumblebee 使用 Kotlin Multiplatform (KMP) 运行和测试。\n为了确保 KMP 测试在 Android Studio 中成功运行，需确保项目满足以下所有要求：\nAGP 7.0.0-alpha08 或更高版本\nGradle 6.8.2 或更高版本\nKotlin 插件 1.4.30 或更高版本\n新设备管理器\n\n设备管理器作为 AVD 管理器的替代品，为此也引入了一些新的功能，新添加的功能可以更方便地创建和管理所有本地测试设备，例如：\n新的 UI 支持浮动或单独的窗口停靠在 IDE 上，就像使用其他 Android Studio 工具窗口一样，这样可以让开发者更轻松地访问自己的设备，而不会妨碍 IDE 的其他窗口。\nVirtual tab 可以更方便地让开发者创建、管理和部署模拟器，更便捷地查看每个设备的详细信息，点击一下即可在 Device File Explorer 中快速检查设备。\nPhysical tab 可帮助开发者使用 ADB Wifi 快速配对新的设备，更便捷地查看每个物理设备的详细信息，另外你还可以通过单击按钮使用 Device File Explorer 快速检查每个设备的文件系统。\n要打开新的Device Manager，可以执行以下操作之一：\n在 Android Studio Welcome 中，选择More Actions > Virtual Device Manager。\n注意：目前只能从 Welcome 页面创…",
+          "link": "https://juejin.cn/post/7057327684388388901",
+          "publishedOn": "2022-01-25T17:56:55.000Z",
+          "wordCount": 43,
+          "title": "Android Studio Bumblebee | 2021.1.1 发布，快来看看更新了什么"
+        },
+        {
+          "id": "https://juejin.cn/post/7056983987859750919",
+          "author": "TechMerger",
+          "description": "theme: Chinese-red\n「2022 年什么会火？什么该学？本文正在参与“聊聊 2022 技术趋势”征文活动 」\nAndroid 诞生已久，其开发方式保持着高频更迭，相较于早期的开发方式已大不相同，尤其是近几年 Google 热切推崇的 MAD 开发技术。其实很多开发者已经有意或无意地正在使用这门技术，借着 2022 开年探讨技术趋势的契机，想要完整地总结 MAD 的愿景、构成、优势以及一些学习建议。\nMAD，全称 Modern Android Development：是 Google 针对 Android 平台提出的全新开发技术。旨在指导我们利用官方推出的各项技术来进行高效的 App 开发。有的时候 Google 会将其翻译成现代安卓开发，有的时候又翻译成新式安卓开发，个人觉得前者的翻译虽然激进、倒也贴切。\n下面按照 MAD 的构成要点逐步展开，帮助大家快速了解 MAD 的技术理念。如果大家对其中的语言、工具包或框架产生了兴趣，一定要在日后的开发中尝试和掌握。\n内容前瞻\n【Modern Android Development】讲述 Android 全新开发技术的由来和构成\n【Android Studio】演示 Android 官方 IDE 的重要特性\n【Android App Bundle】简要普及 Google 推崇的 App 新格式\n【Kotlin】解读 Android 首推的开发语言的优点\n【Jetpack】讲述 Android 持续更新的重大框架集合，并逐个演示重要框架解决的问题和优势\n【Jetpack Compose】带领大家感受 Android 上 UI 开发方式的重大变革\n1．Modern Android Development\n\n官方一直在优化 App 的开发体验：从 IDE 到语言再到框架，这些新技术愈发完善也愈发琐碎。提出一个全新的概念来整…",
+          "link": "https://juejin.cn/post/7056983987859750919",
+          "publishedOn": "2022-01-24T19:43:08.000Z",
+          "wordCount": 39,
+          "title": "MAD，现代安卓开发技术：Android 领域开发方式的重大变革！"
+        },
+        {
           "id": "https://juejin.cn/post/7056580210925240356",
           "author": "Zhujiang",
           "description": "PK创意闹新春，我正在参加「春节创意投稿大赛」\n效果图\n大家不要误会，效果图不是上面的图。。。上面的图太复杂了，我画的老虎可没有这么好看😂。。\n\n\n\n\n\n哈哈哈，是不太好看哈。。不要在意那些细节，这不重要！重要的是迎接 2022 年虎年的那颗炙热且纯真的心，还加了点动画，当点击老虎的头的时候会动。。。\n\n在这里先祝大家在虎年虎虎生威，每天都能虎虎大睡！\n思路\n本来想画一个好看的老虎，但真的动手的时候就有点不知所措了，本来想的一层一层放图片，就有点 PS 那意思了，那样效果确实比这个好，但是诚意和这个一笔一笔画的就不一样了。\n后来决定通过 Path 来进行绘制，因为 Compose 中的 Path 在之前的项目中使用的较少，那就来吧，跟着我一步一步来画这个丑老虎吧。\n开始撸码\n画脑袋\n先来画老虎脑袋吧，说好听点叫老虎脑袋，说不好听点那就是个圆。。。\nval size = this.size\nval path = Path()\npath.moveTo(size.width / 2, bigSize)\nval start = size.width / 6\n​\n// 画圆\npath.addOval(Rect(start, 300f, start * 5, 300 + start * 5 - start))\npath.close()\n​\ndrawPath(path = path, color = Color.Yellow,\n         style = Stroke(width = 10f))\n\nPath 直接通过 addOval 就可以画一个圆，然后计算出圆的位置就行，下面来看下效果吧：\n\n画头上的王字\n脑袋画完了，接下来画一下老虎头上的王字，这是老虎的标志啊！\n// 写头上的王字\npath.addRect(Rect(start * 3 - 40f, 300f + 60f, …",
@@ -7555,24 +8351,6 @@
           "publishedOn": "2022-01-16T19:45:17.000Z",
           "wordCount": 35,
           "title": "十万个知识-001-ps|grep如何实现进程间通讯"
-        },
-        {
-          "id": "https://juejin.cn/post/7054005634559131655",
-          "author": "Android帅次",
-          "description": "highlight: androidstudio\ntheme: cyanosis\n一、HashMap的诞生\n1.1 数组\n数组：一片物理上连续的大小确定的储存空间。\n好处：根据下标快速的查找和修改里面的内容。\n缺点：大小确定，无法修改。添加新的元素或者删除元素比较麻烦。\n\n数组的静态初始化\n        //数组实现方式一：\n        //数据类型 数组名称[] = {值, 值,…}\n        String str[] = {\"移动端\",\"Android\",\"iOS\"};\n        System.out.println(str.length);//三个元素\n        for (int i = 0; i \n运行结果是一样的。\n\"E:\\Android\\Android StudioO\\jre\\bin\\java.exe\"...\n3\n移动端\nAndroid\niOS\n\n如果我想再添加两个新元素(Java、Kotlin)，那么使用数组就不合适了，这时候顺序表就出现了。\n1.2 顺序表\n顺序表：以数组的形式保存的线性表，物理上连续、逻辑上连续、大小可以动态增加。(如：ArrayList)\n顺序表用的频率远远高于数据。用肯定都会用，咱们看看源码。\npublic class ArrayList extends AbstractList\n        implements List, RandomAccess, Cloneable, java.io.Serializable\n{\n    transient Object[] elementData;//存储 ArrayList 元素的数组缓冲区。\n    private int size;//ArrayList 的大小\n    public ArrayList() {\n        this.elementData …",
-          "link": "https://juejin.cn/post/7054005634559131655",
-          "publishedOn": "2022-01-16T19:05:39.000Z",
-          "wordCount": 38,
-          "title": "HashMap 的产生与原理"
-        },
-        {
-          "id": "https://juejin.cn/post/7053985196906905636",
-          "author": "Petterp",
-          "description": "Gradle 是每个 Android 同学都逃不开的一个话题。\n你是否看到别人的 Gradle 文件干净又卫生？而自己的又是一团乱麻🏷\n不用怕,本篇将结合我的开发日常，将一些常用的操作分享出来，希望可以帮到像我一样不怎么会[玩]Gradle 的同学，相信会对大家有所帮助。\n模板代码提取\n这是最基础的操作了，对于一个普通 model.gradle ,默认的配置如下：\n\n如果我们每个 model 都这样写，那岂不是很麻烦，那么让我们提取通用代码：\n优化步骤\n新建一个 gradle 文件，命名为 xxx.gradle ,复制上述 model 里的配置，放到你的项目中,可以自定义修改一些通用内容，在其他model 中依赖即可,如下所示：\n这是一个播放器model\n// 这就是刚才新建的默认gradle文件,\n// 注意：如果你的default.gradle是在项目目录下，请使用../,如果仅在app下，请使用./\napply from: \"../default.gradle\"\nimport xxx.*\n\nandroid {\n  // 用于隔离不同model的资源文件\n    resourcePrefix \"lc_play_\"\n}\n\n\ndependencies {\n    compileOnly project(path: ':common')\n    api xxx\n}\n\n上述的 android{} , dependencies{}\n其内部的内容都会在 default.gradle 的基础上叠加，对于唯一的键值对，会进行替换。\n定义统一的config配置\n在项目中，你是如何去写你的版本号等其他默认配置呢？\n\n对于一个新项目，其默认的配置如下所示，每次新创建 model ,也需要定义其默认参数，如果每次都直接在这里去改动，那么如果版本变化，意味着我们需要修改多次，这并不是我们想看到…",
-          "link": "https://juejin.cn/post/7053985196906905636",
-          "publishedOn": "2022-01-16T17:46:07.000Z",
-          "wordCount": 38,
-          "title": "哪怕不学Gradle,这些常见操作，你也值得掌握"
         }
       ]
     },
@@ -7989,6 +8767,15 @@
       "feedUrl": "https://www.johndcook.com/blog/feed",
       "siteUrl": "https://www.johndcook.com/blog",
       "articles": [
+        {
+          "id": "https://www.johndcook.com/blog/?p=95546",
+          "author": "John",
+          "description": "Here’s an interesting paragraph from Handbook of Floating Point Arithmetic by Jean-Michel Muller et al. Many common transformations of a code into some naively equivalent code become impossible if one takes into account special haves such as NaNs, signed zeros, and rounding modes. For instance, the expression x + 0 is not equivalent to the expression x […]\nNon-equivalent floating point numbers first appeared on John D. Cook.",
+          "link": "https://www.johndcook.com/blog/2022/01/25/non-equivalent-floating-point-numbers/",
+          "publishedOn": "2022-01-26T02:15:46.000Z",
+          "wordCount": 478,
+          "title": "Non-equivalent floating point numbers"
+        },
         {
           "id": "https://www.johndcook.com/blog/?p=95535",
           "author": "John",
@@ -8503,6 +9290,128 @@
           "title": "[Unix] Load average"
         }
       ]
+    },
+    {
+      "title": "/dev/lawyer",
+      "feedUrl": "https://writing.kemitchell.com/feed.xml",
+      "siteUrl": "https://writing.kemitchell.com",
+      "articles": [
+        {
+          "id": "https://writing.kemitchell.com/2022/01/25/Waypoint-MandA-Second-Draft.html",
+          "author": null,
+          "description": "refining acquisition-specific terms to the standard business NDA",
+          "link": "https://writing.kemitchell.com/2022/01/25/Waypoint-MandA-Second-Draft.html",
+          "publishedOn": "2022-01-25T05:59:53.000Z",
+          "wordCount": 918,
+          "title": "Second Draft of Waypoint for M&A"
+        },
+        {
+          "id": "https://writing.kemitchell.com/2022/01/22/Fast-Path-1.0.0.html",
+          "author": null,
+          "description": "cutting-edge legal terms for software license sales",
+          "link": "https://writing.kemitchell.com/2022/01/22/Fast-Path-1.0.0.html",
+          "publishedOn": "2022-01-22T06:38:37.000Z",
+          "wordCount": 777,
+          "title": "Fast Path"
+        },
+        {
+          "id": "https://writing.kemitchell.com/2022/01/21/MIT-for-Noncommercial.html",
+          "author": null,
+          "description": "use a real noncommercial software license",
+          "link": "https://writing.kemitchell.com/2022/01/21/MIT-for-Noncommercial.html",
+          "publishedOn": "2022-01-21T20:32:00.000Z",
+          "wordCount": 459,
+          "title": "MIT for Noncommercial is Broken"
+        },
+        {
+          "id": "https://writing.kemitchell.com/2022/01/18/Payability-Form-Substance.html",
+          "author": null,
+          "description": "getting company to pay you isn't just about a legal entity",
+          "link": "https://writing.kemitchell.com/2022/01/18/Payability-Form-Substance.html",
+          "publishedOn": "2022-01-18T20:35:21.000Z",
+          "wordCount": 1330,
+          "title": "Payability, Form, and Substance"
+        },
+        {
+          "id": "https://writing.kemitchell.com/2022/01/18/To-Do-List-Polling.html",
+          "author": null,
+          "description": "event-based meatspace task management",
+          "link": "https://writing.kemitchell.com/2022/01/18/To-Do-List-Polling.html",
+          "publishedOn": "2022-01-18T03:47:49.000Z",
+          "wordCount": 558,
+          "title": "To-Do List Polling"
+        }
+      ]
+    },
+    {
+      "title": "Neverland",
+      "feedUrl": "https://type.cyhsu.xyz/feed/atom/",
+      "siteUrl": "https://type.cyhsu.xyz",
+      "articles": []
+    },
+    {
+      "title": "Nautilus | Science Connected",
+      "feedUrl": "https://nautil.us/feed/",
+      "siteUrl": "https://nautil.us",
+      "articles": [
+        {
+          "id": "https://nautil.us/?p=13740",
+          "author": "Jim Davies",
+          "description": "Delphi uses machine learning to tell us right from wrong—and much in between.\nThe post AI Is Already Making Moral Choices for Us. Now What? appeared first on Nautilus | Science Connected.",
+          "link": "https://nautil.us/ai-is-already-making-moral-choices-for-us-now-what-13740/",
+          "publishedOn": "2022-01-25T19:56:53.000Z",
+          "wordCount": 1819,
+          "title": "AI Is Already Making Moral Choices for Us. Now What?"
+        },
+        {
+          "id": "https://nautil.us/?p=13685",
+          "author": "John Steele",
+          "description": "Jan van IJken's short film reveals \"an unknown universe inhabited by alien-like creatures.” \nThe post The Little Miracles in the Invisible World of Plankton appeared first on Nautilus | Science Connected.",
+          "link": "https://nautil.us/the-little-miracles-in-the-invisible-world-of-plankton-13685/",
+          "publishedOn": "2022-01-23T23:45:29.000Z",
+          "wordCount": 1912,
+          "title": "The Little Miracles in the Invisible World of Plankton"
+        },
+        {
+          "id": "https://nautil.us/the-wild-world-of-threats-13512/",
+          "author": "David P. Barash",
+          "description": "Animals, including us, evolved to bluster and bluff at their peril.\nThe post The Wild World of Threats appeared first on Nautilus | Science Connected.",
+          "link": "https://nautil.us/the-wild-world-of-threats-13512/",
+          "publishedOn": "2022-01-19T17:57:26.000Z",
+          "wordCount": 3029,
+          "title": "The Wild World of Threats"
+        },
+        {
+          "id": "https://nautil.us/my-out_of_body-experience-13509/",
+          "author": "Joel Frohlich",
+          "description": "In a sensory deprivation tank, I lost my body and found myself.\nThe post My Out-of-Body Experience appeared first on Nautilus | Science Connected.",
+          "link": "https://nautil.us/my-out_of_body-experience-13509/",
+          "publishedOn": "2022-01-19T15:41:49.000Z",
+          "wordCount": 2189,
+          "title": "My Out-of-Body Experience"
+        },
+        {
+          "id": "https://nautil.us/plants-fight-for-their-lives-2-13506/",
+          "author": "Saragoudarzi",
+          "description": "As arable land disappears, a genetic tweak might secure the world’s food supply.\nThe post Plants Fight for Their Lives appeared first on Nautilus | Science Connected.",
+          "link": "https://nautil.us/plants-fight-for-their-lives-13506/",
+          "publishedOn": "2022-01-19T12:34:04.000Z",
+          "wordCount": 1800,
+          "title": "Plants Fight for Their Lives"
+        }
+      ]
+    },
+    {
+      "title": "Luminousmen blog",
+      "feedUrl": "https://luminousmen.com/feeds/",
+      "siteUrl": "https://luminousmen.com/",
+      "articles": []
+    },
+    {
+      "title": "Internal Pointers",
+      "feedUrl": "https://www.internalpointers.com/rss",
+      "siteUrl": "https://www.internalpointers.com",
+      "articles": []
     }
   ],
   "cliVersion": "1.12.0"
