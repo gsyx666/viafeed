@@ -307,15 +307,6 @@
           "publishedOn": "2022-01-19T20:57:22.000Z",
           "wordCount": 1969,
           "title": "How to Become a Serverless Developer in 2022"
-        },
-        {
-          "id": "61e84fda183181284a191b17",
-          "author": null,
-          "description": "Kubernetes is an open-source container orchestration platform that automates the deployment, management, scaling, and networking of containers. It makes it simpler to deploy apps to production. We just published a Kubernetes course on the freeCodeCamp.org YouTube channel.  Bogdan Stashchuk developed this course. He is a popular DevOps instructor who",
-          "link": "https://www.freecodecamp.org/news/learn-kubernetes-and-start-containerizing-your-applications/",
-          "publishedOn": "2022-01-19T17:58:49.000Z",
-          "wordCount": 22713,
-          "title": "Learn Kubernetes and Start Containerizing Your Applications"
         }
       ]
     },
@@ -325,6 +316,60 @@
       "siteUrl": "https://dev.to",
       "articles": [
         {
+          "id": "https://dev.to/dailydevtips1/javascript-recurring-timers-with-setinterval-1345",
+          "author": "Chris Bongers",
+          "description": "Now that we have a good understanding of how JavaScript setTimeout works to delay a function.\nLet's look at how we can perform an action every x time.\nThis can be super helpful for animating stuff or checking a data feed.\nLet's look at how this will work in its most basic form.\nsetInterval(() => {\n  // Run every 100 milliseconds\n}, 100);\n\nThis function will run every 100 milliseconds.\nOften you might want to achieve this to run only until a specific condition is met.\nWe can clear the interval by using the clearInterval.\nconst timer = setInterval(() => {\n  // Do something\n}, 100);\n\nclearInterval(timer);\n\nOr you can even stop it from inside the interval.\nconst timer = setInterval(() => {\n  if (condition) {\n    clearInterval(timer);\n    return;\n  }\n\n  // Execute the function\n}, 100);\n\nThis is a great way to stop a particular action from running.\nWhen you use setInterval, it does not care how long your function runs.\nMeaning it will always start a new loop at the set time.\nFor example, when you use it to animate, but the animations have different lengths, it might cause weird side-effects where the following animation will start, and the first one isn't even done.\n\nAs you can see, each function can have its own time to execute, meaning they can overlap and cause issues.\nIf you find yourself needing them to wait, using setTimeout might be a better solution.\nWe can set up a recursive setTimeout function.\nconst coolFunc = () => {\n  // Execute the function\n\n  setTimeout(coolFunc, 100);\n};\n\nsetTimeout(coolFunc, 100);\n\nWhich will result in the following flow.\n\nIf you are keen to see some more real-world examples, here is a list of articles using them.\nFading images with JavaScript\nCreating a song in JavaScript\nCountdown clock\nThank you for reading my blog. Feel free to subscribe to my email newsletter and connect on Facebook or Twitter",
+          "link": "https://dev.to/dailydevtips1/javascript-recurring-timers-with-setinterval-1345",
+          "publishedOn": "2022-01-29T06:46:31.000Z",
+          "wordCount": 877,
+          "title": "JavaScript recurring timers with setInterval"
+        },
+        {
+          "id": "https://dev.to/sm0ke/start-fast-with-django-react-and-docker-open-source-project-e9g",
+          "author": "Sm0ke",
+          "description": "Hello coders!\nThis article presents an open-source seed project that uses a React frontend powered by a simple Django API. Django React Soft Dashboard can be downloaded from Github without a registration lock and used for commercial products or eLearning activities. For newcomers, Django is a leading web framework actively supported by programming experts and React is a popular JS library for coding user interfaces baked by Facebook.\n👉 Django React Soft - LIVE Demo\n👉 Django React Soft - source code\n🎁 Free support via email and Discord (1k+ community)\nThe product is built using a two-tier pattern where the React frontend is decoupled logically and physically from the API backend.\n✨ Starter Features\nInnovative Material UI Design - Crafted by Creative-Tim\nReact, Redux, Redux-persist\nAuthen…",
+          "link": "https://dev.to/sm0ke/start-fast-with-django-react-and-docker-open-source-project-e9g",
+          "publishedOn": "2022-01-29T06:38:15.000Z",
+          "wordCount": 810,
+          "title": "Start fast with Django, React and Docker - Open-Source project"
+        },
+        {
+          "id": "https://dev.to/paramagicdev/modifying-the-default-toolbar-in-trix-411b",
+          "author": "Konnor Rogers",
+          "description": "The first thing you may be tempted to do when exploring with Trix is to change the default toolbar. It's not obvious how to do this. \nFirst instinct would say just change the innerHTML of all <trix-toolbar> elements.\nThis would work for most simple use cases, but what if you have a lazy-loaded turbo frame? Now you have to listen for when that frame gets loaded and then do some innerHTML replacement there.\nIt quickly turns into an ever-increasing ball of complexity. When searching through the Trix source code, I came across this function:\nTrix.config.toolbar.getDefaultHTML()\n\nYou can find the coffeescript source code here:\nhttps://github.com/basecamp/trix/blob/main/src/trix/config/toolbar.coffee\nOn first iteration, one would think this would work if I did something like this:\nimport Trix fr…",
+          "link": "https://dev.to/paramagicdev/modifying-the-default-toolbar-in-trix-411b",
+          "publishedOn": "2022-01-29T06:33:26.000Z",
+          "wordCount": 706,
+          "title": "Modifying the default toolbar in Trix"
+        },
+        {
+          "id": "https://dev.to/ramgendeploy/run-java-code-in-flutter-methodchannel-template-15o0",
+          "author": "Ramiro - Ramgen",
+          "description": "These are notes on running native code on flutter and a quick templates to get started, sources at the end.\nRunning native code with flutter is accomplished by sending messages using a defined platform channel. Using the MethodChannel the flutter app sends and receives messages from the host platform (iOS / Android).\nMethod calls are encoded into binary before being sent, and binary results received are decoded into Dart values. The data sended through the channel is converted like in the following table:\n\nMessages and responses are passed asynchronously but the channels method needs to be invoked in the main thread. Because of this the main thread can jank if the method takes too long to compute, this might be mitigated by sending messages in different threads in the backend more on that …",
+          "link": "https://dev.to/ramgendeploy/run-java-code-in-flutter-methodchannel-template-15o0",
+          "publishedOn": "2022-01-29T01:46:21.000Z",
+          "wordCount": 1250,
+          "title": "Run java code in Flutter - MethodChannel template"
+        },
+        {
+          "id": "https://dev.to/jeisondaza21/how-to-make-a-little-design-system-with-figma-colors-2ca",
+          "author": "Jeison Daza",
+          "description": "Content:\nCreate the shapes\nCreate a component\nCreate reusable colors\nChoose the base colors\nChoose the main colors\n60-30-10 rule\nHello! On this day I will continue the series little design system with Figma. Today I will share how to create components and color palette.\nWorking with UI elements as components gives us many advantages when we have to reuse them in our design.\n\nWe can edit the shape's properties in the right panel.\n\nIn my case, this shapes are color swatches, they include color, contrast ratio, hexadecimal code, name and a dot for distinction.\n\nIt's a good practice sets auto layout behavior to main parts of our shape.\n\nThe Auto Layout option allows you to structure components or frames in such a way that they can grow automatically, making a container adapt to the size of its…",
+          "link": "https://dev.to/jeisondaza21/how-to-make-a-little-design-system-with-figma-colors-2ca",
+          "publishedOn": "2022-01-29T01:27:59.000Z",
+          "wordCount": 1007,
+          "title": "How to make a little design system with Figma (colors)"
+        },
+        {
+          "id": "https://dev.to/taw/100-languages-speedrun-episode-73-free-pascal-26",
+          "author": "Tomasz Wegrzanowski",
+          "description": "Turbo Pascal was my second language after QBasic.\nUnfortunately there doesn't seem to be any easy way to run Turbo Pascal on modern hardware, so I'll do the next best thing and give Free Pascal a try.\nPascal code starts with program Name. Statements are separated by ; and the whole thing with .. It's case insensitive, so you can do writeln, WriteLn, or even WrItElN if you wanted, but I'll stick to all lowercase.\nprogram Hello;\nbegin\n  writeln('Hello, World!');\nend.\n\n$ fpc hello.pas\n$ ./hello\nHello, World!\n\nLet's try something a bit more ambitious - Fibonacci numbers.\nprogram Fibonacci;\n\nfunction fib(n:integer):integer;\nbegin\n  if n<=2 then\n    fib := 1\n  else\n    fib := fib(n-1) + fib(n-2);\nend;\n\nvar\n  n:integer;\n\nbegin\n  for n := 1 to 20 do\n  begin\n    writeln('fib(', n, ')=', fib(n));\n  …",
+          "link": "https://dev.to/taw/100-languages-speedrun-episode-73-free-pascal-26",
+          "publishedOn": "2022-01-29T01:19:50.000Z",
+          "wordCount": 2574,
+          "title": "100 Languages Speedrun: Episode 73: Free Pascal"
+        },
+        {
           "id": "https://dev.to/darcys22/have-been-building-an-open-source-accounting-system-with-features-for-programmers-cob",
           "author": "Sean",
           "description": "I've been building an open source accounting system as a COVID project which is designed to give programmers the features they expect so that they can automate their financials. These include RPC endpoints so you can communicate to the system with your scripts, and control over the SQL database so you can analyse your financials using your business analytics tool of choice.\nI've also very recently developed a Web GUI frontend for the system so you can do basic interactions with the system. The demo for this can be seen here:\nhttps://youtu.be/19moSl4YFeI\nIdeally the project will give people all the features you need to fully automate your financials from start to finish. Next up on the roadmap is to build in bank feeds and reconciliations. Then aiming build in cryptocurrency gains calculations.\nWould love to hear what people think about it!\nLinks:\nwww.godbledger.com/ \nhttps://github.com/darcys22/godbledger",
@@ -332,6 +377,15 @@
           "publishedOn": "2022-01-29T00:15:32.000Z",
           "wordCount": 580,
           "title": "Have been building an open source accounting system with features for programmers."
+        },
+        {
+          "id": "https://dev.to/dotnet/power-apps-and-the-net-developer-5e4f",
+          "author": "Matthew Soucoup",
+          "description": "Power Apps is a low-code solution to building applications. A lot of the work needed to make the application work is done for you behind the scenes. You still have to write code to make the app work, but that's not the main focus when creating the app.\nAn app built with .NET is high-code. I don't mean that .NET isn't elegant or libraries don't exist to help. Rather when you write a .NET app your primary focus is on writing code to make the app work.\nBoth are incredibly powerful ways to build applications.\nAnd when you mix Power Apps with .NET - your productivity can go through the roof.\nSo let's talk about why the .NET developer should know Power Apps.\nI'm just going to state this as fact, and it's based off of 20 some years of working in and with large enterprises - most enterprise develo…",
+          "link": "https://dev.to/dotnet/power-apps-and-the-net-developer-5e4f",
+          "publishedOn": "2022-01-28T23:56:21.000Z",
+          "wordCount": 1244,
+          "title": "Power Apps and the .NET Developer"
         },
         {
           "id": "https://dev.to/madflanderz/how-to-promote-your-nft-project-3a6j",
@@ -1196,6 +1250,15 @@
       "siteUrl": "https://sspai.com",
       "articles": [
         {
+          "id": "https://sspai.com/post/71224",
+          "author": "宛潼",
+          "description": "在今年的新年节日主题中，Apple 为我们带来了一个全新的活动：用 Keynote 制作一张贺卡送给亲友。在 Apple 提供的新年贺卡模板里，大胆地运用了多种色彩和元素，颇有「波普风格」的味道，十分具有艺术感。\n\n不过转念一想，我还是为 Apple 捏了把汗：这些设计用来送给年轻的「亚逼」1朋友或许非常适合，但如果要送给家中长辈或年纪较小的孩子，就显得有些过于浮夸了。考虑到农历新年的主要氛围还是热烈的红色，所以我们不妨通过自己动手，在 Keynote 上来制作一张属于自己的贺卡。\n或许你会觉得，「设计」本身就是一个比较复杂的东西，面对着一张空白的画板，不知道要做点什么。不用担心，这一次其实不需要太多美术功底，只要你有一个相对好一些的审美，就能够在网上找到合适的素材，一点一点将它拼出你心目中的样子。\n对了，如果你觉得新年与「红色」的相关性是刻板印象，你也可以选择一个你喜欢的颜色。\n尺寸设定\n如今，纸质的贺卡已经逐渐被排版优美和展现形式多样的电子贺卡所取代，所以很可能我们不会将设计好的贺卡打印出来，而是通过社交媒体来传播。考虑到如今最贴近人身边的屏幕依然还是手机，因此建议还是将贺卡的版面调整为手机竖版。\n与此同时，当今大部分手机都已经是全面屏，因此最好不要用 9:16 的画面比例，而是采用 18:9 这样的比例来制作，尽量利用好屏幕的显示空间，营造更浓烈的氛围感。此外还要注意，不少全面屏的四角和顶部空间都是不可用的，在制作时记得不要在这些地方摆放重要元素，避免被遮挡，这些区域在设计上被称为「安全区外的空间」。\n记得把内容放在安全区域内\n当然啦，横版的贺卡也不是不行，不过如果是横版的话，建议可以添加一些精美的动画效果，然后导出成视频，增加互动的同时，也能带来更多乐趣。\n如果你有心，还可以制作两个版本。两个版本在本质上不会太难，只需要将一些元素重新排布即可。\n风格和元素\n确定好了…",
+          "link": "https://sspai.com/post/71224",
+          "publishedOn": "2022-01-29T03:00:00.000Z",
+          "wordCount": 174,
+          "title": "Keynote 贺卡制作指南：不懂设计也能做一张春节贺卡"
+        },
+        {
           "id": "https://sspai.com/post/71211",
           "author": "少数派编辑部",
           "description": "☕️ TL;DR\n\n近期佳作推荐：[国产剧] 大妈的世界、[美剧] 黑钱胜地 第四季、[纪录片] 守护解放西 3、[日剧] 妻子变成小学生。、[韩剧] 解读恶之心的人们、[日剧] 契×约—危险的搭档—、[纪录片] 生活闪亮时\n几则精彩预告：本·卫肖主演 BBC 新剧《难免疼痛》2 月 8 日开播、动画电影《奇巧计程车 In The Woods》公布预告，4 月上映、金惠秀主演 Netflix 新剧《少年法庭》2 月 25 日上线\n几则影视资讯：罗伯特·帕丁森主演《新蝙蝠侠》4 月 19 日登陆 HBO Max、游改电影《神秘海域》发布新海报，2 月 18 日北美上映、《光环世界》第一季发布全新海报、漫改 TV 动画《RPG 不动产》将于 4 月开始播出\n特别预告：本周日将发布一份包含 9 部合家欢喜剧作品的春节片单🏮敬请期待！\n\n👀 N 部作品推荐\n根据读者反馈，如果推荐语涉及剧透（对故事核心、暗线、伏笔、结局等关键要素的透露），我们会在对应作品的标题前增加 🔦 的 Emoji。\n如有其他建议也欢迎在评论区提出，感谢大家对「看什么」栏目的喜爱和支持。\n[国产剧] 大妈的世界\n\n关键词：喜剧 / 日常\n片长：5 分钟（单集）× 20 集\n观看渠道：腾讯视频 / YouTube；豆瓣链接\n\n天上不会掉馅饼，小心馅饼变陷阱。\n\n@SHY：樱桃小区的王大妈和杨大妈，本打算享受平静的退休生活，问题却总是找上门来。能歌善舞而且行动力满点的她们，利用自己的专长，演绎了别开生面的潮流晚年生活。保健品推销员打算放长线钓大鱼，那就来个将计就计，使唤小伙承包家务，人人有份，「共享小李」；咖啡店姑娘恋情似乎有苗头，可得前排占座磕 CP，破点财也是在所难免，此处烂尾不要紧，还有下一对；沉迷养生走了歪路，被子女送去强制戒瘾，最后还能反客为主，把对方忽悠上钩，获得锦旗一面。当然，最重要的还属广场舞…",
@@ -1667,6 +1730,24 @@
       "feedUrl": "https://www.zhihu.com/rss",
       "siteUrl": "http://www.zhihu.com",
       "articles": [
+        {
+          "id": "http://www.zhihu.com/question/320451411/answer/2318207837",
+          "author": "胖博士",
+          "description": "如果你看到了这篇文章，那么恭喜你，你将成为全中国最先了解“维C黄脸”真相的一批人。\n关于用了维C为什么脸黄，目前中文互联网上的解释都很牵强。于是我去查了一下文献，发现事实远比想象的复杂。除了脸变黄外，手掌，指甲缝还有手指缝都有可能变黄，这种变黄没法用清洁产品洗掉，只能等皮肤慢慢代谢掉。停用之后，基本上一两个星期，皮肤变黄就会消失，而且你会发现肤色比用之前更提亮了一个色号。\n目前中文互联网对于维C变黄的解释很牵强\n关于为什么维C上脸之后，有些人会变黄，目前中文互联网的主流说法是维C的氧化。因为一些维C精华放久了之后，会呈现出比较深的颜色。于是自然而然的认为维C上脸之后被氧化，也是染黄皮肤的元凶。但是这过程中，大家常常忽略一个点，那就是维C精华的颜色并没有深到可以染黄皮肤的地步。\n我手头正好有一瓶接近保质期的维C精华，大家可以看到颜色非常深。\n\n把精华滴一点到手上，颜色对比非常明显，然而涂开之后，对皮肤的颜色根本没有影响。\n\n这是因为维C氧化之后，颜色虽然会变深，但是真正有颜色的成分非常少。这些成分又都是水溶性的，根本没法染黄我们的皮肤。\n用了维C脸黄的元凶竟然是它\n为了搞清楚用了维C脸黄的原因，我查找了大量文献，终于找到了合理的解释。维C染黄角质层的元凶其实是维C代谢的产物之一：赤藓酮糖。\n看到赤藓酮糖这四个字，你的第一反应一定是：这是什么鬼？\n\n实际上，赤藓酮糖在国外可是个大大有名的成分，它是欧美常用的美黑剂。\n和亚洲人不同，欧美人喜欢颜色深的皮肤，这样的人被认为是有钱去海边度假，所以看起来给人感觉比较健康比较美。然而不是所有人都有钱有时间去海边度假，于是国外专门有一类美黑护肤品，而这个赤藓酮糖就是美黑剂的主要成分。它能和角化细胞中的角蛋白结合，形成类黑素，从而让皮肤颜色看起来更深。\n\n由赤藓酮糖来的类黑素并不是黑色的，而是红棕色，当用量较少的时候，看起来就是黄不拉几的颜色。实际上，赤藓酮糖的短期使用效果和维C染黄脸的效果一毛一样！\n\n从维C到赤藓酮糖，鬼知道我经历了什么\n维C的氧化是个非常复杂的过程[1]。简单来说，维C（抗坏血酸）先会变成脱氢抗坏血酸。随后脱氢抗坏血酸进一步变成2,3-二酮古洛糖酸。以此为基础，接下来是非常复杂的化学反应，生成的产物也非常多。而赤藓酮糖就是其中的产物之一。\n\n根据实验，一份维C如果氧化降解完全，可以生成至多0.28份赤藓酮糖，这个转化率相当高了。一般欧美使用赤藓酮糖作为美黑剂，这个成分的添加量是5%。所以如果维C精华含有15%的维C，如果全部氧化完全，相当于4.2%的赤藓酮糖，和欧美主流的美黑剂差不多了。\n好在现在主流的维C精华都使用各种方式来稳定维C，维C降解不多。上脸之后，如果做好防晒，停留在角质层中的维C被氧化的概率也不太大。产生的赤藓酮糖也就非常少了。\n脸黄了怎么办？\n很多人用维C明明是为了提亮肤色，结果脸变黄了，郁闷的同时还不免担心起来，染黄的脸洗都洗不掉！\n其实用了维C之后脸变黄大可不必焦虑，直接停用维C就是了。停止使用之后，也就缺少了赤藓酮糖的输入，皮肤中也就不会形成类黑素，皮肤就不会继续变黄。\n而根据赤藓酮糖的工作原理，它一般只作用于角质层最外层的一些角化细胞。而且我们的皮肤也会正常代谢。随着皮肤的代谢，这些染黄的角化细胞基本上一周就会代谢干净，最长不会超过两周。\n如果你又喜欢维C的功效，又不想皮肤变黄，那么还有个办法就是搭配使用一些果酸类的产品。日常使用维C的时候，手指手掌处的染黄会更明显，因为这些地方的角质层更厚，有更多的角蛋白和赤藓酮糖反应。使用一些温和的果酸类产品剥脱角质层，让角质层薄一些，脸黄就不那么明显了。当然，在使用果酸之前，得确保自己皮肤耐受，而且不是敏感肌。\n\n\n小结一下，用维C脸变黄并不是因为简单的氧化。而是因为维C转化成了赤藓酮糖，而这个成分能和角化细胞结合，形成类黑色素，从而染黄角质层。解决的问题很简单，要么停用维C，脸黄一两周就会消失；要么使用温和的果酸轻微剥脱角质层，减少黄气。\n\n来源：知乎 www.zhihu.com\n胖博士\n点击下载\n19 个回答，查看全部。\n直接将vc捣碎用水溶解然后喷在脸上能美白吗？\nVC在护肤品中的形式如何和浓度多少？",
+          "link": "http://www.zhihu.com/question/320451411/answer/2318207837?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
+          "publishedOn": "2022-01-29T06:04:19.000Z",
+          "wordCount": null,
+          "title": "早 C 晚 A 风很大，但用 VC 脸容易变黄，该怎么办？"
+        },
+        {
+          "id": "http://www.zhihu.com/question/470105674/answer/2328885472",
+          "author": "士兵晓雷",
+          "description": "先上图，证明不是吹牛皮，不是纸上谈兵。\n\n这个是半路截的图，中间还有三百多公里是导航到目的地以后又导航到其他的地方的。\n那天一大早是准备开车从日照先去烟台轮渡码头上船去大连的，然后开了三百多公里到了烟台码头才被告知整个渤海湾封海了，问多久开，告知三天后。\n开玩笑呢？三天后？啥事儿都耽误了。当即决定围着渤海湾画个C到大连。然后买了一整箱蓝瓶红牛。（蓝瓶红牛提神效果比金瓶效果好。）\n我跟我同事俩人，他驾驶证刚出实习期，一路上尽量自己开。\n前八百多公里感觉还可以，吹着牛皮听着DJ，看着风景还觉得挺惬意。\n\n这是从日照到烟台，一大早拍的，有些雾。\n\n\n\n基本上三四百公里左右就得找个服务区休息休息。整个白天基本都是我在开。同事陪我吹牛皮。吹了整个白天。\n\n这个图就是下午太阳快落山了。那时候基本上没有别的牛皮吹了。吹得口干舌燥喝水也不管用那种。感觉话说多了舌头磨的疼。\n\n\n\n到了前半夜，高速上小车很少了，基本都是大车。而且对面车道的大车绝对不关远光灯，大老远的照着眼睛睁不开。所以晚上开车速度和效率没有白天高。\n\n整段路程，个人感觉最难熬的时候是最后的三百公里。那个时候精神和精力真的已经灯枯油尽了，肚子感觉鼓鼓的，打个嗝也都是红牛味。也没有话题聊了，相顾无言。听歌听得感觉耳朵呱噪的厉害。主要是风噪胎噪的低频噪音吵的脑仁疼。真没办法了，拜托同事帮忙开一段，自己稍微打个盹。谁知道一坐上副驾驶，嘿，清醒了。这玩意怪得很。\n还有还有，京哈高速有一段堵车堵的我都怀疑人生！堵了接近一个小时！是一动不动！一开始我俩还老老实实的在车里干坐着。后来旁边的大车司机都下车溜达了，还有互不认识的大车司机互相交换水果零食啥的，还有蹲在路边嗑瓜子的…我俩就下车跟着吹，才知道经常跑这段路的司机堵车堵出经验了，带着扑克打斗地主。\n\n这图是从烟台里程表清零以后到大连跑的距离。中间加了三箱油，换算一下百公里大概7个半，作为一台排量2.5自吸的车，全程高速油耗感觉并不高。（出了山东以后，基本都是乙醇汽油，尤其是大连，没有纯汽油！不是说乙醇汽油成本低嘛？为啥比纯汽油还要贵！！！而且还不经烧，加满一箱油明显跑的距离比纯汽油短个七八十公里，这是经过实测的。不过尾气的味道比纯汽油好闻。据说是年审测尾气的时候，加乙醇汽油比较容易过。）\n\n这是大连中央大道的梦露～\n\n\n\n\n大连街头的哥斯拉。\n\n\n\n\n\n\n\n\n\n\n\n\n\n大连的景色真的超美，随手一拍就是风景美如画。空气还特别清新。想去旅游的小伙伴强推！而且人都很友好。热心的很。我俩办完事儿往回走的时候真的就是开够了车了，一想起还要跑一千多公里回去心里就打退堂鼓。不死心跑去大连码头一问，回复渤海湾提早开了，我俩高高兴兴兴高采烈的俩人一车上了轮渡。\n\n\n\n\n大轮渡超大！装的下好多车！把车开进船里的时候感觉好神奇。\n\n\n\n\n在船上一觉起来天亮了，跑去甲板上拍海上日出。超美。\n一觉起来到了烟台码头了。感觉祖国真的太强大了，坐轮渡比开车真的方便太多了。睡一觉就省下了一千多公里的路程。我俩下了船又从烟台跑回日照。两天时间，跑了两千多公里，感觉就是黄粱一梦，只有里程表上的数字，提醒着我一切都是真实的。整段路程，大概有三百多公里是同事开的，省下的一千六百多是我开的。也由衷的佩服那些长期开大货车跑长途的司机师傅。\n长途开车，调整一个最适合自己的坐姿真的超级重要！还要买一个那种护颈，要不脖子真的感觉又酸又痛。还要尽量备点热水和茶叶。不能光喝饮料，还是热水最解渴茶水最提神。尽量买点黄瓜和水果啥的，这样没牛皮吹了吃点水果还提神，高速服务区上又贵又不好吃。车况也一定要检查好。油水气电的。还有轮胎胎压。\n还有还有还有！之前定速巡航基本上感觉用处不大，上了高速才知道定速巡航有多重要！尤其是长途高速！完全解放右脚！而且还省油！没错，是超省油！轻松太多了！！\n\n来源：知乎 www.zhihu.com\n士兵晓雷\n点击下载\n126 个回答，查看全部。\n开车回家过年，为什么有人开 800 公里没事，有人 200 公里就累倒？\n当你第一次以每小时 200 多英里的速度开车时，你有什么感觉？",
+          "link": "http://www.zhihu.com/question/470105674/answer/2328885472?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
+          "publishedOn": "2022-01-29T04:00:43.000Z",
+          "wordCount": null,
+          "title": "开车回家，一个人开 1000 公里是一种什么样的体验？"
+        },
         {
           "id": "http://www.zhihu.com/question/461380156/answer/2326616016",
           "author": "知乎用户（登录查看详情）",
@@ -3419,6 +3500,16 @@
           "id": "https://stratechery.com/2022/intel-earnings-an-interview-with-jay-goldberg-about-nvidia-arm-and-intel/",
           "author": "Ben Thompson",
           "description": "Intel's earnings showed lower margins, and it won't be the last time. Then, an interview with Jay Goldberg About Nvidia, ARM, and Intel.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9pbnRlbC1lYXJuaW5ncy1hbi1pbnRlcnZpZXctd2l0aC1qYXktZ29sZGJlcmctYWJvdXQtbnZpZGlhLWFybS1hbmQtaW50ZWwv.JGZ1R_zK2Q7hXOEky2oS3xBYh8Ml6RE4NxamGIVbS3U5LHHwMNMld6z1elIQFajxKCgZbgZX4-Ve0E90-DdEtdmfVcJJhwnqmEs6HXWlqgldXmveDuMvTHKtC5f6n4f-9SanNQcuopgs69FstiSjaxZCl9EDt5_6KPOMwpriKoSGCXCq4d0jfZUnzVu56l0NX-CRaHXYa85ozlkW236-l0-9Wjc5W1fS8SWBEMekKyhmduMpn0U_0KrGFmulcQyoll3qVtkpxmrBbzk4u8PPFfJuxnBmFxmsKetOjptd1AmZM3wbEUFYyTu9Lbq1VD7sQNALtZc7vYEQB9lZfBGRWQ",
+          "publishedOn": "2022-01-27T11:46:35.000Z",
+          "wordCount": null,
+          "title": "Intel Earnings; An Interview with Jay Goldberg About Nvidia, ARM, and Intel",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2022/intel-earnings-an-interview-with-jay-goldberg-about-nvidia-arm-and-intel/",
+          "author": "Ben Thompson",
+          "description": "Intel's earnings showed lower margins, and it won't be the last time. Then, an interview with Jay Goldberg About Nvidia, ARM, and Intel.",
           "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9pbnRlbC1lYXJuaW5ncy1hbi1pbnRlcnZpZXctd2l0aC1qYXktZ29sZGJlcmctYWJvdXQtbnZpZGlhLWFybS1hbmQtaW50ZWwv.SInaoPQcDyYONfdwqhDMYZ74K1fSxVjbM-bZn-p5ayoQlIEiASiUtpxewY3waW_vOgTeVm3H1vdCEKFTdTFuaUwvG-IIBJq6tv62RQH5mAI7pFq4wIr1OwPLb-eyCBmIn69hLDmtF9EgBuGS3PAZLngZKhzbFv1fd8RSkhNXNtMG8q7Aa4H1HCTLQcWMDf6myR0tOwY5NiJyAqPoCGgZjwkGtsZ8iPKPd0EakLstJGZs8DlIP6ABA0FWpmmxgVJPYLEJ4VqxB70Ut0pNLtWOTDPuiOn_a3sQkJTKwzWmh3-3176YT2NCxRFF7GN9No88f0wKBAk8Rw4yW1nZEhKd2A",
           "publishedOn": "2022-01-27T11:46:35.000Z",
           "wordCount": null,
@@ -3433,6 +3524,16 @@
           "publishedOn": "2022-01-27T11:46:35.000Z",
           "wordCount": null,
           "title": "Intel Earnings; An Interview with Jay Goldberg About Nvidia, ARM, and Intel",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2022/microsoft-earnings-microsoft-advertising-the-deflating-balloon/",
+          "author": "Ben Thompson",
+          "description": "Microsoft had great earnings, but had to reassure investors all the same. Plus, new advertising efforts, and why shrinking private valuations help Redmond.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9taWNyb3NvZnQtZWFybmluZ3MtbWljcm9zb2Z0LWFkdmVydGlzaW5nLXRoZS1kZWZsYXRpbmctYmFsbG9vbi8.FqCvKLyhKRTkJiwwiHg06Jgt7NY3mERGJb9CSWgarM-teAI57-4PEj6abU3U0P4C8rAIZLNmBSvCRN9_IhD9-m-E8bs7WqckgJH6W82P38fmWpJ2c2N_GP0mPwSfb1BeTr91qcl44x0JCWHHyHDpFWA919s4k0U_kroLtgDgPckeb0VYOvdiKztlFDcCvtP2Jom4mum4v3p8VNqHxPMGXs5FuKrIRwu2dwG1bUc4KOdrT__Fs_qVMed4z_1UclVWL22QYgr29ijAFo3MJ6LbQN4z17YkV0-ZlPxwjuonAGgqBxARJ0C8ub440a7NK6RwZJFUO77YmZmiDaq6_KlGqw",
+          "publishedOn": "2022-01-26T12:29:00.000Z",
+          "wordCount": null,
+          "title": "Microsoft Earnings, Microsoft Advertising, The Deflating Balloon",
           "itunes": {}
         },
         {
@@ -3473,6 +3574,16 @@
           "publishedOn": "2022-01-26T12:29:00.000Z",
           "wordCount": null,
           "title": "Microsoft Earnings, Microsoft Advertising, The Deflating Balloon",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2022/free-netflix-follow-up-the-senate-tech-bill/",
+          "author": "Ben Thompson",
+          "description": "More on Netflix's earnings and valuation, and three observations about the tech competition bill being encouraged in the Senate.",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9mcmVlLW5ldGZsaXgtZm9sbG93LXVwLXRoZS1zZW5hdGUtdGVjaC1iaWxsLw.u-rOVQP1mZH4RRuVTG7JY8QScylfzk_TjibsJcfrYN9MO1OHrdbTS-rOwUxlXpE2ttse5CllK4YDJaaEmcrQ4iYC_YDNHPVqabDuM7PvHwCToxbwUV2DJCqhJYds0ABF9N032HxXPyw5Ch53-F0I31zyB0nCGe1hHzAIiFRhCZFNf0xAmJz3kDFafydg0_hNYU1_-qJm45wG4bROQn-mqnwnEpiwgtrGBfvx30210LtdUYAXIptNMKf-nN7ky2_CX6ZajTqDOfcRxD23_DyY0WAx3un3Kcqj6E2HupTS3KAQPZAZbS8K8h9mauvz1ANOhUMYSeXMtF9L6z42OmlCjQ",
+          "publishedOn": "2022-01-25T13:41:27.000Z",
+          "wordCount": null,
+          "title": "[FREE] Netflix Follow-Up, The Senate Tech Bill",
           "itunes": {}
         },
         {
@@ -3533,6 +3644,16 @@
           "publishedOn": "2022-01-25T13:41:27.000Z",
           "wordCount": null,
           "title": "[FREE] Netflix Follow-Up, The Senate Tech Bill",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2022/netflix-earnings-the-competition-question-netflixs-long-term-value/",
+          "author": "Ben Thompson",
+          "description": "Netflix's earnings were disappointing because of the subscriber numbers, but does the company have a bigger concern in terms of long-term profitability?",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9uZXRmbGl4LWVhcm5pbmdzLXRoZS1jb21wZXRpdGlvbi1xdWVzdGlvbi1uZXRmbGl4cy1sb25nLXRlcm0tdmFsdWUv.CerlF34UgFknxgZstk6LRMliOl22E3VXlueJv5LHjKUAYof43rAOmeviTcYjnC5tZ0t6R8Zk0LzmnyAPJBd30iLY09B7mszzilQ9G7nTHabn0PD-p5921T6O1SVbPJT-1nf_eyq4jPfv8FlidfVVlF1wRtP1MRm9WmzmUAIygzHf3__M2xG9InoZfb6Wf-tup5uiRsqB72eNbC7ew_8SMmO1zSMW39ynG2fb7WxYDQ8vOID-0BtaTeZiHLOky6G5DN2mnXI1sBy8lxeM-qLQeOf3zAimVq69-yc8kKjfoYinEjHAYfgL2pJQJoMFnVj8hc6WkzP9x1Hh00NHcLowoQ",
+          "publishedOn": "2022-01-24T13:32:50.000Z",
+          "wordCount": null,
+          "title": "Netflix Earnings, The Competition Question, Netflix's Long-Term Value",
           "itunes": {}
         },
         {
@@ -3603,6 +3724,16 @@
           "publishedOn": "2022-01-24T13:32:50.000Z",
           "wordCount": null,
           "title": "Netflix Earnings, The Competition Question, Netflix's Long-Term Value",
+          "itunes": {}
+        },
+        {
+          "id": "https://stratechery.com/2022/mr-cisc-vs-mr-risc-arm-and-amd-threats-gelsingers-three-tenets/",
+          "author": "Ben Thompson",
+          "description": "The best way to understand Pat Gelsingers thinking about the threats posed by ARM and AMD is to go back to his arguments in favor of CISC over RISC",
+          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9tci1jaXNjLXZzLW1yLXJpc2MtYXJtLWFuZC1hbWQtdGhyZWF0cy1nZWxzaW5nZXJzLXRocmVlLXRlbmV0cy8.W8CJJQrbGBQb6wo8QvkHjbnyttpMtX_W2WqCoIQLzPIDRsKhR4qASjoEt4jlFrypCOGxTKUHpkI7CBkBk1Oxy95XEREHht2zpymj9rl5FnrQyixBfzLoYUS2OV-dCVZxzxSkaI1BwHKlxCmMIdimuVeHvte5XQ6az4r2NXzBKxZKBR1NxIqR50uod792oKdx9yLMXv6Eqw6ir0jpXNgjskkc0pzzHJavoH_pccODcJCIHsw1OnbW56rDJnSQzFhnat57Y4fYz99oxitoypYSeyKgDLtj85h3YUW0coWHkSVgmAvNSoQpOUTakeg1OPL8Q-D4eXiHSsESusC3tDyjXQ",
+          "publishedOn": "2022-01-20T10:43:08.000Z",
+          "wordCount": null,
+          "title": "Mr. CISC vs. Mr. RISC, ARM and AMD Threats, Gelsinger's Three Tenets",
           "itunes": {}
         },
         {
@@ -4330,6 +4461,24 @@
       "feedUrl": "https://reddit.buzzing.cc/rss.xml",
       "siteUrl": "https://reddit.buzzing.cc",
       "articles": [
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/memes/comments/sezpc6/this_is_our_content/",
+          "author": null,
+          "description": "这就是我们的内容",
+          "link": "https://reddit.buzzing.cc/reddit/r/memes/comments/sezpc6/this_is_our_content/?score=77333&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Fsezpc6%2Fthis_is_our_content%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Fsezpc6%2Fthis_is_our_content%2F&channel=memes&sensitive=false",
+          "publishedOn": "2022-01-29T04:44:29.000Z",
+          "wordCount": 18,
+          "title": "这就是我们的内容"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/sez9oh/a_coffee_shop_in_japan_that_allows_you_to_pick/",
+          "author": null,
+          "description": "日本的一家咖啡店，允许你为你的咖啡挑选任何图像。",
+          "link": "https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/sez9oh/a_coffee_shop_in_japan_that_allows_you_to_pick/?score=75064&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Fsez9oh%2Fa_coffee_shop_in_japan_that_allows_you_to_pick%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Fsez9oh%2Fa_coffee_shop_in_japan_that_allows_you_to_pick%2F&channel=nextfuckinglevel&sensitive=false",
+          "publishedOn": "2022-01-29T03:32:29.000Z",
+          "wordCount": 29,
+          "title": "日本的一家咖啡店，允许你为你的咖啡挑选任何图像。"
+        },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/serepd/dont_really_know_much_about_these_guys_but_this/",
           "author": null,
@@ -5606,6 +5755,51 @@
       "feedUrl": "https://hn.buzzing.cc/rss.xml",
       "siteUrl": "https://hn.buzzing.cc",
       "articles": [
+        {
+          "id": "https://hn.buzzing.cc/hn/30120731/",
+          "author": null,
+          "description": "分清轻重缓急、多个工作流、无计划的工作",
+          "link": "https://hn.buzzing.cc/hn/30120731/?score=100&original_url=https%3A%2F%2Fleeorengel.com%2Fprioritization-multiple-work-streams-unplanned-work-oh-my%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30120731&sensitive=false",
+          "publishedOn": "2022-01-29T05:32:10.000Z",
+          "wordCount": 26,
+          "title": "分清轻重缓急、多个工作流、无计划的工作"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30119531/",
+          "author": null,
+          "description": "未上市的应用程序分发",
+          "link": "https://hn.buzzing.cc/hn/30119531/?score=101&original_url=https%3A%2F%2Fdeveloper.apple.com%2Fsupport%2Funlisted-app-distribution%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30119531&sensitive=false",
+          "publishedOn": "2022-01-29T03:48:24.000Z",
+          "wordCount": 23,
+          "title": "未上市的应用程序分发"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30122572/",
+          "author": null,
+          "description": "脸书页面在没有任何警告的情况下被取消发布",
+          "link": "https://hn.buzzing.cc/hn/30122572/?score=103&original_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30122572&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30122572&sensitive=false",
+          "publishedOn": "2022-01-29T02:58:20.000Z",
+          "wordCount": 26,
+          "title": "脸书页面在没有任何警告的情况下被取消发布"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30120927/",
+          "author": null,
+          "description": "漫画指南系列",
+          "link": "https://hn.buzzing.cc/hn/30120927/?score=103&original_url=https%3A%2F%2Fwww.ohmsha.co.jp%2Fenglish%2Fmanga.htm&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30120927&sensitive=false",
+          "publishedOn": "2022-01-29T01:42:49.000Z",
+          "wordCount": 25,
+          "title": "漫画指南系列"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30120762/",
+          "author": null,
+          "description": "Wonderland Crypto联合创始人被曝是臭名昭著的诈骗犯，投资者感到震惊",
+          "link": "https://hn.buzzing.cc/hn/30120762/?score=104&original_url=https%3A%2F%2Fwww.vice.com%2Fen%2Farticle%2Fepxakz%2Fcrypto-co-founder-revealed-to-be-infamous-fraudster-investors-shaken&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30120762&sensitive=false",
+          "publishedOn": "2022-01-29T01:42:49.000Z",
+          "wordCount": 32,
+          "title": "Wonderland Crypto联合创始人被曝是臭名昭著的诈骗犯，投资者感到震惊"
+        },
         {
           "id": "https://hn.buzzing.cc/hn/30118494/",
           "author": null,
@@ -8325,24 +8519,6 @@
           "publishedOn": "2022-01-20T06:00:39.000Z",
           "wordCount": null,
           "title": "System Design | Design Scalable Systems"
-        },
-        {
-          "id": "https://ajaysamgir.hashnode.dev/this-reference-and-dynamic-dispatching-in-java",
-          "author": "Ajay Samgir",
-          "description": "Java is object oriented language which have pillars which represents the design of object orientation concept. \nThe four pillars of object-oriented programming are:\n\nAbstraction\nEncapsulation\nInheritance\nPolymorphism\n\nThis is common thing we already ...",
-          "link": "https://ajaysamgir.hashnode.dev/this-reference-and-dynamic-dispatching-in-java",
-          "publishedOn": "2022-01-19T18:30:00.000Z",
-          "wordCount": 488,
-          "title": "This Reference and Dynamic Dispatching in Java"
-        },
-        {
-          "id": "https://samadritashaw.hashnode.dev/have-you-always-been-confused-among-the-basic-difference-between-jdk-jre-and-jvm-i-have-got-things-simplified-for-you",
-          "author": "Samadrita Shaw",
-          "description": "To master anything, we need to first get a grip on the basics. Have you started your journey with java and/or have always wanted to understand the difference between JDK, JRE and JVM in simplified terms? Then,\nhttps://giphy.com/gifs/justin-squid-game...",
-          "link": "https://samadritashaw.hashnode.dev/have-you-always-been-confused-among-the-basic-difference-between-jdk-jre-and-jvm-i-have-got-things-simplified-for-you",
-          "publishedOn": "2022-01-19T15:30:04.000Z",
-          "wordCount": 569,
-          "title": "Have you always been confused among the basic difference between JDK, JRE and JVM? I have got things simplified for you."
         }
       ]
     },
@@ -8567,7 +8743,17 @@
       "title": "�Ʒ�� BLOG",
       "feedUrl": "https://blog.codingnow.com/atom.xml",
       "siteUrl": "https://blog.codingnow.com/",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://blog.codingnow.com/2022/01/lua_datatree.html",
+          "author": null,
+          "description": "��ǰ������죬½�����������ͬ�����˼٣����ؼҹ����ˡ��������ڹ�˾������Ŀ�޹صĶ����� ����� skynet �����۰������������ñ��ĸ������⡣�⼸�꣬�����ڹ�˾�ڣ����Ǵ��ⲿ������������������������⡣����������һ������ ������ Lua table ����ʽ�ṩ��֧�� Lua ���е��������ͣ����������������ӱ� ���ַ���������������ѡ֧�ֺ�����ָ�롣 ���ݱ�ͨ���кܶࣨ���ࣩ���ݣ�������������ֻ���õ�һ�²��֣���ʼ���Ĺ���Ӧ�����졣 ���п��ܣ���ռ�ڴ档���ݱ����ڲ������ݣ�Ӧ�����ܵ��ڶ�� VM �乲�������ݱ�Ӧ�� GC �о������ٵ�Ӱ�졣 �����ڲ��ر� VM ��ǰ���£��������ݡ� �������ݱ�Ӧ��� Lua ��ʹ�ù������������ܺ�ԭ��������һ�¡�...",
+          "link": "https://blog.codingnow.com/2022/01/lua_datatree.html",
+          "publishedOn": "2022-01-29T00:36:54.000Z",
+          "wordCount": 183,
+          "title": "֧�ֶ���չ���Ͳ�����µ� Lua ��"
+        }
+      ]
     },
     {
       "title": "扯氮集",
@@ -8683,6 +8869,186 @@
       "feedUrl": "https://rsshub.app/bilibili/partion/ranking/201/3",
       "siteUrl": "https://www.bilibili.com",
       "articles": [
+        {
+          "id": "https://www.bilibili.com/video/av338555844",
+          "author": "我有一个咖啡书屋",
+          "description": "因为我们处于四维时空，所以会有电磁现象\n\n\nTags:物理,量子,场论,群论,电磁学,麦克斯韦方程组,知识分享官",
+          "link": "https://www.bilibili.com/video/av338555844",
+          "publishedOn": "2022-01-27T23:34:54.000Z",
+          "wordCount": null,
+          "title": "因为我们处于四维时空，所以会有电磁现象"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av723501988",
+          "author": "萌萌战队",
+          "description": "Tags:知识分享官,实验,物理,科学,科普,物理实验,压差阻力,飞行原理",
+          "link": "https://www.bilibili.com/video/av723501988",
+          "publishedOn": "2022-01-27T23:14:25.000Z",
+          "wordCount": null,
+          "title": "为什么炮弹底部挖槽，就能增加射程？揭秘底凹弹和底排弹的增程原理"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av766058886",
+          "author": "FUNNY-ANIMALS",
+          "description": "https://vt.tiktok.com/\n\n\nTags:生命,生物,瞳孔,打卡挑战",
+          "link": "https://www.bilibili.com/video/av766058886",
+          "publishedOn": "2022-01-27T21:14:49.000Z",
+          "wordCount": null,
+          "title": "瞳孔的形状是猎食者和猎物在不断进化中演变而来的成果！感叹自然的神奇！"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av338494595",
+          "author": "正经的知识",
+          "description": "视频素材：《唐伯虎点秋香》\n\n\nTags:冷知识,猎奇,全家富贵,冚家,拜年,骂人",
+          "link": "https://www.bilibili.com/video/av338494595",
+          "publishedOn": "2022-01-27T19:28:54.000Z",
+          "wordCount": null,
+          "title": "为什么不能用粤语对广东人说全家富贵？"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av550977047",
+          "author": "夜话冷知识",
+          "description": "素材来源：\nThe Assassin's Teapot Is Weird——Steve Mould\nThe Assassin's Teapot——Grand Illusions\n精彩的魔壶魔术表演——BV1db411r74t\n\n\nTags:历史,神奇,趣闻,影视,冷知识,工艺,涨知识,古玩,科学科普,打卡挑战",
+          "link": "https://www.bilibili.com/video/av550977047",
+          "publishedOn": "2022-01-27T18:07:07.000Z",
+          "wordCount": null,
+          "title": "千杯不倒，暗杀神器！中国古代的神奇酒壶"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av423494405",
+          "author": "芳斯塔芙",
+          "description": "先有动物还是先有肌肉？这个问题将会带领你了解演化深层次的运作机制\n\n\nTags:知识分享官,自然,生物,古生物,鬼谷说,肌肉,器官演化,演化",
+          "link": "https://www.bilibili.com/video/av423494405",
+          "publishedOn": "2022-01-27T18:03:09.000Z",
+          "wordCount": null,
+          "title": "【鬼谷说】肌肉演化史：上古洪荒之力"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av935955776",
+          "author": "博物",
+          "description": "-\n\n\nTags:知识分享官,黄鱼,大黄鱼,黄花鱼,博物,博物杂志",
+          "link": "https://www.bilibili.com/video/av935955776",
+          "publishedOn": "2022-01-27T18:00:06.000Z",
+          "wordCount": null,
+          "title": "极度濒危的野生大黄鱼被一锅端？央视您可别再夸了！"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av893380396",
+          "author": "-我是小魔-",
+          "description": "Tags:动画,生活,搞笑,科普,美食,筷子,打卡挑战,知识分享官",
+          "link": "https://www.bilibili.com/video/av893380396",
+          "publishedOn": "2022-01-27T11:16:05.000Z",
+          "wordCount": null,
+          "title": "【小魔】筷子长期不换，用了慢性中毒！"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av550989138",
+          "author": "小白讲知识",
+          "description": "-\n\n\nTags:科普,美国,总统,刺杀,知识分享官,必剪创作",
+          "link": "https://www.bilibili.com/video/av550989138",
+          "publishedOn": "2022-01-27T10:43:00.000Z",
+          "wordCount": null,
+          "title": "历史上被刺杀身亡的美国总统"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av253470045",
+          "author": "奇趣科技屋",
+          "description": "Tags:知识分享官,科学,科普,科技,知识,冷知识,修建,建筑,河道",
+          "link": "https://www.bilibili.com/video/av253470045",
+          "publishedOn": "2022-01-26T20:18:14.000Z",
+          "wordCount": null,
+          "title": "为什么修建河道时要在河道中央修建一排像琴键一样的石块，这些石块有什么作用？"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av338480481",
+          "author": "波士顿圆脸",
+          "description": "Tags:健康,科学,个人防护,防疫,3M",
+          "link": "https://www.bilibili.com/video/av338480481",
+          "publishedOn": "2022-01-26T18:55:27.000Z",
+          "wordCount": null,
+          "title": "应对奥密克戎，如何选择口罩保护自己？一个视频解决！"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av338499908",
+          "author": "阿Test正经比比",
+          "description": "各位领导好！今天我们就来聊聊科技封锁史。\n\n\nTags:故事档案馆,科技,科普,生活,核磁共振,技术,医疗器械,氦气,美的,万东",
+          "link": "https://www.bilibili.com/video/av338499908",
+          "publishedOn": "2022-01-26T18:30:48.000Z",
+          "wordCount": null,
+          "title": "100万氦气球升天背后却是西方技术封锁的巨大嘲讽【阿Test正经比比】"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av723460706",
+          "author": "正经的知识",
+          "description": "素材参考：中国新闻网（ID:cns2012）、科普中国、《中华姓氏大辞典》，《二〇一八年全国姓名报告》\n CCTV13趣说百家姓\nhttps://tv.cctv.com/2015/04/06/VIDE1428315604472115.shtml\nhttps://tv.cctv.com/2015/04/06/VIDE1428307587582163.shtml\n\n\nTags:冷知识,猎奇,姓氏,字数,姓",
+          "link": "https://www.bilibili.com/video/av723460706",
+          "publishedOn": "2022-01-26T18:04:27.000Z",
+          "wordCount": null,
+          "title": "字数最多的姓氏是什么？"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av465981115",
+          "author": "环宇空间站",
+          "description": "各省高考难度排行，哪个省高考最难？\n\n\nTags:科学,科普,高考,地图,高中,中学,地理,知识分享官",
+          "link": "https://www.bilibili.com/video/av465981115",
+          "publishedOn": "2022-01-26T18:00:06.000Z",
+          "wordCount": null,
+          "title": "各省高考难度排行，哪个省高考最难？"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av850966828",
+          "author": "科学疯子CS",
+          "description": "你见过最硬的生物是什么？有一种动物连子弹都打不穿，被认为是地球上唯一的“金属生命体”，今天我们要来认识几种，最坚硬的奇异生物。\n\n\nTags:动物观察局,自然,生物,生命,科学,蜗牛,海洋生物,野生动物,鲣鱼",
+          "link": "https://www.bilibili.com/video/av850966828",
+          "publishedOn": "2022-01-26T18:00:06.000Z",
+          "wordCount": null,
+          "title": "地球上最硬的生物，子弹也打不穿，是唯一的“金属生物”！"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av765883827",
+          "author": "刘加勇医生",
+          "description": "看完这个视频，千万不要再睡前关灯玩手机了！牢记3个20法则，保护好我们的眼睛！\n\n\nTags:知识分享官,生命,健康,日常科普,原创,疾病防治,睡前玩手机,健康不走弯路,眼睛",
+          "link": "https://www.bilibili.com/video/av765883827",
+          "publishedOn": "2022-01-26T16:28:40.000Z",
+          "wordCount": null,
+          "title": "睡前玩手机，小心眼睛出大问题！"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av765938902",
+          "author": "帆华剪科普",
+          "description": "Tags:知识分享官,自然,地球,科学,学习,科普,打卡挑战,渔网,打渔,捕鱼",
+          "link": "https://www.bilibili.com/video/av765938902",
+          "publishedOn": "2022-01-26T13:42:28.000Z",
+          "wordCount": null,
+          "title": "渔网的工作原理是什么？为什么鱼不会从下面逃走？看完这个恍然大悟"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av978387070",
+          "author": "刘冬大夫",
+          "description": "连续射精，欲罢不能？ 你hold住吗\n\n\nTags:中医科普,中医养生,男性健康,男性养生,男性科普,两性健康,两性科普,两性关系,两性生活",
+          "link": "https://www.bilibili.com/video/av978387070",
+          "publishedOn": "2022-01-26T11:48:53.000Z",
+          "wordCount": null,
+          "title": "连续射精，欲罢不能？  你hold住吗"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av423454663",
+          "author": "蓝图BluePrint",
+          "description": "是什么让我们不再建造500米以上的摩天大楼呢？\n\n\nTags:知识分享官,艺术,新人,建筑,建筑设计,设计,创意,知识,摩天大楼,天津高银金融117大厦",
+          "link": "https://www.bilibili.com/video/av423454663",
+          "publishedOn": "2022-01-26T11:00:17.000Z",
+          "wordCount": null,
+          "title": "为什么我们不再建造500米以上高楼？"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av423457806",
+          "author": "差评君",
+          "description": "为什么手机app内存占用越来越大？\n\n\nTags:知识分享官,科普,互联网,软件,手机,手机应用,储存,硬盘,APP",
+          "link": "https://www.bilibili.com/video/av423457806",
+          "publishedOn": "2022-01-26T11:00:17.000Z",
+          "wordCount": null,
+          "title": "提升用户体验还是白嫖手机空间？手机占用空间为啥这么大？【差评君】"
+        },
         {
           "id": "https://www.bilibili.com/video/av508419523",
           "author": "吟游诗人基德",
@@ -9546,6 +9912,15 @@
           "title": "手指分离魔术，一秒教学了！"
         },
         {
+          "id": "https://www.bilibili.com/video/av380901091",
+          "author": "冯墨风",
+          "description": "学习微信：mofengke99\n\n\nTags:蓝调,蓝色系,摄影后期,调色教程,日系色调,ins,知识分享官",
+          "link": "https://www.bilibili.com/video/av380901091",
+          "publishedOn": "2022-01-26T19:30:17.000Z",
+          "wordCount": null,
+          "title": "独具高级感的忧郁情绪蓝色调|摄影师watchluke|ins日系暗调人像照片"
+        },
+        {
           "id": "https://www.bilibili.com/video/av678402457",
           "author": "天天鉴宝",
           "description": "Tags:历史,文化,鉴定,学习,野生技术协会,知识分享官",
@@ -9589,6 +9964,15 @@
           "publishedOn": "2022-01-26T16:02:07.000Z",
           "wordCount": null,
           "title": "PS教程《完整版》 最全最简单PS全套教程！带你从零基础入门到兼职接单！"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av380970941",
+          "author": "设计师南笙",
+          "description": "PS教你轻松给人物刮胡子，你学会了嘛？\n\n\nTags:自制,知识,科技,黑科技,冷知识,经验分享,野生技术协会,打卡挑战,知识分享官",
+          "link": "https://www.bilibili.com/video/av380970941",
+          "publishedOn": "2022-01-26T14:56:36.000Z",
+          "wordCount": null,
+          "title": "PS教你轻松给人物刮胡子，你学会了嘛？"
         },
         {
           "id": "https://www.bilibili.com/video/av635993353",
@@ -10628,6 +11012,15 @@
           "title": "当我们谈论效率的时候，我们在谈论什么"
         },
         {
+          "id": "https://sspai.com/post/71157",
+          "author": "影转细枫",
+          "description": "前言 最近，在朋友圈各路大神的强烈安利之下，入坑了《开端》。不得不说，华语影视剧领域已经很久没有出现过这种带有科幻元素而又逻辑通畅的剧集了。在《开端》中，男女主角搭上了一辆载有一颗炸弹的 45 路公交车。一旦他们因为爆炸或是睡着而失去意识，便会发生时间倒流，他们也会重新回到还未爆炸的公交车上。主角团需要在这一次又一次的循环中，找到解救全车乘客的方法。这种无限时间循环的题材在以往国外的科幻剧作中并不少见，比较出名的例子有《源代码》、《忌日快乐》等。然而，《开端》仍然以新颖的剧情设计、严谨精致的细节与伏笔而广受好评。无论是在原著小说还是影视剧中，作者都没有提及时间循环发生的技术原理。因此，本文将尝试补全这一物理背景。我们将根据物理学家马尔达西那 (Juan Martin Maldacena, 1968－now) 与萨斯坎德 (Leonard Susskind, 1940－now) 于 2013 年发表的 ER = EPR 原理，阐述如何构造一台可能可以实现时光回溯的时间机器。\n我们的基本逻辑是这样的：首先，在两个不同时刻制造处于量子纠缠状态的基本粒子；然后通过 ER = EPR 原理将这些纠缠粒子转化为连接这两个不同时刻的虫洞。这样，两位主角就可以在满足触发条件时，通过虫洞返回到炸弹还未爆炸时的公交车上。这种逻辑设定可以合理地解释为何会发生时间循环，以及为何循环不会提前到炸弹上车之前、为何肖的身体状态会越来越差等一系列原作者挖了却又填不上的坑。不过在此之前，我们需要先了解一下虫洞、量子纠缠、ER = EPR 等基础概念。\n黑洞、白洞、虫洞\n如果你关注科幻，那么我相信你一定不会对黑洞 (black hole) 这个概念感到陌生。在 2014 年上映的《星际穿越》中，科学顾问基普·索恩 (Kip Thorne, 1940－now) 及其团队利用数值相对论的计算为我们还原了一个相当真…",
+          "link": "https://sspai.com/post/71157",
+          "publishedOn": "2022-01-26T04:09:42.000Z",
+          "wordCount": null,
+          "title": "《开端》会在现实中上演吗？| 时间循环的物理学原理"
+        },
+        {
           "id": "https://sspai.com/post/71155",
           "author": "荀大侠",
           "description": "知识网红变现的创业经历\n\n记笔记､ 整理资料, 始终是知识工作者的核心需求｡ 笔记软件应运而生, 渐渐形成了繁荣而有活力的市场｡ 自 Roam Research 推行网状结构笔记以来, 新兴的网状结构笔记软件就层出不穷 (如 Obsidian, Logseq, RemNote), 以更先进的信息处理结构, 稳步蚕食着传统的树状结构笔记软件的份额 (如 Evernote, Notion, WorkFlowy)｡ 笔记软件市场, 正在过渡到新的时代｡\n面对新时代, 知识工作者很高兴, 因为工具的升级, 有助于思维模式的升级､ 工作方式的进步, 最终产出更优的作品; 创业者也很高兴, 因为这意味着新的生态, 新的土壤, 新的机会｡\n家住洛杉矶的电视剧视频剪辑师 Nick Milo 乘着这股东风, 一跃成为\"知识管理网红\"中的佼佼者, 做出了一番不小的事业｡\n0. 滥觞阶段: 创作者与社区影响力\n软件用户社区随着新软件出现而诞生｡ 网状结构的笔记软件林林总总, 各有千秋, 其中 Obsidian 以社区活跃著称｡ Obsidian 用户论坛刚成立不久, Nick Milo 就免费发布自创的 IMF 信息处理框架(后改名为 LYT) 和 Cybertron 主题样式, 收获大量核心用户好评, 积累到最初的名气｡ [2020年5月]\nObsidian.md 官网\n1. 积累阶段: YouTuber 与视频流量\n随着名气越来越旺, 本职为剪视频的 Nick 逐渐决定以此打造一番事业, 于是以 Linking Your Thinking 为品牌, 先后开通了 YouTube 频道 和 网站 [2020年8月]｡  IMF 框架也随后更名为 LYT 工具箱, 并获选作为 Obsidian 官网的首页宣传图｡\n在 YouTube 网站, Nick 发布几个系列教程, 涵盖了 Obsidian …",
@@ -10833,15 +11226,6 @@
           "publishedOn": "2022-01-20T00:56:02.000Z",
           "wordCount": 112,
           "title": "北京冬奥即将开幕，这些东西你都了解过吗？"
-        },
-        {
-          "id": "https://sspai.com/post/71040",
-          "author": "Tiger5G",
-          "description": "在本届CES2022，AMD带来新款桌面处理器、桌面显卡、移动处理器和移动显卡，其中的新款桌面显卡就是升级6nm制程工艺Radeon RX 6400 XT和Radeon RX 6500 XT ，而其中的Radeon RX 6500 XT在今天正式发售。\nRadeon RX 6500 XT关键词：千元价位、6nm、RDNA 2\n\n01/ 关于Radeon RX 6500 XT\nAMD Radeon RX 6500 XT实际规格让人还是有些意外的，除了一些规格特殊之外，还有就是居然保留了【RDNA 2】大部分功能特性，甚至还最先采用了更为先进的6nm制程工艺，绝非新瓶旧酒的产品，这点来说挺不错的。\n关于定价：目前Radeon RX 6500 XT官方指导价是1599元，如果关注装机市场朋友应该有感受，就是市面在1000-2000这个价格区间已经很久一段时间没有新品，上一代这价格区间的产品因为矿工需求等缘故，要么价格暴涨，要么直接没货，所以这次产品补全还挺重要，毕竟还是有不少用户显卡性能需求可能没那么高，只要求满足1080P FHD游戏体验即可。\n\n【RDNA 2】特性全部保留\nAMD Radeon RX 6500 XT基于Navi 24 GPU核心打造，依旧是RDNA 2架构，拥有16组CU计算单元，每一个CU计算单元里都包含一个【Ray Accelerator 光线加速器】，总共1024个流处理器，同时配备16MB无限缓存；显存部分配备了4GB的GDDR6显存，显存位宽为64位。\n虽然核心\\显存规格比其它RDNA 2架构高价卡低不少，但因为它也是最先采用6nm工艺制造，所以频率反倒是RDNA 2架构GPU里面最高的，且高出不少，基本就是靠飙高频来拼性能。\n\n伴随RDNA 2架构，DX12U、DSAPI，DirectX光线追踪、可变速率着色、网格着色器、采样器反馈这些技术特性在…",
-          "link": "https://sspai.com/post/71040",
-          "publishedOn": "2022-01-19T15:07:29.000Z",
-          "wordCount": 202,
-          "title": "首款6nm制程游戏显卡 Radeon RX 6500 XT首发实测"
         }
       ]
     },
@@ -10876,6 +11260,15 @@
           "publishedOn": "2022-01-26T16:34:02.000Z",
           "wordCount": 36,
           "title": "Kotlin常用的by lazy你真的了解吗"
+        },
+        {
+          "id": "https://juejin.cn/post/7057420846863745031",
+          "author": "sweetying",
+          "description": "前言\nFlutter 是 Google 推出并开源的移动端开发框架，主打跨平台、高保真、高性能。开发者可以通过 Dart 语言开发 App，一套代码可以同时运行在 iOS 和 Android平台。\n2018 年 12 月，Google 发布 Flutter 1.0。从那时候开始，Flutter 以迅雷不及掩耳之势，迅速崛起，并稳固了其在市场上的地位。\n如今，Flutter 相关资源和社区都已渐渐成熟，得到了很多开发者和企业的信任。另外因为公司业务扩张，准备引入 Flutter 开发项目，所以学习 Flutter 势在必行，下面就跟着我的脚步进行 Flutter 的学习吧\n一、Flutter 开发环境搭建\n注意：本文以 macOS 系统为例\n1）、使用镜像\n由于在国内访问 Flutter 有时可能会受到限制， Flutter 官方为中国开发者搭建了临时镜像，我们只需将如下环境变量配置到用户环境变量中即可：\nexport PUB_HOSTED_URL=https://pub.flutter-io.cn\nexport FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn\n\n2）、下载 Flutter SDK\n方式有 2：\n1、直接去 Flutter 官网下载最新的安装包即可\n下载地址：https://docs.flutter.dev/development/tools/sdk/releases?tab=macos#macos\n2、通过 git clone 下载\ngit clone -b master https://github.com/flutter/flutter.git\n\n上述这句命令会将仓库克隆下来并切换到 master 分支\n注意：上述两种方式第一种需要解压，第二种不需要，总之将它们放置到您想放的地方即可\n3）、配…",
+          "link": "https://juejin.cn/post/7057420846863745031",
+          "publishedOn": "2022-01-25T23:58:06.000Z",
+          "wordCount": null,
+          "title": "Flutter 系列（一）：运行你的第一个 Flutter 应用"
         },
         {
           "id": "https://juejin.cn/post/7057327684388388901",
@@ -11065,24 +11458,6 @@
           "publishedOn": "2022-01-19T20:16:40.000Z",
           "wordCount": 37,
           "title": "CameraX 1.1 有哪些新的特性发布？"
-        },
-        {
-          "id": "https://juejin.cn/post/7055080559600467981",
-          "author": "元浩875",
-          "description": "highlight: a11y-dark\n「这是我参与2022首次更文挑战的第3天，活动详情查看：2022首次更文挑战」\n前言\n作为开发者，单例这个就再也熟悉不过了，但是作为多种单例实现模式，我个人觉得双重校验锁是非常不多的实现，我们简单来分析一下其原理。\n正文\n先来说一下Java版本的，后面会涉及Kotlin中的代码我们再做比对。\n代码实现\nJava代码实现如下：\n//双重校验锁单例\npublic class SingleInstance {\n    //必须volatile修饰 见分析1\n    private volatile static SingleInstance instance;\n    //私有化构造函数\n    private SingleInstance() {\n    }\n\n    public static SingleInstance getInstance() {\n        //第一个判空 见分析2\n        if (instance == null) {\n            synchronized (SingleInstance.class) {\n                //第二个判空 见分析3\n                if (instance == null) {\n                    //新建实例\n                    instance = new SingleInstance();\n                }\n            }\n        }\n        return instance;\n    }\n}\n\n首先这里synchronized关键字没有修饰整个getInstance函数，因为这个函数可能使用地方很多，这样就会造成其他线程阻塞，不太好，所以这里只同步了一段代码。\n分析2：为什么在进入同步代码块时需要进行进行判空，假如有线程A和线程B，这时线程A先判断instance为null，所以它进入了同步代码块，创建了对象，然后线程B再进来时，它就不必再进入同步代码快了，可以直接返回，也其实也就是懒加载，可以加快执行速度。\n分析3：为什么在同步代码块中还要再进行一次判断呢，假如有线程A和线程B，它俩A先调用方法，B紧接着调用，这时A、B在分析2出的判空都是空，所以A进入同步代码块，B进行等待，当A进入同步代码块中创建了对象后，A线程释放了锁，这时B再进入，如果这时不加分析3的判空，B又会创建一个实例，这明显不符合规矩。\n分析1：那既然加了2层判断，那为什么还要加个volatile关键字呢，这里知识点就有点多了。\n因为新建实例的代码：\ninstance = new SingleInstance();\n它不是一个原子操作，这个简单的赋值可以分为3步：\n1、给SingleInstance分配内存\n2、调用SingleInstance的构造方法\n3、把instance指向分配的内存空间\n这是正常逻辑的3个步骤，也只有按1 2 3执行后，这个instance才不是null。\n但是Java内存模型允许这个进行指令重排序，也就是这3步可能是123也可能是132，所以这里就有问题了。\n假如线程A和线程B，线程A已经跑到分析3处的代码，这时这条指令执行是132，刚把步骤3执行完，这时线程B跑到了分析1处的代码，会发现instance不为null了，这时线程B就直接返回了，从而导致错误。\n既然知道了原因，那volatile关键字就是解决这个的，它可以禁止指令重新排序，而且保证所有线程看到这个变量是一致的，也就是不会从缓存中读取(这个特性后面有机会再说)，所以在创建instance实例时，它的步骤都是123，就不会出错了。\n总结\n其实一个小小的双重校验锁单例都还有蛮多知识点，后面我们来分析分析Kotlin中的单例都一般如何实现以及原理。",
-          "link": "https://juejin.cn/post/7055080559600467981",
-          "publishedOn": "2022-01-19T16:37:48.000Z",
-          "wordCount": 36,
-          "title": "Java双重校验锁单例原理 赶快看进来"
-        },
-        {
-          "id": "https://juejin.cn/post/7055069759259279396",
-          "author": "会煮咖啡的猫",
-          "description": "原文\nhttps://www.dltlabs.com/blog/flutter-run-code-in-the-background-513940\n参考\nhttps://pub.dev/packages/background_fetch\n正文\n今天，我将解释如何在 Flutter 创建一个后台任务。\n在此之前，让我们理解什么是后台任务。后台任务是在后台运行的应用程序的辅助进程，即使应用程序没有运行或处于终止状态。\n这一功能对于需要在后台执行任务而不需要用户打开应用程序的应用程序来说是有益的ーー例如，每 15 分钟调用 api 获取数据。\n让我们在一个示例项目中实现一个后台任务，以便更好地理解这一操作的含义。\n步骤:\npubspec.yaml\nflutter pub add background_fetch\nflutter pub get\n\n在 main.dart 文件中导入后台包，并注册 HeadlessTask，以便在应用程序终止后接收 backgroundFetch 事件。\n例如:\nvoid backgroundFetchHeadlessTask(HeadlessTask task) async {var taskId = task.taskId;\nif(taskId == ‘your_task_id’) {\nprint(‘your_task_id’);\nprint(‘[BackgroundFetch] Headless event received.’);\n_//TODO: perform tasks like — call api, DB and local notification etc…\n_}\n}\nvoid main() {\nrunApp(MyApp());\n_//Registering backgroundFetch to receive events af…",
-          "link": "https://juejin.cn/post/7055069759259279396",
-          "publishedOn": "2022-01-19T15:58:12.000Z",
-          "wordCount": 37,
-          "title": "如何在 Flutter 创建一个后台任务"
         }
       ]
     },
@@ -11432,15 +11807,6 @@
           "publishedOn": "2022-01-20T16:00:00.000Z",
           "wordCount": 418,
           "title": "The Apple Headset Possibilities"
-        },
-        {
-          "id": "https://www.macsparky.com/?p=11630",
-          "author": "David Sparks",
-          "description": "Join Mike and me on the latest episode of Focused. We’re sharing some thoughts about what we’re up to in the new year and the personal changes we’re making to our routines. This episode of Focused is sponsored by: Indeed: Get a free $75 credit to upgrade your job post. Shopify: Grow your business with Shopify. Start... Continue reading →\nThe post Focused 143: Thinking Annually appeared first on MacSparky.",
-          "link": "https://www.macsparky.com/blog/2022/01/focused-143-thinking-annually/",
-          "publishedOn": "2022-01-19T16:00:00.000Z",
-          "wordCount": 150,
-          "title": "Focused 143: Thinking Annually"
         }
       ]
     },
@@ -11762,6 +12128,15 @@
       "feedUrl": "https://www.extremetech.com/feed",
       "siteUrl": "https://www.extremetech.com",
       "articles": [
+        {
+          "id": "http://www.extremetech.com/?p=174221",
+          "author": "Joel Hruska",
+          "description": "The terms UHD and 4K have become so conflated that TV makers, broadcasters, and tech blogs are using them interchangeably -- but they're not the same thing.\nThe post 4K vs. UHD: What’s the Difference? appeared first on ExtremeTech.",
+          "link": "https://www.extremetech.com/extreme/174221-no-tv-makers-4k-and-uhd-are-not-the-same-thing",
+          "publishedOn": "2022-01-29T02:19:58.000Z",
+          "wordCount": null,
+          "title": "4K vs. UHD: What’s the Difference?"
+        },
         {
           "id": "https://www.extremetech.com/?p=331097",
           "author": "Ryan Whitwam",
@@ -12264,24 +12639,6 @@
           "publishedOn": "2022-01-23T23:45:29.000Z",
           "wordCount": 1912,
           "title": "The Little Miracles in the Invisible World of Plankton"
-        },
-        {
-          "id": "https://nautil.us/the-wild-world-of-threats-13512/",
-          "author": "David P. Barash",
-          "description": "Animals, including us, evolved to bluster and bluff at their peril.\nThe post The Wild World of Threats appeared first on Nautilus | Science Connected.",
-          "link": "https://nautil.us/the-wild-world-of-threats-13512/",
-          "publishedOn": "2022-01-19T17:57:26.000Z",
-          "wordCount": 3029,
-          "title": "The Wild World of Threats"
-        },
-        {
-          "id": "https://nautil.us/my-out_of_body-experience-13509/",
-          "author": "Joel Frohlich",
-          "description": "In a sensory deprivation tank, I lost my body and found myself.\nThe post My Out-of-Body Experience appeared first on Nautilus | Science Connected.",
-          "link": "https://nautil.us/my-out_of_body-experience-13509/",
-          "publishedOn": "2022-01-19T15:41:49.000Z",
-          "wordCount": 2189,
-          "title": "My Out-of-Body Experience"
         }
       ]
     },
@@ -12362,6 +12719,130 @@
           "title": "Sniffing HTTPS during development"
         }
       ]
+    },
+    {
+      "title": "cyb.org.uk",
+      "feedUrl": "https://cyb.org.uk/feed.xml",
+      "siteUrl": "https://cyb.org.uk/",
+      "articles": []
+    },
+    {
+      "title": "Ian Henry",
+      "feedUrl": "https://ianthehenry.com/feed.xml",
+      "siteUrl": "https://ianthehenry.com/",
+      "articles": []
+    },
+    {
+      "title": "Terence Eden’s Blog",
+      "feedUrl": "https://shkspr.mobi/blog/feed/atom/",
+      "siteUrl": "https://shkspr.mobi/blog",
+      "articles": [
+        {
+          "id": "https://shkspr.mobi/blog/2022/01/edit-this-blog-post/",
+          "author": null,
+          "description": "This is a regular HTML page. But if you click or tap on the text, you will be able to edit it! HTML is magic! This isn't a fancy styled &#60;textarea&#62;, it's a &#60;div&#62; element which uses the contenteditable global attribute. There are some nifty features - depending on your browser. You can add more&#8230;",
+          "link": "https://shkspr.mobi/blog/2022/01/edit-this-blog-post/",
+          "publishedOn": "2022-01-28T12:34:55.000Z",
+          "wordCount": 1107,
+          "title": "Edit this blog post!"
+        },
+        {
+          "id": "https://shkspr.mobi/blog/2022/01/dvd-review-the-e-space-trilogy/",
+          "author": null,
+          "description": "A box set of late-era Tom Baker stories. And they're a bit of a mixed bunch. Full Circle First up, Full Circle - which introduces us to Adric. Ah, poor sweet Adric. He's an exercise in wish-fulfilment. Getting a nerdy, 17 year old, Who-geek to write a teenage nerd to appeal to other teenage nerds.&#8230;",
+          "link": "https://shkspr.mobi/blog/2022/01/dvd-review-the-e-space-trilogy/",
+          "publishedOn": "2022-01-27T12:34:23.000Z",
+          "wordCount": 1548,
+          "title": "DVD Review: The E-Space Trilogy"
+        },
+        {
+          "id": "https://shkspr.mobi/blog/2022/01/gadget-review-eufy-video-doorbell/",
+          "author": null,
+          "description": "Two years ago, I got a DophiGo DV-200 WiFi Doorbell. It's been OK, but I was hankering for an upgrade. Something with a more reliable app and better video / audio quality. About a year ago, I got a Eufy Security Camera System. It has been excellent. The main advantage is that it comes with&#8230;",
+          "link": "https://shkspr.mobi/blog/2022/01/gadget-review-eufy-video-doorbell/",
+          "publishedOn": "2022-01-26T12:34:49.000Z",
+          "wordCount": 1605,
+          "title": "Gadget Review: Eufy Video Doorbell"
+        },
+        {
+          "id": "https://shkspr.mobi/blog/2022/01/book-review-inglorious-empire-shashi-tharoor/",
+          "author": null,
+          "description": "I know shamefully little about the British Empire and its colonisation of India. I remember going on a school trip to the memorial at Ypres - but I don't remember hearing about the thousands of Indian troops who served and died. I learned endlessly about Churchill - but not about his racist attitudes towards the&#8230;",
+          "link": "https://shkspr.mobi/blog/2022/01/book-review-inglorious-empire-shashi-tharoor/",
+          "publishedOn": "2022-01-25T12:34:23.000Z",
+          "wordCount": 1070,
+          "title": "Book Review: Inglorious Empire - Shashi Tharoor"
+        },
+        {
+          "id": "https://shkspr.mobi/blog/2022/01/practical-machine-learning-with-python/",
+          "author": null,
+          "description": "As part of my MSc I'm taking a short course in Practical Machine Learning via QA.com. The first three days were just about basic stats visualisation using Python. It was great to have a refresher - but I would have expected that to be a pre-requisite. The tutor was excellent - very patient at explaining&#8230;",
+          "link": "https://shkspr.mobi/blog/2022/01/practical-machine-learning-with-python/",
+          "publishedOn": "2022-01-24T12:34:30.000Z",
+          "wordCount": 1125,
+          "title": "Practical Machine Learning with Python"
+        },
+        {
+          "id": "https://shkspr.mobi/blog/2022/01/how-to-migrate-google-for-your-domain-to-normal-gmail/",
+          "author": null,
+          "description": "Google has decided to fuck over its early adopters. Way back in 2006, Google announced Google Apps for Your Domain. Basically it was Gmail - but you could use your own domain. No more example@gmail.com now you could be me@example.com. Hurrah! At the time, they said: organizations that sign up during the beta period will&#8230;",
+          "link": "https://shkspr.mobi/blog/2022/01/how-to-migrate-google-for-your-domain-to-normal-gmail/",
+          "publishedOn": "2022-01-23T12:34:54.000Z",
+          "wordCount": 2518,
+          "title": "How to migrate Google For Your Domain to normal Gmail"
+        },
+        {
+          "id": "https://shkspr.mobi/blog/2022/01/use-python-to-get-alerted-when-an-amazon-wishlist-item-drops-in-price/",
+          "author": null,
+          "description": "Scratching my own itch. I want an alert when there's been a price drop on an item on my Amazon wishlist. I couldn't find an easy way to get an email directly from Amazon (customer-focused my shiny metal arse) so I knocked something up in Python. This is heavily inspired by Leigh Dodds' Wishlist Monitor.&#8230;",
+          "link": "https://shkspr.mobi/blog/2022/01/use-python-to-get-alerted-when-an-amazon-wishlist-item-drops-in-price/",
+          "publishedOn": "2022-01-22T12:34:54.000Z",
+          "wordCount": 1893,
+          "title": "Use Python to get alerted when an Amazon wishlist item drops in price"
+        },
+        {
+          "id": "https://shkspr.mobi/blog/2022/01/how-do-artists-get-paid/",
+          "author": null,
+          "description": "NB: The bit about NFT and smart contracts is at the end. As I discussed yesterday, being able to resell digital art via an NFT means that the price of art falls to zero. Let's assume that I'm correct and, through a combination of technology and changing social attitudes, no one wants to pay for&#8230;",
+          "link": "https://shkspr.mobi/blog/2022/01/how-do-artists-get-paid/",
+          "publishedOn": "2022-01-21T12:34:43.000Z",
+          "wordCount": 1909,
+          "title": "How do artists get paid?"
+        },
+        {
+          "id": "https://shkspr.mobi/blog/2022/01/nfts-means-the-future-value-of-art-is-zero/",
+          "author": null,
+          "description": "At the moment, it is not possible to sell a 2nd hand eBook or MP3. This seems fairly reasonable because a re-seller might keep copies of their original files after selling them. This would allow the re-seller to undercut the original publisher and sell the file multiple times. We tend to label this \"Piracy\". Someone&#8230;",
+          "link": "https://shkspr.mobi/blog/2022/01/nfts-means-the-future-value-of-art-is-zero/",
+          "publishedOn": "2022-01-20T12:34:00.000Z",
+          "wordCount": 1296,
+          "title": "NFTs means the future value of art is zero"
+        }
+      ]
+    },
+    {
+      "title": "Tao Bojlén",
+      "feedUrl": "https://btao.org/feed.xml",
+      "siteUrl": "https://www.btao.org/",
+      "articles": []
+    },
+    {
+      "title": "Anthony Shaw's blog",
+      "feedUrl": "https://tonybaloney.github.io/rss.xml",
+      "siteUrl": "https://tonybaloney.github.io/#blog",
+      "articles": []
+    },
+    {
+      "title": "apenwarr",
+      "feedUrl": "https://apenwarr.ca/log/rss.php",
+      "siteUrl": "https://apenwarr.ca/log/",
+      "articles": []
+    },
+    {
+      "title": "Ferd.ca",
+      "feedUrl": "https://ferd.ca/feed.rss",
+      "siteUrl": "https://ferd.ca/",
+      "articles": []
     }
   ],
   "cliVersion": "1.12.0"

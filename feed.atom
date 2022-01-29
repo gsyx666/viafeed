@@ -2,10 +2,411 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gsyx666.github.io/action-osmosfeed/index.html</id>
     <title>gsyx::feed</title>
-    <updated>2022-01-29T01:52:54.881Z</updated>
+    <updated>2022-01-29T07:30:36.109Z</updated>
     <generator>osmosfeed 1.12.0</generator>
     <link rel="alternate" href="https://gsyx666.github.io/action-osmosfeed/index.html"/>
     <link rel="self" href="https://gsyx666.github.io/action-osmosfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[JavaScript recurring timers with setInterval]]></title>
+        <id>https://dev.to/dailydevtips1/javascript-recurring-timers-with-setinterval-1345</id>
+        <link href="https://dev.to/dailydevtips1/javascript-recurring-timers-with-setinterval-1345"/>
+        <updated>2022-01-29T06:46:31.000Z</updated>
+        <summary type="html"><![CDATA[Now that we have a good understanding of how JavaScript setTimeout works to delay a function.
+Let's look at how we can perform an action every x time.
+This can be super helpful for animating stuff or checking a data feed.
+Let's look at how this will work in its most basic form.
+setInterval(() => {
+  // Run every 100 milliseconds
+}, 100);
+
+This function will run every 100 milliseconds.
+Often you might want to achieve this to run only until a specific condition is met.
+We can clear the interval by using the clearInterval.
+const timer = setInterval(() => {
+  // Do something
+}, 100);
+
+clearInterval(timer);
+
+Or you can even stop it from inside the interval.
+const timer = setInterval(() => {
+  if (condition) {
+    clearInterval(timer);
+    return;
+  }
+
+  // Execute the function
+}, 100);
+
+This is a great way to stop a particular action from running.
+When you use setInterval, it does not care how long your function runs.
+Meaning it will always start a new loop at the set time.
+For example, when you use it to animate, but the animations have different lengths, it might cause weird side-effects where the following animation will start, and the first one isn't even done.
+
+As you can see, each function can have its own time to execute, meaning they can overlap and cause issues.
+If you find yourself needing them to wait, using setTimeout might be a better solution.
+We can set up a recursive setTimeout function.
+const coolFunc = () => {
+  // Execute the function
+
+  setTimeout(coolFunc, 100);
+};
+
+setTimeout(coolFunc, 100);
+
+Which will result in the following flow.
+
+If you are keen to see some more real-world examples, here is a list of articles using them.
+Fading images with JavaScript
+Creating a song in JavaScript
+Countdown clock
+Thank you for reading my blog. Feel free to subscribe to my email newsletter and connect on Facebook or Twitter]]></summary>
+        <author>
+            <name>Chris Bongers</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Start fast with Django, React and Docker - Open-Source project]]></title>
+        <id>https://dev.to/sm0ke/start-fast-with-django-react-and-docker-open-source-project-e9g</id>
+        <link href="https://dev.to/sm0ke/start-fast-with-django-react-and-docker-open-source-project-e9g"/>
+        <updated>2022-01-29T06:38:15.000Z</updated>
+        <summary type="html"><![CDATA[Hello coders!
+This article presents an open-source seed project that uses a React frontend powered by a simple Django API. Django React Soft Dashboard can be downloaded from Github without a registration lock and used for commercial products or eLearning activities. For newcomers, Django is a leading web framework actively supported by programming experts and React is a popular JS library for coding user interfaces baked by Facebook.
+👉 Django React Soft - LIVE Demo
+👉 Django React Soft - source code
+🎁 Free support via email and Discord (1k+ community)
+The product is built using a two-tier pattern where the React frontend is decoupled logically and physically from the API backend.
+✨ Starter Features
+Innovative Material UI Design - Crafted by Creative-Tim
+React, Redux, Redux-persist
+Authen…]]></summary>
+        <author>
+            <name>Sm0ke</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Modifying the default toolbar in Trix]]></title>
+        <id>https://dev.to/paramagicdev/modifying-the-default-toolbar-in-trix-411b</id>
+        <link href="https://dev.to/paramagicdev/modifying-the-default-toolbar-in-trix-411b"/>
+        <updated>2022-01-29T06:33:26.000Z</updated>
+        <summary type="html"><![CDATA[The first thing you may be tempted to do when exploring with Trix is to change the default toolbar. It's not obvious how to do this. 
+First instinct would say just change the innerHTML of all <trix-toolbar> elements.
+This would work for most simple use cases, but what if you have a lazy-loaded turbo frame? Now you have to listen for when that frame gets loaded and then do some innerHTML replacement there.
+It quickly turns into an ever-increasing ball of complexity. When searching through the Trix source code, I came across this function:
+Trix.config.toolbar.getDefaultHTML()
+
+You can find the coffeescript source code here:
+https://github.com/basecamp/trix/blob/main/src/trix/config/toolbar.coffee
+On first iteration, one would think this would work if I did something like this:
+import Trix fr…]]></summary>
+        <author>
+            <name>Konnor Rogers</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[早 C 晚 A 风很大，但用 VC 脸容易变黄，该怎么办？]]></title>
+        <id>http://www.zhihu.com/question/320451411/answer/2318207837</id>
+        <link href="http://www.zhihu.com/question/320451411/answer/2318207837?utm_campaign=rss&amp;utm_medium=rss&amp;utm_source=rss&amp;utm_content=title"/>
+        <updated>2022-01-29T06:04:19.000Z</updated>
+        <summary type="html"><![CDATA[如果你看到了这篇文章，那么恭喜你，你将成为全中国最先了解“维C黄脸”真相的一批人。
+关于用了维C为什么脸黄，目前中文互联网上的解释都很牵强。于是我去查了一下文献，发现事实远比想象的复杂。除了脸变黄外，手掌，指甲缝还有手指缝都有可能变黄，这种变黄没法用清洁产品洗掉，只能等皮肤慢慢代谢掉。停用之后，基本上一两个星期，皮肤变黄就会消失，而且你会发现肤色比用之前更提亮了一个色号。
+目前中文互联网对于维C变黄的解释很牵强
+关于为什么维C上脸之后，有些人会变黄，目前中文互联网的主流说法是维C的氧化。因为一些维C精华放久了之后，会呈现出比较深的颜色。于是自然而然的认为维C上脸之后被氧化，也是染黄皮肤的元凶。但是这过程中，大家常常忽略一个点，那就是维C精华的颜色并没有深到可以染黄皮肤的地步。
+我手头正好有一瓶接近保质期的维C精华，大家可以看到颜色非常深。
+
+把精华滴一点到手上，颜色对比非常明显，然而涂开之后，对皮肤的颜色根本没有影响。
+
+这是因为维C氧化之后，颜色虽然会变深，但是真正有颜色的成分非常少。这些成分又都是水溶性的，根本没法染黄我们的皮肤。
+用了维C脸黄的元凶竟然是它
+为了搞清楚用了维C脸黄的原因，我查找了大量文献，终于找到了合理的解释。维C染黄角质层的元凶其实是维C代谢的产物之一：赤藓酮糖。
+看到赤藓酮糖这四个字，你的第一反应一定是：这是什么鬼？
+
+实际上，赤藓酮糖在国外可是个大大有名的成分，它是欧美常用的美黑剂。
+和亚洲人不同，欧美人喜欢颜色深的皮肤，这样的人被认为是有钱去海边度假，所以看起来给人感觉比较健康比较美。然而不是所有人都有钱有时间去海边度假，于是国外专门有一类美黑护肤品，而这个赤藓酮糖就是美黑剂的主要成分。它能和角化细胞中的角蛋白结合，形成类黑素，从而让皮肤颜色看起来更深。
+
+由赤藓酮糖来的类黑素并不是黑色的，而是红棕色，当用量较少的时候，看起来就是黄不拉几的颜色。实际上，赤藓酮糖的短期使用效果和维C染黄脸的效果一毛一样！
+
+从维C到赤藓酮糖，鬼知道我经历了什么
+维C的氧化是个非常复杂的过程[1]。简单来说，维C（抗坏血酸）先会变成脱氢抗坏血酸。随后脱氢抗坏血酸进一步变成2,3-二酮古洛糖酸。以此为基础，接下来是非常复杂的化学反应，生成的产物也非常多。而赤藓酮糖就是其中的产物之一。
+
+根据实验，一份维C如果氧化降解完全，可以生成至多0.28份赤藓酮糖，这个转化率相当高了。一般欧美使用赤藓酮糖作为美黑剂，这个成分的添加量是5%。所以如果维C精华含有15%的维C，如果全部氧化完全，相当于4.2%的赤藓酮糖，和欧美主流的美黑剂差不多了。
+好在现在主流的维C精华都使用各种方式来稳定维C，维C降解不多。上脸之后，如果做好防晒，停留在角质层中的维C被氧化的概率也不太大。产生的赤藓酮糖也就非常少了。
+脸黄了怎么办？
+很多人用维C明明是为了提亮肤色，结果脸变黄了，郁闷的同时还不免担心起来，染黄的脸洗都洗不掉！
+其实用了维C之后脸变黄大可不必焦虑，直接停用维C就是了。停止使用之后，也就缺少了赤藓酮糖的输入，皮肤中也就不会形成类黑素，皮肤就不会继续变黄。
+而根据赤藓酮糖的工作原理，它一般只作用于角质层最外层的一些角化细胞。而且我们的皮肤也会正常代谢。随着皮肤的代谢，这些染黄的角化细胞基本上一周就会代谢干净，最长不会超过两周。
+如果你又喜欢维C的功效，又不想皮肤变黄，那么还有个办法就是搭配使用一些果酸类的产品。日常使用维C的时候，手指手掌处的染黄会更明显，因为这些地方的角质层更厚，有更多的角蛋白和赤藓酮糖反应。使用一些温和的果酸类产品剥脱角质层，让角质层薄一些，脸黄就不那么明显了。当然，在使用果酸之前，得确保自己皮肤耐受，而且不是敏感肌。
+
+
+小结一下，用维C脸变黄并不是因为简单的氧化。而是因为维C转化成了赤藓酮糖，而这个成分能和角化细胞结合，形成类黑色素，从而染黄角质层。解决的问题很简单，要么停用维C，脸黄一两周就会消失；要么使用温和的果酸轻微剥脱角质层，减少黄气。
+
+来源：知乎 www.zhihu.com
+胖博士
+点击下载
+19 个回答，查看全部。
+直接将vc捣碎用水溶解然后喷在脸上能美白吗？
+VC在护肤品中的形式如何和浓度多少？]]></summary>
+        <author>
+            <name>胖博士</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[分清轻重缓急、多个工作流、无计划的工作]]></title>
+        <id>https://hn.buzzing.cc/hn/30120731/</id>
+        <link href="https://hn.buzzing.cc/hn/30120731/?score=100&amp;original_url=https%3A%2F%2Fleeorengel.com%2Fprioritization-multiple-work-streams-unplanned-work-oh-my%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30120731&amp;sensitive=false"/>
+        <updated>2022-01-29T05:32:10.000Z</updated>
+        <summary type="html"><![CDATA[分清轻重缓急、多个工作流、无计划的工作]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[这就是我们的内容]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/memes/comments/sezpc6/this_is_our_content/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/memes/comments/sezpc6/this_is_our_content/?score=77333&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Fsezpc6%2Fthis_is_our_content%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Fsezpc6%2Fthis_is_our_content%2F&amp;channel=memes&amp;sensitive=false"/>
+        <updated>2022-01-29T04:44:29.000Z</updated>
+        <summary type="html"><![CDATA[这就是我们的内容]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[开车回家，一个人开 1000 公里是一种什么样的体验？]]></title>
+        <id>http://www.zhihu.com/question/470105674/answer/2328885472</id>
+        <link href="http://www.zhihu.com/question/470105674/answer/2328885472?utm_campaign=rss&amp;utm_medium=rss&amp;utm_source=rss&amp;utm_content=title"/>
+        <updated>2022-01-29T04:00:43.000Z</updated>
+        <summary type="html"><![CDATA[先上图，证明不是吹牛皮，不是纸上谈兵。
+
+这个是半路截的图，中间还有三百多公里是导航到目的地以后又导航到其他的地方的。
+那天一大早是准备开车从日照先去烟台轮渡码头上船去大连的，然后开了三百多公里到了烟台码头才被告知整个渤海湾封海了，问多久开，告知三天后。
+开玩笑呢？三天后？啥事儿都耽误了。当即决定围着渤海湾画个C到大连。然后买了一整箱蓝瓶红牛。（蓝瓶红牛提神效果比金瓶效果好。）
+我跟我同事俩人，他驾驶证刚出实习期，一路上尽量自己开。
+前八百多公里感觉还可以，吹着牛皮听着DJ，看着风景还觉得挺惬意。
+
+这是从日照到烟台，一大早拍的，有些雾。
+
+
+
+基本上三四百公里左右就得找个服务区休息休息。整个白天基本都是我在开。同事陪我吹牛皮。吹了整个白天。
+
+这个图就是下午太阳快落山了。那时候基本上没有别的牛皮吹了。吹得口干舌燥喝水也不管用那种。感觉话说多了舌头磨的疼。
+
+
+
+到了前半夜，高速上小车很少了，基本都是大车。而且对面车道的大车绝对不关远光灯，大老远的照着眼睛睁不开。所以晚上开车速度和效率没有白天高。
+
+整段路程，个人感觉最难熬的时候是最后的三百公里。那个时候精神和精力真的已经灯枯油尽了，肚子感觉鼓鼓的，打个嗝也都是红牛味。也没有话题聊了，相顾无言。听歌听得感觉耳朵呱噪的厉害。主要是风噪胎噪的低频噪音吵的脑仁疼。真没办法了，拜托同事帮忙开一段，自己稍微打个盹。谁知道一坐上副驾驶，嘿，清醒了。这玩意怪得很。
+还有还有，京哈高速有一段堵车堵的我都怀疑人生！堵了接近一个小时！是一动不动！一开始我俩还老老实实的在车里干坐着。后来旁边的大车司机都下车溜达了，还有互不认识的大车司机互相交换水果零食啥的，还有蹲在路边嗑瓜子的…我俩就下车跟着吹，才知道经常跑这段路的司机堵车堵出经验了，带着扑克打斗地主。
+
+这图是从烟台里程表清零以后到大连跑的距离。中间加了三箱油，换算一下百公里大概7个半，作为一台排量2.5自吸的车，全程高速油耗感觉并不高。（出了山东以后，基本都是乙醇汽油，尤其是大连，没有纯汽油！不是说乙醇汽油成本低嘛？为啥比纯汽油还要贵！！！而且还不经烧，加满一箱油明显跑的距离比纯汽油短个七八十公里，这是经过实测的。不过尾气的味道比纯汽油好闻。据说是年审测尾气的时候，加乙醇汽油比较容易过。）
+
+这是大连中央大道的梦露～
+
+
+
+
+大连街头的哥斯拉。
+
+
+
+
+
+
+
+
+
+
+
+
+
+大连的景色真的超美，随手一拍就是风景美如画。空气还特别清新。想去旅游的小伙伴强推！而且人都很友好。热心的很。我俩办完事儿往回走的时候真的就是开够了车了，一想起还要跑一千多公里回去心里就打退堂鼓。不死心跑去大连码头一问，回复渤海湾提早开了，我俩高高兴兴兴高采烈的俩人一车上了轮渡。
+
+
+
+
+大轮渡超大！装的下好多车！把车开进船里的时候感觉好神奇。
+
+
+
+
+在船上一觉起来天亮了，跑去甲板上拍海上日出。超美。
+一觉起来到了烟台码头了。感觉祖国真的太强大了，坐轮渡比开车真的方便太多了。睡一觉就省下了一千多公里的路程。我俩下了船又从烟台跑回日照。两天时间，跑了两千多公里，感觉就是黄粱一梦，只有里程表上的数字，提醒着我一切都是真实的。整段路程，大概有三百多公里是同事开的，省下的一千六百多是我开的。也由衷的佩服那些长期开大货车跑长途的司机师傅。
+长途开车，调整一个最适合自己的坐姿真的超级重要！还要买一个那种护颈，要不脖子真的感觉又酸又痛。还要尽量备点热水和茶叶。不能光喝饮料，还是热水最解渴茶水最提神。尽量买点黄瓜和水果啥的，这样没牛皮吹了吃点水果还提神，高速服务区上又贵又不好吃。车况也一定要检查好。油水气电的。还有轮胎胎压。
+还有还有还有！之前定速巡航基本上感觉用处不大，上了高速才知道定速巡航有多重要！尤其是长途高速！完全解放右脚！而且还省油！没错，是超省油！轻松太多了！！
+
+来源：知乎 www.zhihu.com
+士兵晓雷
+点击下载
+126 个回答，查看全部。
+开车回家过年，为什么有人开 800 公里没事，有人 200 公里就累倒？
+当你第一次以每小时 200 多英里的速度开车时，你有什么感觉？]]></summary>
+        <author>
+            <name>士兵晓雷</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[未上市的应用程序分发]]></title>
+        <id>https://hn.buzzing.cc/hn/30119531/</id>
+        <link href="https://hn.buzzing.cc/hn/30119531/?score=101&amp;original_url=https%3A%2F%2Fdeveloper.apple.com%2Fsupport%2Funlisted-app-distribution%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30119531&amp;sensitive=false"/>
+        <updated>2022-01-29T03:48:24.000Z</updated>
+        <summary type="html"><![CDATA[未上市的应用程序分发]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[日本的一家咖啡店，允许你为你的咖啡挑选任何图像。]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/sez9oh/a_coffee_shop_in_japan_that_allows_you_to_pick/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/sez9oh/a_coffee_shop_in_japan_that_allows_you_to_pick/?score=75064&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Fsez9oh%2Fa_coffee_shop_in_japan_that_allows_you_to_pick%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Fsez9oh%2Fa_coffee_shop_in_japan_that_allows_you_to_pick%2F&amp;channel=nextfuckinglevel&amp;sensitive=false"/>
+        <updated>2022-01-29T03:32:29.000Z</updated>
+        <summary type="html"><![CDATA[日本的一家咖啡店，允许你为你的咖啡挑选任何图像。]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Keynote 贺卡制作指南：不懂设计也能做一张春节贺卡]]></title>
+        <id>https://sspai.com/post/71224</id>
+        <link href="https://sspai.com/post/71224"/>
+        <updated>2022-01-29T03:00:00.000Z</updated>
+        <summary type="html"><![CDATA[在今年的新年节日主题中，Apple 为我们带来了一个全新的活动：用 Keynote 制作一张贺卡送给亲友。在 Apple 提供的新年贺卡模板里，大胆地运用了多种色彩和元素，颇有「波普风格」的味道，十分具有艺术感。
+
+不过转念一想，我还是为 Apple 捏了把汗：这些设计用来送给年轻的「亚逼」1朋友或许非常适合，但如果要送给家中长辈或年纪较小的孩子，就显得有些过于浮夸了。考虑到农历新年的主要氛围还是热烈的红色，所以我们不妨通过自己动手，在 Keynote 上来制作一张属于自己的贺卡。
+或许你会觉得，「设计」本身就是一个比较复杂的东西，面对着一张空白的画板，不知道要做点什么。不用担心，这一次其实不需要太多美术功底，只要你有一个相对好一些的审美，就能够在网上找到合适的素材，一点一点将它拼出你心目中的样子。
+对了，如果你觉得新年与「红色」的相关性是刻板印象，你也可以选择一个你喜欢的颜色。
+尺寸设定
+如今，纸质的贺卡已经逐渐被排版优美和展现形式多样的电子贺卡所取代，所以很可能我们不会将设计好的贺卡打印出来，而是通过社交媒体来传播。考虑到如今最贴近人身边的屏幕依然还是手机，因此建议还是将贺卡的版面调整为手机竖版。
+与此同时，当今大部分手机都已经是全面屏，因此最好不要用 9:16 的画面比例，而是采用 18:9 这样的比例来制作，尽量利用好屏幕的显示空间，营造更浓烈的氛围感。此外还要注意，不少全面屏的四角和顶部空间都是不可用的，在制作时记得不要在这些地方摆放重要元素，避免被遮挡，这些区域在设计上被称为「安全区外的空间」。
+记得把内容放在安全区域内
+当然啦，横版的贺卡也不是不行，不过如果是横版的话，建议可以添加一些精美的动画效果，然后导出成视频，增加互动的同时，也能带来更多乐趣。
+如果你有心，还可以制作两个版本。两个版本在本质上不会太难，只需要将一些元素重新排布即可。
+风格和元素
+确定好了…]]></summary>
+        <author>
+            <name>宛潼</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[脸书页面在没有任何警告的情况下被取消发布]]></title>
+        <id>https://hn.buzzing.cc/hn/30122572/</id>
+        <link href="https://hn.buzzing.cc/hn/30122572/?score=103&amp;original_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30122572&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30122572&amp;sensitive=false"/>
+        <updated>2022-01-29T02:58:20.000Z</updated>
+        <summary type="html"><![CDATA[脸书页面在没有任何警告的情况下被取消发布]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[4K vs. UHD: What’s the Difference?]]></title>
+        <id>http://www.extremetech.com/?p=174221</id>
+        <link href="https://www.extremetech.com/extreme/174221-no-tv-makers-4k-and-uhd-are-not-the-same-thing"/>
+        <updated>2022-01-29T02:19:58.000Z</updated>
+        <summary type="html"><![CDATA[The terms UHD and 4K have become so conflated that TV makers, broadcasters, and tech blogs are using them interchangeably -- but they're not the same thing.
+The post 4K vs. UHD: What’s the Difference? appeared first on ExtremeTech.]]></summary>
+        <author>
+            <name>Joel Hruska</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Run java code in Flutter - MethodChannel template]]></title>
+        <id>https://dev.to/ramgendeploy/run-java-code-in-flutter-methodchannel-template-15o0</id>
+        <link href="https://dev.to/ramgendeploy/run-java-code-in-flutter-methodchannel-template-15o0"/>
+        <updated>2022-01-29T01:46:21.000Z</updated>
+        <summary type="html"><![CDATA[These are notes on running native code on flutter and a quick templates to get started, sources at the end.
+Running native code with flutter is accomplished by sending messages using a defined platform channel. Using the MethodChannel the flutter app sends and receives messages from the host platform (iOS / Android).
+Method calls are encoded into binary before being sent, and binary results received are decoded into Dart values. The data sended through the channel is converted like in the following table:
+
+Messages and responses are passed asynchronously but the channels method needs to be invoked in the main thread. Because of this the main thread can jank if the method takes too long to compute, this might be mitigated by sending messages in different threads in the backend more on that …]]></summary>
+        <author>
+            <name>Ramiro - Ramgen</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[漫画指南系列]]></title>
+        <id>https://hn.buzzing.cc/hn/30120927/</id>
+        <link href="https://hn.buzzing.cc/hn/30120927/?score=103&amp;original_url=https%3A%2F%2Fwww.ohmsha.co.jp%2Fenglish%2Fmanga.htm&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30120927&amp;sensitive=false"/>
+        <updated>2022-01-29T01:42:49.000Z</updated>
+        <summary type="html"><![CDATA[漫画指南系列]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Wonderland Crypto联合创始人被曝是臭名昭著的诈骗犯，投资者感到震惊]]></title>
+        <id>https://hn.buzzing.cc/hn/30120762/</id>
+        <link href="https://hn.buzzing.cc/hn/30120762/?score=104&amp;original_url=https%3A%2F%2Fwww.vice.com%2Fen%2Farticle%2Fepxakz%2Fcrypto-co-founder-revealed-to-be-infamous-fraudster-investors-shaken&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30120762&amp;sensitive=false"/>
+        <updated>2022-01-29T01:42:49.000Z</updated>
+        <summary type="html"><![CDATA[Wonderland Crypto联合创始人被曝是臭名昭著的诈骗犯，投资者感到震惊]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to make a little design system with Figma (colors)]]></title>
+        <id>https://dev.to/jeisondaza21/how-to-make-a-little-design-system-with-figma-colors-2ca</id>
+        <link href="https://dev.to/jeisondaza21/how-to-make-a-little-design-system-with-figma-colors-2ca"/>
+        <updated>2022-01-29T01:27:59.000Z</updated>
+        <summary type="html"><![CDATA[Content:
+Create the shapes
+Create a component
+Create reusable colors
+Choose the base colors
+Choose the main colors
+60-30-10 rule
+Hello! On this day I will continue the series little design system with Figma. Today I will share how to create components and color palette.
+Working with UI elements as components gives us many advantages when we have to reuse them in our design.
+
+We can edit the shape's properties in the right panel.
+
+In my case, this shapes are color swatches, they include color, contrast ratio, hexadecimal code, name and a dot for distinction.
+
+It's a good practice sets auto layout behavior to main parts of our shape.
+
+The Auto Layout option allows you to structure components or frames in such a way that they can grow automatically, making a container adapt to the size of its…]]></summary>
+        <author>
+            <name>Jeison Daza</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[100 Languages Speedrun: Episode 73: Free Pascal]]></title>
+        <id>https://dev.to/taw/100-languages-speedrun-episode-73-free-pascal-26</id>
+        <link href="https://dev.to/taw/100-languages-speedrun-episode-73-free-pascal-26"/>
+        <updated>2022-01-29T01:19:50.000Z</updated>
+        <summary type="html"><![CDATA[Turbo Pascal was my second language after QBasic.
+Unfortunately there doesn't seem to be any easy way to run Turbo Pascal on modern hardware, so I'll do the next best thing and give Free Pascal a try.
+Pascal code starts with program Name. Statements are separated by ; and the whole thing with .. It's case insensitive, so you can do writeln, WriteLn, or even WrItElN if you wanted, but I'll stick to all lowercase.
+program Hello;
+begin
+  writeln('Hello, World!');
+end.
+
+$ fpc hello.pas
+$ ./hello
+Hello, World!
+
+Let's try something a bit more ambitious - Fibonacci numbers.
+program Fibonacci;
+
+function fib(n:integer):integer;
+begin
+  if n<=2 then
+    fib := 1
+  else
+    fib := fib(n-1) + fib(n-2);
+end;
+
+var
+  n:integer;
+
+begin
+  for n := 1 to 20 do
+  begin
+    writeln('fib(', n, ')=', fib(n));
+  …]]></summary>
+        <author>
+            <name>Tomasz Wegrzanowski</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[对这些人不太了解，但这是相当健康的友谊。]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/serepd/dont_really_know_much_about_these_guys_but_this/</id>
@@ -34,6 +435,16 @@
         <summary type="html"><![CDATA[在圣安东尼奥看到的 "他们让你打文化战争以阻止你打阶级战争 "的贴纸]]></summary>
         <author>
             <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[֧�ֶ���չ���Ͳ�����µ� Lua ��]]></title>
+        <id>https://blog.codingnow.com/2022/01/lua_datatree.html</id>
+        <link href="https://blog.codingnow.com/2022/01/lua_datatree.html"/>
+        <updated>2022-01-29T00:36:54.000Z</updated>
+        <summary type="html"><![CDATA[��ǰ������죬½�����������ͬ�����˼٣����ؼҹ����ˡ��������ڹ�˾������Ŀ�޹صĶ����� ����� skynet �����۰������������ñ��ĸ������⡣�⼸�꣬�����ڹ�˾�ڣ����Ǵ��ⲿ������������������������⡣����������һ������ ������ Lua table ����ʽ�ṩ��֧�� Lua ���е��������ͣ����������������ӱ� ���ַ���������������ѡ֧�ֺ�����ָ�롣 ���ݱ�ͨ���кܶࣨ���ࣩ���ݣ�������������ֻ���õ�һ�²��֣���ʼ���Ĺ���Ӧ�����졣 ���п��ܣ���ռ�ڴ档���ݱ����ڲ������ݣ�Ӧ�����ܵ��ڶ�� VM �乲�������ݱ�Ӧ�� GC �о������ٵ�Ӱ�졣 �����ڲ��ر� VM ��ǰ���£��������ݡ� �������ݱ�Ӧ��� Lua ��ʹ�ù������������ܺ�ԭ��������һ�¡�...]]></summary>
+        <author>
+            <name>�Ʒ�� BLOG</name>
         </author>
     </entry>
     <entry>
@@ -81,6 +492,21 @@ https://github.com/darcys22/godbledger]]></summary>
         <summary type="html"><![CDATA[自杀热线与营利性分拆公司共享数据，引发道德问题]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Power Apps and the .NET Developer]]></title>
+        <id>https://dev.to/dotnet/power-apps-and-the-net-developer-5e4f</id>
+        <link href="https://dev.to/dotnet/power-apps-and-the-net-developer-5e4f"/>
+        <updated>2022-01-28T23:56:21.000Z</updated>
+        <summary type="html"><![CDATA[Power Apps is a low-code solution to building applications. A lot of the work needed to make the application work is done for you behind the scenes. You still have to write code to make the app work, but that's not the main focus when creating the app.
+An app built with .NET is high-code. I don't mean that .NET isn't elegant or libraries don't exist to help. Rather when you write a .NET app your primary focus is on writing code to make the app work.
+Both are incredibly powerful ways to build applications.
+And when you mix Power Apps with .NET - your productivity can go through the roof.
+So let's talk about why the .NET developer should know Power Apps.
+I'm just going to state this as fact, and it's based off of 20 some years of working in and with large enterprises - most enterprise develo…]]></summary>
+        <author>
+            <name>Matthew Soucoup</name>
         </author>
     </entry>
     <entry>
@@ -808,6 +1234,16 @@ The post Here’s everything new in iOS 15.4 beta 1: New emoji, Keychain updates
 The post OnePlus 9R receives January 2022 security patches with latest update appeared first on xda-developers.]]></summary>
         <author>
             <name>Pranob Mehrotra</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Edit this blog post!]]></title>
+        <id>https://shkspr.mobi/blog/2022/01/edit-this-blog-post/</id>
+        <link href="https://shkspr.mobi/blog/2022/01/edit-this-blog-post/"/>
+        <updated>2022-01-28T12:34:55.000Z</updated>
+        <summary type="html"><![CDATA[This is a regular HTML page. But if you click or tap on the text, you will be able to edit it! HTML is magic! This isn't a fancy styled &#60;textarea&#62;, it's a &#60;div&#62; element which uses the contenteditable global attribute. There are some nifty features - depending on your browser. You can add more&#8230;]]></summary>
+        <author>
+            <name>Terence Eden’s Blog</name>
         </author>
     </entry>
     <entry>
@@ -1855,6 +2291,19 @@ $ z /tmp
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[因为我们处于四维时空，所以会有电磁现象]]></title>
+        <id>https://www.bilibili.com/video/av338555844</id>
+        <link href="https://www.bilibili.com/video/av338555844"/>
+        <updated>2022-01-27T23:34:54.000Z</updated>
+        <summary type="html"><![CDATA[因为我们处于四维时空，所以会有电磁现象
+
+
+Tags:物理,量子,场论,群论,电磁学,麦克斯韦方程组,知识分享官]]></summary>
+        <author>
+            <name>我有一个咖啡书屋</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Is the Metaverse the future of technology?]]></title>
         <id>https://dev.to/mage_ai/is-the-metaverse-the-future-of-technology-3hn4</id>
         <link href="https://dev.to/mage_ai/is-the-metaverse-the-future-of-technology-3hn4"/>
@@ -1906,6 +2355,16 @@ The metaverse is a broad term which describes a new way in which people interact
 The post These are the Best Fast Chargers for TCL 20 series in 2022 appeared first on xda-developers.]]></summary>
         <author>
             <name>Sumukh Rao</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[为什么炮弹底部挖槽，就能增加射程？揭秘底凹弹和底排弹的增程原理]]></title>
+        <id>https://www.bilibili.com/video/av723501988</id>
+        <link href="https://www.bilibili.com/video/av723501988"/>
+        <updated>2022-01-27T23:14:25.000Z</updated>
+        <summary type="html"><![CDATA[Tags:知识分享官,实验,物理,科学,科普,物理实验,压差阻力,飞行原理]]></summary>
+        <author>
+            <name>萌萌战队</name>
         </author>
     </entry>
     <entry>
@@ -2186,6 +2645,19 @@ The post How to set up Face ID with a mask appeared first on xda-developers.]]><
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[瞳孔的形状是猎食者和猎物在不断进化中演变而来的成果！感叹自然的神奇！]]></title>
+        <id>https://www.bilibili.com/video/av766058886</id>
+        <link href="https://www.bilibili.com/video/av766058886"/>
+        <updated>2022-01-27T21:14:49.000Z</updated>
+        <summary type="html"><![CDATA[https://vt.tiktok.com/
+
+
+Tags:生命,生物,瞳孔,打卡挑战]]></summary>
+        <author>
+            <name>FUNNY-ANIMALS</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[真正的....]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/sdwgqt/truly/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/sdwgqt/truly/?score=75092&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Fsdwgqt%2Ftruly%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Fsdwgqt%2Ftruly%2F&amp;channel=WhitePeopleTwitter&amp;sensitive=false"/>
@@ -2364,6 +2836,19 @@ Suppose you are a data scientist or a machine learning engineer, and you want to
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[为什么不能用粤语对广东人说全家富贵？]]></title>
+        <id>https://www.bilibili.com/video/av338494595</id>
+        <link href="https://www.bilibili.com/video/av338494595"/>
+        <updated>2022-01-27T19:28:54.000Z</updated>
+        <summary type="html"><![CDATA[视频素材：《唐伯虎点秋香》
+
+
+Tags:冷知识,猎奇,全家富贵,冚家,拜年,骂人]]></summary>
+        <author>
+            <name>正经的知识</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Oculus Quest Officially Rebranded to Meta Quest, and not Everyone is Happy About it]]></title>
         <id>https://www.extremetech.com/?p=331054</id>
         <link href="https://www.extremetech.com/gaming/331054-oculus-quest-officially-rebranded-to-meta-quest-and-not-everyone-is-happy-about-it"/>
@@ -2503,6 +2988,35 @@ Tags:刘谦,春晚魔术,野生技术协会,申林,必剪创作]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[千杯不倒，暗杀神器！中国古代的神奇酒壶]]></title>
+        <id>https://www.bilibili.com/video/av550977047</id>
+        <link href="https://www.bilibili.com/video/av550977047"/>
+        <updated>2022-01-27T18:07:07.000Z</updated>
+        <summary type="html"><![CDATA[素材来源：
+The Assassin's Teapot Is Weird——Steve Mould
+The Assassin's Teapot——Grand Illusions
+精彩的魔壶魔术表演——BV1db411r74t
+
+
+Tags:历史,神奇,趣闻,影视,冷知识,工艺,涨知识,古玩,科学科普,打卡挑战]]></summary>
+        <author>
+            <name>夜话冷知识</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【鬼谷说】肌肉演化史：上古洪荒之力]]></title>
+        <id>https://www.bilibili.com/video/av423494405</id>
+        <link href="https://www.bilibili.com/video/av423494405"/>
+        <updated>2022-01-27T18:03:09.000Z</updated>
+        <summary type="html"><![CDATA[先有动物还是先有肌肉？这个问题将会带领你了解演化深层次的运作机制
+
+
+Tags:知识分享官,自然,生物,古生物,鬼谷说,肌肉,器官演化,演化]]></summary>
+        <author>
+            <name>芳斯塔芙</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[与天文学家之前所见不同的神秘物体]]></title>
         <id>https://hn.buzzing.cc/hn/30099010/</id>
         <link href="https://hn.buzzing.cc/hn/30099010/?score=100&amp;original_url=https%3A%2F%2Fwww.icrar.org%2Frepeating-transient%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30099010&amp;sensitive=false"/>
@@ -2510,6 +3024,19 @@ Tags:刘谦,春晚魔术,野生技术协会,申林,必剪创作]]></summary>
         <summary type="html"><![CDATA[与天文学家之前所见不同的神秘物体]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[极度濒危的野生大黄鱼被一锅端？央视您可别再夸了！]]></title>
+        <id>https://www.bilibili.com/video/av935955776</id>
+        <link href="https://www.bilibili.com/video/av935955776"/>
+        <updated>2022-01-27T18:00:06.000Z</updated>
+        <summary type="html"><![CDATA[-
+
+
+Tags:知识分享官,黄鱼,大黄鱼,黄花鱼,博物,博物杂志]]></summary>
+        <author>
+            <name>博物</name>
         </author>
     </entry>
     <entry>
@@ -2941,6 +3468,16 @@ The post You can now shut up the Google Assistant by simply saying “Stop” ap
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[DVD Review: The E-Space Trilogy]]></title>
+        <id>https://shkspr.mobi/blog/2022/01/dvd-review-the-e-space-trilogy/</id>
+        <link href="https://shkspr.mobi/blog/2022/01/dvd-review-the-e-space-trilogy/"/>
+        <updated>2022-01-27T12:34:23.000Z</updated>
+        <summary type="html"><![CDATA[A box set of late-era Tom Baker stories. And they're a bit of a mixed bunch. Full Circle First up, Full Circle - which introduces us to Adric. Ah, poor sweet Adric. He's an exercise in wish-fulfilment. Getting a nerdy, 17 year old, Who-geek to write a teenage nerd to appeal to other teenage nerds.&#8230;]]></summary>
+        <author>
+            <name>Terence Eden’s Blog</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Report: Microsoft Will Keep Call of Duty on PlayStation for Now]]></title>
         <id>https://www.extremetech.com/?p=331029</id>
         <link href="https://www.extremetech.com/gaming/331029-report-microsoft-will-keep-call-of-duty-on-playstation-for-now"/>
@@ -2998,6 +3535,16 @@ Tags:知识分享官,视频教程,经验分享,支付宝,技巧,实用技巧,app
         <summary type="html"><![CDATA[比特币区块链中的惊喜及其存储方式(2014)]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Intel Earnings; An Interview with Jay Goldberg About Nvidia, ARM, and Intel]]></title>
+        <id>https://stratechery.com/2022/intel-earnings-an-interview-with-jay-goldberg-about-nvidia-arm-and-intel/</id>
+        <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9pbnRlbC1lYXJuaW5ncy1hbi1pbnRlcnZpZXctd2l0aC1qYXktZ29sZGJlcmctYWJvdXQtbnZpZGlhLWFybS1hbmQtaW50ZWwv.JGZ1R_zK2Q7hXOEky2oS3xBYh8Ml6RE4NxamGIVbS3U5LHHwMNMld6z1elIQFajxKCgZbgZX4-Ve0E90-DdEtdmfVcJJhwnqmEs6HXWlqgldXmveDuMvTHKtC5f6n4f-9SanNQcuopgs69FstiSjaxZCl9EDt5_6KPOMwpriKoSGCXCq4d0jfZUnzVu56l0NX-CRaHXYa85ozlkW236-l0-9Wjc5W1fS8SWBEMekKyhmduMpn0U_0KrGFmulcQyoll3qVtkpxmrBbzk4u8PPFfJuxnBmFxmsKetOjptd1AmZM3wbEUFYyTu9Lbq1VD7sQNALtZc7vYEQB9lZfBGRWQ"/>
+        <updated>2022-01-27T11:46:35.000Z</updated>
+        <summary type="html"><![CDATA[Intel's earnings showed lower margins, and it won't be the last time. Then, an interview with Jay Goldberg About Nvidia, ARM, and Intel.]]></summary>
+        <author>
+            <name>Ben Thompson</name>
         </author>
     </entry>
     <entry>
@@ -3064,6 +3611,16 @@ Tags:宝石切磨,珠宝,宝石,珠宝加工,制作过程,合成蓝宝石]]></su
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[【小魔】筷子长期不换，用了慢性中毒！]]></title>
+        <id>https://www.bilibili.com/video/av893380396</id>
+        <link href="https://www.bilibili.com/video/av893380396"/>
+        <updated>2022-01-27T11:16:05.000Z</updated>
+        <summary type="html"><![CDATA[Tags:动画,生活,搞笑,科普,美食,筷子,打卡挑战,知识分享官]]></summary>
+        <author>
+            <name>-我是小魔-</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[MIUI 13: Features, Rollout Schedule, Download Links and more from Xiaomi’s latest Android skin]]></title>
         <id>https://www.xda-developers.com/?p=575585</id>
         <link href="https://www.xda-developers.com/miui-13/"/>
@@ -3072,6 +3629,19 @@ Tags:宝石切磨,珠宝,宝石,珠宝加工,制作过程,合成蓝宝石]]></su
 The post MIUI 13: Features, Rollout Schedule, Download Links and more from Xiaomi’s latest Android skin appeared first on xda-developers.]]></summary>
         <author>
             <name>Aamir Siddiqui</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[历史上被刺杀身亡的美国总统]]></title>
+        <id>https://www.bilibili.com/video/av550989138</id>
+        <link href="https://www.bilibili.com/video/av550989138"/>
+        <updated>2022-01-27T10:43:00.000Z</updated>
+        <summary type="html"><![CDATA[-
+
+
+Tags:科普,美国,总统,刺杀,知识分享官,必剪创作]]></summary>
+        <author>
+            <name>小白讲知识</name>
         </author>
     </entry>
     <entry>
@@ -4602,6 +5172,16 @@ The post Meta-backed ‘Diem’ cryptocurrency project reportedly falling apart 
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[为什么修建河道时要在河道中央修建一排像琴键一样的石块，这些石块有什么作用？]]></title>
+        <id>https://www.bilibili.com/video/av253470045</id>
+        <link href="https://www.bilibili.com/video/av253470045"/>
+        <updated>2022-01-26T20:18:14.000Z</updated>
+        <summary type="html"><![CDATA[Tags:知识分享官,科学,科普,科技,知识,冷知识,修建,建筑,河道]]></summary>
+        <author>
+            <name>奇趣科技屋</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Web 3.0 : The Start of a New Era]]></title>
         <id>https://dev.to/shieldstring/web-30-the-start-of-a-new-era-1df3</id>
         <link href="https://dev.to/shieldstring/web-30-the-start-of-a-new-era-1df3"/>
@@ -4699,6 +5279,19 @@ The post Valve’s Steam Deck will start shipping to buyers in February appeared
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[独具高级感的忧郁情绪蓝色调|摄影师watchluke|ins日系暗调人像照片]]></title>
+        <id>https://www.bilibili.com/video/av380901091</id>
+        <link href="https://www.bilibili.com/video/av380901091"/>
+        <updated>2022-01-26T19:30:17.000Z</updated>
+        <summary type="html"><![CDATA[学习微信：mofengke99
+
+
+Tags:蓝调,蓝色系,摄影后期,调色教程,日系色调,ins,知识分享官]]></summary>
+        <author>
+            <name>冯墨风</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[克劳德-香农如何帮助启动机器学习]]></title>
         <id>https://hn.buzzing.cc/hn/30084169/</id>
         <link href="https://hn.buzzing.cc/hn/30084169/?score=103&amp;original_url=https%3A%2F%2Fspectrum.ieee.org%2Fclaude-shannon-information-theory&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30084169&amp;sensitive=false"/>
@@ -4736,6 +5329,16 @@ The post Valve’s Steam Deck will start shipping to buyers in February appeared
         <summary type="html"><![CDATA[much improved by generous feedback]]></summary>
         <author>
             <name>/dev/lawyer</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[应对奥密克戎，如何选择口罩保护自己？一个视频解决！]]></title>
+        <id>https://www.bilibili.com/video/av338480481</id>
+        <link href="https://www.bilibili.com/video/av338480481"/>
+        <updated>2022-01-26T18:55:27.000Z</updated>
+        <summary type="html"><![CDATA[Tags:健康,科学,个人防护,防疫,3M]]></summary>
+        <author>
+            <name>波士顿圆脸</name>
         </author>
     </entry>
     <entry>
@@ -4799,6 +5402,19 @@ The post Lenovo’s next gaming phones might have a Snapdragon 8 Gen 1 and up to
 The post Windows Insiders in Release Preview can now try Android apps on Windows 11 appeared first on xda-developers.]]></summary>
         <author>
             <name>João Carrasqueira</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[100万氦气球升天背后却是西方技术封锁的巨大嘲讽【阿Test正经比比】]]></title>
+        <id>https://www.bilibili.com/video/av338499908</id>
+        <link href="https://www.bilibili.com/video/av338499908"/>
+        <updated>2022-01-26T18:30:48.000Z</updated>
+        <summary type="html"><![CDATA[各位领导好！今天我们就来聊聊科技封锁史。
+
+
+Tags:故事档案馆,科技,科普,生活,核磁共振,技术,医疗器械,氦气,美的,万东]]></summary>
+        <author>
+            <name>阿Test正经比比</name>
         </author>
     </entry>
     <entry>
@@ -4879,6 +5495,48 @@ Exa...]]></summary>
 The post Microsoft’s latest Surface Duo 2 update lets you take a screenshot with the pen appeared first on xda-developers.]]></summary>
         <author>
             <name>Rich Woods</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[字数最多的姓氏是什么？]]></title>
+        <id>https://www.bilibili.com/video/av723460706</id>
+        <link href="https://www.bilibili.com/video/av723460706"/>
+        <updated>2022-01-26T18:04:27.000Z</updated>
+        <summary type="html"><![CDATA[素材参考：中国新闻网（ID:cns2012）、科普中国、《中华姓氏大辞典》，《二〇一八年全国姓名报告》
+ CCTV13趣说百家姓
+https://tv.cctv.com/2015/04/06/VIDE1428315604472115.shtml
+https://tv.cctv.com/2015/04/06/VIDE1428307587582163.shtml
+
+
+Tags:冷知识,猎奇,姓氏,字数,姓]]></summary>
+        <author>
+            <name>正经的知识</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[各省高考难度排行，哪个省高考最难？]]></title>
+        <id>https://www.bilibili.com/video/av465981115</id>
+        <link href="https://www.bilibili.com/video/av465981115"/>
+        <updated>2022-01-26T18:00:06.000Z</updated>
+        <summary type="html"><![CDATA[各省高考难度排行，哪个省高考最难？
+
+
+Tags:科学,科普,高考,地图,高中,中学,地理,知识分享官]]></summary>
+        <author>
+            <name>环宇空间站</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[地球上最硬的生物，子弹也打不穿，是唯一的“金属生物”！]]></title>
+        <id>https://www.bilibili.com/video/av850966828</id>
+        <link href="https://www.bilibili.com/video/av850966828"/>
+        <updated>2022-01-26T18:00:06.000Z</updated>
+        <summary type="html"><![CDATA[你见过最硬的生物是什么？有一种动物连子弹都打不穿，被认为是地球上唯一的“金属生命体”，今天我们要来认识几种，最坚硬的奇异生物。
+
+
+Tags:动物观察局,自然,生物,生命,科学,蜗牛,海洋生物,野生动物,鲣鱼]]></summary>
+        <author>
+            <name>科学疯子CS</name>
         </author>
     </entry>
     <entry>
@@ -5093,6 +5751,19 @@ public class Phone {
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[睡前玩手机，小心眼睛出大问题！]]></title>
+        <id>https://www.bilibili.com/video/av765883827</id>
+        <link href="https://www.bilibili.com/video/av765883827"/>
+        <updated>2022-01-26T16:28:40.000Z</updated>
+        <summary type="html"><![CDATA[看完这个视频，千万不要再睡前关灯玩手机了！牢记3个20法则，保护好我们的眼睛！
+
+
+Tags:知识分享官,生命,健康,日常科普,原创,疾病防治,睡前玩手机,健康不走弯路,眼睛]]></summary>
+        <author>
+            <name>刘加勇医生</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[给自己一个舒服干净的办公环境，工位桌搭心得分享]]></title>
         <id>https://sspai.com/post/71179</id>
         <link href="https://sspai.com/post/71179"/>
@@ -5259,6 +5930,19 @@ The post Apple releases new Black Unity watch face and Braided Solo Loop appeare
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[PS教你轻松给人物刮胡子，你学会了嘛？]]></title>
+        <id>https://www.bilibili.com/video/av380970941</id>
+        <link href="https://www.bilibili.com/video/av380970941"/>
+        <updated>2022-01-26T14:56:36.000Z</updated>
+        <summary type="html"><![CDATA[PS教你轻松给人物刮胡子，你学会了嘛？
+
+
+Tags:自制,知识,科技,黑科技,冷知识,经验分享,野生技术协会,打卡挑战,知识分享官]]></summary>
+        <author>
+            <name>设计师南笙</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[How We Got 4.5K+ GitHub Stars on Our Open Source Project in 6 Months]]></title>
         <id>61e9575c183181284a1922c4</id>
         <link href="https://www.freecodecamp.org/news/how-to-get-more-engagement-with-your-open-source-project/"/>
@@ -5353,6 +6037,16 @@ The post Magisk v24.0 release introduces Zygisk, brings along Android 12 support
 Tags:工厂,美食,果汁,解压,加工厂,野生技术协会,食品加工,知识分享官]]></summary>
         <author>
             <name>NaLac的科技之美</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[渔网的工作原理是什么？为什么鱼不会从下面逃走？看完这个恍然大悟]]></title>
+        <id>https://www.bilibili.com/video/av765938902</id>
+        <link href="https://www.bilibili.com/video/av765938902"/>
+        <updated>2022-01-26T13:42:28.000Z</updated>
+        <summary type="html"><![CDATA[Tags:知识分享官,自然,地球,科学,学习,科普,打卡挑战,渔网,打渔,捕鱼]]></summary>
+        <author>
+            <name>帆华剪科普</name>
         </author>
     </entry>
     <entry>
@@ -5462,6 +6156,16 @@ Tags:天天鉴宝,牛道德,古董,文玩,日常,生活]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Gadget Review: Eufy Video Doorbell]]></title>
+        <id>https://shkspr.mobi/blog/2022/01/gadget-review-eufy-video-doorbell/</id>
+        <link href="https://shkspr.mobi/blog/2022/01/gadget-review-eufy-video-doorbell/"/>
+        <updated>2022-01-26T12:34:49.000Z</updated>
+        <summary type="html"><![CDATA[Two years ago, I got a DophiGo DV-200 WiFi Doorbell. It's been OK, but I was hankering for an upgrade. Something with a more reliable app and better video / audio quality. About a year ago, I got a Eufy Security Camera System. It has been excellent. The main advantage is that it comes with&#8230;]]></summary>
+        <author>
+            <name>Terence Eden’s Blog</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Google Cancels FLoC Cookie Replacement, Announces ‘Topics’ API for Chrome Instead]]></title>
         <id>https://www.extremetech.com/?p=330975</id>
         <link href="https://www.extremetech.com/internet/330975-google-cancels-floc-cookie-replacement-announces-topics-api-for-chrome-instead"/>
@@ -5470,6 +6174,16 @@ Tags:天天鉴宝,牛道德,古董,文玩,日常,生活]]></summary>
 The post Google Cancels FLoC Cookie Replacement, Announces ‘Topics’ API for Chrome Instead appeared first on ExtremeTech.]]></summary>
         <author>
             <name>Ryan Whitwam</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Microsoft Earnings, Microsoft Advertising, The Deflating Balloon]]></title>
+        <id>https://stratechery.com/2022/microsoft-earnings-microsoft-advertising-the-deflating-balloon/</id>
+        <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9taWNyb3NvZnQtZWFybmluZ3MtbWljcm9zb2Z0LWFkdmVydGlzaW5nLXRoZS1kZWZsYXRpbmctYmFsbG9vbi8.FqCvKLyhKRTkJiwwiHg06Jgt7NY3mERGJb9CSWgarM-teAI57-4PEj6abU3U0P4C8rAIZLNmBSvCRN9_IhD9-m-E8bs7WqckgJH6W82P38fmWpJ2c2N_GP0mPwSfb1BeTr91qcl44x0JCWHHyHDpFWA919s4k0U_kroLtgDgPckeb0VYOvdiKztlFDcCvtP2Jom4mum4v3p8VNqHxPMGXs5FuKrIRwu2dwG1bUc4KOdrT__Fs_qVMed4z_1UclVWL22QYgr29ijAFo3MJ6LbQN4z17YkV0-ZlPxwjuonAGgqBxARJ0C8ub440a7NK6RwZJFUO77YmZmiDaq6_KlGqw"/>
+        <updated>2022-01-26T12:29:00.000Z</updated>
+        <summary type="html"><![CDATA[Microsoft had great earnings, but had to reassure investors all the same. Plus, new advertising efforts, and why shrinking private valuations help Redmond.]]></summary>
+        <author>
+            <name>Ben Thompson</name>
         </author>
     </entry>
     <entry>
@@ -5564,6 +6278,19 @@ The post Apple announces its iPhone macro photography challenge appeared first o
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[连续射精，欲罢不能？  你hold住吗]]></title>
+        <id>https://www.bilibili.com/video/av978387070</id>
+        <link href="https://www.bilibili.com/video/av978387070"/>
+        <updated>2022-01-26T11:48:53.000Z</updated>
+        <summary type="html"><![CDATA[连续射精，欲罢不能？ 你hold住吗
+
+
+Tags:中医科普,中医养生,男性健康,男性养生,男性科普,两性健康,两性科普,两性关系,两性生活]]></summary>
+        <author>
+            <name>刘冬大夫</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[用 Asciinema 记录你的终端会话]]></title>
         <id>https://linux.cn/article-14216-1.html?utm_source=rss&amp;utm_medium=rss</id>
         <link href="https://linux.cn/article-14216-1.html?utm_source=rss&amp;utm_medium=rss"/>
@@ -5633,6 +6360,32 @@ Tags:寒假蜕变计划,2022年，我想在B站学,DIY,发明创造,自制,学�
         <summary type="html"><![CDATA[管理层]]></summary>
         <author>
             <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[为什么我们不再建造500米以上高楼？]]></title>
+        <id>https://www.bilibili.com/video/av423454663</id>
+        <link href="https://www.bilibili.com/video/av423454663"/>
+        <updated>2022-01-26T11:00:17.000Z</updated>
+        <summary type="html"><![CDATA[是什么让我们不再建造500米以上的摩天大楼呢？
+
+
+Tags:知识分享官,艺术,新人,建筑,建筑设计,设计,创意,知识,摩天大楼,天津高银金融117大厦]]></summary>
+        <author>
+            <name>蓝图BluePrint</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[提升用户体验还是白嫖手机空间？手机占用空间为啥这么大？【差评君】]]></title>
+        <id>https://www.bilibili.com/video/av423457806</id>
+        <link href="https://www.bilibili.com/video/av423457806"/>
+        <updated>2022-01-26T11:00:17.000Z</updated>
+        <summary type="html"><![CDATA[为什么手机app内存占用越来越大？
+
+
+Tags:知识分享官,科普,互联网,软件,手机,手机应用,储存,硬盘,APP]]></summary>
+        <author>
+            <name>差评君</name>
         </author>
     </entry>
     <entry>
@@ -6446,6 +7199,19 @@ The 5 SOLID principle...]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[《开端》会在现实中上演吗？| 时间循环的物理学原理]]></title>
+        <id>https://sspai.com/post/71157</id>
+        <link href="https://sspai.com/post/71157"/>
+        <updated>2022-01-26T04:09:42.000Z</updated>
+        <summary type="html"><![CDATA[前言 最近，在朋友圈各路大神的强烈安利之下，入坑了《开端》。不得不说，华语影视剧领域已经很久没有出现过这种带有科幻元素而又逻辑通畅的剧集了。在《开端》中，男女主角搭上了一辆载有一颗炸弹的 45 路公交车。一旦他们因为爆炸或是睡着而失去意识，便会发生时间倒流，他们也会重新回到还未爆炸的公交车上。主角团需要在这一次又一次的循环中，找到解救全车乘客的方法。这种无限时间循环的题材在以往国外的科幻剧作中并不少见，比较出名的例子有《源代码》、《忌日快乐》等。然而，《开端》仍然以新颖的剧情设计、严谨精致的细节与伏笔而广受好评。无论是在原著小说还是影视剧中，作者都没有提及时间循环发生的技术原理。因此，本文将尝试补全这一物理背景。我们将根据物理学家马尔达西那 (Juan Martin Maldacena, 1968－now) 与萨斯坎德 (Leonard Susskind, 1940－now) 于 2013 年发表的 ER = EPR 原理，阐述如何构造一台可能可以实现时光回溯的时间机器。
+我们的基本逻辑是这样的：首先，在两个不同时刻制造处于量子纠缠状态的基本粒子；然后通过 ER = EPR 原理将这些纠缠粒子转化为连接这两个不同时刻的虫洞。这样，两位主角就可以在满足触发条件时，通过虫洞返回到炸弹还未爆炸时的公交车上。这种逻辑设定可以合理地解释为何会发生时间循环，以及为何循环不会提前到炸弹上车之前、为何肖的身体状态会越来越差等一系列原作者挖了却又填不上的坑。不过在此之前，我们需要先了解一下虫洞、量子纠缠、ER = EPR 等基础概念。
+黑洞、白洞、虫洞
+如果你关注科幻，那么我相信你一定不会对黑洞 (black hole) 这个概念感到陌生。在 2014 年上映的《星际穿越》中，科学顾问基普·索恩 (Kip Thorne, 1940－now) 及其团队利用数值相对论的计算为我们还原了一个相当真…]]></summary>
+        <author>
+            <name>影转细枫</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[1950年代的未来厨房!]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/scl0is/1950s_kitchen_of_the_future/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/scl0is/1950s_kitchen_of_the_future/?score=75765&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Fscl0is%2F1950s_kitchen_of_the_future%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Fscl0is%2F1950s_kitchen_of_the_future%2F&amp;channel=interestingasfuck&amp;sensitive=false"/>
@@ -6785,6 +7551,36 @@ It started with web applications but React, Angular, Vue, and co.. have permeate
         <summary type="html"><![CDATA[旧互联网显示出悄然回归的迹象]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Flutter 系列（一）：运行你的第一个 Flutter 应用]]></title>
+        <id>https://juejin.cn/post/7057420846863745031</id>
+        <link href="https://juejin.cn/post/7057420846863745031"/>
+        <updated>2022-01-25T23:58:06.000Z</updated>
+        <summary type="html"><![CDATA[前言
+Flutter 是 Google 推出并开源的移动端开发框架，主打跨平台、高保真、高性能。开发者可以通过 Dart 语言开发 App，一套代码可以同时运行在 iOS 和 Android平台。
+2018 年 12 月，Google 发布 Flutter 1.0。从那时候开始，Flutter 以迅雷不及掩耳之势，迅速崛起，并稳固了其在市场上的地位。
+如今，Flutter 相关资源和社区都已渐渐成熟，得到了很多开发者和企业的信任。另外因为公司业务扩张，准备引入 Flutter 开发项目，所以学习 Flutter 势在必行，下面就跟着我的脚步进行 Flutter 的学习吧
+一、Flutter 开发环境搭建
+注意：本文以 macOS 系统为例
+1）、使用镜像
+由于在国内访问 Flutter 有时可能会受到限制， Flutter 官方为中国开发者搭建了临时镜像，我们只需将如下环境变量配置到用户环境变量中即可：
+export PUB_HOSTED_URL=https://pub.flutter-io.cn
+export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+
+2）、下载 Flutter SDK
+方式有 2：
+1、直接去 Flutter 官网下载最新的安装包即可
+下载地址：https://docs.flutter.dev/development/tools/sdk/releases?tab=macos#macos
+2、通过 git clone 下载
+git clone -b master https://github.com/flutter/flutter.git
+
+上述这句命令会将仓库克隆下来并切换到 master 分支
+注意：上述两种方式第一种需要解压，第二种不需要，总之将它们放置到您想放的地方即可
+3）、配…]]></summary>
+        <author>
+            <name>sweetying</name>
         </author>
     </entry>
     <entry>
@@ -8147,6 +8943,16 @@ The post Using an iPhone made me realize why I love Android appeared first on xd
     <entry>
         <title type="html"><![CDATA[[FREE] Netflix Follow-Up, The Senate Tech Bill]]></title>
         <id>https://stratechery.com/2022/free-netflix-follow-up-the-senate-tech-bill/</id>
+        <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9mcmVlLW5ldGZsaXgtZm9sbG93LXVwLXRoZS1zZW5hdGUtdGVjaC1iaWxsLw.u-rOVQP1mZH4RRuVTG7JY8QScylfzk_TjibsJcfrYN9MO1OHrdbTS-rOwUxlXpE2ttse5CllK4YDJaaEmcrQ4iYC_YDNHPVqabDuM7PvHwCToxbwUV2DJCqhJYds0ABF9N032HxXPyw5Ch53-F0I31zyB0nCGe1hHzAIiFRhCZFNf0xAmJz3kDFafydg0_hNYU1_-qJm45wG4bROQn-mqnwnEpiwgtrGBfvx30210LtdUYAXIptNMKf-nN7ky2_CX6ZajTqDOfcRxD23_DyY0WAx3un3Kcqj6E2HupTS3KAQPZAZbS8K8h9mauvz1ANOhUMYSeXMtF9L6z42OmlCjQ"/>
+        <updated>2022-01-25T13:41:27.000Z</updated>
+        <summary type="html"><![CDATA[More on Netflix's earnings and valuation, and three observations about the tech competition bill being encouraged in the Senate.]]></summary>
+        <author>
+            <name>Ben Thompson</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[FREE] Netflix Follow-Up, The Senate Tech Bill]]></title>
+        <id>https://stratechery.com/2022/free-netflix-follow-up-the-senate-tech-bill/</id>
         <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9mcmVlLW5ldGZsaXgtZm9sbG93LXVwLXRoZS1zZW5hdGUtdGVjaC1iaWxsLw.lhZWs2pwAeN1sJrJMKd-fAbHg4biygp8g_rZwY6L7JTIEp6WmCncenvhQx-iC-_pMr65TM5mVlfd1QVwGnf3FCIotEKUdBSox4pLVqbcnBjM5g06Cr-qQ7Oz9T7lJ4Zh_gn969ldJryhuntf8mJVVEbNdCIChM2Bjue1qKPCKRuuP2g8K7e_2GepeodscC1T7u1yZEwboTYurATuH-YhkTYzUiuvRPgJFtJ9sDvyGufKx9rsGaliaHwSPq54FRdA2Kzn6XtWBMYNVXFGw0PzSUumdOkK3SvXT5nIZ7ncn8xQK6MZXJMk2-g_zLx0N2xM22QY4VYUfPiIiBZkcLzTvg"/>
         <updated>2022-01-25T13:41:27.000Z</updated>
         <summary type="html"><![CDATA[More on Netflix's earnings and valuation, and three observations about the tech competition bill being encouraged in the Senate.]]></summary>
@@ -8341,6 +9147,16 @@ Facebook 母公司 Meta 宣布 它正在建造世界上最快的 AI 超算 RSC
         <summary type="html"><![CDATA[In the previous installment, I talked about the Java garbage collector. In this part, I'll discuss the most common memory issue: the memory leak. I focus on managed languages, specifically Java, but I will mention some native code tools which are int...]]></summary>
         <author>
             <name>Shai Almog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Book Review: Inglorious Empire - Shashi Tharoor]]></title>
+        <id>https://shkspr.mobi/blog/2022/01/book-review-inglorious-empire-shashi-tharoor/</id>
+        <link href="https://shkspr.mobi/blog/2022/01/book-review-inglorious-empire-shashi-tharoor/"/>
+        <updated>2022-01-25T12:34:23.000Z</updated>
+        <summary type="html"><![CDATA[I know shamefully little about the British Empire and its colonisation of India. I remember going on a school trip to the memorial at Ypres - but I don't remember hearing about the thousands of Indian troops who served and died. I learned endlessly about Churchill - but not about his racist attitudes towards the&#8230;]]></summary>
+        <author>
+            <name>Terence Eden’s Blog</name>
         </author>
     </entry>
     <entry>
@@ -11175,6 +11991,16 @@ The post There Might Be a ‘Stealth’ Subsurface Ocean in Saturn’s Death Sta
     <entry>
         <title type="html"><![CDATA[Netflix Earnings, The Competition Question, Netflix's Long-Term Value]]></title>
         <id>https://stratechery.com/2022/netflix-earnings-the-competition-question-netflixs-long-term-value/</id>
+        <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9uZXRmbGl4LWVhcm5pbmdzLXRoZS1jb21wZXRpdGlvbi1xdWVzdGlvbi1uZXRmbGl4cy1sb25nLXRlcm0tdmFsdWUv.CerlF34UgFknxgZstk6LRMliOl22E3VXlueJv5LHjKUAYof43rAOmeviTcYjnC5tZ0t6R8Zk0LzmnyAPJBd30iLY09B7mszzilQ9G7nTHabn0PD-p5921T6O1SVbPJT-1nf_eyq4jPfv8FlidfVVlF1wRtP1MRm9WmzmUAIygzHf3__M2xG9InoZfb6Wf-tup5uiRsqB72eNbC7ew_8SMmO1zSMW39ynG2fb7WxYDQ8vOID-0BtaTeZiHLOky6G5DN2mnXI1sBy8lxeM-qLQeOf3zAimVq69-yc8kKjfoYinEjHAYfgL2pJQJoMFnVj8hc6WkzP9x1Hh00NHcLowoQ"/>
+        <updated>2022-01-24T13:32:50.000Z</updated>
+        <summary type="html"><![CDATA[Netflix's earnings were disappointing because of the subscriber numbers, but does the company have a bigger concern in terms of long-term profitability?]]></summary>
+        <author>
+            <name>Ben Thompson</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Netflix Earnings, The Competition Question, Netflix's Long-Term Value]]></title>
+        <id>https://stratechery.com/2022/netflix-earnings-the-competition-question-netflixs-long-term-value/</id>
         <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9uZXRmbGl4LWVhcm5pbmdzLXRoZS1jb21wZXRpdGlvbi1xdWVzdGlvbi1uZXRmbGl4cy1sb25nLXRlcm0tdmFsdWUv.nNYFw_JgJ00Djt9eMnZkblO66FYgg5raW13QIAKLnNq25obzphN1n5KGmCdoOzMytqqYJl4h6rJnJY1-NwQ1KNxSD6DYunGgUpP1JXkQucpkcXzyBCG1MA7QQyccXHXohvN_m34XuviDSxR9HJ1sBwQPapBt6gglZH5B_yZjKZ-pk2H5rzv2byWqWHhNxEzz_T-lx1Gg9ZM-1HJohU6L-JG3HrOrmaXmn_DTG7TGvgUw6XUg8Z1kZ2jder9NnZvrLUCRdRAQpuoGtv7WEqn6bGbUDjvNj55ahxMBNzaWqLx20VKhDEESwTq_sn5RMssTxQeAk8PDvPq_DHwmNT1AMQ"/>
         <updated>2022-01-24T13:32:50.000Z</updated>
         <summary type="html"><![CDATA[Netflix's earnings were disappointing because of the subscriber numbers, but does the company have a bigger concern in terms of long-term profitability?]]></summary>
@@ -11321,6 +12147,16 @@ realme UI 验证码安全保护
 The post Apple extends in-purchase exemption for group and event apps once again appeared first on xda-developers.]]></summary>
         <author>
             <name>Kishan Vyas</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Practical Machine Learning with Python]]></title>
+        <id>https://shkspr.mobi/blog/2022/01/practical-machine-learning-with-python/</id>
+        <link href="https://shkspr.mobi/blog/2022/01/practical-machine-learning-with-python/"/>
+        <updated>2022-01-24T12:34:30.000Z</updated>
+        <summary type="html"><![CDATA[As part of my MSc I'm taking a short course in Practical Machine Learning via QA.com. The first three days were just about basic stats visualisation using Python. It was great to have a refresher - but I would have expected that to be a pre-requisite. The tutor was excellent - very patient at explaining&#8230;]]></summary>
+        <author>
+            <name>Terence Eden’s Blog</name>
         </author>
     </entry>
     <entry>
@@ -14121,6 +14957,16 @@ The post Google Pixel 6 Pro vs OnePlus 9 Pro: Brains versus Brawn appeared first
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[How to migrate Google For Your Domain to normal Gmail]]></title>
+        <id>https://shkspr.mobi/blog/2022/01/how-to-migrate-google-for-your-domain-to-normal-gmail/</id>
+        <link href="https://shkspr.mobi/blog/2022/01/how-to-migrate-google-for-your-domain-to-normal-gmail/"/>
+        <updated>2022-01-23T12:34:54.000Z</updated>
+        <summary type="html"><![CDATA[Google has decided to fuck over its early adopters. Way back in 2006, Google announced Google Apps for Your Domain. Basically it was Gmail - but you could use your own domain. No more example@gmail.com now you could be me@example.com. Hurrah! At the time, they said: organizations that sign up during the beta period will&#8230;]]></summary>
+        <author>
+            <name>Terence Eden’s Blog</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[22岁的年轻人在父母的车库里建造芯片]]></title>
         <id>https://hn.buzzing.cc/hn/30043719/</id>
         <link href="https://hn.buzzing.cc/hn/30043719/?score=102&amp;original_url=https%3A%2F%2Fwww.wired.com%2Fstory%2F22-year-old-builds-chips-parents-garage%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30043719&amp;sensitive=false"/>
@@ -15492,6 +16338,16 @@ Unfortunately to wrap …]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Use Python to get alerted when an Amazon wishlist item drops in price]]></title>
+        <id>https://shkspr.mobi/blog/2022/01/use-python-to-get-alerted-when-an-amazon-wishlist-item-drops-in-price/</id>
+        <link href="https://shkspr.mobi/blog/2022/01/use-python-to-get-alerted-when-an-amazon-wishlist-item-drops-in-price/"/>
+        <updated>2022-01-22T12:34:54.000Z</updated>
+        <summary type="html"><![CDATA[Scratching my own itch. I want an alert when there's been a price drop on an item on my Amazon wishlist. I couldn't find an easy way to get an email directly from Amazon (customer-focused my shiny metal arse) so I knocked something up in Python. This is heavily inspired by Leigh Dodds' Wishlist Monitor.&#8230;]]></summary>
+        <author>
+            <name>Terence Eden’s Blog</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Java IdentityHashMap Class and Its Use Cases]]></title>
         <id>https://drafts.baeldung.com/?p=125084</id>
         <link href="https://feeds.feedblitz.com/~/679580014/0/baeldung~Java-IdentityHashMap-Class-and-Its-Use-Cases"/>
@@ -16763,6 +17619,16 @@ Tags:YOUTUBE]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[How do artists get paid?]]></title>
+        <id>https://shkspr.mobi/blog/2022/01/how-do-artists-get-paid/</id>
+        <link href="https://shkspr.mobi/blog/2022/01/how-do-artists-get-paid/"/>
+        <updated>2022-01-21T12:34:43.000Z</updated>
+        <summary type="html"><![CDATA[NB: The bit about NFT and smart contracts is at the end. As I discussed yesterday, being able to resell digital art via an NFT means that the price of art falls to zero. Let's assume that I'm correct and, through a combination of technology and changing social attitudes, no one wants to pay for&#8230;]]></summary>
+        <author>
+            <name>Terence Eden’s Blog</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Starting with Spring Boot: how to make a RESTful GET endpoint]]></title>
         <id>https://bognov.tech/starting-with-spring-boot-how-to-make-a-restful-get-endpoint</id>
         <link href="https://bognov.tech/starting-with-spring-boot-how-to-make-a-restful-get-endpoint"/>
@@ -17879,6 +18745,16 @@ The post Roku Shamed For Running Banner Ads On Top of Live TV appeared first on 
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[NFTs means the future value of art is zero]]></title>
+        <id>https://shkspr.mobi/blog/2022/01/nfts-means-the-future-value-of-art-is-zero/</id>
+        <link href="https://shkspr.mobi/blog/2022/01/nfts-means-the-future-value-of-art-is-zero/"/>
+        <updated>2022-01-20T12:34:00.000Z</updated>
+        <summary type="html"><![CDATA[At the moment, it is not possible to sell a 2nd hand eBook or MP3. This seems fairly reasonable because a re-seller might keep copies of their original files after selling them. This would allow the re-seller to undercut the original publisher and sell the file multiple times. We tend to label this "Piracy". Someone&#8230;]]></summary>
+        <author>
+            <name>Terence Eden’s Blog</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[AT&T and Verizon Launch Mid-Band 5G, Agree to Even More Airport Restrictions]]></title>
         <id>https://www.extremetech.com/?p=330729</id>
         <link href="https://www.extremetech.com/extreme/330729-att-and-verizon-launch-mid-band-5g-agree-to-even-more-airport-restrictions"/>
@@ -17917,6 +18793,16 @@ A study from the Canadian Space Agency (CSA) points to the effects of weightless
 The post Astronauts Going to Mars Could Get ‘Space Anemia’ appeared first on ExtremeTech.]]></summary>
         <author>
             <name>Ryan Whitwam</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Mr. CISC vs. Mr. RISC, ARM and AMD Threats, Gelsinger's Three Tenets]]></title>
+        <id>https://stratechery.com/2022/mr-cisc-vs-mr-risc-arm-and-amd-threats-gelsingers-three-tenets/</id>
+        <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9tci1jaXNjLXZzLW1yLXJpc2MtYXJtLWFuZC1hbWQtdGhyZWF0cy1nZWxzaW5nZXJzLXRocmVlLXRlbmV0cy8.W8CJJQrbGBQb6wo8QvkHjbnyttpMtX_W2WqCoIQLzPIDRsKhR4qASjoEt4jlFrypCOGxTKUHpkI7CBkBk1Oxy95XEREHht2zpymj9rl5FnrQyixBfzLoYUS2OV-dCVZxzxSkaI1BwHKlxCmMIdimuVeHvte5XQ6az4r2NXzBKxZKBR1NxIqR50uod792oKdx9yLMXv6Eqw6ir0jpXNgjskkc0pzzHJavoH_pccODcJCIHsw1OnbW56rDJnSQzFhnat57Y4fYz99oxitoypYSeyKgDLtj85h3YUW0coWHkSVgmAvNSoQpOUTakeg1OPL8Q-D4eXiHSsESusC3tDyjXQ"/>
+        <updated>2022-01-20T10:43:08.000Z</updated>
+        <summary type="html"><![CDATA[The best way to understand Pat Gelsingers thinking about the threats posed by ARM and AMD is to go back to his arguments in favor of CISC over RISC]]></summary>
+        <author>
+            <name>Ben Thompson</name>
         </author>
     </entry>
     <entry>
@@ -18537,190 +19423,6 @@ CameraX 基于主要的使用场景来构建，比如实时预览相机、检索
 fun bindPreview(cameraProvider : ProcessCameraProvi…]]></summary>
         <author>
             <name>Android_开发者</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[This Reference and Dynamic Dispatching in Java]]></title>
-        <id>https://ajaysamgir.hashnode.dev/this-reference-and-dynamic-dispatching-in-java</id>
-        <link href="https://ajaysamgir.hashnode.dev/this-reference-and-dynamic-dispatching-in-java"/>
-        <updated>2022-01-19T18:30:00.000Z</updated>
-        <summary type="html"><![CDATA[Java is object oriented language which have pillars which represents the design of object orientation concept. 
-The four pillars of object-oriented programming are:
-
-Abstraction
-Encapsulation
-Inheritance
-Polymorphism
-
-This is common thing we already ...]]></summary>
-        <author>
-            <name>Ajay Samgir</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Learn Kubernetes and Start Containerizing Your Applications]]></title>
-        <id>61e84fda183181284a191b17</id>
-        <link href="https://www.freecodecamp.org/news/learn-kubernetes-and-start-containerizing-your-applications/"/>
-        <updated>2022-01-19T17:58:49.000Z</updated>
-        <summary type="html"><![CDATA[Kubernetes is an open-source container orchestration platform that automates the deployment, management, scaling, and networking of containers. It makes it simpler to deploy apps to production. We just published a Kubernetes course on the freeCodeCamp.org YouTube channel.  Bogdan Stashchuk developed this course. He is a popular DevOps instructor who]]></summary>
-        <author>
-            <name>freeCodeCamp.org</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The Wild World of Threats]]></title>
-        <id>https://nautil.us/the-wild-world-of-threats-13512/</id>
-        <link href="https://nautil.us/the-wild-world-of-threats-13512/"/>
-        <updated>2022-01-19T17:57:26.000Z</updated>
-        <summary type="html"><![CDATA[Animals, including us, evolved to bluster and bluff at their peril.
-The post The Wild World of Threats appeared first on Nautilus | Science Connected.]]></summary>
-        <author>
-            <name>David P. Barash</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Java双重校验锁单例原理 赶快看进来]]></title>
-        <id>https://juejin.cn/post/7055080559600467981</id>
-        <link href="https://juejin.cn/post/7055080559600467981"/>
-        <updated>2022-01-19T16:37:48.000Z</updated>
-        <summary type="html"><![CDATA[highlight: a11y-dark
-「这是我参与2022首次更文挑战的第3天，活动详情查看：2022首次更文挑战」
-前言
-作为开发者，单例这个就再也熟悉不过了，但是作为多种单例实现模式，我个人觉得双重校验锁是非常不多的实现，我们简单来分析一下其原理。
-正文
-先来说一下Java版本的，后面会涉及Kotlin中的代码我们再做比对。
-代码实现
-Java代码实现如下：
-//双重校验锁单例
-public class SingleInstance {
-    //必须volatile修饰 见分析1
-    private volatile static SingleInstance instance;
-    //私有化构造函数
-    private SingleInstance() {
-    }
-
-    public static SingleInstance getInstance() {
-        //第一个判空 见分析2
-        if (instance == null) {
-            synchronized (SingleInstance.class) {
-                //第二个判空 见分析3
-                if (instance == null) {
-                    //新建实例
-                    instance = new SingleInstance();
-                }
-            }
-        }
-        return instance;
-    }
-}
-
-首先这里synchronized关键字没有修饰整个getInstance函数，因为这个函数可能使用地方很多，这样就会造成其他线程阻塞，不太好，所以这里只同步了一段代码。
-分析2：为什么在进入同步代码块时需要进行进行判空，假如有线程A和线程B，这时线程A先判断instance为null，所以它进入了同步代码块，创建了对象，然后线程B再进来时，它就不必再进入同步代码快了，可以直接返回，也其实也就是懒加载，可以加快执行速度。
-分析3：为什么在同步代码块中还要再进行一次判断呢，假如有线程A和线程B，它俩A先调用方法，B紧接着调用，这时A、B在分析2出的判空都是空，所以A进入同步代码块，B进行等待，当A进入同步代码块中创建了对象后，A线程释放了锁，这时B再进入，如果这时不加分析3的判空，B又会创建一个实例，这明显不符合规矩。
-分析1：那既然加了2层判断，那为什么还要加个volatile关键字呢，这里知识点就有点多了。
-因为新建实例的代码：
-instance = new SingleInstance();
-它不是一个原子操作，这个简单的赋值可以分为3步：
-1、给SingleInstance分配内存
-2、调用SingleInstance的构造方法
-3、把instance指向分配的内存空间
-这是正常逻辑的3个步骤，也只有按1 2 3执行后，这个instance才不是null。
-但是Java内存模型允许这个进行指令重排序，也就是这3步可能是123也可能是132，所以这里就有问题了。
-假如线程A和线程B，线程A已经跑到分析3处的代码，这时这条指令执行是132，刚把步骤3执行完，这时线程B跑到了分析1处的代码，会发现instance不为null了，这时线程B就直接返回了，从而导致错误。
-既然知道了原因，那volatile关键字就是解决这个的，它可以禁止指令重新排序，而且保证所有线程看到这个变量是一致的，也就是不会从缓存中读取(这个特性后面有机会再说)，所以在创建instance实例时，它的步骤都是123，就不会出错了。
-总结
-其实一个小小的双重校验锁单例都还有蛮多知识点，后面我们来分析分析Kotlin中的单例都一般如何实现以及原理。]]></summary>
-        <author>
-            <name>元浩875</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Focused 143: Thinking Annually]]></title>
-        <id>https://www.macsparky.com/?p=11630</id>
-        <link href="https://www.macsparky.com/blog/2022/01/focused-143-thinking-annually/"/>
-        <updated>2022-01-19T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Join Mike and me on the latest episode of Focused. We’re sharing some thoughts about what we’re up to in the new year and the personal changes we’re making to our routines. This episode of Focused is sponsored by: Indeed: Get a free $75 credit to upgrade your job post. Shopify: Grow your business with Shopify. Start... Continue reading →
-The post Focused 143: Thinking Annually appeared first on MacSparky.]]></summary>
-        <author>
-            <name>David Sparks</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[如何在 Flutter 创建一个后台任务]]></title>
-        <id>https://juejin.cn/post/7055069759259279396</id>
-        <link href="https://juejin.cn/post/7055069759259279396"/>
-        <updated>2022-01-19T15:58:12.000Z</updated>
-        <summary type="html"><![CDATA[原文
-https://www.dltlabs.com/blog/flutter-run-code-in-the-background-513940
-参考
-https://pub.dev/packages/background_fetch
-正文
-今天，我将解释如何在 Flutter 创建一个后台任务。
-在此之前，让我们理解什么是后台任务。后台任务是在后台运行的应用程序的辅助进程，即使应用程序没有运行或处于终止状态。
-这一功能对于需要在后台执行任务而不需要用户打开应用程序的应用程序来说是有益的ーー例如，每 15 分钟调用 api 获取数据。
-让我们在一个示例项目中实现一个后台任务，以便更好地理解这一操作的含义。
-步骤:
-pubspec.yaml
-flutter pub add background_fetch
-flutter pub get
-
-在 main.dart 文件中导入后台包，并注册 HeadlessTask，以便在应用程序终止后接收 backgroundFetch 事件。
-例如:
-void backgroundFetchHeadlessTask(HeadlessTask task) async {var taskId = task.taskId;
-if(taskId == ‘your_task_id’) {
-print(‘your_task_id’);
-print(‘[BackgroundFetch] Headless event received.’);
-_//TODO: perform tasks like — call api, DB and local notification etc…
-_}
-}
-void main() {
-runApp(MyApp());
-_//Registering backgroundFetch to receive events af…]]></summary>
-        <author>
-            <name>会煮咖啡的猫</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[My Out-of-Body Experience]]></title>
-        <id>https://nautil.us/my-out_of_body-experience-13509/</id>
-        <link href="https://nautil.us/my-out_of_body-experience-13509/"/>
-        <updated>2022-01-19T15:41:49.000Z</updated>
-        <summary type="html"><![CDATA[In a sensory deprivation tank, I lost my body and found myself.
-The post My Out-of-Body Experience appeared first on Nautilus | Science Connected.]]></summary>
-        <author>
-            <name>Joel Frohlich</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Have you always been confused among the basic difference between JDK, JRE and JVM? I have got things simplified for you.]]></title>
-        <id>https://samadritashaw.hashnode.dev/have-you-always-been-confused-among-the-basic-difference-between-jdk-jre-and-jvm-i-have-got-things-simplified-for-you</id>
-        <link href="https://samadritashaw.hashnode.dev/have-you-always-been-confused-among-the-basic-difference-between-jdk-jre-and-jvm-i-have-got-things-simplified-for-you"/>
-        <updated>2022-01-19T15:30:04.000Z</updated>
-        <summary type="html"><![CDATA[To master anything, we need to first get a grip on the basics. Have you started your journey with java and/or have always wanted to understand the difference between JDK, JRE and JVM in simplified terms? Then,
-https://giphy.com/gifs/justin-squid-game...]]></summary>
-        <author>
-            <name>Samadrita Shaw</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[首款6nm制程游戏显卡 Radeon RX 6500 XT首发实测]]></title>
-        <id>https://sspai.com/post/71040</id>
-        <link href="https://sspai.com/post/71040"/>
-        <updated>2022-01-19T15:07:29.000Z</updated>
-        <summary type="html"><![CDATA[在本届CES2022，AMD带来新款桌面处理器、桌面显卡、移动处理器和移动显卡，其中的新款桌面显卡就是升级6nm制程工艺Radeon RX 6400 XT和Radeon RX 6500 XT ，而其中的Radeon RX 6500 XT在今天正式发售。
-Radeon RX 6500 XT关键词：千元价位、6nm、RDNA 2
-
-01/ 关于Radeon RX 6500 XT
-AMD Radeon RX 6500 XT实际规格让人还是有些意外的，除了一些规格特殊之外，还有就是居然保留了【RDNA 2】大部分功能特性，甚至还最先采用了更为先进的6nm制程工艺，绝非新瓶旧酒的产品，这点来说挺不错的。
-关于定价：目前Radeon RX 6500 XT官方指导价是1599元，如果关注装机市场朋友应该有感受，就是市面在1000-2000这个价格区间已经很久一段时间没有新品，上一代这价格区间的产品因为矿工需求等缘故，要么价格暴涨，要么直接没货，所以这次产品补全还挺重要，毕竟还是有不少用户显卡性能需求可能没那么高，只要求满足1080P FHD游戏体验即可。
-
-【RDNA 2】特性全部保留
-AMD Radeon RX 6500 XT基于Navi 24 GPU核心打造，依旧是RDNA 2架构，拥有16组CU计算单元，每一个CU计算单元里都包含一个【Ray Accelerator 光线加速器】，总共1024个流处理器，同时配备16MB无限缓存；显存部分配备了4GB的GDDR6显存，显存位宽为64位。
-虽然核心\显存规格比其它RDNA 2架构高价卡低不少，但因为它也是最先采用6nm工艺制造，所以频率反倒是RDNA 2架构GPU里面最高的，且高出不少，基本就是靠飙高频来拼性能。
-
-伴随RDNA 2架构，DX12U、DSAPI，DirectX光线追踪、可变速率着色、网格着色器、采样器反馈这些技术特性在…]]></summary>
-        <author>
-            <name>Tiger5G</name>
         </author>
     </entry>
 </feed>

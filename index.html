@@ -20,8 +20,209 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.codingnow.com/">�Ʒ�� BLOG</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">֧�ֶ���չ���Ͳ�����µ� Lua ��</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.codingnow.com/2022/01/lua_datatree.html">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>��ǰ������죬½�����������ͬ�����˼٣����ؼҹ����ˡ��������ڹ�˾������Ŀ�޹صĶ����� ����� skynet �����۰������������ñ��ĸ������⡣�⼸�꣬�����ڹ�˾�ڣ����Ǵ��ⲿ������������������������⡣����������һ������ ������ Lua table ����ʽ�ṩ��֧�� Lua ���е��������ͣ����������������ӱ� ���ַ���������������ѡ֧�ֺ�����ָ�롣 ���ݱ�ͨ���кܶࣨ���ࣩ���ݣ�������������ֻ���õ�һ�²��֣���ʼ���Ĺ���Ӧ�����졣 ���п��ܣ���ռ�ڴ档���ݱ����ڲ������ݣ�Ӧ�����ܵ��ڶ�� VM �乲�������ݱ�Ӧ�� GC �о������ٵ�Ӱ�졣 �����ڲ��ر� VM ��ǰ���£��������ݡ� �������ݱ�Ӧ��� Lua ��ʹ�ù������������ܺ�ԭ��������һ�¡�...</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://dev.to">DEV Community</a></h3>
           <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">JavaScript recurring timers with setInterval</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/dailydevtips1/javascript-recurring-timers-with-setinterval-1345">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>Now that we have a good understanding of how JavaScript setTimeout works to delay a function.
+Let&#x27;s look at how we can perform an action every x time.
+This can be super helpful for animating stuff or checking a data feed.
+Let&#x27;s look at how this will work in its most basic form.
+setInterval(() &#x3D;&gt; {
+  // Run every 100 milliseconds
+}, 100);
+
+This function will run every 100 milliseconds.
+Often you might want to achieve this to run only until a specific condition is met.
+We can clear the interval by using the clearInterval.
+const timer &#x3D; setInterval(() &#x3D;&gt; {
+  // Do something
+}, 100);
+
+clearInterval(timer);
+
+Or you can even stop it from inside the interval.
+const timer &#x3D; setInterval(() &#x3D;&gt; {
+  if (condition) {
+    clearInterval(timer);
+    return;
+  }
+
+  // Execute the function
+}, 100);
+
+This is a great way to stop a particular action from running.
+When you use setInterval, it does not care how long your function runs.
+Meaning it will always start a new loop at the set time.
+For example, when you use it to animate, but the animations have different lengths, it might cause weird side-effects where the following animation will start, and the first one isn&#x27;t even done.
+
+As you can see, each function can have its own time to execute, meaning they can overlap and cause issues.
+If you find yourself needing them to wait, using setTimeout might be a better solution.
+We can set up a recursive setTimeout function.
+const coolFunc &#x3D; () &#x3D;&gt; {
+  // Execute the function
+
+  setTimeout(coolFunc, 100);
+};
+
+setTimeout(coolFunc, 100);
+
+Which will result in the following flow.
+
+If you are keen to see some more real-world examples, here is a list of articles using them.
+Fading images with JavaScript
+Creating a song in JavaScript
+Countdown clock
+Thank you for reading my blog. Feel free to subscribe to my email newsletter and connect on Facebook or Twitter</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Start fast with Django, React and Docker - Open-Source project</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/sm0ke/start-fast-with-django-react-and-docker-open-source-project-e9g">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>Hello coders!
+This article presents an open-source seed project that uses a React frontend powered by a simple Django API. Django React Soft Dashboard can be downloaded from Github without a registration lock and used for commercial products or eLearning activities. For newcomers, Django is a leading web framework actively supported by programming experts and React is a popular JS library for coding user interfaces baked by Facebook.
+👉 Django React Soft - LIVE Demo
+👉 Django React Soft - source code
+🎁 Free support via email and Discord (1k+ community)
+The product is built using a two-tier pattern where the React frontend is decoupled logically and physically from the API backend.
+✨ Starter Features
+Innovative Material UI Design - Crafted by Creative-Tim
+React, Redux, Redux-persist
+Authen…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Modifying the default toolbar in Trix</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/paramagicdev/modifying-the-default-toolbar-in-trix-411b">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>The first thing you may be tempted to do when exploring with Trix is to change the default toolbar. It&#x27;s not obvious how to do this. 
+First instinct would say just change the innerHTML of all 
+ elements.
+This would work for most simple use cases, but what if you have a lazy-loaded turbo frame? Now you have to listen for when that frame gets loaded and then do some innerHTML replacement there.
+It quickly turns into an ever-increasing ball of complexity. When searching through the Trix source code, I came across this function:
+Trix.config.toolbar.getDefaultHTML()
+
+You can find the coffeescript source code here:
+https://github.com/basecamp/trix/blob/main/src/trix/config/toolbar.coffee
+On first iteration, one would think this would work if I did something like this:
+import Trix fr…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Run java code in Flutter - MethodChannel template</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/ramgendeploy/run-java-code-in-flutter-methodchannel-template-15o0">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(4 min)</span>
+                    <span>These are notes on running native code on flutter and a quick templates to get started, sources at the end.
+Running native code with flutter is accomplished by sending messages using a defined platform channel. Using the MethodChannel the flutter app sends and receives messages from the host platform (iOS / Android).
+Method calls are encoded into binary before being sent, and binary results received are decoded into Dart values. The data sended through the channel is converted like in the following table:
+
+Messages and responses are passed asynchronously but the channels method needs to be invoked in the main thread. Because of this the main thread can jank if the method takes too long to compute, this might be mitigated by sending messages in different threads in the backend more on that …</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">How to make a little design system with Figma (colors)</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/jeisondaza21/how-to-make-a-little-design-system-with-figma-colors-2ca">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>Content:
+Create the shapes
+Create a component
+Create reusable colors
+Choose the base colors
+Choose the main colors
+60-30-10 rule
+Hello! On this day I will continue the series little design system with Figma. Today I will share how to create components and color palette.
+Working with UI elements as components gives us many advantages when we have to reuse them in our design.
+
+We can edit the shape&#x27;s properties in the right panel.
+
+In my case, this shapes are color swatches, they include color, contrast ratio, hexadecimal code, name and a dot for distinction.
+
+It&#x27;s a good practice sets auto layout behavior to main parts of our shape.
+
+The Auto Layout option allows you to structure components or frames in such a way that they can grow automatically, making a container adapt to the size of its…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">100 Languages Speedrun: Episode 73: Free Pascal</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/taw/100-languages-speedrun-episode-73-free-pascal-26">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(9 min)</span>
+                    <span>Turbo Pascal was my second language after QBasic.
+Unfortunately there doesn&#x27;t seem to be any easy way to run Turbo Pascal on modern hardware, so I&#x27;ll do the next best thing and give Free Pascal a try.
+Pascal code starts with program Name. Statements are separated by ; and the whole thing with .. It&#x27;s case insensitive, so you can do writeln, WriteLn, or even WrItElN if you wanted, but I&#x27;ll stick to all lowercase.
+program Hello;
+begin
+  writeln(&#x27;Hello, World!&#x27;);
+end.
+
+$ fpc hello.pas
+$ ./hello
+Hello, World!
+
+Let&#x27;s try something a bit more ambitious - Fibonacci numbers.
+program Fibonacci;
+
+function fib(n:integer):integer;
+begin
+  if n&lt;&#x3D;2 then
+    fib :&#x3D; 1
+  else
+    fib :&#x3D; fib(n-1) + fib(n-2);
+end;
+
+var
+  n:integer;
+
+begin
+  for n :&#x3D; 1 to 20 do
+  begin
+    writeln(&#x27;fib(&#x27;, n, &#x27;)&#x3D;&#x27;, fib(n));
+  …</span>
+                  </div>
+                </a>
+              </details>
+            </article>
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">Have been building an open source accounting system with features for programmers.</summary>
@@ -44,8 +245,91 @@ https://github.com/darcys22/godbledger</span>
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://hn.buzzing.cc">Hacker News 热门</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">分清轻重缓急、多个工作流、无计划的工作</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/30120731/?score&#x3D;100&amp;original_url&#x3D;https%3A%2F%2Fleeorengel.com%2Fprioritization-multiple-work-streams-unplanned-work-oh-my%2F&amp;discuss_url&#x3D;https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30120731&amp;sensitive&#x3D;false">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>分清轻重缓急、多个工作流、无计划的工作</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">未上市的应用程序分发</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/30119531/?score&#x3D;101&amp;original_url&#x3D;https%3A%2F%2Fdeveloper.apple.com%2Fsupport%2Funlisted-app-distribution%2F&amp;discuss_url&#x3D;https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30119531&amp;sensitive&#x3D;false">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>未上市的应用程序分发</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">脸书页面在没有任何警告的情况下被取消发布</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/30122572/?score&#x3D;103&amp;original_url&#x3D;https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30122572&amp;discuss_url&#x3D;https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30122572&amp;sensitive&#x3D;false">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>脸书页面在没有任何警告的情况下被取消发布</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">漫画指南系列</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/30120927/?score&#x3D;103&amp;original_url&#x3D;https%3A%2F%2Fwww.ohmsha.co.jp%2Fenglish%2Fmanga.htm&amp;discuss_url&#x3D;https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30120927&amp;sensitive&#x3D;false">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>漫画指南系列</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Wonderland Crypto联合创始人被曝是臭名昭著的诈骗犯，投资者感到震惊</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/30120762/?score&#x3D;104&amp;original_url&#x3D;https%3A%2F%2Fwww.vice.com%2Fen%2Farticle%2Fepxakz%2Fcrypto-co-founder-revealed-to-be-infamous-fraudster-investors-shaken&amp;discuss_url&#x3D;https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30120762&amp;sensitive&#x3D;false">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Wonderland Crypto联合创始人被曝是臭名昭著的诈骗犯，投资者感到震惊</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://reddit.buzzing.cc">Reddit 热门</a></h3>
           <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">这就是我们的内容</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/memes/comments/sezpc6/this_is_our_content/?score&#x3D;77333&amp;original_url&#x3D;https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Fsezpc6%2Fthis_is_our_content%2F&amp;discuss_url&#x3D;https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Fsezpc6%2Fthis_is_our_content%2F&amp;channel&#x3D;memes&amp;sensitive&#x3D;false">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>这就是我们的内容</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">日本的一家咖啡店，允许你为你的咖啡挑选任何图像。</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/sez9oh/a_coffee_shop_in_japan_that_allows_you_to_pick/?score&#x3D;75064&amp;original_url&#x3D;https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Fsez9oh%2Fa_coffee_shop_in_japan_that_allows_you_to_pick%2F&amp;discuss_url&#x3D;https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Fsez9oh%2Fa_coffee_shop_in_japan_that_allows_you_to_pick%2F&amp;channel&#x3D;nextfuckinglevel&amp;sensitive&#x3D;false">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>日本的一家咖啡店，允许你为你的咖啡挑选任何图像。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">对这些人不太了解，但这是相当健康的友谊。</summary>
@@ -75,6 +359,182 @@ https://github.com/darcys22/godbledger</span>
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
                     <span>在圣安东尼奥看到的 &quot;他们让你打文化战争以阻止你打阶级战争 &quot;的贴纸</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://sspai.com">少数派</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Keynote 贺卡制作指南：不懂设计也能做一张春节贺卡</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://sspai.com/post/71224">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>在今年的新年节日主题中，Apple 为我们带来了一个全新的活动：用 Keynote 制作一张贺卡送给亲友。在 Apple 提供的新年贺卡模板里，大胆地运用了多种色彩和元素，颇有「波普风格」的味道，十分具有艺术感。
+
+不过转念一想，我还是为 Apple 捏了把汗：这些设计用来送给年轻的「亚逼」1朋友或许非常适合，但如果要送给家中长辈或年纪较小的孩子，就显得有些过于浮夸了。考虑到农历新年的主要氛围还是热烈的红色，所以我们不妨通过自己动手，在 Keynote 上来制作一张属于自己的贺卡。
+或许你会觉得，「设计」本身就是一个比较复杂的东西，面对着一张空白的画板，不知道要做点什么。不用担心，这一次其实不需要太多美术功底，只要你有一个相对好一些的审美，就能够在网上找到合适的素材，一点一点将它拼出你心目中的样子。
+对了，如果你觉得新年与「红色」的相关性是刻板印象，你也可以选择一个你喜欢的颜色。
+尺寸设定
+如今，纸质的贺卡已经逐渐被排版优美和展现形式多样的电子贺卡所取代，所以很可能我们不会将设计好的贺卡打印出来，而是通过社交媒体来传播。考虑到如今最贴近人身边的屏幕依然还是手机，因此建议还是将贺卡的版面调整为手机竖版。
+与此同时，当今大部分手机都已经是全面屏，因此最好不要用 9:16 的画面比例，而是采用 18:9 这样的比例来制作，尽量利用好屏幕的显示空间，营造更浓烈的氛围感。此外还要注意，不少全面屏的四角和顶部空间都是不可用的，在制作时记得不要在这些地方摆放重要元素，避免被遮挡，这些区域在设计上被称为「安全区外的空间」。
+记得把内容放在安全区域内
+当然啦，横版的贺卡也不是不行，不过如果是横版的话，建议可以添加一些精美的动画效果，然后导出成视频，增加互动的同时，也能带来更多乐趣。
+如果你有心，还可以制作两个版本。两个版本在本质上不会太难，只需要将一些元素重新排布即可。
+风格和元素
+确定好了…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.extremetech.com">ExtremeTechExtremeTech</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">4K vs. UHD: What’s the Difference?</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.extremetech.com/extreme/174221-no-tv-makers-4k-and-uhd-are-not-the-same-thing">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>The terms UHD and 4K have become so conflated that TV makers, broadcasters, and tech blogs are using them interchangeably -- but they&#x27;re not the same thing.
+The post 4K vs. UHD: What’s the Difference? appeared first on ExtremeTech.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="http://www.zhihu.com">知乎每日精选</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">早 C 晚 A 风很大，但用 VC 脸容易变黄，该怎么办？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="http://www.zhihu.com/question/320451411/answer/2318207837?utm_campaign&#x3D;rss&amp;utm_medium&#x3D;rss&amp;utm_source&#x3D;rss&amp;utm_content&#x3D;title">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>如果你看到了这篇文章，那么恭喜你，你将成为全中国最先了解“维C黄脸”真相的一批人。
+关于用了维C为什么脸黄，目前中文互联网上的解释都很牵强。于是我去查了一下文献，发现事实远比想象的复杂。除了脸变黄外，手掌，指甲缝还有手指缝都有可能变黄，这种变黄没法用清洁产品洗掉，只能等皮肤慢慢代谢掉。停用之后，基本上一两个星期，皮肤变黄就会消失，而且你会发现肤色比用之前更提亮了一个色号。
+目前中文互联网对于维C变黄的解释很牵强
+关于为什么维C上脸之后，有些人会变黄，目前中文互联网的主流说法是维C的氧化。因为一些维C精华放久了之后，会呈现出比较深的颜色。于是自然而然的认为维C上脸之后被氧化，也是染黄皮肤的元凶。但是这过程中，大家常常忽略一个点，那就是维C精华的颜色并没有深到可以染黄皮肤的地步。
+我手头正好有一瓶接近保质期的维C精华，大家可以看到颜色非常深。
+
+把精华滴一点到手上，颜色对比非常明显，然而涂开之后，对皮肤的颜色根本没有影响。
+
+这是因为维C氧化之后，颜色虽然会变深，但是真正有颜色的成分非常少。这些成分又都是水溶性的，根本没法染黄我们的皮肤。
+用了维C脸黄的元凶竟然是它
+为了搞清楚用了维C脸黄的原因，我查找了大量文献，终于找到了合理的解释。维C染黄角质层的元凶其实是维C代谢的产物之一：赤藓酮糖。
+看到赤藓酮糖这四个字，你的第一反应一定是：这是什么鬼？
+
+实际上，赤藓酮糖在国外可是个大大有名的成分，它是欧美常用的美黑剂。
+和亚洲人不同，欧美人喜欢颜色深的皮肤，这样的人被认为是有钱去海边度假，所以看起来给人感觉比较健康比较美。然而不是所有人都有钱有时间去海边度假，于是国外专门有一类美黑护肤品，而这个赤藓酮糖就是美黑剂的主要成分。它能和角化细胞中的角蛋白结合，形成类黑素，从而让皮肤颜色看起来更深。
+
+由赤藓酮糖来的类黑素并不是黑色的，而是红棕色，当用量较少的时候，看起来就是黄不拉几的颜色。实际上，赤藓酮糖的短期使用效果和维C染黄脸的效果一毛一样！
+
+从维C到赤藓酮糖，鬼知道我经历了什么
+维C的氧化是个非常复杂的过程[1]。简单来说，维C（抗坏血酸）先会变成脱氢抗坏血酸。随后脱氢抗坏血酸进一步变成2,3-二酮古洛糖酸。以此为基础，接下来是非常复杂的化学反应，生成的产物也非常多。而赤藓酮糖就是其中的产物之一。
+
+根据实验，一份维C如果氧化降解完全，可以生成至多0.28份赤藓酮糖，这个转化率相当高了。一般欧美使用赤藓酮糖作为美黑剂，这个成分的添加量是5%。所以如果维C精华含有15%的维C，如果全部氧化完全，相当于4.2%的赤藓酮糖，和欧美主流的美黑剂差不多了。
+好在现在主流的维C精华都使用各种方式来稳定维C，维C降解不多。上脸之后，如果做好防晒，停留在角质层中的维C被氧化的概率也不太大。产生的赤藓酮糖也就非常少了。
+脸黄了怎么办？
+很多人用维C明明是为了提亮肤色，结果脸变黄了，郁闷的同时还不免担心起来，染黄的脸洗都洗不掉！
+其实用了维C之后脸变黄大可不必焦虑，直接停用维C就是了。停止使用之后，也就缺少了赤藓酮糖的输入，皮肤中也就不会形成类黑素，皮肤就不会继续变黄。
+而根据赤藓酮糖的工作原理，它一般只作用于角质层最外层的一些角化细胞。而且我们的皮肤也会正常代谢。随着皮肤的代谢，这些染黄的角化细胞基本上一周就会代谢干净，最长不会超过两周。
+如果你又喜欢维C的功效，又不想皮肤变黄，那么还有个办法就是搭配使用一些果酸类的产品。日常使用维C的时候，手指手掌处的染黄会更明显，因为这些地方的角质层更厚，有更多的角蛋白和赤藓酮糖反应。使用一些温和的果酸类产品剥脱角质层，让角质层薄一些，脸黄就不那么明显了。当然，在使用果酸之前，得确保自己皮肤耐受，而且不是敏感肌。
+
+
+小结一下，用维C脸变黄并不是因为简单的氧化。而是因为维C转化成了赤藓酮糖，而这个成分能和角化细胞结合，形成类黑色素，从而染黄角质层。解决的问题很简单，要么停用维C，脸黄一两周就会消失；要么使用温和的果酸轻微剥脱角质层，减少黄气。
+
+来源：知乎 www.zhihu.com
+胖博士
+点击下载
+19 个回答，查看全部。
+直接将vc捣碎用水溶解然后喷在脸上能美白吗？
+VC在护肤品中的形式如何和浓度多少？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">开车回家，一个人开 1000 公里是一种什么样的体验？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="http://www.zhihu.com/question/470105674/answer/2328885472?utm_campaign&#x3D;rss&amp;utm_medium&#x3D;rss&amp;utm_source&#x3D;rss&amp;utm_content&#x3D;title">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>先上图，证明不是吹牛皮，不是纸上谈兵。
+
+这个是半路截的图，中间还有三百多公里是导航到目的地以后又导航到其他的地方的。
+那天一大早是准备开车从日照先去烟台轮渡码头上船去大连的，然后开了三百多公里到了烟台码头才被告知整个渤海湾封海了，问多久开，告知三天后。
+开玩笑呢？三天后？啥事儿都耽误了。当即决定围着渤海湾画个C到大连。然后买了一整箱蓝瓶红牛。（蓝瓶红牛提神效果比金瓶效果好。）
+我跟我同事俩人，他驾驶证刚出实习期，一路上尽量自己开。
+前八百多公里感觉还可以，吹着牛皮听着DJ，看着风景还觉得挺惬意。
+
+这是从日照到烟台，一大早拍的，有些雾。
+
+
+
+基本上三四百公里左右就得找个服务区休息休息。整个白天基本都是我在开。同事陪我吹牛皮。吹了整个白天。
+
+这个图就是下午太阳快落山了。那时候基本上没有别的牛皮吹了。吹得口干舌燥喝水也不管用那种。感觉话说多了舌头磨的疼。
+
+
+
+到了前半夜，高速上小车很少了，基本都是大车。而且对面车道的大车绝对不关远光灯，大老远的照着眼睛睁不开。所以晚上开车速度和效率没有白天高。
+
+整段路程，个人感觉最难熬的时候是最后的三百公里。那个时候精神和精力真的已经灯枯油尽了，肚子感觉鼓鼓的，打个嗝也都是红牛味。也没有话题聊了，相顾无言。听歌听得感觉耳朵呱噪的厉害。主要是风噪胎噪的低频噪音吵的脑仁疼。真没办法了，拜托同事帮忙开一段，自己稍微打个盹。谁知道一坐上副驾驶，嘿，清醒了。这玩意怪得很。
+还有还有，京哈高速有一段堵车堵的我都怀疑人生！堵了接近一个小时！是一动不动！一开始我俩还老老实实的在车里干坐着。后来旁边的大车司机都下车溜达了，还有互不认识的大车司机互相交换水果零食啥的，还有蹲在路边嗑瓜子的…我俩就下车跟着吹，才知道经常跑这段路的司机堵车堵出经验了，带着扑克打斗地主。
+
+这图是从烟台里程表清零以后到大连跑的距离。中间加了三箱油，换算一下百公里大概7个半，作为一台排量2.5自吸的车，全程高速油耗感觉并不高。（出了山东以后，基本都是乙醇汽油，尤其是大连，没有纯汽油！不是说乙醇汽油成本低嘛？为啥比纯汽油还要贵！！！而且还不经烧，加满一箱油明显跑的距离比纯汽油短个七八十公里，这是经过实测的。不过尾气的味道比纯汽油好闻。据说是年审测尾气的时候，加乙醇汽油比较容易过。）
+
+这是大连中央大道的梦露～
+
+
+
+
+大连街头的哥斯拉。
+
+
+
+
+
+
+
+
+
+
+
+
+
+大连的景色真的超美，随手一拍就是风景美如画。空气还特别清新。想去旅游的小伙伴强推！而且人都很友好。热心的很。我俩办完事儿往回走的时候真的就是开够了车了，一想起还要跑一千多公里回去心里就打退堂鼓。不死心跑去大连码头一问，回复渤海湾提早开了，我俩高高兴兴兴高采烈的俩人一车上了轮渡。
+
+
+
+
+大轮渡超大！装的下好多车！把车开进船里的时候感觉好神奇。
+
+
+
+
+在船上一觉起来天亮了，跑去甲板上拍海上日出。超美。
+一觉起来到了烟台码头了。感觉祖国真的太强大了，坐轮渡比开车真的方便太多了。睡一觉就省下了一千多公里的路程。我俩下了船又从烟台跑回日照。两天时间，跑了两千多公里，感觉就是黄粱一梦，只有里程表上的数字，提醒着我一切都是真实的。整段路程，大概有三百多公里是同事开的，省下的一千六百多是我开的。也由衷的佩服那些长期开大货车跑长途的司机师傅。
+长途开车，调整一个最适合自己的坐姿真的超级重要！还要买一个那种护颈，要不脖子真的感觉又酸又痛。还要尽量备点热水和茶叶。不能光喝饮料，还是热水最解渴茶水最提神。尽量买点黄瓜和水果啥的，这样没牛皮吹了吃点水果还提神，高速服务区上又贵又不好吃。车况也一定要检查好。油水气电的。还有轮胎胎压。
+还有还有还有！之前定速巡航基本上感觉用处不大，上了高速才知道定速巡航有多重要！尤其是长途高速！完全解放右脚！而且还省油！没错，是超省油！轻松太多了！！
+
+来源：知乎 www.zhihu.com
+士兵晓雷
+点击下载
+126 个回答，查看全部。
+开车回家过年，为什么有人开 800 公里没事，有人 200 公里就累倒？
+当你第一次以每小时 200 多英里的速度开车时，你有什么感觉？</span>
                   </div>
                 </a>
               </details>
@@ -145,6 +605,22 @@ stretch out the discussion. A typical strategy is to have  ever…</span>
         <section>
           <h3 class="source-name"><a class="source-name__link" href="https://dev.to">DEV Community</a></h3>
           <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Power Apps and the .NET Developer</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/dotnet/power-apps-and-the-net-developer-5e4f">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(4 min)</span>
+                    <span>Power Apps is a low-code solution to building applications. A lot of the work needed to make the application work is done for you behind the scenes. You still have to write code to make the app work, but that&#x27;s not the main focus when creating the app.
+An app built with .NET is high-code. I don&#x27;t mean that .NET isn&#x27;t elegant or libraries don&#x27;t exist to help. Rather when you write a .NET app your primary focus is on writing code to make the app work.
+Both are incredibly powerful ways to build applications.
+And when you mix Power Apps with .NET - your productivity can go through the roof.
+So let&#x27;s talk about why the .NET developer should know Power Apps.
+I&#x27;m just going to state this as fact, and it&#x27;s based off of 20 some years of working in and with large enterprises - most enterprise develo…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">How to promote your NFT project</summary>
@@ -1403,6 +1879,23 @@ read more</span>
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
                     <span>当他们在停车场打你的时候</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://shkspr.mobi/blog">Terence Eden’s Blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Edit this blog post!</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://shkspr.mobi/blog/2022/01/edit-this-blog-post/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(4 min)</span>
+                    <span>This is a regular HTML page. But if you click or tap on the text, you will be able to edit it! HTML is magic! This isn&#x27;t a fancy styled &lt;textarea&gt;, it&#x27;s a &lt;div&gt; element which uses the contenteditable global attribute. There are some nifty features - depending on your browser. You can add more…</span>
                   </div>
                 </a>
               </details>
@@ -3906,6 +4399,17 @@ read more</span>
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">Intel Earnings; An Interview with Jay Goldberg About Nvidia, ARM, and Intel</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9pbnRlbC1lYXJuaW5ncy1hbi1pbnRlcnZpZXctd2l0aC1qYXktZ29sZGJlcmctYWJvdXQtbnZpZGlhLWFybS1hbmQtaW50ZWwv.JGZ1R_zK2Q7hXOEky2oS3xBYh8Ml6RE4NxamGIVbS3U5LHHwMNMld6z1elIQFajxKCgZbgZX4-Ve0E90-DdEtdmfVcJJhwnqmEs6HXWlqgldXmveDuMvTHKtC5f6n4f-9SanNQcuopgs69FstiSjaxZCl9EDt5_6KPOMwpriKoSGCXCq4d0jfZUnzVu56l0NX-CRaHXYa85ozlkW236-l0-9Wjc5W1fS8SWBEMekKyhmduMpn0U_0KrGFmulcQyoll3qVtkpxmrBbzk4u8PPFfJuxnBmFxmsKetOjptd1AmZM3wbEUFYyTu9Lbq1VD7sQNALtZc7vYEQB9lZfBGRWQ">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Intel&#x27;s earnings showed lower margins, and it won&#x27;t be the last time. Then, an interview with Jay Goldberg About Nvidia, ARM, and Intel.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Intel Earnings; An Interview with Jay Goldberg About Nvidia, ARM, and Intel</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9pbnRlbC1lYXJuaW5ncy1hbi1pbnRlcnZpZXctd2l0aC1qYXktZ29sZGJlcmctYWJvdXQtbnZpZGlhLWFybS1hbmQtaW50ZWwv.SInaoPQcDyYONfdwqhDMYZ74K1fSxVjbM-bZn-p5ayoQlIEiASiUtpxewY3waW_vOgTeVm3H1vdCEKFTdTFuaUwvG-IIBJq6tv62RQH5mAI7pFq4wIr1OwPLb-eyCBmIn69hLDmtF9EgBuGS3PAZLngZKhzbFv1fd8RSkhNXNtMG8q7Aa4H1HCTLQcWMDf6myR0tOwY5NiJyAqPoCGgZjwkGtsZ8iPKPd0EakLstJGZs8DlIP6ABA0FWpmmxgVJPYLEJ4VqxB70Ut0pNLtWOTDPuiOn_a3sQkJTKwzWmh3-3176YT2NCxRFF7GN9No88f0wKBAk8Rw4yW1nZEhKd2A">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
@@ -4077,6 +4581,135 @@ Tags:宝石切磨,珠宝,宝石,珠宝加工,制作过程,合成蓝宝石</span>
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.bilibili.com">bilibili 科学科普 最热视频</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">因为我们处于四维时空，所以会有电磁现象</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av338555844">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>因为我们处于四维时空，所以会有电磁现象
+
+
+Tags:物理,量子,场论,群论,电磁学,麦克斯韦方程组,知识分享官</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">为什么炮弹底部挖槽，就能增加射程？揭秘底凹弹和底排弹的增程原理</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av723501988">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Tags:知识分享官,实验,物理,科学,科普,物理实验,压差阻力,飞行原理</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">瞳孔的形状是猎食者和猎物在不断进化中演变而来的成果！感叹自然的神奇！</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av766058886">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>https://vt.tiktok.com/
+
+
+Tags:生命,生物,瞳孔,打卡挑战</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">为什么不能用粤语对广东人说全家富贵？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av338494595">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>视频素材：《唐伯虎点秋香》
+
+
+Tags:冷知识,猎奇,全家富贵,冚家,拜年,骂人</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">千杯不倒，暗杀神器！中国古代的神奇酒壶</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av550977047">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>素材来源：
+The Assassin&#x27;s Teapot Is Weird——Steve Mould
+The Assassin&#x27;s Teapot——Grand Illusions
+精彩的魔壶魔术表演——BV1db411r74t
+
+
+Tags:历史,神奇,趣闻,影视,冷知识,工艺,涨知识,古玩,科学科普,打卡挑战</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">【鬼谷说】肌肉演化史：上古洪荒之力</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av423494405">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>先有动物还是先有肌肉？这个问题将会带领你了解演化深层次的运作机制
+
+
+Tags:知识分享官,自然,生物,古生物,鬼谷说,肌肉,器官演化,演化</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">极度濒危的野生大黄鱼被一锅端？央视您可别再夸了！</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av935955776">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>-
+
+
+Tags:知识分享官,黄鱼,大黄鱼,黄花鱼,博物,博物杂志</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">【小魔】筷子长期不换，用了慢性中毒！</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av893380396">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Tags:动画,生活,搞笑,科普,美食,筷子,打卡挑战,知识分享官</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">历史上被刺杀身亡的美国总统</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av550989138">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>-
+
+
+Tags:科普,美国,总统,刺杀,知识分享官,必剪创作</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://sspai.com/matrix">少数派 -- Matrix</a></h3>
           <section class="articles-per-source">
             <article>
@@ -4192,6 +4825,23 @@ MagSpeed 主滚轮
 
 如果你决定进入机械圈，我的建议是，毕业之后先进入大厂，有人（某些年长者）会告诉你，进大厂是没有前途的，最后只能靠加班费过活，没有感情的电子厂，完全没有前途。但，我要告诉你的是——
 我的第一份工作就是校企联合的招聘，一家港企，做出的设备是国内厂商一辈子的梦想，其在CPU领域与inter的合作基本上就是垄断。到这里估计有人会说，外资完全不当大陆人当人看，晋升渠道基本为0，其实我并不觉得这是对的，外国工程师一样是打心底看不起我们，但是，试问香港几家大学，每年培养多少机械人？如果开发给大陆员工晋升，那估计一年半，整个企业都是讲普通话的大陆人了，所以，很多外企掐住的只是高管等关键…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://shkspr.mobi/blog">Terence Eden’s Blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">DVD Review: The E-Space Trilogy</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://shkspr.mobi/blog/2022/01/dvd-review-the-e-space-trilogy/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(5 min)</span>
+                    <span>A box set of late-era Tom Baker stories. And they&#x27;re a bit of a mixed bunch. Full Circle First up, Full Circle - which introduces us to Adric. Ah, poor sweet Adric. He&#x27;s an exercise in wish-fulfilment. Getting a nerdy, 17 year old, Who-geek to write a teenage nerd to appeal to other teenage nerds.…</span>
                   </div>
                 </a>
               </details>
@@ -6407,6 +7057,17 @@ read more</span>
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">Microsoft Earnings, Microsoft Advertising, The Deflating Balloon</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9taWNyb3NvZnQtZWFybmluZ3MtbWljcm9zb2Z0LWFkdmVydGlzaW5nLXRoZS1kZWZsYXRpbmctYmFsbG9vbi8.FqCvKLyhKRTkJiwwiHg06Jgt7NY3mERGJb9CSWgarM-teAI57-4PEj6abU3U0P4C8rAIZLNmBSvCRN9_IhD9-m-E8bs7WqckgJH6W82P38fmWpJ2c2N_GP0mPwSfb1BeTr91qcl44x0JCWHHyHDpFWA919s4k0U_kroLtgDgPckeb0VYOvdiKztlFDcCvtP2Jom4mum4v3p8VNqHxPMGXs5FuKrIRwu2dwG1bUc4KOdrT__Fs_qVMed4z_1UclVWL22QYgr29ijAFo3MJ6LbQN4z17YkV0-ZlPxwjuonAGgqBxARJ0C8ub440a7NK6RwZJFUO77YmZmiDaq6_KlGqw">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Microsoft had great earnings, but had to reassure investors all the same. Plus, new advertising efforts, and why shrinking private valuations help Redmond.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Microsoft Earnings, Microsoft Advertising, The Deflating Balloon</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9taWNyb3NvZnQtZWFybmluZ3MtbWljcm9zb2Z0LWFkdmVydGlzaW5nLXRoZS1kZWZsYXRpbmctYmFsbG9vbi8.HE7UdITyusD9OiIOtyIf0rdqe_EMhMpBZisWPUBcbIxvnYX9g7U2OZWsjUaZrx5a0FEt8Lr4E1KbsAg_mbVq2YhM8v-OQqGPbe3JFfFkt9OQ8S8D5wbLEvm-y3R9xptu8QIknJKR6frll9d2f7A0CXUU0HbbiUWdKTg6LL1NvxVb9B4m63-ttg6h_y-L-OTRApOaPhWR6B0S6TaxxTcnKMIGhzwRE7aCB1rs_oI1ZnoWOvRbOTgcobEvGH_X7-C9WIe5XRvdV9jZ6RCRIfrftiAeDOtHjm-FRP8Ej0qCS5IKYnDQhZoTvh3x_ypJK9Fb8xlxiySUpDYE9adXGGi-Aw">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
@@ -6582,6 +7243,20 @@ Tags:魔术,魔术教学,打卡挑战</span>
             </article>
             <article>
               <details class="article-expander">
+                <summary class="article-expander__title">独具高级感的忧郁情绪蓝色调|摄影师watchluke|ins日系暗调人像照片</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av380901091">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>学习微信：mofengke99
+
+
+Tags:蓝调,蓝色系,摄影后期,调色教程,日系色调,ins,知识分享官</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
                 <summary class="article-expander__title">小朋友，快去找JC叔叔...</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av678402457">
                   <div class="article-summary-box-inner">
@@ -6657,6 +7332,20 @@ Tags:知识分享官,PHOTOSHOP教程,视频教程,野生技术协会,PS基础教
             </article>
             <article>
               <details class="article-expander">
+                <summary class="article-expander__title">PS教你轻松给人物刮胡子，你学会了嘛？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av380970941">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>PS教你轻松给人物刮胡子，你学会了嘛？
+
+
+Tags:自制,知识,科技,黑科技,冷知识,经验分享,野生技术协会,打卡挑战,知识分享官</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
                 <summary class="article-expander__title">零距离观看果汁加工厂，石榴不削皮，你还敢喝吗？</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av635993353">
                   <div class="article-summary-box-inner">
@@ -6704,6 +7393,160 @@ Tags:天天鉴宝,牛道德,古董,文玩,日常,生活</span>
 
 
 Tags:寒假蜕变计划,2022年，我想在B站学,DIY,发明创造,自制,学习,原创,新人,教育</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.bilibili.com">bilibili 科学科普 最热视频</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">为什么修建河道时要在河道中央修建一排像琴键一样的石块，这些石块有什么作用？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av253470045">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Tags:知识分享官,科学,科普,科技,知识,冷知识,修建,建筑,河道</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">应对奥密克戎，如何选择口罩保护自己？一个视频解决！</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av338480481">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Tags:健康,科学,个人防护,防疫,3M</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">100万氦气球升天背后却是西方技术封锁的巨大嘲讽【阿Test正经比比】</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av338499908">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>各位领导好！今天我们就来聊聊科技封锁史。
+
+
+Tags:故事档案馆,科技,科普,生活,核磁共振,技术,医疗器械,氦气,美的,万东</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">字数最多的姓氏是什么？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av723460706">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>素材参考：中国新闻网（ID:cns2012）、科普中国、《中华姓氏大辞典》，《二〇一八年全国姓名报告》
+ CCTV13趣说百家姓
+https://tv.cctv.com/2015/04/06/VIDE1428315604472115.shtml
+https://tv.cctv.com/2015/04/06/VIDE1428307587582163.shtml
+
+
+Tags:冷知识,猎奇,姓氏,字数,姓</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">各省高考难度排行，哪个省高考最难？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av465981115">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>各省高考难度排行，哪个省高考最难？
+
+
+Tags:科学,科普,高考,地图,高中,中学,地理,知识分享官</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">地球上最硬的生物，子弹也打不穿，是唯一的“金属生物”！</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av850966828">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>你见过最硬的生物是什么？有一种动物连子弹都打不穿，被认为是地球上唯一的“金属生命体”，今天我们要来认识几种，最坚硬的奇异生物。
+
+
+Tags:动物观察局,自然,生物,生命,科学,蜗牛,海洋生物,野生动物,鲣鱼</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">睡前玩手机，小心眼睛出大问题！</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av765883827">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>看完这个视频，千万不要再睡前关灯玩手机了！牢记3个20法则，保护好我们的眼睛！
+
+
+Tags:知识分享官,生命,健康,日常科普,原创,疾病防治,睡前玩手机,健康不走弯路,眼睛</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">渔网的工作原理是什么？为什么鱼不会从下面逃走？看完这个恍然大悟</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av765938902">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Tags:知识分享官,自然,地球,科学,学习,科普,打卡挑战,渔网,打渔,捕鱼</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">连续射精，欲罢不能？  你hold住吗</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av978387070">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>连续射精，欲罢不能？ 你hold住吗
+
+
+Tags:中医科普,中医养生,男性健康,男性养生,男性科普,两性健康,两性科普,两性关系,两性生活</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">为什么我们不再建造500米以上高楼？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av423454663">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>是什么让我们不再建造500米以上的摩天大楼呢？
+
+
+Tags:知识分享官,艺术,新人,建筑,建筑设计,设计,创意,知识,摩天大楼,天津高银金融117大厦</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">提升用户体验还是白嫖手机空间？手机占用空间为啥这么大？【差评君】</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av423457806">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>为什么手机app内存占用越来越大？
+
+
+Tags:知识分享官,科普,互联网,软件,手机,手机应用,储存,硬盘,APP</span>
                   </div>
                 </a>
               </details>
@@ -6930,6 +7773,20 @@ Key Combination 的设置界面Macro 的设置界面
             </article>
             <article>
               <details class="article-expander">
+                <summary class="article-expander__title">《开端》会在现实中上演吗？| 时间循环的物理学原理</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://sspai.com/post/71157">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>前言 最近，在朋友圈各路大神的强烈安利之下，入坑了《开端》。不得不说，华语影视剧领域已经很久没有出现过这种带有科幻元素而又逻辑通畅的剧集了。在《开端》中，男女主角搭上了一辆载有一颗炸弹的 45 路公交车。一旦他们因为爆炸或是睡着而失去意识，便会发生时间倒流，他们也会重新回到还未爆炸的公交车上。主角团需要在这一次又一次的循环中，找到解救全车乘客的方法。这种无限时间循环的题材在以往国外的科幻剧作中并不少见，比较出名的例子有《源代码》、《忌日快乐》等。然而，《开端》仍然以新颖的剧情设计、严谨精致的细节与伏笔而广受好评。无论是在原著小说还是影视剧中，作者都没有提及时间循环发生的技术原理。因此，本文将尝试补全这一物理背景。我们将根据物理学家马尔达西那 (Juan Martin Maldacena, 1968－now) 与萨斯坎德 (Leonard Susskind, 1940－now) 于 2013 年发表的 ER &#x3D; EPR 原理，阐述如何构造一台可能可以实现时光回溯的时间机器。
+我们的基本逻辑是这样的：首先，在两个不同时刻制造处于量子纠缠状态的基本粒子；然后通过 ER &#x3D; EPR 原理将这些纠缠粒子转化为连接这两个不同时刻的虫洞。这样，两位主角就可以在满足触发条件时，通过虫洞返回到炸弹还未爆炸时的公交车上。这种逻辑设定可以合理地解释为何会发生时间循环，以及为何循环不会提前到炸弹上车之前、为何肖的身体状态会越来越差等一系列原作者挖了却又填不上的坑。不过在此之前，我们需要先了解一下虫洞、量子纠缠、ER &#x3D; EPR 等基础概念。
+黑洞、白洞、虫洞
+如果你关注科幻，那么我相信你一定不会对黑洞 (black hole) 这个概念感到陌生。在 2014 年上映的《星际穿越》中，科学顾问基普·索恩 (Kip Thorne, 1940－now) 及其团队利用数值相对论的计算为我们还原了一个相当真…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
                 <summary class="article-expander__title">笔记软件又成了风口? 且看 Obsidian 大佬的发家史</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://sspai.com/post/71155">
                   <div class="article-summary-box-inner">
@@ -6986,6 +7843,23 @@ requirements.txt 文件
 打开复制的 get_up.py 文件，定位到第 11 行代码，你可以修改中间的「懒猪🐷起床啦，赶紧去跑步，上班不迟到。」，这里的语句，决定了最终在 issue 中生成的内容，你可以将它改为你喜欢的内容。
 
 定位到第 50 行代码，如果你每天起床的时间早于 6 点，那就需要将 6 更…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://shkspr.mobi/blog">Terence Eden’s Blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Gadget Review: Eufy Video Doorbell</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://shkspr.mobi/blog/2022/01/gadget-review-eufy-video-doorbell/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(5 min)</span>
+                    <span>Two years ago, I got a DophiGo DV-200 WiFi Doorbell. It&#x27;s been OK, but I was hankering for an upgrade. Something with a more reliable app and better video / audio quality. About a year ago, I got a Eufy Security Camera System. It has been excellent. The main advantage is that it comes with…</span>
                   </div>
                 </a>
               </details>
@@ -9318,6 +10192,17 @@ read more</span>
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">[FREE] Netflix Follow-Up, The Senate Tech Bill</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9mcmVlLW5ldGZsaXgtZm9sbG93LXVwLXRoZS1zZW5hdGUtdGVjaC1iaWxsLw.u-rOVQP1mZH4RRuVTG7JY8QScylfzk_TjibsJcfrYN9MO1OHrdbTS-rOwUxlXpE2ttse5CllK4YDJaaEmcrQ4iYC_YDNHPVqabDuM7PvHwCToxbwUV2DJCqhJYds0ABF9N032HxXPyw5Ch53-F0I31zyB0nCGe1hHzAIiFRhCZFNf0xAmJz3kDFafydg0_hNYU1_-qJm45wG4bROQn-mqnwnEpiwgtrGBfvx30210LtdUYAXIptNMKf-nN7ky2_CX6ZajTqDOfcRxD23_DyY0WAx3un3Kcqj6E2HupTS3KAQPZAZbS8K8h9mauvz1ANOhUMYSeXMtF9L6z42OmlCjQ">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>More on Netflix&#x27;s earnings and valuation, and three observations about the tech competition bill being encouraged in the Senate.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">[FREE] Netflix Follow-Up, The Senate Tech Bill</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9mcmVlLW5ldGZsaXgtZm9sbG93LXVwLXRoZS1zZW5hdGUtdGVjaC1iaWxsLw.lhZWs2pwAeN1sJrJMKd-fAbHg4biygp8g_rZwY6L7JTIEp6WmCncenvhQx-iC-_pMr65TM5mVlfd1QVwGnf3FCIotEKUdBSox4pLVqbcnBjM5g06Cr-qQ7Oz9T7lJ4Zh_gn969ldJryhuntf8mJVVEbNdCIChM2Bjue1qKPCKRuuP2g8K7e_2GepeodscC1T7u1yZEwboTYurATuH-YhkTYzUiuvRPgJFtJ9sDvyGufKx9rsGaliaHwSPq54FRdA2Kzn6XtWBMYNVXFGw0PzSUumdOkK3SvXT5nIZ7ncn8xQK6MZXJMk2-g_zLx0N2xM22QY4VYUfPiIiBZkcLzTvg">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
@@ -9387,6 +10272,37 @@ read more</span>
         <section>
           <h3 class="source-name"><a class="source-name__link" href="https://juejin.im/android?sort&#x3D;weekly_hottest">掘金Android本周最热</a></h3>
           <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Flutter 系列（一）：运行你的第一个 Flutter 应用</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://juejin.cn/post/7057420846863745031">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>前言
+Flutter 是 Google 推出并开源的移动端开发框架，主打跨平台、高保真、高性能。开发者可以通过 Dart 语言开发 App，一套代码可以同时运行在 iOS 和 Android平台。
+2018 年 12 月，Google 发布 Flutter 1.0。从那时候开始，Flutter 以迅雷不及掩耳之势，迅速崛起，并稳固了其在市场上的地位。
+如今，Flutter 相关资源和社区都已渐渐成熟，得到了很多开发者和企业的信任。另外因为公司业务扩张，准备引入 Flutter 开发项目，所以学习 Flutter 势在必行，下面就跟着我的脚步进行 Flutter 的学习吧
+一、Flutter 开发环境搭建
+注意：本文以 macOS 系统为例
+1）、使用镜像
+由于在国内访问 Flutter 有时可能会受到限制， Flutter 官方为中国开发者搭建了临时镜像，我们只需将如下环境变量配置到用户环境变量中即可：
+export PUB_HOSTED_URL&#x3D;https://pub.flutter-io.cn
+export FLUTTER_STORAGE_BASE_URL&#x3D;https://storage.flutter-io.cn
+
+2）、下载 Flutter SDK
+方式有 2：
+1、直接去 Flutter 官网下载最新的安装包即可
+下载地址：https://docs.flutter.dev/development/tools/sdk/releases?tab&#x3D;macos#macos
+2、通过 git clone 下载
+git clone -b master https://github.com/flutter/flutter.git
+
+上述这句命令会将仓库克隆下来并切换到 master 分支
+注意：上述两种方式第一种需要解压，第二种不需要，总之将它们放置到您想放的地方即可
+3）、配…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">Android Studio Bumblebee | 2021.1.1 发布，快来看看更新了什么</summary>
@@ -10206,6 +11122,23 @@ JXK嗜睡猫模型
 
 拍照前放个立方蜘蛛或色卡
 而为了后期更省事些，在拍照时我都会摆放一个Datacolor的…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://shkspr.mobi/blog">Terence Eden’s Blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Book Review: Inglorious Empire - Shashi Tharoor</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://shkspr.mobi/blog/2022/01/book-review-inglorious-empire-shashi-tharoor/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(4 min)</span>
+                    <span>I know shamefully little about the British Empire and its colonisation of India. I remember going on a school trip to the memorial at Ypres - but I don&#x27;t remember hearing about the thousands of Indian troops who served and died. I learned endlessly about Churchill - but not about his racist attitudes towards the…</span>
                   </div>
                 </a>
               </details>
@@ -12538,6 +13471,17 @@ read more</span>
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">Netflix Earnings, The Competition Question, Netflix&#x27;s Long-Term Value</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9uZXRmbGl4LWVhcm5pbmdzLXRoZS1jb21wZXRpdGlvbi1xdWVzdGlvbi1uZXRmbGl4cy1sb25nLXRlcm0tdmFsdWUv.CerlF34UgFknxgZstk6LRMliOl22E3VXlueJv5LHjKUAYof43rAOmeviTcYjnC5tZ0t6R8Zk0LzmnyAPJBd30iLY09B7mszzilQ9G7nTHabn0PD-p5921T6O1SVbPJT-1nf_eyq4jPfv8FlidfVVlF1wRtP1MRm9WmzmUAIygzHf3__M2xG9InoZfb6Wf-tup5uiRsqB72eNbC7ew_8SMmO1zSMW39ynG2fb7WxYDQ8vOID-0BtaTeZiHLOky6G5DN2mnXI1sBy8lxeM-qLQeOf3zAimVq69-yc8kKjfoYinEjHAYfgL2pJQJoMFnVj8hc6WkzP9x1Hh00NHcLowoQ">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Netflix&#x27;s earnings were disappointing because of the subscriber numbers, but does the company have a bigger concern in terms of long-term profitability?</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Netflix Earnings, The Competition Question, Netflix&#x27;s Long-Term Value</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9uZXRmbGl4LWVhcm5pbmdzLXRoZS1jb21wZXRpdGlvbi1xdWVzdGlvbi1uZXRmbGl4cy1sb25nLXRlcm0tdmFsdWUv.nNYFw_JgJ00Djt9eMnZkblO66FYgg5raW13QIAKLnNq25obzphN1n5KGmCdoOzMytqqYJl4h6rJnJY1-NwQ1KNxSD6DYunGgUpP1JXkQucpkcXzyBCG1MA7QQyccXHXohvN_m34XuviDSxR9HJ1sBwQPapBt6gglZH5B_yZjKZ-pk2H5rzv2byWqWHhNxEzz_T-lx1Gg9ZM-1HJohU6L-JG3HrOrmaXmn_DTG7TGvgUw6XUg8Z1kZ2jder9NnZvrLUCRdRAQpuoGtv7WEqn6bGbUDjvNj55ahxMBNzaWqLx20VKhDEESwTq_sn5RMssTxQeAk8PDvPq_DHwmNT1AMQ">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
@@ -13377,6 +14321,23 @@ realme UI 验证码安全保护
 每天我都在想，我是不是不适合写作，我写的东西是不是太啰嗦了，或许我当前的能力不足以写产品话题，我该沉淀两年再等等？但对于这些问题，我并没有能力第一时间找到答案---否则就不会被拒绝4次了。
 总之，我带着诸多疑问和拙劣的技巧，在自尊心的驱使和责任编辑的指引下，开始不断修改。第5次能够成功，其实并不是改得多好，而是靠坚持不懈。被拒绝带来的挫败和质疑激发了我的斗志，完全出于“洗脱被拒绝现状”的自尊心，让我坚持改稿。或许是不小心改到了要求的水准，或许是这种坚持一定程度上感动了编辑，历时2个月，终于发布。
 就这样，这种“出于自尊心”的坚持，在头两年成为了我写作的源动力，甚至是唯一…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://shkspr.mobi/blog">Terence Eden’s Blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Practical Machine Learning with Python</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://shkspr.mobi/blog/2022/01/practical-machine-learning-with-python/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(4 min)</span>
+                    <span>As part of my MSc I&#x27;m taking a short course in Practical Machine Learning via QA.com. The first three days were just about basic stats visualisation using Python. It was great to have a refresher - but I would have expected that to be a pre-requisite. The tutor was excellent - very patient at explaining…</span>
                   </div>
                 </a>
               </details>
@@ -16764,6 +17725,23 @@ Tags:健康,新冠肺炎,知识分享官,必剪创作,奥密克戎</span>
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://shkspr.mobi/blog">Terence Eden’s Blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">How to migrate Google For Your Domain to normal Gmail</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://shkspr.mobi/blog/2022/01/how-to-migrate-google-for-your-domain-to-normal-gmail/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(8 min)</span>
+                    <span>Google has decided to fuck over its early adopters. Way back in 2006, Google announced Google Apps for Your Domain. Basically it was Gmail - but you could use your own domain. No more example@gmail.com now you could be me@example.com. Hurrah! At the time, they said: organizations that sign up during the beta period will…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://sspai.com">少数派</a></h3>
           <section class="articles-per-source">
             <article>
@@ -18081,6 +19059,23 @@ VMOS Pro、光速和 51 虚拟机，三者其实大同小异，最受欢迎的�
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://shkspr.mobi/blog">Terence Eden’s Blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Use Python to get alerted when an Amazon wishlist item drops in price</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://shkspr.mobi/blog/2022/01/use-python-to-get-alerted-when-an-amazon-wishlist-item-drops-in-price/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(6 min)</span>
+                    <span>Scratching my own itch. I want an alert when there&#x27;s been a price drop on an item on my Amazon wishlist. I couldn&#x27;t find an easy way to get an email directly from Amazon (customer-focused my shiny metal arse) so I knocked something up in Python. This is heavily inspired by Leigh Dodds&#x27; Wishlist Monitor.…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://sspai.com">少数派</a></h3>
           <section class="articles-per-source">
             <article>
@@ -19191,6 +20186,23 @@ Tags:知识分享官,生物,生命,健康,新冠,疫情,新冠后遗症,轻症�
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://shkspr.mobi/blog">Terence Eden’s Blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">How do artists get paid?</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://shkspr.mobi/blog/2022/01/how-do-artists-get-paid/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(6 min)</span>
+                    <span>NB: The bit about NFT and smart contracts is at the end. As I discussed yesterday, being able to resell digital art via an NFT means that the price of art falls to zero. Let&#x27;s assume that I&#x27;m correct and, through a combination of technology and changing social attitudes, no one wants to pay for…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://sspai.com">少数派</a></h3>
           <section class="articles-per-source">
             <article>
@@ -19894,6 +20906,17 @@ read more</span>
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">Mr. CISC vs. Mr. RISC, ARM and AMD Threats, Gelsinger&#x27;s Three Tenets</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9tci1jaXNjLXZzLW1yLXJpc2MtYXJtLWFuZC1hbWQtdGhyZWF0cy1nZWxzaW5nZXJzLXRocmVlLXRlbmV0cy8.W8CJJQrbGBQb6wo8QvkHjbnyttpMtX_W2WqCoIQLzPIDRsKhR4qASjoEt4jlFrypCOGxTKUHpkI7CBkBk1Oxy95XEREHht2zpymj9rl5FnrQyixBfzLoYUS2OV-dCVZxzxSkaI1BwHKlxCmMIdimuVeHvte5XQ6az4r2NXzBKxZKBR1NxIqR50uod792oKdx9yLMXv6Eqw6ir0jpXNgjskkc0pzzHJavoH_pccODcJCIHsw1OnbW56rDJnSQzFhnat57Y4fYz99oxitoypYSeyKgDLtj85h3YUW0coWHkSVgmAvNSoQpOUTakeg1OPL8Q-D4eXiHSsESusC3tDyjXQ">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>The best way to understand Pat Gelsingers thinking about the threats posed by ARM and AMD is to go back to his arguments in favor of CISC over RISC</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Mr. CISC vs. Mr. RISC, ARM and AMD Threats, Gelsinger&#x27;s Three Tenets</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9tci1jaXNjLXZzLW1yLXJpc2MtYXJtLWFuZC1hbWQtdGhyZWF0cy1nZWxzaW5nZXJzLXRocmVlLXRlbmV0cy8.wYu47E_ZBpvB4GAPFduMLb2n6_zIMVLX9i-PhmMW4qyqTVjqhGBJ0TpLTwD7dlBrx0fsn9XikKbPefbU51WhfqKIkchn5xqsiepx4WY20I0b-AcxCLolQz6sUIiuL6OAKSkRH47ipMXT7HeL8aKQCcAoJbCwoVdiIIuZFs5S1b83glvRGPZczr03_qBmMgPdne_5SwDZ8uoJ_4vnpWoVSCoZZF0H4m7rtFbsrhk7IIgt7io8Yp1O8sPTHEuxz8T7fQ80slHfwzQ5AGzjixhbbd3JQ5sY3pox5ria7zJisr8naMFgLCLoHqNWinbMelBJfRPFeFsF8cDH7YM9riViWg">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
@@ -20452,6 +21475,23 @@ AEB，全称 Autonomous Emergency Braking，自动紧急制动系统。在车辆
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://shkspr.mobi/blog">Terence Eden’s Blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">NFTs means the future value of art is zero</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://shkspr.mobi/blog/2022/01/nfts-means-the-future-value-of-art-is-zero/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(4 min)</span>
+                    <span>At the moment, it is not possible to sell a 2nd hand eBook or MP3. This seems fairly reasonable because a re-seller might keep copies of their original files after selling them. This would allow the re-seller to undercut the original publisher and sell the file multiple times. We tend to label this &quot;Piracy&quot;. Someone…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://www.extremetech.com">ExtremeTechExtremeTech</a></h3>
           <section class="articles-per-source">
             <article>
@@ -20847,73 +21887,6 @@ Legal诗睿
     <ul class="sources card">
       <li class="source">
         <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://hashnode.com">Hashnode Posts - Java</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">This Reference and Dynamic Dispatching in Java</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://ajaysamgir.hashnode.dev/this-reference-and-dynamic-dispatching-in-java">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>Java is object oriented language which have pillars which represents the design of object orientation concept. 
-The four pillars of object-oriented programming are:
-
-Abstraction
-Encapsulation
-Inheritance
-Polymorphism
-
-This is common thing we already ...</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Have you always been confused among the basic difference between JDK, JRE and JVM? I have got things simplified for you.</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://samadritashaw.hashnode.dev/have-you-always-been-confused-among-the-basic-difference-between-jdk-jre-and-jvm-i-have-got-things-simplified-for-you">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>To master anything, we need to first get a grip on the basics. Have you started your journey with java and/or have always wanted to understand the difference between JDK, JRE and JVM in simplified terms? Then,
-https://giphy.com/gifs/justin-squid-game...</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://nautil.us">Nautilus | Science Connected</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">The Wild World of Threats</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://nautil.us/the-wild-world-of-threats-13512/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(10 min)</span>
-                    <span>Animals, including us, evolved to bluster and bluff at their peril.
-The post The Wild World of Threats appeared first on Nautilus | Science Connected.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">My Out-of-Body Experience</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://nautil.us/my-out_of_body-experience-13509/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(7 min)</span>
-                    <span>In a sensory deprivation tank, I lost my body and found myself.
-The post My Out-of-Body Experience appeared first on Nautilus | Science Connected.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://juejin.im/android?sort&#x3D;weekly_hottest">掘金Android本周最热</a></h3>
           <section class="articles-per-source">
             <article>
@@ -21046,127 +22019,6 @@ fun bindPreview(cameraProvider : ProcessCameraProvi…</span>
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Java双重校验锁单例原理 赶快看进来</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://juejin.cn/post/7055080559600467981">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>highlight: a11y-dark
-「这是我参与2022首次更文挑战的第3天，活动详情查看：2022首次更文挑战」
-前言
-作为开发者，单例这个就再也熟悉不过了，但是作为多种单例实现模式，我个人觉得双重校验锁是非常不多的实现，我们简单来分析一下其原理。
-正文
-先来说一下Java版本的，后面会涉及Kotlin中的代码我们再做比对。
-代码实现
-Java代码实现如下：
-//双重校验锁单例
-public class SingleInstance {
-    //必须volatile修饰 见分析1
-    private volatile static SingleInstance instance;
-    //私有化构造函数
-    private SingleInstance() {
-    }
-
-    public static SingleInstance getInstance() {
-        //第一个判空 见分析2
-        if (instance &#x3D;&#x3D; null) {
-            synchronized (SingleInstance.class) {
-                //第二个判空 见分析3
-                if (instance &#x3D;&#x3D; null) {
-                    //新建实例
-                    instance &#x3D; new SingleInstance();
-                }
-            }
-        }
-        return instance;
-    }
-}
-
-首先这里synchronized关键字没有修饰整个getInstance函数，因为这个函数可能使用地方很多，这样就会造成其他线程阻塞，不太好，所以这里只同步了一段代码。
-分析2：为什么在进入同步代码块时需要进行进行判空，假如有线程A和线程B，这时线程A先判断instance为null，所以它进入了同步代码块，创建了对象，然后线程B再进来时，它就不必再进入同步代码快了，可以直接返回，也其实也就是懒加载，可以加快执行速度。
-分析3：为什么在同步代码块中还要再进行一次判断呢，假如有线程A和线程B，它俩A先调用方法，B紧接着调用，这时A、B在分析2出的判空都是空，所以A进入同步代码块，B进行等待，当A进入同步代码块中创建了对象后，A线程释放了锁，这时B再进入，如果这时不加分析3的判空，B又会创建一个实例，这明显不符合规矩。
-分析1：那既然加了2层判断，那为什么还要加个volatile关键字呢，这里知识点就有点多了。
-因为新建实例的代码：
-instance &#x3D; new SingleInstance();
-它不是一个原子操作，这个简单的赋值可以分为3步：
-1、给SingleInstance分配内存
-2、调用SingleInstance的构造方法
-3、把instance指向分配的内存空间
-这是正常逻辑的3个步骤，也只有按1 2 3执行后，这个instance才不是null。
-但是Java内存模型允许这个进行指令重排序，也就是这3步可能是123也可能是132，所以这里就有问题了。
-假如线程A和线程B，线程A已经跑到分析3处的代码，这时这条指令执行是132，刚把步骤3执行完，这时线程B跑到了分析1处的代码，会发现instance不为null了，这时线程B就直接返回了，从而导致错误。
-既然知道了原因，那volatile关键字就是解决这个的，它可以禁止指令重新排序，而且保证所有线程看到这个变量是一致的，也就是不会从缓存中读取(这个特性后面有机会再说)，所以在创建instance实例时，它的步骤都是123，就不会出错了。
-总结
-其实一个小小的双重校验锁单例都还有蛮多知识点，后面我们来分析分析Kotlin中的单例都一般如何实现以及原理。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">如何在 Flutter 创建一个后台任务</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://juejin.cn/post/7055069759259279396">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>原文
-https://www.dltlabs.com/blog/flutter-run-code-in-the-background-513940
-参考
-https://pub.dev/packages/background_fetch
-正文
-今天，我将解释如何在 Flutter 创建一个后台任务。
-在此之前，让我们理解什么是后台任务。后台任务是在后台运行的应用程序的辅助进程，即使应用程序没有运行或处于终止状态。
-这一功能对于需要在后台执行任务而不需要用户打开应用程序的应用程序来说是有益的ーー例如，每 15 分钟调用 api 获取数据。
-让我们在一个示例项目中实现一个后台任务，以便更好地理解这一操作的含义。
-步骤:
-pubspec.yaml
-flutter pub add background_fetch
-flutter pub get
-
-在 main.dart 文件中导入后台包，并注册 HeadlessTask，以便在应用程序终止后接收 backgroundFetch 事件。
-例如:
-void backgroundFetchHeadlessTask(HeadlessTask task) async {var taskId &#x3D; task.taskId;
-if(taskId &#x3D;&#x3D; ‘your_task_id’) {
-print(‘your_task_id’);
-print(‘[BackgroundFetch] Headless event received.’);
-_//TODO: perform tasks like — call api, DB and local notification etc…
-_}
-}
-void main() {
-runApp(MyApp());
-_//Registering backgroundFetch to receive events af…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://sspai.com/matrix">少数派 -- Matrix</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">首款6nm制程游戏显卡 Radeon RX 6500 XT首发实测</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://sspai.com/post/71040">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>在本届CES2022，AMD带来新款桌面处理器、桌面显卡、移动处理器和移动显卡，其中的新款桌面显卡就是升级6nm制程工艺Radeon RX 6400 XT和Radeon RX 6500 XT ，而其中的Radeon RX 6500 XT在今天正式发售。
-Radeon RX 6500 XT关键词：千元价位、6nm、RDNA 2
-
-01/ 关于Radeon RX 6500 XT
-AMD Radeon RX 6500 XT实际规格让人还是有些意外的，除了一些规格特殊之外，还有就是居然保留了【RDNA 2】大部分功能特性，甚至还最先采用了更为先进的6nm制程工艺，绝非新瓶旧酒的产品，这点来说挺不错的。
-关于定价：目前Radeon RX 6500 XT官方指导价是1599元，如果关注装机市场朋友应该有感受，就是市面在1000-2000这个价格区间已经很久一段时间没有新品，上一代这价格区间的产品因为矿工需求等缘故，要么价格暴涨，要么直接没货，所以这次产品补全还挺重要，毕竟还是有不少用户显卡性能需求可能没那么高，只要求满足1080P FHD游戏体验即可。
-
-【RDNA 2】特性全部保留
-AMD Radeon RX 6500 XT基于Navi 24 GPU核心打造，依旧是RDNA 2架构，拥有16组CU计算单元，每一个CU计算单元里都包含一个【Ray Accelerator 光线加速器】，总共1024个流处理器，同时配备16MB无限缓存；显存部分配备了4GB的GDDR6显存，显存位宽为64位。
-虽然核心\显存规格比其它RDNA 2架构高价卡低不少，但因为它也是最先采用6nm工艺制造，所以频率反倒是RDNA 2架构GPU里面最高的，且高出不少，基本就是靠飙高频来拼性能。
-
-伴随RDNA 2架构，DX12U、DSAPI，DirectX光线追踪、可变速率着色、网格着色器、采样器反馈这些技术特性在…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
         </section>
       </li>
       <li class="source">
@@ -21206,42 +22058,13 @@ AMD Radeon RX 6500 XT基于Navi 24 GPU核心打造，依旧是RDNA 2架构，拥
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Learn Kubernetes and Start Containerizing Your Applications</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.freecodecamp.org/news/learn-kubernetes-and-start-containerizing-your-applications/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(76 min)</span>
-                    <span>Kubernetes is an open-source container orchestration platform that automates the deployment, management, scaling, and networking of containers. It makes it simpler to deploy apps to production. We just published a Kubernetes course on the freeCodeCamp.org YouTube channel.  Bogdan Stashchuk developed this course. He is a popular DevOps instructor who</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.macsparky.com">MacSparky</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Focused 143: Thinking Annually</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.macsparky.com/blog/2022/01/focused-143-thinking-annually/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>Join Mike and me on the latest episode of Focused. We’re sharing some thoughts about what we’re up to in the new year and the personal changes we’re making to our routines. This episode of Focused is sponsored by: Indeed: Get a free $75 credit to upgrade your job post. Shopify: Grow your business with Shopify. Start... Continue reading →
-The post Focused 143: Thinking Annually appeared first on MacSparky.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
         </section>
       </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-01-29T01:52:54.824Z">2022-01-29T01:52:54.824Z</time>
+    <time id="build-timestamp" datetime="2022-01-29T07:30:36.048Z">2022-01-29T07:30:36.048Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.12.0</a></span>
   </footer>
   <script src="index.js"></script>
