@@ -280,33 +280,6 @@
           "publishedOn": "2022-01-20T15:48:29.000Z",
           "wordCount": 7431,
           "title": "How to Define Cloud Infrastructure with the AWS Cloud Development Kit"
-        },
-        {
-          "id": "61e79b46183181284a191680",
-          "author": null,
-          "description": "A freeCodeCamp alum who founded his own successful Web3 company has donated $1M to freeCodeCampHe asked that we use some of these funds to develop a carbon-neutral Web3 curriculumWe are building an interactive Web3 curriculum where you can learn by building more than a dozen projects. This free curriculum will",
-          "link": "https://www.freecodecamp.org/news/carbon-neutral-web3-curriculum-plans/",
-          "publishedOn": "2022-01-19T21:23:18.000Z",
-          "wordCount": 859,
-          "title": "freeCodeCamp Just Got a Million Dollar Donation from an Alum to Build a Carbon-Neutral Web3 Curriculum"
-        },
-        {
-          "id": "61e78aca183181284a1914a0",
-          "author": null,
-          "description": "I am a freeCodeCamp alumnus. I learned to code on freeCodeCamp. I used these skills to build a profitable company. Today, this company – KaijuKingz – is donating $1 million to freeCodeCamp to help them create even more free learning resources. The freeCodeCamp community has helped me and thousands of other people",
-          "link": "https://www.freecodecamp.org/news/donating-a-million-dollars-to-freecodecamp-a-web3-curriculum/",
-          "publishedOn": "2022-01-19T21:23:10.000Z",
-          "wordCount": 1021,
-          "title": "Donating a Million Dollars to freeCodeCamp to Develop a Free, Carbon-Neutral Web3 Curriculum"
-        },
-        {
-          "id": "61e547e7b837d507ba0a4611",
-          "author": null,
-          "description": "Serverless Development has been around since the release of AWS Lambda in 2014, but in the last few years things have exploded.  Startups and smart tech companies have started taking advantage of the scalability, reliability, and power of serverless to rapidly grow – and now they need more serverless developers than",
-          "link": "https://www.freecodecamp.org/news/become-a-serverless-developer/",
-          "publishedOn": "2022-01-19T20:57:22.000Z",
-          "wordCount": 1969,
-          "title": "How to Become a Serverless Developer in 2022"
         }
       ]
     },
@@ -315,6 +288,114 @@
       "feedUrl": "https://dev.to/feed",
       "siteUrl": "https://dev.to",
       "articles": [
+        {
+          "id": "https://dev.to/manuthecoder/please-dont-use-bootstrap-3k4i",
+          "author": "Manu",
+          "description": "In case you don't know what bootstrap is, bootstrap is a CSS framework. \nHere's why you should not use Bootstrap. \nWhen you start to see the same layout over, and over, and over again users begin to tune out. You’ve lost me. Your design looks like one of 6,000 other sites out there. And not just the same general layout, but the Exact. Same. Components.\n”Let’s be honest: a great many of us are tired of seeing the same old Twitter Bootstrap theme again and again. Black header, giant hero, rounded blue buttons, Helvetica Neue. Yes, you can customize the header to be a different color, maybe re-color some of the buttons, use a different font. Ultimately, however, that doesn’t change anything—it still looks like Bootstrap.\nh u g e!\n\n\nBootstrap will help you to build an attractive, responsive website, but some mobile users could be turned away by the slow loading time and battery drain issues. Bootstrap comes with a lot of lines of CSS and JS, which is a good thing, but also a bad thing because of the bad internet connection. And there’s also the problem with the server that will take all the heat for using such a heavy framework. Even when bootstrap is minified, it takes a lot of space\nThere is no faster framework than Tailwind when it comes to styling HTML. As a result, you can easily create good-looking layouts by styling elements directly. This is possible because Tailwind offers thousands of built-in classes that do not require you to create designs from scratch",
+          "link": "https://dev.to/manuthecoder/please-dont-use-bootstrap-3k4i",
+          "publishedOn": "2022-01-30T01:32:23.000Z",
+          "wordCount": 659,
+          "title": "Please don't use Bootstrap!"
+        },
+        {
+          "id": "https://dev.to/yakult/how-to-use-web3-react-to-develop-dapp-1cgn",
+          "author": "fangjun",
+          "description": "Web3-react is a popular library used in blockchain, DApp and web3 development. It has more than 2800 stars and has been used by more than 10000 repo's on Github. \nNote: If you have known web3-react, you can go directly to section 1 for how-to guides.\nLast Updated: 2022/01/30\nweb3-react?\n\n\nBefore starting the journey, I will give an overview of the stack and technology we use:\nFront-end: React, Next.js, Chakra UI, TypeScript\n\n\nBlockchain API: Ethers.js\n\n\nDevelopment Environment: Hardat, MetaMask, Ethereum testnet\n\n\n\nweb3-react is a react/ethers.js framework for building modern Ethereum DApp developed by Uniswap Engineering Lead Noah Zinsmeister. It works between Front-end and blockchain API.\nAt a high level, web3-react is a state machine which ensures that certain key pieces of data (the us…",
+          "link": "https://dev.to/yakult/how-to-use-web3-react-to-develop-dapp-1cgn",
+          "publishedOn": "2022-01-30T01:32:12.000Z",
+          "wordCount": 2516,
+          "title": "How to use Web3-react to develop DApp"
+        },
+        {
+          "id": "https://dev.to/williamkoller/autenticacao-em-varias-contas-do-github-usando-ssh-5eom",
+          "author": "William Koller",
+          "description": "Para você desenvolvedor que tem uma ou mais contas no github e quer usar ssh para ter mais produtividade.\nVou mostrar como autenticar em duas contas do github usando chave ssh.\nIremos acessar a pasta .ssh\ncd .ssh/\nDepois iremos gerar a chave ssh com o nome do usuário do github ssh-keygen -f code_041_id_rsa\n\nEm seguida iremos copiar o conteúdo no arquivo gerado pelo ssh cat code_041_id_rsa.pub e colocar no github.\n\nEm seguida dentro da pasta .ssh, iremos criar o arquivo de configuração.\ntouch config\nIremos adicionar o Host e IdentityFile no arquivo de configuração da conta do github\nHost github.com-code-041\n  HostName github.com\n  IdentityFile ~/.ssh/code_041_id_rsa\n\nEm seguida iremos gerar uma nova chave essa\nssh-keygen -f williamkoller_id_rsa\nIremos copiar a chave essa e colocar no github\ncat williamkoller_id_rsa.pub\n\nAgora iremos adicionar o Host e IdentityFile para a nova conta do github\nHost github.com-williamkoller\n   HostName github.com\n   IdentityFile ~/.ssh/williamkoller_id_rsa\n\nAgora iremos testar, fazendo um clone de uma das contas do github.\n\nLembrando que precisamos colocar o nome do Host.\ngit clone git@github.com-williamkoller:williamkoller/hyperion.git\n\nTestando a segunda conta\n\ngit clone git@github.com-code-041:code-041/code041.git\n\nPronto, agora temos duas contas do Github usando chaves ssh diferentes.\nEspero ter ajudado!!",
+          "link": "https://dev.to/williamkoller/autenticacao-em-varias-contas-do-github-usando-ssh-5eom",
+          "publishedOn": "2022-01-30T01:05:37.000Z",
+          "wordCount": 629,
+          "title": "Autenticação em várias contas do GitHub usando SSH"
+        },
+        {
+          "id": "https://dev.to/ogruzglina/inscrutable-ways-or-how-i-returned-to-the-path-of-a-programmer-software-engineer-4an",
+          "author": "Olha Gruzglina",
+          "description": "Hi, I'm Olga or Olya, I was born and raised in Ukraine where I graduated with a degree in computer science in 2012. However, I have never worked as a programmer, \"thanks\" to some of my professors and friends who ruined my self-esteem, confidence, etc.. They did it so effectively that I was terrified to even attempt it, after which I stopped looking in that direction :(\nI immigrated to the US in October 2019 and left behind everything I had. I am grateful to my husband who was able to, step by step, give me confidence and break the wall with all those stereotypes that fettered and limited me. After a while I realized that I want to pursue a career as a software engineer. However, since I obtained my degree in another country and never used those skills, I feel like I am coming into tech field as a newbie. I know that the world of technology always changes very rapidly, and I missed many years of knowledge, experience, and changes in this area. With that in mind, I have taken my first step towards getting back on track, and now I am a software engineering student at Flatiron School!\nI am happy to be among the passioned and focused people, who are not afraid to change their lives and do what they love. I don't want to lie, it is tough, and I still have 12 weeks of intensive program ahead of me. I am excited and overwhelmed at the same time, sometimes frustrated and definitely tired (thanks again to my husband, he looks after the kids after daycare and cooks while I am on campus or continue studying after the kids go to bed). However, it is rewarded with happiness of getting something to work, with confidence when you passed the test with understanding and when you completed your first project. I believe and hope that I will succeed and I do not want to give up no matter what!",
+          "link": "https://dev.to/ogruzglina/inscrutable-ways-or-how-i-returned-to-the-path-of-a-programmer-software-engineer-4an",
+          "publishedOn": "2022-01-30T00:46:24.000Z",
+          "wordCount": 759,
+          "title": "Inscrutable ways or how I returned to the path of a software engineer"
+        },
+        {
+          "id": "https://dev.to/yaku/wordle-animations-55oo",
+          "author": "Yaku",
+          "description": "The word game has gone from dozens of players to hundreds of thousands in a few months. It was created by a software engineer in Brooklyn for his partner.\nToday we going to replicate the UI and add some little animations :)\n<div id=\"container\"></div>\n<div id=\"restart\">\n  <div class=\"restart-letter\">S</div>\n  <div class=\"restart-letter\">T</div>\n  <div class=\"restart-letter\">A</div>\n  <div class=\"restart-letter\">R</div>\n  <div class=\"restart-letter\">T</div>\n</div>\n\nThe above HTML code contains a div with an id of \"container\" and another div with an id of \"restart\". Within the \"restart\" div are four more divs, each with a class of \"restart-letter\".\n\nbody,\nhtml {\n  background-color: #333;\n  margin: 0px;\n  height: 100%;\n  overflow-x: hidden;\n  overflow-y: auto;\n}\n\nbody {\n  display: flex;\n  alig…",
+          "link": "https://dev.to/yaku/wordle-animations-55oo",
+          "publishedOn": "2022-01-30T00:30:43.000Z",
+          "wordCount": 887,
+          "title": "Create your own Wordle with animations 🧩🎲"
+        },
+        {
+          "id": "https://dev.to/unshift/how-you-can-create-a-sidebar-like-the-dailydev-extension-fron-scratch-using-react-and-tailwindcss-in-5-steps-nk7",
+          "author": "Unshift",
+          "description": "Tailwind CSS is a utility-first CSS framework packed with classes that can be composed to build any design, directly in your markup.Next.js is a React framework with features like hybrid static and server rendering, TypeScript support, smart bundling, route pre-fetching, and more.\nif you combine then both you can have incredible results and help you perform much more better.\nIn this post we will details everything you need to know  to setup nextjs and tailwind css and make a cool sidebar.\nif you like a video version\n\n\n\nIf you liked it don't forget to subscribe 🤓\nTo complete this tutorial, you’ll need:\nA local development environment for Node.js.\nyou can see the final results here:\n\nwe can initiate our projet unsing npx\nnpx create-next-app sidebar\n\nLet move to the sidebar directory\ncd side…",
+          "link": "https://dev.to/unshift/how-you-can-create-a-sidebar-like-the-dailydev-extension-fron-scratch-using-react-and-tailwindcss-in-5-steps-nk7",
+          "publishedOn": "2022-01-30T00:01:54.000Z",
+          "wordCount": 2341,
+          "title": "How you can create a sidebar like the daily.dev extension fron scratch using React and Tailwindcss in 4 steps"
+        },
+        {
+          "id": "https://dev.to/yaku/11-layout-and-design-tips-for-html-and-css-landing-pages-46dh",
+          "author": "Yaku",
+          "description": "This post is for beginners. If you are not a beginner, you can still read it, but you may not find it as helpful.\nIn the world of web development, there are a few different languages you can use to create your websites: HTML, CSS, and JavaScript. In this blog post, we will be focusing on HTML and CSS. \nHTML, or HyperText Markup Language, is the language that is used to create the structure of a website. This includes the headings, paragraphs, and images.\nCSS, or Cascading Style Sheets, is the language that is used to style the HTML. This includes the font, color, and size of the text, as well as the layout of the website. \nTogether, HTML and CSS create a static website. This means that the website will not change unless you edit the code yourself. If you want to create a website that is in…",
+          "link": "https://dev.to/yaku/11-layout-and-design-tips-for-html-and-css-landing-pages-46dh",
+          "publishedOn": "2022-01-29T23:50:20.000Z",
+          "wordCount": 1107,
+          "title": "11 Layout and Design Tips for HTML and CSS 🛬Landing Pages that will accelarate 🚀 your career"
+        },
+        {
+          "id": "https://dev.to/josh4324/nft-for-beginners-1gkp",
+          "author": "ADESANYA JOSHUA AYODEJI",
+          "description": "There is a high probability you have heard about NFT, which in full is called non fungible tokens. This simply means that it cannot be replaced or interchanged. \nWhat brought about NFT?\nNFT became popular due to blockchain technology becoming mainstream. NFT can be any digital assets, artworks, pictures, videos or music. What makes them interesting is that they have unique properties which make it easy to prove ownership.\nFor example, if you have a picture, let's assume your picture, to make it an NFT, you just have to store it with its attribute on the blockchain. You don't even need to be a programmer or technical person to do this. This can be easily done on  Opensea .\nNFTs are quite popular because people are buying and selling it. you may not be able to sell your NFT picture but if you are an artist or a creative, you can make a lot of money listing your creative asset on an NFT marketplace. \nWhat makes NFT stand out in the blockchain world?\nThey can be traded across different ecosystems, this means you can view your NFT on different wallets and marketplaces. This is possible due to open standards adopted across the ecosystem.\nNFTs are been utilized in various industries.\nOpensea  or other platforms\nOpulous  as NFTs\nAirNFTs  as NFTs\n Axie infinity  game.\nDecentraland \nNFT Marketplaces\nThe most popular one is  Opensea\nOthers are SuperRare and\nRarible \nThank you for taking the time to read, you probably have no idea how blockchain works\nYou can check out my article -  Blockchain for Beginners",
+          "link": "https://dev.to/josh4324/nft-for-beginners-1gkp",
+          "publishedOn": "2022-01-29T23:47:36.000Z",
+          "wordCount": 704,
+          "title": "Nft For Beginners"
+        },
+        {
+          "id": "https://dev.to/simonnystrom/building-a-ui-kit-with-react-typescript-storybook-and-tailwind-19k3",
+          "author": "Simon Nyström",
+          "description": "Introduction\n\n\nWelcome to the UI Kit with React, TypeScript, Storybook and Tailwind series where I aim to build a basic UI kit that I can use in my hobby projects and continuously update so that all my projects will have the same features.\nThe goal of this series is to share my experience when learning these different technologies, I have some previous experience of React, TypeScript, and tailwindcss, but I haven't used Storybook a lot in the past.\nQuick about me: Full-stack engineer with 6 years experience with a back-end bias working mostly with Java and Kotlin.\nMaybe you'll learn something as well 😊.\nThere are a bunch of ready-made, true and tested UI libraries out there already such as Material-UI, but I would like to attempt to create my own for learning purposes. I can also build so…",
+          "link": "https://dev.to/simonnystrom/building-a-ui-kit-with-react-typescript-storybook-and-tailwind-19k3",
+          "publishedOn": "2022-01-29T23:39:10.000Z",
+          "wordCount": 969,
+          "title": "Building a UI Kit with React, TypeScript, Storybook and Tailwind"
+        },
+        {
+          "id": "https://dev.to/gulsenkeskin/flutter-provider-turleri-546h",
+          "author": "Gülsen 🦋",
+          "description": "Flutter'da bir çok Provider türü vardır bunlardan bazıları:\n\n\n• Provider\nBu yazıda provider türlerini ve bunlardan hangisinin ne zaman kullanılacağını öğreneceğiz.\nBunun için aşağıdaki yapıyı kullanacağız.\n\n• \"Do something\" düğmesi, uygulama durumunu değiştiren herhangi bir uygulama olayını temsil eder.\n• \"Show something\" Metin widget'ı, kullanıcı arayüzünün uygulama durumunu görüntülemesi gereken herhangi bir bölümünü temsil eder.\n• Soldaki yeşil dikdörtgen ve sağdaki mavi dikdörtgen, widget ağacının iki farklı bölümünü temsil eder. Bir etkinliğin ve güncellediği kullanıcı arayüzünün uygulamanın herhangi bir bölümünde olabileceğini vurgulamak için kullanılmışlardır.\nimport 'package:flutter/material.dart';\n\nvoid main() => runApp(MyApp());\n\nclass MyApp extends StatelessWidget {\n  @override\n…",
+          "link": "https://dev.to/gulsenkeskin/flutter-provider-turleri-546h",
+          "publishedOn": "2022-01-29T22:49:35.000Z",
+          "wordCount": 2764,
+          "title": "Flutter Provider Türleri 💫 🌌 ✨"
+        },
+        {
+          "id": "https://dev.to/kspeakman/event-sourcing-stream-metadata-429k",
+          "author": "Kasey Speakman",
+          "description": "Discovering the need for stream metadata.\nOne of the best uses of Event Sourcing is to manage behaviors between entities, aka relationships. This is where all interesting things happen. For example, a product catalog is just a collection of data. It doesn't do anyone any good until those products are sold, shipped, restocked, etc. All of these processes occur between people or companies. They occur in relationships.\nThese relationships need to be reflected somewhere in the event stream. In our domain of safety training, the main activity we track is training. Which involves a student and a course. We use a Training ID (a UUID) to identify each training process. If we were creating relational tables, we would include foreign keys to Student ID and Course ID to track the entities involved. H…",
+          "link": "https://dev.to/kspeakman/event-sourcing-stream-metadata-429k",
+          "publishedOn": "2022-01-29T22:16:17.000Z",
+          "wordCount": 947,
+          "title": "Event Sourcing - Stream Metadata"
+        },
+        {
+          "id": "https://dev.to/cerchie/what-makes-a-good-first-issue-4fn0",
+          "author": "Lucia Cerchie",
+          "description": "Between creating a repo to help git & Github beginners understand common workflows (more on that later), and helping onboard more experienced folks to new projects recently, this question's been at the forefront of my mind. \nThe first thing to think about is: what's the point of a good first issue? Well, the general point is to teach whoever addresses the issue something that will empower them to contribute to something more complex afterwards. \nSo really, the point is to isolate modules of the learning process for the contributor into digestible portions that increase their independence in the codebase. \nBack when I was teaching elementary school, this was called \"scaffolding\". The term was coined by a psychologist named Lev Vygotsky. He also outlined something called the \"zone of proxima…",
+          "link": "https://dev.to/cerchie/what-makes-a-good-first-issue-4fn0",
+          "publishedOn": "2022-01-29T21:24:12.000Z",
+          "wordCount": 993,
+          "title": "What makes a \"good first issue\"?"
+        },
         {
           "id": "https://dev.to/dailydevtips1/javascript-recurring-timers-with-setinterval-1345",
           "author": "Chris Bongers",
@@ -1250,6 +1331,15 @@
       "siteUrl": "https://sspai.com",
       "articles": [
         {
+          "id": "https://sspai.com/post/71226",
+          "author": "Levinson",
+          "description": "一个界面中用近似色系中不同的颜色区分不同的功能是界面设计里常用的设计方法，但又有谁想到不同的颜色也会给部分人带来压力呢？前段时间 iMessage 服务在美国因为「蓝色聊天气泡」和「绿色聊天气泡」的设计引发了不小的讨论。\n\n但因为国内的 iMessage 用户不多，所以讨论的人也不多，甚至有不少朋友都不知道这件事。所以我也打算从这个讨论开始和大家一起聊聊 iMessage、RCS 消息以及 5G 消息的特点和不同。\niMessage 的「绿气泡」和「蓝气泡」\n最近这轮关于 iMessage 争议的开端，是《华尔街日报》2022 年 1 月 8 日刊登的报道《Apple 的蓝泡泡帝国》（Apple’s Blue Bubble Empire1），这篇报道大致阐述了这样一个观点：「Apple 通过颜色区分普通短信（SMS）消息和 iMessage 消息，目的是使用 Android 手机的美国青少年在社交上倍感压力，让更多的人继续使用 iPhone」。\n其实，iMessage 的封闭生态，以及其消息气泡颜色对用户社交关系的潜在影响，在过去已经被讨论过很多次。美国网络语汇中很早就有「green bubble struggle」的说法；三星还曾在 2019 年专门 汇集一组 GIF 动图 揶揄 iMessage 的气泡颜色。但《华尔街日报》以主流大报的身份参与这个话题，确实引发了更为广泛和激烈的讨论。\n文章发出后，Google 高级副总裁、Android 团队负责人 Hiroshi Lockheimer 在推特上转发了这篇文章并 评论 道：\n\nApple 用 iMessage 套牢用户是铁证如山的计谋。作为一家将人性和公平作为核心营销点的公司，利用同辈压力（peer pressure，指因害怕被同伴排挤而放弃自我做出顺应别人的选择——编注）和欺凌销售产品是虚伪的。现有的标准完全可以解决…",
+          "link": "https://sspai.com/post/71226",
+          "publishedOn": "2022-01-29T07:00:00.000Z",
+          "wordCount": 638,
+          "title": "「蓝泡泡」的热闹与发短信的门道：从 iMessage 独占之争谈 5G 时代的短信"
+        },
+        {
           "id": "https://sspai.com/post/71224",
           "author": "宛潼",
           "description": "在今年的新年节日主题中，Apple 为我们带来了一个全新的活动：用 Keynote 制作一张贺卡送给亲友。在 Apple 提供的新年贺卡模板里，大胆地运用了多种色彩和元素，颇有「波普风格」的味道，十分具有艺术感。\n\n不过转念一想，我还是为 Apple 捏了把汗：这些设计用来送给年轻的「亚逼」1朋友或许非常适合，但如果要送给家中长辈或年纪较小的孩子，就显得有些过于浮夸了。考虑到农历新年的主要氛围还是热烈的红色，所以我们不妨通过自己动手，在 Keynote 上来制作一张属于自己的贺卡。\n或许你会觉得，「设计」本身就是一个比较复杂的东西，面对着一张空白的画板，不知道要做点什么。不用担心，这一次其实不需要太多美术功底，只要你有一个相对好一些的审美，就能够在网上找到合适的素材，一点一点将它拼出你心目中的样子。\n对了，如果你觉得新年与「红色」的相关性是刻板印象，你也可以选择一个你喜欢的颜色。\n尺寸设定\n如今，纸质的贺卡已经逐渐被排版优美和展现形式多样的电子贺卡所取代，所以很可能我们不会将设计好的贺卡打印出来，而是通过社交媒体来传播。考虑到如今最贴近人身边的屏幕依然还是手机，因此建议还是将贺卡的版面调整为手机竖版。\n与此同时，当今大部分手机都已经是全面屏，因此最好不要用 9:16 的画面比例，而是采用 18:9 这样的比例来制作，尽量利用好屏幕的显示空间，营造更浓烈的氛围感。此外还要注意，不少全面屏的四角和顶部空间都是不可用的，在制作时记得不要在这些地方摆放重要元素，避免被遮挡，这些区域在设计上被称为「安全区外的空间」。\n记得把内容放在安全区域内\n当然啦，横版的贺卡也不是不行，不过如果是横版的话，建议可以添加一些精美的动画效果，然后导出成视频，增加互动的同时，也能带来更多乐趣。\n如果你有心，还可以制作两个版本。两个版本在本质上不会太难，只需要将一些元素重新排布即可。\n风格和元素\n确定好了…",
@@ -1954,69 +2044,6 @@
           "publishedOn": "2022-01-21T06:33:26.000Z",
           "wordCount": 49,
           "title": "车厂对变速箱的调节都做了什么？"
-        },
-        {
-          "id": "http://www.zhihu.com/question/512530646/answer/2318404510",
-          "author": "凯凯",
-          "description": "人在北京，开过上百款车，自己分别有前驱SUV、后驱轿车和电动车，聊聊经验。\n东北有句老话：一猪二熊三老虎。不是真的说野猪的战斗力秒杀东北虎，而是人遇到野猪，往往不如遇到老虎那么害怕，结果被野猪挑死了。\n按照不同天气，对应的警惕程度应该是这样的顺序：\n雪天＜雨天＜雨夹雪＜冷雾\n雪天好说，地上都白了，是个智商正常的都知道该慢，提高预判警醒着开。雨天要比雪天更小心，因为车速高了之后，轮胎会与地面之间形成一层薄薄的水膜，导致附着力大幅下降，但很多人开车的时候有种操蛋的逻辑，感觉破水而行很爽，甚至故意加速压水坑，要是赶上单侧轮胎水坑里踩油门，那就离失控不远了。\n所以相比下雪，雨天更应该提高警惕。\n接下来是雨夹雪，这种情况就像过地雷阵，很难判断前方路面到底是水，还是冰层，还是冰水混合物。雨夹雪最可怕的是，不像雪天那样，司机会一直保持警惕。很多司机遇到雨夹雪，刚一开始心里还挺紧张，聚精会神，越开心里越放松。车速提升、预判变短，甚至回到常规驾驶习惯，以至于前方车辆减速时，自己的车刚好处于冰水混合的路面，只能眼看着爆前车菊。\n我曾经跑高速，真实的经历告诉我，最可怕的天气是冷雾，为什么呢？冷雾一般发生在深夜和凌晨，诱因大概是某个区域短时间内气温骤降，导致瞬间起了大雾。雾天开车各位都知道该怎么操作吧？打开前后雾灯，慢速行驶，非必要不开双闪。\n但突发性的冷雾，大家都把注意力放在视线上了，却漏掉了一个特别重大的危险隐患——路面凝水/结霜。这种情况比雨夹雪形成的暗冰更可怕，因为在深夜凌晨，路面是否凝水结霜几乎没法分辨，这时候一脚刹车下去，如果是结霜路面，车辆特别容易启动ABS和EBD，一些经验不足的司机就慌了，因为这种表现和他们的心理预期极不相符：\n不就是下雾了么，为什么刹不住车了？\n经验不够的司机这时候就特别容易慌，从而出现乱打方向等谜之操作，进而导致事故。\n最后附上我很久以前经历并总结的一次道路结冰导致七车连追事故：\n凯凯：【车库微观】东五环环铁桥七车连追事件\n\n\n凯凯\n点击下载\n7 个回答，查看全部。\n对于一直在南方开车的司机，下雪和结冰路面有什么技巧和不一样的地方？\n交通部门建议北京市民 8 日非必要不出行，降雪后路面结冰，该如何在保证安全的前提下合理安排出行？",
-          "link": "http://www.zhihu.com/question/512530646/answer/2318404510?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2022-01-20T13:45:36.000Z",
-          "wordCount": 19,
-          "title": "1 月 20 日北京迎来降雪，部分路面已经开始结冰，这种天气出行有哪些注意事项？"
-        },
-        {
-          "id": "http://www.zhihu.com/question/459499838/answer/2318371038",
-          "author": "Legal诗睿",
-          "description": "我喜欢这句话，“我们无权评论别人的人生，同理别人也不可以。”\n肯定有许多人会过来阴阳怪气，“那可真是无权”（评论区果为如此，承认自己可能是特别难的一件事）。\n不患人之不己知，患其不能也。\n因为没有人能够比事主自己更了解自己，所以没法评价人生；对于同理，假装情绪去“可怜或者怜惜”我觉得想必都是虚伪的：不知他人苦，无法同理。\n在不违法的前提下，做任何事情都是自己的自由，网间相传的事情，狗头萝莉这样一位主播何尝不是类似于“陈冠希门”一般的受害者呢？\n关于早年的猥亵和强奸，既然已经在网上公开，不妨报警，众所周知，无论猥亵还是强奸如果要走法律程序，那么其重点就是证据。想要证明犯罪事实，至少要有以下核心证据中的几个形成证据体系：\n\n医院病历以及报告单（可能非常不容易取到，时间已经相隔太久）\n被告人的供述以及辩解（有大概率可以取得）\n受害人的陈述以及辨认笔录（确凿取得）\n案发现场勘验检查笔录以及照片（难以取得）\n能够证明双方是否发生性关系的精斑检验鉴定意见书（难以取得）\n能够证明被告人是否采取暴力、胁迫或其他手段以威吓受害人的证人证言（可能可以取得）\n能够证明受害人是否曾通过微信、短信和电话等方式向外传递求救信息的证人证言（刑事侦查可以恢复电子数文）\n能够证明受害人是否存在反抗、胁迫等迹象的案发现场（酒店入口、走廊）监控视频\n\n在以上证据的采集上，毋庸置疑，警方是十分专业的。然而由于本事件自发生到报警，时间间隔已经较长了，部分证据的取得可能难度颇大，不过在知乎依旧怀有热情的时代，我想会有无数愿意给予协助帮助的人。\n当然，关于刑事方面的建议我还是更为推荐去做专业咨询（我只能大体给一点点提示，这不是我擅长的领域，可以咨询两位女律师 @黄小牛 @王逸然 ）。\n关于高额违约金，涉及违约要付出的成本，让狗头萝莉背上高额违约金的原因是合同约定发生根本性违约时应当支付高额违约金——这件事情愿打愿挨，没有什么办法。\n虽然都说，违约金，性质上以补偿性为主，惩罚性为辅。\n但实际里面，无论是法院判决还是仲裁，其实都会基于会综合考虑实际损失、履行情况、过错程度、预期利益等因素，并根据公平和诚实信用原则进行认定。\n其中会重点考虑主播的知名程度、主播的主观过错、平台对主播培养和人气维系的情况、平台基于连续性合同履行所产生的预期利益损失。\n从合作之初，其实甲方设计来说，本就是律师通过精巧的合同设计来约束主播，而主播的行为被装进款式多样的违约套餐中。\n稍有不慎，就会触发高额索赔。\n纵然知道违约金很高，然而主播还是得签：无他，双方地位本来初始就不平等。\n当然，对于类似虎牙平台的资源倾斜来说（一个主播很多时候都是资源堆出来的），确实也具有设置高额违约金的必要性。\n以主播韦朕8522万天价违约金案为例，裁判机构一般会认为直播作为新兴产业具有较强的行业特点，直播平台对主播依赖性较强且行业间竞争激烈，平台经营者需要投入大量人力物力进行主播的推广和人气维系，顶级主播的直播间观看人数和粉丝数量对平台利益具有重大隐形关联。\n当然我想最开始签约的时候，狗头萝莉甚至不能完全理解合约对于自身的限制程度（比如私德条款之类纵然明星都不了解，何况一个游戏主播）。\n可是她既然在网络上说了她的过往，我想从法律上也许不是她不懂，而是已经失去了心气，这个时候的她，依旧还希望有人会倾泻予她以阳光。\n想起有个KWM的姑娘很善良，前天转过来她直播时候的视频，并评论“唏嘘于人生的不同，但是可以从泫然欲泪里感受不甘，以及无法脱身”。\n面包和牛奶都会有的，要振作起来，自己可以拯救自己，做一个你曾经想要成为的，能给大家带来更多美好的人吧。\n\n来源：知乎 www.zhihu.com\nLegal诗睿\n点击下载\n728 个回答，查看全部。\n游戏直播时声音好听的女主播的萝莉音是伪音吗？\n如何看待黑粉黑蔡萝莉？",
-          "link": "http://www.zhihu.com/question/459499838/answer/2318371038?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2022-01-20T10:08:23.000Z",
-          "wordCount": 17,
-          "title": "如何评价狗头萝莉？"
-        },
-        {
-          "id": "http://www.zhihu.com/question/511972728/answer/2318228157",
-          "author": "十万个秋刀鱼",
-          "description": "大家好，我是《画江湖之不良人》第五季的导演兼半拉编剧，李帅帅。（开场白直接扒的舒导，实在太难想了！）\n犹记得当初舒导被市场的大佬们围在会议室写知乎的窘境，犹记得我叼着烟嘲笑的嘴脸，犹记得市场大佬那略有深意的回眸现在回想起来让我倍感深刻。\n\n\n\n在唠些有营养的之前，请容我唠叨两句，谁叫你们给我吐槽的机会呢~\n时间回溯到不良人4播出之时，在4收获不错的口碑背后，大家不知道的是我们透支了什么，公司开始动荡，而我，正准备离职。就在这个时候，关导和舒导找到了我。\n对面是劈着大腿的关导，一旁是面色苍白挂着诡异笑容的舒导。\n关：“帅啊，你来导不良人5吧。”\n我：“哦，啊？”\n这时办公室门开了，端着茶杯的周导走到我身后，吐了口茶叶。\n周：“别怕，我带你。”\n我：“我…”\n周：“哦对了，是5和6啊。”\n那个时候我早就知道做原创动画不赚钱，但是我更想不明白的是这帮人从几十人干到四百多人又掉到一百多人……还tm搞原创，这不疯了吗？\n后来我明白了，凤凰啊，是需要涅槃的。\n就这样，我接过了接力棒，是整体制作周期缩减一半的不良人5、6。\n你们看我说的挺热血，真到开干的时候，真的太难了。首先的难题就是人员配置，动荡期我们流失了大量第4季的班底，为了增强画质我们还换了新流程，这让整个项目充满了大量的不确定性，我们要在更短的周期内，不断试错，同时还要保持制作水准。就这样，我还将画幅提升到了21:9，为此制片部门还开了大会。\n翁总监：“ 21:9 ，代价是什么？”\n我：“（小心翼翼）拍到的东西会更多，但是画面会更有张力，更贴近电影，更能凸显我们的画质，增强沉浸感blablabla……”\n在座鸦雀无声，我艹我当时紧张的不行。\n翁总监：“艹，干了！”\n首当其冲的就是资产，新流程下，我们以前的所有资产积累都需要更新，没有一样可以直接用（感谢大个儿和小倩，资产组一度就八个人，兄弟们太难了）。尽管如此，我们还要更进一步…",
-          "link": "http://www.zhihu.com/question/511972728/answer/2318228157?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2022-01-20T08:29:12.000Z",
-          "wordCount": 105,
-          "title": "如何评价《画江湖之不良人》第 5 季第 1 集和第 2 集？"
-        },
-        {
-          "id": "http://zhuanlan.zhihu.com/p/450256908",
-          "author": "北京市疾病预防控制中心",
-          "description": "北京市疾病预防控制中心\n12月23日，国务院新闻办公室举行新闻发布会，介绍北京冬奥会和冬残奥会疫情防控政策及相关筹备工作。北京市卫生健康委员会副主任、新闻发言人李昂就如何做好北京冬奥医疗救治保障工作回答了记者提问。\n\n\n李昂表示，北京市按照《奥运会指南—医疗服务》和《国际雪联医疗保障指南》要求，本着“简约、安全、精彩”办赛理念，按照精准、安全、高效的分类施治策略，做好冬奥医疗救治保障，重点开展了四个方面的工作：\n一是完善了医疗救治资源配置。在竞赛场馆设置固定医疗站、比赛场地医疗站、观众医疗站等，北京赛区和延庆赛区共设置88个医疗站，提供现场医疗急救及伤病员分流转运工作。从17家定点医院和2家院前急救机构选拔1140名医疗骨干作为场馆医疗保障人员，配置457名院级后备力量；从12家三级医院抽选120名医护人员组建市级后备队；配备场馆救护车74辆，其中负压救护车54辆。按照冬奥疫情防控政策要求，协同北京冬奥组委将涉冬奥伤病员分为新冠肺炎确诊与疑似患者、闭环内的发热症状患者、闭环内其他伤病员、闭环外的发热症状患者、闭环外其他伤病员等五类，调整优化定点医院收治任务，18家定点医院实施精准分类收治，避免不同风险伤病员流线交叉。赛时将从定点医院抽调1188名医务人员、840名院内专家，提供及时、高效的医疗服务，同时，60名市级专家、10名院士给予高水平技术支持。\n二是制定了“一场一策”和“一院一策”医疗保障方案。针对每一场所比赛运动损伤特点，专门配备了骨科、口腔科等学科医务人员。同时，在冰球场馆增配CT、牙椅等设备，结合场所环境特点，开展有针对性的现场急救演练，实现“一场一策”医疗保障。为发挥专业学科优势，提高医疗救治能力，定点医院制定了“一院一策”医疗保障方案，北京大学第三医院延庆医院将1.2万平方米的独立病房楼改建为冬奥医疗中心，设置72张病床，配套CT和核磁等设备、手术室、核酸采样、发热门诊等；北京安贞医院腾退104张床位改造为冬奥专区；北京大学人民医院、北京朝阳医院、北京世纪坛医院等调整院内布局，设置病房专区，配备专用CT、核磁等设备，建设负压杂交手术室，为冬奥医疗救治提供有力保障。\n三是加强了冬奥村综合诊所建设。建成了1500平方米的北京冬奥村综合诊所和1658平方米的延庆冬奥村综合诊所，覆盖急诊、理疗康复、影像、中医、牙科等18个学科，满足赛时每日16 小时基本门诊和24小时紧急救治需求。目前，北京冬奥村综合诊所医疗设备调试已完成；延庆冬奥村综合诊所CT、核磁、DR方舱已调试到位，保证赛时急诊、门诊、康复转院等医疗救治工作有序开展。\n四是强化了培训演练和血液保障。按照全员培训、内外结合原则，加大医疗保障人员冬奥知识、英语水平、滑雪技能等内容培训，40名滑雪医生达到国际救援水平，1900名医疗保障人员具备基础急救能力。市红十字血液中心建立赛时调血机制，Rh阴性血液持续保持在1800～2000单位。\n北京市将统筹全市医疗资源，全力做好冬奥会、冬残奥会医疗救治保障工作，为各国运动员和国际友人提供优质高效的医疗救治保障。\n\n\n编辑：Suki\n来源：健康北京\n\n\n\n\n\n来源：知乎 www.zhihu.com\n北京市疾病预防控制中心\n点击下载",
-          "link": "http://zhuanlan.zhihu.com/p/450256908?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2022-01-20T04:59:55.000Z",
-          "wordCount": 9,
-          "title": "精准、安全、高效做好北京冬奥医疗救治保障工作"
-        },
-        {
-          "id": "http://zhuanlan.zhihu.com/p/458972929",
-          "author": "新华社",
-          "description": "https://www.zhihu.com/video/1466793698432774144\n冬奥会的到来，不仅让更多的孩子感受到冰雪运动的乐趣，更为孩子们树立了新的奋斗目标。\n\n在南京奥体中心，就有这样一群孩子，即使懵懵懂懂，却对未来能站上冬奥赛场充满期待。\n\n记者：陈思 李光正  \n摄制：张可心\n\n来源：知乎 www.zhihu.com\n新华社\n点击下载",
-          "link": "http://zhuanlan.zhihu.com/p/458972929?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2022-01-20T04:59:18.000Z",
-          "wordCount": 63,
-          "title": "噢！我爱冰球！"
-        },
-        {
-          "id": "http://zhuanlan.zhihu.com/p/458957819",
-          "author": "新华社",
-          "description": "https://www.zhihu.com/video/1466791394299408384\n    从黑龙江省七台河市走出的世界冠军张杰，是两届世界大冬会女子3000米接力冠军队成员，曾在短道速滑世锦赛中打破世界纪录。\n↑这是张杰参加1991年世界短道速滑锦标赛的资料照片。新华社发\n    2014年，张杰回到家乡七台河，利用学习多年的运动康复技能组建了一支由残障孩子组成的短道速滑队，不拿薪金，义务执教。\n↑在七台河体育中心，张杰（左二）指导残障孩子进行上冰前的热身（1月11日摄）。新华社记者 张涛 摄↑在七台河体育中心，张杰（左上）和孩子们进行冰上训练（1月11日摄）。新华社记者 张涛 摄\n    这支由残障孩子组成的短道速滑队成员曾在2017年第11届世界冬季特奥会的速度滑冰项目中斩获4金2银，又在2019年第15届世界夏季特奥会的速度轮滑项目中获得3金2银2铜的好成绩。\n↑这是张杰（左二）和唐春雷（右一）、高萌（右二）、聂双月的合影（资料照片）。唐春雷、高萌和聂双月曾在2017年第11届世界冬季特奥会中获得4枚金牌、2枚银牌。新华社发\n    世界冠军培养出了世界冠军。对此，张杰却说，金牌不重要，只要孩子们收获快乐就好。\n    从七台河出发，张杰在赛场上为国争光。荣誉加身，她又为爱折返，为“折翼天使”插上梦想的翅膀，成为家乡冰雪运动“火种”的播撒者。“我所有的快乐、幸福和人生感悟都是滑冰带给我的，滑冰是我的全部。”张杰说。\n↑这是1月8日在七台河短道速滑冠军馆“折翼天使的翅膀——张杰”展厅内拍摄的奖牌。其中包括张杰世界大冬会上获得的金牌、张杰教导出的残障孩子们在2017年第11届世界冬季特奥会中获得的4枚金牌、2枚银牌，以及在2019年第15届世界夏季特奥会中获得的3枚金牌、2枚银牌和2枚铜牌。新华社记者 谢剑飞 摄↑在七台河体育中心，残障孩子在进行上冰前的热身（1月11日摄）。新华社记者 谢剑飞 摄↑在七台河体育中心，张杰（中）指导七台河职业学院短道速滑训练中心的孩子们进行滑冰训练前的热身（1月10日摄）。新华社记者 谢剑飞 摄↑在七台河体育中心，张杰（上）带领残障孩子在进行训练前的热身（1月11日摄）。新华社记者 张涛 摄↑在七台河体育中心，残障孩子进行上冰前的热身训练（1月11日摄）。新华社记者 张涛 摄↑在七台河体育中心，张杰（右）在训练前和残障孩子交流（1月11日摄）。新华社记者 谢剑飞 摄↑在七台河体育中心，张杰（右）在训练前和残障孩子交流（1月11日摄）。新华社记者 张涛 摄↑在七台河体育中心，张杰（左）指导残障孩子进行滑冰训练（1月11日摄）。新华社记者 谢剑飞 摄↑在七台河体育中心，张杰（中）指导残障孩子进行滑冰训练（1月11日摄）。新华社记者 谢剑飞 摄↑在七台河体育中心，张杰（右）指导孩子们进行冰上训练（1月11日摄）。新华社记者 张涛 摄↑在七台河体育中心，张杰（右）指导七台河职业学院短道速滑训练中心的孩子们进行训练（1月10日摄）。新华社记者 谢剑飞 摄↑在七台河体育中心，张杰（左一）指导七台河职业学院短道速滑训练中心的孩子们进行训练（1月10日摄）。新华社记者 谢剑飞 摄↑在七台河体育中心，残障孩子在训练结束后相互搓手取暖（1月11日摄）。新华社记者 张涛 摄↑这是1月8日在七台河短道速滑冠军馆内拍摄的“折翼天使的翅膀——张杰”展厅。新华社记者 谢剑飞 摄↑这是1月8日在七台河短道速滑冠军馆“折翼天使的翅膀——张杰”展厅内拍摄的张杰教导残障孩子滑冰用的笔记和手绘训练图。新华社记者 谢剑飞 摄↑在七台河体育中心，训练结束后张杰（中）被孩子们围绕（1月11日摄）。新华社记者 谢剑飞 摄\n记者 谢剑飞 张涛\n\n来源：知乎 www.zhihu.com\n新华社\n点击下载",
-          "link": "http://zhuanlan.zhihu.com/p/458957819?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2022-01-20T04:58:45.000Z",
-          "wordCount": 210,
-          "title": "逐梦冰雪｜她是世界冠军，她是“教练妈妈”，她是播撒火种的人"
-        },
-        {
-          "id": "http://www.zhihu.com/question/467118683/answer/1961003005",
-          "author": "凯凯",
-          "description": "去年当爹了，说实话哪怕1个孩子，我都觉得自己的轿车空间有些捉襟见肘。带娃家庭对于空间的需求提升，远不止一个座位+儿童安全座椅那么简单，而是伴娃左右的各种杂七杂八，都得有地方妥妥安置。\n我就想，以后三胎家庭越来越多，要应付3个孩子的日常出行，这样的SUV有吗？于是我罗列了大家庭SUV的实用条件：\n\n绝对空间一定要够；\n相对空间，也就是内部灵活性必须有，能让车主自己组合布局；\n人性化设计，包括按键布局、随手就能利用的储物格等等，很考验厂商的用户思维；\n在满足以上三点的基础上，车辆的智能化也可以为出行提供便利，这项并非强求。\n\n\n离家不远就有很多4S店，带着这些需求，我“假模假式”探访了一波，结果被一款即将上市的新车按住了，它就是一汽－大众旗舰SUV——揽境。这款车指导价为29.99~39.99万元，不到30万就能入手的德系大块头，值得细细品味！\n\n而且我发现，这次一汽-大众为揽境邀请的品牌代言人于和伟，从某种程度上讲与车辆的定位十分契合。于和伟属于可塑性很高的演技派，从《大宅门》里吐口水的白占安，到《新三国》里“接着奏乐接着舞”的刘备，戏路实在是广。反过来看，揽境是定位于大家庭兼商务的全能旗舰SUV，于和伟站在揽境旁边，显然可以突出后者的全能属性——力图满足客户所有用车场景。\n\n绝对空间 | 随便折腾！\n\n这家店有两台揽境，一台作为展车摆在显眼的位置，另一台即将办好上路手续。一汽-大众的店员很热情，把车洗好了让我独自享受！时间有限，我马上按照大家庭SUV的使用条件，一项一项“折腾”起来。\n一汽-大众揽境 前两排空间展示\n首先是前排空间，调整好坐姿后，身高1.68米的我头部距离车顶尚有两拳距离。这是在我意料之中的，因为揽境的车身高度接近1.8米，对于身高1.9米以下的人来说都是完全够用的。\n\n保持驾驶位座椅不变，来到第二排。揽境采用2+2+2的6座布局形式，且全系可以选装7座。这…",
-          "link": "http://www.zhihu.com/question/467118683/answer/1961003005?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
-          "publishedOn": "2022-01-20T03:43:58.000Z",
-          "wordCount": 154,
-          "title": "真相鉴定团 | 号称“全能车型”的一汽-大众揽境真的那么能打吗？"
         }
       ]
     },
@@ -2025,6 +2052,126 @@
       "feedUrl": "https://www.xda-developers.com/feed",
       "siteUrl": "https://www.xda-developers.com",
       "articles": [
+        {
+          "id": "https://www.xda-developers.com/?p=586967",
+          "author": "Rich Woods",
+          "description": "Intel’s 12th-gen H-series processors are the best that you can get in a gaming laptop, and the Core i9-12900HK really shows it off. It’s a 45W CPU that can go way farther, especially since it’s unlocked for overclocking. From our testing, we’ve seen in every benchmark that it outperforms the competition. It’s worth keeping in\nThe post Core i9-12900HK review: Intel has the best gaming processor, for now appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/intel-core-i9-12900hk-review/",
+          "publishedOn": "2022-01-29T17:00:58.000Z",
+          "wordCount": 3162,
+          "title": "Core i9-12900HK review: Intel has the best gaming processor, for now",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2022/01/MSI-Raider-GE76-6.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=588787",
+          "author": "Mahmoud Itani",
+          "description": "The Apple Watch is a powerful wearable that is famous for its fitness and other non-health related features. When you buy an Apple Watch, you’re investing in a device that will simplify (and potentially even save) your life. The Series 7 is the latest and most advanced model sold by the company. It comes with\nThe post How to pair and set up your new Apple Watch Series 7 appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/how-to-pair-set-up-apple-watch/",
+          "publishedOn": "2022-01-29T16:00:15.000Z",
+          "wordCount": 1703,
+          "title": "How to pair and set up your new Apple Watch Series 7",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/10/apple-watch-series-7-xda-14.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=588403",
+          "author": "Ben Sin",
+          "description": "Before I begin evaluating the Redmi Note 11, which is the base model of Xiaomi’s just-announced line consisting of four phones, I must confess: it is hard for me to review mid-range phones. I have been a privileged gadget enthusiast most of my life, meaning even before I got to test smartphones for a living,\nThe post Redmi Note 11 Hands-On: This price tag makes it really hard to nitpick appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/redmi-note-11-hands-on/",
+          "publishedOn": "2022-01-29T07:30:57.000Z",
+          "wordCount": 3225,
+          "title": "Redmi Note 11 Hands-On: This price tag makes it really hard to nitpick",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2022/01/redmi-note-11-global-xda-166.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=589221",
+          "author": "João Carrasqueira",
+          "description": "We’ve all been there: Trying to upload an image, sometimes as part of a big form, and the website where you need to upload it to has an annoying limit on file size. It can be an understandable limitation – after all, images take up a lot of space, so compressing them can be important.\nThe post XDA Basics: How to resize an image on your Windows PC or Mac appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/how-to-resize-an-image/",
+          "publishedOn": "2022-01-28T22:00:02.000Z",
+          "wordCount": 2116,
+          "title": "XDA Basics: How to resize an image on your Windows PC or Mac",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2022/01/How-to-resize-an-image.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=589737",
+          "author": "Corbin Davenport",
+          "description": "Verizon and AT&T started rolling out 5G on C-Band spectrum in the United States last week, finally giving both carriers an answer to the success of T-Mobile’s mid-band 5G. The rollout was delayed due to concerns from the Federal Aviation Administration (FAA) and some airlines, because it could interfere with equipment in some airplanes and\nThe post FAA says Verizon and AT&T can continue rolling out C-Band 5G near airports appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/c-band-airport-rollout/",
+          "publishedOn": "2022-01-28T21:18:01.000Z",
+          "wordCount": 853,
+          "title": "FAA says Verizon and AT&T can continue rolling out C-Band 5G near airports",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2022/01/emiratesboeing777-300er-567962.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=589251",
+          "author": "Karthik Iyer",
+          "description": "Intel’s new 12th-gen Alder Lake CPUs are here and they offer a huge performance improvement over anything we’ve seen from Intel in the last couple of years. In fact, the new Alder Lake chips are also more powerful than a lot of AMD processors, making the competition more interesting than ever. In this article, we’re\nThe post Premium Intel gaming PC Guide: The best parts for a high-end Intel-based build appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/premium-intel-gaming-pc-build-guide/",
+          "publishedOn": "2022-01-28T20:00:26.000Z",
+          "wordCount": 2556,
+          "title": "Premium Intel gaming PC Guide: The best parts for a high-end Intel-based build",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2021/12/Fractal-Design-Meshify-2-Compact-black-color.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=589725",
+          "author": "Corbin Davenport",
+          "description": "Android 12 is still rolling out to many phones and tablets, but Google is already in the middle of working on the next major version, Android 12L. The upcoming update is primarily aimed at foldables and tablets, and since Google doesn’t make Android tablets anymore (RIP Pixel C), the main tablet test device has been\nThe post Android 12L Beta 2 now available for Lenovo Tab P12 Pro appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/android-12l-beta-2-lenovo-tab-p12-pro/",
+          "publishedOn": "2022-01-28T19:47:54.000Z",
+          "wordCount": 737,
+          "title": "Android 12L Beta 2 now available for Lenovo Tab P12 Pro",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2022/01/lfq9gd1udj76fj9aj5w9f8gy5dd35u437102.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=589709",
+          "author": "Corbin Davenport",
+          "description": "Google Chrome is still the most popular browser on Android devices, mostly because it’s the default option on most phones. New features are tested on a frequent basis, usually first showing up in the ‘Canary’ unstable release channel, and another one has just appeared that might save people from accidentally losing tabs. Chrome on Android\nThe post Google Chrome tests warning for closing all tabs on Android appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/chrome-android-close-all-tabs/",
+          "publishedOn": "2022-01-28T19:12:07.000Z",
+          "wordCount": 829,
+          "title": "Google Chrome tests warning for closing all tabs on Android",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2022/01/Screenshot_20220128-134241_Chrome-Canary-featured.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=586953",
+          "author": "Rich Woods",
+          "description": "One of the things that Acer always seems to nail down with its products is value, and it’s done that once again with the Swift X (SFX14-41G-R1S6). It comes with an AMD Ryzen 7 5800U processor, RTX 3050 Ti graphics, 16GB RAM, and a 512GB SSD, all for $1,099.99. On top of that, it lives\nThe post Acer Swift X (2021) review: A lot of power for a three-pound laptop appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/acer-swift-x-2021-review/",
+          "publishedOn": "2022-01-28T18:00:04.000Z",
+          "wordCount": 2772,
+          "title": "Acer Swift X (2021) review: A lot of power for a three-pound laptop",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2022/01/Acer-Swift-X-1.jpg"
+          }
+        },
+        {
+          "id": "https://www.xda-developers.com/?p=589523",
+          "author": "Corbin Davenport",
+          "description": "USB Type-C was intended to be the universal connector for almost all data and charging needs, and with evolving USB Power Delivery standards and higher-quality cables, it’s slowly replacing countless types of proprietary chargers. Now everyone’s favorite port is making its way to power tools, as two companies have announced batteries and tools with the\nThe post USB Type-C finally shows up in power tools, fulfills its destiny as the One True Port appeared first on xda-developers.",
+          "link": "https://www.xda-developers.com/usb-type-c-power-tools/",
+          "publishedOn": "2022-01-28T17:33:41.000Z",
+          "wordCount": 830,
+          "title": "USB Type-C finally shows up in power tools, fulfills its destiny as the One True Port",
+          "enclosure": {
+            "url": "https://www.xda-developers.com/files/2022/01/DCB094K_K1.jpg"
+          }
+        },
         {
           "id": "https://www.xda-developers.com/?p=588401",
           "author": "Karthik Iyer",
@@ -3355,6 +3502,15 @@
       "siteUrl": "https://www.baeldung.com",
       "articles": [
         {
+          "id": "https://drafts.baeldung.com/?p=125898",
+          "author": "baeldung",
+          "description": "Learn about MongoDB document IDs and how to retrieve the ID of a document we just inserted in a collection via a Java program.",
+          "link": "https://feeds.feedblitz.com/~/680013440/0/baeldung~Get-Last-Inserted-Document-ID-in-MongoDB-With-Java-Driver",
+          "publishedOn": "2022-01-29T14:32:42.000Z",
+          "wordCount": null,
+          "title": "Get Last Inserted Document ID in MongoDB With Java Driver"
+        },
+        {
           "id": "https://www.baeldung.com/?p=116031",
           "author": "Usman Mohyuddin",
           "description": "Learn the essential concepts of Cassandra query language (CQL) and how to apply them",
@@ -3724,96 +3880,6 @@
           "publishedOn": "2022-01-24T13:32:50.000Z",
           "wordCount": null,
           "title": "Netflix Earnings, The Competition Question, Netflix's Long-Term Value",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/mr-cisc-vs-mr-risc-arm-and-amd-threats-gelsingers-three-tenets/",
-          "author": "Ben Thompson",
-          "description": "The best way to understand Pat Gelsingers thinking about the threats posed by ARM and AMD is to go back to his arguments in favor of CISC over RISC",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9tci1jaXNjLXZzLW1yLXJpc2MtYXJtLWFuZC1hbWQtdGhyZWF0cy1nZWxzaW5nZXJzLXRocmVlLXRlbmV0cy8.W8CJJQrbGBQb6wo8QvkHjbnyttpMtX_W2WqCoIQLzPIDRsKhR4qASjoEt4jlFrypCOGxTKUHpkI7CBkBk1Oxy95XEREHht2zpymj9rl5FnrQyixBfzLoYUS2OV-dCVZxzxSkaI1BwHKlxCmMIdimuVeHvte5XQ6az4r2NXzBKxZKBR1NxIqR50uod792oKdx9yLMXv6Eqw6ir0jpXNgjskkc0pzzHJavoH_pccODcJCIHsw1OnbW56rDJnSQzFhnat57Y4fYz99oxitoypYSeyKgDLtj85h3YUW0coWHkSVgmAvNSoQpOUTakeg1OPL8Q-D4eXiHSsESusC3tDyjXQ",
-          "publishedOn": "2022-01-20T10:43:08.000Z",
-          "wordCount": null,
-          "title": "Mr. CISC vs. Mr. RISC, ARM and AMD Threats, Gelsinger's Three Tenets",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/mr-cisc-vs-mr-risc-arm-and-amd-threats-gelsingers-three-tenets/",
-          "author": "Ben Thompson",
-          "description": "The best way to understand Pat Gelsingers thinking about the threats posed by ARM and AMD is to go back to his arguments in favor of CISC over RISC",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9tci1jaXNjLXZzLW1yLXJpc2MtYXJtLWFuZC1hbWQtdGhyZWF0cy1nZWxzaW5nZXJzLXRocmVlLXRlbmV0cy8.wYu47E_ZBpvB4GAPFduMLb2n6_zIMVLX9i-PhmMW4qyqTVjqhGBJ0TpLTwD7dlBrx0fsn9XikKbPefbU51WhfqKIkchn5xqsiepx4WY20I0b-AcxCLolQz6sUIiuL6OAKSkRH47ipMXT7HeL8aKQCcAoJbCwoVdiIIuZFs5S1b83glvRGPZczr03_qBmMgPdne_5SwDZ8uoJ_4vnpWoVSCoZZF0H4m7rtFbsrhk7IIgt7io8Yp1O8sPTHEuxz8T7fQ80slHfwzQ5AGzjixhbbd3JQ5sY3pox5ria7zJisr8naMFgLCLoHqNWinbMelBJfRPFeFsF8cDH7YM9riViWg",
-          "publishedOn": "2022-01-20T10:43:08.000Z",
-          "wordCount": null,
-          "title": "Mr. CISC vs. Mr. RISC, ARM and AMD Threats, Gelsinger's Three Tenets",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/mr-cisc-vs-mr-risc-arm-and-amd-threats-gelsingers-three-tenets/",
-          "author": "Ben Thompson",
-          "description": "The best way to understand Pat Gelsingers thinking about the threats posed by ARM and AMD is to go back to his arguments in favor of CISC over RISC",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9tci1jaXNjLXZzLW1yLXJpc2MtYXJtLWFuZC1hbWQtdGhyZWF0cy1nZWxzaW5nZXJzLXRocmVlLXRlbmV0cy8.arjKQhDzYrzEfMsNim2dUdM-FoC7CReVxSDrRwf0ii0dBzlov4mS0iE6AZT2tK5r1NsSr5uzkyN-NYUlykJtruczXk5LrwxcP0Hg4KTE4QoE96maw5cgym5gttPQavOMQIi-mP9Y9SS3Q01XZw_BGaC2o1SBt1bdBJOapNXWXbp6ipb1e9Ndig_AJWUNxOywUSkrSwU3iBob-HEqxf6FabWpRl1LkxoKJa6UDLGxcSFGwWYi6Zxkua9oaQFfN54DUleSozAT7FZDszl3f-HaUwNT2I3pxX9K_WNOWPHeQISgAuwifz7Rcq5iKxQEZc5II7-VTWVtBpmXCQ_CnZXF2Q",
-          "publishedOn": "2022-01-20T10:43:08.000Z",
-          "wordCount": null,
-          "title": "Mr. CISC vs. Mr. RISC, ARM and AMD Threats, Gelsinger's Three Tenets",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/mr-cisc-vs-mr-risc-arm-and-amd-threats-gelsingers-three-tenets/",
-          "author": "Ben Thompson",
-          "description": "The best way to understand Pat Gelsingers thinking about the threats posed by ARM and AMD is to go back to his arguments in favor of CISC over RISC",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9tci1jaXNjLXZzLW1yLXJpc2MtYXJtLWFuZC1hbWQtdGhyZWF0cy1nZWxzaW5nZXJzLXRocmVlLXRlbmV0cy8.f1zq6dNgzfnHhaCH2N3B0FcRf6NAr5wmDAx8QkHY6wM0CoACFQbDneFCVKy5VvKGUo4ax3Z3PHjfR8Ee1zqUoEEtv-fW3bjCHrDJDxE0SShwTKofH9BUFJKRQCuzMsKMLdWosVa_yhq24SoXA0fvMkNoXqNCULzben7U_W7FVXNYtAtROO7Vwh2cbYJw-NbLJsSoidGcQJ-gza8wHpfKeVdEg2jCOJPOyZ0vvXGk-NAXc-AMKjHOst0aiYHla9sUxl7gNqsRgPfoQ-hhWjvSXcLzS8GTYhD_W1Iyv4x5weUBriMS9K05B1Lyj1KiHo0gemrR5bt2BTxK3szK0O4WPQ",
-          "publishedOn": "2022-01-20T10:43:08.000Z",
-          "wordCount": null,
-          "title": "Mr. CISC vs. Mr. RISC, ARM and AMD Threats, Gelsinger's Three Tenets",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/mr-cisc-vs-mr-risc-arm-and-amd-threats-gelsingers-three-tenets/",
-          "author": "Ben Thompson",
-          "description": "The best way to understand Pat Gelsingers thinking about the threats posed by ARM and AMD is to go back to his arguments in favor of CISC over RISC",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9tci1jaXNjLXZzLW1yLXJpc2MtYXJtLWFuZC1hbWQtdGhyZWF0cy1nZWxzaW5nZXJzLXRocmVlLXRlbmV0cy8.UNhKbHKSshpul36ugnNLRP8UaPWlwyebsVhirDaU2XCUQw82LcvQHf5AOe42RUirlEQzgcuDOaDKV4ECOlaNAOohacUUQqsT2LYADeTbMcQNw2U3PwudRhHyudUcPW71i-QH02oQMttNkKxl2E5dOR-3ba-yhcqYJtHGr_kgDhBsxjfyocbk_zVtGAM7L7waYQuKezvwJ4bm0prdX64lvphomYc9CyvVAwCiTnusYnFuHX4RU8R6vowZfRe_aQB-fXkP2Ngw0ArA8ddRpoN1RP0E1eJie3uLZXHggGmgUzhqoWZ1_Hali4L4oGgSnpI4Tb0Kt4yfchW2a0eNp3WggQ",
-          "publishedOn": "2022-01-20T10:43:08.000Z",
-          "wordCount": null,
-          "title": "Mr. CISC vs. Mr. RISC, ARM and AMD Threats, Gelsinger's Three Tenets",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/mr-cisc-vs-mr-risc-arm-and-amd-threats-gelsingers-three-tenets/",
-          "author": "Ben Thompson",
-          "description": "The best way to understand Pat Gelsingers thinking about the threats posed by ARM and AMD is to go back to his arguments in favor of CISC over RISC",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9tci1jaXNjLXZzLW1yLXJpc2MtYXJtLWFuZC1hbWQtdGhyZWF0cy1nZWxzaW5nZXJzLXRocmVlLXRlbmV0cy8.I7MeTmdD97LfR45uXiIiHU2oBhI8Yxhdjc_JJIOP79MCG5WVd0ZFSiGPtQyZgdUapWLRRY5am7YrkFFHjtFSz27Z4sd_ki6G0PSiL-lXhebdExO_5o2u5xOCfaNkScaeIQq2BClJdsglSUt7yWSMhVHE4F9-1Fb2I481a2-MlgI28dc6vasKKPThZUrL_xmeLW33iwzJ-WdS533GPfZplVkic4w2TagC9BAHmCGjXa8FEQVE-ZahW8b8_qRBJJs7l-r2ZxYR7WjxDmeX2PD3VDSzCaqSHNjb1lDd1w2yGy1swIhD1mk3VAXaxmucgRm9LIJ9Kh9rTFwchPa1NyNHfQ",
-          "publishedOn": "2022-01-20T10:43:08.000Z",
-          "wordCount": null,
-          "title": "Mr. CISC vs. Mr. RISC, ARM and AMD Threats, Gelsinger's Three Tenets",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/mr-cisc-vs-mr-risc-arm-and-amd-threats-gelsingers-three-tenets/",
-          "author": "Ben Thompson",
-          "description": "The best way to understand Pat Gelsingers thinking about the threats posed by ARM and AMD is to go back to his arguments in favor of CISC over RISC",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9tci1jaXNjLXZzLW1yLXJpc2MtYXJtLWFuZC1hbWQtdGhyZWF0cy1nZWxzaW5nZXJzLXRocmVlLXRlbmV0cy8.ohenxha_nCQXE9xLVuUDYxc09GasDpyoIy6c95oN6_5GtWt1GhrYEQnX-BhYfwTG7u8VWDi0jGdBNb6bSChS7zONM8w8IV3nUziwzkyJ_IddJ00nX8CNfn35p7HT0e3c1Kw-7CrPOFlOgN9Mf7-wjpRPLO_heaRz7bQ_Y16IZOCeGHf4Yx8XC6TGQaWNUCrnNSM7i0UssLtCtkI4PqB4NyGDDUbYtrgEqRSEUxJG8MfV-5EHo7-qk0gPfDbd3kaUV7m0iVc5v_4H8BgydbeUrf6Q1VheUyH-mckSY5y8o_jtmFtCdzMvtt0IDyvkaxX-Avd0G6oZA1ohQdWkIeeLTQ",
-          "publishedOn": "2022-01-20T10:43:08.000Z",
-          "wordCount": null,
-          "title": "Mr. CISC vs. Mr. RISC, ARM and AMD Threats, Gelsinger's Three Tenets",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/mr-cisc-vs-mr-risc-arm-and-amd-threats-gelsingers-three-tenets/",
-          "author": "Ben Thompson",
-          "description": "The best way to understand Pat Gelsingers thinking about the threats posed by ARM and AMD is to go back to his arguments in favor of CISC over RISC",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9tci1jaXNjLXZzLW1yLXJpc2MtYXJtLWFuZC1hbWQtdGhyZWF0cy1nZWxzaW5nZXJzLXRocmVlLXRlbmV0cy8.fWGE1MAOnw19vtXpqwJ7QMnpKdwXnH15W1JNyDqb2EEidVtNCwnKCnuwv78YhGg-CJNLbQh1X3n5OmQfpwsVm2R0Pw0g3x1TnXWFg8_NHmy_6DRITjRZlFDTIbN7F0F2k9VegloSjKRSfn6zxgBjn3fFC6KgXjn5jItfFypELdh8CPKyOxZxXA0RchTwGjpX-utMxhmwS4ttzDXv4shlh2Cua22QBaaG95kBrwAT-kP7NhqH-6dWu5n9xPmeUPzNhP_V9j_UaE1DS9k_4obEgQE3uhNYgyDGo8kIePW7_kZoe21ProYzheZpSwjgTZN1gPFb6t9K--jJeg0nIzPANQ",
-          "publishedOn": "2022-01-20T10:43:08.000Z",
-          "wordCount": null,
-          "title": "Mr. CISC vs. Mr. RISC, ARM and AMD Threats, Gelsinger's Three Tenets",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/mr-cisc-vs-mr-risc-arm-and-amd-threats-gelsingers-three-tenets/",
-          "author": "Ben Thompson",
-          "description": "The best way to understand Pat Gelsingers thinking about the threats posed by ARM and AMD is to go back to his arguments in favor of CISC over RISC",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9tci1jaXNjLXZzLW1yLXJpc2MtYXJtLWFuZC1hbWQtdGhyZWF0cy1nZWxzaW5nZXJzLXRocmVlLXRlbmV0cy8.aoV0nU6pMjqYEik8fUeTud_JNi3-NansCJMWiXzN1A1DSlel5beaM_h4e-p2rSXxhuvWR5NAnh9grlROArjubBWlsrgjDPjr_WiVi-1AgcS6fgOsIIBrgjO6Sn1la6Denz6BccY4Us1-aAzmROCRlNALxWZwWXNQi4Im5oeRL3N0K1qZqCheJJ3qiTFbAGIraVqw5xK21m3A4jxd4yjafwggMOvH0Vkr51NtaiTvM0OGGyyeFugNRPK70ffl44I6As20VCKm9bGDo8MPq4hlxw4rurcHYhr1FRdA14P_acLJUwp7l2Xf56dj3RzCiFBPtUCvO7y6OXA9E7Pva1sjrg",
-          "publishedOn": "2022-01-20T10:43:08.000Z",
-          "wordCount": null,
-          "title": "Mr. CISC vs. Mr. RISC, ARM and AMD Threats, Gelsinger's Three Tenets",
           "itunes": {}
         }
       ]
@@ -4461,6 +4527,105 @@
       "feedUrl": "https://reddit.buzzing.cc/rss.xml",
       "siteUrl": "https://reddit.buzzing.cc",
       "articles": [
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/sfmcux/this_is_so_embarrassing_to_watch/",
+          "author": null,
+          "description": "这让人看了很尴尬",
+          "link": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/sfmcux/this_is_so_embarrassing_to_watch/?score=76109&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffacepalm%2Fcomments%2Fsfmcux%2Fthis_is_so_embarrassing_to_watch%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffacepalm%2Fcomments%2Fsfmcux%2Fthis_is_so_embarrassing_to_watch%2F&channel=facepalm&sensitive=false",
+          "publishedOn": "2022-01-30T00:45:32.000Z",
+          "wordCount": 20,
+          "title": "这让人看了很尴尬"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/HolUp/comments/sf5r7p/hes_got_a_point_tho/",
+          "author": null,
+          "description": "他说得很有道理",
+          "link": "https://reddit.buzzing.cc/reddit/r/HolUp/comments/sf5r7p/hes_got_a_point_tho/?score=75119&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FHolUp%2Fcomments%2Fsf5r7p%2Fhes_got_a_point_tho%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FHolUp%2Fcomments%2Fsf5r7p%2Fhes_got_a_point_tho%2F&channel=HolUp&sensitive=false",
+          "publishedOn": "2022-01-29T22:10:50.000Z",
+          "wordCount": 19,
+          "title": "他说得很有道理"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/sfhtqq/trumps_are_not_well_known_for_their_critical/",
+          "author": null,
+          "description": "特朗普并不以其批判性思维能力著称",
+          "link": "https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/sfhtqq/trumps_are_not_well_known_for_their_critical/?score=75038&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Fsfhtqq%2Ftrumps_are_not_well_known_for_their_critical%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Fsfhtqq%2Ftrumps_are_not_well_known_for_their_critical%2F&channel=WhitePeopleTwitter&sensitive=false",
+          "publishedOn": "2022-01-29T21:46:18.000Z",
+          "wordCount": 24,
+          "title": "特朗普并不以其批判性思维能力著称"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/sfif7o/closedcircuit_tv_of_a_brazilian_pet_shop/",
+          "author": null,
+          "description": "巴西一家宠物店的闭路电视",
+          "link": "https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/sfif7o/closedcircuit_tv_of_a_brazilian_pet_shop/?score=75775&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Fsfif7o%2Fclosedcircuit_tv_of_a_brazilian_pet_shop%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Fsfif7o%2Fclosedcircuit_tv_of_a_brazilian_pet_shop%2F&channel=MadeMeSmile&sensitive=false",
+          "publishedOn": "2022-01-29T18:21:07.000Z",
+          "wordCount": 21,
+          "title": "巴西一家宠物店的闭路电视"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/sf5d7z/in_2006_a_man_in_portland_oregon_hired_a_hitman/",
+          "author": null,
+          "description": "2006年，俄勒冈州波特兰市的一名男子雇佣了一名杀手来杀害他51岁的妻子苏珊-库恩豪森。她最后赤手空拳杀死了这个杀手。当她的手放在他的脖子上时，她问他：\"告诉我是谁派你来的，我就给你叫个该死的救护车！\"",
+          "link": "https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/sf5d7z/in_2006_a_man_in_portland_oregon_hired_a_hitman/?score=75295&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Fsf5d7z%2Fin_2006_a_man_in_portland_oregon_hired_a_hitman%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Fsf5d7z%2Fin_2006_a_man_in_portland_oregon_hired_a_hitman%2F&channel=interestingasfuck&sensitive=false",
+          "publishedOn": "2022-01-29T18:21:07.000Z",
+          "wordCount": 66,
+          "title": "2006年，俄勒冈州波特兰市的一名男子雇佣了一名杀手来杀害他51岁的妻子苏珊-库恩豪森。她最后赤手空拳杀死了这个杀手。当她的手放在他的脖子上时，她问他：\"告诉我是谁派你来的，我就给你叫个该死的救护车！\""
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/MurderedByWords/comments/sez68x/dont_work_in_medicine_if_you_dont_believe_in/",
+          "author": null,
+          "description": "如果你不相信医学，就不要在医学界工作",
+          "link": "https://reddit.buzzing.cc/reddit/r/MurderedByWords/comments/sez68x/dont_work_in_medicine_if_you_dont_believe_in/?score=75301&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMurderedByWords%2Fcomments%2Fsez68x%2Fdont_work_in_medicine_if_you_dont_believe_in%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMurderedByWords%2Fcomments%2Fsez68x%2Fdont_work_in_medicine_if_you_dont_believe_in%2F&channel=MurderedByWords&sensitive=false",
+          "publishedOn": "2022-01-29T15:20:06.000Z",
+          "wordCount": 24,
+          "title": "如果你不相信医学，就不要在医学界工作"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/Unexpected/comments/sf434p/an_uncommon_customer/",
+          "author": null,
+          "description": "一个不寻常的客户",
+          "link": "https://reddit.buzzing.cc/reddit/r/Unexpected/comments/sf434p/an_uncommon_customer/?score=75792&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FUnexpected%2Fcomments%2Fsf434p%2Fan_uncommon_customer%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FUnexpected%2Fcomments%2Fsf434p%2Fan_uncommon_customer%2F&channel=Unexpected&sensitive=false",
+          "publishedOn": "2022-01-29T15:04:24.000Z",
+          "wordCount": 17,
+          "title": "一个不寻常的客户"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/wholesomememes/comments/seu14t/he_loves_spending_time_with_us/",
+          "author": null,
+          "description": "他喜欢和我们在一起的时间",
+          "link": "https://reddit.buzzing.cc/reddit/r/wholesomememes/comments/seu14t/he_loves_spending_time_with_us/?score=75042&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fwholesomememes%2Fcomments%2Fseu14t%2Fhe_loves_spending_time_with_us%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fwholesomememes%2Fcomments%2Fseu14t%2Fhe_loves_spending_time_with_us%2F&channel=wholesomememes&sensitive=false",
+          "publishedOn": "2022-01-29T13:41:03.000Z",
+          "wordCount": 20,
+          "title": "他喜欢和我们在一起的时间"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/sex740/damn_son/",
+          "author": null,
+          "description": "该死的儿子！",
+          "link": "https://reddit.buzzing.cc/reddit/r/facepalm/comments/sex740/damn_son/?score=75021&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffacepalm%2Fcomments%2Fsex740%2Fdamn_son%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffacepalm%2Fcomments%2Fsex740%2Fdamn_son%2F&channel=facepalm&sensitive=false",
+          "publishedOn": "2022-01-29T12:20:32.000Z",
+          "wordCount": 16,
+          "title": "该死的儿子！"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/meirl/comments/sev7cz/meirl/",
+          "author": null,
+          "description": "我的女孩",
+          "link": "https://reddit.buzzing.cc/reddit/r/meirl/comments/sev7cz/meirl/?score=75790&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmeirl%2Fcomments%2Fsev7cz%2Fmeirl%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmeirl%2Fcomments%2Fsev7cz%2Fmeirl%2F&channel=meirl&sensitive=false",
+          "publishedOn": "2022-01-29T09:15:21.000Z",
+          "wordCount": 15,
+          "title": "我的女孩"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/shitposting/comments/sesrd1/jojo_advice/",
+          "author": null,
+          "description": "乔乔建议",
+          "link": "https://reddit.buzzing.cc/reddit/r/shitposting/comments/sesrd1/jojo_advice/?score=75247&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fshitposting%2Fcomments%2Fsesrd1%2Fjojo_advice%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fshitposting%2Fcomments%2Fsesrd1%2Fjojo_advice%2F&channel=shitposting&sensitive=false",
+          "publishedOn": "2022-01-29T07:24:03.000Z",
+          "wordCount": 16,
+          "title": "乔乔建议"
+        },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/memes/comments/sezpc6/this_is_our_content/",
           "author": null,
@@ -5755,6 +5920,213 @@
       "feedUrl": "https://hn.buzzing.cc/rss.xml",
       "siteUrl": "https://hn.buzzing.cc",
       "articles": [
+        {
+          "id": "https://hn.buzzing.cc/hn/30126118/",
+          "author": null,
+          "description": "财政部重新考虑国税局在网络上使用ID.me人脸识别的问题",
+          "link": "https://hn.buzzing.cc/hn/30126118/?score=107&original_url=https%3A%2F%2Fwww.bloomberg.com%2Fnews%2Farticles%2F2022-01-28%2Ftreasury-weighing-id-me-alternatives-over-privacy-concerns&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30126118&sensitive=false",
+          "publishedOn": "2022-01-30T00:45:09.000Z",
+          "wordCount": 31,
+          "title": "财政部重新考虑国税局在网络上使用ID.me人脸识别的问题"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30128740/",
+          "author": null,
+          "description": "战争是个骗局 (1933)",
+          "link": "https://hn.buzzing.cc/hn/30128740/?score=100&original_url=https%3A%2F%2Fman.fas.org%2Fsmedley.htm&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30128740&sensitive=false",
+          "publishedOn": "2022-01-30T00:45:09.000Z",
+          "wordCount": 28,
+          "title": "战争是个骗局 (1933)"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30125037/",
+          "author": null,
+          "description": "USB Type-C终于在电动工具中出现了",
+          "link": "https://hn.buzzing.cc/hn/30125037/?score=105&original_url=https%3A%2F%2Fwww.xda-developers.com%2Fusb-type-c-power-tools%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30125037&sensitive=false",
+          "publishedOn": "2022-01-29T23:26:42.000Z",
+          "wordCount": 31,
+          "title": "USB Type-C终于在电动工具中出现了"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30129636/",
+          "author": null,
+          "description": "YouTube-dl正在接受新的管理，将很高兴看到新的公关。",
+          "link": "https://hn.buzzing.cc/hn/30129636/?score=101&original_url=https%3A%2F%2Fgithub.com%2Fytdl-org%2Fyoutube-dl%2Fissues%2F30568&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30129636&sensitive=false",
+          "publishedOn": "2022-01-29T23:11:50.000Z",
+          "wordCount": 33,
+          "title": "YouTube-dl正在接受新的管理，将很高兴看到新的公关。"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30130535/",
+          "author": null,
+          "description": "告诉HN：谷歌对精确匹配不再起作用了",
+          "link": "https://hn.buzzing.cc/hn/30130535/?score=104&original_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30130535&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30130535&sensitive=false",
+          "publishedOn": "2022-01-29T22:53:09.000Z",
+          "wordCount": 30,
+          "title": "告诉HN：谷歌对精确匹配不再起作用了"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30129572/",
+          "author": null,
+          "description": "\"Y Combinator不值得\"。",
+          "link": "https://hn.buzzing.cc/hn/30129572/?score=100&original_url=https%3A%2F%2Ftwitter.com%2Ftheryanking%2Fstatus%2F1487500943511932941&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30129572&sensitive=false",
+          "publishedOn": "2022-01-29T22:53:09.000Z",
+          "wordCount": 28,
+          "title": "\"Y Combinator不值得\"。"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30125633/",
+          "author": null,
+          "description": "512KB俱乐部",
+          "link": "https://hn.buzzing.cc/hn/30125633/?score=100&original_url=https%3A%2F%2F512kb.club%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30125633&sensitive=false",
+          "publishedOn": "2022-01-29T22:10:33.000Z",
+          "wordCount": 25,
+          "title": "512KB俱乐部"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30127615/",
+          "author": null,
+          "description": "FreeDOS如何成长并成为现代DOS (2021)",
+          "link": "https://hn.buzzing.cc/hn/30127615/?score=102&original_url=https%3A%2F%2Fwww.cloudsavvyit.com%2F12250%2Fhow-freedos-grew-up-and-became-a-modern-dos%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30127615&sensitive=false",
+          "publishedOn": "2022-01-29T19:34:36.000Z",
+          "wordCount": 32,
+          "title": "FreeDOS如何成长并成为现代DOS (2021)"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30128061/",
+          "author": null,
+          "description": "微妙的沟通通常在规模上不起作用",
+          "link": "https://hn.buzzing.cc/hn/30128061/?score=111&original_url=https%3A%2F%2Ftwitter.com%2Fdanluu%2Fstatus%2F1487228574608211969&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30128061&sensitive=false",
+          "publishedOn": "2022-01-29T19:19:17.000Z",
+          "wordCount": 28,
+          "title": "微妙的沟通通常在规模上不起作用"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30126546/",
+          "author": null,
+          "description": "用表观遗传学时钟让时间倒流",
+          "link": "https://hn.buzzing.cc/hn/30126546/?score=102&original_url=https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-022-00077-8&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30126546&sensitive=false",
+          "publishedOn": "2022-01-29T19:19:17.000Z",
+          "wordCount": 27,
+          "title": "用表观遗传学时钟让时间倒流"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30127088/",
+          "author": null,
+          "description": "一块宝石电池使特斯拉Model S的续航能力提高近一倍",
+          "link": "https://hn.buzzing.cc/hn/30127088/?score=102&original_url=https%3A%2F%2Fwww.motortrend.com%2Fnews%2Fone-gemini-battery-tesla-model-s-range-test%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30127088&sensitive=false",
+          "publishedOn": "2022-01-29T18:59:53.000Z",
+          "wordCount": 31,
+          "title": "一块宝石电池使特斯拉Model S的续航能力提高近一倍"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30128011/",
+          "author": null,
+          "description": "不要用你的三十美元的网站来教训我",
+          "link": "https://hn.buzzing.cc/hn/30128011/?score=125&original_url=https%3A%2F%2Fgdcolon.com%2F%F0%9F%97%BF&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30128011&sensitive=false",
+          "publishedOn": "2022-01-29T18:20:48.000Z",
+          "wordCount": 30,
+          "title": "不要用你的三十美元的网站来教训我"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30125218/",
+          "author": null,
+          "description": "你如何判断你正在面试的公司的内部是否腐朽？",
+          "link": "https://hn.buzzing.cc/hn/30125218/?score=100&original_url=https%3A%2F%2Fcharity.wtf%2F2022%2F01%2F29%2Fhow-can-you-tell-if-the-company-youre-interviewing-with-is-rotten-on-the-inside%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30125218&sensitive=false",
+          "publishedOn": "2022-01-29T16:32:38.000Z",
+          "wordCount": 35,
+          "title": "你如何判断你正在面试的公司的内部是否腐朽？"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30126171/",
+          "author": null,
+          "description": "超过10%的特斯拉S型电动车3年后未能通过德国的严格检查",
+          "link": "https://hn.buzzing.cc/hn/30126171/?score=112&original_url=https%3A%2F%2Fwww.thedrive.com%2Fnews%2F44068%2Fover-10-percent-of-tesla-model-s-evs-fail-germanys-strict-inspection-after-3-years&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30126171&sensitive=false",
+          "publishedOn": "2022-01-29T16:32:38.000Z",
+          "wordCount": 34,
+          "title": "超过10%的特斯拉S型电动车3年后未能通过德国的严格检查"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30125970/",
+          "author": null,
+          "description": "关于rust/coreutils的更新",
+          "link": "https://hn.buzzing.cc/hn/30125970/?score=102&original_url=https%3A%2F%2Fsylvestre.ledru.info%2Fblog%2F2022%2F01%2F29%2Fan-update-on-rust-coreutils&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30125970&sensitive=false",
+          "publishedOn": "2022-01-29T15:19:48.000Z",
+          "wordCount": 25,
+          "title": "关于rust/coreutils的更新"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30125829/",
+          "author": null,
+          "description": "谷歌终止简单键盘开发者的Play Store账户",
+          "link": "https://hn.buzzing.cc/hn/30125829/?score=115&original_url=https%3A%2F%2Fgithub.com%2Frkkr%2Fsimple-keyboard%2Fissues%2F333&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30125829&sensitive=false",
+          "publishedOn": "2022-01-29T14:06:20.000Z",
+          "wordCount": 32,
+          "title": "谷歌终止简单键盘开发者的Play Store账户"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30124101/",
+          "author": null,
+          "description": "她说的是拉丁语。古典主义者如何欺骗自己 (2019)",
+          "link": "https://hn.buzzing.cc/hn/30124101/?score=103&original_url=http%3A%2F%2Fblogicarian.blogspot.com%2F2019%2F03%2Fargumentum-ad-ignorantiam.html&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30124101&sensitive=false",
+          "publishedOn": "2022-01-29T14:06:20.000Z",
+          "wordCount": 33,
+          "title": "她说的是拉丁语。古典主义者如何欺骗自己 (2019)"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30120302/",
+          "author": null,
+          "description": "争夺世界上最强大的网络武器的战斗",
+          "link": "https://hn.buzzing.cc/hn/30120302/?score=100&original_url=https%3A%2F%2Fwww.nytimes.com%2F2022%2F01%2F28%2Fmagazine%2Fnso-group-israel-spyware.html&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30120302&sensitive=false",
+          "publishedOn": "2022-01-29T12:20:14.000Z",
+          "wordCount": 29,
+          "title": "争夺世界上最强大的网络武器的战斗"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30123096/",
+          "author": null,
+          "description": "人们并不像你想象的那样工作",
+          "link": "https://hn.buzzing.cc/hn/30123096/?score=113&original_url=https%3A%2F%2Fdrmaciver.substack.com%2Fp%2Fpeople-dont-work-as-much-as-you-think&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30123096&sensitive=false",
+          "publishedOn": "2022-01-29T11:02:09.000Z",
+          "wordCount": 28,
+          "title": "人们并不像你想象的那样工作"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30121476/",
+          "author": null,
+          "description": "维修权之争",
+          "link": "https://hn.buzzing.cc/hn/30121476/?score=100&original_url=https%3A%2F%2Fwww.checkbook.org%2Fnational%2Fright-to-repair%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30121476&sensitive=false",
+          "publishedOn": "2022-01-29T09:51:52.000Z",
+          "wordCount": 24,
+          "title": "维修权之争"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30123982/",
+          "author": null,
+          "description": "Tor浏览器：推进私人浏览创新的遗产",
+          "link": "https://hn.buzzing.cc/hn/30123982/?score=102&original_url=https%3A%2F%2Fblog.torproject.org%2Ftor-browser-advancing-privacy-innovation%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30123982&sensitive=false",
+          "publishedOn": "2022-01-29T09:15:04.000Z",
+          "wordCount": 29,
+          "title": "Tor浏览器：推进私人浏览创新的遗产"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30123232/",
+          "author": null,
+          "description": "令人心碎：6509个PSU在短暂的22年服务后出现故障",
+          "link": "https://hn.buzzing.cc/hn/30123232/?score=100&original_url=https%3A%2F%2Fwww.jumboframeinternet.com%2Fpost%2F1%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30123232&sensitive=false",
+          "publishedOn": "2022-01-29T07:52:40.000Z",
+          "wordCount": 31,
+          "title": "令人心碎：6509个PSU在短暂的22年服务后出现故障"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30120799/",
+          "author": null,
+          "description": "重塑FLoC品牌而不解决关键的隐私问题",
+          "link": "https://hn.buzzing.cc/hn/30120799/?score=100&original_url=https%3A%2F%2Fbrave.com%2Fweb-standards-at-brave%2F7-googles-topics-api%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30120799&sensitive=false",
+          "publishedOn": "2022-01-29T07:07:58.000Z",
+          "wordCount": 27,
+          "title": "重塑FLoC品牌而不解决关键的隐私问题"
+        },
         {
           "id": "https://hn.buzzing.cc/hn/30120731/",
           "author": null,
@@ -8188,6 +8560,33 @@
       "siteUrl": "https://hashnode.com",
       "articles": [
         {
+          "id": "https://dumbingdown.hashnode.dev/up-and-running-with-quarkus-and-jdk-17-on-mac",
+          "author": "Sharath Bhat",
+          "description": "If you would like to know what quarkus is, or learn about quarkus, please refer to official documentation. This is a blog about how I got it installed and running on my Mac. Again, use it as a supplement to the official documentation. I will only men...",
+          "link": "https://dumbingdown.hashnode.dev/up-and-running-with-quarkus-and-jdk-17-on-mac",
+          "publishedOn": "2022-01-30T01:14:14.000Z",
+          "wordCount": 657,
+          "title": "Up and running with Quarkus and jdk 17 on Mac"
+        },
+        {
+          "id": "https://santhosh250101.hashnode.dev/core-java-interview-questions",
+          "author": "Papisetty Santhosh",
+          "description": "1. What is the JAR file?\nJavaARchive files are a big glob of Java classes, images, audio, etc., compressed to make one simple, smaller file to ease Applet downloading. Normally when a browser encounters an applet, it goes and downloads all the files,...",
+          "link": "https://santhosh250101.hashnode.dev/core-java-interview-questions",
+          "publishedOn": "2022-01-29T17:19:00.000Z",
+          "wordCount": 772,
+          "title": "Core Java Interview Questions"
+        },
+        {
+          "id": "https://programmersblock.hashnode.dev/array-in-java",
+          "author": "Himanshu Gupta",
+          "description": "In this tutorial, you will learn about Arrays in Java, including how to declare an Array, initialize it, and access the Array, and how Array is stored in memory.\nBefore diving into the Arrays tutorial in Java, let's start with a simple scenario where...",
+          "link": "https://programmersblock.hashnode.dev/array-in-java",
+          "publishedOn": "2022-01-29T14:06:27.000Z",
+          "wordCount": 1419,
+          "title": "Array in Java"
+        },
+        {
           "id": "https://blog.gowthy.com/breadth-first-search-or-binary-tree-level-order-traversal",
           "author": "Gowthaman Ravi",
           "description": "Given the root of a binary tree, return the level order traversal of its nodes' values. (i.e., from left to right, level by level).\n\nExample 1:\n\nInput: root = [3,9,20,null,null,15,7]\nOutput: [[3],[9,20],[15,7]]\nExample 2:\nInput: root = [1]\nOutput: [[...",
@@ -8510,15 +8909,6 @@
           "publishedOn": "2022-01-21T03:21:11.000Z",
           "wordCount": 540,
           "title": "System.out.print(445.75f)"
-        },
-        {
-          "id": "https://manishpaneri.hashnode.dev/system-design-or-design-scalable-systems",
-          "author": "Manish Kumar Paneri",
-          "description": "System design is the process of designing the elements of a system such as the architecture, modules, and components, the different interfaces of those components, and the data that goes through that system.\nThe purpose of the System Design process i...",
-          "link": "https://manishpaneri.hashnode.dev/system-design-or-design-scalable-systems",
-          "publishedOn": "2022-01-20T06:00:39.000Z",
-          "wordCount": null,
-          "title": "System Design | Design Scalable Systems"
         }
       ]
     },
@@ -8527,6 +8917,33 @@
       "feedUrl": "https://linux.cn/rss.xml",
       "siteUrl": "https://linux.cn/",
       "articles": [
+        {
+          "id": "https://linux.cn/article-14225-1.html?utm_source=rss&utm_medium=rss",
+          "author": "linux@linux.cn (linux)",
+          "description": "洋葱新闻：“Linus 发现 Windows XP 很棒”\n\r\nLinux 创始人 Linus Torvalds 在 GitHub 上的 Linux 仓库的 README 中写道：“我删除了Linux，因为我讨厌它，现在我认为它很糟糕。你应该去使用这个很棒的操作系统，它叫 Windows XP，我刚刚发现它很棒。”，这个文件的 URL 是 https://github.com/torvalds/linux/tree/8bcab0346d4fcf21b97046eb44db8cf37ddd6da0 ，没错，看起来是 Linux 的仓库地址。好吧，这是一个洋葱新闻。事实上，这是一个 GitHub 的 bug，任何人都可以通过伪造 URL 而看起来像是另外的仓库和另外的作者。而这个 Bug 由来已久，但是 GitHub 从未准备修复。\n\r\n\r\n老王点评：无论 GitHub 基于什么理由不修复，但是通过这个漏洞可以制作出以假乱真的钓鱼信息，大家一定要注意。\n\r\n\r\n\n\r\n最新版 macOS 12.3 终于移除了 Python 2 的支持\n\r\n苹果释出了 macOS Monterey 12.3 Beta，一个主要变化是 不再捆绑 Python 2.7。苹果建议开发者使用 Python 3 或替代语言。Python 语言项目在 2020 年 1 月 1 日停止支持 Python 2 分支，接替 Python 2 的 Python 3 早在 2008 年就已经发布，但由于它不向后兼容，导致许多用户仍然停留在 Python 2 分支。但 macOS 也没有预装 Python 3，开发者可选择安装捆绑 Python 3 的 Xcode 开发工具。\n\r\n\r\n老王点评：如果 Python 3 能对 Python 2 提供更多的兼容性，而不是弃之如敝履，就不会有这么多的产品和服务还留在 Python 2。\n\r\n\r\n\n\r\nOpenSea 称其上免费创建的 NFT 80% 都是垃圾或剽窃作品\n\r\n占有绝对垄断地位的 NFT 市场 OpenSea 宣布，它将限制用户在平台上使用其工具免费创建 NFT 的次数为 50 次。这些免费创建的 NFT 可以跳过支付区块链燃料费用，而在售出时由买家支付。之后在社区的反对之下，OpenSea 又宣布取消这一限制，同时也给出了做此限制的 理由：用这个免费工具创建的项目中，超过 80% 是抄袭作品、虚假收藏和垃圾内容。\n\r\n\r\n老王点评：其实我觉得这种对免费创建的限制是有道理的，要不 OpenSea 可能会沦为垃圾场。",
+          "link": "https://linux.cn/article-14225-1.html?utm_source=rss&utm_medium=rss",
+          "publishedOn": "2022-01-29T11:39:00.000Z",
+          "wordCount": 138,
+          "title": "硬核观察 #531 洋葱新闻：“Linus 发现 Windows XP 很棒”"
+        },
+        {
+          "id": "https://linux.cn/article-14224-1.html?utm_source=rss&utm_medium=rss",
+          "author": "linux@linux.cn (linux)",
+          "description": "Bitsy 是一个开源电子游戏设计软件。 其简约的功能使任何人都可以探索他们的创造力。\n\r\n\r\n\n\r\n有许多游戏设计程序和各种游戏设计方法，但对我来说，最突出的是 Bitsy。Bitsy 由 Adam Le Doux 在 2017 年创建，在 MIT 许可下发布，用其创造者的话说，Bitsy 是：“一个用于小游戏或世界的编辑器。其目标是使制作游戏变得容易，在那里你可以四处走动，与人交谈，并到某个地方。”\n\r\n安装 Bitsy\n\r\nBitsy 是用 JavaScript 编写的，可以制作 HTML5 游戏。你可以从 GitHub 或 它的创造者的网站 下载它。它很小，很容易学习，有独特的位图艺术风格，有意在功能上有所欠缺，而且能做的事情有限。\n\r\n尽管（也许是因为）这些限制，Bitsy 自发布以来吸引了一个充满活力的用户社区。用户对 Bitsy 采取的两个主要方法是：接受限制和寻求突破限制，看看你能走多远。\n\r\n创意的界限\n\r\nBitsy 的局限性意味着接受这些局限性仍能制作出令人满意的游戏，这就成为一个需要创造性和创造力的挑战。你可以在 Itch.io 网站 上看到和玩一些用 Bitsy 制作的令人印象深刻的游戏。同时，人们也想出了一些黑科技、调整和扩展。这些都在不牺牲 Bitsy 的本质的前提下突破了一些限制。\n\r\nBitsy 的基本元素是一个代表玩家的头像、发生游戏动作的房间、精灵（可以与之互动的非玩家角色）和物品。有一个用于创建这些元素的位图编辑器，它也支持简单的两帧动画。\n\r\n\n\r\n在 Bitsy 中工作依赖于条件变量，而不是成熟的脚本，这使得没有编码背景的人容易学习，但有时会让那些期待更多灵活性的人感到沮丧。\n\r\n如果你想了解 Bitsy 的基本情况，你可以在创作者的网站上了解，或者下载并在本地运行。\n\r\n\n\r\n文档\n\r\n关于 Bitsy 的文档并不是只有一个地方可以去看。如果你想看 Bitsy 的操作，可以在 YouTube 上找到各种短视频。我更喜欢基于文本的教程，我发现最有用的三个资源是：\n\r\n\r\nItch.io 网站上提供的官方 Bitsy 教程，作者是 Claire Morwood\n\r\nBitsy workshop PDF， 由用户 haraiva 提供\n\r\nBitsy 变量， 教程由用户 ayolland 编写\n\r\n\r\n阅读这些教程，尝试一些 Bitsy 游戏，并开始创造你自己的东西。开始时要保持简单。当你熟悉了 Bitsy，你可能想研究一下人们为它创造的一些 工具、黑科技和扩展。\n\r\n它也是教育工作者的完美工具，甚至还有教育工作者 Hal Meeks 的 Bitsy 课程 可供在线学习。\n\r\n你还可以在 Itch.io 网站 上找到人们为 Bitsy 制作的大量游戏资源。\n\r\nTwine 整合\n\r\n你可能已经尝试过流行的基于浏览器的游戏开发工具 Twine。你可以将 Bitsy 与 Twine 不同程度地整合。整合的范围可以从简单地将 Bitsy 游戏放在一个 iframe 中显示在你的 Twine 游戏中，到在两个引擎之间共享变量和对话命令，让你在 Bitsy 游戏中执行基本的 Twine 命令！如果你对这些感兴趣，那么请看：\n\r\n\r\n结合 Bitsy 和 Twine 的教程\n\r\nBitsy 黑科技\n\r\nFreya 的 Twisty 模板\n\r\n\r\n给初学者的 Bitsy\n\r\n初学者很容易入门 Bitsy，无论你是编程新手还是仅仅是游戏设计的新手。有了它，你可以探索它在激发创造力、想象力和创造性方面的所有可能性。\n\r\n\r\nvia: https://opensource.com/article/22/1/bitsy-game-design\n\r\n作者：Peter Cheer 选题：lujun9972 译者：geekpi 校对：wxy\n\r\n本文由 LCTT 原创编译，Linux中国 荣誉推出",
+          "link": "https://linux.cn/article-14224-1.html?utm_source=rss&utm_medium=rss",
+          "publishedOn": "2022-01-29T10:02:56.000Z",
+          "wordCount": 154,
+          "title": "用 Bitsy 制作电子游戏"
+        },
+        {
+          "id": "https://linux.cn/article-14223-1.html?utm_source=rss&utm_medium=rss",
+          "author": "linux@linux.cn (linux)",
+          "description": "Firefox 显然是 Linux 用户中最受欢迎的开源网络浏览器之一。\n\r\n事实上，它是 可用于 Linux 的最佳网络浏览器 之一。但是，它的附加组件（或扩展组件）如何呢？\n\r\n考虑到你更喜欢开源的解决方案，你是否在使用开源服务的附加组件？有哪些你可以安装的最好的开源 Mozilla Firefox 附加组件？\n\r\n你应该尝试的开源 Firefox 扩展程序\n\r\n\n\r\n需要注意的是，在 Firefox 中并不是每个附加组件都是开源的。\n\r\n此外，有几个开源项目的 Firefox 附加组件采用了不同的许可证。\n\r\n1、Dark Reader\n\r\n\n\r\nDark Reader 是一个流行的浏览器扩展，让你打开网站的深色模式。该扩展只是简单地改变背景和文本颜色，以融合深色模式主题。\n\r\n在默认情况下，它与几乎所有网站都能很好地配合。然而，如果你认为深色模式无法阅读（或不好看），你也可以自定义颜色、对比度、亮度和灰度。\n\r\n你也可以选择在特定的网站上启用它，而在其他网站上禁用它。在这两种情况下，你都可以创建一个网站白名单/黑名单的列表。\n\r\n它是一个尊重用户隐私的开源项目。你可以在它的 GitHub 页面 中了解更多关于它的信息，或者安装该附加组件来尝试它。\n\r\n2、Bitwarden\n\r\n\n\r\n毋庸置疑，这是现有的 最佳密码管理器 之一。\n\r\nBitwarden 是一个开源的密码管理器，提供各种功能。它专注于提供有竞争力的开源解决方案。\n\r\n这个用于 Mozilla Firefox 的密码管理器插件并不亚于任何其他类似产品。你可以通过该扩展获得所有的基本功能，包括生成密码、管理你的保险库以及一些高级选项。\n\r\n在我的使用场景中，我没有发现这个扩展有任何不足之处。如果你还没有试过，你应该尝试一下这个插件。你可以看看它的 GitHub页面 来了解更多信息。\n\r\n3、Vimium-…",
+          "link": "https://linux.cn/article-14223-1.html?utm_source=rss&utm_medium=rss",
+          "publishedOn": "2022-01-29T09:07:55.000Z",
+          "wordCount": 186,
+          "title": "9 个可以改善你的 Firefox 体验的插件"
+        },
         {
           "id": "https://linux.cn/article-14222-1.html?utm_source=rss&utm_medium=rss",
           "author": "linux@linux.cn (linux)",
@@ -10765,6 +11182,15 @@
       "siteUrl": "https://dev.to/top/month",
       "articles": [
         {
+          "id": "https://dev.to/codepo8/a-launchjson-to-turn-vs-code-into-a-full-web-development-ide-36ge",
+          "author": "Christian Heilmann",
+          "description": "#vscode #debugging #css #javascript",
+          "link": "https://dev.to/codepo8/a-launchjson-to-turn-vs-code-into-a-full-web-development-ide-36ge",
+          "publishedOn": "2022-01-26T18:10:09.000Z",
+          "wordCount": 1202,
+          "title": "A launch.json to turn VS code into a full web development IDE"
+        },
+        {
           "id": "https://dev.to/alexomeyer/10-vscode-extensions-to-look-out-for-in-2022-4k42",
           "author": "Alex Omeyer",
           "description": "#vscode #programming #productivity #javascript",
@@ -11181,51 +11607,6 @@
           "publishedOn": "2022-01-20T14:56:53.000Z",
           "wordCount": 161,
           "title": "macOS iOS 如何批量导入自定义短语"
-        },
-        {
-          "id": "https://sspai.com/post/71058",
-          "author": "类星频道",
-          "description": "李想最近在微博上很活跃。\n2022 年 1 月 11 日的下午，李想在理想汽车内部一个主动安全主题的飞书群看到了一个懂车帝的视频链接，视频的标题很长：「2021 年度新能源、AEB、性能车型及发动机评选」，但对于李想来说，题眼无非是 3 个字母：AEB。\nAEB，全称 Autonomous Emergency Braking，自动紧急制动系统。在车辆行驶的过程中，如果有追尾的风险，但驾驶员又没踩刹车亦或是踩了但力度不够，都会触发 AEB，大力制动以避免追尾。\n在刚刚过去的 2021 年，懂车帝测试了超过 100 款车的 AEB，测试的项目纷繁复杂，既有儿童鬼探头、隧道 AEB，也有消失的前车、50% 追尾，这些测试远远超出了全球各国的碰撞安全评测机构布置的「考题」，以更加贴合中国交通场景的测试对 AEB 进行极限考验。\n那支视频的结论是：2021 款理想 ONE 打败了进入前五的华晨宝马 5 系、华晨宝马 X3、斯巴鲁傲虎和沃尔沃 XC60，成为懂车帝 2021 年 AEB 测试表现最好的车型。\n几个小时后，李想发微博表达了对智能驾驶团队的认可：「自从能够开展全栈自研以后，团队在算法和控制的进步速度远远超过了我的想象」。\n对于李想，乃至理想汽车这家公司来说，这无疑是一场小小的胜仗。尤其是考虑到就在一年前的 2020 年 12 月底，理想才和视觉感知供应商 Mobileye 分手，站在一穷二白从头来的白纸前。\n为什么是理想？\n一切都要回到一年前的那个年底。和 Mobileye 一年多来的合作已经让理想「忍无可忍」：这家从以色列起步的视觉感知供应商以其高效、可靠的算法敲开了诸多主流汽车制造商的大门，其中也包括年轻的理想汽车，但因为其高度封闭的合作策略，理想汽车在收集到用户端反馈的一些 Bug 后，却不被允许基于 Mobileye 的算法基础进行持续的迭代开发，以修复这些 Bug…",
-          "link": "https://sspai.com/post/71058",
-          "publishedOn": "2022-01-20T11:51:53.000Z",
-          "wordCount": 432,
-          "title": "5 个人，7 个月，理想 AEB 背后的故事"
-        },
-        {
-          "id": "https://sspai.com/post/71047",
-          "author": "有趣的牟辉",
-          "description": "前言 | 正经人就该写日记\n有个老梗：“正经人谁写日记？下贱！”\n虽然是句调侃，但确实让不少人对写日记这件事情生畏和误解。生畏，是把写日记当成羞耻，生怕被人发现；误解，是以为写日记就是自我内心世界的描绘，和不可告人的秘密。\n其实，凡是喜欢写所谓“走心” 日记的，往往是三天打鱼两天晒网的人。能让你坚持写一生的日记，一定不是靠情绪和修辞构建出来的，而是由事件组成的。\n真正的日记，写的不是瞬息万变的情绪，也不是无病呻吟的自虐剖析，而是忠实记录某个时间，发生了某件与己相关的事，仅此而已。\n所以，只有不正经的人才羞于将自己的经历记录下来，咱正经人，写个日记，堂堂正正，坦坦荡荡，有什么可害臊的呢？\n\n所谓日记，一言以蔽之，就是按照时间顺序所书写的个人经历记录，就是与时间不同的“自己”这个“别人”进行的笔谈\n——《智识的生产技术》，梅棹忠夫\n\n接下来，咱们进入正题，讲3件事：\n\n为什么要写日记？\n为什么要用writeathon写日记？\n如何用writeathon写日记？\n\n另外文末送码有福利！坚持看到最后，充电留言，就有机会\n\n一 | 为什么要写日记？\n季羡林日记\n如果用一个形象的比喻，来揭示日记与记录者的关系的话，可以这样认为：\n\n日记是一座个人的档案馆。\n\n为什么这么说呢？\n人的记忆是非常不可靠的，它既疯狂遗忘，又肆意拼凑。如果我们在事件发生时，不留下实体的信息，仅仅靠自己的记忆来形成对真实世界的印象，无疑将是变形和残缺的。\n而通过写日记，将我们在线性时间旅程中的经历，变成不同时间节点的信息沉淀下来，就构建了我们的个人档案馆，是对人生的真实备份。\n我们通过一张张的时间切片，不仅可以看到结果，还能追溯其真实发生的过程，从而获得更多对未来的启发。\n如果说三维世界是高维世界的投影，那么日记就是我们三维人所能掌握的一种对高维世界的透视技巧。\n通过日记建立个人档案馆，我们可以在一定程度上摆脱三…",
-          "link": "https://sspai.com/post/71047",
-          "publishedOn": "2022-01-20T06:02:28.000Z",
-          "wordCount": 107,
-          "title": "「保姆级教程」卡片日记写作流公开 | 正经人谁不写日记？"
-        },
-        {
-          "id": "https://sspai.com/post/71046",
-          "author": "大包",
-          "description": "“您平时身体好吗？”“身体好的很，从来没生过病。”“您这牙之前疼过吗？”“疼过。”“那这不是生过病吗？”“这可算不上病吧。”“您可别小看这牙痛，您现在这问题就是牙痛没有及时处理导致的，需要手术治疗了。”“这么严重啊。”“那可不，可别不把牙痛不当病啊。”\n\n这样的对话，在如今的口腔门诊上，屡见不鲜。随着社会发展、物质富足，人们糖摄取量明显增多，食物越来越精细，生活压力越来越大，相应的，口腔问题（包括但远不仅限于牙痛）也如影随形。然而，好好刷牙并非包治百病，贵的牙膏并不会比便宜的牙膏有更好的效果，口腔卫生知识的缺失，让很多人忽视本该处理的口腔问题，错过最佳的治疗机会，延误病情，带来更为严重的后果。这篇文章中，我希望能够通过简单易懂的方式，一次性给你说清楚看牙这个问题。\n口腔医生究竟能看哪些疾病？\n每种医生都有自己的管辖范围，这个范围在各国之间可能都存在差异。去到医院，看到“琳琅满目”的科室和医生列表，你是否也曾疑惑过，我究竟应该挂哪个科？\n中国的口腔医生，可不只会看牙。\n在中国，口腔医生这个职业，和美国的 dentist（A dentist is a person who is qualified to examine and treat people's teeth.）是有明显区别的，这个区别具体就体现在诊疗范围上。现代中国口腔医学的体系，脱胎于前苏联，除了dentist涉及的范围（主要就是口腔及牙齿）外，还包括口腔颌面外科的内容。也就是说，口腔医生中，有一类是外科医生，也就是大家眼里那种会上手术台，会拿手术刀的医生。\n大半个头都归口腔医生管。\n头，这样一个全身最为精密的部位，医学上也分工明确。有头发覆盖的区域（颅骨+大脑），归神经外科管辖，但注意，请不要使用现有的发量去进行判断，这可能会导致不准确的结论，同时头发和头皮的问题，可能需要咨询皮肤科的医生（我不说是什么问题）。眼…",
-          "link": "https://sspai.com/post/71046",
-          "publishedOn": "2022-01-20T05:58:40.000Z",
-          "wordCount": 88,
-          "title": "年轻人的第一份看牙指北"
-        },
-        {
-          "id": "https://sspai.com/post/70619",
-          "author": "听力播放器",
-          "description": "前序\n在第一篇「复制清单」文章发布后，我收到很多用户的留言和建议，大部分人都希望清单能支持连续复杂粘贴。\n由于iOS系统有很多安全限制，应用只能读取当前复制的内容，无法在后台连续读取剪切板。不过，方法总比困难多，在我翻阅了大量文档和资料后，「复制清单」终于成功支持后台连续复制粘贴。\n非常激动地告诉大家: iOS也有像安卓一样，可以实时保存复制内容的剪切板应用了！\n开启后台剪切板\n\n打开应用选择右边剪切板工作栏，点击「开启后台剪切板」。\n\n \n2. 点击开启后台剪切板后，顶部会出现一个悬浮条显示「等待复制」，它会实时显示你复制的内容，右滑可将它最小化。点击悬浮框左上角的「✖️』可关闭后台复制功能。\n\n \n \n3. 切换到其他的应用复制文本，应用会实时读取剪切板，并保存文本到应用。应用将按顺序批量保存剪切板内容， 点右边的小箭头可最大化悬浮框。\n\n \n \n \n4. 切换到清单键盘，选择第一个'剪切板'分类，在这个分类可以看到刚批量复制的文本，点击就可以输入。\n\n \n \n5.  如果剪切板的内容很多，支持左滑动创建一条新的清单，或者长按呼出批量创建和删除功能，可快速地对内容进行归类整理。\n \n\n \n \n写在最后\n非常感谢曾给我留言的用户们，这让我对核心功能进行了重新思考。希望大家继续提供有用的建议，一起帮助完善复制清单。\n \n下载二维码 \n送码\n目前每月送出 3个内购兑换码，评论此文即可，可以说下你在工作或者生活中，遇到一些关于效率的痛点，或者对「复制清单」提供有用的建议，每月月底选出 3 个有意义的评论赠送。\n \n \n \n \n \n \n \n \n \n\n\n\n\n\n\n8\n25\n\n\n\n\n\n扫码分享",
-          "link": "https://sspai.com/post/70619",
-          "publishedOn": "2022-01-20T02:14:07.000Z",
-          "wordCount": 83,
-          "title": "如何在手机上高效地复制粘贴(二)"
-        },
-        {
-          "id": "https://sspai.com/post/71032",
-          "author": "我本公子",
-          "description": "2022年2月4日-2022年2月20日，第24届冬季奥林匹克运动会（简称「北京冬奥会」）将在北京和张家口两地联合举办。\n2022年3月4日-2022年3月13日，第13届冬季残疾人奥林匹克运动会（简称「北京冬残奥会」）也将在上述两市举办。\n冬奥在即，你可曾完整、系统地了解过北京冬奥会？你知道北京冬奥会的火炬叫什么名字吗？冬残奥的吉祥物「xuě róng róng」怎么写吗？你知道冬奥特许商品吗？\n看了上面的问题，你可能会一脸问号：「北京冬奥会不就是一场运动会吗，还有这么多周边产品吗？」\n答案是肯定的。如果你想了解这些「周边」的话，接下来我将带你探寻这片未知世界。\n非商品类\n会徽\n北京冬奥会的会徽名为「冬梦」，设计灵感源于中国汉字「冬」，在经过设计之后使会徽兼具东方文化和现代风格，整体看起来像两个运动员（上半部分为滑冰运动员，下半部分为滑雪运动员），中间的线条「代表举办地起伏的山峦、赛场、冰雪滑道和节日飘舞的丝带」。该会徽的主题色彩为蓝色，寓意「梦想与未来」，红、黄两色则选于中国国旗，代表「运动的激情、青春与活力」。\n冬梦\n北京冬残奥会的会徽名为「飞跃」，以汉字「飞」为设计本体，在调整汉字结构后展现了其动感和力度，展现了一位正奋力冲向终点的残疾人运动员。它「整体充满了昂扬向上之激情，奋进飞跃之动感，色彩丰富，构图完美，象征并激发运动员以坚强的意志作为精神的翅膀，在冬残奥赛场上放飞青春梦想」。\n飞跃\n以上两个会徽（矢量文件）都能在北京冬奥组委官网下载。（友情提示：若要使用，请遵守会徽规范手册使用）\n火炬\n北京冬奥会的火炬名叫「飞扬」。此火炬以祥云纹样“打底”，自下而上，从祥云纹逐渐过渡到雪花图案，最后在顶端化身为飞扬的火焰。祥云纹恰好与2008年北京奥运会主火炬塔呼应，凸显了北京「双奥之城」的特点。\n该火炬用碳纤维代替了钢材料，手感轻；同时中石化对材料进行了技术攻关，将一种耐…",
-          "link": "https://sspai.com/post/71032",
-          "publishedOn": "2022-01-20T00:56:02.000Z",
-          "wordCount": 112,
-          "title": "北京冬奥即将开幕，这些东西你都了解过吗？"
         }
       ]
     },
@@ -11296,6 +11677,15 @@
           "publishedOn": "2022-01-25T05:17:52.000Z",
           "wordCount": 41,
           "title": "探索移动端音视频与GSYVideoPlayer之旅 ｜ Agora Talk"
+        },
+        {
+          "id": "https://juejin.cn/post/7057027268144529415",
+          "author": "QiShare",
+          "description": "1.引言\n在操作应用的时候，会有很多不同的手势操作，如按下、单击、双击、长按等手势，我们可以在这些手势事件中添加相应的业务逻辑，那么如何检测不同的手势操作就比较重要了，本文将带大家了解如何使用GestureDetector进行手势检测。\n2.进行手势检测\n2.1 创建GestureDetector\n进行手势检测之前，需要先新建GestureDetector对象，示例如下：\ngestureDetector = new GestureDetector(context, new GestureDetector.OnGestureListener() {\n    @Override\n    public boolean onDown(MotionEvent e) {\n        log(\"onDown\");\n        return true;\n    }\n\n    @Override\n    public void onShowPress(MotionEvent e) {\n        log(\"onShowPress\");\n    }\n\n    @Override\n    public boolean onSingleTapUp(MotionEvent e) {\n        log(\"onSingleTapUp\");\n        return true;\n    }\n\n    @Override\n    public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {\n        log(\"onScroll\");\n        return true;\n    }\n\n    @Override\n    public void onLong…",
+          "link": "https://juejin.cn/post/7057027268144529415",
+          "publishedOn": "2022-01-24T22:30:58.000Z",
+          "wordCount": 37,
+          "title": "Android使用GestureDetector进行手势检测"
         },
         {
           "id": "https://juejin.cn/post/7056983987859750919",
@@ -11440,24 +11830,6 @@
           "publishedOn": "2022-01-20T17:51:18.000Z",
           "wordCount": 36,
           "title": "【算法千题案例】⚡️每日LeetCode打卡⚡️——64. 二叉树的所有路径"
-        },
-        {
-          "id": "https://juejin.cn/post/7055175876463296542",
-          "author": "呆呆敲代码的小Y",
-          "description": "theme: condensed-night-purple\n「这是我参与2022首次更文挑战的第3天，活动详情查看：2022首次更文挑战」。\n\n📢前言\n\n 🚀 算法题 🚀 \n\n🌲 每天打卡一道算法题，既是一个学习过程，又是一个分享的过程😜\n🌲 提示：本专栏解题 编程语言一律使用 C# 和 Java 两种进行解题\n🌲  要保持一个每天都在学习的状态，让我们一起努力成为算法大神吧🧐！\n🌲    今天是力扣算法题持续打卡第63天🎈！\n\n 🚀 算法题 🚀 \n\n🌲原题样例：有效的字母异位词\n给定两个字符串 s 和 t ，编写一个函数来判断 t 是否是 s 的字母异位词。\n注意：若 s 和 t 中每个字符出现的次数都相同，则称 s 和 t 互为字母异位词。\n示例1:\n输入: s = \"anagram\", t = \"nagaram\"\n输出: true\n\n示例2:\n输入: s = \"rat\", t = \"car\"\n输出: false\n\n提示：\n1 代码：\npublic class Solution {\n    public bool IsIsomorphic(string s, string t)\n    {\n        List indexS = new List();\n        List indexT = new List();\n\n        for (int i = 0; i \n执行结果\n通过\n执行用时：72 ms，在所有 Java  提交中击败了82.28%的用户\n内存消耗：39 MB，在所有 Java 提交中击败了7.60%的用户\n\n🌻Java 方法一：排序\n思路解析\nt 是 s 的异位词等价于「两个字符串排序后相等」。因此我们可以对字符串 s 和 t 分别排序，看排序后的字符串是否相等即可判断。\n此外，如果 s 和 t 的长度不同，t 必然不是 s 的异位词。\n代码：\nclass Solution {\n    public boolean isAnagram(String s, String t) {\n        if (s.length() != t.length()) {\n            return false;\n        }\n        char[] str1 = s.toCharArray();\n        char[] str2 = t.toCharArray();\n        Arrays.sort(str1);\n        Arrays.sort(str2);\n        return Arrays.equals(str1, str2);\n    }\n}\n\n执行结果\n通过\n执行用时：3 ms，在所有 Java  提交中击败了74.73%的用户\n内存消耗：38.5 MB，在所有 Java 提交中击败了67.34%的用户\n\n复杂度分析\n时间复杂度：O( nlogn )\n空间复杂度：O( long n )\n\n🌻Java 方法二：哈希\n思路解析\nt 是 s 的异位词等价于「两个字符串中字符出现的种类和次数均相等」。\n由于字符串只包含 26个小写字母，因此我们可以维护一个长度为 26 的频次数组 table，先遍历记录字符串 s 中字符出现的频次，然后遍历字符串 t，减去 table 中对应的频次，如果出现table[i]代码：\nclass Solution {\n    public boolean isAnagram(String s, String t) {\n        if (s.length() != t.length()) {\n            return false;\n        }\n        char[] str1 = s.toCharArray();\n        char[] str2 = t.toCharArray();\n        Arrays.sort(str1);\n        Arrays.sort(str2);\n        return Arrays.equals(str1, str2);\n    }\n}\n\n执行结果\n通过\n执行用时：4 ms，在所有 Java  提交中击败了45.11%的用户\n内存消耗：38.5 MB，在所有 Java 提交中击败了73.10%的用户\n\n复杂度分析\n时间复杂度：O( nlogn )\n空间复杂度：O( long n )\n\n💬总结\n今天是力扣算法题打卡的第六十三天！\n文章采用 C# 和 Java 两种编程语言进行解题\n一些方法也是参考力扣大神写的，也是边学习边分享，再次感谢算法大佬们\n那今天的算法题分享到此结束啦，明天再见！",
-          "link": "https://juejin.cn/post/7055175876463296542",
-          "publishedOn": "2022-01-19T22:46:33.000Z",
-          "wordCount": 36,
-          "title": "【算法千题案例】⚡️每日LeetCode打卡⚡️——63. 有效的字母异位词"
-        },
-        {
-          "id": "https://juejin.cn/post/7055136891976286239",
-          "author": "Android_开发者",
-          "description": "CameraX 是一个 Jetpack 支持库，旨在帮助您简化相机应用的开发工作。它提供一致且易用的 API 接口，适用于大多数 Android 设备，并可向后兼容至 Android 5.0 (API 级别 21)。我们将在本文中介绍 CameraX 1.1 的多项功能，比如视频功能。\n如果您更喜欢通过视频了解此内容，请 点击此处 查看。\nCameraX 概览\nCameraX 是一个为了简化编写相机应用而设计的支持库，它所提供的高级 API 可以让开发者专注于和用户交互而非相机的内部实现。我们一直在探索并修复其背后复杂的兼容性问题，让每个新版本都得以在更多的设备上稳定运行。\n何时使用 CameraX 或 Camera2，这取决于您期望更快的开发速度或是想要更高的自定义程度。\nCameraX 可以很方便地实现普通照片视频的拍摄功能，而 Camera2 则可以对拍摄流程进行特殊控制，例如实现多重曝光或全手动捕获；\nCameraX 旨在消除不同设备间的差异并在不同设备上进行了测试，而 Camera2 则需要应用来管理不同设备间的差异并测试其行为；\nCameraX 提升了代码开发速度，让您更专注于用户界面和体验流程，而 Camera2 则用于更深入地开发以创造基于相机的定制功能；\nCameraX 发布新版本频繁，而 Camera2 则随着 Android 的版本而更新；\nCameraX 可以在您不熟悉相机的情况下也能够进行开发，而 Camera2 则需要您对相机的专业知识有更深层次的了解。\n\nCameraX 基于主要的使用场景来构建，比如实时预览相机、检索缓冲区以进行分析和拍摄照片，在 CameraX 1.1 版本中还加入了视频拍摄功能。我们来看一个简单的 CameraX 示例:\nfun bindPreview(cameraProvider : ProcessCameraProvi…",
-          "link": "https://juejin.cn/post/7055136891976286239",
-          "publishedOn": "2022-01-19T20:16:40.000Z",
-          "wordCount": 37,
-          "title": "CameraX 1.1 有哪些新的特性发布？"
         }
       ]
     },
@@ -11466,6 +11838,15 @@
       "feedUrl": "https://opensource.com/feed",
       "siteUrl": "https://opensource.com/frontpage",
       "articles": [
+        {
+          "id": "https://opensource.com/article/22/1/open-source-predictions-2022",
+          "author": "admin",
+          "description": "Technology moves quickly and so do the people who create and use it. Here are some predictions for open source tech in 2022 from the Opensource.com community.\nread more",
+          "link": "https://opensource.com/article/22/1/open-source-predictions-2022",
+          "publishedOn": "2022-01-29T08:00:00.000Z",
+          "wordCount": 1451,
+          "title": "6 predictions for open source tech in 2022"
+        },
         {
           "id": "https://opensource.com/article/22/1/community-awards-2022",
           "author": "AmyJune",
@@ -11591,24 +11972,6 @@
           "publishedOn": "2022-01-21T08:00:00.000Z",
           "wordCount": 1912,
           "title": "What you need to know about fuzz testing and Go"
-        },
-        {
-          "id": "https://opensource.com/article/22/1/solve-network-fragmentation-mtu",
-          "author": "jpatete",
-          "description": "During the implementation of OpenStack workloads, a common issue is fragmentation throughout the network, causing unforeseen performance issues. Fragmentation is normally difficult to address because networks can get complex, so the path of packets can be hard to trace or predict.\nread more",
-          "link": "https://opensource.com/article/22/1/solve-network-fragmentation-mtu",
-          "publishedOn": "2022-01-20T08:01:00.000Z",
-          "wordCount": 2505,
-          "title": "Solve network fragmentation with MTU"
-        },
-        {
-          "id": "https://opensource.com/article/22/1/back-your-stack",
-          "author": "rcheesley",
-          "description": "On GivingTuesday, the Mautic project—an open source marketing automation platform—shared its intention to allocate part of its budget each year to financially support the other open source projects on which it depends, as part of the Back Your Stack initiative.\nread more",
-          "link": "https://opensource.com/article/22/1/back-your-stack",
-          "publishedOn": "2022-01-20T08:00:00.000Z",
-          "wordCount": 1611,
-          "title": "How to back your open source project&#039;s stack"
         }
       ]
     },
@@ -11655,6 +12018,15 @@
       "siteUrl": "https://weekly.thingelstad.com/",
       "articles": [
         {
+          "id": "https://weekly.thingelstad.com/archive/weekly-thing-209-pgp-soulbound-mosey/",
+          "author": null,
+          "description": "Jamie Thingelstad, and this is my Weekly Thing. Did you know that you can also get this via your favorite feed reader using the RSS feed? Hooray for web standards!\nHey there! 👋\nThis week has been a bit of a whirlwind for me — moving a lot of things forward all at once. 🌪\nSome quick things… \nI set myself up on Strava and have decided to use it with fitness activity. If you are on Strava feel free to connect with me. I don’t mind using social dynamics when I know the outcome of them is good for me. 💪\nA while back I created a listing for the Weekly Thing on Readsom. I love when new people find this project, and if you are a fan of the Weekly Thing I would greatly appreciate leaving a review on Readsom to help more people discover it. 👌\nAnd while I’m in a marketing mood 💀 the Winter issue…",
+          "link": "https://weekly.thingelstad.com/archive/weekly-thing-209-pgp-soulbound-mosey/",
+          "publishedOn": "2022-01-29T13:00:00.000Z",
+          "wordCount": 2414,
+          "title": "Weekly Thing #209 / PGP, Soulbound, Mosey"
+        },
+        {
           "id": "https://weekly.thingelstad.com/archive/weekly-thing-208-gps-intel-omicron/",
           "author": null,
           "description": "Jamie Thingelstad. You’re getting this email because you signed up for the Weekly Thing. I appreciate you being here, but if you don’t want these emails any longer, simply unsubscribe.\n👋 Hey there!\nIt is great to be back from my Winter Break. It has only been six weeks but much has happened… \nWe had a wonderful holiday season and I hope you all did as well. After capping off the season of merriment and singing Auld Lang Syne it was time for a big birthday for me. Jamie v5.0.0 arrived on January 3rd and my family arranged a tremendous day. I also noted a couple of thoughts.\nWe all took the day off and had fun presenting, hiking, and escaping! I even got my very own song, the Big 5 O! You can listen on Apple Music, Spotify, and YouTube. 🤘 I mean, how cool is that! 🤩\nUnfortunately to wrap …",
@@ -11682,6 +12054,24 @@
       "feedUrl": "https://www.macsparky.com/feed/",
       "siteUrl": "https://www.macsparky.com",
       "articles": [
+        {
+          "id": "https://www.macsparky.com/?p=11697",
+          "author": "David Sparks",
+          "description": "This is a post for MacSparky Labs Early Access Members only. Care to join? Or perhaps do you need to sign in? This week I did an extended Zoom call with the Early Access members where I shared a bunch of changes I’ve made recently in my Calendar workflows. I’m not sure if I’m getting... Continue reading →\nThe post MacSparky Labs: Calendar Workflows Video appeared first on MacSparky.",
+          "link": "https://www.macsparky.com/blog/2022/01/macsparky-labs-calendar-workflows-video/",
+          "publishedOn": "2022-01-29T15:00:00.000Z",
+          "wordCount": null,
+          "title": "MacSparky Labs: Calendar Workflows Video"
+        },
+        {
+          "id": "https://www.macsparky.com/?p=11700",
+          "author": "David Sparks",
+          "description": "On this week’s episode of Automators, Rosemary and I are joined by Jeff Richardson: lawyer by day, automator for life.  This episode of Automators is sponsored by: Fitbod: Get stronger, faster with a fitness plan that fits you. Get 25% off your membership. Doppler: Sync environment variables at scale. New Relic: Monitor, debug, and improve your entire... Continue reading →\nThe post Automators 94: Legal Nerd-ness with Jeff Richardson appeared first on MacSparky.",
+          "link": "https://www.macsparky.com/blog/2022/01/automators-94-legal-nerd-ness-with-jeff-richardson/",
+          "publishedOn": "2022-01-29T14:00:00.000Z",
+          "wordCount": null,
+          "title": "Automators 94: Legal Nerd-ness with Jeff Richardson"
+        },
         {
           "id": "https://www.macsparky.com/?p=11681",
           "author": "David Sparks",
@@ -11827,6 +12217,15 @@
       "feedUrl": "https://jvns.ca/atom.xml",
       "siteUrl": "http://jvns.ca/atom.xml",
       "articles": [
+        {
+          "id": "https://jvns.ca/blog/2022/01/29/reasons-for-servers-to-support-ipv6/",
+          "author": null,
+          "description": "I’ve been having a hard time understanding IPv6. On one hand, the basics initially seem pretty\nstraightforward (there aren’t enough IPv4 addresses for all the devices on the\ninternet, so people invented IPv6! There are enough IPv6 addresses for\neveryone!)\nBut when I try to actually understand it, I run into a lot of questions. One\nquestion is: twitter.com does not support IPv6. Presumably it can’t be causing\nthem THAT many issues to not support it. So why do websites support IPv6?\nI asked people on Twitter why their servers support IPv6\nand I got a lot of great answers, which I’ll summarize here. These all come\nwith the disclaimer that I have basically 0 experience with IPv6 so I can’t evaluate these reasons very well.\nFirst though, I want to explain why it’s possible for twitter.com to no…",
+          "link": "https://jvns.ca/blog/2022/01/29/reasons-for-servers-to-support-ipv6/",
+          "publishedOn": "2022-01-29T07:44:38.000Z",
+          "wordCount": 1832,
+          "title": "Reasons for servers to support IPv6"
+        },
         {
           "id": "https://jvns.ca/blog/2022/01/24/hosting-my-static-sites-with-nginx/",
           "author": null,
@@ -12057,6 +12456,15 @@
       "feedUrl": "https://eli.thegreenplace.net/feeds/all.atom.xml",
       "siteUrl": "https://eli.thegreenplace.net/",
       "articles": [
+        {
+          "id": "https://eli.thegreenplace.net/2022/rust-extension-traits-greppability-and-ides/",
+          "author": null,
+          "description": "<p>Traits are a central feature of Rust, critical for its implementation of\npolymorphism; traits are used for both static (by serving as bounds for generic\nparameters) and dynamic (by having trait objects to serve as interfaces)\npolymorphism.</p>\n<p>This post assumes some familiarity with traits and discusses only a specific\naspect …</p>",
+          "link": "https://eli.thegreenplace.net/2022/rust-extension-traits-greppability-and-ides/",
+          "publishedOn": "2022-01-29T14:16:00.000Z",
+          "wordCount": 1307,
+          "title": "Rust extension traits, greppability and IDEs"
+        },
         {
           "id": "https://eli.thegreenplace.net/2022/asimov-programming-and-the-meta-ladder/",
           "author": null,
@@ -12460,33 +12868,6 @@
           "publishedOn": "2022-01-20T18:22:47.000Z",
           "wordCount": 782,
           "title": "Google Releases Very Limited Beta of Android Games on Windows"
-        },
-        {
-          "id": "https://www.extremetech.com/?p=330740",
-          "author": "Adrianna Nine",
-          "description": "Ads aren't new to the streaming experience, but this is truly something else.\nThe post Roku Shamed For Running Banner Ads On Top of Live TV appeared first on ExtremeTech.",
-          "link": "https://www.extremetech.com/internet/330740-roku-put-to-shame-for-running-banner-ads-on-top-of-live-tv",
-          "publishedOn": "2022-01-20T13:00:29.000Z",
-          "wordCount": 779,
-          "title": "Roku Shamed For Running Banner Ads On Top of Live TV"
-        },
-        {
-          "id": "https://www.extremetech.com/?p=330729",
-          "author": "Ryan Whitwam",
-          "description": "The carriers made a number of concessions late last year and earlier this month to assuage the FAA's fears of C-band interference with airplane electronics, but in the end, AT&T and Verizon have agreed to shut off C-band around all US airports for the time being. \nThe post AT&T and Verizon Launch Mid-Band 5G, Agree to Even More Airport Restrictions appeared first on ExtremeTech.",
-          "link": "https://www.extremetech.com/extreme/330729-att-and-verizon-launch-mid-band-5g-agree-to-even-more-airport-restrictions",
-          "publishedOn": "2022-01-20T12:00:51.000Z",
-          "wordCount": 863,
-          "title": "AT&T and Verizon Launch Mid-Band 5G, Agree to Even More Airport Restrictions"
-        },
-        {
-          "id": "https://www.extremetech.com/?p=330714",
-          "author": "Ryan Whitwam",
-          "description": "Credit: NASA\nA study from the Canadian Space Agency (CSA) points to the effects of weightlessness on the blood as yet another issue that will complicate long-term human space missions. So-called \"space anemia\" could cause health problems during and after an extended trip like going to Mars. \nThe post Astronauts Going to Mars Could Get ‘Space Anemia’ appeared first on ExtremeTech.",
-          "link": "https://www.extremetech.com/extreme/330714-astronauts-going-to-mars-could-get-space-anemia",
-          "publishedOn": "2022-01-20T11:00:38.000Z",
-          "wordCount": 844,
-          "title": "Astronauts Going to Mars Could Get ‘Space Anemia’"
         }
       ]
     },
@@ -12555,6 +12936,15 @@
       "feedUrl": "https://writing.kemitchell.com/feed.xml",
       "siteUrl": "https://writing.kemitchell.com",
       "articles": [
+        {
+          "id": "https://writing.kemitchell.com/2022/01/29/Hydrant-Meter-In-Action.html",
+          "author": null,
+          "description": "East Oakland Collective's EBMUD hydrant meter is ready for action",
+          "link": "https://writing.kemitchell.com/2022/01/29/Hydrant-Meter-In-Action.html",
+          "publishedOn": "2022-01-29T22:12:29.000Z",
+          "wordCount": 626,
+          "title": "Be the Water Boy (or Girl!) for Your Neighborhood"
+        },
         {
           "id": "https://writing.kemitchell.com/2022/01/26/Big-Time-2.0.0.html",
           "author": null,
@@ -12738,6 +13128,15 @@
       "siteUrl": "https://shkspr.mobi/blog",
       "articles": [
         {
+          "id": "https://shkspr.mobi/blog/2022/01/is-it-faster-to-read-or-to-listen/",
+          "author": null,
+          "description": "Fourteen years ago, I blogged about the future of voice. In the post, I asked these two questions - which I'd nicked from someone else: Are you faster at speaking or typing? Are you faster at reading or listening? Lots of us now use Siri, Alexa, Bixby, and the like because it is quicker to&#8230;",
+          "link": "https://shkspr.mobi/blog/2022/01/is-it-faster-to-read-or-to-listen/",
+          "publishedOn": "2022-01-29T12:34:39.000Z",
+          "wordCount": 1665,
+          "title": "Is it faster to read or to listen?"
+        },
+        {
           "id": "https://shkspr.mobi/blog/2022/01/edit-this-blog-post/",
           "author": null,
           "description": "This is a regular HTML page. But if you click or tap on the text, you will be able to edit it! HTML is magic! This isn't a fancy styled &#60;textarea&#62;, it's a &#60;div&#62; element which uses the contenteditable global attribute. There are some nifty features - depending on your browser. You can add more&#8230;",
@@ -12808,15 +13207,6 @@
           "publishedOn": "2022-01-21T12:34:43.000Z",
           "wordCount": 1909,
           "title": "How do artists get paid?"
-        },
-        {
-          "id": "https://shkspr.mobi/blog/2022/01/nfts-means-the-future-value-of-art-is-zero/",
-          "author": null,
-          "description": "At the moment, it is not possible to sell a 2nd hand eBook or MP3. This seems fairly reasonable because a re-seller might keep copies of their original files after selling them. This would allow the re-seller to undercut the original publisher and sell the file multiple times. We tend to label this \"Piracy\". Someone&#8230;",
-          "link": "https://shkspr.mobi/blog/2022/01/nfts-means-the-future-value-of-art-is-zero/",
-          "publishedOn": "2022-01-20T12:34:00.000Z",
-          "wordCount": 1296,
-          "title": "NFTs means the future value of art is zero"
         }
       ]
     },
