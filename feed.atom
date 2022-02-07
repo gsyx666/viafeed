@@ -2,10 +2,944 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gsyx666.github.io/action-osmosfeed/index.html</id>
     <title>gsyx::feed</title>
-    <updated>2022-02-06T02:10:52.722Z</updated>
+    <updated>2022-02-07T01:58:51.678Z</updated>
     <generator>osmosfeed 1.12.0</generator>
     <link rel="alternate" href="https://gsyx666.github.io/action-osmosfeed/index.html"/>
     <link rel="self" href="https://gsyx666.github.io/action-osmosfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[React Hooks: useContext()]]></title>
+        <id>https://dev.to/fig781/react-hooks-usecontext-167h</id>
+        <link href="https://dev.to/fig781/react-hooks-usecontext-167h"/>
+        <updated>2022-02-07T01:07:07.000Z</updated>
+        <summary type="html"><![CDATA[What are React hooks?
+What is the useContext hook?
+import { createContext, useContext } from "react";
+
+//Initialize our context. null is the default value if none are later provided.
+//Often this is done in a different file.
+const UserContext = createContext(null)
+
+const ParentComponent = () => {
+  //We wrap our children component in the Provider 
+  return (
+    <UserContext.Provider value={'Aden'}>
+      <ChildComponent />
+    </UserContext.Provider>
+  );
+};
+
+const ChildComponent = () => {
+
+  //Access the context passed down from the ParentComponent
+  const user = useContext(UserContext)
+  return (
+    <>
+      <h1>Child Component</h1>
+      <p>{user}</p>
+    </>     
+  );
+};
+
+export default ParentComponent;
+
+Here is an example using the useEffect and useState hooks:
+import { useState, us…]]></summary>
+        <author>
+            <name>Aden Eilers</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[弗兰克-罗森布拉特的感知器为人工智能铺平了道路，60年了，太早了（2019）。]]></title>
+        <id>https://hn.buzzing.cc/hn/30236123/</id>
+        <link href="https://hn.buzzing.cc/hn/30236123/?score=102&amp;original_url=https%3A%2F%2Fnews.cornell.edu%2Fstories%2F2019%2F09%2Fprofessors-perceptron-paved-way-ai-60-years-too-soon&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30236123&amp;sensitive=false"/>
+        <updated>2022-02-07T00:32:24.000Z</updated>
+        <summary type="html"><![CDATA[弗兰克-罗森布拉特的感知器为人工智能铺平了道路，60年了，太早了（2019）。]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Multitouch Gestures no Ubuntu com fusuma]]></title>
+        <id>https://dev.to/kmyokoyama/multitouch-gestures-no-ubuntu-com-fusuma-3h3o</id>
+        <link href="https://dev.to/kmyokoyama/multitouch-gestures-no-ubuntu-com-fusuma-3h3o"/>
+        <updated>2022-02-06T23:52:22.000Z</updated>
+        <summary type="html"><![CDATA[Ao trabalhar com duas máquinas diferentes, podemos ficar acostumados com atalhos de uma não presentes na outra. No meu caso, trabalhando com Mac e Ubuntu, senti muita falta das gestures do trackpad do Mac na minha máquina Linux. Por exemplo, ao deslizar três dedos para cima no Mac, acessa-se o Mission Control, mostrando todas as janelas abertas. E eu também queria ter esse tipo de controle no Ubuntu.
+Para resolver isso, instalei e configurei o fusuma, um projeto open-source para habilitar multitouch gestures no Linux. O README do fusuma é bem completo, mas vou deixar aqui o meu passo a passo e configurações.
+Isso foi feito no Ubuntu 21.10 e fusuma v2.3.0.
+Adicionar seu usuário ao grupo input (sem precisar de logout):
+
+
+
+
+$ sudo gpasswd -a $USER input
+$ newgrp input
+
+Instalar o libinput (>=…]]></summary>
+        <author>
+            <name>Kazuki Yokoyama</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Create a Google Chrome Extension Part 1: Image Grabber]]></title>
+        <id>https://dev.to/andreygermanov/create-a-google-chrome-extension-part-1-image-grabber-1foa</id>
+        <link href="https://dev.to/andreygermanov/create-a-google-chrome-extension-part-1-image-grabber-1foa"/>
+        <updated>2022-02-06T23:04:44.000Z</updated>
+        <summary type="html"><![CDATA[Introduction
+
+
+Chrome Extensions are small programs, that can be installed to Google Chrome web browser to enrich its features. Usually, to install a Chrome Extension, a user should open Chrome Web Store, find the required extension, and install it from there. 
+In this article, I will show, how to create a Chrome Extension from scratch. The extension which we will create today will use Chrome APIs to get access to the content of web pages, which opened in a web browser and extract different information from them. Using these APIs you can not only read content from web pages but also write content to them and interact with these pages, like, for example, automatically pressing buttons or following links. This feature can be used for a wide range of browser automation tasks like scrapping re…]]></summary>
+        <author>
+            <name>Andrey Germanov</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Why monoliths are a long term bad idea]]></title>
+        <id>https://dev.to/noriller/why-monoliths-are-a-long-term-bad-idea-2np0</id>
+        <link href="https://dev.to/noriller/why-monoliths-are-a-long-term-bad-idea-2np0"/>
+        <updated>2022-02-06T22:56:58.000Z</updated>
+        <summary type="html"><![CDATA[TLDR: It’s not about the technical side, it’s about people!
+Monoliths can be as good as anything... on the technical side, but something some people fail to consider is the Dev Experience.
+People will be working with them, not only now, but in the future.
+Even if you start small today, in a few years, maybe dozens or more people will have to use it... and well... they won’t like using it.
+If you’re a developer... you’re probably nodding right now.
+What would you say if I showed a 1500 lines file?
+You would probably be like: “What the hell?”
+Even with a proper organization... dozens or hundreds of classes and functions are something overwhelming.
+Then why a monolith with dozens or hundreds of files is “not a problem”? Even with a proper organization, its scope is too big to grasp. 
+And when…]]></summary>
+        <author>
+            <name>Bruno Noriller</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[波士顿联储发布报告，数字货币原型研究的源代码]]></title>
+        <id>https://hn.buzzing.cc/hn/30233755/</id>
+        <link href="https://hn.buzzing.cc/hn/30233755/?score=104&amp;original_url=https%3A%2F%2Fwww.bostonfed.org%2Fnews-and-events%2Fpress-releases%2F2022%2Ffrbb-and-mit-open-cbdc-phase-one.aspx&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30233755&amp;sensitive=false"/>
+        <updated>2022-02-06T22:26:26.000Z</updated>
+        <summary type="html"><![CDATA[波士顿联储发布报告，数字货币原型研究的源代码]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[马克-扎克伯格和团队考虑关闭欧洲的Facebook和Instagram，如果Meta不能在美国服务器上处理欧洲人的数据的话]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/worldnews/comments/slvbca/mark_zuckerberg_and_team_consider_shutting_down/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/worldnews/comments/slvbca/mark_zuckerberg_and_team_consider_shutting_down/?score=75815&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fworldnews%2Fcomments%2Fslvbca%2Fmark_zuckerberg_and_team_consider_shutting_down%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fworldnews%2Fcomments%2Fslvbca%2Fmark_zuckerberg_and_team_consider_shutting_down%2F&amp;channel=worldnews&amp;sensitive=false"/>
+        <updated>2022-02-06T22:11:44.000Z</updated>
+        <summary type="html"><![CDATA[马克-扎克伯格和团队考虑关闭欧洲的Facebook和Instagram，如果Meta不能在美国服务器上处理欧洲人的数据的话]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我的乌龟跟着我，寻求感情。生物学家已经联系了我，因为这甚至不符合正常的行为。他只是从某一天开始，一直没有停止。我不知道为什么。]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/sm3sdl/my_turtle_follows_me_and_seeks_out_affection/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/sm3sdl/my_turtle_follows_me_and_seeks_out_affection/?score=84469&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Fsm3sdl%2Fmy_turtle_follows_me_and_seeks_out_affection%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Fsm3sdl%2Fmy_turtle_follows_me_and_seeks_out_affection%2F&amp;channel=interestingasfuck&amp;sensitive=false"/>
+        <updated>2022-02-06T22:11:44.000Z</updated>
+        <summary type="html"><![CDATA[我的乌龟跟着我，寻求感情。生物学家已经联系了我，因为这甚至不符合正常的行为。他只是从某一天开始，一直没有停止。我不知道为什么。]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Why did I fail to study React once? Things to keep in mind before a coding beginner learns to React.]]></title>
+        <id>https://dev.to/miacan2021/why-did-i-fail-to-study-react-once-things-to-keep-in-mind-before-a-coding-beginner-learns-react-5cdc</id>
+        <link href="https://dev.to/miacan2021/why-did-i-fail-to-study-react-once-things-to-keep-in-mind-before-a-coding-beginner-learns-react-5cdc"/>
+        <updated>2022-02-06T22:06:53.000Z</updated>
+        <summary type="html"><![CDATA[Hello. I'm a college student majoring in web development.
+https://shihokazama-portfolio-miacan2021.vercel.app/
+Today, I'll share my experience of how I learned React. Hopefully, It will be helpful to someone who is a beginner at coding and struggling to understand React.
+I entered my college in Apr 2021. 
+https://eager-knuth-847dfa.netlify.app/
+I started studying React in June but It didn't work. I couldn't understand React at all, even after watching several tutorials and googling "React for beginners" lots of times.
+Some web developers said you don't need to study Javascript a lot, we don't use Javascript. We use React. So, you have to study React, not Javascript.
+a JavaScript library. 
+I wrote the whole code (add cart, delete cart, shop items are in class etc...) in Javascript. I didn't copy others' code at all, I thought myself how I operate it in Javascript. I was sure I have a solid knowledge of vanilla JS at last!
+https://gracious-khorana-5ef5d7.netlify.app/
+I restarted my React learning in September. I could understand it easily!!!
+I created my first React project in September it was a chatbot.
+https://vigorous-hoover-828c01.netlify.app/
+And I made a weather app using API in September.
+https://happy-hawking-f6969d.netlify.app/
+I wrote an article about React Hooks in December.
+https://dev.to/miacan2021/my-memorandum-react-hooks-usecontext-usereducer-usememo-usecallback-useref-3i4k
+And then, I created React Redux project in December.
+https://focustube.vercel.app/
+I'm sure I'm growing as a front-end developer very fast.
+Through this process, I think I have escaped from being a complete programming beginner. I learned that understanding a programming language takes a certain amount of time and that it is important to build up a solid knowledge base.
+Thank you.]]></summary>
+        <author>
+            <name>Shiho Kazama | mia</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我的女孩]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/meirl/comments/slwrfu/meirl/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/meirl/comments/slwrfu/meirl/?score=75134&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmeirl%2Fcomments%2Fslwrfu%2Fmeirl%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmeirl%2Fcomments%2Fslwrfu%2Fmeirl%2F&amp;channel=meirl&amp;sensitive=false"/>
+        <updated>2022-02-06T21:56:00.000Z</updated>
+        <summary type="html"><![CDATA[我的女孩]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[教师纷纷离职，选择该领域的人很少]]></title>
+        <id>https://hn.buzzing.cc/hn/30225114/</id>
+        <link href="https://hn.buzzing.cc/hn/30225114/?score=100&amp;original_url=https%3A%2F%2Fwww.cnn.com%2F2022%2F02%2F05%2Fus%2Fteacher-prep-student-shortages-covid-crisis%2Findex.html&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30225114&amp;sensitive=false"/>
+        <updated>2022-02-06T21:55:44.000Z</updated>
+        <summary type="html"><![CDATA[教师纷纷离职，选择该领域的人很少]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Day 8 of 100DaysOfCode]]></title>
+        <id>https://dev.to/invalidlenni/day-8-of-100daysofcode-4hj1</id>
+        <link href="https://dev.to/invalidlenni/day-8-of-100daysofcode-4hj1"/>
+        <updated>2022-02-06T21:09:07.000Z</updated>
+        <summary type="html"><![CDATA[Day 8 of 100 Days Of Code
+
+
+Here can you find what I learned (& published) yesterday.
+Started with improving simple-amari.py documentation
+coding the v1.0.1 simple-amari.py version
+Improving my website
+Ended with the blog post.]]></summary>
+        <author>
+            <name>InvalidLenni</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[龙卷风警报器和谐地响起]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/sluf40/tornado_sirens_harmonizing/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/sluf40/tornado_sirens_harmonizing/?score=75497&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Fsluf40%2Ftornado_sirens_harmonizing%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Fsluf40%2Ftornado_sirens_harmonizing%2F&amp;channel=nextfuckinglevel&amp;sensitive=false"/>
+        <updated>2022-02-06T21:07:22.000Z</updated>
+        <summary type="html"><![CDATA[龙卷风警报器和谐地响起]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我的朋友今天早上在他的甲板上发现了很酷的冰层]]></title>
+        <id>https://hn.buzzing.cc/hn/30233630/</id>
+        <link href="https://hn.buzzing.cc/hn/30233630/?score=106&amp;original_url=https%3A%2F%2Ftwitter.com%2FCJF_NC%2Fstatus%2F1490093486330322949&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30233630&amp;sensitive=false"/>
+        <updated>2022-02-06T20:47:43.000Z</updated>
+        <summary type="html"><![CDATA[我的朋友今天早上在他的甲板上发现了很酷的冰层]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[尼泊尔的山羊吸入和呼出的烟雾]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/slzhbh/goat_in_nepal_inhaling_and_exhaling_smoke/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/slzhbh/goat_in_nepal_inhaling_and_exhaling_smoke/?score=75503&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Fslzhbh%2Fgoat_in_nepal_inhaling_and_exhaling_smoke%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Fslzhbh%2Fgoat_in_nepal_inhaling_and_exhaling_smoke%2F&amp;channel=interestingasfuck&amp;sensitive=false"/>
+        <updated>2022-02-06T20:01:05.000Z</updated>
+        <summary type="html"><![CDATA[尼泊尔的山羊吸入和呼出的烟雾]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[大型健康研究中肠道微生物与抑郁症有关]]></title>
+        <id>https://hn.buzzing.cc/hn/30235378/</id>
+        <link href="https://hn.buzzing.cc/hn/30235378/?score=101&amp;original_url=https%3A%2F%2Fwww.science.org%2Fcontent%2Farticle%2Fgut-microbe-linked-depression-large-health-study&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30235378&amp;sensitive=false"/>
+        <updated>2022-02-06T20:00:49.000Z</updated>
+        <summary type="html"><![CDATA[大型健康研究中肠道微生物与抑郁症有关]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Debug your CSS layouts with this one simple trick]]></title>
+        <id>https://dev.to/whitep4nth3r/debug-your-css-layouts-with-this-one-simple-trick-1p6b</id>
+        <link href="https://dev.to/whitep4nth3r/debug-your-css-layouts-with-this-one-simple-trick-1p6b"/>
+        <updated>2022-02-06T19:50:54.000Z</updated>
+        <summary type="html"><![CDATA[If you've been watching my Twitch streams lately, you'll know I'm currently rebuilding, redesigning and reimagining the full whitep4nth3r.com experience. Whilst building the new blog page layout, I came across a classic CSS conundrum.
+On smaller device sizes, the content was spilling out of the viewport, causing a horizontal scroll, like this:
+
+Now, I've felt this pain many, many times. But there's no need to lose sleep anymore. Here's how I debug my page layouts to find out what's up — with just one line of CSS.
+Add the following code snippet to your CSS file or your browser dev tools.
+* {
+  outline: 1px solid red;
+}
+
+This line of CSS adds a red outline (or whatever colour you choose) to every single element (*) on your page. By scrolling through the content, you should be able to see whi…]]></summary>
+        <author>
+            <name>Salma Alam-Naylor</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A Complete Guide to useState Hook]]></title>
+        <id>https://dev.to/aravsanj/a-complete-guide-to-usestate-hook-3ndd</id>
+        <link href="https://dev.to/aravsanj/a-complete-guide-to-usestate-hook-3ndd"/>
+        <updated>2022-02-06T19:46:03.000Z</updated>
+        <summary type="html"><![CDATA[React has two types of components - functional & class. Traditionally, only class components were allowed to have state and lifecycle methods. However, that changed with the introduction of hooks in React 16.8.
+Now functional components also have access to state and lifecycle methods. For simple states, we use the useState hook and for handling more complex states, we use the useReducer hook. For the lifecycle methods, we use the useEffect hook.
+In this article, we will be covering the useState hook in an in-depth fashion. The ultimate goal of this article is to hopefully make sure that you don't have to go elsewhere to learn more about useState.
+Hooks were introduced to React in version 16.8. They are just regular JavaScript functions. Hooks helps us "hook into" state and lifecycle method…]]></summary>
+        <author>
+            <name>Aravind Sanjeev</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[从你的终端播放Wordle]]></title>
+        <id>https://hn.buzzing.cc/hn/30233472/</id>
+        <link href="https://hn.buzzing.cc/hn/30233472/?score=100&amp;original_url=https%3A%2F%2Fcrates.io%2Fcrates%2Fcl-wordle&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30233472&amp;sensitive=false"/>
+        <updated>2022-02-06T19:45:56.000Z</updated>
+        <summary type="html"><![CDATA[从你的终端播放Wordle]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How Did I Become a Developer Advocate?]]></title>
+        <id>https://dev.to/blackgirlbytes/how-did-i-become-a-developer-advocate-ied</id>
+        <link href="https://dev.to/blackgirlbytes/how-did-i-become-a-developer-advocate-ied"/>
+        <updated>2022-02-06T19:37:09.000Z</updated>
+        <summary type="html"><![CDATA[Ever since I posted this tweet,  friends, acquaintances, and random strangers have reached out to me asking some version of the same question: "How do I become a developer advocate?"
+Unfortunately, although I'd love to answer everyone, I don't have the time. Instead of answering everyone individually, I decided to write a detailed breakdown of how I became a developer advocate.
+To be clear, people take many different routes into Developer Relations, so my route is not the only way and not the best. My path to DevRel could've been shorter and more straightforward. Similar to those asking me, I was also dying to figure out how to get into Developer Relations. A year ago, I was also sliding into DMs asking the same question.  Fortunately, I found plenty of informative content from DevRel lead…]]></summary>
+        <author>
+            <name>Rizèl Scarlett</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Automatizar Tarefas]]></title>
+        <id>https://dev.to/eraldosiniciof/automatizar-tarefas-4ld2</id>
+        <link href="https://dev.to/eraldosiniciof/automatizar-tarefas-4ld2"/>
+        <updated>2022-02-06T19:31:44.000Z</updated>
+        <summary type="html"><![CDATA[A fim de tentar agilizar, minimamente que seja, o início de um dia de trabalho, procurei uma forma de automatizar a abertura do VS Code no projeto e o start do servidor da API.
+Digitava esses comandos todas as vezes e agora só preciso digitar apiMission.sh que tudo fica pronto para codar no projeto.
+O código abaixo foi salvo no arquivo apiMission.sh na pasta Scripts dentro da pasta do meu usuário na minha máquina.
+echo "🤖 Opening API project in VSCode..."
+cd /home/eraldo/Work/mission-brasil/api
+code .
+sleep 2
+echo "✅ Done!"
+sleep 1
+echo "🤖 Starting server..."
+sleep 1
+yarn start:dev
+
+Depois tornei esse arquivo executável.
+sudo chmod +x apiMission.sh
+Só com isso já poderia executar o ./apiMission.sh, dentro da pasta Scripts, que o projeto seria aberto no VSCode e o servidor iria iniciar.
+Mas aí há a possibilidade de colocar essa pasta no path do sistema para digitar apiMission.sh em qualquer lugar para iniciar rodar o script.
+No meu caso, que uso Linux, inseri a linha abaixo no arquivo .profile
+PATH="$PATH:/home/eraldo/Scripts"
+Agora é só abrir o terminal e rodar apiMission.sh para iniciar o projeto da API e começar a codar nele.
+Observações:
+Ainda é um script bem básico. Estarei verficando a possibilidade de retorno da mensagem de confirmação após o programa realmente abrir e, em caso de erro, parar a execução do script.. algo nessa linha.
+Estou verificando se há a possibilidade de executar o script em um terminal e realizar comandos em outra janela... o intuito é abrir editor nos projetos e iniciar api e frontend rodando um único script.]]></summary>
+        <author>
+            <name>Eraldo Sinicio</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[西雅图水手队的铃木一郎。]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/slpp8e/ichiro_suzuki_of_the_seattle_mariners/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/slpp8e/ichiro_suzuki_of_the_seattle_mariners/?score=75353&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Fslpp8e%2Fichiro_suzuki_of_the_seattle_mariners%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Fslpp8e%2Fichiro_suzuki_of_the_seattle_mariners%2F&amp;channel=nextfuckinglevel&amp;sensitive=false"/>
+        <updated>2022-02-06T19:25:30.000Z</updated>
+        <summary type="html"><![CDATA[西雅图水手队的铃木一郎。]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[正在试验新的方法来制作单线肖像，想分享一下今天的画作]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/pics/comments/slh2zg/experimenting_with_new_methods_to_make_single/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/pics/comments/slh2zg/experimenting_with_new_methods_to_make_single/?score=75007&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fpics%2Fcomments%2Fslh2zg%2Fexperimenting_with_new_methods_to_make_single%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fpics%2Fcomments%2Fslh2zg%2Fexperimenting_with_new_methods_to_make_single%2F&amp;channel=pics&amp;sensitive=false"/>
+        <updated>2022-02-06T18:44:49.000Z</updated>
+        <summary type="html"><![CDATA[正在试验新的方法来制作单线肖像，想分享一下今天的画作]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to get answers on StackOverflow]]></title>
+        <id>https://dev.to/miguelmj/how-to-get-answers-on-stackoverflow-3pp7</id>
+        <link href="https://dev.to/miguelmj/how-to-get-answers-on-stackoverflow-3pp7"/>
+        <updated>2022-02-06T18:42:54.000Z</updated>
+        <summary type="html"><![CDATA[Talking about Questions And Answers in software development is talking about stackoverflow.com (SO from now on). There's a bad experience shared among many beginners in this site and that's a shame. Instead of taking a gatekeeping attitude, my intention here is to explain several common errors and misconceptions that lead to this bad experience in SO and how to avoid them to get the most out of that great community.
+Cover foto from pexels.com
+If you're an experienced user and have read/heard any rant about stack overflow you'll instantly notice that most of the problems people have could be solved if they just read the guidelines.
+There is a badge in SO that you get only by reading the tour page:
+ 
+So when I'm answering questions, this is a red flag for me:
+
+This user hasn't got a single b…]]></summary>
+        <author>
+            <name>MiguelMJ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Find Bottom Left Tree Value | Breadth-First search]]></title>
+        <id>https://blog.gowthy.com/find-bottom-left-tree-value-or-breadth-first-search</id>
+        <link href="https://blog.gowthy.com/find-bottom-left-tree-value-or-breadth-first-search"/>
+        <updated>2022-02-06T18:38:52.000Z</updated>
+        <summary type="html"><![CDATA[Given the root of a binary tree, return the leftmost value in the last row of the tree.
+Example 1:
+
+Input: root = [2,1,3]
+Output: 1
+Example 2:
+
+Input: root = [1,2,3,4,null,5,6,null,null,7]
+Output: 7
+Constraints:
+The number of nodes in the tree is in ...]]></summary>
+        <author>
+            <name>Gowthaman Ravi</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Flask Data Tables - Open-Source Sample]]></title>
+        <id>https://dev.to/sm0ke/flask-data-tables-open-source-sample-214m</id>
+        <link href="https://dev.to/sm0ke/flask-data-tables-open-source-sample-214m"/>
+        <updated>2022-02-06T18:26:10.000Z</updated>
+        <summary type="html"><![CDATA[Hello Coders!
+This article presents an open-source project that provides paginated access to information using Flask and Simple-DataTables, a Vanilla JS library. Information can be accessed in three different ways: loaded from database, exposed by an API, and loaded from the file system. The sources can be downloaded from Github (MIT License) without a registration lock and used in commercial projects or eLearning activities. 
+Thanks for reading! Content provided by App Generator
+👉 Flask Datatables - source code
+🎁 Free Support via email (issues tracker) and Discord (1k+ community)
+The information provided in CSV format is loaded via a custom Flask CLI command and saved in the database. From this point, the app serves the information using different techniques: 
+Loaded from Data table by …]]></summary>
+        <author>
+            <name>Sm0ke</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ask HN: 有哪件硬件比你预期的更能改变游戏规则？]]></title>
+        <id>https://hn.buzzing.cc/hn/30231171/</id>
+        <link href="https://hn.buzzing.cc/hn/30231171/?score=101&amp;original_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30231171&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30231171&amp;channel=ASK+HN&amp;sensitive=false"/>
+        <updated>2022-02-06T18:12:28.000Z</updated>
+        <summary type="html"><![CDATA[Ask HN: 有哪件硬件比你预期的更能改变游戏规则？]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[文件 - 单一文件的照片库和文件管理器]]></title>
+        <id>https://hn.buzzing.cc/hn/30233635/</id>
+        <link href="https://hn.buzzing.cc/hn/30233635/?score=129&amp;original_url=https%3A%2F%2Fwww.files.gallery%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30233635&amp;sensitive=false"/>
+        <updated>2022-02-06T18:12:28.000Z</updated>
+        <summary type="html"><![CDATA[文件 - 单一文件的照片库和文件管理器]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我花了7年时间拍摄猎户座，创造了这张可放大的2.5千兆像素的图片，这样你就可以掌握银河系的规模。]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/space/comments/slkmau/i_spent_7_years_photographing_the_orion/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/space/comments/slkmau/i_spent_7_years_photographing_the_orion/?score=75428&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fspace%2Fcomments%2Fslkmau%2Fi_spent_7_years_photographing_the_orion%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fspace%2Fcomments%2Fslkmau%2Fi_spent_7_years_photographing_the_orion%2F&amp;channel=space&amp;sensitive=false"/>
+        <updated>2022-02-06T17:02:06.000Z</updated>
+        <summary type="html"><![CDATA[我花了7年时间拍摄猎户座，创造了这张可放大的2.5千兆像素的图片，这样你就可以掌握银河系的规模。]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[隐性货币、左派和技术封建主义]]></title>
+        <id>https://hn.buzzing.cc/hn/30224472/</id>
+        <link href="https://hn.buzzing.cc/hn/30224472/?score=100&amp;original_url=https%3A%2F%2Fmetacpc.org%2Fen%2Fcrypto-blockchain%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30224472&amp;sensitive=false"/>
+        <updated>2022-02-06T17:01:49.000Z</updated>
+        <summary type="html"><![CDATA[隐性货币、左派和技术封建主义]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[文件显示，BLM抗议袭击后，FBI在西雅图使用了地理围栏令]]></title>
+        <id>https://hn.buzzing.cc/hn/30232353/</id>
+        <link href="https://hn.buzzing.cc/hn/30232353/?score=102&amp;original_url=https%3A%2F%2Fwww.theverge.com%2F2022%2F2%2F5%2F22918487%2Ffbi-geofence-seattle-blm-protest-police-guild-attack&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30232353&amp;sensitive=false"/>
+        <updated>2022-02-06T17:01:49.000Z</updated>
+        <summary type="html"><![CDATA[文件显示，BLM抗议袭击后，FBI在西雅图使用了地理围栏令]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何评价法国人做的游戏《SIFU》（《师父》）?]]></title>
+        <id>http://www.zhihu.com/question/447423013/answer/2337276558</id>
+        <link href="http://www.zhihu.com/question/447423013/answer/2337276558?utm_campaign=rss&amp;utm_medium=rss&amp;utm_source=rss&amp;utm_content=title"/>
+        <updated>2022-02-06T16:54:26.000Z</updated>
+        <summary type="html"><![CDATA[大家好，我们是《师父》的开发团队Slocap，出于对中国功夫与中华文化的敬意与热爱，我们团队用心创作了《师父》这款游戏，真诚地希望你们能够喜欢！我们也将认真听取你们的反馈，尽最大努力改进游戏！ 
+《师父》是一款以中国风作为设计主题、中国城市作为游戏背景、中国功夫白眉拳作为基础战斗风格的动作冒险游戏。玩家将扮演一位踏上复仇之路的功夫学徒，独自一人闯入危机四伏的现代江湖。 我们渴望创造出一场真正具有沉浸感的中国功夫之旅。
+
+如何评价我们的游戏，这个应该交由每一位玩家来定夺，这才是最为公允、客观的方式。作为制作了这款游戏的独立开发团队，我们只在这里简要介绍一下游戏的各个方面，来给新入手或者感兴趣的玩家一些指引和帮助吧！ 
+游戏首发支持中文字幕，后续即将更新加入中文配音！我们认为《师父》作为一款以中国功夫、中华文化为主题的游戏，中国玩家的认可和支持是十分重要的，我们也在不断改善游戏的中文本地化，并且与上海的专业配音团队合作，努力为玩家带来优秀的中文游戏体验。 
+我们努力让游戏的战斗玩法足够有趣、真实、丰富且具有挑战性！游戏的战斗系统，以中国传统功夫白眉拳作为基础的招式体系，追求拳拳到肉的爽快战斗体验。融合白眉拳刚强凶猛、变化莫测的特点，玩家作为一代功夫学徒，在战斗中会使用多种攻击方式， 经过经验积累，可以解锁丰富的招式技能：例如过肩摔、扫堂腿、回旋踢等传统功夫招式； 通过多种武器的综合使用，结合武器技能，创造独特的战斗方式； 格挡、闪避、架势（体系）条的设计，以及多种处决技，令攻防都需小心谨慎； 专注度可以提供一个“子弹时间”式的额外招式，打乱敌人的战斗节奏。
+
+我们想要创作一个独一无二的成长与死亡系统。每次死亡会使年龄增长，并且解锁不同年龄下的战斗技能，使玩家能够构筑独一无二的玩法思路。本作采用十分独特的成长机制：玩家在生命值归零后，会短暂倒下，再次复苏时会使年龄增长； 年龄增长…]]></summary>
+        <author>
+            <name>师父SIFU</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[想念他]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/memes/comments/slu6kh/miss_him/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/memes/comments/slu6kh/miss_him/?score=77516&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Fslu6kh%2Fmiss_him%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Fslu6kh%2Fmiss_him%2F&amp;channel=memes&amp;sensitive=false"/>
+        <updated>2022-02-06T16:44:51.000Z</updated>
+        <summary type="html"><![CDATA[想念他]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[R的快速介绍]]></title>
+        <id>https://hn.buzzing.cc/hn/30230846/</id>
+        <link href="https://hn.buzzing.cc/hn/30230846/?score=102&amp;original_url=https%3A%2F%2Fgithub.com%2Fkaroliskoncevicius%2Ftutorial_r_introduction%2Fblob%2Fmain%2FREADME.md&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30230846&amp;sensitive=false"/>
+        <updated>2022-02-06T16:44:29.000Z</updated>
+        <summary type="html"><![CDATA[R的快速介绍]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[J&J试图让联邦法官阻止路透社报道的发表]]></title>
+        <id>https://hn.buzzing.cc/hn/30232615/</id>
+        <link href="https://hn.buzzing.cc/hn/30232615/?score=151&amp;original_url=https%3A%2F%2Fwww.reuters.com%2Fbusiness%2Fhealthcare-pharmaceuticals%2Fjj-tried-get-federal-judge-block-publication-reuters-story-2022-02-04%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30232615&amp;sensitive=false"/>
+        <updated>2022-02-06T16:44:29.000Z</updated>
+        <summary type="html"><![CDATA[J&J试图让联邦法官阻止路透社报道的发表]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[阿尔法码作为一只狗说着平庸的英语]]></title>
+        <id>https://hn.buzzing.cc/hn/30230867/</id>
+        <link href="https://hn.buzzing.cc/hn/30230867/?score=109&amp;original_url=https%3A%2F%2Fscottaaronson.blog%2F%3Fp%3D6288&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30230867&amp;sensitive=false"/>
+        <updated>2022-02-06T15:30:32.000Z</updated>
+        <summary type="html"><![CDATA[阿尔法码作为一只狗说着平庸的英语]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Motorola MA1 Review: Wireless Android Auto for the rest of us]]></title>
+        <id>https://www.xda-developers.com/?p=590927</id>
+        <link href="https://www.xda-developers.com/motorola-ma1-review/"/>
+        <updated>2022-02-06T15:00:27.000Z</updated>
+        <summary type="html"><![CDATA[Android Auto initially required a USB connection from your phone, but some newer head units and cars support a wireless connection. There are still plenty of cars and entertainment systems without wireless Auto, though, which has led to various attempts to create adapters. AAWireless was one of the earliest examples, but we’ve never had a
+The post Motorola MA1 Review: Wireless Android Auto for the rest of us appeared first on xda-developers.]]></summary>
+        <author>
+            <name>Corbin Davenport</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[谷歌幻灯片很搞笑]]></title>
+        <id>https://hn.buzzing.cc/hn/30227588/</id>
+        <link href="https://hn.buzzing.cc/hn/30227588/?score=100&amp;original_url=https%3A%2F%2Fmedium.com%2F%40laurajavier%2Fgoogle-slides-is-actually-hilarious-83c1ced857ee&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30227588&amp;sensitive=false"/>
+        <updated>2022-02-06T14:28:04.000Z</updated>
+        <summary type="html"><![CDATA[谷歌幻灯片很搞笑]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Why & How I automated Wordle]]></title>
+        <id>https://blog.pallav.dev/why-and-how-i-automated-wordle</id>
+        <link href="https://blog.pallav.dev/why-and-how-i-automated-wordle"/>
+        <updated>2022-02-06T13:27:27.000Z</updated>
+        <summary type="html"><![CDATA[Wordle has taken over the world trend. I feel the simple interface and no extra advertisement have made it successful. Without advertisements, you can focus on the problem, and each answer you give acts as a clue for the next one.
+ More than being an...]]></summary>
+        <author>
+            <name>Kumar Pallav</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[硬核观察 #539 GitHub 推出赞助商专属存储库]]></title>
+        <id>https://linux.cn/article-14248-1.html?utm_source=rss&amp;utm_medium=rss</id>
+        <link href="https://linux.cn/article-14248-1.html?utm_source=rss&amp;utm_medium=rss"/>
+        <updated>2022-02-06T13:24:27.000Z</updated>
+        <summary type="html"><![CDATA[GitHub 推出赞助商专属存储库
+
+几年前，GitHub 引入了赞助功能，允许任何人财务赞助开源开发者。而现在，GitHub 推出了 赞助商专属存储库，也就是只有赞助商才能访问的私人存储库。这些存储库可以分为不同的赞助级别。有了赞助商专属仓库，开发者不仅可以募集捐款，还可以更好地与赞助商（企业或其他）进行更深入、更个性化的接触。
+
+
+老王点评：虽然这样使受益和付出更一致，但是，与开源的关系呢？我觉得将来的发展未必是人们所期望的。
+
+
+
+
+Go 语言正在测试对泛型和模糊处理的支持
+
+Go 1.18 本周发布了 第二个测试版。在 1.18 中，通过 Go 语言服务器和 VSCode 扩展可以支持泛型。此外，还引入了模糊处理和新的 Go 工作区模式。Go 1.18 的测试版被证明是非常可靠的，谷歌称，“事实上，我们已经在谷歌这里的生产中运行它”。候选发布版也有望在本月晚些时候发布，最终的 Go 1.18 版预计在 3 月发布。
+
+
+老王点评：Go 这样活跃开发的语言，只要坐等就可以预期不断有很多新特性和性能提升。
+
+
+
+
+GNU/Hurd 使用 NetBSD 驱动程序来支持硬件
+
+GNU/Hurd 的硬件支持一直处于非常粗糙的状态，缺乏完整的 x86_64 支持，缺少 USB 支持，最近才有一定程度的对声音的支持。即使它比 Linux 内核存在的时间更长，仍然还有漫长的道路需要走。它的开发者在 FOSDEM 2022 上说，他们在微内核环境中重新使用 NetBSD 内核驱动，以扩大 Hurd 的硬件支持范围。
+
+
+老王点评：Hurd 发展的太慢了，不过这样可以利用其它系统的硬件驱动倒是一个好主意。]]></summary>
+        <author>
+            <name>linux@linux.cn (linux)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[在游戏行业的专业人士眼里，游戏行业目前的情况如何？]]></title>
+        <id>http://www.zhihu.com/question/339348237/answer/2336320920</id>
+        <link href="http://www.zhihu.com/question/339348237/answer/2336320920?utm_campaign=rss&amp;utm_medium=rss&amp;utm_source=rss&amp;utm_content=title"/>
+        <updated>2022-02-06T13:05:32.000Z</updated>
+        <summary type="html"><![CDATA[你们要进窄门。因为引到灭亡，那门是宽的，路是大的，进去的人也多。——《马太福音 7:13》
+Problem：
+看来这个游戏的重点在*胜利*，全部战线上都不允许有任何败绩。商业投资和创业产业上要赢，爱与人际关系上要赢，政治上要赢，意识形态上要赢，妈的，甚至在性的方面也要赢。肯定还涉及了一大堆与物质相关的胜利 —— 你要把某件东西成功地搞到手，绝对不能弄丢。但问题来了：我们眼前并没多少赢家，绝大部分人都在溃败。怎么会这样？你又怎么可能立于*不败*之地呢？
+-
+本来想说，今年的年度总结在公司的公众号交了一篇差。那么再往后去探讨一些话题其实就没有必要了。但是在写作这篇文章开始的一周，到处传出来的却是裁员的声音。从心动开始，B站跟进。此外还有很多内部确认了但外部没有确认的消息在蔓延。
+缩编，裁撤，项目停滞。这是2022年中国游戏行业的开端。与2021年Clubhouse的群贤毕至相比，2022年的前景显得并不是那么光明。
+与之相对的是，我们仍然可以看到年会照片里堆成山的PS5，iPhone或是各式各样的高科技硬通货，由游戏行业参与者们所组成的二手交易群里仍然是火热的交易信息。在更早一些的时候，吉比特就传出过奖励明星项目制作人一套房子的新闻。如果你跟年轻一些的社群有交集的话，你会不可避免地发现，前来游戏行业淘金俨然是一种主流。
+一方面是裁员的信息，一方面是仍然是直白的物质驱动。在2022年初这个时间点，作为局中人，我们很难说这会是很好过的一年；但要是与其它的行当相比，那么好像还有那么些侥幸可以去钻。
+
+
+
+如此我们不得不回望2021年的国内游戏市场，这个市场到底是什么样的？
+-
+
+停滞的国内市场：乌云汇合，乌云高空踏步
+数据其实很显著。还是用大家都用滥了的伽马数据来说事儿吧。2021年最可见的一个趋势是国内市场增速的下滑。
+
+在过去近8年里，2021年国内游戏市场的增速为倒数第二，仅次…]]></summary>
+        <author>
+            <name>知乎用户（登录查看详情）</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我的服务犬在我晕倒前发出警报，以便我能够找到一个安全的地方昏迷。这就是我醒来时的情景。]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/aww/comments/sllppw/my_service_dog_alerts_before_i_faint_so_that_i/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/aww/comments/sllppw/my_service_dog_alerts_before_i_faint_so_that_i/?score=75727&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Faww%2Fcomments%2Fsllppw%2Fmy_service_dog_alerts_before_i_faint_so_that_i%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Faww%2Fcomments%2Fsllppw%2Fmy_service_dog_alerts_before_i_faint_so_that_i%2F&amp;channel=aww&amp;sensitive=false"/>
+        <updated>2022-02-06T12:56:30.000Z</updated>
+        <summary type="html"><![CDATA[我的服务犬在我晕倒前发出警报，以便我能够找到一个安全的地方昏迷。这就是我醒来时的情景。]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weeknotes: One Week In]]></title>
+        <id>https://shkspr.mobi/blog/2022/02/weeknotes-one-week-in/</id>
+        <link href="https://shkspr.mobi/blog/2022/02/weeknotes-one-week-in/"/>
+        <updated>2022-02-06T12:34:31.000Z</updated>
+        <summary type="html"><![CDATA[I have a new job! Yay and Hurrah! One of the best things about the new team is they have an internal wiki detailing what they do, with comprehensive information for new starters. I can't begin to tell you how useful this was. In my opinion, every team in every workplace should have something like&#8230;]]></summary>
+        <author>
+            <name>Terence Eden’s Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ask HN: 你是如何处理年老和感到迷失的问题的？]]></title>
+        <id>https://hn.buzzing.cc/hn/30230620/</id>
+        <link href="https://hn.buzzing.cc/hn/30230620/?score=116&amp;original_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30230620&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30230620&amp;channel=ASK+HN&amp;sensitive=false"/>
+        <updated>2022-02-06T11:54:17.000Z</updated>
+        <summary type="html"><![CDATA[Ask HN: 你是如何处理年老和感到迷失的问题的？]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Inkscape 1.1.2]]></title>
+        <id>https://hn.buzzing.cc/hn/30230198/</id>
+        <link href="https://hn.buzzing.cc/hn/30230198/?score=101&amp;original_url=https%3A%2F%2Finkscape.org%2Frelease%2F1.1.2%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30230198&amp;sensitive=false"/>
+        <updated>2022-02-06T11:37:34.000Z</updated>
+        <summary type="html"><![CDATA[Inkscape 1.1.2]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Java BitSet性能闪烁之谜]]></title>
+        <id>https://hn.buzzing.cc/hn/30226083/</id>
+        <link href="https://hn.buzzing.cc/hn/30226083/?score=100&amp;original_url=https%3A%2F%2Fblog.agical.se%2Fen%2Fposts%2Fjava-bitset-performance-mystery&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30226083&amp;sensitive=false"/>
+        <updated>2022-02-06T11:21:53.000Z</updated>
+        <summary type="html"><![CDATA[Java BitSet性能闪烁之谜]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[谷歌浏览器U2F API退役。这一变化意味着什么]]></title>
+        <id>https://hn.buzzing.cc/hn/30224777/</id>
+        <link href="https://hn.buzzing.cc/hn/30224777/?score=100&amp;original_url=https%3A%2F%2Fwww.yubico.com%2Fblog%2Fgoogle-chrome-u2f-api-decommission-what-the-change-means-for-your-users-and-how-to-prepare%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30224777&amp;sensitive=false"/>
+        <updated>2022-02-06T10:22:57.000Z</updated>
+        <summary type="html"><![CDATA[谷歌浏览器U2F API退役。这一变化意味着什么]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Web3并不关心你的隐私]]></title>
+        <id>https://hn.buzzing.cc/hn/30229393/</id>
+        <link href="https://hn.buzzing.cc/hn/30229393/?score=102&amp;original_url=https%3A%2F%2Fcoinsights.substack.com%2Fp%2Fthe-duality-of-web3&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30229393&amp;sensitive=false"/>
+        <updated>2022-02-06T10:22:57.000Z</updated>
+        <summary type="html"><![CDATA[Web3并不关心你的隐私]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2021 一个社恐重新做人的面基总结]]></title>
+        <id>https://blog.douchi.space/?p=1816</id>
+        <link href="https://blog.douchi.space/?p=1816&amp;utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=2021-%25e4%25b8%2580%25e4%25b8%25aa%25e7%25a4%25be%25e6%2581%2590%25e9%2587%258d%25e6%2596%25b0%25e5%2581%259a%25e4%25ba%25ba%25e7%259a%2584%25e9%259d%25a2%25e5%259f%25ba%25e6%2580%25bb%25e7%25bb%2593"/>
+        <updated>2022-02-06T10:20:01.000Z</updated>
+        <summary type="html"><![CDATA[我，虽然从小到大 self identify as 社恐，且在各种意义上而言是一个内向的人，但在过去的一年仿佛打了鸡血似的说走就走挑起和参与了好几场网友见面活动。虽然大四时候也曾一反社恐人设在本校内发起了大规模人人上的”半熟人“线下见面活动，但像今年这种规模的全世界背靠出游见网友似乎还是我人生的头一遭，值得写篇总结纪念一下。 这是去年拖延过度 11、12 月年底放送 Patreon 二合一投票票选结果其中的一篇，本来觉得和 2021 年终总结有一些重复所以想先写另一篇，但想说都是总结，还是趁年还没彻底过完发，结果过于现充又拖到了二月（没过正月十五年不算过完？）。欢迎金主们去 2022 年第一篇投票选出接下来要写的命题： 加州向日葵搬家冬雨地区置办的几件满意衣物 最近买的几个个有用处的包 新家置办的一些物件 Surface Pro 8 测评…]]></summary>
+        <author>
+            <name>椒盐鸵鸟</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hibernate Validator Annotation Processor in Depth]]></title>
+        <id>https://www.baeldung.com/?p=116433</id>
+        <link href="https://feeds.feedblitz.com/~/681100906/0/baeldung~Hibernate-Validator-Annotation-Processor-in-Depth"/>
+        <updated>2022-02-06T10:18:38.000Z</updated>
+        <summary type="html"><![CDATA[When using the Java constraints library, it's easy to make a mistake with an annotation and only find out about it at runtime. We look at the available annotation processor and how it can give us early feedback.]]></summary>
+        <author>
+            <name>baeldung</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Printing Thread Info in Log File Using Log4j2]]></title>
+        <id>https://drafts.baeldung.com/?p=122672</id>
+        <link href="https://feeds.feedblitz.com/~/681100908/0/baeldung~Printing-Thread-Info-in-Log-File-Using-Logj"/>
+        <updated>2022-02-06T10:12:48.000Z</updated>
+        <summary type="html"><![CDATA[Learn how to print thread info using Log4j2]]></summary>
+        <author>
+            <name>baeldung</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2022年1月的可重复性构建]]></title>
+        <id>https://hn.buzzing.cc/hn/30229189/</id>
+        <link href="https://hn.buzzing.cc/hn/30229189/?score=101&amp;original_url=https%3A%2F%2Freproducible-builds.org%2Freports%2F2022-01%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30229189&amp;sensitive=false"/>
+        <updated>2022-02-06T10:01:51.000Z</updated>
+        <summary type="html"><![CDATA[2022年1月的可重复性构建]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[OnePlus 10 Pro Camera Review and Shootout: Fast and accurate clicker with a great camera app]]></title>
+        <id>https://www.xda-developers.com/?p=589525</id>
+        <link href="https://www.xda-developers.com/oneplus-10-pro-camera-review/"/>
+        <updated>2022-02-06T10:00:07.000Z</updated>
+        <summary type="html"><![CDATA[OnePlus’s main series of phones have always been known for having fast, zippy software, top-tier SoCs, and great build quality. For half a year in 2019, it even had the best phone screen on the market (the awesome OnePlus 7 Pro). But having a tip-top camera that could at least make a claim as being
+The post OnePlus 10 Pro Camera Review and Shootout: Fast and accurate clicker with a great camera app appeared first on xda-developers.]]></summary>
+        <author>
+            <name>Ben Sin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Write code inspired by Shakespeare with esolang]]></title>
+        <id>https://opensource.com/article/22/2/shakespeare-esolang</id>
+        <link href="https://opensource.com/article/22/2/shakespeare-esolang"/>
+        <updated>2022-02-06T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Maybe you've heard that playwright William Shakespeare contributed 1,700 new words to the English language. But did you know that he has an entire programming language as well?
+SPL (Shakespeare programming language) was created to make source code resemble Shakespeare plays. It is an esoteric language, also known as an esolang. An esolang is a computer programming language designed to experiment with weird ideas, create a challenge for programmers, or simply serve as a source of amusement, rather than for practical use.
+read more]]></summary>
+        <author>
+            <name>cherrybomb</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Lon Lat Lon Lat]]></title>
+        <id>https://hn.buzzing.cc/hn/30228981/</id>
+        <link href="https://hn.buzzing.cc/hn/30228981/?score=103&amp;original_url=https%3A%2F%2Fmacwright.com%2Flonlat%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30228981&amp;sensitive=false"/>
+        <updated>2022-02-06T07:51:43.000Z</updated>
+        <summary type="html"><![CDATA[Lon Lat Lon Lat]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[同性恋父母，当时和现在。]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/slf5rf/gay_parents_then_and_now/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/slf5rf/gay_parents_then_and_now/?score=75005&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Fslf5rf%2Fgay_parents_then_and_now%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Fslf5rf%2Fgay_parents_then_and_now%2F&amp;channel=MadeMeSmile&amp;sensitive=false"/>
+        <updated>2022-02-06T07:20:13.000Z</updated>
+        <summary type="html"><![CDATA[同性恋父母，当时和现在。]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[灯塔看守人]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/funny/comments/slfx06/lighthouse_keeper/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/funny/comments/slfx06/lighthouse_keeper/?score=75293&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffunny%2Fcomments%2Fslfx06%2Flighthouse_keeper%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffunny%2Fcomments%2Fslfx06%2Flighthouse_keeper%2F&amp;channel=funny&amp;sensitive=false"/>
+        <updated>2022-02-06T07:20:13.000Z</updated>
+        <summary type="html"><![CDATA[灯塔看守人]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ask HN: 关于管理软件复杂性的最佳书籍？]]></title>
+        <id>https://hn.buzzing.cc/hn/30228261/</id>
+        <link href="https://hn.buzzing.cc/hn/30228261/?score=104&amp;original_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30228261&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30228261&amp;channel=ASK+HN&amp;sensitive=false"/>
+        <updated>2022-02-06T07:19:56.000Z</updated>
+        <summary type="html"><![CDATA[Ask HN: 关于管理软件复杂性的最佳书籍？]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[超大质量黑洞双星即将合并]]></title>
+        <id>https://hn.buzzing.cc/hn/30228095/</id>
+        <link href="https://hn.buzzing.cc/hn/30228095/?score=101&amp;original_url=https%3A%2F%2Farxiv.org%2Fabs%2F2201.11633&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30228095&amp;sensitive=false"/>
+        <updated>2022-02-06T07:19:56.000Z</updated>
+        <summary type="html"><![CDATA[超大质量黑洞双星即将合并]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[城市漫步指南｜口衔山石细，心望海波平——深圳湾公园漫步指南]]></title>
+        <id>https://sspai.com/post/71139</id>
+        <link href="https://sspai.com/post/71139"/>
+        <updated>2022-02-06T06:57:10.000Z</updated>
+        <summary type="html"><![CDATA[随着「大魔头」奥密克戎的到来，全国的防疫局势都充满了不确定因素。在积极面对疫情的同时，不少深圳人也无奈地感慨：今年过年又回不了家了。
+既然决定留深过年，总得找点风景怡人的地方逛一逛，深圳湾就是这样一个好地方。深圳湾公园毗邻蛇口、南山等深圳最繁华的区域，沿线能同时欣赏到漂亮的城市景观和自然风光；作为一处海滨开放式公园，深圳湾又有着怡人的空气和广阔的活动空间。不仅如此，深圳湾公园不是简单的步行通道，其沿线还有各种主题公园和活动场所，无论你想在假期期间一个人静静还是陪家人走走，亦或带孩子玩玩，深圳湾公园都是安全又舒适的好去处。
+除了欣赏风景，深圳湾也是我进行街头摄影最多的去处，沿途能遇见各种各样有趣的人和场面，每次前往都能找到新鲜点。正因为去得多了，所以我对深圳湾非常熟悉，也充满感情。在本期城市漫步指南中，我想带你前往深圳湾，来一趟完整的深圳海滨之旅。
+注：本文除部分地图截图已注明出处外，其余均使用 OpenStreetMap 截取和修改。
+深圳湾公园在哪里？
+深圳湾，又称「后海湾」，是位于深圳市和香港特别行政区之间的一个海湾，处于珠江的入海口末端。由于其被深圳蛇口半岛和香港元朗平原半包围而形成了一片夹在深圳和香港之间的半开放内海，也因此形成了深港隔海相望的独特景观。
+深圳湾俯视图，北部区域为深圳，南部区域为香港，西侧则为珠江口。图片截取自 Google Maps
+二十一世纪初，深圳市政府联合多家机构和单位，历经八年的规划和建设，在深圳湾沿海一带修建了深圳湾公园。深圳湾公园全称「深圳湾海滨城市公园」，南临深圳湾公路大桥，东至红树湾自然保护区，全长约十三公里。深圳湾公园整体分为「滨海休闲带」和「生态公园」两个部分，两者分别为南北、东西走向的两条通道，组合在一起恰好在地图上构成了一个标准的直角造型。
+深圳湾公园整体路线图，半透明部分即为公园区域
+依照我平时的游逛习惯，我通常会从东西线…]]></summary>
+        <author>
+            <name>张奕源Nick</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[B23Downloader – 开源 B 站下载视频、直播、漫画工具[Windows]]]></title>
+        <id>https://www.appinn.com/?p=41311</id>
+        <link href="https://www.appinn.com/b23downloader/"/>
+        <updated>2022-02-06T06:39:46.000Z</updated>
+        <summary type="html"><![CDATA[B23Downloader 是一款使用 Qt C++ 开发的开源工具，用来下载 B 站视频、直播、漫画，简单易用，界面直观。@Appinn 来自发现频道，@squareas 的推荐： B23Downl]]></summary>
+        <author>
+            <name>青小蛙</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[被谷歌扼杀]]></title>
+        <id>https://hn.buzzing.cc/hn/30219442/</id>
+        <link href="https://hn.buzzing.cc/hn/30219442/?score=100&amp;original_url=https%3A%2F%2Fkilledbygoogle.com&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30219442&amp;sensitive=false"/>
+        <updated>2022-02-06T06:32:25.000Z</updated>
+        <summary type="html"><![CDATA[被谷歌扼杀]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[分布式点对点的不良行为人IP地址和电话号码列表]]></title>
+        <id>https://hn.buzzing.cc/hn/30220208/</id>
+        <link href="https://hn.buzzing.cc/hn/30220208/?score=100&amp;original_url=https%3A%2F%2Fsentrypeer.org%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30220208&amp;sensitive=false"/>
+        <updated>2022-02-06T04:21:39.000Z</updated>
+        <summary type="html"><![CDATA[分布式点对点的不良行为人IP地址和电话号码列表]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[年度征文｜当我们谈论效率的时候，我们在谈论什么]]></title>
+        <id>https://sspai.com/post/71159</id>
+        <link href="https://sspai.com/post/71159"/>
+        <updated>2022-02-06T04:02:03.000Z</updated>
+        <summary type="html"><![CDATA[编注：
+本文是少数派 2021 年度征文 活动 #效率 21 标签下的入围文章。本文仅代表作者本人观点，少数派对标题和排版略作调整。
+和往年不同，今年文章的数据表现将很大程度上决定征文活动的最终走向，包括「双倍稿酬（由飞书赞助）」活动奖励、最终票选名单以及征文奖品类型。如果你喜欢这篇文章，不妨通过充电或评论的方式支持作者。
+
+「效率」，放置在个人和整体中，这是一个做事的时候皆需要考虑的词。在个人层面上，我们谈论「效率」时，通常它的前面会有一个修饰语，比如「学习效率」、「工作效率」。在我们说提高效率的时候，指的是在做一件事时，能够用更快的速度，更简单的方式实现它。高效也是一个大多数人都关心的话题，而且「如何利用各种效率工具让自己变得更高效」，似乎已经成为了一个预设好的、默认的好的事情。
+在 2021 年，我也不出意外地使用了很多软件、尝试了很多种工具，主要包括知识的获取和整理，时间和日程的管理。与之前不同，我的一大改变是不再追求更复杂更齐全的功能，更倾向使用简单的、但可以达到核心需求的工具。
+效率背后的逻辑
+在聊具体的效率工具之前，我们先捋一捋效率背后的逻辑。
+有效、无效和半有效时间
+提高效率，换一个说法就是节省时间。从时间这个角度出发，我们先分解我们平时在工作和学习时花费的时间，看看我们到底把时间花在了哪里。如果把工作或者学习的时间摊开来看，可以把整块时间分成三块，分别是有效时间、半有效时间和无效时间。
+有效时间指的是那些真正有突出的进展的时间，它只占整块时间的很小一部分。突出的进展就类似解决了某个 bug，看懂了某个原理。这样的时间也可以被认为是做事时真正有用的时间。
+所谓无效时间指的是做一件事情的过程中完全不用花的时间，这段时间纯粹是无用时间。举个例子，如果要使用远程服务器跑一段程序，那么设置 IDE 的远程连接可以说是在这个场景下最优的做法，而其他的方法，比如将代码文…]]></summary>
+        <author>
+            <name>喝牛奶的克莱尔</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[用 HAProxy 实现网络流量的负载平衡]]></title>
+        <id>https://linux.cn/article-14247-1.html?utm_source=rss&amp;utm_medium=rss</id>
+        <link href="https://linux.cn/article-14247-1.html?utm_source=rss&amp;utm_medium=rss"/>
+        <updated>2022-02-06T03:40:10.000Z</updated>
+        <summary type="html"><![CDATA[安装、配置和运行 HAProxy，在几个网络或应用服务器之间分配网络流量。
+
+
+
+
+不是只有在一个大型公司工作才需要使用负载平衡器。你可能是一个业余爱好者，用几台树莓派电脑自我托管一个网站。也许你是一个小企业的服务器管理员；也许你确实在一家大公司工作。无论你的情况如何，你都可以使用 HAProxy 负载平衡器来管理你的流量。
+
+HAProxy 被称为“世界上最快和使用最广泛的软件负载平衡器”。它包含了许多可以使你的应用程序更加安全可靠的功能，包括内置的速率限制、异常检测、连接排队、健康检查以及详细的日志和指标。学习本教程中所涉及的基本技能和概念，将有助于你使用 HAProxy 建立一个更强大的、远为强大的基础设施。
+
+为什么需要一个负载平衡器？
+
+负载平衡器是一种在几个网络或应用服务器之间轻松分配连接的方法。事实上，HAProxy 可以平衡任何类型的传输控制协议（TCP）流量，包括 RDP、FTP、WebSockets 或数据库连接。分散负载的能力意味着你不需要因为你的网站流量比谷歌大就购买一个拥有几十万 G 内存的大型网络服务器。
+
+负载平衡器还为你提供了灵活性。也许你现有的网络服务器不够强大，无法满足一年中繁忙时期的峰值需求，你想增加一个，但只是暂时的。也许你想增加一些冗余，以防一个服务器出现故障。有了 HAProxy，你可以在需要时向后端池添加更多的服务器，在不需要时删除它们。
+
+你还可以根据情况将请求路由到不同的服务器。例如，你可能想用几个缓存服务器（如 Varnish）来处理你的静态内容，但把任何需要动态内容的东西，如 API 端点，路由到一个更强大的机器。
+
+在这篇文章中，我将通过设置一个非常基本的 HAProxy 环境，使用 HTTPS 来监听安全端口 443，并利用几个后端 Web 服务器。它甚至会将所有进入预定义 URL（如 /api/）…]]></summary>
+        <author>
+            <name>linux@linux.cn (linux)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[将你的电子邮件直接发送到对方的垃圾邮件中]]></title>
+        <id>https://hn.buzzing.cc/hn/30228403/</id>
+        <link href="https://hn.buzzing.cc/hn/30228403/?score=100&amp;original_url=https%3A%2F%2Fstraight2spam.xyz&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30228403&amp;sensitive=false"/>
+        <updated>2022-02-06T03:37:25.000Z</updated>
+        <summary type="html"><![CDATA[将你的电子邮件直接发送到对方的垃圾邮件中]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我在这个游戏上工作了多年，它是关于在一个具有大气层和轨道物理学的真实规模的世界上驾驶运输船。它被称为 "新星的飞行"，我即将发布一个演示。]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/gaming/comments/sl8vp6/i_worked_for_years_on_this_game_it_is_about/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/gaming/comments/sl8vp6/i_worked_for_years_on_this_game_it_is_about/?score=75435&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fgaming%2Fcomments%2Fsl8vp6%2Fi_worked_for_years_on_this_game_it_is_about%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fgaming%2Fcomments%2Fsl8vp6%2Fi_worked_for_years_on_this_game_it_is_about%2F&amp;channel=gaming&amp;sensitive=false"/>
+        <updated>2022-02-06T03:20:37.000Z</updated>
+        <summary type="html"><![CDATA[我在这个游戏上工作了多年，它是关于在一个具有大气层和轨道物理学的真实规模的世界上驾驶运输船。它被称为 "新星的飞行"，我即将发布一个演示。]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Jolie: Django Admin的直接替代者]]></title>
+        <id>https://hn.buzzing.cc/hn/30224838/</id>
+        <link href="https://hn.buzzing.cc/hn/30224838/?score=100&amp;original_url=https%3A%2F%2Fwww.jolie.dev%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30224838&amp;sensitive=false"/>
+        <updated>2022-02-06T03:20:20.000Z</updated>
+        <summary type="html"><![CDATA[Jolie: Django Admin的直接替代者]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[堆栈项目，一个组织和可视化数学的新模式]]></title>
+        <id>https://hn.buzzing.cc/hn/30222302/</id>
+        <link href="https://hn.buzzing.cc/hn/30222302/?score=100&amp;original_url=https%3A%2F%2Fnews.columbia.edu%2Fnews%2Fstacks-project-johan-dejong&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30222302&amp;sensitive=false"/>
+        <updated>2022-02-06T03:04:03.000Z</updated>
+        <summary type="html"><![CDATA[堆栈项目，一个组织和可视化数学的新模式]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[已经支付]]></title>
+        <id>https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/sl866m/already_paid/</id>
+        <link href="https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/sl866m/already_paid/?score=75540&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Fsl866m%2Falready_paid%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Fsl866m%2Falready_paid%2F&amp;channel=WhitePeopleTwitter&amp;sensitive=false"/>
+        <updated>2022-02-06T02:17:14.000Z</updated>
+        <summary type="html"><![CDATA[已经支付]]></summary>
+        <author>
+            <name>Reddit 热门</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Personal Blog Website using HTML CSS JS]]></title>
         <id>https://dev.to/codewithsadee/personal-blog-website-using-html-css-js-2en2</id>
@@ -223,6 +1157,47 @@ Relational databases are set up in tab…]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[皮筋套住妹子小手！男生撩妹必学魔术]]></title>
+        <id>https://www.bilibili.com/video/av593850850</id>
+        <link href="https://www.bilibili.com/video/av593850850"/>
+        <updated>2022-02-05T20:11:48.000Z</updated>
+        <summary type="html"><![CDATA[-
+
+
+Tags:春晚,刘谦,申林,春晚魔术揭秘,必剪创作,春节不无聊挑战]]></summary>
+        <author>
+            <name>魔术特白</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[地球上还有无人认领的土地吗？]]></title>
+        <id>https://www.bilibili.com/video/av466251923</id>
+        <link href="https://www.bilibili.com/video/av466251923"/>
+        <updated>2022-02-05T20:08:43.000Z</updated>
+        <summary type="html"><![CDATA[参考：https://www.sporcle.com/blog/2017/09/a-history-of-bir-tawil/
+https://www.ndtv.com/india-news/kingdom-of-dixit-indore-man-declares-himself-king-of-unclaimed-land-between-egypt-and-sudan-1776291
+https://www.quora.com/Is-Bir-Tawil-really-not-claimed-by-an
+
+
+Tags:猎奇,知识,埃及,冷知识,苏丹,无人认领,无主地]]></summary>
+        <author>
+            <name>正经的知识</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[揭秘春晚魔术，空碗变米饭！]]></title>
+        <id>https://www.bilibili.com/video/av636326258</id>
+        <link href="https://www.bilibili.com/video/av636326258"/>
+        <updated>2022-02-05T20:02:37.000Z</updated>
+        <summary type="html"><![CDATA[-
+
+
+Tags:打卡挑战,魔术教学,魔术揭秘]]></summary>
+        <author>
+            <name>周小冰的魔术</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[垃圾邮件黑名单已失去控制]]></title>
         <id>https://hn.buzzing.cc/hn/30222736/</id>
         <link href="https://hn.buzzing.cc/hn/30222736/?score=101&amp;original_url=https%3A%2F%2Fblog.roastidio.us%2Fposts%2Fspam_blacklists_are_out_of_control%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30222736&amp;sensitive=false"/>
@@ -345,6 +1320,22 @@ Here I have tried to solve them in typescript using ts-problems repo.
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[脸都不要了！这样的演示竟然不用动画]]></title>
+        <id>https://www.bilibili.com/video/av338803223</id>
+        <link href="https://www.bilibili.com/video/av338803223"/>
+        <updated>2022-02-05T19:10:16.000Z</updated>
+        <summary type="html"><![CDATA[分享一种简单实用的PPT技巧
+不需添加任何动画即可实现超丝滑的演示效果
+可应用于团队人物、多项目（产品）介绍等场景
+喜欢记得关注点赞支持下UP噢~
+
+
+Tags:幻灯片,学习,PPT,设计,经验分享,野生技术协会,PPT设计,知识分享官,经验分享’,团队人物介绍]]></summary>
+        <author>
+            <name>壹杰Design</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Create a login page in Python with flask and/or gunicorn   💻 🐍]]></title>
         <id>https://dev.to/hamdyaea/create-a-login-page-with-in-python-with-flask-andor-gunicorn-1g5a</id>
         <link href="https://dev.to/hamdyaea/create-a-login-page-with-in-python-with-flask-andor-gunicorn-1g5a"/>
@@ -413,6 +1404,19 @@ Para quem está chegando no universo Java Web agora e já chega aprendendo Sprin
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[把蚂蚁尸体当伪装！“马陆杀手”！穿吉利服的伪装大师！猎蝽科刺客的无数种狩猎技巧揭秘！]]></title>
+        <id>https://www.bilibili.com/video/av593834842</id>
+        <link href="https://www.bilibili.com/video/av593834842"/>
+        <updated>2022-02-05T18:52:56.000Z</updated>
+        <summary type="html"><![CDATA[上一期中，我们介绍了猎蝽科的身体特化，本期视频我们会了解到猎蝽的独特狩猎习性，包括如何感知，伪装和战斗技巧。
+
+
+Tags:知识分享官,昆虫,科普,自然,知识,萝王]]></summary>
+        <author>
+            <name>萝王2号</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Progressive web app (PWA) Mistakes and Enhancements]]></title>
         <id>https://dev.to/mrottimista/things-that-you-do-not-know-about-your-pwa-mainfest-ob0</id>
         <link href="https://dev.to/mrottimista/things-that-you-do-not-know-about-your-pwa-mainfest-ob0"/>
@@ -439,6 +1443,29 @@ After understanding these definitions,  we are ready to start our arti…]]></su
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[网络热门蛇斗视频(1)震惊!世界第2毒竟然跟第10毒打起来了?]]></title>
+        <id>https://www.bilibili.com/video/av508790946</id>
+        <link href="https://www.bilibili.com/video/av508790946"/>
+        <updated>2022-02-05T18:30:04.000Z</updated>
+        <summary type="html"><![CDATA[Tags:知识分享官,自然,生物,生命,科学,科普,打卡挑战,蛇,毒性,獴]]></summary>
+        <author>
+            <name>世界记忆大师龙雅</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[50w出租自己！？列支敦士登到底有多奇葩！]]></title>
+        <id>https://www.bilibili.com/video/av466328440</id>
+        <link href="https://www.bilibili.com/video/av466328440"/>
+        <updated>2022-02-05T18:12:42.000Z</updated>
+        <summary type="html"><![CDATA[50w出租自己！？列支敦士登到底有多奇葩！
+
+
+Tags:科普,学习,美金,国家,地理,出租,知识分享官]]></summary>
+        <author>
+            <name>橘右美美子</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[睡眠时大脑中脑脊液的第一张图像（2019年）。]]></title>
         <id>https://hn.buzzing.cc/hn/30222210/</id>
         <link href="https://hn.buzzing.cc/hn/30222210/?score=110&amp;original_url=https%3A%2F%2Fwww.bu.edu%2Farticles%2F2019%2Fcerebrospinal-fluid-washing-in-brain-during-sleep%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30222210&amp;sensitive=false"/>
@@ -446,6 +1473,29 @@ After understanding these definitions,  we are ready to start our arti…]]></su
         <summary type="html"><![CDATA[睡眠时大脑中脑脊液的第一张图像（2019年）。]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【网络热门军事鉴定24】飞行员：你开，我出去看看…]]></title>
+        <id>https://www.bilibili.com/video/av681283362</id>
+        <link href="https://www.bilibili.com/video/av681283362"/>
+        <updated>2022-02-05T18:00:00.000Z</updated>
+        <summary type="html"><![CDATA[仅仅从个人主观角度及军事知识制作，有误欢迎指正。 素材均来源于互联网公开合法资料，无涉敏涉密成份，且仅作为科普素材使用。
+
+
+Tags:知识分享官,星海,武器,历史,科普,搞笑,辟谣,知识,趣闻]]></summary>
+        <author>
+            <name>花岗岩工作室</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【建议上交有关部门】]]></title>
+        <id>https://www.bilibili.com/video/av211052352</id>
+        <link href="https://www.bilibili.com/video/av211052352"/>
+        <updated>2022-02-05T18:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Tags:野生技术协会,鉴定,历史,文化,学习]]></summary>
+        <author>
+            <name>天天鉴宝</name>
         </author>
     </entry>
     <entry>
@@ -459,6 +1509,22 @@ After understanding these definitions,  we are ready to start our arti…]]></su
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[魔术 VS 冬奥会！我居然用冰壶完成了魔术？！]]></title>
+        <id>https://www.bilibili.com/video/av253781236</id>
+        <link href="https://www.bilibili.com/video/av253781236"/>
+        <updated>2022-02-05T17:49:26.000Z</updated>
+        <summary type="html"><![CDATA[杭州没有冰壶场地，所以只能在家玩了……
+本期点赞过1w，继续约鹿鹿拍视频！
+北京冬奥会已经开幕，希望我国奥运健儿取得好成绩~
+另外，今天是我生日，可以在弹幕里发一句生日快乐吗～
+
+
+Tags:自制,生活,搞笑,魔术,冬奥会,魔术教学,冰壶,野生技术协会,咕咕星,故事档案馆]]></summary>
+        <author>
+            <name>一颗咕咕星</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[聋人如何庆祝生日]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/sl3x17/how_deaf_people_celebrate_the_birthday/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/sl3x17/how_deaf_people_celebrate_the_birthday/?score=76326&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Fsl3x17%2Fhow_deaf_people_celebrate_the_birthday%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Fsl3x17%2Fhow_deaf_people_celebrate_the_birthday%2F&amp;channel=MadeMeSmile&amp;sensitive=false"/>
@@ -466,6 +1532,56 @@ After understanding these definitions,  we are ready to start our arti…]]></su
         <summary type="html"><![CDATA[聋人如何庆祝生日]]></summary>
         <author>
             <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[乐此不疲的“永动机”话题又来了！这次只需要几块麻将！]]></title>
+        <id>https://www.bilibili.com/video/av338788293</id>
+        <link href="https://www.bilibili.com/video/av338788293"/>
+        <updated>2022-02-05T17:10:13.000Z</updated>
+        <summary type="html"><![CDATA[-
+
+
+Tags:底气满满的福气生活,打卡挑战,创意,永动机]]></summary>
+        <author>
+            <name>踩鸟玩家</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[帮粉丝提炼金手指里面的黄金，没想到培养出了晶体]]></title>
+        <id>https://www.bilibili.com/video/av381374056</id>
+        <link href="https://www.bilibili.com/video/av381374056"/>
+        <updated>2022-02-05T17:09:12.000Z</updated>
+        <summary type="html"><![CDATA[帮粉丝提炼金手指里面的黄金，没想到培养出了晶体#黄金#炼金#镀金回收#猎奇#科学实验#化学#晶体#翻车
+
+
+Tags:猎奇,化学,黄金,翻车,炼金,科学实验,晶体,打卡挑战,知识分享官,镀金回收]]></summary>
+        <author>
+            <name>老大南</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Surface Laptop SE review: A Chromebook competitor, but Windows 11 SE isn’t a Chrome OS]]></title>
+        <id>https://www.xda-developers.com/?p=590475</id>
+        <link href="https://www.xda-developers.com/surface-laptop-se-windows-11-se-review/"/>
+        <updated>2022-02-05T17:00:04.000Z</updated>
+        <summary type="html"><![CDATA[Microsoft’s Surface Laptop SE is an excellent laptop for students in a system that sees value in the Redmond firm’s ecosystem, thanks to the new Windows 11 SE OS. I know; that’s a pretty loaded statement. The key thing is that Microsoft has to sell schools on Windows, and the unique value propositions that the
+The post Surface Laptop SE review: A Chromebook competitor, but Windows 11 SE isn’t a Chrome OS appeared first on xda-developers.]]></summary>
+        <author>
+            <name>Rich Woods</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[“诺奖发错了人，结果差点毁灭整个地球”……科普 科学]]></title>
+        <id>https://www.bilibili.com/video/av423410357</id>
+        <link href="https://www.bilibili.com/video/av423410357"/>
+        <updated>2022-02-05T17:00:01.000Z</updated>
+        <summary type="html"><![CDATA[-
+
+
+Tags:科学,地球,科普,自然,科学家,核武器]]></summary>
+        <author>
+            <name>思博人物志</name>
         </author>
     </entry>
     <entry>
@@ -519,6 +1635,19 @@ Given an integer array nums, return the maximum difference between two successiv
 You must write an algorithm that runs in l...]]></summary>
         <author>
             <name>Anup Kalburgi</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[很多人不知道，丁丁也可以移植的！]]></title>
+        <id>https://www.bilibili.com/video/av508802429</id>
+        <link href="https://www.bilibili.com/video/av508802429"/>
+        <updated>2022-02-05T16:07:41.000Z</updated>
+        <summary type="html"><![CDATA[-
+
+
+Tags:故事档案馆,必剪创作,健康,生命,原创]]></summary>
+        <author>
+            <name>普外科曾医生</name>
         </author>
     </entry>
     <entry>
@@ -671,6 +1800,28 @@ of two kinds of elements: a number, or another pair. For example, the nested …
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[0205 - 《宽客人生》]]></title>
+        <id>https://atjason.com/daily/2022-02-05.html</id>
+        <link href="https://atjason.com/daily/2022-02-05.html"/>
+        <updated>2022-02-05T14:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>宽客中的大牛代表伊曼纽尔·德曼的回忆录，讲述了他从物理学家到数量金融大师的身份转变，从学者到宽客的传奇跨界经历。</p>
+<p><img src="https://ps.toolinbox.net/cklx9.jpeg" alt=""></p>]]></summary>
+        <author>
+            <name>Jason</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[0205 - 《共同基金常识》]]></title>
+        <id>https://atjason.com/daily/2022-02-06.html</id>
+        <link href="https://atjason.com/daily/2022-02-06.html"/>
+        <updated>2022-02-05T14:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>一句话：普通人还是投资指数基金算了。连专业的投资人，都不一定能超越指数基金的业绩。</p>
+<p><img src="https://ps.toolinbox.net/yjaxa.jpeg" alt=""></p>]]></summary>
+        <author>
+            <name>Jason</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Get Current Trace ID in Spring Cloud Sleuth]]></title>
         <id>https://drafts.baeldung.com/?p=126791</id>
         <link href="https://feeds.feedblitz.com/~/681019970/0/baeldung~Get-Current-Trace-ID-in-Spring-Cloud-Sleuth"/>
@@ -678,6 +1829,19 @@ of two kinds of elements: a number, or another pair. For example, the nested …
         <summary type="html"><![CDATA[Learn how to get current trace and span ID in Spring Cloud Sleuth.]]></summary>
         <author>
             <name>baeldung</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[碎牌还原，这次真撕了？学会超帅！]]></title>
+        <id>https://www.bilibili.com/video/av978837562</id>
+        <link href="https://www.bilibili.com/video/av978837562"/>
+        <updated>2022-02-05T13:30:15.000Z</updated>
+        <summary type="html"><![CDATA[挑战全网最快的撕牌还原，纯手法，真撕，瞬间就能还原？有手就能学会！
+
+
+Tags:魔术,魔术教学]]></summary>
+        <author>
+            <name>会魔术</name>
         </author>
     </entry>
     <entry>
@@ -739,6 +1903,16 @@ Spring boot templating
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[不懂护肤品的鉴定师不是好宝友...]]></title>
+        <id>https://www.bilibili.com/video/av593555428</id>
+        <link href="https://www.bilibili.com/video/av593555428"/>
+        <updated>2022-02-05T12:00:14.000Z</updated>
+        <summary type="html"><![CDATA[Tags:野生技术协会,鉴定,历史,文化,学习,经验分享]]></summary>
+        <author>
+            <name>天天鉴宝</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Datawrapper。创建图表、地图和表格]]></title>
         <id>https://hn.buzzing.cc/hn/30218793/</id>
         <link href="https://hn.buzzing.cc/hn/30218793/?score=103&amp;original_url=https%3A%2F%2Fwww.datawrapper.de&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30218793&amp;sensitive=false"/>
@@ -746,6 +1920,16 @@ Spring boot templating
         <summary type="html"><![CDATA[Datawrapper。创建图表、地图和表格]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【小魔】为啥我们北方人一过年就吃饺子？]]></title>
+        <id>https://www.bilibili.com/video/av936292833</id>
+        <link href="https://www.bilibili.com/video/av936292833"/>
+        <updated>2022-02-05T11:12:49.000Z</updated>
+        <summary type="html"><![CDATA[Tags:知识分享官,打卡挑战,美食,科普,动画,生活,饺子,过年]]></summary>
+        <author>
+            <name>-我是小魔-</name>
         </author>
     </entry>
     <entry>
@@ -803,6 +1987,19 @@ Meta 公司 VR 应用“地平线世界”的测试用户抱怨在网上被摸�
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[虎年春晚魔术的正确打开方式]]></title>
+        <id>https://www.bilibili.com/video/av296328540</id>
+        <link href="https://www.bilibili.com/video/av296328540"/>
+        <updated>2022-02-05T10:30:50.000Z</updated>
+        <summary type="html"><![CDATA[-
+
+
+Tags:魔方,知识分享官]]></summary>
+        <author>
+            <name>魔方达人夏天</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[谷歌拒绝提高员工薪酬后给高管加薪]]></title>
         <id>https://hn.buzzing.cc/hn/30215387/</id>
         <link href="https://hn.buzzing.cc/hn/30215387/?score=100&amp;original_url=https%3A%2F%2Fwww.hcamag.com%2Fca%2Fspecialization%2Findustrial-relations%2Fgoogle-gives-execs-raises-after-declining-to-boost-employees-pay%2F321236&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30215387&amp;sensitive=false"/>
@@ -810,6 +2007,19 @@ Meta 公司 VR 应用“地平线世界”的测试用户抱怨在网上被摸�
         <summary type="html"><![CDATA[谷歌拒绝提高员工薪酬后给高管加薪]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[公交车的报站器拆看看内部都有什么]]></title>
+        <id>https://www.bilibili.com/video/av253823427</id>
+        <link href="https://www.bilibili.com/video/av253823427"/>
+        <updated>2022-02-05T10:00:18.000Z</updated>
+        <summary type="html"><![CDATA[折腾了两个多小时没有把它搞定，有点郁闷……
+
+
+Tags:知识分享官,野生技术协会,报站器,公交车,拆解,原理,数码,生活,日常]]></summary>
+        <author>
+            <name>硬核拆解</name>
         </author>
     </entry>
     <entry>
@@ -833,6 +2043,19 @@ Meta 公司 VR 应用“地平线世界”的测试用户抱怨在网上被摸�
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[女生在坐摩托车时，为什么都喜欢侧着身子坐？]]></title>
+        <id>https://www.bilibili.com/video/av508804302</id>
+        <link href="https://www.bilibili.com/video/av508804302"/>
+        <updated>2022-02-05T09:37:02.000Z</updated>
+        <summary type="html"><![CDATA[女生在坐摩托车时，为什么都喜欢侧着身子坐？
+
+
+Tags:知识分享官,科普,冷知识,女性,情侣,男生,女生小秘密,摩托车,涨知识]]></summary>
+        <author>
+            <name>不正经学姐g</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[妈妈被火化了，除了骨灰，这就是剩下的东西。]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/skj3g1/mom_was_cremated_besides_the_ashes_this_is_what/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/skj3g1/mom_was_cremated_besides_the_ashes_this_is_what/?score=75201&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Fskj3g1%2Fmom_was_cremated_besides_the_ashes_this_is_what%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Fskj3g1%2Fmom_was_cremated_besides_the_ashes_this_is_what%2F&amp;channel=interestingasfuck&amp;sensitive=false"/>
@@ -840,6 +2063,16 @@ Meta 公司 VR 应用“地平线世界”的测试用户抱怨在网上被摸�
         <summary type="html"><![CDATA[妈妈被火化了，除了骨灰，这就是剩下的东西。]]></summary>
         <author>
             <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Learn Nginx and its basics in 2022]]></title>
+        <id>https://dev.to/ajayv1/learn-nginx-and-its-basics-in-2022-4ddb</id>
+        <link href="https://dev.to/ajayv1/learn-nginx-and-its-basics-in-2022-4ddb"/>
+        <updated>2022-02-05T08:46:53.000Z</updated>
+        <summary type="html"><![CDATA[#webdev #nginx #node #javascript]]></summary>
+        <author>
+            <name>Ajay Kumar Verma</name>
         </author>
     </entry>
     <entry>
@@ -1344,6 +2577,20 @@ The post Why We Should Explore the Hottest Places in the Ocean appeared first on
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[时代广场现马斯克推文，怒怼拜登无视特斯拉在电动车的地位。这个瓜我们该怎麽吃？]]></title>
+        <id>https://www.bilibili.com/video/av681337217</id>
+        <link href="https://www.bilibili.com/video/av681337217"/>
+        <updated>2022-02-04T21:59:54.000Z</updated>
+        <summary type="html"><![CDATA[昨天时代广场的屏幕上惊险 #马斯克 怼现任美国总统拜登的推文。拜登这届政府完全忽视了 #特斯拉 在 #电动车 行业的领先地位。这已经不是第一次这样了，但一月底在推特上马斯克忍无可忍，火力全开。拜登要发展电动车行业，但为什麽无视销量最大的特斯拉？拜登的政策对特斯拉以后有什麽影响？马斯克怼拜登，我们吃瓜群众该用什麽姿势看热闹？
+本视频的文字版见这里：https://www.0xdan.xyz/elonmusk-bat-biden
+
+
+Tags:特斯拉,马斯克,新能源,电动车,美国总统,拜登,工会]]></summary>
+        <author>
+            <name>钱得乐闲操心</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[My first year as AWS Community Builder]]></title>
         <id>https://dev.to/aws-builders/my-first-year-as-aws-community-builder-4lc8</id>
         <link href="https://dev.to/aws-builders/my-first-year-as-aws-community-builder-4lc8"/>
@@ -1452,6 +2699,33 @@ An error chart is a type of data visualization commonly used to show uncertain�
 The post This new app can control Philips Hue lights from Wear OS watches appeared first on xda-developers.]]></summary>
         <author>
             <name>Corbin Davenport</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Android View的绘制流程（二）-Activity视图-DecorView]]></title>
+        <id>https://juejin.cn/post/7061079313730240542</id>
+        <link href="https://juejin.cn/post/7061079313730240542"/>
+        <updated>2022-02-04T20:34:03.000Z</updated>
+        <summary type="html"><![CDATA[theme: juejin
+「这是我参与2022首次更文挑战的第11天，活动详情查看：2022首次更文挑战」
+上一篇文章的Activity视图里面可以看得出，DecorView是activity窗口的根视图，每个activity都对应一个窗口window，这个窗口是PhoneWindow的实例，PhoneWindow对应的布局是DecorView，是一个FrameLayout，DecorView内部又分为两部分，一部分是ActionBar，另一部分是ContentParent，即activity在setContentView对应的布局。
+
+DecorView的初始化
+先从创建的MainActivity看，在onCreate方法中首先调用的是setContentView方法
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+}
+
+MainActivity的父类是AppCompatActivity 的方法，最终会调用 AppCompatDelegateImpl 的 setContentView 方法：
+// AppCompatDelegateImpl  
+public void setContentView(int resId) {
+    this.ensureSubDecor(); 
+    ViewGroup contentParent = (ViewGroup)this.mSubDecor.findViewById(16908290);
+    contentParent.removeAllViews(); 
+    LayoutInflater.f…]]></summary>
+        <author>
+            <name>Andr_Hito</name>
         </author>
     </entry>
     <entry>
@@ -1847,6 +3121,36 @@ The post Google reportedly selling Stadia technology as “Google Stream” to B
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Flutter 必知必会系列 —— 三棵树最终章]]></title>
+        <id>https://juejin.cn/post/7061047450768769038</id>
+        <link href="https://juejin.cn/post/7061047450768769038"/>
+        <updated>2022-02-04T18:37:46.000Z</updated>
+        <summary type="html"><![CDATA[这是我参与2022首次更文挑战的第11天，活动详情查看：2022首次更文挑战
+往期精彩
+👉  Flutter 必知必会系列——三颗树到底是什么
+👉  Flutter 必知必会系列—— Element 的更新复用机制
+👉  Flutter 必知必会系列 —— Element 更新实战
+👉  Flutter 必知必会系列 —— Render 树的布局绘制
+👉  万字长文 Flutter 运行机制白皮书
+前面的几篇文章基本上把 Flutter 的三棵树说明白了，从三棵树的含义到三棵树的关联，从 Element 的更新到 Render 的布局。有了这些铺垫，再看 Flutter 的其他机制就更加清晰。
+有人可能会问，这三棵树除了 Widget 之外，其他的离我们开发好远，看这些对我们开发有什么帮助吗？
+我从下面几点来给大家抛砖引玉。
+可以更好的看 Flutter 源码
+Flutter framework 的源码大概分为五层：
+
+Widgets 这一层将所有的机制都封装进了我们熟悉的 Widget 中，比如 ImplicitlyAnimatedWidget 封装了动画，CustomPaint 封装了绘制，GestureDetector 封装了手势机制等等。
+开发过程中，免不了要追到源码中对比实现效果。前面我们知道 Widget 基本分为下面的几类，每一类都有基本的代码追踪策略。
+StatelessWidget 代码追踪
+StatelessWidget 是组合型的无状态 Widget，在build 方法中构造出子树。其对应的 Element 是 StatelessElement
+此类型的 Widget，在显示层我们只需要关注其 build 方法，看构造的子树是谁。
+以万金油的 Container 组件为例。
+@override
+Widget build(BuildContex…]]></summary>
+        <author>
+            <name>Time_sun</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[离谱！五人掉粉！【百大掉粉、涨粉榜 Week.05】]]></title>
         <id>https://www.bilibili.com/video/av211315584</id>
         <link href="https://www.bilibili.com/video/av211315584"/>
@@ -1872,6 +3176,19 @@ The post Google reportedly selling Stadia technology as “Google Stream” to B
 Tags:科学,生命,教育,科普,化学,学习,自然,健康,生物,知识分享官]]></summary>
         <author>
             <name>灰细胞</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[根本停不下来！！！]]></title>
+        <id>https://www.bilibili.com/video/av593620131</id>
+        <link href="https://www.bilibili.com/video/av593620131"/>
+        <updated>2022-02-04T18:00:12.000Z</updated>
+        <summary type="html"><![CDATA[我~停~不~下~来~啊~~~~
+
+
+Tags:知识分享官,离谱,趣闻,强迫症,网易,丁磊,停不下来]]></summary>
+        <author>
+            <name>朕知道了喔</name>
         </author>
     </entry>
     <entry>
@@ -2155,6 +3472,16 @@ The post Genshin Impact 2.5 update brings over Raiden Shogun as a weekly boss, a
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[就是它不哭了，把它打哭]]></title>
+        <id>https://www.bilibili.com/video/av936275802</id>
+        <link href="https://www.bilibili.com/video/av936275802"/>
+        <updated>2022-02-04T14:57:07.000Z</updated>
+        <summary type="html"><![CDATA[Tags:漫画,科学,天气,科普,学习,自然,误区,人工降雨]]></summary>
+        <author>
+            <name>我看到了姑娘</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[GoFundMe暂停向加拿大卡车司机捐款]]></title>
         <id>https://hn.buzzing.cc/hn/30192727/</id>
         <link href="https://hn.buzzing.cc/hn/30192727/?score=100&amp;original_url=https%3A%2F%2Fwww.bbc.com%2Fnews%2Fworld-us-canada-60239038&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30192727&amp;sensitive=false"/>
@@ -2214,6 +3541,21 @@ The post OPPO Find X5 Pro complete specifications and renders leak ahead of laun
 The post Nearly 500-Mile Lightning Bolt Crosses Three States, Sets World Record appeared first on ExtremeTech.]]></summary>
         <author>
             <name>Adrianna Nine</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[0204 - 《有钱人和你想的不一样》]]></title>
+        <id>https://atjason.com/daily/2022-02-04.html</id>
+        <link href="https://atjason.com/daily/2022-02-04.html"/>
+        <updated>2022-02-04T14:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>这是今年对我影响比较大的一本书。最直接的，就是明确了自己的财务目标、让我敢于立一个比较大的目标。</p>
+<p>其中的宣言列表：</p>
+<ul>
+<li>我创造我自己的理财等级！</li>
+<li>我的目标是至少变成千万富翁！</li>
+<li>我致力于变得富有。</li]]></summary>
+        <author>
+            <name>Jason</name>
         </author>
     </entry>
     <entry>
@@ -2375,6 +3717,19 @@ The post Modified AirTags with disabled anti-stalking speakers are a thing now, 
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[驾驶证的五个隐藏技巧]]></title>
+        <id>https://www.bilibili.com/video/av466309146</id>
+        <link href="https://www.bilibili.com/video/av466309146"/>
+        <updated>2022-02-04T11:23:55.000Z</updated>
+        <summary type="html"><![CDATA[-
+
+
+Tags:科普,实用小技巧,驾驶证,交管12123,换领驾驶证,学法减分]]></summary>
+        <author>
+            <name>土豆讲冷知识</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[值得一做！!]]></title>
         <id>https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/sjvtie/worth_doing/</id>
         <link href="https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/sjvtie/worth_doing/?score=75075&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Fsjvtie%2Fworth_doing%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Fsjvtie%2Fworth_doing%2F&amp;channel=WhitePeopleTwitter&amp;sensitive=false"/>
@@ -2422,6 +3777,16 @@ The post Modified AirTags with disabled anti-stalking speakers are a thing now, 
         <summary type="html"><![CDATA[兄弟代码是通用的]]></summary>
         <author>
             <name>Reddit 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Concurrency in modern programming languages: Rust vs Go vs Java vs Node.js vs Deno]]></title>
+        <id>https://dev.to/deepu105/concurrency-in-modern-programming-languages-rust-vs-go-vs-java-vs-nodejs-vs-deno-36gg</id>
+        <link href="https://dev.to/deepu105/concurrency-in-modern-programming-languages-rust-vs-go-vs-java-vs-nodejs-vs-deno-36gg"/>
+        <updated>2022-02-04T10:11:52.000Z</updated>
+        <summary type="html"><![CDATA[#rust #javascript #go #jvm]]></summary>
+        <author>
+            <name>Deepu K Sasidharan</name>
         </author>
     </entry>
     <entry>
@@ -2523,6 +3888,22 @@ I've tried my best to make it as generic and language independent as possible bu
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[大佬把Python整理成漫画书了，低调白嫖，让你省下十万学费！]]></title>
+        <id>https://www.bilibili.com/video/av211373492</id>
+        <link href="https://www.bilibili.com/video/av211373492"/>
+        <updated>2022-02-04T09:15:27.000Z</updated>
+        <summary type="html"><![CDATA[本套教程是由Python和漫画相结合起来进行讲解的一套教程。
+针对0基础小白和基础薄弱的伙伴学习，观看印象深刻，有利于牢记知识点。
+小伙伴三连+关注哦~~
+关注UP长更新分享Python等编程干货技术
+
+
+Tags:计算机,科技,编程,华为,人工智能,PYTHON,野生技术协会,PYTHON教程,PYTHON爬虫,PYTHON入门,知识分享官]]></summary>
+        <author>
+            <name>糖不炒栗子-</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[陷入困境的 15 岁少年：Windows Vista]]></title>
         <id>https://linux.cn/article-14241-1.html?utm_source=rss&amp;utm_medium=rss</id>
         <link href="https://linux.cn/article-14241-1.html?utm_source=rss&amp;utm_medium=rss"/>
@@ -2571,6 +3952,43 @@ via: https://www.theregister.com/2022/02/01/happy_birthday_windows_vista/ 
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Kotlin快速入门(7)-数据类、密封类和枚举类]]></title>
+        <id>https://juejin.cn/post/7060894528537886734</id>
+        <link href="https://juejin.cn/post/7060894528537886734"/>
+        <updated>2022-02-04T08:48:22.000Z</updated>
+        <summary type="html"><![CDATA[「这是我参与2022首次更文挑战的第7天，活动详情查看：2022首次更文挑战」。
+数据类
+与Java等语言不同，kotlin创建只包含数据的类时，需要在类名前声明关键字：data。
+data class KotlinBean (val brand : String)
+
+在kotlin中，编译器会自动的从主构造函数中根据所有声明的属性提取以下函数：
+· equals()
+· hashCode()
+· toString()
+· componentN() functions (对应于属性，按声明顺序排列)
+· copy()
+如果这些函数已经在类中被明确定义了，或者从超类中继承而来，就不再会生成。不是所有的kotlin类都能声明为数据类，一般数据类声明都要满足以下条件：
+· 主构造函数至少包含一个或多个参数；
+· 所有的主构造函数的参数必须标识为val或var；
+· 数据类不可声明为abstract，open，sealed或者inner；
+· 数据类不能继承其他类(但是可以实现接口)。
+Copy()
+望词生意，此方法作用就是复制，我们可以使用该函数复制对象并修改部分属性，比如对于上面的KotlinBean类，实现类似下面示例：
+fun copy(brand: String = this.brand) = KotlinBean(brand)
+
+需要修改数据类的属性时用copy()，示例：
+data class KotlinBean (val brand : String)
+
+fun main(args: Array) {
+    val jack = KotlinBean(brand = "Jack")
+    val olderJack = jack.copy(brand = "olderJack")
+    println(jack)
+    println(olderJack)…]]></summary>
+        <author>
+            <name>CoderZuo</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[亚马逊管道恐怖故事]]></title>
         <id>https://hn.buzzing.cc/hn/30203581/</id>
         <link href="https://hn.buzzing.cc/hn/30203581/?score=102&amp;original_url=https%3A%2F%2Farchive.fo%2FpdYHy&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30203581&amp;sensitive=false"/>
@@ -2600,6 +4018,47 @@ The post OPPO Reno 7 series lands in India alongside the OPPO Watch Free appeare
 read more]]></summary>
         <author>
             <name>MikeCamel</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[多页面的过度动画]]></title>
+        <id>https://juejin.cn/post/7060883119833874469</id>
+        <link href="https://juejin.cn/post/7060883119833874469"/>
+        <updated>2022-02-04T07:53:30.000Z</updated>
+        <summary type="html"><![CDATA[theme: channing-cyan
+「这是我参与2022首次更文挑战的第18天，活动详情查看：2022首次更文挑战」
+之前的页面太死板，浏览器肯定要支持多页面，本篇文章写一个TransitionManager过渡动画的使用
+提升用户体验感
+效果图
+
+新建一个WebTabManagerFragment类放入RecyclerView
+WebTabManagerFragment.xml
+
+
+    
+
+        
+
+    
+
+
+动态创建一个RecyclerView
+GridLayout的RecyclerView
+private val ALBUM_RECYCLER_VIEW_ID = ViewCompat.generateViewId()
+private fun createRecyclerView(listTypeGrid: Boolean): RecyclerView {
+    val context = requireContext()
+    //动态创建
+    val recyclerView = RecyclerView(context)
+    recyclerView.id = ALBUM_RECYCLER_VIEW_ID
+    recyclerView.layoutParams =
+        FrameLayout.LayoutParams(
+            FrameLayout.LayoutParams.MATCH_PARENT,
+            FrameLayout.LayoutParams.WRAP_CONTENT
+        )
+    val verticalPadding = 8
+    recyclerView.setPadding(0, verticalPadding, 0, verticalPa…]]></summary>
+        <author>
+            <name>九狼</name>
         </author>
     </entry>
     <entry>
@@ -2651,6 +4110,100 @@ read more]]></summary>
 The post Paranoid Android Sapphire Alpha 2 based on Android 12 is here for Xiaomi Mi 10, Mi 10T and Mi 10T Pro appeared first on xda-developers.]]></summary>
         <author>
             <name>Kishan Vyas</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【算法千题案例】每日LeetCode打卡——69.赎金信]]></title>
+        <id>https://juejin.cn/post/7060842485005680670</id>
+        <link href="https://juejin.cn/post/7060842485005680670"/>
+        <updated>2022-02-04T05:18:32.000Z</updated>
+        <summary type="html"><![CDATA[theme: condensed-night-purple
+「这是我参与2022首次更文挑战的第9天，活动详情查看：2022首次更文挑战」。
+
+📢前言
+
+ 🚀 算法题 🚀 
+
+🌲 每天打卡一道算法题，既是一个学习过程，又是一个分享的过程😜
+🌲 提示：本专栏解题 编程语言一律使用 C# 和 Java 两种进行解题
+🌲  要保持一个每天都在学习的状态，让我们一起努力成为算法大神吧🧐！
+🌲    今天是力扣算法题持续打卡第69天🎈！
+
+ 🚀 算法题 🚀 
+
+🌲原题样例：赎金信
+给定一个赎金信 (ransom) 字符串和一个杂志(magazine)字符串，判断第一个字符串 ransom 能不能由第二个字符串 magazines 里面的字符构成。如果可以构成，返回 true ；否则返回 false。
+(题目说明：为了不暴露赎金信字迹，要从杂志上搜索各个需要的字母，组成单词来表达意思。杂志字符串中的每个字符只能在赎金信字符串中使用一次。)
+示例1:
+输入：ransomNote = "a", magazine = "b"
+输出：false
+
+示例2:
+输入：ransomNote = "aa", magazine = "ab"
+输出：false
+
+示例 3：
+输入：ransomNote = "aa", magazine = "aab"
+输出：true
+
+提示：
+你可以假设两个字符串均只含有小写字母。
+🌻C#方法：数组存储
+利用数组储存字母出现次数，然后进行比较即可得出结果！
+代码：
+public class Solution {
+    public bool CanConstruct(string ransomNote, string magazine) {
+        int[] alphabets = new int[26];
+        char[] m = magazine.ToCharArray(), r = ransomNote.ToCharArray();
+        foreach (char c in m) {
+            alphabets[c - 'a']++;
+        }
+        foreach (char c in r) {
+            if (alphabets[c - 'a'] != 0) alphabets[c - 'a']--;
+            else return false;
+        }
+        return true;
+    }
+}
+
+执行结果
+通过
+执行用时：76 ms，在所有 Java  提交中击败了79.50%的用户
+内存消耗：42.4 MB，在所有 Java 提交中击败了5.50%的用户
+
+🌻Java 方法：数组存储
+思路解析
+使用a和b两个数组分别存储ransomNote和magazine每个字符出现的次数，
+如果a里面每个字符出现的次数都小于等于b里面的
+则判断为true，如果有一个大于b的则返回false
+这样就可以完成需求啦！
+代码：
+class Solution {
+    public boolean canConstruct(String ransomNote, String magazine) {
+        int[] a = new int[26];
+        int[] b = new int[26];
+        char[] aChar = ransomNote.toCharArray();
+        char[] bChar = magazine.toCharArray();
+        for (int i = 0; i  b[i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
+执行结果
+通过
+执行用时：1 ms，在所有 Java  提交中击败了90.26%的用户
+内存消耗：45.2 MB，在所有 Java 提交中击败了8.05%的用户
+
+💬总结
+今天是力扣算法题打卡的第六十九天！
+文章采用 C# 和 Java 两种编程语言进行解题
+一些方法也是参考力扣大神写的，也是边学习边分享，再次感谢算法大佬们
+那今天的算法题分享到此结束啦，明天再见！]]></summary>
+        <author>
+            <name>呆呆敲代码的小Y</name>
         </author>
     </entry>
     <entry>
@@ -3832,6 +5385,34 @@ A class method is a method which bounds to class rather than object or instance 
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[邮件客户端开发相关开源库/资源整理]]></title>
+        <id>https://juejin.cn/post/7060761478491701261</id>
+        <link href="https://juejin.cn/post/7060761478491701261"/>
+        <updated>2022-02-04T00:08:12.000Z</updated>
+        <summary type="html"><![CDATA[theme: github
+前言
+电子邮件(email）是一种传统的互联网沟通和交流方式，目前仍在办公场所广泛使用。最近在负责一款邮件客户端APP的开发工作，接触到了一些邮件相关的代码和知识，抽时间就整理了一下邮件开发相关的开源库和资源。
+正文
+首先明确一下，邮箱从使用协议/类别上大致可以分为两种：
+标准的IMAP/SMTP邮箱，如GMail、Outlook、Yahoo、QQ、163等邮箱。
+Exchange，即Microsoft Exchange Server，是微软公司推出的邮件服务器，如Exchange 2010。应用程序可以使用EWS(Exchange Web Service)来访问Exchange服务器上的邮件、日程、联系人等。
+mailcore2
+MailCore2是一个用C语言编写的邮件协议封装库，能够运行在iOS、Android、Mac、Windows和Linux平台上，支持SMTP、IMAP、POP3、MIME和HTML消息渲染。MailCore2 API的调用都是异步的，即操作都在子线程中进行，不会阻塞当前主线程。
+MailCore 2 provide a simple and asynchronous API to work with e-mail protocols IMAP, POP and SMTP. The API has been redesigned from ground up.
+GitHub:
+https://github.com/MailCore/mailcore2
+很多第三方邮件客户端收发邮件都是基于MailCore2开发的，如小巧精致，超高颜值的开源项目Mailspring
+
+
+编译
+编译环境：macOS 10.13.6，Intel处理器，Android NDK 17.2.4988734
+安装autoconf
+curl -OL h…]]></summary>
+        <author>
+            <name>rainboy</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[长津湖和水门桥的地理知识：4根粗大水管有什么作用？]]></title>
         <id>https://www.bilibili.com/video/av893841314</id>
         <link href="https://www.bilibili.com/video/av893841314"/>
@@ -4386,6 +5967,33 @@ The post Windows Terminal 1.13 comes with a new look for settings and auto-eleva
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[2022 Flutter 宣布发布 Windows 正式版]]></title>
+        <id>https://juejin.cn/post/7060686286712995853</id>
+        <link href="https://juejin.cn/post/7060686286712995853"/>
+        <updated>2022-02-03T19:14:32.000Z</updated>
+        <summary type="html"><![CDATA[theme: smartblue
+原文链接： https://medium.com/flutter/announcing-flutter-for-windows-6979d0d01fed
+自从推出 Flutter 以来，我们一直专注于为漂亮的定制应用提供跨平台解决方案，这些应用被编译为机器代码并充分利用设备的底层图形硬件功能。
+今天这一愿景有了新的重大突破，第一个支持 Windows 的版本发布了。
+
+目前有近 50 万个应用程序正在使用 Flutter……
+到目前为止，我们已经看到了超出我们预期的势头，现已有近 50 万个已经发布的应用使用了 Flutter，其中包括来自 Betterment、BMW 和 ByteDance 等公司的大型应用程序，以及来自 Google 三十个团队所开发的应用。
+Statista和SlashData等分析师衡量，2021 年 Flutter 已经成为最受欢迎的跨平台 UI 工具包：
+
+在 2021 年的所有四个季度调查中，始终有92% 的 Flutter 开发人员对我们的工具表示积极满意。（对于另外 8% 的人，我们正在倾听你的反馈）
+在调研数据中一个常见的请求就是对 Windows 的支持。
+今天，我们很高兴地宣布在稳定版本中全面支持 Windows 应用。
+Window and Flutter
+几年前我们为 Flutter 制定了一个雄心勃勃的愿景，即从 iOS 和 Android 上的移动应用扩展到括 Web 和 Desktop 平台。
+Flutter 跨平台的核心是：便携、 Skia 图形引擎、Flutter 渲染系统、动画、主题、文本输入和国际化以及 Flutter 提供的数百个控件 。
+但桌面应用不仅仅是在更大屏幕上运行的移动应用：
+它还有专用的输入设备，例如键盘和鼠标，并且有可调整大小的窗口，通常在宽屏显示器上运；
+对于辅助…]]></summary>
+        <author>
+            <name>恋猫de小郭</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[20 Award-Winning JavaScript Games – js13kGames 2021 Winners]]></title>
         <id>61fc2478f2ed6b06db5ac159</id>
         <link href="https://www.freecodecamp.org/news/20-award-winning-javascript-games-js13kgames-2021-winners/"/>
@@ -4917,6 +6525,19 @@ The post EA CEO Softens Company’s Stance on NFTs in Earnings Call appeared fir
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[0203 - 要名不要命]]></title>
+        <id>https://atjason.com/daily/2022-02-03.html</id>
+        <link href="https://atjason.com/daily/2022-02-03.html"/>
+        <updated>2022-02-03T14:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>乾隆一生写过无数诗，其中有一些诗是这样产生的：</p>
+<p>乾隆说出了前三句，比如「一片两片三四片，五片六片七八片，九片十片十一片」，然后假装沉吟、实际想不出来了。</p>
+<p>这时，边上有个捧哏的接一句「飞入草丛都不见」。于是，乾隆的一首诗诞生了。</p>
+<p>问题]]></summary>
+        <author>
+            <name>Jason</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[在冰下挖出带漆的枪，还有一个重量级的大家伙！]]></title>
         <id>https://www.bilibili.com/video/av210876429</id>
         <link href="https://www.bilibili.com/video/av210876429"/>
@@ -4947,6 +6568,16 @@ Tags:二战,战争,苏联,武器,学习,军事,武器装备,野生技术协会,�
         <summary type="html"><![CDATA[我可以在CSS中连接到一个数据库]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Meta's Earnings, Facebook's Three Challenges, Financial Versus Existential Risks]]></title>
+        <id>https://stratechery.com/2022/metas-earnings-facebooks-three-challenges-financial-versus-existential-risks/</id>
+        <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9tZXRhcy1lYXJuaW5ncy1mYWNlYm9va3MtdGhyZWUtY2hhbGxlbmdlcy1maW5hbmNpYWwtdmVyc3VzLWV4aXN0ZW50aWFsLXJpc2tzLw.Poe8xb0qfPY7duuL_SfpkwxV_E2fSykrfQUuLtSNNoeTsNWKPbnmvebv0KFPcL0gybqZ9a_SKByhlsa-bFqJHGBu4yy-zYUlFdRzMfJBvFykwQaXbBCikiF1NQS3xvIb7T7jXFODWDZmDWiSQwLp0m12DhhA365DRTbDNDnyS-TwEZbGPeYvAtZMjCLfhg0La4N3DYcbAvAJyjyUWAUDdRBylxRov_b749cRmoXv4D3nxW5Dc5o9JUwWhuLMoivkxQ0prbnd4XgEDx0PFHMZnWeyU8eTgMj1BEVYVF2yytQbKP6UAGKJLsb8yCgNPJsau7QB0YrpCrtJ-l1_OgTd2Q"/>
+        <updated>2022-02-03T13:39:15.000Z</updated>
+        <summary type="html"><![CDATA[Meta's earnings were a perfect storm of challenges facing the company.]]></summary>
+        <author>
+            <name>Ben Thompson</name>
         </author>
     </entry>
     <entry>
@@ -5385,6 +7016,68 @@ String myString2 = n...]]></summary>
 read more]]></summary>
         <author>
             <name>sethkenlon</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[安卓从零开始写一个轻量级浏览器(二）]]></title>
+        <id>https://juejin.cn/post/7060513024854982670</id>
+        <link href="https://juejin.cn/post/7060513024854982670"/>
+        <updated>2022-02-03T07:58:48.000Z</updated>
+        <summary type="html"><![CDATA[theme: channing-cyan
+「这是我参与2022首次更文挑战的第17天，活动详情查看：2022首次更文挑战」
+导入腾讯的X5WebView
+X5内核相对于系统webview，具有下述明显优势：
+速度快：相比系统webview的网页打开速度有30+%的提升；
+省流量：使用云端优化技术使流量节省20+%；
+更安全：安全问题可以在24小时内修复；
+更稳定：经过亿级用户的使用考验，CRASH率低于0.15%；
+兼容好：无系统内核的碎片化问题，更少的兼容性问题；
+体验优：支持夜间模式、适屏排版、字体设置等浏览增强功能；
+功能全：在Html5、ES6上有更完整支持；
+更强大：集成强大的视频播放器，支持视频格式远多于系统webview；
+视频和文件格式的支持x5内核多于系统内核
+防劫持是x5内核的一大亮点
+关于TBS
+腾讯浏览服务是致力于优化移动端webview体验的整套解决方案。该方案由SDK、手机QQ浏览器X5内核和X5云端服务组成，解决移动端webview使用过程中出现的一切问题，优化用户的浏览体验。同时，腾讯还将持续提供后续的更新和优化，为开发者提供最新最优秀的功能和服务。
+导入X5Webview
+导入依赖
+api 'com.tencent.tbs:tbssdk:44153'
+
+implementation和api的区别
+implementation 类似于“praivte”，module引用implementation只应用于自身，不会传递。
+添加权限
+
+
+
+    
+    
+    
+    
+    
+    
+        
+    
+
+
+
+具体可看
+x5快速接入 (tencent.com)
+使用方法
+fragment_web.xml
+
+
+
+    
+
+        
+    
+
+
+新建一个类WebFragment 
+用argument传链接参数
+co…]]></summary>
+        <author>
+            <name>九狼</name>
         </author>
     </entry>
     <entry>
@@ -6487,6 +8180,16 @@ The post Android screen mirroring tool scrcpy’s latest update brings keyboard 
     <entry>
         <title type="html"><![CDATA[Apple Earnings, AMD Earnings, Google Earnings]]></title>
         <id>https://stratechery.com/2022/apple-earnings-amd-earnings-google-earnings/</id>
+        <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9hcHBsZS1lYXJuaW5ncy1hbWQtZWFybmluZ3MtZ29vZ2xlLWVhcm5pbmdzLw.pKoo6_sh8ZzT5wnRR925crS0VaUGGgwNPeikROo52qt0HX6lcW-MBkxKf-t4yeorrY8VxceW8LXi6Y3V8Hy6Ha8qbLQegAoCR3x9T1mb8VOSlT5AKYvx92QeQ9m9lm15hNuX8b7JK3KZv38KApjYUST8h5Ixz_URyEJmkOrMQzCYYxQ9nMyVl1wfkeTINyDs1MwOMfNZetMU4IGvnHImRn47Hizz--nKUMo0gkSKdr-4nUU4EK2ZMRhMoHNTytW0bJmoCF1dyQTTF6wrvaA9Dsb-xmzNWLDtRuXr3xbTn_hYESkAAwGe4WM43Hdg2VeebliwTtjPP7lBh9WqvQ3Eng"/>
+        <updated>2022-02-02T14:14:58.000Z</updated>
+        <summary type="html"><![CDATA[Apple, AMD, and Google all delivered great results; margins were the most interesting places for analysis.]]></summary>
+        <author>
+            <name>Ben Thompson</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Apple Earnings, AMD Earnings, Google Earnings]]></title>
+        <id>https://stratechery.com/2022/apple-earnings-amd-earnings-google-earnings/</id>
         <link href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9hcHBsZS1lYXJuaW5ncy1hbWQtZWFybmluZ3MtZ29vZ2xlLWVhcm5pbmdzLw.ZUYIjGzoF2Z7cgcJFmMNpD3CVQzOyitWwBXwuKMR9hm7bRBkRMQBrHl3pwJO6dnGN1WuQbqHCQ_3jquUfNbErJeYC-ukObSKG1Q0vDUsdI7Uhut-ifYU3L58T1-4TzA-YjcCtyc0M0gjDAEWJKEvxrn7eMRjulbGOTT8SD_lwrLSRNAbdkc7DCchvmp_PMg5D6lKkdXbUx_lXnG9TLbNPfWGHlmK9_8U1UMNgneQ3WsXb0lhP71_CSENy7hFW9w0B1WZ818IUbYDkmipR7-h2AbiCJvEmxT32qQAlNsxjCfAPB_Pc2xKb4JSn1Mq8iENe7KdxQnRHoZChBZaQULrag"/>
         <updated>2022-02-02T14:14:58.000Z</updated>
         <summary type="html"><![CDATA[Apple, AMD, and Google all delivered great results; margins were the most interesting places for analysis.]]></summary>
@@ -6523,6 +8226,16 @@ The post Android screen mirroring tool scrcpy’s latest update brings keyboard 
 The post How to switch off or restart the Samsung Galaxy Z Flip 3 appeared first on xda-developers.]]></summary>
         <author>
             <name>Pranob Mehrotra</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[0202 - 天气不好]]></title>
+        <id>https://atjason.com/daily/2022-02-02.html</id>
+        <link href="https://atjason.com/daily/2022-02-02.html"/>
+        <updated>2022-02-02T14:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>哎，杭州这次过年期间的天气真不好，天天下雨。再加上有疫情，不太想去商场挤人，只能在家呆着喽。</p>]]></summary>
+        <author>
+            <name>Jason</name>
         </author>
     </entry>
     <entry>
@@ -6739,6 +8452,35 @@ read more]]></summary>
 read more]]></summary>
         <author>
             <name>Tidepool_Christopher</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[安卓从零开始写一个轻量级浏览器(一）]]></title>
+        <id>https://juejin.cn/post/7060141477778685965</id>
+        <link href="https://juejin.cn/post/7060141477778685965"/>
+        <updated>2022-02-02T07:58:17.000Z</updated>
+        <summary type="html"><![CDATA[theme: channing-cyan
+「这是我参与2022首次更文挑战的第16天，活动详情查看：2022首次更文挑战」
+2022年打算从零开发一款浏览器，名字还没想好。
+既然是浏览器，按照国际按理先实现一个多窗口的功能
+我打算用ViewPager+Fragment来实现，但仔细想想，这样缺点是十分明显因为要保证Fragment不销毁重建，当viewpager的fragment个数过多，会造成很明显的卡顿，所以先用FragmentManager试试效果
+多窗口中，每一个窗口都有自己的返回栈
+
+/**
+ * @author huangweiliang
+ */
+class NavHostFragment(var name: String, var windowIndex: Int): Fragment() {
+    private lateinit var binding: FragmentNavHostBinding
+    private val TAG: String = "NavHostFragment"
+    var curSelectFragment: Fragment? = null
+    var curChildFragmentManager: FragmentManager? = null
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        //点击返回键，将当前栈的Fragment作出栈处理
+        requireActivity().onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(…]]></summary>
+        <author>
+            <name>九狼</name>
         </author>
     </entry>
     <entry>
@@ -7389,6 +9131,16 @@ Tags:必剪创作,春晚,魔方,魔术,邓男子]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[0201 - 新年好]]></title>
+        <id>https://atjason.com/daily/2022-02-01.html</id>
+        <link href="https://atjason.com/daily/2022-02-01.html"/>
+        <updated>2022-02-01T14:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>大年初一，新年好。</p>]]></summary>
+        <author>
+            <name>Jason</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[这个学校只有一口井，水泵坏了连厕所都没得冲]]></title>
         <id>https://www.bilibili.com/video/av851199546</id>
         <link href="https://www.bilibili.com/video/av851199546"/>
@@ -7995,6 +9747,17 @@ The post January in the MacSparky Labs appeared first on MacSparky.]]></summary>
 The post Wizards No Longer United appeared first on MacSparky.]]></summary>
         <author>
             <name>David Sparks</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[0131 - 成熟与问题]]></title>
+        <id>https://atjason.com/daily/2022-01-31.html</id>
+        <link href="https://atjason.com/daily/2022-01-31.html"/>
+        <updated>2022-01-31T14:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>所谓成熟，可能是让问题在自己这里终结。也许是解决，也许只是抗。</p>
+<p>不管怎样，不去麻烦别人（可能也无处求助），不让别人跟着烦恼。</p>]]></summary>
+        <author>
+            <name>Jason</name>
         </author>
     </entry>
     <entry>
@@ -8641,6 +10404,52 @@ Api's which will help to cr...]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Jetpack Compose 用MotionLayout打造动画开关]]></title>
+        <id>https://juejin.cn/post/7058984756398161957</id>
+        <link href="https://juejin.cn/post/7058984756398161957"/>
+        <updated>2022-01-30T05:08:07.000Z</updated>
+        <summary type="html"><![CDATA[theme: channing-cyan
+「这是我参与2022首次更文挑战的第13天，活动详情查看：2022首次更文挑战」
+简单介绍
+MotionLayout是constraintlayout2.0以后才有的功能。
+MotionLayout是ConstraintLayout的子布局。专门用来实现运动过程中的控件动画
+在Android中实现动画是一件复杂的事情。MotionLayout的问世就是为了化繁为简
+MotionLayout是在Android中实现过渡的一种新的有效方法。 它充当布局过渡和复杂运动处理之间的桥梁，在属性动画框架 ， TransitionManager和CoordinatorLayout之间提供了多种功能
+MotionScence
+作为动画布局中的根节点
+ConstraintSet
+用于布局ConstraintLayout子项的约束的不变描述
+分为开始和结束
+使用MotionLayout时要传入开始和结束的ConstraintSet
+开始使用
+首先导入依赖
+//约束布局
+implementation("androidx.constraintlayout:constraintlayout-compose:2.1.0")
+
+写这篇文章时时2.1.0
+效果图
+
+首先在ConstraintSet里面定义一个layoutId-xxx
+接着在Box引用layoutId
+Box(
+    modifier = Modifier
+        .layoutId("xxx")
+)
+
+实现这个开关需要4个组件
+两个Box和两个Text分别表示按钮背景和开关按钮还有Ligth、dark文本
+先写ConstraintSet
+按钮背景
+开始的ConstraintSet
+ConstraintSet(
+    """ {
+    //按钮背景
+    backgroundSwit…]]></summary>
+        <author>
+            <name>九狼</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[看什么 · 特别篇丨多一点热闹与喜庆，少不了这份春节片单]]></title>
         <id>https://sspai.com/post/71209</id>
         <link href="https://sspai.com/post/71209"/>
@@ -9278,534 +11087,6 @@ Long Running
 <p>其中有一样，按家乡的发音，叫「贡肉」。说是肉，其实就是把猪]]></summary>
         <author>
             <name>Jason</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Mental math trick and deeper issues]]></title>
-        <id>https://www.johndcook.com/blog/?p=95817</id>
-        <link href="https://www.johndcook.com/blog/2022/01/28/kilometers-to-miles/"/>
-        <updated>2022-01-28T13:55:39.000Z</updated>
-        <summary type="html"><![CDATA[I’d like to do two things in this post. I’ll present a fun bit of mental math, then use it to illustrate a few deeper points. The story starts with a Twitter thread I wrote on @AlgebraFact. The Strait of Gibraltar is 13 km wide. How wide is that in miles? You can convert km […]
-Mental math trick and deeper issues first appeared on John D. Cook.]]></summary>
-        <author>
-            <name>John</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Edit this blog post!]]></title>
-        <id>https://shkspr.mobi/blog/2022/01/edit-this-blog-post/</id>
-        <link href="https://shkspr.mobi/blog/2022/01/edit-this-blog-post/"/>
-        <updated>2022-01-28T12:34:55.000Z</updated>
-        <summary type="html"><![CDATA[This is a regular HTML page. But if you click or tap on the text, you will be able to edit it! HTML is magic! This isn't a fancy styled &#60;textarea&#62;, it's a &#60;div&#62; element which uses the contenteditable global attribute. There are some nifty features - depending on your browser. You can add more&#8230;]]></summary>
-        <author>
-            <name>Terence Eden’s Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[RTX 3050 和 GTX 1660比怎么样，为什么我同学说他是智商检测卡?]]></title>
-        <id>http://www.zhihu.com/question/461380156/answer/2326616016</id>
-        <link href="http://www.zhihu.com/question/461380156/answer/2326616016?utm_campaign=rss&amp;utm_medium=rss&amp;utm_source=rss&amp;utm_content=title"/>
-        <updated>2022-01-28T12:15:21.000Z</updated>
-        <summary type="html"><![CDATA[RTX3050 知乎首发评测，本文作者为Cloud，我的联合主笔
-显卡价格在2021年初矿潮以来就一路飞涨，基本有50%以上的溢价。但现在今天以太币币价腰斩，但显卡价格还是维持高位。这正常么？显卡市场为何如此畸形，以后我们这样的玩家还买的到正常价格的显卡么？本文将通过对RTX 3050的简单评测，来回答这个问题。
-
-RTX 3050采用的是3060一样的GA106核心，但流处理器数量从3584缩到了2560.安培架构每个SM有128个FP32单元，就是说SM数量从28组缩减到20组。
-
-RTX 3060的GA106屏蔽了2组SM,而3050就是屏蔽了10个SM，就是一组GPC的规模。
-完整的GA106有3个GPC，一共30组SM，其实照理RTX 3050的规格2组GPC就可以满足，笔记本的3050就是2GPC的GA107，2048流处理器单元，满规格的GA107是3072，其实用来做2560的桌面RTX 3050冗余也很大，良率也应该不会有问题，这样成本会低很多。
-
-我们本次测试的是微星 GeForce RTX 3050 VENTUS 2X 8G OC，简单的说就是万图师2风扇丐版。由于带个OC,Boost频率比标准的略高一点，但功耗是锁死的，最高130W，如果是STRIX这样的高规格，则可以再向上拉10%。
-
-
-双风扇、两热管，对于130W的TDP而言绰绰有余。
-
-输出的接口是标准的DPx3+1 HDMI。
-
-万图师祖传的塑料背板，实际PCB比俩风扇的散热器还短上一截。
-
-单8pin供电，130W功耗一般搭配足额质量过硬的400W电源就可以满足需求，并有一定的余量。
-
-PCIe引脚看上去是完整的，但实际上是8X 4.0的速率。虽然这个影响不至于象PCIe 4.0 4x的6500XT那样明显，但引用Tom's Hardware的测试，在部分游戏中还是会有一定的损失。
-都已经…]]></summary>
-        <author>
-            <name>知乎用户（登录查看详情）</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[When is remote better]]></title>
-        <id>https://cestlaz.github.io/post/whats-better-remote/</id>
-        <link href="https://cestlaz.github.io/post/whats-better-remote/"/>
-        <updated>2022-01-28T12:13:17.000Z</updated>
-        <summary type="html"><![CDATA[With my first classes of the semester coming up on Monday I thought
-I'd write a bit about what worked better remote than in person. When I
-say better I mean specifically, worked better for me given my
-situation. I think they worked better for the class but I can't say
-with any certainty given the length of the educational feedback loop
-and other factors.
-enter key. The can then all post at once. You can do
-similar things with hand signals in class but this is much more
-flexible and robust. Big win.
-.
-
-
-
-
-Discussion of student work
-
-
-
-Finally, the chat platform gave us the ability to discuss more
-student's work. Typically, in class you can only look at one or two
-student solutions for a given problem but using the chat, you can
-stretch out the discussion. A typical strategy is to have  ever…]]></summary>
-        <author>
-            <name>C'est la Z</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[春节长途自驾回家是怎样一种体验？]]></title>
-        <id>http://www.zhihu.com/question/265769952/answer/2328376096</id>
-        <link href="http://www.zhihu.com/question/265769952/answer/2328376096?utm_campaign=rss&amp;utm_medium=rss&amp;utm_source=rss&amp;utm_content=title"/>
-        <updated>2022-01-28T11:06:11.000Z</updated>
-        <summary type="html"><![CDATA[累！刚刚自驾完1000公里，来回答下这个问题。
-从广州到武汉全程1000公里，不过我们不是自己“开车”而是全程导航辅助驾驶回去的，虽说是辅助驾驶，但是你以为你就可以躺在驾驶位安心睡大觉了？真实体验比自己开车还要累很多倍。下面给大家看看这次作死全过程：
-大家正在紧锣密鼓地准备中11日8时10分
-
-
-正在出发前的动员大会：首先要确保安全11日9时00分
-
-我们将对辅助驾驶系统的托管表现进行严格的手动计量，周师兄正在检查量表：
-
-正在检查路上要用到的拍摄设备，以便有一个全方位可回放的素材库：
-
-6台车陆续发车：武汉见11日9点30分
-正式出发！六台车特斯拉Model 3、蔚来ES8、小鹏P7、理想ONE、摩卡、Aion V Plus陆续从广州天河区高普路出发，1000公里后的武汉见。谁能率先到达呢？
-
-测试车辆已经陆续上了广州龙洞高速路口，现在看到路口车辆已经开始有点堵了：
-
-吉吉老师向同事打出了友爱的招呼：
-
-理想ONE进隧道时退出了辅助驾驶11日9点52分
-本次挑战，我们尽可能全程开启车辆的辅助驾驶系统。出发没多久，上高速后的理想ONE辅助驾驶出现了人工接管的提示。
-
-在开放路况行驶时，小鹏P7的辅助驾驶保持良好运行：
-
-
-不出意外，蔚来ES8上的雨丝，刚上车就进入了深度睡美人状态：
-
-就在雨丝还在睡梦中时，隔壁埃安V Plus的辅助驾驶出现了不稳定的情况，车辆摇摆、加塞刹车不及时。同行车辆还发现埃安V PLUS常在车距很大的位置亮起刹车灯。我们怀疑和雨丝不稳定的梦境有关。
-BTW，我们每台车都用同事通过量表记录每台车的辅助驾驶托管次数。
-
-京港澳高速已经出现堵车情况11日10点21分
-出现堵车情况，Model 3驾驶员罗老师出现急躁情绪，开始骂脏话。这里劝诫大家：安全第一，快慢其次！开车不要代入情绪，不要有怒路症。
-
-目前的车辆基本还集中在一条路线上：
-
-小鹏P7智能识别雪…]]></summary>
-        <author>
-            <name>太平洋汽车</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2022 春节驾车出行有哪些需要注意的地方？有哪些东西可以提升驾车舒适度？]]></title>
-        <id>http://www.zhihu.com/question/511508376/answer/2328362103</id>
-        <link href="http://www.zhihu.com/question/511508376/answer/2328362103?utm_campaign=rss&amp;utm_medium=rss&amp;utm_source=rss&amp;utm_content=title"/>
-        <updated>2022-01-28T10:34:56.000Z</updated>
-        <summary type="html"><![CDATA[提升驾车舒适度，那必须是全程辅助驾驶啊；爽不爽不用我说了吧（微笑~）
-不过大家对自动辅助驾驶还是有很深的顾虑，毕竟这东西可是人命关天马虎不得。为了验证现阶段自动辅助驾驶技术发展到什么地步了，我们前阵子集齐了市面上所有具备驾驶辅助的车，从广州开到武汉，6台车1000公里真实路况测试。
-先贴测试结果：
-
-经过一千公里极限测试，老朋友特斯拉Model 3、蔚来ES8、小鹏P7总体保持了先发优势。
-特斯拉NoA作为第一个接触到的领航辅助功能，依然在执行表现的拟人化程度上处于领先身位，也是本次测试中最接近人类驾驶、且支持自主变道远离桩桶的车型。
-蔚来ES8、小鹏P7近一年的迭代升级非常明显，两者都不如Model 3那般果决，但是相比早期版本来说已经积极许多，两者的风格都相对折中，对于加塞车辆的识别以及避让成功率都比较高，特别注意的是在高精地图加持下能够在执行指令、特殊路况前进行相应的语音、仪表显示，本地化工作肯定要好上许多，驾驶员感觉安心许多。我们认为小鹏P7对于高精地图依赖更为明显，迫切需要解决高精地图覆盖率；而ES8需要提升变道时的预判能力；
-
-
-
-
-
-其他三位“新选手”这次为我们带来更多惊喜，理想NOA导航辅助驾驶系统相比其它车型时间推送是最晚的，刚刚在一个多月前正式推送，虽然现阶段领航辅助风格非常保守，但是胜在可用性较高，在不能胜任的路段也会积极提示驾驶员及时接管，即便领航辅助占比有所降低，但是这样的策略我们认为是对安全性更有裨益，希望接下来能够提升指令执行效率，让变道稍稍积极一些。
-
-
-
-
-
-最后来看AION V PLUS以及摩卡， AION V PLUS相对保守，因此较少出现变道出错以及危险境况，整体风格平稳，但是在复杂环境中受影响非常明显，多次出现车道保持稳定性欠佳，“S形”前进、退出领航辅助驾驶的情况；摩卡则略感性格分裂，白天颇为稳重，主动变道不算积极，但是夜间策略又过于激进，虽然总体可用度较高，但出现受摄像头强光干扰退出领航等“小状况”，我们认为，AION V PLUS以及摩卡均需要提升领航辅助状态保持的稳定性。
-
-
-
-
-
-适度分忧才是领航辅助的正确打开方式
-完成1000公里穿越后，必须坦言我们凭借经验丰富的测试员完成了这次非同寻常的冒险，为了安全考虑，郑重不推荐用户在极端路况中全程使用领航辅助驾驶。
-同时，我们更有幸能通过“春运长距离挑战”的形式见证行业的快速发展，我们无法预测一年后、两年后还会增加多少款车型，测试多远的距离，但能够明确的是这条路自此已经不再孤单，一路将有领航辅助分忧相伴。
-
-
-
-
-
-首先，从测试结果来看，我们惊喜的发现，现阶段智能领航辅助已经不再是纯电动车、新势力的专属，势必会有越来越多的车企、车型覆盖这一功能，从2019年到2022年，我们挑战春运的关注点从“能否抵达”变为了“如何抵达”。事实上这6款车型的智能领航辅助功能在常规路段已足够堪用，导航辅助时长占比最高达到91.73%，这样的结果，我们出发前无论如何也没有想到。
-
-
-
-
-
-其次，我们建议在保证驾驶员注意力的前提下，尝试使用领航辅助驾驶功能，在长距离重复性行驶过程中，领航辅助驾驶功能能够一定程度上缓解驾驶疲劳与拥堵焦虑，目前而言，适度分忧才是领航辅助驾驶的正确打开方式。
-最后，经过场景还原与理论分析，我们发现领航辅助在大多数人工接管中都与传感器、算力边界呈强正相关，有理由相信，未来在提升激光雷达、高算力智能驾驶芯片等硬件边界后，领航辅助驾驶感受一定会变得更好。
-
-
-
-
-
-领航辅助一定是移动出行的未来吗？对此，我们无法立即给出肯定的答案，能够确定的是，经过数年的求索与守望，我们始终惊诧于这个行业蝶变的速度，或许，无限进步才是这个行业永远的未来，你说是吗？
-
-来源：知乎 www.zhihu.com
-太平洋汽车
-点击下载
-26 个回答，查看全部。
-驾车上路时，准备什么东西，会让出行会更安全？
-如果未来交通工具都是自动驾驶，你能做到安心出行吗？]]></summary>
-        <author>
-            <name>太平洋汽车</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[本周看什么丨最近值得一看的 7 部作品]]></title>
-        <id>https://sspai.com/post/71211</id>
-        <link href="https://sspai.com/post/71211"/>
-        <updated>2022-01-28T09:30:00.000Z</updated>
-        <summary type="html"><![CDATA[☕️ TL;DR
-
-近期佳作推荐：[国产剧] 大妈的世界、[美剧] 黑钱胜地 第四季、[纪录片] 守护解放西 3、[日剧] 妻子变成小学生。、[韩剧] 解读恶之心的人们、[日剧] 契×约—危险的搭档—、[纪录片] 生活闪亮时
-几则精彩预告：本·卫肖主演 BBC 新剧《难免疼痛》2 月 8 日开播、动画电影《奇巧计程车 In The Woods》公布预告，4 月上映、金惠秀主演 Netflix 新剧《少年法庭》2 月 25 日上线
-几则影视资讯：罗伯特·帕丁森主演《新蝙蝠侠》4 月 19 日登陆 HBO Max、游改电影《神秘海域》发布新海报，2 月 18 日北美上映、《光环世界》第一季发布全新海报、漫改 TV 动画《RPG 不动产》将于 4 月开始播出
-本月特辑：多一点热闹与喜庆，少不了这份春节片单 🏮
-
-👀 N 部作品推荐
-根据读者反馈，如果推荐语涉及剧透（对故事核心、暗线、伏笔、结局等关键要素的透露），我们会在对应作品的标题前增加 🔦 的 Emoji。
-如有其他建议也欢迎在评论区提出，感谢大家对「看什么」栏目的喜爱和支持。
-[国产剧] 大妈的世界
-
-关键词：喜剧 / 日常
-片长：5 分钟（单集）× 20 集
-观看渠道：腾讯视频 / YouTube；豆瓣链接
-
-天上不会掉馅饼，小心馅饼变陷阱。
-
-@SHY：樱桃小区的王大妈和杨大妈，本打算享受平静的退休生活，问题却总是找上门来。能歌善舞而且行动力满点的她们，利用自己的专长，演绎了别开生面的潮流晚年生活。保健品推销员打算放长线钓大鱼，那就来个将计就计，使唤小伙承包家务，人人有份，「共享小李」；咖啡店姑娘恋情似乎有苗头，可得前排占座磕 CP，破点财也是在所难免，此处烂尾不要紧，还有下一对；沉迷养生走了歪路，被子女送去强制戒瘾，最后还能反客为主，把对方忽悠上钩，获得锦旗一面。当然，最重要的还属广场舞，与打球的小伙子们斗智斗…]]></summary>
-        <author>
-            <name>少数派编辑部</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[专事专办、无需流氓管家，你可以选择这些实用 Windows 小工具]]></title>
-        <id>https://sspai.com/post/71216</id>
-        <link href="https://sspai.com/post/71216"/>
-        <updated>2022-01-28T08:30:00.000Z</updated>
-        <summary type="html"><![CDATA[在几年前下定决心告别 Windows 上的 xx 大师、xx 卫士后，在一段时间内我会感到些许不适。倒不是因为不习惯没有人告诉我开机花了几分几秒，而是这些无所不包的管家们的确能提供一些特别好用的小工具，比如解除文件占用、右键编辑、广告弹窗拦截等等。
-好在后来我发现这些小功能可以用一些更简单纯净的应用来实现。本文介绍的就是我搜集到的一些工具，它们绝大部分为便携软件，无需安装、点开即用，体积也非常小巧，大都保持在几 MB 内。
-需要说明的是，因为功能场景和所应对的需求特殊，本文提到的大部分应用都会访问系统内核、修改注册表或某些关键文件，因而可能会被一些安全软件误认为是病毒，保证下载来源正规的前提下需要手动将它们添加进白名单。另外，使用前也请做好备份以防万一。
-OpenArk：快速定位快捷键和文件占用
-相关链接：GitHub | 文档
-Windows 应用可以注册两类快捷键：适用于特定线程的快捷键 和 全局快捷键，前者只有当特定窗口被激活时才会响应，而后者则全局生效。当某应用注册的全局快捷键和其他程序调用的按键冲突，应用功能就会异常。
-想要知道究竟是哪个应用占用了快捷键，可以打开 OpenArk，进入 内核 > 系统热键 界面，然后选择 进入内核模式。
-
-此时应用会列出已注册的全局快捷键供我们搜索。譬如说，我们需要知道哪个应用占用了 Ctrl + Alt + Up（注意输入顺序），可以在界面下方的过滤器拦中输入相应的快捷键名称，不难发现是网易云音乐注册了此按键组合。接下来，在网易云中做修改即可解除占用状态。
-
-与快捷键被占用的情况类似，我们偶尔也会遇到某些文件无法打开，无法删除的情形。这大概率是因为该文件正在被其他应用使用。OpenArk 同样为此情况提供了解决方案：进入 内核 > 存储管理界面，选择 进入内核模式，键入文件路径，点击查看占用，应用便会展示所有使用了该文件的进程。…]]></summary>
-        <author>
-            <name>Mirtle</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Cassandra Query Cheat Sheet]]></title>
-        <id>https://www.baeldung.com/?p=116031</id>
-        <link href="https://feeds.feedblitz.com/~/679840452/0/baeldung~Cassandra-Query-Cheat-Sheet"/>
-        <updated>2022-01-28T08:24:12.000Z</updated>
-        <summary type="html"><![CDATA[Learn the essential concepts of Cassandra query language (CQL) and how to apply them]]></summary>
-        <author>
-            <name>Usman Mohyuddin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Javadoc: @see and @link]]></title>
-        <id>https://drafts.baeldung.com/?p=125090</id>
-        <link href="https://feeds.feedblitz.com/~/679840454/0/baeldung~Javadoc-see-and-link"/>
-        <updated>2022-01-28T08:21:32.000Z</updated>
-        <summary type="html"><![CDATA[A comparison between the @see and @link Javadoc annotations.]]></summary>
-        <author>
-            <name>baeldung</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Congratulations to the 2022 Opensource.com Community Award recipients]]></title>
-        <id>https://opensource.com/article/22/1/community-awards-2022</id>
-        <link href="https://opensource.com/article/22/1/community-awards-2022"/>
-        <updated>2022-01-28T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Many journeys into open source start with community interactions. Code is an important contribution, but so is sharing knowledge. The community knowledge base is often a person's first exposure to a project.
-I love working with the community of authors here at Opensource.com. I have the privilege of visiting with the members in our Correspondents program weekly and am really looking forward to building relationships with authors and readers alike.
-read more]]></summary>
-        <author>
-            <name>AmyJune</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[年终岁尾]]></title>
-        <id>https://github.com/yihong0618/gitblog/issues/230</id>
-        <link href="https://github.com/yihong0618/gitblog/issues/230"/>
-        <updated>2022-01-28T07:23:20.000Z</updated>
-        <summary type="html"><![CDATA[中国人似乎都要过两个年，而这个春节更重要一些。
-岁尾，上班的最后一天，办公室非常冷清，我呢，在这敲下这行话。
-似乎很久没有随意记录一下心情了，项目关注的人多了，乱写一通难免畏首畏尾，所以正式的内容多了些，而我这个博客的初衷本身就是记录自己的流水账啊，所以想写就写吧。
-这两年心态发生了很多变化，好的方面坏的方面，尤其是去年最好的朋友之一选择自己结束生命，总觉得有些不真实，像是有些东西从我的生命中抽走了，再也回不来，想回沈阳看看的时候，少了件事儿，而我们共同的朋友也仿佛约好了一样，不去提起这件事，不去提起他。
-新冠两年，科比也走了两年，仿佛这两年很多东西都被抽走，在儿子出生前，和媳妇约好带他出国到日本去玩，结果现在儿子连辽宁都没出过，更可怕的是，我们不知道新冠会持续多久，但大家内心可能都知道，我们再也回不去曾经的生活了吧？
-去年做了不少事儿，但总觉得还不够，飞逝的时光，新年到了，这种新年的感觉体现在，超市一排一排的大礼包，酒，坚果。新年到了，虎年来了。
-去享受最好的，也准备着随时承受最坏的
-想跑马拉松，上一次跑是 19 年的北马了吧，那是我第一次真正意义跑完的马拉松，冲过终点的时候略有遗憾，差一点点进 4 小时，希望下一年有所突破，一下子到了今天。
-想把自己曾经的想法都去实现了，想再给自己 10 年，看看未来如何，希望自己别变得油腻，别当爹，跟推上那些闪着光的少年多学习，多玩好玩的东西，让自己的心态变得平和。
-想回到从前的身材
-想把曾经想读的原版书都读了
-想变成一个靠谱的丈夫，一个靠谱的父亲
-想多分享，多帮助别人
-想多写些文章，特别是技术方面的
-想多爬几座山，多跑几个城市
-想祝大家虎年愉快，都去乘风破浪
-写到这儿吧]]></summary>
-        <author>
-            <name>RSS feed of yihong0618's gitblog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Why you should use a developer font]]></title>
-        <id>https://dev.to/anthonyjdella/why-you-should-use-a-developer-font-2gio</id>
-        <link href="https://dev.to/anthonyjdella/why-you-should-use-a-developer-font-2gio"/>
-        <updated>2022-01-28T06:54:46.000Z</updated>
-        <summary type="html"><![CDATA[#beginners #programming #webdev #productivity]]></summary>
-        <author>
-            <name>Anthony Dellavecchia</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[「过年，是中国人的集体记忆」，你的家乡有哪些充满回忆的地方？]]></title>
-        <id>http://www.zhihu.com/question/509979111/answer/2327877344</id>
-        <link href="http://www.zhihu.com/question/509979111/answer/2327877344?utm_campaign=rss&amp;utm_medium=rss&amp;utm_source=rss&amp;utm_content=title"/>
-        <updated>2022-01-28T03:13:55.000Z</updated>
-        <summary type="html"><![CDATA[重庆在我心中的体量太大，分量太重，所以面对自己的家乡山城重庆 ，心里的感情始终是深沉又复杂的。
-既然我的老家离市中心本就不近，而我在成年之后又离开了重庆，所以这个2018年拍摄的20分钟的纪录片，既是我这重庆半土著的自白书；也权当我带你去看那山城在我心里的一半风景吧！
-宜下班、躺在沙发上、点起外卖、慢慢看～
-前方重庆，本次导航结束！魔幻交通、穿楼轻轨、过江索道，勒些网红打卡地都不能代表重庆
-
-
-我出生在长江边上的一个小县城，这个小县城有个很随便的名字，叫【鱼洞】。
-鱼洞的老城区位于重庆城区以南，长江的上游，是个少有外人打扰，安安稳稳的小地方。
-
-【鱼洞】这名字听似随意，现在细细品来，倒是很具有山城人民直白个性的——因为就是以前这里江底有个洞，洞里面很多鱼，就叫做了【鱼洞】，明明很爽快是不是！？
-
-但记得上高中时，班上曾转学来了俩渝中区的同学（俗称城里人），一问我家在哪儿，老实憨厚的我说家在【鱼洞】，她俩就笑了，说：这名字好土哦~鱼洞~~嘿嘿嘿~~~（我现在脑袋里都回响着这笑声）随即周围的同学都笑了。
-我那时候脸皮薄，红着脸抬头一看，发现只有一个文静女生没有笑，她低着头坐在一边假装看着书......刹那间我就觉得她是有内涵的，是个有深度且不一样的女同学。
-后来经过一盘问，人家女孩子才羞答答地把头抬了起来，怯生生地说了一句：我家.....我家....我家在...【木洞】......
-我硬是没忍住，也跟着笑了。
-【木洞】在【鱼洞】下游，源于那里有个山洞，传说洞中藏有鲁班的优质木材而得名，明明也很爽快是不是？
-
-鱼洞这个县城在我小时候，远没有你现在看到的这么大，它和中国其他地区的城乡结合部一样，生活在这里的小镇居民都是在自得其乐，安安静静的生活。
-
-也可能是因为这里有条宽阔的大江和奔流不止的江水，所以不管是在菜市场卖菜的农民，还是在街上凭手艺吃饭的师傅，亦或者厂里上班的职工——那时…]]></summary>
-        <author>
-            <name>在远方的阿伦</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[发现自己加班上瘾怎么办？]]></title>
-        <id>http://www.zhihu.com/question/509678375/answer/2326282351</id>
-        <link href="http://www.zhihu.com/question/509678375/answer/2326282351?utm_campaign=rss&amp;utm_medium=rss&amp;utm_source=rss&amp;utm_content=title"/>
-        <updated>2022-01-28T02:33:45.000Z</updated>
-        <summary type="html"><![CDATA[太长不看版：
-如果发现加班成瘾让工作、家庭、生活满意度降低和身心健康状况变差，可以适时的做一些调整，比如把分给工作的时间试着分给家人、朋友，或者分给一些活动，比如“游泳健身了解一下”。
-希望你可以更好的权衡工作和生活，发自内心的工作投入，并乐在其中；而不是强迫性的、“应该的”去工作，去“内卷“。
-
-三千字长文带你深度了解加班成瘾（详细版）：
-
-首先，你真的是加班成瘾吗？
-判断自己是不是加班上瘾，先问问自己这几个问题（心理学标准）：
-
-
-1、 你会想着如何找出更多时间工作
-2、你会花费比预期还多的时间工作
-3、你工作，是为了降低罪恶感、焦虑、无助及忧郁
-4、别人曾劝你减少工作量，但你不予理会
-5、如果不准你工作，会让你很有压力
-6、会因为工作而牺牲嗜好、休闲活动及运动
-7、工作过量使健康受影响
-
-
-以上是挪威卑尔根大学心理学家安卓森博士（Cecilie Schou Andreassen）研发的量表，专门测量工作成瘾。如果上面 4 项以上的描述，你的答案是经常、总是，那么你可能就是真的病态的“工作成瘾”。
-
-
-可能有人会有这样的疑惑：爱工作、多挣钱还不好吗？其实真得还分两个方面看。
-
-
-当我们说一个人“沉迷工作，无法自拔”，我们多半是表达一种对其热爱工作、献身工作的羡慕或崇拜。
-但当我们说一个人是“工作狂”时，却是觉得ta虽然花大量时间努力工作，但对工作投入过多，已经影响到正常生活。
-两者相差甚远，却又似乎只有一线之隔。
-
-
-
-
-
-概念区分：沉迷工作还是工作狂？
-
-
-“沉迷工作”和“工作狂”两个称呼，在心理学研究中一开始都用工作沉迷(Workaholism) 这一个词来加以描述。就像我们生活中见过的工作狂们“狂”点各不相同，早期的研究中研究者们对工作沉迷的定义也很多样。
-
-
-一些研究者偏向“沉迷工作派”，认为工作沉迷源于享受工作，因而对人有益，比如沉迷工作的人往往有更高的工作满…]]></summary>
-        <author>
-            <name>京师心理大学堂</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[命令行常用工具的替代品]]></title>
-        <id>http://www.ruanyifeng.com/blog/2022/01/cli-alternative-tools.html</id>
-        <link href="http://www.ruanyifeng.com/blog/2022/01/cli-alternative-tools.html"/>
-        <updated>2022-01-28T01:00:55.000Z</updated>
-        <summary type="html"><![CDATA[程序员离不开命令行，许多经典命令是每天必用的，比如ls和cd。
-虽然它们很好用，但是由于历史原因，往往也有一些缺点，比如用法不符合直觉、难以配置，有些速度也不快。
-这些年，它们的替代品开始出现，而且越来越多，大家开始尝试使用现代语言，重新实现这些经典命令。本文总结一下这些替代品，其中有些真的很不错，值得你在自己的计算机上安装。
-
-一、exa
-exa 是ls命令的替代品，可以彩色输出目录内容，更容易辨识。
-
-$ exa --long --git
-
-
-
-
-上面命令中，参数--git表示输出文件的 Git 状态。
-N：新文件
-M：文件有变动
-I：该文件被忽略
-除了平铺显示，exa还支持目录的树状显示。
-
-$ exa --tree --level=2
-
-
-
-
-exa本身是一个二进制文件，不需要安装，下载后直接使用，速度也相当快。
-同类软件还有 lsd，这里就不详细介绍了。
-二、broot
-broot 可以看作增强版的ls替代品，实际是一个终端里面的文件管理器。
-使用时，可以先列出当前目录的文件信息。
-
-$ br -sdph
-
-
-
-上面命令中，参数含义如下。
--s：显示文件体积
--d：显示文件时间
--p：显示文件权限
--h：显示隐藏文件。
-
-可以看到，它默认以树状结构，展开子目录。
-然后，在这个界面中，可以完成各种文件操作。
-搜索：输入搜索词
-复制：输入:cp <复制后的文件名>
-删除：输入:rm
-改名：输入:mv <新文件名>
-退出：输入:q
-甚至还可以预览文件：通过上下箭头选中文件，然后按下右箭头→，就会打开外部关联程序；按下ctrl + →，则在当前窗口预览文件。
-
-三、zoxide
-zoxide 是 cd 命令的替代品，用来切换目录。
-它的用法与cd完全一样，进入目录/tmp就是下面的命令。
-
-$ z /tmp
-
-
-
-它的特色是部分匹配，可以只写路径的一部分，它自动找到最经常…]]></summary>
-        <author>
-            <name>阮一峰的网络日志</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Sniffing HTTPS during development]]></title>
-        <id>https://anadoxin.org/blog/2022-01-28-sniffing-ssl-during-development/inspecting-encrypted-traffic-during-development/</id>
-        <link href="https://anadoxin.org/blog/2022-01-28-sniffing-ssl-during-development/inspecting-encrypted-traffic-during-development/"/>
-        <updated>2022-01-28T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Article.]]></summary>
-        <author>
-            <name>antek's tech blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Jetpack DataStore 你总要了解一下吧？]]></title>
-        <id>https://juejin.cn/post/7058094534755893284</id>
-        <link href="https://juejin.cn/post/7058094534755893284"/>
-        <updated>2022-01-27T19:32:15.000Z</updated>
-        <summary type="html"><![CDATA[highlight: androidstudio
-theme: cyanosis
-「这是我参与2022首次更文挑战的第11天，活动详情查看：2022首次更文挑战」
-一、DataStore 介绍
-DataStore 是 Android Jetpack 中的一个组件，它是一个数据存储的解决方案，跟 SharedPreferences 一样，采用key-value形式存储。DataStore 保证原子性，一致性，隔离性，持久性。尤其是，它解决了 SharedPreferences API 的设计缺陷。Jetpack DataStore 是经过改进的新版数据存储解决方案，旨在取代 SharedPreferences，让应用能够以异步、事务方式存储数据。
-注意：DataStore 比较适合小数据和简单操作，并且无法局部的更新数据。如果你需要支持大型或复杂的数据集、部分更新或引用完整性，可以考虑使用 Room 而不是 DataStore。
-Preferences DataStore 和 Proto DataStore
-Preferences DataStore：与SharedPreferences类似，通过键值对存储数据，此实现不需要预定义模式，也不提供类型安全。
-Proto DataStore：通过Protocol-Buffers定义存储数据类型以及结构，保证类型安全。
-本文重点了解Preferences DataStore。
-二、Preferences DataStore
-与SharedPreferences类似，通过键值对存储数据，此实现不需要预定义模式，也不提供类型安全。
-2.1 添加依赖
-在你项目的app_module对应的build.gradle中添加如下依赖：
-dependencies {
-    //Typed DataStore (Typed API surface,…]]></summary>
-        <author>
-            <name>Android帅次</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[抖音 Android 性能优化系列：启动优化之理论和工具篇]]></title>
-        <id>https://juejin.cn/post/7058080006022856735</id>
-        <link href="https://juejin.cn/post/7058080006022856735"/>
-        <updated>2022-01-27T18:37:03.000Z</updated>
-        <summary type="html"><![CDATA[theme: juejin
-启动性能是 APP 使用体验的门面，启动过程耗时较长很可能导致用户使用 APP 的兴趣骤减，抖音通过对启动性能做劣化的 AB 实验也验证了其对于业务指标有影响显著。抖音拥有数亿的用户，启动耗时几百毫秒的增长就可能带来成千上万用户的留存缩减，因此，启动性能的优化成为了抖音 Android 基础技术团队在体验优化方向上的重中之重。
-
-本文基于过往对抖音 Android 客户端做启动性能优化的实战经验总结提炼出普适性的方法论，并将该过程中沉淀的工具加以分享，希望能给大家带来一些新的思考。
-
-抖音 Android 性能优化系列往期文章回顾：新一代全能型性能分析工具 Rhea
-带着问题出发
-
-假如你要负责优化抖音的启动性能，你会怎样去规划整体的优化方案？你可能会一下子想到很多方面的细节点，比如：要优化主线程耗时、要减少布局层级、要对某些启动任务做按需加载或预加载、要避免主线程 IO、要对线程使用进行优化、还要有分析工具帮助定位性能问题等……
-然而，该如何系统性地把这些细碎点组织起来并按照一定的章法来落地启动优化呢？此时，需要我们在具体细节点之上有进一步的问题分解与深入思考，最终形成一套完整的方法论，不仅能覆盖所有细节点，还能切实指导在实战中达成启动优化的效果。切实有效的方法论必然是从实战中经过千锤百炼才能形成的，而抖音庞大的用户基数又进一步保障了方法论的可行性与普适性。那么接下来让我们带着前述问题来看抖音的启动优化方法论是怎样的又是如何应用于实战之中的。
-启动优化方法论
-抖音的启动性能优化方法论分为五部分，分别是：理论分析、现状分析、启动性能优化、线上验证与防劣化。
-
-这五部分间存在明显的先后顺序，又能闭环达成可持续的启动性能优化，下面将对这五部分做详细阐述：
-理论分析
-理论分析放在最先是为了从一开始就避免让视野受到限制，很多同学往往一开始接手启动优化就容…]]></summary>
-        <author>
-            <name>字节跳动技术团队</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Making the web better. With blocks!]]></title>
-        <id>https://www.joelonsoftware.com/2022/01/27/making-the-web-better-with-blocks/</id>
-        <link href="https://www.joelonsoftware.com/2022/01/27/making-the-web-better-with-blocks/"/>
-        <updated>2022-01-27T17:14:00.000Z</updated>
-        <summary type="html"><![CDATA[You&#8217;ve probably seen web editors based on the idea of blocks. I&#8217;m typing this in WordPress, which has a little + button that brings up a long&#8230; <span class="read-more"><a class="more-link" href="https://www.joelonsoftware.com/2022/01/27/making-the-web-better-with-blocks/" rel="bookmark">Read more <span class="screen-reader-text">"Making the web better. With blocks!"</span></a></span>]]></summary>
-        <author>
-            <name>Joel on Software</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Java Weekly, Issue 422]]></title>
-        <id>https://www.baeldung.com/?p=115873</id>
-        <link href="https://feeds.feedblitz.com/~/679759008/0/baeldung~Java-Weekly-Issue"/>
-        <updated>2022-01-27T16:03:43.000Z</updated>
-        <summary type="html"><![CDATA[GraalVM release, composition vs inheritance in JPA, Gradle plugins, finding performance regressions at scale, and beautiful technical debt.]]></summary>
-        <author>
-            <name>baeldung</name>
         </author>
     </entry>
 </feed>
