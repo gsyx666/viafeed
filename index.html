@@ -41,6 +41,168 @@
           <section class="articles-per-source">
             <article>
               <details class="article-expander">
+                <summary class="article-expander__title">pseudo classes in CSS - part 4 (:active)</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/therajatg/pseudo-classes-in-css-part-4-active-2m1e">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>Note: This is the 4th part of the 5 part series dedicated to the pseudo classes of CSS.
+In this part, we&#x27;ll understand the the pseudo class :active but if you want to jump to any other pseudo class, be my guest and click on the links provided below:
+part 1: pesudo class :hover
+part 2: pseudo class :link
+part 3: pseudo class :visited
+part 4: pseudo class: active
+part 5: LVHA order - yet to be written.
+** The :active selector is used to style the active link.**
+The difference between :link, :visited and :active is very subtle. Therefore, I urge to open your code editor and start playing with these.
+
+We can better understand the :active selector via an example:
+
+
+
+    
+    
+    &lt;met…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">I suck at WORDLE, so I solved it with JS and Uilicious</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/uilicious/i-suck-at-wordle-so-i-solved-it-with-js-and-uilicious-4hfc">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(9 min)</span>
+                    <span>TLDR: I wrote a Wordle solver bot with Javascript and UIlicious. You can run this snippet any day to get your daily Wordle solution. Try and see if you can get a better score than the bot! Feel free to edit it and optimise the solver algorithm!
+The wordler solver is covered in 3 parts, which covers the
+UI interaction code (this article)
+Wordle Statistical model, and the math behind it (@todo) 
+Unit testing and benchmarking of the wordle solver (@todo) 
+
+
+If you haven&#x27;t already heard of Wordle, it&#x27;s a fun puzzle game that challenges you to guess a valid five-letter word in six tries or less.
+My wife is really addicted to Wordle, and she&#x27;s been bugging me to try it every day. I suppose for her, there&#x27;s a thrill in getting the right word in the least amount of tries. And because we&#x27;re both ga…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Level-Up Your React Skill with Testing (Part 1)</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/fadhilradh/level-up-your-react-game-with-testing-part-1-lhd">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(4 min)</span>
+                    <span>Are you currently learning React JS or using it in your work ?
+
+
+Let&#x27;s step up the game by learning how to test our React App. We will learn how to test using packages that comes bundled with create-react-app, Jest and React Testing Library. In this first part of the series, let&#x27;s understand about these two packages and a simple test.
+Jest is a testing library developed by Facebook to find, run tests and determine whether the tests pass or fail. It is also the test runner that recommended by React Testing Library.
+React Testing Library is an open-source package, part of Testing Library package. Its job is to provide Virtual DOM for the tests and interact with the Virtual DOM while testing. For convenience, we will refer React Testing Library as RTL throughout this article.
+So, basically th…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Build a Video Conference App from Scratch using WebRTC,Websocket,PHP +JS Day 37</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/benpobi/build-a-video-conference-app-from-scratch-using-webrtcwebsocketphp-js-day-37-4b3g">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>In this video we&#x27;ll cover how to Create answer</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">How to monitor PosgreSQL with Prometheus and Grafana | Docker</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/nelsoncode/how-to-monitor-posgresql-with-prometheus-and-grafana-docker-24c8">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>For this example we will use Docker compose to be able to run all the services
+1.Docker Compose
+version: &quot;3.9&quot;
+services:
+  grafana:
+    image: grafana/grafana
+    ports:
+      - 3000:3000
+
+  prometheus:
+    image: prom/prometheus
+    ports:
+      - 9090:9090
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+
+  postgres:
+    image: postgres:12
+    ports:
+      - 5432:5432
+    volumes:
+      - ./backup:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: postgrespassword
+      POSTGRES_DB: shop
+
+  postgres-exporter:
+    image: prometheuscommunity/postgres-exporter
+    ports:
+      - 9187:9187
+    environment:
+      DATA_SOURCE_NAME: &quot;postgresql://postgres:postgrespassword@postgres:5432/shop?sslmode&#x3D;disable&quot;
+    links:
+      - postgres
+      - prometheus
+
+
+2.Prometheus File Settings (prometheus.yml)
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: prometheus
+    static_configs:
+      - targets: [&quot;localhost:9090&quot;]
+  - job_name: postgres-exporter
+    static_configs:
+      - targets: [&quot;postgres-exporter:9187&quot;]
+
+3.Run Docker Compose
+docker-compose up
+
+4.Check status of Prometheus and Redis Exporter
+http://localhost:9090/targets
+
+5.Visit Grafana Dashboard
+Default
+User: admin
+http://localhost:3000
+
+
+6.Add data source
+
+Save and test
+
+7.Import PostgreSQL Dashboard for Prometheus
+For this we will use a Dashboard created by the community
+
+https://grafana.com/grafana/dashboards/9628
+8.Import JSON of code
+
+
+Code: 9628
+9.Dashboard
+
+Code of example (GitHub Gist)
+https://gist.github.com/nelsoncode019/1c0f7930aab755223de7f971f3aca94b</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
                 <summary class="article-expander__title">Introduction to Amazon Machine Learning</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://dev.to/aws-builders/introduction-to-amazon-machine-learning-5adc">
                   <div class="article-summary-box-inner">
@@ -101,8 +263,292 @@ class Solution {
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://hn.buzzing.cc">Hacker News 热门</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">事故。2022年2月10日，亚洲航空公司A320在古晋附近，飞机上有蛇。</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/30309644/?score&#x3D;102&amp;original_url&#x3D;https%3A%2F%2Favherald.com%2Fh%3Farticle%3D4f47cac0&amp;discuss_url&#x3D;https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30309644&amp;sensitive&#x3D;false">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>事故。2022年2月10日，亚洲航空公司A320在古晋附近，飞机上有蛇。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">CVE-2022-0435：Linux内核中的远程堆栈溢出</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/30304238/?score&#x3D;101&amp;original_url&#x3D;https%3A%2F%2Fwww.openwall.com%2Flists%2Foss-security%2F2022%2F02%2F10%2F1&amp;discuss_url&#x3D;https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30304238&amp;sensitive&#x3D;false">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>CVE-2022-0435：Linux内核中的远程堆栈溢出</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">爱因斯坦是如何得出他的广义相对论的</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/30306190/?score&#x3D;101&amp;original_url&#x3D;https%3A%2F%2Flithub.com%2Fhow-einstein-arrived-at-his-theory-of-general-relativity%2F&amp;discuss_url&#x3D;https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30306190&amp;sensitive&#x3D;false">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>爱因斯坦是如何得出他的广义相对论的</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">锁好门。纪念哥伦比亚大学的最后一次返校节（2020年）</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/30307259/?score&#x3D;100&amp;original_url&#x3D;https%3A%2F%2Fwww.americaspace.com%2F2020%2F02%2F01%2Flock-the-doors-remembering-columbias-final-homecoming-otd-in-2003%2F&amp;discuss_url&#x3D;https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30307259&amp;sensitive&#x3D;false">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>锁好门。纪念哥伦比亚大学的最后一次返校节（2020年）</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">蒸汽甲板的外部外壳（表面拓扑结构）的CAD文件</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/30309065/?score&#x3D;107&amp;original_url&#x3D;https%3A%2F%2Fgitlab.steamos.cloud%2FSteamDeck%2Fhardware&amp;discuss_url&#x3D;https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30309065&amp;sensitive&#x3D;false">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>蒸汽甲板的外部外壳（表面拓扑结构）的CAD文件</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">建立一个智能的Emacs</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/30308272/?score&#x3D;111&amp;original_url&#x3D;https%3A%2F%2Fianyepan.github.io%2Fposts%2Femacs-ide%2F&amp;discuss_url&#x3D;https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30308272&amp;sensitive&#x3D;false">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>建立一个智能的Emacs</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">一种用于高性能计算机的新的编程语言</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/30306310/?score&#x3D;106&amp;original_url&#x3D;https%3A%2F%2Fnews.mit.edu%2F2022%2Fnew-programming-language-high-performance-computers-0207&amp;discuss_url&#x3D;https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30306310&amp;sensitive&#x3D;false">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>一种用于高性能计算机的新的编程语言</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">核心战争</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/30299617/?score&#x3D;107&amp;original_url&#x3D;https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FCore_War&amp;discuss_url&#x3D;https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30299617&amp;sensitive&#x3D;false">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>核心战争</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">启动HN：安雅健康（YC W22）--在出生时冷冻干细胞，为未来健康服务</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://hn.buzzing.cc/hn/30305959/?score&#x3D;102&amp;original_url&#x3D;https%3A%2F%2Fanjahealth.com&amp;discuss_url&#x3D;https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30305959&amp;sensitive&#x3D;false">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>启动HN：安雅健康（YC W22）--在出生时冷冻干细胞，为未来健康服务</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://linux.cn/">Linux 中国◆开源社区</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Delta Chat：一个开源的聊天工具</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://linux.cn/article-14265-1.html?utm_source&#x3D;rss&amp;utm_medium&#x3D;rss">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>最好的聊天应用是一个不属于聊天应用的应用。
+
+
+
+
+请考虑一下，当用户的数据被发布到互联网上，或通过互联网发布时，他们的数据究竟去了哪里。古老的聊天应用是互联网通信领域的一个手工行业，似乎在潮流中起起落落。人们使用聊天应用进行各种形式的对话，大多数人不会想到机器人正在记录和监控他们所说的话，无论是为了有效地定位广告还是只是为了建立一个档案供将来使用。这使得聊天应用特别容易受到不良的隐私做法的影响，但幸运的是，现在有几个开源的、注重隐私的应用，如 Signal、Rocket.Chat 和 Mattermost。我运行过 Mattermost 和 Rocket.Chat，我也在使用 Signal，但我最兴奋的应用是 Delta Chat，这个聊天服务非常方便，甚至不使用聊天服务器。相反，Delta Chat 使用的是你已经使用的最大规模和最多样化的开放信息系统：它使用电子邮件，通过聊天应用发送和接收信息，并以 Autocrypt 的端到端加密为特色。
+
+安装 Delta Chat
+
+Delta Chat 使用标准的电子邮件协议作为它的后端，但对于作为普通用户的你和我来说，它的外观和行为完全像一个聊天应用。也就是说你需要安装一个开源的 Delta Chat 应用。
+
+在 Linux 上，你可以从 Flatpak 包或你的软件库中安装 Delta Chat。
+
+在 macOS 和 Windows 上，从 delta.chat/downloads 下载一个安装程序。
+
+在安卓系统上，你可以从 Play Store 或开源的 F-droid 仓库 安装 Delta Chat。
+
+在 iOS 系统中，从 App Store 安装 Delta Chat。
+
+因为 Delta Chat 使用电子邮件来传递信息，所以如果你不在你的聊天应用中，你也可以在收件箱中收到信息。是的…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">如何从 KDE Plasma 5.23 升级到 5.24</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://linux.cn/article-14264-1.html?utm_source&#x3D;rss&amp;utm_medium&#x3D;rss">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>KDE 团队宣布了 KDE Plasma 5.24 LTS 版，已经可以下载和安装了。如果你打算从以前的版本升级，在这里我们给你提供了从 5.23 升级到 5.24 的简明步骤。
+
+
+
+
+KDE Plasma 5.24 是 Plasma 桌面的第 26 个版本，带来了显著的视觉改变和一些后端性能的提升。在这个版本中，你会看到全新的墙纸、Breeze 主题的视觉变化、指纹登录和一个全新的概览屏幕等等。
+
+你可以在我们的综述文章里阅读有关 KDE Plasma 5.24 功能的细节。
+
+如果你正在运行 KDE Plasma 的早期版本，你可以按本文说明升级到最新版本。
+
+如何升级到 KDE Plasma 5.24
+
+这个版本的升级包大小适中，在我的测试机器上大约是 450MB 以上。在开始升级过程之前，请确保关闭所有应用程序并保存你的数据。
+
+一般来说，KDE 的升级是非常稳定的，它从来不会失败。但是，如果你想格外谨慎，并且有宝贵的数据，你可能想对这些进行备份。但同样，在我看来，我相信这是没有必要的。
+
+步骤
+
+如果你是在 KDE Neon 之中、滚动发布的发行版（如 Arch Linux、Manjaro 之类）中运行 KDE Plasma 5.23，你可以打开 KDE 工具 “发现Discover”，点击检查更新。
+
+你可以通过“发现Discover”的升级包列表验证 Plasma 5.24 是否可用。
+
+一旦确认可用，点击“发现Discover”窗口右上方的“全部更新Update All”按钮。
+
+另外，你也可以从终端运行下面的命令，在 KDE Neon 中开始升级过程。
+
+sudo apt update
+sudo pkcon update
+
+
+升级过程完成后重启系统。
+
+而重启后，你应该看到全新的 KDE Plasma 5.24 出现在你面前。
+
+在 Fedora 35 和 Ubuntu 21.10 中升级 KDE Plasma 5.24
+
+截至目前，Fedora 35 和 Ubuntu 21.10 是两个主要的 KDE 的发行版。由于 更新政策，Fedora 35 不会得到这个版本，而 Fedora 36 也将很快发布。 
+
+然而，如果你仍然想做实验，你可以在 Ubuntu 21.10 和 Ubuntu 21.04 中使用下面的 Backports PPA 安装这个新版本的 Plasma 桌面。在这样做的时候，请确保你保留一份数据备份。
+
+sudo add-apt-repository ppa:kubuntu-ppa/backports
+sudo apt-get full-upgrade
+
+
+在 Fedora 35 中，我试图通过下面的 COPR 仓库来安装。但是有太多的依赖性冲突需要解决，在一个稳定的系统中尝试这样做是有风险的。我建议目前不要在 Fedora 35 中尝试下面的方法。当然你仍然可以通过 allowerasing 标志来安装。但不要这样做。
+
+另外，我猜 Fedora 35 的官方版本会在第一个小版本（即 5.24.1）发布时更新，该版本将于 2022 年 2 月 15 日发布，所以你可以等到那时。
+
+另外，等待 Fedora 36 也是比较明智的做法，因为它将这个版本作为默认版本。Fedora 36 将于 2022 年 4 月发布。
+
+
+
+sudo dnf copr enable marcdeop/plasma
+sudo dnf copr enable marcdeop/kf5
+sudo dnf upgrade --refresh
+
+
+升级后的反馈
+
+我在虚拟机中运行了升级过程，并安装了新的 KDE Plasma 5.23。升级过程很顺利，没有出现意外或错误。好吧，到目前为止，它对我来说从未失败过。
+
+升级时间完全取决于你的互联网连接和 KDE 服务器。一般来说，它应该在 30 分钟内完成。
+
+升级过程后的第一次重启很顺利，没有花费多少时间。
+
+从性能上讲，我觉得它比之前的版本更流畅，这要归功于几个错误的修复和底层的性能优化。
+
+所以，总的来说，如果你在使用 KDE Neon，你可以安全地升级。否则就等待 Ubuntu 和 Fedora 稳定版的软件包。
+
+享受全新的 KDE Plasma 吧！
+
+
+via: https://www.debugpoint.com/2022/02/upgrade-kde-plasma-5-24/
+
+作者：Arindam 选题：lujun9972 译者：wxy 校对：wxy
+
+本文由 LCTT 原创编译，Linux中国 荣誉推出</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://reddit.buzzing.cc">Reddit 热门</a></h3>
           <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">有趣的威胁...</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/sq7vtz/interesting_threat/?score&#x3D;75285&amp;original_url&#x3D;https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Fsq7vtz%2Finteresting_threat%2F&amp;discuss_url&#x3D;https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Fsq7vtz%2Finteresting_threat%2F&amp;channel&#x3D;WhitePeopleTwitter&amp;sensitive&#x3D;false">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>有趣的威胁...</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">这能很好地清洁他的身体</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/spzjdi/this_cleans_him_up_good/?score&#x3D;75111&amp;original_url&#x3D;https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Fspzjdi%2Fthis_cleans_him_up_good%2F&amp;discuss_url&#x3D;https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Fspzjdi%2Fthis_cleans_him_up_good%2F&amp;channel&#x3D;interestingasfuck&amp;sensitive&#x3D;false">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>这能很好地清洁他的身体</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">我相信这首歌是 &quot;Bender is great&quot;。</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/wholesomememes/comments/sq6o1w/i_believe_the_song_is_bender_is_great/?score&#x3D;75681&amp;original_url&#x3D;https%3A%2F%2Fwww.reddit.com%2Fr%2Fwholesomememes%2Fcomments%2Fsq6o1w%2Fi_believe_the_song_is_bender_is_great%2F&amp;discuss_url&#x3D;https%3A%2F%2Fwww.reddit.com%2Fr%2Fwholesomememes%2Fcomments%2Fsq6o1w%2Fi_believe_the_song_is_bender_is_great%2F&amp;channel&#x3D;wholesomememes&amp;sensitive&#x3D;false">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>我相信这首歌是 &quot;Bender is great&quot;。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">今天在北京的芬兰奥运运动员宿舍</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/sq5126/finlands_olympic_athlete_dormitory_in_beijing/?score&#x3D;78129&amp;original_url&#x3D;https%3A%2F%2Fwww.reddit.com%2Fr%2FDamnthatsinteresting%2Fcomments%2Fsq5126%2Ffinlands_olympic_athlete_dormitory_in_beijing%2F&amp;discuss_url&#x3D;https%3A%2F%2Fwww.reddit.com%2Fr%2FDamnthatsinteresting%2Fcomments%2Fsq5126%2Ffinlands_olympic_athlete_dormitory_in_beijing%2F&amp;channel&#x3D;Damnthatsinteresting&amp;sensitive&#x3D;false">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>今天在北京的芬兰奥运运动员宿舍</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">真的吗？华尔街日报》Wtf</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/mildlyinfuriating/comments/sq23vd/seriously_wtf_wall_street_journal/?score&#x3D;76693&amp;original_url&#x3D;https%3A%2F%2Fwww.reddit.com%2Fr%2Fmildlyinfuriating%2Fcomments%2Fsq23vd%2Fseriously_wtf_wall_street_journal%2F&amp;discuss_url&#x3D;https%3A%2F%2Fwww.reddit.com%2Fr%2Fmildlyinfuriating%2Fcomments%2Fsq23vd%2Fseriously_wtf_wall_street_journal%2F&amp;channel&#x3D;mildlyinfuriating&amp;sensitive&#x3D;false">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>真的吗？华尔街日报》Wtf</span>
+                  </div>
+                </a>
+              </details>
+            </article>
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">符合《圣经》的天使</summary>
@@ -110,6 +556,34 @@ class Solution {
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
                     <span>符合《圣经》的天使</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://sspai.com">少数派</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">任天堂 2022 春季直面会之后，我们为你带来了这份「种 / 拔草」参考建议</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://sspai.com/post/71354">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Matrix 首页推荐
+Matrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。
+文章代表作者个人观点，少数派仅对标题和排版略作修改。
+
+北京时间 2022 年 2 月 10 日凌晨 6 时，任天堂 2022 春季直面会如期展开。作为全世界 NS 玩家翘首以盼的游戏「峰会」，本场直面会无疑是任天堂对微软和索尼两大巨头竞相收购工作室的有力回应。尽管最令人期待的《塞尔达传说：旷野之息 2》并未有新消息放出，但在 40 分钟的直面会时长中悉数登场的第一方及第三方大作也赚够了玩家的眼球。
+与 PlayStation 或 Xbox 这类十分注重性能表现的主机平台不同，NS 作为主机与掌机跨界产品的本质似乎注定了其「冷饭之王」的命运，本场直面会上当然也少不了独占新作与移植作品扎堆出现的传统艺能。但无论热饭冷饭，好吃的饭才是好饭——因此，本文挑选了一些本场直面会上值得「追根溯源」的游戏作品，并从 NS 平台的游戏体验入手，为各位少数派带来一份详尽的「种 / 拔草」参考建议。
+注：本文内容具有时效性，部分内容带有主观色彩，实际游戏表现请以正式发售版本为准，游戏截图来自机核。
+火焰之纹章 无双 风花雪月
+
+做完火纹做塞尔达，做完塞尔达做火纹，脸都不要了。
+
+由光荣操刀的《火焰之纹章 无双 风花雪月》是本次直面会开场展示的第一个游戏，将于 6 月 24 日正式发布。从预告片可以看出，本作走的依然是经典 IP + 无双玩法，并融合原作剧情架构和部分系统设定的老路数。光荣打磨了十几年的玩法套路自然不必多言，稍有动作游戏经验的玩家都能很快上手；鉴于任天堂和光荣已经不是第一次在 NS 平台上合作推出此类游戏，参考前作《火焰纹章 无双》以及两部《塞尔达无双》的画面和帧数表现，本作的优化问题也不必…</span>
                   </div>
                 </a>
               </details>
@@ -256,6 +730,24 @@ Fluent Search, as you might’ve guessed, is a search app.
 By all resources, I mean everything – apps, windows, files, browser history/bookmarks, screen text, in-app content like tabs, links, and the ability to extend itself using a no-code UI platform to build extensions.
 Fluent Search provides a full-screen search which gives the ability to use the computer with a keyboard only. 
 I aimed for Fluent Search to provide a fluent and fast experience for its users, that&#x27;s why performance was super important. Avalonia …</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">What was your win this week?</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://dev.to/devteam/what-was-your-win-this-week-5c2m">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>Hey there! 
+Looking back on this past week, what was something you were proud of accomplishing?
+All wins count — big or small 🎉
+Examples of &#x27;wins&#x27; include:
+Starting a new project
+Fixing a tricky bug
+Getting a decent amount of sleep ... or whatever else might spark joy ❤️ 
+Congrats on those wins and happy Friday!</span>
                   </div>
                 </a>
               </details>
@@ -1709,6 +2201,28 @@ read more</span>
         <section>
           <h3 class="source-name"><a class="source-name__link" href="https://sspai.com/matrix">少数派 -- Matrix</a></h3>
           <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">任天堂 2022 春季直面会之后，我们为你带来了这份「种 / 拔草」参考建议</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://sspai.com/post/71354">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Matrix 首页推荐
+Matrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。
+文章代表作者个人观点，少数派仅对标题和排版略作修改。
+
+北京时间 2022 年 2 月 10 日凌晨 6 时，任天堂 2022 春季直面会如期展开。作为全世界 NS 玩家翘首以盼的游戏「峰会」，本场直面会无疑是任天堂对微软和索尼两大巨头竞相收购工作室的有力回应。尽管最令人期待的《塞尔达传说：旷野之息 2》并未有新消息放出，但在 40 分钟的直面会时长中悉数登场的第一方及第三方大作也赚够了玩家的眼球。
+与 PlayStation 或 Xbox 这类十分注重性能表现的主机平台不同，NS 作为主机与掌机跨界产品的本质似乎注定了其「冷饭之王」的命运，本场直面会上当然也少不了独占新作与移植作品扎堆出现的传统艺能。但无论热饭冷饭，好吃的饭才是好饭——因此，本文挑选了一些本场直面会上值得「追根溯源」的游戏作品，并从 NS 平台的游戏体验入手，为各位少数派带来一份详尽的「种 / 拔草」参考建议。
+注：本文内容具有时效性，部分内容带有主观色彩，实际游戏表现请以正式发售版本为准，游戏截图来自机核。
+火焰之纹章 无双 风花雪月
+
+做完火纹做塞尔达，做完塞尔达做火纹，脸都不要了。
+
+由光荣操刀的《火焰之纹章 无双 风花雪月》是本次直面会开场展示的第一个游戏，将于 6 月 24 日正式发布。从预告片可以看出，本作走的依然是经典 IP + 无双玩法，并融合原作剧情架构和部分系统设定的老路数。光荣打磨了十几年的玩法套路自然不必多言，稍有动作游戏经验的玩家都能很快上手；鉴于任天堂和光荣已经不是第一次在 NS 平台上合作推出此类游戏，参考前作《火焰纹章 无双》以及两部《塞尔达无双》的画面和帧数表现，本作的优化问题也不必…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">译文 | 字体小变动，心境大不同——谈用加拉蒙码字</summary>
@@ -3970,6 +4484,28 @@ https://fox17.com/news/local/dream-more-dollywood-to-pay-100-of-tuition-textbook
           <section class="articles-per-source">
             <article>
               <details class="article-expander">
+                <summary class="article-expander__title">Flutter 2022 战略和路线解读与想法</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://juejin.cn/post/7063341792577454110">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>theme: smartblue
+最近 Flutter 发布了官方关于 2022 的 战略 和 路线图 ，本篇主要针对内容做一些总结和解读，给正在使用 Flutter 或者正打算使用 Fluter 的人做个参考。
+总结陈述相关
+目前 Flutter 社区的发展已经很大，官方统计在过去的一年里，数据上 Flutter 已经基本超过超过其他跨平台框架，成为最受欢迎的移动端跨平台开发工具，截至 2022 年 2 月，有近 50 万个应用程序使用 Flutter。
+在过去一年里， Flutter 社区有数千人为该项目提供了贡献和支持，从个人到 Canonical、Microsoft、ByteDance 和阿里巴巴等大公司都对 Flutter 提供了不少帮助。
+当然 Flutter 也不是尽善尽美，Flutter 虽然也有被一些大型应用所使用，例如：SHEIN  （顶级时尚零售商）、微信（10 亿+用户 IM 应用程序）和 PUBG  （7.5 亿+玩家大逃杀游戏），但是它在大型应用中使用并不明显。
+因为在大型应用中有大量的历史需求和代码，还有重构所需的成本限制，使用 Flutter 进行混合开发其实支持不如 Jetpack Compose ，是的， Flutter 官方表示：
+相反，Android 的 Jetpack Compose 产品非常适合这一类产品，因为它可以轻松地基于 JVM 的框架，逐步添加到现有的 Android 应用程序中。
+也就是从官方的角度看，混合开发下，特别是 Android 平台，其实 Compose 更适合混合开发，感觉这也是 add-to-app 的维护和推进到现在好像并不乐观的原因。
+展望
+Flutter 在 2022 年首要的战略目标就是月活跃用户的增长，官方的理念就是：
+一个 SDK 再优秀，如果只有少部分人在使用，那它也不能体现价值；但是一个 S…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
                 <summary class="article-expander__title">Flutter Riverpod 全面深入解析，为什么官方推荐它？</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://juejin.cn/post/7063111063427874847">
                   <div class="article-summary-box-inner">
@@ -4025,6 +4561,119 @@ Android系统中，进程的生命周期由系统控制，处于体验和性能�
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.bilibili.com">bilibili 野生技能协会 最热视频</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">扑克牌穿越瓶子，这个魔术吓到了韩国美女，方法你一定想不到！</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av508883930">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>扑克牌穿越瓶子魔术详细教学，喜欢的朋友记得四连支持哟，也可以转发给朋友哟！
+
+
+Tags:知识分享官,打卡挑战,魔术,揭秘,扑克牌,魔术教学</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">【3dmax人物建模】从拉box开始到角色人体完整布线讲解</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av381443115">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>【3dmax人物建模】从拉box开始到角色人体完整布线讲解
+欢迎加入白嫖Q群：912494826【资料，软件，教程，模型】多会在群里分享出来给大家学习
+UP主V：yuxi526688 
+3D建模软件安装下载教程集：BV13a4y1v7zy
+3dmax基础到精通案例教程集：BV1T64y1c7qa
+Maya基础到精通案例教程集：BV1KK411K7mD
+zbrush基础到精通案例教程集：BV1kb41177oa
+记得关注UP主哦
+
+
+Tags:3D游戏建模,3dmax,3dmax建模,3dmax人物建模,3dmax角色建模,3DMAX零基础,3dmax零基础教程,3dmax零基础建模,知识分享官,3D建模系统教学</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Ⅱ 业余建模师快速还原比奇堡</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av466442463">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Tags:3D,派大星,pp</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">什么家庭啊？宝贝都扔了！</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av808917474">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Tags:知识分享官,野生技术协会,鉴定,历史,文化,学习</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">三种去除水印的技巧，你学会了几种呢？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av723910328">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>三种去除水印的技巧，你学会了几种呢？
+
+
+Tags:技术,科技,视频教程,课程,经验分享,野生技术协会,学习心得,打卡挑战,知识分享官</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">掐指一算赔的稀烂...</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av253896095">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Tags:知识分享官,野生技术协会,鉴定,历史,文化,学习,教育,经验分享</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">把世界上最白的漆和最白的材料放在一起 - 谁“更白”</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av211379757">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Tags:数学,科学,物理,知识,学习,实验,自然科学,野生技术协会,知识常识</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">我用我的魔方摆烂了你的春晚魔术</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av678883218">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>-
+
+
+Tags:魔方,摆烂,我的隐藏技能,跟着UP主创作吧（第二期）</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://www.bilibili.com">bilibili 科学科普 最热视频</a></h3>
           <section class="articles-per-source">
             <article>
@@ -4045,6 +4694,20 @@ Android系统中，进程的生命周期由系统控制，处于体验和性能�
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
                     <span>Tags:科普,纪录片,工厂,制造过程,运动员,涨知识,打卡挑战,马拉松跑鞋,定制跑鞋,运动鞋制造</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">冰壶是如何制造的？先找出特殊的花岗岩，再切出冰壶所需要的石环</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av766471188">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>冰壶?又叫冰上象棋，考验体力与智慧的一项运动，还不错的
+
+
+Tags:知识分享官,冬奥知识分享官,实验,物理,打卡挑战,科普,科学,学习,冬奥会</span>
                   </div>
                 </a>
               </details>
@@ -6246,6 +6909,184 @@ Eclipes：Java
 Visual Studio：c/c++、c# 等等
 Xcode：iOS、iPad、Mac
 上面这些 IDE 里面：JetBrains全家桶、VSCode、Vim、Eclipse 都能被部署到 Doc…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.bilibili.com">bilibili 野生技能协会 最热视频</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">c4d实景合成雪融容octane渲染器</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av936375291">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>工程文件出售
+QQ群:719128180
+ 收徒\合作VX:huhu3450
+
+
+Tags:3D,特效,后期</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">【cos后期】尼尔机械纪元cos场照原倍速修图过程|修bug思路</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av936486441">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>原速
+（录制的时候可能会有奇怪的声音）
+互免合作的coser
+请勿言语攻击
+谢谢
+
+
+Tags:学习,后期,cos后期,后期过程</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">冰墩墩火到国外去了！欧洲大牛耗时9小时，拼出巨型冰墩墩！</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av338901539">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>买不到冰墩墩，外国小伙就做一个！
+
+
+Tags:跟着UP主创作吧（第二期）,我的隐藏技能,制造,野生技术协会,冬奥会,手工,魔方,外国人,知识,北京冬季奥运会,拼图</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">一部电影少了镜头语言会变成什么样？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av766413992">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>https://www.xinpianchang.com/a10943558?from&#x3D;ArticleList
+
+
+Tags:视频教程,野生技术协会,摄影,技术宅,知识,电影拍摄,摄像,视听语言,镜头,导演</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">今天教你小姐姐同款，卡片消失术！</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av766397965">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>-
+
+
+Tags:春节不无聊挑战,必剪创作,春晚,春晚魔术揭秘,刘谦,申林,美女魔术师</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">偷偷鉴定媳妇的宝贝...</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av936482917">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Tags:知识分享官,野生技术协会,鉴定,历史,文化,学习,教育,经验分享</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">将自己进大厂前花3w买的Python全套教程，整整632集，现在拿出来分享给大家！拿走不谢！从入门到精通 学会即可就业</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av678929559">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Python完整学习路线+职业规划
+手把手给你扶进大厂！
+本套教程专门为零基础学员而制，适合准备入行编程开发的零基础学员。
+不仅适用于零基础的初学者，有经验的程序员也可做巩固学习。后续课程我们将用更高的要求制作，祝愿各位同学都学业有成，月薪过万！
+会慢慢更新，不要着急呀！
+
+
+Tags:计算机,学习,IT,人工智能,课程,PYTHON,爬虫,野生技术协会,编程学习,PYTHON入门,知识分享官</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">揭秘刘谦的三球奇迹！大家看懂了吗？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av936413073">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>-
+
+
+Tags:打卡挑战,魔术教学,魔术,刘谦</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">精明的妈妈！</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av593823158">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Tags:历史,文化,鉴定,学习,野生技术协会</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">10秒钟让图片变换三种高级色调！</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av296494084">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>没有什么高不高级的，就是分享一些快速调色的小技巧而已。
+
+
+Tags:摄影,调色,平面设计,摄影后期,调色技巧</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">获 得 冰 墩 墩 的 10 个 渠 道</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av978885570">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>-
+
+
+Tags:冰墩墩有多可爱,冰墩墩,如何获得冰墩墩,科普,冷知识,可爱的冰墩墩</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">10秒一个特效教程系列｜你准备好了吗</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av423982747">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>（2018年中）快快快快
+
+
+Tags:周星驰,特效,后期,视频教程,黑科技,枪击,AE,超短,大头特效,我的隐藏技能,跟着UP主创作吧（第二期）</span>
                   </div>
                 </a>
               </details>
@@ -11343,6 +12184,23 @@ int main(i…</span>
                     <span class="article-reading-time">(0 min)</span>
                     <span>In my last article, I reviewed some differences between creating and initializing lists in Groovy and doing the same thing in Java. I showed that Groovy has a straightforward and compact syntax for setting up lists compared to the steps necessary in Java.
 read more</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://opensourcesecurity.io">Open Source Security</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Episode 309 – The bright future of open source secuirty</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://opensourcesecurity.io/2022/02/06/episode-309-the-bright-future-of-open-source-secuirty/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Josh and Kurt talk about NPM requiring 2FA for the top 100 packages. We discuss the new Alpha and Omega projects from the OpenSSF and what it could mean for the future of open source security. Then we end on a note about the new Samba critical vulnerability. Show Notes NPM requires 2FA OpenSSF Alpha and Omega DavidContinue reading &quot;Episode 309 – The bright future of open source secuirty&quot;</span>
                   </div>
                 </a>
               </details>
@@ -22342,18 +23200,6 @@ OS threads are limited and ...</span>
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">100 Languages Speedrun: Episode 77: JVM Assembly with Jasmin</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://taw.hashnode.dev/100-languages-speedrun-episode-77-jvm-assembly-with-jasmin">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Java Virtual Machine (JVM) works in a weird way. First there&#x27;s some source code in Java or Kotlin or whatnot. It gets compiled into JVM Assembly as intermediate form. Then that gets compiled into actual executable machine code.
-In a way that JVM Asse...</span>
-                  </div>
-                </a>
-              </details>
-            </article>
         </section>
       </li>
       <li class="source">
@@ -22430,36 +23276,6 @@ In a way that JVM Asse...</span>
       </li>
       <li class="source">
         <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://nautil.us">Nautilus | Science Connected</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">What’s So Hard About Understanding Consciousness?</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://nautil.us/whats-so-hard-about-understanding-consciousness-13877/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(17 min)</span>
-                    <span>We brought Antonio Damasio and Anil Seth together to share their insights into neuroscience’s big question.
-The post What’s So Hard About Understanding Consciousness? appeared first on Nautilus | Science Connected.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">I Feel, Therefore I Am</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://nautil.us/i-feel-therefore-i-am-13869/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(10 min)</span>
-                    <span>Consciousness is a continuous conversation between the feeling body and the knowing mind.
-The post I Feel, Therefore I Am appeared first on Nautilus | Science Connected.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://reddit.buzzing.cc">Reddit 热门</a></h3>
           <section class="articles-per-source">
             <article>
@@ -22513,133 +23329,6 @@ The post I Feel, Therefore I Am appeared first on Nautilus | Science Connected.<
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
                     <span>有人为这张照片的NFT支付了473,000美元</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">你有一个美好的家庭!</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/Unexpected/comments/si3oho/you_have_a_wonderful_family/?score&#x3D;75116&amp;original_url&#x3D;https%3A%2F%2Fwww.reddit.com%2Fr%2FUnexpected%2Fcomments%2Fsi3oho%2Fyou_have_a_wonderful_family%2F&amp;discuss_url&#x3D;https%3A%2F%2Fwww.reddit.com%2Fr%2FUnexpected%2Fcomments%2Fsi3oho%2Fyou_have_a_wonderful_family%2F&amp;channel&#x3D;Unexpected&amp;sensitive&#x3D;false">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>你有一个美好的家庭!</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">WCGW不能正确设置投影仪屏幕</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://reddit.buzzing.cc/reddit/r/Whatcouldgowrong/comments/si6sct/wcgw_not_setting_the_projector_screen_correctly/?score&#x3D;75122&amp;original_url&#x3D;https%3A%2F%2Fwww.reddit.com%2Fr%2FWhatcouldgowrong%2Fcomments%2Fsi6sct%2Fwcgw_not_setting_the_projector_screen_correctly%2F&amp;discuss_url&#x3D;https%3A%2F%2Fwww.reddit.com%2Fr%2FWhatcouldgowrong%2Fcomments%2Fsi6sct%2Fwcgw_not_setting_the_projector_screen_correctly%2F&amp;channel&#x3D;Whatcouldgowrong&amp;sensitive&#x3D;false">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>WCGW不能正确设置投影仪屏幕</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://stratechery.com">Stratechery</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Apple Earnings, AMD Earnings, Google Earnings</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9hcHBsZS1lYXJuaW5ncy1hbWQtZWFybmluZ3MtZ29vZ2xlLWVhcm5pbmdzLw.qV6kSe2r4xVgjawmuaBdjow92KcByxTkhUUOHo0iwJHDSwAHJ54P-9Kh2xTijOrVePkF2cebm3Vt5d4d7x6-ziWeI-7MQrd68oMEtXDhChHqsE7NsLftlw0E00FG6KKug7suyn5oJKkAuOWFEXzLFFCmLBrYNYB6sqd3WVQuztqKodROMobIPgQgV_2zI3Eo9-U1z2Y0AUv2Fk7qAzqW8Z_hRhvW83KTUh3F80oiWgPWjEX4TtmO3AyUsqRqlmDbR6qBRWijGOj9QGPem8f3V9ipd279STsxW7llAHC22wJsEPuLD9V5X90zia_BpiyKVok7xnWgBVGOMJ-SlrZLLg">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Apple, AMD, and Google all delivered great results; margins were the most interesting places for analysis.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Apple Earnings, AMD Earnings, Google Earnings</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9hcHBsZS1lYXJuaW5ncy1hbWQtZWFybmluZ3MtZ29vZ2xlLWVhcm5pbmdzLw.oxbZFPeoHbmvyZTU2ztYekF7G8HX3bs4u7XeD7UGmbZ_N9bo7VL39Dps2d8fcmLdSjzLloUxdc2wzruFn8cGQsRt-TwYxhIGC39vS61ER28UgfuyWKTKK81RkJY14UnuoPH0fELm_bwv1DLNtfAdCcVDxWezI3jTmHoPHazOkHXodC441-rFfSP5YT59bDkt-IpeK9Eveylo_jXB2vARsP0fWMARNyrkrxj9QfK4-Kf_pC751BYDh9pArueypCNfDGlDmalJka3jz3NZu3trTmDuP530Xta5_hmR6uqSdccn7GfDHc5uvR2uFLXxW1Ixbrpp6b2oOqg9RPYO8qW9iA">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Apple, AMD, and Google all delivered great results; margins were the most interesting places for analysis.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Apple Earnings, AMD Earnings, Google Earnings</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9hcHBsZS1lYXJuaW5ncy1hbWQtZWFybmluZ3MtZ29vZ2xlLWVhcm5pbmdzLw.Ex3xfcGgGt9JZPuQpihGIelFF1qSTEKq914FIA3GUijKN9cm48h3URImkkx5B2olo5ZeDqnveeaTY05Vv90ofApUbflK1nzVphzE_xuhhONX1ubooiR9cHi9j7-dkLMbhMbIBWNVmEGhnuSvD7wO3inRbn_PVr1Zi6D-QIh5lA29Q2YHsgbpwuY-kzE2PPdXfQXhHuk4b_rT0f9As0ejICm_rQ15AJG3IYxKOXbLN0IgdcslGkzEEpw4iXroGgEeNBmBF9KGKZjONoGgdpFo2AQeBB31xSaoDE-coMllbwAjUPkDXimkECP9QcHNXgzh0U1SMbTCpAc-eeXSXHtYWA">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Apple, AMD, and Google all delivered great results; margins were the most interesting places for analysis.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Apple Earnings, AMD Earnings, Google Earnings</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9hcHBsZS1lYXJuaW5ncy1hbWQtZWFybmluZ3MtZ29vZ2xlLWVhcm5pbmdzLw.IZVnd71vRMDKc-T23xn-DfujYe-ClctNrJjyxn_vvpgKDBc0pGiEiMhzzo2OTldbMjVlrvCnq48xVRLFDWkEp0iyj9twsdT1XVSUdPymDXOYaXaPYWz1zuYQrOq9TW14VoXKz8c3qM-U6L7MmT0HS79IINBZfrX6UAe5LdJS4mu_DDTuawoOWIZ9l3NsJeyRqAmvZY6NA2ewQYsnIYFXL7OEag0kVbpUBadW9o8Bw2njYe2mmgCRmntgau_sHpDzb4VsEQ8qKmGC3KwpRGZJIkwxUN8_H-O57uW9hP3xiG5TAGw22ImX-SL2xBaMD2eM6Yr3c0WQEePtVQjk2p_kHA">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Apple, AMD, and Google all delivered great results; margins were the most interesting places for analysis.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Apple Earnings, AMD Earnings, Google Earnings</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9hcHBsZS1lYXJuaW5ncy1hbWQtZWFybmluZ3MtZ29vZ2xlLWVhcm5pbmdzLw.jsTodSwg5i9yy0EN_jIVY9vIXTkDafTwiqknjWtCX4fjuJc1ZpDdkm2bKyOJIsYuFt-RgWq4RruNJEYP9F3h8TZhIK-8RHEFJ16aIUkuI8wfC1v2tOvLNe_5nIZNQ9UWx_Ri1W2IezMMYAFydJDwhTVIjbHPTgTBMi-Pngql8FEXWwZDA3yFtBGGxW_705PF7YzNphE5BbE6hIlhYHbD7mR-cvAlQV5wl2ci8Do50avlxNVep0sAVliPJIoPJ01fHr_W6co0hq3Aj7dwQP515yvLTtJxt3WDreJU11QtMYnOKdEeceUQtBQTzZnunLycfHn5xgDpULwm95DV5VWMNQ">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Apple, AMD, and Google all delivered great results; margins were the most interesting places for analysis.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Apple Earnings, AMD Earnings, Google Earnings</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9hcHBsZS1lYXJuaW5ncy1hbWQtZWFybmluZ3MtZ29vZ2xlLWVhcm5pbmdzLw.pKoo6_sh8ZzT5wnRR925crS0VaUGGgwNPeikROo52qt0HX6lcW-MBkxKf-t4yeorrY8VxceW8LXi6Y3V8Hy6Ha8qbLQegAoCR3x9T1mb8VOSlT5AKYvx92QeQ9m9lm15hNuX8b7JK3KZv38KApjYUST8h5Ixz_URyEJmkOrMQzCYYxQ9nMyVl1wfkeTINyDs1MwOMfNZetMU4IGvnHImRn47Hizz--nKUMo0gkSKdr-4nUU4EK2ZMRhMoHNTytW0bJmoCF1dyQTTF6wrvaA9Dsb-xmzNWLDtRuXr3xbTn_hYESkAAwGe4WM43Hdg2VeebliwTtjPP7lBh9WqvQ3Eng">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Apple, AMD, and Google all delivered great results; margins were the most interesting places for analysis.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Apple Earnings, AMD Earnings, Google Earnings</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9hcHBsZS1lYXJuaW5ncy1hbWQtZWFybmluZ3MtZ29vZ2xlLWVhcm5pbmdzLw.ZUYIjGzoF2Z7cgcJFmMNpD3CVQzOyitWwBXwuKMR9hm7bRBkRMQBrHl3pwJO6dnGN1WuQbqHCQ_3jquUfNbErJeYC-ukObSKG1Q0vDUsdI7Uhut-ifYU3L58T1-4TzA-YjcCtyc0M0gjDAEWJKEvxrn7eMRjulbGOTT8SD_lwrLSRNAbdkc7DCchvmp_PMg5D6lKkdXbUx_lXnG9TLbNPfWGHlmK9_8U1UMNgneQ3WsXb0lhP71_CSENy7hFW9w0B1WZ818IUbYDkmipR7-h2AbiCJvEmxT32qQAlNsxjCfAPB_Pc2xKb4JSn1Mq8iENe7KdxQnRHoZChBZaQULrag">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Apple, AMD, and Google all delivered great results; margins were the most interesting places for analysis.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Apple Earnings, AMD Earnings, Google Earnings</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9hcHBsZS1lYXJuaW5ncy1hbWQtZWFybmluZ3MtZ29vZ2xlLWVhcm5pbmdzLw.sNyrCXyswnG6mEo3LYtTV0z0OLoImegiy-IpZYUErrXDUx4nExOp3IT1b_A44gL1ooFAboU4WmE8ZZJsCCV7-66u_bzY3wyOHQc_ft9Y6mudYKa0Fd12cAmlz0xxPwjtbCxxpU6ad7l5bkHcwNbBftWyuYO322kW51ONCtwlkgz2jhHRhCHKqPhg3RCQB9TzuVl_6tIUcobZi4rZDjIuWol2xNZcA0rym2zvm59gB3qFEZi_oLWD0ZnqtpyrMUzEo7tM4qlSPwlrfCANSMlGTxu9MuefwCeTMTSaQRrwtseWA-fCU0ManLGPI2_enRanZDIounQ_Sr6VNX0wZtJgVA">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Apple, AMD, and Google all delivered great results; margins were the most interesting places for analysis.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Apple Earnings, AMD Earnings, Google Earnings</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9hcHBsZS1lYXJuaW5ncy1hbWQtZWFybmluZ3MtZ29vZ2xlLWVhcm5pbmdzLw.d-MLCIQYKzp8I-96Fc6dh8d2x16DFjpevwDpfamg4zkDXFerf1UCXWLWgww6bSr9U6r5JlHnO0GCukRoOReQZHAKyXNSMT0Q_LLeUXM81pvNNWeQ7Sac2ZyAPQDt_nuMmH69rbmN5VCjWO6M8tEad6gYQVI58AEw2OPmPo7sX5fZVRdesr1dWWbr2FvbX-4ZblawDdAHQQXGXcQHa4SOqHV6QyDMsIk1_C2Ubhlgt-Dj04RRTFaK2DFg9wzLB0ZyykXOOBHCUXk_1DHjCjWcDPNX24fbuSvDOkvD07tuURFhkhLq8I8hZCQ7xfqgdrRT-7Jk0Q1RQuNGeKNb6qSjFg">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Apple, AMD, and Google all delivered great results; margins were the most interesting places for analysis.</span>
                   </div>
                 </a>
               </details>
@@ -22755,140 +23444,6 @@ Tags:跟着UP主创作吧（第二期）,我的隐藏技能,魔术,魔术揭秘,
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">空手变压岁钱，有手就能变！</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av808645653">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>-
-
-
-Tags:春节不无聊挑战,必剪创作</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">关于红包的三门问题！！</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av893739663">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>-
-
-
-Tags:底气满满的福气生活,打卡挑战,难题,红包,经验分享,野生技术协会</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">完了芭比Q了</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av423388724">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>Tags:知识分享官,野生技术协会,鉴定,历史,文化,学习</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">全程高能！难度等级从1到100的特技抛物，纵享丝滑</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av296214573">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>https://youtu.be/QvV50hRL4xo
-这是That&#x27;s Amazing团队2021技巧抛物的年度总结视频，和大家分享下这一年来比较有趣的技巧抛物
-原作者：That&#x27;s Amazing
-翻译：喵喵喵
-
-
-Tags:技术宅,技术,物理,高能,全程高能,知识,歪果仁,经验分享,野生技术协会,是在下输了</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">粉丝花5000去学炼金术？拜托你们看完这个视频，别花冤枉钱了</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av253712566">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>粉丝花5000去学炼金术？拜托你们看完这个视频，别花冤枉钱了#黄金#炼金#镀金回收#猎奇#知识#科普#防骗#踩坑
-
-
-Tags:知识分享官,打卡挑战,经验分享,黄金,炼金,猎奇,知识,科普,防骗,踩坑</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">春晚你要不...请我吧？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av851130724">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>揭秘春晚魔术这活竟然轮到我了。
-
-
-Tags:虎年迎新春,虎年好运来,春晚,魔术,魔方,春晚魔术揭秘</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">易 烊 千 玺 3 D 建 模</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av423704436">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>组织微博： @叁乔居                小哥哥微博：@打杂的十八
-
-
-Tags:春节档新片指南,3D,视频教程,经验分享,野生技术协会,制作过程,模型,#奇迹·笨小孩#,易烊千玺,建模,奇迹,奇迹·笨小孩</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">这不是阳宅的东西！</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av253439114">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>Tags:历史,文化,鉴定,学习,野生技术协会,知识分享官</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">妈耶！我傻我朋友也得傻！</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av380933725">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>Tags:野生技术协会,鉴定,历史,文化,学习</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">【搬】螺旋齿轮欣赏</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av893642642">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>https://youtube.com/watch?v&#x3D;MBJJbAiEWis
-
-
-Tags:野生技术协会,学习,模型</span>
-                  </div>
-                </a>
-              </details>
-            </article>
         </section>
       </li>
       <li class="source">
@@ -22905,134 +23460,6 @@ Tags:野生技术协会,学习,模型</span>
 
 
 Tags:科普,医生,健康,头疼,医学,偏头痛,头痛,原发性头痛,知识分享官,继发性头痛</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">不动刀，不戴隐形，视力恢复1.0？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av381127117">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>-
-
-
-Tags:眼镜,科普,医生,健康,手术,近视,视力,熬夜,隐形眼镜,知识分享官</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">不管你问什么，万能网友都能为你解答（207）</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av936185044">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>如果你发现了什么不认识的东西，欢迎私信给我
-或者有啥新奇的物件，可以投稿让大家一起猜一猜
-
-
-Tags:知识分享官,科普,打卡挑战,知识,知识分享,科普知识,冷知识,猎奇,有趣,趣闻</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">从挤牙膏吃冻干到满汉全席，舌尖上的太空是这样卷起来的......</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av296198695">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>太空食品是如何进化的？空间站只有微重力宇航员能正常吞咽食物吗？咱们天宫空间站的中国宇航员又是吃什么、怎么吃、好吃吗？
-
-
-Tags:知识分享官,天文,宇宙,科普,科学,涨知识,中国</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">捂一身汗就能退烧？要命的误会</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av936195725">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>素材来源：
-Why do we sweat? ——TED-Ed
-Why do you get a fever when you&#x27;re sick? - TED-Ed
-Why Do We Get a Fever? ——Peekaboo Kidz
-What is Fever? ——FreeMedEducation
-
-
-Tags:学习,健康,冷知识,发烧,医学,辟谣,涨知识,有用,科学科普,打卡挑战</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">欧洲中世纪5大酷刑，请君入牛有多恐怖？活生生将人烤熟！</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av551216661">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Tags:自然,生物,生命,实验,科普,全程高能,趣闻</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">为了让你开心，科学家有多努力？让你笑出声的搞笑诺贝尔奖。科普 科学</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av808362960">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>-
-
-
-Tags:科学,科普,学习,实验,诺贝尔奖</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">酒精真相：抱歉，安全摄入量为0的一级致癌物  【医学真相】第一集</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av466221464">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>抱歉，虽然大过年的，但是该讲的还是要讲。
-
-
-Tags:知识分享官,健康,科学,酒,成瘾,春节</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">震惊！为何生的越插越深，熟的却插不进去？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av808625253">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>-
-
-
-Tags:能量要正态度要氢,一起晒出满满的正能量,打卡挑战,必剪创作,自然,物理,力学,科学,科普,实验,教育</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">冰壶比赛咋来的？到底咋玩的？刷地又是在干啥？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av508730843">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>冬奥会正式开始啦～今天跟奥组委一起与大家唠唠“冰壶”～
-
-
-Tags:知识分享官,冬奥知识分享官</span>
                   </div>
                 </a>
               </details>
@@ -23058,115 +23485,6 @@ Tags:知识分享官,冬奥知识分享官</span>
       </li>
       <li class="source">
         <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://sspai.com/matrix">少数派 -- Matrix</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">写作，是一种生活方式｜2021 年度征文</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://sspai.com/post/71272">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>好像，「XX 是一种生活方式」这样的句型要被用烂了。但是我实在想不到一个更好的方法去总结我接下来要写出来的这篇文章。毕竟，在少数派的写作本身，就是我生活的一部分，而我的生活方式中的确有不少成分是围绕写作这个目的去展开的。尽管我不是职业作家（天哪，我觉得如果我有那个自律的能力的话，我很想成为一名自由撰稿人），但是写作已经超越了爱好的范畴 —— 所以我只好把它定义为生活方式。
-去年年底，我恰好迷上了美剧《Sex and the City》。这部美剧以 Carrie Bradshaw，纽约一家报纸的专栏作家，书写她自己和朋友们的罗曼史，作为展开的方式。当然了，这部美剧以其开放大胆的镜头著称，但是我却总是为主角 Carrie 写作的方式（时间、地点）而着迷：有的时候她是在窗边，看着对面的一对情侣做着不可描述的事情；有的时候是坐在床上，点着一根烟，开始冥想；有的时候是因为受不了公寓的拥挤不堪，出门去咖啡馆看着来来往往的人群 —— 或许正是这份写作时无拘无束的自由，让我最为渴望吧。
-Carrie 和她的 PowerBook G3
-阅读是写作的开始
-获取信息可能是输出信息的第一步 —— 我反正是这么觉得。自由的写作本身就来自大量的泛读，怪不得人们常说「天下文章一大抄」。套路都摆在那里，写作的时候留心借鉴，的确是事半功倍的。
-我的阅读来源其实还算不上太「广泛」，只有一些会经常关注的媒体 / up / YouTuber，作为信息来源我个人认为已经足够，同时也不会每天感到信息过载。由于个人感兴趣的点主要集中在科技 / 数码方面，关注的媒体网站也大多数在此列。
-YouTuber / B 站 up
-现在是一个视频的时代，对吧？所以免不了的，我也关注了一些 YouTuber 和 B 站 up，主要也是有关科技的。关注视频类的账号，其实主要是因为有些时候看文字测评很容易睡着，视频其实从形式上有趣、直接…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://writing.kemitchell.com">/dev/lawyer</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Software Pay Data 2020</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://writing.kemitchell.com/2022/02/02/BLS-Occupational-Outlook-2020.html">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>data from the Bureau of Labor Statistics</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.extremetech.com">ExtremeTechExtremeTech</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Sony Will Sell Fewer PlayStation 5 Consoles in 2022 Due to Chip Shortage</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.extremetech.com/gaming/331263-sony-will-sell-fewer-playstation-5-consoles-in-2022-due-to-chip-shortage">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(3 min)</span>
-                    <span>Photo by Charles Sims on Unsplash
-Sony has announced that it has cut its PS5 sales outlook, and that has nothing to do with demand. You can blame the continued shortage of PlayStation 5 machines on the chip shortage. 
-The post Sony Will Sell Fewer PlayStation 5 Consoles in 2022 Due to Chip Shortage appeared first on ExtremeTech.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Backblaze Publishes Stats for Hard Drive Failure in 2021</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.extremetech.com/computing/331241-backblaze-publishes-stats-for-hard-drive-failure-in-2021">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(4 min)</span>
-                    <span>The Backblaze 4U storage pods can save up to 480 TB of user data. 
-Hard drive failure rates in the company&#x27;s storage pods have remained low for 2021, a good sign for data hoarders. 
-The post Backblaze Publishes Stats for Hard Drive Failure in 2021 appeared first on ExtremeTech.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Human Tetrachromacy is Real. Here’s What We Know</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.extremetech.com/extreme/331169-human-tetrachromacy-is-real-heres-what-we-know">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(6 min)</span>
-                    <span>After decades of exhaustive study, scientists have determined that human tetrachromacy is real. It comes in two forms -- and one can actually be an acquired trait.
-The post Human Tetrachromacy is Real. Here’s What We Know appeared first on ExtremeTech.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Analysts: Intel and AMD to Swap Market Share in 2022 in Mobile, Server</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.extremetech.com/computing/331204-analysts-intel-and-amd-to-swap-market-share-in-2022-in-mobile-server">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(3 min)</span>
-                    <span>The clash of the titans will rage on in 2022, with both Intel and AMD making gains in each other&#x27;s prime territories. 
-The post Analysts: Intel and AMD to Swap Market Share in 2022 in Mobile, Server appeared first on ExtremeTech.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">FTC Will Review MS Deal to Buy Activision Blizzard</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.extremetech.com/gaming/331210-ftc-will-review-ms-deal-to-buy-activision-blizzard">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>The FTC may be toughening up its guidelines just in time to prevent Microsoft from becoming the third-largest video game maker in the world. 
-The post FTC Will Review MS Deal to Buy Activision Blizzard appeared first on ExtremeTech.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://www.freecodecamp.org/news">freeCodeCamp.org</a></h3>
           <section class="articles-per-source">
             <article>
@@ -23176,47 +23494,6 @@ The post FTC Will Review MS Deal to Buy Activision Blizzard appeared first on Ex
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(116 min)</span>
                     <span>If you want to design your app in the best way possible, it is important to really understand the needs of your users. This can be done through user research. We just published a UI / UX design course on the freeCodeCamp.org YouTube channel that will teach you how to</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">How to Choose a CMS – WordPress vs Ghost vs Shopify</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.freecodecamp.org/news/chose-a-cms-wordpress-vs-shopify-vs-ghost/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(8 min)</span>
-                    <span>WordPress, Shopify, and Ghost are some of the most powerful and popular CMS platforms out there. And you might wonder why so many people use them. Well, it&#x27;s because they&#x27;re easy to use, cost-effective, and highly efficient. With WordPress, Shopify, and Ghost, you can create a website from scratch in</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.macsparky.com">MacSparky</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">SaneBox (Sponsor)</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.macsparky.com/blog/2022/02/sanebox-sponsor-2/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>New year, new you going as planned? If you resolved to declutter and clean up your inbox for the new year, consider giving SaneBox a try. You can test it out for yourself with their 14-day free trial. There’s nothing to download, and SaneBox works with any webmail/email client. So, why SaneBox? SaneBox will learn... Continue reading →
-The post SaneBox (Sponsor) appeared first on MacSparky.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Focused 144: Enough, with Patrick Rhone</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.macsparky.com/blog/2022/02/focused-144-enough-with-patrick-rhone/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>Patrick Rhone joins Mike and me on this episode of Focused to talk about analog productivity, knolling, mise en place, and staying focused while wearing many hats. This episode of Focused is sponsored by: Indeed: Get a free $75 credit to upgrade your job post. Squarespace: Make your next move. Enter offer code FOCUSED at checkout to... Continue reading →
-The post Focused 144: Enough, with Patrick Rhone appeared first on MacSparky.</span>
                   </div>
                 </a>
               </details>
@@ -23251,90 +23528,6 @@ The post GitHub becomes Patreon for developers, with new sponsors-only repositor
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Raspberry Pi OS now available in 64-bit, improving app compatibility</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/raspberry-pi-os-64-bit/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(3 min)</span>
-                    <span>The Raspberry Pi series of single-board computers has been a runaway success over the years, thanks to its fantastic versatility and low cost. From powering DIY electronics projects to functioning as cheap PCs for learning programming, the Raspberry Pi series can do it all, and now another significant upgrade has arrived: a 64-bit version of
-The post Raspberry Pi OS now available in 64-bit, improving app compatibility appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">XDA Basics: How to make a meme in 2022 so you can (try to) be funny</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/how-to-make-a-meme/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(4 min)</span>
-                    <span>Memes have become the language of the internet, and everyone is using them. It’s gotten to the point where it’s hard to define what a meme really is. Nowadays, memes can really be almost any image used in the right context. Any image used as a reaction to a specific situation can be a meme,
-The post XDA Basics: How to make a meme in 2022 so you can (try to) be funny appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Microsoft starts testing ‘Lists’ task manager with personal accounts</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/microsoft-lists-personal-accounts/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(3 min)</span>
-                    <span>Microsoft To-Do has been available for years as a simple task management application for mobile and desktop, but the company has also maintained a more powerful alternative for businesses and other large organizations. Microsoft Lists is a super-charged task manager with a greater focus on collaboration, and now Microsoft is starting to open it up
-The post Microsoft starts testing ‘Lists’ task manager with personal accounts appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Want to use Windows 11 on the Microsoft Surface Duo? It’s getting there</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/windows-11-microsoft-surface-duo-in-development/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(3 min)</span>
-                    <span>The original Microsoft Surface Duo shipped with Android 10 out of the box, and the phone’s software experience was famously buggy. Nevertheless, some users managed to get enjoyment out of it, and we’ve seen the advent of a successor in the form of the Microsoft Surface Duo 2. It’s still an Android-based device though, with
-The post Want to use Windows 11 on the Microsoft Surface Duo? It’s getting there appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">These are the best pre-built gaming PCs you can buy in 2022</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/best-pre-built-gaming-pcs/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(18 min)</span>
-                    <span>Finding the right parts for your new PC build is extremely difficult right now due to component shortages. Buying the best graphics card, for instance, is almost impossible. Even if you manage to find one in stock, it’s probably going to cost you a ludicrous amount of money. This is why we’ve been recommending buying
-The post These are the best pre-built gaming PCs you can buy in 2022 appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Android screen mirroring tool scrcpy’s latest update brings keyboard and mouse passthrough without USB debugging</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/scrcpy-update-keyboard-mouse-passthrough/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(3 min)</span>
-                    <span>The scrcpy (short for “screen copy“) tool allows you to mirror your Android device’s screen to a PC or Mac. The popular open source project has been steadily gaining new features and functionalities over the past months. Back in July last year, the app brought support for Android 12, introduced the ability to use the
-The post Android screen mirroring tool scrcpy’s latest update brings keyboard and mouse passthrough without USB debugging appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">How to switch off or restart the Samsung Galaxy Z Flip 3</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.xda-developers.com/how-to-switch-off-restart-samsung-galaxy-z-flip-3/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(5 min)</span>
-                    <span>While you can simply press and hold the power button on most Android devices to bring up the power menu, things aren’t as simple when it comes to newer Samsung devices. By default, if you press and hold the power button (or Side Key, as Samsung likes to call it) on a Galaxy smartphone, it
-The post How to switch off or restart the Samsung Galaxy Z Flip 3 appeared first on xda-developers.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
         </section>
       </li>
     </ul>
@@ -23342,197 +23535,6 @@ The post How to switch off or restart the Samsung Galaxy Z Flip 3 appeared first
   <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2022-02-01">2022-02-01</time></h2>
     <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.bilibili.com">bilibili 野生技能协会 最热视频</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">现实还原电影操作，1:1翻拍赌圣！！！</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av936244650">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>这原本是看片玩牌系列的p2，但是由于系统问题，被删减了，时隔多年终于重现天日，
-
-
-Tags:周星驰,魔术,翻拍,吴孟达,花切,赌圣,野生技术协会,yolo,打卡挑战,故事档案馆</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">【防火防盗防小偷】</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av723452982">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Tags:历史,文化,鉴定,学习,野生技术协会</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">揭秘！我筹备三年的魔术幕后大公开！</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av466185707">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>祝大家新年快乐 要好好地珍惜身边的人！
-
-↓↓更多精彩请关注↓↓ 
-围脖：@简纶廷_Eric 
-ins：@ecsleight 
-TB: Eric Chien魔术店
-
-
-Tags:知识分享官,野生技术协会,制作过程,教程,技术,黑科技,魔术,魔术揭秘,综艺,大型魔术</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">揭秘春晚魔术迎新纳福，虎虎生威！</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av593721420">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>-
-
-
-Tags:春节不无聊挑战,必剪创作,刘谦,虎虎生威,春晚魔术揭秘,邓男子</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">春晚令我失望的魔方魔术</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av466170192">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>-
-
-
-Tags:必剪创作,春晚,魔方,魔术,邓男子</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">这个学校只有一口井，水泵坏了连厕所都没得冲</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av851199546">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>这个学校只有一口井，水泵坏了连厕所都没得冲#猎奇#手工#机电#电机#电工#水泵#机械#解压
-
-
-Tags:知识分享官,打卡挑战,猎奇,手工,机电,电机,电工,水泵,机械,解压</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">年纪虽小套路不少</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av893415596">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>Tags:历史,教育,文化,鉴定,学习,野生技术协会</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">春晚魔术被1秒破解了，但仍比大张伟脱口秀和姜昆相声精彩十倍</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av423686788">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>-
-
-
-Tags:春晚,脱口秀,相声,郭德纲,综艺,魔术,杂谈,姜昆,打卡挑战,必剪创作,春节不无聊挑战,你在看春晚吗？一起来聊聊</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">2022年春晚魔方魔术大揭秘，全面分析！困惑终于知晓</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av253736461">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>连夜制作的视频，大家给个三连支持下，这个是虎年春晚魔术全面分析揭秘。现在快凌晨2点钟了，大家支持下这个视频，给我点动力，谢谢了
-
-
-Tags:春晚魔术揭秘,魔术揭秘,虎年魔术揭秘</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">春晚魔术揭秘</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av211170012">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>想学魔方的宝戳这
-初级教程：BV16b4y1Y7Uw
-中级教程：BV1ZT4y1f7YM
-
-
-Tags:大圣魔方,魔方教程,2022春晚,春晚,春晚魔术,春晚魔术揭秘,2022春晚魔术揭秘,三阶魔方</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">“我不是托”</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av466237159">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>春晚魔术解读
-
-
-Tags:魔方</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">22央视春晚魔方魔术开场揭秘</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av636154839">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>超简单的四步打乱 四步还原
-只是加了些顺时针逆时针画圈的浮夸表演效果
-
-
-Tags:春晚,魔术,魔方,晚会,三阶魔方,魔术表演,必剪创作</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">“我真的不是托！”揭秘2022春晚魔方魔术</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bilibili.com/video/av423650836">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>确实没有什么新意。。。我本来还打算用CE算的，结果发现那魔术师捂得严严实实的，结果一试就试出来了，就是一个四步打乱。
-春晚魔术一定是托。
-
-
-Tags:知识分享官,春节不无聊挑战,必剪创作,魔方,魔术,春晚,魔术表演</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
       <li class="source">
         <section>
           <h3 class="source-name"><a class="source-name__link" href="https://type.cyhsu.xyz">Neverland</a></h3>
@@ -23576,7 +23578,7 @@ Tags:知识分享官,春节不无聊挑战,必剪创作,魔方,魔术,春晚,魔
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-02-12T02:04:15.155Z">2022-02-12T02:04:15.155Z</time>
+    <time id="build-timestamp" datetime="2022-02-12T07:14:26.954Z">2022-02-12T07:14:26.954Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.12.0</a></span>
   </footer>
   <script src="index.js"></script>

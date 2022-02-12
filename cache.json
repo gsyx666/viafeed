@@ -397,15 +397,6 @@
           "publishedOn": "2022-02-02T19:17:05.000Z",
           "wordCount": 34802,
           "title": "Use User Research to Create the Perfect UI Design"
-        },
-        {
-          "id": "61f8480bf2ed6b06db5a9d2b",
-          "author": "Edan Ben-Atar",
-          "description": "WordPress, Shopify, and Ghost are some of the most powerful and popular CMS platforms out there. And you might wonder why so many people use them. Well, it's because they're easy to use, cost-effective, and highly efficient. With WordPress, Shopify, and Ghost, you can create a website from scratch in",
-          "link": "https://www.freecodecamp.org/news/chose-a-cms-wordpress-vs-shopify-vs-ghost/",
-          "publishedOn": "2022-02-02T17:05:13.000Z",
-          "wordCount": 2308,
-          "title": "How to Choose a CMS – WordPress vs Ghost vs Shopify"
         }
       ]
     },
@@ -414,6 +405,51 @@
       "feedUrl": "https://dev.to/feed",
       "siteUrl": "https://dev.to",
       "articles": [
+        {
+          "id": "https://dev.to/therajatg/pseudo-classes-in-css-part-4-active-2m1e",
+          "author": "Rajat Gupta",
+          "description": "Note: This is the 4th part of the 5 part series dedicated to the pseudo classes of CSS.\nIn this part, we'll understand the the pseudo class :active but if you want to jump to any other pseudo class, be my guest and click on the links provided below:\npart 1: pesudo class :hover\npart 2: pseudo class :link\npart 3: pseudo class :visited\npart 4: pseudo class: active\npart 5: LVHA order - yet to be written.\n** The :active selector is used to style the active link.**\nThe difference between :link, :visited and :active is very subtle. Therefore, I urge to open your code editor and start playing with these.\n\nWe can better understand the :active selector via an example:\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <met…",
+          "link": "https://dev.to/therajatg/pseudo-classes-in-css-part-4-active-2m1e",
+          "publishedOn": "2022-02-12T06:31:37.000Z",
+          "wordCount": 750,
+          "title": "pseudo classes in CSS - part 4 (:active)"
+        },
+        {
+          "id": "https://dev.to/uilicious/i-suck-at-wordle-so-i-solved-it-with-js-and-uilicious-4hfc",
+          "author": "Eugene Cheah",
+          "description": "TLDR: I wrote a Wordle solver bot with Javascript and UIlicious. You can run this snippet any day to get your daily Wordle solution. Try and see if you can get a better score than the bot! Feel free to edit it and optimise the solver algorithm!\nThe wordler solver is covered in 3 parts, which covers the\nUI interaction code (this article)\nWordle Statistical model, and the math behind it (@todo) \nUnit testing and benchmarking of the wordle solver (@todo) \n\n\nIf you haven't already heard of Wordle, it's a fun puzzle game that challenges you to guess a valid five-letter word in six tries or less.\nMy wife is really addicted to Wordle, and she's been bugging me to try it every day. I suppose for her, there's a thrill in getting the right word in the least amount of tries. And because we're both ga…",
+          "link": "https://dev.to/uilicious/i-suck-at-wordle-so-i-solved-it-with-js-and-uilicious-4hfc",
+          "publishedOn": "2022-02-12T05:05:17.000Z",
+          "wordCount": 2595,
+          "title": "I suck at WORDLE, so I solved it with JS and Uilicious"
+        },
+        {
+          "id": "https://dev.to/fadhilradh/level-up-your-react-game-with-testing-part-1-lhd",
+          "author": "Fadhil Radhian",
+          "description": "Are you currently learning React JS or using it in your work ?\n\n\nLet's step up the game by learning how to test our React App. We will learn how to test using packages that comes bundled with create-react-app, Jest and React Testing Library. In this first part of the series, let's understand about these two packages and a simple test.\nJest is a testing library developed by Facebook to find, run tests and determine whether the tests pass or fail. It is also the test runner that recommended by React Testing Library.\nReact Testing Library is an open-source package, part of Testing Library package. Its job is to provide Virtual DOM for the tests and interact with the Virtual DOM while testing. For convenience, we will refer React Testing Library as RTL throughout this article.\nSo, basically th…",
+          "link": "https://dev.to/fadhilradh/level-up-your-react-game-with-testing-part-1-lhd",
+          "publishedOn": "2022-02-12T04:51:38.000Z",
+          "wordCount": 1267,
+          "title": "Level-Up Your React Skill with Testing (Part 1)"
+        },
+        {
+          "id": "https://dev.to/benpobi/build-a-video-conference-app-from-scratch-using-webrtcwebsocketphp-js-day-37-4b3g",
+          "author": "ben pobi",
+          "description": "In this video we'll cover how to Create answer",
+          "link": "https://dev.to/benpobi/build-a-video-conference-app-from-scratch-using-webrtcwebsocketphp-js-day-37-4b3g",
+          "publishedOn": "2022-02-12T04:11:26.000Z",
+          "wordCount": 414,
+          "title": "Build a Video Conference App from Scratch using WebRTC,Websocket,PHP +JS Day 37"
+        },
+        {
+          "id": "https://dev.to/nelsoncode/how-to-monitor-posgresql-with-prometheus-and-grafana-docker-24c8",
+          "author": "Nelson Adonis Hernández",
+          "description": "For this example we will use Docker compose to be able to run all the services\n1.Docker Compose\nversion: \"3.9\"\nservices:\n  grafana:\n    image: grafana/grafana\n    ports:\n      - 3000:3000\n\n  prometheus:\n    image: prom/prometheus\n    ports:\n      - 9090:9090\n    volumes:\n      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro\n\n  postgres:\n    image: postgres:12\n    ports:\n      - 5432:5432\n    volumes:\n      - ./backup:/var/lib/postgresql/data\n    environment:\n      POSTGRES_PASSWORD: postgrespassword\n      POSTGRES_DB: shop\n\n  postgres-exporter:\n    image: prometheuscommunity/postgres-exporter\n    ports:\n      - 9187:9187\n    environment:\n      DATA_SOURCE_NAME: \"postgresql://postgres:postgrespassword@postgres:5432/shop?sslmode=disable\"\n    links:\n      - postgres\n      - prometheus\n\n\n2.Prometheus File Settings (prometheus.yml)\nglobal:\n  scrape_interval: 15s\n  evaluation_interval: 15s\n\nscrape_configs:\n  - job_name: prometheus\n    static_configs:\n      - targets: [\"localhost:9090\"]\n  - job_name: postgres-exporter\n    static_configs:\n      - targets: [\"postgres-exporter:9187\"]\n\n3.Run Docker Compose\ndocker-compose up\n\n4.Check status of Prometheus and Redis Exporter\nhttp://localhost:9090/targets\n\n5.Visit Grafana Dashboard\nDefault\nUser: admin\nhttp://localhost:3000\n\n\n6.Add data source\n\nSave and test\n\n7.Import PostgreSQL Dashboard for Prometheus\nFor this we will use a Dashboard created by the community\n\nhttps://grafana.com/grafana/dashboards/9628\n8.Import JSON of code\n\n\nCode: 9628\n9.Dashboard\n\nCode of example (GitHub Gist)\nhttps://gist.github.com/nelsoncode019/1c0f7930aab755223de7f971f3aca94b",
+          "link": "https://dev.to/nelsoncode/how-to-monitor-posgresql-with-prometheus-and-grafana-docker-24c8",
+          "publishedOn": "2022-02-12T02:26:00.000Z",
+          "wordCount": 575,
+          "title": "How to monitor PosgreSQL with Prometheus and Grafana | Docker"
+        },
         {
           "id": "https://dev.to/aws-builders/introduction-to-amazon-machine-learning-5adc",
           "author": "Adit Modi",
@@ -449,6 +485,15 @@
           "publishedOn": "2022-02-11T23:14:44.000Z",
           "wordCount": 1087,
           "title": "Case Study - Fluent Search"
+        },
+        {
+          "id": "https://dev.to/devteam/what-was-your-win-this-week-5c2m",
+          "author": "Gracie Gregory (she/her)",
+          "description": "Hey there! \nLooking back on this past week, what was something you were proud of accomplishing?\nAll wins count — big or small 🎉\nExamples of 'wins' include:\nStarting a new project\nFixing a tricky bug\nGetting a decent amount of sleep ... or whatever else might spark joy ❤️ \nCongrats on those wins and happy Friday!",
+          "link": "https://dev.to/devteam/what-was-your-win-this-week-5c2m",
+          "publishedOn": "2022-02-11T23:11:34.000Z",
+          "wordCount": 862,
+          "title": "What was your win this week?"
         },
         {
           "id": "https://dev.to/collinsonindo/javascript-objects-2gig",
@@ -1393,6 +1438,15 @@
       "feedUrl": "https://sspai.com/feed",
       "siteUrl": "https://sspai.com",
       "articles": [
+        {
+          "id": "https://sspai.com/post/71354",
+          "author": "Kiririn",
+          "description": "Matrix 首页推荐\nMatrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。\n文章代表作者个人观点，少数派仅对标题和排版略作修改。\n\n北京时间 2022 年 2 月 10 日凌晨 6 时，任天堂 2022 春季直面会如期展开。作为全世界 NS 玩家翘首以盼的游戏「峰会」，本场直面会无疑是任天堂对微软和索尼两大巨头竞相收购工作室的有力回应。尽管最令人期待的《塞尔达传说：旷野之息 2》并未有新消息放出，但在 40 分钟的直面会时长中悉数登场的第一方及第三方大作也赚够了玩家的眼球。\n与 PlayStation 或 Xbox 这类十分注重性能表现的主机平台不同，NS 作为主机与掌机跨界产品的本质似乎注定了其「冷饭之王」的命运，本场直面会上当然也少不了独占新作与移植作品扎堆出现的传统艺能。但无论热饭冷饭，好吃的饭才是好饭——因此，本文挑选了一些本场直面会上值得「追根溯源」的游戏作品，并从 NS 平台的游戏体验入手，为各位少数派带来一份详尽的「种 / 拔草」参考建议。\n注：本文内容具有时效性，部分内容带有主观色彩，实际游戏表现请以正式发售版本为准，游戏截图来自机核。\n火焰之纹章 无双 风花雪月\n\n做完火纹做塞尔达，做完塞尔达做火纹，脸都不要了。\n\n由光荣操刀的《火焰之纹章 无双 风花雪月》是本次直面会开场展示的第一个游戏，将于 6 月 24 日正式发布。从预告片可以看出，本作走的依然是经典 IP + 无双玩法，并融合原作剧情架构和部分系统设定的老路数。光荣打磨了十几年的玩法套路自然不必多言，稍有动作游戏经验的玩家都能很快上手；鉴于任天堂和光荣已经不是第一次在 NS 平台上合作推出此类游戏，参考前作《火焰纹章 无双》以及两部《塞尔达无双》的画面和帧数表现，本作的优化问题也不必…",
+          "link": "https://sspai.com/post/71354",
+          "publishedOn": "2022-02-12T03:27:13.000Z",
+          "wordCount": null,
+          "title": "任天堂 2022 春季直面会之后，我们为你带来了这份「种 / 拔草」参考建议"
+        },
         {
           "id": "https://sspai.com/post/71382",
           "author": "少数派编辑部",
@@ -3475,90 +3529,6 @@
           "enclosure": {
             "url": "https://www.xda-developers.com/files/2022/02/Sponsors-1200x630-X2.jpg"
           }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=591481",
-          "author": "Corbin Davenport",
-          "description": "The Raspberry Pi series of single-board computers has been a runaway success over the years, thanks to its fantastic versatility and low cost. From powering DIY electronics projects to functioning as cheap PCs for learning programming, the Raspberry Pi series can do it all, and now another significant upgrade has arrived: a 64-bit version of\nThe post Raspberry Pi OS now available in 64-bit, improving app compatibility appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/raspberry-pi-os-64-bit/",
-          "publishedOn": "2022-02-02T18:48:09.000Z",
-          "wordCount": 841,
-          "title": "Raspberry Pi OS now available in 64-bit, improving app compatibility",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2019/06/Raspberry-Feature.png"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=590459",
-          "author": "João Carrasqueira",
-          "description": "Memes have become the language of the internet, and everyone is using them. It’s gotten to the point where it’s hard to define what a meme really is. Nowadays, memes can really be almost any image used in the right context. Any image used as a reaction to a specific situation can be a meme,\nThe post XDA Basics: How to make a meme in 2022 so you can (try to) be funny appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/how-to-make-a-meme/",
-          "publishedOn": "2022-02-02T18:00:39.000Z",
-          "wordCount": 1233,
-          "title": "XDA Basics: How to make a meme in 2022 so you can (try to) be funny",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2022/01/How-to-make-a-meme.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=591447",
-          "author": "Corbin Davenport",
-          "description": "Microsoft To-Do has been available for years as a simple task management application for mobile and desktop, but the company has also maintained a more powerful alternative for businesses and other large organizations. Microsoft Lists is a super-charged task manager with a greater focus on collaboration, and now Microsoft is starting to open it up\nThe post Microsoft starts testing ‘Lists’ task manager with personal accounts appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/microsoft-lists-personal-accounts/",
-          "publishedOn": "2022-02-02T16:49:46.000Z",
-          "wordCount": 770,
-          "title": "Microsoft starts testing ‘Lists’ task manager with personal accounts",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2022/02/microsoft-lists-featured.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=591413",
-          "author": "Adam Conway",
-          "description": "The original Microsoft Surface Duo shipped with Android 10 out of the box, and the phone’s software experience was famously buggy. Nevertheless, some users managed to get enjoyment out of it, and we’ve seen the advent of a successor in the form of the Microsoft Surface Duo 2. It’s still an Android-based device though, with\nThe post Want to use Windows 11 on the Microsoft Surface Duo? It’s getting there appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/windows-11-microsoft-surface-duo-in-development/",
-          "publishedOn": "2022-02-02T16:31:54.000Z",
-          "wordCount": 876,
-          "title": "Want to use Windows 11 on the Microsoft Surface Duo? It’s getting there",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2022/02/surface-duo-3-windows-11.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=589831",
-          "author": "Karthik Iyer",
-          "description": "Finding the right parts for your new PC build is extremely difficult right now due to component shortages. Buying the best graphics card, for instance, is almost impossible. Even if you manage to find one in stock, it’s probably going to cost you a ludicrous amount of money. This is why we’ve been recommending buying\nThe post These are the best pre-built gaming PCs you can buy in 2022 appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/best-pre-built-gaming-pcs/",
-          "publishedOn": "2022-02-02T16:00:30.000Z",
-          "wordCount": 5497,
-          "title": "These are the best pre-built gaming PCs you can buy in 2022",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2022/01/Best-pre-built-gaming-PCs.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=590729",
-          "author": "Skanda Hazarika",
-          "description": "The scrcpy (short for “screen copy“) tool allows you to mirror your Android device’s screen to a PC or Mac. The popular open source project has been steadily gaining new features and functionalities over the past months. Back in July last year, the app brought support for Android 12, introduced the ability to use the\nThe post Android screen mirroring tool scrcpy’s latest update brings keyboard and mouse passthrough without USB debugging appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/scrcpy-update-keyboard-mouse-passthrough/",
-          "publishedOn": "2022-02-02T14:30:42.000Z",
-          "wordCount": 894,
-          "title": "Android screen mirroring tool scrcpy’s latest update brings keyboard and mouse passthrough without USB debugging",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2018/03/scrcpy.jpg"
-          }
-        },
-        {
-          "id": "https://www.xda-developers.com/?p=591055",
-          "author": "Pranob Mehrotra",
-          "description": "While you can simply press and hold the power button on most Android devices to bring up the power menu, things aren’t as simple when it comes to newer Samsung devices. By default, if you press and hold the power button (or Side Key, as Samsung likes to call it) on a Galaxy smartphone, it\nThe post How to switch off or restart the Samsung Galaxy Z Flip 3 appeared first on xda-developers.",
-          "link": "https://www.xda-developers.com/how-to-switch-off-restart-samsung-galaxy-z-flip-3/",
-          "publishedOn": "2022-02-02T14:10:10.000Z",
-          "wordCount": 1623,
-          "title": "How to switch off or restart the Samsung Galaxy Z Flip 3",
-          "enclosure": {
-            "url": "https://www.xda-developers.com/files/2022/02/How-to-turn-off-Galaxy-Z-Flip-3-featured-1.jpg"
-          }
         }
       ]
     },
@@ -3870,96 +3840,6 @@
           "publishedOn": "2022-02-03T13:39:15.000Z",
           "wordCount": null,
           "title": "Meta's Earnings, Facebook's Three Challenges, Financial Versus Existential Risks",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/apple-earnings-amd-earnings-google-earnings/",
-          "author": "Ben Thompson",
-          "description": "Apple, AMD, and Google all delivered great results; margins were the most interesting places for analysis.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9hcHBsZS1lYXJuaW5ncy1hbWQtZWFybmluZ3MtZ29vZ2xlLWVhcm5pbmdzLw.qV6kSe2r4xVgjawmuaBdjow92KcByxTkhUUOHo0iwJHDSwAHJ54P-9Kh2xTijOrVePkF2cebm3Vt5d4d7x6-ziWeI-7MQrd68oMEtXDhChHqsE7NsLftlw0E00FG6KKug7suyn5oJKkAuOWFEXzLFFCmLBrYNYB6sqd3WVQuztqKodROMobIPgQgV_2zI3Eo9-U1z2Y0AUv2Fk7qAzqW8Z_hRhvW83KTUh3F80oiWgPWjEX4TtmO3AyUsqRqlmDbR6qBRWijGOj9QGPem8f3V9ipd279STsxW7llAHC22wJsEPuLD9V5X90zia_BpiyKVok7xnWgBVGOMJ-SlrZLLg",
-          "publishedOn": "2022-02-02T14:14:58.000Z",
-          "wordCount": null,
-          "title": "Apple Earnings, AMD Earnings, Google Earnings",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/apple-earnings-amd-earnings-google-earnings/",
-          "author": "Ben Thompson",
-          "description": "Apple, AMD, and Google all delivered great results; margins were the most interesting places for analysis.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9hcHBsZS1lYXJuaW5ncy1hbWQtZWFybmluZ3MtZ29vZ2xlLWVhcm5pbmdzLw.oxbZFPeoHbmvyZTU2ztYekF7G8HX3bs4u7XeD7UGmbZ_N9bo7VL39Dps2d8fcmLdSjzLloUxdc2wzruFn8cGQsRt-TwYxhIGC39vS61ER28UgfuyWKTKK81RkJY14UnuoPH0fELm_bwv1DLNtfAdCcVDxWezI3jTmHoPHazOkHXodC441-rFfSP5YT59bDkt-IpeK9Eveylo_jXB2vARsP0fWMARNyrkrxj9QfK4-Kf_pC751BYDh9pArueypCNfDGlDmalJka3jz3NZu3trTmDuP530Xta5_hmR6uqSdccn7GfDHc5uvR2uFLXxW1Ixbrpp6b2oOqg9RPYO8qW9iA",
-          "publishedOn": "2022-02-02T14:14:58.000Z",
-          "wordCount": null,
-          "title": "Apple Earnings, AMD Earnings, Google Earnings",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/apple-earnings-amd-earnings-google-earnings/",
-          "author": "Ben Thompson",
-          "description": "Apple, AMD, and Google all delivered great results; margins were the most interesting places for analysis.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9hcHBsZS1lYXJuaW5ncy1hbWQtZWFybmluZ3MtZ29vZ2xlLWVhcm5pbmdzLw.Ex3xfcGgGt9JZPuQpihGIelFF1qSTEKq914FIA3GUijKN9cm48h3URImkkx5B2olo5ZeDqnveeaTY05Vv90ofApUbflK1nzVphzE_xuhhONX1ubooiR9cHi9j7-dkLMbhMbIBWNVmEGhnuSvD7wO3inRbn_PVr1Zi6D-QIh5lA29Q2YHsgbpwuY-kzE2PPdXfQXhHuk4b_rT0f9As0ejICm_rQ15AJG3IYxKOXbLN0IgdcslGkzEEpw4iXroGgEeNBmBF9KGKZjONoGgdpFo2AQeBB31xSaoDE-coMllbwAjUPkDXimkECP9QcHNXgzh0U1SMbTCpAc-eeXSXHtYWA",
-          "publishedOn": "2022-02-02T14:14:58.000Z",
-          "wordCount": null,
-          "title": "Apple Earnings, AMD Earnings, Google Earnings",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/apple-earnings-amd-earnings-google-earnings/",
-          "author": "Ben Thompson",
-          "description": "Apple, AMD, and Google all delivered great results; margins were the most interesting places for analysis.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9hcHBsZS1lYXJuaW5ncy1hbWQtZWFybmluZ3MtZ29vZ2xlLWVhcm5pbmdzLw.IZVnd71vRMDKc-T23xn-DfujYe-ClctNrJjyxn_vvpgKDBc0pGiEiMhzzo2OTldbMjVlrvCnq48xVRLFDWkEp0iyj9twsdT1XVSUdPymDXOYaXaPYWz1zuYQrOq9TW14VoXKz8c3qM-U6L7MmT0HS79IINBZfrX6UAe5LdJS4mu_DDTuawoOWIZ9l3NsJeyRqAmvZY6NA2ewQYsnIYFXL7OEag0kVbpUBadW9o8Bw2njYe2mmgCRmntgau_sHpDzb4VsEQ8qKmGC3KwpRGZJIkwxUN8_H-O57uW9hP3xiG5TAGw22ImX-SL2xBaMD2eM6Yr3c0WQEePtVQjk2p_kHA",
-          "publishedOn": "2022-02-02T14:14:58.000Z",
-          "wordCount": null,
-          "title": "Apple Earnings, AMD Earnings, Google Earnings",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/apple-earnings-amd-earnings-google-earnings/",
-          "author": "Ben Thompson",
-          "description": "Apple, AMD, and Google all delivered great results; margins were the most interesting places for analysis.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9hcHBsZS1lYXJuaW5ncy1hbWQtZWFybmluZ3MtZ29vZ2xlLWVhcm5pbmdzLw.jsTodSwg5i9yy0EN_jIVY9vIXTkDafTwiqknjWtCX4fjuJc1ZpDdkm2bKyOJIsYuFt-RgWq4RruNJEYP9F3h8TZhIK-8RHEFJ16aIUkuI8wfC1v2tOvLNe_5nIZNQ9UWx_Ri1W2IezMMYAFydJDwhTVIjbHPTgTBMi-Pngql8FEXWwZDA3yFtBGGxW_705PF7YzNphE5BbE6hIlhYHbD7mR-cvAlQV5wl2ci8Do50avlxNVep0sAVliPJIoPJ01fHr_W6co0hq3Aj7dwQP515yvLTtJxt3WDreJU11QtMYnOKdEeceUQtBQTzZnunLycfHn5xgDpULwm95DV5VWMNQ",
-          "publishedOn": "2022-02-02T14:14:58.000Z",
-          "wordCount": null,
-          "title": "Apple Earnings, AMD Earnings, Google Earnings",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/apple-earnings-amd-earnings-google-earnings/",
-          "author": "Ben Thompson",
-          "description": "Apple, AMD, and Google all delivered great results; margins were the most interesting places for analysis.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9hcHBsZS1lYXJuaW5ncy1hbWQtZWFybmluZ3MtZ29vZ2xlLWVhcm5pbmdzLw.pKoo6_sh8ZzT5wnRR925crS0VaUGGgwNPeikROo52qt0HX6lcW-MBkxKf-t4yeorrY8VxceW8LXi6Y3V8Hy6Ha8qbLQegAoCR3x9T1mb8VOSlT5AKYvx92QeQ9m9lm15hNuX8b7JK3KZv38KApjYUST8h5Ixz_URyEJmkOrMQzCYYxQ9nMyVl1wfkeTINyDs1MwOMfNZetMU4IGvnHImRn47Hizz--nKUMo0gkSKdr-4nUU4EK2ZMRhMoHNTytW0bJmoCF1dyQTTF6wrvaA9Dsb-xmzNWLDtRuXr3xbTn_hYESkAAwGe4WM43Hdg2VeebliwTtjPP7lBh9WqvQ3Eng",
-          "publishedOn": "2022-02-02T14:14:58.000Z",
-          "wordCount": null,
-          "title": "Apple Earnings, AMD Earnings, Google Earnings",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/apple-earnings-amd-earnings-google-earnings/",
-          "author": "Ben Thompson",
-          "description": "Apple, AMD, and Google all delivered great results; margins were the most interesting places for analysis.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9hcHBsZS1lYXJuaW5ncy1hbWQtZWFybmluZ3MtZ29vZ2xlLWVhcm5pbmdzLw.ZUYIjGzoF2Z7cgcJFmMNpD3CVQzOyitWwBXwuKMR9hm7bRBkRMQBrHl3pwJO6dnGN1WuQbqHCQ_3jquUfNbErJeYC-ukObSKG1Q0vDUsdI7Uhut-ifYU3L58T1-4TzA-YjcCtyc0M0gjDAEWJKEvxrn7eMRjulbGOTT8SD_lwrLSRNAbdkc7DCchvmp_PMg5D6lKkdXbUx_lXnG9TLbNPfWGHlmK9_8U1UMNgneQ3WsXb0lhP71_CSENy7hFW9w0B1WZ818IUbYDkmipR7-h2AbiCJvEmxT32qQAlNsxjCfAPB_Pc2xKb4JSn1Mq8iENe7KdxQnRHoZChBZaQULrag",
-          "publishedOn": "2022-02-02T14:14:58.000Z",
-          "wordCount": null,
-          "title": "Apple Earnings, AMD Earnings, Google Earnings",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/apple-earnings-amd-earnings-google-earnings/",
-          "author": "Ben Thompson",
-          "description": "Apple, AMD, and Google all delivered great results; margins were the most interesting places for analysis.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9hcHBsZS1lYXJuaW5ncy1hbWQtZWFybmluZ3MtZ29vZ2xlLWVhcm5pbmdzLw.sNyrCXyswnG6mEo3LYtTV0z0OLoImegiy-IpZYUErrXDUx4nExOp3IT1b_A44gL1ooFAboU4WmE8ZZJsCCV7-66u_bzY3wyOHQc_ft9Y6mudYKa0Fd12cAmlz0xxPwjtbCxxpU6ad7l5bkHcwNbBftWyuYO322kW51ONCtwlkgz2jhHRhCHKqPhg3RCQB9TzuVl_6tIUcobZi4rZDjIuWol2xNZcA0rym2zvm59gB3qFEZi_oLWD0ZnqtpyrMUzEo7tM4qlSPwlrfCANSMlGTxu9MuefwCeTMTSaQRrwtseWA-fCU0ManLGPI2_enRanZDIounQ_Sr6VNX0wZtJgVA",
-          "publishedOn": "2022-02-02T14:14:58.000Z",
-          "wordCount": null,
-          "title": "Apple Earnings, AMD Earnings, Google Earnings",
-          "itunes": {}
-        },
-        {
-          "id": "https://stratechery.com/2022/apple-earnings-amd-earnings-google-earnings/",
-          "author": "Ben Thompson",
-          "description": "Apple, AMD, and Google all delivered great results; margins were the most interesting places for analysis.",
-          "link": "https://stratechery.passport.online/l/a_XKSD6WRxZC5aAmZfGdv9MX.aHR0cHM6Ly9zdHJhdGVjaGVyeS5jb20vMjAyMi9hcHBsZS1lYXJuaW5ncy1hbWQtZWFybmluZ3MtZ29vZ2xlLWVhcm5pbmdzLw.d-MLCIQYKzp8I-96Fc6dh8d2x16DFjpevwDpfamg4zkDXFerf1UCXWLWgww6bSr9U6r5JlHnO0GCukRoOReQZHAKyXNSMT0Q_LLeUXM81pvNNWeQ7Sac2ZyAPQDt_nuMmH69rbmN5VCjWO6M8tEad6gYQVI58AEw2OPmPo7sX5fZVRdesr1dWWbr2FvbX-4ZblawDdAHQQXGXcQHa4SOqHV6QyDMsIk1_C2Ubhlgt-Dj04RRTFaK2DFg9wzLB0ZyykXOOBHCUXk_1DHjCjWcDPNX24fbuSvDOkvD07tuURFhkhLq8I8hZCQ7xfqgdrRT-7Jk0Q1RQuNGeKNb6qSjFg",
-          "publishedOn": "2022-02-02T14:14:58.000Z",
-          "wordCount": null,
-          "title": "Apple Earnings, AMD Earnings, Google Earnings",
           "itunes": {}
         }
       ]
@@ -4598,6 +4478,51 @@
       "feedUrl": "https://reddit.buzzing.cc/rss.xml",
       "siteUrl": "https://reddit.buzzing.cc",
       "articles": [
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/sq7vtz/interesting_threat/",
+          "author": null,
+          "description": "有趣的威胁...",
+          "link": "https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/sq7vtz/interesting_threat/?score=75285&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Fsq7vtz%2Finteresting_threat%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Fsq7vtz%2Finteresting_threat%2F&channel=WhitePeopleTwitter&sensitive=false",
+          "publishedOn": "2022-02-12T04:59:10.000Z",
+          "wordCount": 17,
+          "title": "有趣的威胁..."
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/spzjdi/this_cleans_him_up_good/",
+          "author": null,
+          "description": "这能很好地清洁他的身体",
+          "link": "https://reddit.buzzing.cc/reddit/r/interestingasfuck/comments/spzjdi/this_cleans_him_up_good/?score=75111&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Fspzjdi%2Fthis_cleans_him_up_good%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Finterestingasfuck%2Fcomments%2Fspzjdi%2Fthis_cleans_him_up_good%2F&channel=interestingasfuck&sensitive=false",
+          "publishedOn": "2022-02-12T04:24:51.000Z",
+          "wordCount": 22,
+          "title": "这能很好地清洁他的身体"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/wholesomememes/comments/sq6o1w/i_believe_the_song_is_bender_is_great/",
+          "author": null,
+          "description": "我相信这首歌是 \"Bender is great\"。",
+          "link": "https://reddit.buzzing.cc/reddit/r/wholesomememes/comments/sq6o1w/i_believe_the_song_is_bender_is_great/?score=75681&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fwholesomememes%2Fcomments%2Fsq6o1w%2Fi_believe_the_song_is_bender_is_great%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fwholesomememes%2Fcomments%2Fsq6o1w%2Fi_believe_the_song_is_bender_is_great%2F&channel=wholesomememes&sensitive=false",
+          "publishedOn": "2022-02-12T03:12:43.000Z",
+          "wordCount": 28,
+          "title": "我相信这首歌是 \"Bender is great\"。"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/sq5126/finlands_olympic_athlete_dormitory_in_beijing/",
+          "author": null,
+          "description": "今天在北京的芬兰奥运运动员宿舍",
+          "link": "https://reddit.buzzing.cc/reddit/r/Damnthatsinteresting/comments/sq5126/finlands_olympic_athlete_dormitory_in_beijing/?score=78129&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FDamnthatsinteresting%2Fcomments%2Fsq5126%2Ffinlands_olympic_athlete_dormitory_in_beijing%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FDamnthatsinteresting%2Fcomments%2Fsq5126%2Ffinlands_olympic_athlete_dormitory_in_beijing%2F&channel=Damnthatsinteresting&sensitive=false",
+          "publishedOn": "2022-02-12T02:29:38.000Z",
+          "wordCount": 24,
+          "title": "今天在北京的芬兰奥运运动员宿舍"
+        },
+        {
+          "id": "https://reddit.buzzing.cc/reddit/r/mildlyinfuriating/comments/sq23vd/seriously_wtf_wall_street_journal/",
+          "author": null,
+          "description": "真的吗？华尔街日报》Wtf",
+          "link": "https://reddit.buzzing.cc/reddit/r/mildlyinfuriating/comments/sq23vd/seriously_wtf_wall_street_journal/?score=76693&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmildlyinfuriating%2Fcomments%2Fsq23vd%2Fseriously_wtf_wall_street_journal%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmildlyinfuriating%2Fcomments%2Fsq23vd%2Fseriously_wtf_wall_street_journal%2F&channel=mildlyinfuriating&sensitive=false",
+          "publishedOn": "2022-02-12T02:29:38.000Z",
+          "wordCount": 19,
+          "title": "真的吗？华尔街日报》Wtf"
+        },
         {
           "id": "https://reddit.buzzing.cc/reddit/r/oddlyterrifying/comments/sq4aov/biblically_accurate_angel/",
           "author": null,
@@ -6109,24 +6034,6 @@
           "publishedOn": "2022-02-02T19:31:10.000Z",
           "wordCount": 23,
           "title": "有人为这张照片的NFT支付了473,000美元"
-        },
-        {
-          "id": "https://reddit.buzzing.cc/reddit/r/Unexpected/comments/si3oho/you_have_a_wonderful_family/",
-          "author": null,
-          "description": "你有一个美好的家庭!",
-          "link": "https://reddit.buzzing.cc/reddit/r/Unexpected/comments/si3oho/you_have_a_wonderful_family/?score=75116&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FUnexpected%2Fcomments%2Fsi3oho%2Fyou_have_a_wonderful_family%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FUnexpected%2Fcomments%2Fsi3oho%2Fyou_have_a_wonderful_family%2F&channel=Unexpected&sensitive=false",
-          "publishedOn": "2022-02-02T16:21:37.000Z",
-          "wordCount": 19,
-          "title": "你有一个美好的家庭!"
-        },
-        {
-          "id": "https://reddit.buzzing.cc/reddit/r/Whatcouldgowrong/comments/si6sct/wcgw_not_setting_the_projector_screen_correctly/",
-          "author": null,
-          "description": "WCGW不能正确设置投影仪屏幕",
-          "link": "https://reddit.buzzing.cc/reddit/r/Whatcouldgowrong/comments/si6sct/wcgw_not_setting_the_projector_screen_correctly/?score=75122&original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhatcouldgowrong%2Fcomments%2Fsi6sct%2Fwcgw_not_setting_the_projector_screen_correctly%2F&discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhatcouldgowrong%2Fcomments%2Fsi6sct%2Fwcgw_not_setting_the_projector_screen_correctly%2F&channel=Whatcouldgowrong&sensitive=false",
-          "publishedOn": "2022-02-02T14:36:53.000Z",
-          "wordCount": 23,
-          "title": "WCGW不能正确设置投影仪屏幕"
         }
       ]
     },
@@ -6135,6 +6042,87 @@
       "feedUrl": "https://hn.buzzing.cc/rss.xml",
       "siteUrl": "https://hn.buzzing.cc",
       "articles": [
+        {
+          "id": "https://hn.buzzing.cc/hn/30309644/",
+          "author": null,
+          "description": "事故。2022年2月10日，亚洲航空公司A320在古晋附近，飞机上有蛇。",
+          "link": "https://hn.buzzing.cc/hn/30309644/?score=102&original_url=https%3A%2F%2Favherald.com%2Fh%3Farticle%3D4f47cac0&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30309644&sensitive=false",
+          "publishedOn": "2022-02-12T05:46:32.000Z",
+          "wordCount": 34,
+          "title": "事故。2022年2月10日，亚洲航空公司A320在古晋附近，飞机上有蛇。"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30304238/",
+          "author": null,
+          "description": "CVE-2022-0435：Linux内核中的远程堆栈溢出",
+          "link": "https://hn.buzzing.cc/hn/30304238/?score=101&original_url=https%3A%2F%2Fwww.openwall.com%2Flists%2Foss-security%2F2022%2F02%2F10%2F1&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30304238&sensitive=false",
+          "publishedOn": "2022-02-12T04:24:34.000Z",
+          "wordCount": 29,
+          "title": "CVE-2022-0435：Linux内核中的远程堆栈溢出"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30306190/",
+          "author": null,
+          "description": "爱因斯坦是如何得出他的广义相对论的",
+          "link": "https://hn.buzzing.cc/hn/30306190/?score=101&original_url=https%3A%2F%2Flithub.com%2Fhow-einstein-arrived-at-his-theory-of-general-relativity%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30306190&sensitive=false",
+          "publishedOn": "2022-02-12T04:24:34.000Z",
+          "wordCount": 29,
+          "title": "爱因斯坦是如何得出他的广义相对论的"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30307259/",
+          "author": null,
+          "description": "锁好门。纪念哥伦比亚大学的最后一次返校节（2020年）",
+          "link": "https://hn.buzzing.cc/hn/30307259/?score=100&original_url=https%3A%2F%2Fwww.americaspace.com%2F2020%2F02%2F01%2Flock-the-doors-remembering-columbias-final-homecoming-otd-in-2003%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30307259&sensitive=false",
+          "publishedOn": "2022-02-12T04:24:34.000Z",
+          "wordCount": 28,
+          "title": "锁好门。纪念哥伦比亚大学的最后一次返校节（2020年）"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30309065/",
+          "author": null,
+          "description": "蒸汽甲板的外部外壳（表面拓扑结构）的CAD文件",
+          "link": "https://hn.buzzing.cc/hn/30309065/?score=107&original_url=https%3A%2F%2Fgitlab.steamos.cloud%2FSteamDeck%2Fhardware&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30309065&sensitive=false",
+          "publishedOn": "2022-02-12T04:01:27.000Z",
+          "wordCount": 31,
+          "title": "蒸汽甲板的外部外壳（表面拓扑结构）的CAD文件"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30308272/",
+          "author": null,
+          "description": "建立一个智能的Emacs",
+          "link": "https://hn.buzzing.cc/hn/30308272/?score=111&original_url=https%3A%2F%2Fianyepan.github.io%2Fposts%2Femacs-ide%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30308272&sensitive=false",
+          "publishedOn": "2022-02-12T02:54:03.000Z",
+          "wordCount": 24,
+          "title": "建立一个智能的Emacs"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30306310/",
+          "author": null,
+          "description": "一种用于高性能计算机的新的编程语言",
+          "link": "https://hn.buzzing.cc/hn/30306310/?score=106&original_url=https%3A%2F%2Fnews.mit.edu%2F2022%2Fnew-programming-language-high-performance-computers-0207&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30306310&sensitive=false",
+          "publishedOn": "2022-02-12T01:48:39.000Z",
+          "wordCount": 27,
+          "title": "一种用于高性能计算机的新的编程语言"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30299617/",
+          "author": null,
+          "description": "核心战争",
+          "link": "https://hn.buzzing.cc/hn/30299617/?score=107&original_url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FCore_War&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30299617&sensitive=false",
+          "publishedOn": "2022-02-12T01:48:39.000Z",
+          "wordCount": 23,
+          "title": "核心战争"
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/30305959/",
+          "author": null,
+          "description": "启动HN：安雅健康（YC W22）--在出生时冷冻干细胞，为未来健康服务",
+          "link": "https://hn.buzzing.cc/hn/30305959/?score=102&original_url=https%3A%2F%2Fanjahealth.com&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D30305959&sensitive=false",
+          "publishedOn": "2022-02-12T01:48:39.000Z",
+          "wordCount": 37,
+          "title": "启动HN：安雅健康（YC W22）--在出生时冷冻干细胞，为未来健康服务"
+        },
         {
           "id": "https://hn.buzzing.cc/hn/30303211/",
           "author": null,
@@ -10161,15 +10149,6 @@
           "publishedOn": "2022-02-02T19:51:28.000Z",
           "wordCount": 402,
           "title": "☕ Java Virtual Threads Specification"
-        },
-        {
-          "id": "https://taw.hashnode.dev/100-languages-speedrun-episode-77-jvm-assembly-with-jasmin",
-          "author": "Tomasz Węgrzanowski",
-          "description": "Java Virtual Machine (JVM) works in a weird way. First there's some source code in Java or Kotlin or whatnot. It gets compiled into JVM Assembly as intermediate form. Then that gets compiled into actual executable machine code.\nIn a way that JVM Asse...",
-          "link": "https://taw.hashnode.dev/100-languages-speedrun-episode-77-jvm-assembly-with-jasmin",
-          "publishedOn": "2022-02-02T17:47:51.000Z",
-          "wordCount": null,
-          "title": "100 Languages Speedrun: Episode 77: JVM Assembly with Jasmin"
         }
       ]
     },
@@ -10178,6 +10157,24 @@
       "feedUrl": "https://linux.cn/rss.xml",
       "siteUrl": "https://linux.cn/",
       "articles": [
+        {
+          "id": "https://linux.cn/article-14265-1.html?utm_source=rss&utm_medium=rss",
+          "author": "linux@linux.cn (linux)",
+          "description": "最好的聊天应用是一个不属于聊天应用的应用。\n\r\n\r\n\n\r\n请考虑一下，当用户的数据被发布到互联网上，或通过互联网发布时，他们的数据究竟去了哪里。古老的聊天应用是互联网通信领域的一个手工行业，似乎在潮流中起起落落。人们使用聊天应用进行各种形式的对话，大多数人不会想到机器人正在记录和监控他们所说的话，无论是为了有效地定位广告还是只是为了建立一个档案供将来使用。这使得聊天应用特别容易受到不良的隐私做法的影响，但幸运的是，现在有几个开源的、注重隐私的应用，如 Signal、Rocket.Chat 和 Mattermost。我运行过 Mattermost 和 Rocket.Chat，我也在使用 Signal，但我最兴奋的应用是 Delta Chat，这个聊天服务非常方便，甚至不使用聊天服务器。相反，Delta Chat 使用的是你已经使用的最大规模和最多样化的开放信息系统：它使用电子邮件，通过聊天应用发送和接收信息，并以 Autocrypt 的端到端加密为特色。\n\r\n安装 Delta Chat\n\r\nDelta Chat 使用标准的电子邮件协议作为它的后端，但对于作为普通用户的你和我来说，它的外观和行为完全像一个聊天应用。也就是说你需要安装一个开源的 Delta Chat 应用。\n\r\n在 Linux 上，你可以从 Flatpak 包或你的软件库中安装 Delta Chat。\n\r\n在 macOS 和 Windows 上，从 delta.chat/downloads 下载一个安装程序。\n\r\n在安卓系统上，你可以从 Play Store 或开源的 F-droid 仓库 安装 Delta Chat。\n\r\n在 iOS 系统中，从 App Store 安装 Delta Chat。\n\r\n因为 Delta Chat 使用电子邮件来传递信息，所以如果你不在你的聊天应用中，你也可以在收件箱中收到信息。是的…",
+          "link": "https://linux.cn/article-14265-1.html?utm_source=rss&utm_medium=rss",
+          "publishedOn": "2022-02-12T03:25:09.000Z",
+          "wordCount": null,
+          "title": "Delta Chat：一个开源的聊天工具"
+        },
+        {
+          "id": "https://linux.cn/article-14264-1.html?utm_source=rss&utm_medium=rss",
+          "author": "linux@linux.cn (linux)",
+          "description": "KDE 团队宣布了 KDE Plasma 5.24 LTS 版，已经可以下载和安装了。如果你打算从以前的版本升级，在这里我们给你提供了从 5.23 升级到 5.24 的简明步骤。\n\r\n\r\n\n\r\nKDE Plasma 5.24 是 Plasma 桌面的第 26 个版本，带来了显著的视觉改变和一些后端性能的提升。在这个版本中，你会看到全新的墙纸、Breeze 主题的视觉变化、指纹登录和一个全新的概览屏幕等等。\n\r\n你可以在我们的综述文章里阅读有关 KDE Plasma 5.24 功能的细节。\n\r\n如果你正在运行 KDE Plasma 的早期版本，你可以按本文说明升级到最新版本。\n\r\n如何升级到 KDE Plasma 5.24\n\r\n这个版本的升级包大小适中，在我的测试机器上大约是 450MB 以上。在开始升级过程之前，请确保关闭所有应用程序并保存你的数据。\n\r\n一般来说，KDE 的升级是非常稳定的，它从来不会失败。但是，如果你想格外谨慎，并且有宝贵的数据，你可能想对这些进行备份。但同样，在我看来，我相信这是没有必要的。\n\r\n步骤\n\r\n如果你是在 KDE Neon 之中、滚动发布的发行版（如 Arch Linux、Manjaro 之类）中运行 KDE Plasma 5.23，你可以打开 KDE 工具 “发现Discover”，点击检查更新。\n\r\n你可以通过“发现Discover”的升级包列表验证 Plasma 5.24 是否可用。\n\r\n一旦确认可用，点击“发现Discover”窗口右上方的“全部更新Update All”按钮。\n\r\n另外，你也可以从终端运行下面的命令，在 KDE Neon 中开始升级过程。\n\r\nsudo apt update\r\nsudo pkcon update\r\n\n\r\n升级过程完成后重启系统。\n\r\n而重启后，你应该看到全新的 KDE Plasma 5.24 出现在你面前。\n\r\n在 Fedora 35 和 Ubuntu 21.10 中升级 KDE Plasma 5.24\n\r\n截至目前，Fedora 35 和 Ubuntu 21.10 是两个主要的 KDE 的发行版。由于 更新政策，Fedora 35 不会得到这个版本，而 Fedora 36 也将很快发布。 \n\r\n然而，如果你仍然想做实验，你可以在 Ubuntu 21.10 和 Ubuntu 21.04 中使用下面的 Backports PPA 安装这个新版本的 Plasma 桌面。在这样做的时候，请确保你保留一份数据备份。\n\r\nsudo add-apt-repository ppa:kubuntu-ppa/backports\r\nsudo apt-get full-upgrade\r\n\n\r\n在 Fedora 35 中，我试图通过下面的 COPR 仓库来安装。但是有太多的依赖性冲突需要解决，在一个稳定的系统中尝试这样做是有风险的。我建议目前不要在 Fedora 35 中尝试下面的方法。当然你仍然可以通过 allowerasing 标志来安装。但不要这样做。\n\r\n另外，我猜 Fedora 35 的官方版本会在第一个小版本（即 5.24.1）发布时更新，该版本将于 2022 年 2 月 15 日发布，所以你可以等到那时。\n\r\n另外，等待 Fedora 36 也是比较明智的做法，因为它将这个版本作为默认版本。Fedora 36 将于 2022 年 4 月发布。\n\r\n\n\r\nsudo dnf copr enable marcdeop/plasma\r\nsudo dnf copr enable marcdeop/kf5\r\nsudo dnf upgrade --refresh\r\n\n\r\n升级后的反馈\n\r\n我在虚拟机中运行了升级过程，并安装了新的 KDE Plasma 5.23。升级过程很顺利，没有出现意外或错误。好吧，到目前为止，它对我来说从未失败过。\n\r\n升级时间完全取决于你的互联网连接和 KDE 服务器。一般来说，它应该在 30 分钟内完成。\n\r\n升级过程后的第一次重启很顺利，没有花费多少时间。\n\r\n从性能上讲，我觉得它比之前的版本更流畅，这要归功于几个错误的修复和底层的性能优化。\n\r\n所以，总的来说，如果你在使用 KDE Neon，你可以安全地升级。否则就等待 Ubuntu 和 Fedora 稳定版的软件包。\n\r\n享受全新的 KDE Plasma 吧！\n\r\n\r\nvia: https://www.debugpoint.com/2022/02/upgrade-kde-plasma-5-24/\n\r\n作者：Arindam 选题：lujun9972 译者：wxy 校对：wxy\n\r\n本文由 LCTT 原创编译，Linux中国 荣誉推出",
+          "link": "https://linux.cn/article-14264-1.html?utm_source=rss&utm_medium=rss",
+          "publishedOn": "2022-02-12T02:28:18.000Z",
+          "wordCount": null,
+          "title": "如何从 KDE Plasma 5.23 升级到 5.24"
+        },
         {
           "id": "https://linux.cn/article-14263-1.html?utm_source=rss&utm_medium=rss",
           "author": "linux@linux.cn (linux)",
@@ -10570,6 +10567,15 @@
           "publishedOn": "2022-02-10T20:06:15.000Z",
           "wordCount": null,
           "title": "运动员的跑鞋是怎么定制的？用3D扫描仪读取脚的大小，精确到每一根脚毛"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av766471188",
+          "author": "纪录片大师-",
+          "description": "冰壶?又叫冰上象棋，考验体力与智慧的一项运动，还不错的\n\n\nTags:知识分享官,冬奥知识分享官,实验,物理,打卡挑战,科普,科学,学习,冬奥会",
+          "link": "https://www.bilibili.com/video/av766471188",
+          "publishedOn": "2022-02-10T19:38:11.000Z",
+          "wordCount": null,
+          "title": "冰壶是如何制造的？先找出特殊的花岗岩，再切出冰壶所需要的石环"
         },
         {
           "id": "https://www.bilibili.com/video/av936468767",
@@ -11398,87 +11404,6 @@
           "publishedOn": "2022-02-02T20:38:56.000Z",
           "wordCount": 147,
           "title": "大脑本身没有痛觉，甚至没有感觉，那为什么会头痛？头痛医生告诉你什么是继发性头痛？什么是原发性头痛？"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av381127117",
-          "author": "nagi真的很文静",
-          "description": "-\n\n\nTags:眼镜,科普,医生,健康,手术,近视,视力,熬夜,隐形眼镜,知识分享官",
-          "link": "https://www.bilibili.com/video/av381127117",
-          "publishedOn": "2022-02-02T19:00:00.000Z",
-          "wordCount": 64,
-          "title": "不动刀，不戴隐形，视力恢复1.0？"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av936185044",
-          "author": "油炸知了猴",
-          "description": "如果你发现了什么不认识的东西，欢迎私信给我\n或者有啥新奇的物件，可以投稿让大家一起猜一猜\n\n\nTags:知识分享官,科普,打卡挑战,知识,知识分享,科普知识,冷知识,猎奇,有趣,趣闻",
-          "link": "https://www.bilibili.com/video/av936185044",
-          "publishedOn": "2022-02-02T19:00:00.000Z",
-          "wordCount": 153,
-          "title": "不管你问什么，万能网友都能为你解答（207）"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av296198695",
-          "author": "42号星球",
-          "description": "太空食品是如何进化的？空间站只有微重力宇航员能正常吞咽食物吗？咱们天宫空间站的中国宇航员又是吃什么、怎么吃、好吃吗？\n\n\nTags:知识分享官,天文,宇宙,科普,科学,涨知识,中国",
-          "link": "https://www.bilibili.com/video/av296198695",
-          "publishedOn": "2022-02-02T18:30:15.000Z",
-          "wordCount": 148,
-          "title": "从挤牙膏吃冻干到满汉全席，舌尖上的太空是这样卷起来的......"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av936195725",
-          "author": "夜话冷知识",
-          "description": "素材来源：\nWhy do we sweat? ——TED-Ed\nWhy do you get a fever when you're sick? - TED-Ed\nWhy Do We Get a Fever? ——Peekaboo Kidz\nWhat is Fever? ——FreeMedEducation\n\n\nTags:学习,健康,冷知识,发烧,医学,辟谣,涨知识,有用,科学科普,打卡挑战",
-          "link": "https://www.bilibili.com/video/av936195725",
-          "publishedOn": "2022-02-02T17:45:07.000Z",
-          "wordCount": 181,
-          "title": "捂一身汗就能退烧？要命的误会"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av551216661",
-          "author": "TopAmazed",
-          "description": "Tags:自然,生物,生命,实验,科普,全程高能,趣闻",
-          "link": "https://www.bilibili.com/video/av551216661",
-          "publishedOn": "2022-02-02T17:06:34.000Z",
-          "wordCount": null,
-          "title": "欧洲中世纪5大酷刑，请君入牛有多恐怖？活生生将人烤熟！"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av808362960",
-          "author": "吃了这只鳄鱼",
-          "description": "-\n\n\nTags:科学,科普,学习,实验,诺贝尔奖",
-          "link": "https://www.bilibili.com/video/av808362960",
-          "publishedOn": "2022-02-02T17:00:17.000Z",
-          "wordCount": null,
-          "title": "为了让你开心，科学家有多努力？让你笑出声的搞笑诺贝尔奖。科普 科学"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av466221464",
-          "author": "医学科普联盟",
-          "description": "抱歉，虽然大过年的，但是该讲的还是要讲。\n\n\nTags:知识分享官,健康,科学,酒,成瘾,春节",
-          "link": "https://www.bilibili.com/video/av466221464",
-          "publishedOn": "2022-02-02T17:00:17.000Z",
-          "wordCount": 73,
-          "title": "酒精真相：抱歉，安全摄入量为0的一级致癌物  【医学真相】第一集"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av808625253",
-          "author": "力学渣",
-          "description": "-\n\n\nTags:能量要正态度要氢,一起晒出满满的正能量,打卡挑战,必剪创作,自然,物理,力学,科学,科普,实验,教育",
-          "link": "https://www.bilibili.com/video/av808625253",
-          "publishedOn": "2022-02-02T15:05:08.000Z",
-          "wordCount": 154,
-          "title": "震惊！为何生的越插越深，熟的却插不进去？"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av508730843",
-          "author": "模型师老原儿",
-          "description": "冬奥会正式开始啦～今天跟奥组委一起与大家唠唠“冰壶”～\n\n\nTags:知识分享官,冬奥知识分享官",
-          "link": "https://www.bilibili.com/video/av508730843",
-          "publishedOn": "2022-02-02T15:00:12.000Z",
-          "wordCount": 137,
-          "title": "冰壶比赛咋来的？到底咋玩的？刷地又是在干啥？"
         }
       ]
     },
@@ -11487,6 +11412,186 @@
       "feedUrl": "https://rsshub.app/bilibili/partion/ranking/122/3",
       "siteUrl": "https://www.bilibili.com",
       "articles": [
+        {
+          "id": "https://www.bilibili.com/video/av508883930",
+          "author": "天庭魔术",
+          "description": "扑克牌穿越瓶子魔术详细教学，喜欢的朋友记得四连支持哟，也可以转发给朋友哟！\n\n\nTags:知识分享官,打卡挑战,魔术,揭秘,扑克牌,魔术教学",
+          "link": "https://www.bilibili.com/video/av508883930",
+          "publishedOn": "2022-02-10T20:11:58.000Z",
+          "wordCount": null,
+          "title": "扑克牌穿越瓶子，这个魔术吓到了韩国美女，方法你一定想不到！"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av381443115",
+          "author": "3D建模系统教学",
+          "description": "【3dmax人物建模】从拉box开始到角色人体完整布线讲解\n欢迎加入白嫖Q群：912494826【资料，软件，教程，模型】多会在群里分享出来给大家学习\nUP主V：yuxi526688 \n3D建模软件安装下载教程集：BV13a4y1v7zy\n3dmax基础到精通案例教程集：BV1T64y1c7qa\nMaya基础到精通案例教程集：BV1KK411K7mD\nzbrush基础到精通案例教程集：BV1kb41177oa\n记得关注UP主哦\n\n\nTags:3D游戏建模,3dmax,3dmax建模,3dmax人物建模,3dmax角色建模,3DMAX零基础,3dmax零基础教程,3dmax零基础建模,知识分享官,3D建模系统教学",
+          "link": "https://www.bilibili.com/video/av381443115",
+          "publishedOn": "2022-02-10T19:20:58.000Z",
+          "wordCount": null,
+          "title": "【3dmax人物建模】从拉box开始到角色人体完整布线讲解"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av466442463",
+          "author": "-乌鸦男-",
+          "description": "Tags:3D,派大星,pp",
+          "link": "https://www.bilibili.com/video/av466442463",
+          "publishedOn": "2022-02-10T19:05:13.000Z",
+          "wordCount": null,
+          "title": "Ⅱ 业余建模师快速还原比奇堡"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av808917474",
+          "author": "天天鉴宝",
+          "description": "Tags:知识分享官,野生技术协会,鉴定,历史,文化,学习",
+          "link": "https://www.bilibili.com/video/av808917474",
+          "publishedOn": "2022-02-10T18:00:01.000Z",
+          "wordCount": null,
+          "title": "什么家庭啊？宝贝都扔了！"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av723910328",
+          "author": "设计师南笙",
+          "description": "三种去除水印的技巧，你学会了几种呢？\n\n\nTags:技术,科技,视频教程,课程,经验分享,野生技术协会,学习心得,打卡挑战,知识分享官",
+          "link": "https://www.bilibili.com/video/av723910328",
+          "publishedOn": "2022-02-10T14:58:15.000Z",
+          "wordCount": null,
+          "title": "三种去除水印的技巧，你学会了几种呢？"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av253896095",
+          "author": "天天鉴宝",
+          "description": "Tags:知识分享官,野生技术协会,鉴定,历史,文化,学习,教育,经验分享",
+          "link": "https://www.bilibili.com/video/av253896095",
+          "publishedOn": "2022-02-10T12:00:00.000Z",
+          "wordCount": null,
+          "title": "掐指一算赔的稀烂..."
+        },
+        {
+          "id": "https://www.bilibili.com/video/av211379757",
+          "author": "科学脑洞反应堆",
+          "description": "Tags:数学,科学,物理,知识,学习,实验,自然科学,野生技术协会,知识常识",
+          "link": "https://www.bilibili.com/video/av211379757",
+          "publishedOn": "2022-02-10T11:30:13.000Z",
+          "wordCount": null,
+          "title": "把世界上最白的漆和最白的材料放在一起 - 谁“更白”"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av678883218",
+          "author": "魔方达人夏天",
+          "description": "-\n\n\nTags:魔方,摆烂,我的隐藏技能,跟着UP主创作吧（第二期）",
+          "link": "https://www.bilibili.com/video/av678883218",
+          "publishedOn": "2022-02-10T09:00:11.000Z",
+          "wordCount": null,
+          "title": "我用我的魔方摆烂了你的春晚魔术"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av936375291",
+          "author": "晖DESIGN",
+          "description": "工程文件出售\nQQ群:719128180\n 收徒\\合作VX:huhu3450\n\n\nTags:3D,特效,后期",
+          "link": "https://www.bilibili.com/video/av936375291",
+          "publishedOn": "2022-02-09T22:24:15.000Z",
+          "wordCount": null,
+          "title": "c4d实景合成雪融容octane渲染器"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av936486441",
+          "author": "-莽S-",
+          "description": "原速\n（录制的时候可能会有奇怪的声音）\n互免合作的coser\n请勿言语攻击\n谢谢\n\n\nTags:学习,后期,cos后期,后期过程",
+          "link": "https://www.bilibili.com/video/av936486441",
+          "publishedOn": "2022-02-09T21:32:28.000Z",
+          "wordCount": null,
+          "title": "【cos后期】尼尔机械纪元cos场照原倍速修图过程|修bug思路"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av338901539",
+          "author": "魔方先生MrPuzzle",
+          "description": "买不到冰墩墩，外国小伙就做一个！\n\n\nTags:跟着UP主创作吧（第二期）,我的隐藏技能,制造,野生技术协会,冬奥会,手工,魔方,外国人,知识,北京冬季奥运会,拼图",
+          "link": "https://www.bilibili.com/video/av338901539",
+          "publishedOn": "2022-02-09T19:24:17.000Z",
+          "wordCount": null,
+          "title": "冰墩墩火到国外去了！欧洲大牛耗时9小时，拼出巨型冰墩墩！"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av766413992",
+          "author": "新片场学院",
+          "description": "https://www.xinpianchang.com/a10943558?from=ArticleList\n\n\nTags:视频教程,野生技术协会,摄影,技术宅,知识,电影拍摄,摄像,视听语言,镜头,导演",
+          "link": "https://www.bilibili.com/video/av766413992",
+          "publishedOn": "2022-02-09T18:40:08.000Z",
+          "wordCount": null,
+          "title": "一部电影少了镜头语言会变成什么样？"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av766397965",
+          "author": "魔术特白",
+          "description": "-\n\n\nTags:春节不无聊挑战,必剪创作,春晚,春晚魔术揭秘,刘谦,申林,美女魔术师",
+          "link": "https://www.bilibili.com/video/av766397965",
+          "publishedOn": "2022-02-09T18:31:42.000Z",
+          "wordCount": null,
+          "title": "今天教你小姐姐同款，卡片消失术！"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av936482917",
+          "author": "天天鉴宝",
+          "description": "Tags:知识分享官,野生技术协会,鉴定,历史,文化,学习,教育,经验分享",
+          "link": "https://www.bilibili.com/video/av936482917",
+          "publishedOn": "2022-02-09T18:00:17.000Z",
+          "wordCount": null,
+          "title": "偷偷鉴定媳妇的宝贝..."
+        },
+        {
+          "id": "https://www.bilibili.com/video/av678929559",
+          "author": "分享编程资料的FP",
+          "description": "Python完整学习路线+职业规划\n手把手给你扶进大厂！\n本套教程专门为零基础学员而制，适合准备入行编程开发的零基础学员。\n不仅适用于零基础的初学者，有经验的程序员也可做巩固学习。后续课程我们将用更高的要求制作，祝愿各位同学都学业有成，月薪过万！\n会慢慢更新，不要着急呀！\n\n\nTags:计算机,学习,IT,人工智能,课程,PYTHON,爬虫,野生技术协会,编程学习,PYTHON入门,知识分享官",
+          "link": "https://www.bilibili.com/video/av678929559",
+          "publishedOn": "2022-02-09T15:59:19.000Z",
+          "wordCount": null,
+          "title": "将自己进大厂前花3w买的Python全套教程，整整632集，现在拿出来分享给大家！拿走不谢！从入门到精通 学会即可就业"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av936413073",
+          "author": "周小冰的魔术",
+          "description": "-\n\n\nTags:打卡挑战,魔术教学,魔术,刘谦",
+          "link": "https://www.bilibili.com/video/av936413073",
+          "publishedOn": "2022-02-09T13:49:39.000Z",
+          "wordCount": null,
+          "title": "揭秘刘谦的三球奇迹！大家看懂了吗？"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av593823158",
+          "author": "天天鉴宝",
+          "description": "Tags:历史,文化,鉴定,学习,野生技术协会",
+          "link": "https://www.bilibili.com/video/av593823158",
+          "publishedOn": "2022-02-09T12:00:12.000Z",
+          "wordCount": null,
+          "title": "精明的妈妈！"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av296494084",
+          "author": "设计师的睡前毒物",
+          "description": "没有什么高不高级的，就是分享一些快速调色的小技巧而已。\n\n\nTags:摄影,调色,平面设计,摄影后期,调色技巧",
+          "link": "https://www.bilibili.com/video/av296494084",
+          "publishedOn": "2022-02-09T10:46:39.000Z",
+          "wordCount": null,
+          "title": "10秒钟让图片变换三种高级色调！"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av978885570",
+          "author": "土豆讲冷知识",
+          "description": "-\n\n\nTags:冰墩墩有多可爱,冰墩墩,如何获得冰墩墩,科普,冷知识,可爱的冰墩墩",
+          "link": "https://www.bilibili.com/video/av978885570",
+          "publishedOn": "2022-02-09T10:46:08.000Z",
+          "wordCount": null,
+          "title": "获 得 冰 墩 墩 的 10 个 渠 道"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av423982747",
+          "author": "悲鸿特效创可贴",
+          "description": "（2018年中）快快快快\n\n\nTags:周星驰,特效,后期,视频教程,黑科技,枪击,AE,超短,大头特效,我的隐藏技能,跟着UP主创作吧（第二期）",
+          "link": "https://www.bilibili.com/video/av423982747",
+          "publishedOn": "2022-02-09T03:44:59.000Z",
+          "wordCount": null,
+          "title": "10秒一个特效教程系列｜你准备好了吗"
+        },
         {
           "id": "https://www.bilibili.com/video/av466436158",
           "author": "mini设计师KK",
@@ -12188,213 +12293,6 @@
           "publishedOn": "2022-02-02T19:35:01.000Z",
           "wordCount": null,
           "title": "洗牌后牌序不变！学会无敌！"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av808645653",
-          "author": "魔术特白",
-          "description": "-\n\n\nTags:春节不无聊挑战,必剪创作",
-          "link": "https://www.bilibili.com/video/av808645653",
-          "publishedOn": "2022-02-02T18:43:53.000Z",
-          "wordCount": 144,
-          "title": "空手变压岁钱，有手就能变！"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av893739663",
-          "author": "踩鸟玩家",
-          "description": "-\n\n\nTags:底气满满的福气生活,打卡挑战,难题,红包,经验分享,野生技术协会",
-          "link": "https://www.bilibili.com/video/av893739663",
-          "publishedOn": "2022-02-02T18:43:17.000Z",
-          "wordCount": null,
-          "title": "关于红包的三门问题！！"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av423388724",
-          "author": "天天鉴宝",
-          "description": "Tags:知识分享官,野生技术协会,鉴定,历史,文化,学习",
-          "link": "https://www.bilibili.com/video/av423388724",
-          "publishedOn": "2022-02-02T18:00:16.000Z",
-          "wordCount": 155,
-          "title": "完了芭比Q了"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av296214573",
-          "author": "Youtube中文字幕组",
-          "description": "https://youtu.be/QvV50hRL4xo\n这是That's Amazing团队2021技巧抛物的年度总结视频，和大家分享下这一年来比较有趣的技巧抛物\n原作者：That's Amazing\n翻译：喵喵喵\n\n\nTags:技术宅,技术,物理,高能,全程高能,知识,歪果仁,经验分享,野生技术协会,是在下输了",
-          "link": "https://www.bilibili.com/video/av296214573",
-          "publishedOn": "2022-02-02T17:22:55.000Z",
-          "wordCount": 156,
-          "title": "全程高能！难度等级从1到100的特技抛物，纵享丝滑"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av253712566",
-          "author": "老大南",
-          "description": "粉丝花5000去学炼金术？拜托你们看完这个视频，别花冤枉钱了#黄金#炼金#镀金回收#猎奇#知识#科普#防骗#踩坑\n\n\nTags:知识分享官,打卡挑战,经验分享,黄金,炼金,猎奇,知识,科普,防骗,踩坑",
-          "link": "https://www.bilibili.com/video/av253712566",
-          "publishedOn": "2022-02-02T17:07:45.000Z",
-          "wordCount": 318,
-          "title": "粉丝花5000去学炼金术？拜托你们看完这个视频，别花冤枉钱了"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av851130724",
-          "author": "占尽春光万阙诗",
-          "description": "揭秘春晚魔术这活竟然轮到我了。\n\n\nTags:虎年迎新春,虎年好运来,春晚,魔术,魔方,春晚魔术揭秘",
-          "link": "https://www.bilibili.com/video/av851130724",
-          "publishedOn": "2022-02-02T12:00:07.000Z",
-          "wordCount": null,
-          "title": "春晚你要不...请我吧？"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av423704436",
-          "author": "叁乔居",
-          "description": "组织微博： @叁乔居                小哥哥微博：@打杂的十八\n\n\nTags:春节档新片指南,3D,视频教程,经验分享,野生技术协会,制作过程,模型,#奇迹·笨小孩#,易烊千玺,建模,奇迹,奇迹·笨小孩",
-          "link": "https://www.bilibili.com/video/av423704436",
-          "publishedOn": "2022-02-02T12:00:07.000Z",
-          "wordCount": 169,
-          "title": "易 烊 千 玺 3 D 建 模"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av253439114",
-          "author": "天天鉴宝",
-          "description": "Tags:历史,文化,鉴定,学习,野生技术协会,知识分享官",
-          "link": "https://www.bilibili.com/video/av253439114",
-          "publishedOn": "2022-02-02T12:00:07.000Z",
-          "wordCount": 167,
-          "title": "这不是阳宅的东西！"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av380933725",
-          "author": "天天鉴宝",
-          "description": "Tags:野生技术协会,鉴定,历史,文化,学习",
-          "link": "https://www.bilibili.com/video/av380933725",
-          "publishedOn": "2022-02-02T12:00:07.000Z",
-          "wordCount": 158,
-          "title": "妈耶！我傻我朋友也得傻！"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av893642642",
-          "author": "柿咂",
-          "description": "https://youtube.com/watch?v=MBJJbAiEWis\n\n\nTags:野生技术协会,学习,模型",
-          "link": "https://www.bilibili.com/video/av893642642",
-          "publishedOn": "2022-02-02T10:09:33.000Z",
-          "wordCount": null,
-          "title": "【搬】螺旋齿轮欣赏"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av936244650",
-          "author": "我是YOLO",
-          "description": "这原本是看片玩牌系列的p2，但是由于系统问题，被删减了，时隔多年终于重现天日，\n\n\nTags:周星驰,魔术,翻拍,吴孟达,花切,赌圣,野生技术协会,yolo,打卡挑战,故事档案馆",
-          "link": "https://www.bilibili.com/video/av936244650",
-          "publishedOn": "2022-02-01T19:32:18.000Z",
-          "wordCount": 109,
-          "title": "现实还原电影操作，1:1翻拍赌圣！！！"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av723452982",
-          "author": "天天鉴宝",
-          "description": "Tags:历史,文化,鉴定,学习,野生技术协会",
-          "link": "https://www.bilibili.com/video/av723452982",
-          "publishedOn": "2022-02-01T18:00:16.000Z",
-          "wordCount": 78,
-          "title": "【防火防盗防小偷】"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av466185707",
-          "author": "简纶廷_Eric",
-          "description": "祝大家新年快乐 要好好地珍惜身边的人！\n\n↓↓更多精彩请关注↓↓ \n围脖：@简纶廷_Eric \nins：@ecsleight \nTB: Eric Chien魔术店\n\n\nTags:知识分享官,野生技术协会,制作过程,教程,技术,黑科技,魔术,魔术揭秘,综艺,大型魔术",
-          "link": "https://www.bilibili.com/video/av466185707",
-          "publishedOn": "2022-02-01T18:00:16.000Z",
-          "wordCount": 159,
-          "title": "揭秘！我筹备三年的魔术幕后大公开！"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av593721420",
-          "author": "魔术特白",
-          "description": "-\n\n\nTags:春节不无聊挑战,必剪创作,刘谦,虎虎生威,春晚魔术揭秘,邓男子",
-          "link": "https://www.bilibili.com/video/av593721420",
-          "publishedOn": "2022-02-01T16:07:39.000Z",
-          "wordCount": 158,
-          "title": "揭秘春晚魔术迎新纳福，虎虎生威！"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av466170192",
-          "author": "一个玩魔方的朋友",
-          "description": "-\n\n\nTags:必剪创作,春晚,魔方,魔术,邓男子",
-          "link": "https://www.bilibili.com/video/av466170192",
-          "publishedOn": "2022-02-01T14:49:25.000Z",
-          "wordCount": 150,
-          "title": "春晚令我失望的魔方魔术"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av851199546",
-          "author": "老大南",
-          "description": "这个学校只有一口井，水泵坏了连厕所都没得冲#猎奇#手工#机电#电机#电工#水泵#机械#解压\n\n\nTags:知识分享官,打卡挑战,猎奇,手工,机电,电机,电工,水泵,机械,解压",
-          "link": "https://www.bilibili.com/video/av851199546",
-          "publishedOn": "2022-02-01T13:59:57.000Z",
-          "wordCount": 162,
-          "title": "这个学校只有一口井，水泵坏了连厕所都没得冲"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av893415596",
-          "author": "天天鉴宝",
-          "description": "Tags:历史,教育,文化,鉴定,学习,野生技术协会",
-          "link": "https://www.bilibili.com/video/av893415596",
-          "publishedOn": "2022-02-01T12:00:15.000Z",
-          "wordCount": 152,
-          "title": "年纪虽小套路不少"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av423686788",
-          "author": "与女老板的日常生活",
-          "description": "-\n\n\nTags:春晚,脱口秀,相声,郭德纲,综艺,魔术,杂谈,姜昆,打卡挑战,必剪创作,春节不无聊挑战,你在看春晚吗？一起来聊聊",
-          "link": "https://www.bilibili.com/video/av423686788",
-          "publishedOn": "2022-02-01T10:34:19.000Z",
-          "wordCount": 150,
-          "title": "春晚魔术被1秒破解了，但仍比大张伟脱口秀和姜昆相声精彩十倍"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av253736461",
-          "author": "魔力飞哥",
-          "description": "连夜制作的视频，大家给个三连支持下，这个是虎年春晚魔术全面分析揭秘。现在快凌晨2点钟了，大家支持下这个视频，给我点动力，谢谢了\n\n\nTags:春晚魔术揭秘,魔术揭秘,虎年魔术揭秘",
-          "link": "https://www.bilibili.com/video/av253736461",
-          "publishedOn": "2022-02-01T02:15:28.000Z",
-          "wordCount": 147,
-          "title": "2022年春晚魔方魔术大揭秘，全面分析！困惑终于知晓"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av211170012",
-          "author": "大圣魔方",
-          "description": "想学魔方的宝戳这\n初级教程：BV16b4y1Y7Uw\n中级教程：BV1ZT4y1f7YM\n\n\nTags:大圣魔方,魔方教程,2022春晚,春晚,春晚魔术,春晚魔术揭秘,2022春晚魔术揭秘,三阶魔方",
-          "link": "https://www.bilibili.com/video/av211170012",
-          "publishedOn": "2022-02-01T02:04:48.000Z",
-          "wordCount": 152,
-          "title": "春晚魔术揭秘"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av466237159",
-          "author": "决战拉斯维加斯",
-          "description": "春晚魔术解读\n\n\nTags:魔方",
-          "link": "https://www.bilibili.com/video/av466237159",
-          "publishedOn": "2022-02-01T01:13:05.000Z",
-          "wordCount": 147,
-          "title": "“我不是托”"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av636154839",
-          "author": "Xhz_Cubing",
-          "description": "超简单的四步打乱 四步还原\n只是加了些顺时针逆时针画圈的浮夸表演效果\n\n\nTags:春晚,魔术,魔方,晚会,三阶魔方,魔术表演,必剪创作",
-          "link": "https://www.bilibili.com/video/av636154839",
-          "publishedOn": "2022-02-01T00:27:51.000Z",
-          "wordCount": 154,
-          "title": "22央视春晚魔方魔术开场揭秘"
-        },
-        {
-          "id": "https://www.bilibili.com/video/av423650836",
-          "author": "2019ZHEN38",
-          "description": "确实没有什么新意。。。我本来还打算用CE算的，结果发现那魔术师捂得严严实实的，结果一试就试出来了，就是一个四步打乱。\n春晚魔术一定是托。\n\n\nTags:知识分享官,春节不无聊挑战,必剪创作,魔方,魔术,春晚,魔术表演",
-          "link": "https://www.bilibili.com/video/av423650836",
-          "publishedOn": "2022-02-01T00:05:29.000Z",
-          "wordCount": 151,
-          "title": "“我真的不是托！”揭秘2022春晚魔方魔术"
         }
       ]
     },
@@ -12524,6 +12422,15 @@
       "feedUrl": "https://rsshub.app/sspai/matrix",
       "siteUrl": "https://sspai.com/matrix",
       "articles": [
+        {
+          "id": "https://sspai.com/post/71354",
+          "author": "Kiririn",
+          "description": "Matrix 首页推荐\nMatrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。\n文章代表作者个人观点，少数派仅对标题和排版略作修改。\n\n北京时间 2022 年 2 月 10 日凌晨 6 时，任天堂 2022 春季直面会如期展开。作为全世界 NS 玩家翘首以盼的游戏「峰会」，本场直面会无疑是任天堂对微软和索尼两大巨头竞相收购工作室的有力回应。尽管最令人期待的《塞尔达传说：旷野之息 2》并未有新消息放出，但在 40 分钟的直面会时长中悉数登场的第一方及第三方大作也赚够了玩家的眼球。\n与 PlayStation 或 Xbox 这类十分注重性能表现的主机平台不同，NS 作为主机与掌机跨界产品的本质似乎注定了其「冷饭之王」的命运，本场直面会上当然也少不了独占新作与移植作品扎堆出现的传统艺能。但无论热饭冷饭，好吃的饭才是好饭——因此，本文挑选了一些本场直面会上值得「追根溯源」的游戏作品，并从 NS 平台的游戏体验入手，为各位少数派带来一份详尽的「种 / 拔草」参考建议。\n注：本文内容具有时效性，部分内容带有主观色彩，实际游戏表现请以正式发售版本为准，游戏截图来自机核。\n火焰之纹章 无双 风花雪月\n\n做完火纹做塞尔达，做完塞尔达做火纹，脸都不要了。\n\n由光荣操刀的《火焰之纹章 无双 风花雪月》是本次直面会开场展示的第一个游戏，将于 6 月 24 日正式发布。从预告片可以看出，本作走的依然是经典 IP + 无双玩法，并融合原作剧情架构和部分系统设定的老路数。光荣打磨了十几年的玩法套路自然不必多言，稍有动作游戏经验的玩家都能很快上手；鉴于任天堂和光荣已经不是第一次在 NS 平台上合作推出此类游戏，参考前作《火焰纹章 无双》以及两部《塞尔达无双》的画面和帧数表现，本作的优化问题也不必…",
+          "link": "https://sspai.com/post/71354",
+          "publishedOn": "2022-02-11T09:18:23.000Z",
+          "wordCount": null,
+          "title": "任天堂 2022 春季直面会之后，我们为你带来了这份「种 / 拔草」参考建议"
+        },
         {
           "id": "https://sspai.com/post/71369",
           "author": "PlatyHsu",
@@ -12793,15 +12700,6 @@
           "publishedOn": "2022-02-03T04:02:31.000Z",
           "wordCount": 93,
           "title": "卡片笔记法的实践困境--分类篇"
-        },
-        {
-          "id": "https://sspai.com/post/71272",
-          "author": "Kostya",
-          "description": "好像，「XX 是一种生活方式」这样的句型要被用烂了。但是我实在想不到一个更好的方法去总结我接下来要写出来的这篇文章。毕竟，在少数派的写作本身，就是我生活的一部分，而我的生活方式中的确有不少成分是围绕写作这个目的去展开的。尽管我不是职业作家（天哪，我觉得如果我有那个自律的能力的话，我很想成为一名自由撰稿人），但是写作已经超越了爱好的范畴 —— 所以我只好把它定义为生活方式。\n去年年底，我恰好迷上了美剧《Sex and the City》。这部美剧以 Carrie Bradshaw，纽约一家报纸的专栏作家，书写她自己和朋友们的罗曼史，作为展开的方式。当然了，这部美剧以其开放大胆的镜头著称，但是我却总是为主角 Carrie 写作的方式（时间、地点）而着迷：有的时候她是在窗边，看着对面的一对情侣做着不可描述的事情；有的时候是坐在床上，点着一根烟，开始冥想；有的时候是因为受不了公寓的拥挤不堪，出门去咖啡馆看着来来往往的人群 —— 或许正是这份写作时无拘无束的自由，让我最为渴望吧。\nCarrie 和她的 PowerBook G3\n阅读是写作的开始\n获取信息可能是输出信息的第一步 —— 我反正是这么觉得。自由的写作本身就来自大量的泛读，怪不得人们常说「天下文章一大抄」。套路都摆在那里，写作的时候留心借鉴，的确是事半功倍的。\n我的阅读来源其实还算不上太「广泛」，只有一些会经常关注的媒体 / up / YouTuber，作为信息来源我个人认为已经足够，同时也不会每天感到信息过载。由于个人感兴趣的点主要集中在科技 / 数码方面，关注的媒体网站也大多数在此列。\nYouTuber / B 站 up\n现在是一个视频的时代，对吧？所以免不了的，我也关注了一些 YouTuber 和 B 站 up，主要也是有关科技的。关注视频类的账号，其实主要是因为有些时候看文字测评很容易睡着，视频其实从形式上有趣、直接…",
-          "link": "https://sspai.com/post/71272",
-          "publishedOn": "2022-02-02T15:04:01.000Z",
-          "wordCount": null,
-          "title": "写作，是一种生活方式｜2021 年度征文"
         }
       ]
     },
@@ -12810,6 +12708,15 @@
       "feedUrl": "https://rsshub-gsyx.vercel.app/juejin/trending/android/weekly",
       "siteUrl": "https://juejin.im/android?sort=weekly_hottest",
       "articles": [
+        {
+          "id": "https://juejin.cn/post/7063341792577454110",
+          "author": "恋猫de小郭",
+          "description": "theme: smartblue\n最近 Flutter 发布了官方关于 2022 的 战略 和 路线图 ，本篇主要针对内容做一些总结和解读，给正在使用 Flutter 或者正打算使用 Fluter 的人做个参考。\n总结陈述相关\n目前 Flutter 社区的发展已经很大，官方统计在过去的一年里，数据上 Flutter 已经基本超过超过其他跨平台框架，成为最受欢迎的移动端跨平台开发工具，截至 2022 年 2 月，有近 50 万个应用程序使用 Flutter。\n在过去一年里， Flutter 社区有数千人为该项目提供了贡献和支持，从个人到 Canonical、Microsoft、ByteDance 和阿里巴巴等大公司都对 Flutter 提供了不少帮助。\n当然 Flutter 也不是尽善尽美，Flutter 虽然也有被一些大型应用所使用，例如：SHEIN  （顶级时尚零售商）、微信（10 亿+用户 IM 应用程序）和 PUBG  （7.5 亿+玩家大逃杀游戏），但是它在大型应用中使用并不明显。\n因为在大型应用中有大量的历史需求和代码，还有重构所需的成本限制，使用 Flutter 进行混合开发其实支持不如 Jetpack Compose ，是的， Flutter 官方表示：\n相反，Android 的 Jetpack Compose 产品非常适合这一类产品，因为它可以轻松地基于 JVM 的框架，逐步添加到现有的 Android 应用程序中。\n也就是从官方的角度看，混合开发下，特别是 Android 平台，其实 Compose 更适合混合开发，感觉这也是 add-to-app 的维护和推进到现在好像并不乐观的原因。\n展望\nFlutter 在 2022 年首要的战略目标就是月活跃用户的增长，官方的理念就是：\n一个 SDK 再优秀，如果只有少部分人在使用，那它也不能体现价值；但是一个 S…",
+          "link": "https://juejin.cn/post/7063341792577454110",
+          "publishedOn": "2022-02-10T22:54:30.000Z",
+          "wordCount": null,
+          "title": "Flutter 2022 战略和路线解读与想法"
+        },
         {
           "id": "https://juejin.cn/post/7063111063427874847",
           "author": "恋猫de小郭",
@@ -13303,24 +13210,6 @@
           "publishedOn": "2022-02-03T16:21:16.000Z",
           "wordCount": 202,
           "title": "Jason Snell on the Rumored Apple Headset"
-        },
-        {
-          "id": "https://www.macsparky.com/?p=11661",
-          "author": "David Sparks",
-          "description": "New year, new you going as planned? If you resolved to declutter and clean up your inbox for the new year, consider giving SaneBox a try. You can test it out for yourself with their 14-day free trial. There’s nothing to download, and SaneBox works with any webmail/email client. So, why SaneBox? SaneBox will learn... Continue reading →\nThe post SaneBox (Sponsor) appeared first on MacSparky.",
-          "link": "https://www.macsparky.com/blog/2022/02/sanebox-sponsor-2/",
-          "publishedOn": "2022-02-02T17:00:00.000Z",
-          "wordCount": 258,
-          "title": "SaneBox (Sponsor)"
-        },
-        {
-          "id": "https://www.macsparky.com/?p=11721",
-          "author": "David Sparks",
-          "description": "Patrick Rhone joins Mike and me on this episode of Focused to talk about analog productivity, knolling, mise en place, and staying focused while wearing many hats. This episode of Focused is sponsored by: Indeed: Get a free $75 credit to upgrade your job post. Squarespace: Make your next move. Enter offer code FOCUSED at checkout to... Continue reading →\nThe post Focused 144: Enough, with Patrick Rhone appeared first on MacSparky.",
-          "link": "https://www.macsparky.com/blog/2022/02/focused-144-enough-with-patrick-rhone/",
-          "publishedOn": "2022-02-02T16:00:00.000Z",
-          "wordCount": 157,
-          "title": "Focused 144: Enough, with Patrick Rhone"
         }
       ]
     },
@@ -13948,51 +13837,6 @@
           "publishedOn": "2022-02-03T12:30:02.000Z",
           "wordCount": 744,
           "title": "Starlink Announces Premium Satellite Internet Service for $500 Per Month"
-        },
-        {
-          "id": "https://www.extremetech.com/?p=331263",
-          "author": "Ryan Whitwam",
-          "description": "Photo by Charles Sims on Unsplash\nSony has announced that it has cut its PS5 sales outlook, and that has nothing to do with demand. You can blame the continued shortage of PlayStation 5 machines on the chip shortage. \nThe post Sony Will Sell Fewer PlayStation 5 Consoles in 2022 Due to Chip Shortage appeared first on ExtremeTech.",
-          "link": "https://www.extremetech.com/gaming/331263-sony-will-sell-fewer-playstation-5-consoles-in-2022-due-to-chip-shortage",
-          "publishedOn": "2022-02-02T18:51:48.000Z",
-          "wordCount": 772,
-          "title": "Sony Will Sell Fewer PlayStation 5 Consoles in 2022 Due to Chip Shortage"
-        },
-        {
-          "id": "https://www.extremetech.com/?p=331241",
-          "author": "Josh Norem",
-          "description": "The Backblaze 4U storage pods can save up to 480 TB of user data. \nHard drive failure rates in the company's storage pods have remained low for 2021, a good sign for data hoarders. \nThe post Backblaze Publishes Stats for Hard Drive Failure in 2021 appeared first on ExtremeTech.",
-          "link": "https://www.extremetech.com/computing/331241-backblaze-publishes-stats-for-hard-drive-failure-in-2021",
-          "publishedOn": "2022-02-02T18:04:35.000Z",
-          "wordCount": 1109,
-          "title": "Backblaze Publishes Stats for Hard Drive Failure in 2021"
-        },
-        {
-          "id": "https://www.extremetech.com/?p=331169",
-          "author": "Jessica Hall",
-          "description": "After decades of exhaustive study, scientists have determined that human tetrachromacy is real. It comes in two forms -- and one can actually be an acquired trait.\nThe post Human Tetrachromacy is Real. Here’s What We Know appeared first on ExtremeTech.",
-          "link": "https://www.extremetech.com/extreme/331169-human-tetrachromacy-is-real-heres-what-we-know",
-          "publishedOn": "2022-02-02T17:58:53.000Z",
-          "wordCount": 1900,
-          "title": "Human Tetrachromacy is Real. Here’s What We Know"
-        },
-        {
-          "id": "https://www.extremetech.com/?p=331204",
-          "author": "Josh Norem",
-          "description": "The clash of the titans will rage on in 2022, with both Intel and AMD making gains in each other's prime territories. \nThe post Analysts: Intel and AMD to Swap Market Share in 2022 in Mobile, Server appeared first on ExtremeTech.",
-          "link": "https://www.extremetech.com/computing/331204-analysts-intel-and-amd-to-swap-market-share-in-2022-in-mobile-server",
-          "publishedOn": "2022-02-02T16:06:35.000Z",
-          "wordCount": 996,
-          "title": "Analysts: Intel and AMD to Swap Market Share in 2022 in Mobile, Server"
-        },
-        {
-          "id": "https://www.extremetech.com/?p=331210",
-          "author": "Adrianna Nine",
-          "description": "The FTC may be toughening up its guidelines just in time to prevent Microsoft from becoming the third-largest video game maker in the world. \nThe post FTC Will Review MS Deal to Buy Activision Blizzard appeared first on ExtremeTech.",
-          "link": "https://www.extremetech.com/gaming/331210-ftc-will-review-ms-deal-to-buy-activision-blizzard",
-          "publishedOn": "2022-02-02T15:47:12.000Z",
-          "wordCount": 734,
-          "title": "FTC Will Review MS Deal to Buy Activision Blizzard"
         }
       ]
     },
@@ -14076,15 +13920,6 @@
           "publishedOn": "2022-02-04T03:51:49.000Z",
           "wordCount": null,
           "title": "Universal Basic Cop-Out"
-        },
-        {
-          "id": "https://writing.kemitchell.com/2022/02/02/BLS-Occupational-Outlook-2020.html",
-          "author": null,
-          "description": "data from the Bureau of Labor Statistics",
-          "link": "https://writing.kemitchell.com/2022/02/02/BLS-Occupational-Outlook-2020.html",
-          "publishedOn": "2022-02-02T18:27:55.000Z",
-          "wordCount": null,
-          "title": "Software Pay Data 2020"
         }
       ]
     },
@@ -14162,24 +13997,6 @@
           "publishedOn": "2022-02-04T17:13:29.000Z",
           "wordCount": null,
           "title": "Novak Djokovic and the Healing Water Crystals"
-        },
-        {
-          "id": "https://nautil.us/?p=13877",
-          "author": "Kristen French",
-          "description": "We brought Antonio Damasio and Anil Seth together to share their insights into neuroscience’s big question.\nThe post What’s So Hard About Understanding Consciousness? appeared first on Nautilus | Science Connected.",
-          "link": "https://nautil.us/whats-so-hard-about-understanding-consciousness-13877/",
-          "publishedOn": "2022-02-02T18:36:39.000Z",
-          "wordCount": 5196,
-          "title": "What’s So Hard About Understanding Consciousness?"
-        },
-        {
-          "id": "https://nautil.us/?p=13869",
-          "author": "Antonio Damasio",
-          "description": "Consciousness is a continuous conversation between the feeling body and the knowing mind.\nThe post I Feel, Therefore I Am appeared first on Nautilus | Science Connected.",
-          "link": "https://nautil.us/i-feel-therefore-i-am-13869/",
-          "publishedOn": "2022-02-02T18:36:05.000Z",
-          "wordCount": 2923,
-          "title": "I Feel, Therefore I Am"
         }
       ]
     },
@@ -14363,6 +14180,46 @@
       "title": "Ferd.ca",
       "feedUrl": "https://ferd.ca/feed.rss",
       "siteUrl": "https://ferd.ca/",
+      "articles": []
+    },
+    {
+      "title": "Joel on Software",
+      "feedUrl": "https://www.joelonsoftware.com/feed/atom/",
+      "siteUrl": "https://www.joelonsoftware.com",
+      "articles": []
+    },
+    {
+      "title": "morling.dev -- Blog",
+      "feedUrl": "https://www.morling.dev/blog/index.xml",
+      "siteUrl": "https://www.morling.dev/blog/",
+      "articles": []
+    },
+    {
+      "title": "Open Source Security",
+      "feedUrl": "https://opensourcesecurity.io/feed/",
+      "siteUrl": "https://opensourcesecurity.io",
+      "articles": [
+        {
+          "id": "http://opensourcesecurity.io/?p=2697",
+          "author": "Josh Bressers",
+          "description": "Josh and Kurt talk about NPM requiring 2FA for the top 100 packages. We discuss the new Alpha and Omega projects from the OpenSSF and what it could mean for the future of open source security. Then we end on a note about the new Samba critical vulnerability. Show Notes NPM requires 2FA OpenSSF Alpha and Omega DavidContinue reading \"Episode 309 – The bright future of open source secuirty\"",
+          "link": "https://opensourcesecurity.io/2022/02/06/episode-309-the-bright-future-of-open-source-secuirty/",
+          "publishedOn": "2022-02-07T00:00:00.000Z",
+          "wordCount": null,
+          "title": "Episode 309 – The bright future of open source secuirty"
+        }
+      ]
+    },
+    {
+      "title": "Jason Williams",
+      "feedUrl": "https://jason-williams.co.uk/feed/atom",
+      "siteUrl": "https://jason-williams.co.uk",
+      "articles": []
+    },
+    {
+      "title": "善用佳软",
+      "feedUrl": "https://xbeta.info/feed",
+      "siteUrl": "https://xbeta.info",
       "articles": []
     }
   ],
