@@ -2,10 +2,2099 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gsyx666.github.io/action-osmosfeed/index.html</id>
     <title>gsyx::feed</title>
-    <updated>2022-06-11T10:39:04.425Z</updated>
+    <updated>2022-06-12T10:38:14.287Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://gsyx666.github.io/action-osmosfeed/index.html"/>
     <link rel="self" href="https://gsyx666.github.io/action-osmosfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[9 Beautiful Cool Text Effects using Google font Effects👌]]></title>
+        <id>https://dev.to/gulshanaggarwal/9-beautiful-cool-text-effects-using-google-font-effects-mn6</id>
+        <link href="https://dev.to/gulshanaggarwal/9-beautiful-cool-text-effects-using-google-font-effects-mn6"/>
+        <updated>2022-06-12T10:18:49.000Z</updated>
+        <summary type="html"><![CDATA[Looking to style your headers or text in a more decorative way? Then you are in right place. We all use google fonts in our daily projects but did you ever notice google font is more than just that. Google fonts provide a font effect feature that is less popular & can help you in generating stylish text for your projects.
+
+Are you, excited gang?
+How to use this feature?
+effect= to your Google Fonts API request and add the corresponding class name to the HTML element(s) that you want to affect. In our example above, we used the shadow-multiple font effect, so the request would look like this:
+
+
+
+
+https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple
+
+font-effect-shadow-multiple:
+
+
+
+
+<div class="font-effect-shadow-multiple">This is a font effect!<div>
+
+|).
+
+
+
+
+https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float
+
+👇Here is a list of some of the effects that API offers -
+
+
+
+
+Note:- Google font API offers 25+ effects but Some of the font effects (e.g. 3d) do not scale particularly well, and tend to look best when used with larger font sizes. Read more about the feature in the docs here.
+Thanks for reading!]]></summary>
+        <author>
+            <name>Gulshan Aggarwal</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Retrieving latest asset prices in your React dApp]]></title>
+        <id>https://dev.to/murashow/retrieving-latest-asset-prices-in-your-react-dapp-23i9</id>
+        <link href="https://dev.to/murashow/retrieving-latest-asset-prices-in-your-react-dapp-23i9"/>
+        <updated>2022-06-12T09:52:09.000Z</updated>
+        <summary type="html"><![CDATA[What if you need to show in your app today's BTC/USD price? Or convert the user's balance from ETH to BTC? Or are you building an Elon Musk fan site and want to provide the latest Tesla (TSLA) stock price updates?
+Chainlink to retrieve the latest assets prices in a single call and provide it to your app components using React Context
+The easiest and quickest way to do that is to use the data feed provided by Chainlink. We will use the ETH/USD pair as an example.
+First, we need to find the contract's address for our pair to call to. There is a handy address's list for every pair supported by Chainlink.
+0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419.
+ABI. We will use Ethers.js library to help us with it (you could also use Web3.js, it doesn't matter here).
+// getLatestPrice.ts
+import { providers…]]></summary>
+        <author>
+            <name>Makar Murashov</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[硬核观察 #665 计算机历史博物馆恢复了 21 部 1976 年传奇性计算机会议的视频]]></title>
+        <id>https://linux.cn/article-14701-1.html?utm_source=rss&amp;utm_medium=rss</id>
+        <link href="https://linux.cn/article-14701-1.html?utm_source=rss&amp;utm_medium=rss"/>
+        <updated>2022-06-12T09:24:36.000Z</updated>
+        <summary type="html"><![CDATA[计算机历史博物馆恢复了 21 部 1976 年传奇性计算机会议的视频
+
+在 1976 年夏天，来自世界各地的数十位计算机领域的顶级工程师、科学家和软件先锋们聚集在一起，在美国洛斯阿拉莫斯国家实验室聚会了五天，回顾了计算机界的前 25 年历史。在这些修复的视频中，与会者们讲述了许多当时鲜为人知的事情。比如，美国最早的大型电子计算机 ENIAC 的共同发明人约翰•毛奇里讨论了它的严重问题，ENIAC 必须每天 24 小时保持通电，以保持其 18000 个真空管的健康。计算机历史学家布莱恩•兰德尔教授首次披露了英国二战时期破译德军密码的专用计算机，还介绍了艾伦•图灵在二战时发挥的重大作用。
+
+
+消息来源：CHM
+
+
+
+老王点评：之前在翻译红帽《代码英雄》系列播客时接触过这段历史的一部分，真是想想波澜壮阔啊。
+
+
+
+
+秘密运行中的世界上最强大的超级计算机
+
+在最近一期的 TOP500 中，美国橡树岭国家实验室建造的 Frontier 以第一个 E 级超算夺得了榜首。TOP500 测量的是一台机器通过运行名为 LINPACK 基准的软件解决大量方程式的速度，这给出了一个以每秒浮点运算（FLOPS）为单位的数值。但并不是所有的超级计算机都会被列出，只有在其所有者运行该基准并提交结果的情况下才会出现在榜单。很多机构，包括一些大学都不会提交其基准数据来加入榜单。超级计算机专家们的 共识 是，中国自 2021 年以来至少有两台被称为“海洋之光”和“天河三号”的超大规模机器在运行，并且正在由曙光研发的第三台超算达到了 2E 级。这些“秘密”超算的数据是通过一些不相关的论文披露出来的。
+
+
+消息来源：MSN
+
+
+
+老王点评：只能说通过上榜来获取自信心的时代已经过去了，现在大家都埋头竞争呢。
+
+
+
+
+通用汽车用 3D 打印来解决汽车生产短缺的零件
+
+通用汽车在 2020 年对 3D 打印技术进行了重大投资，建立了 1.5 万平方英尺面积的增材制造中心。雪佛兰的工程师们对一款新的 SUV 的设计做了一个后期改动，需要创造一个额外的零件，以填补了尾部的一个缺口。开发注射成型的模具将花费太多时间，从而延误了 3 万辆汽车的交付。通过 3D 打印，工程师们能够快速设计并使用符合通用汽车标准的柔性材料打印出这些部件。而从设计到完成只用了五个星期。这还不到走注射成型路线所需时间的一半。
+
+
+消息来源：CNET
+
+
+
+老王点评：虽然成本高点，但是在这种应急的时候还真是非常灵活，也节省了很多时间成本。]]></summary>
+        <author>
+            <name>linux@linux.cn (linux)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Low economic growth is a slow-burning crisis for Britain]]></title>
+        <id>https://hn.buzzing.cc/hn/31708519/</id>
+        <link href="https://hn.buzzing.cc/hn/31708519/?score=100&amp;original_url=https%3A%2F%2Fwww.economist.com%2Fleaders%2F2022%2F06%2F09%2Flow-economic-growth-is-a-slow-burning-crisis-for-britain&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31708519&amp;sensitive=false"/>
+        <updated>2022-06-12T08:47:22.000Z</updated>
+        <summary type="html"><![CDATA[Low economic growth is a slow-burning crisis for Britain]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Listing Docker Volumes]]></title>
+        <id>https://drafts.baeldung.com/?p=136917</id>
+        <link href="https://feeds.feedblitz.com/~/699032356/0/baeldung~Listing-Docker-Volumes"/>
+        <updated>2022-06-12T08:36:36.000Z</updated>
+        <summary type="html"><![CDATA[Learn how to list Docker volumes and get detailed information about them.
+      
+Related Stories
+
+Docker Compose Restart Policies
+Difference Between Expose and Ports in Docker Compose
+Docker Registry API – Listing Images and Tags]]></summary>
+        <author>
+            <name>Narendra Kangralkar</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Amberol 是一款外观漂亮的 Linux 音乐播放器，只播放音乐，不做其他事情]]></title>
+        <id>https://linux.cn/article-14700-1.html?utm_source=rss&amp;utm_medium=rss</id>
+        <link href="https://linux.cn/article-14700-1.html?utm_source=rss&amp;utm_medium=rss"/>
+        <updated>2022-06-12T07:58:53.000Z</updated>
+        <summary type="html"><![CDATA[虽然音乐世界被流媒体服务所主导，但这并没有阻止开发者为桌面电脑创建音乐播放器。
+
+最近，我发现了一个外观漂亮的新的 Linux 桌面音乐播放器。它名为 Amberol，我被它的美丽所震撼。
+
+
+
+看起来不错，不是吗？让我们仔细看看它。
+
+Amberol，Linux 上的可爱的音乐播放器
+
+看起来不错是它所做的两件（或几件）事情中的一件。另一件事是播放音乐。
+
+这就是它，Amberol 没有额外的花哨（和有用）的功能，如生成专辑封面、元数据编辑、歌词显示或播放列表和库管理。
+
+这些功能也不像是会在未来的版本中加入。Amberol 只想播放音乐。就是这样。
+
+令人惊叹的用户界面
+
+Amberol 和大多数新的 GNOME 应用一样，是用 Rust 和 GTK 编写的。
+
+它有一个自适应的用户界面，可以根据你正在播放的专辑颜色来改变颜色。渐变效果给了它一个现代、时尚的外观，肯定会成为你的 Linux 美化Ricing截图的一部分。
+
+
+
+由于其 UI 没有传统的手柄和菜单，它给应用一个统一的外观。
+
+播放列表
+
+它会从你添加的文件夹中的文件自动生成一个播放列表，显示在左手边的侧边栏。
+
+
+
+你可以在左上角看到整个播放列表将播放多长时间的音乐。点击“勾选”符号，你可以选择歌曲，并从播放列表中删除它们。
+
+如果你愿意，可以隐藏播放列表的侧边栏。
+
+
+
+音乐播放选项
+
+你可以在界面上看到歌曲的进度。该播放器与键盘上的媒体控制按钮整合得很好。你可以用专用的媒体键来播放、暂停和改变曲目（如果你的系统上有）。
+
+Amberol 为你提供了一些播放音乐的选项。你可以打开随机播放功能，按随机顺序播放音乐。你也可以单曲循环，直到你厌倦它。
+
+
+
+底部的汉堡菜单让你可以选择添加文件或文件夹，并显示可用的键盘快捷方式。
+
+
+
+你也可以从这里禁用 UI 颜色变化以配合专辑封面。
+
+在 Linux 上安装 Amberol
+
+Amberol 是 以 Flatpak 形式提供的。请确保 你的系统已启用 Flatpak 支持。
+
+要安装 Amberol，请打开终端并使用以下命令：
+
+flatpak install flathub io.bassi.Amberol
+
+
+安装完毕后，在菜单中搜索该应用，并点击启动。
+
+第一次运行时，它会要求你添加音乐文件或文件夹。你也可以拖放文件播放。
+
+
+
+总结
+
+就个人而言，我更喜欢流媒体服务，因为我没有本机音乐珍藏。但我知道有的人有大量的 CD 收藏，现在都保存在硬盘上。
+
+Amberol 是一个外观漂亮的应用，对于播放本机音乐来说，它足够好。最吸引人的是它基于专辑封面的自适应用户界面。
+
+请你试试它，并在评论区分享你的经验。
+
+
+via: https://itsfoss.com/amberol-music-player/
+
+作者：Abhishek Prakash 选题：lkxed 译者：geekpi 校对：wxy
+
+本文由 LCTT 原创编译，Linux中国 荣誉推出]]></summary>
+        <author>
+            <name>linux@linux.cn (linux)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Berry是一个健康的、用C语言编写的字节大小的窗口管理器，用于Unix系统。]]></title>
+        <id>https://hn.buzzing.cc/hn/31702563/</id>
+        <link href="https://hn.buzzing.cc/hn/31702563/?score=100&amp;original_url=https%3A%2F%2Fberrywm.org%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31702563&amp;sensitive=false"/>
+        <updated>2022-06-12T07:56:05.000Z</updated>
+        <summary type="html"><![CDATA[Berry是一个健康的、用C语言编写的字节大小的窗口管理器，用于Unix系统。]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[15 Beautiful Color Gradients using CSS]]></title>
+        <id>https://dev.to/devash98/15-beautiful-colour-gradients-using-css-4em1</id>
+        <link href="https://dev.to/devash98/15-beautiful-colour-gradients-using-css-4em1"/>
+        <updated>2022-06-12T07:42:34.000Z</updated>
+        <summary type="html"><![CDATA[👋, I am here with another list. In this post I have enlisted 15 aesthetic color gradients using CSS (examples of colour gradients in CSS) which you can implement in your next projects.
+I have used linear-gradient method of CSS and only the gradient direction 'to bottom left'. There are many others gradient directions like 'to right', 'to top' etc. to read about the linear-gradient method you can refer to this freecodecamp article.
+Let's jump into the list: 
+background-image: linear-gradient(to bottom right, #FF512F, #DD2476);
+
+
+background-image: linear-gradient(to bottom right, #FF61D2, #FE9090);
+
+
+3.
+background-image: linear-gradient(to bottom right, #72FFB6, #10D164);
+
+
+background-image: linear-gradient(to bottom right, #FD8451, #FFBD6F);
+
+
+background-image: linear-gradient(to bottom right, #305170, #6DFC6B);
+
+
+background-image: linear-gradient(to bottom right, #00C0FF, #4218B8);
+
+
+background-image: linear-gradient(to bottom right, #009245, #FCEE21);
+
+
+background-image: linear-gradient(to bottom right, #FDFCFB, #E2D1C3);
+
+
+background-image: linear-gradient(to bottom right, #0100EC, #FB36F4);
+
+
+background-image: linear-gradient(to bottom right, #FDABDD, #374A5A);
+
+
+background-image: linear-gradient(to bottom right, #38A2D7, #561139);
+
+
+background-image: linear-gradient(to bottom right, #121C84, #8278DA);
+
+
+background-image: linear-gradient(to bottom right, #5761B2, #1FC5A8);
+
+
+background-image: linear-gradient(to bottom right, #FFDB01, #0E197D);
+
+
+background-image: linear-gradient(to bottom right, #FF3E9D, #0E1F40);
+
+
+Congratulations!! You have successfully read this long list. I have also tweeted this one, you can bookmark it there for your future reference.
+I have gathered this colourful ideas from Pinterest. 
+Also, I write about web development on twitter, follow me there for understanding web development technologies easily.
+Thank you!! See you soon...]]></summary>
+        <author>
+            <name>Ashique Billa Molla</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Let's Hack The World in The MR. Robot CTF! 👾]]></title>
+        <id>https://dev.to/christinecdev/lets-hack-the-world-in-the-mr-robot-ctf-4bj5</id>
+        <link href="https://dev.to/christinecdev/lets-hack-the-world-in-the-mr-robot-ctf-4bj5"/>
+        <updated>2022-06-12T07:35:07.000Z</updated>
+        <summary type="html"><![CDATA[Today we are going to take a crack at the Mr. Robot CTF on Try Hack Me. I must say before we start that I love the design of this lab! The website is so cool, and so well thought out, it was just perfect. I really encourage you to look at all the videos, it's pretty hackery.😀 
+When you're ready, put on your FSOCIETY hoodie and let's hack the world!
+Once your machine is loaded, we can start with our basic enumeration. First things first, when we open up the IP address of the machine in our browser we are met with a command-line like website. Each command that you type in will load a video, so it's not really that important (but you can check it out if you want). 
+
+Let's run an nmap scan to see if we can find any services.
+nmap -sV -Pn <your machine IP>
+
+Mhh, we can see that our ssh port is…]]></summary>
+        <author>
+            <name>Christine Coomans</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Show HN: 浏览器扩展可以伪造你的位置数据以匹配你的VPN]]></title>
+        <id>https://hn.buzzing.cc/hn/31710603/</id>
+        <link href="https://hn.buzzing.cc/hn/31710603/?score=108&amp;original_url=https%3A%2F%2Fgithub.com%2Fz0ccc%2FVytal&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31710603&amp;channel=Show+HN&amp;sensitive=false"/>
+        <updated>2022-06-12T07:33:12.000Z</updated>
+        <summary type="html"><![CDATA[Show HN: 浏览器扩展可以伪造你的位置数据以匹配你的VPN]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CRUD Functions using Prisma, Nextjs, and Supabase(Postgress database)]]></title>
+        <id>https://dev.to/nextdev/crud-functions-using-prisma-nextjs-and-supabasepostgress-database-3105</id>
+        <link href="https://dev.to/nextdev/crud-functions-using-prisma-nextjs-and-supabasepostgress-database-3105"/>
+        <updated>2022-06-12T07:07:52.000Z</updated>
+        <summary type="html"><![CDATA[Welcome friends to this new blog post where I will teach you how to use CRUD functions using Prisma(ORM tool) with the help of Nextjs (API folder).
+First, you have to setup Prisma in your Nextjs app 👇
+Get Started with Prisma and Nextjs with Supabase (Postgress Database)
+So, let’s begin
+
+First, you need to install 2 packages
+yarn add react-hot-toast swr
+
+
+prisma migrate dev
+
+If you don’t have any GUI tool for managing your data in the database. Then you can write this command
+prisma studio
+
+That will open up a website at localhost:5555, by which you can manage your data quickly.
+First, you need to create a form.
+
+To create that, make a file named — profiles.ts in your API folder in the pages folder.
+
+Then write this code 👇
+//@ts-ignore in 18th line helps to ignore the type error.
+
+Now you can try the **create **command.
+If you encounter any error, then observe your console logs.
+😃Thanks for reading.
+If you understand Hindi, you can watch this tutorial 👇
+https://youtu.be/NiCQ4KIi6VU
+You can join my discord channel here 👇
+Join the Next Dev's server Discord Server!]]></summary>
+        <author>
+            <name>Next Dev</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[为什么汽车销售摆放的说明牌只用 A4 纸大小?]]></title>
+        <id>859069</id>
+        <link href="https://www.v2ex.com/t/859069"/>
+        <updated>2022-06-12T07:03:32.000Z</updated>
+        <summary type="html"><![CDATA[paopjian: 去了奥迪 沃尔沃这些厂家,看到一辆辆光鲜亮丽的车旁边只有一 A4 纸说明,上面的文字不仔细看根本看不清,还没蚂蚁大.为什么他们不能摆放大点的牌子来进行说明? 就连小鹏也是官网做得花里胡哨, 看车的地方一张纸放在那, 还得听销售介绍.
+感觉目前的汽车销售业还是靠的销售人员口才, 可是说得天花乱坠也没有文字说明详细吧, 现在得房屋中介简单的放布局图加面积说明, 认真的都有全景 VR 加房屋分析.]]></summary>
+        <author>
+            <name>paopjian</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[没有 paypal 怎么买谷歌商店的东西]]></title>
+        <id>859068</id>
+        <link href="https://www.v2ex.com/t/859068"/>
+        <updated>2022-06-12T06:58:48.000Z</updated>
+        <summary type="html"><![CDATA[vue666: 现在礼品卡给锁区了]]></summary>
+        <author>
+            <name>vue666</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[safari 现在有使用油猴脚本的方案么？]]></title>
+        <id>859067</id>
+        <link href="https://www.v2ex.com/t/859067"/>
+        <updated>2022-06-12T06:57:55.000Z</updated>
+        <summary type="html"><![CDATA[justincnn: 
+目前尝试：
+1.安装 Userscripts ，在油猴网站安装的脚本基本都没法运行
+2.appstore 买了付费的 tempermonkey ，也不见得不上面的有本质性的改进
+如果可以使用油猴脚本的话，基本可以不用 edge ，前面切换到 safari 了]]></summary>
+        <author>
+            <name>justincnn</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于 google ad manager 代码，请高手指教。]]></title>
+        <id>859066</id>
+        <link href="https://www.v2ex.com/t/859066"/>
+        <updated>2022-06-12T06:55:49.000Z</updated>
+        <summary type="html"><![CDATA[service517: 添加 google ad manager 后，正确显示 adsense 的广告。但是在控制台会报错：
+GPT] Exception in googletag.cmd function: TypeError: Cannot read properties of null (reading 'addService').
+到底是哪个环节的问题？
+下面是本地的代码
+import Head from 'next/head';
+import { useEffect } from 'react';
+const useDfpSlot = ({ path, size, id }) => {
+  useEffect(() => {
+    if(window){
+    const googletag = window['googletag'] || {};
+    googletag.cmd = googletag.cmd || [];
+    googletag.cmd.push(() => {
+      googletag.defineSlot(path, size, id).addService(googletag.pubads());
+      googletag.pubads().enableSingleRequest();
+      googletag.enableServices();
+      googletag.display(id);
+    });
+    }
+  }, [path, size, id]);
+};
+// 侧边栏广告
+export const AdSidebar = () => {
+  useDfpSlot({
+    path: '/20000000000/Sidebar',
+    size: [160,600],
+    id: 'div-gpt-ad-10000000000-0',
+  });
+  return (
+    <div
+      id="div-gpt-ad-10000000000-0"
+      style={{ 
+        display: 'inline-block',
+        width: '160px',
+        height: '600px',
+        margin: 'auto'
+      }}
+    >
+    </div>
+  );
+};
+// 收件箱广告
+export const MailAd = () => {
+  useDfpSlot({
+    path: '/20000000000/ads/inbox-Ad',
+    size: [[728, 90],[970, 90]],
+    id: 'div-gpt-ad-10000000000-0',
+  });
+  return (
+    <div
+      id="div-gpt-ad-10000000000-0"
+      style={{ 
+        display: 'inline-block',
+        width: '970px',
+        height: '90px',
+        margin: 'auto',
+      }}
+    >
+    </div>
+  );
+};
+
+// 首页广告
+export const MainPageAd = () => {
+  useDfpSlot({
+    path: '/20000000000/ads',
+    size: [728, 90],
+    id: 'div-gpt-ad-10000000000-0',
+  });
+  return (
+    <div
+      id="div-gpt-ad-10000000000-0"
+      style={{ 
+        display: 'inline-block',
+        width: '728px',
+        height: '90px',
+        margin: 'auto',
+      }}
+    >
+    </div>
+  );
+};]]></summary>
+        <author>
+            <name>service517</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ZOOM 这家公司未来前景如何？推荐程度如何]]></title>
+        <id>859065</id>
+        <link href="https://www.v2ex.com/t/859065"/>
+        <updated>2022-06-12T06:49:04.000Z</updated>
+        <summary type="html"><![CDATA[Prideeeeee: 
+现在在一线互联网公司，因为公司发展受阻，所以最近有换工作的想法，手里几个 offer 目前就觉得 Zoom 还行，遂有此贴，不是求职单纯是为了咨询，所以没有发在「酷工作」。
+先来说一下个人情况:
+2021 年校招 ssp ，无股票
+带一条业务线的单独业务分支，但是业务因为政策问题迟迟无法上线
+后半年有机会晋升，但是可能性不大，因为后半年窗口比较小
+字节一个月前三面挂过，现在被捞起来流程中，还没面完，走完估计两周
+再来说下 Zoom 的情况:
+Zoom 给了一个平的总包
+没有一个明确的级别体系和晋升规则
+薪资有 1/3 股票构成，月 base 比目前低 10+
+我不太清楚美股变现规则，手续费和税之类不是很懂
+我的顾虑:
+返回互联网会不会被卡级别、卡涨幅？
+在 Zoom 会不会成长停滞
+Zoom 在后疫情时代会不会发展受阻？
+感谢各位大佬各抒己见🙏]]></summary>
+        <author>
+            <name>Prideeeeee</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[萌新提问(idea vim)]]></title>
+        <id>859064</id>
+        <link href="https://www.v2ex.com/t/859064"/>
+        <updated>2022-06-12T06:28:43.000Z</updated>
+        <summary type="html"><![CDATA[iosyyy: 
+求一个 idea vim 的配置文件..看了很多其他的要么功能不全要么都是英文简绍]]></summary>
+        <author>
+            <name>iosyyy</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Warp your head around this terminal]]></title>
+        <id>https://dev.to/dailydevtips1/warp-your-head-around-this-terminal-595o</id>
+        <link href="https://dev.to/dailydevtips1/warp-your-head-around-this-terminal-595o"/>
+        <updated>2022-06-12T06:27:58.000Z</updated>
+        <summary type="html"><![CDATA[Regarding Terminals, our developers are susceptible. We love our terminal as it's our home base.
+So whenever a new terminal pops up, I have to try it at least.
+I love and use iTerm2 for almost everything. But Warp is the new kid on the block, and although it comes with some downsides, it's pretty slick!
+Try our Warp here
+This new terminal is made from scratch, not based on what we already know about terminals.
+This, to me, is what makes it so cool. The whole terminal experience changes and makes it feel like a native app.
+It's super quick to autocomplete and separate commands, so it's easy to understand which output belongs to which command.
+Besides these apparent wins, it's also super fast and comes with Intellisense for npm and git. You'll never forget a command this way.
+
+To be honest, there are always downsides, aren't there.
+It's only available for Mac, but the team seems to be working hard on a Windows and Linux version.
+It's not open source, this might not be a bad hard point, but for some people, that's a deal-breaker.
+You need to log in, which seems weird to use a terminal.
+I hope they are not using this personal data to keep track of our terminal usage, as it's now connected to a user profile.
+Worth a try if you're on Mac. It's pretty awesome to use.
+Try our Warp here
+Thank you for reading my blog. Feel free to subscribe to my email newsletter and connect on Facebook or Twitter]]></summary>
+        <author>
+            <name>Chris Bongers</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[有没有知识管理的 Wiki 系统推荐？]]></title>
+        <id>859062</id>
+        <link href="https://www.v2ex.com/t/859062"/>
+        <updated>2022-06-12T06:24:06.000Z</updated>
+        <summary type="html"><![CDATA[willatman: 
+各位大佬，有没有公司可以使用的知识管理的 Wiki 系统推荐？就是想把一些笔记、材料、培训文件统一管理起来。要求如下：
+本地存储、或者可以自己搭建服务器部署
+支持多人合作
+支持检索
+支持文件与笔记的链接、笔记与笔记的链接（有点类似于双链笔记？）
+先谢谢各位大佬了]]></summary>
+        <author>
+            <name>willatman</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[v 友们，开始健身了，日常想配个智能表，有什么推荐的么？（ iPhone 用户]]></title>
+        <id>859061</id>
+        <link href="https://www.v2ex.com/t/859061"/>
+        <updated>2022-06-12T06:23:06.000Z</updated>
+        <summary type="html"><![CDATA[goodhellonice: 
+听说华为什么的对 iPhone 不友好，很多功能没法用
+小米 ov 啥的不准
+佳明 颂拓 博能好像更适合跑步骑行的专业用户
+这么看，好像只能买续航最差的 apple watch ？]]></summary>
+        <author>
+            <name>goodhellonice</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[xdm 问个问题上海户口有啥用]]></title>
+        <id>859060</id>
+        <link href="https://www.v2ex.com/t/859060"/>
+        <updated>2022-06-12T06:22:36.000Z</updated>
+        <summary type="html"><![CDATA[chihiro2014: 
+最近看到政策，似乎上海放宽了入户需求。目前符合要求，但是没感觉户口有什么优势。
+不懂这块，有没有大佬解惑]]></summary>
+        <author>
+            <name>chihiro2014</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[From No Programming Experience to Web Developer in 11 Small Steps]]></title>
+        <id>https://dev.to/ruppysuppy/from-no-programming-experience-to-web-developer-in-11-small-steps-4fbn</id>
+        <link href="https://dev.to/ruppysuppy/from-no-programming-experience-to-web-developer-in-11-small-steps-4fbn"/>
+        <updated>2022-06-12T06:22:08.000Z</updated>
+        <summary type="html"><![CDATA[Web Development can be difficult, especially for beginners. But don't fret! This article will provide you with a comprehensive list of simple steps & a few resources too, that you enable you to become a Top-Notch Web Developer (provided you put in the effort)!
+Before you get your hands dirty with coding, getting yourself a Code Editor can drastically boost your productivity as it streamlines your workflow by getting rid of the mundane tasks.
+If you want to learn how Pros Automate the Boring Stuff VS Code, check out this article.
+
+HTML is the fundamental skill required to start Web Development, but don't bother to learn each and every HTML tag as most of them are rarely used. Learning the structure of the HTML only is enough to get you moving!
+To get started, you can check out this course
+I…]]></summary>
+        <author>
+            <name>Tapajyoti Bose</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[大家觉得 MBP 2021 的高刷屏用着区别大吗？]]></title>
+        <id>859058</id>
+        <link href="https://www.v2ex.com/t/859058"/>
+        <updated>2022-06-12T05:54:59.000Z</updated>
+        <summary type="html"><![CDATA[kneep: 
+我准备把家里的 yoga 电脑换掉，在纠结是 MBP 2021 还是 M2 的 air ，按照 16+512 算，其实两者的价格已经很接近了（ MBP 按多多价算），续航方面虽然 air 强很多，但 pro 也够用，重量 air 完胜，pro 太重了。主要纠结点就是高刷屏。
+我自己工作，之前用的是 MBP 2019 ，现在用的是 MBP 2021 ，我个人对高刷屏好像没有感受出太大区别。
+大家的建议呢？]]></summary>
+        <author>
+            <name>kneep</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[分享一下如何免 ROOT 隐藏状态栏 NFC/闹钟等图标]]></title>
+        <id>859057</id>
+        <link href="https://www.v2ex.com/t/859057"/>
+        <updated>2022-06-12T05:42:08.000Z</updated>
+        <summary type="html"><![CDATA[Mateverse: 
+因为最新的 MIUI 测试版 /其它部分 UI 会始终显示 NFC 图标，所以写一下这个图标如何隐藏。
+准备工作：
+USB 数据线
+电脑端 adb
+手机打开 USB 调试，部分设备需要打开USB 调试（安全模式） 一般会在 USB 调试开关的下方
+操作步骤：
+adb shell settings put secure icon_blacklist nfc
+
+nfc 可以替换成下面的内容，多个的话可以用,分割。
+图标
+图标描述
+
+
+
+
+volume
+静音 /震动图标
+
+
+location
+定位图标
+
+
+speakerphone
+麦克风使用中图标
+
+
+wifi
+wifi
+
+
+hotspot
+热点
+
+
+alarm_clock
+闹钟
+
+
+bluetooth
+蓝牙
+
+
+airplane
+飞行模式
+
+
+headphone
+耳机
+
+
+cast
+录屏状态
+
+
+nfc
+nfc
+
+
+如果需要恢复，需要使用：
+adb shell settings put secure icon_blacklist null
+会一次性恢复所有图标]]></summary>
+        <author>
+            <name>Mateverse</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[苹果的刀法越来越精准了，大家的选择焦虑症是增加了还是降低了？]]></title>
+        <id>859055</id>
+        <link href="https://www.v2ex.com/t/859055"/>
+        <updated>2022-06-12T05:10:29.000Z</updated>
+        <summary type="html"><![CDATA[HansZimmer: 
+苹果现在自研芯片打通了自家产品线后，刀法也越来越准了，看起来需求明确的话，选择产品会很容易，实际情况是不是这样？
+iPhone 产品线
+需要高刷，高性能，高拍照需求的选 Pro ，但需要忍受更大的手机重量
+iPad Pro 产品线
+同样需要高刷，高存储容量，高显示（ 12.9 mini LED ）的用户，可以选 Pro 系列，但价格很贵，基本可以摸到 MacBook Pro 14/16 这个产品线
+MacBook 产品线
+高性能用户选择 MacBook Pro ，代价就是重量更重，价格也贵很多
+MacBook Air 系列，现在更轻，显示更好，也更薄，定位很好，希望可以有个 12 寸或者更大的版本出来
+今年的 13 寸 MacBook Pro 感觉是个清库存的货色。。不太建议买
+iMac 产品线
+目前只有 24.5 寸的版本，希望可以扩展 27 甚至 32 版本的普通版
+然后 iMac Pro 系列可以出高刷和 mini LED 版本的
+Mac mini 和 Studio 系列
+目前 Studio 对于普通用户来说有点过于强大
+希望 M2 版本的 mac mini 可以缩小体积，并且增加 SD 卡槽
+其他的就不多展开了，苹果自家的显示器回归，特别是“平民款”的产品，是一个好事情。
+我觉得苹果策略是让普通用户或者专业用户从买一个凑合应对所有场景，到各个场景可以选择不同产品，达到卖更多和圈钱更多的目的。]]></summary>
+        <author>
+            <name>HansZimmer</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Klang 量化知识分享会 -《宽客》读书会 1-1]]></title>
+        <id>859053</id>
+        <link href="https://www.v2ex.com/t/859053"/>
+        <updated>2022-06-12T05:04:38.000Z</updated>
+        <summary type="html"><![CDATA[obc: 
+Klang 量化知识分享会 -《宽客》读书会 1-1
+宽客这本书主要讲述了：美国量化对冲基金的知名人物、以及相关的量化发展历史
+我会花 4-5 次读书会，来讲解这本书，涉及内容比较丰富，欢迎大家收听
+youtube： https://www.youtube.com/watch?v=J1_WcMwFWno
+bilibili： https://www.bilibili.com/video/BV1fY411M79v/
+#################################
+Klang 量化金融社区
+是一群由资深程序员建立的量化金融研究社区。🌈🌈🌈
+我们的目标是：和程序员一起成长，挖掘程序员的量化 Alpha ！成为量化 AlphaK 。
+我们的优势：关注系统与网络的底层性能，关注策略以及背后的经济学原理，结合开源社区的优势。]]></summary>
+        <author>
+            <name>obc</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[618 想买的东西， V 友有没有推荐的]]></title>
+        <id>859052</id>
+        <link href="https://www.v2ex.com/t/859052"/>
+        <updated>2022-06-12T04:58:29.000Z</updated>
+        <summary type="html"><![CDATA[Flowing: 
+显示器。27 寸、4K
+人体工学椅
+剃须刀
+不过感觉今年 618 好像价格没便宜呀]]></summary>
+        <author>
+            <name>Flowing</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Library/Mobile Documents 下的文件为何无法删除]]></title>
+        <id>859051</id>
+        <link href="https://www.v2ex.com/t/859051"/>
+        <updated>2022-06-12T04:55:55.000Z</updated>
+        <summary type="html"><![CDATA[iSteven: 我知道这个文件夹是 iCloud Drive 自动同步的文件夹，但不知该怎么停止第三方 app 的同步，比如一些第三方 app 我已经删除了，但它们的同步依旧会留在这个文件夹下，删除后又自动同步回来了，在 iCloud 网页上也找不到这些文件，在 macOS 的 Finder 里也看不到这些第三方 app 的同步文件夹（文件夹名称格式为 iCloud.com.xxx ），但是在 Terminal 中用 ls 命令是可以看到这些文件夹的。我搜了一下，说是在系统设置的 iCloud/iCloud Drive 里关闭，但是我试过取消勾选了某个 app ，这个 app 的同步文件夹依旧存在，删除后马上又同步回来了。
+请问有大侠知道该怎么关闭第三方 app 的 iCloud 同步吗？]]></summary>
+        <author>
+            <name>iSteven</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[All Online Tools in “One Box”]]></title>
+        <id>https://dev.to/sktanwar2014/all-online-tools-in-one-box-16m4</id>
+        <link href="https://dev.to/sktanwar2014/all-online-tools-in-one-box-16m4"/>
+        <updated>2022-06-12T04:43:29.000Z</updated>
+        <summary type="html"><![CDATA[What?
+
+
+10015.io is an online tool factory where you can get all tools you needed in one place. While serving different type of tools in different categories, it aims to perform this with a clean and beautiful user interface. Every tool is designed to solve a problem with minimum number of steps to save time of the users and decrease the complexity of the operation.
+10015.io has started to operate in 2020 and it will continue to grow with time by adding new tools each day.
+Tool Categories
+
+
+
+
+Text Tools
+
+
+
+Image Tools
+
+
+
+CSS Tools
+
+
+
+Coding Tools
+
+
+
+Color Tools
+
+
+
+Social Media Tools 
+
+
+
+Miscellaneous Tools
+
+
+
+
+
+Get the extension and access all tools with just one click
+Add to Chrome
+Add to Firefox
+There are lots of sites on web which offers you online tools. Most of them focus on specific topics and they mostly have outdated designs which makes you think "Am I in 90's?". When you start to bookmark the tools you needed, the list becomes larger and larger in some point.
+10015 Tools solves all these problems. So, bookmark it and forget about all other tool sites.
+10015.io is designed and coded by Fatih Telis (me) as a side project. I am a frontend developer based in Istanbul, Turkey. I started this project to build a platform which will work as an all-in-one toolbox while I'm challenging myself to create tools which does many different things. Even though I'm not a professional designer, I'm doing my best to construct a simple, aesthetic and easy-to-use UI system. You can contact me via email or Twitter about anything.
+
+
+  
+  
+  webdesigner #designer #javascript #tools #css #utils #convertor #html #webdeveloper #all]]></summary>
+        <author>
+            <name>Shahrukh Khan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[英斯特恩的新一天]]></title>
+        <id>https://hn.buzzing.cc/hn/31710562/</id>
+        <link href="https://hn.buzzing.cc/hn/31710562/?score=103&amp;original_url=https%3A%2F%2Fwww.insteon.com%2Fblog%2F2022%2F6%2F9%2Ffnustys354bfmcmchr36wgvrn5h41z&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31710562&amp;sensitive=false"/>
+        <updated>2022-06-12T04:43:25.000Z</updated>
+        <summary type="html"><![CDATA[英斯特恩的新一天]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[通过现场团队竞赛而不是讲座来学习ML]]></title>
+        <id>https://hn.buzzing.cc/hn/31704455/</id>
+        <link href="https://hn.buzzing.cc/hn/31704455/?score=101&amp;original_url=https%3A%2F%2Fdelta-academy.xyz&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31704455&amp;sensitive=false"/>
+        <updated>2022-06-12T04:43:25.000Z</updated>
+        <summary type="html"><![CDATA[通过现场团队竞赛而不是讲座来学习ML]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[有图床图片增强插件吗？]]></title>
+        <id>859050</id>
+        <link href="https://www.v2ex.com/t/859050"/>
+        <updated>2022-06-12T04:43:11.000Z</updated>
+        <summary type="html"><![CDATA[v2tudnew: 目前各种图床连接都要点开进去，然后点击放大，有的还得右键新建窗口放大才清晰。
+太麻烦了，不知道你们懂我的感受不。]]></summary>
+        <author>
+            <name>v2tudnew</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[用 m1 pro 玩 dota2 和 csgo 卡吗？]]></title>
+        <id>859049</id>
+        <link href="https://www.v2ex.com/t/859049"/>
+        <updated>2022-06-12T04:39:02.000Z</updated>
+        <summary type="html"><![CDATA[lovepplforever: 
+pubg 呢]]></summary>
+        <author>
+            <name>lovepplforever</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[突然想起来以前电脑上的幻想游戏系列，现在还能玩吗]]></title>
+        <id>859048</id>
+        <link href="https://www.v2ex.com/t/859048"/>
+        <updated>2022-06-12T04:35:46.000Z</updated>
+        <summary type="html"><![CDATA[zxCoder: 
+以前家里的老电脑（ xp ），当时里面装了好多个版本的幻想游戏，现在想想都还挺好玩的，不知道现在还能不能玩，找不到下载的地方了。
+得差不多十年没玩游戏了，现在好像游戏都是得在一个统一平台上付费下载对吧？]]></summary>
+        <author>
+            <name>zxCoder</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Community Bonding Period at CircuitVerse — Google Summer of Code 2022]]></title>
+        <id>https://dev.to/vedantjain03/community-bonding-period-at-circuitverse-google-summer-of-code-2022-43cd</id>
+        <link href="https://dev.to/vedantjain03/community-bonding-period-at-circuitverse-google-summer-of-code-2022-43cd"/>
+        <updated>2022-06-12T04:24:10.000Z</updated>
+        <summary type="html"><![CDATA[What is the Community Bonding Period?
+
+
+Every successful project has been planned before. Similarly, in this phase contributors connect with respective mentors and discuss the project deliverables, plan the project and finalize the scope of the Project.
+I was so happy after getting selected for GSoC, especially with CircuitVerse. After getting selected, our private channel was created and all the contributors, mentors, and OA were there. We had our first meeting on 26th May, and we were welcomed by our mentors, I meet my mentors Aboobacker, Pavan, Samiran, Ayan, Ruturaj, and contributors Pulkit, Devjit, and Aman. It was a pleasure meeting them all. We had a great meeting and our mentors told us about the flow of the GSoC at CircuitVerse.
+After that, for each project separate private channe…]]></summary>
+        <author>
+            <name>vedant-jain03</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[安卓有没有类似 icloud 的实时文件同步云盘]]></title>
+        <id>859046</id>
+        <link href="https://www.v2ex.com/t/859046"/>
+        <updated>2022-06-12T04:23:35.000Z</updated>
+        <summary type="html"><![CDATA[ibxcme: 
+目前用的笔记软件 logseq 在安卓很难实时同步，用的 foldersyncpro ，实时同步功能有但操作不来。
+想询问一下安卓是否有相应的实时同步云盘？最好简单点的]]></summary>
+        <author>
+            <name>ibxcme</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[YouTube 账号的 history 和 liked 列表最近开始频繁出现大量未看过的视频]]></title>
+        <id>859045</id>
+        <link href="https://www.v2ex.com/t/859045"/>
+        <updated>2022-06-12T04:10:24.000Z</updated>
+        <summary type="html"><![CDATA[pi1ot: 
+我的 YouTube 账号的 history 和 liked 列表最近开始频繁出现大量未看过也更不可能点赞的视频，似乎大部分是中亚或者印度相关题材的，我立即通过账号管理退出所有设备，并且马上修改密码，取消所有第三方授权，但是这些幽灵点赞视频仍然继续以每分钟两三个的速度匀速出现在我的 history 和 liked 列表中。]]></summary>
+        <author>
+            <name>pi1ot</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Clock Bar – 在 Touch Bar 显示当前时间，唯一有用 Touch Bar 工具]]></title>
+        <id>https://www.appinn.com/?p=42429</id>
+        <link href="https://www.appinn.com/clock-bar-for-touch-bar/"/>
+        <updated>2022-06-12T04:08:37.000Z</updated>
+        <summary type="html"><![CDATA[Clock Bar 是一款可以在 Touch Bar 上显示时间的工具，适用于拥有 Touch Bar 的 Macbook Pro 设备，可设置多种颜色，没有其他功能。@Appinn 昨日一时蛋疼，想]]></summary>
+        <author>
+            <name>青小蛙</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[有 V 友买过 redmi ax6000 和 小米 ax6000 嘛？]]></title>
+        <id>859043</id>
+        <link href="https://www.v2ex.com/t/859043"/>
+        <updated>2022-06-12T03:54:23.000Z</updated>
+        <summary type="html"><![CDATA[pianjiao: 
+这两个哪一个好一点呀。]]></summary>
+        <author>
+            <name>pianjiao</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to think like a programmer]]></title>
+        <id>https://dev.to/mikhailkaran/how-to-think-like-a-programmer-4o5e</id>
+        <link href="https://dev.to/mikhailkaran/how-to-think-like-a-programmer-4o5e"/>
+        <updated>2022-06-12T03:54:19.000Z</updated>
+        <summary type="html"><![CDATA[What is HTML All The Things?
+
+
+HTML All The Things is a web development podcast and discord community which was started by Matt and Mike, developers based in Ontario, Canada. 
+The podcast speaks to web development topics as well as running a small business, self-employment and time management. You can join them for both their successes and their struggles as they try to manage expanding their Web Development business without stretching themselves too thin.
+This week, Matt and Mike discussed how to think like a programmer. When you're learning to code you may think that syntax is the most important thing since it is so hard to memorize. The problem with memorizing syntax is that if you ever need to move on to a new programming language, you'll have to start memorizing all over again. Instea…]]></summary>
+        <author>
+            <name>Mikhail Karan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[疫情隔离期间重写博客，分享下，欢迎 V 友体验]]></title>
+        <id>859042</id>
+        <link href="https://www.v2ex.com/t/859042"/>
+        <updated>2022-06-12T03:53:42.000Z</updated>
+        <summary type="html"><![CDATA[albertZ: 
+地址: https://www.albertaz.com
+
+优化了下性能：
+
+顺便设计了很多套主题，欢迎体验。]]></summary>
+        <author>
+            <name>albertZ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ask HN: 如何记住那些你不是每天都在使用/参考的技术主题？]]></title>
+        <id>https://hn.buzzing.cc/hn/31707134/</id>
+        <link href="https://hn.buzzing.cc/hn/31707134/?score=101&amp;original_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31707134&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31707134&amp;channel=ASK+HN&amp;sensitive=false"/>
+        <updated>2022-06-12T03:53:25.000Z</updated>
+        <summary type="html"><![CDATA[Ask HN: 如何记住那些你不是每天都在使用/参考的技术主题？]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何做倒立]]></title>
+        <id>https://hn.buzzing.cc/hn/31708461/</id>
+        <link href="https://hn.buzzing.cc/hn/31708461/?score=102&amp;original_url=https%3A%2F%2Fwww.nerdfitness.com%2Fblog%2Fa-beginners-guide-to-handstands%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31708461&amp;sensitive=false"/>
+        <updated>2022-06-12T03:53:25.000Z</updated>
+        <summary type="html"><![CDATA[如何做倒立]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于房子潮湿的问题请教]]></title>
+        <id>859041</id>
+        <link href="https://www.v2ex.com/t/859041"/>
+        <updated>2022-06-12T03:52:15.000Z</updated>
+        <summary type="html"><![CDATA[bwt: 坐标北京, 最近租了一间公寓: 一层向北(迫于省钱), 住了一晚上, 感觉潮湿的问题比较明显(床单&被子发潮, 身上黏糊糊的, 难受的睡不着). 遂买了个湿度计, 数值在 65-80 之间.
+以前也合租过小区一层北面的房子, 但从没像这次 有明显体感上的潮湿.
+想知道湿气的来源, 便于以后租房避坑. 列举了几条可能性, 但不太确定😂, 有点迷茫, 遂来问问大伙.
+猜想 1 - 屋外空气潮湿?
+应该不是. 曾经关着门窗睡觉(非雨天), 但潮湿问题依然存在; 以前租住的房子也没有类似问题.
+猜想 2 - 地板?墙壁?
+我觉得这个可能性大一点. 虽然地板&墙壁看不出水渍.
+目前有换房子想法, 不过 6-7 月是租房的旺季, 同时考虑上班交通, 价格等因素, 一房难寻. 
+远水解不了近渴, 针对这个情况, 我尝试入手了个除湿机, 开一晚上可以抽出近 1L 的水😓... 空气明显干燥些, 看起来有用, 但是必须要常开, 一天不除湿, 第二天湿度就恢复原样...
+针对以上, 想问下大伙:
+* 关于潮湿, 我猜想的原因对不对? 有办法验证吗😂
+* 如果要换房子, 房间朝向 & 层数哪个条件对潮湿情况影响大一点?]]></summary>
+        <author>
+            <name>bwt</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[r2s 安装 openwrt 后 sys 灯一直红色，不进系统，要怎么排查呢？]]></title>
+        <id>859040</id>
+        <link href="https://www.v2ex.com/t/859040"/>
+        <updated>2022-06-12T03:47:15.000Z</updated>
+        <summary type="html"><![CDATA[justNoBody: 
+镜像下载地址：
+https://downloads.openwrt.org/releases/21.02.3/targets/rockchip/armv8/openwrt-21.02.3-rockchip-armv8-friendlyarm_nanopi-r2s-ext4-sysupgrade.img.gz
+安装方法参考：
+https://openwrt.org/docs/guide-user/installation/installation_methods/sd_card]]></summary>
+        <author>
+            <name>justNoBody</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[一年经验这种情况还能苟吗]]></title>
+        <id>859038</id>
+        <link href="https://www.v2ex.com/t/859038"/>
+        <updated>2022-06-12T03:40:58.000Z</updated>
+        <summary type="html"><![CDATA[wholesomepage: 
+21 届双非，目前在某传统行业项目外包，入职后前后端不分离写 jQuery 适配 IE8 。后面“有幸”参与了小半年 vue 项目。（一直写 jsp ，jQuery 怕是要废）但不久前被安排做报表，每天改 sql 配报表（个人很排斥，只想写前端，对 sql/后端没兴趣）。现在 6k 二线城市 HF 。
+公司安排很乱是前后端不分离的，会让后端写 vue ，到处打杂。同期校招生跑路一大半。目前这个项目收尾后大概率会调往其他项目打杂或者继续使上古神器 jQuery ，jsp 。
+有些疑问：
+现在行情真的很差吗，找个 8-10k 的纯前端难吗？
+这种打杂（都不能叫全干）虽然能混工作经验，但感觉对发展很不利
+裸辞的话有存些钱能维持一段时间，但怕焦虑拖下去心态会崩]]></summary>
+        <author>
+            <name>wholesomepage</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[7 年大厂 Android 开发求兼职]]></title>
+        <id>859037</id>
+        <link href="https://www.v2ex.com/t/859037"/>
+        <updated>2022-06-12T03:24:43.000Z</updated>
+        <summary type="html"><![CDATA[Edison666666: 
+RT ，7 年 Android 开发经验，目前在某一线厂（ title 对应 P6+）做社区类 app 开发。有信息流广告、音视频 app 、社区类、工具类等 App 开发经验。海外及国内商店都有上架经验。目前阶段比较需要💰，周末两天及平时晚上可以接兼职，欢迎来撩]]></summary>
+        <author>
+            <name>Edison666666</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[濒临崩溃的旧金山市中心。情况比看上去更糟糕]]></title>
+        <id>https://hn.buzzing.cc/hn/31709394/</id>
+        <link href="https://hn.buzzing.cc/hn/31709394/?score=129&amp;original_url=https%3A%2F%2Fwww.sfchronicle.com%2Fprojects%2F2022%2Fsfnext-downtown%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31709394&amp;sensitive=false"/>
+        <updated>2022-06-12T03:07:20.000Z</updated>
+        <summary type="html"><![CDATA[濒临崩溃的旧金山市中心。情况比看上去更糟糕]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何双启动 Ubuntu 22.04 LTS 和 Windows 11]]></title>
+        <id>https://linux.cn/article-14699-1.html?utm_source=rss&amp;utm_medium=rss</id>
+        <link href="https://linux.cn/article-14699-1.html?utm_source=rss&amp;utm_medium=rss"/>
+        <updated>2022-06-12T03:06:00.000Z</updated>
+        <summary type="html"><![CDATA[嗨，伙计们，在这篇指南中，我们将演示如何在 Windows 11 的之外配置 Ubuntu 22.04 LTS（Jammy Jellyfish）的双启动设置。
+
+为使其能工作，你需要在你的计算机上已经安装好了 Windows 11 。接下来，你将需要在你的硬盘驱动器上创建一个单独的分区，你将在此分区上安装 Ubuntu 22.04 。我们将包含这点知识，因此不要担心。
+
+前置条件：
+
+在设置双启动前，这些是你所需要的：
+
+
+一个 Ubuntu 22.04 的可启动 USB 驱动器，你可以转到 Ubuntu 22.04 下载页面 来下载 Ubuntu 22.04 的 ISO 镜像文件。在 ISO 镜像文件到位后，拿一个 16GB USB 驱动器，并使用 Rufus 应用程序来使其可启动。
+
+快速稳定的互联网连接
+
+
+步骤 1、在你的硬盘驱动器上创建一个可用的分区
+
+正如介绍中所提到的，我们首先需要在硬盘驱动器上创建一个单独的分区，我们将在其中安装 Ubuntu 22.04 。
+
+因此，通过按下 Windows + R 组合键来打开磁盘管理器实用程序。
+
+在对话框中，输入 diskmgmt.msc ，并按下回车键。
+
+
+
+磁盘管理disk management控制台将显示当前磁盘分区，如你将在下面所看到的一样。我们将通过压缩 “卷 E” 来创建一个用于安装 Ubuntu 的分区。这在你的安装过程中可能有所不同，但是只需要跟着做，你就会理解其中的大体意思。
+
+
+
+因此，在你想要压缩的磁盘驱动器卷上点击鼠标右键，并在弹出的菜单中选择 压缩卷Shrink 选项。
+
+
+
+将会出现一个弹出对话框，如下所示。具体指定压缩的控件大小（以 MB 为单位），并单击 压缩卷Shrink 。
+
+这是指定给 Ubuntu 22.04 安装所用的空间。
+
+
+
+在缩…]]></summary>
+        <author>
+            <name>linux@linux.cn (linux)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ubuntu 20.04 utc 时间不正确]]></title>
+        <id>859035</id>
+        <link href="https://www.v2ex.com/t/859035"/>
+        <updated>2022-06-12T03:05:04.000Z</updated>
+        <summary type="html"><![CDATA[wanchenyi: ubuntu20.04 根据网上方案设置时间后，时间不正确
+根据网上的方法调整 sudo cp /usr/share/zoneinfo/UTC /etc/localtime
+然后再创建软链接 sudo ln -sf /usr/share/zoneinfo/UTC /etc/localtime ，
+现在使用命令查看 timedatectl
+输出如下
+              Local time: 日 2022-06-12 02:52:38 UTC
+           Universal time: 日 2022-06-12 02:52:38 UTC
+                 RTC time: 日 2022-06-12 02:52:38    
+                Time zone: Asia/Shanghai (UTC, +0000)
+System clock synchronized: yes                       
+              NTP service: active                    
+          RTC in local TZ: no
+          
+比本地正确时间慢了八个小时，呜呜
+求各位救救孩子，]]></summary>
+        <author>
+            <name>wanchenyi</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[大家平时怎么了解国外新闻的]]></title>
+        <id>859034</id>
+        <link href="https://www.v2ex.com/t/859034"/>
+        <updated>2022-06-12T03:00:35.000Z</updated>
+        <summary type="html"><![CDATA[vue666: 推特和 youtube ？或者说 fq 后有什么比较好的网站推荐]]></summary>
+        <author>
+            <name>vue666</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2022 的 618，充电电池除了爱老婆还有什么可选的？]]></title>
+        <id>859033</id>
+        <link href="https://www.v2ex.com/t/859033"/>
+        <updated>2022-06-12T03:00:16.000Z</updated>
+        <summary type="html"><![CDATA[Tumblr: 
+平时蓝牙鼠标 + 蓝牙键盘，用干电池有点熬不住，虽然单节买着便宜，但是也太不耐用了，所以还是觉得买充电电池。
+5 号镍氢标到了3800mAh，卖得还巨便宜，有点不敢下手；甚至还有在玩文字游戏的，18650 的电池标12800mWh，欺负俺没文化呢！  
+在这里搜了一下，貌似充电电池的讨论贴不多，并且也比较久远了，所以想问问，现在有什么推荐的充电电池么？]]></summary>
+        <author>
+            <name>Tumblr</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[M1 Macbook air（16+256)要不要换丐版 macbook pro 14]]></title>
+        <id>859030</id>
+        <link href="https://www.v2ex.com/t/859030"/>
+        <updated>2022-06-12T02:45:22.000Z</updated>
+        <summary type="html"><![CDATA[hhhxxxx: 现在主力机是 m1 的 macbook air ，一切都挺满意，唯独硬盘只有 256g ，已经用了 90%。
+
+M2 air 不考虑了，升级太小，售价还提高了。
+
+另一个方案是换丐版 macbook pro 14 ，感觉为了大一点的硬盘多花 7000 有点不值。😂
+
+如果不换电脑，就准备买个移动硬盘，把一些能够移动的放到移动硬盘里面，这个方案可行吗？]]></summary>
+        <author>
+            <name>hhhxxxx</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[油管会员车， 3 个位置，年付 40]]></title>
+        <id>859029</id>
+        <link href="https://www.v2ex.com/t/859029"/>
+        <updated>2022-06-12T02:41:09.000Z</updated>
+        <summary type="html"><![CDATA[yeepZhang: 
+还有 3 个位置，年付 40 ，需要是美区账号并且可加家庭组（跳车不超过 1 次）
+加 vx：eWVlcHpoYW5n]]></summary>
+        <author>
+            <name>yeepZhang</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何完美调教 message 应用的通知方式？]]></title>
+        <id>859028</id>
+        <link href="https://www.v2ex.com/t/859028"/>
+        <updated>2022-06-12T02:37:11.000Z</updated>
+        <summary type="html"><![CDATA[aaatches: 短信里面各种垃圾信息真的很让人头疼，有没有办法调教出正常使用能接受的通知方式呢？
+比如：
+1.通讯录里的人发来信息可以正常通知
+2.运营商发来的话费信息可以不通知或者 time sensitive
+3.运营商和各种购物平台发来的信息全都收录于 junk 里
+4.骗子信息垃圾广告全都拒收
+我很想调教出上面的通知方式😭，可是实在太难了]]></summary>
+        <author>
+            <name>aaatches</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[访问 V2EX 经常出现失败，多刷几下就正常了。忘了开启了 ipv6]]></title>
+        <id>859027</id>
+        <link href="https://www.v2ex.com/t/859027"/>
+        <updated>2022-06-12T02:15:15.000Z</updated>
+        <summary type="html"><![CDATA[paranoiagu: 忘了 Chrome 里截图了，好像是 CONNECT_RESET 之类的错误。
+nslookup 的结果
+nslookup www.v2ex.com
+非权威应答:
+名称:    www.v2ex.com
+Addresses:  2606:4700:10::ac43:3bc
+          2606:4700:10::6814:ada
+          2606:4700:10::6814:9da
+          104.20.10.218
+          172.67.3.188
+          104.20.9.218
+ping 也正常
+正在 Ping www.v2ex.com [2606:4700:10::6814:9da] 具有 32 字节的数据:
+来自 2606:4700:10::6814:9da 的回复: 时间=171ms
+来自 2606:4700:10::6814:9da 的回复: 时间=173ms
+来自 2606:4700:10::6814:9da 的回复: 时间=167ms
+来自 2606:4700:10::6814:9da 的回复: 时间=164ms
+curl 不行
+curl -v https://www.v2ex.com/
+*   Trying 2606:4700:10::6814:9da:443...
+* Connected to www.v2ex.com (2606:4700:10::6814:9da) port 443 (#0)
+* schannel: disabled automatic use of client certificate
+* schannel: ALPN, offering http/1.1
+* schannel: failed to receive handshake, SSL/TLS connection failed
+* Closing connection 0
+curl: (35) schannel: failed to receive handshake, SSL/TLS connection failed
+
+浏览器 F5 多按几下后，能访问了，然后再 curl：
+
+curl -v https://www.v2ex.com/
+*   Trying 2606:4700:10::6814:9da:443...
+*   Trying 104.20.10.218:443...
+* Connected to www.v2ex.com (104.20.10.218) port 443 (#0)
+* schannel: disabled automatic use of client certificate
+* schannel: ALPN, offering http/1.1
+* schannel: ALPN, server accepted to use http/1.1
+> GET / HTTP/1.1
+> Host: www.v2ex.com
+> User-Agent: curl/7.79.1
+> Accept: */*
+>
+* schannel: failed to decrypt data, need more data
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< Date: Sun, 12 Jun 2022 02:13:48 GMT
+< Content-Type: text/html; charset=UTF-8
+< Transfer-Encoding: chunked
+< Connection: keep-alive
+< vary: Accept-Encoding
+……………………后面省略
+
+意思是 ipv6 访问有问题？ ipv4 正常？]]></summary>
+        <author>
+            <name>paranoiagu</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[有多少人在用 Apple Fitness+ 锻炼？]]></title>
+        <id>859026</id>
+        <link href="https://www.v2ex.com/t/859026"/>
+        <updated>2022-06-12T02:12:01.000Z</updated>
+        <summary type="html"><![CDATA[wangpao: 
+调查一下有多少人在用 Apple Fitness+ 锻炼？
+过去两年一直都是健身环比较多，Apple Fitness+ 只上放松整理课程，隔离的两个月开始每天 Apple Fitness+ 上跳舞和核心的课程，发现质量意外的好，画面精良，对器材要求也很简单，目前我只用哑铃和瑜伽垫，对于只需要保持健康状态而非练大块肌肉足够了。
+健身环过去两年已经压扁一个了（每周 4 次，时间 30-60 分钟），第二个也快了，强度已经 30 封顶了，打算换第三个环的时候，更多的转向 Apple Fitness+ ，开始上力量课程。不去健身房感觉每次至少省一个小时，可以风雨无阻。]]></summary>
+        <author>
+            <name>wangpao</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Chrome Dev for macOS 白屏 怎么解决？重装就好了，过一回又白了]]></title>
+        <id>859025</id>
+        <link href="https://www.v2ex.com/t/859025"/>
+        <updated>2022-06-12T02:05:27.000Z</updated>
+        <summary type="html"><![CDATA[ios: 
+Chrome Dev for macOS 白屏 怎么解决？重装就好了，过一回又白了]]></summary>
+        <author>
+            <name>ios</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A Cool Way To Learn JavaScript]]></title>
+        <id>https://dev.to/s_soumyakanta/a-cool-way-to-learn-javascript-5cbp</id>
+        <link href="https://dev.to/s_soumyakanta/a-cool-way-to-learn-javascript-5cbp"/>
+        <updated>2022-06-12T01:56:23.000Z</updated>
+        <summary type="html"><![CDATA[Hello World !
+S Soumyakanta.
+It's important to learn things in a structured way. After all I found Free Code Camp  on web and Youtube. As a beginner I was making the same mistake again and again. But from the Free Code Camp's Youtube channel I found Per Harald Borgen's free beginner level full Javascript course. It was a interactive course on Scrimba.com.
+It was important for me to practice online to boost my journey. I know you may ask their are many online code learning platform's then why Scrimba !!! then here are some answers why as newbie should learn JS from Scimba's Learn JavaScript for free !
+1. If you haven't a high end device:- For this course you only need a PC(1 GB Ram),Internet and a browser(Chrome suggested). Your journey will not stop due to lack of resources. You don't need to run several application to start.
+2.If you're a beginner:-I struggled hard to learn code by self ,in the way to my web development journey. I love to learn things by doing practical application in real world. This course will teach you Javascript by creating three projects like Passenger counter app, Blackjack game and a chrome extension.
+3.Fun and Zero distraction:- While learning from Youtube as a newbie I was so distracted by other recommended videos. In this course it was simple for me to stay focused. This course is amazingly delivered by Mr. Per . You will learn several things by doing challenges in this course.
+My Suggestion to beginners:-After searching several platform's  I would suggest to learn Javascript from Scrimba. Don't waste so much time on watching random videos one after one to learn. It's a 7 hour long video and I assure you that you're  going to enjoy it.
+For Mr. Per:- Hello sir ! thanks for your teaching. Your course impacted my life. It's my humble gratitude to you. Thanks a lot.
+I hope this review will help you to start journey in a productive way.
+If you are reading this I will happy that we will stay connected. Here is my social media links below  !
+Me on Twitter
+Me on Linkedin]]></summary>
+        <author>
+            <name>S Soumyakanta</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[ git rebase ] 操作 - 关于远端代码回退的问题]]></title>
+        <id>859024</id>
+        <link href="https://www.v2ex.com/t/859024"/>
+        <updated>2022-06-12T01:53:04.000Z</updated>
+        <summary type="html"><![CDATA[maobukui: 
+请教下 git rebase 的操作
+当前状态：
+本地 feature 开发，做了多次本地 commit 后，在同步到远程前，先做了 fetch ，获取 master 最新的远程代码，然后本地 rebase 操作，未 push 。
+碰到的问题：
+远程的代码有问题做了回退，这时候本地怎么处理比较好？
+我尝试了几个方案，都有些复杂。
+把自己 rebase 的代码 reset ，本地 stash 保存，然后操作 master 代码回退后，再次 rebase 。这样比较麻烦，有没有更简单的操作？
+场景说明：
+master  C1 -> C2 -> C3... Cn
+feature C1 -> C2 -> C3... Cn -> A1 -> A2
+
+远端把一部分代码做了回退，用了 reset --hard ，本地需要把中间的一些改动去掉]]></summary>
+        <author>
+            <name>maobukui</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[50+ hints JS(ES6+) developer must know (10th part)]]></title>
+        <id>https://dev.to/stormytalent/50-hints-jses6-developer-must-know-10th-part-43ef</id>
+        <link href="https://dev.to/stormytalent/50-hints-jses6-developer-must-know-10th-part-43ef"/>
+        <updated>2022-06-12T01:46:28.000Z</updated>
+        <summary type="html"><![CDATA[My thanks to everybody who follows to this tenth, the last blog of JS hint.
+1. Accessors
+Do not use JavaScript getters/setters as they cause unexpected side effects and are harder to test, maintain, and reason about. Instead, if you do make accessor functions, use getVal() and setVal('hello').
+// bad
+class Dragon {
+  get age() {
+    // ...
+  }
+
+  set age(value) {
+    // ...
+  }
+}
+
+// good
+class Dragon {
+  getAge() {
+    // ...
+  }
+
+  setAge(value) {
+    // ...
+  }
+}
+
+If the property/method is a boolean, use isVal() or hasVal().
+// bad
+if (!dragon.age()) {
+  return false;
+}
+
+// good
+if (!dragon.hasAge()) {
+  return false;
+}
+
+It’s okay to create get() and set() functions, but be consistent.
+class Jedi {
+  constructor(options = {}) {
+    const lightsaber = options.lightsaber || 'blue';
+    this.set('lightsaber', lightsaber);
+  }
+
+  set(key, val) {
+    this[key] = val;
+  }
+
+  get(key) {
+    return this[key];
+  }
+}
+
+2. Events
+// bad
+$(this).trigger('listingUpdated', listing.id);
+
+// ...
+
+$(this).on('listingUpdated', (e, listingID) => {
+  // do something with listingID
+});
+
+// good
+$(this).trigger('listingUpdated', { listingID: listing.id });
+
+// ...
+
+$(this).on('listingUpdated', (e, data) => {
+  // do something with data.listingID
+});
+
+3. jQuery
+// bad
+const sidebar = $('.sidebar');
+
+// good
+const $sidebar = $('.sidebar');
+
+// good
+const $sidebarBtn = $('.sidebar-btn');
+
+// bad
+function setSidebar() {
+  $('.sidebar').hide();
+
+  // ...
+
+  $('.sidebar').css({
+    'background-color': 'pink',
+  });
+}
+
+// good
+function setSidebar() {
+  const $sidebar = $('.sidebar');
+  $sidebar.hide();
+
+  // ...
+
+  $sidebar.css({
+    'background-color': 'pink',
+  });
+}
+
+For DOM queries use Cascading $('.sidebar ul') or parent > child $('.sidebar > ul'). jsPerf
+Use find with scoped jQuery object queries.
+// bad
+$('ul', '.sidebar').hide();
+
+// bad
+$('.sidebar').find('ul').hide();
+
+// good
+$('.sidebar ul').hide();
+
+// good
+$('.sidebar > ul').hide();
+
+// good
+$sidebar.find('ul').hide();
+
+Thanks for your time.
+Best regards.]]></summary>
+        <author>
+            <name>StormyTalent</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[外接硬盘盒求推荐！]]></title>
+        <id>859023</id>
+        <link href="https://www.v2ex.com/t/859023"/>
+        <updated>2022-06-12T01:45:48.000Z</updated>
+        <summary type="html"><![CDATA[qq249418187: 
+pdd 整了两块 4t 的西数紫，一块用来存照片和日常视频与一些网上收集的资料，一块做备份。
+要求
+1.长时间连接笔记本，经常读取。
+2.稳定
+逛了各大论坛之后 初步选定了以下品牌 世特力、AKiTiO 、STARDOM 、铁威马、存储巴士（单盘位），奥睿科杀手排除。
+请问各位有没有更好的推荐？]]></summary>
+        <author>
+            <name>qq249418187</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[服务器被爆破了]]></title>
+        <id>859022</id>
+        <link href="https://www.v2ex.com/t/859022"/>
+        <updated>2022-06-12T01:45:33.000Z</updated>
+        <summary type="html"><![CDATA[AlexPUBLIC: 
+这是一台 NAS 服务器，因为运营商很好，所以单独给配了一个公网 IP ，然后下午闲来无事看了一眼日志：
+一堆爆棚密码的请求，而且是尝试一次换一次 ip ，根本没有收到任何报警
+[img]https://i.imgur.com/BHR8AZF.png[/img]
+下午立刻采取措施，ban 掉非本国的 IP ，晚上看依旧不少垃圾请求，于是，把 ip 直接解析到 127 。0 。0 。1 ，路由器 wan 侧请求全部 drop ，手法过于暴力，不知道大家有没有温柔一点的办法]]></summary>
+        <author>
+            <name>AlexPUBLIC</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Netflix 巴基斯坦区合租，招四个乘客]]></title>
+        <id>859021</id>
+        <link href="https://www.v2ex.com/t/859021"/>
+        <updated>2022-06-12T01:41:09.000Z</updated>
+        <summary type="html"><![CDATA[OCD2057: 
+如题，季付 36 元，节点别乱飞就行，联系 tg：OCD2057]]></summary>
+        <author>
+            <name>OCD2057</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[跑步 App 你们选择哪个，决赛圈]]></title>
+        <id>859020</id>
+        <link href="https://www.v2ex.com/t/859020"/>
+        <updated>2022-06-12T01:29:45.000Z</updated>
+        <summary type="html"><![CDATA[Apple2023: 
+1.悦跑圈
+2.Keep
+3.咕咚
+4.Nike Run Club
+5.其他]]></summary>
+        <author>
+            <name>Apple2023</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[特朗普的真相社交网站正在禁止发布有关1月6日听证会的用户。]]></title>
+        <id>https://hn.buzzing.cc/hn/31704782/</id>
+        <link href="https://hn.buzzing.cc/hn/31704782/?score=101&amp;original_url=https%3A%2F%2Fvariety.com%2F2022%2Fdigital%2Fnews%2Ftrumps-truth-social-is-banning-users-who-post-about-jan-6-hearings-according-to-reports-1235290726%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31704782&amp;sensitive=false"/>
+        <updated>2022-06-12T01:01:43.000Z</updated>
+        <summary type="html"><![CDATA[特朗普的真相社交网站正在禁止发布有关1月6日听证会的用户。]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ask HN: 你知道的最酷的网站是什么？]]></title>
+        <id>https://hn.buzzing.cc/hn/31708366/</id>
+        <link href="https://hn.buzzing.cc/hn/31708366/?score=110&amp;original_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31708366&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31708366&amp;channel=ASK+HN&amp;sensitive=false"/>
+        <updated>2022-06-12T01:01:43.000Z</updated>
+        <summary type="html"><![CDATA[Ask HN: 你知道的最酷的网站是什么？]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我不想去Chel-C]]></title>
+        <id>https://hn.buzzing.cc/hn/31705239/</id>
+        <link href="https://hn.buzzing.cc/hn/31705239/?score=100&amp;original_url=https%3A%2F%2Fapplied-langua.ge%2Fposts%2Fi-dont-want-to-go-to-chel-c.html&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31705239&amp;sensitive=false"/>
+        <updated>2022-06-12T01:01:43.000Z</updated>
+        <summary type="html"><![CDATA[我不想去Chel-C]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux内核可以自行生成进程]]></title>
+        <id>https://hn.buzzing.cc/hn/31704824/</id>
+        <link href="https://hn.buzzing.cc/hn/31704824/?score=103&amp;original_url=https%3A%2F%2Fwww.uninformativ.de%2Fblog%2Fpostings%2F2022-06-11%2F0%2FPOSTING-en.html&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31704824&amp;sensitive=false"/>
+        <updated>2022-06-12T01:01:43.000Z</updated>
+        <summary type="html"><![CDATA[Linux内核可以自行生成进程]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[age v1.1.0-rc.1: 支持插件和YubiKeys]]></title>
+        <id>https://hn.buzzing.cc/hn/31705670/</id>
+        <link href="https://hn.buzzing.cc/hn/31705670/?score=100&amp;original_url=https%3A%2F%2Fgithub.com%2FFiloSottile%2Fage%2Freleases%2Ftag%2Fv1.1.0-rc.1&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31705670&amp;sensitive=false"/>
+        <updated>2022-06-12T01:01:43.000Z</updated>
+        <summary type="html"><![CDATA[age v1.1.0-rc.1: 支持插件和YubiKeys]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ask HN: 最好的适合初学者的线性代数书？]]></title>
+        <id>https://hn.buzzing.cc/hn/31707163/</id>
+        <link href="https://hn.buzzing.cc/hn/31707163/?score=106&amp;original_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31707163&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31707163&amp;channel=ASK+HN&amp;sensitive=false"/>
+        <updated>2022-06-11T23:01:10.000Z</updated>
+        <summary type="html"><![CDATA[Ask HN: 最好的适合初学者的线性代数书？]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Spider-Man: No Way Home is returning to theaters with new Spidey scenes]]></title>
+        <id>https://www.theverge.com/2022/6/11/23164052/spider-man-no-way-home-returning-theaters-new-spidey-scenes-more-fun-stuff</id>
+        <link href="https://www.theverge.com/2022/6/11/23164052/spider-man-no-way-home-returning-theaters-new-spidey-scenes-more-fun-stuff"/>
+        <updated>2022-06-11T22:45:11.000Z</updated>
+        <summary type="html"><![CDATA[Photo: Columbia Pictures
+    
+
+  
+Spider-Man: No Way Home is making its way back to theaters on September 2nd after it broke box office records and became one of the highest-grossing films. This time around, Marvel is sprinkling in some new and extended scenes to keep things fresh.
+Marvel calls the revamped film “The More Fun Stuff Version,” and says it’s releasing it in celebration of Spider-Man’s 60th anniversary in comics. Oh yeah, and it’s the 20th anniversary of Toby Maguire’s debut in the very first Spider-Man movie (feel old yet?).
+You wanted more Spidey and you got it!     #SpiderManNoWayHome: The More Fun Stuff Version swings into movie theaters in the US and Canada September 2! More countries to be announced soon! @SpiderManMovie pic.twitter.com/4dyhob9Qt2
+—...
+Continue reading…]]></summary>
+        <author>
+            <name>The Verge -  All Posts</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[告诉HN：我的妻子被禁止使用WhatsApp，没有任何理由和追索权]]></title>
+        <id>https://hn.buzzing.cc/hn/31707349/</id>
+        <link href="https://hn.buzzing.cc/hn/31707349/?score=113&amp;original_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31707349&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31707349&amp;sensitive=false"/>
+        <updated>2022-06-11T21:40:12.000Z</updated>
+        <summary type="html"><![CDATA[告诉HN：我的妻子被禁止使用WhatsApp，没有任何理由和追索权]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Leaked Galaxy Z Flip 4 photos show a potentially less noticeable crease]]></title>
+        <id>https://www.theverge.com/2022/6/11/23163974/leaked-galaxy-z-flip-4-photos-show-potentially-less-noticeable-crease</id>
+        <link href="https://www.theverge.com/2022/6/11/23163974/leaked-galaxy-z-flip-4-photos-show-potentially-less-noticeable-crease"/>
+        <updated>2022-06-11T21:14:45.000Z</updated>
+        <summary type="html"><![CDATA[The Galaxy Z Flip 3. | Photo by Dan Seifert / The Verge
+    
+
+  
+We got a look at what the Samsung Galaxy Z Flip 4 could look like in a set of unofficial renders last month, but now we have leaked images of what appears to be the physical device shared by YouTuber TechTalkTV (via 9to5Google). The images match up with the earlier renders and give us a closer look at the device’s display crease, which looks almost nonexistent.
+One image shows the device’s display when it’s flipped open, and you can see a slight glare where the crease would typically appear. It looks hardly noticeable, but then again, it is a bit difficult to tell what the crease will look like when viewed from just one angle.
+
+
+You can pretty clearly see the Galaxy Z Flip 3’s crease when you tilt the phone the right way. As The Verge’s...
+Continue reading…]]></summary>
+        <author>
+            <name>The Verge -  All Posts</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Winamp皮肤博物馆是由一个拥有1.2GB元数据的sqlite3数据库驱动的。]]></title>
+        <id>https://hn.buzzing.cc/hn/31703874/</id>
+        <link href="https://hn.buzzing.cc/hn/31703874/?score=100&amp;original_url=https%3A%2F%2Ftwitter.com%2Fcaptbaritone%2Fstatus%2F1535471373191028737&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31703874&amp;sensitive=false"/>
+        <updated>2022-06-11T20:43:32.000Z</updated>
+        <summary type="html"><![CDATA[Winamp皮肤博物馆是由一个拥有1.2GB元数据的sqlite3数据库驱动的。]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[允许你做的事情（2020年）]]></title>
+        <id>https://hn.buzzing.cc/hn/31705542/</id>
+        <link href="https://hn.buzzing.cc/hn/31705542/?score=107&amp;original_url=https%3A%2F%2Fmilan.cvitkovic.net%2Fwriting%2Fthings_youre_allowed_to_do%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31705542&amp;sensitive=false"/>
+        <updated>2022-06-11T20:43:32.000Z</updated>
+        <summary type="html"><![CDATA[允许你做的事情（2020年）]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ask HN: 市场上是否有没有 "智能电视 "功能的电视？]]></title>
+        <id>https://hn.buzzing.cc/hn/31706835/</id>
+        <link href="https://hn.buzzing.cc/hn/31706835/?score=104&amp;original_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31706835&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31706835&amp;channel=ASK+HN&amp;sensitive=false"/>
+        <updated>2022-06-11T20:21:59.000Z</updated>
+        <summary type="html"><![CDATA[Ask HN: 市场上是否有没有 "智能电视 "功能的电视？]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[阳光--一个适用于Windows和Linux的开源游戏流服务器]]></title>
+        <id>https://hn.buzzing.cc/hn/31695476/</id>
+        <link href="https://hn.buzzing.cc/hn/31695476/?score=100&amp;original_url=https%3A%2F%2Fgithub.com%2Floki-47-6F-64%2Fsunshine&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31695476&amp;sensitive=false"/>
+        <updated>2022-06-11T20:21:59.000Z</updated>
+        <summary type="html"><![CDATA[阳光--一个适用于Windows和Linux的开源游戏流服务器]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[美国更接近于召回特斯拉的自动驾驶软件]]></title>
+        <id>https://hn.buzzing.cc/hn/31706955/</id>
+        <link href="https://hn.buzzing.cc/hn/31706955/?score=107&amp;original_url=https%3A%2F%2Ffortune.com%2F2022%2F06%2F10%2Felon-musk-tesla-nhtsa-investigation-traffic-safety-autonomous-fsd-fatal-probe%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31706955&amp;sensitive=false"/>
+        <updated>2022-06-11T20:21:59.000Z</updated>
+        <summary type="html"><![CDATA[美国更接近于召回特斯拉的自动驾驶软件]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Coinbase首席执行官发推文称 "辞职，找一家你相信的公司]]></title>
+        <id>https://hn.buzzing.cc/hn/31705405/</id>
+        <link href="https://hn.buzzing.cc/hn/31705405/?score=101&amp;original_url=https%3A%2F%2Fwww.forbes.com%2Fsites%2Fjackkelly%2F2022%2F06%2F11%2Fcoinbase-ceo-tweets-quit-and-find-a-company-you-believe-in-to-disgruntled-employees%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31705405&amp;sensitive=false"/>
+        <updated>2022-06-11T20:01:58.000Z</updated>
+        <summary type="html"><![CDATA[Coinbase首席执行官发推文称 "辞职，找一家你相信的公司]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【基德】意外之喜！把光速降到0会发生什么？你将看见人类的一种未来]]></title>
+        <id>https://www.bilibili.com/video/av639948783</id>
+        <link href="https://www.bilibili.com/video/av639948783"/>
+        <updated>2022-06-11T19:51:13.000Z</updated>
+        <summary type="html"><![CDATA[今天这期视频，给大家讲清楚电磁诱导透明现象，以及它背后意味着什么……
+
+
+Tags:物理,宇宙,光速,科学很可爱,万物研究所]]></summary>
+        <author>
+            <name>吟游诗人基德</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AirPlay和触摸条=网络灾难]]></title>
+        <id>https://hn.buzzing.cc/hn/31706283/</id>
+        <link href="https://hn.buzzing.cc/hn/31706283/?score=118&amp;original_url=https%3A%2F%2Fmnpn.github.io%2Fblog%2Fairplay-network-disaster&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31706283&amp;sensitive=false"/>
+        <updated>2022-06-11T19:21:07.000Z</updated>
+        <summary type="html"><![CDATA[AirPlay和触摸条=网络灾难]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[视频教程｜这几种运镜让你的短片氛围感拉满]]></title>
+        <id>https://www.bilibili.com/video/av427471183</id>
+        <link href="https://www.bilibili.com/video/av427471183"/>
+        <updated>2022-06-11T19:03:44.000Z</updated>
+        <summary type="html"><![CDATA[和大家分享几种我平时爱用的运镜吧。其实不同于那些酷炫的运镜，今天想和大家分享的都是很适合文艺风短片的运镜手法。也都是人物与风景相结合，很适合旅拍或是去景色优美的地方会用到的。
+快点收藏起来吧～
+
+
+Tags:教程,剪辑,摄影,视频教程,视频制作,教学视频,视频剪辑,经验分享,运镜,技能提升营,技能提升营2022第二季]]></summary>
+        <author>
+            <name>林海音Haiyin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[TikTok’s parent company is gearing up to invest a lot of money in VR]]></title>
+        <id>https://www.theverge.com/2022/6/11/23163839/tiktok-parent-company-bytedance-gearing-up-invest-money-vr</id>
+        <link href="https://www.theverge.com/2022/6/11/23163839/tiktok-parent-company-bytedance-gearing-up-invest-money-vr"/>
+        <updated>2022-06-11T19:01:31.000Z</updated>
+        <summary type="html"><![CDATA[Illustration by Alex Castro / The Verge
+    
+
+  
+ByteDance, the company that owns TikTok, is getting serious about entering the virtual reality (VR) space, according to a report from Protocol. A source close to the situation told the outlet that the company plans on investing “tons of money” to develop VR-related content.
+It looks like a large portion of ByteDance’s investment is going into hiring. As noted by Protocol, over 40 job listings have popped up for Pico, the Chinese VR headset maker ByteDance acquired last year. Most openings are for Pico Studios’ west coast-based branches in California and Washington, ranging from a head of VR game strategy to a game operation manager. Other open positions suggest an increased focus on Pico’s VR hardware, including an optical engineer and a...
+Continue reading…]]></summary>
+        <author>
+            <name>The Verge -  All Posts</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[逆转咖啡因耐受性的循证指南]]></title>
+        <id>https://hn.buzzing.cc/hn/31700786/</id>
+        <link href="https://hn.buzzing.cc/hn/31700786/?score=100&amp;original_url=https%3A%2F%2Flfbiohacking.squarespace.com%2Fblog%2Fan-evidence-based-guide-on-reversing-caffeine-tolerance&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31700786&amp;sensitive=false"/>
+        <updated>2022-06-11T18:38:23.000Z</updated>
+        <summary type="html"><![CDATA[逆转咖啡因耐受性的循证指南]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何培养你的孩子很重要]]></title>
+        <id>https://hn.buzzing.cc/hn/31703675/</id>
+        <link href="https://hn.buzzing.cc/hn/31703675/?score=101&amp;original_url=https%3A%2F%2Fwyclif.substack.com%2Fp%2Fno-wait-stop-it-matters-how-you-raise&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31703675&amp;sensitive=false"/>
+        <updated>2022-06-11T18:38:23.000Z</updated>
+        <summary type="html"><![CDATA[如何培养你的孩子很重要]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[虫子。一个用Nim编写的动态、基于标签的窗口管理器]]></title>
+        <id>https://hn.buzzing.cc/hn/31702571/</id>
+        <link href="https://hn.buzzing.cc/hn/31702571/?score=100&amp;original_url=https%3A%2F%2Fgithub.com%2Fcodic12%2Fworm&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31702571&amp;sensitive=false"/>
+        <updated>2022-06-11T18:38:23.000Z</updated>
+        <summary type="html"><![CDATA[虫子。一个用Nim编写的动态、基于标签的窗口管理器]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[大科技公司如何运行科技项目以及Scrum的奇特缺席]]></title>
+        <id>https://hn.buzzing.cc/hn/31705526/</id>
+        <link href="https://hn.buzzing.cc/hn/31705526/?score=100&amp;original_url=https%3A%2F%2Fblog.pragmaticengineer.com%2Fproject-management-at-big-tech%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31705526&amp;sensitive=false"/>
+        <updated>2022-06-11T17:56:30.000Z</updated>
+        <summary type="html"><![CDATA[大科技公司如何运行科技项目以及Scrum的奇特缺席]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[使用铜质雨量计、记事本、笔记录英国花园1988-2022年的降雨数据]]></title>
+        <id>https://hn.buzzing.cc/hn/31703151/</id>
+        <link href="https://hn.buzzing.cc/hn/31703151/?score=100&amp;original_url=https%3A%2F%2Fwww.weatherbook.org%2Fdash%2F3%2Faverages&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31703151&amp;sensitive=false"/>
+        <updated>2022-06-11T17:44:11.000Z</updated>
+        <summary type="html"><![CDATA[使用铜质雨量计、记事本、笔记录英国花园1988-2022年的降雨数据]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【鉴定热门】女孩子的脚比男生臭6倍？影子为什么会互相吸引？]]></title>
+        <id>https://www.bilibili.com/video/av384980210</id>
+        <link href="https://www.bilibili.com/video/av384980210"/>
+        <updated>2022-06-11T17:42:58.000Z</updated>
+        <summary type="html"><![CDATA[本期视频点赞过2w两天内更新下一期视频！
+
+
+Tags:吐槽,搞笑,科普,知识,生物,涨知识,营销号,鉴定热门,万物研究所]]></summary>
+        <author>
+            <name>季不助</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The travel-friendly Sonos Roam is still on sale for a rare $37 off]]></title>
+        <id>https://www.theverge.com/good-deals/2022/6/11/23162575/sonos-roam-apple-airpods-pro-samsung-galaxy-chromebook-2-lenovo-thinkpad-ps5-dualsense-deal-sale</id>
+        <link href="https://www.theverge.com/good-deals/2022/6/11/23162575/sonos-roam-apple-airpods-pro-samsung-galaxy-chromebook-2-lenovo-thinkpad-ps5-dualsense-deal-sale"/>
+        <updated>2022-06-11T17:02:56.000Z</updated>
+        <summary type="html"><![CDATA[The Sonos Roam is selling for $143.20 instead of $179.99 for a limited time. | Photo by Chris Welch / The Verge
+    
+
+  
+Welcome to the weekend! We’re kicking things off today with a rare deal on the superb Sonos Roam, which remains one of the best Bluetooth speakers we’ve ever tested. Regularly $179.99, you can currently buy it from Best Buy, B&H Photo, and Sonos for just $143.20, the speaker’s best price to date. That’s less than the typical cost of the cheaper Sonos Roam SL, which is essentially the same speaker but without the built-in microphone.
+The pint-sized, portable speaker sounds great and comes equipped with a number of useful features, including support for Google Assistant, Amazon Alexa, and Apple’s AirPlay 2. The Sonos speaker also integrates with the rest of the company’s ecosystem and comes with an IP67 dust and water resistance rating,...
+Continue reading…]]></summary>
+        <author>
+            <name>The Verge -  All Posts</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[全球限量一副的扑克牌！你们觉得值多少钱？]]></title>
+        <id>https://www.bilibili.com/video/av342405115</id>
+        <link href="https://www.bilibili.com/video/av342405115"/>
+        <updated>2022-06-11T17:00:00.000Z</updated>
+        <summary type="html"><![CDATA[自己试了才知道，原来切牌这么难，切完手超痛，但是很有意思！大家感兴趣可以自己试一试~样式参照了@一只会花切的芒果  ，特此感谢~胡桃卡牌还没做好，别问了别问了呜呜呜T.T
+
+
+Tags:生活,搞笑,模型,创意,制作,手工,花切,开箱,咕咕星,技能提升营,技能提升营2022第二季]]></summary>
+        <author>
+            <name>一颗咕咕星</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[透明的楼梯：当设计团队中没有人穿裙子时会发生什么？]]></title>
+        <id>https://hn.buzzing.cc/hn/31704458/</id>
+        <link href="https://hn.buzzing.cc/hn/31704458/?score=109&amp;original_url=https%3A%2F%2Ftwitter.com%2Fcoereba%2Fstatus%2F1534897063179128833&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31704458&amp;sensitive=false"/>
+        <updated>2022-06-11T16:41:34.000Z</updated>
+        <summary type="html"><![CDATA[透明的楼梯：当设计团队中没有人穿裙子时会发生什么？]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Telegram Premium is coming later this month]]></title>
+        <id>https://www.theverge.com/2022/6/11/23163704/telegram-premium-subscription-coming-later-this-month-pavel-durov</id>
+        <link href="https://www.theverge.com/2022/6/11/23163704/telegram-premium-subscription-coming-later-this-month-pavel-durov"/>
+        <updated>2022-06-11T16:35:29.000Z</updated>
+        <summary type="html"><![CDATA[Illustration by Alex Castro / The Verge
+    
+
+  
+Telegram will soon start putting some features behind a paywall (via TechCrunch). In a post on the platform, founder Pavel Durov announced that the messaging service is launching a paid Telegram Premium subscription later this month, giving users “additional features, speed and resources.”
+Durov hints at some of the features coming with the subscription, including early access to new features, the ability to upload larger files, and Premium-only stickers and reactions (which were recently previewed in a beta version of the app). 
+But Durov also makes it clear that Telegram’s existing features will stay free, and that the paid features won’t affect the experience for free users on the app. Non-subscribers will still get to look at the...
+Continue reading…]]></summary>
+        <author>
+            <name>The Verge -  All Posts</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DNS玩具]]></title>
+        <id>https://hn.buzzing.cc/hn/31704789/</id>
+        <link href="https://hn.buzzing.cc/hn/31704789/?score=113&amp;original_url=https%3A%2F%2Fwww.dns.toys%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31704789&amp;sensitive=false"/>
+        <updated>2022-06-11T16:01:52.000Z</updated>
+        <summary type="html"><![CDATA[DNS玩具]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[小路的故事]]></title>
+        <id>https://hn.buzzing.cc/hn/31701026/</id>
+        <link href="https://hn.buzzing.cc/hn/31701026/?score=108&amp;original_url=https%3A%2F%2Fatrailtale.com%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31701026&amp;sensitive=false"/>
+        <updated>2022-06-11T15:39:41.000Z</updated>
+        <summary type="html"><![CDATA[小路的故事]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The weekend’s best deals: Apple Music subscriptions, Sony headphones, and more]]></title>
+        <id>https://arstechnica.com/?p=1860239</id>
+        <link href="https://arstechnica.com/?p=1860239"/>
+        <updated>2022-06-11T15:27:00.000Z</updated>
+        <summary type="html"><![CDATA[Dealmaster also includes Sonos speakers, lots of video games, and the Google Chromecast.]]></summary>
+        <author>
+            <name>Ars Staff</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[告诉HN：Bitwarden不会在备份中导出附件]]></title>
+        <id>https://hn.buzzing.cc/hn/31702594/</id>
+        <link href="https://hn.buzzing.cc/hn/31702594/?score=103&amp;original_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31702594&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31702594&amp;sensitive=false"/>
+        <updated>2022-06-11T14:07:11.000Z</updated>
+        <summary type="html"><![CDATA[告诉HN：Bitwarden不会在备份中导出附件]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The delight is in the details of Drop’s new DCX keycaps]]></title>
+        <id>https://www.theverge.com/2022/6/11/23162531/drop-dcx-black-on-white-keycaps-hands-on</id>
+        <link href="https://www.theverge.com/2022/6/11/23162531/drop-dcx-black-on-white-keycaps-hands-on"/>
+        <updated>2022-06-11T13:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Drop’s black-on-white DCX keycaps installed on a Filco Majestouch 2.
+    
+
+  
+Earlier this year, keyboard specialist Drop announced its new lineup of DCX keycaps. But rather than focusing on making flashy, colorful designs like most aftermarket keycaps, the first three sets to use the new DCX profile are relatively understated, with simple black-and-white designs or a small selection of primary colors. 
+That’s because the focus here is on getting the tiniest details right in the hopes that Drop’s sets might be able to compete directly with GMK’s — a German manufacturer commonly seen as the producer of some of the best-quality keycaps around. GMK produces keycaps in the “Cherry” profile (which refers to the overall shape of the keycaps) while “DCX” refers to the profile of Drop’s keycaps. I’ve had the chance to...
+Continue reading…]]></summary>
+        <author>
+            <name>The Verge -  All Posts</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Meta Hits the Brakes on Portal, AR Glasses, and Other Hardware]]></title>
+        <id>62a3706c79612bb993e57cec</id>
+        <link href="https://www.wired.com/story/meta-stops-selling-portal-to-consumers/"/>
+        <updated>2022-06-11T13:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Plus: Metalenz’s camera tech makes its way into phones, Microsoft launches the Xbox TV app, and the OnePlus 10 Pro gets an upgrade.]]></summary>
+        <author>
+            <name>Boone Ashworth</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How China Hacked US Phone Networks]]></title>
+        <id>62a3c5369c36c554478577ca</id>
+        <link href="https://www.wired.com/story/china-hacking-phone-network-security-roundup/"/>
+        <updated>2022-06-11T13:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Plus: Russia rattles its cyber sword, a huge Facebook phishing operation is uncovered, feds take down the SSNDOB marketplace, and more.]]></summary>
+        <author>
+            <name>Matt Burgess</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Mutations thought to be harmless turn out to cause problems]]></title>
+        <id>https://arstechnica.com/?p=1860267</id>
+        <link href="https://arstechnica.com/?p=1860267"/>
+        <updated>2022-06-11T12:31:10.000Z</updated>
+        <summary type="html"><![CDATA[Mutations in genes that don't alter proteins can still alter survival in yeast.]]></summary>
+        <author>
+            <name>John Timmer</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Best Kindles to Take Your Library Anywhere]]></title>
+        <id>5c9126abe48fae1a55ed4ea6</id>
+        <link href="https://www.wired.com/gallery/best-kindle/"/>
+        <updated>2022-06-11T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Amazon has six ebook readers. Here’s how they stack up—and which one might be right for you.]]></summary>
+        <author>
+            <name>Medea Giordano, Gear Team</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Last-Ditch Effort to Save Wild Salmon]]></title>
+        <id>629e31782386715ec7275231</id>
+        <link href="https://www.wired.com/story/the-last-ditch-effort-to-save-wild-salmon/"/>
+        <updated>2022-06-11T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[As climate change deals a blow to coastal habitats, coho salmon are disappearing from California’s Russian River. Can conservation hatcheries save them?]]></summary>
+        <author>
+            <name>Vanessa Minke-Martin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[真香~乐高起件器的神级使用方法！]]></title>
+        <id>https://www.bilibili.com/video/av214994532</id>
+        <link href="https://www.bilibili.com/video/av214994532"/>
+        <updated>2022-06-11T11:52:33.000Z</updated>
+        <summary type="html"><![CDATA[乐高起件器的使用方法有很多，但第一个真的香~高手永远在民间！官方也要靠边站~
+原始素材：Brickcrafts https://www.youtube.com/watch?v=tUvcbYsxIis
+后期创作：本UP
+
+
+Tags:教程,乐高,玩具,LEGO,积木,视频教程,制作过程,MOC,搭建,技能提升营,技能提升营2022第二季]]></summary>
+        <author>
+            <name>颗粒空间BrickSpace</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[苹果和谷歌的移动浏览器 "扼杀 "可能面临英国调查]]></title>
+        <id>https://hn.buzzing.cc/hn/31702964/</id>
+        <link href="https://hn.buzzing.cc/hn/31702964/?score=104&amp;original_url=https%3A%2F%2Fwww.google.com%2Furl%3Fq%3Dhttps%3A%2F%2Fwww.theguardian.com%2Fbusiness%2F2022%2Fjun%2F10%2Fapple-and-google-mobile-browser-stranglehold-may-face-uk-investigation%26sa%3DU%26ved%3D2ahUKEwjpu-2CgaX4AhVUiVwKHYjGAhUQFnoECAkQAg%26usg%3DAOvVaw1-wQKzIpZQ_Q-hrV5PNKha&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31702964&amp;sensitive=false"/>
+        <updated>2022-06-11T11:40:45.000Z</updated>
+        <summary type="html"><![CDATA[苹果和谷歌的移动浏览器 "扼杀 "可能面临英国调查]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Frost Giant Studios’ debut mixes Starcraft with Diablo]]></title>
+        <id>https://arstechnica.com/?p=1860160</id>
+        <link href="https://arstechnica.com/?p=1860160"/>
+        <updated>2022-06-11T11:40:21.000Z</updated>
+        <summary type="html"><![CDATA[New studio’s first foray is a RTS game that focuses on fun and ’90s vibes.]]></summary>
+        <author>
+            <name>WIRED</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我拒绝了50万美元，惹恼了我的投资者，并关闭了我的创业公司（2016年）]]></title>
+        <id>https://hn.buzzing.cc/hn/31702922/</id>
+        <link href="https://hn.buzzing.cc/hn/31702922/?score=106&amp;original_url=https%3A%2F%2Fwww.disruptingjapan.com%2Fturned-500k-pissed-off-investors-shut-startup%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31702922&amp;sensitive=false"/>
+        <updated>2022-06-11T11:17:03.000Z</updated>
+        <summary type="html"><![CDATA[我拒绝了50万美元，惹恼了我的投资者，并关闭了我的创业公司（2016年）]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[硬核观察 #664 Linux 发现一个“几乎不能被检测到”的寄生木马]]></title>
+        <id>https://linux.cn/article-14698-1.html?utm_source=rss&amp;utm_medium=rss</id>
+        <link href="https://linux.cn/article-14698-1.html?utm_source=rss&amp;utm_medium=rss"/>
+        <updated>2022-06-11T11:12:06.000Z</updated>
+        <summary type="html"><![CDATA[Linux 发现一个“几乎不能被检测到”的寄生木马
+
+安全研究人员发现了一款名为 “Symbiote”（共生体）的恶意软件。他们称其“几乎不可能被检测到”。它会“寄生感染”系统，感染所有正在运行的进程，并为提供 Rootkit 功能、远程访问等。它最早在 2021 年 11 月被发现，似乎是针对金融部门特别开发的。它不是一个以感染机器的独立可执行文件的形式运行的，而是以一个共享对象库的形式加载到所有正在运行的进程中，并寄生感染机器。它采用了多种规避检测的手段，来隐藏文件、进程和网络流量，甚至能让 BPF 工具也无法发现其网络流量。
+
+
+消息来源：黑莓
+
+
+
+老王点评：其实通过共享对象库寄生的木马并不稀奇，只是这个木马做了更多的隐藏手段，可见现在针对 Linux 的木马也越来越强大隐蔽了。
+
+
+
+
+Ubuntu 正在改进对低成本 RISC-V 主板 VisionFive 的支持
+
+最近 Ubuntu 开发人员一直在努力提高和改善对赛昉科技的 VisionFive 单板机的支持，有望在 Ubuntu 22.10 中看到对这种低于 180 美元的 RISC-V 计算机的良好支持。VisionFive 是为数不多的不超过 200 美元的、能运行完整 Linux 发行版的 RISC-V 主板之一。自 Linux 5.17 内核开始，就对 VisionFive v1 板提供了主线支持。
+
+
+消息来源：Phoronix
+
+
+
+老王点评：目前这个板子还是比较缺货的，希望能在 Ubuntu 等发行版提供更好的支持时能解决供货问题。有对在这个板子上运行 Ubuntu 感兴趣的同学吗？
+
+
+
+
+推特联合创始人宣布 Web3 的竞争对手：Web5
+
+推特联合创始人 Jack Dorsey 认为 Web3 变得和之前的 Web2 一样有问题，对未来抗审查、注重隐私的互联网来说还只是个梦想。现在，他旗下的区块链公司 TBD 创造了一个新名词 Web5，将通过放弃以区块链为中心的方法来实现无审查、以身份为中心的网络体验，从而击败现有的模式。他们所宣称的技术可能和 BT、Tor 类似。目前这个所谓的 Web5 仍处于开源开发阶段，没有正式发布日期。
+
+
+消息来源：Coindesk
+
+
+
+老王点评：生造名词的技术“创新”，并没有什么意义，就像十多年前 Web2 刚刚初露头角时就有人宣称 Web3，但是到现在连 Web3 也并没有真正得到共识和认可。更别说所谓的 Web5，我就想知道，Web4 怎么了，是 4 不吉利么。此外，其视为典范的，无论是 BT 还是 Tor，都太过于激进了。]]></summary>
+        <author>
+            <name>linux@linux.cn (linux)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[India isn’t ready for a deadly combination of heat and humidity]]></title>
+        <id>https://arstechnica.com/?p=1860137</id>
+        <link href="https://arstechnica.com/?p=1860137"/>
+        <updated>2022-06-11T11:00:22.000Z</updated>
+        <summary type="html"><![CDATA[Recent heat wave has seen “wet-bulb” temperatures rise to potentially fatal levels]]></summary>
+        <author>
+            <name>WIRED</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Apple Embraces the Ever-Expanding Dashboard Touchscreen]]></title>
+        <id>62a20ab99117ee78ad19a576</id>
+        <link href="https://www.wired.com/story/apple-carplay-dashboard-touchscreen-distracted-driving/"/>
+        <updated>2022-06-11T11:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The company recently announced a souped-up evolution of CarPlay. But do larger infotainment systems make distracted driving worse?]]></summary>
+        <author>
+            <name>Aarian Marshall</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Controlling My Family’s Smart Home Is Driving Us Mad]]></title>
+        <id>628e4f0c64f6937ef8df9012</id>
+        <link href="https://www.wired.com/story/family-smart-home-control-rant/"/>
+        <updated>2022-06-11T11:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The smart home was supposed to make our lives easier, but confusing controls and too many apps are frustrating. There must be a better way.]]></summary>
+        <author>
+            <name>Simon Hill</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[25 Great Deals on Smartwatches, Grills, Bags, and Tablets]]></title>
+        <id>62a20d3265b340420449b4ae</id>
+        <link href="https://www.wired.com/story/weekend-deals-june-11-2022/"/>
+        <updated>2022-06-11T11:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Need a new hobby like grilling or photography? Want to get Dad a new smartwatch for Father's Day? These sales might help.]]></summary>
+        <author>
+            <name>Medea Giordano</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[InDepth Guide for Customizing Angular Material Button]]></title>
         <id>https://dev.to/shhdharmen/indepth-guide-for-customizing-angular-material-button-58do</id>
@@ -36,6 +2125,16 @@ Ho…]]></summary>
 www.instagram.com/technocraft27]]></summary>
         <author>
             <name>Technocraft</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[六合一求生宝]]></title>
+        <id>https://www.bilibili.com/video/av812445466</id>
+        <link href="https://www.bilibili.com/video/av812445466"/>
+        <updated>2022-06-11T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Tags:技术,户外,野外生存,经验分享,户外分享家]]></summary>
+        <author>
+            <name>军武野路子</name>
         </author>
     </entry>
     <entry>
@@ -1240,6 +3339,37 @@ Continue reading…]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[步兵如何构筑反坦克掩体 多用途掩体 （民防科普）（民兵训练手册）（土工作业）]]></title>
+        <id>https://www.bilibili.com/video/av769946110</id>
+        <link href="https://www.bilibili.com/video/av769946110"/>
+        <updated>2022-06-10T23:39:10.000Z</updated>
+        <summary type="html"><![CDATA[本期视频与大家共同学习步兵多用途掩体的构设
+步兵多用途掩体作为防御作战中不可分割的一部分 需要步兵兵熟练掌握并灵活运用 
+UP主对步兵多用途掩体的理解有限 如有错漏其大家 批评指正 谢谢
+视频制作粗糙 拍摄剪辑水平有待提高 请大家海涵
+如果喜欢我的视频请点赞留言 谢谢
+（视频内容及装备为公开资料与训练器材 谢谢）
+
+
+Tags:原创,自制,演示,科普,解放军,学习,军事,训练,军人,陆军]]></summary>
+        <author>
+            <name>小罐头工作室</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[画物成真，赶快呼叫神笔马良！]]></title>
+        <id>https://www.bilibili.com/video/av684896685</id>
+        <link href="https://www.bilibili.com/video/av684896685"/>
+        <updated>2022-06-10T22:54:50.000Z</updated>
+        <summary type="html"><![CDATA[-
+
+
+Tags:魔术揭秘,魔术教学]]></summary>
+        <author>
+            <name>魔术特白</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[让人类在末世中更快地反弹起来]]></title>
         <id>https://hn.buzzing.cc/hn/31696658/</id>
         <link href="https://hn.buzzing.cc/hn/31696658/?score=103&amp;original_url=https%3A%2F%2F80000hours.org%2Fpodcast%2Fepisodes%2Flewis-dartnell-getting-humanity-to-bounce-back-faster%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31696658&amp;sensitive=false"/>
@@ -1607,6 +3737,19 @@ Tags:原创,自制,科学,教育,科普,化学,学习,实验,自然,科普纪录
 Tags:猎奇,搞笑,高能,手工,高温,黑科技,科学实验,隔热材料,妈见打,技能提升营,技能提升营2022第二季]]></summary>
         <author>
             <name>老大南</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【水果猎人】如何优雅吃可可？]]></title>
+        <id>https://www.bilibili.com/video/av257380406</id>
+        <link href="https://www.bilibili.com/video/av257380406"/>
+        <updated>2022-06-10T16:56:29.000Z</updated>
+        <summary type="html"><![CDATA[如何优雅吃可可？学会了给个三连啊~
+
+
+Tags:猎奇,搞笑,科普,水果,知识,巧克力,可可,vlog,水果猎人杨晓洋,网络热门鉴定,万物研究所]]></summary>
+        <author>
+            <name>水果猎人杨晓洋</name>
         </author>
     </entry>
     <entry>
@@ -2392,6 +4535,16 @@ Tags:科学,科普,物理,科学很可爱,万物研究所]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[学会了，立即分享给我妈 | 适合给妈妈看的缝纫小技巧]]></title>
+        <id>https://www.bilibili.com/video/av214704947</id>
+        <link href="https://www.bilibili.com/video/av214704947"/>
+        <updated>2022-06-09T22:14:59.000Z</updated>
+        <summary type="html"><![CDATA[Tags:技能提升营2022第二季,技能提升营,生活小妙招,时尚,日常,学习,经验分享,技术,缝纫,居家,生活小技巧]]></summary>
+        <author>
+            <name>5-MinuteCrafts中文</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[All the games, trailers, and announcements from the 2022 Summer Game Fest]]></title>
         <id>https://arstechnica.com/?p=1860076</id>
         <link href="https://arstechnica.com/?p=1860076"/>
@@ -2564,6 +4717,16 @@ Tags:科普,健康]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[为何说《侏罗纪世界3》的南方巨兽龙设计的很失败？侏罗纪世界的终章还是我们期待的那个恐龙电影吗？]]></title>
+        <id>https://www.bilibili.com/video/av257366755</id>
+        <link href="https://www.bilibili.com/video/av257366755"/>
+        <updated>2022-06-09T18:55:32.000Z</updated>
+        <summary type="html"><![CDATA[Tags:科普,侏罗纪公园,恐龙,霸王龙,生物,古生物,侏罗纪世界,南方巨兽龙,史前星球,侏罗纪世界3连请求]]></summary>
+        <author>
+            <name>黑毛羊驼</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Last trailer for Jordan Peele’s Nope finally yields details on the plot]]></title>
         <id>https://arstechnica.com/?p=1859986</id>
         <link href="https://arstechnica.com/?p=1859986"/>
@@ -2571,6 +4734,19 @@ Tags:科普,健康]]></summary>
         <summary type="html"><![CDATA["Ain't nobody gonna get what we gonna get—the money shot."]]></summary>
         <author>
             <name>Jennifer Ouellette</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我国飞机场的数量比非洲还少？这张图是真是假？]]></title>
+        <id>https://www.bilibili.com/video/av342255174</id>
+        <link href="https://www.bilibili.com/video/av342255174"/>
+        <updated>2022-06-09T18:03:36.000Z</updated>
+        <summary type="html"><![CDATA[我国飞机场的数量比非洲还少？这张图是真是假？
+
+
+Tags:科普,飞机,机场,飞机场,打卡挑战,万物研究所]]></summary>
+        <author>
+            <name>地球百科君</name>
         </author>
     </entry>
     <entry>
@@ -2594,6 +4770,19 @@ Tags:电脑,科普,CPU,科技,笔记本电脑,芯片,万物研究所]]></summary
         <summary type="html"><![CDATA[Quantum computers coupled with traditional machine learning show clear benefits.]]></summary>
         <author>
             <name>John Timmer</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[机器人怎么做到的？]]></title>
+        <id>https://www.bilibili.com/video/av939795115</id>
+        <link href="https://www.bilibili.com/video/av939795115"/>
+        <updated>2022-06-09T17:36:21.000Z</updated>
+        <summary type="html"><![CDATA[-
+
+
+Tags:打卡挑战,机器人,机械,科学,人工智能]]></summary>
+        <author>
+            <name>杰哥教魔方</name>
         </author>
     </entry>
     <entry>
@@ -2729,6 +4918,19 @@ Tags:技术宅,剪辑,知识,影视,综艺,后期,摄影,多机位,影视飓风,
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[空军一架歼-7飞机失事]]></title>
+        <id>https://www.bilibili.com/video/av897363829</id>
+        <link href="https://www.bilibili.com/video/av897363829"/>
+        <updated>2022-06-09T15:15:24.000Z</updated>
+        <summary type="html"><![CDATA[空军一架歼-7飞机失事
+
+
+Tags:坠机,东南军情,歼-7]]></summary>
+        <author>
+            <name>东南军情</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Five automakers tell the Feds they want California emissions rules]]></title>
         <id>https://arstechnica.com/?p=1859936</id>
         <link href="https://arstechnica.com/?p=1859936"/>
@@ -2807,6 +5009,16 @@ Tags:地球,生命,科普,趣闻,科普向,自然,生物]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Convert your website into an android app using capacitor 😱.]]></title>
+        <id>https://dev.to/narottam04/convert-your-website-into-an-android-app-using-capacitor--5bh2</id>
+        <link href="https://dev.to/narottam04/convert-your-website-into-an-android-app-using-capacitor--5bh2"/>
+        <updated>2022-06-09T12:31:55.000Z</updated>
+        <summary type="html"><![CDATA[#webdev #beginners #tutorial #javascript]]></summary>
+        <author>
+            <name>Narottam04</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[非油炸更健康？五谷道场非油炸泡面测评]]></title>
         <id>https://sspai.com/post/73701</id>
         <link href="https://sspai.com/post/73701"/>
@@ -2862,6 +5074,19 @@ Tags:地球,生命,科普,趣闻,科普向,自然,生物]]></summary>
         <summary type="html"><![CDATA[Therapy doesn’t work without understanding, and the “extremely online” deserve to have their experiences taken seriously.]]></summary>
         <author>
             <name>Pamela J. Hobart</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[鉴定网络热门动物视频（七）]]></title>
+        <id>https://www.bilibili.com/video/av342270124</id>
+        <link href="https://www.bilibili.com/video/av342270124"/>
+        <updated>2022-06-09T11:42:53.000Z</updated>
+        <summary type="html"><![CDATA[先更一期甜点
+
+
+Tags:科学,科普,动物,宠物,萌宠,植物,自然,冷知识,爬虫,网络热门鉴定,万物研究所]]></summary>
+        <author>
+            <name>龙女之声</name>
         </author>
     </entry>
     <entry>
@@ -4254,6 +6479,34 @@ okhttp（了解拦截器的使用）
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[【Flutter&Flame游戏 - 拾叁】碰撞检测 |  CollisionCallbacks]]></title>
+        <id>https://juejin.cn/post/7106294723077210143</id>
+        <link href="https://juejin.cn/post/7106294723077210143"/>
+        <updated>2022-06-06T16:53:22.000Z</updated>
+        <summary type="html"><![CDATA[theme: cyanosis
+持续创作，加速成长！这是我参与「掘金日新计划 · 6 月更文挑战」的第 14 天，点击查看活动详情
+前言
+这是一套 张风捷特烈 出品的 Flutter&Flame 系列教程，发布于掘金社区。如果你在其他平台看到本文，可以根据对于链接移步到掘金中查看。因为文章可能会更新、修正，一切以掘金文章版本为准。本系列源码于 【toly_game】 ，如果本系列对你有所帮助，希望点赞支持，本系列文章一览：
+【Flutter&Flame 游戏 - 壹】开启新世界的大门 
+【Flutter&Flame 游戏 - 贰】操纵杆与角色移动
+【Flutter&Flame 游戏 - 叁】键盘事件与手势操作
+【Flutter&Flame 游戏 - 肆】精灵图片加载方式 
+【Flutter&Flame 游戏 - 伍】Canvas 参上 | 角色的血条
+【Flutter&Flame 游戏 - 陆】暴击 Dash  | 文字构件的使用
+【Flutter&Flame 游戏 - 柒】人随指动 | 动画点触与移动
+【Flutter&Flame游戏 - 捌】装弹完毕 | 角色武器发射 
+【Flutter&Flame游戏 - 玖】探索构件 | Component 是什么
+【Flutter&Flame游戏 - 拾】探索构件 | Component 生命周期回调
+【Flutter&Flame游戏 - 拾壹】探索构件 | Component 使用细节
+【Flutter&Flame游戏 - 拾贰】探索构件 | 角色管理
+【Flutter&Flame游戏 - 拾叁】碰撞检测 |  CollisionCallbacks (本文)
+1. 碰撞检测场景搭建
+前面我们  矩形域 和 中心点 的包含关系校验是否碰撞，这样会有很大的误差。Flame 中提供了 CollisionCallbacks ，对碰撞检测…]]></summary>
+        <author>
+            <name>张风捷特烈</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[F5 BIGIP CVE-2022-1388 认证绕过漏洞分析]]></title>
         <id>https://xz.aliyun.com/t/11418</id>
         <link href="https://xz.aliyun.com/t/11418"/>
@@ -5541,6 +7794,16 @@ Matrix 是少数派的写作社区，我们主张分享真实的产品体验，
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[How web browsers work - the render tree (part 7, with illustrations)💻 ⏳]]></title>
+        <id>https://dev.to/arikaturika/how-web-browsers-work-the-render-tree-part-7-with-illustrations-24h3</id>
+        <link href="https://dev.to/arikaturika/how-web-browsers-work-the-render-tree-part-7-with-illustrations-24h3"/>
+        <updated>2022-06-01T05:20:30.000Z</updated>
+        <summary type="html"><![CDATA[#javascript #webdev #html #css]]></summary>
+        <author>
+            <name>Arika O</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Learn MERN like a pro]]></title>
         <id>https://dev.to/foyzulkarim/learn-mern-like-a-pro-4hf</id>
         <link href="https://dev.to/foyzulkarim/learn-mern-like-a-pro-4hf"/>
@@ -6360,26 +8623,6 @@ Matrix 是少数派的写作社区，我们主张分享真实的产品体验，
         <summary type="html"><![CDATA[#webdev #beginners #windows #tutorial]]></summary>
         <author>
             <name>Stephan Lamoureux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[7 tips to improve your Typescript]]></title>
-        <id>https://dev.to/juliecherner/7-tips-to-improve-your-typescript-4o5o</id>
-        <link href="https://dev.to/juliecherner/7-tips-to-improve-your-typescript-4o5o"/>
-        <updated>2022-05-28T18:53:16.000Z</updated>
-        <summary type="html"><![CDATA[7 tips to improve your Typescript]]></summary>
-        <author>
-            <name>Julie Cherner</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[DuckDuckGo Isn’t as Private as You Think]]></title>
-        <id>6290e6a95ebafea80c13a998</id>
-        <link href="https://www.wired.com/story/duckduckgo-microsoft-twitter-ft-bush-assassination-whatsapp/"/>
-        <updated>2022-05-28T13:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Plus: A $150 million Twitter fine, a massive leak from a Chinese prison in Xinjiang, and an ISIS plot to assassinate George W. Bush.]]></summary>
-        <author>
-            <name>Andy Greenberg</name>
         </author>
     </entry>
 </feed>
