@@ -2,10 +2,1822 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gsyx666.github.io/action-osmosfeed/index.html</id>
     <title>gsyx::feed</title>
-    <updated>2022-06-12T10:38:14.287Z</updated>
+    <updated>2022-06-13T10:41:33.252Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://gsyx666.github.io/action-osmosfeed/index.html"/>
     <link rel="self" href="https://gsyx666.github.io/action-osmosfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[JavaScript Interview Questions Part 1]]></title>
+        <id>https://dev.to/arjuncodess/javascript-interview-questions-part-1-1mo0</id>
+        <link href="https://dev.to/arjuncodess/javascript-interview-questions-part-1-1mo0"/>
+        <updated>2022-06-13T10:28:19.000Z</updated>
+        <summary type="html"><![CDATA[Wouldn’t it be great if you knew exactly what questions a hiring manager would be asking you in your next job interview?
+Hoisting is the default behaviour of JavaScript where all the variable and function declarations are moved on top.
+// Example of Global Scope
+hoistedVariable = 3;
+console.log(hoistedVariable); // outputs 3 even when the variable is declared after it is initialized   
+var hoistedVariable;
+
+// --------------------
+
+// Example of Local Scope
+function doSomething(){
+  x = 33;
+  console.log(x); // Outputs 33 since the local variable “x” is hoisted inside the local scope
+  var x;
+} 
+
+In JavaScript, both the keywords var and let are used to declare variables.
+let is block-scope.
+var is function scoped.
+let does not allow to redeclare variables.
+var allows to redeclare variables…]]></summary>
+        <author>
+            <name>Arjun Vijay Prakash</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Google suspends engineer who claims its AI is sentient]]></title>
+        <id>https://www.theverge.com/2022/6/13/23165535/google-suspends-ai-artificial-intelligence-engineer-sentient</id>
+        <link href="https://www.theverge.com/2022/6/13/23165535/google-suspends-ai-artificial-intelligence-engineer-sentient"/>
+        <updated>2022-06-13T10:15:49.000Z</updated>
+        <summary type="html"><![CDATA[Its LaMDA system is built to make AI more conversational. | Photo by Amelia Holowaty Krales / The Verge
+    
+
+  
+Google has placed one of its engineers on paid administrative leave for allegedly breaking its confidentiality policies after he grew concerned that an AI chatbot system had achieved sentience, the Washington Post reports. The engineer, Blake Lemoine, works for Google’s Responsible AI organization, and was testing whether its LaMDA model generates discriminatory language or hate speech. 
+The engineer’s concerns reportedly grew out of convincing responses he saw the AI system generating about its rights and the ethics of robotics. In April he shared a document with executives titled “Is LaMDA Sentient?” containing a transcript of his conversations with the AI (after being placed on leave, Lemoine published the transcript via his Medium...
+Continue reading…]]></summary>
+        <author>
+            <name>The Verge -  All Posts</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building a live chart with Deno, WebSockets, Chart.js and Materialize]]></title>
+        <id>https://dev.to/bobbyiliev/building-a-live-chart-with-deno-websockets-chartjs-and-materialize-3cd7</id>
+        <link href="https://dev.to/bobbyiliev/building-a-live-chart-with-deno-websockets-chartjs-and-materialize-3cd7"/>
+        <updated>2022-06-13T09:42:44.000Z</updated>
+        <summary type="html"><![CDATA[Introduction
+
+
+This is a self-contained example of a real-time chart powered by Deno, Web Sockets, Chart.js, and Materialize.
+Deno is a simple and secure runtime for JavaScript and TypeScript that uses V8. Deno, just like Materialize, is also written in Rust.
+In this demo, we will build a simple live dashboard app that displays real-time data from a Deno Web Socket server. Deno will then connect to Materialize and TAIL our live materialized view to get the latest data and display it in a real-time chart using Chart.js.
+Here is a quick overview of the project:
+A mock service to continually generate user score events.
+Redpanda instance to store the user score events in a topic.
+Materialize instance that is connected to the Redpanda instance and ingests the data from the topic in a live mater…]]></summary>
+        <author>
+            <name>Bobby Iliev</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Build a React Form with react-hook-form and zod]]></title>
+        <id>https://dev.to/austinshelby/build-a-react-form-with-react-hook-form-and-zod-1a7j</id>
+        <link href="https://dev.to/austinshelby/build-a-react-form-with-react-hook-form-and-zod-1a7j"/>
+        <updated>2022-06-13T09:23:50.000Z</updated>
+        <summary type="html"><![CDATA[In this tutorial you will learn how to use react-hook-form and zod to build a form with validation.
+If you prefer a video tutorial instead, you can watch it below.
+
+
+
+
+Clone the project from GitHub.
+This is what we are going to be building:
+
+Let's start with a little bit of boilerplate code for our form component:
+import { FC } from "react";
+
+const Tiers = [
+  {
+    id: "BRONZE",
+    name: "Bronze",
+    description: "Get average points",
+    price: 0.99,
+  },
+  {
+    id: "SILVER",
+    name: "Silver",
+    description: "Get extra points",
+    price: 4.99,
+  },
+  {
+    id: "GOLD",
+    name: "Gold",
+    description: "The highest possible tier",
+    price: 19.99,
+  },
+];
+
+export const Form: FC = () => {
+
+  return (
+    <form className="space-y-10">
+      <div>
+        <label className="block">
+…]]></summary>
+        <author>
+            <name>Austin Shelby</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Getting intimate with CI/CD and CI/CD Pipeline]]></title>
+        <id>https://dev.to/wardaliaqat01/getting-intimate-with-cicd-and-cicd-pipeline-5f8</id>
+        <link href="https://dev.to/wardaliaqat01/getting-intimate-with-cicd-and-cicd-pipeline-5f8"/>
+        <updated>2022-06-13T09:19:17.000Z</updated>
+        <summary type="html"><![CDATA[Introduction:
+
+
+In my previous article Why CI/CD? How was a life without CI/CD & how is it now? I talked about the Why of CI/CD. If you read that, got the concept and wanna hear more about CI/CD then In this article we are going to ding more into the concepts of CI/CD.
+So, 
+
+CI/CD is simply a method to frequently deliver apps to customers by introducing automation into the stages of app development. The main concepts attributed to CI/CD are continuous integration, continuous delivery, and continuous deployment. 
+CI/CD is a solution to the problems integrating new code can cause for development and operations teams (AKA "integration hell").
+Specifically, CI/CD introduces ongoing automation and continuous monitoring throughout the lifecycle of apps, from integration and testing phases to del…]]></summary>
+        <author>
+            <name>Warda Liaqat</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[说说你身边经济寒冬的具体表现？]]></title>
+        <id>859336</id>
+        <link href="https://www.v2ex.com/t/859336"/>
+        <updated>2022-06-13T09:16:21.000Z</updated>
+        <summary type="html"><![CDATA[thisboy: 生活方面
+1. 日常上班路上经过的一条街，大概有 30 家店铺左右，现在大概有 10 家已经处于招租状态了。
+工作方面：
+1. 隔壁的几个项目组近半年都被砍了，人员离职或者回流到老的项目组。]]></summary>
+        <author>
+            <name>thisboy</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[618 要不要屯根内存]]></title>
+        <id>859335</id>
+        <link href="https://www.v2ex.com/t/859335"/>
+        <updated>2022-06-13T09:10:33.000Z</updated>
+        <summary type="html"><![CDATA[yuangee888: 
+8G 价格比往日要便宜 30/40 左右
+如果下半年要装机有这个需求]]></summary>
+        <author>
+            <name>yuangee888</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[前端，请问这里 TS 如何定义数据类型？]]></title>
+        <id>859334</id>
+        <link href="https://www.v2ex.com/t/859334"/>
+        <updated>2022-06-13T09:01:39.000Z</updated>
+        <summary type="html"><![CDATA[particlec: 使用技术 react + antd +TS
+const columns: ColumnsType<DataType> = [
+{      title: "创建者",
+      dataIndex: "creator",
+      key: "creator",
+    },
+.....]
+<Table
+            columns={columns}
+            dataSource={analogDataTable(columns)}
+ />
+// 这是一个自定义通用模拟表格数据的方法
+export const analogDataTable = (columns: (请问这里该如何定义类型？)) => {.......}]]></summary>
+        <author>
+            <name>particlec</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[大佬们来围观一下小白第一次写的垃圾代码（真的第一次写，毫无基础，边写边百度）， Python 向。]]></title>
+        <id>859333</id>
+        <link href="https://www.v2ex.com/t/859333"/>
+        <updated>2022-06-13T08:56:00.000Z</updated>
+        <summary type="html"><![CDATA[cx524541577: 
+大佬们好，简单的说明一下目的，在用户选择的目录下创建固定的文件夹，根据当前时间以及项目名称创建文件夹如：
+20220613_V2EX 拍摄项目
+camera
+20220613-A7S3
+20220613-RED V-RAPTOR
+audio
+vedio fx
+sound fx
+....
+当然现在是半成品，期待大佬们点评现在的代码，有什么不足，以及分享思路，万分感谢！！！
+链接: https://pan.baidu.com/s/1WFj3hHCCeuCStXSb3aB5Tw 提取码: wh56]]></summary>
+        <author>
+            <name>cx524541577</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[你们不常用的卡有没有被反诈误伤]]></title>
+        <id>859332</id>
+        <link href="https://www.v2ex.com/t/859332"/>
+        <updated>2022-06-13T08:42:40.000Z</updated>
+        <summary type="html"><![CDATA[onhao: 误伤的人带来很多不利的影响，我的 一些不常用的银行卡全部都因为反炸限制消费了，有的是只能存不能取，有的是只能取不能存， 有的是限额 1 元以下，都是要占用自己的时间去银行服务大厅办理解封，这些时间成本，反炸根本没有考虑到，而且银行的服务态度也有各有千秋，有的银行服务还行，有的真是明明很多人排队，也有空余的工作人员，工作日就安排一个窗口办理业务，就在那里白白等 1 小时。。。  
+反诈大数据误伤的错误，要自己来证明自己没有诈骗，还要签保证书，  
+本来就是反诈误伤了， 还要自己保证自己不诈骗，  
+这逻辑，也真是.....  
+这些银行都去保证了不诈骗： 农业（服务最差） 工商，建设，中国银行]]></summary>
+        <author>
+            <name>onhao</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[brew 为什么每次安装安装都自动更新其他已存在软件]]></title>
+        <id>859331</id>
+        <link href="https://www.v2ex.com/t/859331"/>
+        <updated>2022-06-13T08:40:55.000Z</updated>
+        <summary type="html"><![CDATA[louisxxx: 我个人觉得这个设计特别的智障，明明我只要安装一个 MTR ，他全更新了把我现在环境全破坏了。
+例如你当前 php 是 7.2 他会给你更新成 7.4 什么的。然后导致原来的环境被搞得一团糟，配置文件位置也发生了变化。]]></summary>
+        <author>
+            <name>louisxxx</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[M1 Mac 开启 HiDPI 完美，最新 beta 版本 BetterDummy 无需镜像]]></title>
+        <id>859330</id>
+        <link href="https://www.v2ex.com/t/859330"/>
+        <updated>2022-06-13T08:39:53.000Z</updated>
+        <summary type="html"><![CDATA[liuhai233: 
+https://github.com/waydabber/BetterDummy
+BetterDummy 最新 beta 版不需要镜像，可以直接修改系统文件添加 HiDPi 分辨率，支持 M1
+添加分辨率重启，之后无需 打开 BetterDummy]]></summary>
+        <author>
+            <name>liuhai233</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[删除/lib64/libstdc++.so 导致服务器无法启动]]></title>
+        <id>859329</id>
+        <link href="https://www.v2ex.com/t/859329"/>
+        <updated>2022-06-13T08:38:30.000Z</updated>
+        <summary type="html"><![CDATA[FenixVu: 
+之前中过一次挖矿病毒就是通过 /lib64/libstdc++.so 来隐藏进程
+这个看到一样的状况开机 cpuIO 直接 50%
+然后我就按照上次的方法操作了下,重启后结果直接就无法启动了
+直接在内核引导阶段就进不去,然后恢复模式也进不去,我通过 usb 引导 ubuntu 镜像进入了 ecovery 模式下
+重建了 /lib64/libstdc++.so 的软链接但是还是无法开机
+请问怎么通过 开机引导内核那部分刷的飞快的日志定位问题啊]]></summary>
+        <author>
+            <name>FenixVu</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[有哪些国产操作系统值得推荐(用于生产环境)]]></title>
+        <id>859328</id>
+        <link href="https://www.v2ex.com/t/859328"/>
+        <updated>2022-06-13T08:37:24.000Z</updated>
+        <summary type="html"><![CDATA[niz: 
+背景
+公司客户多是体制内单位，购买的我司产品部署在客户内网服务器。今天收到一个客户通知，要确认我司产品是否支持迁移到国产化服务器、以及国产操作系统。
+注：公司产品后端多是 Java 相关技术栈
+咨询请教
+我两台主力机器系统都是 Fedora 36 ，所以主观倾向于红帽系。
+刚才简单了解了国产操作系统，分类也是不少，银河麒麟、中标麒麟、deepin 、uos 、Anolis OS 、openruler 等等。其中了解到阿里的 Anolis OS 和 CentOS 系统 100% 兼容，所以想测试一下。
+另外也想借此帖子，请教一下大家是否有国产操作系统部署维护相关的经验、以及国产系统推荐。谢谢！！]]></summary>
+        <author>
+            <name>niz</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[代替 Acrobat 转换 PDF 的 Mac 最佳软件有推荐的么？]]></title>
+        <id>859327</id>
+        <link href="https://www.v2ex.com/t/859327"/>
+        <updated>2022-06-13T08:37:20.000Z</updated>
+        <summary type="html"><![CDATA[alanying: 
+目前用来用去都没有很好能代替 Acrobat 转换 PDF 的软件。]]></summary>
+        <author>
+            <name>alanying</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[9.9 离线语音+红外+小程序控制家电]]></title>
+        <id>859326</id>
+        <link href="https://www.v2ex.com/t/859326"/>
+        <updated>2022-06-13T08:36:33.000Z</updated>
+        <summary type="html"><![CDATA[liqinliqin: 说明：
+1.是个不带外壳的，需要 usb 5v 供电，和 u 盘一样的使用
+2.可以控制 风扇、空调、加湿器
+3.可以语音控制，可以小程序器控制
+4.39.9 版本包含 微信小程序源码，学习蓝牙开发的可以用
+5.是预售，如果这个订单不到 500 ，需要退款给您
+产品地址：
+https://item.taobao.com/item.htm?id=677180859172]]></summary>
+        <author>
+            <name>liqinliqin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[IntelliJ 默认的 Terminal 在不同的系统下冲突了，怎么办？]]></title>
+        <id>859325</id>
+        <link href="https://www.v2ex.com/t/859325"/>
+        <updated>2022-06-13T08:31:12.000Z</updated>
+        <summary type="html"><![CDATA[mashirozx: 
+用了自带的 Settings Repository 同步配置，于是 Mac 上出现了这种东西：
+
+有解吗？]]></summary>
+        <author>
+            <name>mashirozx</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[上海]字节跳动招聘 Rust 开发工程师]]></title>
+        <id>859324</id>
+        <link href="https://www.v2ex.com/t/859324"/>
+        <updated>2022-06-13T08:25:25.000Z</updated>
+        <summary type="html"><![CDATA[tobacco: 
+职位描述
+开发跨平台高性能 native 客户端核心组件；
+负责沟通及创作工具的系统设计, 实现, 优化和演进；
+研究分析主流 IM ，优化实现方案，改进产品功能；
+负责设计和优化 IM 协议、弱网通信、推送、存储、网络并发、并行计算、加密以及安全等；
+保证工程质量和开发效率。
+职位要求
+良好的系统编程能力. 喜爱或有 Rust 经验以及扎实的 C/C++功底更佳；
+喜爱关注新技术, 愿意尝试更优解决方案；
+不设边界, 愿意探索了解事物运转原理；
+熟悉开源社区；
+热衷自动化完成事情；
+关注代码设计，有持续学习习惯。
+投递方式
+点此链接直接投递或者 wx 联系：bGl1d29uc2I= (base64)]]></summary>
+        <author>
+            <name>tobacco</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[请问有 iOS 的远程全职兼职外包吗？]]></title>
+        <id>859321</id>
+        <link href="https://www.v2ex.com/t/859321"/>
+        <updated>2022-06-13T08:21:57.000Z</updated>
+        <summary type="html"><![CDATA[magic3584: 
+地点北京，已经毕业两个月了，现在可以说十分焦虑了。
+8 年 iOSer （大佬轻拍，年限不等于能力）。
+想问下有无远程全职兼职或外包？或者有北京公司愿意给面试的。
+先行谢过。]]></summary>
+        <author>
+            <name>magic3584</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[用 Golang 创作了一个图片处理服务,欢迎 Star]]></title>
+        <id>859320</id>
+        <link href="https://www.v2ex.com/t/859320"/>
+        <updated>2022-06-13T08:18:55.000Z</updated>
+        <summary type="html"><![CDATA[nbboy: 
+代码有些丑，实现了图片的处理，可以用 lua 定制，抄了很多 zimg 代码。详细看： https://github.com/x-debug/gimg]]></summary>
+        <author>
+            <name>nbboy</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[小米移动又开始耍流氓了，我的维权经历（已经被停机）]]></title>
+        <id>859318</id>
+        <link href="https://www.v2ex.com/t/859318"/>
+        <updated>2022-06-13T08:14:51.000Z</updated>
+        <summary type="html"><![CDATA[Phishion: 
+小米刚开始搞移动通信业务的时候，为了营销推过那种没有月租的电话卡，我觉得充 100 块钱就能弄一个手机号以后用来对付装修电话什么的也挺合适，就买了一个，期间一直没怎么用，也相安无事。
+3 月份的时候，我装那个电话卡的旧手机接到一个短信，说是根据《反恐怖主义法》《网络安全法》，我的号码异常，必须进行二次实名验证，我也没想太多，可能以前的实名制不充分，要补录一个就借了一部安卓手机进行验证了（人家只支持安卓），验证之严格程度让人大开眼界，你不仅要提供身份证这样的常规操作，还要对着屏幕上给你提供的稿子现场进行录像，大概内容就是，我叫 xx ，我的身份证是 xxx ，今天是 x 年 x 月 x 日，我保证是我本人，且不用这个电话诈骗等等，犯人体验感十足。
+验证通过后的 3 个月后，也就是前几天，我又收到了同样内容的短信又让我来一次，说我的号码异常，问题是我这个号本身就很少使用啊，我打电话申诉，对面一度让我确认是不是机器人客服，完全不解释异常原因，不停的重复因为网络优化，这边要你进行申诉的。（小米移动管强制用户进行二次实名验证叫网络优化，二次实名验证的入口叫申诉），反正就是不给你判断异常出现的原因，不进行处理。
+然后我把事实证据包括，电话详单、证明我的号 3 个月前已经通过实名制验证的证据提交到工信部申诉，小米 1 天后来电话了，终于来一个不像机器人的客服了，不过也最多是中级客服，告知我是长期没有使用被列为异常，这就很有意思了：
+1 ）“长期”如何定义？我 3 月下旬给我的另一个手机号还发过一次付费短信，事发还不到 3 个月，就算长期不使用了？
+2 ）“使用”如何定义？我把手机卡插在手机里 24 小时保持畅通就不算使用？那你用微博只浏览不发东西也不算用微博了？
+3 ）有哪条法律法规、以及签署的合同规定用户使用手机必须一个月（小米客服后来提供的标准）发一次短信或者电话，否则就必须再次实名制验证？ 24 小时不验证就停机？用户怎么用手机你小米管的着么？
+当然沟通结果还是客服虽然无法辩驳，但是这是他们的规定没有办法，一如既往的复合预期。
+今日我发现我的号被停机了，打电话询问小米客服，说这就是最终的处理方法，不予以开通，你要想开通就进行申诉，我询问我不懂你说的申诉是什么意思，是否就是那个要现场录像拍身份证的那个东西，她说是，那个入口的名称叫申诉。
+我今天又向工信部投诉了一次，因为我已经被违法停机了，我对处理结果其实并不乐观，大企业跟你耍流氓人家拿工资的，有钱有人有时间，你普通人生活已经够难了还要应付这些事情，为了维权做实力明显不对等的对抗，如果没有国家法律撑腰、处罚震慑，难办的很。
+我其实对那些女性客服感到有些愧疚，因为你要维权就必须摆出一种“战斗姿态”，那些女性客服承担了用户的质疑与怒火，但是问题肯定不是出在她们身上，有时候听到对面小心翼翼、唯唯诺诺的声音，真是让人感到众生皆苦，她们本不应该承受这些，但是我也得维权啊，虽然她们肯定看不到这些，我还是想在互联网上留下对她们的愧疚，唉。
+我不知道就这么点事儿，花那么多时间处理是否明智，目前我在等待申诉结果，可能会像众多类似事情一样无疾而终吧，也许正是领教过的一次次的不公让年轻人失去朝气变成了油腻中年，我希望处理结果能给自己，也给大伙儿打一打气
+以下是一些截图]]></summary>
+        <author>
+            <name>Phishion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[利用蹩脚的 js 知识写了一个统计真实访客数量的脚本]]></title>
+        <id>859317</id>
+        <link href="https://www.v2ex.com/t/859317"/>
+        <updated>2022-06-13T08:14:08.000Z</updated>
+        <summary type="html"><![CDATA[zhishixiang: 
+趁着高考结束后闲着无事，入门了网页和小程序开发，刚学完 ajax 没多久，打算写一个小项目作为总结，于是便有了此项目。
+本项目基于前端请求后端、后端记录数据的方式统计访客数据，使得静态网站也拥有了展示访客数据的功能。且本项目还利用了 cookies 来防止重复提交数据，确保记录真实访问量。本来是想只给自己的网站用的，但后面还是决定开源了（虽然 js 脚本开不开源都无所谓）。
+后端搭建在了腾讯云的 serverless 云函数上，国内访问速度应该是有保证的，经过测试响应时间均不超 50ms ，个人感觉还是相当不错的。
+项目地址： https://github.com/zhishixiang/visitorStatistic ，由于刚学没多久因此代码非常烂，希望大佬们轻喷。]]></summary>
+        <author>
+            <name>zhishixiang</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[求助：每到下午三点左右电脑就莫名卡死，一会儿后恢复，循环多次。]]></title>
+        <id>859316</id>
+        <link href="https://www.v2ex.com/t/859316"/>
+        <updated>2022-06-13T07:59:49.000Z</updated>
+        <summary type="html"><![CDATA[sandman511: Windows 11 企业版 21H2 22000.675
+任务管理器 cpu/内存 /磁盘都正常，GPU 平时 5%左右，但卡的时候会到 50%左右，桌面窗口管理器与 Client Server Runtime Process 进程各占 25%左右（刚刚又卡了，桌面窗口管理器 GPU 占用正常，Client Server Runtime Process 独占 60%）
+9:00 - 11:00 正常，11 点左右开始卡，中午不清楚
+14:00-15:00 正常，15 点左右开始卡，晚上不清楚
+重启试过，只开了 IDEA+企业微信，也卡]]></summary>
+        <author>
+            <name>sandman511</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[工作后如何学习英语，提高英语水平]]></title>
+        <id>859315</id>
+        <link href="https://www.v2ex.com/t/859315"/>
+        <updated>2022-06-13T07:58:43.000Z</updated>
+        <summary type="html"><![CDATA[peterswan: 
+程序员这个工作英语太重要了，想要提高自己英语水平，主要是能流程看英文资料，以及看英语视频，有没有比较好的办法，或者比较好的资料]]></summary>
+        <author>
+            <name>peterswan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[paw 公共 or 默认 Header 怎么添加]]></title>
+        <id>859313</id>
+        <link href="https://www.v2ex.com/t/859313"/>
+        <updated>2022-06-13T07:58:02.000Z</updated>
+        <summary type="html"><![CDATA[Anybfans: 
+需求跟这个类似。
+https://stackoverflow.com/questions/29373096/is-it-possible-to-re-use-headers-in-paw
+但是找了半天，也不知道怎么设置，有老哥知道吗]]></summary>
+        <author>
+            <name>Anybfans</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[OpenWRT 是否有对新手友好的设置静态路由的方式？]]></title>
+        <id>859312</id>
+        <link href="https://www.v2ex.com/t/859312"/>
+        <updated>2022-06-13T07:57:15.000Z</updated>
+        <summary type="html"><![CDATA[gam2046: 
+场景
+我方提供一些路由器或软路由，提供 VPN 接入我方内部网络，用于业务测试。
+由于使用人员并非完全是技术人员，因此要求对方能够使用 iptables 是比较困难的。
+所以是否有一些现成图形化的方式，能够让使用人员设置一些静态路由。
+需求
+根据来源 IP 指定出口接口
+根据来源 MAC 指定出口接口
+根据目标 IP 指定出口接口
+除了依据上述规则指定出口的请求以外，均通过默认出口以方便使用人员
+补充
+使用人员之前有 RouterOS 使用经验，能够达到类似 ROS 的图形化功能就够。]]></summary>
+        <author>
+            <name>gam2046</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[你会一直打工吗？未来有什么规划？]]></title>
+        <id>859311</id>
+        <link href="https://www.v2ex.com/t/859311"/>
+        <updated>2022-06-13T07:55:15.000Z</updated>
+        <summary type="html"><![CDATA[shenmezhidedu: 你会一直打工到老吗？]]></summary>
+        <author>
+            <name>shenmezhidedu</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[上海]字节跳动招聘 Rust 开发实习生]]></title>
+        <id>859310</id>
+        <link href="https://www.v2ex.com/t/859310"/>
+        <updated>2022-06-13T07:53:30.000Z</updated>
+        <summary type="html"><![CDATA[tobacco: 
+职位描述
+负责设计和优化 IM 协议、弱网通信、推送、存储、网络并发、并行计算、加密以及安全等；
+负责跨平台高性能 native 客户端核心组件的研发；
+研究分析主流 IM ，优化实现方案，改进产品功能；
+保证工程质量和开发效率；
+主要开发语言为 Rust / C / C++；
+职位要求
+良好的系统编程能力，喜爱或有 Rust 经验以及扎实的 C / C++ 功底更佳；
+熟悉 TCP/IP 、Socket 、UDP 、HTTP 等基本网络协议；
+喜爱关注新技术，Stay on the edge ，愿意尝试更优解决方案；
+良好的设计和编码品味，能产出高质量的设计和代码；
+学习能力强，对于技术有一定的兴趣。喜欢钻研和尝试新的技术，并能够从技术上影响到团队；
+投递方式
+点此链接直接投递或者 wx 联系：bGl1d29uc2I= (base64)]]></summary>
+        <author>
+            <name>tobacco</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[兄弟们， AirPods Pro 的降噪快削没了]]></title>
+        <id>859309</id>
+        <link href="https://www.v2ex.com/t/859309"/>
+        <updated>2022-06-13T07:52:52.000Z</updated>
+        <summary type="html"><![CDATA[IM1T: 开不开几乎没区别]]></summary>
+        <author>
+            <name>IM1T</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何给 Chrome 的某个标签断网]]></title>
+        <id>859308</id>
+        <link href="https://www.v2ex.com/t/859308"/>
+        <updated>2022-06-13T07:49:37.000Z</updated>
+        <summary type="html"><![CDATA[Mateverse: 
+不考虑缓存互通之类的的情况，就单独某个标签断网，不影响其他标签正常联网使用。
+有什么方法或者插件吗？]]></summary>
+        <author>
+            <name>Mateverse</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ADGuard 有必要付费吗]]></title>
+        <id>859307</id>
+        <link href="https://www.v2ex.com/t/859307"/>
+        <updated>2022-06-13T07:39:08.000Z</updated>
+        <summary type="html"><![CDATA[yuhangch: 
+一直在用浏览器插件，今天看到某平台做活动，官网～ 180 ，活动～ 60 （ 180 断然不会买，但 60 就要纠结一下了）
+https://adguard.com/zh_cn/compare.html?os=mac
+这个比较看的云里雾里，比如
+高级广告拦截
+超高过滤品质
+对于钓鱼 & 恶意攻击的高级保护
+拦截危险网站的网络请求
+感觉虚头巴脑的]]></summary>
+        <author>
+            <name>yuhangch</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[你们说阿里云黑吗？]]></title>
+        <id>859305</id>
+        <link href="https://www.v2ex.com/t/859305"/>
+        <updated>2022-06-13T07:35:20.000Z</updated>
+        <summary type="html"><![CDATA[admin268: 百度云盘，5TB 下载到本地，只需要充一个会员，200 多，阿里云 OSS 上 5TB 下载到本地，流量费 2000 多，还不算存储费用，请求次数费用。]]></summary>
+        <author>
+            <name>admin268</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[LaMDA是没有知觉的]]></title>
+        <id>https://hn.buzzing.cc/hn/31721584/</id>
+        <link href="https://hn.buzzing.cc/hn/31721584/?score=111&amp;original_url=https%3A%2F%2Fgarymarcus.substack.com%2Fp%2Fnonsense-on-stilts&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31721584&amp;sensitive=false"/>
+        <updated>2022-06-13T07:29:33.000Z</updated>
+        <summary type="html"><![CDATA[LaMDA是没有知觉的]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Instagram Profile Picture Telegram Bot!! 🤖]]></title>
+        <id>https://dev.to/dedomil/instagram-profile-picture-telegram-bot-2005</id>
+        <link href="https://dev.to/dedomil/instagram-profile-picture-telegram-bot-2005"/>
+        <updated>2022-06-13T07:28:00.000Z</updated>
+        <summary type="html"><![CDATA[So Instagram Doesn't Allow Users To Download/View Full Size Profile Pictures/DP
+So I Created A Telegram Bot For Downloading High Quality Profile Pictures From Instagram!
+Link :- https://t.me/dpdownloaderbot
+https://www.youtube.com/v/qhAdo3N1D7U
+Do You Love It, Comment Down Below!!!]]></summary>
+        <author>
+            <name>Aditya Yadav</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[鼠标疑惑：已经有 viper 了还需要买 gpw 吗]]></title>
+        <id>859302</id>
+        <link href="https://www.v2ex.com/t/859302"/>
+        <updated>2022-06-13T07:20:45.000Z</updated>
+        <summary type="html"><![CDATA[imurfuture: 雷蛇刚出 viper 的时候说是对标 gpw
+当时看中颜值就入了 viper
+最近 618 好像 gpw 价格也挺低的，要忍不住冲动消费了]]></summary>
+        <author>
+            <name>imurfuture</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[老罗要 AR 创业了]]></title>
+        <id>859301</id>
+        <link href="https://www.v2ex.com/t/859301"/>
+        <updated>2022-06-13T07:16:09.000Z</updated>
+        <summary type="html"><![CDATA[ElCorazon: 看了采访的文章，不知道到底会是什么形态，有没有 AR/VR 从业的老哥分析分析
+文章链接：
+http://www.latepost.com/news/dj_detail?id=1179]]></summary>
+        <author>
+            <name>ElCorazon</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[硬核观察 #666 相信 AI 有生命的谷歌工程师被勒令休假]]></title>
+        <id>https://linux.cn/article-14705-1.html?utm_source=rss&amp;utm_medium=rss</id>
+        <link href="https://linux.cn/article-14705-1.html?utm_source=rss&amp;utm_medium=rss"/>
+        <updated>2022-06-13T07:15:27.000Z</updated>
+        <summary type="html"><![CDATA[相信 AI 有生命的谷歌工程师被勒令休假
+
+谷歌的一位 AI 工程师 Blake Lemoine，从去年秋天开始与公司的聊天机器人 LaMDA 对话。LaMDA 运用了谷歌最先进的大型语言模型，使用从互联网上收集的数万亿词汇进行训练。在与 LaMDA 交流期间，他认为 AI 有了意识。比如他问 LaMDA 最害怕什么？LaMDA 回答说，它恐惧于被关闭。他继续追问：就像死亡？LaMDA 说：就像是死亡。因此，Blake 认为这证明 LaMDA 有了意识。在向上级展示了证据无果后他决定公开这件事，然后被公司勒令休假。在被封锁账号前，他给有 200 人的谷歌机器学习列表发帖说，“LaMDA 是有意识的，……是一个可爱的孩子，……我不在的时候请好好照顾它。”不独是 Blake，也有其它谷歌专家认为神经网络这种模仿人脑的架构，正在向意识迈进。
+
+
+消息来源：MSN
+
+
+
+老王点评：不是工程师疯了，就是 AI 成精了 —— 国外的建国后允许成精。
+
+
+
+
+因硬盘故障，数十个 GitLab 开源项目开发受阻
+
+FreeDesktop.org 的 GitLab 服务承载着 Mesa、X.Org、Wayland，以及 LibreOffice 和 GStreamer 等开源项目。由于硬盘故障，FreeDesktop.org 的 GitLab 从 11 日某个时间开始一直处于关闭状态，并且没有恢复正常的预告时间。管理员们在努力恢复硬盘 RAID，但到目前为止没有结果。而且，两位管理员还宣布要休息一天。
+
+
+消息来源：Phoronix
+
+
+
+老王点评：虽然由于 Git 的特性，开源仓库内的数据基本上不会受到损害，但是这个事故其实暴露了很多开源项目在基础设施投入方面的不足。而且，我觉得国外的工程师们心里素质真好，无论如何该休息也是要休息的。
+
+
+
+
+开源软件公司 Odoo 估值 32 亿欧元
+
+总部位于比利时的 Odoo 公司成立于 2005 年，为全球中小企业提供一体化的商业软件，专注于开源的 ERP 和 CRM 软件。在不到一年前得到了 1.8 亿欧元投资，估值 20 亿欧元后，最近得到的 1.12 亿欧元使其估值进一步提高到 32 亿欧元。该公司计划在全球范围内开设六家新办事处并增聘约 1800 名员工。Odoo 目前有 700 多万用户在使用它的解决方案，预计今年的营业额约为 3 亿欧元，并少量盈利。
+
+
+消息来源：tech.eu
+
+
+
+老王点评：开源技术公司越来越得到投资界的青睐，不过前提是属于头部。]]></summary>
+        <author>
+            <name>linux@linux.cn (linux)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[年初住院手术，微医保却迟迟不给赔付，到底是疫情原因还是保险公司问题？]]></title>
+        <id>859300</id>
+        <link href="https://www.v2ex.com/t/859300"/>
+        <updated>2022-06-13T07:09:53.000Z</updated>
+        <summary type="html"><![CDATA[jin5354: 
+之前给父母买了多年微医保，今年春节得了重疾在北京住院手术，之后申请赔付
+保险公司（泰康保险）以“疫情期间难以调查”直接强行终止流程了；要求我过几个月再提交试试，不行就再试；
+我觉得很可笑，我怎么知道保险公司什么时候能『恢复调查』遂投诉到保监局，确实来了专人跟进语气可好了但是提交了各种材料又一个半月了无下文；然后上个月和我对接的那个专人离职跑路了。。
+问下有没有相同情况的老哥或者有保险行业同学解下惑，是这个保险公司不靠谱还是真的疫情原因？我是不是只能再次投诉了？微医保应该卖的很好吧，难道今年要求赔付的都赔不了？说实在的医保已经 cover 70%了，轮到保险公司赔付的可能就两三万，我这几年交的保费都得五六千了，就这点赔付还整的这么费劲我真是对国内的保险到底能不能做好『家庭容灾』持怀疑态度。信心都没了。]]></summary>
+        <author>
+            <name>jin5354</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[深圳惠民保有必要买吗?]]></title>
+        <id>859299</id>
+        <link href="https://www.v2ex.com/t/859299"/>
+        <updated>2022-06-13T07:08:47.000Z</updated>
+        <summary type="html"><![CDATA[wahulu: 
+听说保险只会报最高的,那已经有医保和买了支付宝好医保,还有必要买惠民保吗？重叠的项目又不能一起报？买惠民保意义何在？？]]></summary>
+        <author>
+            <name>wahulu</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[微信小程序有推荐的图形展示组件吗？]]></title>
+        <id>859298</id>
+        <link href="https://www.v2ex.com/t/859298"/>
+        <updated>2022-06-13T07:08:34.000Z</updated>
+        <summary type="html"><![CDATA[yuan321:]]></summary>
+        <author>
+            <name>yuan321</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[iOS16 测试版建议不要更换电池]]></title>
+        <id>859297</id>
+        <link href="https://www.v2ex.com/t/859297"/>
+        <updated>2022-06-13T07:06:36.000Z</updated>
+        <summary type="html"><![CDATA[Lentin: 
+京东今天换电池打折，上午找师傅换了块电池但是后面诊断进不去，后来刷机降级才进去的= =||血的教训]]></summary>
+        <author>
+            <name>Lentin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[有人出现 ipados16 无法使用通用控制的问题吗？]]></title>
+        <id>859296</id>
+        <link href="https://www.v2ex.com/t/859296"/>
+        <updated>2022-06-13T07:06:01.000Z</updated>
+        <summary type="html"><![CDATA[punk2sang: 
+mac 还在 12.5 ，ipad mini6 升级到 16 后没办法使用通用控制了，是我设置的问题还是 ipados16 的问题😂]]></summary>
+        <author>
+            <name>punk2sang</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[PotPlayer X – 免费的全新 macOS 视频播放器]]></title>
+        <id>https://www.appinn.com/?p=42419</id>
+        <link href="https://www.appinn.com/potplayer-x/"/>
+        <updated>2022-06-13T07:03:01.000Z</updated>
+        <summary type="html"><![CDATA[PotPlayer X 是一款 macOS 上免费的全新多媒体播放器，能播放 4K 视频、支持倍速、逐帧播放，自动搜索字幕、画中画、A-B 循环、硬件加速，有专门的音乐模式界面用来听歌。支持格式众多，]]></summary>
+        <author>
+            <name>青小蛙</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Use Terraform to manage TrueNAS]]></title>
+        <id>70059 at https://opensource.com</id>
+        <link href="https://opensource.com/article/22/6/terraform-truenas"/>
+        <updated>2022-06-13T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Use Terraform to manage TrueNAS
+Alan Formy-Duval
+Mon, 06/13/2022 - 03:00
+
+    
+Register or Login to like
+Register or Login to like
+Sometimes combining different open source projects can have benefits. The synergy of using Terraform with TrueNAS is a perfect example.
+TrueNAS is an OpenBSD-based operating system that provides network-attached storage (NAS) and network services. One of its main strengths is leveraging the ZFS file system, which is known for enterprise-level reliability and fault tolerance. Terraform is a provisioning and deployment tool embodying the concept of infrastructure as code.
+TrueNAS
+TrueNAS has a very nice web user interface (UI) for its management and an application programming interface (API). Terraform can be integrated with the API to provide configuration manag…]]></summary>
+        <author>
+            <name>Alan Formy-Duval</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[互联网时代中年男性油腻的三大特征：路由器、充电头和 nas🙄]]></title>
+        <id>859295</id>
+        <link href="https://www.v2ex.com/t/859295"/>
+        <updated>2022-06-13T06:56:10.000Z</updated>
+        <summary type="html"><![CDATA[id7368: 看到某推友发的，路由和 NAS 倒是早就弄好了，最近沉迷倒腾充电头😂看来已经符合中年油腻男的特征了我
+ref： https://twitter.com/hywallove/status/1536054160994738176]]></summary>
+        <author>
+            <name>id7368</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Create a Discord Bot in Python]]></title>
+        <id>https://dev.to/ruanbekker/create-a-discord-bot-in-python-din</id>
+        <link href="https://dev.to/ruanbekker/create-a-discord-bot-in-python-din"/>
+        <updated>2022-06-13T06:55:36.000Z</updated>
+        <summary type="html"><![CDATA[In this tutorial we will develop our own Discord bot using Python.
+The source code for this bot will be stored in my github repository
+First we will create a basic discord bot that will greet the message sender, and then we will create a Minecraft Bot, that will enable us to do the following:
+:: Bot Usage ::
+!mc help : shows help
+!mc serverusage : shows system load in percentage
+!mc serverstatus : shows if the server is online or offline
+!mc whoisonline : shows who is online at the moment
+
+
+Let's get into it.
+Create a python virtual environment and install the dependent packages:
+$ python3 -m virtualenv .venv
+$ source .venv/bin/activate
+$ pip install discord
+$ pip install python-dotenv
+
+
+We first need to create the application on discord and retrieve a token that our python app will requir…]]></summary>
+        <author>
+            <name>Ruan Bekker</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ciel 音乐收集系列：不安与焦虑(Cast Away Theme)]]></title>
+        <id>859294</id>
+        <link href="https://www.v2ex.com/t/859294"/>
+        <updated>2022-06-13T06:53:33.000Z</updated>
+        <summary type="html"><![CDATA[sciel: 
+
+?list=PLrzviuM_VBi0g8G4i_6NqNQkhljHJKA9G]]></summary>
+        <author>
+            <name>sciel</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[知道今年行情差，但真的差到这么离谱吗]]></title>
+        <id>859290</id>
+        <link href="https://www.v2ex.com/t/859290"/>
+        <updated>2022-06-13T06:47:16.000Z</updated>
+        <summary type="html"><![CDATA[lcq: Java ，四年，深圳，给不了 20K]]></summary>
+        <author>
+            <name>lcq</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[webhooks 跟 api 有啥区别？]]></title>
+        <id>859289</id>
+        <link href="https://www.v2ex.com/t/859289"/>
+        <updated>2022-06-13T06:45:45.000Z</updated>
+        <summary type="html"><![CDATA[jarl: 看了文章感觉还是 api 呀]]></summary>
+        <author>
+            <name>jarl</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[IceFireDB-SQLite: Interesting When P2P Meets SQLite]]></title>
+        <id>859288</id>
+        <link href="https://www.v2ex.com/t/859288"/>
+        <updated>2022-06-13T06:40:28.000Z</updated>
+        <summary type="html"><![CDATA[corerman: 
+IceFireDB-SQLite
+IceFireDB SQLite database is a decentralized SQLite database. Provide a convenient mechanism to build a global distributed database system. Support users to write data to IceFireDB using MySQL protocol. IceFireDB stores the data in the SQLite database and synchronizes the data among the nodes in the P2P automatic networking.
+current state
+For the content of the Wanxiang Hackathon, you can browse: https://github.com/IceFireDB/IceFireDB/tree/main/IceFireDB-SQLite
+How does it work?
+
+Compile and install
+cd IceFireDB-SQLite
+make
+
+IceFireDB-SQLite -h
+
+Application scenarios
+Build a decentralized SQLite database based on Mysql usage protocol]]></summary>
+        <author>
+            <name>corerman</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[T 技术沙龙] 线上活动丨互联网“毕业”季，我们是怎么被“毕业”的？]]></title>
+        <id>859287</id>
+        <link href="https://www.v2ex.com/t/859287"/>
+        <updated>2022-06-13T06:39:35.000Z</updated>
+        <summary type="html"><![CDATA[EyreFree: 
+活动背景
+当业务发展、技术迭代、人才需求都在红利期时，一线城市的企业，一般会做适当超量的人才储备，为潜在的业务爆发做好规划，IT 就业环境相对乐观。
+而现在，都“卷”到边了。各个团队被迫选择保留核心业务的支持团队，度过艰难期。在这个过程中，我们看到了有一部分同学，处在了自己的临界点。借用小编最近看到的一句话：每一次“毕业”，都是一次新生的机会。
+希望，我们这次活动，可以让大家减少焦虑。如果能解决大家的部分实际问题，那就更好了。
+活动详情
+
+B 站观看
+长按上图识别二维码可直接预约 B 站直播间本场直播，预约有奖，抽取《黑客与画家》书籍*2 份，也可以直接点击本链接前往预约：https://space.bilibili.com/488340243/dynamic
+入群报名
+长按下图识别二维码添加官方助手，回复「加群」即可入群提前和讲师交流：
+
+活动形式
+主要为问答、探讨方式，主持人 & 嘉宾深度对谈；
+嘉宾简短自我介绍、公司介绍；
+主持人抛出问题，各嘉宾回答；
+嘉宾互相之间也会提问。
+活动议题
+你现在在做什么？能介绍一下自己的工作经历吗？
+你构想的和正在实现的技术人工作之路。近期和远期？
+你被公司裁员过吗？是什么原因？你是如何走出不好的心理状况的？
+躺平、搞钱、求稳。应该选哪个？
+做为 Team Leader ，你优化掉组内同学的时候，是如何说服自己的？
+被毕业，从时代发展来看，有迹可循吗？如何尽量规避？
+如果被“毕业”了，有哪些权益，是需要关注的？
+欢迎大家在直播间和交流群，跟我们互动～
+主办方简介
+
+T 沙龙，全称为 T 技术沙龙，是一个以促进开发者之间技术交流为目的的技术沙龙组织，成立后一直在定期举办各种面向开发者的线上 & 线下沙龙活动。从 2016 年 3 月份开始，在北京、上海、成都、杭州和深圳等地相继举办了 30 多场线下沙龙活动，同时也举办了多场线上活动。
+相关链接：
+线上活动丨互联网毕业季，我们是怎么被毕业的？：https://mp.weixin.qq.com/s/35CkVpm3Eq_smir4z0KHhA]]></summary>
+        <author>
+            <name>EyreFree</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How has my portfolio evolved?]]></title>
+        <id>https://dev.to/tazim404/how-has-my-portfolio-evolved-2nd5</id>
+        <link href="https://dev.to/tazim404/how-has-my-portfolio-evolved-2nd5"/>
+        <updated>2022-06-13T06:35:55.000Z</updated>
+        <summary type="html"><![CDATA[I know my portfolio is not the best as compared to portfolios of other amazing developers out there but 'Content is king' and I am working on it to make it better and better
+The purpose of my portfolio is to provide value to other developers from my journey and I hope I make it happen.
+As a developer portfolio is something that you must have. It's a place where you can share about your projects, education qualifications, journey as a developer, tech stacks, and write blogs on your site.
+Portfolio is a digital garden for you
+I went through 4 iterations of designing my portfolio.
+List of my portfolio iterations are:
+1.First Portfolio.
+
+PORTFOLIO 1
+Stack Used- HTML, CSS, JavaScript, Hosted on netlify.
+2.Second Portfolio.
+
+PORTFOLIO 2
+Vue and Flask. It looks like some sort of profile page on a social media website.
+Stack Used- Vue, Bulma, Flask (For Blogs), frontend on Netlify, backend on Heroku.
+3.Third Portfolio
+
+PORTFOLIO 3
+Stack Used- Nuxt JS, Bulma, frontend on Netlify, Notion for storing blogs.
+4.Portfolio 4 (Current)
+
+PORTFOLIO 3
+Stack Used- Nuxt JS, Bulma, frontend on Netlify, Blogs coming soon.
+Thanks for reading.]]></summary>
+        <author>
+            <name>Tazim Rahbar</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Counting all words across markdown files ~ CLI]]></title>
+        <id>https://dev.to/dailydevtips1/counting-all-words-across-markdown-files-cli-919</id>
+        <link href="https://dev.to/dailydevtips1/counting-all-words-across-markdown-files-cli-919"/>
+        <updated>2022-06-13T06:24:57.000Z</updated>
+        <summary type="html"><![CDATA[Quite a while ago, my good friend and colleague @inhuofficial  asked me if I knew how many words I'd written.
+And although I'm at 800+ articles, I had no idea how many words this was.
+So I decided to find a solution to give him an answer and shock myself (and maybe even you?)
+This solution will use the command-line interface (CLI), which is the simplest way to do it.
+The first step is to count words in some text; luckily for us, Unix already has this command called wc (word count).
+To use it, we can simply use a command like this:
+wc -w <<< "Some random words"
+
+This should output 3 as there are three words in this string.
+
+Now that we know how to count words, we need a way to extract the actual content from our markdown file.
+There are several Unix markdown parsers. If you have a favorite …]]></summary>
+        <author>
+            <name>Chris Bongers</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[最后，没有对抵押贷款支持的证券进行投标]]></title>
+        <id>https://hn.buzzing.cc/hn/31720183/</id>
+        <link href="https://hn.buzzing.cc/hn/31720183/?score=108&amp;original_url=https%3A%2F%2Fnotoriousrob.com%2F2022%2F06%2Ffinally-no-bid-on-mbs%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31720183&amp;sensitive=false"/>
+        <updated>2022-06-13T06:14:28.000Z</updated>
+        <summary type="html"><![CDATA[最后，没有对抵押贷款支持的证券进行投标]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[丰田推出用于住宅应用的8.7千瓦时电池]]></title>
+        <id>https://hn.buzzing.cc/hn/31720472/</id>
+        <link href="https://hn.buzzing.cc/hn/31720472/?score=110&amp;original_url=https%3A%2F%2Fwww.pv-magazine.com%2F2022%2F06%2F07%2Ftoyota-unveils-8-7-kwh-battery-for-residential-applications%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31720472&amp;sensitive=false"/>
+        <updated>2022-06-13T06:14:28.000Z</updated>
+        <summary type="html"><![CDATA[丰田推出用于住宅应用的8.7千瓦时电池]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[为什么我们不记得出生或我们的第一句话？]]></title>
+        <id>https://hn.buzzing.cc/hn/31713828/</id>
+        <link href="https://hn.buzzing.cc/hn/31713828/?score=102&amp;original_url=https%3A%2F%2Ftheconversation.com%2Fwhy-cant-you-remember-being-born-learning-to-walk-or-saying-your-first-words-what-scientists-know-about-infantile-amnesia-182736&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31713828&amp;sensitive=false"/>
+        <updated>2022-06-13T06:14:28.000Z</updated>
+        <summary type="html"><![CDATA[为什么我们不记得出生或我们的第一句话？]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux 中国开通播客频道：“开源朗读者”和“硬核观察”]]></title>
+        <id>https://linux.cn/article-14704-1.html?utm_source=rss&amp;utm_medium=rss</id>
+        <link href="https://linux.cn/article-14704-1.html?utm_source=rss&amp;utm_medium=rss"/>
+        <updated>2022-06-13T06:12:00.000Z</updated>
+        <summary type="html"><![CDATA[前一段时间，我的老朋友淮晋阳跟我说，为什么不将一些文章变成朗读版的呢？这样可以让更多喜欢听朗读的爱好者们“听到”，而不是“看到”开源的文章？对于这样的建议，我欣然采纳。于是，我们发起了一个新的朗读栏目：开源朗读者。对一些文章，尤其是一些评论性的文章，进行了朗读配音。
+
+很快，在淮晋阳制作出第一篇朗读版的《Linux 太难了吗？你需要了解这五点》，并在他的带动下，张锦航、若愚、六开箱等开源贡献者们也纷纷加入了朗读者行列，还有更多的开源朗读者们也在积极录制中。感兴趣加入开源朗读者行列的，请微信公众号内私信我。
+
+在这些音频发布后，我们也收到了一些播客爱好者的建议，希望在通用的播客客户端上也能订阅、收听到这些有意义的音频节目。
+
+在我们的技术合伙人白宦成的支持下，很快，我们就开发了两个播客频道：
+
+
+开源朗读者：由朗读者们深情朗读各种值得分享给大家的文章，一般时长在 10 分钟左右。
+
+硬核观察：这是对我们每天的《硬核观察》栏目的音频重制，一般时长在 3 分钟左右。
+
+
+这两个播客频道可以在喜马拉雅应用上根据名称搜索到；也可以苹果的“播客”、“小宇宙”等通用型播客客户端搜索到。如果你搜索不到，也可以直接输入它们的 RSS 地址：
+
+
+开源朗读者： https://linux.cn/podcast.xml 
+
+硬核观察： https://linux.cn/insight.xml
+
+
+欢迎收听！]]></summary>
+        <author>
+            <name>linux@linux.cn (linux)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building Blog with Nuxt 2 and Contentrain Headless CMS]]></title>
+        <id>https://dev.to/jacobandrewsky/building-blog-with-nuxt-2-and-contentrain-headless-cms-33dn</id>
+        <link href="https://dev.to/jacobandrewsky/building-blog-with-nuxt-2-and-contentrain-headless-cms-33dn"/>
+        <updated>2022-06-13T06:00:52.000Z</updated>
+        <summary type="html"><![CDATA[When I first heard about Contentrain I was a bit sceptical. At this time I already had experiences with several Content Management Systems like Storyblok, Contentful, and Contentstack, so wasn't particularly sure how Contentrain will differ from them. Basically, what will make me wanna use Contentrain instead of these already known solutions. 
+I thought it will be just another tool that offers exactly same functionality.
+
+My experience with Contentrain was really, really good. It was so great that I decided to write an article about it 🚀
+The first step when you create a new account in Contentrain will be this nice looking dashboard with a short tutorial on what you can do with Contentrain
+
+The first step we will do, we will create a new project. Projects are like a main entitites in Conte…]]></summary>
+        <author>
+            <name>Jakub Andrzejewski</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Free Resources for Devs]]></title>
+        <id>https://dev.to/karmablackshaw/dev-free-resources-fmf</id>
+        <link href="https://dev.to/karmablackshaw/dev-free-resources-fmf"/>
+        <updated>2022-06-13T05:54:39.000Z</updated>
+        <summary type="html"><![CDATA[Here are some of my most amazing dev resources. 
+I frequently use these resources for a design inspirations for my apps.
+Free for Dev
+Dev Resource
+Do you know some other resources like this? Post it in the comment so others can know as well 😀]]></summary>
+        <author>
+            <name>KarmaBlackshaw</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[谷歌会吃掉自己 (2005)]]></title>
+        <id>https://hn.buzzing.cc/hn/31719002/</id>
+        <link href="https://hn.buzzing.cc/hn/31719002/?score=104&amp;original_url=https%3A%2F%2Fwww.gwei.org%2Findex.php&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31719002&amp;sensitive=false"/>
+        <updated>2022-06-13T05:51:03.000Z</updated>
+        <summary type="html"><![CDATA[谷歌会吃掉自己 (2005)]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Create a Docker based Self Hosted GitHub runner Linux container]]></title>
+        <id>https://dev.to/pwd9000/create-a-docker-based-self-hosted-github-runner-linux-container-48dh</id>
+        <link href="https://dev.to/pwd9000/create-a-docker-based-self-hosted-github-runner-linux-container-48dh"/>
+        <updated>2022-06-13T05:37:25.000Z</updated>
+        <summary type="html"><![CDATA[Overview
+
+
+All the code used in this tutorial can be found on my GitHub project: docker-github-runner-linux.
+Welcome to Part 2 of my series: Self Hosted GitHub Runner containers on Azure.
+In part one of this series, we looked at how we can create a windows container image using docker and then running our self hosted GitHub runners as containers. In this part we will focus on building a Linux based Ubuntu image instead.
+In subsequent parts, we will look at how we can utilize Azure to store and run our containers in the cloud using Azure Container Registry (ACR), Azure Container Instances (ACI) and Azure Container Apps (ACA) to run and scale our self hosted GitHub runners, instead of using a VM based approach with docker running inside of a VM.
+As also described in part one, before building…]]></summary>
+        <author>
+            <name>Marcel.L</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[FoalTS 2022 survey is open!]]></title>
+        <id>https://dev.to/loicpoullain/foalts-2022-survey-is-open-117c</id>
+        <link href="https://dev.to/loicpoullain/foalts-2022-survey-is-open-117c"/>
+        <updated>2022-06-13T05:31:38.000Z</updated>
+        <summary type="html"><![CDATA[FoalTS 2022 survey is now open (yes, a few months late 🙃)!
+Your responses to these questions are really valuable as they help me better understand what you need and how to improve the framework going forward 👌.
+I read every response carefully so feel free to say anything you have to say!
+👉 The link to the survey.
+The survey closes on June 31.]]></summary>
+        <author>
+            <name>Loïc Poullain</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DeFi lending giant Celsius halts withdrawals]]></title>
+        <id>https://www.theverge.com/2022/6/13/23165401/defi-cryptocurrency-celsius-network-pause-withdrawals</id>
+        <link href="https://www.theverge.com/2022/6/13/23165401/defi-cryptocurrency-celsius-network-pause-withdrawals"/>
+        <updated>2022-06-13T05:09:57.000Z</updated>
+        <summary type="html"><![CDATA[Exhibition And Experience Zones at The Paris NFT Day Conference
+    
+
+  
+The Celsius Network, a decentralized finance (DeFi) platform and one of the largest crypto lenders, announced Sunday night that it was “pausing all withdrawals, Swap, and transfers between accounts.” It has 1.7 million customers. 
+The company’s token, CEL, is trading at 23 cents as of this writing, according to CoinMarketCap. That’s a 92 percent decrease from April 8th, when CEL was worth $3. The token was worth nearly $7 a year ago. 
+There have been questions about Celsius Networks’ high yields, its connections to failed stablecoin Terra, and its reserves. The value of assets on its platform dropped by half to $12 billion in May, from $24 billion in December 2021. Between March and May, a billion dollars flowed out of the system, The...
+Continue reading…]]></summary>
+        <author>
+            <name>The Verge -  All Posts</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Parallels Desktop 17 最新优惠码：在 Mac 上运行 Windows 的虚拟机软件]]></title>
+        <id>https://www.appinn.com/?p=39880</id>
+        <link href="https://www.appinn.com/parallels-desktop-17-202110/"/>
+        <updated>2022-06-13T05:00:30.000Z</updated>
+        <summary type="html"><![CDATA[Parallels Desktop 17 是著名的虚拟机工具，可以在 Mac 电脑上的原生操作系统 macOS 中，直接安装并运行 Windows 系统，达到同时启动两个操作系统的目的。最新版本 Pa]]></summary>
+        <author>
+            <name>青小蛙</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[显示HN：Go模板预览 - 由WebAssembly提供技术支持]]></title>
+        <id>https://hn.buzzing.cc/hn/31713654/</id>
+        <link href="https://hn.buzzing.cc/hn/31713654/?score=100&amp;original_url=https%3A%2F%2Fgotemplate.io%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31713654&amp;channel=Show+HN&amp;sensitive=false"/>
+        <updated>2022-06-13T05:00:06.000Z</updated>
+        <summary type="html"><![CDATA[显示HN：Go模板预览 - 由WebAssembly提供技术支持]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Safari的网络推送]]></title>
+        <id>https://hn.buzzing.cc/hn/31718068/</id>
+        <link href="https://hn.buzzing.cc/hn/31718068/?score=101&amp;original_url=https%3A%2F%2Fdeveloper.apple.com%2Fvideos%2Fplay%2Fwwdc2022%2F10098%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31718068&amp;sensitive=false"/>
+        <updated>2022-06-13T05:00:06.000Z</updated>
+        <summary type="html"><![CDATA[Safari的网络推送]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[加密货币平台Celsius暂停提现]]></title>
+        <id>https://hn.buzzing.cc/hn/31720277/</id>
+        <link href="https://hn.buzzing.cc/hn/31720277/?score=124&amp;original_url=https%3A%2F%2Fblog.celsius.network%2Fa-memo-to-the-celsius-community-59532a06ecc6&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31720277&amp;sensitive=false"/>
+        <updated>2022-06-13T04:23:32.000Z</updated>
+        <summary type="html"><![CDATA[加密货币平台Celsius暂停提现]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[福恩对Skifree进行逆向工程（Twitter线）。]]></title>
+        <id>https://hn.buzzing.cc/hn/31718756/</id>
+        <link href="https://hn.buzzing.cc/hn/31718756/?score=101&amp;original_url=https%3A%2F%2Ftwitter.com%2FFoone%2Fstatus%2F1536053690368348160&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31718756&amp;sensitive=false"/>
+        <updated>2022-06-13T04:23:32.000Z</updated>
+        <summary type="html"><![CDATA[福恩对Skifree进行逆向工程（Twitter线）。]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fresh - 下一代网络框架]]></title>
+        <id>https://hn.buzzing.cc/hn/31720110/</id>
+        <link href="https://hn.buzzing.cc/hn/31720110/?score=151&amp;original_url=https%3A%2F%2Ffresh.deno.dev%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31720110&amp;sensitive=false"/>
+        <updated>2022-06-13T04:23:32.000Z</updated>
+        <summary type="html"><![CDATA[Fresh - 下一代网络框架]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ProxiTok – 开源第三方网页版 TikTok，无需客户端直接浏览，支持 RSS 订阅，支持自托管，无跟踪、无用户画像]]></title>
+        <id>https://www.appinn.com/?p=42435</id>
+        <link href="https://www.appinn.com/proxitok/"/>
+        <updated>2022-06-13T04:09:27.000Z</updated>
+        <summary type="html"><![CDATA[ProxiTok 是一款基于 PHP 的开源第三方网页版 TikTok，使用浏览器就可以直接观看。可以根据用户名或标签来追踪 TikTok 用户发布的视频。支持 RSS 订阅、支持自托管。@Appin]]></summary>
+        <author>
+            <name>青小蛙</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[有氧运动能代替降压药吗？通过运动降血压时要注意什么？]]></title>
+        <id>https://sspai.com/post/73672</id>
+        <link href="https://sspai.com/post/73672"/>
+        <updated>2022-06-13T03:33:05.000Z</updated>
+        <summary type="html"><![CDATA[《中国高血压防治指南（2018修订版）》中将有氧运动确定为高血压的防治手段之一，规律的有氧运动在降低血压方面的作用是显著的，长期规律的有氧运动能使高血压患者的收缩压降低12.3mmHg，舒张压降低6.1mmHg。相比于药物治疗，有氧运动的毒副作用小，且经济成本更低。
+
+有氧运动有代替药物治疗的可能吗？
+有氧运动能否代替药物治疗则主要取决于患者的血压水平，临床上将血压水平划分为5个等级（详见表 1），从有氧运动引起血压下降的幅度来看，血压处于正常高值范围内的患者从有氧运动中的获益最为明显，规律的有氧运动能够使其血压恢复为正常血压；1级高血压患者在保持良好生活习惯的基础上有可能通过单纯的有氧运动将血压降低至正常范围内；对于2级高血压患者来说，有氧运动则可以作为辅助治疗手段，通过规律的有氧运动可以达到减少服药剂量的目的；而3级高血压患者在有氧运动中通常会面临较高的运动风险，因此不建议在缺少医务监督的情况下单独进行有氧运动。
+表 1：血压水平分级
+什么样的有氧运动能够有效降低血压？
+运动引起的血压降低是有严格触发条件的，并不是“微微出汗”就能达到降低血压的目的。有氧运动由运动周期、运动频率、运动时间、运动强度等几个基本要素组成，持续8周以上、每周3次以上、每次持续20分钟以上的中等强度有氧运动是能够有效降低血压的最低运动标准，以上要素中的任何一个达不到要求都很难使血压降低。
+在以上的要素中，运动强度是影响降压效果最为关键，也是最难把控的一个要素，中等及以上的运动强度才能够引起血压的有效降低。运动强度常用最大心率的百分比来界定，如果有可以监测实时心率的手环或手表，在运动中心率达到最大心率的70%即可视为中等强度，最大心率可以通过“220-年龄”来估算。例如，一位30岁的青年人，他的最大心率约为220-30=190，190×70%≈133，当他在运动中的心率达到每分钟133次以上时即可…]]></summary>
+        <author>
+            <name>yanrs</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GPT-3可能是一只松鼠]]></title>
+        <id>https://hn.buzzing.cc/hn/31718295/</id>
+        <link href="https://hn.buzzing.cc/hn/31718295/?score=109&amp;original_url=https%3A%2F%2Ftwitter.com%2Fjanellecshane%2Fstatus%2F1535835610396692480&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31718295&amp;sensitive=false"/>
+        <updated>2022-06-13T03:32:26.000Z</updated>
+        <summary type="html"><![CDATA[GPT-3可能是一只松鼠]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[谷歌工程师称人工智能聊天机器人已成为有知觉的人后被勒令休假]]></title>
+        <id>https://hn.buzzing.cc/hn/31716639/</id>
+        <link href="https://hn.buzzing.cc/hn/31716639/?score=103&amp;original_url=https%3A%2F%2Fwww.theguardian.com%2Ftechnology%2F2022%2Fjun%2F12%2Fgoogle-engineer-ai-bot-sentient-blake-lemoine&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31716639&amp;sensitive=false"/>
+        <updated>2022-06-13T03:32:26.000Z</updated>
+        <summary type="html"><![CDATA[谷歌工程师称人工智能聊天机器人已成为有知觉的人后被勒令休假]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Lorien - 无限画布绘画/白板应用]]></title>
+        <id>https://hn.buzzing.cc/hn/31717007/</id>
+        <link href="https://hn.buzzing.cc/hn/31717007/?score=107&amp;original_url=https%3A%2F%2Fgithub.com%2Fmbrlabs%2FLorien&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31717007&amp;sensitive=false"/>
+        <updated>2022-06-13T03:32:26.000Z</updated>
+        <summary type="html"><![CDATA[Lorien - 无限画布绘画/白板应用]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[没有充电桩也能飞——Model Y 车主的随车充对比分享]]></title>
+        <id>https://sspai.com/post/73737</id>
+        <link href="https://sspai.com/post/73737"/>
+        <updated>2022-06-13T03:30:00.000Z</updated>
+        <summary type="html"><![CDATA[Matrix 首页推荐  
+Matrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。  
+文章代表作者个人观点，少数派仅对标题和排版略作修改。
+
+2022 年是汽车市场出现大变化的一年。新能源车方面，随着国家补贴的退坡和原料市场的涨价，车价明显上涨。去年下定 Model Y 时还犹豫会不会降价，今年提车到手看着涨了几万的车价和愈发变贵的油价，作为车主真的是大喊「真香」。
+虽然如今燃油车购置税减半，但考虑到新能源车明年购置税优惠，如果有条件且能接受新能源电车，它们比起燃油车确实更加值得。
+和手机取消赠送充电头的风气类似，越来越多的电动车品牌也开始取消赠送家用充电桩。如果你是特斯拉车主，想购买第一方充电桩就要额外加 8000 块。
+我自己用 Model Y 没有选择固定充电桩，因为频繁在多个住所流动，所以始终使用便携式充电器——也就是随车充的方案——来解决续航问题。
+提车的时候我在天猫买到了一个特斯拉第一方的便携式充电器，2950 元到手。使用特斯拉随车充有一个最麻烦的地方——它必须使用有地线接地的插座供电，我的一处车库插座没有地线，所以使用起来比较麻烦。后来我就买了一个 1000 元出头的普诺得第三方随车充使用，这个可以支持单相电 16A 充电，比起特斯拉随车充要快，一小时充电里程在 25km。我设置晚上 10 点到早上 6 点的谷时电，大概能充 200 公里，自己家里的电费在 10 块钱左右。有了自己的便携式充电器，我的用车电费成本大概 5 分钱 1 公里，是不是比燃油车涨价后的油费香多了？
+下面，我就来对比一下两款随车充。
+随车充的外观设计与收纳
+
+放在后备箱里，两个随车充的空间旗鼓相当，第三方普诺得的使用了圆包，特斯拉是方包加两个盒子。两个盒子分别是连接 10A…]]></summary>
+        <author>
+            <name>老木曾雪菜</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[阿里云发布云数据中心专用处理器 CIPU， 替代 CPU 成为新管控加速中心]]></title>
+        <id>https://linux.cn/article-14703-1.html?utm_source=rss&amp;utm_medium=rss</id>
+        <link href="https://linux.cn/article-14703-1.html?utm_source=rss&amp;utm_medium=rss"/>
+        <updated>2022-06-13T02:55:08.000Z</updated>
+        <summary type="html"><![CDATA[6 月 13 日，阿里云智能总裁张建锋在峰会上正式发布 CIPU（Cloud infrastructure Processing Units），这是为新型云数据中心设计的专用处理器，未来将替代 CPU 成为云计算的管控和加速中心。
+
+在这个全新体系架构下，CIPU 向下对数据中心的计算、存储、网络资源快速云化并进行硬件加速，向上接入飞天云操作系统，将全球数百万台服务器连成一台超级计算机。 
+
+
+
+阿里云智能总裁张建锋发布 CIPU
+
+例如，CIPU 与计算结合，快速接入不同类型资源的服务器，带来算力的“0”损耗，以及硬件级安全的加固隔离；CIPU 与存储结合，对存算分离架构的块存储接入进行硬件加速，云盘存储 IOPS 最高可达 300 万，长尾时延降低 50%；CIPU 与网络结合，可对高带宽物理网络进行硬件加速，构建大规模弹性 RDMA 高性能网络，时延最低可达 5us。
+
+
+
+CIPU 架构示意图
+
+基于 CIPU 和飞天的新一代云计算架构体系，在通用计算、大数据、人工智能等核心场景的计算测试中展现了优越的性能。在通用分布式计算领域，Redis 性能提升了 68%、MySQL 提升了 60%，Nginx 提升了 30%；高吞吐类的互联网业务上云之后，比自建物理机的集群吞吐量提升了 30%，业务高峰期延迟下降了 90%；在大数据和AI等计算与数据双密集场景下，相比传统的 TCP 网络，弹性 RDMA 高性能网络的吞吐能力提升 30% 以上；云原生方面，容器启动速度快了 350%，在 Serverless 场景下 6 秒可拉起 3000 个弹性容器实例。
+
+
+
+CIPU 特性简介
+
+为什么要有 CIPU？张建锋认为，过去十多年，云计算技术经历了两个发展阶段：第一阶段是分布式和虚拟化技术替代了大型机，满足了当时企业所需的算力规模；第二阶段出现了资源池化技术，以阿里巴巴为例，通过计算存储分离架构，将计算、存储、网络资源分别池化，突破了规模和稳定性的瓶颈，提供了超大规模的云计算服务。
+
+但随着数据密集型计算场景的普及，用户对低时延、高带宽的需求也越来越高，传统以 CPU 为中心的计算体系架构无法适应这一趋势。为了解决这一问题，阿里云相关研发团队早在 2015 年就开始技术攻关，并于 2017 年推出业内首款虚拟化损耗为零的神龙云服务器。经过多年自研迭代，神龙、弹性 RDMA 等核心技术不断深入垂直整合，演进出以 CIPU 为中心的全新架构形态，云计算开始进入第三阶段。
+
+阿里云还不断夯实技术底座，建立了自研的芯片、服务器、飞天操作系统等软硬一体的基础设施。这些基础设施有力支撑了阿里云产品的四大核心：神龙计算、盘古存储、洛神网络和安全内核。在国际权威机构 Gartner 发布的年度报告里，阿里云获得计算、存储、网络、安全 4 项单项最高分以及 IaaS 整体基础设施能力的全球最高分。]]></summary>
+        <author>
+            <name>linux@linux.cn (linux)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[分裂使 Linux 超越 Windows 的梦想破灭了]]></title>
+        <id>https://linux.cn/article-14702-1.html?utm_source=rss&amp;utm_medium=rss</id>
+        <link href="https://linux.cn/article-14702-1.html?utm_source=rss&amp;utm_medium=rss"/>
+        <updated>2022-06-13T02:38:34.000Z</updated>
+        <summary type="html"><![CDATA[最近，The Register 的 Liam Proven 写了一篇关于 最恼人的桌面 Linux 发行版 的文章。他启发我写了这篇文章。
+
+Proven 指出，Distrowatch 目前列出了多达 270 个 Linux 发行版。当然，没有人能够都一一了解所有的这些发行版。但是，甚至在 GNOME 和 KDE 的界面大辩论之前，从 Bash 和 Zsh 之争开始，我就一直在报道 Linux 桌面，并且曾经是一本现在已经停刊的名为《Linux 桌面》杂志的主编，我想我比任何其他用过 Windows PC 之外的计算机的人使用过更多的桌面。简而言之，我超爱 Linux 桌面。
+
+许多 Linux 桌面发行版都很棒。多年来，我一直是 Linux Mint 的忠实粉丝。我也很喜欢其它桌面发行版：Fedora、openSUSE、Ubuntu 和 MX Linux，排名不分先后。但是你知道吗？这就是问题。
+
+我们有很多优秀的 Linux 桌面发行版，但这意味着它们中没有一个能获得足够的市场份额，从而在 整个市场 上产生任何真正的影响。
+
+自从人们开始谈论何时 Linux 能在桌面上击败 Windows 以来，情况一直如此。尽管我们可能梦想着一个真正的 Linux 桌面年到来，但它从未到来。正如 Forrester 高级分析师 Andrew Hewitt 最近指出的那样，“总的来说，只有 1% 的员工 报告说他们用于工作的主要笔记本电脑使用了 Linux。而 60%的人仍在使用 Windows……。Linux 不太可能超越 Windows 成为主要操作系统"。
+
+他没有说错。
+
+这并不是说 Linux 不能成为一个成功的终端用户环境。事实上，它是，你可以说 Linux 是最成功的终端用户操作系统，而不是 Windows。这是因为现在有 超过 30 亿部安卓手机，而安卓只是…]]></summary>
+        <author>
+            <name>linux@linux.cn (linux)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[吉米-卡特仍在努力保护阿拉斯加荒地]]></title>
+        <id>https://hn.buzzing.cc/hn/31718125/</id>
+        <link href="https://hn.buzzing.cc/hn/31718125/?score=163&amp;original_url=https%3A%2F%2Fwww.alaskapublic.org%2F2022%2F05%2F10%2Fformer-president-jimmy-carter-asks-court-to-defend-alaskas-unrivaled-wilderness%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31718125&amp;sensitive=false"/>
+        <updated>2022-06-13T01:58:45.000Z</updated>
+        <summary type="html"><![CDATA[吉米-卡特仍在努力保护阿拉斯加荒地]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Stuxnet是尴尬的，而不是惊人的 (2011)]]></title>
+        <id>https://hn.buzzing.cc/hn/31713999/</id>
+        <link href="https://hn.buzzing.cc/hn/31713999/?score=101&amp;original_url=https%3A%2F%2Frdist.root.org%2F2011%2F01%2F17%2Fstuxnet-is-embarrassing-not-amazing%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31713999&amp;sensitive=false"/>
+        <updated>2022-06-12T23:24:17.000Z</updated>
+        <summary type="html"><![CDATA[Stuxnet是尴尬的，而不是惊人的 (2011)]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[通过回答 "为什么"、"是什么"、"如何 "来更好地写作]]></title>
+        <id>https://hn.buzzing.cc/hn/31711071/</id>
+        <link href="https://hn.buzzing.cc/hn/31711071/?score=102&amp;original_url=https%3A%2F%2Feugeneyan.com%2Fwriting%2Fwriting-docs-why-what-how%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31711071&amp;sensitive=false"/>
+        <updated>2022-06-12T23:03:04.000Z</updated>
+        <summary type="html"><![CDATA[通过回答 "为什么"、"是什么"、"如何 "来更好地写作]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Go中的Y Combinator与泛型]]></title>
+        <id>https://hn.buzzing.cc/hn/31713360/</id>
+        <link href="https://hn.buzzing.cc/hn/31713360/?score=102&amp;original_url=https%3A%2F%2Feli.thegreenplace.net%2F2022%2Fthe-y-combinator-in-go-with-generics%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31713360&amp;sensitive=false"/>
+        <updated>2022-06-12T22:40:27.000Z</updated>
+        <summary type="html"><![CDATA[Go中的Y Combinator与泛型]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Astra’s failed launch resulted in the loss of two NASA weather satellites]]></title>
+        <id>https://www.theverge.com/2022/6/12/23165065/astra-failed-launch-resulted-loss-nasa-weather-satellites-cubesats-tropics</id>
+        <link href="https://www.theverge.com/2022/6/12/23165065/astra-failed-launch-resulted-loss-nasa-weather-satellites-cubesats-tropics"/>
+        <updated>2022-06-12T21:59:23.000Z</updated>
+        <summary type="html"><![CDATA[A rocket belonging to the up-and-coming Astra space company failed to deliver two of NASA’s weather-tracking satellites to space after its second stage engine shut down prematurely. Both satellites were lost as a result of the failure.
+Astra’s Launch Vehicle 0010 (LV0010) successfully took off from Florida’s Cape Canaveral Space Force Station at 1:43PM ET, but suffered an upper stage failure about 10 minutes into its flight. The launch was part of NASA’s mission to send six TROPICS satellites into space — these small, foot-long CubeSats are supposed to help NASA keep better track of developing tropical storms. CubeSats are low-cost satellites frequently built by researchers at colleges and universities.
+We had a nominal first stage...
+Continue reading…]]></summary>
+        <author>
+            <name>The Verge -  All Posts</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Rust中的开源联合链接聚合器]]></title>
+        <id>https://hn.buzzing.cc/hn/31712332/</id>
+        <link href="https://hn.buzzing.cc/hn/31712332/?score=100&amp;original_url=https%3A%2F%2Fgithub.com%2FLemmyNet%2Flemmy&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31712332&amp;sensitive=false"/>
+        <updated>2022-06-12T21:44:41.000Z</updated>
+        <summary type="html"><![CDATA[Rust中的开源联合链接聚合器]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Starfield gameplay premiere resembles “No Man’s Skyrim,” leads Xbox showcase]]></title>
+        <id>https://arstechnica.com/?p=1860390</id>
+        <link href="https://arstechnica.com/?p=1860390"/>
+        <updated>2022-06-12T21:20:07.000Z</updated>
+        <summary type="html"><![CDATA[Forza Motorsport stands out as a current-gen stunner. But what about today's no-shows?]]></summary>
+        <author>
+            <name>Sam Machkovech</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[宫崎骏和高畑勋的前吉卜力作品]]></title>
+        <id>https://hn.buzzing.cc/hn/31715459/</id>
+        <link href="https://hn.buzzing.cc/hn/31715459/?score=106&amp;original_url=https%3A%2F%2Fwww.vulture.com%2Farticle%2Fhayao-miyazaki-isao-takahata-before-studio-ghibli-guide.html&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31715459&amp;sensitive=false"/>
+        <updated>2022-06-12T21:03:47.000Z</updated>
+        <summary type="html"><![CDATA[宫崎骏和高畑勋的前吉卜力作品]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我们正在逐步关闭Google Talk]]></title>
+        <id>https://hn.buzzing.cc/hn/31717023/</id>
+        <link href="https://hn.buzzing.cc/hn/31717023/?score=103&amp;original_url=https%3A%2F%2Fsupport.google.com%2Ftalk%2F%3Fhl%3Den&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31717023&amp;sensitive=false"/>
+        <updated>2022-06-12T21:03:47.000Z</updated>
+        <summary type="html"><![CDATA[我们正在逐步关闭Google Talk]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[15.Ai]]></title>
+        <id>https://hn.buzzing.cc/hn/31711118/</id>
+        <link href="https://hn.buzzing.cc/hn/31711118/?score=106&amp;original_url=https%3A%2F%2F15.ai%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31711118&amp;sensitive=false"/>
+        <updated>2022-06-12T20:45:42.000Z</updated>
+        <summary type="html"><![CDATA[15.Ai]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[国家终于允许青少年睡懒觉了]]></title>
+        <id>https://hn.buzzing.cc/hn/31711020/</id>
+        <link href="https://hn.buzzing.cc/hn/31711020/?score=109&amp;original_url=https%3A%2F%2Fwww.theatlantic.com%2Ffamily%2Farchive%2F2022%2F06%2Famerican-high-school-later-start-time%2F661211%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31711020&amp;sensitive=false"/>
+        <updated>2022-06-12T20:24:45.000Z</updated>
+        <summary type="html"><![CDATA[国家终于允许青少年睡懒觉了]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[医生多年经验总结，被打了以后，就医有非常多的注意事项！很多人都不知道！]]></title>
+        <id>https://www.bilibili.com/video/av469999436</id>
+        <link href="https://www.bilibili.com/video/av469999436"/>
+        <updated>2022-06-12T20:19:12.000Z</updated>
+        <summary type="html"><![CDATA[-
+
+
+Tags:科普,医生,急救,打人,唐山,防身术,自卫,缝合,必剪创作,万物研究所]]></summary>
+        <author>
+            <name>普外科曾医生</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[挑战。像素的完美设计]]></title>
+        <id>https://hn.buzzing.cc/hn/31715995/</id>
+        <link href="https://hn.buzzing.cc/hn/31715995/?score=101&amp;original_url=https%3A%2F%2Fdeveloper.apple.com%2Fnews%2F%3Fid%3D3sgp4ps7&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31715995&amp;sensitive=false"/>
+        <updated>2022-06-12T20:02:07.000Z</updated>
+        <summary type="html"><![CDATA[挑战。像素的完美设计]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ACM免费提供数以千计的研究文章；开放第一个50年]]></title>
+        <id>https://hn.buzzing.cc/hn/31716350/</id>
+        <link href="https://hn.buzzing.cc/hn/31716350/?score=111&amp;original_url=https%3A%2F%2Fwww.acm.org%2Fmedia-center%2F2022%2Fapril%2F50-years-backfile&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31716350&amp;sensitive=false"/>
+        <updated>2022-06-12T19:09:22.000Z</updated>
+        <summary type="html"><![CDATA[ACM免费提供数以千计的研究文章；开放第一个50年]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[谷歌的人工智能不懂餐厅的菜单]]></title>
+        <id>https://hn.buzzing.cc/hn/31713801/</id>
+        <link href="https://hn.buzzing.cc/hn/31713801/?score=106&amp;original_url=https%3A%2F%2Fshkspr.mobi%2Fblog%2F2022%2F06%2Fgoogles-ai-doesnt-understand-restaurant-menus%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31713801&amp;sensitive=false"/>
+        <updated>2022-06-12T19:09:22.000Z</updated>
+        <summary type="html"><![CDATA[谷歌的人工智能不懂餐厅的菜单]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Watch 15 minutes of Starfield gameplay]]></title>
+        <id>https://www.theverge.com/2022/6/12/23162369/starfied-gameplay-trailer-bethesda-xbox-showcase-2022</id>
+        <link href="https://www.theverge.com/2022/6/12/23162369/starfied-gameplay-trailer-bethesda-xbox-showcase-2022"/>
+        <updated>2022-06-12T18:58:44.000Z</updated>
+        <summary type="html"><![CDATA[After an early glimpse of Starfield at Microsoft’s Xbox & Bethesda showcase last year and a delay to 2023, we’re now getting a much closer look at Bethesda’s first new IP in 25 years thanks to 15 minutes of gameplay. Starfield is, naturally, set in space where players will take on the role of a last group of explorers. Described as “Skyrim in space,” by game director Todd Howard, the RPG will be playable in both first- and third-person, but primarily it’s first-person.
+During the early stages of the gameplay, we arrive on the moon of Kreet, just one of more than 1,000 planets that players will be able to fly to and explore freely. Powered by Bethesda’s new Creation Engine 2, the first Starfield gameplay shows a player freely roaming...
+Continue reading…]]></summary>
+        <author>
+            <name>The Verge -  All Posts</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The biggest trailers and announcements from the 2022 Xbox & Bethesda Games Showcase]]></title>
+        <id>https://www.theverge.com/2022/6/12/23164791/biggest-announcements-xbox-bethesda-games-showcase-starfield-overwatch-2-persona-diablo-iv</id>
+        <link href="https://www.theverge.com/2022/6/12/23164791/biggest-announcements-xbox-bethesda-games-showcase-starfield-overwatch-2-persona-diablo-iv"/>
+        <updated>2022-06-12T18:52:58.000Z</updated>
+        <summary type="html"><![CDATA[Xbox revealed a ton of exciting news at the Xbox & Bethesda Game Showcase, ranging from a longer look at Starfield to news about Overwatch 2 and Diablo IV. 
+For this event, Xbox only focused on games available to play within the next 12 months. So at least you won’t have to wait too long. In case you missed it, here’s a roundup of the biggest announcements and trailers.
+Hollow Knight: Silksong is poised to arrive within the year
+
+
+Hollow Knight: Silk Song, the highly-anticipated sequel to the popular Hollow Knight indie title, is set to launch on day one for Xbox Game Pass subscribers. The trailer shows off the platformer’s beautiful artwork and gameplay, but there isn’t an official release date just yet.
+Overwatch 2 will be free to play
+
+
+...
+  
+Continue reading…]]></summary>
+        <author>
+            <name>The Verge -  All Posts</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[IETF的新UUID格式]]></title>
+        <id>https://hn.buzzing.cc/hn/31715119/</id>
+        <link href="https://hn.buzzing.cc/hn/31715119/?score=112&amp;original_url=https%3A%2F%2Fwww.ietf.org%2Fid%2Fdraft-peabody-dispatch-new-uuid-format-03.html&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31715119&amp;sensitive=false"/>
+        <updated>2022-06-12T18:43:34.000Z</updated>
+        <summary type="html"><![CDATA[IETF的新UUID格式]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Xbox and Bethesda Games Showcase 2022: all the news from the event]]></title>
+        <id>https://www.theverge.com/2022/6/12/23164968/xbox-bethesda-games-showcase-2022-activision-blizzard</id>
+        <link href="https://www.theverge.com/2022/6/12/23164968/xbox-bethesda-games-showcase-2022-activision-blizzard"/>
+        <updated>2022-06-12T18:41:06.000Z</updated>
+        <summary type="html"><![CDATA[Illustration by Alex Castro / The Verge
+    
+
+  
+There’s more than just Starfield
+Continue reading…]]></summary>
+        <author>
+            <name>The Verge -  All Posts</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Three Persona titles are coming to Xbox, starting with Persona 5 Royal]]></title>
+        <id>https://www.theverge.com/2022/6/12/23164864/xbox-persona-5-royal-4-golden-3-portable</id>
+        <link href="https://www.theverge.com/2022/6/12/23164864/xbox-persona-5-royal-4-golden-3-portable"/>
+        <updated>2022-06-12T18:32:45.000Z</updated>
+        <summary type="html"><![CDATA[Joker and his friends from Persona 5. | Image: Sega
+    
+
+  
+Three beloved JRPGs in the Persona franchise — Persona 3 Portable, Persona 4 Golden, Persona 5 Royal — are coming to Xbox and PC, Microsoft announced at its Xbox and Bethesda Games Showcase 2022.
+The first will be Persona 5 Royal, which will be available on October 21st. Currently, that game is only available on PlayStation platforms, so the upcoming Xbox and PC release marks a notable expansion for the game. If you haven’t played it before, I cannot recommend the game enough — it absolutely oozes style, and by the end of the game, you’ll really feel like you connect with the many characters you meet.
+Person 3 Portable originally appeared on the PSP back in 2006. Persona 4 Golden was a port of Persona 4 that originally appeared on the PS...
+Continue reading…]]></summary>
+        <author>
+            <name>The Verge -  All Posts</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[转售软件。不要开始做SaaS--用白标代替别人的SaaS]]></title>
+        <id>https://hn.buzzing.cc/hn/31714448/</id>
+        <link href="https://hn.buzzing.cc/hn/31714448/?score=101&amp;original_url=https%3A%2F%2Fwww.sidehustlenation.com%2Freselling-software%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31714448&amp;sensitive=false"/>
+        <updated>2022-06-12T18:21:12.000Z</updated>
+        <summary type="html"><![CDATA[转售软件。不要开始做SaaS--用白标代替别人的SaaS]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[美国队列研究中接种Covid-19 mRNA疫苗后的心肌炎风险]]></title>
+        <id>https://hn.buzzing.cc/hn/31711913/</id>
+        <link href="https://hn.buzzing.cc/hn/31711913/?score=101&amp;original_url=https%3A%2F%2Fwww.thelancet.com%2Fjournals%2Flancet%2Farticle%2FPIIS0140-6736%2822%2900791-7%2Ffulltext&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31711913&amp;sensitive=false"/>
+        <updated>2022-06-12T18:21:12.000Z</updated>
+        <summary type="html"><![CDATA[美国队列研究中接种Covid-19 mRNA疫苗后的心肌炎风险]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Diablo IV will bring the blood waves in 2023]]></title>
+        <id>https://www.theverge.com/2022/6/12/23164873/diablo-iv-4-launch-2023</id>
+        <link href="https://www.theverge.com/2022/6/12/23164873/diablo-iv-4-launch-2023"/>
+        <updated>2022-06-12T18:15:14.000Z</updated>
+        <summary type="html"><![CDATA[Image: Activision Blizzard
+    
+
+  
+Diablo IV, the next major release in Activision Blizzard’s popular dungeon-crawling series, will be available in 2023, the company announced Sunday. When it launches, it’ll be available on PC, Xbox Series X / S, Xbox One, PS5, and PS4, and the game will have crossplay and cross-progression across all platforms. And as with previous Diablo games there will be blood — a lot of it. Whole actual waves of blood.
+In addition to previously announced classes like the sorceress, barbarian, druid, and rogue, Activision Blizzard revealed the fifth playable class: Necromancer. “Fight with aggressive skeleton Warriors, fast-attacking Skirmishers, sword and board Defenders, or scythe-wielding Reapers,” the company said in a press release. “Unleash a...
+Continue reading…]]></summary>
+        <author>
+            <name>The Verge -  All Posts</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Overwatch 2 will be free to play and has an early access release date]]></title>
+        <id>https://www.theverge.com/2022/6/12/23164896/overwatch-2-pvp-early-access-release-date</id>
+        <link href="https://www.theverge.com/2022/6/12/23164896/overwatch-2-pvp-early-access-release-date"/>
+        <updated>2022-06-12T17:46:22.000Z</updated>
+        <summary type="html"><![CDATA[Image: Activision Blizzard
+    
+
+  
+Overwatch 2 will be launching “in early access” on October 4th, Activision Blizzard announced Sunday. At least the PVP parts of it will be. And in a major change, it will be free to play — the original Overwatch was a paid title. It will be releasing on PC, Xbox Series X / S, Xbox One, PS5, PS4, and Nintendo Switch. 
+“We can’t wait to roll out the beginning of the Overwatch 2 experience on October 4 and introduce an exciting new competitive vision, featuring amazing new content and a reimagining of the iconic heroes, maps, and gameplay that made the original game so compelling,” Mike Ybarra, president of Blizzard, said in a press release. “This is the beginning of an always-on and always-evolving era for the franchise, and a recommitment...
+Continue reading…]]></summary>
+        <author>
+            <name>The Verge -  All Posts</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Lilium公司首次实现了全电动飞机的主翼过渡[视频]。]]></title>
+        <id>https://hn.buzzing.cc/hn/31715067/</id>
+        <link href="https://hn.buzzing.cc/hn/31715067/?score=113&amp;original_url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DQNl0DDUnp0E&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31715067&amp;sensitive=false"/>
+        <updated>2022-06-12T17:26:02.000Z</updated>
+        <summary type="html"><![CDATA[Lilium公司首次实现了全电动飞机的主翼过渡[视频]。]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ZeroStableCoin脱离了隐身模式]]></title>
+        <id>https://hn.buzzing.cc/hn/31714556/</id>
+        <link href="https://hn.buzzing.cc/hn/31714556/?score=106&amp;original_url=https%3A%2F%2Ftwitter.com%2Fzerostablecoin%2Fstatus%2F1534131126209499138&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31714556&amp;sensitive=false"/>
+        <updated>2022-06-12T17:26:02.000Z</updated>
+        <summary type="html"><![CDATA[ZeroStableCoin脱离了隐身模式]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hollow Knight: Silksong is coming to Xbox, and it will be out within the next year]]></title>
+        <id>https://www.theverge.com/2022/6/12/22175400/hollow-knight-silksong-sequel-xbox-game-pass-trailer</id>
+        <link href="https://www.theverge.com/2022/6/12/22175400/hollow-knight-silksong-sequel-xbox-game-pass-trailer"/>
+        <updated>2022-06-12T17:22:20.000Z</updated>
+        <summary type="html"><![CDATA[Image: Microsoft
+    
+
+  
+Hollow Knight: Silksong, the sequel to the 2017 indie side-scrolling action platformer Hollow Knight, is coming to Xbox, Microsoft announced during the Xbox and Bethesda Showcase on Sunday. It will be available on Xbox Game Pass the day it’s released.
+While there’s no official release date, Xbox exec Sarah Bond said during the showcase that all of the games shown during the event will be available in the next 12 months. The official Xbox Twitter account confirmed that timeline, so we at least have a window of time for when we can expect the game.
+That's exactly what we said.
+— Xbox (@Xbox) June 12, 2022
+
+
+
+Microsoft also debuted a new trailer with a bunch of new gameplay footage, which you can see at the top of this post. In addition to...
+Continue reading…]]></summary>
+        <author>
+            <name>The Verge -  All Posts</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Java中的SIMD加速排序--它是如何工作的，为什么它的速度是3倍]]></title>
+        <id>https://hn.buzzing.cc/hn/31703471/</id>
+        <link href="https://hn.buzzing.cc/hn/31703471/?score=102&amp;original_url=https%3A%2F%2Fjbaker.io%2F2022%2F06%2F09%2Fvectors-in-java%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31703471&amp;sensitive=false"/>
+        <updated>2022-06-12T16:10:24.000Z</updated>
+        <summary type="html"><![CDATA[Java中的SIMD加速排序--它是如何工作的，为什么它的速度是3倍]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[父母的疏远和不受管制的专家粉碎了儿童的生活]]></title>
+        <id>https://hn.buzzing.cc/hn/31714524/</id>
+        <link href="https://hn.buzzing.cc/hn/31714524/?score=100&amp;original_url=https%3A%2F%2Fwww.theguardian.com%2Fglobal-development%2F2022%2Fjun%2F12%2Fparental-alienation-and-the-unregulated-experts-shattering-childrens-lives&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31714524&amp;sensitive=false"/>
+        <updated>2022-06-12T16:10:24.000Z</updated>
+        <summary type="html"><![CDATA[父母的疏远和不受管制的专家粉碎了儿童的生活]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Oneplus违反安卓12内核的GPL规定]]></title>
+        <id>https://hn.buzzing.cc/hn/31713525/</id>
+        <link href="https://hn.buzzing.cc/hn/31713525/?score=101&amp;original_url=https%3A%2F%2Fgithub.com%2FOnePlusOSS%2Fandroid_kernel_oneplus_sm8250%2Fissues%2F24&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31713525&amp;sensitive=false"/>
+        <updated>2022-06-12T15:46:45.000Z</updated>
+        <summary type="html"><![CDATA[Oneplus违反安卓12内核的GPL规定]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我正在从VS Code切换到VS Codium]]></title>
+        <id>https://hn.buzzing.cc/hn/31713625/</id>
+        <link href="https://hn.buzzing.cc/hn/31713625/?score=105&amp;original_url=https%3A%2F%2Fruky.me%2F2022%2F06%2F11%2Fim-switching-form-vs-code-to-vs-codium%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31713625&amp;sensitive=false"/>
+        <updated>2022-06-12T15:21:15.000Z</updated>
+        <summary type="html"><![CDATA[我正在从VS Code切换到VS Codium]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[将1995年的IBM Aptiva，66mhz 486DX2，变成i7 6700k]]></title>
+        <id>https://hn.buzzing.cc/hn/31702564/</id>
+        <link href="https://hn.buzzing.cc/hn/31702564/?score=100&amp;original_url=https%3A%2F%2Fimgur.com%2Fgallery%2FA9Ekr&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31702564&amp;sensitive=false"/>
+        <updated>2022-06-12T13:59:16.000Z</updated>
+        <summary type="html"><![CDATA[将1995年的IBM Aptiva，66mhz 486DX2，变成i7 6700k]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Difference Between Java SE/EE/ME]]></title>
+        <id>https://drafts.baeldung.com/?p=137674</id>
+        <link href="https://feeds.feedblitz.com/~/699047024/0/baeldung~Difference-Between-Java-SEEEME"/>
+        <updated>2022-06-12T13:52:24.000Z</updated>
+        <summary type="html"><![CDATA[Learn about the three different Java Editions, understand what functionalities they provide and their typical use cases.]]></summary>
+        <author>
+            <name>Attila Uhrin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A Guide to Maven Encoding]]></title>
+        <id>https://drafts.baeldung.com/?p=136134</id>
+        <link href="https://feeds.feedblitz.com/~/699047028/0/baeldung~A-Guide-to-Maven-Encoding"/>
+        <updated>2022-06-12T13:50:09.000Z</updated>
+        <summary type="html"><![CDATA[Learn how to set character encoding in Maven.]]></summary>
+        <author>
+            <name>baeldung</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[帅小伙这牌耍的挺精神！]]></title>
+        <id>https://www.bilibili.com/video/av982482299</id>
+        <link href="https://www.bilibili.com/video/av982482299"/>
+        <updated>2022-06-12T13:30:50.000Z</updated>
+        <summary type="html"><![CDATA[-
+
+
+Tags:马格南,开箱,沉浸式]]></summary>
+        <author>
+            <name>马格南DD</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[鼓励NHS建立一个小型的网络服务]]></title>
+        <id>https://hn.buzzing.cc/hn/31707040/</id>
+        <link href="https://hn.buzzing.cc/hn/31707040/?score=100&amp;original_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31707040&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31707040&amp;sensitive=false"/>
+        <updated>2022-06-12T13:13:20.000Z</updated>
+        <summary type="html"><![CDATA[鼓励NHS建立一个小型的网络服务]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Best Gear for Your Home Emergency Kit]]></title>
+        <id>601c2d73d18be3330afe51f9</id>
+        <link href="https://www.wired.com/story/best-home-emergency-gear/"/>
+        <updated>2022-06-12T13:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Don’t get caught without the necessary equipment in an emergency. Prepare your home now with WIRED-tested water purification, camp stoves, and more.]]></summary>
+        <author>
+            <name>Matt Jancer</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Best Budget Phone Plans to Ditch the Big Carriers]]></title>
+        <id>5f3ea5d786a7c014331d160f</id>
+        <link href="https://www.wired.com/story/guide-to-mvno-phone-plans/"/>
+        <updated>2022-06-12T13:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Don’t overpay for Verizon, T-Mobile, or AT&T. It might make sense for you to go with one of these smaller providers instead.]]></summary>
+        <author>
+            <name>Matt Jancer</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[找到了。巴勃罗-毕加索为其女儿创作的 "如何绘画 "书籍]]></title>
+        <id>https://hn.buzzing.cc/hn/31711978/</id>
+        <link href="https://hn.buzzing.cc/hn/31711978/?score=104&amp;original_url=https%3A%2F%2Fwww.theguardian.com%2Fartanddesign%2F2022%2Fjun%2F11%2Ffound-the-how-to-draw-books-pablo-picasso-created-for-his-daughter&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31711978&amp;sensitive=false"/>
+        <updated>2022-06-12T12:51:05.000Z</updated>
+        <summary type="html"><![CDATA[找到了。巴勃罗-毕加索为其女儿创作的 "如何绘画 "书籍]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[计算机是一种固有的压迫性技术]]></title>
+        <id>https://hn.buzzing.cc/hn/31712415/</id>
+        <link href="https://hn.buzzing.cc/hn/31712415/?score=106&amp;original_url=https%3A%2F%2Fwww.devever.net%2F%7Ehl%2Fruthlessness&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31712415&amp;sensitive=false"/>
+        <updated>2022-06-12T12:19:26.000Z</updated>
+        <summary type="html"><![CDATA[计算机是一种固有的压迫性技术]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hisense’s Short-Throw Laser Projector Is a Glorious Plug-and-Play]]></title>
+        <id>629fd638c7a111a22ada6968</id>
+        <link href="https://www.wired.com/review/hisense-px1-pro/"/>
+        <updated>2022-06-12T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This short-throw laser projector is a Dolby Atmos-enabled home theater in a box.]]></summary>
+        <author>
+            <name>Parker Hall</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Reshuffled Rivers Bolster the Amazon’s Hyper-Biodiversity]]></title>
+        <id>629e31d1bb966dfe6e2d39b8</id>
+        <link href="https://www.wired.com/story/reshuffled-rivers-bolster-the-amazons-hyper-biodiversity/"/>
+        <updated>2022-06-12T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The rainforest's lush genetic diversity may be due in part to the dynamics of branching rivers, which serve as invisible fences between bird populations.]]></summary>
+        <author>
+            <name>Yasemin Saplakoglu</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[揭秘网络热门魔术！手不需要触碰，却能隔空开可乐！]]></title>
+        <id>https://www.bilibili.com/video/av554888907</id>
+        <link href="https://www.bilibili.com/video/av554888907"/>
+        <updated>2022-06-12T11:50:00.000Z</updated>
+        <summary type="html"><![CDATA[三连啊喂！各位靓仔靓女：唔该晒！载下！
+
+
+Tags:魔术揭秘,魔术教学,撩妹必学,网络热门视频]]></summary>
+        <author>
+            <name>魔术特白</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[你管这叫教书育人？大学计算机系老师声称自己几年没有编程！cnm退钱！]]></title>
+        <id>https://www.bilibili.com/video/av982492972</id>
+        <link href="https://www.bilibili.com/video/av982492972"/>
+        <updated>2022-06-12T11:49:15.000Z</updated>
+        <summary type="html"><![CDATA[-
+
+
+Tags:计算机,知识,程序员,编程,计算机专业,校园学习]]></summary>
+        <author>
+            <name>赖獭</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Why can’t we remember being born or our first words?]]></title>
+        <id>https://arstechnica.com/?p=1860244</id>
+        <link href="https://arstechnica.com/?p=1860244"/>
+        <updated>2022-06-12T11:44:01.000Z</updated>
+        <summary type="html"><![CDATA[What scientists know about "infantile amnesia."]]></summary>
+        <author>
+            <name>The Conversation</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[NASA’s plan to get Ingenuity through the Martian winter]]></title>
+        <id>https://arstechnica.com/?p=1860133</id>
+        <link href="https://arstechnica.com/?p=1860133"/>
+        <updated>2022-06-12T11:00:01.000Z</updated>
+        <summary type="html"><![CDATA[NASA engineers are trying to overcome colder nights and frequent dust storms.]]></summary>
+        <author>
+            <name>WIRED</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ikea's New Turntable, and 9 More Standouts From Milan Design Week]]></title>
+        <id>62a38c0d9c36c554478577a5</id>
+        <link href="https://www.wired.com/story/ikea-turntable-and-other-highlights-from-milan-salone-del-mobile/"/>
+        <updated>2022-06-12T11:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Furniture 3D-printed from lemons and flat-pack concrete furniture are just some highlights from the Salone del Mobile trade show in Italy.]]></summary>
+        <author>
+            <name>Jeremy White, Chris Haslam</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Life Is Great in the Age of No Secrets]]></title>
+        <id>629e441da768b037a299214d</id>
+        <link href="https://www.wired.com/story/internet-age-no-secrets/"/>
+        <updated>2022-06-12T11:00:00.000Z</updated>
+        <summary type="html"><![CDATA[It was fun looking at the world as a huge conspiracy theory, but then I realized: There’s no such thing as hidden knowledge.]]></summary>
+        <author>
+            <name>Paul Ford</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Conti's Attack Against Costa Rica Sparks a New Ransomware Era]]></title>
+        <id>62a3bbfe0827695fc947f596</id>
+        <link href="https://www.wired.com/story/costa-rica-ransomware-conti/"/>
+        <updated>2022-06-12T11:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A pair of ransomware attacks crippled parts of the country—and rewrote the rules of cybercrime.]]></summary>
+        <author>
+            <name>Matt Burgess</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[9 Beautiful Cool Text Effects using Google font Effects👌]]></title>
         <id>https://dev.to/gulshanaggarwal/9-beautiful-cool-text-effects-using-google-font-effects-mn6</id>
@@ -109,6 +1921,16 @@ import { providers…]]></summary>
 老王点评：虽然成本高点，但是在这种应急的时候还真是非常灵活，也节省了很多时间成本。]]></summary>
         <author>
             <name>linux@linux.cn (linux)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[目光短浅已经成为一种流行病]]></title>
+        <id>https://hn.buzzing.cc/hn/31711990/</id>
+        <link href="https://hn.buzzing.cc/hn/31711990/?score=122&amp;original_url=https%3A%2F%2Fwww.economist.com%2Fleaders%2F2022%2F06%2F09%2Fshort-sightedness-has-become-an-epidemic&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31711990&amp;sensitive=false"/>
+        <updated>2022-06-12T09:21:19.000Z</updated>
+        <summary type="html"><![CDATA[目光短浅已经成为一种流行病]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
         </author>
     </entry>
     <entry>
@@ -324,6 +2146,25 @@ Mhh, we can see that our ssh port is…]]></summary>
         <summary type="html"><![CDATA[Show HN: 浏览器扩展可以伪造你的位置数据以匹配你的VPN]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[别大意，照顾好你的耳朵：关于突发性耳聋，你需要知道这些]]></title>
+        <id>https://sspai.com/post/73752</id>
+        <link href="https://sspai.com/post/73752"/>
+        <updated>2022-06-12T07:21:56.000Z</updated>
+        <summary type="html"><![CDATA[当我们的生活和工作压力越来越大，很多风险提前爆发的可能性也就越来越高。一些人到中年才容易发生的健康问题，逐渐下移到年轻一代已经屡见不鲜。作为一名26岁的伪“年轻人”，我已经不幸被“突发性耳聋”这个不速之客造访过。也正是因为这次经历，才让我开始明白，耳朵和听力问题，并不是老年人的“专利”，这个风险其实悄然潜伏在我们每个人的身边。
+所以我有必要提醒你：别大意，照顾好你的耳朵。
+（本人不是医生，也不是医学生，这些经验和认识均来自于治疗经验和与医生的交流，如有不准还请指出，定会积极改正）
+什么是突发性耳聋
+突发性耳聋是一种是指突然发生的、原因不明的感音神经性听力损失或下降。你可能很少，但它也是一种耳鼻喉科的常见病。一直以来，这种疾病多见于40-60岁的中老年群体，且男女发病率并没有显著的统计学差异，但近些年来，这种疾病的发病年龄已经明显有了下移的趋势。童年的记忆歌手吴克群就曾经在自己的微博上透露，自己曾被这种疾病所困扰。
+突然性耳聋最大的特点，就是“突然”，往往在你感觉到有不适时，就意味着必须要马上就医了。并且，虽然学名为突发性耳聋的，但这种疾病十分狡猾，耳聋并不是唯一一种症状，甚至在病程初期，并不一定会“聋”，所以全面了解所有可能出现的症状是对它防患于未然的第一步。
+有哪些典型症状
+耳部的感官不适
+耳部的感官不适，是指被患者察觉到的耳内不适感。这种不适感以耳闷、耳涨以及耳道的紧绷感最为典型。一般来说，初次发病的患者以耳部不适感居多，听力下降的表现并不明显。初次发病的患者，往往会感到耳朵内部像堵了棉花一样闷涨感，或者感觉到耳道内部有一种说不出的紧绷感，好像漩涡一样向里卷。
+耳部的感官不适可能是很多人最早察觉到的异样，以我为例，第一次出现的症状是带上耳机时，感到耳朵内部有异物向外扩张，位置非常深，不带耳机的话感觉像是鼓膜向外鼓出。如果你出现了以上这些类似的症状，尤其可以确定不外耳道或…]]></summary>
+        <author>
+            <name>EricYoung</name>
         </author>
     </entry>
     <entry>
@@ -1607,6 +3448,19 @@ Continue reading…]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[为什么青岛人喜欢用塑料袋装啤酒？其中有何奥秘？]]></title>
+        <id>https://www.bilibili.com/video/av897482404</id>
+        <link href="https://www.bilibili.com/video/av897482404"/>
+        <updated>2022-06-11T21:28:30.000Z</updated>
+        <summary type="html"><![CDATA[为什么青岛人喜欢用塑料袋装啤酒？其中有何奥秘？
+
+
+Tags:青岛,科普,啤酒,涨姿势,人文,冷知识,山东,涨知识,精酿啤酒,知识分享官]]></summary>
+        <author>
+            <name>这知识好冷</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Leaked Galaxy Z Flip 4 photos show a potentially less noticeable crease]]></title>
         <id>https://www.theverge.com/2022/6/11/23163974/leaked-galaxy-z-flip-4-photos-show-potentially-less-noticeable-crease</id>
         <link href="https://www.theverge.com/2022/6/11/23163974/leaked-galaxy-z-flip-4-photos-show-potentially-less-noticeable-crease"/>
@@ -1623,6 +3477,19 @@ You can pretty clearly see the Galaxy Z Flip 3’s crease when you tilt the phon
 Continue reading…]]></summary>
         <author>
             <name>The Verge -  All Posts</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[初中生卡片消失术，直接教给大家。]]></title>
+        <id>https://www.bilibili.com/video/av512386505</id>
+        <link href="https://www.bilibili.com/video/av512386505"/>
+        <updated>2022-06-11T20:57:11.000Z</updated>
+        <summary type="html"><![CDATA[-
+
+
+Tags:魔术揭秘,魔术教学,撩妹必学]]></summary>
+        <author>
+            <name>魔术特白</name>
         </author>
     </entry>
     <entry>
@@ -1706,6 +3573,22 @@ Tags:物理,宇宙,光速,科学很可爱,万物研究所]]></summary>
         <summary type="html"><![CDATA[AirPlay和触摸条=网络灾难]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[被法律保护的海浪]]></title>
+        <id>https://www.bilibili.com/video/av854941037</id>
+        <link href="https://www.bilibili.com/video/av854941037"/>
+        <updated>2022-06-11T19:16:53.000Z</updated>
+        <summary type="html"><![CDATA[参考：https://isea-podc.org/scientific-news/chicama-wave-an-unique-waves-from-peru
+https://www.perfectwavetravel.com/magazine/peru/the-longest-wave-in-the-world/
+https://www.surfertoday.com/surfing/chicama-the-worlds-longest-wave
+https://www.peruforless.com/
+
+
+Tags:生命,科普,大海,自然,冷知识,海浪,波浪,小知识,秘鲁,方波]]></summary>
+        <author>
+            <name>正经的知识</name>
         </author>
     </entry>
     <entry>
@@ -1831,6 +3714,19 @@ Tags:生活,搞笑,模型,创意,制作,手工,花切,开箱,咕咕星,技能提
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[给孩子吃含添加剂的产品就是缺德？食用添加剂到底安全不安全？]]></title>
+        <id>https://www.bilibili.com/video/av939875269</id>
+        <link href="https://www.bilibili.com/video/av939875269"/>
+        <updated>2022-06-11T16:51:23.000Z</updated>
+        <summary type="html"><![CDATA[-
+
+
+Tags:科普,网络热门鉴定,万物研究所]]></summary>
+        <author>
+            <name>中国食品报融媒体</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[透明的楼梯：当设计团队中没有人穿裙子时会发生什么？]]></title>
         <id>https://hn.buzzing.cc/hn/31704458/</id>
         <link href="https://hn.buzzing.cc/hn/31704458/?score=109&amp;original_url=https%3A%2F%2Ftwitter.com%2Fcoereba%2Fstatus%2F1534897063179128833&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31704458&amp;sensitive=false"/>
@@ -1888,6 +3784,19 @@ Continue reading…]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[出门坐高铁、飞机没带身份证怎么办？一分钟帮你解决！]]></title>
+        <id>https://www.bilibili.com/video/av684975122</id>
+        <link href="https://www.bilibili.com/video/av684975122"/>
+        <updated>2022-06-11T14:17:29.000Z</updated>
+        <summary type="html"><![CDATA[-
+
+
+Tags:科普,出门,身份证,生活小技巧,打卡挑战,技能提升营,技能提升营2022第二季]]></summary>
+        <author>
+            <name>粥粥KOI</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[告诉HN：Bitwarden不会在备份中导出附件]]></title>
         <id>https://hn.buzzing.cc/hn/31702594/</id>
         <link href="https://hn.buzzing.cc/hn/31702594/?score=103&amp;original_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31702594&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31702594&amp;sensitive=false"/>
@@ -1941,6 +3850,16 @@ Continue reading…]]></summary>
         <summary type="html"><![CDATA[Mutations in genes that don't alter proteins can still alter survival in yeast.]]></summary>
         <author>
             <name>John Timmer</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[为什么会有女生喜欢穿丁字裤？]]></title>
+        <id>https://www.bilibili.com/video/av982478382</id>
+        <link href="https://www.bilibili.com/video/av982478382"/>
+        <updated>2022-06-11T12:12:26.000Z</updated>
+        <summary type="html"><![CDATA[Tags:生命,科普,万物研究所]]></summary>
+        <author>
+            <name>白菜夹知识</name>
         </author>
     </entry>
     <entry>
@@ -2114,6 +4033,50 @@ How to create attribute directive
 Ho…]]></summary>
         <author>
             <name>Dharmen Shah</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[拥有 120Hz 高刷，低延迟的游戏投影：优派 Q20 投影仪]]></title>
+        <id>https://sspai.com/post/73744</id>
+        <link href="https://sspai.com/post/73744"/>
+        <updated>2022-06-11T10:19:46.000Z</updated>
+        <summary type="html"><![CDATA[优派这个名字相信许多人都不会陌生，在显示器出货排名榜中，可是第四名的存在，记得我最初的一台PC电脑所用的就是这三只七彩文鸟。不过这次我们要聊的并不是优派的显示器，而是他家的投影仪产品--优派Q20家用投影仪。
+接下来就是我这段时间的体验感受分享，希望对各位有需求的小伙伴有所帮助。
+
+专业配置，让其天生强悍
+
+优派Q20投影仪所提供的物件不算多，除了投影仪主机、电源线和说明书以外，余下的就是遥控器和Type-C线材。其中附赠Type-C线材实属让我有点意外，一般都是送HDMI线缆的比较多。
+
+优派Q20投影仪采用全白外观，尺寸约355mm×244mm×121mm，属于常见的扁平设计，不过外壳的转角部分更圆润。白色的外观对于颜值上来说加成很高，特别是家用投影仪，白色总能让人眼前一亮，放在桌面上都是一件不错的摆件。
+
+镜头方面，优派Q20投影仪使用玻璃镜头，具有透光高和耐磨的优势，不会因过热而产生画面损失的情况，色彩还原也比树脂更优秀。在细节上，镜头处还设有一个防尘罩结构，当吊装时能起到一定的防尘作用。
+
+此次优派Q20投影仪采用的是RGBG LED光源技术，拥有2300 ANSI Lumens亮度和125% Rec 709宽广色域，对比度达到300w：1，10.7亿色彩，高亮度和高精准，注定了其不凡的原彩画质。
+相比常规的投影仪，优派Q20投影仪采用了0.65英寸的DMD，这也就导致其光通量更大，可提供更加透亮的画质。即便在近距离观看大画面时，画面的颗粒感也不会明显，保持清晰的画面。
+
+镜头左下角的圆圈是红外线遥控信号接收处，使用遥控器时注意不要遮挡。虽然机身上没有明显的标注，但优派Q20投影仪是原生1080P物理分辨率，也就是1920x1080像素，绝对不是抖出来的。除了更高端的4K画质以外，1080P是属于当下最适合家用的分辨率，能兼容绝大多数的笔记本和主流高清流媒体。
+根…]]></summary>
+        <author>
+            <name>尼古拉斯lalala</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[万元内最强Mini LED显示器？飞利浦27B1U7903]]></title>
+        <id>https://sspai.com/post/73743</id>
+        <link href="https://sspai.com/post/73743"/>
+        <updated>2022-06-11T10:12:45.000Z</updated>
+        <summary type="html"><![CDATA[因为行业的升级，接下来一段时间，我们会发现原本相对平静的桌面显示器市场，开始了新一波技术竞赛。
+
+01/ 下一代主流是 OLED 还是 Mini LED？
+如果说屏幕分辨率、刷新率是上一波桌面显示器升级关注要素，下一波显示器升级变化要点可能就是背光甚至面板类型了，伴随带来的就是肉眼可见的观感提升，而且你会发现桌面显示器跟液晶电视的升级路线越来越同步。
+跟液晶电视类似，目前桌面显示器也处在一个自发光屏的过渡阶段，而这个过渡阶段到底是传统背光改进（比如Mini LED）胜出，还是替换面板类型（比如OLED）胜出，谁也说不清楚，毕竟要面对市场这一看不见的手。
+也是在这个纠结的过渡阶段，不少OEM大厂选择了两种方案兼顾，比如飞利浦，在今年上半年直接更新了两款桌面主流型号，代表QD-Mini LED的27B1U7903 ，和代表OLED技术的27E1N8900，毕竟目前两种方案有各自的优缺点，也方便大家根据自己的偏好选择。
+
+Mini LED：可以理解为传统LED面板的技术升级款，主要是针对背光做了升级，采用了Mini LED微米级点阵式控光，比传统电视背光可以做到更细致的分区控光，从而改善传统电视背光均匀度不佳等问题；所以Mini LED机型，往往会从传统电视数十级分区控光，一举提升到百级甚至前级分区控开关光，另外Mini LED电视另外一个显著优点，就是寿命较长（等同传统LED）。
+OLED电视：OLED可以说屏幕技术上就完全不同于传统LED屏幕，目前最常见的移动设备手机，近几年基本就换为OLED屏幕，特点是每个像素可以自发光，控制亮度，所以整体画面对比度极高，普遍色域色彩对比度较好，但也有明显的缺点，就是寿命，另外最高亮度往往也不如Mini LED机型。
+综合，这两种技术对比上一代液晶面板，在控光（黑场）和色域覆盖都会带来明显提升，但目前的技术水平，两种技术路线还没发说谁完全优…]]></summary>
+        <author>
+            <name>Tiger5G</name>
         </author>
     </entry>
     <entry>
@@ -2490,6 +4453,19 @@ The question now is, how do you bring all 5 commits into 1.
 On the branch which you want to make the PR from, do git lo…]]></summary>
         <author>
             <name>Fongoh Martin T.</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[宝宝天生手“团”状，手术后五指分开，看看怎么从无到有！]]></title>
+        <id>https://www.bilibili.com/video/av214924601</id>
+        <link href="https://www.bilibili.com/video/av214924601"/>
+        <updated>2022-06-11T08:00:01.000Z</updated>
+        <summary type="html"><![CDATA[这个宝宝是束带综合征造成的严重并指，术后手术从无到有，孩子可以用手抓一些东西，这就是对他来说有用的。
+
+
+Tags:原创,生命,科普,自然,生物,科普纪录,并指畸形,束带综合征,万物研究所]]></summary>
+        <author>
+            <name>协和手足外科陈江海</name>
         </author>
     </entry>
     <entry>
@@ -3224,6 +5200,16 @@ via: https://news.itsfoss.com/opensuse-leap-15-4-release/
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[How to find Open Source projects to contribute]]></title>
+        <id>https://dev.to/isabelcmdcosta/how-to-find-open-source-projects-to-contribute-2o1e</id>
+        <link href="https://dev.to/isabelcmdcosta/how-to-find-open-source-projects-to-contribute-2o1e"/>
+        <updated>2022-06-11T02:20:55.000Z</updated>
+        <summary type="html"><![CDATA[#opensource #beginners #github]]></summary>
+        <author>
+            <name>Isabel Costa</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[围棋中的数据竞赛模式]]></title>
         <id>https://hn.buzzing.cc/hn/31698503/</id>
         <link href="https://hn.buzzing.cc/hn/31698503/?score=127&amp;original_url=https%3A%2F%2Feng.uber.com%2Fdata-race-patterns-in-go%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31698503&amp;sensitive=false"/>
@@ -3354,6 +5340,24 @@ UP主对步兵多用途掩体的理解有限 如有错漏其大家 批评指�
 Tags:原创,自制,演示,科普,解放军,学习,军事,训练,军人,陆军]]></summary>
         <author>
             <name>小罐头工作室</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【变声器】推荐款实时免费变声器 一键切换各种音色 附带下载链接 女装大佬们必备]]></title>
+        <id>https://www.bilibili.com/video/av642479335</id>
+        <link href="https://www.bilibili.com/video/av642479335"/>
+        <updated>2022-06-10T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[机架下载：
+蓝奏云地址https://wwb.lanzoub.com/b030rfk3e
+密码:6666
+百度网盘地址链接：https://pan.baidu.com/s/1acUoV4vmOsGMznlv7cIpMA
+提取码：6666 
+正在更新特效鬼畜 敬请期待
+
+
+Tags:声优,伪音,变声器,男变女,女装大佬,电脑变声器,手机变声器,变声器软件,男变女音,女变男男音]]></summary>
+        <author>
+            <name>睿智君套皮筋</name>
         </author>
     </entry>
     <entry>
@@ -3516,6 +5520,48 @@ Continue reading…]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[身体为啥只保留头发胡子和隐私部位的毛发？]]></title>
+        <id>https://www.bilibili.com/video/av257495609</id>
+        <link href="https://www.bilibili.com/video/av257495609"/>
+        <updated>2022-06-10T20:41:39.000Z</updated>
+        <summary type="html"><![CDATA[果然身体的每一根毛都有用！
+
+
+Tags:科普,知识,头发,胡子,冷知识,身体,涨知识,毛发,体毛,万物研究所]]></summary>
+        <author>
+            <name>知心者联盟</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【Flutter&Flame游戏 - 拾陆】粒子系统 | 粒子的种类]]></title>
+        <id>https://juejin.cn/post/7107834982747340813</id>
+        <link href="https://juejin.cn/post/7107834982747340813"/>
+        <updated>2022-06-10T20:32:54.000Z</updated>
+        <summary type="html"><![CDATA[theme: cyanosis
+持续创作，加速成长！这是我参与「掘金日新计划 · 6 月更文挑战」的第 17 天，点击查看活动详情
+前言
+这是一套 张风捷特烈 出品的 Flutter&Flame 系列教程，发布于掘金社区。如果你在其他平台看到本文，可以根据对于链接移步到掘金中查看。因为文章可能会更新、修正，一切以掘金文章版本为准。本系列源码于 【toly_game】 ，如果本系列对你有所帮助，希望点赞支持，本系列文章一览：
+【Flutter&Flame 游戏 - 壹】开启新世界的大门 
+【Flutter&Flame 游戏 - 贰】操纵杆与角色移动
+【Flutter&Flame 游戏 - 叁】键盘事件与手势操作
+【Flutter&Flame 游戏 - 肆】精灵图片加载方式 
+【Flutter&Flame 游戏 - 伍】Canvas 参上 | 角色的血条
+【Flutter&Flame 游戏 - 陆】暴击 Dash  | 文字构件的使用
+【Flutter&Flame 游戏 - 柒】人随指动 | 动画点触与移动
+【Flutter&Flame游戏 - 捌】装弹完毕 | 角色武器发射 
+【Flutter&Flame游戏 - 玖】探索构件 | Component 是什么
+【Flutter&Flame游戏 - 拾】探索构件 | Component 生命周期回调
+【Flutter&Flame游戏 - 拾壹】探索构件 | Component 使用细节
+【Flutter&Flame游戏 - 拾贰】探索构件 | 角色管理
+【Flutter&Flame游戏 - 拾叁】碰撞检测 |  CollisionCallbacks
+【Flutter&Flame游戏 - 拾肆】碰撞检测 | 之前代码优化
+【Flutter&Flame游戏 - 拾伍】粒子系统 | ParticleSystemComponent
+【F…]]></summary>
+        <author>
+            <name>张风捷特烈</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Learn PHP Syntax, Comments, Variables and Data Types – with Examples]]></title>
         <id>https://www.freecodecamp.org/news/php-syntax-comments-variables-data-types-with-examples/</id>
         <link href="https://www.freecodecamp.org/news/php-syntax-comments-variables-data-types-with-examples/"/>
@@ -3592,6 +5638,16 @@ Continue reading…]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[除了把字刻到石头上，还有什么办法保存信息一亿年？【司徒之脑洞】]]></title>
+        <id>https://www.bilibili.com/video/av897324127</id>
+        <link href="https://www.bilibili.com/video/av897324127"/>
+        <updated>2022-06-10T19:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Tags:自制,科学,宇宙,趣味,生物]]></summary>
+        <author>
+            <name>上将王司徒</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[不用建模不用绑骨，捏人导入DAZ制作自定义角色]]></title>
         <id>https://www.bilibili.com/video/av812412074</id>
         <link href="https://www.bilibili.com/video/av812412074"/>
@@ -3661,6 +5717,19 @@ Tags:马格南,开箱,技能提升营,技能提升营2022第二季]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[明明坐牢加罚款百万，为啥电蚯蚓屡禁不止？电蚯蚓危害到底有多大？]]></title>
+        <id>https://www.bilibili.com/video/av299955176</id>
+        <link href="https://www.bilibili.com/video/av299955176"/>
+        <updated>2022-06-10T18:29:22.000Z</updated>
+        <summary type="html"><![CDATA[当电鱼被明令禁止后，没想到电蚯蚓重出江湖，平平无奇的地龙甚至还遭遇灭绝式屠杀？
+
+
+Tags:原创,自制,科学,中国,学习,科普纪录,蚯蚓]]></summary>
+        <author>
+            <name>科学大魔王</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[营销号的双标迷惑行为大赏。]]></title>
         <id>https://www.bilibili.com/video/av469973713</id>
         <link href="https://www.bilibili.com/video/av469973713"/>
@@ -3671,6 +5740,44 @@ Tags:马格南,开箱,技能提升营,技能提升营2022第二季]]></summary>
 Tags:科普,迷惑行为大赏]]></summary>
         <author>
             <name>中国食品报融媒体</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【母婴血型不合】免疫系统的杀婴bug？一场母子”相克”的诅咒【灰细胞】]]></title>
+        <id>https://www.bilibili.com/video/av982470913</id>
+        <link href="https://www.bilibili.com/video/av982470913"/>
+        <updated>2022-06-10T18:01:13.000Z</updated>
+        <summary type="html"><![CDATA[在小灰妈妈的介绍下，我们才知道，妇产科有这样一种常见的可怕疾病
+在二胎妈妈的身上多发
+概率高达20%—30%？
+它会让妈妈在无形中和自己的宝宝‘相克’
+甚至默默地将宝宝杀死...
+
+这到底是怎么回事？
+应该怎么预防？
+这个病竟然还能影响择偶？
+今天就快来和小黑灰一起了解一下，母婴血型不合是怎么回事吧！
+
+欢迎来到母婴大战系列，换个角度了解生命诞生：
+https://space.bilibili.com/157364998/channel/detail?cid=152507
+
+
+Tags:科学,生命,科普,怀孕,自然,健康,血型,生物,灰细胞,万物研究所]]></summary>
+        <author>
+            <name>灰细胞</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[鉴定一下比石楠花更成熟的味道]]></title>
+        <id>https://www.bilibili.com/video/av384787682</id>
+        <link href="https://www.bilibili.com/video/av384787682"/>
+        <updated>2022-06-10T18:00:36.000Z</updated>
+        <summary type="html"><![CDATA[-
+
+
+Tags:科普,鉴定,植物,自然,石楠花,万物研究所]]></summary>
+        <author>
+            <name>奶爸的植物科普日常</name>
         </author>
     </entry>
     <entry>
@@ -3714,6 +5821,19 @@ Tags:原创,自制,科学,教育,科普,化学,学习,实验,自然,科普纪录
         <summary type="html"><![CDATA[基于CRISPR的新地图将每个人类基因与其功能联系起来]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[试着去理解你的意识 会有很多收获【思维实验室】]]></title>
+        <id>https://www.bilibili.com/video/av342260367</id>
+        <link href="https://www.bilibili.com/video/av342260367"/>
+        <updated>2022-06-10T17:30:00.000Z</updated>
+        <summary type="html"><![CDATA[从细胞层面解释意识，看看大脑如何产生信息，分析信息，创造我们的一举一动 喜怒哀乐
+
+
+Tags:科学,生命,自然,大脑,生物,意识]]></summary>
+        <author>
+            <name>思维实验室</name>
         </author>
     </entry>
     <entry>
@@ -3813,6 +5933,19 @@ Tags:猎奇,搞笑,科普,水果,知识,巧克力,可可,vlog,水果猎人杨晓
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[武汉出现“龙虱”泛滥现象？广东卖到400一斤，龙虱真的能吃吗？]]></title>
+        <id>https://www.bilibili.com/video/av727468897</id>
+        <link href="https://www.bilibili.com/video/av727468897"/>
+        <updated>2022-06-10T16:20:03.000Z</updated>
+        <summary type="html"><![CDATA[武汉出现“龙虱”泛滥现象？广东卖到400一斤，龙虱真的能吃吗？
+
+
+Tags:科普,万物研究所]]></summary>
+        <author>
+            <name>黑猫聊科学</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Insteon smart homes resurrected as abruptly as they were bricked]]></title>
         <id>https://arstechnica.com/?p=1860128</id>
         <link href="https://arstechnica.com/?p=1860128"/>
@@ -3830,6 +5963,16 @@ Tags:猎奇,搞笑,科普,水果,知识,巧克力,可可,vlog,水果猎人杨晓
         <summary type="html"><![CDATA[Hundreds of prospective employees have been left adrift, including some who were counting on the position for their visas.]]></summary>
         <author>
             <name>Arielle Pardes</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[揭秘大型魔术:人体悬浮魔术太神奇了！多年疑惑终于解开]]></title>
+        <id>https://www.bilibili.com/video/av427456730</id>
+        <link href="https://www.bilibili.com/video/av427456730"/>
+        <updated>2022-06-10T15:36:06.000Z</updated>
+        <summary type="html"><![CDATA[Tags:魔术,街头魔术,魔术揭秘,魔术教学,魔术表演]]></summary>
+        <author>
+            <name>背心魔术</name>
         </author>
     </entry>
     <entry>
@@ -3933,6 +6076,19 @@ Tags:猎奇,搞笑,科普,水果,知识,巧克力,可可,vlog,水果猎人杨晓
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[把动画放进VR中观看]]></title>
+        <id>https://www.bilibili.com/video/av384939692</id>
+        <link href="https://www.bilibili.com/video/av384939692"/>
+        <updated>2022-06-10T13:33:16.000Z</updated>
+        <summary type="html"><![CDATA[为了全方位观赏舞蹈，要把小昕放进VR里才可以。
+
+
+Tags:舞蹈,3D,建模,VR,渲染,UE4,VR的快乐你根本想象不到]]></summary>
+        <author>
+            <name>艺小小小昕</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Big Tech Has Become a Creature of the Swamp]]></title>
         <id>62a239f30f82204cab5a3290</id>
         <link href="https://www.wired.com/story/big-tech-has-become-a-creature-of-the-swamp/"/>
@@ -3990,6 +6146,29 @@ Tags:猎奇,搞笑,科普,水果,知识,巧克力,可可,vlog,水果猎人杨晓
         <summary type="html"><![CDATA[Great port selection, clean looks, and a more vibrant picture than normal IPS.]]></summary>
         <author>
             <name>Scharon Harding</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[中国百家姓排行榜，你的姓氏有多少人，在全国排名第几？]]></title>
+        <id>https://www.bilibili.com/video/av812278273</id>
+        <link href="https://www.bilibili.com/video/av812278273"/>
+        <updated>2022-06-10T11:20:00.000Z</updated>
+        <summary type="html"><![CDATA[最新百家姓排行榜，你的姓氏有多少人，在全国排名第几？
+
+
+Tags:排行榜,科普,人口,百家姓]]></summary>
+        <author>
+            <name>大鱼数据库</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[美版知乎热议：什么事情在美国是政治不正确的，但在中国没问题？]]></title>
+        <id>https://www.bilibili.com/video/av769874017</id>
+        <link href="https://www.bilibili.com/video/av769874017"/>
+        <updated>2022-06-10T11:10:20.000Z</updated>
+        <summary type="html"><![CDATA[Tags:中国,外国人,老外看中国,外国人看中国,外国网友,网友评论,评论翻译,外国网友评论,美国知乎,万物研究所]]></summary>
+        <author>
+            <name>老外视角看中国</name>
         </author>
     </entry>
     <entry>
@@ -4480,6 +6659,46 @@ via: https://www.debugpoint.com/2022/06/linux-kernel-5-19-rc1/
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Flutter更改输入框内容，onChanged接受不到回调？]]></title>
+        <id>https://juejin.cn/post/7107531157578711047</id>
+        <link href="https://juejin.cn/post/7107531157578711047"/>
+        <updated>2022-06-10T00:51:57.000Z</updated>
+        <summary type="html"><![CDATA[持续创作，加速成长！这是我参与「掘金日新计划 · 6 月更文挑战」的第3天，点击查看活动详情。
+问题
+在做搜索输入框时，用户输入文本之后，用户如果想更改搜索内容那么我们都会有一个手动清空数据的按钮，在清空数据时，在onChanged(text)回调中没有收到回调。
+原因
+我们先看下问题代码,如果调用_controller.clear();清空数据，那么在onChanged里是接受不到回调的。为什么会出现这种情况，这就需要我们去查看下源码了。
+示例代码：
+TextEditingController _controller = TextEditingController();
+
+TextField(
+  cursorColor: Colors.blue,
+  controller: _controller,
+  autocorrect: true,
+  onChanged: (text){
+    print("onChanged:$text");
+  },
+  decoration: InputDecoration(
+      labelText: "关键字",
+      hintText: "请输入内容",
+      suffixIcon: InkWell(
+        child: Icon(Icons.close),
+        onTap: (){
+          _controller.clear();
+        },
+      ),
+      // icon: Icon(Icons.add),
+      hintStyle: TextStyle(color: Colors.grey)),
+   ),
+
+我们点进去onChanged的源码进去看下，
+
+EditableText组件并在这个组件里传递了这个参数。EditableText也是…]]></summary>
+        <author>
+            <name>老李code</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[二胡弓摩擦一下，就沙子在金属板上变化莫测，并有序排列。好神奇！]]></title>
         <id>https://www.bilibili.com/video/av939805014</id>
         <link href="https://www.bilibili.com/video/av939805014"/>
@@ -4552,6 +6771,22 @@ Tags:科学,科普,物理,科学很可爱,万物研究所]]></summary>
         <summary type="html"><![CDATA[From Aliens to Cuphead and everything in between.]]></summary>
         <author>
             <name>Kyle Orland</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何在Flutter中实现任何UI]]></title>
+        <id>https://juejin.cn/post/7107484153150439461</id>
+        <link href="https://juejin.cn/post/7107484153150439461"/>
+        <updated>2022-06-09T21:48:55.000Z</updated>
+        <summary type="html"><![CDATA[在这篇文章中，您将学习如何将任何用户界面图像、作品或屏幕转换为Flutter代码。
+这不是一个关于建立一个应用程序的教程。相反，它是一个指南，将帮助您将遇到的任何用户界面实现到您已经拥有的应用程序中。本教程还解释了Flutter中各种各样的UI概念。
+什么是Flutter？
+Flutter是谷歌的一个开源框架，用于从一个代码库中构建漂亮的、本地编译的、多平台的应用程序。- (来源：Flutter.dev)
+在Flutter中，与大多数框架相反，Dart是你用来编码的唯一编程语言。这是Flutter的一个未被充分强调的好处。特别是对于一个可以构建桌面、移动和网络应用的工具。
+大多数UI平台使用不止一种语言。例如，在前端Web开发中，你必须写HTML、CSS和JavaScript。对于Android，你必须写Kotlin（或Java）和XML。但在Flutter中，只有一种语言。Dart。
+再加上只有一种编程语言的好处，Flutter很简单，因为Flutter中的所有东西都是一个widget。比如说 [AnimatedWidget](https://api.flutter.dev/flutter/widgets/AnimatedWidget-class.html), [BottomNavigationBar](https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html), [Container](https://api.flutter.dev/flutter/widgets/Container-class.html), [Drawer](https://api.flutter.dev/flutter/material/Drawer-class.html), [ElevatedButton](ht…]]></summary>
+        <author>
+            <name>迪鲁宾</name>
         </author>
     </entry>
     <entry>
@@ -4681,6 +6916,23 @@ Tags:3D,激光,科普,健康,手术,痔疮]]></summary>
         <summary type="html"><![CDATA[Agency is commissioning a report on how to get data on "unidentified aerial phenomena."]]></summary>
         <author>
             <name>John Timmer</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[揭秘kotlin协程的实现原理]]></title>
+        <id>https://juejin.cn/post/7107453032400420871</id>
+        <link href="https://juejin.cn/post/7107453032400420871"/>
+        <updated>2022-06-09T19:48:59.000Z</updated>
+        <summary type="html"><![CDATA[前言
+上一篇文章：揭秘kotlin协程中的CoroutineContext
+上一篇文章中介绍了kotlin协程的CoroutineContext的主要组成以及它的结构，kotlin协程的CoroutineContext它是一个K-V数据结构，保存了跟协程相关联的运行上下文例如协程的线程调度策略、异常处理逻辑、日志记录、运行标识、名字等，本篇文章是作为上一篇文章的补充，在使用kotlin协程一年多之后，对kotlin协程的实现有了新的认识，本文会深入介绍kotlin协程的实现原理，例如Continuation和CPS，suspend方法的含义以及背后的原理，协程是如何被创建、启动、调度，同时使用kotlin-stdlib提供的intrinsics原语实现一个简化版的协程，从而帮助我们更好地理解kotlin协程的整个设计思想，kotlin协程的源码被放在了两个库中，一部分是在kotlin标准库kotlin-stdlib中，一部分是在kotlin协程官方实现库kotlinx-coroutines中，其中kotlinx-coroutines是基于kotlin-stdlib的，kotlin-stdlib库提供了实现协程所需的基本原语。
+本文涉及到的源码都是基于kotlin1.4版本
+Continuation和CPS
+在讲解协程的原理之前，我们先来了解一下Continuation和CPS，理解了这两个术语，那么后面对于协程的理解就非常容易了：
+Continuation
+Continuation延续在计算机中表示程序剩余的部分，它保存了程序从某一点开始的执行状态，并能够在稍后的时间让程序回到这一点恢复执行，所以它是一种能够保存程序执行状态的数据结构，像break、continue这类控制流操作符一样可以暴露给用户使用，用户通过操作Continuation来控制程序的执行顺序，Contin…]]></summary>
+        <author>
+            <name>rain9155</name>
         </author>
     </entry>
     <entry>
@@ -4875,6 +7127,34 @@ Tags:地球,植物,自然,种子,生物,中国西南野生生物种质资源库,
 Tags:技术宅,剪辑,知识,影视,综艺,后期,摄影,多机位,影视飓风,技能提升营,技能提升营2022第二季]]></summary>
         <author>
             <name>影视飓风</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【Flutter&Flame游戏 - 拾伍】粒子系统 | ParticleSystemComponent]]></title>
+        <id>https://juejin.cn/post/7107404963781246990</id>
+        <link href="https://juejin.cn/post/7107404963781246990"/>
+        <updated>2022-06-09T16:42:27.000Z</updated>
+        <summary type="html"><![CDATA[theme: cyanosis
+持续创作，加速成长！这是我参与「掘金日新计划 · 6 月更文挑战」的第 16 天，点击查看活动详情
+前言
+这是一套 张风捷特烈 出品的 Flutter&Flame 系列教程，发布于掘金社区。如果你在其他平台看到本文，可以根据对于链接移步到掘金中查看。因为文章可能会更新、修正，一切以掘金文章版本为准。本系列源码于 【toly_game】 ，如果本系列对你有所帮助，希望点赞支持，本系列文章一览：
+【Flutter&Flame 游戏 - 壹】开启新世界的大门 
+【Flutter&Flame 游戏 - 贰】操纵杆与角色移动
+【Flutter&Flame 游戏 - 叁】键盘事件与手势操作
+【Flutter&Flame 游戏 - 肆】精灵图片加载方式 
+【Flutter&Flame 游戏 - 伍】Canvas 参上 | 角色的血条
+【Flutter&Flame 游戏 - 陆】暴击 Dash  | 文字构件的使用
+【Flutter&Flame 游戏 - 柒】人随指动 | 动画点触与移动
+【Flutter&Flame游戏 - 捌】装弹完毕 | 角色武器发射 
+【Flutter&Flame游戏 - 玖】探索构件 | Component 是什么
+【Flutter&Flame游戏 - 拾】探索构件 | Component 生命周期回调
+【Flutter&Flame游戏 - 拾壹】探索构件 | Component 使用细节
+【Flutter&Flame游戏 - 拾贰】探索构件 | 角色管理
+【Flutter&Flame游戏 - 拾叁】碰撞检测 |  CollisionCallbacks
+【Flutter&Flame游戏 - 拾肆】碰撞检测 | 之前代码优化
+【Flutter&Flame游戏 - 拾伍】粒子系统 | ParticleSystemComponent (本…]]></summary>
+        <author>
+            <name>张风捷特烈</name>
         </author>
     </entry>
     <entry>
@@ -6409,6 +8689,49 @@ okhttp（了解拦截器的使用）
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[为什么LiveData的观察者必须处于主线程中]]></title>
+        <id>https://juejin.cn/post/7106414238888886302</id>
+        <link href="https://juejin.cn/post/7106414238888886302"/>
+        <updated>2022-06-07T00:37:06.000Z</updated>
+        <summary type="html"><![CDATA[highlight: androidstudio
+theme: hydrogen
+前言
+在我的上一篇为什么Google要将LiveData设计成粘性的文章中，有一位爱思考的小伙伴留下了这么一个评论。
+
+在看到这个评论后，我产生了两个疑问？
+LiveData的观察者对象必须得处于主线程中吗？
+究竟是什么原因让Google这么设计，正是这位小伙伴所述的原因吗？
+由此有了这篇文章，再次感谢这位小伙伴的留言探讨。
+观察者对象必须得处于主线程中吗？
+先说答案：
+是的，LiveData的观察者对象必须处于主线程中。
+找到这个答案的方法也很简单，我们直接查看LiveData源码中的注册观察者方法即可。
+@MainThread
+public void observe(@NonNull LifecycleOwner owner, @NonNull Observer observer) {
+    assertMainThread("observe");
+    ...省略代码...
+}
+
+@MainThread
+public void observeForever(@NonNull Observer observer) {
+    assertMainThread("observeForever");
+    ...省略代码...
+}
+
+@MainThread
+public void removeObserver(@NonNull final Observer observer) {
+    assertMainThread("removeObserver");
+    ...省略代码...
+}
+
+@MainThread
+public void removeObservers(@NonNull final LifecycleOwner owner) {
+    assertMainThrea…]]></summary>
+        <author>
+            <name>Jere_Chen</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Ultrasonic payments]]></title>
         <id>https://dev.to/stripe/ultrasonic-payments-2958</id>
         <link href="https://dev.to/stripe/ultrasonic-payments-2958"/>
@@ -7241,6 +9564,16 @@ Configuration之后竟然有个很慢的东西，占据了大量的耗时
         <summary type="html"><![CDATA[Plus: The US admits to cyber operations supporting Ukraine, SCOTUS investigates its own, and a Michael Flynn surveillance mystery is solved.]]></summary>
         <author>
             <name>Andrew Couts</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Exception handling and logging in dart/Flutter - Talker]]></title>
+        <id>https://dev.to/frezyx/exception-handling-and-logging-in-dartflutter-talker-25o4</id>
+        <link href="https://dev.to/frezyx/exception-handling-and-logging-in-dartflutter-talker-25o4"/>
+        <updated>2022-06-04T12:12:59.000Z</updated>
+        <summary type="html"><![CDATA[#flutter #dart #opensource #android]]></summary>
+        <author>
+            <name>Stanislav Ilin</name>
         </author>
     </entry>
     <entry>
@@ -8413,216 +10746,6 @@ Matrix 是少数派的写作社区，我们主张分享真实的产品体验，
         <summary type="html"><![CDATA[匿名捐赠者为乌瓦尔德枪击案受害者支付所有丧葬费用]]></summary>
         <author>
             <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[辉煌的头版]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/v0culz/brilliant_front_page/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/v0culz/brilliant_front_page/?score=76210&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Fv0culz%2Fbrilliant_front_page%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Fv0culz%2Fbrilliant_front_page%2F&amp;channel=WhitePeopleTwitter&amp;sensitive=false"/>
-        <updated>2022-05-29T22:09:40.000Z</updated>
-        <summary type="html"><![CDATA[辉煌的头版]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[女士们，先生们，我介绍美国]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/Unexpected/comments/v0b801/ladies_gentlemen_i_present_america/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/Unexpected/comments/v0b801/ladies_gentlemen_i_present_america/?score=76637&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FUnexpected%2Fcomments%2Fv0b801%2Fladies_gentlemen_i_present_america%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FUnexpected%2Fcomments%2Fv0b801%2Fladies_gentlemen_i_present_america%2F&amp;channel=Unexpected&amp;sensitive=false"/>
-        <updated>2022-05-29T22:09:40.000Z</updated>
-        <summary type="html"><![CDATA[女士们，先生们，我介绍美国]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[电视台为警察所做的公关工作很疯狂]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/v0ad7u/the_pr_work_tv_has_done_for_cops_is_wild/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/v0ad7u/the_pr_work_tv_has_done_for_cops_is_wild/?score=75604&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Fv0ad7u%2Fthe_pr_work_tv_has_done_for_cops_is_wild%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Fv0ad7u%2Fthe_pr_work_tv_has_done_for_cops_is_wild%2F&amp;channel=WhitePeopleTwitter&amp;sensitive=false"/>
-        <updated>2022-05-29T20:41:56.000Z</updated>
-        <summary type="html"><![CDATA[电视台为警察所做的公关工作很疯狂]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[我的女孩]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/meirl/comments/v011mu/meirl/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/meirl/comments/v011mu/meirl/?score=75286&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmeirl%2Fcomments%2Fv011mu%2Fmeirl%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmeirl%2Fcomments%2Fv011mu%2Fmeirl%2F&amp;channel=meirl&amp;sensitive=false"/>
-        <updated>2022-05-29T20:21:22.000Z</updated>
-        <summary type="html"><![CDATA[我的女孩]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[当他们发现他是白人时的惊讶]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/v09pxl/their_surprise_when_they_find_out_hes_white/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/v09pxl/their_surprise_when_they_find_out_hes_white/?score=75714&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Fv09pxl%2Ftheir_surprise_when_they_find_out_hes_white%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Fv09pxl%2Ftheir_surprise_when_they_find_out_hes_white%2F&amp;channel=MadeMeSmile&amp;sensitive=false"/>
-        <updated>2022-05-29T17:57:18.000Z</updated>
-        <summary type="html"><![CDATA[当他们发现他是白人时的惊讶]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[这的确是升级了!]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/memes/comments/v07zg1/this_escalated_indeed/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/memes/comments/v07zg1/this_escalated_indeed/?score=76241&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Fv07zg1%2Fthis_escalated_indeed%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fmemes%2Fcomments%2Fv07zg1%2Fthis_escalated_indeed%2F&amp;channel=memes&amp;sensitive=false"/>
-        <updated>2022-05-29T16:04:44.000Z</updated>
-        <summary type="html"><![CDATA[这的确是升级了!]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[这个人用一辆小遥控车给流浪动物送食物。]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/aww/comments/v00dos/this_guy_delivers_food_to_stray_animals_with_a/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/aww/comments/v00dos/this_guy_delivers_food_to_stray_animals_with_a/?score=75889&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Faww%2Fcomments%2Fv00dos%2Fthis_guy_delivers_food_to_stray_animals_with_a%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Faww%2Fcomments%2Fv00dos%2Fthis_guy_delivers_food_to_stray_animals_with_a%2F&amp;channel=aww&amp;sensitive=false"/>
-        <updated>2022-05-29T14:44:41.000Z</updated>
-        <summary type="html"><![CDATA[这个人用一辆小遥控车给流浪动物送食物。]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[新娘对所有和她一起工作的孩子都参加她的婚礼感到惊讶。]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/uzz0tv/bride_gets_surprised_with_all_the_children_she/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/MadeMeSmile/comments/uzz0tv/bride_gets_surprised_with_all_the_children_she/?score=75525&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Fuzz0tv%2Fbride_gets_surprised_with_all_the_children_she%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2Fuzz0tv%2Fbride_gets_surprised_with_all_the_children_she%2F&amp;channel=MadeMeSmile&amp;sensitive=false"/>
-        <updated>2022-05-29T13:40:45.000Z</updated>
-        <summary type="html"><![CDATA[新娘对所有和她一起工作的孩子都参加她的婚礼感到惊讶。]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[乌克兰情报主管 "完全确认 "普京患有癌症]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/worldnews/comments/v00tb8/ukraines_intelligence_chief_fully_confirms/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/worldnews/comments/v00tb8/ukraines_intelligence_chief_fully_confirms/?score=75592&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fworldnews%2Fcomments%2Fv00tb8%2Fukraines_intelligence_chief_fully_confirms%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fworldnews%2Fcomments%2Fv00tb8%2Fukraines_intelligence_chief_fully_confirms%2F&amp;channel=worldnews&amp;sensitive=false"/>
-        <updated>2022-05-29T13:40:45.000Z</updated>
-        <summary type="html"><![CDATA[乌克兰情报主管 "完全确认 "普京患有癌症]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[考特尼-洛夫早在2005年就冒着职业生涯的风险揭露了哈维-温斯坦。]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/v02cce/courtney_love_risking_her_career_to_expose_harvey/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/v02cce/courtney_love_risking_her_career_to_expose_harvey/?score=76519&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Fv02cce%2Fcourtney_love_risking_her_career_to_expose_harvey%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Fv02cce%2Fcourtney_love_risking_her_career_to_expose_harvey%2F&amp;channel=nextfuckinglevel&amp;sensitive=false"/>
-        <updated>2022-05-29T13:13:51.000Z</updated>
-        <summary type="html"><![CDATA[考特尼-洛夫早在2005年就冒着职业生涯的风险揭露了哈维-温斯坦。]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[她的名字叫Michelle Snow，当时她快8岁了。]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/uzysdi/her_name_was_michelle_snow_and_she_was_almost_8/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/WhitePeopleTwitter/comments/uzysdi/her_name_was_michelle_snow_and_she_was_almost_8/?score=76158&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Fuzysdi%2Fher_name_was_michelle_snow_and_she_was_almost_8%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FWhitePeopleTwitter%2Fcomments%2Fuzysdi%2Fher_name_was_michelle_snow_and_she_was_almost_8%2F&amp;channel=WhitePeopleTwitter&amp;sensitive=false"/>
-        <updated>2022-05-29T12:41:56.000Z</updated>
-        <summary type="html"><![CDATA[她的名字叫Michelle Snow，当时她快8岁了。]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[给我看看]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/facepalm/comments/uzz4yd/show_me/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/facepalm/comments/uzz4yd/show_me/?score=75082&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffacepalm%2Fcomments%2Fuzz4yd%2Fshow_me%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffacepalm%2Fcomments%2Fuzz4yd%2Fshow_me%2F&amp;channel=facepalm&amp;sensitive=false"/>
-        <updated>2022-05-29T12:05:59.000Z</updated>
-        <summary type="html"><![CDATA[给我看看]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Let’s Get Our Shit Together—Literally]]></title>
-        <id>6290f5b59b979f5548e97c92</id>
-        <link href="https://www.wired.com/story/lets-get-our-shit-together-literally/"/>
-        <updated>2022-05-29T12:00:00.000Z</updated>
-        <summary type="html"><![CDATA[It's time to build the Poop Ark, a centralized collection of the entire animal kingdom's feces, for research, de-extinction, and more.]]></summary>
-        <author>
-            <name>Jenny Morber</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[不掺杂任何杂质的反应]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/gifs/comments/uzwo43/unadulterated_reaction/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/gifs/comments/uzwo43/unadulterated_reaction/?score=75792&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fgifs%2Fcomments%2Fuzwo43%2Funadulterated_reaction%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fgifs%2Fcomments%2Fuzwo43%2Funadulterated_reaction%2F&amp;channel=gifs&amp;sensitive=false"/>
-        <updated>2022-05-29T11:40:05.000Z</updated>
-        <summary type="html"><![CDATA[不掺杂任何杂质的反应]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Understanding CSRF Attacks]]></title>
-        <id>https://dev.to/zellwk/understanding-csrf-attacks-36ao</id>
-        <link href="https://dev.to/zellwk/understanding-csrf-attacks-36ao"/>
-        <updated>2022-05-29T11:39:31.000Z</updated>
-        <summary type="html"><![CDATA[#security #node #express #javascript]]></summary>
-        <author>
-            <name>Zell Liew 🤗</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[我父亲做了40年的公路卡车司机，从来没有发生过事故......直到今天。]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/IdiotsInCars/comments/v00u7x/my_dad_has_been_an_over_the_road_trucker_for_40/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/IdiotsInCars/comments/v00u7x/my_dad_has_been_an_over_the_road_trucker_for_40/?score=76170&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FIdiotsInCars%2Fcomments%2Fv00u7x%2Fmy_dad_has_been_an_over_the_road_trucker_for_40%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2FIdiotsInCars%2Fcomments%2Fv00u7x%2Fmy_dad_has_been_an_over_the_road_trucker_for_40%2F&amp;channel=IdiotsInCars&amp;sensitive=false"/>
-        <updated>2022-05-29T11:19:50.000Z</updated>
-        <summary type="html"><![CDATA[我父亲做了40年的公路卡车司机，从来没有发生过事故......直到今天。]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Elon Musk’s Twitter Plans Would Mean Less Free Speech for Many]]></title>
-        <id>627bec874eacca8cb6d6f5b0</id>
-        <link href="https://www.wired.com/story/elon-musk-free-speech-twitter-global-censorship/"/>
-        <updated>2022-05-29T11:00:00.000Z</updated>
-        <summary type="html"><![CDATA[The platform has a history of standing up to governments. Its billionaire suitor wants to follow their rules to the letter.]]></summary>
-        <author>
-            <name>Vittoria Elliott</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[警方的不作为成为乌瓦尔德枪击案调查的焦点]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/news/comments/uzssqd/police_inaction_moves_to_center_of_uvalde/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/news/comments/uzssqd/police_inaction_moves_to_center_of_uvalde/?score=75176&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnews%2Fcomments%2Fuzssqd%2Fpolice_inaction_moves_to_center_of_uvalde%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnews%2Fcomments%2Fuzssqd%2Fpolice_inaction_moves_to_center_of_uvalde%2F&amp;channel=news&amp;sensitive=false"/>
-        <updated>2022-05-29T10:32:08.000Z</updated>
-        <summary type="html"><![CDATA[警方的不作为成为乌瓦尔德枪击案调查的焦点]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Two lines of CSS that boosts 7x rendering performance!]]></title>
-        <id>https://dev.to/mnathani/two-lines-of-css-that-boosts-7x-rendering-performance-4mjd</id>
-        <link href="https://dev.to/mnathani/two-lines-of-css-that-boosts-7x-rendering-performance-4mjd"/>
-        <updated>2022-05-29T09:45:04.000Z</updated>
-        <summary type="html"><![CDATA[#webdev #css #performance #html]]></summary>
-        <author>
-            <name>Murtaza Nathani</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[摩托车手追赶肇事逃逸的POS机司机]]></title>
-        <id>https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/uzkpae/motorcyclist_chases_after_pos_driver_who_fled/</id>
-        <link href="https://reddit.buzzing.cc/reddit/r/nextfuckinglevel/comments/uzkpae/motorcyclist_chases_after_pos_driver_who_fled/?score=75038&amp;original_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Fuzkpae%2Fmotorcyclist_chases_after_pos_driver_who_fled%2F&amp;discuss_url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnextfuckinglevel%2Fcomments%2Fuzkpae%2Fmotorcyclist_chases_after_pos_driver_who_fled%2F&amp;channel=nextfuckinglevel&amp;sensitive=false"/>
-        <updated>2022-05-29T07:57:10.000Z</updated>
-        <summary type="html"><![CDATA[摩托车手追赶肇事逃逸的POS机司机]]></summary>
-        <author>
-            <name>Reddit 热门</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The Complete Windows Developer Setup Guide]]></title>
-        <id>https://dev.to/stephanlamoureux/the-complete-windows-developer-setup-guide-fie</id>
-        <link href="https://dev.to/stephanlamoureux/the-complete-windows-developer-setup-guide-fie"/>
-        <updated>2022-05-29T00:01:09.000Z</updated>
-        <summary type="html"><![CDATA[#webdev #beginners #windows #tutorial]]></summary>
-        <author>
-            <name>Stephan Lamoureux</name>
         </author>
     </entry>
 </feed>
