@@ -2,10 +2,1848 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gsyx666.github.io/action-osmosfeed/index.html</id>
     <title>gsyx::feed</title>
-    <updated>2022-07-02T10:39:21.194Z</updated>
+    <updated>2022-07-03T10:39:44.276Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://gsyx666.github.io/action-osmosfeed/index.html"/>
     <link rel="self" href="https://gsyx666.github.io/action-osmosfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Self-Host your own Ghost Blog]]></title>
+        <id>https://dev.to/amreshsinha/self-host-your-own-ghost-blog-1n96</id>
+        <link href="https://dev.to/amreshsinha/self-host-your-own-ghost-blog-1n96"/>
+        <updated>2022-07-03T10:04:58.000Z</updated>
+        <summary type="html"><![CDATA[We are going to install Ghost CMS with Mysql database in Docker and reverse proxy it with the help of Traefik.
+A domain name.
+(Optional) If you want to have a newsletter then you need a SMTP server. I would suggest you Mailgun as it goes pretty well with Ghost.
+A server with Traefik installed. Follow this guide for hosting Traefik on your server.
+Directory Tree:
+├── ghost-blog
+│   ├── docker-compose.yml
+│   └── blog
+│       ├── config.production.json
+│       └── content
+
+mkdir -p ghost-blog/blog/content && \
+  cd ghost-blog && \
+  touch ./blog/config.production.json && \
+  nano ./docker-compose.yml
+
+Paste the following to the docker-compose.yml
+version: '3.7'
+
+services:
+  ghost:
+    image: ghost:5.2.3
+    restart: always
+    depends_on:
+      - db
+    environment:
+      NODE_ENV: productio…]]></summary>
+        <author>
+            <name>Amresh Prasad Sinha</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[使用 Mac 笔记本 和 小米电视盒子，有没有办法可以快捷的从电视上播放电脑上下载的影视内容？]]></title>
+        <id>863781</id>
+        <link href="https://www.v2ex.com/t/863781"/>
+        <updated>2022-07-03T09:53:36.000Z</updated>
+        <summary type="html"><![CDATA[scratbai:]]></summary>
+        <author>
+            <name>scratbai</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[求推荐一个，可以开车，不审查群组内容的聊天 app]]></title>
+        <id>863780</id>
+        <link href="https://www.v2ex.com/t/863780"/>
+        <updated>2022-07-03T09:51:10.000Z</updated>
+        <summary type="html"><![CDATA[linxuanv: TG 最近不知道为什么，开个车，创的群，只要转发别人的视频，或者自己上传视频
+就秒炸，一小时不到就没
+甚至我的小号 B ，创个群，拉我大号倒个资源，我小号 B 倒完资源退出群，群里就我大号一个，然后过一会我小号 B 都会被封
+还有别的可以开车的 app 推荐吗？
+类似以前的 potato 那种。但是现在 potato 好像也从良了]]></summary>
+        <author>
+            <name>linxuanv</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[Spring Boot + Datahub] 阿里云流数据处理平台 基于 2.15 版本的数据读写 [上]]]></title>
+        <id>863778</id>
+        <link href="https://www.v2ex.com/t/863778"/>
+        <updated>2022-07-03T09:48:39.000Z</updated>
+        <summary type="html"><![CDATA[2NUT: just google it]]></summary>
+        <author>
+            <name>2NUT</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[远程]长期招聘 数据湖 开发]]></title>
+        <id>863777</id>
+        <link href="https://www.v2ex.com/t/863777"/>
+        <updated>2022-07-03T09:41:04.000Z</updated>
+        <summary type="html"><![CDATA[vissul: 要求熟悉 hudi ，flink ，spark ，presto ，superset ，hadoop
+可以远程，按项目方付费或者按月付费
+熟悉 k8s 优先考虑
+有意发简历到 290885571@qq.com]]></summary>
+        <author>
+            <name>vissul</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何通过脚本启动 IINA-Danmaku 来看 B 站视频（带弹幕）？]]></title>
+        <id>863776</id>
+        <link href="https://www.v2ex.com/t/863776"/>
+        <updated>2022-07-03T09:40:08.000Z</updated>
+        <summary type="html"><![CDATA[HanningWu: 
+目前已知的是利用IINA+配合IINA-Danmaku（增加弹幕功能的IINA播放器）来看带弹幕的视频。
+
+可是每次都要通过 IINA+界面搜索 b 站视频，然后选择清晰度，太麻烦了。希望能实现比如说下面这种效果，一行命令直接打开
+#!/bin/bash
+iina-danmaku "https://www.bilibili.com/video/BV1134y1L7QX"]]></summary>
+        <author>
+            <name>HanningWu</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[在哪里买得到 Android 6.0 手机？]]></title>
+        <id>863775</id>
+        <link href="https://www.v2ex.com/t/863775"/>
+        <updated>2022-07-03T09:37:49.000Z</updated>
+        <summary type="html"><![CDATA[Horance: 
+想抓 app 包，本来想用太极框架，捣鼓了下没捣鼓出来。]]></summary>
+        <author>
+            <name>Horance</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[termux+ksweb 内网穿透方案，求推荐]]></title>
+        <id>863774</id>
+        <link href="https://www.v2ex.com/t/863774"/>
+        <updated>2022-07-03T09:35:38.000Z</updated>
+        <summary type="html"><![CDATA[miaoge520: 
+放假三天，闲来无事，折腾了一下 ksweb ，我的手机是没有 root 的，所以我尝试更改端口为 80 ，试了一下不起作用，所以有没有大佬推荐一下 termux 的内网穿透方案啊，nps,frp 的不要，因为我试了，8080 端口直接跳转到 nps 登录主页了]]></summary>
+        <author>
+            <name>miaoge520</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[请问有哥们玩这个 discord 吗？有没有群组拉我一下，想体验一下]]></title>
+        <id>863773</id>
+        <link href="https://www.v2ex.com/t/863773"/>
+        <updated>2022-07-03T09:31:20.000Z</updated>
+        <summary type="html"><![CDATA[sijiruchun: 
+目前是单机模式，有没有群组推荐一下]]></summary>
+        <author>
+            <name>sijiruchun</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[请问大家如何看待 [刷版本号] 的行为？ 13 天=13 个新版本]]></title>
+        <id>863770</id>
+        <link href="https://www.v2ex.com/t/863770"/>
+        <updated>2022-07-03T09:15:39.000Z</updated>
+        <summary type="html"><![CDATA[HelloJoker1: 
+首先感谢他们为非盈利项目的无偿付出，但修复漏洞和刷版本号是两回事，一个版本可以修复 N 个漏洞，N 个漏洞也可以分 M 个版本分别发布。
+对照组 A：曾经间隔约 11 个月更新一个版本，接近废弃。
+对照组 B：4 月份 7 天更新 6 个版本。
+对照组 C：5 月份 6 天更新 7 个版本。
+前普通用户，发现这个插件的在线更新功能从始至终都是个摆设，修复了几十个版本还没修好？受不了折腾已卸载，不能说你喂啥我都吃。  
+最后：请问一个用爱发电的非盈利项目刷版本号的意义在哪里？自我感动？
+靡不有初、鲜克有终，2018 年发布第一版的初心早就被扔了吧？
+[每天更新一个版本不能算刷版本号...修复漏洞！程序员的事，能算刷么？] 
+[url=https://imgtu.com/i/XiEnTU][img]https://s1.ax1x.com/2022/05/24/XiEnTU.png[/img][/url]]]></summary>
+        <author>
+            <name>HelloJoker1</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[准备卸了网易云音乐了]]></title>
+        <id>863769</id>
+        <link href="https://www.v2ex.com/t/863769"/>
+        <updated>2022-07-03T09:15:21.000Z</updated>
+        <summary type="html"><![CDATA[iovekkk: 不知不觉网易云音乐会员到期了
+然后才发现这 app 原来还有开屏广告
+对于打开 app 之后还要点掉开屏广告这个操作，十分的不适应
+主要是每天在手机打开网易云 app 的场景基本上都是上班路上和下班路上
+不是走路要看路就是在按电梯什么的
+不是很方便
+现在听歌基本上都是听老歌，歌单一年都更新不了几首
+所以现在决定卸载网易云音乐了
+这个周末研究了一下
+iOS 平台上，nplayer 应该算是最适合的本地播放器了（几年前买断的付费版）
+1.音质还可以 2.可以 wifi 传歌 3.歌单操作也不算麻烦
+自己其实有 qq 音乐绿钻会员（联通套餐送的，需要每月自己领）
+但是 qq 音乐那个交互，我也觉得很不适应
+就先这样了，今天把歌曲导入的差不多了
+今晚三个平台:iPhone 、PC 、Mac 将全部卸载网易云音乐]]></summary>
+        <author>
+            <name>iovekkk</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[听说 Dell OptiPlex 390 系列中号商用台式机的 RAM 内存扩展到 16GB？]]></title>
+        <id>863768</id>
+        <link href="https://www.v2ex.com/t/863768"/>
+        <updated>2022-07-03T09:13:15.000Z</updated>
+        <summary type="html"><![CDATA[bclerdx: 听说 Dell OptiPlex 390 系列中号商用台式机的 RAM 内存扩展到 16GB ？网上还有说最大可到 32GB RAM 内存？有 V 友们支持这个是真的还是假的？谢谢。]]></summary>
+        <author>
+            <name>bclerdx</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[以后 web 本地开发就用这个域名了 fastadmin.fbi.com]]></title>
+        <id>863767</id>
+        <link href="https://www.v2ex.com/t/863767"/>
+        <updated>2022-07-03T09:12:11.000Z</updated>
+        <summary type="html"><![CDATA[F4NNIU: 
+之前 web 开发是经常需要修改 hosts ，稍微有点麻烦。
+以后 web 本地开发就用这个域名了，hosts 都懒得改了。
+ubuntu-20:~$ ping fastadmin.fbi.com
+PING fastadmin.fbi.com (127.0.0.1) 56(84) bytes of data.
+64 bytes from localhost (127.0.0.1): icmp_seq=1 ttl=64 time=0.015 ms
+64 bytes from localhost (127.0.0.1): icmp_seq=2 ttl=64 time=0.071 ms
+64 bytes from localhost (127.0.0.1): icmp_seq=3 ttl=64 time=0.032 ms
+64 bytes from localhost (127.0.0.1): icmp_seq=4 ttl=64 time=0.029 ms
+64 bytes from localhost (127.0.0.1): icmp_seq=5 ttl=64 time=0.074 ms
+
+[*.]fbi.com 都是指向 127.0.0.1]]></summary>
+        <author>
+            <name>F4NNIU</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[硬核观察 #686 一家中国公司发布了首款 RISC-V 笔记本电脑？]]></title>
+        <id>https://linux.cn/article-14790-1.html?utm_source=rss&amp;utm_medium=rss</id>
+        <link href="https://linux.cn/article-14790-1.html?utm_source=rss&amp;utm_medium=rss"/>
+        <updated>2022-07-03T09:03:46.000Z</updated>
+        <summary type="html"><![CDATA[一家中国公司发布了首款 RISC-V 笔记本电脑？
+
+“RISC-V 国际”透露，一家名为“鉴释”的中国公司已经宣布了第一台面向开发者的 RISC-V 笔记本电脑，现已开放预订。据介绍，这个 “ROMA” 开发平台具有四核 RISC-V 处理器，高达 16GB 的内存，最大 256GB 的存储空间，并且可以运行大多数 RISC-V Linux 发行版。有趣的是，这家名为“鉴释”的公司原本是一家开发静态代码分析工具的公司，这个名为“ROMA”的新产品也无法在其中英文网站找到任何链接，只有一个孤儿 预定页，而预定页中提供一个表格，没有确定的价格或预期供应量的信息、甚至连概念图都没有，并且还提到了一些 Web3 和 NFT 的事情。
+
+
+消息来源：Phoronix
+
+
+
+老王点评：这真不是洋葱新闻？
+
+
+
+
+谷歌推出“高级 API 安全”服务
+
+谷歌宣布了“高级 API 安全”的预览版，这是一个新产品，将在谷歌云上推出，旨在检测与 API 有关的安全威胁。该服务可以识别 API 错误配置和检测恶意机器人。配置错误的 API 是造成 API 安全事件的主要原因之一。开发者们越来越依赖 API，但它们也越来越成为攻击的目标。根据一份 2018 年的报告，三分之二的组织正在向公众和合作伙伴暴露了不安全的 API。
+
+
+消息来源：Tech Crunch
+
+
+
+老王点评：一个配置不当的 API，造成的影响可能非常可怕，我想网络安全圈子对这个很有感受。
+
+
+
+
+Linux Mint 21 不准备用 oomd
+
+Linux Mint 21 正在努力争取在今年夏天发布，它是建立在 Ubuntu 22.04 LTS 之上的。但因 Ubuntu 22.04 在 systemd-oomd 上广受批评，Linux Mint 决定不用这个服务来“屠杀”用户的应用。Canonical 公司的开发人员一直在努力修复这个问题，随着最新提出的 SRU 可能会有所改善。
+
+
+消息来源：Phoronix
+
+
+
+老王点评：Mint 做了明智的选择。这根本不是 oomd 的策略问题，而是不经过用户同意，甚至用户没有反对的机会，就被杀了应用。]]></summary>
+        <author>
+            <name>linux@linux.cn (linux)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cloudflare Workers 返回 request method、headers、body，用于开发自测请求信息]]></title>
+        <id>863766</id>
+        <link href="https://www.v2ex.com/t/863766"/>
+        <updated>2022-07-03T08:42:00.000Z</updated>
+        <summary type="html"><![CDATA[estk: 
+addEventListener("fetch", event => {
+  event.respondWith(handleRequest(event.request))
+})
+
+async function handleRequest(request) {
+  let req = '<table>\n'
+  req += `<tr>\n  <td>method</td>\n  <td>${request.method}</td>\n</tr>\n`
+  request.headers.forEach((value, key)=>{
+    req += `<tr>\n  <td>${key}</td>\n  <td>${value}</td>\n</tr>\n`
+  })
+  req += `<tr>\n  <td>body</td>\n  <td>${await request.text()}</td>\n</tr>\n`
+  req += '</table>'
+  return new Response(req, {
+    headers: {
+      'content-type': 'text/html'
+    }
+  })
+}]]></summary>
+        <author>
+            <name>estk</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Java 写 gateway 与多个不通协议的单片机(下位机)进行通讯的思路]]></title>
+        <id>863764</id>
+        <link href="https://www.v2ex.com/t/863764"/>
+        <updated>2022-07-03T08:18:43.000Z</updated>
+        <summary type="html"><![CDATA[peitaobest: 
+小白,请教一下 v 站的大神们,目前想 java 写一个网关跟下位机(主要是单片机)进行通讯,实现数据的双向传输.java 有没有什么框架可以快速快发的呀?目前的下位机通讯都是 lan 通讯,主要有 2 种,一种是 TCP 通讯,另外一种是 UDP 通讯.]]></summary>
+        <author>
+            <name>peitaobest</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Filco 键盘好像非常怕潮]]></title>
+        <id>863763</id>
+        <link href="https://www.v2ex.com/t/863763"/>
+        <updated>2022-07-03T08:02:49.000Z</updated>
+        <summary type="html"><![CDATA[jecvay: 用了三年无进液，钢板鼓泡成这样，离大谱。图片在这里，https://jecvay.com/2022/07/filco-wet-broken.html]]></summary>
+        <author>
+            <name>jecvay</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[不知道该选什么云服务]]></title>
+        <id>863762</id>
+        <link href="https://www.v2ex.com/t/863762"/>
+        <updated>2022-07-03T07:55:58.000Z</updated>
+        <summary type="html"><![CDATA[chenzhe: 我是开手机店的，自学了 nodejs 和 react 。
+用 antd+express+mongodb+taro 写了一个 crud 的 admin 和配套的小程序，用于管理店里的维修信息。
+小程序是面向客户下单用的，admin 用来管理维修进度方便同步给客户实时了解维修进度以及后续的售后凭证。
+想问一下这样用什么云服务比较好。
+数据这块，是通过轻量云直接安装一个 mongodb 还是购买云厂商提供的付费数据库好呢？
+因为需要上传一些图片，该本地存储还是使用对象存储呢？如果选择对象存储是否需要使用 cdn 服务？
+这个小程序的使用量不大，也就是我这个小城市当地市区这点儿用户使用。
+希望给点儿建议。]]></summary>
+        <author>
+            <name>chenzhe</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Create A Forget password link for one time and expire in 10 minutes in nodeJS]]></title>
+        <id>https://dev.to/deepakjaiswal/create-a-forget-password-link-for-one-time-and-expire-in-10-minutes-in-nodejs-2le6</id>
+        <link href="https://dev.to/deepakjaiswal/create-a-forget-password-link-for-one-time-and-expire-in-10-minutes-in-nodejs-2le6"/>
+        <updated>2022-07-03T07:50:14.000Z</updated>
+        <summary type="html"><![CDATA[here create forget password link with json web token (jwt) to create expire token in 10 minutes.
+but in token not make it for one time so store in database after successfully OTP verify i have remove from database.
+in mongoose model i add a field name otp has number and expire field in 10 minutes.
+const mongoose = require("mongoose")
+
+const userSchema = new mongoose.Schema({
+    name:{
+        type:String,
+        required:true,
+        trim:true
+    },
+        email:{
+                type:String,
+                required:true
+        },
+    otp:{
+        type:Number,
+        expires:'10m',
+                index:true
+    },
+    imageUrl:{
+        type:String,
+        default:'avatar.png'
+    }
+})
+
+module.exports = mongoose.model('User',userSchema)
+
+module.exports.forgetPassword =async (req…]]></summary>
+        <author>
+            <name>Sandeep</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[他们是用肉做的 (1991)]]></title>
+        <id>https://hn.buzzing.cc/hn/31965062/</id>
+        <link href="https://hn.buzzing.cc/hn/31965062/?score=112&amp;original_url=https%3A%2F%2Fwww.mit.edu%2Fpeople%2Fdpolicar%2Fwriting%2Fprose%2Ftext%2FthinkingMeat.html&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31965062&amp;sensitive=false"/>
+        <updated>2022-07-03T07:48:12.000Z</updated>
+        <summary type="html"><![CDATA[他们是用肉做的 (1991)]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[can you "AppendChild" same element multiple times in js ? Probably not]]></title>
+        <id>https://dev.to/kiumad/can-you-appendchild-same-element-multiple-times-in-js-probably-not-4j</id>
+        <link href="https://dev.to/kiumad/can-you-appendchild-same-element-multiple-times-in-js-probably-not-4j"/>
+        <updated>2022-07-03T07:47:59.000Z</updated>
+        <summary type="html"><![CDATA[in this case :
+var d1 = document.createElement('div');
+var d2 = document.createElement('div');
+var p = document.createElement('p');
+
+d1.appendChild(p); // d1 has p now
+d2.appendChild(p); // d2 has p now
+// but where is p in d1 ?
+
+we cannot append "p" multiple times because in the DOM, being a tree of nodes, one node can have only one parent, it cannot have multiple parents.
+We can use cloneNode() , but I use another way 
+//main function
+function appendChildMultiple(parent) {
+  //check function argument is an element
+  if (parent.nodeType !== undefined) {
+    const pTag = document.createElement("p");
+    pTag.innerText = "This is the appended element";
+    //finally append child to parent
+    parent.appendChild(pTag);
+  }
+}
+
+and use it :
+const d1 = document.createElement("div");
+const d2 = document.createElement("div");
+appendChildMultiple(d1);
+appendChildMultiple(d2);
+
+an example on Codepen :
+Do you think this method has good performance? Leave a comment below :)]]></summary>
+        <author>
+            <name>Mohammad Mirfatemi</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[macOS 有办法通过 sandbox 使用应用吗?]]></title>
+        <id>863761</id>
+        <link href="https://www.v2ex.com/t/863761"/>
+        <updated>2022-07-03T07:47:36.000Z</updated>
+        <summary type="html"><![CDATA[phony2r:]]></summary>
+        <author>
+            <name>phony2r</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[每天固定刷 LeetCode 时如何选择题目？]]></title>
+        <id>863760</id>
+        <link href="https://www.v2ex.com/t/863760"/>
+        <updated>2022-07-03T07:39:53.000Z</updated>
+        <summary type="html"><![CDATA[movq: 
+我现在刚刷完了这个地方给出的差不多 160 道基础的 LeetCode 题。里面的内容差不多是各种数据结构和算法都进行初步涉及
+以找工作为导向，160 多道题目还是不够，接下来应该继续多刷一些。
+但是不知道刷题策略是什么。在具备初步基础的情况下，我要怎么找题来刷呢？
+目前所知道的途径
+每日一题
+周赛
+找一种数据结构的专题，专门刷那个专题
+找公司题库，面试某家公司之前专门刷]]></summary>
+        <author>
+            <name>movq</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[学习链接的时候的对重定位的疑问]]></title>
+        <id>863759</id>
+        <link href="https://www.v2ex.com/t/863759"/>
+        <updated>2022-07-03T07:35:12.000Z</updated>
+        <summary type="html"><![CDATA[zamaojava: 
+ELF 格式下，在重定位的时候，重定位类型有 
+R_X86_64_PC32 相对寻址
+R_X86_64_32 绝对寻址
+我感觉用一个绝对寻址类型就可以了，为什么要多此一举的用 相对寻址。
+百度百科对相对寻址解释的好处：
+使用相对寻址可节省指令中的地址位数，也便于程序在内存中成块搬动。
+这就是用相对寻址的原因嘛？还是我理解有问题]]></summary>
+        <author>
+            <name>zamaojava</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[每周提一个有意思的问题]]></title>
+        <id>863758</id>
+        <link href="https://www.v2ex.com/t/863758"/>
+        <updated>2022-07-03T07:34:28.000Z</updated>
+        <summary type="html"><![CDATA[todshen: 如果你到了一个新的城市,你会如何尝试找到当地的地道的美食?]]></summary>
+        <author>
+            <name>todshen</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[iOS 版 QQ 有人能在群里发闪照吗？]]></title>
+        <id>863756</id>
+        <link href="https://www.v2ex.com/t/863756"/>
+        <updated>2022-07-03T07:19:03.000Z</updated>
+        <summary type="html"><![CDATA[kaiki: 今天有人说自己没有闪照功能了，好友聊天可以发，群发不了，我试了一下所有的 QQ 在 QQ 群里选择照片都只有原图，后面的闪照没了，不管是 iPhone 还是 iPad 都发不了，但是问了安卓用户都可以在群里发闪照。]]></summary>
+        <author>
+            <name>kaiki</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[React Responsive Navbar Menu With Tailwind CSS Example]]></title>
+        <id>https://dev.to/larainfo/react-responsive-navbar-menu-with-tailwind-css-example-3mah</id>
+        <link href="https://dev.to/larainfo/react-responsive-navbar-menu-with-tailwind-css-example-3mah"/>
+        <updated>2022-07-03T07:14:06.000Z</updated>
+        <summary type="html"><![CDATA[In this tutorial, we will create responsive navbar menu in react js using tailwind css. We will see navbar with hamburger menu with react, tailwind navbar component, navnar with sign in and signup examples with Tailwind CSS & React.
+React JS
+Tailwind CSS 3.v
+Heroicons Icon
+view
+First you need to setup react project with tailwind css. You can install manually or you read below blog.
+How to install Tailwind CSS in React
+Install & Setup Vite + React + Typescript + Tailwind CSS 3
+React JS responsive navbar menu with tailwind css.
+import { useState } from "react";
+
+export default function NavBar() {
+    const [navbar, setNavbar] = useState(false);
+
+    return (
+        <nav className="w-full bg-white shadow">
+            <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center …]]></summary>
+        <author>
+            <name>larainfo</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Don’t settle for a fast homepage]]></title>
+        <id>https://dev.to/dailydevtips1/dont-settle-for-a-fast-homepage-57oe</id>
+        <link href="https://dev.to/dailydevtips1/dont-settle-for-a-fast-homepage-57oe"/>
+        <updated>2022-07-03T07:12:23.000Z</updated>
+        <summary type="html"><![CDATA[Many people are inspired to make their websites faster, which is excellent news.
+We need faster and more optimized websites. However, I also see a lot of people stop at the homepage.
+They ensure the homepage gets a decent score and then totally forget to test additional pages.
+Looking at my blog, the homepage is only 1% of the entries to my website.
+So why should we focus on making the homepage faster if it isn't even the primary traffic source?
+You might think, well, that might be your website, even if you are right. I would love to hope that people explore your website beyond the homepage.
+My website, for instance, has 9xx pages at the moment, and trust me, I don't want to try to speedtest them all.
+There is no need for that even.
+Here are some tips.
+Identify unique pages and test those
+Pick your most visited pages
+Pick your largest pages
+These are some samples that I use.
+Sometimes I check my analytics and see my most viewed pages, which have the highest impact.
+contact, about, blog-article, and so on.
+Evaluate your website based on how users make use of it.
+We looked at different approaches to test individual pages as it's sometimes impossible to try every single page.
+Thank you for reading my blog. Feel free to subscribe to my email newsletter and connect on Facebook or Twitter]]></summary>
+        <author>
+            <name>Chris Bongers</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[国内有啥安卓手机支持 wifi calling 吗？]]></title>
+        <id>863754</id>
+        <link href="https://www.v2ex.com/t/863754"/>
+        <updated>2022-07-03T07:02:59.000Z</updated>
+        <summary type="html"><![CDATA[heartrick: paygo 的号码到了，但是我的 iPhone 是美版单卡的要用国内的手机号。]]></summary>
+        <author>
+            <name>heartrick</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[天气预报工具(WeatherKit)]]></title>
+        <id>https://hn.buzzing.cc/hn/31964867/</id>
+        <link href="https://hn.buzzing.cc/hn/31964867/?score=104&amp;original_url=https%3A%2F%2Fdeveloper.apple.com%2Fweatherkit%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31964867&amp;sensitive=false"/>
+        <updated>2022-07-03T07:00:12.000Z</updated>
+        <summary type="html"><![CDATA[天气预报工具(WeatherKit)]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[晒晒我的 Chrome OS 桌面]]></title>
+        <id>863753</id>
+        <link href="https://www.v2ex.com/t/863753"/>
+        <updated>2022-07-03T07:00:03.000Z</updated>
+        <summary type="html"><![CDATA[szzhiyang:]]></summary>
+        <author>
+            <name>szzhiyang</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[有没有了解欧科云链的 V 友，想了解下内部情况]]></title>
+        <id>863752</id>
+        <link href="https://www.v2ex.com/t/863752"/>
+        <updated>2022-07-03T06:25:57.000Z</updated>
+        <summary type="html"><![CDATA[TuuuuuBug: 
+先说下面试经过，HRBP 面试环节就开始被 PUA ，谈薪 HR 环节毫无尊重可言，爱来不来的态度
+至于脉脉上的感觉戾气太重，想听些相对中肯和理性的声音，所以想咨询下懂得朋友分享下内部氛围和文化，以及在区块链日常工作内容，如果有万分感谢🙏]]></summary>
+        <author>
+            <name>TuuuuuBug</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[项目经理的路在何方呢？]]></title>
+        <id>863751</id>
+        <link href="https://www.v2ex.com/t/863751"/>
+        <updated>2022-07-03T06:09:28.000Z</updated>
+        <summary type="html"><![CDATA[zyxbcde808: 
+身在一个互联网荒漠的二线城市的金融类国企，3 年前公司要上系统，因为我还会点 python 搞搞自动化办公，就被抓去当甲方项目经理。
+后来就这么跌跌撞撞的学会了画原型，写文档，该有的证也都考出来了。对着已有代码复制粘贴能基于 springboot+vue 写点简单的管理页面，自己写的 python 项目也给公司把我的工资赚回来了。
+带的开发团队也是一团和气，因为业务全条线我都干过，不合理的需求或者变更基本在我这都能改掉或者推出去，安排的任务开发都能高效完成，项目代码质量也不错。
+直到有一天，我发现本地那些正经的软件公司，应届生跟我工资一样，心态彻底炸了。
+近期一个项目，领导让我自己去客户驻场帮着写方案，把项目揽回来，然后自己对需求写文档画原型，再招聘一个开发团队把项目做完，最后给他赚回 200 万。我知道，我可能需要换个地方了。
+所以项目经理的路在何方呢？一个好的项目经理应该是啥样的呢？从来没作为项目经理出去面试过，不知道人家能问啥。技术方面也是一知半解，面试别人时候问的问题我自己都答不上来。]]></summary>
+        <author>
+            <name>zyxbcde808</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[请教一个简单的 Golang interface 和 models 组织的问题]]></title>
+        <id>863748</id>
+        <link href="https://www.v2ex.com/t/863748"/>
+        <updated>2022-07-03T05:49:17.000Z</updated>
+        <summary type="html"><![CDATA[wheeler: 
+写得比较长，🙏
+问题是这样的，A 层依赖于 B 层，A 作为使用者想隔离 B 的依赖，定义 interface 的时候该如何设计？
+比如：controller 层从 JSON 绑定 model ，后续需要调用 service 层的用户处理逻辑
+代码如下:
+
+// package main
+
+// 构造 user service 实例
+userService := service.NewUserService(...)
+
+// userApp 依赖 user service
+userApp := controller.NewUserApp(userService)
+
+-----
+
+// package controller
+type UserApp struct {
+    svc *service.UserService
+}
+
+type User struct {
+    ...
+}
+
+func NewUserApp(svc *service.UserService) *UserApp {
+    return &UserApp{svc: svc}
+}
+
+// handler
+func (app* UserApp) Add(c Context) error {
+    // controller 层绑定 model
+    var user User
+    if err := bindJSON(c, &user); err != nil {
+        return err
+    }
+
+    // model 转换
+    var svcUser service.User
+    toSvcUser(user, &svcUser);
+
+    // 调用 service 逻辑
+    return app.svc.AddUser(svcUse…]]></summary>
+        <author>
+            <name>wheeler</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly 0019]]></title>
+        <id>https://dev.to/kasuken/weekly-0019-4c5d</id>
+        <link href="https://dev.to/kasuken/weekly-0019-4c5d"/>
+        <updated>2022-07-03T05:48:38.000Z</updated>
+        <summary type="html"><![CDATA[Monday
+
+
+I started the morning with a new blog post about Auth0 and ASP.NET Core MVC 6 series.
+
+This is the link to the blog post: https://dev.to/kasuken/securing-aspnet-core-mvc-6-app-add-a-profile-page-part-2-1fhh
+It’s not easy to stay focused in these days because of the Long Covid, but I try to do my best.
+Today I published the latest part of the posts about Auth0 and ASP.NET Core MVC 6.
+I am happy about the final result: https://dev.to/kasuken/securing-aspnet-core-mvc-6-app-add-roles-part-3-j29
+The next month I will talk about Auth0 and Minimal API with permissions and roles.
+Mood: 🥱
+Not a good day today. I am exhausted because of Long Covid but I tried to do my best.
+By the way I tried to manage all the settings in the Azure Key Vault but I had some issues with Azure Credentials and Visual Studio 2022.
+After dinner I did some tests from my laptop and it works! Maybe it’s a problem of my accounts in my desktop computer or maybe the access policies on the keyvault need a lot of time to propate!
+Mood: 😪
+As I already now, from my desktop PC my authentication to Azure KeyVault didn’t work.
+In the afternoon I wrote an article on my blog about “Why I chose Auth0 for my startup”.
+
+Mood: 🧘
+This morning I woke up a lit bit later because I was really tired. This Long Covid syndrome is not easy to manage.
+ 
+It’s a big achieve because it means that I interact a lot with the community! 
+In the early morning I published the article I wrote yesterday about Auth0.
+
+The article is here: https://dev.to/kasuken/why-i-chose-auth0-for-my-startup-27p8
+I also submitted all my activities to the Auth0 Ambassador program. This month I gained a lot of points. Let’s see if I can become the Ambassador of the Month 🙂
+My dev.to badges collection:
+ 
+Mood: 😪
+I started the morning working on Red Origin, again, after a while.
+ 
+Mood: 🧑‍💻]]></summary>
+        <author>
+            <name>Emanuele Bartolesi</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CSS Battle: #5 - Acid Rain]]></title>
+        <id>https://dev.to/j471n/css-battle-5-acid-rain-2kpe</id>
+        <link href="https://dev.to/j471n/css-battle-5-acid-rain-2kpe"/>
+        <updated>2022-07-03T05:25:52.000Z</updated>
+        <summary type="html"><![CDATA[In this article, I will solve a Acid Rain CSS Challenge on CSS Battle. Let's look at the problem first.
+We need to create the following container by using CSS Properties only:
+
+So now look at the Solution and how we are going to achieve this. 
+<div class="one"></div>
+<div class="two"></div>
+<div class="three"></div>
+
+There are three divs, each one represents a single raindrop. 
+Now let's style the Body first.
+body {
+  margin: 0;
+  background: #0b2429;
+}
+
+After doing that, we can style the raindrops.
+.one, .two, .three {
+  position: absolute;
+  width: 120;
+  height: 120;
+  background: #998235;
+  border-radius: 50% 0 50% 50%;  
+}
+.one, .three {
+  background: #f3ac3c; 
+}
+
+In the above code, we are initializing the height and width of the raindrops to 120px and applying the border-radius prope…]]></summary>
+        <author>
+            <name>Jatin Sharma</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Why Waterfall is superior to Agile]]></title>
+        <id>https://dev.to/polterguy/why-waterfall-is-superior-to-agile-1mjo</id>
+        <link href="https://dev.to/polterguy/why-waterfall-is-superior-to-agile-1mjo"/>
+        <updated>2022-07-03T05:09:44.000Z</updated>
+        <summary type="html"><![CDATA[Since we've taken on 8 interns in Aista, and I am not sure about their experience level, and I need to be creative in regards to the process of following up on our interns - I wanted to write something publicly about waterfall software development. Why? Because the task they will be doing at Aista is to implement a working piece of software in 6 to 8 weeks, using the waterfall software development process.
+"Waterfall" has a bad reputation. For software developers and architects it's almost a curse word. This reputation is really not justified, at least not for most projects. To understand why, let's first ask ourselves what waterfall is, for then to ask ourselves what the primary argument against waterfall is.
+BDUF implies "Big Design Up Front", and is closely tied to the waterfall mindset…]]></summary>
+        <author>
+            <name>Thomas Hansen</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to persist the data in atoms with local storage using recoil persist.]]></title>
+        <id>https://dev.to/nextdev/how-to-persist-the-data-in-atoms-with-local-storage-using-recoil-persist-42j0</id>
+        <link href="https://dev.to/nextdev/how-to-persist-the-data-in-atoms-with-local-storage-using-recoil-persist-42j0"/>
+        <updated>2022-07-03T05:03:40.000Z</updated>
+        <summary type="html"><![CDATA[Welcome friends 👋. In this blog post, you will learn how to persist the data in local storage in recoil.
+For people, who understand Hindi
+Suppose, you are making a to-do list website where people can type todos and todos will be stored in the local storage. But the question arises, how can you persist the data with local storage.
+Let’s take an example 👇
+Now, we can use effects_UNSTABLE 
+But, unfortunately, you will encounter an error if you are using an SSR framework like nextjs.
+yarn add recoil-persist
+
+recoil-persist
+
+recoil persist.
+If you have any questions, feel free to ask here👇:
+Join the Next Dev Discord Server!]]></summary>
+        <author>
+            <name>Next Dev</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[谷歌现在自动删除定位历史中的健康诊所搜索]]></title>
+        <id>https://hn.buzzing.cc/hn/31961038/</id>
+        <link href="https://hn.buzzing.cc/hn/31961038/?score=100&amp;original_url=https%3A%2F%2Fblog.google%2Ftechnology%2Fsafety-security%2Fprotecting-peoples-privacy-on-health-topics%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31961038&amp;sensitive=false"/>
+        <updated>2022-07-03T05:00:26.000Z</updated>
+        <summary type="html"><![CDATA[谷歌现在自动删除定位历史中的健康诊所搜索]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[从 Anki 到 Obsidian，我的 Spaced Repetition 经历]]></title>
+        <id>863740</id>
+        <link href="https://www.v2ex.com/t/863740"/>
+        <updated>2022-07-03T04:51:58.000Z</updated>
+        <summary type="html"><![CDATA[jjtom5f2: 
+原文发表在我的博客：从 Anki 到 Obsidian ，我的 Spaced Repetition 经历
+Spaced Repetition 定义和作用
+间隔重复，英文叫做"Spaced Repetition"，关于它的定义，可看 Spaced repetition-en.wikipedia.org 。
+就我半年的使用来看，Spaced Repetition 有多个好处：
+能够回顾知识：很多时候，自己都是在犯过去同样的错误，通过 Spaced Repetition ，相当于加了一个超级强大的 memo ，就像是动态规划算法，一但做过某个东西，下一次就可以直接拿来用。
+self testing：复习卡片，就是回答问题的过程，这个过程能够增加记忆。
+减少选择：很多时候，我们会面临选择的困境，我们的选择太多会让“选择”这个过程就花费很多时间。Spaced Repetition ，减少了选择，你只需要不断地复习就行了。至于复习哪些内容，算法都帮你解决了。其实，抖音这类 app ，也是利用了这个特点，减少了用户的选择。
+孤立语义，避免 illusion of competence: 我在之前的博客中提到了
+many students experience illusions of competence when they are studying. “repeatedly read their notes or textbook(despite the limited benefits of this strategy), but relatively few engage in self-testing or retrieval practice while studying”
+很多人不断重复阅读书籍，以为自己什么都会了，但是一考试，却发现实际上还是有很多空缺。这是因为我们对书籍的整体太熟悉造成。要打破这种熟悉，增加单个知识点的连接，就需要孤立每一个知识点，这个可以通过 Spaced Repetition 做到
+从 Anki 到 Obsidian ，我的 Spaced Repetition 经历
+第一次接触到 Spaced Repetition 是通过 Anki ，用了一段时间，发现制作卡片和回顾卡片都太独立，没法整合到笔记系统中。
+后面把笔记系统从 onenote 切换到了 logseq ，发现 logseq 自带的 flashcards 就是 anki 的便捷版本，随后就开始在 logseq 上制作卡片，然后回顾卡片。但是在这个过程中，发现一些 Logseq 的问题，
+比如性能堪忧。当我制作了 500+卡片时，已经很卡顿了。
+功能不全面，有 bug 。比如 flashcard 不具备根据 card-next-schedule 进行排序的功能，由此我还专门提了一个PR 给 Logseq 官方，但是最终还是放弃了。
+最后把笔记从 Logseq 迁移到 Obsidian ，无意间发现obsidian-spaced-repetition这个插件，但是用了一段时间后，发现这个插件有一些功能不满足我的需求，比如制作卡片不灵活，它的"?"符号必须在行首且没有空格。不支持 tag 重新排序。等等。
+最后，自己 fork 了一个分支，维护了起来。由于和原仓库改动较大，就没有提 PR 了。目前当作自己在用，而且 README 更新较慢。。
+自己 fork 的分支的链接
+总结
+Spaced Repetition 适合那些需要一生记忆的知识，对我来说，它能够极大地提高我的效率。希望大家读完本文章都能有所收获，找到自己合适的学习方式。]]></summary>
+        <author>
+            <name>jjtom5f2</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[I sat for a test...]]></title>
+        <id>https://dev.to/wjplatformer/i-sat-for-a-test-3kd3</id>
+        <link href="https://dev.to/wjplatformer/i-sat-for-a-test-3kd3"/>
+        <updated>2022-07-03T04:45:54.000Z</updated>
+        <summary type="html"><![CDATA[Let's discuss the types
+
+
+and criticize them lol. Yes, tests feel unfair and useless sometimes. Such as a biology, physics and chemistry test for a computer science course in a school of your choice, which rarely needs Math and Science! Do note that this is a perspective of a student.
+These are extremely easy but people constantly test you, especially in a school basis, so it is a little easy to forget that you have them due to our busy lives. But when not done often and does not affect your life, it can be fun and intriguing, often clarifying things you don't know and be proud of those that you do.
+
+This is the most easiest but yet one of the most constant exams you would ever face when it comes to work or school.
+
+
+These type of exams are usually graded, as in it would affect your job or…]]></summary>
+        <author>
+            <name>Wj</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Conditional Routing with React Router V6]]></title>
+        <id>https://dev.to/salehmubashar/conditional-routing-with-react-router-v6-229g</id>
+        <link href="https://dev.to/salehmubashar/conditional-routing-with-react-router-v6-229g"/>
+        <updated>2022-07-03T04:44:36.000Z</updated>
+        <summary type="html"><![CDATA[Lets take a look at how to render a component on a certain route conditionally using React router v6 features.
+Install React Router V6 using the following npm command:
+npm install react-router-dom@6
+Next, import the following components from react router dom.
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
+
+Firstly wrap all the content of your page inside the return function inside the . Next, create the induvial routes inside the  component.
+return (
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="start" element={<Start />} />
+      </Routes>
+    </Router>
+)
+
+For each route, we have the path and the element props, these tell the path on the address bar and the component to be rendered out respectively. The exact prop ensures that the *location.pathname * will match exact location path.
+Lets say we want to render a component only if a state is true for example if a user is logged in, we can do that like this:
+<Route
+  exact
+  path="start"
+  element={
+    loggedIn ? (
+      <Start />
+    ) : (
+      <Navigate replace to={"/"} />
+    )
+  }
+/>
+
+Basically here we are checking if the loggedIn state is true. If it is, we return the Start component, however if it is false, we redirect the user to the homepage using the Navigate element.
+The replace prop simply replaces the current location with the given path instead of adding on to it.
+Thanks for reading!]]></summary>
+        <author>
+            <name>Saleh Mubashar</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The first non-blockchain cryptocurrency. Evolution of Cryptum.]]></title>
+        <id>https://dev.to/jahongir2007/the-first-non-blockchain-cryptocurrency-evolution-of-cryptum-31gd</id>
+        <link href="https://dev.to/jahongir2007/the-first-non-blockchain-cryptocurrency-evolution-of-cryptum-31gd"/>
+        <updated>2022-07-03T04:42:20.000Z</updated>
+        <summary type="html"><![CDATA[All cryptocurrencies in the world work on blockchain technology. But today our team has stepped into a new evolution.
+Cryptum (CCM)?
+
+
+Cryptum is the first cryptocurrency running on the CCNet network. CCNet (Cryptum Cyber Network) is a large network running on a single server. To use Cryptum, other computers must connect to a server with a CCNet network. Transactions in Cryptum are public and stored in the database of the CCNet network. Cryptom has SRDB (Sender Receiver Data Base) protocol for transactions. Transactions work based on this protocol.
+The main advantage of Cryptum over other blockchain-based cryptocurrencies is that transactions can be carried out like a simple transfer through the "LiteFast" function. For example, transactions in other cryptocurrencies sometimes have to wait for hours. Cryptum does not have this problem.
+In order to mine cryptum coins in Cryptum, your computer needs to run a digital algorithm. The digital algorithm does not allow your computer to mine 0.5 CCM or more.]]></summary>
+        <author>
+            <name>Jahongir Sobirov</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[涉及两级路由的 IPv6 前缀下发（委派）问题求助]]></title>
+        <id>863738</id>
+        <link href="https://www.v2ex.com/t/863738"/>
+        <updated>2022-07-03T04:27:17.000Z</updated>
+        <summary type="html"><![CDATA[87728854: 
+家用宽带，光猫桥接模式;
+使用路由器（ OPNsense ） PPPoE 拨号;
+WAN 口使用 DHCPv6 成功从运营商获取到 IPv6 地址，同时获取到一个 2001:aaaa:bbbb:7890::/60 的 IPv6 前缀;
+LAN 口也成功分配到 IPv6 地址 2001:aaaa:bbbb:7890:cccc:dddd:eeee:1/64;
+LAN 口接了一个下级路由;
+LAN 口开启 DHCPv6 服务，前缀委派范围 ::8 至 ::c, 长度 62, 为下级路由分配 2001:aaaa:aaaa:7894::/62 的前缀;
+下级路由 WAN 口同样使用 DHCPv6 向上级路由 LAN 口获取 IPv6 地址和前缀; 
+下级路成功获取到 2001:aaaa:bbbb:780c::/62 这个前缀.
+请问下级路由获取到的前缀为什么不是 2001:aaaa:bbbb:789c::/62 ?]]></summary>
+        <author>
+            <name>87728854</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[国产电视机 TCL 真是辣鸡呀]]></title>
+        <id>863737</id>
+        <link href="https://www.v2ex.com/t/863737"/>
+        <updated>2022-07-03T04:27:02.000Z</updated>
+        <summary type="html"><![CDATA[x198: 2019 年底买的 TCL 牌子 4K 电视机，昨天就黑屏坏掉了。
+2000 多块钱才用 2 年这样。艹了，还开机一大堆广告，而且买回来没几个月就出现坏点。
+真是超级的辣鸡。以后都不会再买 TCL 的任何产品了。
+我家人以前买的 panasonic 电视机都用了差不多 20 年还是没有任何问题的。
+国货你叫我如何爱你哦………]]></summary>
+        <author>
+            <name>x198</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何让程序以为自己拥有管理员权限，实际却没有？]]></title>
+        <id>863736</id>
+        <link href="https://www.v2ex.com/t/863736"/>
+        <updated>2022-07-03T04:22:30.000Z</updated>
+        <summary type="html"><![CDATA[Leon6868: 我在 Windows 7 下安装 tim ，但 tim 的安装程序一直通过 UAC 请求提权。
+我依照 https://superuser.com/a/981202 里面的回答使用 [cmd /min /C "set __COMPAT_LAYER=RUNASINVOKER && start "" %1"] 运行程序，结果 UAC 确实没了，但 tim 安装程序却提示必须以管理员身份运行。
+请问是否有某种方法，让程序以为自己拥有管理员权限，实际却没有（比如无法访问某些文件夹、无法修改某些系统设置）？]]></summary>
+        <author>
+            <name>Leon6868</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[emergency mode 用不了 fsck 怎么办]]></title>
+        <id>863735</id>
+        <link href="https://www.v2ex.com/t/863735"/>
+        <updated>2022-07-03T04:17:43.000Z</updated>
+        <summary type="html"><![CDATA[hanssx: 
+电脑是 Thinkpad T470 ，电池突出来的那一种，不知道大家有没有过体验，这样的 Thinkpad 如果移动的时候你碰到了它的电池部分还是哪块，电脑系统就会卡死，只能强制关机。我正是由于强制关机，所以开机就进 emergency mode 了。。
+
+系统是 Linux Mint 19.3(对应 ubuntu 18.04)
+然后根据提示我去搜索，说要编辑 /etc/fstab ，
+
+我一看我以为是 /挂载有问题，我直接注释了，后面还是进入 emergency mode ，我又给注释回来了，然后去看了下 journalctl -xb 的日志，发现可能是需要检查磁盘操作？
+
+然后我发现 fsck 用不了，提示
+
+然后一顿搜索，说是在根目录创建个文件就能自动强制 fsck ？然后我就 sudo touch /forcefsck 了一个文件，结果还是进 emergency mode ，
+
+现在没招了，只能用 u 盘做一个 linux 启动盘，然后 fsck 这块 nvme 盘吗？]]></summary>
+        <author>
+            <name>hanssx</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Typing Learner – 硬核单词记忆：从电影台词筛选生词，边追美剧边学英语，用户直喊「好家伙！」[Windows/macOS]]]></title>
+        <id>https://www.appinn.com/?p=42645</id>
+        <link href="https://www.appinn.com/typing-learner/"/>
+        <updated>2022-07-03T04:07:39.000Z</updated>
+        <summary type="html"><![CDATA[Typing Learner 是一款能够从字幕中生成的词库（单词本）的 Windows、macOS 工具，它通过分析、过滤，洗掉熟悉的单词，只保留生词，然后进行键盘记忆背单词的过程，与众不同之处在于，]]></summary>
+        <author>
+            <name>青小蛙</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[拉个锻炼 telegram 群组，一起挑战]]></title>
+        <id>863734</id>
+        <link href="https://www.v2ex.com/t/863734"/>
+        <updated>2022-07-03T03:47:10.000Z</updated>
+        <summary type="html"><![CDATA[MrCurly: 
+准备拉个 telegram 群组，组里聊聊天分享下经验，apple fitness 一起挑战之类的，先几个人留下你的 telegramid ，一个人还没法拉组，拉完我发群组链接]]></summary>
+        <author>
+            <name>MrCurly</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[人工光合作用可以在没有阳光的情况下生产食物]]></title>
+        <id>https://hn.buzzing.cc/hn/31957068/</id>
+        <link href="https://hn.buzzing.cc/hn/31957068/?score=100&amp;original_url=https%3A%2F%2Fnews.ucr.edu%2Farticles%2F2022%2F06%2F23%2Fartificial-photosynthesis-can-produce-food-without-sunshine&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31957068&amp;sensitive=false"/>
+        <updated>2022-07-03T03:27:05.000Z</updated>
+        <summary type="html"><![CDATA[人工光合作用可以在没有阳光的情况下生产食物]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ask HN: 我已经41岁了，仍然没有结婚--我应该怎么办？]]></title>
+        <id>https://hn.buzzing.cc/hn/31961992/</id>
+        <link href="https://hn.buzzing.cc/hn/31961992/?score=119&amp;original_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31961992&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31961992&amp;channel=ASK+HN&amp;sensitive=false"/>
+        <updated>2022-07-03T03:27:05.000Z</updated>
+        <summary type="html"><![CDATA[Ask HN: 我已经41岁了，仍然没有结婚--我应该怎么办？]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[文件显示麦肯锡在2019年前增加阿片类药物销售的作用]]></title>
+        <id>https://hn.buzzing.cc/hn/31963813/</id>
+        <link href="https://hn.buzzing.cc/hn/31963813/?score=109&amp;original_url=https%3A%2F%2Fwww.axios.com%2F2022%2F07%2F01%2Fmckinsey-opioid-documents&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31963813&amp;sensitive=false"/>
+        <updated>2022-07-03T03:27:05.000Z</updated>
+        <summary type="html"><![CDATA[文件显示麦肯锡在2019年前增加阿片类药物销售的作用]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[看着一个收购者毁掉你的公司]]></title>
+        <id>https://hn.buzzing.cc/hn/31963460/</id>
+        <link href="https://hn.buzzing.cc/hn/31963460/?score=118&amp;original_url=https%3A%2F%2Fstartupwin.kelsus.com%2Fp%2Fwatching-an-acquirer-ruin-your-company&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31963460&amp;sensitive=false"/>
+        <updated>2022-07-03T03:27:05.000Z</updated>
+        <summary type="html"><![CDATA[看着一个收购者毁掉你的公司]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Kubernetes 架构指南]]></title>
+        <id>https://linux.cn/article-14789-1.html?utm_source=rss&amp;utm_medium=rss</id>
+        <link href="https://linux.cn/article-14789-1.html?utm_source=rss&amp;utm_medium=rss"/>
+        <updated>2022-07-03T02:51:40.000Z</updated>
+        <summary type="html"><![CDATA[了解 Kubernetes 架构中不同组件是如何组合在一起的，这样你就可以更好地排查问题、维护一个健康的集群，以及优化工作流。
+
+
+
+
+使用 Kubernetes 来编排容器，这种描述说起来简单，但理解它的实际含义以及如何实现它完全是另外一回事。如果你正在运行或管理 Kubernetes 集群，那么你就会知道 Kubernetes 由一台称为 “控制平面control plane” 的机器和许多其他 工作节点worker node 机器组成。每种类型都有一个复杂但稳定的堆栈，这使编排成为可能，熟悉每个组件有助于理解它是如何工作的。
+
+
+
+（Nived Velayudhan, CC BY-SA 4.0）
+
+控制平面组件
+
+Kubernetes 安装在一个称为“控制平面control plane”的机器上，它会运行 Kubernetes 守护进程，并在启动容器和容器组pod时与之通信。下面介绍控制平面的各个组件。
+
+etcd
+
+etcd 是一种快速、分布式一致性键值存储器，用作 Kubernetes 对象数据的持久存储，如容器组、副本控制器、密钥和服务。etcd 是 Kubernetes 存储集群状态和元数据的唯一地方。唯一与 etcd 直连的组件是 Kubernetes API 服务器。其他所有组件都通过 API 服务器间接的从 etcd 读写数据。
+
+etcd 还实现了一个监控功能，它提供了一个基于事件的接口，用于异步监控键的更改。一旦你更改了一个键，它的监控者就会收到通知。API 服务器组件严重依赖于此来获得通知，并将 etcd 变更至期望状态。
+
+为什么 etcd 实例的数量应该是奇数？
+
+你通常会运行三个、五个或七个 etcd 实例实现高可用（HA）环境，但这是为什么呢？因为 etcd 是分布式数据存储，可以水平扩展它，但你需要确保每个实例中的…]]></summary>
+        <author>
+            <name>linux@linux.cn (linux)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[使用 VLC 下载 YouTube 视频]]></title>
+        <id>https://linux.cn/article-14788-1.html?utm_source=rss&amp;utm_medium=rss</id>
+        <link href="https://linux.cn/article-14788-1.html?utm_source=rss&amp;utm_medium=rss"/>
+        <updated>2022-07-03T02:08:14.000Z</updated>
+        <summary type="html"><![CDATA[VLC 是 Linux 和其他平台上最受欢迎的视频播放器之一。
+
+它不仅仅是一个视频播放器。它提供了许多多媒体和网络相关的功能。你会惊讶地 了解 VLC 的能力。
+
+我将演示一个简单的 VLC 功能，即使用它下载 YouTube 视频。
+
+是的。你可以在 VLC 中播放 YouTube 视频并下载它们。让我告诉你怎么做。（LCTT 校注：发布此文只探讨技术可行性。）
+
+使用 VLC 媒体播放器下载 YouTube 视频
+
+现在，有一些方法可以 下载 YouTube 视频。使用浏览器扩展或使用专门的网站或工具。
+
+但是如果你不想使用任何额外的东西，已经安装的 VLC 播放器可以用于此目的。
+
+**重要提示：**在从 YouTube 复制链接之前，请确保从 YouTube 播放器中选择所需的视频质量，因为我们将获得与复制链接时流式传输视频相同的质量。
+
+步骤 1：获取所需视频的视频链接
+
+你可以使用任何你喜欢的浏览器并从地址栏中复制视频链接。
+
+
+
+步骤 2：将复制的链接粘贴到网络流
+
+“网络流Network Stream”选项位于“媒体Media”菜单下，这是我们顶部菜单栏的第一个选项。你也可以使用快捷方式 CTRL + N 打开网络流 。
+
+
+
+现在，你只需粘贴复制的 YouTube 视频链接，然后单击播放按钮。我知道它只是在我们的 VLC 中播放视频，但还有一点额外的步骤可以让我们下载当前的流媒体视频。
+
+
+
+步骤 3：从编解码器信息中获取位置链接
+
+在“编解码器信息Codec Information”下，我们会得到当前播放视频的位置链接。要打开编解码器信息，你可以使用快捷键 CTRL + J 或者你会在“工具Tools”菜单下找到编解码器信息选项。
+
+
+
+它将带来有关当前流媒体视频的详细信息。但我们需要的是“位置Location”。你只需复制位置链接，我们的任务就完成了 90%。
+
+
+
+步骤 4：将位置链接粘贴到新选项卡
+
+打开任何你喜欢的浏览器，并将复制的位置链接粘贴到新选项卡，它将开始在浏览器中播放该视频。
+
+现在，右键单击播放视频，你将看到“将视频另存为”的选项。
+
+
+
+它将打开文件管理器并询问你是否要在本地保存此视频。你还可以重命名该文件，默认情况下它将被命名为 “videoplayback.mp4”。
+
+
+
+结论
+
+如果你有互联网连接问题，或者如果你想保存一些视频以供将来观看，下载 YouTube 视频是有意义的。
+
+当然，我们不鼓励盗版。此方法仅用于合理使用，请确保视频的创建者已允许该视频进行合理使用，并确保在将其用于其他地方之前将其归属于视频的原始所有者。
+
+
+via: https://itsfoss.com/download-youtube-videos-vlc/
+
+作者：Community 选题：lkxed 译者：geekpi 校对：wxy
+
+本文由 LCTT 原创编译，Linux中国 荣誉推出]]></summary>
+        <author>
+            <name>linux@linux.cn (linux)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[京都框架正从GitHub移至sr.ht]]></title>
+        <id>https://hn.buzzing.cc/hn/31961402/</id>
+        <link href="https://hn.buzzing.cc/hn/31961402/?score=100&amp;original_url=https%3A%2F%2Fgithub.com%2Fkyoto-framework%2Fkyoto&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31961402&amp;sensitive=false"/>
+        <updated>2022-07-02T23:33:00.000Z</updated>
+        <summary type="html"><![CDATA[京都框架正从GitHub移至sr.ht]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AWS Nuke - 删除与AWS账户相关的所有资源]]></title>
+        <id>https://hn.buzzing.cc/hn/31962014/</id>
+        <link href="https://hn.buzzing.cc/hn/31962014/?score=103&amp;original_url=https%3A%2F%2Fgithub.com%2Frebuy-de%2Faws-nuke&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31962014&amp;sensitive=false"/>
+        <updated>2022-07-02T22:40:29.000Z</updated>
+        <summary type="html"><![CDATA[AWS Nuke - 删除与AWS账户相关的所有资源]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Crypto hedge fund Three Arrows files for bankruptcy]]></title>
+        <id>https://www.theverge.com/2022/7/2/23192810/three-arrows-capital-chapter-15-bankruptcy-cryptocurrency</id>
+        <link href="https://www.theverge.com/2022/7/2/23192810/three-arrows-capital-chapter-15-bankruptcy-cryptocurrency"/>
+        <updated>2022-07-02T22:36:59.000Z</updated>
+        <summary type="html"><![CDATA[Illustration by Alex Castro / The Verge
+    
+
+  
+Cryptocurrency hedge fund Three Arrows Capital (3AC) filed for Chapter 15 bankruptcy in a bid to protect its US assets from creditors in the country, as reported earlier by Bloomberg and CNBC. Representatives for the Singapore-based company made the filing in a Southern District New York court on Friday, which legally protects the US assets of insolvent foreign debtors from creditors in the US.
+Founded in 2012 by Kyle Davis and Su Zhu, 3AC managed about $10 billion in assets as recently as March, later sinking to $3 billion in April. Like several other crypto firms, including the lending giants Celcius and Babel Finance, 3AC’s turn in fortunes is part of the so-called crypto “winter” that’s brought down stablecoins and sent Bitcoin’s...
+Continue reading…]]></summary>
+        <author>
+            <name>The Verge -  All Posts</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[废话网》（2018）]]></title>
+        <id>https://hn.buzzing.cc/hn/31961239/</id>
+        <link href="https://hn.buzzing.cc/hn/31961239/?score=101&amp;original_url=https%3A%2F%2Fpxlnv.com%2Fblog%2Fbullshit-web%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31961239&amp;sensitive=false"/>
+        <updated>2022-07-02T22:21:45.000Z</updated>
+        <summary type="html"><![CDATA[废话网》（2018）]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Show HN: 铜--您项目的围棋框架]]></title>
+        <id>https://hn.buzzing.cc/hn/31958823/</id>
+        <link href="https://hn.buzzing.cc/hn/31958823/?score=100&amp;original_url=https%3A%2F%2Fgithub.com%2Fgocopper%2Fcopper&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31958823&amp;channel=Show+HN&amp;sensitive=false"/>
+        <updated>2022-07-02T21:55:44.000Z</updated>
+        <summary type="html"><![CDATA[Show HN: 铜--您项目的围棋框架]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[律师是做什么的？]]></title>
+        <id>https://hn.buzzing.cc/hn/31959666/</id>
+        <link href="https://hn.buzzing.cc/hn/31959666/?score=100&amp;original_url=https%3A%2F%2Fnihal.bearblog.dev%2Fwhat-do-lawyers-do%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31959666&amp;sensitive=false"/>
+        <updated>2022-07-02T21:55:44.000Z</updated>
+        <summary type="html"><![CDATA[律师是做什么的？]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[开放逻辑项目]]></title>
+        <id>https://hn.buzzing.cc/hn/31960219/</id>
+        <link href="https://hn.buzzing.cc/hn/31960219/?score=101&amp;original_url=http%3A%2F%2Fbuilds.openlogicproject.org%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31960219&amp;sensitive=false"/>
+        <updated>2022-07-02T21:23:30.000Z</updated>
+        <summary type="html"><![CDATA[开放逻辑项目]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MSVCRT的Windows malloc()实现很慢]]></title>
+        <id>https://hn.buzzing.cc/hn/31961912/</id>
+        <link href="https://hn.buzzing.cc/hn/31961912/?score=101&amp;original_url=https%3A%2F%2Ferikmcclure.com%2Fblog%2Fwindows-malloc-implementation-is-a-trash-fire%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31961912&amp;sensitive=false"/>
+        <updated>2022-07-02T21:23:30.000Z</updated>
+        <summary type="html"><![CDATA[MSVCRT的Windows malloc()实现很慢]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[荷兰和欧洲的软件工程薪酬]]></title>
+        <id>https://hn.buzzing.cc/hn/31960814/</id>
+        <link href="https://hn.buzzing.cc/hn/31960814/?score=102&amp;original_url=https%3A%2F%2Fblog.pragmaticengineer.com%2Fsoftware-engineering-salaries-in-the-netherlands-and-europe%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31960814&amp;sensitive=false"/>
+        <updated>2022-07-02T20:50:57.000Z</updated>
+        <summary type="html"><![CDATA[荷兰和欧洲的软件工程薪酬]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[断剑：圣殿骑士的阴影]]></title>
+        <id>https://hn.buzzing.cc/hn/31948661/</id>
+        <link href="https://hn.buzzing.cc/hn/31948661/?score=100&amp;original_url=https%3A%2F%2Fwww.filfre.net%2F2022%2F07%2Fbroken-sword-the-shadow-of-the-templars%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31948661&amp;sensitive=false"/>
+        <updated>2022-07-02T20:20:08.000Z</updated>
+        <summary type="html"><![CDATA[断剑：圣殿骑士的阴影]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[枪手效应]]></title>
+        <id>https://hn.buzzing.cc/hn/31959800/</id>
+        <link href="https://hn.buzzing.cc/hn/31959800/?score=105&amp;original_url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGunslinger_effect&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31959800&amp;sensitive=false"/>
+        <updated>2022-07-02T20:20:08.000Z</updated>
+        <summary type="html"><![CDATA[枪手效应]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[darktable 4.0.0发布]]></title>
+        <id>https://hn.buzzing.cc/hn/31960962/</id>
+        <link href="https://hn.buzzing.cc/hn/31960962/?score=101&amp;original_url=https%3A%2F%2Fwww.darktable.org%2F2022%2F07%2Fdarktable-4.0.0-released%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31960962&amp;sensitive=false"/>
+        <updated>2022-07-02T19:55:08.000Z</updated>
+        <summary type="html"><![CDATA[darktable 4.0.0发布]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[同样在一个宿舍，同样用电脑，一个学到技术，一个啥也不会。#程序员 #计算机]]></title>
+        <id>https://www.bilibili.com/video/av940579272</id>
+        <link href="https://www.bilibili.com/video/av940579272"/>
+        <updated>2022-07-02T19:27:05.000Z</updated>
+        <summary type="html"><![CDATA[-
+
+
+Tags:计算机,IT,互联网,计算机科学]]></summary>
+        <author>
+            <name>代码编织的世界</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[React状态管理的新浪潮]]></title>
+        <id>https://hn.buzzing.cc/hn/31959289/</id>
+        <link href="https://hn.buzzing.cc/hn/31959289/?score=101&amp;original_url=https%3A%2F%2Ffrontendmastery.com%2Fposts%2Fthe-new-wave-of-react-state-management%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31959289&amp;sensitive=false"/>
+        <updated>2022-07-02T19:14:25.000Z</updated>
+        <summary type="html"><![CDATA[React状态管理的新浪潮]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Taron Egerton Hopes to Join the MCU By Playing Wolverine]]></title>
+        <id>1849137856</id>
+        <link href="https://gizmodo.com/taron-egerton-wolverine-mcu-hopes-1849137856"/>
+        <updated>2022-07-02T19:10:00.000Z</updated>
+        <summary type="html"><![CDATA[Ever since Fox got themselves snatched up Disney and Kevin Feige made it clear that the mutants would be making their way to the MCU eventually, there’s been no shortage of speculation about who’ll be playing the new batch of X-Men. Moreso than Professor X or Magneto, Wolverine is the one that everyone’s got some…
+Read more...]]></summary>
+        <author>
+            <name>Justin Carter</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[某些CyberPower UPS可能构成火灾危险]]></title>
+        <id>https://hn.buzzing.cc/hn/31954938/</id>
+        <link href="https://hn.buzzing.cc/hn/31954938/?score=101&amp;original_url=https%3A%2F%2Fforums.redflagdeals.com%2Fsome-cyberpower-upses-may-pose-fire-hazard-2516306%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31954938&amp;sensitive=false"/>
+        <updated>2022-07-02T18:53:33.000Z</updated>
+        <summary type="html"><![CDATA[某些CyberPower UPS可能构成火灾危险]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[雅虎承认篡改电子邮件 (2002)]]></title>
+        <id>https://hn.buzzing.cc/hn/31959890/</id>
+        <link href="https://hn.buzzing.cc/hn/31959890/?score=113&amp;original_url=https%3A%2F%2Fweb.archive.org%2Fweb%2F20210126143212%2Fhttp%3A%2F%2Fnews.bbc.co.uk%2F2%2Fhi%2Fscience%2Fnature%2F2138014.stm&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31959890&amp;sensitive=false"/>
+        <updated>2022-07-02T18:53:33.000Z</updated>
+        <summary type="html"><![CDATA[雅虎承认篡改电子邮件 (2002)]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Tesla’s run of record quarterly deliveries comes to an end thanks to China’s COVID shutdowns]]></title>
+        <id>https://www.theverge.com/2022/7/2/23190004/tesla-record-quarterly-deliveries-end-china-covid-shutdowns</id>
+        <link href="https://www.theverge.com/2022/7/2/23190004/tesla-record-quarterly-deliveries-end-china-covid-shutdowns"/>
+        <updated>2022-07-02T18:48:15.000Z</updated>
+        <summary type="html"><![CDATA[Photo by Justin Sullivan/Getty Images
+    
+
+  
+Tesla announced it had delivered 254,695 vehicles during the second quarter of 2022, about an 18 percent drop from the previous quarter. The report, which was published on Tesla’s site, signals an end to a nearly two-year-long run of record quarterly deliveries for Elon Musk’s company, which can mostly be attributed to lengthy COVID-related shutdowns of its factory in Shanghai. 
+Tesla said the Model 3 and Model Y vehicles made up 238,533 of these deliveries, while 16,162 were for the Model S and Model X vehicles. On the production side of things, Tesla said it managed to build a total of 258,580 vehicles.
+
+
+
+
+China has been crucial to the company’s rise to its status as one of the most valuable automakers in the world. But Tesla’s...
+Continue reading…]]></summary>
+        <author>
+            <name>The Verge -  All Posts</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[一个工程师写文档的最佳技巧，让开发者爱不释手]]></title>
+        <id>https://hn.buzzing.cc/hn/31945863/</id>
+        <link href="https://hn.buzzing.cc/hn/31945863/?score=104&amp;original_url=https%3A%2F%2Fthenewstack.io%2Fan-engineers-best-tips-for-writing-documentation-devs-love%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31945863&amp;sensitive=false"/>
+        <updated>2022-07-02T18:27:08.000Z</updated>
+        <summary type="html"><![CDATA[一个工程师写文档的最佳技巧，让开发者爱不释手]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[玩的是情怀？欧皮耐尔折刀]]></title>
+        <id>https://www.bilibili.com/video/av898038714</id>
+        <link href="https://www.bilibili.com/video/av898038714"/>
+        <updated>2022-07-02T18:15:47.000Z</updated>
+        <summary type="html"><![CDATA[Tags:刀具,野外生存,bilibili花式露营季]]></summary>
+        <author>
+            <name>军武野路子</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Tell Us About Your Pop Culture Month: June 2022 Edition]]></title>
+        <id>1849137113</id>
+        <link href="https://gizmodo.com/open-channel-pop-culture-month-june-2022-1849137113"/>
+        <updated>2022-07-02T18:05:00.000Z</updated>
+        <summary type="html"><![CDATA[*cracks knuckles*
+
+Read more...]]></summary>
+        <author>
+            <name>Justin Carter</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[为什么你的下一台家用电脑应该是一台旧的Xeon工作站(2019)]]></title>
+        <id>https://hn.buzzing.cc/hn/31958597/</id>
+        <link href="https://hn.buzzing.cc/hn/31958597/?score=101&amp;original_url=https%3A%2F%2Ftedium.co%2F2019%2F06%2F04%2Fused-workstation-computer-buying-strategy%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31958597&amp;sensitive=false"/>
+        <updated>2022-07-02T17:58:24.000Z</updated>
+        <summary type="html"><![CDATA[为什么你的下一台家用电脑应该是一台旧的Xeon工作站(2019)]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Virgin Orbit successfully launches satellites during first night mission]]></title>
+        <id>https://www.theverge.com/2022/7/2/23192664/virgin-orbit-successfully-launches-satellites-orbit-night-mission-straight-up</id>
+        <link href="https://www.theverge.com/2022/7/2/23192664/virgin-orbit-successfully-launches-satellites-orbit-night-mission-straight-up"/>
+        <updated>2022-07-02T17:32:55.000Z</updated>
+        <summary type="html"><![CDATA[Image: Virgin Orbit
+    
+
+  
+Virgin Orbit launched a rocket carrying seven satellites from California’s Mojave Air and Space Port early Saturday morning at 1:49 AM ET (10:49PM local), marking the small satellite launcher’s first successful night mission. The company brought the satellites into low Earth orbit with the help of its Boeing 747 carrier aircraft called Cosmic Girl, which had the LauncherOne rocket attached beneath one of its wings.
+The mission, called Straight Up after a 1988 Paula Abdul song, involved seven research satellites as part of NASA’s Space Test Program. Like its previous missions, Virgin Orbit propelled the satellites into space by having Cosmic Girl carry the LauncherOne rocket 35,000 feet above the ground, giving it a headstart before the...
+Continue reading…]]></summary>
+        <author>
+            <name>The Verge -  All Posts</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[数据分析的Python，第三版--在线开放存取版]]></title>
+        <id>https://hn.buzzing.cc/hn/31957908/</id>
+        <link href="https://hn.buzzing.cc/hn/31957908/?score=104&amp;original_url=https%3A%2F%2Fwesmckinney.com%2Fbook%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31957908&amp;sensitive=false"/>
+        <updated>2022-07-02T16:46:18.000Z</updated>
+        <summary type="html"><![CDATA[数据分析的Python，第三版--在线开放存取版]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[USB键盘是如何工作的？(2021) [视频]]]></title>
+        <id>https://hn.buzzing.cc/hn/31957603/</id>
+        <link href="https://hn.buzzing.cc/hn/31957603/?score=102&amp;original_url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DwdgULBpRoXk&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31957603&amp;sensitive=false"/>
+        <updated>2022-07-02T16:23:32.000Z</updated>
+        <summary type="html"><![CDATA[USB键盘是如何工作的？(2021) [视频]]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[rsync是如何工作的？]]></title>
+        <id>https://hn.buzzing.cc/hn/31958536/</id>
+        <link href="https://hn.buzzing.cc/hn/31958536/?score=103&amp;original_url=https%3A%2F%2Fmichael.stapelberg.ch%2Fposts%2F2022-07-02-rsync-how-does-it-work%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31958536&amp;sensitive=false"/>
+        <updated>2022-07-02T16:23:32.000Z</updated>
+        <summary type="html"><![CDATA[rsync是如何工作的？]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[美国空军如何抛弃平均水平并拯救生命]]></title>
+        <id>https://hn.buzzing.cc/hn/31957255/</id>
+        <link href="https://hn.buzzing.cc/hn/31957255/?score=103&amp;original_url=https%3A%2F%2Fmannhowie.com%2Faverage-pitfall&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31957255&amp;sensitive=false"/>
+        <updated>2022-07-02T16:23:32.000Z</updated>
+        <summary type="html"><![CDATA[美国空军如何抛弃平均水平并拯救生命]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Spider-Man's Next Comic Brings Back Writer Dan Slott]]></title>
+        <id>1849137634</id>
+        <link href="https://gizmodo.com/spider-man-marvel-comics-dan-slott-mark-bagley-1849137634"/>
+        <updated>2022-07-02T16:20:00.000Z</updated>
+        <summary type="html"><![CDATA[Writer Dan Slott has had a long, sometimes controversial history with Spider-Man. He’s the man behind the story for the Shattered Dimensions video game, along with the architect behind the “Superior Spider-Man” arc where Peter Parker died (technically) and had his body jacked by Doctor Octopus. When he jumped ship…
+Read more...]]></summary>
+        <author>
+            <name>Justin Carter</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[你们都要学的暗器牙签来了]]></title>
+        <id>https://www.bilibili.com/video/av470551588</id>
+        <link href="https://www.bilibili.com/video/av470551588"/>
+        <updated>2022-07-02T16:14:07.000Z</updated>
+        <summary type="html"><![CDATA[-
+
+
+Tags:教学,学习,经验分享]]></summary>
+        <author>
+            <name>巴克TheBuck</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[These fire-prone places are ditching fireworks for drones this July Fourth]]></title>
+        <id>https://www.theverge.com/2022/7/2/23191205/fire-prone-places-replace-fireworks-drone-shows</id>
+        <link href="https://www.theverge.com/2022/7/2/23191205/fire-prone-places-replace-fireworks-drone-shows"/>
+        <updated>2022-07-02T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A sparse group of people brave the smoky conditions at Kings Beach, California, as the Caldor Fire burns nearby on Saturday, September 4th, 2021 | Jane Tyska / Digital First Media / East Bay Times via Getty Images
+    
+
+  
+After two years of Fourth of July celebrations without fireworks during the COVID-19 pandemic, the California resort community of North Lake Tahoe is ready to light up the sky again. But instead of traditional fireworks, more than 100 drones will take off for a light show choreographed to music. Like an increasing number of communities throughout the region, city planners chose fire safety and sustainability over nostalgia as California copes with a cruel megadrought. 
+“Fireworks come with their own list of known environmental impacts—including noise pollution, impacts to the lake, and increased risk of fire at a time when the wildfire risk is already so high,” Katie Biggers, executive director of the Tahoe City Downtown Association,...
+Continue reading…]]></summary>
+        <author>
+            <name>The Verge -  All Posts</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Meta’s shutting down its digital wallet, Novi]]></title>
+        <id>https://www.theverge.com/2022/7/2/23192501/meta-shutting-down-digital-wallet-novi-diem-cryptocurrency</id>
+        <link href="https://www.theverge.com/2022/7/2/23192501/meta-shutting-down-digital-wallet-novi-diem-cryptocurrency"/>
+        <updated>2022-07-02T15:58:07.000Z</updated>
+        <summary type="html"><![CDATA[Image: Facebook
+    
+
+  
+Meta’s ending the pilot for Novi, the company’s digital wallet and the last remaining piece of its troubled cryptocurrency project, as first reported by Bloomberg. On Novi’s website, Meta says the wallet is shutting down on September 1st, 2022, and asks users to withdraw their funds “as soon as possible.”
+Users will lose access to their accounts come September, and will no longer be able to add money to Novi starting July 21st. If someone forgets to withdraw their remaining balance, Meta says it will “attempt to transfer” their funds to the bank account or debit card added to the service.
+Meta rolled out the “small pilot” of Novi to users in the US and Guatemala last October. Novi was originally built to support fast and free...
+Continue reading…]]></summary>
+        <author>
+            <name>The Verge -  All Posts</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[追踪我一年来穿的所有衣服]]></title>
+        <id>https://hn.buzzing.cc/hn/31957210/</id>
+        <link href="https://hn.buzzing.cc/hn/31957210/?score=100&amp;original_url=https%3A%2F%2Fandrenader.substack.com%2Fp%2Fnfc-clothes-tracker&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31957210&amp;sensitive=false"/>
+        <updated>2022-07-02T15:57:39.000Z</updated>
+        <summary type="html"><![CDATA[追踪我一年来穿的所有衣服]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA['Gasps' as Scientists Reveal Preserved Baby Woolly Mammoth]]></title>
+        <id>1849137599</id>
+        <link href="https://gizmodo.com/baby-woolly-mammoth-mummy-yukon-1849137599"/>
+        <updated>2022-07-02T15:20:00.000Z</updated>
+        <summary type="html"><![CDATA[She’s over 30,000 years old, and yet her preservation is astounding: She has her skin, her tiny tusk nubs, her toenails, and her little tail. She still has tufts of fur, and her trunk—with its prehensile tip—is complete and malleable. Looking at the initial photograph from where she was found at a Yukon gold mine, she…
+Read more...]]></summary>
+        <author>
+            <name>Jeanne Timmons</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The weekend’s best deals: Apple TV 4K, OLED TVs, MacBook Pros, and more]]></title>
+        <id>https://arstechnica.com/?p=1863916</id>
+        <link href="https://arstechnica.com/?p=1863916"/>
+        <updated>2022-07-02T14:53:09.000Z</updated>
+        <summary type="html"><![CDATA[Dealmaster also includes Google's Chromecast, PS5 games, and Sonos speakers.]]></summary>
+        <author>
+            <name>Ars Staff</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Scunthorpe Sans, 一种能自动审查不良语言的字体]]></title>
+        <id>https://hn.buzzing.cc/hn/31957551/</id>
+        <link href="https://hn.buzzing.cc/hn/31957551/?score=102&amp;original_url=https%3A%2F%2Fvole.wtf%2Fscunthorpe-sans%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31957551&amp;sensitive=false"/>
+        <updated>2022-07-02T14:51:04.000Z</updated>
+        <summary type="html"><![CDATA[Scunthorpe Sans, 一种能自动审查不良语言的字体]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[RWBY's First Movie is a Crossover With the Justice League]]></title>
+        <id>1849137046</id>
+        <link href="https://gizmodo.com/rwby-justice-league-movie-rooster-teeth-dc-comics-1849137046"/>
+        <updated>2022-07-02T14:20:00.000Z</updated>
+        <summary type="html"><![CDATA[There’ve been no shortage of IP crossovers in recent years, particularly from Warner Bros. Space Jam 2 was basically WB’s crossover Comic-Con, and it doesn’t appear that they’ll be stopping anytime soon. On the game side, they’ve got Multiversus, where DC superheroes will get to fight alongside Cartoon Network and HBO…
+Read more...]]></summary>
+        <author>
+            <name>Justin Carter</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Your internet life needs a Feeds Reboot — here’s how to do it]]></title>
+        <id>https://www.theverge.com/23191292/control-social-algorithms-feeds-reboot-how-to</id>
+        <link href="https://www.theverge.com/23191292/control-social-algorithms-feeds-reboot-how-to"/>
+        <updated>2022-07-02T14:19:00.000Z</updated>
+        <summary type="html"><![CDATA[If you don’t tend to your algorithms, you’ll eventually hate what they show you. | Photo by Amelia Holowaty Krales / The Verge
+    
+
+  
+For the last few years, I’ve chosen one weekend day a year to undertake what I’ve come to call a Feeds Reboot. I try to systematically go through every subscription, every follow, every algorithmically or chronologically generated thing I see on social platforms, streaming services, and news apps, and reset or at least review the way it works. I can’t recommend this enough.
+Every time I do a Feeds Reboot, I notice a huge uptick in how interesting and relevant I suddenly find the internet. Does it then spend the next 364 days slowly degrading back into a morass from which I will try and extricate myself next year? Yep! But I’m still making progress.
+The point of a Feeds Reboot is to be more intentional about the internet. It’s not the...
+Continue reading…]]></summary>
+        <author>
+            <name>The Verge -  All Posts</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Refurbished Sonos speakers are discounted for the Fourth of July]]></title>
+        <id>https://www.theverge.com/good-deals/2022/7/2/23191676/refurbished-sonos-speakers-beam-roam-nvidia-rtx-3070-gpu-in-stock-deal-sale</id>
+        <link href="https://www.theverge.com/good-deals/2022/7/2/23191676/refurbished-sonos-speakers-beam-roam-nvidia-rtx-3070-gpu-in-stock-deal-sale"/>
+        <updated>2022-07-02T13:23:51.000Z</updated>
+        <summary type="html"><![CDATA[Photo by Chris Welch / The Verge
+    
+
+  
+The Fourth of July weekend is here, and hopefully you get to enjoy some time together with friends and family (and lots of delicious food). The Verge Deals compiled the best deals happening in honor of America’s birthday, but today I aim to give you a smaller, fresher selection of deals that may not last through the holiday. Frequent visitors to the site might recognize one or two of them, but I’ve tried to toss in a few new deals for your perusal. Have a nice weekend.
+Sonos is hosting another one of its sale events on refurbished audio products (in like-new condition, and covered by a one-year warranty), running the gamut of its most affordable and pricey hardware. Starting at the low end, the Sonos Roam is selling for $139, down from...
+Continue reading…]]></summary>
+        <author>
+            <name>The Verge -  All Posts</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[再见，Feedly]]></title>
+        <id>https://hn.buzzing.cc/hn/31957118/</id>
+        <link href="https://hn.buzzing.cc/hn/31957118/?score=108&amp;original_url=https%3A%2F%2Ferikgahner.dk%2F2022%2Fgoodbye-feedly%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31957118&amp;sensitive=false"/>
+        <updated>2022-07-02T13:05:41.000Z</updated>
+        <summary type="html"><![CDATA[再见，Feedly]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于结构化并发的说明，或。被认为是有害的Go语句(2018)]]></title>
+        <id>https://hn.buzzing.cc/hn/31955334/</id>
+        <link href="https://hn.buzzing.cc/hn/31955334/?score=102&amp;original_url=https%3A%2F%2Fvorpus.org%2Fblog%2Fnotes-on-structured-concurrency-or-go-statement-considered-harmful%2F&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31955334&amp;sensitive=false"/>
+        <updated>2022-07-02T13:05:41.000Z</updated>
+        <summary type="html"><![CDATA[关于结构化并发的说明，或。被认为是有害的Go语句(2018)]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[开源不是为了你（2018）]]></title>
+        <id>https://hn.buzzing.cc/hn/31957554/</id>
+        <link href="https://hn.buzzing.cc/hn/31957554/?score=106&amp;original_url=https%3A%2F%2Fgist.github.com%2Frichhickey%2F1563cddea1002958f96e7ba9519972d9&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31957554&amp;sensitive=false"/>
+        <updated>2022-07-02T13:05:41.000Z</updated>
+        <summary type="html"><![CDATA[开源不是为了你（2018）]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[TCL 30 XE 5G review: not bad for $200]]></title>
+        <id>https://www.theverge.com/23191918/tcl-30-xe-5g-review-price-screen-battery-camera-specs</id>
+        <link href="https://www.theverge.com/23191918/tcl-30-xe-5g-review-price-screen-battery-camera-specs"/>
+        <updated>2022-07-02T13:00:00.000Z</updated>
+        <summary type="html"><![CDATA[TCL’s inexpensive phone offers decent performance, access to T-Mobile’s good 5G network, and not much else
+Continue reading…]]></summary>
+        <author>
+            <name>The Verge -  All Posts</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Bote's Inflatable Stand-Up Paddleboard Packs Big Summer Fun]]></title>
+        <id>62b482a179907f238941ad57</id>
+        <link href="https://www.wired.com/review/breeze-aero-inflatable-paddle-board/"/>
+        <updated>2022-07-02T13:00:00.000Z</updated>
+        <summary type="html"><![CDATA[It's spendy, but this portable board folds up compact enough to fit in (relatively) small spaces.]]></summary>
+        <author>
+            <name>Scott Gilbertson</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Robocalls Are (Finally) Being Shaken Up]]></title>
+        <id>62be3c5050f8f55faa9502cf</id>
+        <link href="https://www.wired.com/story/robocalls-are-finally-being-shaken-up/"/>
+        <updated>2022-07-02T13:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Plus: Insta-delete your Instagram account, TikTok is eyeing your wallet, and Google makes it easier to switch from iOS.]]></summary>
+        <author>
+            <name>Boone Ashworth</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gun Database Breach Leaks Details on Thousands of Owners]]></title>
+        <id>62bf749051f58063018c35be</id>
+        <link href="https://www.wired.com/story/california-gun-owner-leak-security-roundup/"/>
+        <updated>2022-07-02T13:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Plus: Indian hacker-for-hire groups, Chinese student espionage efforts, and more.]]></summary>
+        <author>
+            <name>Matt Burgess</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to delete your Instagram account]]></title>
+        <id>https://www.theverge.com/22786305/how-to-delete-restore-instagram-account-web-app-temporarily-suspend</id>
+        <link href="https://www.theverge.com/22786305/how-to-delete-restore-instagram-account-web-app-temporarily-suspend"/>
+        <updated>2022-07-02T12:32:28.000Z</updated>
+        <summary type="html"><![CDATA[Illustration by Alex Castro / The Verge
+    
+
+  
+If you’ve made the decision to delete Instagram, whether because you’ve outgrown the need for a certain finsta or because its parent company Meta is courting controversy again, doing so isn’t as quick or easy as it should be. Up until recently, it couldn’t even be done from within the Instagram app.
+Go ahead and take a moment to make an obligatory “I’m deleting Instagram” post if you’d like. After that, you have two ways you can go about it.
+Deleting Instagram using the iOS or Android App
+The easiest way for iPhone users to delete Instagram is by using the app. To do so, go to your profile, tap the hamburger menu in the top right, and select Settings. Then go to Account, and scroll down to the bottom of the menu. There will be a Delete...
+Continue reading…]]></summary>
+        <author>
+            <name>The Verge -  All Posts</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Stranger Things 4 ends by trusting in the season’s best and worst instincts]]></title>
+        <id>https://www.theverge.com/2022/7/2/23192070/stranger-things-4-volume-2-review</id>
+        <link href="https://www.theverge.com/2022/7/2/23192070/stranger-things-4-volume-2-review"/>
+        <updated>2022-07-02T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Millie Bobby Brown as Eleven and Matthew Modine as Dr. Martin Brenner. | Netflix
+    
+
+
+  		 
+Stranger Things 4 Vol. 2 finishes with a deadly bang and the glimpse of the apocalypse
+Continue reading…]]></summary>
+        <author>
+            <name>The Verge -  All Posts</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Work Offline and Still Be Productive]]></title>
+        <id>62b644d19a1672fa99dc3def</id>
+        <link href="https://www.wired.com/story/how-to-work-offline/"/>
+        <updated>2022-07-02T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Whether you're on a train, in the mountains, or at home when your wifi cuts out, you can still get a lot done. All it takes is a little preparation.]]></summary>
+        <author>
+            <name>Justin Pot</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[130-Year-Old Menus Show How Climate Change Affects What We Eat]]></title>
+        <id>62b9e63d0fb5f25fbb4ece08</id>
+        <link href="https://www.wired.com/story/130-year-old-menus-show-how-climate-change-affects-what-we-eat/"/>
+        <updated>2022-07-02T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[By studying the so-called mean temperature of restaurant seafood, scientists have shown how the species that fill our plates have changed with time.]]></summary>
+        <author>
+            <name>Ian Rose</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[We Dare You to Feel Relaxed After Watching These 11 Cursed ASMR Videos]]></title>
+        <id>1849133992</id>
+        <link href="https://gizmodo.com/11-weird-asmr-youtube-videos-give-you-tingles-1849133992"/>
+        <updated>2022-07-02T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Are you one of the many, many people that gets a tingly kick from watching soft-spoken YouTubers tapping and whispering into their mics from hours on end? Have I got some bad vibes for you.
+Read more...]]></summary>
+        <author>
+            <name>Shoshana Wodinsky</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[10 Years After the Higgs Boson, What's the Next Big Thing for Physics?]]></title>
+        <id>1849134503</id>
+        <link href="https://gizmodo.com/future-of-particle-physics-higgs-boson-10-year-annivers-1849134503"/>
+        <updated>2022-07-02T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[On July 4, 2012, scientists at CERN confirmed the observation of the Higgs boson, an elementary particle first proposed in the 1960s. The boson’s discovery was a momentous occasion, as it meant physicists were a step closer to probing the field associated with the boson, which gives particles mass.
+
+Read more...]]></summary>
+        <author>
+            <name>Isaac Schultz</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[为什么打穿地壳一定要在海底？【汪品先院士】]]></title>
+        <id>https://www.bilibili.com/video/av512919773</id>
+        <link href="https://www.bilibili.com/video/av512919773"/>
+        <updated>2022-07-02T11:59:59.000Z</updated>
+        <summary type="html"><![CDATA[Tags:科学,地球,科普,海洋,地理,科普纪录,地质,万物研究所]]></summary>
+        <author>
+            <name>汪品先院士</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to go from eating mosquitos in Siberia to leading a NASA mission]]></title>
+        <id>https://arstechnica.com/?p=1861534</id>
+        <link href="https://arstechnica.com/?p=1861534"/>
+        <updated>2022-07-02T11:30:22.000Z</updated>
+        <summary type="html"><![CDATA[An autobiography covers a career in science that even its author admits is “curvy.”]]></summary>
+        <author>
+            <name>Ars Contributors</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[RadioShack's Twitter Wasn't Hacked, It's Just a Crypto Shill Now]]></title>
+        <id>1849136347</id>
+        <link href="https://gizmodo.com/radioshack-twitter-hacked-crypto-shill-bitcoin-1849136347"/>
+        <updated>2022-07-02T11:30:00.000Z</updated>
+        <summary type="html"><![CDATA[This week, the Twitter account for RadioShack went from just weird to totally apeshit. In short order, the company’s entire feed became a veritable trove of NSFW material, including musings about vibrators, “big tittes” (misspelling theirs), and tweets trolling celebrities and other corporate accounts. Remarks ranged…
+Read more...]]></summary>
+        <author>
+            <name>Lucas Ropek</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[一个男孩午餐时吃了180个褪黑素软糖，这是他的大脑发生的变化]]></title>
+        <id>https://www.bilibili.com/video/av470572471</id>
+        <link href="https://www.bilibili.com/video/av470572471"/>
+        <updated>2022-07-02T11:10:00.000Z</updated>
+        <summary type="html"><![CDATA[A Boy Ate 180 Gummy Melatonins For Lunch.
+This Is What Happened To His Brain.
+https://www.youtube.com/watch?v=nJR8Nfi8wg8
+Chubbyemu
+2022年6月27日发布
+
+
+Tags:生命,科普,健康,生物,医学,4K,Chubbyemu,万物研究所]]></summary>
+        <author>
+            <name>Chubbyemu</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How many calories will the Tour de France winner burn?]]></title>
+        <id>https://arstechnica.com/?p=1863980</id>
+        <link href="https://arstechnica.com/?p=1863980"/>
+        <updated>2022-07-02T11:00:45.000Z</updated>
+        <summary type="html"><![CDATA[The best cyclists are capable of producing 1,000 watts of power in short bursts.]]></summary>
+        <author>
+            <name>The Conversation</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The 31 Best Fourth of July Deals on Kitchen Gizmos and Tech]]></title>
+        <id>62bb31c4de7313c2bd2cf4f9</id>
+        <link href="https://www.wired.com/story/fourth-of-july-sales-2022/"/>
+        <updated>2022-07-02T11:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Independence Day is here, and so are the savings. We've rounded up plenty of sales on air purifiers, smart speakers, massage guns, and more.]]></summary>
+        <author>
+            <name>Brenda Stolyar</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Shop Like a Pro on Amazon Prime Day]]></title>
+        <id>62bdec10de25ce412a782668</id>
+        <link href="https://www.wired.com/story/amazon-prime-day-2022-tips-to-find-best-deals/"/>
+        <updated>2022-07-02T11:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The big sale event is notoriously full of lackluster deals. Here's how to cut through the clutter to find the real gems.]]></summary>
+        <author>
+            <name>Louryn Strampe</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[21 Best Early Amazon Prime Day Deals]]></title>
+        <id>62b1f38079907f238941ace8</id>
+        <link href="https://www.wired.com/story/early-amazon-prime-day-deals-and-tips-2022-2/"/>
+        <updated>2022-07-02T11:00:00.000Z</updated>
+        <summary type="html"><![CDATA[From TVs and smartphones to laptops, we found great discounts on some of our favorite products ahead of the retailer’s big sales event.]]></summary>
+        <author>
+            <name>Parker Hall, Brenda Stolyar</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Is Google's $90 Million Settlement a Win for App Developers, or for Google?]]></title>
+        <id>1849134296</id>
+        <link href="https://gizmodo.com/google-play-store-android-90-settlement-app-developers-1849134296"/>
+        <updated>2022-07-02T11:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Small app developers pried $90 million from Google in a legal settlement announced Friday, hot on the heels of a similar agreement with Apple. 
+Read more...]]></summary>
+        <author>
+            <name>Mack DeGeurin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[硬核观察 #685 数年后 Ubuntu Unity 桌面起死回生]]></title>
+        <id>https://linux.cn/article-14787-1.html?utm_source=rss&amp;utm_medium=rss</id>
+        <link href="https://linux.cn/article-14787-1.html?utm_source=rss&amp;utm_medium=rss"/>
+        <updated>2022-07-02T10:22:14.000Z</updated>
+        <summary type="html"><![CDATA[数年后 Ubuntu Unity 桌面起死回生
+
+Ubuntu 的 Unity 桌面已经很久没有更新了，上一次它还是 Ubuntu 17.04 中出现的 Unity 7.5。Ubuntu 背后的 Canonical 公司随后放弃了对 Unity 的开发支持。但是一些喜欢它的开发者们建立了 UnityX 项目，从而今年我们见到了 Unity 7.6，它被搭载在非官方的 Ubuntu Unity 合成版中。当然，你也可以在普通的 Ubuntu 上安装它。这是另一个完全不像 Windows 的少数选项。
+
+
+消息来源：The Register
+
+
+
+老王点评：Unity 本身好不好，是不是更流行并不重要，重要的是，开源世界是自由的，你有随时再造一个轮子的自由。这很重要。
+
+
+
+
+软件自由保护协会抨击 GitHub
+
+软件自由保护协会（SFC）专注于保护自由和开源软件，说它已经停止使用微软的 GitHub 进行项目托管，并敦促其他软件开发者也这样做。他们在其网站上增加了一个放弃 GitHub 的说明，并督促自由和开源软件开发者们自愿切换到不同的代码托管服务。SFC 与 GitHub 的决裂最终是由 GitHub Copilot 导致的。他们说，GitHub 决定发布一个源自 FOSS 代码的营利性产品，这“太让人难以忍受了”。Copilot 的训练数据来自 GitHub 上的公共存储库中的代码，但是并没有说明这些代码所附带的软件许可证和版权持有人是什么。
+
+
+消息来源：The Register
+
+
+
+老王点评：确实，似乎 Copilot 有意无意的忽视了用来训练的代码的许可证问题，所以，你很可能在得到的建议中采用了各种许可证的代码，即便只是几行。这从跟本上打击了开源许可证的严肃性。
+
+
+
+
+无视谷歌、Mozilla 反对，万维网联盟发布了 DID 规范
+
+去中心化标识符（DID）规范描述了一种部署全球唯一标识符的方法，而无需一个中心化的机构作为验证实体。它们旨在使个人和组织能够使用他们信任的系统生成自己的标识符，这些新的标识符使实体能够通过使用数字签名等加密证明来证明对它们的控制。DID 的格式类似 did:方法:特定标识。但谷歌、Mozilla 提出了反对意见，DID 中的“方法”没有定义，所以没有办法评估 DID 将如何运作，也没有办法确定如何处理互操作。他们还担心依靠工作证明量的区块链来处理 DID 的道德问题。
+
+
+消息来源：The Register
+
+
+
+老王点评：虽然这很去中心化，但是我怀疑由中心化组织提出的去中心化规范，是否真的有用？]]></summary>
+        <author>
+            <name>linux@linux.cn (linux)</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[给和老婆一起远程看视频的插件做了一个主页，一键点击即可试用。欢迎访问]]></title>
         <id>863654</id>
@@ -284,6 +2122,16 @@ Minimum height of a tree]]></summary>
 今天突然有点感叹软件行业，太多人是这样：市场需要快速解决问题，以继续推进，结果技术人员们搞了 20 种解决方案，然后自己打成一片，争论那种方案更优雅更好。]]></summary>
         <author>
             <name>Cat7373</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[维吉尔。一种快速和轻量级的编程语言，可编译为WASM。]]></title>
+        <id>https://hn.buzzing.cc/hn/31954053/</id>
+        <link href="https://hn.buzzing.cc/hn/31954053/?score=102&amp;original_url=https%3A%2F%2Fgithub.com%2Ftitzer%2Fvirgil&amp;discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D31954053&amp;sensitive=false"/>
+        <updated>2022-07-02T08:47:53.000Z</updated>
+        <summary type="html"><![CDATA[维吉尔。一种快速和轻量级的编程语言，可编译为WASM。]]></summary>
+        <author>
+            <name>Hacker News 热门</name>
         </author>
     </entry>
     <entry>
@@ -1167,6 +3015,19 @@ Try Kroki for a happy diagramming!]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[加拿大挂清朝黄龙旗，开封果子露无添加剂]]></title>
+        <id>https://www.bilibili.com/video/av385605406</id>
+        <link href="https://www.bilibili.com/video/av385605406"/>
+        <updated>2022-07-02T00:35:22.000Z</updated>
+        <summary type="html"><![CDATA[加拿大挂清朝黄龙旗，开封果子露无添加剂
+
+
+Tags:清朝,黄龙旗,果子露,打卡挑战,万物研究所]]></summary>
+        <author>
+            <name>地球百科君</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[How Universal's E.T. Adventure Ride Still Captures the Magic of the Movie]]></title>
         <id>1849135329</id>
         <link href="https://gizmodo.com/e-t-the-adventure-universal-studios-orlando-spielberg-1849135329"/>
@@ -1428,6 +3289,19 @@ Continue reading…]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[体内受精动画过程。打家来看看吧]]></title>
+        <id>https://www.bilibili.com/video/av897910135</id>
+        <link href="https://www.bilibili.com/video/av897910135"/>
+        <updated>2022-07-01T20:30:09.000Z</updated>
+        <summary type="html"><![CDATA[体内受精动画过程。打家来看看吧
+
+
+Tags:科普,健康,医学]]></summary>
+        <author>
+            <name>Doctorpaper</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Here's What's Actually in Disney's Absurd $5,000 Star Wars Cocktail]]></title>
         <id>1849135086</id>
         <link href="https://gizmodo.com/disney-cruise-star-wars-5000-dollar-cocktail-ingredient-1849135086"/>
@@ -1542,6 +3416,19 @@ Read more...]]></summary>
 Read more...]]></summary>
         <author>
             <name>James Whitbrook</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[二指提瓶术教学，饭桌必备！]]></title>
+        <id>https://www.bilibili.com/video/av600463381</id>
+        <link href="https://www.bilibili.com/video/av600463381"/>
+        <updated>2022-07-01T19:24:38.000Z</updated>
+        <summary type="html"><![CDATA[-
+
+
+Tags:技巧,打卡挑战]]></summary>
+        <author>
+            <name>周小冰的魔术</name>
         </author>
     </entry>
     <entry>
@@ -1686,6 +3573,32 @@ Read more...]]></summary>
         <summary type="html"><![CDATA[Two executives in charge of Google's most turbulent products are leaving this week.]]></summary>
         <author>
             <name>Ron Amadeo</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[这个放进冰箱，小心被炸伤！]]></title>
+        <id>https://www.bilibili.com/video/av982962678</id>
+        <link href="https://www.bilibili.com/video/av982962678"/>
+        <updated>2022-07-01T17:59:33.000Z</updated>
+        <summary type="html"><![CDATA[夏天喝凉饮虽然很爽，但千万别图快速降温将汽水、啤酒等放进冰箱冷冻，真的很危险！
+
+
+Tags:原创,科学,生命,教育,科普,冰箱,可乐,安全,健康,涨姿势]]></summary>
+        <author>
+            <name>刘加勇医生</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【游泳？溺水！！】是不是无论怎么爆改，它都是这么傻。。。。]]></title>
+        <id>https://www.bilibili.com/video/av257894867</id>
+        <link href="https://www.bilibili.com/video/av257894867"/>
+        <updated>2022-07-01T17:54:52.000Z</updated>
+        <summary type="html"><![CDATA[-
+
+
+Tags:神奇宝贝,搞笑,DIY,精灵宝可梦,创意,知识,可达鸭,科学科普]]></summary>
+        <author>
+            <name>大宽物理</name>
         </author>
     </entry>
     <entry>
@@ -2213,6 +4126,16 @@ Read more...]]></summary>
         <summary type="html"><![CDATA[Putting sensor-packed Chinese cars on Western roads could be a privacy issue. Just ask Tesla.]]></summary>
         <author>
             <name>Justin Ling</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Bootstrap CSS is still the sh*t. But we can make it better.]]></title>
+        <id>https://dev.to/wes_walke/bootstrap-css-is-still-the-sht-but-we-can-make-it-better-1p6d</id>
+        <link href="https://dev.to/wes_walke/bootstrap-css-is-still-the-sht-but-we-can-make-it-better-1p6d"/>
+        <updated>2022-07-01T10:56:01.000Z</updated>
+        <summary type="html"><![CDATA[#css #design #webdev]]></summary>
+        <author>
+            <name>Weston Walker 📚</name>
         </author>
     </entry>
     <entry>
@@ -3737,6 +5660,19 @@ via: https://opensource.com/article/21/5/fog-computing
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[人类该警惕了吗？加拿大北部冻土带内：发现一头4万年前动物遗骸]]></title>
+        <id>https://www.bilibili.com/video/av385480015</id>
+        <link href="https://www.bilibili.com/video/av385480015"/>
+        <updated>2022-07-01T00:28:09.000Z</updated>
+        <summary type="html"><![CDATA[-
+
+
+Tags:地球,人类,加拿大,万年,生物,发现]]></summary>
+        <author>
+            <name>来给你一块</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Watch Ant-Man Try to Explain Why He Didn't Go Up Thanos' Butt]]></title>
         <id>1849131995</id>
         <link href="https://gizmodo.com/ant-man-paul-rudd-avengers-thanos-butt-disney-cruise-1849131995"/>
@@ -3811,6 +5747,21 @@ Continue reading…]]></summary>
         <summary type="html"><![CDATA[You can use sets in Python to store a collection of data in a single variable.  Each of the built-in data structures in Python like lists, dictionaries, and tuples have their distinguishing features.  Here are some of the features of sets in Python:   * Duplicate items]]></summary>
         <author>
             <name>Ihechikara Vincent Abba</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Inception resnet戴口罩的人脸识别]]></title>
+        <id>https://www.bilibili.com/video/av727941909</id>
+        <link href="https://www.bilibili.com/video/av727941909"/>
+        <updated>2022-06-30T22:42:46.000Z</updated>
+        <summary type="html"><![CDATA[项目用SSD和做检测，使用inception_resnet做识别，在80W张混合数据集上训练，1.3W张测试样本上的准确率为97.1%。
+
+源码已开源，课程已同步更新，vx：bbxz1024
+
+
+Tags:人工智能,人脸识别,戴口罩]]></summary>
+        <author>
+            <name>恩培-计算机视觉</name>
         </author>
     </entry>
     <entry>
@@ -3999,6 +5950,19 @@ Continue reading…]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[为什么连接水管要故意砸一颗钉子？估计只有老电工才知道，涨见识]]></title>
+        <id>https://www.bilibili.com/video/av982904264</id>
+        <link href="https://www.bilibili.com/video/av982904264"/>
+        <updated>2022-06-30T21:00:04.000Z</updated>
+        <summary type="html"><![CDATA[为什么连接水管要故意砸一颗钉子？估计只有老电工才知道，涨见识
+
+
+Tags:水管,电钻,经验分享,电工,技能提升营,技能提升营2022第二季]]></summary>
+        <author>
+            <name>电气电工技术</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA['Cryptoqueen' Lands a Spot On the FBI's Most Wanted List]]></title>
         <id>1849131003</id>
         <link href="https://gizmodo.com/cryptoqueen-lands-a-spot-on-the-fbis-most-wanted-list-1849131003"/>
@@ -4007,6 +5971,19 @@ Continue reading…]]></summary>
 Read more...]]></summary>
         <author>
             <name>Kyle Barr</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[练成了]]></title>
+        <id>https://www.bilibili.com/video/av215465742</id>
+        <link href="https://www.bilibili.com/video/av215465742"/>
+        <updated>2022-06-30T20:56:20.000Z</updated>
+        <summary type="html"><![CDATA[-
+
+
+Tags:特殊技能]]></summary>
+        <author>
+            <name>豪好好东方不败</name>
         </author>
     </entry>
     <entry>
@@ -4322,6 +6299,41 @@ Tags:魔法,特效,创意,剪辑,酷炫,后期,车,AE,脑洞,技能提升营,技
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[当你真的学会DataBinding后，你会发现“这玩意真香”!]]></title>
+        <id>https://juejin.cn/post/7115224601830883365</id>
+        <link href="https://juejin.cn/post/7115224601830883365"/>
+        <updated>2022-06-30T18:25:27.000Z</updated>
+        <summary type="html"><![CDATA[前言
+🏀DataBinding只是一种工具，用来解决View和数据之间的绑定。
+Data Binding，顾名思义：数据绑定，它可以将布局页面中的组件和应用中的数据进行绑定，支持单向绑定和双向绑定，单向绑定就是如果数据有变化就会驱动页面进行变化，双向绑定就是除了单向绑定之外还支持页面的变化驱动数据的变化，如果页面中有一个输入框，那么我们就可以进行双向绑定，数据变化，它的显示内容就变了，我们手动输入内容也可以改变绑定它的数据。
+🌟官方文档：https://developer.android.google.cn/jetpack/androidx/releases/databinding
+🌟官方Demo地址：https://github.com/googlecodelabs/android-databinding
+本文代码地址
+如何使用DataBinding呢？
+1.启用DataBinding
+引用官方文档：
+Databinding与 Android Gradle 插件捆绑在一起。您无需声明对此库的依赖项，但必须启用它。
+☀注意：即使模块不直接使用数据绑定，也必须为依赖于使用数据绑定的库的所有模块启用数据绑定。
+//在gradle的android下加入，然后点击sync
+android {
+    ...
+    //android studio 4.0以下
+    dataBinding{
+    
+    }
+    //android studio4.1以后
+    buildFeatures {
+        dataBinding true
+    }
+}
+
+2.生成DataBinding布局
+在我们的布局文件中，选择根目录的View，按下Alt+回车键，点击Convert to data binding layout，就可以转换为DataBinding布局啦。…]]></summary>
+        <author>
+            <name>编程的平行世界</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[益智小金字塔，比木头的那一款要难！话说它有四种摆法你们看出来了吗？]]></title>
         <id>https://www.bilibili.com/video/av555458464</id>
         <link href="https://www.bilibili.com/video/av555458464"/>
@@ -4450,6 +6462,16 @@ Read more...]]></summary>
 Read more...]]></summary>
         <author>
             <name>Lauren Leffer</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[坚持了136秒...不好意思笑喷了]]></title>
+        <id>https://www.bilibili.com/video/av982902701</id>
+        <link href="https://www.bilibili.com/video/av982902701"/>
+        <updated>2022-06-30T17:29:30.000Z</updated>
+        <summary type="html"><![CDATA[Tags:原创,科学,科普,学习,实验,自然,人文,数据,科普纪录,网络热门鉴定,万物研究所]]></summary>
+        <author>
+            <name>李大猫Li</name>
         </author>
     </entry>
     <entry>
@@ -4854,6 +6876,19 @@ Tags:教学,学习,经验分享]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[16集丨学会了这个魔术表演给心仪的人看，瞬间逼格拉满！]]></title>
+        <id>https://www.bilibili.com/video/av342656556</id>
+        <link href="https://www.bilibili.com/video/av342656556"/>
+        <updated>2022-06-30T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[随时分享各类魔术教学，大家记得点赞收藏关注哦！
+
+
+Tags:创意,教学,魔术,扑克牌,纸牌,纸牌魔术,近景魔术,魔术教学,纸牌魔术教学,近景魔术教学]]></summary>
+        <author>
+            <name>远的魔术</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[The Best Coffee Subscriptions We’ve Savored]]></title>
         <id>5f986fd8e4fe02a20082e849</id>
         <link href="https://www.wired.com/story/best-coffee-subscriptions/"/>
@@ -4871,6 +6906,19 @@ Tags:教学,学习,经验分享]]></summary>
         <summary type="html"><![CDATA[This week, we talk with author and venture capitalist Matthew Ball about the metaverse and whether this next generation of the internet will ever really materialize.]]></summary>
         <author>
             <name>WIRED Staff</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[说了个啥？（for entertainment purpose only）]]></title>
+        <id>https://www.bilibili.com/video/av427897996</id>
+        <link href="https://www.bilibili.com/video/av427897996"/>
+        <updated>2022-06-30T11:41:14.000Z</updated>
+        <summary type="html"><![CDATA[-
+
+
+Tags:学习,外语,课程]]></summary>
+        <author>
+            <name>行之王总</name>
         </author>
     </entry>
     <entry>
@@ -6305,6 +8353,16 @@ via: https://www.debugpoint.com/2021/08/enable-minimize-maximize-elementary/
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[React is awesome but have you tried fresh?]]></title>
+        <id>https://dev.to/asheeshh/react-is-awesome-but-have-you-tried-fresh-47ho</id>
+        <link href="https://dev.to/asheeshh/react-is-awesome-but-have-you-tried-fresh-47ho"/>
+        <updated>2022-06-30T05:11:45.000Z</updated>
+        <summary type="html"><![CDATA[#webdev #javascript #react #tutorial]]></summary>
+        <author>
+            <name>ashish</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Java Weekly, Issue 444]]></title>
         <id>https://www.baeldung.com/?p=126383</id>
         <link href="https://feeds.feedblitz.com/~/701134568/0/baeldung~Java-Weekly-Issue"/>
@@ -6967,6 +9025,32 @@ Read more...]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[刚学会Transform，你告诉我就要被移除了]]></title>
+        <id>https://juejin.cn/post/7114863832954044446</id>
+        <link href="https://juejin.cn/post/7114863832954044446"/>
+        <updated>2022-06-29T19:05:35.000Z</updated>
+        <summary type="html"><![CDATA[theme: condensed-night-purple
+highlight: xcode
+背景
+我们工程中使用的AGP是4.0.2版本，在去年升级的，目前最新版本是AGP7.2.1，已经落后官方5个大版本了
+gradle升级是必然的，只是时候未到而已。同时在去年也进行了AGP7.0升级调研，由于种种原因，按下了暂停键。但是这不妨碍我们与时俱进，去学习新的知识。
+
+今天给大家介绍我们未来会使用到的一个新特性，先看下面这张图
+
+从 AGP1.5 一直存在的Transform API在AGP7.0被标记为废弃了，AGP8.0会直接移除掉，连AGP中最稳定的Transform API都被废弃了，所以技术的更新迭代，没有什么是不可能的，只有变化才能适用发展
+根据Google的计划AGP8.0在今年年中就会正式发布
+什么是Transform
+已经2022年了，作为一名Android工程师，我相信大家都知道Transform是什么，如果有人不知道，也没关系，因为Transform已经快过时了，按照惯例，这里我还是要介绍一下Transform
+
+AGP包含了一个Transform API, 它允许第三方插件在编译后的class文件转换为dex文件之前做处理操作. 而使用Transform API, 我们完全可以不用去关注相关task的生成与执行流程, 它让我们可以只聚焦在如何对输入的class文件进行处理
+工作时机 ：Transform 工作在 Android 构建中由 Class → Dex 的节点
+处理对象： 处理对象包括 Javac 编译后的 Class 文件、Java 标准 resource 资源、本地依赖和远程依赖的 JAR/AAR
+Transform Task： 每个 Transform 都对应一个 Task，Transform 的输入和输出可以理解为对应 Transfor…]]></summary>
+        <author>
+            <name>掀乱书页的风</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Meta sparks anger by charging for VR apps]]></title>
         <id>https://arstechnica.com/?p=1863473</id>
         <link href="https://arstechnica.com/?p=1863473"/>
@@ -7073,6 +9157,35 @@ Tags:计算机,程序员,IT,互联网,编程,代码]]></summary>
         <summary type="html"><![CDATA[用于印有条形码的纸牌边缘的扫描器]]></summary>
         <author>
             <name>Hacker News 热门</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[FlutterWeb浏览器刷新后无法回退的解决方案]]></title>
+        <id>https://juejin.cn/post/7114848130004156446</id>
+        <link href="https://juejin.cn/post/7114848130004156446"/>
+        <updated>2022-06-29T18:05:09.000Z</updated>
+        <summary type="html"><![CDATA[theme: smartblue
+highlight: arduino-light
+在上一篇文章《FlutterWeb开发进出坑总结》中说到，“用静态路由的方式跳转，全局变量，单例对象丢失，页面栈记录丢失。”，那本文就是介绍一下页面栈记录丢失的解决方案。
+一、问题
+在Flutter开发的网页运行时，浏览器刷新网页后，虽然会显示刷新前的页面（前提是用静态路由跳转），但这时调用Navigator.pop方法是回不到上一页的，包括点击浏览器的回退按钮也是无效的（地址栏中的url会变，页面不会变）。
+二、原因
+当浏览器刷新时，Flutter引擎会重新启动，并加载当前页面，也就是说，刷新后的Flutter内存中所有静态变量都被初始化，页面栈内之前的页面记录都未保留，只有当前的页面。就像是浏览网页时，把其中一页的网址拷出来，在新的标签页再次打开。
+三、解决方案
+1. 思路
+知道什么原因引起的，就针对性解决。页面栈记录丢失，那么就代码中自己维护一套备用栈，监听页面路由，每次进入新页面时，记录当前页面的URL，当退出时，删除记录的URL，在浏览器刷新栈记录失效时，帮助回退到上一页。
+2.方案优缺点
+优点： 可实现回退效果无异常，调用Navigator.pop方法或点击浏览器回退按钮都支持；
+缺点： Navigator.pushName().then的回调无法生效，因为是重新生成的上一页，所以并不会调用回调；回退后的页面中的临时数据都会消失，比如输入框内的内容，成员变量等；跳转必须用静态路由的方式，并且传参要用Uri包裹，不能用构造函数传参。
+四、实现
+1. Web本地存储工具—localStorage
+localStorage是在html包下window中的一个存储对象，以key、value的形式进行存储
+// 导包
+import 'dart:html' as html;
+
+// 使用方式…]]></summary>
+        <author>
+            <name>苏啵曼</name>
         </author>
     </entry>
     <entry>
@@ -19178,6 +21291,16 @@ LiveData 遵循观察者模式。当底层数据发生变化时，Live…]]></su
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[How to use async function in useEffect?]]></title>
+        <id>https://dev.to/jasmin/how-to-use-async-function-in-useeffect-5efc</id>
+        <link href="https://dev.to/jasmin/how-to-use-async-function-in-useeffect-5efc"/>
+        <updated>2022-06-20T21:06:54.000Z</updated>
+        <summary type="html"><![CDATA[#react #jsx #webdev #javascript]]></summary>
+        <author>
+            <name>Jasmin Virdi</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Practical WEBPACK Basics: Pure Javascript frontend]]></title>
         <id>https://dev.to/steffanboodhoo/practical-webpack-basics-pure-javascript-frontend-356</id>
         <link href="https://dev.to/steffanboodhoo/practical-webpack-basics-pure-javascript-frontend-356"/>
@@ -19665,49 +21788,6 @@ Android 系统要求所有 APK 必须先使用证书进行数字签名，然后�
         <summary type="html"><![CDATA[#svelte #go #docker]]></summary>
         <author>
             <name>Arya Prakasa</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[v1.15.0]]></title>
-        <id>https://github.com/osmoscraft/osmosfeed/releases/tag/v1.15.0</id>
-        <link href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.15.0"/>
-        <updated>2022-06-18T19:01:33.000Z</updated>
-        <summary type="html"><![CDATA[Added: Resolve relative URLs in item link and media
-Added: Item thumbnail fallback to channel thumbnail
-Chore: Dependency updates
-Thank you: @cpwnd]]></summary>
-        <author>
-            <name>Release notes from osmosfeed</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[An Alleged Russian Spy Was Busted Trying to Intern at The Hague]]></title>
-        <id>62acff46828317a13ee28523</id>
-        <link href="https://www.wired.com/story/russia-spy-sergey-vladimirovich-cherkasov-gru-roundup/"/>
-        <updated>2022-06-18T13:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Plus: Firefox adds new privacy protections, a big Intel and AMD chip flaw, and more of the week’s top security news.]]></summary>
-        <author>
-            <name>Matt Burgess</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Some Scientists Coined a New Name for Summer: ‘Danger Season’]]></title>
-        <id>62a7704ac285f36ab8089687</id>
-        <link href="https://www.wired.com/story/some-scientists-have-a-new-name-for-summer-danger-season/"/>
-        <updated>2022-06-18T12:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Hurricanes, heat, fires, smoke, drought. Is it time to stop making the hottest part of the year seem cool?]]></summary>
-        <author>
-            <name>Kate Yoder</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[My Problem With Pronouns]]></title>
-        <id>62a380c43dcc4988ddd7590e</id>
-        <link href="https://www.wired.com/story/my-problem-with-pronouns/"/>
-        <updated>2022-06-18T11:00:00.000Z</updated>
-        <summary type="html"><![CDATA[The thing about identity is, it changes over space and time.]]></summary>
-        <author>
-            <name>KC Cole</name>
         </author>
     </entry>
 </feed>
