@@ -12,6 +12,46 @@
       "siteUrl": "https://www.freecodecamp.org/news/",
       "articles": [
         {
+          "id": "https://www.freecodecamp.org/news/javascript-document-ready-jquery-example/",
+          "author": "Ihechikara Vincent Abba",
+          "description": "When working with JavaScript and the Document Object Model (DOM), you might want your script to run only when the DOM has loaded.  You can do this using the $(document).ready() method in jQuery, or the  DOMContentLoaded event in vanilla JavaScript. In this article, you'll learn how to make",
+          "link": "https://www.freecodecamp.org/news/javascript-document-ready-jquery-example/",
+          "publishedOn": "2022-07-27T21:03:19.000Z",
+          "wordCount": 1095,
+          "title": "JavaScript document.ready() – Document Ready JS and jQuery Example",
+          "imageUrl": "https://www.freecodecamp.org/news/content/images/2022/07/joan-gamell-ZS67i1HLllo-unsplash.jpg"
+        },
+        {
+          "id": "https://www.freecodecamp.org/news/how-to-build-an-ai-chatbot-with-redis-python-and-gpt/",
+          "author": "Stephen Sanwo",
+          "description": "In order to build a working full-stack application, there are so many moving parts to think about. And you'll need to make many decisions that will be critical to the success of your app. For example, what language will you use and what platform will you deploy on? Are you",
+          "link": "https://www.freecodecamp.org/news/how-to-build-an-ai-chatbot-with-redis-python-and-gpt/",
+          "publishedOn": "2022-07-27T20:16:44.000Z",
+          "wordCount": 9836,
+          "title": "How to Build an AI Chatbot with Redis, Python, and GPT",
+          "imageUrl": "https://www.freecodecamp.org/news/content/images/2022/07/a127b667458911.5b3b0b831c028-1.jpg"
+        },
+        {
+          "id": "https://www.freecodecamp.org/news/unit-testing-in-rust/",
+          "author": "Menard Maranan",
+          "description": "Testing is an essential part of Software Development. Testing your code ensures that the software you develop works as expected and makes it less vulnerable to attackers. Software testing is a very broad topic. That's why in the software industry, there are separate professionals who specialize in just QA and",
+          "link": "https://www.freecodecamp.org/news/unit-testing-in-rust/",
+          "publishedOn": "2022-07-27T16:26:05.000Z",
+          "wordCount": 3542,
+          "title": "What is Unit Testing? How to Perform Unit Tests in Rust",
+          "imageUrl": "https://www.freecodecamp.org/news/content/images/2022/07/UNIT-TESTING-IN-RUST.png"
+        },
+        {
+          "id": "https://www.freecodecamp.org/news/what-is-redux-store-actions-reducers-explained/",
+          "author": "Soham De Roy",
+          "description": "Redux is a predictable state container for JavaScript apps. So what does that really mean? If we dig deeper into this statement, we see that Redux is a state management library that you can use with any JS library or framework like React, Angular, or Vue. In this article, we'll",
+          "link": "https://www.freecodecamp.org/news/what-is-redux-store-actions-reducers-explained/",
+          "publishedOn": "2022-07-27T15:48:39.000Z",
+          "wordCount": 2994,
+          "title": "What is Redux? Store, Actions, and Reducers Explained for Beginners",
+          "imageUrl": "https://www.freecodecamp.org/news/content/images/2022/07/Group-60.png"
+        },
+        {
           "id": "https://www.freecodecamp.org/news/an-introduction-to-software-architecture-patterns/",
           "author": "Germán Cocca",
           "description": "Hi everyone! In this article we're going to talk about a very interesting, vast, and complex topic: software architecture. This is something that used to confuse me quite a bit when I was starting to code. So in this article I'll try to give you a simple, surface-level, easy to",
@@ -178,6 +218,126 @@
       "feedUrl": "https://dev.to/feed",
       "siteUrl": "https://dev.to",
       "articles": [
+        {
+          "id": "https://dev.to/sadeedpv/lets-create-youtube-clone-with-nextjs-and-tailwind-css-part-2-5blc",
+          "author": "Sadeedpv",
+          "description": "In the last part, we created the initial setup for our YouTube clone. Here is the link to the full-series.\nIn the last part, we created the sidebar, In this part, we will see how to build the header and make it mobile responsive with tailwind-css.\nfunction Header() {\n\n    // useState to control user input\n    const [InputValue, setInputValue] = useState('');\n    const [notification, setnotification] = useState(2);\n\n    // Don't forget to import useRouter\n    const router = useRouter();\n\n    useEffect(() =>{\n        // Set a random number for the notification\n        setnotification(Math.floor(Math.random() * 10));\n    }, [])\n\n  return (\n    <div className='flex items-center justify-between border-b-2 fixed top-0 left-0 right-0 z-20 bg-white'>\n        {/* tailwind css hamburger menu */}\n   …",
+          "link": "https://dev.to/sadeedpv/lets-create-youtube-clone-with-nextjs-and-tailwind-css-part-2-5blc",
+          "publishedOn": "2022-07-28T09:46:18.000Z",
+          "wordCount": 1520,
+          "title": "Let's create youtube clone with Nextjs and tailwind-css (Part 2)",
+          "imageUrl": "https://dev.to/social_previews/article/1152845.png"
+        },
+        {
+          "id": "https://dev.to/shman/brand-new-engineering-vacancies-week-30-of-2022-72o",
+          "author": "Kamil Kwiecien",
+          "description": "Hey,\nremote engineering jobs to help you find your next remote position.\nToday, I have 16 of 504 new jobs I want to share with you. Check out all our new jobs from companies like SyllogisTeks, Hired, Conagra Brands, TechniPower, Inc., Freddie Mac, CorTech LLC, Nityo Infotech Corporation, BAXTER, Kforce Technology Staffing, Pocket Worlds, Noir Consulting, System One, UnitedHealth Group, TCWGlobal (formerly TargetCW), Six Nines IT, Deezer and more below! 👇\nLet's dive in.\nEngineer @ SyllogisTeks\nBack End Engineer @ Hired\nEngineer @ Conagra Brands\nMechanical Engineer @ TechniPower, Inc.\nLead Platform Engineer @ Freddie Mac\nIntegration Engineer @ CorTech LLC\nData Engineer @ Nityo Infotech Corporation\nLead Electrical Engineer @ BAXTER\nEngineering Manager @ Kforce Technology Staffing\nSenior Unity Developer [Remote] @ Pocket Worlds\nNet Software Engineer @ Noir Consulting\nTransmission Line Engineer @ System One\nSystems Engineering Manager @ UnitedHealth Group\nLead Engineer @ TCWGlobal (formerly TargetCW)\nSenior Software Engineer @ Six Nines IT\nBack End Engineer @ Deezer\nCheck all 504 new engineering jobs.\nI also share new jobs on our Twitter: @remoteindexco\nBy the way, do you have any feedback for me? Feature requests? Companies I should add? I built Remote Index for remote workers like you (and me), so I want to hear what can be improved.\nYou can reach me on Twitter @shmannet at any time.\nMany thanks 🙂\nKamil",
+          "link": "https://dev.to/shman/brand-new-engineering-vacancies-week-30-of-2022-72o",
+          "publishedOn": "2022-07-28T09:24:48.000Z",
+          "wordCount": 1636,
+          "title": "🤖 Brand New Engineering Vacancies - Week #30 of 2022",
+          "imageUrl": "https://dev.to/social_previews/article/1153510.png"
+        },
+        {
+          "id": "https://dev.to/iarchitsharma/top-3-ways-to-center-a-div-with-css-2ch3",
+          "author": "Archit Sharma",
+          "description": "In this blog will go over three approaches of centering a div.\n\n\n\nThe most difficult thing a web developer will ever have to accomplish is use CSS to center a div both horizontally and vertically.\nClassic approach\nFlexbox approach\n\n.myDiv {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%,-50%);\n}\n\n\n.flex {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n\n.grid {\n    display: grid;\n    place-items: center;\n}\n\n\n\n\n\n\n\n\n  \n  \n  Thank you for reading this article; do follow me for more.",
+          "link": "https://dev.to/iarchitsharma/top-3-ways-to-center-a-div-with-css-2ch3",
+          "publishedOn": "2022-07-28T08:57:36.000Z",
+          "wordCount": 1214,
+          "title": "Top 3 Ways to Center a DIV with CSS 🚀",
+          "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--zytDx6kN--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/2h1xwsvzzar0m6mtvxq8.png"
+        },
+        {
+          "id": "https://dev.to/yhwang95/how-i-knew-that-going-from-engineering-was-right-for-me-and-quick-tips-to-figure-it-out-c00",
+          "author": "Young Soo Hwang",
+          "description": "At some point, when engineers reach a level of seniority, they become curious about management. I am convinced that every individual contributor arrives at the point of getting larger-than-oneself ideas and wanting to use the insight they accumulated through technical work to lead teams. \nFor years, management seemed a logical next step for a developer’s career, up to the point of a strongly-held belief that getting a manager’s title is a “promotion”. Only after having made an engineer-manager transition myself, I am confident this is false.\nWhen you are a manager, you stop being an active contributor or have to cut your workload and give up challenging tasks. Over time, you might discover your coding skills have deteriorated and realize you are behind on tech trends and best practices. \nA…",
+          "link": "https://dev.to/yhwang95/how-i-knew-that-going-from-engineering-was-right-for-me-and-quick-tips-to-figure-it-out-c00",
+          "publishedOn": "2022-07-28T08:55:08.000Z",
+          "wordCount": 3244,
+          "title": "How I knew that going from engineering was right for me (and quick tips to figure it out)",
+          "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--cINVyR81--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/okqiao1ozojsm09mofan.jpg"
+        },
+        {
+          "id": "https://dev.to/matteobruni/tsparticles-214-released-4g2g",
+          "author": "Matteo Bruni",
+          "description": "tsParticles 2.1.4 Changelog\n\n\n\n  \n  \n  Bug Fixes\n\n\n\nFixed issue with destroyed containers, fixes #4385, fixes #4413, fixes #4534\nFixed issue with opacity and svg color replaced images, fixes #4532\nYesterday, I have also announced that React and Vue.js packages are changing names. This is something important because the old packages could become obsolete in the next months, it depends on how many work I need to maintain 6 packages instead of 3.\nYou can read more in the article below\ntsParticles React and Vue packages are changing!\nMatteo Bruni ・ Jul 27 ・ 2 min read\n#javascript\n        #react\n        #vue\n        #webdev\n      \ntsParticles now has an official subreddit that you can find here: https://www.reddit.com/r/tsParticles/\nIt's another social that adds to the list, for asking support or participate in the development with new ideas or bug reports.\nJust for a reminder, all official social channels are:\nDiscord\nSlack\nTelegram\nReddit\n / \n        tsparticles\n      \n    \n\nA lightweight TypeScript library for creating particles. Dependency free (*), browser ready and compatible with\nReact.js, Vue.js (2.x and 3.x), Angular, Svelte, jQuery, Preact, Inferno, Riot.js, Solid.js, and Web Components\n         \n   \n \n⚠️⚠️ This readme refers to upcoming v2\nversion, read here for v1 documentation ⚠️⚠️\ntsParticles - TypeScript Particles\n\nTable of Contents\nDo you want to use it on your website?\nLibrary installation\n\n\nHosting / CDN\n\njsDelivr\ncdnjs\nunpkg\nnpm\nyarn\n\nImport and require\nNuGet\nUsage\nOfficial components for some of the most used frameworks\n\nAngular\nInferno\njQuery\nPreact\nReactJS\nRiotJS\n\nriot-particles\nSolidJS\n\nsolid-particles\nSvelte\nVueJS 2.x\nVueJS 3.x\nWeb Components\n\nweb-particles\nWordPress\nPresets\n\nBig Circles\nBubbles\nConfetti\nFire\nFirefly\nFireworks\nFountain\nLinks\nSea Anemone\nSnow\nStars\nTriangles\nTemplates and Resources\nDemo / Generator\nVideo Tutorials\n\nCharacters as particles\nPolygon mask\nAnimated stars\nNyan cat flying on scrolling stars\nSnow particles\nBackground…\nView on GitHub",
+          "link": "https://dev.to/matteobruni/tsparticles-214-released-4g2g",
+          "publishedOn": "2022-07-28T08:50:18.000Z",
+          "wordCount": 1399,
+          "title": "tsParticles 2.1.4 Released",
+          "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--4BQJsXAn--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/n28wlln38yx5ioemddma.jpg"
+        },
+        {
+          "id": "https://dev.to/lodstare/how-to-get-free-images-in-2022-1l7o",
+          "author": "Ayoub El Achab",
+          "description": "in this article i will give you How to get Free images\n\n\n\n  \n  \n  first click Here : How to get Free Stock images\n\n\n\n  \n  \n  1. freepik.com\n\n\n\n  \n  \n  2. pixabay.com\n\n\n\n  \n  \n  3. vecteezy.com\n\n\n\n  \n  \n  4. pexels.com\n\n\n\n  \n  \n  5. pngwing.com\n\n\n\n  \n  \n  6. stockvault.net\n\n\n\n  \n  \n  7. picjumbo.com\n\n\n\n  \n  \n  8. pikwizard.com\n\n\n\n  \n  \n  9. skitterphoto.com\n\n\n\n  \n  \n  connect with me on :\n\n\n\nYouTube\nTwitter\nInstagram\nGit Hub\nLinkedin",
+          "link": "https://dev.to/lodstare/how-to-get-free-images-in-2022-1l7o",
+          "publishedOn": "2022-07-28T08:45:09.000Z",
+          "wordCount": 1030,
+          "title": "How to get Free images in 2022",
+          "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--3wR4nhh_--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/hcs571xviijz1c9y3icx.jpg"
+        },
+        {
+          "id": "https://dev.to/abtosoftware/developing-high-performing-applications-with-pythons-fastapi-3j9l",
+          "author": "Abto Software",
+          "description": "Python is extremely popular among professionals, and used all over the globe. It is an object-oriented programming language with a dynamic semantic.\n\nPython is mostly chosen for developing web apps because of its many additional libraries, helpful frameworks, and simplicity.\nLet’s look closer at one of the fastest Python web frameworks available. Combining Python and FastAPI leads to amazing results and chances to develop fast websites. FastAPI is a modern, fast (high-performant), web framework with built-in support for async endpoints for building APIs with Python 3.6+ based on standard Python-type hints.\nStack Overflow 2021 Developer Survey.\n\nIt is used by large companies like Uber and Netflix to develop some of their applications.\nFastAPI gives the following benefits:\nOpen standards\nFas…",
+          "link": "https://dev.to/abtosoftware/developing-high-performing-applications-with-pythons-fastapi-3j9l",
+          "publishedOn": "2022-07-28T08:43:51.000Z",
+          "wordCount": 1894,
+          "title": "Developing high-performing applications with Python’s FastAPI",
+          "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--6pR8QQgf--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/88o5tx59gdz8zyeuafht.png"
+        },
+        {
+          "id": "https://dev.to/mathilde_llg/testculture-episode-14-test-coverage-problems-2d8d",
+          "author": "Mathilde Lelong",
+          "description": "𝗪𝗵𝗮𝘁 𝗶𝘀 𝘁𝗲𝘀𝘁 𝗰𝗼𝘃𝗲𝗿𝗮𝗴𝗲? Test coverage helps determine whether a test case is covering the application code and how much code is exercised when those test cases are runned.\nTest coverage enables testers to identify gaps at early stages, get better coverage and to remove redundant cases. It basically saves 𝚝𝚒𝚖𝚎 and 𝚖𝚘𝚗𝚎𝚢.\n👉 Function coverage: 𝙷𝚊𝚜 𝚎𝚟𝚎𝚛𝚢 𝚏𝚞𝚗𝚌𝚝𝚒𝚘𝚗 𝚒𝚗 𝚝𝚑𝚎 𝚙𝚛𝚘𝚐𝚛𝚊𝚖 𝚋𝚎𝚎𝚗 𝚌𝚊𝚕𝚕𝚎𝚍?\n👉 Statement coverage: 𝙷𝚊𝚜 𝚎𝚟𝚎𝚛𝚢 𝚕𝚒𝚗𝚎 𝚘𝚏 𝚌𝚘𝚍𝚎 𝚋𝚎𝚎𝚗 𝚎𝚡𝚎𝚌𝚞𝚝𝚎𝚍 𝚊𝚗𝚍 𝚟𝚎𝚛𝚒𝚏𝚒𝚎𝚍?\n👉 Condition coverage: 𝙰𝚛𝚎 𝚊𝚕𝚕 𝚌𝚘𝚗𝚍𝚒𝚝𝚒𝚘𝚗𝚜 𝚎𝚡𝚎𝚌𝚞𝚝𝚎𝚍 𝚊𝚗𝚍 𝚟𝚎𝚛𝚒𝚏𝚒𝚎𝚍?\n👉 Path coverage: 𝙷𝚊𝚜 𝚎𝚟𝚎𝚛𝚢 𝚙𝚘𝚜𝚜𝚒𝚋𝚕𝚎 𝚛𝚘𝚞𝚝𝚎 𝚋𝚎𝚎𝚗 𝚎𝚡𝚎𝚌𝚞𝚝𝚎𝚍 𝚊𝚗𝚍 𝚟𝚎𝚛𝚒𝚏𝚒𝚎𝚍?\n⚠️ Some methods are related, for example:\nPath coverage implies both instruction coverage and test point coverage;\nInstruction coverage does not imply test point coverage.\nBut test coverage is challenging…\n2️⃣ 𝙲𝚞𝚜𝚝𝚘𝚖𝚎𝚛𝚜 can now use complex user paths with multiple data, on multiple devices and with multiple navigators. The need to perform multiple types of data tests, on access control of an application, on object' transitions subject to a workflow 𝗶𝗺𝗽𝗹𝗶𝗲𝘀 𝗱𝗲𝗽𝘁𝗵 𝗼𝗻 𝗳𝘂𝗻𝗰𝘁𝗶𝗼𝗻𝗮𝗹 𝘁𝗲𝘀𝘁𝘀. But also the ability to manage 𝗮 𝗵𝗶𝗴𝗵 𝘃𝗼𝗹𝘂𝗺𝗲 𝗼𝗳 𝘀𝘁𝗲𝗽𝘀. ☝️\n3️⃣ Manual validation is made by developers or project managers and takes 𝘁𝗼𝗼 𝗺𝘂𝗰𝗵 𝘁𝗶𝗺𝗲 𝗰𝗼𝗺𝗽𝗮𝗿𝗲𝗱 𝘁𝗼 𝗱𝗲𝘃𝗲𝗹𝗼𝗽𝗺𝗲𝗻𝘁 𝗮𝗰𝘁𝗶𝘃𝗶𝘁𝗶𝗲𝘀. ⌛ On the other hand, regular changes of UI makes it hard to maintain automated tests. \nTime spent 𝗯𝗲𝗰𝗼𝗺𝗲𝘀 𝗵𝗮𝗿𝗱 𝘁𝗼 𝗷𝘂𝘀𝘁𝗶𝗳𝘆 𝘁𝗼 𝘀𝘁𝗮𝗸𝗲𝗵𝗼𝗹𝗱𝗲𝗿𝘀 when it comes to creating and running tests, as well as the high cost of test-related services and infrastructure. 😨\n📚 𝕊𝕠𝕦𝕣𝕔𝕖𝕤:\nhttps://agilitest.com/challenges/test-coverage\nhttp://agilitest.com/cards/understand-what-to-test\nThread on Twitter.",
+          "link": "https://dev.to/mathilde_llg/testculture-episode-14-test-coverage-problems-2d8d",
+          "publishedOn": "2022-07-28T08:19:05.000Z",
+          "wordCount": 1620,
+          "title": "#TestCulture 🦅 Episode 14 - Test coverage problems",
+          "imageUrl": "https://dev.to/social_previews/article/1153488.png"
+        },
+        {
+          "id": "https://dev.to/codenameone/external-debugging-tools-3-jmxterm-o88",
+          "author": "Shai Almog",
+          "description": "When tracking a bug we need to take a two pronged approach. Similar to tongs that wrap the buggy module from both sides and squeezes to find the problematic part. Up until now we discussed tools that are very low level. Some can be used to debug system level services. Today we’ll discuss the other side of the stack but still a very advanced management tool. To understand this you need to understand the field we’re in.\nAs developers we deal with code and applications. Deployment is for OPS/DevOps and the tooling they use is often alien to us. It’s not that they have bad tools. On the contrary, they have amazing tools. But they’re usually designed for massive scale. When you need to manage thousands of servers you need a way to control things in all of them. For that we need a different set …",
+          "link": "https://dev.to/codenameone/external-debugging-tools-3-jmxterm-o88",
+          "publishedOn": "2022-07-28T07:50:57.000Z",
+          "wordCount": 2177,
+          "title": "External Debugging Tools 3: JMXTerm",
+          "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--wGDQp2wJ--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/a2wmyd9lqpy2xwx3ll62.jpg"
+        },
+        {
+          "id": "https://dev.to/lightningchart/create-a-javascript-3d-box-chart-with-rounded-edges-a42",
+          "author": "Omar Urbano | LightningChart",
+          "description": "Hello!\nSo this is my first article here and wanted to show you how I created a simple but amazing animated 3D Bar Chart with dynamically colored bars based on their height.\n\nThe chart is rendered using NodeJS, Visual Studio Code, and LightningChart JS' BoxSeries3D, a series type capable of rendering any number of Boxes as well as allowing single full-level modifications (location, size, color) at any point during the runtime.\nThe example also shows how to use the rounded edges feature. This is a characteristic of this chart that is active by default but can also be disabled (if you use BoxSeries3D.setRoundedEdges).\nIdeally, you would download the project to follow this article. The file is a RAR and you can get it from here:\n3D Box Series Project (RAR)\nFor those who aren't yet familiar wit…",
+          "link": "https://dev.to/lightningchart/create-a-javascript-3d-box-chart-with-rounded-edges-a42",
+          "publishedOn": "2022-07-28T07:33:28.000Z",
+          "wordCount": 2165,
+          "title": "Create a JavaScript 3D Box Chart with Rounded Edges",
+          "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--I8js74rD--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/vp36feirn7ktznebrb0z.png"
+        },
+        {
+          "id": "https://dev.to/dulemart/what-exactly-is-an-api-endpoint-32f4",
+          "author": "Dule Martins",
+          "description": "Just like the human bones connect with each other via the joint, likewise, an API connects two software, enabling them to interact and transfer data. API is an acronym for Application Programming Interface. To read more about API you should check here.\nEndpoints are the end path of a resource URL and usually have brief descriptions. Also, an endpoint shows how you can access specific information from a resource, not the base path shared by all endpoints.\nThis is a common mistake people make most times, identifying an endpoint as URL is wrong. URL is a base path to the resource API, it can be associated with any HTTP method.\nAn API URL Path is an address that allows you to access an API and its various features. It is the base address for a specific API that you’re using. Until you choose a…",
+          "link": "https://dev.to/dulemart/what-exactly-is-an-api-endpoint-32f4",
+          "publishedOn": "2022-07-28T06:55:19.000Z",
+          "wordCount": 1828,
+          "title": "What exactly is an API endpoint",
+          "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--zafGiVzr--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/k988blxv0pts3sshtf21.jpg"
+        },
+        {
+          "id": "https://dev.to/aswin2001barath/junior-to-senior-developer-roadmap-477p",
+          "author": "Aswin Barath",
+          "description": "👨‍💻 Step-by-step roadmap for Junior Developer to becoming an admired and respected Senior Developer 👨‍💻\n🚨 Spoiler Alert: This is a course review 🚨\nAre you someone who is a junior developer struggling to climb up the corporate ladder and become a senior developer? \nLearn everything you need know and the exact steps to take to become a Senior Developer from The Complete Junior to Senior Web Developer Roadmap (2022) course 💻\nYou'll be able to add all of the skillsets listed below to your resume, impress your boss, and ace your next interview.\n\nCourse Preview\nBy the end, you will be gain the skills below and put them on your resume confidently 💪:\nSSH:\n\n\nSSH Commands, Encryption, SSH Keys, SSH w/ GitHub & DigitalOcean\nPerformance:\n\n\nNetwork Optimizations, Front End Optimizations, Back E…",
+          "link": "https://dev.to/aswin2001barath/junior-to-senior-developer-roadmap-477p",
+          "publishedOn": "2022-07-28T06:34:00.000Z",
+          "wordCount": 1829,
+          "title": "Junior to Senior Developer Roadmap",
+          "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--jywZAqxM--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ipsr4nnw7bjonc5iazex.png"
+        },
         {
           "id": "https://dev.to/asapconet/using-vite-on-an-existing-react-project-208p",
           "author": "ASAP_A1",
@@ -426,6 +586,26 @@
       "siteUrl": "https://www.appinn.com",
       "articles": [
         {
+          "id": "https://www.appinn.com/?p=42886",
+          "author": "青小蛙",
+          "description": "小V视频号下载工具是一款通过微信PC版下载视频号视频的微小工具（44KB），只需要在微信PC版中播放视频号的视频，就可以获得下载链接，简单易用。@Appinn 在此之前，青小蛙一直是通过 Androi",
+          "link": "https://www.appinn.com/xiaokuake-sphdown/",
+          "publishedOn": "2022-07-28T10:22:46.000Z",
+          "wordCount": 1631,
+          "title": "小V视频号下载工具 – 通过微信PC版下载视频号视频",
+          "imageUrl": "https://img3.appinn.net/static/wp-content/uploads/2022/07/appinn-2022-07-28t180902-568.jpgo_.jpg"
+        },
+        {
+          "id": "https://www.appinn.com/?p=42876",
+          "author": "青小蛙",
+          "description": "Synology Photos 是群晖 DSM 系统套件，用来在 NAS 种备份和管理自己与家人的手机照片、视频，前几日更新 1.3.0-0317 之后，新增了「照片请求」功能，可以邀请好友将照片直接",
+          "link": "https://www.appinn.com/synology-photos-request/",
+          "publishedOn": "2022-07-28T05:44:48.000Z",
+          "wordCount": 1656,
+          "title": "Synology Photos 套件更新，支持创建照片请求链接，向其他用户及访客搜集照片",
+          "imageUrl": "https://img3.appinn.net/static/wp-content/uploads/2022/07/Appinn-2022-07-28T130208.001.png"
+        },
+        {
           "id": "https://www.appinn.com/?p=42872",
           "author": "青小蛙",
           "description": "iPreview 是一款为 macOS 原生「快速查看」功能（按下空格预览文件）新增几十种文件格式的小工具，包括源代码、3D模型、数学公式、压缩文件、字幕文件等，并且还可以选择代码高亮主题、TAB 宽",
@@ -572,6 +752,16 @@
       "feedUrl": "https://feeds.feedblitz.com/baeldung",
       "siteUrl": "https://www.baeldung.com",
       "articles": [
+        {
+          "id": "https://www.baeldung.com/?p=128185",
+          "author": "baeldung",
+          "description": "Learn methods of finding the differences between Git branches on Linux.",
+          "link": "https://feeds.feedblitz.com/~/704036418/0/baeldung~Find-the-Differences-Between-Two-Git-Branches",
+          "publishedOn": "2022-07-28T08:49:10.000Z",
+          "wordCount": null,
+          "title": "Find the Differences Between Two Git Branches",
+          "imageUrl": null
+        },
         {
           "id": "https://drafts.baeldung.com/?p=140080",
           "author": "Attila Uhrin",
@@ -741,6 +931,366 @@
       "feedUrl": "https://hn.buzzing.cc/rss.xml",
       "siteUrl": "https://hn.buzzing.cc",
       "articles": [
+        {
+          "id": "https://hn.buzzing.cc/hn/32250722/",
+          "author": null,
+          "description": "You Don't Need Microservices",
+          "link": "https://hn.buzzing.cc/hn/32250722/?score=101&original_url=https%3A%2F%2Fmedium.com%2F%40msaspence%2Fyou-dont-need-microservices-2ad8508b9e27&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32250722&sensitive=false",
+          "publishedOn": "2022-07-28T07:47:20.000Z",
+          "wordCount": 161,
+          "title": "You Don't Need Microservices",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32260619/",
+          "author": null,
+          "description": "锈蚀实际上是可移动的",
+          "link": "https://hn.buzzing.cc/hn/32260619/?score=108&original_url=https%3A%2F%2Fahgamut.github.io%2F2022%2F07%2F27%2Fape-rust-example%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32260619&sensitive=false",
+          "publishedOn": "2022-07-28T07:16:31.000Z",
+          "wordCount": 146,
+          "title": "锈蚀实际上是可移动的",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32259934/",
+          "author": null,
+          "description": "HypeScript。在TypeScript自己的类型系统中简化TypeScript的类型系统",
+          "link": "https://hn.buzzing.cc/hn/32259934/?score=108&original_url=https%3A%2F%2Fgithub.com%2Fronami%2FHypeScript&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32259934&sensitive=false",
+          "publishedOn": "2022-07-28T06:51:02.000Z",
+          "wordCount": 149,
+          "title": "HypeScript。在TypeScript自己的类型系统中简化TypeScript的类型系统",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32257901/",
+          "author": null,
+          "description": "Graphviz认为美国是如何布局的（2021年）。",
+          "link": "https://hn.buzzing.cc/hn/32257901/?score=105&original_url=https%3A%2F%2Fshitpost.plover.com%2Fg%2Fgraphviz-usa.html&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32257901&sensitive=false",
+          "publishedOn": "2022-07-28T06:00:23.000Z",
+          "wordCount": 148,
+          "title": "Graphviz认为美国是如何布局的（2021年）。",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32258783/",
+          "author": null,
+          "description": "如何在2022年创建一个Python包",
+          "link": "https://hn.buzzing.cc/hn/32258783/?score=107&original_url=https%3A%2F%2Fmathspp.com%2Fblog%2Fhow-to-create-a-python-package-in-2022&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32258783&sensitive=false",
+          "publishedOn": "2022-07-28T06:00:23.000Z",
+          "wordCount": 147,
+          "title": "如何在2022年创建一个Python包",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32253565/",
+          "author": null,
+          "description": "阿尔法。创世记1》的翻译",
+          "link": "https://hn.buzzing.cc/hn/32253565/?score=101&original_url=http%3A%2F%2Fllamasandmystegosaurus.blogspot.com%2F2017%2F05%2Falpha.html&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32253565&sensitive=false",
+          "publishedOn": "2022-07-28T05:37:10.000Z",
+          "wordCount": 147,
+          "title": "阿尔法。创世记1》的翻译",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32257887/",
+          "author": null,
+          "description": "Ask HN: 日常生活中的高阶导数？",
+          "link": "https://hn.buzzing.cc/hn/32257887/?score=106&original_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32257887&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32257887&channel=ASK+HN&sensitive=false",
+          "publishedOn": "2022-07-28T05:37:10.000Z",
+          "wordCount": 159,
+          "title": "Ask HN: 日常生活中的高阶导数？",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32254954/",
+          "author": null,
+          "description": "ESG应该被归结为一个简单的衡量标准：排放",
+          "link": "https://hn.buzzing.cc/hn/32254954/?score=101&original_url=https%3A%2F%2Fwww.economist.com%2Fleaders%2F2022%2F07%2F21%2Fesg-should-be-boiled-down-to-one-simple-measure-emissions&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32254954&sensitive=false",
+          "publishedOn": "2022-07-28T05:37:10.000Z",
+          "wordCount": 151,
+          "title": "ESG应该被归结为一个简单的衡量标准：排放",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32253185/",
+          "author": null,
+          "description": "李斯特林特许权使用费",
+          "link": "https://hn.buzzing.cc/hn/32253185/?score=101&original_url=https%3A%2F%2Finvariant.substack.com%2Fp%2Flisterine-royalties-the-origin-story&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32253185&sensitive=false",
+          "publishedOn": "2022-07-28T05:37:10.000Z",
+          "wordCount": 142,
+          "title": "李斯特林特许权使用费",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32257975/",
+          "author": null,
+          "description": "Mitsuba 3基于物理的渲染器",
+          "link": "https://hn.buzzing.cc/hn/32257975/?score=104&original_url=http%3A%2F%2Fwww.mitsuba-renderer.org&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32257975&sensitive=false",
+          "publishedOn": "2022-07-28T05:37:10.000Z",
+          "wordCount": 150,
+          "title": "Mitsuba 3基于物理的渲染器",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32257742/",
+          "author": null,
+          "description": "谷歌推迟到2024年才逐步淘汰Chrome上的广告cookies",
+          "link": "https://hn.buzzing.cc/hn/32257742/?score=119&original_url=https%3A%2F%2Fwww.bloomberg.com%2Fnews%2Farticles%2F2022-07-27%2Fgoogle-delays-phasing-out-ad-cookies-on-chrome-until-2024&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32257742&sensitive=false",
+          "publishedOn": "2022-07-28T03:51:45.000Z",
+          "wordCount": 150,
+          "title": "谷歌推迟到2024年才逐步淘汰Chrome上的广告cookies",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32253053/",
+          "author": null,
+          "description": "维基百科如何影响司法行为",
+          "link": "https://hn.buzzing.cc/hn/32253053/?score=105&original_url=https%3A%2F%2Fwww.csail.mit.edu%2Fnews%2Fhow-wikipedia-influences-judicial-behavior&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32253053&sensitive=false",
+          "publishedOn": "2022-07-28T02:03:33.000Z",
+          "wordCount": 144,
+          "title": "维基百科如何影响司法行为",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32258854/",
+          "author": null,
+          "description": "ShotSpotter要求被视为藐视法庭，而不是公开其方法。",
+          "link": "https://hn.buzzing.cc/hn/32258854/?score=105&original_url=https%3A%2F%2Fchicagoreader.com%2Fnews-politics%2Fshotspotter-held-in-contempt-of-court%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32258854&sensitive=false",
+          "publishedOn": "2022-07-28T02:03:33.000Z",
+          "wordCount": 152,
+          "title": "ShotSpotter要求被视为藐视法庭，而不是公开其方法。",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32256026/",
+          "author": null,
+          "description": "近30年后从Debian Jessie升级到Bullseye",
+          "link": "https://hn.buzzing.cc/hn/32256026/?score=106&original_url=https%3A%2F%2Fdiziet.dreamwidth.org%2F11840.html&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32256026&sensitive=false",
+          "publishedOn": "2022-07-28T02:03:33.000Z",
+          "wordCount": 155,
+          "title": "近30年后从Debian Jessie升级到Bullseye",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32254318/",
+          "author": null,
+          "description": "CNIL使谷歌分析在法国几乎成为非法行为",
+          "link": "https://hn.buzzing.cc/hn/32254318/?score=100&original_url=https%3A%2F%2Fwww.cnil.fr%2Fen%2Fqa-cnils-formal-notices-concerning-use-google-analytics&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32254318&sensitive=false",
+          "publishedOn": "2022-07-27T23:26:23.000Z",
+          "wordCount": 148,
+          "title": "CNIL使谷歌分析在法国几乎成为非法行为",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32252998/",
+          "author": null,
+          "description": "一位著名的作曲家失去了他的维基百科页面",
+          "link": "https://hn.buzzing.cc/hn/32252998/?score=106&original_url=https%3A%2F%2Ftedgioia.substack.com%2Fp%2Fhow-a-prominent-composer-lost-his&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32252998&sensitive=false",
+          "publishedOn": "2022-07-27T22:35:43.000Z",
+          "wordCount": 146,
+          "title": "一位著名的作曲家失去了他的维基百科页面",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32250350/",
+          "author": null,
+          "description": "RStudio正在成为Posit",
+          "link": "https://hn.buzzing.cc/hn/32250350/?score=101&original_url=https%3A%2F%2Fwww.rstudio.com%2Fblog%2Frstudio-is-becoming-posit%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32250350&sensitive=false",
+          "publishedOn": "2022-07-27T21:42:28.000Z",
+          "wordCount": 143,
+          "title": "RStudio正在成为Posit",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32254681/",
+          "author": null,
+          "description": "参议院通过两党议案，补贴美国制造的半导体芯片",
+          "link": "https://hn.buzzing.cc/hn/32254681/?score=147&original_url=https%3A%2F%2Fwww.washingtonpost.com%2Fpolitics%2F2022%2F07%2F27%2Fsenate-chips-funding-bill-pass%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32254681&sensitive=false",
+          "publishedOn": "2022-07-27T20:40:55.000Z",
+          "wordCount": 148,
+          "title": "参议院通过两党议案，补贴美国制造的半导体芯片",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32254090/",
+          "author": null,
+          "description": "Instagram知道你不喜欢它的变化。它并不关心",
+          "link": "https://hn.buzzing.cc/hn/32254090/?score=129&original_url=https%3A%2F%2Fwww.washingtonpost.com%2Ftechnology%2F2022%2F07%2F27%2Finstagram-video-shift-kardashian%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32254090&sensitive=false",
+          "publishedOn": "2022-07-27T20:00:18.000Z",
+          "wordCount": 149,
+          "title": "Instagram知道你不喜欢它的变化。它并不关心",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32252485/",
+          "author": null,
+          "description": "圣母大学再次崛起",
+          "link": "https://hn.buzzing.cc/hn/32252485/?score=103&original_url=https%3A%2F%2Fwww.nationalgeographic.co.uk%2Fhistory-and-civilisation%2F2022%2F02%2Fnotre-dame-rises-again&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32252485&sensitive=false",
+          "publishedOn": "2022-07-27T20:00:18.000Z",
+          "wordCount": 143,
+          "title": "圣母大学再次崛起",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32254046/",
+          "author": null,
+          "description": "美联储将加息75个基点",
+          "link": "https://hn.buzzing.cc/hn/32254046/?score=113&original_url=https%3A%2F%2Fwww.federalreserve.gov%2Fnewsevents%2Fpressreleases%2Fmonetary20220727a.htm&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32254046&sensitive=false",
+          "publishedOn": "2022-07-27T18:50:31.000Z",
+          "wordCount": 149,
+          "title": "美联储将加息75个基点",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32253729/",
+          "author": null,
+          "description": "陌生人》被Netflix追溯编辑了？",
+          "link": "https://hn.buzzing.cc/hn/32253729/?score=102&original_url=https%3A%2F%2Fwww.gq-magazine.co.uk%2Fculture%2Farticle%2Fstranger-things-netflix-retroactively-editing&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32253729&sensitive=false",
+          "publishedOn": "2022-07-27T18:50:31.000Z",
+          "wordCount": 147,
+          "title": "陌生人》被Netflix追溯编辑了？",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32251328/",
+          "author": null,
+          "description": "武汉的华南海鲜市场是Covid-19大流行病的早期震中。",
+          "link": "https://hn.buzzing.cc/hn/32251328/?score=107&original_url=https%3A%2F%2Fwww.science.org%2Fdoi%2F10.1126%2Fscience.abp8715&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32251328&sensitive=false",
+          "publishedOn": "2022-07-27T17:50:54.000Z",
+          "wordCount": 151,
+          "title": "武汉的华南海鲜市场是Covid-19大流行病的早期震中。",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32252831/",
+          "author": null,
+          "description": "美达公司认可的服务器端使用的编程语言",
+          "link": "https://hn.buzzing.cc/hn/32252831/?score=113&original_url=https%3A%2F%2Fengineering.fb.com%2F2022%2F07%2F27%2Fdeveloper-tools%2Fprogramming-languages-endorsed-for-server-side-use-at-meta%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32252831&sensitive=false",
+          "publishedOn": "2022-07-27T17:50:54.000Z",
+          "wordCount": 147,
+          "title": "美达公司认可的服务器端使用的编程语言",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32250276/",
+          "author": null,
+          "description": "想开始黑客攻击吗？",
+          "link": "https://hn.buzzing.cc/hn/32250276/?score=111&original_url=https%3A%2F%2Fabout.gitlab.com%2Fblog%2F2022%2F07%2F27%2Fcracking-our-bug-bounty-top-10%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32250276&sensitive=false",
+          "publishedOn": "2022-07-27T17:50:54.000Z",
+          "wordCount": 144,
+          "title": "想开始黑客攻击吗？",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32251753/",
+          "author": null,
+          "description": "我们这里不这样做 (2017)",
+          "link": "https://hn.buzzing.cc/hn/32251753/?score=120&original_url=https%3A%2F%2Fthagomizer.com%2Fblog%2F2017%2F09%2F29%2Fwe-don-t-do-that-here.html&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32251753&sensitive=false",
+          "publishedOn": "2022-07-27T17:50:54.000Z",
+          "wordCount": 151,
+          "title": "我们这里不这样做 (2017)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32250694/",
+          "author": null,
+          "description": "詹姆斯-洛夫洛克已经去世",
+          "link": "https://hn.buzzing.cc/hn/32250694/?score=117&original_url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FJames_Lovelock&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32250694&sensitive=false",
+          "publishedOn": "2022-07-27T17:24:55.000Z",
+          "wordCount": 144,
+          "title": "詹姆斯-洛夫洛克已经去世",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32246987/",
+          "author": null,
+          "description": "在麻醉状态下，我们的思想到哪里去了？",
+          "link": "https://hn.buzzing.cc/hn/32246987/?score=103&original_url=https%3A%2F%2Fnautil.us%2Funder-anesthesia-where-do-our-minds-go-20845%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32246987&sensitive=false",
+          "publishedOn": "2022-07-27T17:24:55.000Z",
+          "wordCount": 146,
+          "title": "在麻醉状态下，我们的思想到哪里去了？",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32250487/",
+          "author": null,
+          "description": "家庭安全的假狗",
+          "link": "https://hn.buzzing.cc/hn/32250487/?score=101&original_url=https%3A%2F%2Ft0.vc%2F7%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32250487&sensitive=false",
+          "publishedOn": "2022-07-27T16:34:13.000Z",
+          "wordCount": 144,
+          "title": "家庭安全的假狗",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32236953/",
+          "author": null,
+          "description": "美泰旋风机是1970年代最酷的圣诞礼物",
+          "link": "https://hn.buzzing.cc/hn/32236953/?score=104&original_url=https%3A%2F%2Fbestride.com%2Fnews%2Fvideo-the-mattel-spinwelder-was-the-coolest-christmas-gift-of-the-1970s&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32236953&sensitive=false",
+          "publishedOn": "2022-07-27T16:34:13.000Z",
+          "wordCount": 150,
+          "title": "美泰旋风机是1970年代最酷的圣诞礼物",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32250426/",
+          "author": null,
+          "description": "SQLite内部。页和B树",
+          "link": "https://hn.buzzing.cc/hn/32250426/?score=104&original_url=https%3A%2F%2Ffly.io%2Fblog%2Fsqlite-internals-btree%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32250426&sensitive=false",
+          "publishedOn": "2022-07-27T15:24:07.000Z",
+          "wordCount": 144,
+          "title": "SQLite内部。页和B树",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32250470/",
+          "author": null,
+          "description": "谷歌的Nest将在没有搜查令的情况下向警方提供数据",
+          "link": "https://hn.buzzing.cc/hn/32250470/?score=103&original_url=https%3A%2F%2Fpetapixel.com%2F2022%2F07%2F27%2Fgoogles-nest-will-provide-data-to-police-without-a-warrant%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32250470&sensitive=false",
+          "publishedOn": "2022-07-27T15:24:07.000Z",
+          "wordCount": 149,
+          "title": "谷歌的Nest将在没有搜查令的情况下向警方提供数据",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32249465/",
+          "author": null,
+          "description": "安培拉的历史",
+          "link": "https://hn.buzzing.cc/hn/32249465/?score=130&original_url=https%3A%2F%2Fwww.merriam-webster.com%2Fwords-at-play%2Fthe-history-of-ampersand&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32249465&sensitive=false",
+          "publishedOn": "2022-07-27T14:03:01.000Z",
+          "wordCount": 144,
+          "title": "安培拉的历史",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32244244/",
+          "author": null,
+          "description": "我们不知道如何解决科学问题 (2021)",
+          "link": "https://hn.buzzing.cc/hn/32244244/?score=100&original_url=https%3A%2F%2Fwww.worksinprogress.co%2Fissue%2Fwe-dont-know-how-to-fix-science%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32244244&sensitive=false",
+          "publishedOn": "2022-07-27T14:03:01.000Z",
+          "wordCount": 153,
+          "title": "我们不知道如何解决科学问题 (2021)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32248732/",
+          "author": null,
+          "description": "尼康为十年前的D7100数码单反相机发布错误修复固件更新",
+          "link": "https://hn.buzzing.cc/hn/32248732/?score=100&original_url=https%3A%2F%2Fnikonrumors.com%2F2022%2F07%2F26%2Fnikon-released-new-firmware-update-for-the-almost-10-years-old-d7100-dslr-camera.aspx%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32248732&sensitive=false",
+          "publishedOn": "2022-07-27T13:29:59.000Z",
+          "wordCount": 154,
+          "title": "尼康为十年前的D7100数码单反相机发布错误修复固件更新",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32248419/",
+          "author": null,
+          "description": "帮助挑选一种CSS嵌套的语法",
+          "link": "https://hn.buzzing.cc/hn/32248419/?score=107&original_url=https%3A%2F%2Fdeveloper.chrome.com%2Fblog%2Fhelp-css-nesting%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32248419&sensitive=false",
+          "publishedOn": "2022-07-27T12:40:25.000Z",
+          "wordCount": 146,
+          "title": "帮助挑选一种CSS嵌套的语法",
+          "imageUrl": null
+        },
         {
           "id": "https://hn.buzzing.cc/hn/32245346/",
           "author": null,
@@ -1665,6 +2215,26 @@
       "siteUrl": "https://xz.aliyun.com/forum/",
       "articles": [
         {
+          "id": "https://xz.aliyun.com/t/11574",
+          "author": null,
+          "description": "某cms代码审计",
+          "link": "https://xz.aliyun.com/t/11574",
+          "publishedOn": "2022-07-27T10:45:17.000Z",
+          "wordCount": null,
+          "title": "某cms代码审计",
+          "imageUrl": null
+        },
+        {
+          "id": "https://xz.aliyun.com/t/11572",
+          "author": null,
+          "description": "APC进程注入",
+          "link": "https://xz.aliyun.com/t/11572",
+          "publishedOn": "2022-07-27T10:40:53.000Z",
+          "wordCount": null,
+          "title": "APC进程注入",
+          "imageUrl": null
+        },
+        {
           "id": "https://xz.aliyun.com/t/11579",
           "author": null,
           "description": "记一次授权非域环境下的大型内网横向渗透",
@@ -1813,46 +2383,6 @@
           "wordCount": null,
           "title": "某企业邮箱攻击面之密码喷洒",
           "imageUrl": null
-        },
-        {
-          "id": "https://xz.aliyun.com/t/11524",
-          "author": null,
-          "description": "[有手就行]Log4j打点后与管理员斗智斗勇",
-          "link": "https://xz.aliyun.com/t/11524",
-          "publishedOn": "2022-07-13T15:46:10.000Z",
-          "wordCount": null,
-          "title": "[有手就行]Log4j打点后与管理员斗智斗勇",
-          "imageUrl": null
-        },
-        {
-          "id": "https://xz.aliyun.com/t/11519",
-          "author": null,
-          "description": "某次钓鱼邮件分析（Emotet木马）",
-          "link": "https://xz.aliyun.com/t/11519",
-          "publishedOn": "2022-07-13T15:45:42.000Z",
-          "wordCount": null,
-          "title": "某次钓鱼邮件分析（Emotet木马）",
-          "imageUrl": null
-        },
-        {
-          "id": "https://xz.aliyun.com/t/11521",
-          "author": null,
-          "description": "docker未授权漏洞蜜罐模拟与捕获分析",
-          "link": "https://xz.aliyun.com/t/11521",
-          "publishedOn": "2022-07-13T15:44:19.000Z",
-          "wordCount": null,
-          "title": "docker未授权漏洞蜜罐模拟与捕获分析",
-          "imageUrl": null
-        },
-        {
-          "id": "https://xz.aliyun.com/t/11504",
-          "author": null,
-          "description": "第二次挖edusrc与人生的第一个edusrc",
-          "link": "https://xz.aliyun.com/t/11504",
-          "publishedOn": "2022-07-13T15:43:00.000Z",
-          "wordCount": null,
-          "title": "第二次挖edusrc与人生的第一个edusrc",
-          "imageUrl": null
         }
       ]
     },
@@ -1861,6 +2391,26 @@
       "feedUrl": "https://linux.cn/rss.xml",
       "siteUrl": "https://linux.cn/",
       "articles": [
+        {
+          "id": "https://linux.cn/article-14872-1.html?utm_source=rss&utm_medium=rss",
+          "author": "linux@linux.cn (linux)",
+          "description": "谷歌已经干砸了 267 款硬件\n\r\n据一家国外网站不完全统计，预计到明年 3 月（按照谷歌的预告），谷歌画上句号的硬件产品有 267 款。其中包括 Nexus 手机（2012-2015）、谷歌眼镜（2012-2015）、谷歌 Cardboard VR 纸盒（2014-2019）等等。\n\r\n\r\n消息来源：Tech Going\n\r\n\r\n\r\n老王点评：看来谷歌还需要在硬件上证明自己，不过似乎这些只有苹果在硬件上一直保持不错的成绩，其它软件大厂大多在硬件上的成功不如其软件。\n\r\n\r\n\n\r\n漏洞披露 15 分钟后黑客就开始扫描\n\r\n最近发布的一份事故响应报告称，黑客一直在监视安全公司的新漏洞披露报告，通常在 CVE 公布 15 分钟后就开始扫描漏洞，在数小时内就能观察到首次漏洞利用尝试。以 2022 年 5 月 4 日披露的 F5 BIG-IP 远程执行漏洞 CVE-2022-1388 为例，在 CVE 公布 10 小时内就记录到了 2552 次扫描和漏洞利用尝试。据该报告，2022 年上半年利用最多的漏洞是 ProxyShell 占 55%，其次是 Log4Shell 占 14%，SonicWall 7%，ProxyLogon 5%。\n\r\n\r\n消息来源：Bleeping Computer\n\r\n\r\n\r\n老王点评：从 CVE 公布之时，就是安全专家和黑客赛跑的发令枪。我觉得作为安全专家，真是太难了。\n\r\n\r\n\n\r\n华为正式发布 HarmonyOS 3\n\r\n27 日，华为正式发布了 HarmonyOS 3，将于 9 月启动规模升级。用户已经可以申请测试版尝鲜，支持多达 14 款设备。截止今年 7 月，搭载 HarmonyOS 2 的华为设备突破 3 亿台。此次的 HarmonyOS 3，升级主要围绕超级终端、鸿蒙智联、万能卡片、流畅性能、隐私安全和信息无障碍六大方面。\n\r\n\r\n消息来源：鸿蒙\n\r\n\r\n\r\n老王点评：期待了很久的鸿蒙 3 终于发布了，你准备升级你的华为手机吗？",
+          "link": "https://linux.cn/article-14872-1.html?utm_source=rss&utm_medium=rss",
+          "publishedOn": "2022-07-28T07:25:14.000Z",
+          "wordCount": 506,
+          "title": "硬核观察 #711 谷歌已经干砸了 267 款硬件",
+          "imageUrl": null
+        },
+        {
+          "id": "https://linux.cn/article-14871-1.html?utm_source=rss&utm_medium=rss",
+          "author": "linux@linux.cn (linux)",
+          "description": "在 Ubuntu 中使用 Docker Compose 安装 Docker 引擎的分步指导。\n\r\n\r\n在这篇文章中，我们将会明白 Docker 是什么，如何 在 Ubuntu 中安装 Docker 引擎 。此外，我们也将会明白如何 安装 Docker Compose ，它是一个定义并运行多容器的 Docker 应用。\n\r\n我们已经在 Ubuntu 22.04 LTS 中正式的测试了这份指南。然而，它也应该对旧版本如 20.04 LTS 和 18.04 LTS 有效。为了更好的安全性和稳定性，我推荐你使用最新的版本 —— Ubuntu 22.04 LTS 。\n\r\n什么是 Docker ？\n\r\nDocker 是一个快捷、轻便的系统级虚拟化技术，开发者和系统管理员可以使用它构建具备所有必要依赖项的应用程序，并将其作为一个包发布。\n\r\nDocker 与其他如 VMWare 、Xen 、以及 VirtualBox 等工具的虚拟化方式不同，每个虚拟机不需要单独的客户操作系统。\n\r\n所有的 Docker 容器有效地共享同一个主机系统内核。每个容器都在同一个操作系统中的隔离用户空间中运行。\n\r\nDocker 容器可以在任何 Linux 版本上运行。比如说你使用 Fedora ，我用 Ubuntu 。我们能相互开发、共享并分发 Docker 镜像。\n\r\n你无需担心操作系统、软件以及自定义设置，任何事都不用担心。只要我们的主机安装了 Docker ，就能持续开发。简言之，Docker 能够在任何地方运行！\n\r\n前文中你读到了两个词：Docker 镜像 和 Docker 容器 ，或许你在想它们的区别。\n\r\n通俗地说，Docker 镜像是一个描述容器应该如何表现的文件，而 Docker 容器是 Docker 镜像的运行（或停止）状态。\n\r\n希望你能够理解 Docker 的基础概念。更多细节，你可以…",
+          "link": "https://linux.cn/article-14871-1.html?utm_source=rss&utm_medium=rss",
+          "publishedOn": "2022-07-28T06:26:17.000Z",
+          "wordCount": 1434,
+          "title": "如何在 Ubuntu 22.04 LTS 中安装 Docker 和 Docker Compose",
+          "imageUrl": null
+        },
         {
           "id": "https://linux.cn/article-14870-1.html?utm_source=rss&utm_medium=rss",
           "author": "linux@linux.cn (linux)",
@@ -2009,6 +2559,46 @@
       "siteUrl": "https://www.bilibili.com",
       "articles": [
         {
+          "id": "https://www.bilibili.com/video/av941354938",
+          "author": "中国食品报融媒体",
+          "description": "-\n\n\nTags:科学,科普,网络热门鉴定,万物研究所",
+          "link": "https://www.bilibili.com/video/av941354938",
+          "publishedOn": "2022-07-27T19:05:37.000Z",
+          "wordCount": 1309,
+          "title": "吃彩虹糖等于吃毒药？使用二氧化钛合法吗？",
+          "imageUrl": "http://i1.hdslb.com/bfs/archive/3913597f9be074cdfbb16870dcb8a2ea2c807dc6.jpg"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av513769660",
+          "author": "普外科曾医生",
+          "description": "-\n\n\nTags:瘫痪,健康,打针,青霉素,二舅,屁股针,肌肉注射,臀肌挛缩,必剪创作,万物研究所",
+          "link": "https://www.bilibili.com/video/av513769660",
+          "publishedOn": "2022-07-27T18:50:04.000Z",
+          "wordCount": 1124,
+          "title": "把二舅打残的那一针，你小时候肯定也打过！",
+          "imageUrl": "http://i2.hdslb.com/bfs/archive/9ac3798150f61370dfa10149470e0ac027658fc0.jpg"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av471333552",
+          "author": "温竣岩",
+          "description": "Tags:科学,世界,学习,人类,科普向,文明,人文,进化论,万物研究所",
+          "link": "https://www.bilibili.com/video/av471333552",
+          "publishedOn": "2022-07-27T17:00:00.000Z",
+          "wordCount": 1348,
+          "title": "钟表削弱上帝，电视毁灭文明——二十分钟读懂《娱乐至死》",
+          "imageUrl": "http://i2.hdslb.com/bfs/archive/ea589aa81214924edc328e4187db74d5eab5743f.jpg"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av598790654",
+          "author": "波士顿圆脸",
+          "description": "Tags:美国,太空,自然,宇航员,3D打印",
+          "link": "https://www.bilibili.com/video/av598790654",
+          "publishedOn": "2022-07-27T14:00:00.000Z",
+          "wordCount": 1119,
+          "title": "3D打印海鲜和偷带三明治上太空有什么关系？",
+          "imageUrl": "http://i0.hdslb.com/bfs/archive/95b53fe43188ed514f6e7213105ac8ece20fd028.jpg"
+        },
+        {
           "id": "https://www.bilibili.com/video/av301276450",
           "author": "中气爱",
           "description": "今天也就是7月26日凌晨起，暴风雨横扫湖北东部、山东南部、江苏、安徽、上海以及浙江北部，江苏中南部、上海和浙江北部出现8-11级大风，其中苏州太湖附近出现12级阵风，超过了去年台风烟花经过时的水平。在狂风暴雨之中，长三角气温猛降，其中苏州在一小时内从37度降到了25度，凉爽重回人间。实际上，这场狂风暴雨，是昨天山西、河北、河南猛烈暴风雨的继续，是一个很浅的西风小槽引起。如果在平时这个小槽根本掀不起什么波澜，但在持续高温烘烤之下，我国中东部地面滚烫，大气能量极高，小槽碰巧充当了导火索，引爆了这接近爆表的大气\n\n\nTags:科学,天气,自然,台风,高温,广东,气候,卫星云图,气象,科学很可爱,万物研究所",
@@ -2049,6 +2639,36 @@
           "imageUrl": "http://i0.hdslb.com/bfs/archive/4a2012b4d5795e6da9ee510a389cb1a9ff0a8b9f.jpg"
         },
         {
+          "id": "https://www.bilibili.com/video/av813765491",
+          "author": "九说世界",
+          "description": "问你一个问题，你吃过火鸡吗？可能大多数人会回答：我吃过火鸡面。的确，火鸡这种东西几乎很少出现在我们中国人的餐桌上。那么，为什么火鸡登不上中国的餐桌呢？有人说了，原因很简单，难吃呗。\n\n\nTags:原创,科学,自然,冷知识,生物,科普一下",
+          "link": "https://www.bilibili.com/video/av813765491",
+          "publishedOn": "2022-07-26T19:26:40.000Z",
+          "wordCount": 1305,
+          "title": "在西方备受欢迎的火鸡，却被中国吃货嫌弃！火鸡肉真的很难吃？",
+          "imageUrl": "http://i1.hdslb.com/bfs/archive/a6a4d3bc48a52ad0e54adaabb5c59938fd62f823.jpg"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av301304246",
+          "author": "皮肤科教授张堂德",
+          "description": "Tags:激光,科普,女性,知识,皮肤,医生,健康,涨知识,丝状疣,皮赘",
+          "link": "https://www.bilibili.com/video/av301304246",
+          "publishedOn": "2022-07-26T18:42:48.000Z",
+          "wordCount": 1224,
+          "title": "脖子上的小肉丁是啥？能剪掉吗？",
+          "imageUrl": "http://i2.hdslb.com/bfs/archive/889b495bad6c61135b4099fd2343109e52ea2424.jpg"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av686295172",
+          "author": "Techno4K",
+          "description": "点个赞再走吧\n\n\nTags:科学,自然,有趣,发明,圆规,科学很可爱,万物研究所",
+          "link": "https://www.bilibili.com/video/av686295172",
+          "publishedOn": "2022-07-26T14:14:43.000Z",
+          "wordCount": 1340,
+          "title": "论古人是如何发明圆规的",
+          "imageUrl": "http://i2.hdslb.com/bfs/archive/36c5d97c2fc6dee832cefda3cdd051c315bbd39b.jpg"
+        },
+        {
           "id": "https://www.bilibili.com/video/av428833660",
           "author": "萌萌战队",
           "description": "Tags:原创,自制,科学,物理,冷知识,趣味,涨知识,网络热门鉴定,万物研究所",
@@ -2067,6 +2687,16 @@
           "wordCount": 1333,
           "title": "风暴启动！极限高温南压广东等省，台风靠近到底是好是坏",
           "imageUrl": "http://i2.hdslb.com/bfs/archive/a23dff185ce4f880f73a9e8ae56630ea0cb38e90.jpg"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av513791475",
+          "author": "人民日报",
+          "description": "蚊子的口器有6根针构成呢~两根划开皮肤的锯齿针，两根起支撑作用的针，一根吐口水的吸管，和一根吸血的吸管！不用的时候就收在保护套里，可以说是相当精密了！\n\n\nTags:蚊子",
+          "link": "https://www.bilibili.com/video/av513791475",
+          "publishedOn": "2022-07-25T20:24:22.000Z",
+          "wordCount": 1079,
+          "title": "3000多种蚊子里，这3种最爱叮你",
+          "imageUrl": "http://i0.hdslb.com/bfs/archive/4d88b1795b5eba0f90b915668c789328010e611d.jpg"
         },
         {
           "id": "https://www.bilibili.com/video/av301342238",
@@ -2336,6 +2966,26 @@
       "siteUrl": "https://www.bilibili.com",
       "articles": [
         {
+          "id": "https://www.bilibili.com/video/av813850081",
+          "author": "九天Hector",
+          "description": "6小时机器学习特征工程实战方法精讲！！\n本公开课节选自《机器学习实战》正课，完整目录/课件领取见置顶评论哦~\n\n\nTags:数学,计算机,算法,AI,ML,机器学习,大数据,深度学习,PYTHON教程,特征工程",
+          "link": "https://www.bilibili.com/video/av813850081",
+          "publishedOn": "2022-07-27T11:54:29.000Z",
+          "wordCount": 1170,
+          "title": "特征工程实战方法精讲|Kaggle上分必备特征工程技巧|数据清洗|特征衍生|特征筛选",
+          "imageUrl": "http://i0.hdslb.com/bfs/archive/78b990b6eb744f378805434247eb38b3da622b26.png"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av471305855",
+          "author": "站不起来的蒙蒙",
+          "description": "Tags:艺术,教程,创意,鉴定,后期,网络热门鉴定",
+          "link": "https://www.bilibili.com/video/av471305855",
+          "publishedOn": "2022-07-27T09:30:00.000Z",
+          "wordCount": 1162,
+          "title": "鉴定网络热门艺术（24）",
+          "imageUrl": "http://i0.hdslb.com/bfs/archive/476f72d0b7ce6baf9e698a9b097df5b02ef1688d.jpg"
+        },
+        {
           "id": "https://www.bilibili.com/video/av813849483",
           "author": "5-MinuteCrafts中文",
           "description": "Tags:生活,创意,手工制作,高跟鞋,夏日,生活技巧,经验分享,口红,生活小妙招,这个技能你没有,技能提升营2022第二季",
@@ -2376,6 +3026,26 @@
           "imageUrl": "http://i1.hdslb.com/bfs/archive/7cf756a3b4acb548129c362a0696fab996f6d91b.jpg"
         },
         {
+          "id": "https://www.bilibili.com/video/av598858374",
+          "author": "小萌萌yami",
+          "description": "-\n\n\nTags:原创",
+          "link": "https://www.bilibili.com/video/av598858374",
+          "publishedOn": "2022-07-26T16:55:58.000Z",
+          "wordCount": 1076,
+          "title": "感同身受是道伪命题吗",
+          "imageUrl": "http://i0.hdslb.com/bfs/archive/e4585502c812203e5eb230ea73e3a50db5da5e99.jpg"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av471268779",
+          "author": "阿兵电器维修",
+          "description": "空调内机漏水，以为脏堵吹了排水管还不行？其实大部分原因是在这里\n\n\nTags:知识,空调,维修,漏水,生活小窍门,电工,家电维修,技能提升营,技能提升营2022第二季",
+          "link": "https://www.bilibili.com/video/av471268779",
+          "publishedOn": "2022-07-26T16:02:00.000Z",
+          "wordCount": 1124,
+          "title": "空调内机漏水，以为脏堵吹了排水管还不行，真正原因在这里",
+          "imageUrl": "http://i2.hdslb.com/bfs/archive/81273c67b99af4d1a29a26c3ec5cda009dd35417.jpg"
+        },
+        {
           "id": "https://www.bilibili.com/video/av728817067",
           "author": "哔哩哔哩UP主执事",
           "description": "视频来源于《UP TALK》、《UP主成长课堂》，感谢每一位分享的UP主（按出场顺序排序）：@-LKs-  @侯翠翠  @天真的和感伤的小说家  @少年王生鲜  @鹦鹉梨  @姜Dora在此  @瞻云云  @安州牧 \n\n\nTags:教程,UP主,学习,视频教程,博主,视频制作,副业,自媒体,经验分享,我在B站做UP主,我在B站有话说",
@@ -2384,6 +3054,26 @@
           "wordCount": 1373,
           "title": "⚡️去做不被定义的视频⚡️【UP TALK】",
           "imageUrl": "http://i1.hdslb.com/bfs/archive/69269eda231c6b0a2055cb666b870765d30157c7.jpg"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av856364782",
+          "author": "Admie_TxT_0",
+          "description": "为保证信息的更新，请到评论区查看相关链接，侵删\n部分资料在群里，群里也有大佬提供咨询哦：995386280\n\n参考文献：\nhttps://www.coolapk.com/feed/28076867?shareKey=OTJlMjVkNTAwN2UwNjJkZDE4ODU\nhttps://www.coolapk.com/feed/33690093?shareKey=ZGY5ZWQwMmZiNDAzNjJkY2ExMGE\nhttps://www.coolapk.com/feed/26320412?shareK\n\n\nTags:科技猎手计划2022第二季,技术宅的夏天,华为,安卓,刷机,手机,教学,科技,数码,root",
+          "link": "https://www.bilibili.com/video/av856364782",
+          "publishedOn": "2022-07-26T10:16:37.000Z",
+          "wordCount": 1177,
+          "title": "【全网首发】华为刷机入门【保姆级教程】华为手机刷机-魔鬼级难度刷机-小白也能看懂！",
+          "imageUrl": "http://i0.hdslb.com/bfs/archive/4f890caefa3a2e9797bf4d285dd838b212a7b014.jpg"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av343757629",
+          "author": "VIDEO-NET",
+          "description": "TIKTOK\n上集：BV1fS4y1E7an\n这个系列还会持续更新，如果你爱看的话\n欢迎点点关注成为老粉哦~\n\n\nTags:考古,恐龙,有趣,霸王龙,化石,恐龙化石,挖掘",
+          "link": "https://www.bilibili.com/video/av343757629",
+          "publishedOn": "2022-07-25T23:11:39.000Z",
+          "wordCount": 1311,
+          "title": "这是多少孩子小时候梦寐以求的工作！！",
+          "imageUrl": "http://i2.hdslb.com/bfs/archive/ea0feda82b08b2b2b23511f4e0ba82d53d1e4b62.jpg"
         },
         {
           "id": "https://www.bilibili.com/video/av813864835",
@@ -2396,6 +3086,16 @@
           "imageUrl": "http://i2.hdslb.com/bfs/archive/e96ed4e83ac16c1571647487c96009ce7c0394f2.jpg"
         },
         {
+          "id": "https://www.bilibili.com/video/av598808491",
+          "author": "软弹的秘密",
+          "description": "-\n\n\nTags:教程,玩具,软弹,技能提升营,技能提升营2022第二季",
+          "link": "https://www.bilibili.com/video/av598808491",
+          "publishedOn": "2022-07-25T20:18:54.000Z",
+          "wordCount": 1151,
+          "title": "【软弹的秘密】第一章基础原理(1)机械原理",
+          "imageUrl": "http://i2.hdslb.com/bfs/archive/bce289d72225b82e64f643748f9a70c01b25f462.jpg"
+        },
+        {
           "id": "https://www.bilibili.com/video/av686339193",
           "author": "魔杰益智",
           "description": "神奇视觉错觉现象，看完后，你还敢相信自己的眼睛吗？\n\n\nTags:益智,烧脑,益智游戏,最强大脑,这个技能你没有,技能提升营2022第二季",
@@ -2404,6 +3104,26 @@
           "wordCount": 1121,
           "title": "神奇视觉错觉现象，看完后，你还敢相信自己的眼睛吗？",
           "imageUrl": "http://i0.hdslb.com/bfs/archive/7307a5a431a58a4beb93f0f33c0e86625d6fdf04.jpg"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av598833588",
+          "author": "漂泊Poker",
+          "description": "喜欢的朋友不要忘记一键三连～\n后续想学什么可以评论区留言哦～\n\n\nTags:魔术,花切,纸牌魔术,魔术教学,花式切牌,沉浸式体验",
+          "link": "https://www.bilibili.com/video/av598833588",
+          "publishedOn": "2022-07-25T18:00:00.000Z",
+          "wordCount": 1226,
+          "title": "纸 牌 沉 浸 式 体 验 30.0",
+          "imageUrl": "http://i1.hdslb.com/bfs/archive/625572788cdfcd74919a4216596624a0951890c9.jpg"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av386372193",
+          "author": "军哥说酒",
+          "description": "-\n\n\nTags:酒,喝酒,茅台,白酒,酒文化,酒知识",
+          "link": "https://www.bilibili.com/video/av386372193",
+          "publishedOn": "2022-07-25T17:30:16.000Z",
+          "wordCount": 1102,
+          "title": "茅台酒多喝一杯",
+          "imageUrl": "http://i0.hdslb.com/bfs/archive/ae5009da824a05896ec637900e3cf9c8732adbf4.jpg"
         },
         {
           "id": "https://www.bilibili.com/video/av728848688",
@@ -2424,6 +3144,26 @@
           "wordCount": 1133,
           "title": "我TM直接裂开了！你管这叫教书育人？大学计算机系老师声称自己几年没有编程！dnm退钱！",
           "imageUrl": "http://i0.hdslb.com/bfs/archive/80b381949dd57640bab5aa9e80f9dadfcce1f9c6.jpg"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av513793977",
+          "author": "茶小桃寻好茶",
+          "description": "-\n\n\nTags:科普,茶叶,喝茶,茶文化,技能提升营,技能提升营2022第二季",
+          "link": "https://www.bilibili.com/video/av513793977",
+          "publishedOn": "2022-07-25T12:43:07.000Z",
+          "wordCount": 1130,
+          "title": "茶盖上放东西，是什么意思？",
+          "imageUrl": "http://i1.hdslb.com/bfs/archive/9b0e4b6021ee0b43cd271aa49163dac4de44425e.jpg"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av643833068",
+          "author": "薅知识",
+          "description": "Tags:技能提升营2022第二季,技能提升营,搜索引擎,搜索,搜索技巧,查资料",
+          "link": "https://www.bilibili.com/video/av643833068",
+          "publishedOn": "2022-07-25T10:56:00.000Z",
+          "wordCount": 1153,
+          "title": "使用百度等搜索引擎查找资料时，如何让搜索结果更精准？更少出现广告？",
+          "imageUrl": "http://i0.hdslb.com/bfs/archive/6d69bc10f331a0466602c6dda756655ce4c1e8a7.jpg"
         },
         {
           "id": "https://www.bilibili.com/video/av471325884",
@@ -2612,6 +3352,16 @@
       "feedUrl": "https://rsshub.app/dev.to/top/month",
       "siteUrl": "https://dev.to/top/month",
       "articles": [
+        {
+          "id": "https://dev.to/juliafmorgado/the-ultimate-list-of-css-code-generators-for-web-development-4d1l",
+          "author": "Julia Furst Morgado",
+          "description": "#css #webdev #programming #productivity",
+          "link": "https://dev.to/juliafmorgado/the-ultimate-list-of-css-code-generators-for-web-development-4d1l",
+          "publishedOn": "2022-07-25T22:57:00.000Z",
+          "wordCount": 3473,
+          "title": "The Ultimate List of CSS Code Generators For Web Development",
+          "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--5R4_8EWa--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/as4bxtjano2dpzcjjrcz.png"
+        },
         {
           "id": "https://dev.to/rubemfsv/clean-architecture-applying-with-react-40h6",
           "author": "Rubem Vasconcelos",
@@ -2857,6 +3607,26 @@
       "siteUrl": "https://sspai.com/matrix",
       "articles": [
         {
+          "id": "https://sspai.com/post/74820",
+          "author": "鸿苓",
+          "description": "Matrix 首页推荐 \nMatrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。 \n文章代表作者个人观点，少数派仅对标题和排版略作修改。\n本文参与数字文具盒征文活动。\n\n上学时最常有的作业就是限制在两千字以内的短 essay，需要引用参考文献，针对某个指定话题援引正反方观点，或者针对某个问题讲述现状及未来的可能发展方向。有时也需要联系同时在学的好几门课，从不同角度切入分析同一个问题。\n写作的套路没什么新奇，我一般分成三步：\n\n首先是看一定数量的资料，对这个话题的背景和相关知识有一定的了解，收集有用的信息；\n其次是通过已知信息，大概整理出文章框架，包括大致结构、需要提及的论点，以及目前的发现如何支持这些论点；\n最后就是整合前两步的发现，写完这篇文章。\n\n其中前两步往往是同时进行，不分先后：了解了基本信息就可以开始搭建结构，在梳理论点和证据时如果出现了逻辑上的断层，就得找更多文献填补空缺。而只要这两步做得足够细致，写作时就可以顺着大纲一路写下去，行云流水毫无阻滞。\n\n然而在实际操作中，却有件事一直困扰我。当时用的软件是 Mendeley 和 MS Word 或 Scrivener 的组合，若想要把找到的资料，按照文章的结构而非阅读顺序，依次放置在合适的位置，并且能够迅速找到引文出处，就只能靠多开窗口和详细记录引文位置来弥补单个软件的不足，稍有不慎就得翻遍资料库寻找某句话到底出自哪篇文章……非常痛苦。\n因此，我希望能有一款软件，让我在查阅文献资料时有个「卡片」可以同时存放引文和我自己的总结，并且能及时链接到原文的位置，写作时自动生成参考文献；同时这个卡片可以自由移动，并组成一个思维导图，方便我构建大纲。\n直到我最近发现，MarginNote 和上面那个组合相比，能更好地…",
+          "link": "https://sspai.com/post/74820",
+          "publishedOn": "2022-07-27T12:25:28.000Z",
+          "wordCount": 610,
+          "title": "有没有想过，MarginNote 也可以拿来写文章捏？",
+          "imageUrl": ""
+        },
+        {
+          "id": "https://sspai.com/post/74812",
+          "author": "清云",
+          "description": "本文参与数字文具盒征文活动\n\n前言\n从大二上学期开始重新拾起书本大量阅读，到现在差不多刚好一年。这一年里我迭代了许多次学习方法，从最开始的抱着纸质书硬啃，到开始用笔划线做笔记，再到把笔记收集在备忘录，接着开始换电子书，又经历有道云笔记和Obsidian，最后到现在这套自用的学习流程，真的是历经九曲十八弯。\n在我目前的理解里，学习的本质就是接触到陌生的信息，然后进行翻译，转化为自己能理解的知识并形成长期记忆，最后在正确的情境下进行正确运用的过程。\n根据上述理解，以下是我精简后的学习流程及相关工具。\n第一步，阅读时凡是遇到自己有所触动的句子，立刻划线（or摘录）。【微信读书等媒介】\n第二步，复述划线句，想象自己将要把这个句子解释给别人。\n第三步，所有划线句定期复习。【氢刻】\n第四步，根据划线句内容将其分为三类，不同类别不同处理。\n     What——概念/观点——以卡片形式记录，不同概念多加碰撞。【幕布】\n     Why——原理/本质——及时复习即可，重在理解。【氢刻】\n     How——方法/流程——根据主题进行整合，旨在形成自己独有的方法论。【幕布】\n第五步，想象每个知识点可能存在的使用场景，以图在未来生活中切实应用。\n\n信息输入\n这是一个信息爆炸的时代，我们每天都在接触数以千万计的信息量，但同时我们的精力又是如此有限，因此我们需要有意识地选择高质量的信息来学习。\n我目前的信息来源主要是三个方面，书籍、论文和精选社区。\n微信读书——腾讯最后的良心\n我最早开始电子书阅读是在知乎，里面的会员专栏里有不少好书，但知乎不支持搜索书籍，书籍量也不多，所以最后还是选择了微信读书。在微信读书，90%我想看的书都能找到，而且微信读书没有广告，阅读过程相当赏心悦目。\n此外，微信读书的附加功能也比较齐全，仅划线一项就支持荧光笔、直线、波浪线三种划线方式，且所有划线句最后都可以一键导出。\n…",
+          "link": "https://sspai.com/post/74812",
+          "publishedOn": "2022-07-26T12:01:17.000Z",
+          "wordCount": 474,
+          "title": "书山寻径：寻找精简与高效之间的平衡",
+          "imageUrl": "https://cdn.sspai.com/2022/07/26/40d69fef5211ea0529655a8eb999d950.jpg"
+        },
+        {
           "id": "https://sspai.com/post/74764",
           "author": "sUgarEnid",
           "description": "从实体到思维，删除不需要的、归类有用的，永远都需要人为的体力劳动或脑力劳动，从而达到负熵式做功，从而使我们在万千琐碎中得以抽身，奔赴更值得的事物。这件好像容易的断舍、清理能力在我实际操作上手起来却没有那么简单。\n日式整理术的概念，出自《佐藤可士和的超整理术》，是一种能够指导生活方式或是影响工作流的方法论。根据佐藤的阐述，其整理术主要分为三个维度。\n\n空间整理术 —— 讲求「物」的固定位置，归类，优先级的排序；留下或是扔掉。\n信息整理术 —— 对文字、图片影像、数据的线形，树形或网状结构归纳。\n思维整理术 —— 对「抽象」「混沌」等概念性、无意识内容的可视化、语言化或“意识化”；保存或是删除。\n\n空间整理术 —— 「对所有之物的斟酌」\n引子\n\n有关于「量」\n\n我自己从小就是一个囤积狂魔，所有必需品必须是用一囤一，对心爱的事物不满足于只拥有一种款式。横向上我希望有用时下同一系列的所有款式（也就是收集癖），纵向上我期待所有新品，对热门稀有款更是虎视眈眈。后来我长大了，刚刚对金钱有一些许自由支配权，我就理所当然地又被各种社交媒体上的“花花世界”掌控—— 大牌口红的当季热门色号、各种各样像调色盘一般的眼影腮红盘、成份奇妙能使一夜回春的护肤品、花里胡哨的快时尚单品…… 它们没有一样不在扰动我欲望的神经。我的多巴胺就在等快递的时候无限分泌，在拆快递的时候达到顶峰，又在切实拥有“美物”的一瞬间消失殆尽，周而复始，无限循环。\n而我的懒惰又让我所能真正使用到位的物品少之又少，每天早起让我没有太多时间化全妆，没有办法好好搭配我买的每一件“潮流单品”。为了避免太扎眼的look，我还是会因为效率和时间而选择低饱和的经典款和各种黑白灰。可谓是身在“潮”营，心在“汗”，穿搭博主穿她的，我依旧我行我“素”。\n我并没有因为这些物品赋值，反而被夺去了自由 —— 我被时下热门控制了钱包，被塞得满满的房间夺走了空…",
@@ -3063,6 +3833,406 @@
       "feedUrl": "https://rsshub.app/v2ex/topics/latest",
       "siteUrl": "https://www.v2ex.com/",
       "articles": [
+        {
+          "id": "869276",
+          "author": "allanpk716",
+          "description": "allanpk716: \n项目地址：\nhttps://github.com/allanpk716/go-protocol-detector\n之前在某个很诡异的需求情况下，为了练手而练手就实现了一个，项目中有教程说明是怎么实现的，也是看别人的文章做的。\n前天因为有一台 Windows Server 改了默认的 3389 ，交接的问题也没说新的是啥，然后也懒得去找注册表了，就想起了有这个项目，改造了下，实现了多线程、多地址段、多端口的特定协议的端口扫描。当然顺利找到了（大力出奇迹）。做的时候仅仅是快出活，没有特别考虑扫描效率问题，毕竟我一般也没得这种诡异的需求，仅仅是做都做了，不如···再···而已。\nPS: 之前都是用 naabu ，仅仅支持端口扫描，但是不能针对协议扫描。\n现在本项目提供了，可执行程序共大家使用，也可以应用 pkg 里面提供的方法到自己项目中玩。如果你的平台没有，嗯···如果你能自己加 goreleaser 脚本的代码贡献下就更好，这一块我一般都是比较脑壳疼的。\n协议特征匹配的部分后续也许会根据新增的协议再重构，现在看起来是不太“爽”的哈",
+          "link": "https://www.v2ex.com/t/869276",
+          "publishedOn": "2022-07-28T08:42:42.000Z",
+          "wordCount": 340,
+          "title": "golang 实现的多协议扫描工具 go-protocol-detector，支持 RDP、SSH、FTP、Telnet、VNC、SFTP",
+          "imageUrl": null
+        },
+        {
+          "id": "869275",
+          "author": "iovekkk",
+          "description": "iovekkk: 用了两年多的无线鼠标，周一早上过来发现电池没电了，然后去公司前台找新电池\n一连换了好几个电池，鼠标都不亮，我以为鼠标坏了\n想一想也用挺久了，鼠标也不贵，几十块买的，坏了倒也合理，随手就给扔了\n迫于任务紧急，没有鼠标干活效率低，于是立刻在京东下单买了个新鼠标，下午三点就送到了\n然而感觉新鼠标不太好用，所以隔了几天又把家里的鼠标换过来用\n家里的鼠标电池用了很久了，也不知道还有多少电量，\n我心想提前换一下新电池吧，然后就把前几天拿的那几节电池换一下，结果鼠标也都不亮\n我突然意识到，原来我的旧鼠标没有坏，是我拿的这几节电池都没有电了\n淦！",
+          "link": "https://www.v2ex.com/t/869275",
+          "publishedOn": "2022-07-28T08:34:12.000Z",
+          "wordCount": 389,
+          "title": "一件小事，白扔了一个鼠标",
+          "imageUrl": null
+        },
+        {
+          "id": "869274",
+          "author": "mikywei",
+          "description": "mikywei: \n日志审核都是开的，死活找不到日志；不知道存放在哪个文件夹，还是根本就没有日志？",
+          "link": "https://www.v2ex.com/t/869274",
+          "publishedOn": "2022-07-28T08:32:26.000Z",
+          "wordCount": 339,
+          "title": "怎么查看域控 DNS 服务器上面的 dns 解析日志啊，主要查下面哪台 pc 请求的 dns 查询记录。",
+          "imageUrl": null
+        },
+        {
+          "id": "869273",
+          "author": "oldshensheep",
+          "description": "oldshensheep: \n这个让 ZFS 工作在 Windows 上的项目还不太稳定，经常蓝屏，便寻求其他解决方案，于是乎。\n有人可能会说你在不是脱裤子放屁吗，这不就是装个虚拟机运行 Linux ？？？\n是的，我就是脱裤子放屁。\n写这个文章的时候使用的是 ArchLinux 的 WSL2 ，为了使教程更简单，也为了从 0 实现，这篇文章使用 Ubuntu22.04 版本进行测试。\n先决条件\n安装 WSL2 版本的 Ubuntu22.04 ，其他的系统版本应当也可。\n具体安装方法参考官方文档。\n对于系统版本大于 Windows 10 version 2004 或者 Windows11 的用户参考下面的文档：\nhttps://docs.microsoft.com/en-us/windows/wsl/install\n对于系统版本大于 Version 1903 的参考下面的文档：\nhttps://docs.microsoft.com/en-us/windows/wsl/install-manual\n替换 WSL 的 Linux Kernel\n参考文档^1\n在此 https://github.com/oldshensheep/zfs-on-wsl/releases 下载编译好的支持 ZFS 的 Kernel ，需要下载 bzImage ，放到 Windows 的一个地方。\n然后在 PowerShell 窗口中执行以下命令：\n注意把<bzImage Path>替换成你下载的 bzImage 的路径，例如C:\\\\Fun\\\\bzImage\n\"\n[wsl2]\nkernel=<bzImage Path>\n\" > ~/.wslconfig\n\n然后wsl --shutdown关闭运行中的实例，然后重新启动 Ubuntu 。\n挂载硬盘到 WSL2\n参考文档^2\n其实系统现在已经支持 ZFS 了，…",
+          "link": "https://www.v2ex.com/t/869273",
+          "publishedOn": "2022-07-28T08:31:56.000Z",
+          "wordCount": 825,
+          "title": "ZFS on Windows (using WSL2)",
+          "imageUrl": null
+        },
+        {
+          "id": "869272",
+          "author": "liuser666",
+          "description": "liuser666: Linux 不是有很多软件吗？它们的配置文件往往分布在各种各样的地方。\n同时它们还喜欢在用户目录里拉屎，我每次看到一堆.git .zshrc .....都贼烦。\n\n我想弄一个命令行小工具，有一个思路：\n在原本的路径下创建软链接，然后在一个统一的目录下把这些配置文件放好，这样我下次改配置文件的时候就不用到各种目录下找了。同时基于目前的云同步软件还能达成换电脑一键分发配置。\n但是还是解决不了拉屎的问题，不知道各位有没有什么看法。\n\n另外现在工程项目里一堆.install .esdoc.json .....docker eslint 看得我好难受，有没有什么好办法？",
+          "link": "https://www.v2ex.com/t/869272",
+          "publishedOn": "2022-07-28T08:21:11.000Z",
+          "wordCount": 431,
+          "title": "配置文件规整化",
+          "imageUrl": null
+        },
+        {
+          "id": "869271",
+          "author": "overthemoon",
+          "description": "overthemoon: \n平常使用 docker 也就是配置个配置文件，需要学到什么程度呢",
+          "link": "https://www.v2ex.com/t/869271",
+          "publishedOn": "2022-07-28T08:19:16.000Z",
+          "wordCount": 490,
+          "title": "普通的后台开发需要掌握 docker 到什么程度？",
+          "imageUrl": null
+        },
+        {
+          "id": "869270",
+          "author": "l13111856135",
+          "description": "l13111856135: \nswitch 接口查看时长？\nswitch 接口查看时长？\nswitch 接口查看时长？\n求助",
+          "link": "https://www.v2ex.com/t/869270",
+          "publishedOn": "2022-07-28T08:14:04.000Z",
+          "wordCount": 338,
+          "title": "switch 接口查看时长？",
+          "imageUrl": null
+        },
+        {
+          "id": "869269",
+          "author": "Belmode",
+          "description": "Belmode: \n请教诸位，一个问题。\n在 java 和 nodejs 中，使用同样的正则，为什么结果不一样。。。\n\n谢谢大家。",
+          "link": "https://www.v2ex.com/t/869269",
+          "publishedOn": "2022-07-28T07:53:41.000Z",
+          "wordCount": 367,
+          "title": "关于 Java 正则表达式的一个疑问",
+          "imageUrl": null
+        },
+        {
+          "id": "869267",
+          "author": "Seulgi",
+          "description": "Seulgi: 1. [短信验证码提取]( https://github.com/vincentXu97/alfred-workflow-message-code)\n提取最新 10 条包含验证码三个字的短信文本, 提取其中的验证码.回填回 alfred 候选项, 回车复制到粘贴板\n2. [阿里机器翻译(自用替代有道翻译)]( https://github.com/vincentXu97/alfred-workflow-translate-alimt)\n利用阿里机器翻译每月百万字符的免费白嫖. 因为只当一个翻译工具, 所以有道的其他诸如记词本之类的对我用处不大.加上没有白嫖额度.\n通过判断翻译文本是否包含中文字符, 如果有中文字符,则默认翻译为英文, 如果不包含则翻译为中文.",
+          "link": "https://www.v2ex.com/t/869267",
+          "publishedOn": "2022-07-28T07:52:00.000Z",
+          "wordCount": 551,
+          "title": "分享自己开发的两个 alfred 工作流(短信验证码提取/阿里机器翻译)",
+          "imageUrl": null
+        },
+        {
+          "id": "869266",
+          "author": "villivateur",
+          "description": "villivateur: \n灵感 https://v2ex.com/t/869238#reply16\n个人介绍：自诩“嵌入式物联网全栈系统开发工程师”，项目涉猎很广泛，从底层电路到 WEB 开发都有。但是大多数知识点的深度不太行，只是通晓，还未精通。\n目前主职工作是工业物联网的嵌入式软件开发，业余做过很多小玩意，比如 https://v2ex.com/t/857485\n如果有人对这方面感兴趣，可以在这里直接问相关问题。如果有大佬，我也希望能互相学习。",
+          "link": "https://www.v2ex.com/t/869266",
+          "publishedOn": "2022-07-28T07:50:46.000Z",
+          "wordCount": 377,
+          "title": "看到有人对“做出一个实物作品”感兴趣，因为我有相关经验，特开一个问答交流贴，希望能互相学习。",
+          "imageUrl": null
+        },
+        {
+          "id": "869265",
+          "author": "scemsjyd",
+          "description": "scemsjyd: \n一直用公司电脑，好久没有打开我的 macbook 了，一直是我媳妇在用，但是也用得很少。昨天打开发现粘住了，掰开就发现 B 面橡胶老化了，求各路大神告知哪里可以更换橡胶圈。搜索了一下苹果售后好像是把整个屏幕都换了，这样成本有点高，各位大神有没有别的办法呢？",
+          "link": "https://www.v2ex.com/t/869265",
+          "publishedOn": "2022-07-28T07:49:43.000Z",
+          "wordCount": 377,
+          "title": "求告知， macbook pro 17 款 B 面边框橡胶圈老化怎么维修最便宜",
+          "imageUrl": null
+        },
+        {
+          "id": "869264",
+          "author": "cm2gseh",
+          "description": "cm2gseh: \n自用 华为 freebuds3 ，3 年过去，电量下降到单次 15min 左右，无法使用了。\n迫于日常电话会议多，有跑步习惯，求各位大佬，推荐半入耳式无线耳机，要求有主动降噪，音质过得去。\n迫于耳朵难受，入耳式的就算了。\n目前手机华为 Mate30,不排除后续换手机可能，但大概率还是 android 手机。",
+          "link": "https://www.v2ex.com/t/869264",
+          "publishedOn": "2022-07-28T07:48:56.000Z",
+          "wordCount": 380,
+          "title": "各位大佬，求推荐半入耳式无线耳机，日常高频使用，要求有主动降噪，音质过得去。",
+          "imageUrl": null
+        },
+        {
+          "id": "869263",
+          "author": "ITrecruit1",
+          "description": "ITrecruit1: 招聘：Design Lead - base 杭州优先|远程 - 年薪 50-70 万\nResponsibility：\n1.· Experience managing a team of UI/UX designers ；\n2.· Leading regular creative sessions and an environment of learning amongst the team members to guide them through their quest of better user experience and creative user interfaces ；\n3.Perform UX audits and tests to iterate over existing designs and optimize the customer/user experience on a recurring basis ；\nRequirements：\n1.5+ years design experience ，Fluent in English and Mandarin  ；\n2. An expert in hands-on knowledge for creating a powerful UX/UI on websites/mobile apps.\n3.Proficient with rapid prototyping and visualization tools such as Figma, Sketch, Invision, Adobe CC, and UXPin\n\n你好,\n我们是 Web3 Job, 是专注区块链、加密货币及 Web3 领域的全球招聘社区，我们链接来自全球各地富有激情与共识的 Builders ！提供优质工作机会！同时也有 Web3 社区，欢迎添加微信：fintechr12 加入。攒人脉, 提认知,求职招聘！\nRose Zhang | Web3 job \n微信号码：fintechr12 \n简历邮件： career9@fintechgl.com\n官网：www.fintechgl.com",
+          "link": "https://www.v2ex.com/t/869263",
+          "publishedOn": "2022-07-28T07:48:24.000Z",
+          "wordCount": 483,
+          "title": "Web3 招聘： Design Lead - base 杭州优先|远程 - 年薪 50-70 万",
+          "imageUrl": null
+        },
+        {
+          "id": "869262",
+          "author": "Morii",
+          "description": "Morii: \n官网展示的效果\n \n \n这是我的效果：",
+          "link": "https://www.v2ex.com/t/869262",
+          "publishedOn": "2022-07-28T07:48:22.000Z",
+          "wordCount": 362,
+          "title": "请问我的 IDEA 2022.2 为什么没有这个新特性",
+          "imageUrl": null
+        },
+        {
+          "id": "869261",
+          "author": "yixin026",
+          "description": "yixin026: \n公司有个设备,只提供了一个用 python 改的 shell.没有任何其他的接口,现在有些也要需要通过命令行即时的交互计算,然后找了好久没找到通过程序来控制这些的方法..最后想到了用 tmux 先绕过去\n1.开一个 tmux 的 session,在里面打开 shell\ntmux new-session -s development\n2.通过 tmux send-keys 发命令,比如\ntmux send-keys -t development 'python' C-m\n3.通过 tmux capture-pane 获取 session 里的屏幕输出\ntmux capture-pane -t development -p -S -100 -E-\n这样输入输出就都有了,勉强可以凑合着用了",
+          "link": "https://www.v2ex.com/t/869261",
+          "publishedOn": "2022-07-28T07:38:09.000Z",
+          "wordCount": 376,
+          "title": "一个很绕的通过程序来控制各种 shell 的办法",
+          "imageUrl": null
+        },
+        {
+          "id": "869260",
+          "author": "leekris",
+          "description": "leekris: \n升了 IOS16beta4 之后,没有办法通过爱思助手改虚拟定位了,请问下各位大佬还有别的方法修改虚拟定位吗",
+          "link": "https://www.v2ex.com/t/869260",
+          "publishedOn": "2022-07-28T07:36:49.000Z",
+          "wordCount": 402,
+          "title": "IOS16Beta4 虚拟定位",
+          "imageUrl": null
+        },
+        {
+          "id": "869259",
+          "author": "arvin01",
+          "description": "arvin01: 一个四线小城市的小区楼下及周边，看不到一家咖啡店，或书店（那种带座位的），或图书馆之类的，可供人休息、聊天、学习、交流的地方。\n然后有一天，买东西时随口问了一下店主，他们的门店租金是多少钱，答：“3 万一年，上下两层”，我就觉得有点惊讶，这里门店大概宽 3.5 - 4 米，深有 10 米以上，不算大，但两层加起来，也不算小了。\n如果能租一个门店，简单装修成类阅览室，对外开放，给人提供一个可以歇脚讨论或工作学习的地方，采用会员订阅制，一个月不多 30 元（?），能否做到收支平衡或实现盈利呢？\n当然这个方案还有很多不完善的地方，但总体思路如此，欢迎一起来讨论。\nPS: 如果你的楼下有这样一个地方，你会去看看吗？",
+          "link": "https://www.v2ex.com/t/869259",
+          "publishedOn": "2022-07-28T07:27:14.000Z",
+          "wordCount": 567,
+          "title": "有一个想法，关于“小城小镇”，欢迎交流讨论",
+          "imageUrl": null
+        },
+        {
+          "id": "869258",
+          "author": "fstar",
+          "description": "fstar: \n一堆 useSelector 。\n试着用 ahooks 的 useWhyDidYouUpdate ，一个个传入 useSelector ，但没发现问题。\nhttps://ahooks.js.org/zh-CN/hooks/use-why-did-you-update/\n发现还有些自定义钩子。。我也怀疑有些封装为对象的没有用 shallowEqual 。\n感觉可以封装一下 useSelector ，比较函数返回 false 时，debugger 一下，但又很麻烦。。。",
+          "link": "https://www.v2ex.com/t/869258",
+          "publishedOn": "2022-07-28T07:26:38.000Z",
+          "wordCount": 380,
+          "title": "如何快速知道哪个 useSelector 导致了 React 组件重渲染？",
+          "imageUrl": null
+        },
+        {
+          "id": "869257",
+          "author": "LeeReamond",
+          "description": "LeeReamond: \n网上下来的小姐姐套图很好看\n但是有水印\nPS 智能填充手动去水印效果很好\n但是操作很累\n想知道能不能批量去水印\n自己做网络定位到水印上还是有可能实现的，但是定位后如何去除是问题\n有调用或者自己训练网络实现的方案吗？个人训练类似网络，成本方面考虑现实吗？",
+          "link": "https://www.v2ex.com/t/869257",
+          "publishedOn": "2022-07-28T07:23:29.000Z",
+          "wordCount": 394,
+          "title": "有可能调用 PS 的插件做图片去水印吗？自己训练的方案现实吗？",
+          "imageUrl": null
+        },
+        {
+          "id": "869256",
+          "author": "sirz",
+          "description": "sirz: \n想问下合法吗？一次 50 ，直接转账到老板银行卡。。。",
+          "link": "https://www.v2ex.com/t/869256",
+          "publishedOn": "2022-07-28T07:23:18.000Z",
+          "wordCount": 491,
+          "title": "迟到罚款？还要打到私人账户",
+          "imageUrl": null
+        },
+        {
+          "id": "869254",
+          "author": "christin",
+          "description": "christin: \n之前已经提前体验过了，后面还是换回了老板 UI 。\n新版 UI 也就那样吧，感觉信息不是很直观。不过时间长了可能就习惯了。\n之前没抢到体验资格的可以更新应用体验了。",
+          "link": "https://www.v2ex.com/t/869254",
+          "publishedOn": "2022-07-28T07:20:58.000Z",
+          "wordCount": 392,
+          "title": "webstorm 2022.2 已默认新版 UI",
+          "imageUrl": null
+        },
+        {
+          "id": "869252",
+          "author": "tracker647",
+          "description": "tracker647: \n个人对“失效”的定义：迭代器，指针或者引用所指向元素的内存地址位置发生变化。\n\n根据这个理解，vector 和 string 的插入和删除操作的描述我能看懂。\ndeque 插入元素到头尾不影响指针和引用我也能理解，但是 deque 是向两边增长的，迭代器指向的元素原地址也不变，怎么说会失效呢？个人感觉应该是针对头尾迭代器的作用去说的，同理 deque 删除首尾元素。\nlist 插入和删除目标只要不是迭代器，引用，指针指向的元素本身，那应该有效。\n所以说 deque 这段是怎么一回事？",
+          "link": "https://www.v2ex.com/t/869252",
+          "publishedOn": "2022-07-28T07:19:49.000Z",
+          "wordCount": 388,
+          "title": "C++ Primer 9.3.6 迭代器 deque 这段是不是有点没讲清楚?",
+          "imageUrl": null
+        },
+        {
+          "id": "869251",
+          "author": "UPYUN",
+          "description": "UPYUN: \n低代码的热潮在几年前就火过，从阿里钉钉跨平台协作方式，再到飞书上的审批流程，以及目前我们接触到的表单审批、投票的模板，这些都是关于低代码的实现方式。随着企业数字化转型和云计算的不断发展，低代码平台又一次成为热门话题被越来越多的人讨论。\n今天分享的主题为浅谈低代码平台，主要从以下 4 个方面进行介绍：\n低代码平台概述\n低代码、无代码\n低代码平台的技术路线\n可视化拖拽平台的应用\n点击查看全文： https://www.upyun.com/tech/article/729/1.html",
+          "link": "https://www.v2ex.com/t/869251",
+          "publishedOn": "2022-07-28T07:14:51.000Z",
+          "wordCount": 458,
+          "title": "低代码是开发的未来吗？",
+          "imageUrl": null
+        },
+        {
+          "id": "869249",
+          "author": "letianqiu",
+          "description": "letianqiu: \nGil Tene 提到：\nhttps://groups.google.com/g/mechanical-sympathy/c/tepoA7PRFRU/m/7HbSINaFBgAJ\n我的猜测是 mapped I/O 不走 jni ，但是不是很确定。看源码的话最终也是走到 native 方法，Gil Tene 在另一个 post 里提到 jvm 会把 internal 的 jni call 优化掉，但是如何知道哪些 jni call 被优化掉了？",
+          "link": "https://www.v2ex.com/t/869249",
+          "publishedOn": "2022-07-28T07:12:49.000Z",
+          "wordCount": 341,
+          "title": "为什么 memory mapped file I/O 可能会导致 Long Time to Safepoint？",
+          "imageUrl": null
+        },
+        {
+          "id": "869247",
+          "author": "urnoob",
+          "description": "urnoob: 这次 MS 的 teams 挂了引发了很多帖子。想问下有多少公司 im 是在用 webex 的？\nwebex 除了开会还有 im 客户端啊",
+          "link": "https://www.v2ex.com/t/869247",
+          "publishedOn": "2022-07-28T07:05:00.000Z",
+          "wordCount": 422,
+          "title": "有公司用 IM 用的 webex 吗？",
+          "imageUrl": null
+        },
+        {
+          "id": "869246",
+          "author": "meloyang05",
+          "description": "meloyang05: 这个问题已经困扰我很久了，在网上搜索了很久也没有很好的解决办法。各系统均为最新正式版本（ 15.6/12.5 ）\n该问题仅仅出现在各系统向 macOS 进行 AirDrop 的时候（包括 macOS 间互传），系统会卡“等待中”非常久。运气好的时候 5 6 秒能够结束等待中进入文件传输阶段，有的时候甚至 30s 1min 过去了还提示等待中。。。\n非常奇怪的是，从 macOS 端往 iOS/iPadOS 端传输，以及 iOS/iPadOS 之间互传完全没有任何问题，基本 1 秒之内就能完成“等待中”并进入文件传输阶段\n个人初步怀疑是 macOS 之间的 Uiversal Control 影响了 macOS 建立 AirDrop 握手的信道。我个人手上是两台 macbook 同时通过 universal control 使用，设备为 19 款 16 寸 pro 以及 m1 air 。但是我并不能够确定是这个原因，因为我将其中一台带回家，一台留在公司时，AirDrop 的使用仍然会出现上述问题\n能不能麻烦大家看看自己手上的设备有没有这样的问题呢？",
+          "link": "https://www.v2ex.com/t/869246",
+          "publishedOn": "2022-07-28T07:04:05.000Z",
+          "wordCount": 422,
+          "title": "真心求教，大家从 iOS/iPadOS/macOS 向 macOS 进行 AirDrop 传输的时候，会卡在“等待中”很久吗",
+          "imageUrl": null
+        },
+        {
+          "id": "869245",
+          "author": "yyj08070631",
+          "description": "yyj08070631: \n雷火、互娱、互联网可以同时投递，等于网易可以投递三次，三次机会！！！\n温馨提示：大量 offer 的产生往往在第一批笔试中！强烈建议同学们在第一批笔试前投递完成，所有事业部都如此！！\n网易互娱（不可补内推 内推码：XX3CuG）\n内推时间：7.26-9.28\nXX3CuG\n内推步骤：\nhttps://game.campus.163.com/position/11\n2 、投递过程中填写内推码 XX3CuG\nOFFER 率较高岗位：\nXX3CuG\n互娱内推相关事宜可以私信咨询！！！\n网易雷火（可补内推）\n内推时间：7.5-9.28\nhttps://xiaozhao.leihuo.netease.com/neitui/#/?introduceId=v0hf3u68kxizxydc\nhttps://leihuo.163.com/campus/#/2023/\n3 、已经网申投递的同学，可以补填内推，填写内推链接即可  \nTips：\n推荐岗位有“高需”的都是需求大 hc 多的，但实际根据岗位匹配度进行投递\n填写完内推邀请信息，会和已完成网申信息自动进行匹配。注意和网申信息保持一致；\n若上面的 1 和 2 均已完成，后面还是重复收到未完成网申的信息，检查一下内推信息和网申信息是否一致，需要一致才能算内推成功。或者回帖留言和私信问我都可以\n网易互联网\n内推时间：7 月下旬开始\n互娱和互联网 7 月下旬开启内推投递，和雷火可以同时投递的，等于可以投递三次！！！",
+          "link": "https://www.v2ex.com/t/869245",
+          "publishedOn": "2022-07-28T06:59:59.000Z",
+          "wordCount": 426,
+          "title": "[网易内推] 互娱 23 届校招内推 内推码 XX3CuG",
+          "imageUrl": null
+        },
+        {
+          "id": "869244",
+          "author": "nonwill",
+          "description": "nonwill: 如题:\n日志： https://nonwill.github.io/gdocr/GoldenDict-OCR-Changelog/\n下载： https://nonwill.github.io/gdocr/GoldenDict-OCR-Deployment/\n无需再次索引，直接内建支持，遗憾是暂不支持词头预览及全文检索。\n欢迎拍瓜，对 OSX 内置词典文件导出到 Linux/Windows 下的检索支持(同时支持全文检索)正在进行中...",
+          "link": "https://www.v2ex.com/t/869244",
+          "publishedOn": "2022-07-28T06:57:43.000Z",
+          "wordCount": 309,
+          "title": "GoldenDict++OCR-macOS-20220728 已支持 OSX 内置词典",
+          "imageUrl": null
+        },
+        {
+          "id": "869243",
+          "author": "chuckzhou",
+          "description": "chuckzhou: \n我想知道一个 app 是用哪个渠道发送的短消息。\n所以你要是有深圳电信和联通的号，能帮我看一下发信人吗？\n两个运营商各一条短信，不要短信内容，就是看一下发信人。\n加我 v：ZGFtYTB6aQ==\n送你一杯奶茶 :)",
+          "link": "https://www.v2ex.com/t/869243",
+          "publishedOn": "2022-07-28T06:55:24.000Z",
+          "wordCount": 330,
+          "title": "有做 app 测试的同学能帮我一个忙吗？",
+          "imageUrl": null
+        },
+        {
+          "id": "869242",
+          "author": "sillydaddy",
+          "description": "sillydaddy: \n今天用 Qt(做跨平台桌面 UI 的一个大而臃肿的库，自带一个 IDE 工具)编译一个项目，它的 IDE 允许自定义一些编译的前置步骤，所以我想在编译前，拷贝一些库文件到指定的目录。我观察到了它自带的步骤里面有用到%{buildDir}这样的环境变量，于是很自然的我想知道库文件的目录应该用什么环境变量来表示。\n可我找不到一点提示的线索。上网搜索一番，发现不止我有这个疑问： https://stackoverflow.com/questions/35970727/use-of-variables-like-builddir-in-qtcreator-kit-settings-in-qt5\n我很郁闷，为什么这个 IDE 的开发者，就认为我一定会知道他所设置的「变态的」环境变量名称是什么呢？\n不止 Qt 有这个问题，包括 VisualStudio 在内，很多 IDE 都是这样的。可是做一个提示很难吗？ ContextMenu 这个思路就很好啊，右键点击一下，我就知道了我在这里可以做什么操作。那我在自定义前置步骤的时候，肯定会用到环境变量啊，为什么不能在旁边给一个提示按钮，让我可以浏览可能的环境变量呢？\n相似的例子，还有编译器不知所云让人抓狂的报错！\n相似的例子，还有 web 端的各种脚手架工具！\n相似的例子，还有。。。留给大家举例吧。\n对比之下，今天我还用到了一个命令：git rebase --interactive 。它虽然是命令行形式的，可它的文本提示写的很清楚，pick 、squash 、fixup...分别代表什么，直接在你要作修改的地方列出来了。带 GUI 的连这个也比不过，说不过去。\n虽说这些都是给程序员用的工具，但————\n一个程序员首先是一个人！！！ \nProgrammers' experience matters!!!\n纯属吐槽，但我有怒气！",
+          "link": "https://www.v2ex.com/t/869242",
+          "publishedOn": "2022-07-28T06:54:01.000Z",
+          "wordCount": 498,
+          "title": "做一个对程序员友好的程序员",
+          "imageUrl": null
+        },
+        {
+          "id": "869240",
+          "author": "ggp1ot2",
+          "description": "ggp1ot2: \n多年没有用 win ，新公司只能用 win 办公。\n目前对于 win 下的杀毒 /清理软件，还处于 360/鲁大师全家桶的年代。\n就是一安装就会捆绑安装很多软件，然后又吃内存，又不好卸载。\n本打算不安装类似软件，但是感觉总是会产生一些缓存，垃圾文件等。\n在 macos 下有一个腾讯柠檬清理软件挺好用，但遗憾没有 Windows 平台的。\n真心求一个功能简单的电脑清理软件，不要有很多没用的加速 /检测等功能。",
+          "link": "https://www.v2ex.com/t/869240",
+          "publishedOn": "2022-07-28T06:46:21.000Z",
+          "wordCount": 689,
+          "title": "win 下应该安装什么杀毒/清理垃圾的软件？",
+          "imageUrl": null
+        },
+        {
+          "id": "869239",
+          "author": "eryajf",
+          "description": "eryajf: \n🦩 项目地址： https://github.com/eryajf/awesome-github-profile-readme-chinese",
+          "link": "https://www.v2ex.com/t/869239",
+          "publishedOn": "2022-07-28T06:46:17.000Z",
+          "wordCount": 358,
+          "title": "做了一个中文区 awesome-github-profile 的项目，欢迎大家展示自己的主页",
+          "imageUrl": null
+        },
+        {
+          "id": "869238",
+          "author": "mahufong",
+          "description": "mahufong:",
+          "link": "https://www.v2ex.com/t/869238",
+          "publishedOn": "2022-07-28T06:39:14.000Z",
+          "wordCount": 696,
+          "title": "如果想要像稚辉君一样把一个想法变成一个实物,需要有怎么样的知识储备,应该从学什么开始?",
+          "imageUrl": null
+        },
+        {
+          "id": "869237",
+          "author": "phony2r",
+          "description": "phony2r: 这两天 m2 macbook air 到手了\n配置是 24 + 512 以及 10GPU 的版本\nm1 mac mini 是 16 + 512 的配置\n体验了一下 响应速度上 macbook air 会比 mac mini 慢一拍",
+          "link": "https://www.v2ex.com/t/869237",
+          "publishedOn": "2022-07-28T06:38:30.000Z",
+          "wordCount": 356,
+          "title": "怎么感觉 M2 macbook air 没有 M1 mac mini 流畅?",
+          "imageUrl": null
+        },
+        {
+          "id": "869236",
+          "author": "lmh19941113",
+          "description": "lmh19941113: \n学历大专，本科在读中。\n15 年毕业一直搞 Android ，最近 2 年内一直搞 Android 与 flutter 。\n优势：\n至少 2 年 flutter 开发经验。\n搭建过移动端 UI 自动化平台。\n自驱力强，喜欢探索技术，比如编译原理。\n联系方式：ZGFkb3UxMDEx\n博客地址： https://juejin.cn/user/2594503169153966\n感兴趣的 V 友请联系我，先提前谢谢了",
+          "link": "https://www.v2ex.com/t/869236",
+          "publishedOn": "2022-07-28T06:36:16.000Z",
+          "wordCount": 345,
+          "title": "[杭州/上海] Android/Flutter 求内推",
+          "imageUrl": null
+        },
+        {
+          "id": "869235",
+          "author": "mxjump",
+          "description": "mxjump: 如题，想请教一下大家，微信和 qq 的图标在 docker 里看着烦人，有没有办法能隐藏这类图标呢，当然是在 qq 和微信正常后台的情况下，所以退出 qq 和微信就不用考虑了。。\n不知道为什么很多即时通讯 app 都是这样设计的，qq 、微信、tg 等，只要程序挂了后台，不管前台打不打开界面，docker 栏的 recent app 总是会常驻这些图标。。很郁闷，但明明有的 app 是可以挂在后台同时不常住图标的，比如 docker （ docker.com 的 docker ）",
+          "link": "https://www.v2ex.com/t/869235",
+          "publishedOn": "2022-07-28T06:31:33.000Z",
+          "wordCount": 443,
+          "title": "mac 有没有办法隐藏 docker 的微信和 qq 图标呀",
+          "imageUrl": null
+        },
+        {
+          "id": "869234",
+          "author": "bigbigpark",
+          "description": "bigbigpark: \n有大佬知道这种充流量的原理吗？需要接收两次验证码，怕有猫腻不敢充，但是又缺流量。。",
+          "link": "https://www.v2ex.com/t/869234",
+          "publishedOn": "2022-07-28T06:30:54.000Z",
+          "wordCount": 379,
+          "title": "1 分钱充流量靠谱么",
+          "imageUrl": null
+        },
+        {
+          "id": "869231",
+          "author": "mittya",
+          "description": "mittya: \n大家好，分享一套最近做过的微信表情《方一歪你好》\n很多表情都是很萌很可爱的类型，但不是自己喜欢的。同时也给朋友们定制了几个专属表情，慢慢的演变成了一套表情包和一个卡通形象「方一歪」\n下面是效果，希望大家喜欢\nPS：表情制作真的是用爱发电啊 😂\n部分动图\n\n\n\n全部预览\n\n下载方式\n扫描二维码或微信表情搜 [方一歪]",
+          "link": "https://www.v2ex.com/t/869231",
+          "publishedOn": "2022-07-28T06:18:36.000Z",
+          "wordCount": 402,
+          "title": "也许是你喜欢的表情包「方一歪你好」分享给大家",
+          "imageUrl": null
+        },
+        {
+          "id": "869230",
+          "author": "hotwater",
+          "description": "hotwater: \nRT\n如果就一个人工作，老婆不想工作了\n俩娃都还在上幼儿园",
+          "link": "https://www.v2ex.com/t/869230",
+          "publishedOn": "2022-07-28T06:12:45.000Z",
+          "wordCount": 426,
+          "title": "一家四口想去新加坡， offer 大概 base 多少能够呢？",
+          "imageUrl": null
+        },
+        {
+          "id": "869229",
+          "author": "miaomiaoweiwei",
+          "description": "miaomiaoweiwei: 2017 款的 macPro ，键盘有问题，发现是有一个键盘召回计划的，但是去到官方店，说这个计划只从最后购买日期后的 4 年有效，过了就不行。\n这也太不合理了，本身东西有问题，我不知道有这个计划，过了时间就不处理\n找官方客服，说帮我申请，最后给的结果也是被拒\n不知道还有没有什么维权办法？",
+          "link": "https://www.v2ex.com/t/869229",
+          "publishedOn": "2022-07-28T06:10:34.000Z",
+          "wordCount": 333,
+          "title": "macpro 过了苹果的问题召回年限还有办法么？",
+          "imageUrl": null
+        },
         {
           "id": "869071",
           "author": "cloudsigma2022",
@@ -3751,6 +4921,26 @@
       "siteUrl": "https://juejin.im/android?sort=weekly_hottest",
       "articles": [
         {
+          "id": "https://juejin.cn/post/7125029565625270286",
+          "author": "岛上码农",
+          "description": "theme: v-green\nhighlight: atom-one-dark\n携手创作，共同成长！这是我参与「掘金日新计划 · 8 月更文挑战」的第1天，点击查看活动详情\n前言\n在网络速度较慢的场景，一个有趣的加载会提高用户的耐心和对 App 的好感，有些 loading 动效甚至会让用户有想弄清楚整个动效过程到底是怎么样的冲动。然而，大部分的 App的 loading 就是下面这种千篇一律的效果 —— 俗称“转圈”。\n\n\n本篇我们利用Flutter 的 PathMetric来玩几个有趣的 loading 效果。\n效果1：圆环内滚动的球\n\n如上图所示，一个红色的小球在蓝色的圆环内滚动，而且在往上滚动的时候速度慢，往下滚动的时候有个明显的加速过程。这个效果实现的思路如下：\n绘制一个蓝色的圆环，在蓝色的圆环内构建一个半径更小一号的圆环路径（Path）。\n让红色小球在动画控制下沿着内部的圆环定义的路径运动。\n选择一个中间减速（上坡）两边加速的动画曲线。\n下面是实现代码：\n// 动画控制设置\ncontroller =\n  AnimationController(duration: const Duration(seconds: 3), vsync: this);\nanimation = Tween(begin: 0, end: 1.0).animate(CurvedAnimation(\n  parent: controller,\n  curve: Curves.slowMiddle,\n))\n..addListener(() {\n  setState(() {});\n});\n\n// 绘制和动画控制方法\n_drawLoadingCircle(Canvas canvas, Size size) {\n  var paint = Paint()..style = PaintingStyle…",
+          "link": "https://juejin.cn/post/7125029565625270286",
+          "publishedOn": "2022-07-27T04:34:43.000Z",
+          "wordCount": 2018,
+          "title": "普通的加载千篇一律，有趣的 loading 万里挑一",
+          "imageUrl": null
+        },
+        {
+          "id": "https://juejin.cn/post/7125021894562349092",
+          "author": "彭旭锐",
+          "description": "theme: jzman\n携手创作，共同成长！这是我参与「掘金日新计划 · 8 月更文挑战」的第1天，点击查看活动详情\n请点赞关注，你的支持对我意义重大 👍 👍\n🔥 Hi，我是小彭。本文已收录到 GitHub · Android-NoteBook 中。这里有 Android 进阶成长知识体系，有志同道合的朋友，关注公众号 [彭旭锐] 带你建立核心竞争力。\n前言\n在上一篇文章中，我们提到了注册 JNI 函数（建立 Java native 方法和 JNI 函数的映射关系）有两种方式：静态注册和动态注册。今天我们来详细说下这 2 种注册方式的使用方法和实现原理。\n\n这篇文章是 NDK 系列文章第 6 篇，专栏文章列表：\n一、语言基础：\n1、NDK 学习路线：怎么学 & 我的经验\n2、C 语言基础\n3、C ++ 语言基础\n4、C/C++ 编译过程：从源码到程序运行\n二、NDK 开发：\n1、JNI 基础：Java 与 Native 交互\n2、注册 JNI 函数：静态注册 & 动态注册（本文）\n3、NDK 基础：ndk-build & CMake\n4、so 文件加载过程分析：理解 Android 中 loadLibrary() 的执行流程\n5、so 文件适配 64 位架构：Gradle 插件一键检索未适配项\n6、so 文件动态化：动态下载\n7、so 文件体积优化：文件精简\n三、基础理论\n1、视频基础理论\n2、音频基础理论\n3、H.264 视频压缩编码\n4、音频压缩编码\n5、FFMPEG 基础\n6、OPENSL ES 基础\n7、PNG 图片：无损压缩编码\n四、计算机基础\n1、字符编码：ASCII、Unicode、UTF-8、UTF-16、UTF-32\n1. 静态注册 JNI 函数\n1.1 静态注册使用方法\n静态注册采用的是基于「约定」的命名规则，通过 javah 可以自动生成 na…",
+          "link": "https://juejin.cn/post/7125021894562349092",
+          "publishedOn": "2022-07-27T04:05:10.000Z",
+          "wordCount": 2443,
+          "title": "NDK 系列（6）：说一下注册 JNI 函数的方式和时机",
+          "imageUrl": null
+        },
+        {
           "id": "https://juejin.cn/post/7124582001146855454",
           "author": "老李code",
           "description": "highlight: a11y-dark\ntheme: juejin\n前言\n今天继续探索绘制与手势的组合实践，之前在看电子书切换页面时会有一个模拟纸质书籍翻页效果，这是典型的绘制和手势的结合实现的效果，那么今天我们就用Flutter也实现这样的一个效果吧。\n原理\n大家可以找本书翻页到一半看下效果，从右下角翻到一半时，我们可以将可视区域分为下图A、B、C三部分区域。\n\nA:下一页可视区域。\nB：当前页不可视区域，翻的页不可见的区域。\nC:当前页可视区域，也就是需要翻的页的可视区域。\n原理分解：\n我们可以先将A区域和B区域合为一个区域计算，那么根据路径联合C区域自然就可以得到，至于A、B区域区分后面再讲，看下图：\n\na为手指触摸点，表示翻页右下角位置。【已知】\nf为固定书籍右下角位置。【已知】\na点和f已知，连接af,我们令g点为af的中点，过g点连接eh垂直af,为af中垂线， 可得 g = Point((a.x + f.x) / 2, (a.y + f.y) / 2)；\n并且知道△egf、△emg、△mfg为三个直角三角形，由直角三角形相似原理可知这三个三角型两两相似，所以，△emg相似△mfg，可知:\nem/gm = gm/mf;\nem = gm*gm/mf;\ngm = f.y-g.y;    mf=f.x-g.x;  \ne =  Point(g.x - (pow(f.y - g.y, 2) / (f.x - g.x)), f.y);\n同理过g点做fh垂直线可得h点坐标。略...\n从上方理论图可知，cdb是一条二阶贝塞尔曲线，控制点为e点， ab和ak为直线线段，接下来我们令n为ag的中点,同理过n点垂直于af连接cj，可知ce等于ef的一半；（可以画辅助线过gf中点垂直af得出）。\nc =  Point(e.x - (f.x - e.x) / 2, f.y);\nj点坐标…",
@@ -3788,6 +4978,26 @@
           "publishedOn": "2022-07-25T06:57:27.000Z",
           "wordCount": 1864,
           "title": "掘金 XDC 2022 - 普通技术人的弯道超车指南",
+          "imageUrl": null
+        },
+        {
+          "id": "https://juejin.cn/post/7124113005532413966",
+          "author": "唐子玄",
+          "description": "highlight: arduino-light\ntheme: github\n引子\n代码是一种表达，凝聚了程序员的想法，得先保证表达的正确性，以免执行时报错。除此之外，表达的简洁性也值得关注，以免日后因看不懂而难以维护。代码不仅是用来执行的，也是用来读或修改的，读懂是修改的前提。\n这一系列的主题是“复杂度”。复杂度是软件开发过程中最大的敌人。高复杂度影响着理解成本，维护难度甚至是迭代节奏和交付质量。系列文章目录如下：\nKotlin 基础 | 拒绝语法噪音\nKotlin 源码 | 降低代码复杂度的法宝\nKotlin 是降低复杂度的大师，这一篇将挑选几个 Kotlin 的特性结合实战代码分析下它降低复杂度之道。\n隐藏 try-catch-finally\n假设有下面这个方法：\npublic Result write(String id, byte[] bytes) {\n    Result result = new Result();\n    FileOutputStream fileOutputStream = null;\n    BufferedOutputStream bufferedOutputStream = null;\n    try {\n        lock.writeLock().lock();\n        fileOutputStream = new FileOutputStream(new File(\"xxx\"));\n        bufferedOutputStream = new BufferedOutputStream(fileOutputStream);\n        bufferedOutputStream.write(bytes,0,bytes.length);\n        boolean success = new Dao().i…",
+          "link": "https://juejin.cn/post/7124113005532413966",
+          "publishedOn": "2022-07-24T17:17:27.000Z",
+          "wordCount": 2377,
+          "title": "写更易懂的代码，Kotlin 是这样隐藏复杂度的（一）",
+          "imageUrl": null
+        },
+        {
+          "id": "https://juejin.cn/post/7124102824316633096",
+          "author": "程序员江同学",
+          "description": "theme: smartblue\nhighlight: a11y-dark\n前言\nAndroid在构建过程中会根据资源生成R文件，其中包含了所有res/目录下资源的索引，使用该索引可以在最终生成的resources.arsc资源映射表中找到对应资源。\nR.string.***的方式就可以获取到相应的资源，但是使用R文件也会带来一定的冗余问题，包括增大包体积与dex数量等。\n本文主要包括以下内容\nR文件目前存在的问题\nR文件内联优化方案\nAGP官方R文件优化方案\nR文件目前存在的问题\nApp模块中的R文件目前是final的(在AGP8.0之后，App模块的资源Id同样将变成非final的)，但是为了解决多个library模块R文件的id冲突问题，library工程中引用的R资源索引不是final的，所以我们在Library工程不能在switch - case 和Annotation中使用资源索引\n在 apk 打包的过程中，module 中的 R 文件采用对依赖库的R进行累计叠加的方式生成。如果我们的 app 架构如下：\n\n编译打包时每个模块生成的 R 文件如下：\n1. R_lib1 = R_lib1;\n2. R_lib2 = R_lib2;\n3. R_lib3 = R_lib3;\n4. R_biz1 = R_lib1 + R_lib2 + R_lib3 + R_biz1(biz1本身的R)\n5. R_biz2 = R_lib2 + R_lib3 + R_biz2(biz2本身的R)\n6. R_app = R_lib1 + R_lib2 + R_lib3 + R_biz1 + R_biz2 + R_app(app本身R)\n\n可以看出各个模块的R文件都会包含上层组件的R文件内容，如果项目依赖层次越多，上层的业务组件越多，将会导致 apk 中的 R 文件将急剧的膨胀。这就是R文件冗…",
+          "link": "https://juejin.cn/post/7124102824316633096",
+          "publishedOn": "2022-07-24T16:37:52.000Z",
+          "wordCount": 1747,
+          "title": "Android 性能优化之 R 文件优化详解",
           "imageUrl": null
         },
         {
@@ -3988,6 +5198,16 @@
       "siteUrl": "https://opensource.com/",
       "articles": [
         {
+          "id": "70123 at https://opensource.com",
+          "author": "Jim Hall",
+          "description": "Use this nifty Unix tool to process text on Linux\nJim Hall\nThu, 07/28/2022 - 03:00\n\n    \n1 reader likes this\n1 reader likes this\nUnix has always excelled at processing text, and Linux is no different. And the tools to work with and transform text files still exist on all Linux systems.\nLike other computer systems, early Unix printed on paper, using a typewriter-style printing device. These printers provided limited formatting options, but with clever application of Unix tools, you could prepare professional-looking documents.\nOne such tool was the pr tool, to prepare text documents for printing. Let's explore how to use standard Unix tools, such as the pr processor and the fmt text formatter, to prepare text files for printing on a typewriter-style printer.\n[ Read also: How I use the Linux…",
+          "link": "https://opensource.com/article/22/7/process-text-linux-pr",
+          "publishedOn": "2022-07-28T07:00:00.000Z",
+          "wordCount": 2658,
+          "title": "Use this nifty Unix tool to process text on Linux",
+          "imageUrl": "https://opensource.com/sites/default/files/lead-images/documentation-type-keys-yearbook.png"
+        },
+        {
           "id": "70125 at https://opensource.com",
           "author": "Jim Hall",
           "description": "How I manage files from the Linux command line\nJim Hall\nWed, 07/27/2022 - 03:00\n\n    \n1 reader likes this\n1 reader likes this\nManaging files in a graphical desktop like GNOME or KDE is an exercise in point-and-click. To move a file into a folder, you click and drag the icon to its new home. To remove a file, you drag it into the “Trash” icon. The graphical interface makes desktop computing easy to use.\nBut we don't always interact with Linux systems with a graphical interface. If you work on a server, you likely need to use the command line to get around. Even desktop users like me might prefer to interact with their system through a terminal and command line. I tend to rely on a few commands to manage my files from the command line:\nList files with Linux ls\nFor anyone who uses the command…",
@@ -4114,6 +5334,106 @@
       "feedUrl": "https://www.theverge.com/rss/index.xml",
       "siteUrl": "https://www.theverge.com/",
       "articles": [
+        {
+          "id": "https://www.theverge.com/2022/7/28/23281996/weird-al-yankovic-release-date-roku-originals-channel",
+          "author": null,
+          "description": "Daniel Radcliffe as Weird Al Yankovic. | Image: Roku\n    \n\n  \nWeird: The Al Yankovic Story, a biopic about the musician starring Daniel Radcliffe, will release on November 4th on The Roku Channel, the streaming company has announced. The film will be available to stream everywhere where Roku’s free service is available, and is the latest step in the company’s push into producing original content that reportedly includes as many as 50 shows. \nThe biopic covers the life of musician Weird Al Yankovic including his “rise to fame in the music industry to his celebrity love affairs” according to Roku. It’s being directed by Eric Appel (who most recently directed all ten episodes of Quibi show Die Hart) and is written by Appel and Weird Al himself. Alongside Radcliffe, Evan Rachel Wood and Rainn Wilson...\nContinue reading…",
+          "link": "https://www.theverge.com/2022/7/28/23281996/weird-al-yankovic-release-date-roku-originals-channel",
+          "publishedOn": "2022-07-28T10:04:47.000Z",
+          "wordCount": 1397,
+          "title": "Daniel Radcliffe’s Weird Al biopic gets November release date",
+          "imageUrl": "https://cdn.vox-cdn.com/thumbor/YO8gRHf9RhJeKMohPhl777xjfwI=/0x287:4000x2381/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/23906301/WEIRD_06244.jpg"
+        },
+        {
+          "id": "https://www.theverge.com/2022/7/28/23281139/ford-f150-lightning-pro-ssv-police-cop",
+          "author": null,
+          "description": "Image: Ford\n    \n\n  \nFord, the leading automaker when it comes to making and selling specially designed vehicles for law enforcement, revealed the F-150 Lightning Pro SSV, an electric truck specially designed for law enforcement. \nThe truck is a variant of the F-150 Lightning Pro, which is a version of Ford’s electric pickup that’s aimed specifically at commercial customers and fleet owners. Ford is pitching the F-150 Lightning Pro SSV (which stands for “Special Service Vehicle”) as an ideal fleet vehicle with all the features cops have come to rely on over the years, as well as other advantages specific to EVs, like quick acceleration and a lower total cost of ownership. \nan ideal fleet vehicle with all the features cops have come to rely on over the years\nA...\nContinue reading…",
+          "link": "https://www.theverge.com/2022/7/28/23281139/ford-f150-lightning-pro-ssv-police-cop",
+          "publishedOn": "2022-07-28T10:00:00.000Z",
+          "wordCount": 1795,
+          "title": "The Ford F-150 Lightning Pro SSV is an electric truck made for cops",
+          "imageUrl": "https://cdn.vox-cdn.com/thumbor/Q6ox09Ety5BCn-mmGBW6U-2f5uU=/0x399:5568x3314/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/23904956/2023_F_150_Lightning_Pro_SSV_01.JPEG"
+        },
+        {
+          "id": "https://www.theverge.com/2022/7/28/23281538/snap-snapchat-ar-game-ghost-phone-found-phone-mystery",
+          "author": null,
+          "description": "Ghost Phone. | Image: Snap\n    \n\n  \nSnap has launched its first in-Snapchat augmented reality game, a spooky “found phone” title called Ghost Phone. In the game, you’ll work to solve the mystery of what happened to the previous owner of a smartphone, and you’ll quickly learn that things are just a little bit... ghastly. \nThe core of the game is using the camera on your actual smartphone to find AR ghosts that appear in your nearby surroundings. You’ll complete different types of activities to find and capture the ghosts — for one, I had to track three floating energy balls around my office to make a ghost appear. As you capture more ghosts, you’ll unlock additional things you can check out the “phone,” such as new text messages and more apps.\n\n\nGhost Phone is Snap’s take on...\nContinue reading…",
+          "link": "https://www.theverge.com/2022/7/28/23281538/snap-snapchat-ar-game-ghost-phone-found-phone-mystery",
+          "publishedOn": "2022-07-28T10:00:00.000Z",
+          "wordCount": 1457,
+          "title": "Snap’s first AR game is a spooky ‘found phone’ mystery",
+          "imageUrl": "https://cdn.vox-cdn.com/thumbor/na42izkpZpJdl9SrUUrsi7OFr5c=/0x158:1459x922/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/23905752/GhostPhone_Quad_en_US.png"
+        },
+        {
+          "id": "https://www.theverge.com/2022/7/28/23281984/sony-playstation-5-1440p-resolution-support",
+          "author": null,
+          "description": "Illustration by Alex Castro / The Verge\n    \n\n  \nSony is starting to test 1440p resolution support for its PlayStation 5 console, a highly-requested addition. Testers will get access to a new PS5 system software beta today that includes 1440p support, curated gamelists for their library, and new social features.\nThe new 1440p video output option will allow PS5 owners to choose this resolution on compatible TVs and monitors. If games support 1440p then native 1440p output will be supported, but otherwise 4K games will benefit from improve anti-aliasing by supersampling down to the 1440p output. \n  \n        \n      Image: Sony\n      1440p resolution on the PS5.\n  \n\nPS5 owners with the beta software will be able to check if their HDMI-connected display supports 1440p in the screen and...\nContinue reading…",
+          "link": "https://www.theverge.com/2022/7/28/23281984/sony-playstation-5-1440p-resolution-support",
+          "publishedOn": "2022-07-28T09:22:54.000Z",
+          "wordCount": 1493,
+          "title": "Sony starts testing 1440p support for PS5",
+          "imageUrl": "https://cdn.vox-cdn.com/thumbor/b-rm6htWHZJMPQKwyy3XTdcanrw=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/19815897/acastro_200318_1777_ps5_0001.jpg"
+        },
+        {
+          "id": "https://www.theverge.com/2022/7/28/23281956/twitter-status-feature-test",
+          "author": null,
+          "description": "Illustration by Alex Castro / The Verge\n    \n\n  \nA new Status feature has started appearing for some Twitter users that lets them assign one of several pre-written labels to their tweets. A spokesperson for the company confirmed the limited test in a statement given to TechCrunch, while Twitter users have been sharing screenshots of the feature in action. \n“For a limited time, we are testing a feature that allows you to add a status topic from a predetermined list to your Tweets to provide more context for your followers,” the Twitter spokesperson said. “So whether you are about to drop a hot Tweet thread, share your shower thoughts, or have a bad case of the Mondays, your Tweets can better convey what you are up to.”\nI don't know how twitter managed to release a more embarrassing...\nContinue reading…",
+          "link": "https://www.theverge.com/2022/7/28/23281956/twitter-status-feature-test",
+          "publishedOn": "2022-07-28T08:36:10.000Z",
+          "wordCount": 1705,
+          "title": "Twitter goes full circle with Status feature test",
+          "imageUrl": "https://cdn.vox-cdn.com/thumbor/hSoKIbanjrzIZmjnUed-rVIlI6I=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/8966109/acastro_170726_1777_0012_v3.jpg"
+        },
+        {
+          "id": "https://www.theverge.com/2022/7/27/23281681/amazon-workers-eeoc-complaint-racist-death-threats-illinois",
+          "author": null,
+          "description": "Amazon reportedly told workers they could take unpaid time off if they felt uncomfortable coming into work. | Illustration by Alex Castro / The Verge\n    \n\n  \nOver two dozen Amazon workers claim the company didn’t respond appropriately to racist death threats against Black workers at its MDW2 facility in Joliet, Illinois, and retaliated against an employee who spoke out, according to a report from the Chicago Tribune (via Engadget). The 26 workers have reportedly filed complaints with the U.S. Equal Employment Opportunity Commission (EEOC). \nIn late May, workers said they found messages reading “[n-word]s gonna die” and “fuck these [n-words] at MDW2” written on bathroom walls in the facility, according to the advocacy group Warehouse Workers for Justice. A day or two later, according to a report from local outlet Herald-News, employees learned that someone anonymously called the facility with...\nContinue reading…",
+          "link": "https://www.theverge.com/2022/7/27/23281681/amazon-workers-eeoc-complaint-racist-death-threats-illinois",
+          "publishedOn": "2022-07-28T01:24:03.000Z",
+          "wordCount": 1673,
+          "title": "These 26 Amazon workers want the feds to investigate racist death threats",
+          "imageUrl": "https://cdn.vox-cdn.com/thumbor/ANbApt8_hpnu2eYB5cWXLfhac_g=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/13443461/acastro_181114_1777_amazon_hq2_0002.jpg"
+        },
+        {
+          "id": "https://www.theverge.com/2022/7/27/23281580/google-nest-cam-chromecast-google-tv-live-video",
+          "author": null,
+          "description": "Google’s latest Nest security cameras can stream a live feed to a Chromecast with Google TV. | Photo by Dan Seifert / The Verge\n    \n\n  \nGoogle is finally bringing an old feature to its new Nest cameras. Starting this week, you can stream the video feed from all your Nest cameras and video doorbells to your TV using a Chromecast with Google TV. Google announced the feature in a blog post on the Google Nest Community forum Wednesday morning. \n“What?” You ask. “Couldn’t you already do this?” Well, yes and no. It was possible to view the video feed from older Nest cameras — such as the Google Nest Doorbell (wired), the now discontinued Nest Cams, and the camera inside the Nest Hub Max — on the biggest screen in your home. \nBut, as I noted in my review of the new Nest Cam (indoor, wired), none of Google’s newer cameras could stream to Chromecast devices. (All Nest cameras can...\nContinue reading…",
+          "link": "https://www.theverge.com/2022/7/27/23281580/google-nest-cam-chromecast-google-tv-live-video",
+          "publishedOn": "2022-07-28T00:05:10.000Z",
+          "wordCount": 1636,
+          "title": "You can finally see a live feed of your Google Nest cameras on your TV",
+          "imageUrl": "https://cdn.vox-cdn.com/thumbor/K4ETLeG-4qT2thZzynRiQ5RLqaM=/0x0:3000x1571/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/22902343/dseifert_4748_nest_doorbell_cam_battery_13.jpg"
+        },
+        {
+          "id": "https://www.theverge.com/2022/7/27/23281451/facebook-instagram-meta-recommendation-discovery-engine-ai",
+          "author": null,
+          "description": "Illustration by Alex Castro / The Verge\n    \n\n  \nIf you already have strong feelings about your Instagram feed increasingly showing Reels from accounts you don’t follow, just wait until next year.\nMeta CEO Mark Zuckerberg said the company will more than double the amount of content from recommended accounts people see while using Instagram and Facebook by the end of 2023. He said that such recommendations currently account for roughly 15 percent of the content on Facebook, and that the percentage is already higher on Instagram.\nThe push, which Zuckerberg calls building the “Discovery Engine,” is a radical departure from Facebook and Instagram’s historical focus on showing posts from a user’s social graph, or list of friends. The shift is intended to compete with TikTok’s heavy use of...\nContinue reading…",
+          "link": "https://www.theverge.com/2022/7/27/23281451/facebook-instagram-meta-recommendation-discovery-engine-ai",
+          "publishedOn": "2022-07-28T00:03:02.000Z",
+          "wordCount": 1681,
+          "title": "Facebook and Instagram are going to show even more posts from accounts you don’t follow",
+          "imageUrl": "https://cdn.vox-cdn.com/thumbor/_wZV6QhjvS43T94AxGKXf0cp5i4=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/22977156/acastro_211101_1777_meta_0002.jpg"
+        },
+        {
+          "id": "https://www.theverge.com/tldr/2022/7/27/23281416/xbox-camper-collection-outdoor-gear-hiking-cotton",
+          "author": null,
+          "description": "Enjoying the outdoors, absolutely decked out in Xbox gear. | Image: Microsoft\n    \n\n  \nXbox has released a clothing and accessory collection dedicated to camping. No, not the video game kind that esports organization 100 Thieves lambasted with its own clothing line — Microsoft’s is about actually getting outside and touching grass. The camper collection includes a variety of shorts, shirts, and headgear, along with things like a hammock and camping chair. \nGiven that most people don’t usually associate gaming with going outdoors, some of the items in the lineup actually seem decent. Xbox’s camp chair looks like a clone of the design popularized by the Helinox Chair Zero (to be fair, so does pretty much every other camp chair), but electric green and twice as heavy. Given that it’s significantly cheaper than the Helinox,...\nContinue reading…",
+          "link": "https://www.theverge.com/tldr/2022/7/27/23281416/xbox-camper-collection-outdoor-gear-hiking-cotton",
+          "publishedOn": "2022-07-27T23:34:09.000Z",
+          "wordCount": 1896,
+          "title": "Xbox is campy now",
+          "imageUrl": "https://cdn.vox-cdn.com/thumbor/BvZ4r18P53qWKxHJRh-APAc3cOQ=/0x287:3994x2378/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/23905622/FYmr_wPXkAAky03.jpeg"
+        },
+        {
+          "id": "https://www.theverge.com/2022/7/27/23280640/london-uk-electricity-blackouts-heatwave-import",
+          "author": null,
+          "description": "Photo by Richard Baker / In Pictures via Getty Images\n    \n\n  \nLast week, the UK reached its highest temperature on record — 40 degrees Celsius, or more than 104 degrees Fahrenheit. On July 20th, as the record-breaking “Red Extreme” heatwave continued to linger, a Bloomberg op-ed reports officials made the decision to pay a record price of £9,724.54 (about $11,685) per megawatt to ensure electricity for South London residents — about 5,000 percent higher than its usual average price of £178 per megawatt hour. \nTo avoid an energy short squeeze in 2021, the UK paid about £1,600 (more than $1,900) per megawatt to import energy. \nYesterday #gas produced 43.0% of British electricity, more than wind 23.5%, nuclear 15.1%, biomass 7.2%, solar 6.0%, imports 3.8%, coal 0.8%, hydro 0.7%, other 0.0% *excl....\nContinue reading…",
+          "link": "https://www.theverge.com/2022/7/27/23280640/london-uk-electricity-blackouts-heatwave-import",
+          "publishedOn": "2022-07-27T23:02:02.000Z",
+          "wordCount": 1535,
+          "title": "London paid a record price for electricity during its heatwave",
+          "imageUrl": "https://cdn.vox-cdn.com/thumbor/IKdiXoS6vlmjEaVwmzjBB32owpE=/0x381:5315x3164/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/23904439/1241999015.jpg"
+        },
         {
           "id": "https://www.theverge.com/2022/7/27/23280283/spotify-q2-2022-earnings-podcasting-audiobooks",
           "author": null,
@@ -4321,6 +5641,146 @@
       "feedUrl": "https://arstechnica.com/feed/",
       "siteUrl": "https://arstechnica.com",
       "articles": [
+        {
+          "id": "https://arstechnica.com/?p=1869888",
+          "author": "Beth Mole",
+          "description": "This is Philip Morris' second FDA hire recently.",
+          "link": "https://arstechnica.com/?p=1869888",
+          "publishedOn": "2022-07-27T23:13:44.000Z",
+          "wordCount": 1571,
+          "title": "FDA’s top tobacco scientist takes job at Marlboro-maker Philip Morris",
+          "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2022/07/GettyImages-818802250-760x380.jpeg"
+        },
+        {
+          "id": "https://arstechnica.com/?p=1861192",
+          "author": "Jennifer Ouellette",
+          "description": "Dogs construct \"multisensory mental representations\" by encoding different features.",
+          "link": "https://arstechnica.com/?p=1861192",
+          "publishedOn": "2022-07-27T21:44:38.000Z",
+          "wordCount": 1923,
+          "title": "Study sheds light on how dogs recognize their favorite toys",
+          "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2022/06/doggo1-760x380.jpg"
+        },
+        {
+          "id": "https://arstechnica.com/?p=1869788",
+          "author": "Samuel Axon",
+          "description": "Zuckerberg positioned Meta's XR platform as the successor to Windows, Android.",
+          "link": "https://arstechnica.com/?p=1869788",
+          "publishedOn": "2022-07-27T21:07:11.000Z",
+          "wordCount": 1798,
+          "title": "Zuckerberg: Apple, Meta are in “deep, philosophical competition”",
+          "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2015/05/zuckerberg-internet.org_-640x215.png"
+        },
+        {
+          "id": "https://arstechnica.com/?p=1869809",
+          "author": "Kyle Orland",
+          "description": "Overlap with Beat Saber would bring Meta \"closer to... owning the entire 'Metaverse.'\"",
+          "link": "https://arstechnica.com/?p=1869809",
+          "publishedOn": "2022-07-27T20:51:50.000Z",
+          "wordCount": 1973,
+          "title": "FTC says Meta’s Supernatural purchase could ruin the VR fitness market",
+          "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2022/07/supernatural-760x380.png"
+        },
+        {
+          "id": "https://arstechnica.com/?p=1869797",
+          "author": "Dan Goodin",
+          "description": "Windows and Adobe Reader exploits said to target orgs in Europe and Central America.",
+          "link": "https://arstechnica.com/?p=1869797",
+          "publishedOn": "2022-07-27T20:24:22.000Z",
+          "wordCount": 1922,
+          "title": "0-days sold by Austrian firm used to hack Windows users, Microsoft says",
+          "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2020/11/zeroday-760x380.jpg"
+        },
+        {
+          "id": "https://arstechnica.com/?p=1869731",
+          "author": "Ashley Belanger",
+          "description": "The oversight board is now fielding public comments on potential policy change.",
+          "link": "https://arstechnica.com/?p=1869731",
+          "publishedOn": "2022-07-27T18:57:54.000Z",
+          "wordCount": 2012,
+          "title": "Meta thinks Facebook may need more “harmful health misinformation” [Updated]",
+          "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2022/07/GettyImages-1231925159-760x380.jpg"
+        },
+        {
+          "id": "https://arstechnica.com/?p=1868865",
+          "author": "Jeff Dunn",
+          "description": "Dealmaster also has the Switch Lite, Bose QuietComfort 45, and a bunch of AMD Ryzen CPUs.",
+          "link": "https://arstechnica.com/?p=1868865",
+          "publishedOn": "2022-07-27T18:42:19.000Z",
+          "wordCount": 2658,
+          "title": "Today’s best deals: Google Nest Hub, Apple TV 4K, and more",
+          "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2022/07/dealmaster072722-760x380.jpg"
+        },
+        {
+          "id": "https://arstechnica.com/?p=1869700",
+          "author": "Jon Brodkin",
+          "description": "Sept. 13 shareholder vote is the \"only remaining approval\" needed for Musk deal.",
+          "link": "https://arstechnica.com/?p=1869700",
+          "publishedOn": "2022-07-27T18:24:47.000Z",
+          "wordCount": 1713,
+          "title": "Twitter has one more task before Musk trial: Get shareholder approval",
+          "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2022/07/getty-vote-here-760x380.jpg"
+        },
+        {
+          "id": "https://arstechnica.com/?p=1869673",
+          "author": "Ron Amadeo",
+          "description": "Google Maps takes the \"first step\" toward the SimCity-like Immersive View.",
+          "link": "https://arstechnica.com/?p=1869673",
+          "publishedOn": "2022-07-27T18:07:36.000Z",
+          "wordCount": 1992,
+          "title": "Google Maps is getting 3D imagery on mobile, detailed biking info, and more",
+          "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2022/07/46-760x380.jpg"
+        },
+        {
+          "id": "https://arstechnica.com/?p=1869653",
+          "author": "Jennifer Ouellette",
+          "description": "\"Things start to fall apart when you stop caring. And I stopped caring a long time ago.\"",
+          "link": "https://arstechnica.com/?p=1869653",
+          "publishedOn": "2022-07-27T17:53:04.000Z",
+          "wordCount": 1929,
+          "title": "Sylvester Stallone is a grizzled, disillusioned superhero in Samaritan trailer",
+          "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2022/07/samaritan6-760x380.jpg"
+        },
+        {
+          "id": "https://arstechnica.com/?p=1869635",
+          "author": "Scharon Harding",
+          "description": "Spotify's only hardware first released to the general public 5 months ago.",
+          "link": "https://arstechnica.com/?p=1869635",
+          "publishedOn": "2022-07-27T15:18:23.000Z",
+          "wordCount": 1429,
+          "title": "Spotify hits the brakes on Car Thing, halts production of its only hardware",
+          "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2022/07/car-thing-760x380.jpg"
+        },
+        {
+          "id": "https://arstechnica.com/?p=1869641",
+          "author": "Beth Mole",
+          "description": "The president finished his course of Paxlovid. Now doc is watching for rebound.",
+          "link": "https://arstechnica.com/?p=1869641",
+          "publishedOn": "2022-07-27T15:01:57.000Z",
+          "wordCount": 1341,
+          "title": "Biden tests negative for COVID twice, leaves isolation",
+          "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2022/07/GettyImages-1242136508-760x380.jpeg"
+        },
+        {
+          "id": "https://arstechnica.com/?p=1869416",
+          "author": "The Conversation",
+          "description": "Discovery sheds light on star death, black hole formation, and gravitational waves.",
+          "link": "https://arstechnica.com/?p=1869416",
+          "publishedOn": "2022-07-27T12:00:34.000Z",
+          "wordCount": 2010,
+          "title": "Astronomers have found an especially sneaky black hole",
+          "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2022/07/Screenshot-2022-07-26-at-10-26-39-Astronomers-have-found-an-especially-sneaky-black-hole-–-discovery-sheds-light-on-star-death-black-hole-formation-and-gravitational-waves-750x380.png"
+        },
+        {
+          "id": "https://arstechnica.com/?p=1869349",
+          "author": "Andrew Cunningham",
+          "description": "VirtualBuddy and other apps make it pretty easy to run macOS on top of macOS.",
+          "link": "https://arstechnica.com/?p=1869349",
+          "publishedOn": "2022-07-27T11:00:11.000Z",
+          "wordCount": 1710,
+          "title": "Apple’s Virtualization framework is a great, free way to test new macOS betas",
+          "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2022/07/ventura-vm-760x380.jpeg"
+        },
         {
           "id": "https://arstechnica.com/?p=1869595",
           "author": "Dan Goodin",
@@ -4679,6 +6139,16 @@
       "siteUrl": "https://www.wired.com",
       "articles": [
         {
+          "id": "62d81678bc0123acf474c4c9",
+          "author": "Matt Laslo",
+          "description": "Democratic senators lacked actionable gun data for their negotiations—so they passed mental health reform instead.",
+          "link": "https://www.wired.com/story/federal-gun-law-2022-cdc-data/",
+          "publishedOn": "2022-07-27T11:00:00.000Z",
+          "wordCount": 24872,
+          "title": "Don’t Call the New Federal Gun Law a Gun Law",
+          "imageUrl": "https://media.wired.com/photos/62e05e262cb57098241e454e/191:100/w_1280,c_limit/Gun-Data-Senate-Security-GettyImages-677567093.jpg"
+        },
+        {
           "id": "62df10a358719fe5c578eb75",
           "author": "Morgan Meaker, Aarian Marshall",
           "description": "Men are more likely to buy electric vehicles, and carmakers are eager to diversify their base. But what will it take to close the gender gap?",
@@ -4857,26 +6327,6 @@
           "wordCount": 37013,
           "title": "Meet the Lobbyist Next Door",
           "imageUrl": "https://media.wired.com/photos/62cc3e03e0140c38a4e49be3/191:100/w_1280,c_limit/Influence-Peddler-Top.jpg"
-        },
-        {
-          "id": "62c831b1e0140c38a4e49b4c",
-          "author": "Vittoria Elliott",
-          "description": "A ruling against the company could allow the government to censor a wide swath of platforms, and set a global precedent.",
-          "link": "https://www.wired.com/story/twitters-case-in-india-could-have-massive-ripple-effects/",
-          "publishedOn": "2022-07-13T18:26:04.000Z",
-          "wordCount": 20692,
-          "title": "Twitter's Case in India Could Have Massive Ripple Effects",
-          "imageUrl": "https://media.wired.com/photos/62ce053e8c54375988f181c1/191:100/w_1280,c_limit/Twitter-Case-India-Censorship-Business-1292373024.jpg"
-        },
-        {
-          "id": "62cda63710dca6a22d348cdd",
-          "author": "Will Knight",
-          "description": "Fears that artificial intelligence tools could displace creatives such as illustrators, designers, and photographers seem unfounded—for now.",
-          "link": "https://www.wired.com/story/when-ai-makes-art/",
-          "publishedOn": "2022-07-13T11:00:00.000Z",
-          "wordCount": 22043,
-          "title": "When AI Makes Art, Humans Supply the Creative Spark",
-          "imageUrl": "https://media.wired.com/photos/62ce1726540a1fd5ca4bd872/191:100/w_1280,c_limit/Dall-E-2-Meat-Men-Business.jpg"
         }
       ]
     },
@@ -4885,6 +6335,16 @@
       "feedUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
       "siteUrl": "https://www.wired.com",
       "articles": [
+        {
+          "id": "62e14d459879dca150ec3182",
+          "author": "Jessica Rizzo",
+          "description": "OpenAI has announced that it's granting Dall-E users the right to commercialize their art. For now.",
+          "link": "https://www.wired.com/story/openai-dalle-copyright-intellectual-property-art/",
+          "publishedOn": "2022-07-27T15:44:51.000Z",
+          "wordCount": 18062,
+          "title": "Who Will Own the Art of the Future?",
+          "imageUrl": "https://media.wired.com/photos/62e15c83bb7ad736f1d6a992/191:100/w_1280,c_limit/dalle_dali_ideas_P43JHH.jpg"
+        },
         {
           "id": "62d85f8d94f7f03fb5e0c45d",
           "author": "Matt Simon",
@@ -4904,16 +6364,6 @@
           "wordCount": 22153,
           "title": "AI Art Is Challenging the Boundaries of Curation",
           "imageUrl": "https://media.wired.com/photos/62d2250c07bc72ded076e64b/191:100/w_1280,c_limit/AI%20Art%20Is%20Challenging%20the%20Boundaries%20of%20Curation.jpg"
-        },
-        {
-          "id": "62cda63710dca6a22d348cdd",
-          "author": "Will Knight",
-          "description": "Fears that artificial intelligence tools could displace creatives such as illustrators, designers, and photographers seem unfounded—for now.",
-          "link": "https://www.wired.com/story/when-ai-makes-art/",
-          "publishedOn": "2022-07-13T11:00:00.000Z",
-          "wordCount": 22008,
-          "title": "When AI Makes Art, Humans Supply the Creative Spark",
-          "imageUrl": "https://media.wired.com/photos/62ce1726540a1fd5ca4bd872/191:100/w_1280,c_limit/Dall-E-2-Meat-Men-Business.jpg"
         }
       ]
     },
@@ -4922,6 +6372,26 @@
       "feedUrl": "https://www.wired.com/feed/category/gear/latest/rss",
       "siteUrl": "https://www.wired.com",
       "articles": [
+        {
+          "id": "62e08212b014c7f5985e340f",
+          "author": "Jaina Grey",
+          "description": "Sometimes the best way to cool down is to heat things up.",
+          "link": "https://www.wired.com/story/sex-toys-tower-fans-deals-july-2022/",
+          "publishedOn": "2022-07-27T17:09:00.000Z",
+          "wordCount": 17551,
+          "title": "9 Great Deals on Sex Toys and Tower Fans",
+          "imageUrl": "https://media.wired.com/photos/60a451af518969560d19475c/191:100/w_1280,c_limit/Gear-Sex-Toys-Satisfyer-Curvy-3-src-Satisfyer.jpg"
+        },
+        {
+          "id": "5bff11760dae8918461793cd",
+          "author": "Parker Hall",
+          "description": "From LCDs to fancy OLED models, these are our favorite televisions at every price point.",
+          "link": "https://www.wired.com/gallery/best-tvs/",
+          "publishedOn": "2022-07-27T13:00:00.000Z",
+          "wordCount": 20099,
+          "title": "The 10 Best TVs We've Tested (and Helpful Buying Tips)",
+          "imageUrl": "https://media.wired.com/photos/5f99f62eed97b6b30c26618a/191:100/w_2580,c_limit/Gear-TCL-6-Series-2020-SOURCE-TCL-2.jpg"
+        },
         {
           "id": "62e02dd969d8da74ff881b38",
           "author": "Lauren Goode",
@@ -5170,6 +6640,26 @@
       "siteUrl": "https://www.wired.com",
       "articles": [
         {
+          "id": "62e14d459879dca150ec3182",
+          "author": "Jessica Rizzo",
+          "description": "OpenAI has announced that it's granting Dall-E users the right to commercialize their art. For now.",
+          "link": "https://www.wired.com/story/openai-dalle-copyright-intellectual-property-art/",
+          "publishedOn": "2022-07-27T15:44:51.000Z",
+          "wordCount": 18062,
+          "title": "Who Will Own the Art of the Future?",
+          "imageUrl": "https://media.wired.com/photos/62e15c83bb7ad736f1d6a992/191:100/w_1280,c_limit/dalle_dali_ideas_P43JHH.jpg"
+        },
+        {
+          "id": "62dea05973e44c149d0e7f8d",
+          "author": "Eleanor Cummins",
+          "description": "Everything is supposedly a \"public health\" issue in the US, but this buzzword does little to address real challenges.",
+          "link": "https://www.wired.com/story/covid-19-public-health-politics/",
+          "publishedOn": "2022-07-27T11:00:00.000Z",
+          "wordCount": 20383,
+          "title": "Against ‘Public Health’",
+          "imageUrl": "https://media.wired.com/photos/62e07394b014c7f5985e340e/191:100/w_1280,c_limit/against-public-health.jpg"
+        },
+        {
           "id": "62dea5938ad26c5c0a000c89",
           "author": "Meghan O'Gieblyn",
           "description": "WIRED’s spiritual advice columnist offers counsel to a reader overwhelmed by apps, dings, and beeps.",
@@ -5238,16 +6728,6 @@
           "wordCount": 23861,
           "title": "The ‘Shamanification’ of the Tech CEO",
           "imageUrl": "https://media.wired.com/photos/62cf5705de98d5c9c9df785d/191:100/w_1280,c_limit/The%20Shamanification%20of%20the%20Tech%20CEO.jpg"
-        },
-        {
-          "id": "62bd76597a39cc2124cb2d6a",
-          "author": "Edna Bonhomme",
-          "description": "Due to its history with the Holocaust, calling race by its name has often been contested. Black Germans say that this policy can ignore disparate impact.",
-          "link": "https://www.wired.com/story/race-germany-covid-19/",
-          "publishedOn": "2022-07-13T12:00:00.000Z",
-          "wordCount": 22976,
-          "title": "What Germany's Lack of Race Data Means During a Pandemic",
-          "imageUrl": "https://media.wired.com/photos/62ce00453aaa436285ac29be/191:100/w_1280,c_limit/What%20Germanys%20Lack%20of%20Race%20Data%20Means%20During%20a%20Pandemic.jpg"
         }
       ]
     },
@@ -5256,6 +6736,56 @@
       "feedUrl": "https://www.wired.com/feed/category/science/latest/rss",
       "siteUrl": "https://www.wired.com",
       "articles": [
+        {
+          "id": "62e03f5158719fe5c578eb78",
+          "author": "Jeffrey Ball",
+          "description": "The porous rock beneath the Gulf Coast launched the petroleum age. Now entrepreneurs want to turn it into a gigantic sponge for storing CO2.",
+          "link": "https://www.wired.com/story/big-business-burying-carbon-dioxide-capture-storage/",
+          "publishedOn": "2022-07-28T10:00:00.000Z",
+          "wordCount": 38569,
+          "title": "The Big Business of Burying Carbon",
+          "imageUrl": "https://media.wired.com/photos/62e14eeea8cfdad40f878c75/191:100/w_1280,c_limit/Carbon-Storage-Port-Arthur-DJI_0391.jpg"
+        },
+        {
+          "id": "62911826319fcfcacdc6b8b7",
+          "author": "David Cox",
+          "description": "Here’s how to recognize monkeypox’s symptoms, how to prevent and treat the disease, and what to do if you think you’ve been exposed to it.",
+          "link": "https://www.wired.com/story/everything-you-need-to-know-about-monkeypox/",
+          "publishedOn": "2022-07-27T15:57:00.000Z",
+          "wordCount": 21834,
+          "title": "Everything You Need to Know About Monkeypox",
+          "imageUrl": "https://media.wired.com/photos/62911825435f8ce337be45bc/191:100/w_1280,c_limit/science_22664-(1).jpg"
+        },
+        {
+          "id": "62ded6ec69d8da74ff881af9",
+          "author": "Emily Mullin",
+          "description": "The state plans to roll out “biosimilars” that mimic brand-name versions at a dramatically reduced price.",
+          "link": "https://www.wired.com/story/california-wants-to-make-cheap-insulin-heres-how-it-could-work/",
+          "publishedOn": "2022-07-27T12:00:00.000Z",
+          "wordCount": 20217,
+          "title": "California Wants to Make Cheap Insulin. Here’s How It Could Work",
+          "imageUrl": "https://media.wired.com/photos/62e03166d7368105da057d6e/191:100/w_1280,c_limit/insulin_CA_Science_GettyImages-165563177.jpg"
+        },
+        {
+          "id": "62d87e3748e3599195fd2d3d",
+          "author": "Gregory Barber",
+          "description": "Carbon dioxide emissions aren’t the only way aviation warms the planet. Exhaust contains a host of polluting particles, from soot to nitrogen oxides.",
+          "link": "https://www.wired.com/story/carbon-offsets-alone-wont-make-flying-climate-friendly/",
+          "publishedOn": "2022-07-27T11:00:00.000Z",
+          "wordCount": 19318,
+          "title": "Carbon Offsets Alone Won’t Make Flying Climate-Friendly",
+          "imageUrl": "https://media.wired.com/photos/62e00af38ad26c5c0a000c8c/191:100/w_1280,c_limit/co2_aviation_science_GettyImages-1236582782.jpg"
+        },
+        {
+          "id": "62d81678bc0123acf474c4c9",
+          "author": "Matt Laslo",
+          "description": "Democratic senators lacked actionable gun data for their negotiations—so they passed mental health reform instead.",
+          "link": "https://www.wired.com/story/federal-gun-law-2022-cdc-data/",
+          "publishedOn": "2022-07-27T11:00:00.000Z",
+          "wordCount": 24872,
+          "title": "Don’t Call the New Federal Gun Law a Gun Law",
+          "imageUrl": "https://media.wired.com/photos/62e05e262cb57098241e454e/191:100/w_1280,c_limit/Gun-Data-Senate-Security-GettyImages-677567093.jpg"
+        },
         {
           "id": "62c7554cfbd0691ce2826553",
           "author": "Matt Simon",
@@ -5494,6 +7024,16 @@
       "siteUrl": "https://www.wired.com",
       "articles": [
         {
+          "id": "62d81678bc0123acf474c4c9",
+          "author": "Matt Laslo",
+          "description": "Democratic senators lacked actionable gun data for their negotiations—so they passed mental health reform instead.",
+          "link": "https://www.wired.com/story/federal-gun-law-2022-cdc-data/",
+          "publishedOn": "2022-07-27T11:00:00.000Z",
+          "wordCount": 24872,
+          "title": "Don’t Call the New Federal Gun Law a Gun Law",
+          "imageUrl": "https://media.wired.com/photos/62e05e262cb57098241e454e/191:100/w_1280,c_limit/Gun-Data-Senate-Security-GettyImages-677567093.jpg"
+        },
+        {
           "id": "62d8151394f7f03fb5e0c459",
           "author": "Thor Benson",
           "description": "Despite the DOJ vowing to protect people's ability to travel out of state for abortion care, legal experts warn not to take that freedom for granted.",
@@ -5612,16 +7152,6 @@
           "wordCount": 19561,
           "title": "A New Attack Can Unmask Anonymous Users on Any Major Browser",
           "imageUrl": "https://media.wired.com/photos/62cdfdd823adf8a37bfae65d/191:100/w_1280,c_limit/Attackers-Could-De-Anonymize-Web-Users-With-Sleight-of-Hand-Security-GettyImages-481812949.jpg"
-        },
-        {
-          "id": "62cda7aee22e27e661483e68",
-          "author": "Dan Goodin, Ars Technica",
-          "description": "The exploit can leak password information and other sensitive material, but the chipmakers are rolling out mitigations.",
-          "link": "https://www.wired.com/story/retbleed-intel-amd-cpu-attack/",
-          "publishedOn": "2022-07-13T16:00:00.000Z",
-          "wordCount": 19134,
-          "title": "New ‘Retbleed’ Attack Can Swipe Key Data From Intel and AMD CPUs",
-          "imageUrl": "https://media.wired.com/photos/62cdfc248c54375988f181bf/191:100/w_1280,c_limit/Retbleed-Attack-CPU-Security-GettyImages-1016522744.jpg"
         }
       ]
     },
@@ -5636,6 +7166,51 @@
       "feedUrl": "https://www.thisiscolossal.com/feed/",
       "siteUrl": "https://www.thisiscolossal.com",
       "articles": [
+        {
+          "id": "https://www.thisiscolossal.com/?p=221038",
+          "author": "Grace Ebert",
+          "description": "Encircled in roughly textured bark, thin woodcuts become canvases for the whimsical landscapes and scenes illustrated by Melpomeni Chatzipanagiotou. The Greek artist uses a combination of  pen, ink, gouache, and acrylic paint to draw outdoor vignettes cloaked in pattern and cosmic details. Nighttime skies are brimming with snowflakes, stars, and light trails that illuminate the natural subject matter and add a dose of fantasy to the heavily patterned works. \nChatzipanagiotou has a number of illustrations on wood and paper available on Etsy, and you can watch her at work on Instagram. More",
+          "link": "https://www.thisiscolossal.com/2022/07/melpomeni-chatzipanagiotou-wood-illustrations/",
+          "publishedOn": "2022-07-27T20:33:12.000Z",
+          "wordCount": 1431,
+          "title": "Enchanting Vignettes Illustrated by Melpomeni Chatzipanagiotou Nestle Inside Small Wood Cuts",
+          "enclosure": {
+            "url": "https://www.thisiscolossal.com/wp-content/uploads/2022/07/meni-og.jpg",
+            "length": "180042",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://www.thisiscolossal.com/wp-content/uploads/2022/07/meni-og.jpg"
+        },
+        {
+          "id": "https://www.thisiscolossal.com/?p=220999",
+          "author": "Grace Ebert",
+          "description": "Seasons and the natural rhythms of bees determine much of Ava Roth’s practice, which hinges on collaborating with the fuzzy pollinators. The Ontario-based artist (previously) stitches elaborate embroideries with beads and intricate thread-based motifs that, once her contribution is complete, she turns over to her insect counterparts. The critters then finish the mixed-media pieces by embedding them in golden, hexagonal honeycomb.\nBecause the bees Roth works with only produce the waxy substance during the heat of the summer, the time available for inter-species cooperation is limited. More",
+          "link": "https://www.thisiscolossal.com/2022/07/ava-roth-honeycomb-embroideries/",
+          "publishedOn": "2022-07-27T15:50:08.000Z",
+          "wordCount": 1743,
+          "title": "Bees Wrap Ava Roth’s Intricately Beaded and Embroidered Motifs in Golden Honeycomb",
+          "enclosure": {
+            "url": "https://www.thisiscolossal.com/wp-content/uploads/2022/07/roth-og.jpg",
+            "length": "289423",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://www.thisiscolossal.com/wp-content/uploads/2022/07/roth-og.jpg"
+        },
+        {
+          "id": "https://www.thisiscolossal.com/?p=221000",
+          "author": "Grace Ebert",
+          "description": "Kangaroos, koalas, and the venomous platypus take on peculiarly acrobatic personas in a new series of oil paintings by Bruno Pontiroli (previously). In Expression Corporelle, the French artist renders a cast of gymnast-emulating animals native to Australia, each with unusually strong appendages and flexible backs. The creatures balance on their tails and bend at perfect 90-degree angles, defying physics in favor of warped perspectives and the opportunity to see the world from a different point of view. More",
+          "link": "https://www.thisiscolossal.com/2022/07/bruno-pontiroli-expression-corporelle/",
+          "publishedOn": "2022-07-27T14:17:54.000Z",
+          "wordCount": 1609,
+          "title": "Bizarrely Flexible Wildlife Twist into Acrobatic Poses in Bruno Pontiroli’s Perspective-Bending Paintings",
+          "enclosure": {
+            "url": "https://www.thisiscolossal.com/wp-content/uploads/2022/07/pontiroli-og.jpg",
+            "length": "94729",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://www.thisiscolossal.com/wp-content/uploads/2022/07/pontiroli-og.jpg"
+        },
         {
           "id": "https://www.thisiscolossal.com/?p=220727",
           "author": "Grace Ebert",
@@ -5838,6 +7413,256 @@
       "feedUrl": "https://gizmodo.com/rss",
       "siteUrl": "https://gizmodo.com",
       "articles": [
+        {
+          "id": "1849340046",
+          "author": "Mack DeGeurin",
+          "description": "Can federal agencies turn to private data brokers to gather data on individuals that would normally be protected under local laws?\nRead more...",
+          "link": "https://gizmodo.com/lexisnexis-ice-data-brokers-undocumented-immigrants-1849340046",
+          "publishedOn": "2022-07-28T00:45:00.000Z",
+          "wordCount": 7095,
+          "title": "'This Is a Massive Loophole:' Activists Slam ICE for Using LexisNexis Data to Target Undocumented Immigrants",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/14087fd37f815e2dbf35a5b25e32a81a.jpg"
+        },
+        {
+          "id": "1849339868",
+          "author": "Sabina Graves",
+          "description": "Matt Berry stars on FX hit What We Do in the Shadows, which is currently in its fourth season—but the British actor only just realized how popular the vampire series has become in America. Like, just realized.\nRead more...",
+          "link": "https://gizmodo.com/what-we-do-in-the-shadows-matt-berry-lazslo-vampire-bat-1849339868",
+          "publishedOn": "2022-07-27T23:30:00.000Z",
+          "wordCount": 5627,
+          "title": "Matt Berry Only Realized How Big What We Do in the Shadows Was When Americans Yelled 'Bat!' at Him",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/243e500e323eb560e9a687519e78fd4e.png"
+        },
+        {
+          "id": "1849339476",
+          "author": "Linda Codega",
+          "description": "Sylvester Stallone’s superhero film Samaritan finally has a trailer. Originally set to release in 2020, it was delayed many years because of various studio acquisitions. With a focus on the kind of anti-hero story similar to Will Smith’s Hancock, Samaritan is billed as a take on what happens to superheroes when…\nRead more...",
+          "link": "https://gizmodo.com/stallone-samaritan-new-superhero-film-trailer-amazon-1849339476",
+          "publishedOn": "2022-07-27T22:30:00.000Z",
+          "wordCount": 5297,
+          "title": "Samaritan's New Trailer Sets Stallone Up for Tragedy",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/f89bca9c8d3d8b44f7f6ecbacc10f333.jpg"
+        },
+        {
+          "id": "1849340231",
+          "author": "Florence Ion",
+          "description": "Google’s finally delivering on the new Gmail layout it’s been teasing since February. The company announced that Gmail’s new Material Design 3-inspired layout is now available to all. The revamped look will include immediate Meet, Chat, and Spaces integration without clogging up the page. Google even threw in a…\nRead more...",
+          "link": "https://gizmodo.com/google-gmail-material-3-redesign-how-to-access-opt-out-1849340231",
+          "publishedOn": "2022-07-27T22:15:00.000Z",
+          "wordCount": 5666,
+          "title": "Gmail's Material Redesign is Officially Rolling Out to Everyone",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/efa2f5b5e4f29e70e32afc11312645e1.png"
+        },
+        {
+          "id": "1849338365",
+          "author": "Lucas Ropek",
+          "description": "Members of Congress—you know, the people who can’t seem to do anything—are taking their considerable talents to the fight against digital threats. On Wednesday, the House Intelligence Committee held a public hearing to address the threat of “commercial cyber surveillance,” otherwise known as the spyware industry. \nRead more...",
+          "link": "https://gizmodo.com/congress-hearing-nso-group-commercial-spyware-blacklist-1849338365",
+          "publishedOn": "2022-07-27T22:00:00.000Z",
+          "wordCount": 6688,
+          "title": "Blacklist and Bankrupt Abusive Spyware Makers, Researchers Tell Congress",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/42266db9fc9c41cf59326fe9edab6705.jpg"
+        },
+        {
+          "id": "1848494806",
+          "author": "Germain Lussier",
+          "description": "Bill Murray said it in 1978 and we’re still saying it today: “Star Wars! Nothing but Star Wars! Give me those Star Wars! Don’t let them end...” Star Wars is everywhere these days, with multiple movies and TV shows in the works from Disney and Lucasfilm. This article will give you the most up to date Star Wars release…\nRead more...",
+          "link": "https://gizmodo.com/star-wars-movies-tv-shows-release-dates-disney-1848494806",
+          "publishedOn": "2022-07-27T21:58:00.000Z",
+          "wordCount": 9629,
+          "title": "Star Wars Release Dates: Where and When to See Upcoming Star Wars Movies and Disney+ Shows",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/31ef93bac3539eec723dea4a1dd66bf1.png"
+        },
+        {
+          "id": "1849339596",
+          "author": "Lauren Leffer",
+          "description": "In just the past few weeks, wild monkeys have attacked at least 58 people in and around the city of Yamaguchi in southwestern Japan, and no one seems to know exactly why, according to a report from the Associated Press. “I have never seen anything like this my entire life,” city official Masato Saito told the AP on…\nRead more...",
+          "link": "https://gizmodo.com/monkey-attack-japan-macaques-1849339596",
+          "publishedOn": "2022-07-27T21:20:00.000Z",
+          "wordCount": 5969,
+          "title": "Mysterious Monkey Mayhem: Macaques Are Suddenly Terrorizing People in Southwestern Japan",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/d059aa1cf3fbc0c2fe8e929aec50c6bb.jpg"
+        },
+        {
+          "id": "1849339813",
+          "author": "Kevin Hurler",
+          "description": "Meta—once a behemoth in the social media space—has reported its first revenue decline ever: A 1% decline in revenue in Q2 year-over-year. This decline comes along with the company’s long haul strategy of pivoting away from their time as social media titan Facebook and into the “metaverse.”\n\nRead more...",
+          "link": "https://gizmodo.com/meta-q2-facebook-metaverse-social-media-1849339813",
+          "publishedOn": "2022-07-27T21:05:00.000Z",
+          "wordCount": 5377,
+          "title": "Olympus Has Fallen: Meta Just Reported Its First Revenue Decline",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/1f091c2d5cbf93c32e935baae9eb9958.jpg"
+        },
+        {
+          "id": "1849339743",
+          "author": "Ed Cara",
+          "description": "An extra dose of vitamin D probably won’t make the average person’s bones any stronger. New research from a large-scale, placebo-controlled, and randomized clinical trial out Wednesday has found no evidence that taking vitamin D supplements reduces the risk of bone fractures in healthy older adults.\nRead more...",
+          "link": "https://gizmodo.com/does-vitamin-d-prevent-bone-fractures-clinical-trial-1849339743",
+          "publishedOn": "2022-07-27T21:00:00.000Z",
+          "wordCount": 5999,
+          "title": "Vitamin D Supplements Fail to Prevent Bone Fractures in Large Clinical Trial",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/bbfe10365793d9c0c89baba94816f476.jpg"
+        },
+        {
+          "id": "1849329661",
+          "author": "Sabina Graves",
+          "description": "At San Diego Comic-Con 2022, io9 sat down with the creative teams shepherding Warner Bros.’ classic Looney Tunes characters into new and reimagined cartoons. In a push led by Looney Tunes Cartoons’ Alex Kirwan—who spearheads the franchise’s current slate of shorts on HBO Max—the beloved animation icons will soon …\nRead more...",
+          "link": "https://gizmodo.com/tiny-toons-bugs-bunny-builders-looney-tunes-hbo-max-1849329661",
+          "publishedOn": "2022-07-27T21:00:00.000Z",
+          "wordCount": 8731,
+          "title": "Tiny Toons Looniversity, Bugs Bunny Builders, and a Halloween Special Join a New Looney Tunes Era",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/40221a618e87a4dc5e31a13361bb7e62.jpg"
+        },
+        {
+          "id": "1849339665",
+          "author": "Kyle Barr",
+          "description": "Have you ever been to a garage sale where someone was selling sports trophies? Kinda tacky, right? Well, it’s not so much the same when an ex-astronaut does it, especially when it’s one of the original moon landing astronaut’s Presidential Medal of Freedom.\nRead more...",
+          "link": "https://gizmodo.com/buzz-aldrin-auction-space-1849339665",
+          "publishedOn": "2022-07-27T20:55:00.000Z",
+          "wordCount": 6436,
+          "title": "Buzz Aldrin Memorabilia Goes Up for Auction and Sells for Over $8 Million",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/a7d05118878acffdf76c8469f996fb09.jpg"
+        },
+        {
+          "id": "1849337799",
+          "author": "Kevin Hurler",
+          "description": "Data from a NASA probe suggests lunar pits  have comfortable temperatures due to their shadowy overhangs, which keep them cool during the day and  prevent heat from escaping at night.\n\nRead more...",
+          "link": "https://gizmodo.com/balmy-moon-pits-could-provide-shelter-1849337799",
+          "publishedOn": "2022-07-27T20:25:00.000Z",
+          "wordCount": 5728,
+          "title": "Moon Pits With Balmy Temperatures Could Shelter Future Explorers",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/95fb694d279904428c1c454a8659df82.png"
+        },
+        {
+          "id": "1849338213",
+          "author": "Rob Bricken",
+          "description": "On January 1, 1993, Superman died. If you’re used to comics constantly killing off characters and then bringing them back willy-nilly, this may not sound like a big deal. But not only was it rare back in the early ‘90s, this was Superman, comics’ preeminent superhero. The event got massive mainstream news coverage and…\nRead more...",
+          "link": "https://gizmodo.com/death-of-superman-dc-comics-30th-anniversary-doomsday-1849338213",
+          "publishedOn": "2022-07-27T20:10:00.000Z",
+          "wordCount": 5437,
+          "title": "Counterintuitively, DC Comics Wants to Celebrate the Death of Superman",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/ce51b380c71bd87715ce53ebfcf32b88.jpg"
+        },
+        {
+          "id": "1849328712",
+          "author": "David Nield",
+          "description": "These days, if your passwords and login credentials have appeared in a public data breach, you’re most likely going to know about it: Apple, Google, password managers, web browsers and more will all warn you if the details that they’re storing have been spotted in a breach. The next question is: what should you do…\nRead more...",
+          "link": "https://gizmodo.com/data-breach-leak-password-stolen-what-to-do-facebook-1849328712",
+          "publishedOn": "2022-07-27T20:00:00.000Z",
+          "wordCount": 7096,
+          "title": "What to Do if Your Password Is Exposed in a Data Breach",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/471e35f33469f27e17bf519234d74d1e.jpg"
+        },
+        {
+          "id": "1849338967",
+          "author": "George Dvorsky",
+          "description": "NASA press conferences are almost always interesting, but today’s media event truly blew my mind. Instead of using a proposed sample fetch rover to collect surface samples left by NASA’s Perseverance rover, the space agency intends to send two Ingenuity-class helicopters to Jezero Crater on Mars, where they’ll fly to…\nRead more...",
+          "link": "https://gizmodo.com/nasa-mars-sample-return-mission-helicopters-1849338967",
+          "publishedOn": "2022-07-27T19:47:00.000Z",
+          "wordCount": 7002,
+          "title": "NASA Is Sending More Helicopters to Mars, and This Time They'll Have Wheels",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/a180bcc3148f220cfa4e8cd385c171b6.jpg"
+        },
+        {
+          "id": "1849338008",
+          "author": "Artem Golub and Kyle Barr",
+          "description": "Read more...",
+          "link": "https://gizmodo.com/crypto-exchanges-restrict-withdrawals-1849338008",
+          "publishedOn": "2022-07-27T19:20:00.000Z",
+          "wordCount": 4368,
+          "title": "Crypto Exchanges Restrict Withdrawals",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/3f0e07610417db666f90885e33d66b42.jpg"
+        },
+        {
+          "id": "1849327111",
+          "author": "Kevin Hurler",
+          "description": "We’ve likely all killed a spider or two in the past, but what if that arachnid’s corpse could be repurposed into something useful? Well, researchers at Rice University in Texas think it can and are pioneering the field of “necrobotics” by injecting dead spiders with air to use them to grasp small objects.\n\nRead more...",
+          "link": "https://gizmodo.com/scientists-are-using-dead-spiders-as-horrifying-claw-gr-1849327111",
+          "publishedOn": "2022-07-27T19:17:00.000Z",
+          "wordCount": 5659,
+          "title": "Scientists Are Using Dead Spiders as Horrifying Claw Grabbers",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/ed1ac1ad221c3acd0e9003cf46b70163.gif"
+        },
+        {
+          "id": "1849338920",
+          "author": "James Whitbrook",
+          "description": "With the third and final season of Star Trek: Picard reuniting much of the bridge crew of the Enterprise-D, it makes sense that the iconic flagship of Starfleet will make a return, too. But which one? Well, it could be one we know already.\n\nRead more...",
+          "link": "https://gizmodo.com/star-trek-picard-season-3-enterprise-f-explained-sto-1849338920",
+          "publishedOn": "2022-07-27T19:15:00.000Z",
+          "wordCount": 5769,
+          "title": "Star Trek: Picard Season 3 Could Be Canonizing Another Enterprise",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/2671b9cb21dadd5861eed0ebd7c03b7c.png"
+        },
+        {
+          "id": "1849332974",
+          "author": "Germain Lussier and Sabina Graves",
+          "description": "A year has passed since Jordan Peele first let the world know the ominous title of his next movie; ever since, we’ve all been wondering what the heck Nope was going to be about. Each trailer pulled back the curtain a little bit, but when the film finally opened this past weekend, all was revealed. And it was a lot.\nRead more...",
+          "link": "https://gizmodo.com/nope-spoilers-jordan-peele-gordys-home-keke-palmer-yeun-1849332974",
+          "publishedOn": "2022-07-27T18:30:00.000Z",
+          "wordCount": 8297,
+          "title": "Jordan Peele's Nope: io9's Spoiler-Filled Discussion",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/bbb5da519ba11f89831593963d498505.jpg"
+        },
+        {
+          "id": "1849338962",
+          "author": "Kyle Barr",
+          "description": "It’s hard to get the majority of the U.S. Senate to agree on anything, but apparently more than 60% of the upper house of Congress agree that the country could use some more computer chips, $52 billion worth of chip manufacturing, to be exact.\nRead more...",
+          "link": "https://gizmodo.com/computer-chips-senate-semiconductor-1849338962",
+          "publishedOn": "2022-07-27T18:25:00.000Z",
+          "wordCount": 5832,
+          "title": "Senate Passes $52 Billion Measure to Address Chip Shortage",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/967dcfa8e700a8870cc30b80e80b95e1.jpg"
+        },
+        {
+          "id": "1849338328",
+          "author": "Jody Serrano",
+          "description": "An Egyptian TikToker living in Saudi Arabia was arrested this week by capital police in Riyadh, who claimed she made sexually suggestive comments to another woman in a live video and accused her of negatively affecting public morality.\nRead more...",
+          "link": "https://gizmodo.com/saudi-cops-arrest-tiktoker-tala-safwan-suggestive-video-1849338328",
+          "publishedOn": "2022-07-27T18:00:00.000Z",
+          "wordCount": 5924,
+          "title": "Saudi Police Arrest TikToker for ‘Sexually Suggestive’ Video With Another Woman",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/17cb8bb28380ace3efb2ffba3aecd8e4.png"
+        },
+        {
+          "id": "1849332966",
+          "author": "Eleanor Tremeer",
+          "description": "When we think about sci-fi, about marching out into the stars and encountering aliens, we think of the future, of a time decades or centuries from now when humanity has technologically evolved to the point of interstellar travel. Stargate, however, took a shortcut. This was a franchise which asked, “what if we could…\nRead more...",
+          "link": "https://gizmodo.com/stargate-sg1-25-anniversary-chris-judge-amanda-tapping-1849332966",
+          "publishedOn": "2022-07-27T17:45:00.000Z",
+          "wordCount": 12828,
+          "title": "Why Stargate SG-1 Deserves to Be Remembered as a Landmark Sci-Fi Show",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/ac2cebf05cadf3244c317531d1b554f1.png"
+        },
+        {
+          "id": "1849337986",
+          "author": "Cheryl Eddy",
+          "description": "Remember having to wait agonizingly long between new seasons of Rick and Morty? Those days are officially in the past. Adult Swim just announced the arrival date for the Emmy-winning series’ sixth season, and it’s almost exactly one year after the season five finale, with a global premiere set for September 4.\nRead more...",
+          "link": "https://gizmodo.com/rick-and-morty-season-6-premiere-date-adult-swim-1849337986",
+          "publishedOn": "2022-07-27T17:00:00.000Z",
+          "wordCount": 5488,
+          "title": "Rick and Morty Is Ripped and Ready for Season 6",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/353bc567903af7ce523ab186ed4f6146.jpg"
+        },
+        {
+          "id": "1849337667",
+          "author": "Ed Cara",
+          "description": "New research this week suggests that an aggressive brain cancer can hijack the brain’s own circuitry to further spread and render itself unstoppable. Researchers in Germany studied glioblastoma cells in mice and in the lab, finding that these tumors use some of the same mechanisms behind normal neuron development and…\nRead more...",
+          "link": "https://gizmodo.com/how-glioblastoma-multiforme-spreads-in-the-brain-1849337667",
+          "publishedOn": "2022-07-27T16:48:00.000Z",
+          "wordCount": 6273,
+          "title": "A Deadly Cancer Hijacks the Brain to Render Itself Untreatable, Study Finds",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/f3ab654560d5175cbc0e6f275d24e0c7.jpg"
+        },
+        {
+          "id": "1849337552",
+          "author": "Mack DeGeurin",
+          "description": "Telecoms aren’t exactly known for superior customer service. Beleaguered customers have come to hopelessly accept full day-long service time windows, endless support line phone roundabouts, and increasingly offensive hidden fees as uncomfortable realities required to squeeze out basic necessities from borderline…\nRead more...",
+          "link": "https://gizmodo.com/charter-spectrum-cable-1849337552",
+          "publishedOn": "2022-07-27T16:15:00.000Z",
+          "wordCount": 6060,
+          "title": "Charter Ordered to Pay Over $7 Billion in Damages Following Technician's Murder of Elderly Customer",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/5e90047ec1dd9dacfae310f624895e11.png"
+        },
         {
           "id": "1849334736",
           "author": "Chris Stokel-Walker",
