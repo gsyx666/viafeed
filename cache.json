@@ -299,6 +299,126 @@
       "siteUrl": "https://dev.to",
       "articles": [
         {
+          "id": "https://dev.to/iarchitsharma/the-history-of-kubernetes-4kkd",
+          "author": "Archit Sharma",
+          "description": "Kubernetes can speed up the development process by making easy, automated deployments, updates (rolling-update) and by managing our apps and services with almost zero downtime.\nKubernetes evolved from an internal container orchestration solution at Google to the tool that we know today.\n\n\n\nTo begin our Kubernetes history, we must begin with Google. Google faced a major issue in the early 2000s. While they continued to dominate the majority of the digital world, they were still figuring out how to make revenue from their extensive number of free services. This included popular services like:\nGoogle Search\nYouTube\nGmail\n\nThe problem for Google, which was not the profit-making machine we know today, was finding a way to offer these free services without tanking the business. Keep in mind that…",
+          "link": "https://dev.to/iarchitsharma/the-history-of-kubernetes-4kkd",
+          "publishedOn": "2022-07-31T10:29:21.000Z",
+          "wordCount": 2039,
+          "title": "The History of Kubernetes",
+          "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--IXpQ4P4Q--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/415rlk1crspbvmapb5tj.png"
+        },
+        {
+          "id": "https://dev.to/codenameone/debugging-a-wordle-bug-4n0a",
+          "author": "Shai Almog",
+          "description": "I have a confession: I'm addicted to Wordle. Especially now that it's out of style and people don't post about it. I love that it's short, I can solve one word and then it's gone. I don't feel too bad about the addiction and wasting my time with a game. This cloud debugger tutorial is an enormous challenge for me since the target is a Wordle game. But I'm getting ahead of myself.\nAs part of the Lightrun Playground we recently released we needed a demo application that will let developers who are new to Lightrun, practice in a \"safe environment\".We decided to pick Wordle as our demo application because it's instantly familiar, visual and not too interactive. A Flappy Bird demo might have been painful to debug. At this point our key challenge was in creating a bug where the debugging process…",
+          "link": "https://dev.to/codenameone/debugging-a-wordle-bug-4n0a",
+          "publishedOn": "2022-07-31T09:21:25.000Z",
+          "wordCount": 2049,
+          "title": "Debugging a Wordle Bug",
+          "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--VrDrMQGK--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/wb6uq2qkq1tjggynsuz6.png"
+        },
+        {
+          "id": "https://dev.to/pallat/go-generics-ain-gin-handler-f4b",
+          "author": "Pallat Anchaleechamaikorn",
+          "description": "เนื่องจาก Go 1.18 เริ่มใช้ generic แล้ว ซึ่งใน block ก่อนหน้านี้ ผมก็นำเอา blog ต้นฉบับของ contributors มาแปลคร่าวๆให้ได้อ่านกัน ทำให้ได้รู้ usecases ของการใช้ generic ว่าปกติจะใช้กับ ฟังก์ชั่นที่ ทำงานกับ map, slice หรือ channel เป็นหลัก และเอาจริงๆ หลายๆ usecases ที่คิดกันออกมา มันอาจจะทำงานกับ interface ได้ดีกว่า ที่จะพยายามยัดเยียดเอา generic ใส่เข้าไปเพื่อความเท่\nวันนี้ก็เลยลองใช้ generic มาช่วยในการสร้าง gin HandlerFunc เพื่อให้เราสามารถเขียน handler ได้ง่ายขึ้นด้วยหน้าตาประมาณนี้\nfunc Handler(request) (response,error)\n\nประโยชน์ก็คือ มันจะช่วยให้เราเขียนเทสให้ handler ง่ายขึ้น โดยไม่ต้อง mock gin.Context\nโดยเราจะวางโครงสร้างโปรเจ็คเราแบบนี้\n\ndomain ภายในนี้จะเป็นที่รวม business logic ทั้งหมด\nginhandlerfunc เป็น converter ที่จะช่วยแปลง handler แบบที่เราอยากได้ ไปเป็น gin.HandlerFunc\nเ…",
+          "link": "https://dev.to/pallat/go-generics-ain-gin-handler-f4b",
+          "publishedOn": "2022-07-31T09:04:01.000Z",
+          "wordCount": 1209,
+          "title": "Go generics ใน gin Handler",
+          "imageUrl": "https://dev.to/social_previews/article/1155767.png"
+        },
+        {
+          "id": "https://dev.to/dailydevtips1/the-importance-of-canonical-urls-50m8",
+          "author": "Chris Bongers",
+          "description": "I noticed I'm always talking about canonical tags when advising fellow bloggers, but I never wrote this down on paper.\nSo here we go, an article explaining why you should always use canonical tags when republishing your content elsewhere.\nLet's first set a use case.\nYou are reading this article from one of the following three sources.\nmy blog (daily-dev-tips.com)\nhashnode\ndev.to\nAll these three sources have the same content.\nLet's say your blog does just that. How does Google know which blog to redirect to?\nIf you don't provide a canonical tag, Google might even think you are spamming the internet and not showing any of the three sites!\nHowever, you can use this canonical tag to set which site is the primary source for this article.\nSo what do I do, you ask?\nSo how do we set these canonical URLs\nIf you are not using a custom website as your primary source, you can set the canonical URL by adding the following tag in your HTML head.\n<link rel=\"canonical\" href=\"https://daily-dev-tips.com/your-article-name\" />\n\nThis will tell the search engines they can find the original content on the address you provide there.\nMost blogging platforms offer a more visual way of adding these canonical tags.\nFor instance, on Hashnode, they have the following widget in the sidebar.\n\nAnd the same kind of graphical element exists on dev.to.\n\nA small side note is that my good friend Graham suggests you wait two weeks before reposting your content.\nThis is, in theory, true.\nReposting content is a great way to reach a broader audience, but it can hurt your SEO if you don't use canonical tags.\nDo use canonical tags to indicate to search engines which is your original content.\nDo not mix the canonicals to link to different articles from different sources.\nThank you for reading my blog. Feel free to subscribe to my email newsletter and connect on Facebook or Twitter",
+          "link": "https://dev.to/dailydevtips1/the-importance-of-canonical-urls-50m8",
+          "publishedOn": "2022-07-31T08:58:30.000Z",
+          "wordCount": 1462,
+          "title": "The importance of canonical URLs",
+          "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--O0tISK6H--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/07xt882pw7r3yhvoonlf.jpg"
+        },
+        {
+          "id": "https://dev.to/themesberg/how-to-install-tailwind-css-inside-a-nextjs-project-2kea",
+          "author": "Zoltán Szőgyényi",
+          "description": "In this tutorial you will learn how to set up Tailwind CSS inside a Next.js project and optionally also install the Flowbite React package to get started with open-source components.\nDisclaimer: this tutorial has been first published on the Tailwind CSS Next.js integration guide from the Flowbite Docs.\nNext.js is a popular web development framework based on the React library that enables server-side rendering and generating static websites improving development time and website performance.\nThis technology is being used by hundreds of thousands of developers and companies such as Vercel, Netflix, TikTok, Twitch, Hulu, Nike and HBO Max since its original release in 2016.\nBy following this guide you will learn how to properly set up Tailwind CSS with the Flowbite React components inside an e…",
+          "link": "https://dev.to/themesberg/how-to-install-tailwind-css-inside-a-nextjs-project-2kea",
+          "publishedOn": "2022-07-31T08:41:00.000Z",
+          "wordCount": 1900,
+          "title": "How to install Tailwind CSS inside a Next.js project",
+          "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--yHO3lW2n--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/17vls4pfiirlg64o0n2n.png"
+        },
+        {
+          "id": "https://dev.to/osam1010/advanced-nodejs-topics-caching-46a1",
+          "author": "Osama",
+          "description": "Improve your Server Performance By Caching often Fetched Data using Redis.\n\n\n\n  \n  \n  Introduction:\n\n\nRedis is an in-memory database that stores data in key: value format, since it’s in memory, it's ridiculously fast.\nRedis provides data structures such as strings, hashes, lists, sets, sorted sets\nRedis is an open source (BSD licensed), in-memory data structure store used as a database, cache, message broker, and streaming engine. Redis provides data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes, and streams. Redis has built-in replication, Lua scripting, LRU eviction, transactions, and different levels of on-disk persistence, and provides high availability via Redis Sentinel and automatic partitioning with Redis …",
+          "link": "https://dev.to/osam1010/advanced-nodejs-topics-caching-46a1",
+          "publishedOn": "2022-07-31T07:56:11.000Z",
+          "wordCount": 2542,
+          "title": "Advanced Node.js Topics: Caching.",
+          "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--KceSyHbE--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/g28sddwwke94ey3jvtb8.png"
+        },
+        {
+          "id": "https://dev.to/aws-builders/lets-nuke-aws-account-3j7k",
+          "author": "Anuvindh Sankaravilasam",
+          "description": "DAY 36 - Let’s Nuke AWS - Day Thirty-Six\n\n\n\n100 days of Cloud on GitHub - Read On iCTPro.co.nz - Read on Dev.to\nMake sure you remove the account from the organisations.\n\n\nGet your access keys for CLI , check out this link to see How to\n\n\nNow Goto repository, clink on releases, select your appropriate file, and right-click copy.\n\n\n\n\nTopic\nLink\n\n\n\n\nClone repo\nLink\n\n\nReleases\nLink\n\n\n\n\nI am using Linux so selecting cloud-nuke_linux_amd64,\nNow on your system create a folder called nuke, then cd into it \n\nwget https://github.com/gruntwork-io/cloud-nuke/releases/download/v0.16.2/cloud-nuke_linux_amd64 \n\nCheck the folder once copied the file us ls\n\nlets rename the folder to aws-nuke mv cloud-nuke_linux_amd64 aws-cloud\n\n\n\n\nChange folder permissions\n\n\n\nsudo chmod 777 aws-nuke\n\nlets copy this to /usr/bin\n\n\n\nsudo cp aws-nuke /usr/bin\n\nverify the package\n\n\n\naws-nuke\n\nYou will be able to similar result as shown in the screenshot\n\nNow lets enter the magic command\naws-nuke aws\n\n\nWe are not done yet, \nIt will preview all the services gonna be destroyed \nyou will be prompted to confirm....\nnuke\n\nconfirm by typing nuke\n\n\n✅Connect with me on Twitter\nLinkedin\ndev.to or  iCTPro.co.nz\nGitHub\nAnuvindh SankaravilasamFollow\n\n    \nExperienced Cloud Technology Specialist with a demonstrated skillset of working with Medical Service , NZ Police & Education industry",
+          "link": "https://dev.to/aws-builders/lets-nuke-aws-account-3j7k",
+          "publishedOn": "2022-07-31T07:46:00.000Z",
+          "wordCount": 2005,
+          "title": "Let's Nuke AWS - Account",
+          "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--cvZ9ONwa--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/tdbeucvu8yrnj2m2lhze.png"
+        },
+        {
+          "id": "https://dev.to/ethand91/i-created-a-simple-1-to-1-meeting-tool-ib2",
+          "author": "Ethan",
+          "description": "Introduction\n\n\nHello! I recently heard about the PlanetScale X Hashnode hackathon, so I thought I'd give it a try. \nI decided to create a simple 1 to 1 meeting tool using WebRTC. \nThe tech that was used to create the project is as follows:\nReact - To build the frontend\nNodejs - To build the backend\nExpress - To handle API requests\nSocket.io - To handle WebSocket chat/signalling\nPlanetScale - The database\nMaterial-ui - For the design\nHeroku - To host the app\nThe page that the user is first greeted with when loading the app is the create room page:\n\nYes, I know it's very simple. 😅\nThe user can then create a new room by clicking on the \"Create Room\" button, this sends a request to the server which then creates a new room and stores the room key inside the planetscale database.\nOnce the room …",
+          "link": "https://dev.to/ethand91/i-created-a-simple-1-to-1-meeting-tool-ib2",
+          "publishedOn": "2022-07-31T07:21:12.000Z",
+          "wordCount": 1949,
+          "title": "I Created A Simple 1 To 1 Meeting Tool",
+          "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--FEBWYJZM--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nljhs6rm8xmddw1x6s37.jpeg"
+        },
+        {
+          "id": "https://dev.to/polterguy/unit-testing-frontend-code-is-probably-useless-27n9",
+          "author": "Thomas Hansen",
+          "description": "I love unit tests. Magic and its satellite projects has 1,000+ unit tests, and some of the satellite projects even has 100% unit test coverage. Statically analysing code using automation is (duh!) kind of important to us. However, unit testing frontend code is quite frankly (probably) ridiculous.\nUnit tests are for small units of logic, to automatically ensure that your code is (still) valid as you refactor it, and/or add features to it. If you put logic that requires unit testing into your frontend code, you are probably doing something wrong.\n90% of all projects I have worked with in my professional life were enterprise administration tools, and/or customer facing websites, hubs, and registration forms, etc. If you put business logic into these frontend projects, you risk that some smart…",
+          "link": "https://dev.to/polterguy/unit-testing-frontend-code-is-probably-useless-27n9",
+          "publishedOn": "2022-07-31T06:11:00.000Z",
+          "wordCount": 2848,
+          "title": "Unit testing frontend code is (probably) useless",
+          "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--kqvWa0It--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/1vgpfkeyfb55xy5sdwpd.jpg"
+        },
+        {
+          "id": "https://dev.to/anewman15/currying-existing-functions-with-javascript-4nnc",
+          "author": "Abdullah Numan",
+          "description": "This post is about transforming an already defined polyadic function into a curried function.\nThis is the third post in a series on curried functions titled Curry Functions in JavaScript. This follows the previous post named Basic Curried Functions in JavaScript.\nBasic curried functions are different from more advanced ones because basic currying doesn't involve taking a function as an argument, whereas more advanced ones do. Basic curried functions are defined from scratch, whereas advanced currying involves using an already existing multary function.\nFrom a higher level, currying is more of an approach of transforming an otherwise uncurried function to return a series of unary functions - regardless of whether it is hardcoded by the author or transformed at runtime.\nWe will consider seve…",
+          "link": "https://dev.to/anewman15/currying-existing-functions-with-javascript-4nnc",
+          "publishedOn": "2022-07-31T05:20:00.000Z",
+          "wordCount": 1646,
+          "title": "Currying Existing Functions with JavaScript",
+          "imageUrl": "https://dev.to/social_previews/article/1152625.png"
+        },
+        {
+          "id": "https://dev.to/robinui/i-start-my-first-e-commerce-site-built-in-expressjs-3mpo",
+          "author": "robin-UI",
+          "description": "A post by robin-UI",
+          "link": "https://dev.to/robinui/i-start-my-first-e-commerce-site-built-in-expressjs-3mpo",
+          "publishedOn": "2022-07-31T04:33:28.000Z",
+          "wordCount": 972,
+          "title": "I start my first e-commerce site built in Express.js",
+          "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--hoOApWzV--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/88wdy8uj47p4ebqwn83o.png"
+        },
+        {
+          "id": "https://dev.to/j471n/chrome-extensions-of-the-month-july-2022-5alc",
+          "author": "Jatin Sharma",
+          "description": "In this article, I will suggest you some of the best extensions you need to install for better productivity.  So without further due, let's get into it. \nManganum\nWordtune\nThe Great Suspender\nPapier\nButton for Google Calendar\nLINER\nDisconnect\nnpmhub\nToast - Save Tabs for Later\nEmail Finder by Snov.io\nIt is a new tab with a sidebar that turns Chrome from just a browser into a productivity workspace. It can really boost your productivity. It has tons of features.\nKey Features:\nQuick access to your favorite and most visited sites without opening a new tab\nTranslate text instantly across more than 100 languages\nSee your schedule from Google Calendar on any browser tab\nYou can access your Google Tasks\nSimple notes that are always at your fingertips\nCustomizable Backgrounds \nClock and Weather wi…",
+          "link": "https://dev.to/j471n/chrome-extensions-of-the-month-july-2022-5alc",
+          "publishedOn": "2022-07-31T03:32:00.000Z",
+          "wordCount": 1981,
+          "title": "Chrome Extensions of the Month - July 2022",
+          "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--hIEREaNa--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/g7i429gs2hrf69zufbrl.png"
+        },
+        {
           "id": "https://dev.to/this-is-learning/video-how-open-source-can-change-your-life-4kg7",
           "author": "Leonardo Montini",
           "description": "Hello everyone!\nI recently posted an Article about benefits and advantages from contributing in Open Source.\nI released the video version on YouTube, go check it out!\n\nHere's the link: https://youtu.be/uquIcISFtwg",
@@ -906,6 +1026,16 @@
       "siteUrl": "https://www.appinn.com",
       "articles": [
         {
+          "id": "https://www.appinn.com/?p=42908",
+          "author": "青小蛙",
+          "description": "Barbee 是一款用来隐藏 macOS 菜单栏图标的工具，支持自动显示/隐藏、支持自动化、支持快捷键，两种模式，开发者说“想做Bartender的平替”。@Appinn 来自发现频道，开发者 @Hs",
+          "link": "https://www.appinn.com/barbee-for-macos/",
+          "publishedOn": "2022-07-31T08:07:37.000Z",
+          "wordCount": 1682,
+          "title": "Barbee – 隐藏 macOS 菜单栏图标。想做 Bartender 平替？",
+          "imageUrl": "https://img3.appinn.net/static/wp-content/uploads/2022/07/barbee.jpgo_.jpg"
+        },
+        {
           "id": "https://www.appinn.com/?p=42905",
           "author": "青小蛙",
           "description": "Syntax Highlight 是一款可以为 macOS 快速查看添加代码高亮功能的小工具，支持超过 100 种格式，只需要对着文件按下空格，即可快速预览高亮代码。@Appinn 在前几天的另外一个",
@@ -1118,6 +1248,26 @@
       "siteUrl": "https://www.baeldung.com",
       "articles": [
         {
+          "id": "https://drafts.baeldung.com/?p=139961",
+          "author": "Graham Cox",
+          "description": "A practical guide to using multiple keys in a map.",
+          "link": "https://feeds.feedblitz.com/~/704333406/0/baeldung~Implementing-a-Map-with-Multiple-Keys-in-Java",
+          "publishedOn": "2022-07-30T19:26:43.000Z",
+          "wordCount": null,
+          "title": "Implementing a Map with Multiple Keys in Java",
+          "imageUrl": null
+        },
+        {
+          "id": "https://drafts.baeldung.com/?p=136243",
+          "author": "baeldung",
+          "description": "A short article explaining the differences between static and instance instantiation.",
+          "link": "https://feeds.feedblitz.com/~/704333408/0/baeldung~Static-vs-Instance-Initializer-Block-in-Java",
+          "publishedOn": "2022-07-30T19:24:42.000Z",
+          "wordCount": null,
+          "title": "Static vs. Instance Initializer Block in Java",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.baeldung.com/?p=128230",
           "author": "baeldung",
           "description": "Learn two methods from Collectors to retrieve the unique element which matches a certain predicate in a given stream of elements.",
@@ -1316,6 +1466,286 @@
       "feedUrl": "https://hn.buzzing.cc/rss.xml",
       "siteUrl": "https://hn.buzzing.cc",
       "articles": [
+        {
+          "id": "https://hn.buzzing.cc/hn/32287736/",
+          "author": null,
+          "description": "一位调香师对广藿香和香根草的思考",
+          "link": "https://hn.buzzing.cc/hn/32287736/?score=101&original_url=https%3A%2F%2Fthereader.mitpress.mit.edu%2Fa-master-perfumers-reflections-on-patchouli-and-vetiver%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32287736&sensitive=false",
+          "publishedOn": "2022-07-31T07:05:17.000Z",
+          "wordCount": 147,
+          "title": "一位调香师对广藿香和香根草的思考",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32291822/",
+          "author": null,
+          "description": "百万：小于1kb的虚拟DOM，速度很快",
+          "link": "https://hn.buzzing.cc/hn/32291822/?score=106&original_url=https%3A%2F%2Fmillionjs.org%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32291822&sensitive=false",
+          "publishedOn": "2022-07-31T06:40:49.000Z",
+          "wordCount": 148,
+          "title": "百万：小于1kb的虚拟DOM，速度很快",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32291993/",
+          "author": null,
+          "description": "著名的HNers和他们的网站",
+          "link": "https://hn.buzzing.cc/hn/32291993/?score=113&original_url=https%3A%2F%2Fjessimekirk.com%2Fblog%2Fhn_users_links%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32291993&sensitive=false",
+          "publishedOn": "2022-07-31T04:44:49.000Z",
+          "wordCount": 144,
+          "title": "著名的HNers和他们的网站",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32278574/",
+          "author": null,
+          "description": "重新利用蜘蛛的尸体来创造一个气动的抓取器",
+          "link": "https://hn.buzzing.cc/hn/32278574/?score=102&original_url=https%3A%2F%2Fspectrum.ieee.org%2Frobot-bugs&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32278574&sensitive=false",
+          "publishedOn": "2022-07-31T04:44:49.000Z",
+          "wordCount": 151,
+          "title": "重新利用蜘蛛的尸体来创造一个气动的抓取器",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32290869/",
+          "author": null,
+          "description": "麻省理工学院工程师开发出能看到身体内部的贴纸",
+          "link": "https://hn.buzzing.cc/hn/32290869/?score=116&original_url=https%3A%2F%2Fnews.mit.edu%2F2022%2Fultrasound-stickers-0728&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32290869&sensitive=false",
+          "publishedOn": "2022-07-31T03:07:06.000Z",
+          "wordCount": 149,
+          "title": "麻省理工学院工程师开发出能看到身体内部的贴纸",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32288293/",
+          "author": null,
+          "description": "人们越有钱，吃的肉就越多",
+          "link": "https://hn.buzzing.cc/hn/32288293/?score=107&original_url=https%3A%2F%2Fspectrum.ieee.org%2Fmeat-eater&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32288293&sensitive=false",
+          "publishedOn": "2022-07-31T03:07:06.000Z",
+          "wordCount": 148,
+          "title": "人们越有钱，吃的肉就越多",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32291213/",
+          "author": null,
+          "description": "我研究了34个现实世界的顶级区块链项目，所以你不必去研究。",
+          "link": "https://hn.buzzing.cc/hn/32291213/?score=120&original_url=https%3A%2F%2Fweh.wtf%2F34-blockchain-projects.html&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32291213&sensitive=false",
+          "publishedOn": "2022-07-31T00:39:12.000Z",
+          "wordCount": 152,
+          "title": "我研究了34个现实世界的顶级区块链项目，所以你不必去研究。",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32289225/",
+          "author": null,
+          "description": "碳的最激动人心的特点是它的呼叫惯例",
+          "link": "https://hn.buzzing.cc/hn/32289225/?score=100&original_url=https%3A%2F%2Fwww.foonathan.net%2F2022%2F07%2Fcarbon-calling-convention%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32289225&sensitive=false",
+          "publishedOn": "2022-07-30T22:44:59.000Z",
+          "wordCount": 147,
+          "title": "碳的最激动人心的特点是它的呼叫惯例",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32288165/",
+          "author": null,
+          "description": "一个用于逐行读取大文件的SQLite扩展",
+          "link": "https://hn.buzzing.cc/hn/32288165/?score=101&original_url=https%3A%2F%2Fgithub.com%2Fasg017%2Fsqlite-lines&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32288165&sensitive=false",
+          "publishedOn": "2022-07-30T22:21:59.000Z",
+          "wordCount": 149,
+          "title": "一个用于逐行读取大文件的SQLite扩展",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32286531/",
+          "author": null,
+          "description": "一个突出的Emacs实验（à la macOS）。",
+          "link": "https://hn.buzzing.cc/hn/32286531/?score=101&original_url=https%3A%2F%2Fxenodium.com%2Fan-accentuated-emacs-experiment%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32286531&sensitive=false",
+          "publishedOn": "2022-07-30T21:17:43.000Z",
+          "wordCount": 158,
+          "title": "一个突出的Emacs实验（à la macOS）。",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32286871/",
+          "author": null,
+          "description": "谁在收集你车上的数据？",
+          "link": "https://hn.buzzing.cc/hn/32286871/?score=103&original_url=https%3A%2F%2Fthemarkup.org%2Fthe-breakdown%2F2022%2F07%2F27%2Fwho-is-collecting-data-from-your-car&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32286871&sensitive=false",
+          "publishedOn": "2022-07-30T21:17:43.000Z",
+          "wordCount": 148,
+          "title": "谁在收集你车上的数据？",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32288058/",
+          "author": null,
+          "description": "Tor正在与俄罗斯的审查制度作斗争并将其击败",
+          "link": "https://hn.buzzing.cc/hn/32288058/?score=104&original_url=https%3A%2F%2Fwww.wired.com%2Fstory%2Ftor-browser-russia-blocks%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32288058&sensitive=false",
+          "publishedOn": "2022-07-30T20:49:59.000Z",
+          "wordCount": 146,
+          "title": "Tor正在与俄罗斯的审查制度作斗争并将其击败",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32288291/",
+          "author": null,
+          "description": "Clojure需要一个Rails",
+          "link": "https://hn.buzzing.cc/hn/32288291/?score=101&original_url=https%3A%2F%2Fblog.janetacarr.com%2Fclojure-needs-a-rails%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32288291&sensitive=false",
+          "publishedOn": "2022-07-30T20:27:52.000Z",
+          "wordCount": 143,
+          "title": "Clojure需要一个Rails",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32288309/",
+          "author": null,
+          "description": "罗杰斯先生起诉了三K党",
+          "link": "https://hn.buzzing.cc/hn/32288309/?score=112&original_url=https%3A%2F%2Fallthatsinteresting.com%2Fmr-rogers-sues-the-kkk&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32288309&sensitive=false",
+          "publishedOn": "2022-07-30T20:27:52.000Z",
+          "wordCount": 144,
+          "title": "罗杰斯先生起诉了三K党",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32285122/",
+          "author": null,
+          "description": "安全。Rust、C++和Go之间的比较",
+          "link": "https://hn.buzzing.cc/hn/32285122/?score=100&original_url=https%3A%2F%2Fnested.substack.com%2Fp%2Fsafety&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32285122&sensitive=false",
+          "publishedOn": "2022-07-30T19:55:50.000Z",
+          "wordCount": 147,
+          "title": "安全。Rust、C++和Go之间的比较",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32286142/",
+          "author": null,
+          "description": "对32个国家水中的17α-乙炔雌二醇的审查。雌激素作用",
+          "link": "https://hn.buzzing.cc/hn/32286142/?score=100&original_url=https%3A%2F%2Fpubmed.ncbi.nlm.nih.gov%2F34023789%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32286142&sensitive=false",
+          "publishedOn": "2022-07-30T19:27:25.000Z",
+          "wordCount": 152,
+          "title": "对32个国家水中的17α-乙炔雌二醇的审查。雌激素作用",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32287490/",
+          "author": null,
+          "description": "美国法院系统遭受 \"令人难以置信的重大攻击\" - 密封文件面临风险",
+          "link": "https://hn.buzzing.cc/hn/32287490/?score=100&original_url=https%3A%2F%2Fwww.theregister.com%2F2022%2F07%2F29%2Fus_judiciary_attack%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32287490&sensitive=false",
+          "publishedOn": "2022-07-30T19:03:59.000Z",
+          "wordCount": 171,
+          "title": "美国法院系统遭受 \"令人难以置信的重大攻击\" - 密封文件面临风险",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32287902/",
+          "author": null,
+          "description": "ImHex - 一个十六进制编辑器",
+          "link": "https://hn.buzzing.cc/hn/32287902/?score=116&original_url=https%3A%2F%2Fgithub.com%2FWerWolv%2FImHex&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32287902&sensitive=false",
+          "publishedOn": "2022-07-30T18:20:53.000Z",
+          "wordCount": 159,
+          "title": "ImHex - 一个十六进制编辑器",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32282632/",
+          "author": null,
+          "description": "美国监管机构将对首个小型核反应堆设计进行认证",
+          "link": "https://hn.buzzing.cc/hn/32282632/?score=127&original_url=https%3A%2F%2Farstechnica.com%2Fscience%2F2022%2F07%2Fus-regulators-will-certify-first-small-nuclear-reactor-design%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32282632&sensitive=false",
+          "publishedOn": "2022-07-30T18:20:53.000Z",
+          "wordCount": 150,
+          "title": "美国监管机构将对首个小型核反应堆设计进行认证",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32285609/",
+          "author": null,
+          "description": "路由器安全",
+          "link": "https://hn.buzzing.cc/hn/32285609/?score=103&original_url=https%3A%2F%2Froutersecurity.org%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32285609&sensitive=false",
+          "publishedOn": "2022-07-30T17:19:13.000Z",
+          "wordCount": 142,
+          "title": "路由器安全",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32285113/",
+          "author": null,
+          "description": "我定制的Wim Hof呼吸练习，以达到最大的高度",
+          "link": "https://hn.buzzing.cc/hn/32285113/?score=101&original_url=https%3A%2F%2Fugjka.net%2Fblog%2Fbreathwork%2F2022%2F07%2F30%2Fwim-hof-breathing-customized%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32285113&sensitive=false",
+          "publishedOn": "2022-07-30T16:32:59.000Z",
+          "wordCount": 156,
+          "title": "我定制的Wim Hof呼吸练习，以达到最大的高度",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32279024/",
+          "author": null,
+          "description": "Linux RNG RFC补丁：在vDSO中实现getrandom（）。",
+          "link": "https://hn.buzzing.cc/hn/32279024/?score=100&original_url=https%3A%2F%2Flore.kernel.org%2Flkml%2F20220729145525.1729066-1-Jason%40zx2c4.com%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32279024&sensitive=false",
+          "publishedOn": "2022-07-30T16:05:39.000Z",
+          "wordCount": 160,
+          "title": "Linux RNG RFC补丁：在vDSO中实现getrandom（）。",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32286408/",
+          "author": null,
+          "description": "无服务器的DNS。边缘的自我托管的DNS解析器",
+          "link": "https://hn.buzzing.cc/hn/32286408/?score=105&original_url=https%3A%2F%2Fgithub.com%2Fserverless-dns%2Fserverless-dns&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32286408&sensitive=false",
+          "publishedOn": "2022-07-30T16:05:39.000Z",
+          "wordCount": 149,
+          "title": "无服务器的DNS。边缘的自我托管的DNS解析器",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32281446/",
+          "author": null,
+          "description": "建立Unix，而不是Uber",
+          "link": "https://hn.buzzing.cc/hn/32281446/?score=101&original_url=https%3A%2F%2Fthesephist.com%2Fposts%2Flegacy%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32281446&sensitive=false",
+          "publishedOn": "2022-07-30T14:24:14.000Z",
+          "wordCount": 143,
+          "title": "建立Unix，而不是Uber",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32285638/",
+          "author": null,
+          "description": "建议对Wi-Fi路由器和接入点进行设置",
+          "link": "https://hn.buzzing.cc/hn/32285638/?score=103&original_url=https%3A%2F%2Fsupport.apple.com%2Fen-us%2FHT202068&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32285638&sensitive=false",
+          "publishedOn": "2022-07-30T14:01:27.000Z",
+          "wordCount": 147,
+          "title": "建议对Wi-Fi路由器和接入点进行设置",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32285242/",
+          "author": null,
+          "description": "亲爱的初创企业。我讨厌订阅服务",
+          "link": "https://hn.buzzing.cc/hn/32285242/?score=121&original_url=https%3A%2F%2Ffangdaddy.medium.com%2Fdear-startups-i-hate-subscription-services-aecefeb0f089&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32285242&sensitive=false",
+          "publishedOn": "2022-07-30T11:45:45.000Z",
+          "wordCount": 145,
+          "title": "亲爱的初创企业。我讨厌订阅服务",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32284276/",
+          "author": null,
+          "description": "摄影测量指南",
+          "link": "https://hn.buzzing.cc/hn/32284276/?score=102&original_url=https%3A%2F%2Fgithub.com%2Fmikeroyal%2FPhotogrammetry-Guide&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32284276&sensitive=false",
+          "publishedOn": "2022-07-30T11:14:57.000Z",
+          "wordCount": 142,
+          "title": "摄影测量指南",
+          "imageUrl": null
+        },
+        {
+          "id": "https://hn.buzzing.cc/hn/32284375/",
+          "author": null,
+          "description": "我怀念可编程网络 (2021)",
+          "link": "https://hn.buzzing.cc/hn/32284375/?score=104&original_url=https%3A%2F%2Fmatt-rickard.com%2Fthe-programmable-web%2F&discuss_url=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D32284375&sensitive=false",
+          "publishedOn": "2022-07-30T09:19:33.000Z",
+          "wordCount": 151,
+          "title": "我怀念可编程网络 (2021)",
+          "imageUrl": null
+        },
         {
           "id": "https://hn.buzzing.cc/hn/32282244/",
           "author": null,
@@ -3487,6 +3917,46 @@
       "siteUrl": "https://linux.cn/",
       "articles": [
         {
+          "id": "https://linux.cn/article-14883-1.html?utm_source=rss&utm_medium=rss",
+          "author": "linux@linux.cn (linux)",
+          "description": "世界上第一个电子游戏《太空战！》在掌上游戏机上复活\n\r\nAnalogue 宣布将在其 Pocket 游戏机上推出《太空战！》游戏，这是一款最初为 PDP-1 小型机设计的游戏，比《Pong》整整早了十年。《太空战！》最初由 MIT 的工程师们于 1962 年创作，使用了一台 PDP-1 小型机和 1024x1024 像素的 CRT 显示器。游戏中，两个飞船在一颗恒星的引力井中进行对决。重新发布该游戏的第三方开发商使用了 OpenFPGA 和已经属于公共领域的 PDP-1 和《太空战！》的源代码。\n\r\n\r\n消息来源：The Verge\n\r\n\r\n\r\n老王点评：虽然很原始，但是这可是第一个电子游戏啊！\n\r\n\r\n\n\r\n诺基亚宣布一同打造太空宽带\n\r\n诺基亚公司表示，将提供设备将 SpaceMobile 公司的卫星连接到全球电信网络，为计划中的天基宽带网络建立一个关键环节，使之可以与移动电话一起使用。他们表示，该网络旨在为没有数字服务的人和地方提供连接。与 SpaceX 不同，SpaceMobile 的服务旨在连接到标准的、未经修改的手机，不需要特殊的软件、地面终端或硬件。\n\r\n\r\n消息来源：彭博社\n\r\n\r\n\r\n老王点评：诺基亚时不时出来秀一下存在感，否则真忘记了这个公司了。不过我觉得这种天基宽带挺好的，尤其是还不需要专门的设备。\n\r\n\r\n\n\r\n一少年向上万人出售远程访问间谍软件，赚取 30 万美元\n\r\n现年 24 岁的一位澳大利亚人基恩据称在其 15 岁时开发了一个远程访问间谍软件，允许用户远程控制其受害者的电脑。一旦安装了该工具，就可以用来窃取受害者的个人信息，通过网络摄像头和麦克风监视他们，并跟踪他们在电子邮件或文件中输入的内容。据称，基恩在一个黑客论坛上以 35 美元的价格出售该工具，向 128 个国家的 14500 多人出售该工具，赚取了 30 万至 40 万美元。现在他和他的母亲已经被指控多项罪名。\n\r\n\r\n消息来源：卫报\n\r\n\r\n\r\n老王点评：无知无畏啊，往往年轻时啥都敢干，啥钱也都敢收，殊不知这些都记在小本本上呢。",
+          "link": "https://linux.cn/article-14883-1.html?utm_source=rss&utm_medium=rss",
+          "publishedOn": "2022-07-31T09:17:20.000Z",
+          "wordCount": 476,
+          "title": "硬核观察 #714 世界上第一个电子游戏《太空战！》在掌上游戏机上复活",
+          "imageUrl": null
+        },
+        {
+          "id": "https://linux.cn/article-14882-1.html?utm_source=rss&utm_medium=rss",
+          "author": "linux@linux.cn (linux)",
+          "description": "使用组合键，你不会被键盘所限制住。\n\r\n\r\n\n\r\n典型的键盘只有约 100 个键位。\n\r\n由于 Shift 键，许多键得以有两个字符（也称之为 字形glyph）。字形常用于键入带有重音和变音符号的字母，生成数学公式或者货币中的符号，或者添加有趣的表情符号。在一些地区，有些键甚至有三个字形。\n\r\n然而，不论你身处何处，有一些字形不会出现在你的键盘上。幸运的是，Linux 提供了使用 组合键Compose Key 来获取这些字形。\n\r\n在你的键盘上没有组合键这个键，至少默认情况下没有，但是你可以设定一个你不用的键作为组合键。我在电脑上使用空格键旁边的 Alt 键，而在平板上使用菜单键，来作为组合键。\n\r\n\r\n下载 Linux 组合键速查表\n\r\n\r\n在 GNOME 中设置组合键\n\r\n\n\r\n在 GNOME 桌面，从软件库中安装 优化Tweaks 应用。你也可以从终端安装（基于 Debian 发行版用 apt 命令，Fedora 用 dnf）：\n\r\n$ sudo dnf install gnome-tweaks\r\n\n\r\n启动优化应用后：\n\r\n\r\n单击左侧栏中的 键盘和鼠标Keyboard & Mouse类别\n\r\n找到 组合键Compose key 设置并指定一个键\n\r\n关闭优化应用\n\r\n\r\n在 KDE Plasma 桌面设置组合键\n\r\nosition of Compose Key\" is checked within that menu, and \"Right Alt\" is checked within that menu.\" />\n\r\n在 KDE Plasma 桌面上，打开 系统设置System Settings，找到 输入设备Input Devices 控制界面。然后：\n\r\n\r\n在 输入设备Input Devices 界面，点击 “高级Advanced” 标签\n\r\n找到 组合键…",
+          "link": "https://linux.cn/article-14882-1.html?utm_source=rss&utm_medium=rss",
+          "publishedOn": "2022-07-31T01:56:06.000Z",
+          "wordCount": 743,
+          "title": "在 Linux 中使用组合键输入隐藏的字形",
+          "imageUrl": null
+        },
+        {
+          "id": "https://linux.cn/article-14881-1.html?utm_source=rss&utm_medium=rss",
+          "author": "linux@linux.cn (linux)",
+          "description": "本文将帮助你设计一个基于 Web 的应用程序，使用 Node-RED 为地铁站的汽车提供一个自动智能停车系统。\n\r\n\r\n\n\r\nWeb 应用程序是在 Web 服务器上运行的软件。终端用户通过 Web 浏览器访问 Web 应用程序。Web 应用程序使用客户端—服务器（C/S）架构进行编程，该架构是用户（客户端）通过远程服务器（可能由第三方托管）提供服务。Web API（应用程序编程接口）在整个 Web 上是可用的，用户可以通过 HTTP 协议访问该接口，如图 1 所示。\n\r\n\n\r\n本文将演示如何为地铁设计一个基于 Web 的汽车自动智能停车系统。 它是使用开源的 Node-RED 设计。该系统使用模板节点创建了一个交互式的、时尚的用户登录表单，用 HTML 和 CSS 编码以获取车主的详细信息，从而实现停车系统的自动化。我们可以在图 2 和图 3 看到登录表单和提交表单的流程图。\n\r\n使用的节点如下：\n\r\n\n\r\n地铁智能停车节点流程设计\n\r\nNode-RED 由 node-red 命令激活。访问网址 http://127.0.0.1:1880/ 可以看到 Node-RED 用户界面流程浏览器已经启用，可以认为 Node-RED 设置已完成，可以正常工作了。\n\r\n按照下面给出的步骤创建登录表单和提交表单。\n\r\n\n\r\n\n\r\n登录表单\n\r\n1、在节点画布中，拖放 http 输入http in 节点，这会为创建 Web 服务创建一个 HTTP 访问点。\n\r\n2、将 http 输入http in 节点连接到 函数function 节点。函数节点有助于编写 JavaScript 函数处理节点接收到的消息。\n\r\n\n\r\n3、将 函数function 节点连接到 模板template 节点，模板节点基于提供的模板创建一个 Web API。\n\r\n4、将 模板template 节点连接到 http …",
+          "link": "https://linux.cn/article-14881-1.html?utm_source=rss&utm_medium=rss",
+          "publishedOn": "2022-07-31T01:15:32.000Z",
+          "wordCount": 686,
+          "title": "为地铁站构建一个智能停车系统",
+          "imageUrl": null
+        },
+        {
+          "id": "https://linux.cn/article-14880-1.html?utm_source=rss&utm_medium=rss",
+          "author": "linux@linux.cn (linux)",
+          "description": "System76 终于为其最新的 Pop!_OS 22.04 LTS 增加了对树莓派 4 的支持。\n\r\n\r\n\n\r\nPop!_OS 是 最好的初学者友好的 Linux 发行版 之一。\n\r\n它基于 Ubuntu，显然，Pop!_OS 22.04 LTS 是基于 Ubuntu 22.04 LTS 的。\n\r\n然而，与 Ubuntu 不同，Pop!_OS 22.04 在发布时并没有正式支持树莓派。\n\r\n因此，期待 Pop!_OS 22.04 LTS 版本对树莓派的支持是合理的。\n\r\n如果你还记得，System76 在 Pop!_OS 21.10 中首次增加了对树莓派的支持。我们在测试时也 报道过。\n\r\n而且，据 System76 的首席工程师 Jeremy Soller 透露， System76 最新的 Pop!_OS 版本现在正准备支持树莓派 4。\n\r\nPop!_OS 22.04 LTS for Raspberry Pi 4\n\r\n如果你一直在你的树莓派 4 上使用 Pop!_OS 21.10，这对你来说是个好消息。\n\r\n而且，对于任何想在树莓派 4 上尝试 Pop!_OS 的人来说，它终于有了一个 LTS 版本。\n\r\n截至目前，该 ISO 是作为技术预览版提供的。因此，如果你想试试它，你应该有出现错误和可用性问题的心理预期。请注意，目前还 只限于树莓派 4，不支持其他树莓派设备，这是个遗憾。\n\r\n我们不知道 System76 是否计划在这个 LTS 版本中支持其他树莓派板，或者他们是否坚持只支持树莓派 4。\n\r\n然而，考虑到树莓派 4 现在相当流行，对于许多寻求替代 Ubuntu 的 树莓派的替代操作系统 的爱好者们来说，这应该是一个很好的进展。\n\r\n有了 Pop!_OS 22.04 LTS，树莓派 4 的用户应该能够体验到一些最令人兴奋的升级，以及更新的 Linux 内核 5.15 LTS。\n\r\n要下载该技术预览版，请前往 Pop!_OS 的 官方网站，点击下载按钮，找到该选项。\n\r\n\n\r\n你对树莓派 4 上的 Pop!_OS 22.04 有什么期望？请在下面的评论中告诉我们你的想法。\n\r\n\r\nvia: https://news.itsfoss.com/pop-os-22-04-raspberry-pi-4/\n\r\n作者：Ankush Das 选题：lkxed 译者：wxy 校对：wxy\n\r\n本文由 LCTT 原创编译，Linux中国 荣誉推出",
+          "link": "https://linux.cn/article-14880-1.html?utm_source=rss&utm_medium=rss",
+          "publishedOn": "2022-07-31T00:21:53.000Z",
+          "wordCount": 551,
+          "title": "Pop!_OS 22.04 Linux 发行版现在支持树莓派 4 了",
+          "imageUrl": null
+        },
+        {
           "id": "https://linux.cn/article-14879-1.html?utm_source=rss&utm_medium=rss",
           "author": "linux@linux.cn (linux)",
           "description": "量子计算在 6 分钟内解决了 3854 个变量的宝马优化问题\n\r\n在汽车尤其是自动驾驶汽车上安放传感器涉及大量的变量，如底盘设计，有没有障碍物（不同位置提供了不同视野），风阻和重量平衡等等，这需要大量的试错，不同的车型还需要重新制定不同的方案。宝马汽车的问题涉及到了 3854 个变量和 500 个约束条件，经典计算机解决这个问题需要大量的时间。量子计算公司 QCI 使用的是其新量子硬件，在 6 分钟内解决了该问题，提供了一个由 15 个传感器构成的方案。\n\r\n\r\n消息来源：Tom's Hardware\n\r\n\r\n\r\n老王点评：居然可以解决某种具体问题了？那说明量子计算步入实用更进一步了。\n\r\n\r\n\n\r\n亚马逊将关闭其网盘存储服务\n\r\n亚马逊周五早上发送电子邮件通知用户，将于 2023 年 12 月 31 日关闭其已运营 11 年的网盘存储服务，以更充分地将精力集中在“亚马逊照片”上。亚马逊表示，用户帐户中的照片和视频已自动保存到亚马逊照片中。如果你依靠该服务进行文件存储，则需要在结束服务日期之前访问并下载文件。\n\r\n\r\n消息来源：Geek Wire\n\r\n\r\n\r\n老王点评：看来网盘服务盈利前景堪忧啊，有这个风向标，国内的网盘服务会如何呢？\n\r\n\r\n\n\r\nQEMU 7.1 将带来龙芯架构支持\n\r\nQEMU 7.1-rc0 已经发布，其稳定版本将在几周后发布。QEMU 7.1 将初始支持 64 位龙芯架构的 3A5000 系列 SoC。QEMU 7.1 也将支持更多的 RISC-V 特性，如 RISC-V 特权规格 1.12 版，改进的 PMU 实现，Zmmul 扩展等。对于 QEMU 迁移，它现在支持 Linux 上的零拷贝发送，以减少源主机上的 CPU 使用率。\n\r\n\r\n消息来源：Phoronix\n\r\n\r\n\r\n老王点评：龙芯不断地将各种驱动提交到上游，可见其发展速度在加快。",
@@ -3724,6 +4194,36 @@
       "siteUrl": "https://www.bilibili.com",
       "articles": [
         {
+          "id": "https://www.bilibili.com/video/av898891308",
+          "author": "中气爱",
+          "description": "台风桑达已来到上海以东，接下来将在黄海缓慢移动一段时间消散，或带着空壳登陆山东。桑达走后，副高将强势归来控制南方，但广东福建等要降温\n\n\nTags:科学,天气,自然,台风,高温,地理,自然灾害,卫星云图,气象,科学很可爱,万物研究所",
+          "link": "https://www.bilibili.com/video/av898891308",
+          "publishedOn": "2022-07-30T21:43:17.000Z",
+          "wordCount": 1129,
+          "title": "台风桑达错过上海，或就这样耗死在黄海！下周副高携高温强势归来，但广东福建等除外",
+          "imageUrl": "http://i1.hdslb.com/bfs/archive/f813b2ea2978689b6f7d0d09e2b1efc58dc8bee9.jpg"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av471422918",
+          "author": "芳斯塔芙",
+          "description": "小小角落里的小小军备竞赛，与小小爱情\n\n\nTags:海马,生物,演化,古生物,鱼类,鬼谷闲谈,万物研究所",
+          "link": "https://www.bilibili.com/video/av471422918",
+          "publishedOn": "2022-07-30T19:09:40.000Z",
+          "wordCount": 1289,
+          "title": "【鬼谷闲谈】海马：嗦虾让鱼面目全非",
+          "imageUrl": "http://i2.hdslb.com/bfs/archive/ea8758a4adbb3fdffba92171fb27ac8529921d6a.jpg"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av601383460",
+          "author": "-我是小魔-",
+          "description": "Tags:动画,生活,搞笑,科普,美食,筷子,冷知识,刀叉,万物研究所",
+          "link": "https://www.bilibili.com/video/av601383460",
+          "publishedOn": "2022-07-30T11:10:00.000Z",
+          "wordCount": 594,
+          "title": "【小魔】为什么中国人爱用筷子，外国人爱用刀叉？",
+          "imageUrl": "http://i2.hdslb.com/bfs/archive/a9dc2e22f26b88b8246801662ff945cfb1090719.jpg"
+        },
+        {
           "id": "https://www.bilibili.com/video/av728942875",
           "author": "中气爱",
           "description": "这几天，在台风桑达靠近华东，我国高温大幅减弱的同时，干燥无比的中东热带沙漠地区，出现了罕见的雨。7月6日起，阿联酋东部的富查伊拉、沙迦等地降下大暴雨到特大暴雨，个别站点日雨量超过200毫米，相当于当地7月全月平均雨量的500倍，全年平均雨量的两倍，其极端性超过了去年我国郑州的720特大暴雨。因为雨量太大引发严重内涝，中东地区原油枢纽富查伊拉港一度完全停摆。不能说中东沙漠夺走了我国南方的水汽，而是印度洋异常发展的赤道罗斯贝波，让季风急流轴脱轨，热带和亚热带地区的广泛气候异常，和它脱不了关系。\n我们再把目光转\n\n\nTags:科学,天气,自然,台风,高温,暴雨,自然灾害,卫星云图,气象,科学很可爱,万物研究所",
@@ -3754,6 +4254,16 @@
           "imageUrl": "http://i0.hdslb.com/bfs/archive/08dd06193e88bef721dda9c8093ab6addbc838a9.jpg"
         },
         {
+          "id": "https://www.bilibili.com/video/av856448020",
+          "author": "正经的知识",
+          "description": "参考：http://www.chm.bris.ac.uk/sillymolecules/JCE74_p782.pdf\nhttp://www.chm.bris.ac.uk/sillymolecules/sillymols4.htm\nhttps://en.wikipedia.org/wiki/List_of_chemical_compounds_with_unusual_names\nhttp://www.chm.bris.ac.uk/sillymolecules/sillymols.htm\nhttps://e\n\n\nTags:科学,化学,实验,冷知识,有趣,趣味,小知识,涨知识,分子,分子结构式",
+          "link": "https://www.bilibili.com/video/av856448020",
+          "publishedOn": "2022-07-29T19:33:38.000Z",
+          "wordCount": 1155,
+          "title": "奇奇怪怪可可爱爱",
+          "imageUrl": "http://i2.hdslb.com/bfs/archive/b5202e468d6f09c4f5fb15c9f85824a8415ed333.jpg"
+        },
+        {
           "id": "https://www.bilibili.com/video/av771476892",
           "author": "思维实验室",
           "description": "介绍一种抗衰新思路，杀死衰老细胞\n\n\nTags:生命,科普纪录,生命科学,衰老,汤臣倍健,科学很可爱,万物研究所",
@@ -3762,6 +4272,16 @@
           "wordCount": 1153,
           "title": "老而不死的细胞有多危险？",
           "imageUrl": "http://i1.hdslb.com/bfs/archive/33e422e235efebaa1deaca244906ebc2cd583786.jpg"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av941474268",
+          "author": "上将王司徒",
+          "description": "Tags:机器人,自制,科幻,未来",
+          "link": "https://www.bilibili.com/video/av941474268",
+          "publishedOn": "2022-07-29T19:00:00.000Z",
+          "wordCount": 1221,
+          "title": "机械外骨骼，会不会是未来战争的利器？【司徒之脑洞】",
+          "imageUrl": "http://i2.hdslb.com/bfs/archive/fcb90d927b7483e0b8ab3fd3d5330d931cea1660.jpg"
         },
         {
           "id": "https://www.bilibili.com/video/av471133472",
@@ -3774,6 +4294,16 @@
           "imageUrl": "http://i0.hdslb.com/bfs/archive/6c0e9f4867d35e3ea8af886fd92497170f983f9d.jpg"
         },
         {
+          "id": "https://www.bilibili.com/video/av686378896",
+          "author": "刘加勇医生",
+          "description": "-\n\n\nTags:原创,科普,健康,黑头,护肤",
+          "link": "https://www.bilibili.com/video/av686378896",
+          "publishedOn": "2022-07-29T17:38:18.000Z",
+          "wordCount": 1118,
+          "title": "怎么正确祛黑头？简单！一学就会~",
+          "imageUrl": "http://i1.hdslb.com/bfs/archive/cf434015ef26d5bacbb5d347316fed51e4ec150d.jpg"
+        },
+        {
           "id": "https://www.bilibili.com/video/av513940941",
           "author": "中国食品报融媒体",
           "description": "-\n\n\nTags:环保,可口可乐,雪碧,饮料,涨知识,网络热门鉴定,万物研究所",
@@ -3782,6 +4312,26 @@
           "wordCount": 610,
           "title": "雪碧将永久弃用绿色包装瓶，真是为了环保？",
           "imageUrl": "http://i2.hdslb.com/bfs/archive/211048385921cbe2496ab720f99e06e950bfc103.jpg"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av428962917",
+          "author": "萌萌战队",
+          "description": "Tags:原创,自制,科学,物理,三体,冷知识,趣味,涨知识,网络热门鉴定,万物研究所",
+          "link": "https://www.bilibili.com/video/av428962917",
+          "publishedOn": "2022-07-29T11:46:25.000Z",
+          "wordCount": 1132,
+          "title": "3个锥桶雨天上演狗血剧，它们的运动为何有规律？揭秘锥桶的三体运动",
+          "imageUrl": "http://i1.hdslb.com/bfs/archive/e24dd18e868a6af86f1b2c3c5895e2b883f8c9a3.jpg"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av643950142",
+          "author": "辟谣的大舌头LOONG",
+          "description": "Tags:科学,生命,宇宙",
+          "link": "https://www.bilibili.com/video/av643950142",
+          "publishedOn": "2022-07-29T09:43:10.000Z",
+          "wordCount": 484,
+          "title": "NASA时间剥夺实验 在山洞中独自居住131天 出来后不知时间为何物",
+          "imageUrl": ""
         },
         {
           "id": "https://www.bilibili.com/video/av771413977",
@@ -3794,6 +4344,16 @@
           "imageUrl": "http://i0.hdslb.com/bfs/archive/d78bcedbd846d856de887741f54c4c0ea43cbbb4.jpg"
         },
         {
+          "id": "https://www.bilibili.com/video/av643950143",
+          "author": "皮肤科教授张堂德",
+          "description": "Tags:科普,知识,医生,健康,医学,荨麻疹,干货分享,皮肤病,毛囊炎,汗疱疹",
+          "link": "https://www.bilibili.com/video/av643950143",
+          "publishedOn": "2022-07-28T17:44:55.000Z",
+          "wordCount": 699,
+          "title": "夏季常见皮肤病，10s告诉你常备哪些药【皮肤科张堂德】",
+          "imageUrl": "http://i2.hdslb.com/bfs/archive/e1aa6fe41c132a56ac6901d427af5f8cb7b4a4fc.jpg"
+        },
+        {
           "id": "https://www.bilibili.com/video/av601391111",
           "author": "赛雷三分钟",
           "description": "最近的天气，热得离谱，真是能把人都给晒化了，搞得大家都不太敢去外面玩。我们这是又碰上“千年一遇”的极端高温了么？\n\n\nTags:天气,夏天,空调,中暑,高温天气,热射病,星海计划,晒化了,暑期热点观察局",
@@ -3802,6 +4362,16 @@
           "wordCount": 598,
           "title": "今年夏天为什么这么热？我们是又碰到“千年一遇”了吗？",
           "imageUrl": "http://i1.hdslb.com/bfs/archive/ca97b4cfe6359bb8a1cd717a30c73394d52f700f.jpg"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av386455719",
+          "author": "不嘚瑟都掉毛",
+          "description": "日本的核废水到底怎么回事\n\n\nTags:万物研究所,核废水,日本",
+          "link": "https://www.bilibili.com/video/av386455719",
+          "publishedOn": "2022-07-28T17:10:49.000Z",
+          "wordCount": 602,
+          "title": "日本的核废水有多可怕",
+          "imageUrl": "http://i1.hdslb.com/bfs/archive/ba51d5c989291f4eaf9dcac71b943030951fbde8.jpg"
         },
         {
           "id": "https://www.bilibili.com/video/av301426221",
@@ -4331,6 +4901,56 @@
       "siteUrl": "https://www.bilibili.com",
       "articles": [
         {
+          "id": "https://www.bilibili.com/video/av598964783",
+          "author": "火柴人AlanBecker",
+          "description": "久等啦！我的世界系列第29集和大家见面啦！感谢大家一直以来的支持！\n\n\nTags:教程,特效,后期,我的世界,火柴人格斗,我的世界动画,火柴人动画,海外达人,火柴人AlanBecker",
+          "link": "https://www.bilibili.com/video/av598964783",
+          "publishedOn": "2022-07-30T21:43:34.000Z",
+          "wordCount": 1336,
+          "title": "火柴人 VS 我的世界系列第二十九集 音符世界（Note Block Universe）",
+          "imageUrl": "http://i1.hdslb.com/bfs/archive/d15c32c55558ac5f7c2254bc91d39a6ea77a42cf.jpg"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av643986011",
+          "author": "程序员felix",
+          "description": "Tags:计算机,图片,学习,编程,爬虫,经验分享,野生技术协会,Python,技能提升营,技能提升营2022第二季",
+          "link": "https://www.bilibili.com/video/av643986011",
+          "publishedOn": "2022-07-30T21:00:43.000Z",
+          "wordCount": 606,
+          "title": "用Python爬取一万张涩图后，我：太刑了吧",
+          "imageUrl": "http://i1.hdslb.com/bfs/archive/ae8bc753ea9be3ed6c8cff6ce9db273ad0615431.jpg"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av983965468",
+          "author": "马格南DD",
+          "description": "-\n\n\nTags:马格南,开箱,盲盒",
+          "link": "https://www.bilibili.com/video/av983965468",
+          "publishedOn": "2022-07-30T19:19:12.000Z",
+          "wordCount": 1114,
+          "title": "买扑克买到破产的男人",
+          "imageUrl": "http://i0.hdslb.com/bfs/archive/e9e844001f01346c022169c4ce51a3bf03be7571.jpg"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av643987302",
+          "author": "踩鸟玩家",
+          "description": "-\n\n\nTags:游戏,玩具,博弈,游戏玩家请回答",
+          "link": "https://www.bilibili.com/video/av643987302",
+          "publishedOn": "2022-07-30T17:40:00.000Z",
+          "wordCount": 1122,
+          "title": "犹太思维棋，这个玩具有点像巴什博弈。",
+          "imageUrl": "http://i2.hdslb.com/bfs/archive/4c9648c5737fb0612970e5b8a13dab4ca7f3ba4f.jpg"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av301443206",
+          "author": "睿智君弹皮筋",
+          "description": "下载地址：\nhttps://yuanqiyinpin.github.io/\n本机架为二次开源软件，优点是占用率滴，不吃电脑配置，上手简单，免费使用\n\n\nTags:声优,软件,伪音,变声器,女装大佬,宿主机架,男变女音,软件应用安利,跟着UP主创作吧（第五期）,女变男音",
+          "link": "https://www.bilibili.com/video/av301443206",
+          "publishedOn": "2022-07-30T15:47:22.000Z",
+          "wordCount": 650,
+          "title": "【变声器】新款小白变声器 无需声卡 附带下载链接 一键切换各种音色",
+          "imageUrl": "http://i1.hdslb.com/bfs/archive/19cffcd5009436b9cb88212882c4abd1c447de4a.jpg"
+        },
+        {
           "id": "https://www.bilibili.com/video/av686412027",
           "author": "中国异形",
           "description": "本期老婆大人出镜！\n\n\nTags:搞笑,光学迷彩,生活小妙招,必剪创作,美国传武,美利坚居合,美式居合,美式传武,美利坚传统武术,技能提升营2022第二季",
@@ -4339,6 +4959,16 @@
           "wordCount": 652,
           "title": "【美国传武】如何灵活的使用美式居合？（第二期）",
           "imageUrl": "http://i1.hdslb.com/bfs/archive/f5962e4790e7bbf86807a9aa1c10705d9573b57d.jpg"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av686466927",
+          "author": "魔杰益智",
+          "description": "眼力大挑战，最后一个太难了，你能挑战成功吗？\n\n\nTags:益智,烧脑,益智游戏,最强大脑,我在B站做UP主,我在B站有话说",
+          "link": "https://www.bilibili.com/video/av686466927",
+          "publishedOn": "2022-07-29T20:36:54.000Z",
+          "wordCount": 1121,
+          "title": "眼力大挑战，最后一个太难了，你能挑战成功吗？",
+          "imageUrl": "http://i0.hdslb.com/bfs/archive/12d0fc474e0cab486a69839611305ba45f20a35c.jpg"
         },
         {
           "id": "https://www.bilibili.com/video/av216488198",
@@ -4361,6 +4991,16 @@
           "imageUrl": "http://i1.hdslb.com/bfs/archive/4d576812edf7cfcd219f10f70002e52087e4aa79.jpg"
         },
         {
+          "id": "https://www.bilibili.com/video/av428968202",
+          "author": "冲呀诗诗",
+          "description": "Tags:知识,平面设计,经验分享,淘宝美工,平面设计师,校园学习,野生技能协会,面试找工作,职业职场,精通PS",
+          "link": "https://www.bilibili.com/video/av428968202",
+          "publishedOn": "2022-07-29T16:19:11.000Z",
+          "wordCount": 598,
+          "title": "当你毕业在简历上写了“精通”PS之后......",
+          "imageUrl": "http://i2.hdslb.com/bfs/archive/e938cecbee3eaa49341bbd3f99b98dc7028ba0f5.jpg"
+        },
+        {
           "id": "https://www.bilibili.com/video/av471455009",
           "author": "火柴人AlanBecker",
           "description": "新作品将于30日上线，敬请期待！\n\n\nTags:自制,3D,教程,特效,视频教程,制作过程,PS教程,经验分享,PHOTOSHOP教程,学习心得",
@@ -4369,6 +5009,16 @@
           "wordCount": 672,
           "title": "如何用Photoshop制作《我的世界》中方块的纹理？",
           "imageUrl": "http://i0.hdslb.com/bfs/archive/1160f902d7556549d4887a0af74d6d047966a922.jpg"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av898911727",
+          "author": "超级战术频道HyperTacTV",
+          "description": "-\n\n\nTags:现代战争,模型,科普,硬核,星海,军事科技,夜视仪,必剪创作,技能提升营,技能提升营2022第二季,暑假狂欢季",
+          "link": "https://www.bilibili.com/video/av898911727",
+          "publishedOn": "2022-07-29T14:00:00.000Z",
+          "wordCount": 609,
+          "title": "国产四目夜视仪，现在什么样了？",
+          "imageUrl": "http://i1.hdslb.com/bfs/archive/e0bc428bacd78e472e16f268e9a547d50e07045b.jpg"
         },
         {
           "id": "https://www.bilibili.com/video/av813948285",
@@ -4409,6 +5059,26 @@
           "wordCount": 590,
           "title": "九色鹿纸牌",
           "imageUrl": "http://i0.hdslb.com/bfs/archive/7b84fd020f8b690134bf94e093a3a5f84276f55b.jpg"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av386419489",
+          "author": "打假侦探社",
+          "description": "-\n\n\nTags:我在B站做UP主,我在B站有话说,科普,伤害,生命,生物,健康",
+          "link": "https://www.bilibili.com/video/av386419489",
+          "publishedOn": "2022-07-28T17:40:42.000Z",
+          "wordCount": 1115,
+          "title": "长期食用“老油”竟然会对人体造成这么大的伤害？",
+          "imageUrl": "http://i0.hdslb.com/bfs/archive/2337db60185ba0658b8bbc885fe1de85483864ca.jpg"
+        },
+        {
+          "id": "https://www.bilibili.com/video/av771451967",
+          "author": "请跟我读我是靓仔",
+          "description": "本套暑假系列教程，会一直更新，UP是个懒人，欢迎大家评论区催更~\n学习交流群：962995716（可领视频中的设计素材软件样机）\n欢迎来群里学习，不懂直接问，每天定期直播，以上内容均来自课堂节选！！！\n\n\nTags:技术宅,PS基础,学习,公开课,PS教程,平面设计,PS教学,野生技术协会,Photoshop教程,系统学习",
+          "link": "https://www.bilibili.com/video/av771451967",
+          "publishedOn": "2022-07-28T15:06:36.000Z",
+          "wordCount": 1159,
+          "title": "【整整600集】中美大佬30天讲完的PS教程，全程干货无废话！学完秒变大神！这还学不会，我退出设计圈！",
+          "imageUrl": "http://i2.hdslb.com/bfs/archive/e4512a3aca3cb41bc1a71432331f127c42456e9d.png"
         },
         {
           "id": "https://www.bilibili.com/video/av258913914",
@@ -4948,6 +5618,26 @@
       "siteUrl": "https://dev.to/top/month",
       "articles": [
         {
+          "id": "https://dev.to/snaka/10-things-i-always-setup-in-git-when-i-prepare-a-new-environment-d99",
+          "author": "Shinji Nakamatsu",
+          "description": "#git #tips",
+          "link": "https://dev.to/snaka/10-things-i-always-setup-in-git-when-i-prepare-a-new-environment-d99",
+          "publishedOn": "2022-07-29T02:02:48.000Z",
+          "wordCount": 3551,
+          "title": "10+ things I always setup in git when I prepare a new environment",
+          "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--edRSoTn_--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/6j29uyhu1j891iaprlx4.jpg"
+        },
+        {
+          "id": "https://dev.to/yuridevat/how-to-create-a-timer-with-react-7b9",
+          "author": "𝕁𝕦𝕝𝕚𝕒 👩🏻‍💻",
+          "description": "#react #tutorial #beginners",
+          "link": "https://dev.to/yuridevat/how-to-create-a-timer-with-react-7b9",
+          "publishedOn": "2022-07-27T10:29:00.000Z",
+          "wordCount": 4255,
+          "title": "How To Create A Timer With React",
+          "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--mYGowm5Y--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/j0jwe97n9nv5pqk1mmmf.png"
+        },
+        {
           "id": "https://dev.to/juliafmorgado/the-ultimate-list-of-css-code-generators-for-web-development-4d1l",
           "author": "Julia Furst Morgado",
           "description": "#css #webdev #programming #productivity",
@@ -5156,16 +5846,6 @@
           "wordCount": 2219,
           "title": "An Approach to Continuous Learning",
           "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--90c-kuMv--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/fe1k0hl9wodl4txkw5mg.jpg"
-        },
-        {
-          "id": "https://dev.to/joaomaranhao/how-i-used-python-to-automate-a-youtube-channel-ph0",
-          "author": "João Maranhão",
-          "description": "#python #programming",
-          "link": "https://dev.to/joaomaranhao/how-i-used-python-to-automate-a-youtube-channel-ph0",
-          "publishedOn": "2022-07-16T18:58:36.000Z",
-          "wordCount": 3130,
-          "title": "How I Used Python to Automate a Youtube Channel",
-          "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--NYYNJlLJ--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/mn6xrbenwiq9lh5bl2k1.jpg"
         }
       ]
     },
@@ -5428,6 +6108,326 @@
       "feedUrl": "https://rsshub.app/v2ex/topics/latest",
       "siteUrl": "https://www.v2ex.com/",
       "articles": [
+        {
+          "id": "869793",
+          "author": "Rebron1900",
+          "description": "Rebron1900: \n具体想实现一键发送一些 http 请求调用 hook 之类的，安卓找了好些软件似乎都不能实现这个功能。",
+          "link": "https://www.v2ex.com/t/869793",
+          "publishedOn": "2022-07-31T09:15:07.000Z",
+          "wordCount": 373,
+          "title": "请问安卓有没有类似 ios 的捷径功能？",
+          "imageUrl": null
+        },
+        {
+          "id": "869791",
+          "author": "punkdead",
+          "description": "punkdead: \n现在做点啥小网站或者小 app 能挣点零花钱呢\n缺钱。。。\n另外也想 实战下 go 语言和前端， 主页是 android 开发",
+          "link": "https://www.v2ex.com/t/869791",
+          "publishedOn": "2022-07-31T08:43:21.000Z",
+          "wordCount": 393,
+          "title": "现在做点啥小网站或者小 app 能挣点零花钱呢",
+          "imageUrl": null
+        },
+        {
+          "id": "869790",
+          "author": "ck19920702",
+          "description": "ck19920702: \n地点\n上海 - 长宁 拼多多\nJD\n岗位职责\n负责公司聊天等核心功能的研发，并不断优化性能体验\n任职要求\n全日制统招本科及以上学历；\n至少一年互联网行业开发经验；\n熟悉 java ，OC ，C++ 等语言，熟悉 android/iOS 平台的开发工具及开发\n具备较强的沟通力、协调及应变能力、逻辑性强；\n工作积极主动，具有较强的抗压能力；\n较好的抗压能力和团队合作意识\n有过 IM 相关开发经验，对 IM 协议，长连接等机制有一定的了解\n工作时长\n之前是 11-11-6.  最近双休（疫情开始 3 月到现在 7.31 号都是双休），但是不知道会不会持续下去。 \n其他\n本部门直接内推，随时跟进情况。  有什么问题可以加我咨询（ v：bW1fa2Fp ）咨询，或者直接发简历到我邮箱\n18942334641@163.com 。",
+          "link": "https://www.v2ex.com/t/869790",
+          "publishedOn": "2022-07-31T08:23:31.000Z",
+          "wordCount": 475,
+          "title": "[上海] - PDD Android 非常缺人",
+          "imageUrl": null
+        },
+        {
+          "id": "869789",
+          "author": "unt",
+          "description": "unt: 究竟什么是 MVC MVVM 架构，百度搜来的答案看腻了，同样的解释看了好几年，V 友们能否从代码实例角度来分析下，哪些代码属于 M ，哪些代码属于 V ，哪些代码属于 VM ，VM 和 C 的区别是什么",
+          "link": "https://www.v2ex.com/t/869789",
+          "publishedOn": "2022-07-31T08:21:50.000Z",
+          "wordCount": 494,
+          "title": "从代码实例角度来分析 MVC 和 MVVM 框架",
+          "imageUrl": null
+        },
+        {
+          "id": "869788",
+          "author": "extiing",
+          "description": "extiing:",
+          "link": "https://www.v2ex.com/t/869788",
+          "publishedOn": "2022-07-31T08:19:03.000Z",
+          "wordCount": 797,
+          "title": "你能够接受这样的分手原因吗？",
+          "imageUrl": null
+        },
+        {
+          "id": "869787",
+          "author": "ChrisFreeMan",
+          "description": "ChrisFreeMan: 之前配置了一套非常好用的 neovim 的编辑环境，后来跑去写 swiftUI 只能硬着头皮用 Xcode ，但是怎么配置都感觉用着不舒服，所以一直在找 vim 的替代方案。Xcode 自带的 vim 模式简直是难用到不行。\n集成方案： https://github.com/xbase-lab/xbase\n依赖： https://github.com/tuist/tuist\n有没有大佬试过了，体验怎么样。\n打算下一个项目试试。",
+          "link": "https://www.v2ex.com/t/869787",
+          "publishedOn": "2022-07-31T08:18:45.000Z",
+          "wordCount": 415,
+          "title": "最近在网上遨游，终于蹲到一个用 neovim 写 swiftUI 看起来比较靠谱的集成解决方案。",
+          "imageUrl": null
+        },
+        {
+          "id": "869784",
+          "author": "lingly02",
+          "description": "lingly02: 文章链接 \nhttps://m.huxiu.com/article/622771.html",
+          "link": "https://www.v2ex.com/t/869784",
+          "publishedOn": "2022-07-31T07:49:51.000Z",
+          "wordCount": 510,
+          "title": "今天看到一篇文章“ 大量工作毫无意义，为什么还在抢着做？”，作为一个 996 的你，这些年到底写了多少毫无意义的代码？",
+          "imageUrl": null
+        },
+        {
+          "id": "869782",
+          "author": "tonli",
+          "description": "tonli: \n朋友们，冲呀！参加第七届立创电赛，完成项目即可获 200 元无门槛券，还有机会瓜分 40 万现金奖励！",
+          "link": "https://www.v2ex.com/t/869782",
+          "publishedOn": "2022-07-31T07:36:39.000Z",
+          "wordCount": 326,
+          "title": "朋友们，冲呀！参加第七届立创电赛，完成项目即可获 200 元无门槛券，还有机会瓜分 40 万现金奖励！",
+          "imageUrl": null
+        },
+        {
+          "id": "869781",
+          "author": "whitedroa",
+          "description": "whitedroa: \n日常工作语言是 Go ，由于项目是微服务，经常需要打开十几个项目，并且来回切换。\n之前使用的是 Goland ，使用体验非常棒，但是由于打开的项目很多，导致内存不够用(电脑是 32g 内存的 mac)，会偶尔卡死。而且项目使用的依赖很多很大，更新依赖后，goland 重新索引非常耗时，而且会导致电脑严重发热、卡顿。\n由于公司提供了开发机，且配置很高(32 核 64g ssd)，最近改用了 vscode +remote ，确实很香，文件和依赖都在开发机上，索引也在开发机，本地只是 gui ，用了之后再也没卡过。但是 remote 下好几有几个 bug ，timeline 不显示。试了下，用 vscode 打开本地 git 项目 timeline 是可以的。\n还有就是有时候智能提示比较卡，输入了之后过几秒才给建议\n有 v 友知道 timeline 怎么解决吗",
+          "link": "https://www.v2ex.com/t/869781",
+          "publishedOn": "2022-07-31T07:36:14.000Z",
+          "wordCount": 500,
+          "title": "VSCode Remote 很香！但是有几个槽点",
+          "imageUrl": null
+        },
+        {
+          "id": "869777",
+          "author": "zhuangzhuang1988",
+          "description": "zhuangzhuang1988: \n掘金搜索 axios 一堆封装相关的\n也有反对的 <真没必要再对 axios 进行过度的封装>\nhttps://juejin.cn/post/7103743662315536392\n我的意见和上面的一样\naxios 只用 必须的中间件 比如刷新 token 和 retry 这样的\n别的都不封装的",
+          "link": "https://www.v2ex.com/t/869777",
+          "publishedOn": "2022-07-31T07:07:23.000Z",
+          "wordCount": 317,
+          "title": "axios 需要不需要封装或者封装的边界是啥?",
+          "imageUrl": null
+        },
+        {
+          "id": "869776",
+          "author": "Caribbeancom",
+          "description": "Caribbeancom: \n首先说明用户主要是喷的戴尔，我不反对用户喷戴尔，我自己也天天喷戴尔垃圾设计，垃圾散热。\n这位用户，通过闲鱼购买机器，详情页与私聊沟通都已经说过了机器无法退货，有问题只能换货。\n收到后首台确实有点问题（我能看出图片有色差），积极协调换货后，表示仍然有问题，然后用户再找戴尔；\n此时新机器照片看不出有问题（用户表示肉眼可以看到有问题），所以戴尔不愿意派单；\n此时用户找到我表示要 315 投诉 工商局投诉戴尔之类的，我说不需要那么麻烦，通过闲鱼购买的投诉也不会受理。我协调戴尔帮你换机就是举手之劳，后来我协调后戴尔再次换机给用户，用户表示不想开盲盒了，于是新收到的机器我转售给了我的朋友，并给用户退款。\n至此我感觉是三赢，用户退机了，我不用整天陪聊了，我朋友低于成本价买到了机器\n但是在 6 月 6 日退款给用户后，然后用户昨天用户发了一个视频：\n视频内容中，喷显示器的部分，我完全没有任何意见，我欢迎任何人喷任何产品，喷的人多了才有改善。\n但是我帮他忙前忙后一两个月协调，在视频中由于我某天回复稍慢，挂我说我装死，然后说我在闲鱼卖东西不提供三包侵犯他的权益，说我偷税漏税，就有点心寒了，同期我在淘宝也上架了这个显示器，价格贵 200 ，有票有三包，不知道是什么特别的缘分让我们相遇在闲鱼。\n视频链接：\nhttps://www.bilibili.com/video/BV1hU4y1v77s?",
+          "link": "https://www.v2ex.com/t/869776",
+          "publishedOn": "2022-07-31T07:03:47.000Z",
+          "wordCount": 351,
+          "title": "有点无语，在闲鱼卖显示器被挂了",
+          "imageUrl": null
+        },
+        {
+          "id": "869775",
+          "author": "lockdona",
+          "description": "lockdona: \n坐标南方，找客户经理拉了一条移动的专线，给了个这样的盒子，我一看这不是光猫吗，跟我家电信的一模一样，安装师傅说就是这样的，别的他也不知道，他测试好丢下一个 IP 和网关让我设置上去就走了\n求鉴定一下会不会给骗了，我找移动去\nhttps://s1.328888.xyz/2022/07/31/Fkmn7.png",
+          "link": "https://www.v2ex.com/t/869775",
+          "publishedOn": "2022-07-31T06:53:03.000Z",
+          "wordCount": 550,
+          "title": "关于专线的疑惑",
+          "imageUrl": null
+        },
+        {
+          "id": "869772",
+          "author": "111qqz",
+          "description": "111qqz: \n刷了 pixel experience plus,流畅度、耗电都很满意\n说两点不足:\n没有小爱同学的 AI 通话功能的，未接电话不知道是干什么的。之前即使不接也可以知道对方意图\n应用双开用的 shelter 。但是工作应用和个人应用的存储空间是分离的，导致屏幕截图没办法直接在工作应用中看到。",
+          "link": "https://www.v2ex.com/t/869772",
+          "publishedOn": "2022-07-31T06:27:48.000Z",
+          "wordCount": 544,
+          "title": "redmi k30 刷了 PE plus, 感觉良好",
+          "imageUrl": null
+        },
+        {
+          "id": "869771",
+          "author": "CoolSpring",
+          "description": "CoolSpring: 背景：\n我在自己的 hobby project 中习惯使用 Tailwind CSS 和 UnoCSS ，觉得开发效率很高，但在工作中需要遵循组内规范使用 Sass 。那么，有没有可能先用原子化 CSS 的写法进行开发，但在 git commit 前用工具转换成 Sass/Less ？\n设想的工作流：\n先把样式统统写在 class 里，然后用一个 CLI 工具转换，或者用一个 VSCode 插件“重构”。得到的结果是源文件中 JSX 或模版里的长串 class 名被替换成单个随机名称（后续按照其用途人工重命名），并生成一份对应的带嵌套层级的 sass/less 文件。\n概括需求：\n想一个英文宣传语就是：Write in \"Atomic CSS\" way, convert to nested CSS before you commit.\n是否已有此类型的工具？如果没有，开发一个有意义和技术上的可能性吗？\n相似但不太一样的方案：\n1. 了解到 Windi CSS 有一个 Compilation Mode https://windicss.org/posts/modes.html#compilation-mode ，能把一串 class 转化为形如“windi-15wa4me”的单个 class 名，但它这个应该是在编译时生成的产物中出现，而我希望在开发时提交组件的源代码到 GitLab 前就做转换。\n2. Tailwind CSS 有 shortcuts ，Sass 有 apply ，但这两者都需要在项目里额外配置 Tailwind CSS ，并且也没那么方便进行“一把梭”了，和这个想法的初衷不符。",
+          "link": "https://www.v2ex.com/t/869771",
+          "publishedOn": "2022-07-31T06:20:01.000Z",
+          "wordCount": 439,
+          "title": "有没有可能在开发时写 Tailwind CSS，在提交代码前转换成带嵌套关系的 Sass？",
+          "imageUrl": null
+        },
+        {
+          "id": "869770",
+          "author": "x500",
+          "description": "x500: \n1 。是本地注册家公司，2 。有人推荐说去山东注册个体工商户，说 2 税全免，超过每年 120w 的，也只收 0.4%手续费。主要是异地，就不知道有啥坑没有，有没有朋友弄过？\n谢谢！",
+          "link": "https://www.v2ex.com/t/869770",
+          "publishedOn": "2022-07-31T06:16:37.000Z",
+          "wordCount": 363,
+          "title": "请教下各位公帐转私帐怎么弄？",
+          "imageUrl": null
+        },
+        {
+          "id": "869769",
+          "author": "mmdsun",
+          "description": "mmdsun: \n请问 PC 旧桌面软件现代化，有哪些方案？\n我这边有不少旧软件（工具类）的 UI 和设计风格都很落后。 \n鉴于 Win7 、Win8 微软都已停止支持，目前大多数设备使用 Win10 及以上的系统。 \n准备把一些旧软件进行改造，UI 和设计风格弄好看点，更好适配系统的风格\n个人是准备用 WinUI2.8 ，XAML Islands 之类的 [参考官方的升级方案] ： \nhttps://docs.microsoft.com/zh-cn/windows/apps/desktop/modernize/\n就是不知道坑多不多，大概要花多久。\n或者有没有其他更好的方案？比如：前端 UI 框架重写？只考虑兼容 Win10 以及以上系统。",
+          "link": "https://www.v2ex.com/t/869769",
+          "publishedOn": "2022-07-31T06:10:45.000Z",
+          "wordCount": 485,
+          "title": "PC 旧桌面软件现代化，有哪些方案？",
+          "imageUrl": null
+        },
+        {
+          "id": "869768",
+          "author": "sayonara7",
+          "description": "sayonara7: \n背景\n手机双卡。主卡（本人实名）用于日常通信与扫码，副卡（家庭号、非本人实名）用于流量与收发快递。前几日副卡收到流调短信\n过程\n坐标成都，人在武侯区与双流区交界，上周确实到到访过成华区，短信内容属实\n疑问\n流调基于什么条件判断，除去健康码与行程码，是否有其他渠道？\n仅副卡收到流调短信，主卡却没有？\n主副卡是否可能已被识别并认定为同一人使用？\n补充\n健康码、行程码全程使用支付宝小程序端，不存在 APP 越权导致隐私泄漏的情况\n主副卡均非成都本地号，但副卡是四川境内号\n猜想\n据了解，行程码基于移动基站定位，两张卡均会在成华区留下记录，但行程码目前是不能定位到具体区县的\n家庭号中其他人没有收到相关短信，说明与实名没有关系",
+          "link": "https://www.v2ex.com/t/869768",
+          "publishedOn": "2022-07-31T06:03:53.000Z",
+          "wordCount": 407,
+          "title": "流量副卡为何会收到流调短信？",
+          "imageUrl": null
+        },
+        {
+          "id": "869767",
+          "author": "cyberpoint",
+          "description": "cyberpoint:",
+          "link": "https://www.v2ex.com/t/869767",
+          "publishedOn": "2022-07-31T05:57:05.000Z",
+          "wordCount": 357,
+          "title": "求求啦，怎么找短租的，日租啊，地区不限。",
+          "imageUrl": null
+        },
+        {
+          "id": "869766",
+          "author": "ttgo",
+          "description": "ttgo: 本以为设置成这个的话，正好可以浏览一下以前去过的地方，结果只是很少几张照片的循环。\n后来发现确实可以手动选，不过总不能手动选择 1000 张照片吧。\n此外，能现实照片的时间地点就好了。",
+          "link": "https://www.v2ex.com/t/869766",
+          "publishedOn": "2022-07-31T05:47:46.000Z",
+          "wordCount": 365,
+          "title": "iOS16 里那个锁屏壁纸的 Photo Shuffle，相片太少了",
+          "imageUrl": null
+        },
+        {
+          "id": "869765",
+          "author": "mokevip",
+          "description": "mokevip: \n参考教程\n系统是 centos7\n主要参考了两个教程\nhttp://www.zzvips.com/article/4671.html\nhttps://blog.csdn.net/qq_21279961/article/details/118567506\n遇到问题\n服务都可以运行，直接在服务器上 curl 百度是可以的，但是谷歌不行，换了一些站点发现好像是强制 https 的无法代理\ncurl www.baidu.com --socks5 127.0.0.1:1080 -U xxx:xxx\n\n再到本地测试就蒙了，time out ，防火墙里端口是已经开放了的，不知道是因为什么\ncurl www.baidu.com --socks5 104.xxx.149.xxx:1080 -U xxx:xxx\n\n看了进程列表，发现每一个挂起的请求对应了一个 SYN_RECV\n大概是因为客户端没有回应ACK?\n但是又不太像，手机和电脑试了都不行\n\n求解答\n这个问题昨晚熬夜到早上 7 点多，自己一个人纠结查了很多东西，但是迫于储备知识有限不知道怎么解决，睡觉睡的都不安稳，脑子里全是这个问题，一醒来就向大家求助了\n主要问题就是两个\nHTTPS 链接问题\n外部无法链接问题",
+          "link": "https://www.v2ex.com/t/869765",
+          "publishedOn": "2022-07-31T05:26:17.000Z",
+          "wordCount": 399,
+          "title": "Linux 创建 socket 节点连不上求助一下各位",
+          "imageUrl": null
+        },
+        {
+          "id": "869764",
+          "author": "ihipop",
+          "description": "ihipop: \nhttps://video.twimg.com/ext_tw_video/1553563454752956416/pu/vid/1280x590/IInKFg-Mj5FzN8G5.mp4?tag=12",
+          "link": "https://www.v2ex.com/t/869764",
+          "publishedOn": "2022-07-31T05:09:38.000Z",
+          "wordCount": 584,
+          "title": "关于 Python 和 Matlab，各位程序员怎么看？",
+          "imageUrl": null
+        },
+        {
+          "id": "869762",
+          "author": "xieqiqiang00",
+          "description": "xieqiqiang00: \n隐藏 V2EX 标志和描述，模糊自己的用户名和密码\n要是被公司同事发现自己在 v2 上发的东西不太爽\n\n#Logo,\n#Main .breadcrumb>:first-child,\n#Main .breadcrumb>:nth-child(2),\n#Main .header>:nth-child(2),\n#Main .header>:nth-child(3) {\ndisplay: none;\n}\n#Rightbar .box>.cell:first-child>table:first-child tbody td:first-child {\nfilter: contrast(0%);\n}\n#Top .tools>*:nth-child(2),\n#Rightbar .box>.cell:first-child table:first-child tbody tr:first-child {\nfilter: blur(5px);\n}",
+          "link": "https://www.v2ex.com/t/869762",
+          "publishedOn": "2022-07-31T05:00:46.000Z",
+          "wordCount": 369,
+          "title": "分享一下自己的 V2EX 自定义 CSS",
+          "imageUrl": null
+        },
+        {
+          "id": "869758",
+          "author": "razios",
+          "description": "razios: 新海诚作品《玲芽户缔》的第二个正式预告片\n主题曲目前 spotify 可以听到完整版了。 钢琴部分和人声的吟唱结合低音部分如果在音箱上听还是震撼的。\n《新海诚 新电影《铃芽户缔》预告片公开》 https://c.y.qq.com/base/fcgi-bin/u?__=AMGNzvRHfLum",
+          "link": "https://www.v2ex.com/t/869758",
+          "publishedOn": "2022-07-31T04:34:15.000Z",
+          "wordCount": 348,
+          "title": "玲芽户缔",
+          "imageUrl": null
+        },
+        {
+          "id": "869757",
+          "author": "shot",
+          "description": "shot: \n跨城出行，2 大人 2 儿童。全程 215 公里，耗时 223 分钟，平台支付 446 - 20 元，线下支付高速路费 88 元。\n预约后三分钟内接单，提前 25 分钟到小区门口等待\n上车后要求线下交易且加价至 700 元\n在高德平台投诉之，补偿 20 元优惠券\n立即接单\n上车后要求加价「返程空驶费」 200 元\n下车立即电话投诉之，给予调换车辆服务\n接单后声称需中途服务区充电 30~60 分钟\n担心是据单托辞，反复确认后表示充电休息没问题\n一路平稳驾驶相安无事，中途服务区休息充电约 70 分钟\n高铁耗时约 210 分钟：在途 81 + 候车 30 + 打车来回高铁站 60 + 进出站 40\n高铁耗资约 400 元：高铁票 106 × 3 + 打车来回 80\n提前一天尝试预约顺风车，平台报价 300 元，但无人接单。\n滴滴「一口价」 510 元，未包含路桥费。\n感慨：\n选择跨城打车，老人小孩能少一些折腾；但极大提高了出行的不确定性，要避坑心智负担很大。\n网约车司机果然很多是过去的黑车司机换层皮，看我拖家带口的好欺负呢。\n所以滴滴罚款时我旗帜鲜明支持网约车出行平台，技术进步促进社会进步。\n网约车平台还是缺乏有质量的竞争，滴滴赢者通吃，后来者互相摆烂。\n不了解跨城打车机制，针对这种低频但高风险需求，「抢单」和「派单」孰优？如何计算价格能使乘客司机平台三赢？",
+          "link": "https://www.v2ex.com/t/869757",
+          "publishedOn": "2022-07-31T04:32:46.000Z",
+          "wordCount": 732,
+          "title": "高德跨城打车体验：司机黑车度高，平台制约不力？",
+          "imageUrl": null
+        },
+        {
+          "id": "869756",
+          "author": "xieqiqiang00",
+          "description": "xieqiqiang00: \n把公司项目和自己写的发布的公开仓库进行高度耦合\n这样以后就算离职也可以远程恶心人\n在 package.json 里版本号写 major version ，要是接盘侠 重装项目 就会更新到我发布最新的版本",
+          "link": "https://www.v2ex.com/t/869756",
+          "publishedOn": "2022-07-31T04:25:58.000Z",
+          "wordCount": 411,
+          "title": "你们有没有在公司项目里引入过自己发布的库？",
+          "imageUrl": null
+        },
+        {
+          "id": "869754",
+          "author": "Apple2023",
+          "description": "Apple2023: \nhttps://tp.wjx.top/vm/OKJAFqz.aspx\n进行投票，个人觉得目前来说高德更胜一筹",
+          "link": "https://www.v2ex.com/t/869754",
+          "publishedOn": "2022-07-31T04:19:15.000Z",
+          "wordCount": 386,
+          "title": "对 ios 高德地图的一些思考",
+          "imageUrl": null
+        },
+        {
+          "id": "869751",
+          "author": "dandycheung",
+          "description": "dandycheung: 看有人拆了屏幕只玩儿下半身，绝对有趣，而且没怎么拆过近些年的苹果本，正好看同城有个哥们儿出，就去搞回来了。\n\n2015 年中的 15 吋，16GB+256GB 。成色还不错，一处轻微磕碰，底壳一处划痕。在合盖时候键盘上有东西没拿走，把屏幕垫坏了，有大约两厘米宽的黑竖条无法显示内容。\n\n买了个五角螺丝刀拆开后盖清了清灰，应该是全原装。升级到最新系统，也还比较流畅。\n\n现在问题来了，能用它干点啥呢？屏幕要不要拆掉呢，似乎多半拉也能凑合用，显示效果其实还挺不错的。哈哈。",
+          "link": "https://www.v2ex.com/t/869751",
+          "publishedOn": "2022-07-31T04:07:00.000Z",
+          "wordCount": 399,
+          "title": "头脑发热，买了一台老 MacBook Pro",
+          "imageUrl": null
+        },
+        {
+          "id": "869750",
+          "author": "supergi",
+          "description": "supergi: \n用 ps -lp <pid> 查看进程 PRI 值。\nPRI 值越低，优先级越高。所以，后台进程应该降低优先级，来省电；前台进程应该提高优先级，来提升流畅度。\n但是，以微信为例，它长期在后台运行的进程 PRI 值都是 4 ，打开窗口后 PRI 值变为 55 ，关闭窗口后变为 61.为什么它会有 PRI 为 4 的时候？这不符合常理呀。从 55 变为 61 倒是符合降低优先级来省电的理论。此外，NICE 值全程是 0.",
+          "link": "https://www.v2ex.com/t/869750",
+          "publishedOn": "2022-07-31T04:07:00.000Z",
+          "wordCount": 380,
+          "title": "macOS 进程优先级的“不合理”之处",
+          "imageUrl": null
+        },
+        {
+          "id": "869748",
+          "author": "shelken",
+          "description": "shelken: 哪个区下载音乐比较全？如果购买音乐后下载下来的音乐还有数字版权吗？还有什么购买音乐的建议？例如其他平台推荐啥的？主要因为最近想支持一些动漫的 op 和 ed 。",
+          "link": "https://www.v2ex.com/t/869748",
+          "publishedOn": "2022-07-31T03:44:12.000Z",
+          "wordCount": 362,
+          "title": "iTunes 音乐购买问题",
+          "imageUrl": null
+        },
+        {
+          "id": "869746",
+          "author": "YSLucida",
+          "description": "YSLucida: 本人毫无移动端应用的开发经验，android iOS 都没有。平时主要是桌面端开发。由于现在需要快速支持 iOS SDK 专属的一些特性，原有的代码是 C++。也就是想通过 C++来包装 iOS SDK 的一些接口。这个 SDK 有 objective-c 和 swift 两种接口，我大概看了一下 objective-c 和 c++是比较好交互的。\n第一个问题：想问一下 c++和 swift 在跨语言调用上有没有最佳实践方案？或者说我这种需求是不是直接用 objective-c 来做？\n下面两个问题的前提都是想在前期免去学习 objc 和 swift 语言以及相应 SDK 的成本，只是想先把核心跑起来，在能跑起来的前提下再学 SDK 也不迟。\n第二个问题：由于想先快速实现一个原型 app 用于测试，一个 iOS 应用能不能用纯 C++写？其实这个测试应用不需要多么复杂的功能，只需要能运行最终调用一下 SDK 的一些 api 就行了，哪怕交互的部分不上 UI 先硬编码也行。就像 windows 下的控制台应用一样。\n第三个问题：由于集成这个功能需要访问文件系统，也就是需要像在桌面端打开某个路径下某个文件。大概了解了一下，iOS 也是 POSIX 兼容，目前打算如果先用 C++实现的话，可以调 posix 兼容的 fopen 等来暂时应对，不过据了解好像由于 iOS 的 app 是运行在沙箱环境里的，实际运行的时候 fopen 是打不开的。所以有没有办法暂时回避这个问题？这个 app 不发行，只用于在自己的手机上测试，能不能在不越狱的情况下搞定这个问题？\n由于本人在这方面的经验为零，所以有些问题可能不专业，有问题的地方请指正。",
+          "link": "https://www.v2ex.com/t/869746",
+          "publishedOn": "2022-07-31T03:38:58.000Z",
+          "wordCount": 721,
+          "title": "最近可能要涉及到一些 iOS 开发，想请教各位老司机一些基本的 iOS 开发问题。",
+          "imageUrl": null
+        },
+        {
+          "id": "869745",
+          "author": "Lnz",
+          "description": "Lnz: \n最近为了缓解肩颈，把笔记本用支架架了起来，日常使用外接键盘\n进入一些网站需要自动填充密码时，需要 Touch ID 认证，这时需要把手抬起来去够我架的比较高的笔记本的 power 键，而进入系统设置的 passwords 页面时，可以使用手表双击进行认证，请问是否有办法设置在网页自动填充密码时也使用手表进行双击认证",
+          "link": "https://www.v2ex.com/t/869745",
+          "publishedOn": "2022-07-31T03:20:42.000Z",
+          "wordCount": 375,
+          "title": "关于 macOS 密码填充时的自动输入问题",
+          "imageUrl": null
+        },
+        {
+          "id": "869744",
+          "author": "xctcc",
+          "description": "xctcc: \n刚重装完 win10 ，系统也把所有补丁都更新了\nchrome 打开网页提示这个，系统时间没错，很多 https 网页都是这个提示\n用 google 找解决方法。。。搜出来的网页打开也提示整个，无限套娃，难道还要再重装一次？😅\n您的连接不是私密连接\n攻击者可能会试图从 pan.baidu.com 窃取您的信息（例如：密码、通讯内容或信用卡信息）。了解详情\nNET::ERR_CERT_REVOKED\n如果您想获得 Chrome 最高级别的安全保护，请开启增强型保护\npan.baidu.com 通常会使用加密技术来保护您的信息。Chrome 此次尝试连接到 pan.baidu.com 时，该网站发回了异常的错误凭据。这可能是因为有攻击者在试图冒充 pan.baidu.com ，或者 Wi-Fi 登录屏幕中断了此次连接。请放心，您的信息仍然是安全的，因为 Chrome 尚未进行任何数据交换便停止了连接。\n您目前无法访问 pan.baidu.com ，因为此证书已被撤消。网络错误和攻击行为通常是暂时的，因此，此网页稍后可能会恢复正常。",
+          "link": "https://www.v2ex.com/t/869744",
+          "publishedOn": "2022-07-31T03:03:55.000Z",
+          "wordCount": 511,
+          "title": "刚重装完 win10，打开网站 SSL 都不安全是怎么回事",
+          "imageUrl": null
+        },
         {
           "id": "869658",
           "author": "sijiruchun",
@@ -7236,6 +8236,16 @@
       "siteUrl": "https://juejin.im/android?sort=weekly_hottest",
       "articles": [
         {
+          "id": "https://juejin.cn/post/7125738805159542814",
+          "author": "张风捷特烈",
+          "description": "theme: cyanosis\n携手创作，共同成长！这是我参与「掘金日新计划 · 8 月更文挑战」的第 1 天，点击查看活动详情\n0. 前言\n之前写过一篇 《[-NDK 导引篇 -] 在NDK开发之前你应知道的东西》 介绍了在进入 NDK 学习之前，如何摆正自己的角色。时隔两年，NDK 系列文章开始填坑，在上一篇 《 NDK 是什么 | FFmpeg 5.0 编译 so 库》 中，介绍了 NDK 的概念，以及其作用。\n正所谓，工欲善其事必先利其器，接下来将用 2~3 篇来系统介绍一下 CMake 及 CMakeLists.txt 的语法。CMake 这块知识是比较独立的，不止是 Android NDK 项目，一般的 C++ 项目也可以通过 CMake 进行构建。为了更具有一般性，将在 Linux 环境中，通过 C++ 项目来介绍 CMake 的相关知识，当然这一切也可以用于 Android NDK 项目中。\nCMake 本质上是一个 编译工具，其最终目的是方便地生成可执行文件或共享库。编译的过程和项目的配置，由 CMakeLists.txt 文件负责定义。这很像 gradle 构建工具和 build.gradle 文件之间的关系，前者是可执行文件，后者是配置定义。\n既然 cmake 是一个工具，在使用它之前，首先要拥有它。一般 linux 环境都会有 CMake , 如果是 Windows 环境，在官网下载 即可。在终端输入如下命令，可以查看版本号，有输出表示环境正常：\n---> cmake --version\ncmake version 3.16.3\n\n1. 初识\n使用 Clion 创建的 c++ 项目，默认通过 CMake 进行构建管理。可以看出其中有两个文件和一个文件夹，main.cpp 是源码文件，CMakeLists.txt 是项目的配置文件。另外说明一点，这里 …",
+          "link": "https://juejin.cn/post/7125738805159542814",
+          "publishedOn": "2022-07-29T02:26:58.000Z",
+          "wordCount": 2036,
+          "title": "Android NDK 开发 | CMake 使用手册 - 初见篇",
+          "imageUrl": null
+        },
+        {
           "id": "https://juejin.cn/post/7125338583959306248",
           "author": "彭旭锐",
           "description": "theme: jzman\n携手创作，共同成长！这是我参与「掘金日新计划 · 8 月更文挑战」的第2天，点击查看活动详情\n请点赞关注，你的支持对我意义重大 👍 👍\n🔥 Hi，我是小彭。本文已收录到 GitHub · Android-NoteBook 中。这里有 Android 进阶成长知识体系，有志同道合的朋友，关注公众号 [彭旭锐] 带你建立核心竞争力。\n前言\n在 Android 生态中主要有 C/C++、Java、Kotlin 三种语言 ，它们的关系不是替换而是互补。其中，C/C++ 的语境是算法和高性能，Java 的语境是平台无关和内存管理，而 Kotlin 则融合了多种语言中的优秀特性，带来了一种更现代化的编程方式；\nJNI 是实现 Java 代码与 C/C++ 代码交互的特性， 思考一个问题 —— Java 虚拟机是如何实现两种毫不相干的语言的交互的呢？ 今天，我们来全面总结 JNI 开发知识框架，为 NDK 开发打下基础。本文部分演示代码可以从 DemoHall·HelloJni 下载查看。\n这篇文章是 NDK 系列文章第 5 篇，专栏文章列表：\n一、语言基础：\n1、NDK 学习路线：怎么学 & 我的经验\n2、C 语言基础\n3、C ++ 语言基础\n4、C/C++ 编译过程：从源码到程序运行\n二、NDK 开发：\n1、JNI 基础：Java 与 Native 交互（本文）\n2、注册 JNI 函数：静态注册 & 动态注册\n3、NDK 基础：ndk-build & CMake\n4、so 文件加载过程分析：理解 Android 中 loadLibrary() 的执行流程\n5、so 文件适配 64 位架构：Gradle 插件一键检索未适配项\n6、so 文件动态化：动态下载\n7、so 文件体积优化：文件精简\n三、基础理论\n1、视频基础理论\n2、音频基础理论\n3、H.264…",
@@ -7739,6 +8749,106 @@
       "feedUrl": "https://www.theverge.com/rss/index.xml",
       "siteUrl": "https://www.theverge.com/",
       "articles": [
+        {
+          "id": "https://www.theverge.com/2022/7/30/23285371/netflix-sues-creators-unofficial-bridgerton-musical-emily-bear-abigail-barlow",
+          "author": null,
+          "description": "Image: Liam Daniel / Netflix\n    \n\n  \nNetflix is suing Abigail Barlow and Emily Bear, the duo behind The Unofficial Bridgerton Musical over copyright infringement, as first reported by Deadline. The streaming giant filed the complaint in a Washington, DC district court just days after Barlow and Bear held a live, sold-out show dedicated to their Bridgerton-inspired album.\nAfter Bridgerton’s 2020 debut, Barlow and Bear began creating music based on the Netflix original series and promoting the endeavor on TikTok, where it quickly gained popularity. As fans requested more content, Barlow and Bear soon had enough to create a 15-song album that went on to win a Grammy in April, a first for music originating on TikTok. On July 26th, Barlow and Bear held a concert at the Kennedy...\nContinue reading…",
+          "link": "https://www.theverge.com/2022/7/30/23285371/netflix-sues-creators-unofficial-bridgerton-musical-emily-bear-abigail-barlow",
+          "publishedOn": "2022-07-30T22:59:39.000Z",
+          "wordCount": 1856,
+          "title": "Netflix sues creators behind The Unofficial Bridgerton Musical following sold-out show",
+          "imageUrl": "https://cdn.vox-cdn.com/thumbor/qp_vr_NaTZRW0swhJNX6G8iR7YE=/0x260:3600x2145/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/22245162/BRIDGERTON_102_Unit_02026R.jpg"
+        },
+        {
+          "id": "https://www.theverge.com/2022/7/30/23285239/china-uncontrolled-rocket-crashes-down-indian-ocean-long-march-5b-borneo",
+          "author": null,
+          "description": "A Long March 5B rocket with the Wentian lab module lifts off from the Wenchang Space Launch Site. | Photo by Yang Guanyu/Xinhua via Getty Images\n    \n\n  \nChina’s uncontrolled Long March 5B rocket reentered the Earth’s atmosphere over the Indian Ocean, landing somewhere near Sarawak, the Malaysian state on the island of Borneo. \nThe US Space Command confirmed the rocket’s reentry at 12:45PM ET, but it remains unclear where its debris landed. In a translated post on Weibo, China’s Manned Space Agency said the rocket reentered near the same area, and that most of it burned up on its way down.\nUncertainty about where the rocket would land rippled across the globe\nOn July 24th, China used a Long March 5B rocket to launch a lab module to its unfinished Tiangong space station. Unlike most rockets, the Long March 5B thrusts its first stage into orbit when delivering its payload. This piece, which...\nContinue reading…",
+          "link": "https://www.theverge.com/2022/7/30/23285239/china-uncontrolled-rocket-crashes-down-indian-ocean-long-march-5b-borneo",
+          "publishedOn": "2022-07-30T20:42:50.000Z",
+          "wordCount": 1704,
+          "title": "China’s uncontrolled rocket crashes down over the Indian Ocean",
+          "imageUrl": "https://cdn.vox-cdn.com/thumbor/QGkFPtj1vF8BIIwmvv5C2wLrOPE=/0x159:3264x1868/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/23912116/1242098231.jpg"
+        },
+        {
+          "id": "https://www.theverge.com/2022/7/30/23285091/indonesia-bans-access-steam-epic-games-paypal-yahoo",
+          "author": null,
+          "description": "Illustration by Alex Castro / The Verge\n    \n\n  \nThe Indonesian government has blocked access to a range of online services, including Steam, Epic Games, PayPal, and Yahoo after the companies failed to comply with a new requirement related to the country’s restrictive content moderation laws, as reported earlier by Reuters. \nIn line with the rules, companies deemed “Private Electronic System Providers” must register with the government’s database to operate in the country, or otherwise face a nationwide ban. Indonesia gave companies until July 27th to comply and has since banned those that haven’t. \nThe requirement is part of an overarching law, called MR5\nThe requirement is part of an overarching law, called MR5, which was first introduced in 2020. As noted by Reuters, the laws give...\nContinue reading…",
+          "link": "https://www.theverge.com/2022/7/30/23285091/indonesia-bans-access-steam-epic-games-paypal-yahoo",
+          "publishedOn": "2022-07-30T18:29:21.000Z",
+          "wordCount": 1655,
+          "title": "Indonesia bans access to Steam, Epic Games, PayPal, and more",
+          "imageUrl": "https://cdn.vox-cdn.com/thumbor/UjLcQjas-Ltb_kcBiRrfIQEA-vw=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/10817781/acastro_180509_1777_steam_0002.jpg"
+        },
+        {
+          "id": "https://www.theverge.com/2022/7/30/23278192/google-pixel-2-active-edge-squeeze-sides-button-control",
+          "author": null,
+          "description": "Putting essential features at your fingertips is good, actually. | Photo by Amelia Holowaty Krales / The Verge\n    \n\n  \nThe Pixel 2 is an almost five-year-old phone, but it introduced a feature that I miss more and more with each passing year. It was called Active Edge, and it let you summon Google Assistant just by giving your phone a squeeze. In some ways, it’s an unusual idea. But it effectively gave you something sorely lacking on modern phones: a way to physically interact with the phone to just get something done.\nLooking at the sides of the Pixel 2 and 2 XL, you won’t see anything to indicate that you’re holding anything special. Sure, there’s a power button and volume rocker, but otherwise, the sides are sparse. Give the phone’s bare edges a good squeeze, though, and a subtle vibration and animation will play, as Google Assistant pops up from the...\nContinue reading…",
+          "link": "https://www.theverge.com/2022/7/30/23278192/google-pixel-2-active-edge-squeeze-sides-button-control",
+          "publishedOn": "2022-07-30T16:00:00.000Z",
+          "wordCount": 2679,
+          "title": "The Google Pixel’s squeeze for assistant was a button without a button",
+          "imageUrl": "https://cdn.vox-cdn.com/thumbor/_Lz2xPJ-fxUTyXrfTCMc_FwW2fU=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/23905793/akrales_220727_5337_0019.jpg"
+        },
+        {
+          "id": "https://www.theverge.com/2022/7/30/23284432/google-doodle-multiplayer-game-petanque",
+          "author": null,
+          "description": "A screenshot from Google’s pétanque Doodle. | Screenshot by Jay Peters / The Verge\n    \n\n  \nGoogle has a delightful new multiplayer Doodle that lets you play a game of pétanque online. If you haven’t heard of pétanque — I hadn’t before writing this article — it’s a game that’s kind of like bocce ball.\nThe goal of pétanque is to throw your ball (the boule) as close as you can to a little ball (the cochonnet) on the playing field in front of you. On your computer, you’ll “throw” the ball by clicking on the boule and dragging back with your mouse to slingshot it forward; on a phone, you’ll toss the boule with your thumb (kind of like throwing a Poké Ball in Pokémon Go). You get points for having more boules close to the cochonnet than your opponent, and whoever has the most points after three rounds wins. Google has a good...\nContinue reading…",
+          "link": "https://www.theverge.com/2022/7/30/23284432/google-doodle-multiplayer-game-petanque",
+          "publishedOn": "2022-07-30T16:00:00.000Z",
+          "wordCount": 1555,
+          "title": "Google’s latest multiplayer Doodle lets you play a round of pétanque with your friends",
+          "imageUrl": "https://cdn.vox-cdn.com/thumbor/I3fChwUaNy3S3udvk1C2ZW9z0wI=/0x78:1168x690/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/23910965/Screen_Shot_2022_07_29_at_3.20.37_PM.png"
+        },
+        {
+          "id": "https://www.theverge.com/2022/7/30/23284992/apple-pay-compatible-edge-chrome-firefox-ios-16-beta-browsers-safari",
+          "author": null,
+          "description": "Photo by Victoria Song / The Verge\n    \n\n  \nApple Pay could finally be compatible with Microsoft Edge, Google Chrome, and Mozilla Firefox in iOS 16. MacRumors contributor Steve Moser found that Apple Pay works with Edge and Chrome in the iOS 16 beta 4, and shared his findings on Twitter.\nMoser’s screenshots show a “Continue with Apple Pay” option on Apple’s checkout page when using Edge. Apple Pay only works in Safari on iOS 15 and older, preventing you from using any other browser if you want to pay with Apple Pay when shopping on the web.\nOn the latest iOS 16 beta Apple Pay works in Edge, Chrome and I assume any third party browser. On iOS 15 Apple Pay only works in Safari. pic.twitter.com/x7zV5xCuiC\n— Steve Moser (@SteveMoser) July 30, 2022\n\n\n\nAlthough Moser doesn’t mention...\nContinue reading…",
+          "link": "https://www.theverge.com/2022/7/30/23284992/apple-pay-compatible-edge-chrome-firefox-ios-16-beta-browsers-safari",
+          "publishedOn": "2022-07-30T15:48:38.000Z",
+          "wordCount": 1640,
+          "title": "Apple Pay may finally work on Chrome, Edge, and Firefox in iOS 16",
+          "imageUrl": "https://cdn.vox-cdn.com/thumbor/GuVUE5HitecTzcyEIVhKf0qvWsg=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/23588149/IMG_0207.jpg"
+        },
+        {
+          "id": "https://www.theverge.com/good-deals/2022/7/30/23283710/amazon-smart-thermostat-echo-dot-show-apple-macbook-pro-14-sonos-roam-speaker-deal-sale",
+          "author": null,
+          "description": "Amazon’s budget-friendly Smart Thermostat packs plenty of smarts for a mere $41.99. | Photo by Jennifer Pattison Tuohy / The Verge\n    \n\n  \nAmazon Prime Day is back, baby! OK, maybe not technically speaking, but so many Amazon devices are currently discounted at Best Buy and other retailers that it's giving us a major sense of deja vu. Right now, for example, you can buy Amazon’s excellent Smart Thermostat at Best Buy and Target for just $41.99 ($18 off) — a record low set during Prime Day. \nThe budget-friendly thermostat will mesh with most decor, and can even learn and adapt to your habits like more expensive options. Be aware, however, that you can’t integrate the device with voice assistants beyond Alexa, and there are no native temperature sensors. Still, if those caveats don’t bother you, Amazon’s Smart Thermostat is a great option to consider, one that could...\nContinue reading…",
+          "link": "https://www.theverge.com/good-deals/2022/7/30/23283710/amazon-smart-thermostat-echo-dot-show-apple-macbook-pro-14-sonos-roam-speaker-deal-sale",
+          "publishedOn": "2022-07-30T15:00:23.000Z",
+          "wordCount": 2859,
+          "title": "Amazon’s stunner of a smart thermostat is on sale for its best price to date",
+          "imageUrl": "https://cdn.vox-cdn.com/thumbor/F-WtggoguniUwTY2RC5NaFRy3aY=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/23019741/jtuohy_211116_4885_0013.jpg"
+        },
+        {
+          "id": "https://www.theverge.com/23282846/iphone-gaming-subscriptions-apple-arcade-netflix",
+          "author": null,
+          "description": "Into the Breach\n    \n\n  \nOnce upon a time, my smartphone doubled as my most-used gaming platform. It’s hard to believe now, but there was once a period when app stores felt like a new frontier, and game developers had a blast experimenting with a little touchscreen rectangle that you always had in your pocket. Then the economics changed. Games slowly got cheaper before eventually becoming free altogether. New releases had to decide between a dwindling audience for premium games or saddling their game with in-app purchases. Things became dire. But lately, I’ve been having fun with my phone again — and it’s due almost entirely to subscription services.\nI came to this realization recently when I switched from Android to an iPhone and started loading my new gadget...\nContinue reading…",
+          "link": "https://www.theverge.com/23282846/iphone-gaming-subscriptions-apple-arcade-netflix",
+          "publishedOn": "2022-07-30T15:00:00.000Z",
+          "wordCount": 1981,
+          "title": "Subscriptions have made gaming on an iPhone fun again",
+          "imageUrl": "https://cdn.vox-cdn.com/thumbor/iCDaj982JALxrWCo3lEp6n7guGE=/163x0:2615x1284/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/23907742/mobile_2778x1284__1_.png"
+        },
+        {
+          "id": "https://www.theverge.com/23282855/beats-fit-pro-wireless-earbuds-running",
+          "author": null,
+          "description": "This is the version I bought, and I love them so freakin’ much. | Photo by Chris Welch / The Verge\n    \n\n  \nOne truth about me as a runner is that I need my jams. No jams, no run. I have meticulously curated playlists where the bass drops are strategically timed to gas me up when I lose steam. Aside from my sneakers, my earbuds are the most important piece of running tech I own. And yet, my decade-long search for the perfect pair only just ended a few weeks ago. \nBehold, the beautiful, purplicious Beats Fit Pro.\nTo understand why I’m gaga for these buds, you need to know about the headphones that didn’t make the cut. (Don’t worry, I’ll stick to the highlights and spare you a Dickensian-length novel recounting the dozens of earbuds that have failed me in my 10-year running journey.)\nEarbuds with superior sound — like the Bose SoundSport — are...\nContinue reading…",
+          "link": "https://www.theverge.com/23282855/beats-fit-pro-wireless-earbuds-running",
+          "publishedOn": "2022-07-30T14:00:00.000Z",
+          "wordCount": 2327,
+          "title": "The Beats Fit Pro are the best running earbuds I’ve ever had",
+          "imageUrl": "https://cdn.vox-cdn.com/thumbor/H9sgiJXjwH6_Oe9kbf8DVHjUMVg=/0x147:2040x1215/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/22973267/DSCF6021_Edited_2.JPG"
+        },
+        {
+          "id": "https://www.theverge.com/23283994/lenovo-smart-clock-essential-with-alexa-review",
+          "author": null,
+          "description": "Your kid might like it, but you probably won’t\nContinue reading…",
+          "link": "https://www.theverge.com/23283994/lenovo-smart-clock-essential-with-alexa-review",
+          "publishedOn": "2022-07-30T13:00:00.000Z",
+          "wordCount": 3223,
+          "title": "Lenovo Smart Clock Essential with Alexa review: not essential at all",
+          "imageUrl": "https://cdn.vox-cdn.com/thumbor/6KJVCQW9qnQW-rqAjmkMemouFPA=/0x45:2040x1113/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/23903032/jtuohy_220725_5347_0002.jpg"
+        },
         {
           "id": "https://www.theverge.com/2022/7/29/23284543/uber-driver-app-pay-information-trip-radar",
           "author": null,
@@ -8246,6 +9356,26 @@
       "feedUrl": "https://arstechnica.com/feed/",
       "siteUrl": "https://arstechnica.com",
       "articles": [
+        {
+          "id": "https://arstechnica.com/?p=1870361",
+          "author": "Jeff Dunn",
+          "description": "Dealmaster also has discounts on the Google Pixel 6a, Switch Lite, and Apple TV 4K.",
+          "link": "https://arstechnica.com/?p=1870361",
+          "publishedOn": "2022-07-30T15:33:22.000Z",
+          "wordCount": 2703,
+          "title": "The weekend’s best deals: Kindle Unlimited, Nintendo Switch games, and more",
+          "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2022/07/dealmaster073022-760x380.jpg"
+        },
+        {
+          "id": "https://arstechnica.com/?p=1861074",
+          "author": "Corey Gaskin",
+          "description": "The impending launch of watchOS 9 in the fall shakes things up a bit.",
+          "link": "https://arstechnica.com/?p=1861074",
+          "publishedOn": "2022-07-30T11:15:24.000Z",
+          "wordCount": 1905,
+          "title": "Apple Watch buying guide: Which wearable is best for you?",
+          "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2021/06/Apple-Watch-Series-6-Review-1-800x534-760x380.jpg"
+        },
         {
           "id": "https://arstechnica.com/?p=1869910",
           "author": "K.E.D. Coan",
@@ -9348,6 +10478,66 @@
       "siteUrl": "https://www.wired.com",
       "articles": [
         {
+          "id": "5a8f727d213ac83aca7f0a36",
+          "author": "Julian Chokkattu",
+          "description": "There’s little reason to pay top dollar for a smartphone. These iPhones and Android devices—ranging from $150 to $500—stood up to WIRED’s testing.",
+          "link": "https://www.wired.com/story/best-cheap-phones/",
+          "publishedOn": "2022-07-30T13:00:00.000Z",
+          "wordCount": 29583,
+          "title": "The Best Cheap Phones for Almost Every Budget",
+          "imageUrl": "https://media.wired.com/photos/623a41dbc61ae84579f1afce/191:100/w_1280,c_limit/Gear_Google-Pixel-5a-5G-SOURCE-Google(center).jpg"
+        },
+        {
+          "id": "62e41ebddf99166348c7df53",
+          "author": "Boone Ashworth",
+          "description": "Plus: The continued TikTokification of absolutely everything.",
+          "link": "https://www.wired.com/story/google-maps-adds-more-bike-directions/",
+          "publishedOn": "2022-07-30T13:00:00.000Z",
+          "wordCount": 17635,
+          "title": "Google Maps Gets More Bike-Friendly",
+          "imageUrl": "https://media.wired.com/photos/62e432be69d8da74ff881b72/191:100/w_1280,c_limit/Google-Maps-Bike-Friendly-Gear-GettyImages-1328345821.jpg"
+        },
+        {
+          "id": "62e0f46e7a001043e7932443",
+          "author": "Simon Hill",
+          "description": "If you're buying games or services for a family, this subscription service is worth a look. We break down the cost, features, and highlights.",
+          "link": "https://www.wired.com/story/what-is-google-play-pass/",
+          "publishedOn": "2022-07-30T12:00:00.000Z",
+          "wordCount": 17810,
+          "title": "What Is Google Play Pass? Should You Subscribe?",
+          "imageUrl": "https://media.wired.com/photos/62e43074b014c7f5985e3445/191:100/w_1280,c_limit/Google-Play-Pass-Gear.jpg"
+        },
+        {
+          "id": "62e2f1f073e44c149d0e7fe4",
+          "author": "Joe Ray",
+          "description": "Such books offer little guidance and rely on a home cook’s good judgement. Some of these are more successful than others.",
+          "link": "https://www.wired.com/story/no-recipe-recipes/",
+          "publishedOn": "2022-07-30T11:00:00.000Z",
+          "wordCount": 21257,
+          "title": "There Is Some Good in 'No-Recipe' Cookbooks",
+          "imageUrl": "https://media.wired.com/photos/62e436759879dca150ec31a0/191:100/w_1280,c_limit/The-No-Recipe-Recipe-Gear-GettyImages-821463522.jpg"
+        },
+        {
+          "id": "62e2c29958719fe5c578ebf9",
+          "author": "Gear Team",
+          "description": "Back-to-school season is nearly upon us, and we've already found some nice discounts on tech essentials and other goodies.",
+          "link": "https://www.wired.com/story/weekend-deals-july-30-2022/",
+          "publishedOn": "2022-07-30T11:00:00.000Z",
+          "wordCount": 18738,
+          "title": "14 Great Deals on Laptops, Phones, and TVs",
+          "imageUrl": "https://media.wired.com/photos/616dbbf068e20e14c563bb3f/191:100/w_1280,c_limit/Gear-Apple-Macbook-Pros-M1-Pro-2021.jpg"
+        },
+        {
+          "id": "62e4776869d8da74ff881b73",
+          "author": "Jason Barlow",
+          "description": "A seminal EV has come to the end of its life. Yet it’s never looked better, or more relevant.",
+          "link": "https://www.wired.com/story/goodbye-bmw-i3-21st-century-icon/",
+          "publishedOn": "2022-07-30T11:00:00.000Z",
+          "wordCount": 21890,
+          "title": "Goodbye to the BMW i3—an Icon of the 21st Century",
+          "imageUrl": "https://media.wired.com/photos/62e47766a524e4ef61bb692b/191:100/w_1280,c_limit/BMW-i3-Top.jpg"
+        },
+        {
           "id": "61b0c1982f731a9d063fe20f",
           "author": "Simon Hill, Louryn Strampe",
           "description": "Touchscreens don’t always get the job done. Try one of these WIRED-tested smartphone controllers for your iPhone or Android instead.",
@@ -9772,6 +10962,16 @@
       "siteUrl": "https://www.wired.com",
       "articles": [
         {
+          "id": "62ded8f6a1dc74857a8582c4",
+          "author": "Victoria Petersen",
+          "description": "Chaotic returns leave some communities with an abundance of fish, and others with none.",
+          "link": "https://www.wired.com/story/as-waters-warm-alaska-experiences-salmon-booms-and-busts/",
+          "publishedOn": "2022-07-30T12:00:00.000Z",
+          "wordCount": 19125,
+          "title": "As Waters Warm, Alaska Experiences Salmon Booms and Busts",
+          "imageUrl": ""
+        },
+        {
           "id": "62d574e4cb66423b42e4e7d5",
           "author": "Rhett Allain",
           "description": "It’s impossible to reduce gravity, but you can find some clever ways around it.",
@@ -10119,6 +11319,16 @@
       "siteUrl": "https://www.wired.com",
       "articles": [
         {
+          "id": "62e43e598ad26c5c0a000cca",
+          "author": "Matt Burgess",
+          "description": "Plus: Google delays the end of cookies (again), EU officials were targeted with Pegasus spyware, and more of the top security news.",
+          "link": "https://www.wired.com/story/cyber-tax-data-breach-cost-security-roundup/",
+          "publishedOn": "2022-07-30T13:00:00.000Z",
+          "wordCount": 18344,
+          "title": "You Pay More When Companies Get Hacked",
+          "imageUrl": "https://media.wired.com/photos/62e43e598ad26c5c0a000cc9/191:100/w_1280,c_limit/You-Pay-More-Companies-Hacked-Security-GettyImages-1355761959.jpg"
+        },
+        {
           "id": "62e29de67a001043e7932450",
           "author": "Matt Burgess",
           "description": "Russia has been trying to block the anonymous browser since December—with mixed results.",
@@ -10237,16 +11447,6 @@
           "wordCount": 20250,
           "title": "Instagram Slow to Tackle Bots Targeting Iranian Women’s Groups",
           "imageUrl": "https://media.wired.com/photos/62d1e6a7c801469017a1167b/191:100/w_1280,c_limit/Iran-Instagram-Bots-Security-GettyImages-1238704914.jpg"
-        },
-        {
-          "id": "62d1d9b59a8e3ae58c5ec2a9",
-          "author": "Matt Burgess",
-          "description": "Plus: A wild Indian cricket scam, an elite CIA hacker is found guilty of passing secrets to WikiLeaks, and more of the week's top security news.",
-          "link": "https://www.wired.com/story/amazon-ring-police-videos-security-roundup/",
-          "publishedOn": "2022-07-16T13:00:00.000Z",
-          "wordCount": 18138,
-          "title": "Amazon Handed Ring Videos to Cops Without Warrants",
-          "imageUrl": "https://media.wired.com/photos/62d1e18b96c3152eeee90558/191:100/w_1280,c_limit/Ring-Doorbell-Cops-Security-Alamy-PAYKGF.jpg"
         }
       ]
     },
@@ -10553,6 +11753,76 @@
       "feedUrl": "https://gizmodo.com/rss",
       "siteUrl": "https://gizmodo.com",
       "articles": [
+        {
+          "id": "1849351904",
+          "author": "Justin Carter",
+          "description": "Is there a family in media who’s persisted quite so much as The Simpsons? Matt Groening’s five-person (and one dog!) family of yellow oddballs has been going on strong since 1989, as long as some of our parents have been married, if not alive altogether. Depending on who you are, time hasn’t entirely been kind to the…\nRead more...",
+          "link": "https://gizmodo.com/the-simpsons-movie-15-year-retrospective-1849351904",
+          "publishedOn": "2022-07-30T19:00:00.000Z",
+          "wordCount": 6988,
+          "title": "The Simpsons Movie Was a Unique, But Inevitable Step for Fox's Yellow Family",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/637f34aadcd2d972a60e74ae4d1441b5.jpg"
+        },
+        {
+          "id": "1849351908",
+          "author": "George Dvorsky",
+          "description": "The core stage of a wayward Long March 5B rocket has returned from its short stint in low Earth orbit, disintegrating above the northern coast of Borneo. \n\nRead more...",
+          "link": "https://gizmodo.com/china-s-out-of-control-booster-rocket-returns-to-earth-1849351908",
+          "publishedOn": "2022-07-30T18:28:00.000Z",
+          "wordCount": 5881,
+          "title": "China’s Out-of-Control Booster Rocket Returns to Earth",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/49546dd657dc8e5514577e68d9907e52.jpg"
+        },
+        {
+          "id": "1849351833",
+          "author": "Justin Carter",
+          "description": "The upcoming Spider-Man: Freshman Year cartoon was shrouded in some degree of secrecy since its initial reveal last year, but last weekend at San Diego Comic-Con, more information on the show came to light. Initially, it seemed like the cartoon would tell the story of MCU Peter Parker in his early days of heroism, but…\nRead more...",
+          "link": "https://gizmodo.com/spider-man-freshman-year-mcu-canon-1849351833",
+          "publishedOn": "2022-07-30T17:45:00.000Z",
+          "wordCount": 5611,
+          "title": "Freshman Year is Basically a Spider-Man Season of What If",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/bdd3d540dfc8dc0d389b52b986ae7cf0.jpg"
+        },
+        {
+          "id": "1849351714",
+          "author": "Justin Carter",
+          "description": "The Avengers sub-franchise of the MCU occupies a strange spot in the larger series. Though the original 2012 film was where that first batch of movies was building up to, and ended Phase One, the same couldn’t be said of its sequels. 2015's Age of Ultron released mid-Phase Two, and though the duology of Infinity War …\nRead more...",
+          "link": "https://gizmodo.com/avengers-movies-kevin-feige-mcu-saga-closers-1849351714",
+          "publishedOn": "2022-07-30T16:00:00.000Z",
+          "wordCount": 5615,
+          "title": "Avengers Movies are Now the Endgame for MCU Sagas",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/29c6618f4840a79079504bafd38fb514.jpg"
+        },
+        {
+          "id": "1849351670",
+          "author": "Justin Carter",
+          "description": "Every new season of Adult Swim’s Rick & Morty is a big deal, and the same holds true for the upcoming sixth season. The sci-fi animated comedy’s future has been set in stone for years—having a multi-season renewal offers some degree of safety—but there’s still a degree of unpredictability from the show that always…\nRead more...",
+          "link": "https://gizmodo.com/rick-and-morty-season-6-justin-roiland-1849351670",
+          "publishedOn": "2022-07-30T14:45:00.000Z",
+          "wordCount": 5516,
+          "title": "Rick & Morty Season 6 Will Be a Return to Form, Says Justin Roiland",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/03295251e39ce434edf3d75eccbdd78d.jpg"
+        },
+        {
+          "id": "1849148426",
+          "author": "Shoshana Wodinsky and Kyle Barr",
+          "description": "In early 2012, the New York Times Magazine put out a cover story about Andrew Pole, a statistician working for Target who was tasked with inventing a way to identify potentially pregnant shoppers, even if those shoppers didn’t want the company to know. The rationale, Pole said, was that moms-to-be are a multi-million…\nRead more...",
+          "link": "https://gizmodo.com/data-brokers-selling-pregnancy-roe-v-wade-abortion-1849148426",
+          "publishedOn": "2022-07-30T11:30:00.000Z",
+          "wordCount": 10183,
+          "title": "These Companies Know When You're Pregnant—And They're Not Keeping It Secret",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/c829483ad8abe5fc77e0ed5ae7ff1b1a.png"
+        },
+        {
+          "id": "1849348057",
+          "author": "Jody Serrano",
+          "description": "One week ago, 21-year-old influencer and photographer Tati Bruening was scrolling through Instagram and became annoyed over the fact that she was only seeing a seemingly endless stream of Reels, even though she wasn’t in the Reels tab. Where were the photos of her friends? In her frustration, Bruening threw together a…\nRead more...",
+          "link": "https://gizmodo.com/make-instagram-again-meme-kylie-jenner-tati-bruening-1849348057",
+          "publishedOn": "2022-07-30T11:00:00.000Z",
+          "wordCount": 11647,
+          "title": "Meet the Photographer Behind the Viral 'Make Instagram Instagram Again' Meme",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/66debfe68394db8a8a7e3428e80ac882.png"
+        },
         {
           "id": "1849350239",
           "author": "Artem Golub",
