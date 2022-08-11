@@ -12,6 +12,16 @@
       "siteUrl": "https://www.baeldung.com",
       "articles": [
         {
+          "id": "https://drafts.baeldung.com/?p=139587",
+          "author": "baeldung",
+          "description": "Learn how to configure conditional dependencies in a Gradle project.",
+          "link": "https://feeds.feedblitz.com/~/705819850/0/baeldung~How-to-Configure-Conditional-Dependencies-in-Gradle",
+          "publishedOn": "2022-08-10T16:42:19.000Z",
+          "wordCount": null,
+          "title": "How to Configure Conditional Dependencies in Gradle",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.baeldung.com/?p=128828",
           "author": "Sriram Ramanujam",
           "description": "A guide to setting up a MySQL Docker container.\n      \nRelated Stories\n\nInteractive Shell Using Docker Compose\nMounting a Single File in a Volume Using Docker\nShowing Differences Between Two Docker Images",
@@ -119,16 +129,6 @@
           "publishedOn": "2022-08-03T15:29:25.000Z",
           "wordCount": null,
           "title": "How to Check Whether an Integer Exists in a Range with Java",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.baeldung.com/?p=128517",
-          "author": "baeldung",
-          "description": "Learn how to get a stack trace using the Thread and Throwable classes",
-          "link": "https://feeds.feedblitz.com/~/704986296/0/baeldung~Get-the-Current-Stack-Trace-in-Java",
-          "publishedOn": "2022-08-03T08:07:14.000Z",
-          "wordCount": null,
-          "title": "Get the Current Stack Trace in Java",
           "imageUrl": null
         }
       ]
@@ -670,353 +670,413 @@
       "siteUrl": "https://www.v2ex.com/",
       "articles": [
         {
-          "id": "871966",
-          "author": "huntley",
-          "description": "huntley: 比如 V2EX 首页右侧的广告在 edge 中能屏蔽，但是在 firefox 上就屏蔽不了。",
-          "link": "https://www.v2ex.com/t/871966",
-          "publishedOn": "2022-08-10T08:39:25.000Z",
-          "wordCount": 459,
-          "title": "ublock origin 屏蔽广告的效果为什么在不同浏览器上不一样？",
+          "id": "872210",
+          "author": "apr544h",
+          "description": "apr544h: \n\n下载安装\n|\nGithub\n几个月前跟朋友聊天的时候偶然想到在 Smartisan TNT 上看到的发牌手的功能，于是想着能不能做一个出来。\n利用窗口打开的方式，可以保留用户的登录状态，所以除了搜索搜索引擎，它还能：\n它还能……\n在办公上（邮箱、开发网站、素材网站）\n在学术上（翻译、论文网站、新闻网站）\n在旅行上（景点评测、游记、机票酒店美食、地图）\n在商品比价上（你能利用的网购平台，都能以你的所在地价格展示，并一目了然）\n在资源搜索上（ BT 、PT 、网盘搜索、仓库……各种资源网站一目十行）\n简易使用\n安装完 Poker 后，可以在网页空白处点击右键，即可看到「启动 Poker 」的启动项。除此之外，你还可以用快捷键 Ctrl+Shift+1(mac 的是 ⌘ + ⇧ + 1)，也可以点击地址栏右侧的 Poker 图标启动，甚至在地址栏输入「 poker 」后再敲击TAB键也能启动 Poker 。\n启动 Poker 后，你若是再点击右键菜单栏，或者按下快捷键和点击地址栏右侧的 Poker 图标，这将不会启动第二个 Poker 主窗口，而是唤回现在正在运行着的 Poker 主窗口。\n启动 Poker 后，你能看到输入框下有一条由若干线段组成的长条。点击这些点会使这块区域留空，留空表示不想在搜索后出现这一楼层。还可以滑动选择这些点，可以很快选到自己想要的楼层。\n并且，你甚至可以不动鼠标，直接在输入框中，输入 『/楼层 xxx 』即可选中所有叫『楼层』的层来搜索 xxx 。这些能让你在想搜索特定内容时，更快地选择到最相关的网站。\n在按下回车键提交搜索后，Poker 将会弹出数个搜索窗出来。你可以点击背景的窗口标题栏来切换：\n\n注意到『↑』『↓』这两个按钮了吗？点击它们可以切换每一列最前排的窗口。你还可以点击这些搜索窗的「最大化」来使它还原成普通浏览器窗口的样子（ mac 的话是点击「最小化」按钮）关闭任意一个窗口后也将会关闭其他的全部窗口。\n点击地址栏右侧的 Poker 图标即可发现进入设置页面的入口。如果觉得添加站点麻烦，你可以在想要加入 Poker 的网站中输入『 poker 』或『 Poker 』后进行搜索的话，再次点击插件图标，便能看到『添加此站点』字样。点击后，便能直接加入到 Poker 中，可以节约手动设置 URL 所浪费的时间。\n除了上述的功能，Poker 还有几个实用功能，你可以在设置页面中查看。",
+          "link": "https://www.v2ex.com/t/872210",
+          "publishedOn": "2022-08-11T08:56:46.000Z",
+          "wordCount": 425,
+          "title": "Poker Search：一款能让你一次开启复数窗口，在各种网站进行站内搜索的 Chrome 扩展插件",
           "imageUrl": null
         },
         {
-          "id": "871965",
-          "author": "hello826",
-          "description": "hello826: \n先说问题就是 iPhone 有没有外设可以能触摸换歌的设备呀\n场景是，最近上班想着听歌能让工作专注点，所以就戴上 airPods ，但是发现换歌不方便，每次都要举手双击\nairpods 才能切歌，总是换歌的话手都举着酸。所以就是想问问，有没有比如在连接个蓝牙外设，能够触摸切歌的。\n手机切歌也不方便，要手机一直常量才行",
-          "link": "https://www.v2ex.com/t/871965",
-          "publishedOn": "2022-08-10T08:32:11.000Z",
-          "wordCount": 583,
-          "title": "上班闲的没事，听歌时换歌不方便，有绝招吗",
-          "imageUrl": null
-        },
-        {
-          "id": "871964",
-          "author": "rehoni",
-          "description": "rehoni: 浏览器打开 v 站，瞬间电脑就巨卡了，鼠标都飘来飘去，关掉 v 站又都好了。。",
-          "link": "https://www.v2ex.com/t/871964",
-          "publishedOn": "2022-08-10T08:23:58.000Z",
-          "wordCount": 119,
-          "title": "关于进 v 站就电脑巨卡",
-          "imageUrl": null
-        },
-        {
-          "id": "871963",
-          "author": "Unclev21x",
-          "description": "Unclev21x: 买了个房子，MD ，开发商要求必须先签后验，即先签署收楼确认书等协议，并缴纳 3 个月物业费后才给钥匙，之后才能查验房子。当场拒绝收房，目前收房已经逾期了，当然，我不认为是我的原因造成的。现在打算起诉开发商，故在此求助广大网友，能否推荐一下熟悉房地产买卖纠纷方面的律师？\n深圳地区。",
-          "link": "https://www.v2ex.com/t/871963",
-          "publishedOn": "2022-08-10T08:20:45.000Z",
-          "wordCount": 310,
-          "title": "求推荐熟悉房地产买卖纠纷方面的律师",
-          "imageUrl": null
-        },
-        {
-          "id": "871959",
-          "author": "Cat7373",
-          "description": "Cat7373: \n看到份文章，分享之： https://howto-make-more-money-easychen.vercel.app",
-          "link": "https://www.v2ex.com/t/871959",
-          "publishedOn": "2022-08-10T08:14:30.000Z",
-          "wordCount": 583,
-          "title": "程序员如何优雅的挣零花钱？",
-          "imageUrl": null
-        },
-        {
-          "id": "871955",
-          "author": "gamesover",
-          "description": "gamesover: \n公司全新的 macbook pro ，居然 brew 装不上最简单的 openssl\nbrew install openssl\nRunning `brew update --auto-update`...\n==> Downloading https://ghcr.io/v2/homebrew/core/ca-certificates/manifests/2022-07-19_1\nAlready downloaded: /Users/user/Library/Caches/Homebrew/downloads/c95acf8107b31ec83053f411f74e85b2626e1a0c051467aff6b98acf996883d7--ca-certificates-2022-07-19_1.bottle_manifest.json\nError: openssl@3: Failed to download resource \"ca-certificates_bottle_manifest\"\nThe downloaded GitHub Packages manifest was corrupted or modified (it is not valid JSON): \n/Users/user/Library/Caches/Homebrew/downloads/c95acf8107b31ec83053f411f74e85b2626e1a0c051467aff6b98acf996883d7--ca-certificates-2022-07-19_1.bottle_manifest.json\n\n同事说公司电脑有限制，我觉得有点不可思议",
-          "link": "https://www.v2ex.com/t/871955",
-          "publishedOn": "2022-08-10T07:55:34.000Z",
-          "wordCount": 374,
-          "title": "Brew 装不上 ca-certificates",
-          "imageUrl": null
-        },
-        {
-          "id": "871954",
-          "author": "technologyhr",
-          "description": "technologyhr: 前端工程师   （ uniapp ）需求 2 名\n任职要求\n3 年以上前端开发经验；精通 uniapp;熟练掌握原生 JavaScript 、HTML 、CSS ； 对 RESTful Web 服\n务开发（ PHP/JAVA ）有透彻的了解；熟悉前端性能优化，且能结合业务给出具体优化方案；熟\n悉前端工程化和相关构建打包工具，如 Webpack 、Vue CLI 、Babel 、ESlint ；具备组件化和开发架\n构优化能力； 具有良好的沟通能力、总结能力和独立解决问题的能力。\n加分项：\nBAT 或知名企业经历佳；中大型项目主程及具备主导研发能力者；大型开源项目 /组件库 源码贡献\n者；大型项目开发和架构优化经验者。\n薪资：15k 左右范围  8 小时  周休一  远程居家  \n---------------------------------------------------------------------------------------------------\nphp 后端工程师 （ think php ） 需求 1 名\n职位要求\n3 年以上开发经验，精通 think PHP 框架；熟悉 MySQL 数据库设计、管理和优化；熟悉 Linux 系统，\n了解 Linux 的常用命令和基本服务器运维；熟练使用各种 SQL 语句，并具有优化 SQL 的能力；\n有大数据优化经验者优先；\n熟悉 redis 、mongodb 等 NoSQL 技术，有高并发开发经验的优先\n有 saas 设计、开发经验者优先；\n中大型互联网企业工作经验或大型项目的架构开发或核心功能开发经历者优先。\n薪资：15-25k 范围 8 小时  周休一  远程居家  \n------------------------------------------------------------------------------------------------\n请联系官方 email：  kane@inc-acb.com\nskype 账号：   kane@inc-acb.com\n纸飞机 TG： @HR_Kane7\n（联系备注 V2EX ）",
-          "link": "https://www.v2ex.com/t/871954",
-          "publishedOn": "2022-08-10T07:47:08.000Z",
-          "wordCount": 434,
-          "title": "[远程/全职/长期] 知识付费类项目，前端， PHP ，工时 8 小时 15-25k*13",
-          "imageUrl": null
-        },
-        {
-          "id": "871953",
-          "author": "PendingOni",
-          "description": "PendingOni: \n\n    /// <summary>\n    /// 批量插入助手\n    /// </summary>\n    public static class BulkHelper\n    {\n        /// <summary>\n        /// 批量导入入口\n        /// </summary>\n        /// <param name=\"con\">DbConnection 数据库连接资源</param>\n        /// <param name=\"models\">实体列表</param>\n        /// <param name=\"tableName\">表名</param>\n        /// <typeparam name=\"T\">实体泛型</typeparam>\n        public static void BulkCopy<T>(DbConnection con, List<T> models, string tableName = null)\n        {\n            BulkInsert(con, models, tableName);\n        }\n\n        /// <summary>\n        /// IList 的扩展方法 用于集合转换 DataTable 类\n        /// </summary>\n        /// <param name=\"models\">实体列表</param>\n        /// <param name=\"tableName\">表名</param>\n        /// <typeparam name=\"T\">实体泛型</typeparam>\n        /// <returns>DataTable<…",
-          "link": "https://www.v2ex.com/t/871953",
-          "publishedOn": "2022-08-10T07:44:46.000Z",
-          "wordCount": 533,
-          "title": "[Snippet]-Csharp 批量导入助手 代码片段",
-          "imageUrl": null
-        },
-        {
-          "id": "871952",
-          "author": "Ga2en",
-          "description": "Ga2en: \n一点点小疑问。\n刚刚教育优惠买了丐版 mba2020 。发现并不能一根指头很顺畅地打开。\n你们是怎么做到的？",
-          "link": "https://www.v2ex.com/t/871952",
-          "publishedOn": "2022-08-10T07:43:22.000Z",
-          "wordCount": 503,
-          "title": "Mac 真的有人能一根指头一次打开吗？",
-          "imageUrl": null
-        },
-        {
-          "id": "871950",
-          "author": "tool2d",
-          "description": "tool2d: 收到快递时候，心里就在犯嘀咕，包装盒子完全瘪下去一个角。\n然后里面的硬盘包装盒也是瘪角的，因为盒子在里层，没外面那么夸张。本以为没事，但刚看了 B 站视频<硬盘跌落测试>和评论后，我惊呆了。\nhttps://www.bilibili.com/video/BV1a4411M7wx\n不知道下一步应该怎么办，迷茫。硬盘通电没问题，需要全盘扫描有没有坏道吗？",
-          "link": "https://www.v2ex.com/t/871950",
-          "publishedOn": "2022-08-10T07:35:31.000Z",
-          "wordCount": 509,
-          "title": "买了个新的 8T 硬盘，结果被京东快递给摔了。",
-          "imageUrl": null
-        },
-        {
-          "id": "871949",
-          "author": "oldshensheep",
-          "description": "oldshensheep: \nWindows 也有快照？真的是文件系统的快照？还可以通过系统自带的文件历史还原？\n新建快照\nWindows 称之为 Volume Shadow Copy (VSS)\nWindows 的快照是通过 Copy On Write 实现的，众所周知对性能有一定影响。\n关闭系统还原点功能\n新建快照是不需要开启系统还原点功能的！\n\n新建一个快照\n新建一个文件测试一下快照\n在 HOME 目录下新建一个内容为 100 的 test.txt 文件\n❯ 100 > test.txt\n❯ cat .\\test.txt\n100\n\n创建一个 C 盘的快照，注意我这里用了 sudo 表明需要管理员权限。\n❯ sudo wmic shadowcopy call create Volume=C:\\\nExecuting (Win32_ShadowCopy)->create()\nMethod execution successful.\nOut Parameters:\ninstance of __PARAMETERS\n{\n        ReturnValue = 0;\n        ShadowID = \"{57587129-D224-4E21-BC36-4C3D9B1DFDC7}\";\n};\n\n快照就成功建立了！\n❯ 101 > ~/test.txt\n❯ cat ~/test.txt\n101\n\n恢复指定文件 /文件夹\n在文件管理器打开这个文件的属性，可以打开和恢复到之前的版本。\n\n查看文件发现恢复到之前的状态了。\n❯ cat ~/test.txt\n100\n\n删除快照\nvssadmin 可以操作快照，支持以下命令，注意把命令换成小写开头。\nvssadmin delete shadows而不是vssadmin Delete Shadows，输入命令会有帮助文档。\n❯ vssadm…",
-          "link": "https://www.v2ex.com/t/871949",
-          "publishedOn": "2022-08-10T07:34:24.000Z",
-          "wordCount": 627,
-          "title": "Windows 也有快照功能？",
-          "imageUrl": null
-        },
-        {
-          "id": "871948",
-          "author": "blakefan",
-          "description": "blakefan: \n现在的项目数据库用的的 MySQL,数据库环境主要分成 Dev 、测试环境、Product,现在的操作的比较暴力，都是直接连接数据库修改表结构的，测试没有问题，同步再到 Pro 环境，现在想改变一下工作方式，请问一下有开源的数据库发布系统吗？ github 开源的 DDL 工具 gh-ost 可以满足要求，但是好像没有图形化的操作界面，只要命令行的",
-          "link": "https://www.v2ex.com/t/871948",
-          "publishedOn": "2022-08-10T07:32:07.000Z",
-          "wordCount": 419,
-          "title": "开源的数据库发布系统",
-          "imageUrl": null
-        },
-        {
-          "id": "871947",
-          "author": "UnknowCoder",
-          "description": "UnknowCoder: 互联网狗最近在 798 附近开了个精酿啤酒店\n是做泰山原浆啤酒的，有现打和各种精酿、生啤、黑啤\n最近新店开业，陆续在做一些活动，例如 3.7 元一瓶小七，0.01 元两瓶大七，99-20 ，139-30 ，189-40 等各种活动\n北京爱喝精酿啤酒的小伙伴可以加我～不定期发放福利\nwx: cryp2021i",
-          "link": "https://www.v2ex.com/t/871947",
-          "publishedOn": "2022-08-10T07:31:05.000Z",
-          "wordCount": 421,
-          "title": "给北京望京、酒仙桥爱喝精酿的小伙伴发个福利～",
-          "imageUrl": null
-        },
-        {
-          "id": "871945",
-          "author": "peaksnowcn",
-          "description": "peaksnowcn: \n*个人是软件程序相关专业，专科学历，没入过什么大厂，年龄<≈30 。",
-          "link": "https://www.v2ex.com/t/871945",
-          "publishedOn": "2022-08-10T07:26:40.000Z",
-          "wordCount": 380,
-          "title": "目前广州/成都/杭州/武汉/上海的就业情况怎样？大家有在相关地区的，可以分享下感受吗？",
-          "imageUrl": null
-        },
-        {
-          "id": "871944",
-          "author": "huhexian",
-          "description": "huhexian: \n当你选择阅读这篇文章时，我们应该达成了一个共识：微信公众号官方后台编辑器特别烂、特别难用。\n四个月前，我分享了编辑公众号的方法(1.0)，和本文内容差不多，都是基于Markdown，今天不同的是编辑之后的样式，以及字号的大小等有所调整，变得更加美观，易于阅读。\n为什么要排版？\n因为阅读一篇排版精美的文章，是眼睛的一种享受。独立博客庭说有一篇文章《微信公众号排版心得》，作者提到古人对于写作有两个基本要求：\n有物\n有序\n有物，即文章要有内容；有序，即文章要有条理。我可以理解为内容上和排版上都要有条理，内容、结构清晰有条理，自然而然可以对文章排版结构进行合理划分。\n如果想了解精美的排版是怎样的，我建议可以去看看这几个公众号的文章：槽边往事、中国新闻周刊、三联文化周刊。\n如何有效排版？\n我们在用 Word 进行编辑文字时，里面需要设置的格式很多，包括页面大小、行间距、段间距、字间距，字体、字号、颜色……在微信公众号排版上大致可以参考这些。我从版面、文字、样式三方面分享。\n干净的版面\n简单来说，拒绝花里胡哨，我不喜欢用秀米、135 等编辑器的原因之一就是过于花哨，对于以文字写作为主的公众号作者来说不适合。此外，界面元素太多，容易干扰写作，它给我的印象是更适合营销宣传类公众号使用。\n\n行间距在1.7-1.75之间为宜\n字间距在1-2之间为宜\n两边缩进设置默认为8\n关于文章的配图，我一直觉得非必要情况下，一张头图即可，它只是文章的点缀，排版做好了，没有图片搭配，阅读也是一种享受。如果要插入图片，我的建议：图片上下空行。本文加上封面，共 3 张图，足够。\n我们习惯了在纸媒上看每段文字首行缩进两格，这个习惯我也一直在坚持，无论是考试写作文还是平常写日记。但是在电子阅读上，首行缩进更显多余，没有必要。\n另外，我想说一个我讨厌的点。见过许多公众号文章，不知道 ta 是在写诗…",
-          "link": "https://www.v2ex.com/t/871944",
-          "publishedOn": "2022-08-10T07:24:37.000Z",
-          "wordCount": 399,
-          "title": "我的公众号文章排版编辑方案 2.0",
-          "imageUrl": null
-        },
-        {
-          "id": "871942",
-          "author": "eason1874",
-          "description": "eason1874: 硬件：安装 PVE 的二手工控机 、闪迪 U 盘、USB 3 接口\nU 盘插在 Windows 电脑，只有读写数据时才是烫手的，闲下来不用就不发热\nU 盘插在 PVE 工控机，不挂载也烫手，挂载了也烫手，简单说就是用不用都烫手\n这是什么原因呢？",
-          "link": "https://www.v2ex.com/t/871942",
-          "publishedOn": "2022-08-10T07:18:57.000Z",
-          "wordCount": 351,
-          "title": "U 盘一插上 PVE 工控机就开始发热，不挂载不读写也发热",
-          "imageUrl": null
-        },
-        {
-          "id": "871941",
-          "author": "iamvvv",
-          "description": "iamvvv: 本人程序员（前端+后端），已经在大厂工作 5 ～ 6 年，熟悉大厂的工作流程，一直想自己做一个项目，但是无奈一个人身兼数职，项目推进速度太过于缓慢。\n希望能够找到一个产品经理，能够整体统筹规划产品设计，规划产品有序迭代。你最好是在校生，有志于往产品经理方面发展，本人也可以提供一些大厂工作经验的指导。\n欢迎联系，麻烦发送你的个人基本信息，感谢",
-          "link": "https://www.v2ex.com/t/871941",
-          "publishedOn": "2022-08-10T07:05:27.000Z",
-          "wordCount": 419,
-          "title": "找个志同道合的产品经理",
-          "imageUrl": null
-        },
-        {
-          "id": "871940",
-          "author": "cusuanan",
-          "description": "cusuanan: \n网络：电信有外网 IP\n路由：Tplink POE\n电脑：win10 ThinkPad\n问题：之前是可以利用 tplink 的 tpddns 服务，加上端口转发。通过 Windows RDP 实现远程登陆电脑。最近重装电脑和软路由系统。后面不可以用了。\nPS. 如果在内网中直接用 PC 的内网 IP 是可以登陆的，但是通过 tpddns 在外网是不可以的。\n不知道问题在哪，端口吗，还是设置有问题。",
-          "link": "https://www.v2ex.com/t/871940",
-          "publishedOn": "2022-08-10T07:05:06.000Z",
-          "wordCount": 357,
-          "title": "利用 tpddns.cn 怎么不能远程电脑了？",
-          "imageUrl": null
-        },
-        {
-          "id": "871937",
-          "author": "lcq",
-          "description": "lcq:",
-          "link": "https://www.v2ex.com/t/871937",
-          "publishedOn": "2022-08-10T06:49:51.000Z",
-          "wordCount": 334,
-          "title": "微服务架构，怎么输出报表的？",
-          "imageUrl": null
-        },
-        {
-          "id": "871936",
-          "author": "summerLast",
-          "description": "summerLast: \n为什么很多技术博客末尾都会跟一个关注公众号？，而且阅读文章还要关注公众号解锁，作为一个技术人员，个人博客不是比公众号更好吗，是因为公众号更容易赚钱还是获取流量或其他什么原因吗？也许是个例，关注的公众号基本全部屏蔽了，或者弹出来就给取关了，写点好的文章与内容让用户 rss 订阅或者邮件的形式不是更好吗，公众号所代表的信息孤岛和个人博客所代表的互联网那个是未来的大方向，平台化，个人化？",
-          "link": "https://www.v2ex.com/t/871936",
-          "publishedOn": "2022-08-10T06:46:53.000Z",
-          "wordCount": 551,
-          "title": "为什么很多技术博客末尾都会跟一个关注公众号？",
-          "imageUrl": null
-        },
-        {
-          "id": "871935",
-          "author": "NGUTHONG",
-          "description": "NGUTHONG: \n今天翻着米家设置，发现米家竟然接入了 alexa ，在安卓的 米家 app 设置里的实验室选项可以看到这个新入口；\n\n\n有可能是在为了接入 Matter 做准备吧；\n不过我身边没有支持 alexa 的设备，测试不了；\n有亚马逊音箱或者 FireTV 、shieldtv 这些支持 alexa 的设备的朋友可以试一下，看看是全部设备接入，还是像 Googlehome 那样只接入了部分米家设备。",
-          "link": "https://www.v2ex.com/t/871935",
-          "publishedOn": "2022-08-10T06:46:52.000Z",
-          "wordCount": 324,
-          "title": "米家接入了亚马逊 alexa 生态",
-          "imageUrl": null
-        },
-        {
-          "id": "871932",
-          "author": "nishuoshenme",
-          "description": "nishuoshenme: \n有老哥知道怎么关闭微信订阅号消息里的看一看么？现在默认只显示最新的订阅号消息，然后下面是看一看，需要手动点一下才能看到更早的消息，太麻烦了，而且推的这些文章质量参差不齐，有些还是标题党，微信公众号里明明已经有广告了，发现页也有独立的看一看入口，何必放这里呢？而且找了半天没找到在哪里关闭这个",
-          "link": "https://www.v2ex.com/t/871932",
-          "publishedOn": "2022-08-10T06:40:00.000Z",
+          "id": "872209",
+          "author": "BiiHug",
+          "description": "BiiHug: 萌新一个，不知道这种问题能不能发，求大佬们轻喷。想讨论下 DeepFM 模型，Deep 侧和 FM 侧是否应该共享 embedding ？\n现在是想热加载一个训了很久的 deep 结构，然后加上 fm 结构辅助学习，看到原文里两边貌似是共享 embedding 的，感觉有点奇怪。FM 这边的收敛逻辑和旁边的 Deep 侧应该不太一样吧，让两个网络共享 embedding 不会造成混乱吗？",
+          "link": "https://www.v2ex.com/t/872209",
+          "publishedOn": "2022-08-11T08:56:42.000Z",
           "wordCount": 347,
-          "title": "微信订阅号消息关闭看一看",
+          "title": "关于 DeepFM 的一些疑问",
           "imageUrl": null
         },
         {
-          "id": "871931",
-          "author": "ToRapture",
-          "description": "ToRapture: 在这里可以看到职位： https://boards.greenhouse.io/paypay 。\n一般需要两年以上的工作经验。\n不需要会日语，工作一般都用英语，也不需要英语特别好，能够交流即可。\n公司会负责办工作签证，会负责 relocation 流程，会提供租房帮助，会提供租房补助和行李邮寄补助。\n双休，前两年年假 12 天，第三年开始 14 天，每天工作时间一般是 7 小时 45 分钟。Work from home 或者去工位办公随意，怎么开心怎么来，哪天想去工位了就去工位一天，想一直 from home 就一直 from home 。\n薪资 600W 日元~1200W 日元。\n一般笔试 1 次+面试 3 次。\n我是 2020 年十月投的简历，笔试不难，面试也不难，前两面问了些问题之后写码，写码题比较简单。第三面是主管面，没有写码，但是技术相关的可能问得细一些。\n想来日本的话就把想投的职位名称和英文简历发我吧，邮箱是 torapture@gmail.com 。",
-          "link": "https://www.v2ex.com/t/871931",
-          "publishedOn": "2022-08-10T06:37:45.000Z",
-          "wordCount": 509,
-          "title": "[日本肉翻 会英语即可]移动支付公司 PayPayペイペイ各种职位内推",
+          "id": "872208",
+          "author": "clrss",
+          "description": "clrss: \n% man brew\n...\n       HOMEBREW_INSTALL_FROM_API\n              If set, install formulae and casks in homebrew/core and homebrew/cask taps using Homebrew´s\n              API instead of needing (large, slow) local checkouts of these repositories.\n\n              Note: Setting HOMEBREW_INSTALL_FROM_API is not compatible with Homebrew´s developer mode so\n              will error (as Homebrew development needs a full clone).\n\n设置这个环境变量以后可以 brew untap homebrew/core brew untap homebrew/cask. 省几百 MB 空间. 先不说缺不缺这些空间, 把那十多年的 formula 历史放普通用户硬盘上本来就不科学.\n副作用未知.",
+          "link": "https://www.v2ex.com/t/872208",
+          "publishedOn": "2022-08-11T08:54:55.000Z",
+          "wordCount": 363,
+          "title": "export HOMEBREW_INSTALL_FROM_API=1",
           "imageUrl": null
         },
         {
-          "id": "871930",
-          "author": "zjsxwc",
-          "description": "zjsxwc: \n看到社区维护的 linux 版微信小程序开发者工具 一直有人在跟进维护，现在是1.06.2207210版，\n比微信官方的1.06.2208010慢一个小版本，\n于是一条命令yay -S wechat-devtools装来把微信提供的几个自带的 demo 跑了一遍，运行起来都很流畅没有问题。\nlinuxwechatdev.png\nbtw ，之前用 uniapp 开发小程序体验真实一言难尽，如果只是开发微信小程序，没有打包成原生 app 的需求，我建议直接使用微信小程序开发，真的没必要使用 uniapp 。收获的经验就是直接开发“原生”app ，确实比 uniapp 这种所有平台全都要的容易很多。",
-          "link": "https://www.v2ex.com/t/871930",
-          "publishedOn": "2022-08-10T06:36:32.000Z",
-          "wordCount": 324,
-          "title": "在 Linux 开发微信小程序",
+          "id": "872207",
+          "author": "chenluo0429",
+          "description": "chenluo0429: 之前一直没问题的，昨天试了一下 openwrt 的 docker 镜像，把 network_mode 设成了 host ，结果把我宿主环境 debian 的网络搞出问题了。\n一个是 lo 的 127.0.0.1 地址丢失，被我加回来了，还有不知道哪里出的问题，导致同 network 下的 container 无法互相通信了。\n现在本地环境用 docker 部署的 seafile 和 harbor 都趴窝了。\n有没有对网络有研究的大佬可以指点下？不胜感激。\n以下是 ip a sh 的结果\n\n1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000\n    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00\n    inet 127.0.0.1/8 scope host lo\n       valid_lft forever preferred_lft forever\n    inet6 ::1/128 scope host\n       valid_lft forever preferred_lft forever\n2: enp2s0f0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000\n    link/ether 54:80:28:50:c4:a6 brd ff:ff:ff:ff:ff:ff\n    inet 192.168.1.110/24 brd 192.168.1.255 scope global enp2s0f0\n       valid_…",
+          "link": "https://www.v2ex.com/t/872207",
+          "publishedOn": "2022-08-11T08:42:46.000Z",
+          "wordCount": 1419,
+          "title": "docker 同一 network 下的 container 无法互通",
           "imageUrl": null
         },
         {
-          "id": "871928",
-          "author": "yhm2046",
-          "description": "yhm2046: \n贴吧上说销量前几的都是黑店，不敢买",
-          "link": "https://www.v2ex.com/t/871928",
-          "publishedOn": "2022-08-10T06:32:33.000Z",
-          "wordCount": 327,
-          "title": "想买个 128g 的 pixel4xl 美版求推荐靠谱淘宝店",
+          "id": "872205",
+          "author": "moonkiller",
+          "description": "moonkiller: 屋里没水了\n打开外卖 app ，看到某超市上看到有促销活动\n4L 的农夫山泉大瓶算下来一瓶不到 5 元\n送到后，打开喝了一口，明显味道不对\n很大的自来水消毒味道\n桶身上的包装和桶的贴合度也不紧密，感觉像是假水\n但水这种东西怎么举证真假啊？",
+          "link": "https://www.v2ex.com/t/872205",
+          "publishedOn": "2022-08-11T08:35:51.000Z",
+          "wordCount": 354,
+          "title": "感觉买到假水了，该怎么验证？",
           "imageUrl": null
         },
         {
-          "id": "871927",
-          "author": "aw2350",
-          "description": "aw2350: \n手头有一把雅马哈的静音吉他",
-          "link": "https://www.v2ex.com/t/871927",
-          "publishedOn": "2022-08-10T06:31:26.000Z",
-          "wordCount": 356,
-          "title": "关于学吉他，求过来人给点建议",
+          "id": "872203",
+          "author": "paledream",
+          "description": "paledream: \nvscode 中设置后，可以智能提示文件内出现过所有的单词, 包括注释中的、任意对象内的 key 等...\n如图：\n\n感觉这个功能很方便，不知 jetbrains 系 IDE 是否可以设置这个功能",
+          "link": "https://www.v2ex.com/t/872203",
+          "publishedOn": "2022-08-11T08:25:12.000Z",
+          "wordCount": 328,
+          "title": "jetbrains 系 IDE 可否自动提示该文件内已有的所有单词",
           "imageUrl": null
         },
         {
-          "id": "871926",
-          "author": "eraserking",
-          "description": "eraserking: \n问题有点长，不过主要是有例子\n比如说我有这样的一个 interface\ninterface MyInterface {\n  propertyA: string | null;\n  propertyB: number | null;\n  propertyC: SomeOtherInterface | null;\n  propertyD: AnotherOtherInterface | null;\n}\n\ninterface SomeOtherInterface {\n  propertyX: string | null;\n  propertyY: number | null;\n}\n\ninterface AnotherOtherInterface {\n  propertyM: string | null;\n  propertyN: number | null;\n}\n\n然后我需要一个方法去修改这个 MyInterface 的一个对象上的属性（假如说返回一个新对象而不是原地修改），那么我可以写出这样的一个泛型方法：\nconst updateProperty = <\n  TKey extends keyof MyInterface,\n  TValue extends MyInterface[TKey]\n>(\n  originalObject: MyInterface,\n  propertyName: TKey,\n  propertyValue: TValue\n): MyInterface => {\n  // ... some internal logic\n  return { ...originalObject, [propertyName]: propertyValue };\n};\n\n\n到这里也没有问题，调用起来也很简单\nconst new1 = update…",
-          "link": "https://www.v2ex.com/t/871926",
-          "publishedOn": "2022-08-10T06:29:12.000Z",
-          "wordCount": 646,
-          "title": "想请教下 TypeScript 里面几个泛型方法的写法",
+          "id": "872202",
+          "author": "oatw",
+          "description": "oatw: 继饱览 /t/871860 之后，更讨厌微信了。\n平时微信基本都是上班用一下，装个桌面板足已，外加朋友圈子很小，完全可以用其它 IM 替代，请 V 友推荐国内可用的替代品。tg 、line 、wahtsapp 就不考虑了哈～",
+          "link": "https://www.v2ex.com/t/872202",
+          "publishedOn": "2022-08-11T08:23:33.000Z",
+          "wordCount": 657,
+          "title": "求推荐国内可用的微信替代 APP",
           "imageUrl": null
         },
         {
-          "id": "871925",
-          "author": "xiaxichen",
-          "description": "xiaxichen: \n我们是谁\n水木未来（北京）科技有限公司是一家结构和计算驱动的新型药物研发公司，拥有亚太区第一个商业化冷冻电镜服务平台，并以与 2022 年建立了全球最大的冷冻电镜商业化平台（北京、杭州两地），基于冷冻电镜、计算化学、机器学习和高性能计算核心技术，在小分子、抗体药、蛋白降解、基因治疗等领域推动数字化创新，助力全球创新药企大幅提升药物研发效率和成功率。\n水木未来 2017 年创立于清华大学，由清华大学多名知名教授组建，核心团队由优秀的生命和计算科学家、IT 互联网和医药产业专家组成。核心团队背景包括清华，北大，剑桥，耶鲁等名校以及默克，强生，罗氏，药明康德等大型生物医药企业。公司至今完成了合计四轮融资，已成功为来自中国、美国、欧洲的 200 余家国内外创新药药企和顶级科研机构提供了结构生物学和药物发现服务。\n招聘对象\n2021.11-2022.10 毕业的本科应届毕业生。\nit/运维 运开同时开放社招。\n岗位要求\n本科及以上学历，计算机、数学、电子工程、通信等相关专业；\n具备扎实的数据结构和计算机系统基础，精通一种开发语言；\n对基础软件充满热情，具备较好的动手能力和技术热情，有成功的研究型或实战型项目技术成果落地者优先；\n关注开源技术，有开源贡献者优先；\n快速学习，不断突破技术瓶颈，乐于探索未知领域，随时准备好去面对新挑战；\n良好的团队合作精神，能够做到严谨、皮实、乐观。\n工作地点\n北京市昌平区生命科学园新生巢创新中心 2 号楼 4 层水木未来\n开放岗位\n前端开发工程师\n运维 /IT 工程师\n运维开发工程师\n公司福利\n住房补贴\n交通补贴\n带薪年假\n高温补贴\n餐费补贴\n年终奖\n喜事红包\n取暖补贴\n通话补贴\n有竞争力的薪资机制\n节假日礼品 /生日礼品\n完善的晋升调薪机制\n外地 /应届生 /实习 /刚入职均可提供宿舍",
-          "link": "https://www.v2ex.com/t/871925",
-          "publishedOn": "2022-08-10T06:26:47.000Z",
-          "wordCount": 448,
-          "title": "[北京应届] 招聘运维；前端；运开；",
+          "id": "872201",
+          "author": "lzz2394677796",
+          "description": "lzz2394677796: \n发现一些单机软件偷偷在上网，要把它断了！",
+          "link": "https://www.v2ex.com/t/872201",
+          "publishedOn": "2022-08-11T08:23:14.000Z",
+          "wordCount": 437,
+          "title": "哪一款防火墙软件比 windows11 自带的 Windows Defender Firewall 好呢？大牛来推荐我！",
           "imageUrl": null
         },
         {
-          "id": "871924",
-          "author": "hgzhcn",
-          "description": "hgzhcn: 坐标苏州，没什么上牌的限制。通勤用，预算 4000 左右",
-          "link": "https://www.v2ex.com/t/871924",
-          "publishedOn": "2022-08-10T06:23:49.000Z",
-          "wordCount": 599,
-          "title": "2022 年 8 月，有什么好的电瓶车推荐吗",
+          "id": "872199",
+          "author": "nightnotlate",
+          "description": "nightnotlate: 我在客厅放了主路由器 A\n但是到卧室隔了好几堵墙 卧室信号很差\n就在中间放了另一个路由器 B 做了无限桥接\n现在有 2 个问题\n1 有时候会自动连到信号不好的那个 WiFi 要手动去切换 很麻烦\n2 我的电脑是连到路由器 B 的，我想给电脑设置静态 IP  但是不起作用 \n似乎电脑的 ip 是 A 分配的，但是 A 那边设备列表看到的 mac 是路由器 B 的 我不管是在 A 还是 B 绑定 mac 和 ip 都没起作用\n我不太懂这块 所以请问 有什么好点的办法么？\n谢谢",
+          "link": "https://www.v2ex.com/t/872199",
+          "publishedOn": "2022-08-11T08:21:37.000Z",
+          "wordCount": 399,
+          "title": "关于无线路由器桥接，怎么绑定静态 ip？",
           "imageUrl": null
         },
         {
-          "id": "871923",
-          "author": "MonTubasa",
-          "description": "MonTubasa: \n如标题描述，115 曾经挺好用的。个人用最多是云下载功能，然而最近发现新资源下载速度很慢，有些老资源和谐起来也是不留情。除了还有些备份的数据之外，115 已经对我没有了任何吸引力。\n暂没有预算自己上本地存储，有没有能平替的云盘工具？求个推荐",
-          "link": "https://www.v2ex.com/t/871923",
-          "publishedOn": "2022-08-10T06:20:10.000Z",
-          "wordCount": 517,
-          "title": "115 会员到期了，不想续费，有什么替代产品吗？",
+          "id": "872198",
+          "author": "movq",
+          "description": "movq: \n我设置的 Google 语言是简体中文\n这有什么办法设置吗？每次点进去维基，然后切换到简体，或者切换到 desktop ，感觉很麻烦",
+          "link": "https://www.v2ex.com/t/872198",
+          "publishedOn": "2022-08-11T08:18:59.000Z",
+          "wordCount": 395,
+          "title": "为什么 Google 搜索出现的中文维基，经常出现 mobile 页面，或者繁体页面，就是不出现 desktop 简体中文页面？",
           "imageUrl": null
         },
         {
-          "id": "871922",
-          "author": "tufeiyuan",
-          "description": "tufeiyuan: 、买了腾讯、阿里、京东、美团，现在亏损有 35%了，\n之前每个月吃吃喝喝能存一万块钱，今年也失业半年找不到合适的工作，一看股票整个人都不好了，",
-          "link": "https://www.v2ex.com/t/871922",
-          "publishedOn": "2022-08-10T06:20:01.000Z",
-          "wordCount": 812,
-          "title": "亏麻了， 5 年的收入全买了互联网公司的股票",
+          "id": "872197",
+          "author": "foreverstandbyu",
+          "description": "foreverstandbyu: 多多专员处理的结果是退货没有任何的处罚。\n不认可的话怎么有效投诉？\n12315 吗？\n这个管用吗。",
+          "link": "https://www.v2ex.com/t/872197",
+          "publishedOn": "2022-08-11T08:18:06.000Z",
+          "wordCount": 346,
+          "title": "关于拼多多售假问题，平台处理的不满意然后怎么有效投诉？",
           "imageUrl": null
         },
         {
-          "id": "871921",
-          "author": "StarXing",
-          "description": "StarXing: \n有 5000 条固定的商品需要不停的更新价格，现在手上有 10 台服务器。\n是不是这样实现更好：\n服务器 1 去爬取更新时间最久的一条商品，服务器 2 去爬取倒数第二条商品？\n就是不知道如何解决服务器同时都更新最后一条的问题。\n如果要这样实现，需要怎么做？\n网上搜了下，分布式爬虫，消息队列，redis 都感觉有点麻烦？\n因为时间急，所以问问有什么简单的解决方案。\n小弟做 Android 的，不太懂爬虫技术，不知道描述清楚没？\n之前我是把数据分成十块，每块 500 条商品，然后每个服务器就更新那 500 条，感觉还是有点慢，\n用的 Jsoup 爬取。\n谢谢。",
-          "link": "https://www.v2ex.com/t/871921",
-          "publishedOn": "2022-08-10T06:19:02.000Z",
-          "wordCount": 359,
-          "title": "10 台服务器，如何在最短时间内爬取 5000 条商品价格？",
-          "imageUrl": null
-        },
-        {
-          "id": "871920",
-          "author": "nishuoshenme",
-          "description": "nishuoshenme: 大家在用电动牙刷刷牙的时候，是像普通牙刷那样自己会来回小幅度动一下，还是就只是把牙刷放到牙齿上完全依靠电动牙刷本身的震动呢？",
-          "link": "https://www.v2ex.com/t/871920",
-          "publishedOn": "2022-08-10T06:16:43.000Z",
-          "wordCount": 353,
-          "title": "请教一个电动牙刷的问题",
-          "imageUrl": null
-        },
-        {
-          "id": "871918",
-          "author": "whattime",
-          "description": "whattime: \n前一阵子家里戴森吸尘器 v10 坏了，开机响一声就不工作了，一开始以为只是有东西堵着，拆开了清理下，结果故障依旧，由于买的是美版且过保了，就没想走官方维修，网上查了下维修花个 7 8 百还不如加钱上新，想着自己也有动手能力就自己通过网购买个马达替换，经过完全拆解替换马达，吸尘器终于活了过来。\n我就在想如果自己没动手能力这吸尘器是不是该仍了，因为维修成本也是挺高的，之前洗衣机坏了换个传动带就要 3 百多，这个换个马达不得上千，家里戴尔显示器也出现一条亮线也是过保，感觉也是没维修的价值了，维修价值是不是跟人力成本相关，人力成本高了修还不如直接买新的？",
-          "link": "https://www.v2ex.com/t/871918",
-          "publishedOn": "2022-08-10T06:14:51.000Z",
-          "wordCount": 326,
-          "title": "大陆是不是也进入人力成本高昂的时代——关于戴森吸尘器维修思考",
-          "imageUrl": null
-        },
-        {
-          "id": "871917",
+          "id": "872196",
           "author": "GrapeCityChina",
-          "description": "GrapeCityChina: \n在数字化转型潮流席卷各大行业的今天，越来越多的企业开始重视 BI （商业智能）技术的部署和应用，期望从不断增长的数据资源中获得更多业务价值，从而提升利润、控制风险、降低成本。BI 能整合、组织和分析数据，将数据转化为有价值的信息，为企业管理和决策提供支持，成为企业迎接变革和商业创新的决胜因素。\n由于 BI 技术的重要性，企业更希望在现有的业务平台和系统中按需集成 BI 能力，从而在各类场景中充分发挥数据分析带来的优势，满足企业日益多样化的数据分析诉求，使 BI 能力与企业业务深度融合。然而，市面上常见的 BI 工具大都是独立、打包的整体方案，很难与前端的业务系统集成在一起，在实践中常常无法满足需求。在这样的背景下，嵌入式 BI 应运而生。 \n所谓嵌入式 BI ，就是在企业现有业务系统中按需集成各种类型的数据分析能力。这种集成工作一般需要考虑两个要点：一方面，它本质上是现有业务系统的一次升级过程，需要关注升级内容与原系统的兼容性、稳定性、安全性等指标；另一方面，业务侧一般希望深度集成专业的数据分析组件，而不是任意挂载一个简单的模块应付了事。这两个要点为开发团队提出了更高的要求和挑战，需要团队认真对待。\n嵌入式数据分析模块架构探索\n对于很多中小企业而言，软件开发团队并不具备独立开发 In-House 嵌入 BI 方案的能力，需要寻求外部第三方供应商的支持。行业中也出现了很多专业的外部供应商，他们探索出了一些经过市场验证的嵌入式 BI 最佳实践。在这里我们一起探讨数据分析模块应该如何嵌入现有业务系统：\n\n\n如上所示，对于业务人员来说，应用功能层的数据分析仪表板、图表、设计器、门户等模块，就是嵌入式 BI 方案展现出来的最终效果。其中，模块的内容和形态一般是根据业务需求决定的，例如为某个销售看板集成一些销售数据动态图表，实时反映各地区的当前销售状况…",
-          "link": "https://www.v2ex.com/t/871917",
-          "publishedOn": "2022-08-10T06:10:35.000Z",
-          "wordCount": 581,
-          "title": "用好 DIV 和 API，在前端系统中轻松嵌入数据分析模块",
+          "description": "GrapeCityChina: \n随着客户的需求越来越“百变”，最近在做大屏设计的葡萄陷入了困境。\n近期客户提出的需求是想在 BI 工具中增加 “路线地图”展示功能并进行数据分析。\n不仅如此，这个“路线地图”还要兼具实用的功能与美观的动效，典型的“既要又要”系列。但是这对于我们的设计师葡萄来说，难度就有些大了。\n静态图片展示不困难，可要让这地图动起来，确实有一些难度。\n所以我们就将该问题拆成两部分，来解决这个问题。首先，我们需要一个路线地图工具。\n“路线地图”工具制思路作与展示\n首先，我们需要整合手中的地图素材和地图动效。\n让我们先来分析一下“路线地图”的主要应用场景：\n（ 1 ）区域内路线地图，比如：厂区巡检路线图，车辆行驶路线图等关于轨迹图的应用场景。\n（ 2 ）区域内点位信息：比如：厂区内安全门点位标记，摄像头位置等标点信息。\n\n提到图片处理，我们首先应该想到使用 SVG 。将图片转换为 SVG 图后，从图坐标中获取相应的点，根据对应的位置来显示路线等信息。\n正所谓“没有代码解决不了的生活难题，如果有那就写两段代码。”（最后制成的工具，已经放在文末，各位自取）\n之后，我们从功能来拆解，实现该地图需要的插件有：画图、取点、设置路线等功能。\n在早自定义地图背景中，地图背景需要采用 SVG 格式的图片，方便获取坐标，保证任何分辨率之下的一致性。如果每一次都需要找图片然后手动转换成 SVG 格式，那样会非常复杂，我们将这一步流程作为该地图工具的功能之一。\n画图中我们可以将目标图片转换为 SVG ，并且设置区域。如果在后期使用到需要联动区域的时候，尽量使用画图解决，使用方式与 Wyn 中的自定义地图比较类似。\n\n获取显示数据的“坐标点”\n我们在定义“路线地图”时，往往需要在地图中标注一些关键数据，比如设备的位置、该位置的人流量、停车数等，为了保证自定义地图的关键数据能够与显示在地图的精确位置上，我们贴心地为大家提供了地图坐标点获取工具，可以用于业务数据存储。\n坐标拾取\n这个功能主要就是获取在自定义地图中的坐标，提供后期显示位置功能，有设置、预览等功能。\n\n自定义路线\n这个功能是路线地图最核心且最亮眼的地方，即我们要定义巡检的路线、方向，很多时候，该功能用于园区巡检，或者是大的区域地图巡检等等。很多情况下我们需要根据自己的业务要指定具体的巡检路线，于是 BI 工具提供了巡检路线绘制地图。\n把当前路线给链接起来，实现路线绘制。可以预览所设置的路线。\n\n最终工具成品展示：\n\n具体工具已经放在文末各位同学自取使用~\n现在工具有了，怎么在 BI 中增加“路线地图”进行数据分析呢？\n在 BI 中使用路线地图进行数据分析\n工具准备完毕，接下来就是如何在 BI 中用路线地图进行数据分析。\n1 、下载并且安装 BI 分析工具\n2 、数据准备\n找一张项目中需要的平面图片，因为在该插件中需要的文件格式为 SVG ，所以对第一步我们先将图片转换为 SVG 格式的，就需要用到上面的工具了。\n操作步骤:\n①将图片转换为 SVG 内容\n\n②获取标点,将标点信息记录如数据表中\n\n③获取路线\n\n④整理数据表\n\n3 、插件操作:\n（ 1 ）选择插件\n\n（ 2 ）技术设置\n地图地址：这里可以放 SVG 代码内容，也可以放一个 URL 地址。\n自定义路线：这里可以设置固定路线，根据内容填写即可。\n其他内容可以自行操作后看效果。\n（ 3 ）绑定数据\n根据需求绑定定影的路线，坐标信息\n\n设置好之后可以看到运动轨迹和标点信息结果。\n\n（ 4 ）路线属性设置\n\n在这里，我们可以给路线中移动图标设置显示的图标，设置大小、颜色等。更是可以根据不同的数值分类实现个性化设置内容。目前插件中所对应的分类条件是按照分类值来做判断的。可以看到根据不同设置显示出不同的效果。\n\n（ 5 ）坐标点设置：\n\n功能与路线设置中类似，大家可以去试试。\n（ 6 ）标签设置，引导线设置\n\n通过此功能，可以让我们整个页面显示的内容更加丰富。\n\n到这里我们就实现了在 BI 中实现使用地图路线进行数据分析。\n工具体验\n工具站点： http://svg.sxtrips.com/\n资料包： https://gcdn.grapecity.com.cn/forum.php?mod=viewthread&tid=140403\n体验更多行业在线 demo：\nhttps://www.grapecity.com.cn/solutions/wyn/demo",
+          "link": "https://www.v2ex.com/t/872196",
+          "publishedOn": "2022-08-11T08:16:23.000Z",
+          "wordCount": 432,
+          "title": "如何在 BI 中增加“路线地图”并进行数据分析？",
+          "imageUrl": null
+        },
+        {
+          "id": "872195",
+          "author": "still97",
+          "description": "still97: \nfor i in range(3):\nif i == 1:\n    print(’第二次循环')\nelse:\n    print('for 循环结束')\n    print('i 值', i)\n\nfor i in range(3):\nif i == 1:\n    print('第二次循环')\nthen:\n    print('for 循环结束')\n    print('i 值', i)\n\n就很不理解，命名是 for...then...的意思，为什么要用 for...else...这么离谱的东西",
+          "link": "https://www.v2ex.com/t/872195",
+          "publishedOn": "2022-08-11T08:14:50.000Z",
+          "wordCount": 504,
+          "title": "辣鸡 for...else",
+          "imageUrl": null
+        },
+        {
+          "id": "872194",
+          "author": "sun1993",
+          "description": "sun1993: 如题？一般程序员扎堆的论坛、交流群里问薪资，一般会招致反感，抑或大部分人都不愿意回答，而且早些年圈内人都说尽量别把薪水说的那么诱人，因为要闷声发大财，防止过多人进来卷，但在脉脉上完全是反过来的，而且薪资一般都高的离谱，应届生年薪 30w 被群嘲的程度，这让我怀疑是不是里面很多人故意带程序员节奏。。",
+          "link": "https://www.v2ex.com/t/872194",
+          "publishedOn": "2022-08-11T08:11:18.000Z",
+          "wordCount": 334,
+          "title": "脉脉上的程序员为何热衷于分享自己的薪水？",
+          "imageUrl": null
+        },
+        {
+          "id": "872192",
+          "author": "moshou",
+          "description": "moshou: \n先放链接，https://testflight.apple.com/join/3OjCfxDS\n做这款 App 的初衷，是看到一些好的句子，有了自己的想法但是随着时间变化，不同时期会对同样的句子产生不同的想法。\n之前自己用的印象笔记，但是不太适合不断对某个笔记内容追加和记录时间。\n所以花了点时间做了这款 App 。\n纯离线应用，无任何隐私泄露问题，提示网络权限是 Google Firebase 的原因，当然拒绝也是可以使用的。\n\n\nTestFlight 链接： https://testflight.apple.com/join/3OjCfxDS",
+          "link": "https://www.v2ex.com/t/872192",
+          "publishedOn": "2022-08-11T08:08:14.000Z",
+          "wordCount": 352,
+          "title": "[TestFlight] 介绍下自己新开发的 App - 我的摘录",
+          "imageUrl": null
+        },
+        {
+          "id": "872191",
+          "author": "bthulu",
+          "description": "bthulu: \n搜到的文档基本都是配合 nodejs 后端如 express, koa 这类来实现 ssr 的.\n相当于访问网页时还要经过一层 nodejs 后端, 那 nginx 的高性能还有什么意义?\n就不能 build 出来静态 ssr 网页, 直接塞到 nginx 的 html 目录下就实现了 ssr 吗?",
+          "link": "https://www.v2ex.com/t/872191",
+          "publishedOn": "2022-08-11T08:03:31.000Z",
+          "wordCount": 440,
+          "title": "有没有什么办法让 nginx 支持 ssr 吗?",
+          "imageUrl": null
+        },
+        {
+          "id": "872190",
+          "author": "v2e0xAdmin2",
+          "description": "v2e0xAdmin2: \n具体配置：2017 款 5k iMac ，定制 i7 4.2cpu ，40g 内存，512 ssd ；\n购买日期：2018 年 10 月；\n缺陷：屏幕右下角和左下角进灰，不是很严重；\n体验了下 mac studio ，真舒服，想把他卖了；",
+          "link": "https://www.v2ex.com/t/872190",
+          "publishedOn": "2022-08-11T08:00:50.000Z",
+          "wordCount": 411,
+          "title": "2017 顶配 iMac 二手能卖多少钱",
+          "imageUrl": null
+        },
+        {
+          "id": "872189",
+          "author": "niceyuri",
+          "description": "niceyuri: \n1 前言\n宝子们，这是猎头贴，专门对接汇丰银行的，BASE 广州，注意啊，广州。\n开门见山，先说💰。税前 55 万以内，13 薪。根据面试表现定级。这 55w ，纯发钱，不搞什么绩效，股票之类的胡萝卜。再说工作时间，日常 995 ，有加班情况。\n基本要求是5 年以上经验就好，但是有两个门槛：\n学历要求 985/211 ，英文水平要可以做简单的自我介绍，平时工作可以阅读英文文档\n如果看到这里还感兴趣，咱们就接着看下面。\n2 岗位 JD\n2.1 安卓开发\n岗位职责：\nAndroid 平台 APP/SDK 的设计和开发；\n参与产品和业务相关的技术研究、架构制定、技术选型；\n编写整理相关的开发文档；\n任职要求\n本科及以上学历，计算机或相关专业毕业，英语四级以上\n熟练掌握 kotlin 语言；\n熟悉常用的设计模式，熟悉 MVC 、MVP 、MVVM 等模式，具有扎实的数据结构等计算机基础；\n参与过大型项目开发者优先；\n有源码阅读经验，对代码质量有要求，有开源项目者优先；\n有一定的调试和解决问题的能力，有性能优化经验者优先；\n2.2 IOS 开发\n5+ years of iOS development experience, Bachelor’s degree\n• Prior experience working in an agile environment, continuous integration\n• Experience in delivering software in a regulated environment, ideally financial services based to high quality • Strong knowledge of Swift & Object-C\n• Strong knowledge of multiple programming languages (Java or Python ）\n• Strong analytical & problem solving and creative skills\n• Strong communication and written skills, ability to communicate ideas with others in English\n2.3 其他！！！！\n如果有 5 年以上的开发经历，只要英文读写 ok ，口语简单交流，以上的 JD 没有也没关系。全栈，前端，后端，python 都能找到坑。有枣没枣打一杆子试试呗。\n3 联系方式\n大家可以把「简历」和「岗位偏好」发到这个邮箱： zzlie811@yeah.net\n哪怕本文没有提到合适的 JD ，也欢迎问问看。最近广州深圳，好大的雨。\n屈身守分，以待天时。不可与命争也\n《易经》有云：潜龙勿用。等过了这阵雨，再看看，努力活下去，诸君共勉。",
+          "link": "https://www.v2ex.com/t/872189",
+          "publishedOn": "2022-08-11T07:58:34.000Z",
+          "wordCount": 603,
+          "title": "[广州] 汇丰银行 安卓、IOS、 Python 、全栈啥的，宝子们捞一捞，出粮准时，荒年了找个地儿吃着先。",
+          "imageUrl": null
+        },
+        {
+          "id": "872188",
+          "author": "shangnengfanfo",
+          "description": "shangnengfanfo: \n需求：\n1 、四个房间 + 电视 + 沙发侧边，共需六个网口  \n2 、软路由放弱电箱，6 个 LAN 走暗线，客厅 WiFi 打算用电视这个网口  \n3 、软路由尽量迷你，不然弱电箱放不下  \n4 、软路由尽量稳定，定制玄关柜比较深，弱电配置好不打算折腾了，追求简单、一劳永逸",
+          "link": "https://www.v2ex.com/t/872188",
+          "publishedOn": "2022-08-11T07:47:35.000Z",
+          "wordCount": 383,
+          "title": "求 8 网口/6 网口软路由或稳定的 [迷你] 有线路由器推荐",
+          "imageUrl": null
+        },
+        {
+          "id": "872186",
+          "author": "soulsomuns",
+          "description": "soulsomuns: V2er - Best client for V2EX 停更了？\n帖子回复不了，提示解析失败。\n给作者发邮件不回复。",
+          "link": "https://www.v2ex.com/t/872186",
+          "publishedOn": "2022-08-11T07:39:47.000Z",
+          "wordCount": 369,
+          "title": "V2er - Best client for V2EX 停更了？",
+          "imageUrl": null
+        },
+        {
+          "id": "872185",
+          "author": "qzhai",
+          "description": "qzhai: 我在站长之家和爱站的广告里专门点了下做 SEO 的。\n发现他们都是先收钱，然后承诺包收录，不收录就退钱。\n这怎么跟算卦一样。。。不灵不要钱。。\n感觉是门稳赚的生意。",
+          "link": "https://www.v2ex.com/t/872185",
+          "publishedOn": "2022-08-11T07:37:40.000Z",
+          "wordCount": 344,
+          "title": "SEO 是玄学么？",
+          "imageUrl": null
+        },
+        {
+          "id": "872184",
+          "author": "Andreas8",
+          "description": "Andreas8:",
+          "link": "https://www.v2ex.com/t/872184",
+          "publishedOn": "2022-08-11T07:37:24.000Z",
+          "wordCount": 307,
+          "title": "京东国际 AirPods3 到手大概 1099，可以买京东提供的两年全保换新，到手价格约 1178，可以入手吗？各位大佬们？有什么坑吗？",
+          "imageUrl": null
+        },
+        {
+          "id": "872181",
+          "author": "zxCoder",
+          "description": "zxCoder: \n不知道是正常现象还是说身体出问题",
+          "link": "https://www.v2ex.com/t/872181",
+          "publishedOn": "2022-08-11T07:30:14.000Z",
+          "wordCount": 315,
+          "title": "这几天压力有点大，前天突然感觉呼吸不正常了，需要刻意去深呼吸",
+          "imageUrl": null
+        },
+        {
+          "id": "872180",
+          "author": "Alexhex",
+          "description": "Alexhex: \n目前人在国外，不是做计算机相关工作的，经常发现家里的网络不管是微信打开图片或者往国内传文件都巨慢。有时候连 Google 都很慢。Google 一圈之后，在电脑上装了 DNS Jumper 找到最快 DNS 之后，把这个 DNS 设置到路由器里，会有一段时间的改善然后有时候又不行了。\n我知道这种问题很复杂，原因很多。现在想系统学习一下相关知识，目的是能顺畅 Troubleshooting 改善家里的网络状况，包括但不限于路由 /软路由设置，网络连接设备占用等。是不是必须从头把 TCP/IP 先过一遍？有什么推荐的学习路径吗？",
+          "link": "https://www.v2ex.com/t/872180",
+          "publishedOn": "2022-08-11T07:29:01.000Z",
+          "wordCount": 368,
+          "title": "不懂相关技术，想要学习一些相关知识，目的是改进家里的宽带……",
+          "imageUrl": null
+        },
+        {
+          "id": "872179",
+          "author": "wunonglin",
+          "description": "wunonglin: \n目前流行的弹窗，不管是\n<dialog visible=\"visible\">\n<user-dialog />\n</dialog>\n\n还是\n<template>\n    <dialog visible=\"visible\"></dialog>\n</template>\n<script>\nvisible = false\n    open(){\n    this.visible = true\n    }\n    close(){\n    this.visible = true\n    }\n</script>\n\n都难受至极。\n第一种写法\n在使用 dialog 的时候，dialog 就已经加载好了，但是我还不需要，所以造成不必要的资源浪费(可忽略)，以及在代码里看着这堆东西太不优雅了\n<dialog ref=\"dialog1\" :visible=\"dialog1\" />\n<dialog ref=\"dialog2\" :visible=\"dialog2\" />\n<dialog ref=\"dialog3\" :visible=\"dialog3\" />\n<dialog ref=\"dialog4\" :visible=\"dialog4\" />\n......\n\nvisible 会留在调用组件里，调用者有 N 个 dialog 就有 N 个变量\ndata(){\nreturn {\ndialog1: false,\ndialog2: false,\ndialog3: false,\n......\n}\n}\n\n想在关闭 dialog 的时候做一些事情很难受，要么 watch dialog1~N 这个变量，要么给所有 dialog 写<dialog @close=\"close\" />\n<dialog :visible.sync=\"visible\">\n<user-dialog @close=\"close\" />\n</dialog>\n\ndata(){\nreturn {\nvisible: true\n}\n}\n\nclose(event){\nconsole.log(event)\nthis.visible = false\n}\n\n第二种写法\n一旦引入组件，组件便开始 mount 了，生命周期也执行了，如果调用者引入了 N 个 dialog ，那性能可想而知，还不如第一种写法\n因失去了生命周期的特性，导致关闭弹窗的时候需要你自己重置数据，做清理\n而且你开不能利用生命周期来做数据加载，因为你还没打开弹窗，90%的业务场景是没必要加载数据的，所以你还要在 open 里自己加载\n还有一些问题我暂时想不起来，先略吧\n忍了好久了，终于把 https://material.angular.io/components/dialog/overview 的 dialog 给挪过来了，所说不太完美，但是至少满足我的痛点了。\n使用文档可以看我写的demo，API 参考的话可以看Dialog | Angular Material\n各位如果也有同样的痛苦的话，可以 fork 到自己项目里去改一下就可以用了。\n写得不是很完美，仅作为一个想法、思路。\nps：真的想吐槽手动初始化 Vue 这个过程，难受至极，离开了文档的操作，啥也不是。",
+          "link": "https://www.v2ex.com/t/872179",
+          "publishedOn": "2022-08-11T07:26:06.000Z",
+          "wordCount": 461,
+          "title": "终于把 Vue 的 Dialog 给整舒服了",
+          "imageUrl": null
+        },
+        {
+          "id": "872178",
+          "author": "lookStupiToForce",
+          "description": "lookStupiToForce: \n起因还是兴趣以及*趣\n需求是想搞清楚以下这些东西，最好是能以前后内容贯通的方式系统性地学习：\nDNS 的原理，以及简单实现\n硬软路由 / 旁路由 / 单臂路由 等路由组件相通的部分，和各自解决的痛点\n交换机相对路由器又解决了什么关键的问题\nNAT 类型以及打洞具体实现方法，进一步 P2P 打洞的实现\n网络包混淆混淆的到底是啥，比如员工使用**上网能让网络工程师看不出他访问了啥网站吗？\n感觉在描述网络工程，但我想知道有没有哪一本书是专门把上面这些东西给一个野路子程序员拎清后拿来用的，或者一本《计算机网络》能解决以上问题吗？",
+          "link": "https://www.v2ex.com/t/872178",
+          "publishedOn": "2022-08-11T07:25:43.000Z",
+          "wordCount": 584,
+          "title": "真心求教，网络分布、路由、转发、穿透相关知识怎么系统学习",
+          "imageUrl": null
+        },
+        {
+          "id": "872176",
+          "author": "Mitsumune",
+          "description": "Mitsumune: \n是福建移动的宽带，发现改了桥接以后;路由器隔一段时间拨号会掉！之前还以为是固件问题刷了几个都一样，看了下日志发现不对，在恩山搜到了相似的情况；可能是 isp 强制重拨号😢按评论区的方法“打开不主动发送 lcp-echo”后还是同样的结果！",
+          "link": "https://www.v2ex.com/t/872176",
+          "publishedOn": "2022-08-11T07:17:55.000Z",
+          "wordCount": 564,
+          "title": "宽带改桥接后隔一段时间会被 isp 强制重播，请问怎样才能不被重播？",
+          "imageUrl": null
+        },
+        {
+          "id": "872175",
+          "author": "hhhhhh123",
+          "description": "hhhhhh123: \n我刚刚发现 nginx 日志里面 有个 ip 疯狂在访问，这是为啥， 其实平常也是有很多不同的 ip 会访问，但是没在意。 虽然不知为啥，，然后我的网站还没弄好 域名都还没申请。很好奇他们是在干嘛？都是国外的 ip 因为我的服务器是亚马逊的。 这是一部分 IP \n18.139.219.224 - - [11/Aug/2022:03:33:09 +0000] \"GET //info3.php HTTP/1.1\" 404 134 \"-\" \"python-requests/2.28.1\"\n18.139.219.224 - - [11/Aug/2022:03:33:10 +0000] \"GET //info4.php HTTP/1.1\" 404 134 \"-\" \"python-requests/2.28.1\"\n18.139.219.224 - - [11/Aug/2022:03:33:12 +0000] \"GET //phpinfo1.php HTTP/1.1\" 404 134 \"-\" \"python-requests/2.28.1\"\n18.139.219.224 - - [11/Aug/2022:03:33:13 +0000] \"GET //phpinfo2.php HTTP/1.1\" 404 134 \"-\" \"python-requests/2.28.1\"\n18.139.219.224 - - [11/Aug/2022:03:33:14 +0000] \"GET //phpinfo3.php HTTP/1.1\" 404 134 \"-\" \"python-requests/2.28.1\"\n18.139.219.224 - - [11/Aug/2022:03:33:16 +0000] \"GET //phpinfo4.php HTTP/1.1\" 404 134 \"…",
+          "link": "https://www.v2ex.com/t/872175",
+          "publishedOn": "2022-08-11T07:13:42.000Z",
+          "wordCount": 1700,
+          "title": "我的服务器是不是被人盯上了？",
+          "imageUrl": null
+        },
+        {
+          "id": "872174",
+          "author": "callmesmc",
+          "description": "callmesmc:",
+          "link": "https://www.v2ex.com/t/872174",
+          "publishedOn": "2022-08-11T07:13:38.000Z",
+          "wordCount": 376,
+          "title": "iOS 下有无将 GB 18030 编码的文本转化为 UTF-8 的方法？",
+          "imageUrl": null
+        },
+        {
+          "id": "872173",
+          "author": "bloomy8",
+          "description": "bloomy8: \n有 Switch 但是只能玩到 123 ，大逆转的话没有中文，不知道 3DS 能不能解决这个需求，以及可玩性在现在来说高不高呢",
+          "link": "https://www.v2ex.com/t/872173",
+          "publishedOn": "2022-08-11T07:11:57.000Z",
+          "wordCount": 389,
+          "title": "现在买 3DS 玩逆转裁判 4 和大逆转合适吗",
+          "imageUrl": null
+        },
+        {
+          "id": "872172",
+          "author": "gygesm123",
+          "description": "gygesm123: \ngithub 地址： 请猛击它: https://github.com/GZ315200/quickstart-react-admin",
+          "link": "https://www.v2ex.com/t/872172",
+          "publishedOn": "2022-08-11T07:10:32.000Z",
+          "wordCount": 402,
+          "title": "「个人开源」写了一个基于 React/Redux 的后台模版，与大家交流学习，欢迎大家 Star， Issue",
+          "imageUrl": null
+        },
+        {
+          "id": "872171",
+          "author": "huaweigg",
+          "description": "huaweigg: \n昨天更新后 parallels desktop 18 应该是手滑点开了还是不知道默认打开了。今天接口遇到性能问题，从路由器，系统，应用每层都查了下，后来发现是这个问题....关了之后好了",
+          "link": "https://www.v2ex.com/t/872171",
+          "publishedOn": "2022-08-11T07:08:23.000Z",
+          "wordCount": 340,
+          "title": "parallels desktop 18 多了一个 Network Conditioner",
+          "imageUrl": null
+        },
+        {
+          "id": "872170",
+          "author": "paicha",
+          "description": "paicha: web3 的核心价值和互联网的发展历史\nhttps://mp.weixin.qq.com/s/zmtzk9ZkYhRvHXg0aAEMxg\n从 web 技术发展规律看待 web3 底层技术的问题\nhttps://mp.weixin.qq.com/s/TVnruJ_cyA8zXmJBN-svQg\nweb3 过去和现在发生的事情，web3 想做什么？\nhttps://mp.weixin.qq.com/s/TVzjFPsBIsNHv8gLiHZHvg",
+          "link": "https://www.v2ex.com/t/872170",
+          "publishedOn": "2022-08-11T07:07:31.000Z",
+          "wordCount": 544,
+          "title": "到底什么是 web3？",
+          "imageUrl": null
+        },
+        {
+          "id": "872169",
+          "author": "flyinghigherair",
+          "description": "flyinghigherair:",
+          "link": "https://www.v2ex.com/t/872169",
+          "publishedOn": "2022-08-11T07:00:12.000Z",
+          "wordCount": 333,
+          "title": "求教， webstorm 如何设置打开文件默认不收缩 import？",
+          "imageUrl": null
+        },
+        {
+          "id": "872167",
+          "author": "sheatming",
+          "description": "sheatming: \n昨天下午用的很好，晚上到家开机后就出现鼠标指针间隔卡顿\n具体症状：鼠标指针在正常移动时，每隔三秒会卡顿一下，卡顿结束后指针会直接跳过卡顿时大约的距离。\n设备：无外设（扩展坞、外接显示器）、内置触控板、第三方蓝牙鼠标都会造成\n排除：重启无效、关机静止一段时间后无效、同时关闭蓝牙和 WIFI 无效、更换使用环境无效、无占用更多资源的进程\n其他尝试：\n1 、开机长按 D 进入\"诊断模式\"时指针正常，并且无任何问题\n2 、开机长按 option 选择操作系统界面时指针正常，但进入 MacOS 系统后依然出现，切换至 windows10 后问题依旧。\n3 、接入外部显示器问题依旧\n4 、从 11.6.6 升级至 11.6.8 无效（正在备份，准备升级到 12 ）\n5 、重制过 SMC 、NVRAM 无效\n6 、投屏到电视 ✅ 不知道为什么，我将屏幕镜像到电视，不管是作为单一还是复制，都不会出现卡顿情况。\n7 、安全模式问题也存在\n8 、开机时按 Command+R 进入回复模式也会卡顿\n9 、接入有线鼠标一样\n影响范围：只限于正常的指针移动。鼠标的滚轮，触控板的双指、三指、捏放手势都是正常的。",
+          "link": "https://www.v2ex.com/t/872167",
+          "publishedOn": "2022-08-11T06:52:04.000Z",
+          "wordCount": 359,
+          "title": "macbook 的指针突然卡顿",
+          "imageUrl": null
+        },
+        {
+          "id": "872166",
+          "author": "sxbxjhwm",
+          "description": "sxbxjhwm: \n不知道大家有没有遇到过这个情况。。我们可以先来听一段录音，感受一下广东联通客服的服务态度：\n10010_20220811140739.mp3 密码:7ejw\n简单说下事情经过，由于我用了五年剩余话费还是比较多，7 月 16 日，我在 02110016 客服的推荐下办理了异地融合 30 元每月的 200M 宽带，随后联通在未经我同意的情况下，将 1156.25 元的“自由金额”变更为了“未使用的定向金额”，这分明就是明抢行为呀。私改账本的目的就是为了限制我余额的使用范围，目前可以明确的就是新办的宽带以及“亲情付”业务无法使用该余额，明显与他们自称的“无限制”不符。\n联通也是蛮有意思的，每次投诉都给我转到没有权限处理的属地客服这边进行操作，赶巧遇上她们这次没有关话筒，让我得到了这份录音。\n我已经找工信部投诉了，书面邮寄的投诉信，不过好像并没有什么用。\n下面放点图片证据：\n当时是这个活动，2017 年 10 月，充值时我记得是充 2000 返 1000 ，分 20 个月解冻，使用是无限制的，我就直接拿网图来证明了，大家应该都有印象：\n\n\n2022 年 3 月 26 日，我看到的手机营业厅中明确说明这是“自由金额”：\n\n7 月 16 日，未经我同意私改账本：",
+          "link": "https://www.v2ex.com/t/872166",
+          "publishedOn": "2022-08-11T06:51:48.000Z",
+          "wordCount": 423,
+          "title": "还记得广东联通 2017 年“存费送红包”活动么，时隔五年，他们反悔了",
+          "imageUrl": null
+        },
+        {
+          "id": "872165",
+          "author": "Danswerme",
+          "description": "Danswerme: \n表是这样的：\nid\nuid\ntype\nnum\n\n\n\n\n1\n1\n0\n24\n\n\n2\n2\n2\n21\n\n\n3\n3\n1\n14\n\n\n4\n1\n0\n24\n\n\n5\n2\n2\n21\n\n\n6\n3\n1\n14\n\n\n按 uid 分组，然后根据 type 类型对 num 进行汇总，type 是固定的，一共有三种，这种应该怎么写呢？\n结果大概这样：\n[\n{ uid: 1, type_0_sum: 10, type_1_sum: 12, type_2_sum: 12 },\n{ uid: 2, type_0_sum: 10, type_1_sum: 12, type_2_sum: 12 },\n{ uid: 3, type_0_sum: 10, type_1_sum: 12, type_2_sum: 12 },\n]",
+          "link": "https://www.v2ex.com/t/872165",
+          "publishedOn": "2022-08-11T06:48:53.000Z",
+          "wordCount": 489,
+          "title": "V 友们请教一个 SQL 语句的写法",
+          "imageUrl": null
+        },
+        {
+          "id": "872164",
+          "author": "artemislu569",
+          "description": "artemislu569: \n由题\n楼主的一个有钱的表哥，人现在三亚，因为疫情的原因搞不了线下的小买卖了，让我找一个做直播带货的大佬带他挑选货源以及传授一些经验，我已经黔驴技穷了，大家有没有好点子。",
+          "link": "https://www.v2ex.com/t/872164",
+          "publishedOn": "2022-08-11T06:44:54.000Z",
+          "wordCount": 352,
+          "title": "有钱的表哥找做直播带货的大佬带他入行",
+          "imageUrl": null
+        },
+        {
+          "id": "872163",
+          "author": "joooooker21",
+          "description": "joooooker21: \n团队目前接到一个需求：需要开发一个虚拟打印机软件，让用户安装在 windows 电脑上。作用是：当用户打印时，可以选择我们的虚拟打印机，弹出页面让用户填写一些信息，再发送 http 请求，将填写的信息以及要打印的内容（以 pdf 形式）提交到我们的后台服务器上。\n查找了一些开源项目，主要是基于 donet 进行开发，苦于团队内没有熟悉客户端的选手，正在考虑是走外包开发还是内部安排感兴趣的同学边学边做。\n有没有搞过类似功能的朋友？想听听你们的建议",
+          "link": "https://www.v2ex.com/t/872163",
+          "publishedOn": "2022-08-11T06:42:36.000Z",
+          "wordCount": 603,
+          "title": "虚拟打印机开发的复杂度问题",
+          "imageUrl": null
+        },
+        {
+          "id": "872162",
+          "author": "huangwei8ku",
+          "description": "huangwei8ku: \n有没有按摩坐垫啊，公司的椅子做的屁股老是疼，站起来，桌子又不是智能升降的\n有经验的来分享下，",
+          "link": "https://www.v2ex.com/t/872162",
+          "publishedOn": "2022-08-11T06:33:52.000Z",
+          "wordCount": 299,
+          "title": "有没有按摩坐垫啊，公司的椅子做的屁股老是疼，站起来，桌子又不是智能升降的",
+          "imageUrl": null
+        },
+        {
+          "id": "872161",
+          "author": "wsseo",
+          "description": "wsseo: 剧情有点拖沓，没有《王国》惊险刺激。",
+          "link": "https://www.v2ex.com/t/872161",
+          "publishedOn": "2022-08-11T06:33:47.000Z",
+          "wordCount": 315,
+          "title": "韩剧《还魂》没有想象中的好看",
           "imageUrl": null
         }
       ]
@@ -1026,6 +1086,51 @@
       "feedUrl": "https://www.thisiscolossal.com/feed/",
       "siteUrl": "https://www.thisiscolossal.com",
       "articles": [
+        {
+          "id": "https://www.thisiscolossal.com/?p=221448",
+          "author": "Grace Ebert",
+          "description": "Healthy fibers meet delicious decadence in Normalynn Ablao’s crocheted provisions. The California-based crafter and pattern maker is cooking up spring rolls, pies, and party-sized platters of chicken wings, crudites, and dip, all made with yarn. Like her pastas, Ablao continues to serve textured designs that mimic their edible counterparts, although she tends to have a taste for cakes, pies, and other baked goods that you can find on Instagram. More",
+          "link": "https://www.thisiscolossal.com/2022/08/normalynn-ablao-crocheted-food/",
+          "publishedOn": "2022-08-10T19:26:03.000Z",
+          "wordCount": 1427,
+          "title": "Kitchen Stitching: Pies, Pastries, and Chicken Wings Are Crocheted into Delectable Fiber-Based Cuisine",
+          "enclosure": {
+            "url": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/ablao-og.jpg",
+            "length": "135829",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/ablao-og.jpg"
+        },
+        {
+          "id": "https://www.thisiscolossal.com/?p=221425",
+          "author": "Grace Ebert",
+          "description": "What do an injured Kelley O’Hara and “The Incredulity of Saint Thomas” by Italian Baroque artist Mattia Preti have in common? The exasperated soccer star and 1675 religious masterpiece find unexpected synchronicity thanks to LJ Rader, the creator behind the wildly popular meme account ArtButMakeItSports.\nSince 2015, Rader has been cleverly pairing photos from professional sports with art historical works. What began as a personal project that involved visits to museums and some of the week’s most intensely emotional images from soccer matches or basketball games has evolved into Twitter and Instagram accounts with considerable followings.  More",
+          "link": "https://www.thisiscolossal.com/2022/08/art-but-make-it-sports/",
+          "publishedOn": "2022-08-10T16:00:34.000Z",
+          "wordCount": 1727,
+          "title": "Sports and Art History Team Up in a Playful Twitter Account That Matches Life and Art",
+          "enclosure": {
+            "url": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/sports-og.jpg",
+            "length": "125352",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/sports-og.jpg"
+        },
+        {
+          "id": "https://www.thisiscolossal.com/?p=221433",
+          "author": "Kate Mothes",
+          "description": "In the National Museum of Scotland in Edinburgh, an enormous single-cell organism floats among the Victorian iron colonnades of the cavernous Grand Gallery. Bristol-based multidisciplinary artist Luke Jerram often explores the nature of scale and perception in his pieces (previously), and the latest installation of his inflatable sculpture “E.coli,” which has been displayed in locations around the U.K., spans 90 feet, representing the bacterium at 5 million times its actual size. More",
+          "link": "https://www.thisiscolossal.com/2022/08/luke-jerram-ecoli/",
+          "publishedOn": "2022-08-10T15:17:58.000Z",
+          "wordCount": 1568,
+          "title": "An Enormous ‘E.coli’ Floats Through the National Museum of Scotland at 5 Million Times Its Actual Size",
+          "enclosure": {
+            "url": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/jerram-ecoli-og.jpg",
+            "length": "462946",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/jerram-ecoli-og.jpg"
+        },
         {
           "id": "https://www.thisiscolossal.com/?p=221410",
           "author": "Grace Ebert",
@@ -1130,51 +1235,6 @@
             "type": "image/jpeg"
           },
           "imageUrl": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/birds-og.jpg"
-        },
-        {
-          "id": "https://www.thisiscolossal.com/?p=221283",
-          "author": "Grace Ebert",
-          "description": "Cradled within wooden boxes, leaves, blossoms, animals, and the occasional bit of human anatomy form the dense topographies of Melis Buyruk (previously). The Turkish artist blends various organic elements into sprawling, monochromatic works made of porcelain that are mesmerizing in intricacy with slightly unearthly undertones. In multiple recent works like the “Blooming Light” and “Golden Bloom,” for example, a single ear appears amidst the mosses and foliage, embedding the fragmented human body part within the largely floral ecosystem. More",
-          "link": "https://www.thisiscolossal.com/2022/08/melis-buyruk-porcelain-works/",
-          "publishedOn": "2022-08-05T17:36:47.000Z",
-          "wordCount": 1573,
-          "title": "Human Ears and Animals Emerge from Dense Fields of Porcelain Foliage Sculpted by Melis Buyruk",
-          "enclosure": {
-            "url": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/buyruk-og.jpg",
-            "length": "215957",
-            "type": "image/jpeg"
-          },
-          "imageUrl": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/buyruk-og.jpg"
-        },
-        {
-          "id": "https://www.thisiscolossal.com/?p=221268",
-          "author": "Grace Ebert",
-          "description": "In his ongoing Spectral series, Las Vegas-based photographer Cody Cobb projects an ultraviolet light source across desert shrubs and secluded, rocky coves, unveiling an invisible spectrum of blues and oranges. Lichens, fallen leaves, and the bacteria growing from lava tubes become radiant lifeforms and transform locations in Washington, Utah, California, and New Mexico into otherworldly landscapes.\nFocused on organic matter like mineral deposits and plants, Cobb’s photos expose what he describes as a “parallel world,” where the UV light allows an extraterrestrial eeriness to emerge. More",
-          "link": "https://www.thisiscolossal.com/2022/08/cody-cobb-spectral-photos/",
-          "publishedOn": "2022-08-05T13:40:27.000Z",
-          "wordCount": 1511,
-          "title": "UV Light Unveils the Extraterrestrial Luminescence of the American West in Cody Cobb’s Photos",
-          "enclosure": {
-            "url": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/cobb-og.jpg",
-            "length": "119330",
-            "type": "image/jpeg"
-          },
-          "imageUrl": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/cobb-og.jpg"
-        },
-        {
-          "id": "https://www.thisiscolossal.com/?p=221246",
-          "author": "Grace Ebert",
-          "description": "The ordinary collides with the bizarre in Ben Zank’s photography. Set on the street, on construction sites, or in grassy fields, his surreal images capture subjects in unequivocally inconvenient positions: A businessman finds himself trapped under a concrete block, a wood pile stacks atop one figure, and another precariously grasps the edge of a sinkhole. Often hiding their faces behind barriers or through a distinctly avoidant turn of the head, Zank anonymizes his subjects, making their awkward predicaments appear all the more inevitable and bound to happen to unassuming passersby. More",
-          "link": "https://www.thisiscolossal.com/2022/08/ben-zank-surreal-photography/",
-          "publishedOn": "2022-08-04T16:20:26.000Z",
-          "wordCount": 1464,
-          "title": "Bewildering Inconveniences Trap Subjects in Uncomfortable Scenarios in Ben Zank’s Surreal Photography",
-          "enclosure": {
-            "url": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/zank.jpg",
-            "length": "113008",
-            "type": "image/jpeg"
-          },
-          "imageUrl": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/zank.jpg"
         }
       ]
     },
@@ -1184,12 +1244,452 @@
       "siteUrl": "https://gizmodo.com",
       "articles": [
         {
+          "id": "1849399408",
+          "author": "Matt Novak",
+          "description": "North Korea declared victory against covid-19 this week, claiming the isolated country eradicated the virus and heavily implying dictator Kim Jong Un had contracted the disease but recovered (he had a “high fever), according to a new report from North Korean state media. Kim Jong Un’s sister, Kim Yo Jong, also claimed…\nRead more...",
+          "link": "https://gizmodo.com/north-korea-declares-victory-kim-jong-un-covid-19-cases-1849399408",
+          "publishedOn": "2022-08-11T10:30:00.000Z",
+          "wordCount": 6045,
+          "title": "North Korea Declares Victory Against Covid-19 Pandemic With Just 74 Deaths",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/55ba16242b6da5039724ab346775bc95.jpg"
+        },
+        {
+          "id": "1849397651",
+          "author": "Mack DeGeurin",
+          "description": "If you’ve spent any time paying attention to virtual reality news in the past year, you’d be excused for thinking the industry’s focusing its attention solely on uninspired games and expensive efforts to conduct office work in, (insert jazz hands) “the metaverse.” Mark Zuckerberg, the founder of the company once…\nRead more...",
+          "link": "https://gizmodo.com/fundamentalvr-surgery-tech-ai-vr-1849397651",
+          "publishedOn": "2022-08-11T07:00:00.000Z",
+          "wordCount": 7057,
+          "title": "FundamentalVR's Surgery Simulation Will Make You Thank God for Trained Surgeons",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/9b4d77d0cb6123fe36c963fc3149addd.jpg"
+        },
+        {
+          "id": "1849397973",
+          "author": "Cheryl Eddy",
+          "description": "The story of Vesper sounds intriguing—it’s about a teenaged girl who stumbles upon a way to save Earth’s ravaged ecosystem, though it’ll mean dealing with some terribly unscrupulous humans. But the main draw here is the look of the film. Check out the trailer and behold the untamed nature, grimy ruins, floating…\nRead more...",
+          "link": "https://gizmodo.com/vesper-scifi-trailer-post-apocalypse-climate-change-1849397973",
+          "publishedOn": "2022-08-11T00:00:00.000Z",
+          "wordCount": 5341,
+          "title": "The Vesper Trailer Reveals a Bleak Yet Beautiful Glimpse of a Climate-Ravaged Future",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/a010ca965efdb3041d1590376b207c71.jpg"
+        },
+        {
+          "id": "1848494806",
+          "author": "Germain Lussier",
+          "description": "Bill Murray said it in 1978 and we’re still saying it today: “Star Wars! Nothing but Star Wars! Give me those Star Wars! Don’t let them end...” Star Wars is everywhere these days, with multiple movies and TV shows in the works from Disney and Lucasfilm. This article will give you the most up to date Star Wars release…\nRead more...",
+          "link": "https://gizmodo.com/star-wars-movies-tv-shows-release-dates-disney-1848494806",
+          "publishedOn": "2022-08-10T23:10:00.000Z",
+          "wordCount": 9645,
+          "title": "Star Wars Release Dates: Where and When to See Upcoming Star Wars Movies and Disney+ Shows",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/31ef93bac3539eec723dea4a1dd66bf1.png"
+        },
+        {
+          "id": "1849396757",
+          "author": "Mack DeGeurin",
+          "description": "Google’s Threat Analysis Group revealed new details today about its efforts to identify and help patch a zero-day exploit impacting Android devices built by a commercial surveillance vendor and dating back to at least 2016. The research, presented at the Black Hat cybersecurity conference in Las Vegas, represents the…\nRead more...",
+          "link": "https://gizmodo.com/google-linux-zero-day-just-patched-black-hat-1849396757",
+          "publishedOn": "2022-08-10T22:20:00.000Z",
+          "wordCount": 5948,
+          "title": "A Linux Zero-Day Was Finally Patched After Half a Decade of Inaction With Help From Google",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/3e9628eca88f0e0a6542178f31fa99bc.jpg"
+        },
+        {
+          "id": "1849395006",
+          "author": "Linda Codega",
+          "description": "Netflix’s adaption of Neil Gaiman’s long running comic series, The Sandman, released last weekend, and we’ve had some time to gather our thoughts. The first season covers the storyline of just about three years of serialized comic books, and does a pretty good job at figuring out what should stay and what should go.…\nRead more...",
+          "link": "https://gizmodo.com/the-sandman-netflix-neil-gaiman-tom-sturridge-1849395006",
+          "publishedOn": "2022-08-10T22:15:00.000Z",
+          "wordCount": 6155,
+          "title": "6 Things We Loved About Sandman and 3 Things We Didn't",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/69021d1c41db523d1622749af50fccc3.jpg"
+        },
+        {
+          "id": "1849395715",
+          "author": "Passant Rabie",
+          "description": "Northrop Grumman and Firefly Aerospace are teaming up to build a new first stage for Northrop’s Antares rocket, as well as a new medium lift booster. The newly announced partnership means that Northrop will no longer have to rely on Russia and Ukraine for Antares, and will instead turn to building an all-American…\nRead more...",
+          "link": "https://gizmodo.com/northrop-grumman-partners-with-firefly-1849395715",
+          "publishedOn": "2022-08-10T21:45:00.000Z",
+          "wordCount": 5733,
+          "title": "Northrop Grumman Partners With Firefly to Replace Russian Rocket Engines",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/3cfc69eba5f8d4be6aac6f8355ec52a9.jpg"
+        },
+        {
+          "id": "1849395724",
+          "author": "Sabina Graves",
+          "description": "As House of the Dragon gears up to take us back to Westeros, we’re finally getting some clarity as to what went awry in the last few seasons of Game of Thrones. In a New York Times article, A Song of Ice and Fire creator George R.R. Martin shed some light on the ordeal, revealing that while he was more active on…\nRead more...",
+          "link": "https://gizmodo.com/george-rr-martin-on-game-of-thrones-divisive-ending-hbo-1849395724",
+          "publishedOn": "2022-08-10T21:40:00.000Z",
+          "wordCount": 5433,
+          "title": "George R.R. Martin's House of the Dragon Connection Won't End Up Like Game of Thrones",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/778986ac282087cf13facb3e9e160a46.jpg"
+        },
+        {
+          "id": "1849396304",
+          "author": "Lauren Leffer",
+          "description": "It’s been years since Facebook last topped the teen social media charts, yet somehow the platform is still losing ground with young people. The social media site is now used by less than a third of U.S. teenagers, according to new survey data from the Pew Research Center, released Wednesday. That’s down from 71% of…\nRead more...",
+          "link": "https://gizmodo.com/facebook-meta-instagram-youtube-tiktok-snap-1849396304",
+          "publishedOn": "2022-08-10T21:30:00.000Z",
+          "wordCount": 6088,
+          "title": "Facebook Is Still Hemorrhaging Teen Users",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/dd8d8c2c6f885f2a96eeb927b2f9929c.jpg"
+        },
+        {
+          "id": "1849397545",
+          "author": "Kyle Barr",
+          "description": "So were you wondering if all these streaming services bringing ads onto their platforms would actually reduce overall prices? Well, keep dreaming.\nRead more...",
+          "link": "https://gizmodo.com/disney-hulu-espn-streaming-service-1849397545",
+          "publishedOn": "2022-08-10T21:15:00.000Z",
+          "wordCount": 5683,
+          "title": "Disney+ Is Getting More Expensive, Even With Ads",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/30a4522a1318880837e3933fa6e53dea.jpg"
+        },
+        {
+          "id": "1849397443",
+          "author": "Artem Golub",
+          "description": "Read more...",
+          "link": "https://gizmodo.com/w-kamau-bell-on-how-climate-and-racial-justice-are-con-1849397443",
+          "publishedOn": "2022-08-10T21:10:00.000Z",
+          "wordCount": 4372,
+          "title": "W. Kamau Bell on How Climate and Racial Justice are Connected",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/62a2cc6809820e3d4fa46a7a33df31a2.jpg"
+        },
+        {
+          "id": "1849396899",
+          "author": "Passant Rabie",
+          "description": "Read more...",
+          "link": "https://gizmodo.com/hacker-starlink-spacex-black-hat-security-conference-1849396899",
+          "publishedOn": "2022-08-10T21:05:00.000Z",
+          "wordCount": 5773,
+          "title": "Researcher Hacks Starlink Terminal to Warn SpaceX of Dangerous Flaws",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/0da6961f5488cc06eb0ea9cebfce4bf1.jpg"
+        },
+        {
+          "id": "1849395557",
+          "author": "Germain Lussier",
+          "description": "We may never see the recently cancelled Batgirl movie, but it sure has had a huge impact anyway. Since the film’s unceremonious dumping over tax write-offs, the whole conversation around DC Films has changed. Some executives were reportedly so angry about the movie, they wanted to leave. Meanwhile, the president and…\nRead more...",
+          "link": "https://gizmodo.com/dc-movies-shows-still-happening-flash-aquaman-batman-1849395557",
+          "publishedOn": "2022-08-10T21:00:00.000Z",
+          "wordCount": 6226,
+          "title": "So What DC Movies and Shows Are Still Happening?",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/fc47c83d58622952954b4a839e1730e6.jpg"
+        },
+        {
+          "id": "1849395800",
+          "author": "Isaac Schultz",
+          "description": "Scientists recently trapped a giant isopod off the coast of Mexico, and after studying its anatomy and DNA, they determined that the crustacean is an entirely new species.\nRead more...",
+          "link": "https://gizmodo.com/giant-isopod-new-species-gulf-of-mexico-1849395800",
+          "publishedOn": "2022-08-10T20:44:00.000Z",
+          "wordCount": 5631,
+          "title": "Huge Deep Sea Bug—Er, Isopod—Discovered in Gulf of Mexico",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/cf339ee59070f3f8adf40c5e320571c5.png"
+        },
+        {
+          "id": "1849396384",
+          "author": "Sabina Graves",
+          "description": "In case you didn’t know, Pennyworth is going to explain itself with quite the name change. What once was just simply called Pennyworth  is now Pennyworth: The Origin of Batman’s Butler. Formerly on the streamer Epix, it heads to HBO Max for its third season—where it’s getting released over Batgirl, because somehow…\nRead more...",
+          "link": "https://gizmodo.com/hbo-max-pennyworth-butler-of-batman-batgirl-dc-comics-1849396384",
+          "publishedOn": "2022-08-10T20:20:00.000Z",
+          "wordCount": 5226,
+          "title": "Pennyworth, a Show That Still Exists, Is Getting a Ridiculously Bat-Themed Name for Season 3",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/f602846dbc9e7d1e4e9829d0fd78fd27.png"
+        },
+        {
+          "id": "1849396808",
+          "author": "James Whitbrook",
+          "description": "So far this week in our exclusive preview of Titan’s Kamen Rider 01 comic, we’ve given you a glimpse of what to expect out of the legendary franchise’s western comics adventures, and a tease of a sinister new villain. But for those not already familiar with the man behind the Reiwa era’s first Rider, how about a look…\nRead more...",
+          "link": "https://gizmodo.com/kamen-rider-01-comic-preview-covers-aruto-izu-titan-1849396808",
+          "publishedOn": "2022-08-10T19:30:00.000Z",
+          "wordCount": 4747,
+          "title": "Go Behind the Mask and on the Cover in Our Latest Kamen Rider Comic Preview",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/4ce969954e684cd36bdc75f09a9076b3.png"
+        },
+        {
+          "id": "1849394962",
+          "author": "Passant Rabie",
+          "description": "A SpaceX Falcon 9 rocket carried an additional 52 Starlink satellites to low Earth orbit on Tuesday night, raising the total number of Starlinks launched by the company to a whopping 3,009. \n\nRead more...",
+          "link": "https://gizmodo.com/spacex-launches-3-000th-starlink-satellite-1849394962",
+          "publishedOn": "2022-08-10T19:25:00.000Z",
+          "wordCount": 5675,
+          "title": "SpaceX Launches 3,000th Starlink Satellite as Elon's Internet Constellation Continues to Grow",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/4251dc08e655c6d9c0f1ec4f89add274.jpg"
+        },
+        {
+          "id": "1849392349",
+          "author": "Kyle Barr",
+          "description": "The heart of the argument for NFT evangelists has always been the sense they were democratizing the world of art and commerce. Artists, they said, would be able to use a digital proof of ownership to make money off digital sales. So, what should happen when a major company known for predatory practices—such as, for…\nRead more...",
+          "link": "https://gizmodo.com/ntfs-textbooks-college-pearson-1849392349",
+          "publishedOn": "2022-08-10T19:00:00.000Z",
+          "wordCount": 8685,
+          "title": "How Can Textbook Publishers Milk Students Even More? NFTs, Apparently",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/9a789ff075d49952c8c4a7697020ffa8.jpg"
+        },
+        {
+          "id": "1849395500",
+          "author": "Ed Cara",
+          "description": "Scientists in China have found a new virus that has likely made dozens of people sick since 2018 and may be natively carried by shrews. The discovery is the latest reminder that microbes spread from animals to people represent an ever-present potential public health threat.  So far, at least, the evidence suggests…\nRead more...",
+          "link": "https://gizmodo.com/langya-virus-china-henipaviruses-1849395500",
+          "publishedOn": "2022-08-10T18:50:00.000Z",
+          "wordCount": 6806,
+          "title": "A Newly Discovered Virus Has Likely Sickened Dozens in China—How Worried Should We Be?",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/e6f564bb430b3e43fe904d6f06e17b64.jpg"
+        },
+        {
+          "id": "1849391868",
+          "author": "Sabina Graves",
+          "description": "While there may no longer be a physical Disney Store (RIP), ShopDisney.com and Disney Parks have unleashed their fall holiday merch lines. Check out this Halloween haul with Star Wars, Marvel Studios, Nightmare Before Christmas, Haunted Mansion, and more for the whole family—including pets!\n\nRead more...",
+          "link": "https://gizmodo.com/halloween-star-wars-marvel-shop-disney-costumes-merch-1849391868",
+          "publishedOn": "2022-08-10T18:30:00.000Z",
+          "wordCount": 5380,
+          "title": "There's Marvel and Star Wars Halloween Galore in This ShopDisney Fall Preview",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/a8e40a9718ff87f4a787f52d04b77a4e.jpg"
+        },
+        {
+          "id": "1849386024",
+          "author": "Kevin Hurler",
+          "description": "Researchers in Georgia report that gorillas at zoos across the U.S. have come up with a special vocalization—something between a cough and a sneeze—to get the attention of zookeepers when they’re hungry.\n\nRead more...",
+          "link": "https://gizmodo.com/captive-gorillas-started-using-a-special-call-just-to-s-1849386024",
+          "publishedOn": "2022-08-10T18:00:00.000Z",
+          "wordCount": 6492,
+          "title": "Captive Gorillas Started Using a Special Call Just to Summon Zookeepers",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/0a20bf204aa874945b8685c4ff20f600.jpg"
+        },
+        {
+          "id": "1849395568",
+          "author": "Linda Codega",
+          "description": "It’s gotten to that point where most of us either had a few Lego sets as kids or played with them at our friends’ houses. Besides the classic blocks there’s been a lot of interesting takes on the building series. Remember Bionicle? There was a whole animated television series dedicated to those weird lil guys.\n\nRead more...",
+          "link": "https://gizmodo.com/lego-90th-anniversary-favorite-best-sets-open-channel-1849395568",
+          "publishedOn": "2022-08-10T17:45:00.000Z",
+          "wordCount": 5075,
+          "title": "What Are Some of Lego's Greatest Hits?",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/71d72c94745ef491e7ce4e39a1a4cfdc.png"
+        },
+        {
+          "id": "1849396007",
+          "author": "Jody Serrano and Lauren Leffer",
+          "description": "A shocking case involving a stillborn fetus burned and buried in a plastic bag has put Meta in the hot seat after the Facebook parent provided law enforcement with private messages between a 17-year-old Nebraska teen and her mother. The mother was charged in July with performing an illegal abortion, the daughter with…\nRead more...",
+          "link": "https://gizmodo.com/abortion-facebook-messages-nebraska-mom-daughter-cops-1849396007",
+          "publishedOn": "2022-08-10T17:07:00.000Z",
+          "wordCount": 7203,
+          "title": "Did Meta Know It Was Giving the Cops Messages About an Alleged Illegal Abortion?",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/4c22945d6ff6648118e8c07b94ea0876.jpg"
+        },
+        {
+          "id": "1849390358",
+          "author": "Germain Lussier",
+          "description": "Fans of film, TV, comics, and all things pop culture don’t really need a reason to go to a big comic convention. You go because everything you love is all under one roof. However, at this year’s New York Comic Con, that statement goes even further. io9 is excited to exclusively reveal that Oscar Isaac—an actor who has…\nRead more...",
+          "link": "https://gizmodo.com/oscar-isaac-new-york-comic-con-nycc-star-wars-dune-marv-1849390358",
+          "publishedOn": "2022-08-10T17:00:00.000Z",
+          "wordCount": 5530,
+          "title": "Rejoice! Oscar Isaac Is Coming to New York Comic Con",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/3967548198be969f4b0a779584d17562.jpg"
+        },
+        {
+          "id": "1849395616",
+          "author": "George Dvorsky",
+          "description": "Engineers at SpaceX have performed the first static fire test of Booster 7, a prototype of the Super Heavy first stage. The test, in which just one of the booster’s 33 Raptor engines was ignited, moves the company closer to its first orbital test of the revolutionary Starship system. \nRead more...",
+          "link": "https://gizmodo.com/spacex-avoids-explosion-in-test-of-starship-booster-1849395616",
+          "publishedOn": "2022-08-10T16:50:00.000Z",
+          "wordCount": 6144,
+          "title": "SpaceX Performs Limited Static Fire Test of Starship Booster, Avoids Explosion",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/d67b27f60a8752852ef32fb9dbd97532.jpg"
+        },
+        {
+          "id": "1849395202",
+          "author": "Andrew Liszewski",
+          "description": "The same quality and durability that allows Lego bricks to be passed down from one generation to the next also allows the brightly colored building toy to be weaponized in the worst way imaginable: inside a foot-tracking cannon that deliberately sends the pieces sliding underfoot as someone walks by.\nRead more...",
+          "link": "https://gizmodo.com/adam-beedle-youtuber-lego-cannon-smart-step-on-brick-1849395202",
+          "publishedOn": "2022-08-10T16:20:00.000Z",
+          "wordCount": 5459,
+          "title": "Sadistic Monster Creates a Smart Cannon That Makes You Step on Legos",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/4833c4c26ebaceabd9c5bebd977cd754.gif"
+        },
+        {
+          "id": "1849395184",
+          "author": "Mack DeGeurin",
+          "description": "Amazon’s slowly making good on its goal of one day turning your entire body into one big money oozing meatsuit. First up, your palms.\n\nRead more...",
+          "link": "https://gizmodo.com/whole-foods-palm-contactless-payment-amazon-1849395184",
+          "publishedOn": "2022-08-10T16:15:00.000Z",
+          "wordCount": 6095,
+          "title": "Amazon's Creepy Palm Reading Payment System Is Taking Over Whole Foods",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/dc66f18da930db41df33c1b1104a31a7.jpg"
+        },
+        {
+          "id": "1849392072",
+          "author": "Germain Lussier",
+          "description": "As I sat down to revisit Matthew Vaughn’s adaptation of the Neil Gaiman novel Stardust, a family friend who was visiting asked me a question. “What are you watching?” “Stardust.” “What’s that?” “This fantasy movie with Michelle Pfeiffer and Robert De Niro.” “I’ve never heard of it.” “Henry Cavill is also in it and he…\nRead more...",
+          "link": "https://gizmodo.com/stardust-retro-review-neil-gaiman-charlie-cox-1849392072",
+          "publishedOn": "2022-08-10T16:10:00.000Z",
+          "wordCount": 6776,
+          "title": "Stardust Is Star-Studded Fantasy Filmmaking Done Right",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/d4bb9ac72674d3817d4d7d667d2e3b63.jpg"
+        },
+        {
+          "id": "1849191781",
+          "author": "Dell Cameron",
+          "description": "Gizmodo is 20 years old! To celebrate the anniversary, we’re looking back at some of the most significant ways our lives have been thrown for a loop by our digital tools.\n\nRead more...",
+          "link": "https://gizmodo.com/the-privacy-we-knew-in-20th-century-no-longer-exists-1849191781",
+          "publishedOn": "2022-08-10T16:00:00.000Z",
+          "wordCount": 8316,
+          "title": "The Surveillance Fantasies of the New Millennium Became Our Reality",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/c2f5d94cc23fa0a0057a9a6202b0d9d0.gif"
+        },
+        {
+          "id": "1849384557",
+          "author": "Isaac Schultz",
+          "description": "Archaeologists at Pompeii have announced the discovery of several furnished rooms in the House of the Lararium, a middle class residence on the ancient city’s northern side.\nRead more...",
+          "link": "https://gizmodo.com/pompeii-house-of-lararium-1849384557",
+          "publishedOn": "2022-08-10T15:28:00.000Z",
+          "wordCount": 6035,
+          "title": "New Digging at Pompeii Reveals How the Middle Class Lived in 79 AD",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/6f6b3170411cf32e30b57bbff8622ddd.jpg"
+        },
+        {
+          "id": "1849391601",
+          "author": "Lauren Leffer",
+          "description": "Fiddler crabs build their burrows in beaches and in the muck of saltwater wetlands. Usually, those holes serve as the crabs’ home and provide each crustacean shelter and a quick escape from predators. But in some long-abandoned fiddler crab burrows along Louisiana’s Gulf coast, you’ll find something else: Residues of…\nRead more...",
+          "link": "https://gizmodo.com/bp-deepwater-horizon-oil-spill-residue-10-years-later-1849391601",
+          "publishedOn": "2022-08-10T15:17:00.000Z",
+          "wordCount": 6843,
+          "title": "Signs of BP's Deepwater Horizon Oil Spill Persist Over a Decade Later",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/22dc828772ce953a104ab4c46aabe46e.jpg"
+        },
+        {
+          "id": "1849390433",
+          "author": "Cheryl Eddy",
+          "description": "No matter what you thought of Jurassic World Dominion, there’s no denying how cool and alarmingly lifelike its dinosaurs are, a testament to the technical achievements that went into creating them. And surprise: it’s not all CGI! Learn more in io9's exclusive clip from the film’s upcoming home release.\nRead more...",
+          "link": "https://gizmodo.com/jurassic-world-dominion-gigabite-animatronic-bonus-clip-1849390433",
+          "publishedOn": "2022-08-10T15:00:00.000Z",
+          "wordCount": 6148,
+          "title": "Meet Jurassic World Dominion's Very Big Bad in This Exclusive Bonus-Features Clip",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/2a789fb06c12f1884cbd7116a30f950c.jpg"
+        },
+        {
+          "id": "1849392332",
+          "author": "Andrew Liszewski",
+          "description": "The days of limiting your office furniture splurges to ergonomic chairs might soon be coming to an end. A sheet of plywood spanning a pair of saw horses is just no longer the optimal place to plop down for a long day’s work. Desks are now being crammed full of useful tech, including their own operating systems and…\nRead more...",
+          "link": "https://gizmodo.com/luminda-desk-oled-display-wireless-charging-standing-1849392332",
+          "publishedOn": "2022-08-10T15:00:00.000Z",
+          "wordCount": 5762,
+          "title": "The Lumina Desk Includes an Embedded 24-Inch OLED Display",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/b40e2e9f4e372de1c30e03d3725eb1db.jpg"
+        },
+        {
+          "id": "1849394535",
+          "author": "Kevin Hurler",
+          "description": "Spotify has apparently unveiled a new website to sell concert tickets to consumers. Spotify Tickets is the mysterious new feature from the streaming company that could chip away at sites like Ticketmaster and StubHub. \n\nRead more...",
+          "link": "https://gizmodo.com/spotify-concert-tickets-music-ticketmaster-1849394535",
+          "publishedOn": "2022-08-10T14:55:00.000Z",
+          "wordCount": 5602,
+          "title": "Spotify Is Testing Out Selling Concert Tickets to Listeners",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/1ef6e1bc9fb39ee8a7a506002b6a3949.png"
+        },
+        {
+          "id": "1849394705",
+          "author": "Andrew Liszewski",
+          "description": "Batteries suck, which has become even more of an issue over the past few decades as the battery-dependent mobile devices we’ve become addicted to now demand more power than ever. But as long as you’ve got a source of light—be it the sun or soul-crushing office fluorescents—Urbanista’s new wireless earbuds will keep…\nRead more...",
+          "link": "https://gizmodo.com/urbanista-solar-powered-wireless-earbuds-charging-case-1849394705",
+          "publishedOn": "2022-08-10T14:40:00.000Z",
+          "wordCount": 5403,
+          "title": "Urbanista's Solar-Powered Wireless Earbuds Soak Up the Sun to Boost Battery Life",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/e944345e47b46015a1c43ec95b122541.jpg"
+        },
+        {
+          "id": "1849394710",
+          "author": "Kyle Barr",
+          "description": "What does it cost to sell out and hand over the private information of the critics for a despotic regime? Apparently $300,000 and a nice watch. A former Twitter employee was convicted on six of his original 11 counts of operating as an agent for Saudi Arabia. The verdict came down late Tuesday, and all that’s left is…\nRead more...",
+          "link": "https://gizmodo.com/twitter-saudi-spy-elon-musk-1849394710",
+          "publishedOn": "2022-08-10T14:30:00.000Z",
+          "wordCount": 6202,
+          "title": "Former Twitter Employee Convicted as Saudi Spy",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/5587f95b542f4c340c0bad551b2fbf29.jpg"
+        },
+        {
+          "id": "1849394654",
+          "author": "Artem Golub and Kevin Hurler",
+          "description": "Read more...",
+          "link": "https://gizmodo.com/iceland-s-hottest-tourist-destination-1849394654",
+          "publishedOn": "2022-08-10T14:15:00.000Z",
+          "wordCount": 4337,
+          "title": "Iceland’s Hottest Tourist Destination",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/07902a92f85a53a62f83922fdb1c3514.jpg"
+        },
+        {
+          "id": "1849382665",
+          "author": "James Whitbrook and Gordon Jackson",
+          "description": "Get a glimpse at the return of Epix’s War of the Worlds. David Dastmalchian gets into exorcisms in his latest role. Plus, what’s coming on Archer and American Horror Stories. To me, my spoilers!\n\nRead more...",
+          "link": "https://gizmodo.com/marvel-echo-set-pictures-kingpin-darevdevil-1849382665",
+          "publishedOn": "2022-08-10T13:45:00.000Z",
+          "wordCount": 6709,
+          "title": "Updates From Echo, the Future of Harley Quinn, and More",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/3efa60dd5efb1c1779a74cdb83825c0f.png"
+        },
+        {
+          "id": "1849394318",
+          "author": "Andrew Liszewski",
+          "description": "As longtime camera makers like Nikon and Canon struggle to adapt to a rapidly changing market filled with competition like smartphones, there’s at least one way to boost the sales of dedicated cameras: partner with Takara Tomy and make them transform into fan-favorite Transformers like Optimus Prime.\nRead more...",
+          "link": "https://gizmodo.com/canon-dslr-replica-transformers-optimus-prime-reflector-1849394318",
+          "publishedOn": "2022-08-10T13:10:00.000Z",
+          "wordCount": 5582,
+          "title": "Canon Teams Up With Transformers in New Camera Replica Toy Line",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/4d0283990d35000f71bee97b3e3e038b.jpg"
+        },
+        {
+          "id": "1849387849",
+          "author": "Florence Ion",
+          "description": "New buds alert! Samsung has announced the second-generation Galaxy Buds 2 Pro in tandem with its latest batch of foldables. These new buds are the successors to 2021’s Buds Pro. They promise 24-bit audio capabilities for Samsung phones and also boast a smaller form factor, so they’re comfortable inside more ear types.…\nRead more...",
+          "link": "https://gizmodo.com/samsung-galaxy-buds-2-pro-tv-hi-fi-wireless-earbuds-1849387849",
+          "publishedOn": "2022-08-10T13:00:00.000Z",
+          "wordCount": 6114,
+          "title": "The Galaxy Buds 2 Pro Promise Hi-Fi Audio For Samsung Phones Only",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/f5352206b3cab9ac6e9c93bb8267a5fd.jpg"
+        },
+        {
+          "id": "1849391558",
+          "author": "Florence Ion",
+          "description": "Samsung held its virtual Galaxy Unpacked event today to debut its next generation of foldable smartphones, the Galaxy Z Flip 4 and Galaxy Z Fold 4. The two smartphones are fourth-generation follow-ups to last year’s Z Flip and Z Fold releases. They are accompanied by two new smartwatches, the Galaxy Watch 5 and Galaxy…\nRead more...",
+          "link": "https://gizmodo.com/samsung-galaxy-unpacked-z-fold-flip-watch-5-pro-buds-2-1849391558",
+          "publishedOn": "2022-08-10T13:00:00.000Z",
+          "wordCount": 5430,
+          "title": "Everything Samsung Announced at Galaxy Unpacked",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/17379cee328fbe515f55394b14240f80.jpg"
+        },
+        {
+          "id": "1849387504",
+          "author": "Florence Ion",
+          "description": "As the rumors and leaks had foretold, Samsung today announced the fourth generation of its foldable smartphone lineup at its virtual Unpacked event. The Galaxy Z Flip 4 and Galaxy Z Fold 4 are on sale this month. They feature updated hardware, including better processors, cameras, and a more durable chassis. Based on…\nRead more...",
+          "link": "https://gizmodo.com/samsung-galaxy-foldables-z-flip-fold-4-hands-on-order-1849387504",
+          "publishedOn": "2022-08-10T13:00:00.000Z",
+          "wordCount": 8386,
+          "title": "Samsung’s Galaxy Foldables Are Finally on Par With Its Flagship Phones",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/d21913f82dd40234eafcf8a02a2a345b.jpg"
+        },
+        {
+          "id": "1849391277",
+          "author": "Florence Ion",
+          "description": "Samsung is still making the only Android-based smartwatches worth using, and now it’s adding two more models to its lineup. The company introduced the Galaxy Watch 5 and Galaxy Watch 5 Pro at its Unpacked event today, along with its new family of foldables. While the Watch 5 is billed primarily as the “upgrade” to…\nRead more...",
+          "link": "https://gizmodo.com/samsung-galaxy-watch-5-pro-announced-android-fitness-1849391277",
+          "publishedOn": "2022-08-10T13:00:00.000Z",
+          "wordCount": 6521,
+          "title": "Samsung's Galaxy Watch 5 Has Finally Gone Pro",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/51de1eb5dcd390c0193b23c7cfbea078.jpg"
+        },
+        {
+          "id": "1849346834",
+          "author": "Matt Novak",
+          "description": "Court-ordered ankle monitors bring in hundreds of millions of dollars in the U.S. every year. Law enforcement uses the devices to monitor more than a hundred thousand people every day, a number that’s expanding rapidly. They play a key role in American criminal justice. For such a crucial technology, though, they…\nRead more...",
+          "link": "https://gizmodo.com/spider-man-s-prisoner-ankle-monitor-1977-crime-stan-lee-1849346834",
+          "publishedOn": "2022-08-10T11:00:00.000Z",
+          "wordCount": 8202,
+          "title": "How Spider-Man Led to the Invention of the Prisoner Ankle Monitor",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/5c6997b6e501aade4a6c31d000d26004.png"
+        },
+        {
           "id": "1849393836",
           "author": "Matt Novak",
           "description": "Tesla CEO Elon Musk quietly sold $6.9 billion worth of Tesla stock, according to a new SEC filing, despite saying as recently as April that he had no plans to sell any more. The stock sale comes as the billionaire continues to fight with Twitter in court over his attempt to back out of purchasing the social media…\nRead more...",
           "link": "https://gizmodo.com/elon-musk-tesla-stock-price-billion-wouldnt-sell-more-1849393836",
           "publishedOn": "2022-08-10T10:00:00.000Z",
-          "wordCount": 5940,
+          "wordCount": 5958,
           "title": "Elon Musk Sells $6.9 Billion in Tesla Stock Despite Saying He Wouldn't Sell More",
           "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/c81db9743d45bda65efd188c73b21f83.png"
         },
@@ -1199,7 +1699,7 @@
           "description": "In deep space, a pilot goes through her routine with very little enthusiasm; when offered the chance to name a new planet, she just jams her finger on the “Y” key until the letter fills the submission box. Ho-hum. But when she encounters something unusual among the stars, she remembers why she’s out there in the first…\nRead more...",
           "link": "https://gizmodo.com/sci-fi-short-film-carrier-space-whale-youtube-dust-1849392675",
           "publishedOn": "2022-08-09T23:00:00.000Z",
-          "wordCount": 5408,
+          "wordCount": 5427,
           "title": "A Bored Pilot Encounters a Space Oddity in Sci-Fi Short Carrier",
           "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/14982dde42a6862c2cdefe571c691114.jpg"
         },
@@ -1209,7 +1709,7 @@
           "description": "Marvel’s streaming shows and movies may still steal the majority of the headlines, but the DC Extended Universe is finally giving the MCU a run for its money. The DCEU’s myriad projects are stretching far beyond  superhero mainstays Batman, Superman, and the Justice League, promising to include new and interesting…\nRead more...",
           "link": "https://gizmodo.com/warner-bros-dc-release-dates-hbo-max-cast-details-1848354161",
           "publishedOn": "2022-08-09T22:08:00.000Z",
-          "wordCount": 9571,
+          "wordCount": 9650,
           "title": "DC Release Dates: When to See DCEU Movies and HBO Max Shows",
           "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/4850d2dc11bba95cd15d04db2b0038ba.gif"
         },
@@ -1219,7 +1719,7 @@
           "description": "Hulu just announced that its recent film Prey, a prequel to the famed 1987 film Predator, is the “#1 premiere on Hulu to date, including all film and TV series debuts.” That’s a big deal for any film, but even bigger when you realize where it all started.\nRead more...",
           "link": "https://gizmodo.com/prey-movie-hulu-predator-origin-dan-trachtenberg-1849391753",
           "publishedOn": "2022-08-09T21:15:00.000Z",
-          "wordCount": 5520,
+          "wordCount": 5510,
           "title": "Prey Came From a Predator Scene That Probably Doesn't Exist",
           "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/2d212ae53372c2c9348daf47506b4867.jpg"
         },
@@ -1229,469 +1729,9 @@
           "description": "According to the world’s top scientists, we have less than three years to right the ship to avoid climate disaster. Across the globe this summer, heat waves,  fires, and floods are affecting millions of people and destroying lives as the impacts of our warming planet get more severe. Some scientists suggest that we…\nRead more...",
           "link": "https://gizmodo.com/climate-deniers-2022-midterms-1849386872",
           "publishedOn": "2022-08-09T21:12:00.000Z",
-          "wordCount": 7024,
+          "wordCount": 7015,
           "title": "The Biggest Climate Ghouls of the 2022 Midterms",
           "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/d9bddc017ff2f0160d59d700475dc547.jpg"
-        },
-        {
-          "id": "1849391357",
-          "author": "Passant Rabie",
-          "description": "The Cape Canaveral Space Force Station may soon be under the watchful electronic eyes of the dystopian version of man’s best friend. The U.S. Space Force recently conducted a demonstration using robot dogs to patrol Cape Canaveral in the hopes of automating certain security tasks at the space station.\nRead more...",
-          "link": "https://gizmodo.com/u-s-space-force-robot-dogs-patrols-1849391357",
-          "publishedOn": "2022-08-09T20:35:00.000Z",
-          "wordCount": 5590,
-          "title": "Robot Dogs Could Soon Patrol a U.S. Space Force Station",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/5311b63dfa5bb2014820ee4480846661.jpg"
-        },
-        {
-          "id": "1849390934",
-          "author": "Artem Golub and Germain Lussier",
-          "description": "Read more...",
-          "link": "https://gizmodo.com/predator-movies-ranked-1849390934",
-          "publishedOn": "2022-08-09T20:25:00.000Z",
-          "wordCount": 4314,
-          "title": "Predator Movies, Ranked",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/82767e2e4686d883ab35e3a4a4a37d0c.jpg"
-        },
-        {
-          "id": "1849391643",
-          "author": "Andrew Liszewski",
-          "description": "Like butterfly keyboards and chargers being included with iPhones, the MacBook’s Touch Bar seems doomed to extinction soon. The feature wasn’t completely useless, but its diminutive size prevented it from reaching its true potential. If you’re going to put a screen on a keyboard, you need to fully commit to the idea,…\nRead more...",
-          "link": "https://gizmodo.com/mechanical-keyboard-touch-screen-built-in-apple-touch-1849391643",
-          "publishedOn": "2022-08-09T20:10:00.000Z",
-          "wordCount": 5826,
-          "title": "This Keyboard With a Built-in 12-Inch Touchscreen Makes Good on Apple's Touch Bar Promises",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/ab6a8e4882b37ea240df954203583e95.jpg"
-        },
-        {
-          "id": "1849391363",
-          "author": "Ed Cara",
-          "description": "Anyone who’s ever had a sense of trepidation about jumping inside a bounce house will likely feel vindicated by recent research. A study found that there have been hundreds of injuries and at least 28 deaths worldwide over the past two decades that were caused by bounce houses set up or not properly secured during…\nRead more...",
-          "link": "https://gizmodo.com/bounce-house-injuries-deaths-wind-1849391363",
-          "publishedOn": "2022-08-09T20:03:00.000Z",
-          "wordCount": 5964,
-          "title": "Wind Can Easily Turn Bounce Houses Into Death Traps",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/57e0f983b3b1a0c26aa9c2b6491efa4f.jpg"
-        },
-        {
-          "id": "1849391180",
-          "author": "Sabina Graves",
-          "description": "Disney’s own fan event, the D23 Expo, makes its return to the Anaheim Convention Center in September with a packed slate of direct-from-the-Mouse-House news about its franchises (including Marvel and Star Wars), parks, and (of course) merchandising. \nRead more...",
-          "link": "https://gizmodo.com/d23-expo-panels-marvel-disney-parks-star-wars-1849391180",
-          "publishedOn": "2022-08-09T20:00:00.000Z",
-          "wordCount": 6969,
-          "title": "These D23 Expo Panels Will Reveal the Future of Marvel, Star Wars, Disney Parks, and More",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/fda9d88708251a1b339a40879069128f.png"
-        },
-        {
-          "id": "1849390998",
-          "author": "Germain Lussier",
-          "description": "As you might expect from the lightning-fast blue hedgehog, the Sonic movie franchise is picking up speed. After Sonic the Hedgehog 2 opened to over $70 million domestically earlier this year, on its way to $400 million worldwide, a third film was inevitable. What was more surprising was the date that third film…\nRead more...",
-          "link": "https://gizmodo.com/sonic-3-and-avatar-3-have-the-same-2024-release-date-1849390998",
-          "publishedOn": "2022-08-09T19:10:00.000Z",
-          "wordCount": 5874,
-          "title": "Blue Hedgehog Picks a Fight With Blue Cat-People",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/45baca7a3fd95920b1b043bdd3c8c368.jpg"
-        },
-        {
-          "id": "1849390695",
-          "author": "Angely Mercado",
-          "description": "A combination of dry lightning and drought conditions have caused some of the worst wildfires in California’s history, a new study finds.\n\nRead more...",
-          "link": "https://gizmodo.com/dry-lightning-california-wildfires-1849390695",
-          "publishedOn": "2022-08-09T19:08:00.000Z",
-          "wordCount": 5963,
-          "title": "Dry Lightning Sparked Some of California’s Most Destructive Fires",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/f73e88761e035dcefe4eaf1dbcad7e18.jpg"
-        },
-        {
-          "id": "1849390411",
-          "author": "Kevin Hurler",
-          "description": "Domino’s foray into the motherland of pizza—Italy—proved to be a failure. The pizza restaurant company has closed its final Italy-based store after seven years of operating in the country.\n\nRead more...",
-          "link": "https://gizmodo.com/dominos-pizza-italy-1849390411",
-          "publishedOn": "2022-08-09T19:00:00.000Z",
-          "wordCount": 5315,
-          "title": "The Italians Finally Chased Domino's Out of Italy",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/65057c9bc10df6277e2a458ab1c6f88a.jpg"
-        },
-        {
-          "id": "1849390804",
-          "author": "Kyle Barr",
-          "description": "A new Russian-made, Iranian-operated satellite launched to orbit on Tuesday, joining the growing cloud of devices circling the Earth. Though unlike your average SpaceX Starlink, the high-powered imaging satellite has U.S. intelligence officials biting their nails, concerned over what both Russia and Iran could be…\nRead more...",
-          "link": "https://gizmodo.com/russia-launches-iranian-satellite-but-no-military-purpo-1849390804",
-          "publishedOn": "2022-08-09T18:25:00.000Z",
-          "wordCount": 6079,
-          "title": "Russia Helps Iran Launch Satellite, Promises It's Not Meant for Military Surveillance",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/b7f389366dd086603c4caa99fc2a7c55.gif"
-        },
-        {
-          "id": "1849390711",
-          "author": "Andrew Liszewski",
-          "description": "The biggest challenge facing the growing number of clamp-on gamepads that promise to turn your smartphone into a handheld console is their limited compatibility, especially when it comes to fitting your phone. The Gamevice Flex wants to change that with a modular design that can be reconfigured to support almost any…\nRead more...",
-          "link": "https://gizmodo.com/gamevice-flex-controller-razer-kishi-smartphone-gaming-1849390711",
-          "publishedOn": "2022-08-09T18:20:00.000Z",
-          "wordCount": 5902,
-          "title": "The Modular Gamevice Flex Controller Wants You to Keep Your Phone in Its Case",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/5feedcae4460f967ba8069c742e37695.gif"
-        },
-        {
-          "id": "1849390749",
-          "author": "Florence Ion",
-          "description": "Samsung’s almost unveiled its next-generation foldables, which means the days of relying on leaks are almost over. The company’s virtual Galaxy Unpacked event will start on Aug. 10 at 9 a.m. ET / 6 a.m. P.T. You can watch along with us on Samsung’s website or in YouTube  embed below. Samsung will also publish all the…\nRead more...",
-          "link": "https://gizmodo.com/how-watch-samsung-galaxy-unpacked-z-flip-fold-buds-watc-1849390749",
-          "publishedOn": "2022-08-09T18:10:00.000Z",
-          "wordCount": 5321,
-          "title": "How to Watch Samsung Reveal its Next-Gen Foldables at Galaxy Unpacked",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/bada9db266d76db5b0b90a3ebbe0e6b0.jpg"
-        },
-        {
-          "id": "1849390599",
-          "author": "Linda Codega",
-          "description": "There are a lot of expectations around the new House of the Dragon series from HBO Max, and nobody is more concerned than George R.R. Martin himself. He has apparently been more active in this production than the original Game of Thrones series—and he was particularly insistent on three details that, unfortunately,…\nRead more...",
-          "link": "https://gizmodo.com/house-of-the-dragon-george-rr-martin-dragon-demands-1849390599",
-          "publishedOn": "2022-08-09T18:00:00.000Z",
-          "wordCount": 5279,
-          "title": "George R.R. Martin's 3 Demands for House of the Dragon",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/c5257b37f58e40dc1f749c0a499b12a2.jpg"
-        },
-        {
-          "id": "1849390143",
-          "author": "Ed Cara",
-          "description": "A large-scale trial for a crucially needed vaccine has just gotten underway. Over the weekend, the first volunteers enrolled in the trial testing out a Lyme disease vaccine candidate developed by Pfizer and Valneva. Researchers hope that the multi-dose shot will protect kids and adults against six strains of the…\nRead more...",
-          "link": "https://gizmodo.com/lyme-disease-vaccine-clinical-trial-pfizer-valneva-1849390143",
-          "publishedOn": "2022-08-09T17:12:00.000Z",
-          "wordCount": 6312,
-          "title": "First Volunteers Set to Get Experimental Lyme Disease Vaccine in Large Clinical Trial",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/b7676af86ca072b264a8e14af398168c.jpg"
-        },
-        {
-          "id": "1849390030",
-          "author": "Germain Lussier",
-          "description": "Cobra Kai season four ended on a few massive cliffhangers. Terry Silver (Thomas Ian Griffith) had successfully framed John Kreese (Martin Kove) for assault and taken full control of Cobra Kai, while Daniel LaRusso (Ralph Macchio) called in an old friend from his past, Chozen (Yuji Okumoto), to help him defeat the evil…\nRead more...",
-          "link": "https://gizmodo.com/cobra-kai-season-5-photos-netflix-karate-kid-mike-barne-1849390030",
-          "publishedOn": "2022-08-09T17:00:00.000Z",
-          "wordCount": 5473,
-          "title": "New Cobra Kai Season 5 Images Reveal a Returning Legacy Character",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/fd8045c198d9ff2edfdc50fce125088f.jpg"
-        },
-        {
-          "id": "1849389965",
-          "author": "Rob Bricken",
-          "description": "Look. Let’s be honest with each other. I know you don’t have any questions, let alone frequent ones, about 2009’s Dragonball Evolution. Critically and commercially scorned, the movie based loosely (ever-so-loosely) on Akira Toriyama’s best-selling manga and anime of (kind of) the same name has been largely forgotten…\nRead more...",
-          "link": "https://gizmodo.com/dragonball-evolution-faq-retro-dbz-movie-dragon-ball-1849389965",
-          "publishedOn": "2022-08-09T16:10:00.000Z",
-          "wordCount": 9143,
-          "title": "Dragonball Evolution: The Retro FAQ",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/202be31b7363ad299f2ed10654be96ef.png"
-        },
-        {
-          "id": "1849389062",
-          "author": "Lauren Leffer",
-          "description": "Snapchat has introduced its first ever parental controls, under an app section called Family Center. The company described the new feature in a blogpost on Tuesday. Parents and guardians will now be able to keep tabs on who their teens are friends with and who they’ve chatted with recently (provided the aforementioned…\nRead more...",
-          "link": "https://gizmodo.com/snapchat-parental-controls-family-center-1849389062",
-          "publishedOn": "2022-08-09T15:50:00.000Z",
-          "wordCount": 6306,
-          "title": "Snapchat Introduces Parental Controls, Assuming Parents Know How to Use Snapchat",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/59305cb135699af460cd74338a822796.png"
-        },
-        {
-          "id": "1849389342",
-          "author": "Passant Rabie",
-          "description": "WhatsApp will be rolling out a number of new privacy features that allow its users to be a lot more discreet with their online chats. The new features include exiting a group chat without notifying its members, hiding your online status, and preventing other users from screenshotting ‘view once’ messages. \nRead more...",
-          "link": "https://gizmodo.com/whatsapp-texting-screenshot-privacy-meta-1849389342",
-          "publishedOn": "2022-08-09T15:20:00.000Z",
-          "wordCount": 5378,
-          "title": "WhatsApp Is Making It Easier for You to Leave That Awkward Family Group Chat",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/783960068988937f8aaa4ad8765c45c7.jpg"
-        },
-        {
-          "id": "1849389764",
-          "author": "Rob Bricken",
-          "description": "When the saga of Japanese tokusatsu hero Kamen Rider Zero-One, star of the 2019 Japanese TV show of the same name, returns in comic form this November, the Rider won’t be alone. Unfortunately for him, he’ll be accompanied by an all-new villain named Ragnarok, whom you can meet here.\n\nRead more...",
-          "link": "https://gizmodo.com/kamen-rider-zero-one-comic-ragnarok-villain-titan-1849389764",
-          "publishedOn": "2022-08-09T15:15:00.000Z",
-          "wordCount": 5356,
-          "title": "Meet Kamen Rider Zero-One's Newest Nemesis",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/b8fcc73bf7a712e1f3caf58455a5f016.jpg"
-        },
-        {
-          "id": "1849389297",
-          "author": "Kyle Barr",
-          "description": "The latest crypto bro on the block happens to be the country of Iran. Reports from the Tasnim news agency Tuesday said that, according to the country’s head of its Trade Promotion Organization Alireza Peyman-Pak, the country made its first official import order using crypto worth $10 million. Further, the official…\nRead more...",
-          "link": "https://gizmodo.com/iran-crypto-imports-sanctions-1849389297",
-          "publishedOn": "2022-08-09T15:05:00.000Z",
-          "wordCount": 6058,
-          "title": "Iran Plans to Use Crypto to Pay for Imports to Help Get Around Sanctions",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/e773852099c31e90d31149655ec47f0b.jpg"
-        },
-        {
-          "id": "1849389466",
-          "author": "Andrew Liszewski",
-          "description": "Not only is Sennheiser known for its excellent sounding audio gear, it’s also known for its distinct styling, particularly with headphones like its wireless over-ear Momentum line. In past iterations, the line featured an exposed metal headband strap that aesthetically stood out against the competition, but for the…\nRead more...",
-          "link": "https://gizmodo.com/sennheiser-momentum-4-wireless-headphones-60-hours-life-1849389466",
-          "publishedOn": "2022-08-09T14:50:00.000Z",
-          "wordCount": 5845,
-          "title": "Sennheiser's Momentum 4 Wireless Headphones Promise 60 Hour Battery Life, But Forgettable Style",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/3b84013624e29b33bf79117646b60998.jpg"
-        },
-        {
-          "id": "1849389004",
-          "author": "Kevin Hurler",
-          "description": "Some Burger King customers were left confused and rightfully a little freaked out this morning when they woke up to a receipt for a fast food order in their email—except they didn’t order any food, and the receipt is completely blank.\nRead more...",
-          "link": "https://gizmodo.com/burger-king-whopper-blank-receipt-fast-food-1849389004",
-          "publishedOn": "2022-08-09T14:35:00.000Z",
-          "wordCount": 5706,
-          "title": "Burger King Sends Out Ghost Receipts for Blank Orders",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/15ec7f5f148370ee3f7348821dcda3fb.png"
-        },
-        {
-          "id": "1849378172",
-          "author": "Linda Codega",
-          "description": "There’s a lot to love about pop culture, but not everyone can get every reference. Sometimes you need  an actual reference book—or a memoir, an essay collection, an oral history, or something written by an expert. These nerdy nonfiction books are perfect for brushing up on all the incredibly niche parts of the…\nRead more...",
-          "link": "https://gizmodo.com/nerdy-nonfiction-science-fiction-fantasy-book-list-1849378172",
-          "publishedOn": "2022-08-09T14:30:00.000Z",
-          "wordCount": 5824,
-          "title": "15 Excellent Nerdy Nonfiction Books",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/f10c1b0c22e2d16b9556bb243a866166.png"
-        },
-        {
-          "id": "1849389477",
-          "author": "Mack DeGeurin",
-          "description": "Large swaths of U.S. internet users last night briefly experienced the dark, frustrating realities of a world devoid of Google services. Though Google has since resolved the outage issues, earlier reports suggested the disruptions could have been tied to an “electrical incident” at a Council Bluffs, Iowa data center…\nRead more...",
-          "link": "https://gizmodo.com/google-search-google-maps-offline-1849389477",
-          "publishedOn": "2022-08-09T14:20:00.000Z",
-          "wordCount": 5963,
-          "title": "Google Briefly Nuked the Internet Last Night",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/dc499a773746a5c6fe9cbe51594b9733.jpg"
-        },
-        {
-          "id": "1849389410",
-          "author": "Artem Golub and Kyle Barr",
-          "description": "Read more...",
-          "link": "https://gizmodo.com/the-candyman-can-eat-3-500-candies-a-month-1849389410",
-          "publishedOn": "2022-08-09T14:10:00.000Z",
-          "wordCount": 4368,
-          "title": "The Candyman Can… Eat 3,500 Candies a Month",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/9ef59441b646f969171d6c56027a68f8.jpg"
-        },
-        {
-          "id": "1849384762",
-          "author": "Andrew Liszewski",
-          "description": "Last November, we called the Beats Fit Pro a perfect pair of wireless earbuds, but that was assuming the black, white, gray, and lilac color options fulfilled your idea of perfection. Nearly 10 months later, Beats has partnered with Kim Kardashian for three new Beats Fit Pro colorways, featuring far subtler shades…\nRead more...",
-          "link": "https://gizmodo.com/kim-kardashian-beats-fit-pro-new-colors-earbuds-apple-1849384762",
-          "publishedOn": "2022-08-09T14:00:00.000Z",
-          "wordCount": 5655,
-          "title": "Beats Teamed With Kim Kardashian to Turn Wireless Earbuds Into Fashion Accessories",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/84bc167f002ff385fc26bec1985450e7.jpg"
-        },
-        {
-          "id": "1849385916",
-          "author": "Passant Rabie",
-          "description": "During a  news briefing at the Johnson Space Center on Friday, a NASA official revealed that all active NASA astronauts are eligible to take part in the Artemis Moon program, regardless of age. \n\nRead more...",
-          "link": "https://gizmodo.com/all-active-nasa-astronauts-eligible-moon-missions-1849385916",
-          "publishedOn": "2022-08-09T13:55:00.000Z",
-          "wordCount": 5923,
-          "title": "All Active NASA Astronauts Are Now Eligible for Future Moon Missions",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/6b826bd9300a6ff45d50116e747416f9.jpg"
-        },
-        {
-          "id": "1849382663",
-          "author": "James Whitbrook, Gordon Jackson,  and Linda Codega",
-          "description": "Although it’s not for sure, apparently Idris Elba is working on something “big” for DC. My bet’s on a reprise of his Suicide Squad 2 character, Bloodsport, but lips are otherwise sealed. Set pics from the Marvel TV series Ironheart and Madame Web offer new clues. Plus, a hint that J.J. Abrams’ gritty Constantine is…\nRead more...",
-          "link": "https://gizmodo.com/hocus-pocus-2-sonic-3-ironheart-disney-marvel-dc-comics-1849382663",
-          "publishedOn": "2022-08-09T13:45:00.000Z",
-          "wordCount": 6043,
-          "title": "Hocus Pocus Is Back, Witches",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/b0b2b3612c88e6a674321365ed3ec3a2.png"
-        },
-        {
-          "id": "1849384378",
-          "author": "Kevin Hurler",
-          "description": "Hinge wants to make dating a little easier with a new feature called Not-so-Frequently Asked Questions. NFAQ seeks to answer the questions that daters, especially those in the LGBTQ+ community want to ask, but don’t exactly know how to do it.\nRead more...",
-          "link": "https://gizmodo.com/hinge-dating-app-lgbtq-1849384378",
-          "publishedOn": "2022-08-09T12:00:00.000Z",
-          "wordCount": 6080,
-          "title": "Hinge Wants to Help LGBTQ+ Daters Ask the Tough Questions",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/95f4c863c21c521e3c6e20e014825777.jpg"
-        },
-        {
-          "id": "1849388563",
-          "author": "Matt Novak",
-          "description": "The FBI executed a search warrant at Donald Trump’s Florida home, Mar-a-Lago, on Monday to retrieve presidential records that were never properly handed over to the U.S. National Archives, according to the Washington Post. And Republicans had a complete freak-out on social media over the fact that Trump might finally…\nRead more...",
-          "link": "https://gizmodo.com/9-unhinged-tweets-fbi-raid-donald-trump-mar-a-lago-1849388563",
-          "publishedOn": "2022-08-09T11:30:00.000Z",
-          "wordCount": 5855,
-          "title": "9 Completely Unhinged Tweets About the FBI's Raid on Donald Trump at Mar-a-Lago",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/7f725110d734970254f66f459894ee51.jpg"
-        },
-        {
-          "id": "1849385834",
-          "author": "Linda Codega",
-          "description": "There’s a joke in the visual effects industry that goes like this: Someone hears you work on films, so they ask you, “What movie made you cry?” The artist will respond, “In theaters or in the office?”\n\nRead more...",
-          "link": "https://gizmodo.com/disney-marvel-movies-vfx-industry-nightmare-1849385834",
-          "publishedOn": "2022-08-09T11:00:00.000Z",
-          "wordCount": 14724,
-          "title": "Abuse of VFX Artists Is Ruining the Movies",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/e6b00e5f7d8140bf8f2a7e90a9e17699.png"
-        },
-        {
-          "id": "1849387300",
-          "author": "Germain Lussier",
-          "description": "Todd Phillips’ Joker purposefully ended with many questions left unanswered, but now we can cross at least one off the list. Deadline reports that Zazie Beetz is in talks to reprise her role as Arthur Fleck’s neighbor, Sophie, in 2024's Joker: Folie à Deux. She’ll join Joaquin Phoenix, who’ll reprise his role as…\nRead more...",
-          "link": "https://gizmodo.com/zazie-beetz-joker-2-dc-batman-joaquin-phoenix-warner-br-1849387300",
-          "publishedOn": "2022-08-08T23:20:00.000Z",
-          "wordCount": 5866,
-          "title": "Zazie Beetz Likely to Return for Joker: Folie à Deux",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/761ba3e982870aa7eb40ce27597afd35.jpg"
-        },
-        {
-          "id": "1849386177",
-          "author": "Sabina Graves",
-          "description": "Just in case you thought the current wave of ‘80s nostalgia was in any danger of breaking, it now appears that Pac-Man is getting its own live-action feature. The Hollywood Reporter confirmed the classic arcade game from Bandai Namco Entertainment, known for Galaga and Tekken in addition to Pac-Man, has a feature film…\nRead more...",
-          "link": "https://gizmodo.com/pac-man-live-action-movie-arcade-game-80s-bandai-namco-1849386177",
-          "publishedOn": "2022-08-08T22:00:00.000Z",
-          "wordCount": 5107,
-          "title": "A Live-Action Pac-Man Movie Is Coming",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/56156bc6f5337969ab88bfb830fdf045.png"
-        },
-        {
-          "id": "1849386667",
-          "author": "Mack DeGeurin",
-          "description": "Intel this week revealed its new lineup of Arc Pro series GPUs intended primarily for powerful small form factor desktops and professionally focused laptops. All three of the GPUs, which Intel says are targeted at professional software applications in the architecture, construction, design, and manufacturing…\nRead more...",
-          "link": "https://gizmodo.com/intel-arc-pro-series-discrete-gpu-professional-blender-1849386667",
-          "publishedOn": "2022-08-08T21:10:00.000Z",
-          "wordCount": 5694,
-          "title": "Intel's Getting into Professional GPUs, Too",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/ed6924f51661dc13f49d284ce8c192c0.jpg"
-        },
-        {
-          "id": "1848196856",
-          "author": "io9 Staff",
-          "description": "With 27 feature films and six Disney+ shows in 14 years, the Marvel Cinematic Universe continues to rule pop culture. Thanks to the recent San Diego Comic-Con, we now have an ever better idea of what’s coming next from the MCU. In short: a lot. We’ve got all the details for  Phase 4, Phase 5, and even Phase 6 right…\nRead more...",
-          "link": "https://gizmodo.com/marvel-release-dates-when-to-see-upcoming-mcu-movies-a-1848196856",
-          "publishedOn": "2022-08-08T21:00:00.000Z",
-          "wordCount": 9066,
-          "title": "Marvel Release Dates: When to See Upcoming MCU Movies and Disney+ Shows",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/bbfc871bc5ed8e2fc05fe3fd5b4c632a.gif"
-        },
-        {
-          "id": "1849385177",
-          "author": "Lauren Leffer",
-          "description": "Another person has  died in New Mexico flash floods. The state has been grappling with flooding in the aftermath of its largest ever recorded wildfire. Three people were found killed in flash floods on July 21, according to the Associated Press. The victims were a family from West Texas visiting their cabin in New…\nRead more...",
-          "link": "https://gizmodo.com/flash-floods-kill-4-people-in-the-wake-of-new-mexicos-h-1849385177",
-          "publishedOn": "2022-08-08T20:40:00.000Z",
-          "wordCount": 5845,
-          "title": "Flash Floods Kill 4 People in the Wake of New Mexico's Historic Wildfire",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/cad83530eededaef7d1e390a40f555b9.jpg"
-        },
-        {
-          "id": "1849386562",
-          "author": "Artem Golub",
-          "description": "Read more...",
-          "link": "https://gizmodo.com/w-kamau-bells-first-fandoms-1849386562",
-          "publishedOn": "2022-08-08T20:35:00.000Z",
-          "wordCount": 4338,
-          "title": "W. Kamau Bell's First Fandoms",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/dbe490526a80cc7c5bb937c805bfca8a.png"
-        },
-        {
-          "id": "1849386384",
-          "author": "Andrew Liszewski",
-          "description": "The infamous notch is still a contested design decision on Apple’s part, and one of the many, many reasons to hate it was the disappearance of the status bar’s battery percentage indicator  when the iPhone X arrived. But as Apple continues to slowly roll back some of the more questionable design choices it’s made in…\nRead more...",
-          "link": "https://gizmodo.com/ios-16-beta-battery-percentage-status-bar-how-to-displa-1849386384",
-          "publishedOn": "2022-08-08T20:10:00.000Z",
-          "wordCount": 5274,
-          "title": "The Latest iOS 16 Beta Finally Brings Battery Percentage Back to the Status Bar",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/bb18cc6cdbbff77b881c358056f2cf64.jpg"
-        },
-        {
-          "id": "1849385584",
-          "author": "Germain Lussier",
-          "description": "It’s not uncommon to see a superhero so powerful that a bullet can’t get through their skin. Soon though, the whole genre is going to need skin that thick because Armando Iannucci is coming for them.\nRead more...",
-          "link": "https://gizmodo.com/hbo-superhero-comedy-armando-iannucci-sam-mendes-marvel-1849385584",
-          "publishedOn": "2022-08-08T20:00:00.000Z",
-          "wordCount": 5518,
-          "title": "A New HBO Comedy Series Will Skewer Superhero Movies",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/3128807c433868225a603a400c94a249.jpg"
-        },
-        {
-          "id": "1849386079",
-          "author": "Kyle Barr",
-          "description": "Crypto mixers have caught the hot end of the stick that is the U.S.’ efforts to sanction North Korea, thanks to their inability to stop DPRK-affiliated groups from using their services to launder ill-gotten gains.\nRead more...",
-          "link": "https://gizmodo.com/tornado-cash-crypto-mixer-crypto-binance-ethereum-1849386079",
-          "publishedOn": "2022-08-08T19:55:00.000Z",
-          "wordCount": 6035,
-          "title": "Virtual Currency Mixer Tornado Cash Hit With U.S. Sanctions for Playing Host to Crypto Laundering",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/2eac0a07feca49380cfd250a75797840.jpg"
-        },
-        {
-          "id": "1849385906",
-          "author": "Andrew Liszewski",
-          "description": "Like a screen protector for your entire car, a new protective coating developed by researchers at the Korea Research Institute of Chemical Technology could actually go one step further than the plastic films you apply to your smartphone’s display. When exposed to the sun, it’s able to heal itself, making scratches…\nRead more...",
-          "link": "https://gizmodo.com/car-scratch-remove-buff-repair-coating-solar-sunlight-1849385906",
-          "publishedOn": "2022-08-08T19:20:00.000Z",
-          "wordCount": 5958,
-          "title": "Parking in the Sun for 30 Minutes Could One Day Make Your Car's Scratches Disappear",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/0636eaa6ea37c9a051f02ecf3125232f.jpg"
-        },
-        {
-          "id": "1849385634",
-          "author": "Rob Bricken",
-          "description": "Mon dieu! Zut alors! Merde! French fries! The Walking Dead’s ever-expanding TV universe head honcho, Scott Gimple, has revealed that the upcoming spin-off starring Norman Reedus’ Daryl will somehow take place in France, and I simply can’t wrap my tête around it.\n\nRead more...",
-          "link": "https://gizmodo.com/walking-dead-daryl-france-spin-off-tv-series-zombies-1849385634",
-          "publishedOn": "2022-08-08T19:15:00.000Z",
-          "wordCount": 5750,
-          "title": "Wait, The Walking Dead's Daryl Spin-Off Takes Place Where?!?!",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/bb54ca83bff47f6ef485e88f3d1d485c.jpg"
-        },
-        {
-          "id": "1849379060",
-          "author": "Cheryl Eddy",
-          "description": "Locke & Key season three arrives on Netflix this week—and we’re excited to see how this well-crafted, highly entertaining series wraps up the supernatural drama surrounding the Locke family, their friends, and their demonic enemies. But if you binged season two back when it dropped last October, you might be in need…\nRead more...",
-          "link": "https://gizmodo.com/locke-key-netflix-s2-quick-plot-catchup-emilia-jones-1849379060",
-          "publishedOn": "2022-08-08T18:30:00.000Z",
-          "wordCount": 7505,
-          "title": "A Handy Locke & Key Season 2 Crash Course Before Season 3",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/31a16f69d90677409373f64fd040aaa2.jpg"
-        },
-        {
-          "id": "1849382788",
-          "author": "Rhett Jones",
-          "description": "Gizmodo is 20 years old! To celebrate the anniversary, we’re looking back at some of the most significant ways our lives have been thrown for a loop by our digital tools.\n\nRead more...",
-          "link": "https://gizmodo.com/silicon-valleys-transportation-failures-tesla-waymo-bir-1849382788",
-          "publishedOn": "2022-08-08T18:10:00.000Z",
-          "wordCount": 18855,
-          "title": "Silicon Valley's Push Into Transportation Has Been a Miserable Failure",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/e595ad4fcedc787c19dc64b49739519c.jpg"
-        },
-        {
-          "id": "1849384960",
-          "author": "Kyle Barr",
-          "description": "Apple is avoiding any deep stake in the consumer VR pricing rat race, reportedly, with a very expensive and very low-key first release. As first noted by MacRumors, consistent Apple analyst Ming-Chi Kuo wrote Sunday that the tech giant will only be releasing less than 1.5 million units of its first gen AR/VR headset …\nRead more...",
-          "link": "https://gizmodo.com/apple-ar-vr-headset-2000-price-release-date-limited-whe-1849384960",
-          "publishedOn": "2022-08-08T18:00:00.000Z",
-          "wordCount": 5868,
-          "title": "Apple's AR/VR Headset Might Cost $2000, Only Have 1.5 Million Units at Launch",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/384d030f0de33ba6ea32550299b97a73.jpg"
-        },
-        {
-          "id": "1849385063",
-          "author": "Rob Bricken",
-          "description": "Spider-Man might be the most popular insect-adjacent superhero in the United States, but in Japan, he’ll always play second fiddle to Kamen Rider. The masked, motorcycle-riding hero, one of the stalwarts of the tokusatsu genre, has been a mainstay on Japanese TV for over 50 years. Now, the story of the 2019 series …\nRead more...",
-          "link": "https://gizmodo.com/kamen-rider-zero-one-titan-comics-tokusatsu-humagear-1849385063",
-          "publishedOn": "2022-08-08T17:30:00.000Z",
-          "wordCount": 5239,
-          "title": "Kamen Rider Zero-One Rides Again in Titan's New Comic",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/bad7fd32b961e9a4ba1e10f1d076e50a.jpg"
-        },
-        {
-          "id": "1849379157",
-          "author": "Sabina Graves",
-          "description": "Season two of webcomic Lore Olympus just concluded, with season three coming very soon, and io9 got a chance to speak with Eisner-winning creator Rachel Smythe all about it. Since its 2018 launch, Lore Olympus—a retelling of the Hades and Persephone myth—has gained a dedicated fandom (it’s the number one most-read…\nRead more...",
-          "link": "https://gizmodo.com/rachel-smythe-lore-olympus-hades-persephone-webtoon-1849379157",
-          "publishedOn": "2022-08-08T16:45:00.000Z",
-          "wordCount": 9379,
-          "title": "Eisner Winner Rachel Smythe on What the Lore Olympus Season 2 Finale Means for Hades and Persephone",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/c06ea3f6061bd201286a7bef68ae4bc6.jpg"
         }
       ]
     },
