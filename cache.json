@@ -12,6 +12,16 @@
       "siteUrl": "https://www.baeldung.com",
       "articles": [
         {
+          "id": "https://www.baeldung.com/?p=128734",
+          "author": "baeldung",
+          "description": "Serial GC, MySQL batching, GraalVM update, sequenced collections, services in K8S, open APIs, and K8S 1.25!",
+          "link": "https://feeds.feedblitz.com/~/706060992/0/baeldung~Java-Weekly-Issue",
+          "publishedOn": "2022-08-12T04:05:31.000Z",
+          "wordCount": null,
+          "title": "Java Weekly, Issue 450",
+          "imageUrl": null
+        },
+        {
           "id": "https://drafts.baeldung.com/?p=139587",
           "author": "baeldung",
           "description": "Learn how to configure conditional dependencies in a Gradle project.",
@@ -119,16 +129,6 @@
           "publishedOn": "2022-08-04T08:52:50.000Z",
           "wordCount": null,
           "title": "Arrays.asList() vs Collections.singletonList()",
-          "imageUrl": null
-        },
-        {
-          "id": "https://drafts.baeldung.com/?p=139421",
-          "author": "Matei Cernaianu",
-          "description": "Learn how to check whether an integer exists within the bounds of a range.",
-          "link": "https://feeds.feedblitz.com/~/705058150/0/baeldung~How-to-Check-Whether-an-Integer-Exists-in-a-Range-with-Java",
-          "publishedOn": "2022-08-03T15:29:25.000Z",
-          "wordCount": null,
-          "title": "How to Check Whether an Integer Exists in a Range with Java",
           "imageUrl": null
         }
       ]
@@ -670,413 +670,383 @@
       "siteUrl": "https://www.v2ex.com/",
       "articles": [
         {
-          "id": "872210",
-          "author": "apr544h",
-          "description": "apr544h: \n\n下载安装\n|\nGithub\n几个月前跟朋友聊天的时候偶然想到在 Smartisan TNT 上看到的发牌手的功能，于是想着能不能做一个出来。\n利用窗口打开的方式，可以保留用户的登录状态，所以除了搜索搜索引擎，它还能：\n它还能……\n在办公上（邮箱、开发网站、素材网站）\n在学术上（翻译、论文网站、新闻网站）\n在旅行上（景点评测、游记、机票酒店美食、地图）\n在商品比价上（你能利用的网购平台，都能以你的所在地价格展示，并一目了然）\n在资源搜索上（ BT 、PT 、网盘搜索、仓库……各种资源网站一目十行）\n简易使用\n安装完 Poker 后，可以在网页空白处点击右键，即可看到「启动 Poker 」的启动项。除此之外，你还可以用快捷键 Ctrl+Shift+1(mac 的是 ⌘ + ⇧ + 1)，也可以点击地址栏右侧的 Poker 图标启动，甚至在地址栏输入「 poker 」后再敲击TAB键也能启动 Poker 。\n启动 Poker 后，你若是再点击右键菜单栏，或者按下快捷键和点击地址栏右侧的 Poker 图标，这将不会启动第二个 Poker 主窗口，而是唤回现在正在运行着的 Poker 主窗口。\n启动 Poker 后，你能看到输入框下有一条由若干线段组成的长条。点击这些点会使这块区域留空，留空表示不想在搜索后出现这一楼层。还可以滑动选择这些点，可以很快选到自己想要的楼层。\n并且，你甚至可以不动鼠标，直接在输入框中，输入 『/楼层 xxx 』即可选中所有叫『楼层』的层来搜索 xxx 。这些能让你在想搜索特定内容时，更快地选择到最相关的网站。\n在按下回车键提交搜索后，Poker 将会弹出数个搜索窗出来。你可以点击背景的窗口标题栏来切换：\n\n注意到『↑』『↓』这两个按钮了吗？点击它们可以切换每一列最前排的窗口。你还可以点击这些搜索窗的「最大化」来使它还原成普通浏览器窗口的样子（ mac 的话是点击「最小化」按钮）关闭任意一个窗口后也将会关闭其他的全部窗口。\n点击地址栏右侧的 Poker 图标即可发现进入设置页面的入口。如果觉得添加站点麻烦，你可以在想要加入 Poker 的网站中输入『 poker 』或『 Poker 』后进行搜索的话，再次点击插件图标，便能看到『添加此站点』字样。点击后，便能直接加入到 Poker 中，可以节约手动设置 URL 所浪费的时间。\n除了上述的功能，Poker 还有几个实用功能，你可以在设置页面中查看。",
-          "link": "https://www.v2ex.com/t/872210",
-          "publishedOn": "2022-08-11T08:56:46.000Z",
-          "wordCount": 425,
-          "title": "Poker Search：一款能让你一次开启复数窗口，在各种网站进行站内搜索的 Chrome 扩展插件",
-          "imageUrl": null
-        },
-        {
-          "id": "872209",
-          "author": "BiiHug",
-          "description": "BiiHug: 萌新一个，不知道这种问题能不能发，求大佬们轻喷。想讨论下 DeepFM 模型，Deep 侧和 FM 侧是否应该共享 embedding ？\n现在是想热加载一个训了很久的 deep 结构，然后加上 fm 结构辅助学习，看到原文里两边貌似是共享 embedding 的，感觉有点奇怪。FM 这边的收敛逻辑和旁边的 Deep 侧应该不太一样吧，让两个网络共享 embedding 不会造成混乱吗？",
-          "link": "https://www.v2ex.com/t/872209",
-          "publishedOn": "2022-08-11T08:56:42.000Z",
-          "wordCount": 347,
-          "title": "关于 DeepFM 的一些疑问",
-          "imageUrl": null
-        },
-        {
-          "id": "872208",
-          "author": "clrss",
-          "description": "clrss: \n% man brew\n...\n       HOMEBREW_INSTALL_FROM_API\n              If set, install formulae and casks in homebrew/core and homebrew/cask taps using Homebrew´s\n              API instead of needing (large, slow) local checkouts of these repositories.\n\n              Note: Setting HOMEBREW_INSTALL_FROM_API is not compatible with Homebrew´s developer mode so\n              will error (as Homebrew development needs a full clone).\n\n设置这个环境变量以后可以 brew untap homebrew/core brew untap homebrew/cask. 省几百 MB 空间. 先不说缺不缺这些空间, 把那十多年的 formula 历史放普通用户硬盘上本来就不科学.\n副作用未知.",
-          "link": "https://www.v2ex.com/t/872208",
-          "publishedOn": "2022-08-11T08:54:55.000Z",
-          "wordCount": 363,
-          "title": "export HOMEBREW_INSTALL_FROM_API=1",
-          "imageUrl": null
-        },
-        {
-          "id": "872207",
-          "author": "chenluo0429",
-          "description": "chenluo0429: 之前一直没问题的，昨天试了一下 openwrt 的 docker 镜像，把 network_mode 设成了 host ，结果把我宿主环境 debian 的网络搞出问题了。\n一个是 lo 的 127.0.0.1 地址丢失，被我加回来了，还有不知道哪里出的问题，导致同 network 下的 container 无法互相通信了。\n现在本地环境用 docker 部署的 seafile 和 harbor 都趴窝了。\n有没有对网络有研究的大佬可以指点下？不胜感激。\n以下是 ip a sh 的结果\n\n1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000\n    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00\n    inet 127.0.0.1/8 scope host lo\n       valid_lft forever preferred_lft forever\n    inet6 ::1/128 scope host\n       valid_lft forever preferred_lft forever\n2: enp2s0f0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000\n    link/ether 54:80:28:50:c4:a6 brd ff:ff:ff:ff:ff:ff\n    inet 192.168.1.110/24 brd 192.168.1.255 scope global enp2s0f0\n       valid_…",
-          "link": "https://www.v2ex.com/t/872207",
-          "publishedOn": "2022-08-11T08:42:46.000Z",
-          "wordCount": 1419,
-          "title": "docker 同一 network 下的 container 无法互通",
-          "imageUrl": null
-        },
-        {
-          "id": "872205",
-          "author": "moonkiller",
-          "description": "moonkiller: 屋里没水了\n打开外卖 app ，看到某超市上看到有促销活动\n4L 的农夫山泉大瓶算下来一瓶不到 5 元\n送到后，打开喝了一口，明显味道不对\n很大的自来水消毒味道\n桶身上的包装和桶的贴合度也不紧密，感觉像是假水\n但水这种东西怎么举证真假啊？",
-          "link": "https://www.v2ex.com/t/872205",
-          "publishedOn": "2022-08-11T08:35:51.000Z",
-          "wordCount": 354,
-          "title": "感觉买到假水了，该怎么验证？",
-          "imageUrl": null
-        },
-        {
-          "id": "872203",
-          "author": "paledream",
-          "description": "paledream: \nvscode 中设置后，可以智能提示文件内出现过所有的单词, 包括注释中的、任意对象内的 key 等...\n如图：\n\n感觉这个功能很方便，不知 jetbrains 系 IDE 是否可以设置这个功能",
-          "link": "https://www.v2ex.com/t/872203",
-          "publishedOn": "2022-08-11T08:25:12.000Z",
-          "wordCount": 328,
-          "title": "jetbrains 系 IDE 可否自动提示该文件内已有的所有单词",
-          "imageUrl": null
-        },
-        {
-          "id": "872202",
-          "author": "oatw",
-          "description": "oatw: 继饱览 /t/871860 之后，更讨厌微信了。\n平时微信基本都是上班用一下，装个桌面板足已，外加朋友圈子很小，完全可以用其它 IM 替代，请 V 友推荐国内可用的替代品。tg 、line 、wahtsapp 就不考虑了哈～",
-          "link": "https://www.v2ex.com/t/872202",
-          "publishedOn": "2022-08-11T08:23:33.000Z",
-          "wordCount": 657,
-          "title": "求推荐国内可用的微信替代 APP",
-          "imageUrl": null
-        },
-        {
-          "id": "872201",
-          "author": "lzz2394677796",
-          "description": "lzz2394677796: \n发现一些单机软件偷偷在上网，要把它断了！",
-          "link": "https://www.v2ex.com/t/872201",
-          "publishedOn": "2022-08-11T08:23:14.000Z",
-          "wordCount": 437,
-          "title": "哪一款防火墙软件比 windows11 自带的 Windows Defender Firewall 好呢？大牛来推荐我！",
-          "imageUrl": null
-        },
-        {
-          "id": "872199",
-          "author": "nightnotlate",
-          "description": "nightnotlate: 我在客厅放了主路由器 A\n但是到卧室隔了好几堵墙 卧室信号很差\n就在中间放了另一个路由器 B 做了无限桥接\n现在有 2 个问题\n1 有时候会自动连到信号不好的那个 WiFi 要手动去切换 很麻烦\n2 我的电脑是连到路由器 B 的，我想给电脑设置静态 IP  但是不起作用 \n似乎电脑的 ip 是 A 分配的，但是 A 那边设备列表看到的 mac 是路由器 B 的 我不管是在 A 还是 B 绑定 mac 和 ip 都没起作用\n我不太懂这块 所以请问 有什么好点的办法么？\n谢谢",
-          "link": "https://www.v2ex.com/t/872199",
-          "publishedOn": "2022-08-11T08:21:37.000Z",
-          "wordCount": 399,
-          "title": "关于无线路由器桥接，怎么绑定静态 ip？",
-          "imageUrl": null
-        },
-        {
-          "id": "872198",
-          "author": "movq",
-          "description": "movq: \n我设置的 Google 语言是简体中文\n这有什么办法设置吗？每次点进去维基，然后切换到简体，或者切换到 desktop ，感觉很麻烦",
-          "link": "https://www.v2ex.com/t/872198",
-          "publishedOn": "2022-08-11T08:18:59.000Z",
-          "wordCount": 395,
-          "title": "为什么 Google 搜索出现的中文维基，经常出现 mobile 页面，或者繁体页面，就是不出现 desktop 简体中文页面？",
-          "imageUrl": null
-        },
-        {
-          "id": "872197",
-          "author": "foreverstandbyu",
-          "description": "foreverstandbyu: 多多专员处理的结果是退货没有任何的处罚。\n不认可的话怎么有效投诉？\n12315 吗？\n这个管用吗。",
-          "link": "https://www.v2ex.com/t/872197",
-          "publishedOn": "2022-08-11T08:18:06.000Z",
-          "wordCount": 346,
-          "title": "关于拼多多售假问题，平台处理的不满意然后怎么有效投诉？",
-          "imageUrl": null
-        },
-        {
-          "id": "872196",
-          "author": "GrapeCityChina",
-          "description": "GrapeCityChina: \n随着客户的需求越来越“百变”，最近在做大屏设计的葡萄陷入了困境。\n近期客户提出的需求是想在 BI 工具中增加 “路线地图”展示功能并进行数据分析。\n不仅如此，这个“路线地图”还要兼具实用的功能与美观的动效，典型的“既要又要”系列。但是这对于我们的设计师葡萄来说，难度就有些大了。\n静态图片展示不困难，可要让这地图动起来，确实有一些难度。\n所以我们就将该问题拆成两部分，来解决这个问题。首先，我们需要一个路线地图工具。\n“路线地图”工具制思路作与展示\n首先，我们需要整合手中的地图素材和地图动效。\n让我们先来分析一下“路线地图”的主要应用场景：\n（ 1 ）区域内路线地图，比如：厂区巡检路线图，车辆行驶路线图等关于轨迹图的应用场景。\n（ 2 ）区域内点位信息：比如：厂区内安全门点位标记，摄像头位置等标点信息。\n\n提到图片处理，我们首先应该想到使用 SVG 。将图片转换为 SVG 图后，从图坐标中获取相应的点，根据对应的位置来显示路线等信息。\n正所谓“没有代码解决不了的生活难题，如果有那就写两段代码。”（最后制成的工具，已经放在文末，各位自取）\n之后，我们从功能来拆解，实现该地图需要的插件有：画图、取点、设置路线等功能。\n在早自定义地图背景中，地图背景需要采用 SVG 格式的图片，方便获取坐标，保证任何分辨率之下的一致性。如果每一次都需要找图片然后手动转换成 SVG 格式，那样会非常复杂，我们将这一步流程作为该地图工具的功能之一。\n画图中我们可以将目标图片转换为 SVG ，并且设置区域。如果在后期使用到需要联动区域的时候，尽量使用画图解决，使用方式与 Wyn 中的自定义地图比较类似。\n\n获取显示数据的“坐标点”\n我们在定义“路线地图”时，往往需要在地图中标注一些关键数据，比如设备的位置、该位置的人流量、停车数等，为了保证自定义地图的关键数据能够与显示在地图的精确位置上，我们贴心地为大家提供了地图坐标点获取工具，可以用于业务数据存储。\n坐标拾取\n这个功能主要就是获取在自定义地图中的坐标，提供后期显示位置功能，有设置、预览等功能。\n\n自定义路线\n这个功能是路线地图最核心且最亮眼的地方，即我们要定义巡检的路线、方向，很多时候，该功能用于园区巡检，或者是大的区域地图巡检等等。很多情况下我们需要根据自己的业务要指定具体的巡检路线，于是 BI 工具提供了巡检路线绘制地图。\n把当前路线给链接起来，实现路线绘制。可以预览所设置的路线。\n\n最终工具成品展示：\n\n具体工具已经放在文末各位同学自取使用~\n现在工具有了，怎么在 BI 中增加“路线地图”进行数据分析呢？\n在 BI 中使用路线地图进行数据分析\n工具准备完毕，接下来就是如何在 BI 中用路线地图进行数据分析。\n1 、下载并且安装 BI 分析工具\n2 、数据准备\n找一张项目中需要的平面图片，因为在该插件中需要的文件格式为 SVG ，所以对第一步我们先将图片转换为 SVG 格式的，就需要用到上面的工具了。\n操作步骤:\n①将图片转换为 SVG 内容\n\n②获取标点,将标点信息记录如数据表中\n\n③获取路线\n\n④整理数据表\n\n3 、插件操作:\n（ 1 ）选择插件\n\n（ 2 ）技术设置\n地图地址：这里可以放 SVG 代码内容，也可以放一个 URL 地址。\n自定义路线：这里可以设置固定路线，根据内容填写即可。\n其他内容可以自行操作后看效果。\n（ 3 ）绑定数据\n根据需求绑定定影的路线，坐标信息\n\n设置好之后可以看到运动轨迹和标点信息结果。\n\n（ 4 ）路线属性设置\n\n在这里，我们可以给路线中移动图标设置显示的图标，设置大小、颜色等。更是可以根据不同的数值分类实现个性化设置内容。目前插件中所对应的分类条件是按照分类值来做判断的。可以看到根据不同设置显示出不同的效果。\n\n（ 5 ）坐标点设置：\n\n功能与路线设置中类似，大家可以去试试。\n（ 6 ）标签设置，引导线设置\n\n通过此功能，可以让我们整个页面显示的内容更加丰富。\n\n到这里我们就实现了在 BI 中实现使用地图路线进行数据分析。\n工具体验\n工具站点： http://svg.sxtrips.com/\n资料包： https://gcdn.grapecity.com.cn/forum.php?mod=viewthread&tid=140403\n体验更多行业在线 demo：\nhttps://www.grapecity.com.cn/solutions/wyn/demo",
-          "link": "https://www.v2ex.com/t/872196",
-          "publishedOn": "2022-08-11T08:16:23.000Z",
-          "wordCount": 432,
-          "title": "如何在 BI 中增加“路线地图”并进行数据分析？",
-          "imageUrl": null
-        },
-        {
-          "id": "872195",
-          "author": "still97",
-          "description": "still97: \nfor i in range(3):\nif i == 1:\n    print(’第二次循环')\nelse:\n    print('for 循环结束')\n    print('i 值', i)\n\nfor i in range(3):\nif i == 1:\n    print('第二次循环')\nthen:\n    print('for 循环结束')\n    print('i 值', i)\n\n就很不理解，命名是 for...then...的意思，为什么要用 for...else...这么离谱的东西",
-          "link": "https://www.v2ex.com/t/872195",
-          "publishedOn": "2022-08-11T08:14:50.000Z",
-          "wordCount": 504,
-          "title": "辣鸡 for...else",
-          "imageUrl": null
-        },
-        {
-          "id": "872194",
-          "author": "sun1993",
-          "description": "sun1993: 如题？一般程序员扎堆的论坛、交流群里问薪资，一般会招致反感，抑或大部分人都不愿意回答，而且早些年圈内人都说尽量别把薪水说的那么诱人，因为要闷声发大财，防止过多人进来卷，但在脉脉上完全是反过来的，而且薪资一般都高的离谱，应届生年薪 30w 被群嘲的程度，这让我怀疑是不是里面很多人故意带程序员节奏。。",
-          "link": "https://www.v2ex.com/t/872194",
-          "publishedOn": "2022-08-11T08:11:18.000Z",
-          "wordCount": 334,
-          "title": "脉脉上的程序员为何热衷于分享自己的薪水？",
-          "imageUrl": null
-        },
-        {
-          "id": "872192",
-          "author": "moshou",
-          "description": "moshou: \n先放链接，https://testflight.apple.com/join/3OjCfxDS\n做这款 App 的初衷，是看到一些好的句子，有了自己的想法但是随着时间变化，不同时期会对同样的句子产生不同的想法。\n之前自己用的印象笔记，但是不太适合不断对某个笔记内容追加和记录时间。\n所以花了点时间做了这款 App 。\n纯离线应用，无任何隐私泄露问题，提示网络权限是 Google Firebase 的原因，当然拒绝也是可以使用的。\n\n\nTestFlight 链接： https://testflight.apple.com/join/3OjCfxDS",
-          "link": "https://www.v2ex.com/t/872192",
-          "publishedOn": "2022-08-11T08:08:14.000Z",
-          "wordCount": 352,
-          "title": "[TestFlight] 介绍下自己新开发的 App - 我的摘录",
-          "imageUrl": null
-        },
-        {
-          "id": "872191",
-          "author": "bthulu",
-          "description": "bthulu: \n搜到的文档基本都是配合 nodejs 后端如 express, koa 这类来实现 ssr 的.\n相当于访问网页时还要经过一层 nodejs 后端, 那 nginx 的高性能还有什么意义?\n就不能 build 出来静态 ssr 网页, 直接塞到 nginx 的 html 目录下就实现了 ssr 吗?",
-          "link": "https://www.v2ex.com/t/872191",
-          "publishedOn": "2022-08-11T08:03:31.000Z",
-          "wordCount": 440,
-          "title": "有没有什么办法让 nginx 支持 ssr 吗?",
-          "imageUrl": null
-        },
-        {
-          "id": "872190",
-          "author": "v2e0xAdmin2",
-          "description": "v2e0xAdmin2: \n具体配置：2017 款 5k iMac ，定制 i7 4.2cpu ，40g 内存，512 ssd ；\n购买日期：2018 年 10 月；\n缺陷：屏幕右下角和左下角进灰，不是很严重；\n体验了下 mac studio ，真舒服，想把他卖了；",
-          "link": "https://www.v2ex.com/t/872190",
-          "publishedOn": "2022-08-11T08:00:50.000Z",
-          "wordCount": 411,
-          "title": "2017 顶配 iMac 二手能卖多少钱",
-          "imageUrl": null
-        },
-        {
-          "id": "872189",
-          "author": "niceyuri",
-          "description": "niceyuri: \n1 前言\n宝子们，这是猎头贴，专门对接汇丰银行的，BASE 广州，注意啊，广州。\n开门见山，先说💰。税前 55 万以内，13 薪。根据面试表现定级。这 55w ，纯发钱，不搞什么绩效，股票之类的胡萝卜。再说工作时间，日常 995 ，有加班情况。\n基本要求是5 年以上经验就好，但是有两个门槛：\n学历要求 985/211 ，英文水平要可以做简单的自我介绍，平时工作可以阅读英文文档\n如果看到这里还感兴趣，咱们就接着看下面。\n2 岗位 JD\n2.1 安卓开发\n岗位职责：\nAndroid 平台 APP/SDK 的设计和开发；\n参与产品和业务相关的技术研究、架构制定、技术选型；\n编写整理相关的开发文档；\n任职要求\n本科及以上学历，计算机或相关专业毕业，英语四级以上\n熟练掌握 kotlin 语言；\n熟悉常用的设计模式，熟悉 MVC 、MVP 、MVVM 等模式，具有扎实的数据结构等计算机基础；\n参与过大型项目开发者优先；\n有源码阅读经验，对代码质量有要求，有开源项目者优先；\n有一定的调试和解决问题的能力，有性能优化经验者优先；\n2.2 IOS 开发\n5+ years of iOS development experience, Bachelor’s degree\n• Prior experience working in an agile environment, continuous integration\n• Experience in delivering software in a regulated environment, ideally financial services based to high quality • Strong knowledge of Swift & Object-C\n• Strong knowledge of multiple programming languages (Java or Python ）\n• Strong analytical & problem solving and creative skills\n• Strong communication and written skills, ability to communicate ideas with others in English\n2.3 其他！！！！\n如果有 5 年以上的开发经历，只要英文读写 ok ，口语简单交流，以上的 JD 没有也没关系。全栈，前端，后端，python 都能找到坑。有枣没枣打一杆子试试呗。\n3 联系方式\n大家可以把「简历」和「岗位偏好」发到这个邮箱： zzlie811@yeah.net\n哪怕本文没有提到合适的 JD ，也欢迎问问看。最近广州深圳，好大的雨。\n屈身守分，以待天时。不可与命争也\n《易经》有云：潜龙勿用。等过了这阵雨，再看看，努力活下去，诸君共勉。",
-          "link": "https://www.v2ex.com/t/872189",
-          "publishedOn": "2022-08-11T07:58:34.000Z",
-          "wordCount": 603,
-          "title": "[广州] 汇丰银行 安卓、IOS、 Python 、全栈啥的，宝子们捞一捞，出粮准时，荒年了找个地儿吃着先。",
-          "imageUrl": null
-        },
-        {
-          "id": "872188",
-          "author": "shangnengfanfo",
-          "description": "shangnengfanfo: \n需求：\n1 、四个房间 + 电视 + 沙发侧边，共需六个网口  \n2 、软路由放弱电箱，6 个 LAN 走暗线，客厅 WiFi 打算用电视这个网口  \n3 、软路由尽量迷你，不然弱电箱放不下  \n4 、软路由尽量稳定，定制玄关柜比较深，弱电配置好不打算折腾了，追求简单、一劳永逸",
-          "link": "https://www.v2ex.com/t/872188",
-          "publishedOn": "2022-08-11T07:47:35.000Z",
+          "id": "872475",
+          "author": "wdssmq",
+          "description": "wdssmq: \n诺基亚 G50 国行，自带的谷歌相册，不支持.nomedia ，本身也不好用；\n另外装了个图库精简版，但是也不支持 .nomedia --\n旧手机上的图库应用传过来安装不上。\n并不需要加密，只是想单纯隐藏掉就好。。",
+          "link": "https://www.v2ex.com/t/872475",
+          "publishedOn": "2022-08-12T09:01:50.000Z",
           "wordCount": 383,
-          "title": "求 8 网口/6 网口软路由或稳定的 [迷你] 有线路由器推荐",
+          "title": "有什么支持 .nomedia 的安卓相册应用",
           "imageUrl": null
         },
         {
-          "id": "872186",
-          "author": "soulsomuns",
-          "description": "soulsomuns: V2er - Best client for V2EX 停更了？\n帖子回复不了，提示解析失败。\n给作者发邮件不回复。",
-          "link": "https://www.v2ex.com/t/872186",
-          "publishedOn": "2022-08-11T07:39:47.000Z",
-          "wordCount": 369,
-          "title": "V2er - Best client for V2EX 停更了？",
+          "id": "872473",
+          "author": "daijinming",
+          "description": "daijinming: 需求是这样的，一个 HTTP API 请求，如果来源是一个特定的 IP(读取 Referer)，不仅要正常返回结果，还需要将这个请求转发给另外一个 API 地址，无需等待返回，请教下大家",
+          "link": "https://www.v2ex.com/t/872473",
+          "publishedOn": "2022-08-12T08:59:51.000Z",
+          "wordCount": 394,
+          "title": "请教一个 nginx 根据 HTTP 请求头信息条件转发的问题",
           "imageUrl": null
         },
         {
-          "id": "872185",
-          "author": "qzhai",
-          "description": "qzhai: 我在站长之家和爱站的广告里专门点了下做 SEO 的。\n发现他们都是先收钱，然后承诺包收录，不收录就退钱。\n这怎么跟算卦一样。。。不灵不要钱。。\n感觉是门稳赚的生意。",
-          "link": "https://www.v2ex.com/t/872185",
-          "publishedOn": "2022-08-11T07:37:40.000Z",
-          "wordCount": 344,
-          "title": "SEO 是玄学么？",
+          "id": "872472",
+          "author": "NeedforV2",
+          "description": "NeedforV2: \n喝完咖啡，无论是热的黑咖啡，还是冰美式，过会肚子就有些不舒服，想上大号。\n这种正常吗？\n还能继续喝吗？",
+          "link": "https://www.v2ex.com/t/872472",
+          "publishedOn": "2022-08-12T08:59:39.000Z",
+          "wordCount": 119,
+          "title": "喝完咖啡，过会儿就想上大号，正常吗？",
           "imageUrl": null
         },
         {
-          "id": "872184",
-          "author": "Andreas8",
-          "description": "Andreas8:",
-          "link": "https://www.v2ex.com/t/872184",
-          "publishedOn": "2022-08-11T07:37:24.000Z",
-          "wordCount": 307,
-          "title": "京东国际 AirPods3 到手大概 1099，可以买京东提供的两年全保换新，到手价格约 1178，可以入手吗？各位大佬们？有什么坑吗？",
+          "id": "872471",
+          "author": "chengouzi",
+          "description": "chengouzi: \n我现在觉得背着 macbook 来回上下班有点沉也有点麻烦\n背笔记本的原因是 开发环境以及项目修改的文件,以及链接服务器的账号密码什么的 都在 macbook 里边\n如果回家有紧急事件,没有开发环境还有各种连接 就很麻烦\n如何能方便的同步这些数据,使得我可以不用背电脑来回上下班\n或者有什么别的方案 比如把 macbook 放在家里,公司用 vnc 连接? 貌似这个可行性有待验证\n目前家里目前有一个 win 台式机,公司还可以有一个 win 笔记本",
+          "link": "https://www.v2ex.com/t/872471",
+          "publishedOn": "2022-08-12T08:54:51.000Z",
+          "wordCount": 449,
+          "title": "如何才能不带笔记本来回上下班",
           "imageUrl": null
         },
         {
-          "id": "872181",
-          "author": "zxCoder",
-          "description": "zxCoder: \n不知道是正常现象还是说身体出问题",
-          "link": "https://www.v2ex.com/t/872181",
-          "publishedOn": "2022-08-11T07:30:14.000Z",
-          "wordCount": 315,
-          "title": "这几天压力有点大，前天突然感觉呼吸不正常了，需要刻意去深呼吸",
-          "imageUrl": null
-        },
-        {
-          "id": "872180",
-          "author": "Alexhex",
-          "description": "Alexhex: \n目前人在国外，不是做计算机相关工作的，经常发现家里的网络不管是微信打开图片或者往国内传文件都巨慢。有时候连 Google 都很慢。Google 一圈之后，在电脑上装了 DNS Jumper 找到最快 DNS 之后，把这个 DNS 设置到路由器里，会有一段时间的改善然后有时候又不行了。\n我知道这种问题很复杂，原因很多。现在想系统学习一下相关知识，目的是能顺畅 Troubleshooting 改善家里的网络状况，包括但不限于路由 /软路由设置，网络连接设备占用等。是不是必须从头把 TCP/IP 先过一遍？有什么推荐的学习路径吗？",
-          "link": "https://www.v2ex.com/t/872180",
-          "publishedOn": "2022-08-11T07:29:01.000Z",
-          "wordCount": 368,
-          "title": "不懂相关技术，想要学习一些相关知识，目的是改进家里的宽带……",
-          "imageUrl": null
-        },
-        {
-          "id": "872179",
-          "author": "wunonglin",
-          "description": "wunonglin: \n目前流行的弹窗，不管是\n<dialog visible=\"visible\">\n<user-dialog />\n</dialog>\n\n还是\n<template>\n    <dialog visible=\"visible\"></dialog>\n</template>\n<script>\nvisible = false\n    open(){\n    this.visible = true\n    }\n    close(){\n    this.visible = true\n    }\n</script>\n\n都难受至极。\n第一种写法\n在使用 dialog 的时候，dialog 就已经加载好了，但是我还不需要，所以造成不必要的资源浪费(可忽略)，以及在代码里看着这堆东西太不优雅了\n<dialog ref=\"dialog1\" :visible=\"dialog1\" />\n<dialog ref=\"dialog2\" :visible=\"dialog2\" />\n<dialog ref=\"dialog3\" :visible=\"dialog3\" />\n<dialog ref=\"dialog4\" :visible=\"dialog4\" />\n......\n\nvisible 会留在调用组件里，调用者有 N 个 dialog 就有 N 个变量\ndata(){\nreturn {\ndialog1: false,\ndialog2: false,\ndialog3: false,\n......\n}\n}\n\n想在关闭 dialog 的时候做一些事情很难受，要么 watch dialog1~N 这个变量，要么给所有 dialog 写<dialog @close=\"close\" />\n<dialog :visible.sync=\"visible\">\n<user-dialog @close=\"close\" />\n</dialog>\n\ndata(){\nreturn {\nvisible: true\n}\n}\n\nclose(event){\nconsole.log(event)\nthis.visible = false\n}\n\n第二种写法\n一旦引入组件，组件便开始 mount 了，生命周期也执行了，如果调用者引入了 N 个 dialog ，那性能可想而知，还不如第一种写法\n因失去了生命周期的特性，导致关闭弹窗的时候需要你自己重置数据，做清理\n而且你开不能利用生命周期来做数据加载，因为你还没打开弹窗，90%的业务场景是没必要加载数据的，所以你还要在 open 里自己加载\n还有一些问题我暂时想不起来，先略吧\n忍了好久了，终于把 https://material.angular.io/components/dialog/overview 的 dialog 给挪过来了，所说不太完美，但是至少满足我的痛点了。\n使用文档可以看我写的demo，API 参考的话可以看Dialog | Angular Material\n各位如果也有同样的痛苦的话，可以 fork 到自己项目里去改一下就可以用了。\n写得不是很完美，仅作为一个想法、思路。\nps：真的想吐槽手动初始化 Vue 这个过程，难受至极，离开了文档的操作，啥也不是。",
-          "link": "https://www.v2ex.com/t/872179",
-          "publishedOn": "2022-08-11T07:26:06.000Z",
-          "wordCount": 461,
-          "title": "终于把 Vue 的 Dialog 给整舒服了",
-          "imageUrl": null
-        },
-        {
-          "id": "872178",
-          "author": "lookStupiToForce",
-          "description": "lookStupiToForce: \n起因还是兴趣以及*趣\n需求是想搞清楚以下这些东西，最好是能以前后内容贯通的方式系统性地学习：\nDNS 的原理，以及简单实现\n硬软路由 / 旁路由 / 单臂路由 等路由组件相通的部分，和各自解决的痛点\n交换机相对路由器又解决了什么关键的问题\nNAT 类型以及打洞具体实现方法，进一步 P2P 打洞的实现\n网络包混淆混淆的到底是啥，比如员工使用**上网能让网络工程师看不出他访问了啥网站吗？\n感觉在描述网络工程，但我想知道有没有哪一本书是专门把上面这些东西给一个野路子程序员拎清后拿来用的，或者一本《计算机网络》能解决以上问题吗？",
-          "link": "https://www.v2ex.com/t/872178",
-          "publishedOn": "2022-08-11T07:25:43.000Z",
-          "wordCount": 584,
-          "title": "真心求教，网络分布、路由、转发、穿透相关知识怎么系统学习",
-          "imageUrl": null
-        },
-        {
-          "id": "872176",
-          "author": "Mitsumune",
-          "description": "Mitsumune: \n是福建移动的宽带，发现改了桥接以后;路由器隔一段时间拨号会掉！之前还以为是固件问题刷了几个都一样，看了下日志发现不对，在恩山搜到了相似的情况；可能是 isp 强制重拨号😢按评论区的方法“打开不主动发送 lcp-echo”后还是同样的结果！",
-          "link": "https://www.v2ex.com/t/872176",
-          "publishedOn": "2022-08-11T07:17:55.000Z",
-          "wordCount": 564,
-          "title": "宽带改桥接后隔一段时间会被 isp 强制重播，请问怎样才能不被重播？",
-          "imageUrl": null
-        },
-        {
-          "id": "872175",
-          "author": "hhhhhh123",
-          "description": "hhhhhh123: \n我刚刚发现 nginx 日志里面 有个 ip 疯狂在访问，这是为啥， 其实平常也是有很多不同的 ip 会访问，但是没在意。 虽然不知为啥，，然后我的网站还没弄好 域名都还没申请。很好奇他们是在干嘛？都是国外的 ip 因为我的服务器是亚马逊的。 这是一部分 IP \n18.139.219.224 - - [11/Aug/2022:03:33:09 +0000] \"GET //info3.php HTTP/1.1\" 404 134 \"-\" \"python-requests/2.28.1\"\n18.139.219.224 - - [11/Aug/2022:03:33:10 +0000] \"GET //info4.php HTTP/1.1\" 404 134 \"-\" \"python-requests/2.28.1\"\n18.139.219.224 - - [11/Aug/2022:03:33:12 +0000] \"GET //phpinfo1.php HTTP/1.1\" 404 134 \"-\" \"python-requests/2.28.1\"\n18.139.219.224 - - [11/Aug/2022:03:33:13 +0000] \"GET //phpinfo2.php HTTP/1.1\" 404 134 \"-\" \"python-requests/2.28.1\"\n18.139.219.224 - - [11/Aug/2022:03:33:14 +0000] \"GET //phpinfo3.php HTTP/1.1\" 404 134 \"-\" \"python-requests/2.28.1\"\n18.139.219.224 - - [11/Aug/2022:03:33:16 +0000] \"GET //phpinfo4.php HTTP/1.1\" 404 134 \"…",
-          "link": "https://www.v2ex.com/t/872175",
-          "publishedOn": "2022-08-11T07:13:42.000Z",
-          "wordCount": 1700,
-          "title": "我的服务器是不是被人盯上了？",
-          "imageUrl": null
-        },
-        {
-          "id": "872174",
-          "author": "callmesmc",
-          "description": "callmesmc:",
-          "link": "https://www.v2ex.com/t/872174",
-          "publishedOn": "2022-08-11T07:13:38.000Z",
-          "wordCount": 376,
-          "title": "iOS 下有无将 GB 18030 编码的文本转化为 UTF-8 的方法？",
-          "imageUrl": null
-        },
-        {
-          "id": "872173",
-          "author": "bloomy8",
-          "description": "bloomy8: \n有 Switch 但是只能玩到 123 ，大逆转的话没有中文，不知道 3DS 能不能解决这个需求，以及可玩性在现在来说高不高呢",
-          "link": "https://www.v2ex.com/t/872173",
-          "publishedOn": "2022-08-11T07:11:57.000Z",
-          "wordCount": 389,
-          "title": "现在买 3DS 玩逆转裁判 4 和大逆转合适吗",
-          "imageUrl": null
-        },
-        {
-          "id": "872172",
-          "author": "gygesm123",
-          "description": "gygesm123: \ngithub 地址： 请猛击它: https://github.com/GZ315200/quickstart-react-admin",
-          "link": "https://www.v2ex.com/t/872172",
-          "publishedOn": "2022-08-11T07:10:32.000Z",
-          "wordCount": 402,
-          "title": "「个人开源」写了一个基于 React/Redux 的后台模版，与大家交流学习，欢迎大家 Star， Issue",
-          "imageUrl": null
-        },
-        {
-          "id": "872171",
-          "author": "huaweigg",
-          "description": "huaweigg: \n昨天更新后 parallels desktop 18 应该是手滑点开了还是不知道默认打开了。今天接口遇到性能问题，从路由器，系统，应用每层都查了下，后来发现是这个问题....关了之后好了",
-          "link": "https://www.v2ex.com/t/872171",
-          "publishedOn": "2022-08-11T07:08:23.000Z",
-          "wordCount": 340,
-          "title": "parallels desktop 18 多了一个 Network Conditioner",
-          "imageUrl": null
-        },
-        {
-          "id": "872170",
-          "author": "paicha",
-          "description": "paicha: web3 的核心价值和互联网的发展历史\nhttps://mp.weixin.qq.com/s/zmtzk9ZkYhRvHXg0aAEMxg\n从 web 技术发展规律看待 web3 底层技术的问题\nhttps://mp.weixin.qq.com/s/TVnruJ_cyA8zXmJBN-svQg\nweb3 过去和现在发生的事情，web3 想做什么？\nhttps://mp.weixin.qq.com/s/TVzjFPsBIsNHv8gLiHZHvg",
-          "link": "https://www.v2ex.com/t/872170",
-          "publishedOn": "2022-08-11T07:07:31.000Z",
-          "wordCount": 544,
-          "title": "到底什么是 web3？",
-          "imageUrl": null
-        },
-        {
-          "id": "872169",
-          "author": "flyinghigherair",
-          "description": "flyinghigherair:",
-          "link": "https://www.v2ex.com/t/872169",
-          "publishedOn": "2022-08-11T07:00:12.000Z",
-          "wordCount": 333,
-          "title": "求教， webstorm 如何设置打开文件默认不收缩 import？",
-          "imageUrl": null
-        },
-        {
-          "id": "872167",
-          "author": "sheatming",
-          "description": "sheatming: \n昨天下午用的很好，晚上到家开机后就出现鼠标指针间隔卡顿\n具体症状：鼠标指针在正常移动时，每隔三秒会卡顿一下，卡顿结束后指针会直接跳过卡顿时大约的距离。\n设备：无外设（扩展坞、外接显示器）、内置触控板、第三方蓝牙鼠标都会造成\n排除：重启无效、关机静止一段时间后无效、同时关闭蓝牙和 WIFI 无效、更换使用环境无效、无占用更多资源的进程\n其他尝试：\n1 、开机长按 D 进入\"诊断模式\"时指针正常，并且无任何问题\n2 、开机长按 option 选择操作系统界面时指针正常，但进入 MacOS 系统后依然出现，切换至 windows10 后问题依旧。\n3 、接入外部显示器问题依旧\n4 、从 11.6.6 升级至 11.6.8 无效（正在备份，准备升级到 12 ）\n5 、重制过 SMC 、NVRAM 无效\n6 、投屏到电视 ✅ 不知道为什么，我将屏幕镜像到电视，不管是作为单一还是复制，都不会出现卡顿情况。\n7 、安全模式问题也存在\n8 、开机时按 Command+R 进入回复模式也会卡顿\n9 、接入有线鼠标一样\n影响范围：只限于正常的指针移动。鼠标的滚轮，触控板的双指、三指、捏放手势都是正常的。",
-          "link": "https://www.v2ex.com/t/872167",
-          "publishedOn": "2022-08-11T06:52:04.000Z",
+          "id": "872470",
+          "author": "dtgxx",
+          "description": "dtgxx: 比如购买离线高精度定位库，要多少钱大约。一年更新的。官网还得备案联系，麻烦的，想知道个大概的价格。",
+          "link": "https://www.v2ex.com/t/872470",
+          "publishedOn": "2022-08-12T08:52:58.000Z",
           "wordCount": 359,
-          "title": "macbook 的指针突然卡顿",
+          "title": "geoip 地理定位库有没有大佬了解",
           "imageUrl": null
         },
         {
-          "id": "872166",
-          "author": "sxbxjhwm",
-          "description": "sxbxjhwm: \n不知道大家有没有遇到过这个情况。。我们可以先来听一段录音，感受一下广东联通客服的服务态度：\n10010_20220811140739.mp3 密码:7ejw\n简单说下事情经过，由于我用了五年剩余话费还是比较多，7 月 16 日，我在 02110016 客服的推荐下办理了异地融合 30 元每月的 200M 宽带，随后联通在未经我同意的情况下，将 1156.25 元的“自由金额”变更为了“未使用的定向金额”，这分明就是明抢行为呀。私改账本的目的就是为了限制我余额的使用范围，目前可以明确的就是新办的宽带以及“亲情付”业务无法使用该余额，明显与他们自称的“无限制”不符。\n联通也是蛮有意思的，每次投诉都给我转到没有权限处理的属地客服这边进行操作，赶巧遇上她们这次没有关话筒，让我得到了这份录音。\n我已经找工信部投诉了，书面邮寄的投诉信，不过好像并没有什么用。\n下面放点图片证据：\n当时是这个活动，2017 年 10 月，充值时我记得是充 2000 返 1000 ，分 20 个月解冻，使用是无限制的，我就直接拿网图来证明了，大家应该都有印象：\n\n\n2022 年 3 月 26 日，我看到的手机营业厅中明确说明这是“自由金额”：\n\n7 月 16 日，未经我同意私改账本：",
-          "link": "https://www.v2ex.com/t/872166",
-          "publishedOn": "2022-08-11T06:51:48.000Z",
-          "wordCount": 423,
-          "title": "还记得广东联通 2017 年“存费送红包”活动么，时隔五年，他们反悔了",
+          "id": "872469",
+          "author": "xiaochuaner",
+          "description": "xiaochuaner: 在 Onenote 中输入完公式之后，在输入文本格式自己就变了，每次再去格式刷非常恼火，请问有什么办法避免这个问题吗",
+          "link": "https://www.v2ex.com/t/872469",
+          "publishedOn": "2022-08-12T08:49:08.000Z",
+          "wordCount": 336,
+          "title": "Onenote 中公式后面的字体问题",
           "imageUrl": null
         },
         {
-          "id": "872165",
-          "author": "Danswerme",
-          "description": "Danswerme: \n表是这样的：\nid\nuid\ntype\nnum\n\n\n\n\n1\n1\n0\n24\n\n\n2\n2\n2\n21\n\n\n3\n3\n1\n14\n\n\n4\n1\n0\n24\n\n\n5\n2\n2\n21\n\n\n6\n3\n1\n14\n\n\n按 uid 分组，然后根据 type 类型对 num 进行汇总，type 是固定的，一共有三种，这种应该怎么写呢？\n结果大概这样：\n[\n{ uid: 1, type_0_sum: 10, type_1_sum: 12, type_2_sum: 12 },\n{ uid: 2, type_0_sum: 10, type_1_sum: 12, type_2_sum: 12 },\n{ uid: 3, type_0_sum: 10, type_1_sum: 12, type_2_sum: 12 },\n]",
-          "link": "https://www.v2ex.com/t/872165",
-          "publishedOn": "2022-08-11T06:48:53.000Z",
-          "wordCount": 489,
-          "title": "V 友们请教一个 SQL 语句的写法",
+          "id": "872468",
+          "author": "kiritoyui",
+          "description": "kiritoyui: \n使用网站上的方法 https://www.v2ex.com/t/778567\niphone->onedrive->Folder Sync->pixel\n问题：pixel google 相册中的图片时间全是我同步下来的那天的时间，不能正确识别相片拍摄的时间",
+          "link": "https://www.v2ex.com/t/872468",
+          "publishedOn": "2022-08-12T08:43:58.000Z",
+          "wordCount": 450,
+          "title": "pixel 1 代备份相册的问题（ iPhone ->onedrive->Folder Sync->pixel）",
           "imageUrl": null
         },
         {
-          "id": "872164",
-          "author": "artemislu569",
-          "description": "artemislu569: \n由题\n楼主的一个有钱的表哥，人现在三亚，因为疫情的原因搞不了线下的小买卖了，让我找一个做直播带货的大佬带他挑选货源以及传授一些经验，我已经黔驴技穷了，大家有没有好点子。",
-          "link": "https://www.v2ex.com/t/872164",
-          "publishedOn": "2022-08-11T06:44:54.000Z",
-          "wordCount": 352,
-          "title": "有钱的表哥找做直播带货的大佬带他入行",
+          "id": "872466",
+          "author": "liouliuliu",
+          "description": "liouliuliu: 感觉看各种开源的东西、官网等。意识到英语真的很重要！！\n但是自己英语烂的很。\n想请问大家有没有从零开始学习英语的教程之类的~",
+          "link": "https://www.v2ex.com/t/872466",
+          "publishedOn": "2022-08-12T08:38:45.000Z",
+          "wordCount": 566,
+          "title": "想请问学英语有什么好的推荐与途径吗?",
           "imageUrl": null
         },
         {
-          "id": "872163",
-          "author": "joooooker21",
-          "description": "joooooker21: \n团队目前接到一个需求：需要开发一个虚拟打印机软件，让用户安装在 windows 电脑上。作用是：当用户打印时，可以选择我们的虚拟打印机，弹出页面让用户填写一些信息，再发送 http 请求，将填写的信息以及要打印的内容（以 pdf 形式）提交到我们的后台服务器上。\n查找了一些开源项目，主要是基于 donet 进行开发，苦于团队内没有熟悉客户端的选手，正在考虑是走外包开发还是内部安排感兴趣的同学边学边做。\n有没有搞过类似功能的朋友？想听听你们的建议",
-          "link": "https://www.v2ex.com/t/872163",
-          "publishedOn": "2022-08-11T06:42:36.000Z",
-          "wordCount": 603,
-          "title": "虚拟打印机开发的复杂度问题",
+          "id": "872465",
+          "author": "dragon11",
+          "description": "dragon11: \n房贷银行的客户经理打电话说是可以换贷款。\n因为我们的贷款利率比较高，6.2 左右。\n说是换了之后就要低得多，好像是经营贷还是什么贷，说最多可以贷 30 年。\n这种有没有什么坑？。\n我知道肯定没有这么长的时间，而且万一银行抽贷就瓜了（好像听说过没额度啥的会抽贷）。\n坐标成都，邮政银行。",
+          "link": "https://www.v2ex.com/t/872465",
+          "publishedOn": "2022-08-12T08:32:40.000Z",
+          "wordCount": 493,
+          "title": "银行建议房贷换贷款",
           "imageUrl": null
         },
         {
-          "id": "872162",
-          "author": "huangwei8ku",
-          "description": "huangwei8ku: \n有没有按摩坐垫啊，公司的椅子做的屁股老是疼，站起来，桌子又不是智能升降的\n有经验的来分享下，",
-          "link": "https://www.v2ex.com/t/872162",
-          "publishedOn": "2022-08-11T06:33:52.000Z",
-          "wordCount": 299,
-          "title": "有没有按摩坐垫啊，公司的椅子做的屁股老是疼，站起来，桌子又不是智能升降的",
+          "id": "872464",
+          "author": "mohanmeng",
+          "description": "mohanmeng: \n后端 JAVA ，五年经验，经历三家一线大厂，名校硕，985 。个人原因今年必须挪个地。目前年 50+w",
+          "link": "https://www.v2ex.com/t/872464",
+          "publishedOn": "2022-08-12T08:30:07.000Z",
+          "wordCount": 442,
+          "title": "现在上海 40K 以上的坑有多少？",
           "imageUrl": null
         },
         {
-          "id": "872161",
-          "author": "wsseo",
-          "description": "wsseo: 剧情有点拖沓，没有《王国》惊险刺激。",
-          "link": "https://www.v2ex.com/t/872161",
-          "publishedOn": "2022-08-11T06:33:47.000Z",
+          "id": "872463",
+          "author": "love060701",
+          "description": "love060701: 曾经蹭热点发了某个主题的帖子（某个币的推广链接），大概 4 年前，至今发表新帖子自动降权，自动下沉到第 5 页之后才能找到。\n请问这个降权如何能解除？",
+          "link": "https://www.v2ex.com/t/872463",
+          "publishedOn": "2022-08-12T08:29:16.000Z",
+          "wordCount": 375,
+          "title": "账号被降权很久了，一直未恢复，咋能解决？",
+          "imageUrl": null
+        },
+        {
+          "id": "872462",
+          "author": "ooops",
+          "description": "ooops: 经常 打自己的名字就出不来了",
+          "link": "https://www.v2ex.com/t/872462",
+          "publishedOn": "2022-08-12T08:27:49.000Z",
+          "wordCount": 303,
+          "title": "gboard 老是丢词库，烦死了",
+          "imageUrl": null
+        },
+        {
+          "id": "872461",
+          "author": "keenoappend",
+          "description": "keenoappend: 使用软件 clash for Android\n在手机使用移动流量 4G 开启 clash 时，\n看油管都能流畅 4k 。\n但是当手机连接家里 wifi 时（长城宽带），\n看油管速度只有 500 多 kb/s 。\n奇怪的是，之前没这个问题，而且设备没有做过任何配置修改和更换，就是突然网速被限制了。\n怀疑是不是宽带供应商那边做了啥限制。\n希望有 dalao 能帮忙解解疑惑😦。",
+          "link": "https://www.v2ex.com/t/872461",
+          "publishedOn": "2022-08-12T08:13:27.000Z",
+          "wordCount": 418,
+          "title": "一个关于魔法上网的问题",
+          "imageUrl": null
+        },
+        {
+          "id": "872460",
+          "author": "wikiwiki6",
+          "description": "wikiwiki6: 5 环内，预算 400 内，最好是有些特色，性价比好些",
+          "link": "https://www.v2ex.com/t/872460",
+          "publishedOn": "2022-08-12T08:12:56.000Z",
+          "wordCount": 301,
+          "title": "求自助餐推荐",
+          "imageUrl": null
+        },
+        {
+          "id": "872458",
+          "author": "ZCPgyer",
+          "description": "ZCPgyer: \n投递地址\n全栈工程师 \n30-40K RMB \n\n在这个岗位，您需要完成的内容：\n\n我们希望您有： \n\n前端开发工程师 \n30-35K RMB\n公司背景：北美 software-as-a-service 公司，提供基于云的开放分析数据平台；融资超过 6000 万美元，创始人曾就职于多家全球互联网百强企业，是一位高级数据专家；\n目前在中国成立远程办公团队。\n\n在这个岗位，您需要完成的内容： \n\n我们希望您有： \n\n安卓开发工程师 \n20-30K RMB\n公司背景：\n一家提供亚洲食品的大型电商超市，公司使用 31 项技术产品和服务，包括 HTML5 、谷歌分析、jQuery 等，目前在中国成都组建远程技术中心。\n在这个岗位，您需要完成的内容： \n\n在这个岗位，您需要完成的内容： \n更多岗位",
+          "link": "https://www.v2ex.com/t/872458",
+          "publishedOn": "2022-08-12T08:03:29.000Z",
+          "wordCount": 493,
+          "title": "[远程全职] 招聘前端开发工程师/月薪 30-35K RMB、全栈工程师/月薪 30-40K RMB 等",
+          "imageUrl": null
+        },
+        {
+          "id": "872457",
+          "author": "xhuang327",
+          "description": "xhuang327: RT ，最近润出去的想法越来越强烈。年过三十，想带着妻子孩子一起走，钱和语言方面先放一边，比较理想的是日本。可能 IT 类的专业工作上共性很大，财务类的话专业软件和相关的法律制度都不一样，感觉找工作是不是很困难。想问下彦祖们有没有什么好的渠道或者心得可以交流一下。",
+          "link": "https://www.v2ex.com/t/872457",
+          "publishedOn": "2022-08-12T08:00:18.000Z",
+          "wordCount": 335,
+          "title": "想请问彦祖们，财务类专业好润吗？",
+          "imageUrl": null
+        },
+        {
+          "id": "872456",
+          "author": "BaiLinfeng",
+          "description": "BaiLinfeng: \n我想把 mix2gobal 版本的 MIUI10 刷入谷歌相机，但是我在网上找了很多教程都弄不成功啊，下载了谷歌相机的 app 打开就是黑屏，谁知道为什么吗，系统版本是 muiu10,gobal 国际版本的，安卓版本 9,已经 root 了。",
+          "link": "https://www.v2ex.com/t/872456",
+          "publishedOn": "2022-08-12T07:57:46.000Z",
           "wordCount": 315,
-          "title": "韩剧《还魂》没有想象中的好看",
+          "title": "mix2gobal 版本的 MIUI10 怎么刷谷歌相机",
+          "imageUrl": null
+        },
+        {
+          "id": "872454",
+          "author": "mask7",
+          "description": "mask7: \n买了一个高斯的 108t 键盘,键帽质感廉价,RGB 光太暗了,退货了.\n想要一个 98 键盘,线性轴的,600 左右价格",
+          "link": "https://www.v2ex.com/t/872454",
+          "publishedOn": "2022-08-12T07:53:04.000Z",
+          "wordCount": 360,
+          "title": "能推荐一个 600 左右的 98 键机械键盘吗?",
+          "imageUrl": null
+        },
+        {
+          "id": "872453",
+          "author": "haozxuan001",
+          "description": "haozxuan001: \n早上老婆上班比较早，会把冰箱里蒸熟的红薯拿出来放一会，避免吃起来太凉，然后由于我上班晚一个小时，所以今天早上我在吃第一口的时候就感觉，味道怪怪的，像是事物变质的味道，然后就和老婆说了这件事，老婆表示非常的吃惊，感觉就放在外面一个小时，不太可能变质，可我实际吃起来的确有股变质的味道，那种想说明或证明的强烈想法，却没有合适的工具或媒介清楚的描述和验证；\n然后脑洞打开，当前我们可以将信息通过文字描述清楚，通过视频看的清楚，但还缺少一个“味道”的描述或记载方式，特别是 [当前时刻] 味道的记载方式，比如食堂为了保证食品安全会有留存箱保存当天的食物，用于后续验证，但像这块变质的红薯，需要表明他当前是变质的，而不是 8 个小时候后我老婆下班后看到的变质的样子；\n在延伸一些，成年人常说记忆中小时候的味道，具体的味道可能会有不同的描述词语，但对于味道来讲，更像是一种有损的保存记载方式，那么有没有可能像哈利波特中邓布利多把记忆抽取并保存的方式，有一种化学卡片可以将当前的味道保存下来呢，期待科技的进步~",
+          "link": "https://www.v2ex.com/t/872453",
+          "publishedOn": "2022-08-12T07:48:18.000Z",
+          "wordCount": 497,
+          "title": "由早餐吃红薯想到的一个“用户需求”",
+          "imageUrl": null
+        },
+        {
+          "id": "872451",
+          "author": "lanyulei",
+          "description": "lanyulei: \n本人在 B 站 ，更新这一套 Client-Go 的视频教程，免费看的，没有后续套路，完整的视频，个人录制，放心食用。\n如果觉得讲的不错的话，感谢关注和一键三连啊。\n如果有讲错的地方，也欢迎指出呢。",
+          "link": "https://www.v2ex.com/t/872451",
+          "publishedOn": "2022-08-12T07:39:54.000Z",
+          "wordCount": 401,
+          "title": "Client-Go 免费视频教程来来来了。",
+          "imageUrl": null
+        },
+        {
+          "id": "872449",
+          "author": "tonychenc",
+          "description": "tonychenc: \n我们是一个全员远程的团队，主要面向国外客户提供软件定制开发。\n因新的业务扩张，现招聘 Python 后端工程师，主要做业务功能开发，非机器学习、非爬虫相关。\n岗位要求：\n沟通主动积极，有良好的职业素养、工作习惯和团队意识\n有良好的代码书规范和代码提交规范\n3 年以上 Python (3.x) 开发经验，熟悉至少一种 Web 框架技术：Django ，Flask 或其他\n熟悉至少一种关系型数据库：SQLServer / MySQL / MariaDB / PostgresSQL ，有良好的设计思维\n熟悉至少一种 MQ 技术\n了解 Docker 或 Kubernetes ，有容器化概念\n英语需要能阅读，听说写如果不错，也可以参与到跟国外客户沟通\n薪资范围在 11-17K/月。\n其它还在招聘的岗位（全职），岗位信息可以请点击下面链接查看：\n前端工程师 （技术方面有所调整）\n目前招聘只招 React\n需要熟悉 Reactive Programing 思想，使用过 RxJS, React-RxJS\n使用过 Jest 、React Testing Library 或其它前端单元测试工具\nvx (base64)：dG9ueWNoZW5j",
+          "link": "https://www.v2ex.com/t/872449",
+          "publishedOn": "2022-08-12T07:35:55.000Z",
+          "wordCount": 433,
+          "title": "[全职远程] 招聘后端 Python 工程师 和 前端 React 工程师",
+          "imageUrl": null
+        },
+        {
+          "id": "872448",
+          "author": "boogoogle",
+          "description": "boogoogle: 关键词：\n远程办公\n早 10 晚 6\n5 年以上工作经验\n中大厂工作经历\n薪资：20-50k/month\n联系邮箱： boogoogle@163.com （因为公司邮箱有个人名字，所以用自己邮箱了）\n说明： 远离北上广，对大厂员工可能要降薪。 但是这个薪资和节奏在老家还是很舒服的",
+          "link": "https://www.v2ex.com/t/872448",
+          "publishedOn": "2022-08-12T07:34:52.000Z",
+          "wordCount": 471,
+          "title": "远程办公，不卷。求 React 前端， NodeJS， ReactNative 开发大佬 [20-50K]",
+          "imageUrl": null
+        },
+        {
+          "id": "872445",
+          "author": "dabaoziwy",
+          "description": "dabaoziwy: \n    午休过后，母亲打来了一通视频通话。视频中，父亲躺在楼梯上小憩，睡的很香。本想随意回复下就去继续敲代码，蓦然发现我的父亲怎么变得这么瘦了，头发也几乎花白了。\n    一瞬间回忆涌动，想起了小时候，父亲每次出差回来都会给我带玩具，每次生日会带我去吃肯德基，每次喝醉酒后和我称兄道弟，每次考试考砸了都会抽出皮带追着我跑半条街。中考考上市重点，父亲在亲戚朋友面前的意气风发。高考失利后轻拍我的后背说着没事自己却坐在沙发上抽了一夜的烟。\n    不知不觉已经毕业两年多了，仔细算了下，这两年下来回家的次数不超过一只手。通电话时他们会说，邻居家的小花猫又生了一窝，抑或是哪个亲戚家的小孩订婚结婚，哈哈，总是这样子醉翁之意不在酒。另我意外的是这些话往往会从我父亲的嘴中说出来，而母亲就在旁边催促他赶紧挂电话不要给孩子压力。我总是觉得我还年轻，不把他的话语放在心上，但是今天突然看到父亲的那副模样，我突然理解了。原来他们变老的速度会比我们长大的速度快这么多啊，还以为他们永远不会变老呢。\n    看着屏幕上的代码发了许久的呆，继续敲起代码，嗯，赶紧把活做完，今晚回家！",
+          "link": "https://www.v2ex.com/t/872445",
+          "publishedOn": "2022-08-12T07:19:45.000Z",
+          "wordCount": 606,
+          "title": "突如其来的多愁善感，差点没忍住在工位上泪崩了",
+          "imageUrl": null
+        },
+        {
+          "id": "872444",
+          "author": "joesonw",
+          "description": "joesonw: 自己业余想做点东西，苦于没有好的 idea/方向。\n请问大家如果有这样一个平台，员工可以根据需求申请不同的云的不同资源资源点权限，运维等审批人员可以一键审核后自动同步到各云。或收回，限定时间，审计等等\n。不知道各位觉得这样的产品 h 各位的公司需要或者愿意尝试吗？ 或者缺了关键的功能？ 还是有些便利的功能点是一个很好的加分项？\n谢谢大家的任何意见。",
+          "link": "https://www.v2ex.com/t/872444",
+          "publishedOn": "2022-08-12T07:15:25.000Z",
+          "wordCount": 424,
+          "title": "多云账号权限管理平台 [问下大家的意见]",
+          "imageUrl": null
+        },
+        {
+          "id": "872441",
+          "author": "rookie333",
+          "description": "rookie333: 例如二手交易那个教育优惠耳机不愿接受 v 友给价格区间，甚至觉得别人要么缺钱 or 以次充好（假货？）\n其实大家大多数人都已经不是在校生或者教师吧，明明自己已经占便宜（薅羊毛）了，却还是不愿意去多花一点时间了解同一个站内的售价信息呢，会觉得自己吃大亏？\n我记得我蹲了好久才等到了 618 买 499 的 gwp ，结果 7 月就在抖音看到了 459 的 gwp ，其实第一时间也觉得自己血亏了，但是还是得接受啊\n记得很久很急之前看到一个文章，大概内容是：\n我在买按个卖的椰子，但是我并没挑最大的那个，因为我觉得我只需要暂时的解渴罢了，如果一口气喝不完我还需要拿着它走很久，反而是个负担（卖椰子的大妈还觉得奇怪，这人怎么不挑最大的）",
+          "link": "https://www.v2ex.com/t/872441",
+          "publishedOn": "2022-08-12T07:09:50.000Z",
+          "wordCount": 569,
+          "title": "为什么大多数人都不能接受“吃亏”",
+          "imageUrl": null
+        },
+        {
+          "id": "872440",
+          "author": "sbabybird",
+          "description": "sbabybird: \nwin10 电脑，自带杀毒，未装各种大师和助手；\n长期不关机，只用来打游戏（地平线 4 ）和上网（ youtube ）；\n结果前两天发现玩游戏时竟然卡顿，开始怀疑显卡问题，后发现是内存满了；\n一时竟无法查出什么导致的内存泄露；\n各位彦祖，是否遇到过同类情况，有无命令可让其续命一下？",
+          "link": "https://www.v2ex.com/t/872440",
+          "publishedOn": "2022-08-12T07:02:22.000Z",
+          "wordCount": 625,
+          "title": "Win10 两个月没关机，结果内存占用越来越满，直至无法使用，不得不重启。此种情况有无清理办法？",
+          "imageUrl": null
+        },
+        {
+          "id": "872439",
+          "author": "godall",
+          "description": "godall: Windows10 的机器，INTEL 核显，可用内存 /总内存老是在 6.8/7.9=87%。\n特定看了一下主要的大应用：\n1. 同花顺炒股软件，至少 8 个进程，内存占用 1.5G\n2. 微信 PC 版，差不多 5 个进程，内存占用 1.0G\n3. ms edge 浏览器，开 1 个页面有 13 个进程（ 5 个插件），1.2G\n4. ms defender ，300M\n5. dwm.exe 不知道是啥，300M\n6. explorer ，210M\n7. outlook 150M\n8. excel 开 3 个文件，数据量 70000 条，带 vbs ，基本上 1G 了，计算时经常提醒 32 位的内存不够。\n9. everything ，150M\n10.ms 全文索引，180M\n11.ms 输入法，90M\n还有无数占用 100M 一下的进程。\n大家看看有什么值得优化的地方？",
+          "link": "https://www.v2ex.com/t/872439",
+          "publishedOn": "2022-08-12T07:02:05.000Z",
+          "wordCount": 416,
+          "title": "现在 8G 内存笔记本真的不够了，不做开发只办公也惨啊",
+          "imageUrl": null
+        },
+        {
+          "id": "872438",
+          "author": "nii",
+          "description": "nii: \nhttps://imgur.com/a/K29534g\n用了两天了 感觉很不错 手感非常舒服",
+          "link": "https://www.v2ex.com/t/872438",
+          "publishedOn": "2022-08-12T06:59:34.000Z",
+          "wordCount": 365,
+          "title": "为什么那么多人觉得丑呢 搞的我都不自信了",
+          "imageUrl": null
+        },
+        {
+          "id": "872437",
+          "author": "yitalin",
+          "description": "yitalin: \nhttp://speedtest.im/\n这个网站每天 ip 也有 1000+了，也在考虑怎么多做几个页面，包括测速排行榜其实后台一直都有收集测速结果的，就是不知道做什么样的界面来显示，欢迎大家提建议反映问题，因为测速节点 1 、2 是多任务下载各大平台的 app 测速，所以一直都有人反应 IDM 弹窗问题，目前只能这样解决了，以下是近期更新：\n电脑用户访问会切换默认节点为 speedtest.net 节点，告别 IDM 弹窗\n收藏节点（ COOKIE 保存）始终将会优先显示\n不可用的测速节点自动移除\n适配深色主题模式，用户深色主题自动切换\n收藏功能+全球 /国内节点切换功能很好用，许多外省的节点速度一样可以跑满，点国内节点按钮就能切换更多节点，找到最适合你的测速点",
+          "link": "https://www.v2ex.com/t/872437",
+          "publishedOn": "2022-08-12T06:56:37.000Z",
+          "wordCount": 395,
+          "title": "Speedtest.im 测速网站做了几项更新，告别 IDM 弹窗",
+          "imageUrl": null
+        },
+        {
+          "id": "872436",
+          "author": "fiypig",
+          "description": "fiypig: \n不用太大型的项目,能学习代码风格思想之类的,有用上 redis mongodb 之类的",
+          "link": "https://www.v2ex.com/t/872436",
+          "publishedOn": "2022-08-12T06:54:34.000Z",
+          "wordCount": 358,
+          "title": "Java 有哪些开源项目值得啃的...求大佬推荐",
+          "imageUrl": null
+        },
+        {
+          "id": "872435",
+          "author": "yhm2046",
+          "description": "yhm2046: \n公司新买一台服务器 b ，服务器 a 原来的空间都清空释放，只用作 git 服务器，都是 dell 的。\n公司最多同时 5 个同事使用，刚开始还挺快的，编译 android10 源码一个半小时。后面越来越慢，source 环境就比原来慢很多，从昨天开始 git statu ，git push 之类的命令执行很慢，今天中午一个多小时才显示 git status\n了解到 b 都是机械硬盘，a 主硬盘是固态的，这个情况跟固态有关吗？",
+          "link": "https://www.v2ex.com/t/872435",
+          "publishedOn": "2022-08-12T06:51:32.000Z",
+          "wordCount": 362,
+          "title": "服务器运行 git 命令很慢是硬盘的原因吗？",
+          "imageUrl": null
+        },
+        {
+          "id": "872434",
+          "author": "rome753",
+          "description": "rome753: \n\n大部分博客主页太过枯燥。我试了一下个人博客 Hexo ，发现虽然功能很强大，可定制性也很高，然而定制起来也很麻烦，大部分只能改改颜色样式排版等。我想做的是一个独一无二个人博客页面，比如有树状图、物理碰撞或者 WebGL 3D 效果等。\n目前用 box2d.js 实现了重力、物理碰撞效果，用 WebGL 实现了 3D 效果，并且鼠标可以拖动和点击跳转。\n地址在这里，欢迎访问。\nhttps://rome753.github.io/",
+          "link": "https://www.v2ex.com/t/872434",
+          "publishedOn": "2022-08-12T06:49:44.000Z",
+          "wordCount": 538,
+          "title": "做一个独一无二的重力版个人博客",
+          "imageUrl": null
+        },
+        {
+          "id": "872432",
+          "author": "TongY",
+          "description": "TongY: \n硅谷独角兽 Flexport 研发创始团队深圳上海诚招有工匠精神的技术大牛\nFlexport 获得软银等多家公司和机构的投资，最近一轮融资后估值 80 亿美金。Flexport 是一家提供全方位海陆空服务的科技货运代理公司, 在 YC 中诞生, Flexport 已经成为全球领先货运代理服务创企, 帮助超过 15,000 家公司交付货物 , 业务覆盖全球 112 个国家 /地区, 2021 年盈利 33 亿美元，货品价值达 190 亿美元。\n•我们是硅谷小公司文化, 求的是做事的扎实务实 , 解决实际问题, 和对技术的喜爱和工匠精神.\n•我们国内的团队将针对国内用户开发产品, 高度复杂的业务和技术难题 , 任务艰巨, 富有挑战.\n•我们工程师不分前端后端, 可以更加全面的接触技术. 我们会和美国硅谷技术团队一起合作, 可以一起学习.\n•弹性工作时间, 做技术是需要一定创造力的, 我们完全不加班.\n公司地址\n目前我们正在组建上海创始研发团队, 欢迎现在加入上海团队能够获得更大影响力和更多的成长空间. 同时也欢迎加入我们的深圳团队.\n深圳 南山区中国华润大厦 7 楼\n上海 静安区越商大厦 5 楼\n工作内容 /技术要求 （各个级别的 engineer 都有招聘）\n•熟练掌握一门后台开发语言: Ruby(Rails), Java, Javascript, Go, C++, C# 等等.\n•我们的技术栈主要是 Spring Boot, Rails, React.\n•扎实的计算机科学基础知识, 熟悉操作系统, 数据库, 常见数据结构和算法,以及软件设计实践.\n•对技术认真,务实解决问题,热爱技术.\n•书面英文沟通能力,能够阅读英文技术文档.\n福利\n•有竞争力的 cash+非常有前景的 RSU\n•补充商业医疗保险, 国际部 /私立医院直付以及配偶子女保险\n•办公外设, 我们了解程序员对于生产力工具的要求\no顶配 MacBook Pro, 在 Apple Store 标准配置能选到的最高配版本(i9 + 32G + 512G)\no两台戴尔 4K 显示器\noJetbrains IDE 旗舰版\n•职业发展支持\no线上培训, 包括 LinkedIn Learning 和 O'Reilly Learning\n其他资料\n•中文官网: https://cn.flexport.com/\n•Crunchbase: https://www.crunchbase.com/organization/flexport\n•YC: https://www.ycombinator.com/companies/flexport\n•微信公众号搜索: Flexport\n简历投递：招聘经理微信 Vikki_Yao",
+          "link": "https://www.v2ex.com/t/872432",
+          "publishedOn": "2022-08-12T06:41:56.000Z",
+          "wordCount": 513,
+          "title": "硅谷独角兽 Flexport 研发创始团队深圳上海诚招各级别工程师",
+          "imageUrl": null
+        },
+        {
+          "id": "872431",
+          "author": "dyeed",
+          "description": "dyeed: \n求一款 macbook m1 和 switch 都能用的扩展坞，可以充电&HDMI ，HDMI 接口支持 4k60 的\n看了 JD 上专门做 switch 扩展坞的（海贝思？），都只支持 4k30.。。。\n有没有帧率能到 4k60 的",
+          "link": "https://www.v2ex.com/t/872431",
+          "publishedOn": "2022-08-12T06:29:34.000Z",
+          "wordCount": 475,
+          "title": "求一款 macbook m1 和 switch 都能用的扩展坞",
+          "imageUrl": null
+        },
+        {
+          "id": "872430",
+          "author": "devswork",
+          "description": "devswork: 链接： https://mp.weixin.qq.com/s/ZsftETwoOQ8c47auYlCySQ",
+          "link": "https://www.v2ex.com/t/872430",
+          "publishedOn": "2022-08-12T06:27:52.000Z",
+          "wordCount": 508,
+          "title": "这种微信公众号文章是怎么做出来的？",
+          "imageUrl": null
+        },
+        {
+          "id": "872428",
+          "author": "AndrewRen",
+          "description": "AndrewRen: \n随着国内和海外业务的飞速发展，TapTap Android 端面临着更多技术挑战，比如多仓，比如组件化等；\n所以，急需一名 Android 端架构师加入我们，一同来攻坚，一同来前进；\n岗位 JD 具体如下：\n工作职责：\n1.负责公司移动端产品技术选型与研发、统筹落地工作；\n2.与业务、产品配合，深度参与产品需求的讨论，主导关键技术方案选型和 App 架构设计；\n3.实现质量可靠、性能卓越且高可复用的组件；\n4.持续优化移动端产品和技术创新，提升产品的用户体验。\n\n任职资格：\n1.本科及以上学历，计算机、通信等相关专业，5 年以上工作经验；\n2.具备扎实的 Java/Kotlin 编程能力，精通 Android Framework 等底层技术\n3.掌握 Android/iOS 内存管理、多线程、常用数据结构、操作系统知识；\n4.熟悉 APP 内性能优化，内存泄漏 /抖动、启动优化、卡顿优化、ANR\\crash 治理；\n5.有丰富的软件架构设计、基础组件 /SDK 研发经验，能快速搭建、重构大规模软件代码；\n6.熟悉 Android 系统打包编译流程、插件化、热修复等主流技术原理；\n\n加分项：\n1.熟悉 Android 底层源代码\n2.有开源项目贡献\n\n公司福利好，一日三餐免费，无限量供应，各类零食饮料应有尽有；\n升降桌，工学椅，写一天代码，腰部酸腿不疼，一口气爬五楼；\n还有最好电脑和最快的网速，心动不如行动～～～\n结尾挂一下友链，我们也在招 iOS 端负责人，有兴趣的小伙伴可以速速报名～\n联系可以发送邮箱： renlong@xd.com",
+          "link": "https://www.v2ex.com/t/872428",
+          "publishedOn": "2022-08-12T06:24:16.000Z",
+          "wordCount": 402,
+          "title": "[上海][TapTap] Android 端架构师",
+          "imageUrl": null
+        },
+        {
+          "id": "872427",
+          "author": "dtgxx",
+          "description": "dtgxx: 比如我电脑安装了爱奇艺，我想下载，之前点击下载就会直接打开我本机的爱奇艺，但是我就是想要个安装包，现在好像不会这样了吧。   又比如我想下载 chrome ，我用 mac ，但是我想下载 windows 安装包，进入到 chrome 界面，下载的就是 mac 的安装包，如何不让网站去猜测这类事情。\n有没有 chrome 的各版本官方最新版下载链接。。。",
+          "link": "https://www.v2ex.com/t/872427",
+          "publishedOn": "2022-08-12T06:18:46.000Z",
+          "wordCount": 380,
+          "title": "如何不让浏览器评估我下载软件的信息",
+          "imageUrl": null
+        },
+        {
+          "id": "872426",
+          "author": "eachann",
+          "description": "eachann: \n装上 Alttab 之后，就使用 cmd + tab 替代系统的切换方式了\n自从系统升级到了 bate 5 ，alttab 无法打开了，请问怎么解决这个问题呢。卸载会恢复吗",
+          "link": "https://www.v2ex.com/t/872426",
+          "publishedOn": "2022-08-12T06:14:52.000Z",
+          "wordCount": 348,
+          "title": "关于 Mac cmd + tab 切换窗口失效",
           "imageUrl": null
         }
       ]
@@ -1086,6 +1056,66 @@
       "feedUrl": "https://www.thisiscolossal.com/feed/",
       "siteUrl": "https://www.thisiscolossal.com",
       "articles": [
+        {
+          "id": "https://www.thisiscolossal.com/?p=221505",
+          "author": "Grace Ebert",
+          "description": "Constellations, butterflies, and bold checkered prints overlay the animalistic forms by Anne Lemanski. Beginning with a copper armature, the North Carolina-based artist stretches vintage paper or patterns of scanned objects across a minimal metal form and stitches the edges together into a geometric patchwork.\nRanging from abstract shapes to illustrations and photos, the printed motifs evoke each character’s temperament, presence, and overall essence. “Stella Terra,” for example, is sheathed in white paper, and images of animals and objects speckle the ephemeral material similar to the spotted coat of the live Appaloosa counterpart. More",
+          "link": "https://www.thisiscolossal.com/2022/08/anne-lemanski-paper-animals/",
+          "publishedOn": "2022-08-11T22:35:44.000Z",
+          "wordCount": 1694,
+          "title": "In a Patterned Menagerie, Artist Anne Lemanski Stitches Printed Papers into Animal Forms",
+          "enclosure": {
+            "url": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/lemanski-og.jpg",
+            "length": "86641",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/lemanski-og.jpg"
+        },
+        {
+          "id": "https://www.thisiscolossal.com/?p=221490",
+          "author": "Grace Ebert",
+          "description": "A grotesquely beautiful monster with monarch wings, long feathered lashes, and a curiously large mouth has taken over a corner building in Montréal. The cheeky puppet mural is by French-Canadian artist Danaé Brissonnet in collaboration with Poncili Creacion and stands at the intersection of Boulevard Saint Laurent and Rue Marie Anne. Centered around the theme of digestion, the massive public work is a playful, metaphorical interpretation of the bodily process. “These days I’m intrigued with exploring the ways in which I nourish myself… the who and what I let inside,” Brissonnet writes on Instagram. More",
+          "link": "https://www.thisiscolossal.com/2022/08/danae-brissonnet-puppet-mural/",
+          "publishedOn": "2022-08-11T18:24:51.000Z",
+          "wordCount": 1629,
+          "title": "A Playfully Grotesque Monster Peeks Out of Danaé Brissonnet’s Ravenous Mural in Montréal",
+          "enclosure": {
+            "url": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/brissonnet-og.jpg",
+            "length": "202429",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/brissonnet-og.jpg"
+        },
+        {
+          "id": "https://www.thisiscolossal.com/?p=221447",
+          "author": "Colossal",
+          "description": "We’re thrilled to announce our monthly series of workshops that explore incredible creativity from leading visual artists. We even have a shiny, new way to stay in the loop about upcoming events with our Colossal Workshops newsletter. Following the remarkable response to our forthcoming session with Hollie Chastain—which is now sold out—we look forward to inviting you to a new class next month! Colossal Members always receive a discount on registration and have access to a growing library of recordings. More",
+          "link": "https://www.thisiscolossal.com/2022/08/colossal-monthly-workshops/",
+          "publishedOn": "2022-08-11T16:00:40.000Z",
+          "wordCount": 1339,
+          "title": "Make, Learn, and Share Creative Skills in Colossal’s Monthly Virtual Workshops",
+          "enclosure": {
+            "url": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/workshops-og.jpg",
+            "length": "143951",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/workshops-og.jpg"
+        },
+        {
+          "id": "https://www.thisiscolossal.com/?p=221469",
+          "author": "Grace Ebert",
+          "description": "The annual Nature TTL Photographer of the Year contest garnered more than 8,000 submissions this round, with some of the most impressive images focusing on fauna in the wild and stunning light-based phenomena that illuminate nighttime skies. Taken around the globe, the winning photos demonstrate both acts of stealth and moments of serendipity. Images range from Matt Engelmann capturing an unaware dog fox as it creeps over a Swiss mountain to Mauro Tronto framing a rainbow shooting upwards from the misty Godafass waterfalls in Iceland, the glowing northern lights overhead. More",
+          "link": "https://www.thisiscolossal.com/2022/08/nature-ttl-photography-2022/",
+          "publishedOn": "2022-08-11T14:45:07.000Z",
+          "wordCount": 1539,
+          "title": "Phenomenal Skies and Animals in Action Top This Year’s Nature TTL Photography Contest",
+          "enclosure": {
+            "url": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/ttl-og.jpg",
+            "length": "59578",
+            "type": "image/jpeg"
+          },
+          "imageUrl": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/ttl-og.jpg"
+        },
         {
           "id": "https://www.thisiscolossal.com/?p=221448",
           "author": "Grace Ebert",
@@ -1175,66 +1205,6 @@
             "type": "image/jpeg"
           },
           "imageUrl": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/reddish-og.jpg"
-        },
-        {
-          "id": "https://www.thisiscolossal.com/?p=221355",
-          "author": "Grace Ebert",
-          "description": "Concentric circles in bold gradients, spiraling lines, and bright radial motifs by Australian-Canadian artist Elspeth McLean transform stones into endlessly hypnotic designs. Impeccably arranged on the flat, round objects, the patterns are comprised of countless individual dots in varying sizes and hues. Having veered away from the stippling technique she used in her earlier paintings, McLean refers to her style as “dotillism,” which is similar to pointillism in the shapes it relies on, although the artist prefers to work with exact colors rather than layer them to produce an illusion of specific tones. More",
-          "link": "https://www.thisiscolossal.com/2022/08/elspeth-mclean-painted-stones/",
-          "publishedOn": "2022-08-08T21:11:09.000Z",
-          "wordCount": 1462,
-          "title": "Painted with Mesmerizing Precision, Innumerable Dots Cloak Stones in Hypnotic Patterns",
-          "enclosure": {
-            "url": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/mclean-og.jpg",
-            "length": "285738",
-            "type": "image/jpeg"
-          },
-          "imageUrl": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/mclean-og.jpg"
-        },
-        {
-          "id": "https://www.thisiscolossal.com/?p=221324",
-          "author": "Grace Ebert",
-          "description": "Spontaneity, honesty, and a desire for experimentation are at the heart of an ongoing project by  Christoffer Relander, whose dreamy compositions masterfully blend portraiture and nature. 365 Days of Double Exposure is Relander’s practice of documenting life around him, whether that be the mundane scenes inside his home or the landscapes and people he encounters. Like other daily projects in a similar vein, the goal is to create no matter the circumstances, and Relander carries a pocket-sized Ricoh GRIII with him to capture impromptu moments throughout the day. More",
-          "link": "https://www.thisiscolossal.com/2022/08/christoffer-relander-365-days-project/",
-          "publishedOn": "2022-08-08T17:02:34.000Z",
-          "wordCount": 1553,
-          "title": "Double-Exposure Photos by Christoffer Relander Superimpose Everyday Scenes onto Human Silhouettes",
-          "enclosure": {
-            "url": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/relander-og.jpg",
-            "length": "122462",
-            "type": "image/jpeg"
-          },
-          "imageUrl": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/relander-og.jpg"
-        },
-        {
-          "id": "https://www.thisiscolossal.com/?p=221314",
-          "author": "Grace Ebert",
-          "description": "From her studio in Paris, artist Julie Bergeron hand-builds amorphous stoneware vessels that mimic a wide array of creatures and lifeforms found in nature. Hollow ducts and pointed spines cover the surfaces of the cavernous forms, ambiguously evoking seed pods, tropical fruits like rambutan or durian, and small marine organisms. “I have fun mixing types, blurring the tracks… Are we in the vegetal, animal, microscopic, or human world? The borders become undefined,” she tells Colossal. More",
-          "link": "https://www.thisiscolossal.com/2022/08/julie-bergeron-ceramic-sculptures/",
-          "publishedOn": "2022-08-08T13:56:49.000Z",
-          "wordCount": 1573,
-          "title": "Amorphous Ceramic Vessels by Julie Bergeron Merge the Shapes and Textures of Organic Matter",
-          "enclosure": {
-            "url": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/bergeron-og.jpg",
-            "length": "67215",
-            "type": "image/jpeg"
-          },
-          "imageUrl": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/bergeron-og.jpg"
-        },
-        {
-          "id": "https://www.thisiscolossal.com/?p=221300",
-          "author": "Colossal",
-          "description": "The Division of Birds, housed inside Chicago’s Field Museum, boasts one of the largest scientific avian collections in the country, representing about 90% of the world’s genera and species and containing more than 480,000 specimens, 21,000 egg sets, and approximately 200 nests. A group show opening this month at Paradigm Gallery + Studio in Philadelphia references this unparalleled archive in a celebration of feathered life.\nCurated by Colossal’s founder and editor-in-chief Christopher Jobson, Division of Birds is comprised of dozens of works in a range of styles and mediums. More",
-          "link": "https://www.thisiscolossal.com/2022/08/division-of-birds-paradigm/",
-          "publishedOn": "2022-08-05T22:07:23.000Z",
-          "wordCount": 1520,
-          "title": "Division of Birds: A Group Show at Paradigm Gallery Celebrates Feathered Life",
-          "enclosure": {
-            "url": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/birds-og.jpg",
-            "length": "154649",
-            "type": "image/jpeg"
-          },
-          "imageUrl": "https://www.thisiscolossal.com/wp-content/uploads/2022/08/birds-og.jpg"
         }
       ]
     },
@@ -1244,494 +1214,514 @@
       "siteUrl": "https://gizmodo.com",
       "articles": [
         {
-          "id": "1849399408",
-          "author": "Matt Novak",
-          "description": "North Korea declared victory against covid-19 this week, claiming the isolated country eradicated the virus and heavily implying dictator Kim Jong Un had contracted the disease but recovered (he had a “high fever), according to a new report from North Korean state media. Kim Jong Un’s sister, Kim Yo Jong, also claimed…\nRead more...",
-          "link": "https://gizmodo.com/north-korea-declares-victory-kim-jong-un-covid-19-cases-1849399408",
-          "publishedOn": "2022-08-11T10:30:00.000Z",
-          "wordCount": 6045,
-          "title": "North Korea Declares Victory Against Covid-19 Pandemic With Just 74 Deaths",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/55ba16242b6da5039724ab346775bc95.jpg"
+          "id": "1849403238",
+          "author": "Jody Serrano",
+          "description": "Gird your inboxes. A vote by the Federal Election Commission on Thursday indicates that more political spam emails may be coming for Gmail users. \nRead more...",
+          "link": "https://gizmodo.com/gmail-google-fec-approves-more-trump-biden-spam-emails-1849403238",
+          "publishedOn": "2022-08-12T09:00:00.000Z",
+          "wordCount": 6142,
+          "title": "Feds Approve Google's Plan to Let Political Campaigns Send More Spam",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/e6c38dc9e957b2589afe5c693a199858.jpg"
         },
         {
-          "id": "1849397651",
-          "author": "Mack DeGeurin",
-          "description": "If you’ve spent any time paying attention to virtual reality news in the past year, you’d be excused for thinking the industry’s focusing its attention solely on uninspired games and expensive efforts to conduct office work in, (insert jazz hands) “the metaverse.” Mark Zuckerberg, the founder of the company once…\nRead more...",
-          "link": "https://gizmodo.com/fundamentalvr-surgery-tech-ai-vr-1849397651",
-          "publishedOn": "2022-08-11T07:00:00.000Z",
-          "wordCount": 7057,
-          "title": "FundamentalVR's Surgery Simulation Will Make You Thank God for Trained Surgeons",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/9b4d77d0cb6123fe36c963fc3149addd.jpg"
-        },
-        {
-          "id": "1849397973",
-          "author": "Cheryl Eddy",
-          "description": "The story of Vesper sounds intriguing—it’s about a teenaged girl who stumbles upon a way to save Earth’s ravaged ecosystem, though it’ll mean dealing with some terribly unscrupulous humans. But the main draw here is the look of the film. Check out the trailer and behold the untamed nature, grimy ruins, floating…\nRead more...",
-          "link": "https://gizmodo.com/vesper-scifi-trailer-post-apocalypse-climate-change-1849397973",
-          "publishedOn": "2022-08-11T00:00:00.000Z",
-          "wordCount": 5341,
-          "title": "The Vesper Trailer Reveals a Bleak Yet Beautiful Glimpse of a Climate-Ravaged Future",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/a010ca965efdb3041d1590376b207c71.jpg"
-        },
-        {
-          "id": "1848494806",
-          "author": "Germain Lussier",
-          "description": "Bill Murray said it in 1978 and we’re still saying it today: “Star Wars! Nothing but Star Wars! Give me those Star Wars! Don’t let them end...” Star Wars is everywhere these days, with multiple movies and TV shows in the works from Disney and Lucasfilm. This article will give you the most up to date Star Wars release…\nRead more...",
-          "link": "https://gizmodo.com/star-wars-movies-tv-shows-release-dates-disney-1848494806",
-          "publishedOn": "2022-08-10T23:10:00.000Z",
-          "wordCount": 9645,
-          "title": "Star Wars Release Dates: Where and When to See Upcoming Star Wars Movies and Disney+ Shows",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/31ef93bac3539eec723dea4a1dd66bf1.png"
-        },
-        {
-          "id": "1849396757",
-          "author": "Mack DeGeurin",
-          "description": "Google’s Threat Analysis Group revealed new details today about its efforts to identify and help patch a zero-day exploit impacting Android devices built by a commercial surveillance vendor and dating back to at least 2016. The research, presented at the Black Hat cybersecurity conference in Las Vegas, represents the…\nRead more...",
-          "link": "https://gizmodo.com/google-linux-zero-day-just-patched-black-hat-1849396757",
-          "publishedOn": "2022-08-10T22:20:00.000Z",
-          "wordCount": 5948,
-          "title": "A Linux Zero-Day Was Finally Patched After Half a Decade of Inaction With Help From Google",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/3e9628eca88f0e0a6542178f31fa99bc.jpg"
-        },
-        {
-          "id": "1849395006",
-          "author": "Linda Codega",
-          "description": "Netflix’s adaption of Neil Gaiman’s long running comic series, The Sandman, released last weekend, and we’ve had some time to gather our thoughts. The first season covers the storyline of just about three years of serialized comic books, and does a pretty good job at figuring out what should stay and what should go.…\nRead more...",
-          "link": "https://gizmodo.com/the-sandman-netflix-neil-gaiman-tom-sturridge-1849395006",
-          "publishedOn": "2022-08-10T22:15:00.000Z",
-          "wordCount": 6155,
-          "title": "6 Things We Loved About Sandman and 3 Things We Didn't",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/69021d1c41db523d1622749af50fccc3.jpg"
-        },
-        {
-          "id": "1849395715",
-          "author": "Passant Rabie",
-          "description": "Northrop Grumman and Firefly Aerospace are teaming up to build a new first stage for Northrop’s Antares rocket, as well as a new medium lift booster. The newly announced partnership means that Northrop will no longer have to rely on Russia and Ukraine for Antares, and will instead turn to building an all-American…\nRead more...",
-          "link": "https://gizmodo.com/northrop-grumman-partners-with-firefly-1849395715",
-          "publishedOn": "2022-08-10T21:45:00.000Z",
-          "wordCount": 5733,
-          "title": "Northrop Grumman Partners With Firefly to Replace Russian Rocket Engines",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/3cfc69eba5f8d4be6aac6f8355ec52a9.jpg"
-        },
-        {
-          "id": "1849395724",
-          "author": "Sabina Graves",
-          "description": "As House of the Dragon gears up to take us back to Westeros, we’re finally getting some clarity as to what went awry in the last few seasons of Game of Thrones. In a New York Times article, A Song of Ice and Fire creator George R.R. Martin shed some light on the ordeal, revealing that while he was more active on…\nRead more...",
-          "link": "https://gizmodo.com/george-rr-martin-on-game-of-thrones-divisive-ending-hbo-1849395724",
-          "publishedOn": "2022-08-10T21:40:00.000Z",
-          "wordCount": 5433,
-          "title": "George R.R. Martin's House of the Dragon Connection Won't End Up Like Game of Thrones",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/778986ac282087cf13facb3e9e160a46.jpg"
-        },
-        {
-          "id": "1849396304",
-          "author": "Lauren Leffer",
-          "description": "It’s been years since Facebook last topped the teen social media charts, yet somehow the platform is still losing ground with young people. The social media site is now used by less than a third of U.S. teenagers, according to new survey data from the Pew Research Center, released Wednesday. That’s down from 71% of…\nRead more...",
-          "link": "https://gizmodo.com/facebook-meta-instagram-youtube-tiktok-snap-1849396304",
-          "publishedOn": "2022-08-10T21:30:00.000Z",
-          "wordCount": 6088,
-          "title": "Facebook Is Still Hemorrhaging Teen Users",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/dd8d8c2c6f885f2a96eeb927b2f9929c.jpg"
-        },
-        {
-          "id": "1849397545",
-          "author": "Kyle Barr",
-          "description": "So were you wondering if all these streaming services bringing ads onto their platforms would actually reduce overall prices? Well, keep dreaming.\nRead more...",
-          "link": "https://gizmodo.com/disney-hulu-espn-streaming-service-1849397545",
-          "publishedOn": "2022-08-10T21:15:00.000Z",
-          "wordCount": 5683,
-          "title": "Disney+ Is Getting More Expensive, Even With Ads",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/30a4522a1318880837e3933fa6e53dea.jpg"
-        },
-        {
-          "id": "1849397443",
-          "author": "Artem Golub",
-          "description": "Read more...",
-          "link": "https://gizmodo.com/w-kamau-bell-on-how-climate-and-racial-justice-are-con-1849397443",
-          "publishedOn": "2022-08-10T21:10:00.000Z",
-          "wordCount": 4372,
-          "title": "W. Kamau Bell on How Climate and Racial Justice are Connected",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/62a2cc6809820e3d4fa46a7a33df31a2.jpg"
-        },
-        {
-          "id": "1849396899",
-          "author": "Passant Rabie",
-          "description": "Read more...",
-          "link": "https://gizmodo.com/hacker-starlink-spacex-black-hat-security-conference-1849396899",
-          "publishedOn": "2022-08-10T21:05:00.000Z",
-          "wordCount": 5773,
-          "title": "Researcher Hacks Starlink Terminal to Warn SpaceX of Dangerous Flaws",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/0da6961f5488cc06eb0ea9cebfce4bf1.jpg"
-        },
-        {
-          "id": "1849395557",
-          "author": "Germain Lussier",
-          "description": "We may never see the recently cancelled Batgirl movie, but it sure has had a huge impact anyway. Since the film’s unceremonious dumping over tax write-offs, the whole conversation around DC Films has changed. Some executives were reportedly so angry about the movie, they wanted to leave. Meanwhile, the president and…\nRead more...",
-          "link": "https://gizmodo.com/dc-movies-shows-still-happening-flash-aquaman-batman-1849395557",
-          "publishedOn": "2022-08-10T21:00:00.000Z",
-          "wordCount": 6226,
-          "title": "So What DC Movies and Shows Are Still Happening?",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/fc47c83d58622952954b4a839e1730e6.jpg"
-        },
-        {
-          "id": "1849395800",
-          "author": "Isaac Schultz",
-          "description": "Scientists recently trapped a giant isopod off the coast of Mexico, and after studying its anatomy and DNA, they determined that the crustacean is an entirely new species.\nRead more...",
-          "link": "https://gizmodo.com/giant-isopod-new-species-gulf-of-mexico-1849395800",
-          "publishedOn": "2022-08-10T20:44:00.000Z",
-          "wordCount": 5631,
-          "title": "Huge Deep Sea Bug—Er, Isopod—Discovered in Gulf of Mexico",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/cf339ee59070f3f8adf40c5e320571c5.png"
-        },
-        {
-          "id": "1849396384",
-          "author": "Sabina Graves",
-          "description": "In case you didn’t know, Pennyworth is going to explain itself with quite the name change. What once was just simply called Pennyworth  is now Pennyworth: The Origin of Batman’s Butler. Formerly on the streamer Epix, it heads to HBO Max for its third season—where it’s getting released over Batgirl, because somehow…\nRead more...",
-          "link": "https://gizmodo.com/hbo-max-pennyworth-butler-of-batman-batgirl-dc-comics-1849396384",
-          "publishedOn": "2022-08-10T20:20:00.000Z",
-          "wordCount": 5226,
-          "title": "Pennyworth, a Show That Still Exists, Is Getting a Ridiculously Bat-Themed Name for Season 3",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/f602846dbc9e7d1e4e9829d0fd78fd27.png"
-        },
-        {
-          "id": "1849396808",
-          "author": "James Whitbrook",
-          "description": "So far this week in our exclusive preview of Titan’s Kamen Rider 01 comic, we’ve given you a glimpse of what to expect out of the legendary franchise’s western comics adventures, and a tease of a sinister new villain. But for those not already familiar with the man behind the Reiwa era’s first Rider, how about a look…\nRead more...",
-          "link": "https://gizmodo.com/kamen-rider-01-comic-preview-covers-aruto-izu-titan-1849396808",
-          "publishedOn": "2022-08-10T19:30:00.000Z",
-          "wordCount": 4747,
-          "title": "Go Behind the Mask and on the Cover in Our Latest Kamen Rider Comic Preview",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/4ce969954e684cd36bdc75f09a9076b3.png"
-        },
-        {
-          "id": "1849394962",
-          "author": "Passant Rabie",
-          "description": "A SpaceX Falcon 9 rocket carried an additional 52 Starlink satellites to low Earth orbit on Tuesday night, raising the total number of Starlinks launched by the company to a whopping 3,009. \n\nRead more...",
-          "link": "https://gizmodo.com/spacex-launches-3-000th-starlink-satellite-1849394962",
-          "publishedOn": "2022-08-10T19:25:00.000Z",
-          "wordCount": 5675,
-          "title": "SpaceX Launches 3,000th Starlink Satellite as Elon's Internet Constellation Continues to Grow",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/4251dc08e655c6d9c0f1ec4f89add274.jpg"
-        },
-        {
-          "id": "1849392349",
-          "author": "Kyle Barr",
-          "description": "The heart of the argument for NFT evangelists has always been the sense they were democratizing the world of art and commerce. Artists, they said, would be able to use a digital proof of ownership to make money off digital sales. So, what should happen when a major company known for predatory practices—such as, for…\nRead more...",
-          "link": "https://gizmodo.com/ntfs-textbooks-college-pearson-1849392349",
-          "publishedOn": "2022-08-10T19:00:00.000Z",
-          "wordCount": 8685,
-          "title": "How Can Textbook Publishers Milk Students Even More? NFTs, Apparently",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/9a789ff075d49952c8c4a7697020ffa8.jpg"
-        },
-        {
-          "id": "1849395500",
-          "author": "Ed Cara",
-          "description": "Scientists in China have found a new virus that has likely made dozens of people sick since 2018 and may be natively carried by shrews. The discovery is the latest reminder that microbes spread from animals to people represent an ever-present potential public health threat.  So far, at least, the evidence suggests…\nRead more...",
-          "link": "https://gizmodo.com/langya-virus-china-henipaviruses-1849395500",
-          "publishedOn": "2022-08-10T18:50:00.000Z",
-          "wordCount": 6806,
-          "title": "A Newly Discovered Virus Has Likely Sickened Dozens in China—How Worried Should We Be?",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/e6f564bb430b3e43fe904d6f06e17b64.jpg"
-        },
-        {
-          "id": "1849391868",
-          "author": "Sabina Graves",
-          "description": "While there may no longer be a physical Disney Store (RIP), ShopDisney.com and Disney Parks have unleashed their fall holiday merch lines. Check out this Halloween haul with Star Wars, Marvel Studios, Nightmare Before Christmas, Haunted Mansion, and more for the whole family—including pets!\n\nRead more...",
-          "link": "https://gizmodo.com/halloween-star-wars-marvel-shop-disney-costumes-merch-1849391868",
-          "publishedOn": "2022-08-10T18:30:00.000Z",
-          "wordCount": 5380,
-          "title": "There's Marvel and Star Wars Halloween Galore in This ShopDisney Fall Preview",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/a8e40a9718ff87f4a787f52d04b77a4e.jpg"
-        },
-        {
-          "id": "1849386024",
-          "author": "Kevin Hurler",
-          "description": "Researchers in Georgia report that gorillas at zoos across the U.S. have come up with a special vocalization—something between a cough and a sneeze—to get the attention of zookeepers when they’re hungry.\n\nRead more...",
-          "link": "https://gizmodo.com/captive-gorillas-started-using-a-special-call-just-to-s-1849386024",
-          "publishedOn": "2022-08-10T18:00:00.000Z",
-          "wordCount": 6492,
-          "title": "Captive Gorillas Started Using a Special Call Just to Summon Zookeepers",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/0a20bf204aa874945b8685c4ff20f600.jpg"
-        },
-        {
-          "id": "1849395568",
-          "author": "Linda Codega",
-          "description": "It’s gotten to that point where most of us either had a few Lego sets as kids or played with them at our friends’ houses. Besides the classic blocks there’s been a lot of interesting takes on the building series. Remember Bionicle? There was a whole animated television series dedicated to those weird lil guys.\n\nRead more...",
-          "link": "https://gizmodo.com/lego-90th-anniversary-favorite-best-sets-open-channel-1849395568",
-          "publishedOn": "2022-08-10T17:45:00.000Z",
-          "wordCount": 5075,
-          "title": "What Are Some of Lego's Greatest Hits?",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/71d72c94745ef491e7ce4e39a1a4cfdc.png"
-        },
-        {
-          "id": "1849396007",
-          "author": "Jody Serrano and Lauren Leffer",
-          "description": "A shocking case involving a stillborn fetus burned and buried in a plastic bag has put Meta in the hot seat after the Facebook parent provided law enforcement with private messages between a 17-year-old Nebraska teen and her mother. The mother was charged in July with performing an illegal abortion, the daughter with…\nRead more...",
-          "link": "https://gizmodo.com/abortion-facebook-messages-nebraska-mom-daughter-cops-1849396007",
-          "publishedOn": "2022-08-10T17:07:00.000Z",
-          "wordCount": 7203,
-          "title": "Did Meta Know It Was Giving the Cops Messages About an Alleged Illegal Abortion?",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/4c22945d6ff6648118e8c07b94ea0876.jpg"
-        },
-        {
-          "id": "1849390358",
-          "author": "Germain Lussier",
-          "description": "Fans of film, TV, comics, and all things pop culture don’t really need a reason to go to a big comic convention. You go because everything you love is all under one roof. However, at this year’s New York Comic Con, that statement goes even further. io9 is excited to exclusively reveal that Oscar Isaac—an actor who has…\nRead more...",
-          "link": "https://gizmodo.com/oscar-isaac-new-york-comic-con-nycc-star-wars-dune-marv-1849390358",
-          "publishedOn": "2022-08-10T17:00:00.000Z",
-          "wordCount": 5530,
-          "title": "Rejoice! Oscar Isaac Is Coming to New York Comic Con",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/3967548198be969f4b0a779584d17562.jpg"
-        },
-        {
-          "id": "1849395616",
-          "author": "George Dvorsky",
-          "description": "Engineers at SpaceX have performed the first static fire test of Booster 7, a prototype of the Super Heavy first stage. The test, in which just one of the booster’s 33 Raptor engines was ignited, moves the company closer to its first orbital test of the revolutionary Starship system. \nRead more...",
-          "link": "https://gizmodo.com/spacex-avoids-explosion-in-test-of-starship-booster-1849395616",
-          "publishedOn": "2022-08-10T16:50:00.000Z",
-          "wordCount": 6144,
-          "title": "SpaceX Performs Limited Static Fire Test of Starship Booster, Avoids Explosion",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/d67b27f60a8752852ef32fb9dbd97532.jpg"
-        },
-        {
-          "id": "1849395202",
-          "author": "Andrew Liszewski",
-          "description": "The same quality and durability that allows Lego bricks to be passed down from one generation to the next also allows the brightly colored building toy to be weaponized in the worst way imaginable: inside a foot-tracking cannon that deliberately sends the pieces sliding underfoot as someone walks by.\nRead more...",
-          "link": "https://gizmodo.com/adam-beedle-youtuber-lego-cannon-smart-step-on-brick-1849395202",
-          "publishedOn": "2022-08-10T16:20:00.000Z",
-          "wordCount": 5459,
-          "title": "Sadistic Monster Creates a Smart Cannon That Makes You Step on Legos",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/4833c4c26ebaceabd9c5bebd977cd754.gif"
-        },
-        {
-          "id": "1849395184",
-          "author": "Mack DeGeurin",
-          "description": "Amazon’s slowly making good on its goal of one day turning your entire body into one big money oozing meatsuit. First up, your palms.\n\nRead more...",
-          "link": "https://gizmodo.com/whole-foods-palm-contactless-payment-amazon-1849395184",
-          "publishedOn": "2022-08-10T16:15:00.000Z",
-          "wordCount": 6095,
-          "title": "Amazon's Creepy Palm Reading Payment System Is Taking Over Whole Foods",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/dc66f18da930db41df33c1b1104a31a7.jpg"
-        },
-        {
-          "id": "1849392072",
-          "author": "Germain Lussier",
-          "description": "As I sat down to revisit Matthew Vaughn’s adaptation of the Neil Gaiman novel Stardust, a family friend who was visiting asked me a question. “What are you watching?” “Stardust.” “What’s that?” “This fantasy movie with Michelle Pfeiffer and Robert De Niro.” “I’ve never heard of it.” “Henry Cavill is also in it and he…\nRead more...",
-          "link": "https://gizmodo.com/stardust-retro-review-neil-gaiman-charlie-cox-1849392072",
-          "publishedOn": "2022-08-10T16:10:00.000Z",
-          "wordCount": 6776,
-          "title": "Stardust Is Star-Studded Fantasy Filmmaking Done Right",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/d4bb9ac72674d3817d4d7d667d2e3b63.jpg"
-        },
-        {
-          "id": "1849191781",
-          "author": "Dell Cameron",
-          "description": "Gizmodo is 20 years old! To celebrate the anniversary, we’re looking back at some of the most significant ways our lives have been thrown for a loop by our digital tools.\n\nRead more...",
-          "link": "https://gizmodo.com/the-privacy-we-knew-in-20th-century-no-longer-exists-1849191781",
-          "publishedOn": "2022-08-10T16:00:00.000Z",
-          "wordCount": 8316,
-          "title": "The Surveillance Fantasies of the New Millennium Became Our Reality",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/c2f5d94cc23fa0a0057a9a6202b0d9d0.gif"
-        },
-        {
-          "id": "1849384557",
-          "author": "Isaac Schultz",
-          "description": "Archaeologists at Pompeii have announced the discovery of several furnished rooms in the House of the Lararium, a middle class residence on the ancient city’s northern side.\nRead more...",
-          "link": "https://gizmodo.com/pompeii-house-of-lararium-1849384557",
-          "publishedOn": "2022-08-10T15:28:00.000Z",
-          "wordCount": 6035,
-          "title": "New Digging at Pompeii Reveals How the Middle Class Lived in 79 AD",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/6f6b3170411cf32e30b57bbff8622ddd.jpg"
-        },
-        {
-          "id": "1849391601",
-          "author": "Lauren Leffer",
-          "description": "Fiddler crabs build their burrows in beaches and in the muck of saltwater wetlands. Usually, those holes serve as the crabs’ home and provide each crustacean shelter and a quick escape from predators. But in some long-abandoned fiddler crab burrows along Louisiana’s Gulf coast, you’ll find something else: Residues of…\nRead more...",
-          "link": "https://gizmodo.com/bp-deepwater-horizon-oil-spill-residue-10-years-later-1849391601",
-          "publishedOn": "2022-08-10T15:17:00.000Z",
-          "wordCount": 6843,
-          "title": "Signs of BP's Deepwater Horizon Oil Spill Persist Over a Decade Later",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/22dc828772ce953a104ab4c46aabe46e.jpg"
-        },
-        {
-          "id": "1849390433",
-          "author": "Cheryl Eddy",
-          "description": "No matter what you thought of Jurassic World Dominion, there’s no denying how cool and alarmingly lifelike its dinosaurs are, a testament to the technical achievements that went into creating them. And surprise: it’s not all CGI! Learn more in io9's exclusive clip from the film’s upcoming home release.\nRead more...",
-          "link": "https://gizmodo.com/jurassic-world-dominion-gigabite-animatronic-bonus-clip-1849390433",
-          "publishedOn": "2022-08-10T15:00:00.000Z",
-          "wordCount": 6148,
-          "title": "Meet Jurassic World Dominion's Very Big Bad in This Exclusive Bonus-Features Clip",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/2a789fb06c12f1884cbd7116a30f950c.jpg"
-        },
-        {
-          "id": "1849392332",
-          "author": "Andrew Liszewski",
-          "description": "The days of limiting your office furniture splurges to ergonomic chairs might soon be coming to an end. A sheet of plywood spanning a pair of saw horses is just no longer the optimal place to plop down for a long day’s work. Desks are now being crammed full of useful tech, including their own operating systems and…\nRead more...",
-          "link": "https://gizmodo.com/luminda-desk-oled-display-wireless-charging-standing-1849392332",
-          "publishedOn": "2022-08-10T15:00:00.000Z",
-          "wordCount": 5762,
-          "title": "The Lumina Desk Includes an Embedded 24-Inch OLED Display",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/b40e2e9f4e372de1c30e03d3725eb1db.jpg"
-        },
-        {
-          "id": "1849394535",
-          "author": "Kevin Hurler",
-          "description": "Spotify has apparently unveiled a new website to sell concert tickets to consumers. Spotify Tickets is the mysterious new feature from the streaming company that could chip away at sites like Ticketmaster and StubHub. \n\nRead more...",
-          "link": "https://gizmodo.com/spotify-concert-tickets-music-ticketmaster-1849394535",
-          "publishedOn": "2022-08-10T14:55:00.000Z",
-          "wordCount": 5602,
-          "title": "Spotify Is Testing Out Selling Concert Tickets to Listeners",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/1ef6e1bc9fb39ee8a7a506002b6a3949.png"
-        },
-        {
-          "id": "1849394705",
-          "author": "Andrew Liszewski",
-          "description": "Batteries suck, which has become even more of an issue over the past few decades as the battery-dependent mobile devices we’ve become addicted to now demand more power than ever. But as long as you’ve got a source of light—be it the sun or soul-crushing office fluorescents—Urbanista’s new wireless earbuds will keep…\nRead more...",
-          "link": "https://gizmodo.com/urbanista-solar-powered-wireless-earbuds-charging-case-1849394705",
-          "publishedOn": "2022-08-10T14:40:00.000Z",
-          "wordCount": 5403,
-          "title": "Urbanista's Solar-Powered Wireless Earbuds Soak Up the Sun to Boost Battery Life",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/e944345e47b46015a1c43ec95b122541.jpg"
-        },
-        {
-          "id": "1849394710",
-          "author": "Kyle Barr",
-          "description": "What does it cost to sell out and hand over the private information of the critics for a despotic regime? Apparently $300,000 and a nice watch. A former Twitter employee was convicted on six of his original 11 counts of operating as an agent for Saudi Arabia. The verdict came down late Tuesday, and all that’s left is…\nRead more...",
-          "link": "https://gizmodo.com/twitter-saudi-spy-elon-musk-1849394710",
-          "publishedOn": "2022-08-10T14:30:00.000Z",
-          "wordCount": 6202,
-          "title": "Former Twitter Employee Convicted as Saudi Spy",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/5587f95b542f4c340c0bad551b2fbf29.jpg"
-        },
-        {
-          "id": "1849394654",
+          "id": "1849402498",
           "author": "Artem Golub and Kevin Hurler",
           "description": "Read more...",
-          "link": "https://gizmodo.com/iceland-s-hottest-tourist-destination-1849394654",
-          "publishedOn": "2022-08-10T14:15:00.000Z",
-          "wordCount": 4337,
-          "title": "Iceland’s Hottest Tourist Destination",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/07902a92f85a53a62f83922fdb1c3514.jpg"
+          "link": "https://gizmodo.com/amazon-bought-your-favorite-robot-company-uh-oh-1849402498",
+          "publishedOn": "2022-08-11T23:05:00.000Z",
+          "wordCount": 4376,
+          "title": "Uh Oh, Amazon Bought Your Favorite Robot Company",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/97782a728d7902427af2ed0130ebeb07.jpg"
         },
         {
-          "id": "1849382665",
-          "author": "James Whitbrook and Gordon Jackson",
-          "description": "Get a glimpse at the return of Epix’s War of the Worlds. David Dastmalchian gets into exorcisms in his latest role. Plus, what’s coming on Archer and American Horror Stories. To me, my spoilers!\n\nRead more...",
-          "link": "https://gizmodo.com/marvel-echo-set-pictures-kingpin-darevdevil-1849382665",
-          "publishedOn": "2022-08-10T13:45:00.000Z",
-          "wordCount": 6709,
-          "title": "Updates From Echo, the Future of Harley Quinn, and More",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/3efa60dd5efb1c1779a74cdb83825c0f.png"
+          "id": "1849397159",
+          "author": "Sabina Graves",
+          "description": "Loungefly’s Liz DeSilva, VP of Creative, and Derrick Baca, VP of Business Development and Merchandising, are  the minds behind the iconic mini-backpack line you see people wearing virtually everywhere, from conventions to theme parks to grocery stores. The versatility and imagery used on their products—including …\nRead more...",
+          "link": "https://gizmodo.com/loungefly-bags-stitch-shoppe-funko-mondo-interview-1849397159",
+          "publishedOn": "2022-08-11T23:00:00.000Z",
+          "wordCount": 7166,
+          "title": "Loungefly's Creative Minds on Making Fandom Fashion for Everyone",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/ae5ebf3a676f4e868425080c8d740e42.png"
         },
         {
-          "id": "1849394318",
-          "author": "Andrew Liszewski",
-          "description": "As longtime camera makers like Nikon and Canon struggle to adapt to a rapidly changing market filled with competition like smartphones, there’s at least one way to boost the sales of dedicated cameras: partner with Takara Tomy and make them transform into fan-favorite Transformers like Optimus Prime.\nRead more...",
-          "link": "https://gizmodo.com/canon-dslr-replica-transformers-optimus-prime-reflector-1849394318",
-          "publishedOn": "2022-08-10T13:10:00.000Z",
-          "wordCount": 5582,
-          "title": "Canon Teams Up With Transformers in New Camera Replica Toy Line",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/4d0283990d35000f71bee97b3e3e038b.jpg"
+          "id": "1849402757",
+          "author": "James Whitbrook",
+          "description": "From The Girl Who Leapt Through Time to Belle, from Summer Wars to Wolf Children, Studio Chizu co-founder Mamoru Hosoda has crafted some stunning animated movies in his long career. Now, a new artbook takes a look at the process behind bringing those movies to life.\n\nRead more...",
+          "link": "https://gizmodo.com/mamoru-hosoda-artbook-gallery-preview-anime-belle-1849402757",
+          "publishedOn": "2022-08-11T22:15:00.000Z",
+          "wordCount": 5228,
+          "title": "Go Behind the Scenes of One of Anime's Most Talented Moviemakers in This Stunning New Artbook",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/9e7c3518bf054c5041ecfe4a8e46dec7.png"
         },
         {
-          "id": "1849387849",
+          "id": "1849402444",
+          "author": "Passant Rabie",
+          "description": "A U.S. military general expressed frustration over a recently launched Russian satellite that appears to be stalking a U.S. military satellite in space. \nRead more...",
+          "link": "https://gizmodo.com/pentagon-angry-about-russias-stalking-satellite-1849402444",
+          "publishedOn": "2022-08-11T21:55:00.000Z",
+          "wordCount": 5524,
+          "title": "U.S. Officials Are Not Happy About Russia's Supposed 'Stalker' Satellite",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/43657c4517a60c7ac2b08018f9233709.jpg"
+        },
+        {
+          "id": "1849402425",
+          "author": "Germain Lussier",
+          "description": "When modern comic book movie fans think of breaking the fourth wall, they probably think of Deadpool. And for good reason. He’s very popular. But well before the Merc with the Mouth pointed that mouth at the fans, another Marvel Comics character was doing it and she’s finally joining the MCU. Her name is She-Hulk and…\nRead more...",
+          "link": "https://gizmodo.com/she-hulk-marvel-studios-disney-plus-interview-1849402425",
+          "publishedOn": "2022-08-11T21:30:00.000Z",
+          "wordCount": 5923,
+          "title": "She-Hulk's Fourth-Wall Breaking Went Through Many Iterations",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/47108000a2b7cb34b925dc964f2f8601.jpg"
+        },
+        {
+          "id": "1849378076",
+          "author": "Lucas Ropek",
+          "description": "In 2016, cybersecurity pro Patrick Wardle heard a story that deeply disturbed him: cybercriminals were using malware to surreptitiously spy on people through their MacOS webcams and microphones. In one particularly unsettling case, a hacker had used a malware called “Fruitfly” to hijack the webcams of laptops with the…\nRead more...",
+          "link": "https://gizmodo.com/black-hat-what-to-do-big-tech-company-steals-your-code-1849378076",
+          "publishedOn": "2022-08-11T21:30:00.000Z",
+          "wordCount": 6791,
+          "title": "What to Do if a Big Tech Company Steals Your Code",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/85f4006e9256939620325568cebc8c9b.jpg"
+        },
+        {
+          "id": "1849402628",
+          "author": "Kyle Barr",
+          "description": "Do you remember back in March when international analysts were equal parts terrified by the prospect of North Korean intercontinental ballistic missiles and bemused by Supreme Leader Kim Jong-un’s self parody-level video promoting their military might? Well, evidence produced by experts on missile proliferation and…\nRead more...",
+          "link": "https://gizmodo.com/north-korean-missile-kim-jong-un-icbm-1849402628",
+          "publishedOn": "2022-08-11T21:05:00.000Z",
+          "wordCount": 6256,
+          "title": "Remember When North Korea Launched Its Massive ICBM? Well, They Probably Faked It",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/f75db0abd3c6331f5e105df7c3487af7.gif"
+        },
+        {
+          "id": "1849402718",
+          "author": "Linda Codega",
+          "description": "If you haven’t watched Nope yet, do not watch this trailer. Jordan Peele’s newest horror film is still out in theaters, and if you’ve got the chance to see this stunner on the big screen, take it. This trailer is fantastic—but it also spoils the movie’s big reveal.\nRead more...",
+          "link": "https://gizmodo.com/nope-trailer-spoilers-ufo-jordan-peele-1849402718",
+          "publishedOn": "2022-08-11T21:00:00.000Z",
+          "wordCount": 5334,
+          "title": "This Nope Trailer Is Great, But You Really Shouldn't Watch It",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/2a2760232b011c6def8c603fcf65e07e.png"
+        },
+        {
+          "id": "1849402673",
+          "author": "Mack DeGeurin",
+          "description": "If you’ve taken a good look at the night sky in recent years you may have noticed a few more twinkling lights. That’s largely due to a surge in low Earth orbit satellites, an increasing number of which are being deployed to offer satellite internet service. SpaceX, OneWeb, and Amazon, the latter through its…\nRead more...",
+          "link": "https://gizmodo.com/darpa-wants-to-build-an-internet-of-connected-satellite-1849402673",
+          "publishedOn": "2022-08-11T20:45:00.000Z",
+          "wordCount": 5948,
+          "title": "DARPA Wants to Build an 'Internet' of Connected Satellites in Low Earth Orbit",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/c4921121925f7edafd86b734d9b573d5.jpg"
+        },
+        {
+          "id": "1849400571",
+          "author": "Isaac Schultz",
+          "description": "This may be your best chance of meeting a great white shark that doesn’t involve dressing up like a seal and covering yourself in blood. The shark-tracking organization OCEARCH is launching a sweepstakes for a lucky winner to join the OCEARCH team on an upcoming research expedition, a trip that will inevitably feature…\nRead more...",
+          "link": "https://gizmodo.com/ocearch-meet-a-shark-sweepstakes-1849400571",
+          "publishedOn": "2022-08-11T20:43:00.000Z",
+          "wordCount": 5882,
+          "title": "Marine Biologists Are Offering a Rare Chance to Meet a Great White Shark",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/be8269cdeb7d8cdddf6b2fdfdc4e9d1b.jpg"
+        },
+        {
+          "id": "1849401746",
+          "author": "Angely Mercado",
+          "description": "A record-breaking hot, dry summer in Europe has lowered the Rhine River’s water levels so much that it has threatened shipping in the region. \n\nRead more...",
+          "link": "https://gizmodo.com/photos-rhine-river-drought-1849401746",
+          "publishedOn": "2022-08-11T20:23:00.000Z",
+          "wordCount": 4759,
+          "title": "Photos Reveal Just How Dire Things Are for Germany's Rhine River",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/c5d780e7d21be3b92b21e538c5f6c2aa.jpg"
+        },
+        {
+          "id": "1849401818",
+          "author": "Rob Bricken",
+          "description": "Just like the zombies of the venerable Walking Dead franchise have begun to evolve, so, it seems, has the franchise itself. Before the last eight episodes of the flagship TV show premiere in October, AMC will debut the six-episode anthology series Tales of the Walking Dead this Sunday, which not only looks at new…\nRead more...",
+          "link": "https://gizmodo.com/wales-of-the-walking-dead-season-2-musical-episode-1849401818",
+          "publishedOn": "2022-08-11T20:10:00.000Z",
+          "wordCount": 5523,
+          "title": "Tales of the Walking Dead Season 2 May Include a Musical Episode",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/4128a9a838d087e8dc60ac0c57a1352b.jpg"
+        },
+        {
+          "id": "1849334200",
+          "author": "Germain Lussier",
+          "description": "Avatar, written and directed by James Cameron, was released in 2009 and became the highest grossing film ever—which it still is to this day.\n\nRead more...",
+          "link": "https://gizmodo.com/avatar-2-release-date-plot-sequels-james-cameron-1849334200",
+          "publishedOn": "2022-08-11T19:25:00.000Z",
+          "wordCount": 7114,
+          "title": "Everything We Know About James Cameron's Avatar Sequels",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/47b06e9251e4336b3c5baf7323ba45c6.gif"
+        },
+        {
+          "id": "1849400843",
+          "author": "Kyle Barr and Dell Cameron",
+          "description": "Despite years of tech companies tracking users, gathering data on their online activities and selling it for profit, few government entities have done anything tangible to halt the hoarding of people’s online information. But it looks like the Federal Trade Commission is putting on its bright orange vest, thinking it…\nRead more...",
+          "link": "https://gizmodo.com/ftc-big-tech-user-data-data-brokers-1849400843",
+          "publishedOn": "2022-08-11T19:00:00.000Z",
+          "wordCount": 7008,
+          "title": "FTC Is Exploring Ways to Crack Down on Big Tech's Obsession With User Data",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/e2847ca38ca1494017b110e3ead2b3a5.jpg"
+        },
+        {
+          "id": "1849400707",
+          "author": "Lauren Leffer",
+          "description": "It’s a bird, it’s a plane—no wait, it’s a migrating moth... being followed by a plane?\n\nRead more...",
+          "link": "https://gizmodo.com/deaths-head-hawkmoths-migration-science-navigation-1849400707",
+          "publishedOn": "2022-08-11T18:32:00.000Z",
+          "wordCount": 6378,
+          "title": "Researchers Stalked Death’s-Head Hawkmoths in a Plane to Learn Their Navigation Secrets",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/1d8340ad7ee18f5d8b6fd4e4825bd73e.jpg"
+        },
+        {
+          "id": "1849400714",
+          "author": "Passant Rabie",
+          "description": "Orbital debris from a Russian anti-satellite weapons test is menacing the Starlink satellite constellation, with  researchers  reporting more than 6,000 close calls with the SpaceX satellites. \n\nRead more...",
+          "link": "https://gizmodo.com/debris-russian-test-threaten-spacex-starlink-satellites-1849400714",
+          "publishedOn": "2022-08-11T18:20:00.000Z",
+          "wordCount": 5723,
+          "title": "Debris 'Squalls' From Russian Anti-Satellite Test Continually Threaten SpaceX's Starlink",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/b44e73e5299da4d14354240afda22aae.jpg"
+        },
+        {
+          "id": "1849401674",
+          "author": "Linda Codega",
+          "description": "What We Do in the Shadows is one of my favorite shows currently airing. It focuses on the foibles of a house full of vampires who regularly have a rotating cast of friends and familiars pop in. The resident familiar, Guillermo de la Cruz (Harvey Guillén), is another constant, and he is arguably the heart of the show.\n\nRead more...",
+          "link": "https://gizmodo.com/what-we-do-in-the-shadows-guillermo-de-la-cruz-badass-1849401674",
+          "publishedOn": "2022-08-11T18:20:00.000Z",
+          "wordCount": 6183,
+          "title": "What We Do in the Shadows’ Best Man Is Guillermo de la Cruz",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/52d7a90543c469429b58023259d727f7.png"
+        },
+        {
+          "id": "1849401261",
+          "author": "Dell Cameron",
+          "description": "Twitter, which has a spotty history of applying policies governing misinformation, hate speech, and inciting rhetoric from government officials, elected representatives, and unverified propagandists, said Thursday that it is working to ensure “healthy civic conversation” ahead of the U.S. midterms.\n\nRead more...",
+          "link": "https://gizmodo.com/twitter-voting-misinformation-2022-midterm-elections-1849401261",
+          "publishedOn": "2022-08-11T18:13:00.000Z",
+          "wordCount": 5949,
+          "title": "Here's What Twitter Says It's Doing to Protect the 2022 Midterms",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/9d949aac8a5c27225cb88424b7c8529a.jpg"
+        },
+        {
+          "id": "1849401470",
           "author": "Florence Ion",
-          "description": "New buds alert! Samsung has announced the second-generation Galaxy Buds 2 Pro in tandem with its latest batch of foldables. These new buds are the successors to 2021’s Buds Pro. They promise 24-bit audio capabilities for Samsung phones and also boast a smaller form factor, so they’re comfortable inside more ear types.…\nRead more...",
-          "link": "https://gizmodo.com/samsung-galaxy-buds-2-pro-tv-hi-fi-wireless-earbuds-1849387849",
-          "publishedOn": "2022-08-10T13:00:00.000Z",
-          "wordCount": 6114,
-          "title": "The Galaxy Buds 2 Pro Promise Hi-Fi Audio For Samsung Phones Only",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/f5352206b3cab9ac6e9c93bb8267a5fd.jpg"
+          "description": "Razer has announced the DeathAdder V3 Pro gaming mouse, the third-generation follow up to its popular DeathAdder lineup. The mouse promises better ergonomics and a lighter build for extended gaming sessions. But its biggest trick is that it pairs up with the sold-separately HyperPolling Wireless Dongle, which promises…\nRead more...",
+          "link": "https://gizmodo.com/razer-deathadder-v3-pro-mouse-high-polling-rate-wireles-1849401470",
+          "publishedOn": "2022-08-11T17:45:00.000Z",
+          "wordCount": 5451,
+          "title": "Razer's New DeathAdder V3 Pro Promises Super Fast Polling Without Wires",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/52ea5a34169e4723cca2f4ae2abac321.png"
         },
         {
-          "id": "1849391558",
-          "author": "Florence Ion",
-          "description": "Samsung held its virtual Galaxy Unpacked event today to debut its next generation of foldable smartphones, the Galaxy Z Flip 4 and Galaxy Z Fold 4. The two smartphones are fourth-generation follow-ups to last year’s Z Flip and Z Fold releases. They are accompanied by two new smartwatches, the Galaxy Watch 5 and Galaxy…\nRead more...",
-          "link": "https://gizmodo.com/samsung-galaxy-unpacked-z-fold-flip-watch-5-pro-buds-2-1849391558",
-          "publishedOn": "2022-08-10T13:00:00.000Z",
-          "wordCount": 5430,
-          "title": "Everything Samsung Announced at Galaxy Unpacked",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/17379cee328fbe515f55394b14240f80.jpg"
+          "id": "1849401471",
+          "author": "James Whitbrook",
+          "description": "Kamen Rider has existed in many forms in its long history, from TV and film to, of course, creator Shotaro Ishinomori’s own classic manga. But how do you bring a series that has such a peculiar history in the west to contemporary Western comics? \nRead more...",
+          "link": "https://gizmodo.com/kamen-rider-01-comic-interview-easton-prasetya-titan-1849401471",
+          "publishedOn": "2022-08-11T17:30:50.000Z",
+          "wordCount": 7790,
+          "title": "Kamen Rider Zero-One's Creative Team on Bringing the Tokusatsu Icon to Western Comics",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/e78abcb3e637303707b9970a3d05e4f9.png"
         },
         {
-          "id": "1849387504",
-          "author": "Florence Ion",
-          "description": "As the rumors and leaks had foretold, Samsung today announced the fourth generation of its foldable smartphone lineup at its virtual Unpacked event. The Galaxy Z Flip 4 and Galaxy Z Fold 4 are on sale this month. They feature updated hardware, including better processors, cameras, and a more durable chassis. Based on…\nRead more...",
-          "link": "https://gizmodo.com/samsung-galaxy-foldables-z-flip-fold-4-hands-on-order-1849387504",
-          "publishedOn": "2022-08-10T13:00:00.000Z",
-          "wordCount": 8386,
-          "title": "Samsung’s Galaxy Foldables Are Finally on Par With Its Flagship Phones",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/d21913f82dd40234eafcf8a02a2a345b.jpg"
-        },
-        {
-          "id": "1849391277",
-          "author": "Florence Ion",
-          "description": "Samsung is still making the only Android-based smartwatches worth using, and now it’s adding two more models to its lineup. The company introduced the Galaxy Watch 5 and Galaxy Watch 5 Pro at its Unpacked event today, along with its new family of foldables. While the Watch 5 is billed primarily as the “upgrade” to…\nRead more...",
-          "link": "https://gizmodo.com/samsung-galaxy-watch-5-pro-announced-android-fitness-1849391277",
-          "publishedOn": "2022-08-10T13:00:00.000Z",
-          "wordCount": 6521,
-          "title": "Samsung's Galaxy Watch 5 Has Finally Gone Pro",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/51de1eb5dcd390c0193b23c7cfbea078.jpg"
-        },
-        {
-          "id": "1849346834",
-          "author": "Matt Novak",
-          "description": "Court-ordered ankle monitors bring in hundreds of millions of dollars in the U.S. every year. Law enforcement uses the devices to monitor more than a hundred thousand people every day, a number that’s expanding rapidly. They play a key role in American criminal justice. For such a crucial technology, though, they…\nRead more...",
-          "link": "https://gizmodo.com/spider-man-s-prisoner-ankle-monitor-1977-crime-stan-lee-1849346834",
-          "publishedOn": "2022-08-10T11:00:00.000Z",
-          "wordCount": 8202,
-          "title": "How Spider-Man Led to the Invention of the Prisoner Ankle Monitor",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/5c6997b6e501aade4a6c31d000d26004.png"
-        },
-        {
-          "id": "1849393836",
-          "author": "Matt Novak",
-          "description": "Tesla CEO Elon Musk quietly sold $6.9 billion worth of Tesla stock, according to a new SEC filing, despite saying as recently as April that he had no plans to sell any more. The stock sale comes as the billionaire continues to fight with Twitter in court over his attempt to back out of purchasing the social media…\nRead more...",
-          "link": "https://gizmodo.com/elon-musk-tesla-stock-price-billion-wouldnt-sell-more-1849393836",
-          "publishedOn": "2022-08-10T10:00:00.000Z",
-          "wordCount": 5958,
-          "title": "Elon Musk Sells $6.9 Billion in Tesla Stock Despite Saying He Wouldn't Sell More",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/c81db9743d45bda65efd188c73b21f83.png"
-        },
-        {
-          "id": "1849392675",
+          "id": "1849377621",
           "author": "Cheryl Eddy",
-          "description": "In deep space, a pilot goes through her routine with very little enthusiasm; when offered the chance to name a new planet, she just jams her finger on the “Y” key until the letter fills the submission box. Ho-hum. But when she encounters something unusual among the stars, she remembers why she’s out there in the first…\nRead more...",
-          "link": "https://gizmodo.com/sci-fi-short-film-carrier-space-whale-youtube-dust-1849392675",
-          "publishedOn": "2022-08-09T23:00:00.000Z",
-          "wordCount": 5427,
-          "title": "A Bored Pilot Encounters a Space Oddity in Sci-Fi Short Carrier",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/14982dde42a6862c2cdefe571c691114.jpg"
+          "description": "You’ve heard of classic Archie Comics character Li’l Jinx, a mischievous tyke who earned her unusual name by being born on Halloween? Replace “tyke” with “teen” (and lose the “Li’l”) and you’ve got the main character of Chilling Adventures Presents... Jinx’s Grim Fairy Tales, a new Archie Horror one-shot that io9 is…\nRead more...",
+          "link": "https://gizmodo.com/archie-comics-horror-sneak-peek-jinx-s-grim-fairy-tales-1849377621",
+          "publishedOn": "2022-08-11T16:30:00.000Z",
+          "wordCount": 6076,
+          "title": "Halloween Arrives Early in this Archie Horror Comic Sneak Peek",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/e3be98122bf801960c589f7b18e5c4bd.jpg"
         },
         {
-          "id": "1848354161",
-          "author": "Germain Lussier",
-          "description": "Marvel’s streaming shows and movies may still steal the majority of the headlines, but the DC Extended Universe is finally giving the MCU a run for its money. The DCEU’s myriad projects are stretching far beyond  superhero mainstays Batman, Superman, and the Justice League, promising to include new and interesting…\nRead more...",
-          "link": "https://gizmodo.com/warner-bros-dc-release-dates-hbo-max-cast-details-1848354161",
-          "publishedOn": "2022-08-09T22:08:00.000Z",
-          "wordCount": 9650,
-          "title": "DC Release Dates: When to See DCEU Movies and HBO Max Shows",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/4850d2dc11bba95cd15d04db2b0038ba.gif"
+          "id": "1849400656",
+          "author": "Mack DeGeurin",
+          "description": "Ethereum is closer than it’s ever been to ditching its highly energy intensive proof-of-work model for a proof-of-stake (POS) alternative.\nRead more...",
+          "link": "https://gizmodo.com/ethereum-ether-crypto-proof-of-stake-crypto-mining-1849400656",
+          "publishedOn": "2022-08-11T16:15:00.000Z",
+          "wordCount": 5721,
+          "title": "Ethereum's Final Proof-of-Stake Test Deemed a 'Success'",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/26c303726ec2038b053a894424992578.jpg"
         },
         {
-          "id": "1849391753",
-          "author": "Germain Lussier",
-          "description": "Hulu just announced that its recent film Prey, a prequel to the famed 1987 film Predator, is the “#1 premiere on Hulu to date, including all film and TV series debuts.” That’s a big deal for any film, but even bigger when you realize where it all started.\nRead more...",
-          "link": "https://gizmodo.com/prey-movie-hulu-predator-origin-dan-trachtenberg-1849391753",
-          "publishedOn": "2022-08-09T21:15:00.000Z",
-          "wordCount": 5510,
-          "title": "Prey Came From a Predator Scene That Probably Doesn't Exist",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/2d212ae53372c2c9348daf47506b4867.jpg"
+          "id": "1849400348",
+          "author": "Rob Bricken",
+          "description": "If you watched the tragicomic, canon-heavy, highly revealing finale of Rick and Morty season five, which gave not only a peek at Rick’s real origin and the origin of the Citadel of Ricks—to say nothing of evil Morty’s plan—then you might be expecting season six to pick up right where the last episode left off. But…\nRead more...",
+          "link": "https://gizmodo.com/rick-and-morty-season-6-trailer-adult-swim-1849400348",
+          "publishedOn": "2022-08-11T15:40:00.000Z",
+          "wordCount": 5271,
+          "title": "Rick and Morty Get Paranoid in Their New Season 6 Trailer",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/0109e97b77fba7a812915ef78e2a0432.jpg"
         },
         {
-          "id": "1849386872",
-          "author": "Molly Taft",
-          "description": "According to the world’s top scientists, we have less than three years to right the ship to avoid climate disaster. Across the globe this summer, heat waves,  fires, and floods are affecting millions of people and destroying lives as the impacts of our warming planet get more severe. Some scientists suggest that we…\nRead more...",
-          "link": "https://gizmodo.com/climate-deniers-2022-midterms-1849386872",
-          "publishedOn": "2022-08-09T21:12:00.000Z",
-          "wordCount": 7015,
-          "title": "The Biggest Climate Ghouls of the 2022 Midterms",
-          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/d9bddc017ff2f0160d59d700475dc547.jpg"
+          "id": "1849354999",
+          "author": "Gizmodo Staff",
+          "description": "One of the most critical problems humans currently have is how to generate power efficiently. We have many ways of generating electric power, but all have their drawbacks—some are devastating for the environment, some are difficult to scale, and some have been sidelined for years due to fears about safety. As we move…\nRead more...",
+          "link": "https://gizmodo.com/energy-engineering-college-university-program-degree-1849354999",
+          "publishedOn": "2022-08-11T15:30:00.000Z",
+          "wordCount": 4513,
+          "title": "Degrees of the Future 2022: Energy Engineering",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/c4c8a9f05ba46bfcb6fb42c1945820da.jpg"
+        },
+        {
+          "id": "1849354996",
+          "author": "Gizmodo Staff",
+          "description": "Biomedical engineering will help us go beyond the antibiotics, antivirals, and steroids that dominated last century’s medical arsenal. From drug-carrying nanorobots to genetic and tissue engineering, biomedical engineers build the technologies required for state-of-the-art medicine. According to the American Society…\nRead more...",
+          "link": "https://gizmodo.com/biomedical-engineering-college-university-program-degre-1849354996",
+          "publishedOn": "2022-08-11T15:30:00.000Z",
+          "wordCount": 4507,
+          "title": "Degrees of the Future 2022: Biomedical Engineering",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/48ef012068c725e38545e8d41ef2dbaa.jpg"
+        },
+        {
+          "id": "1849354991",
+          "author": "Gizmodo Staff",
+          "description": "Knowledge of astronomy and astrophysics is crucial to understanding some of the most fundamental questions of our universe. We cannot know the origins of anything—from galaxies to black holes to life itself—without studying the cosmos in detail. New telescope missions are bringing us closer to answers, but it takes…\nRead more...",
+          "link": "https://gizmodo.com/astronomy-astrophysics-college-university-program-degre-1849354991",
+          "publishedOn": "2022-08-11T15:30:00.000Z",
+          "wordCount": 4497,
+          "title": "Degrees of the Future 2022: Astronomy & Astrophysics",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/0dabd92d8b920f6bd33455bcfcd1a63a.jpg"
+        },
+        {
+          "id": "1849354980",
+          "author": "Gizmodo Staff",
+          "description": "Spaceflight, once the sole domain of government-backed agencies like NASA and Roscosmos, is now a thriving commercial venture, and innovations in rocketry and orbital technology are increasingly coming from private companies. At the same time, space agencies are still creating incredible new tech (like fully electric…\nRead more...",
+          "link": "https://gizmodo.com/aerospace-astronautics-college-university-program-degre-1849354980",
+          "publishedOn": "2022-08-11T15:30:00.000Z",
+          "wordCount": 4602,
+          "title": "Degrees of the Future 2022: Aerospace & Astronautical Engineering",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/5399ada134dc887dea73413431d90567.jpg"
+        },
+        {
+          "id": "1849354977",
+          "author": "Gizmodo Staff",
+          "description": "Automated systems have long dominated manufacturing, but now they’re moving into customer service, medical care, warfare, and so many other environments—they’re even controlling the rovers currently driving around Mars. “Robotics is extremely important, since it has the potential to help humans to solve complex,…\nRead more...",
+          "link": "https://gizmodo.com/autonomy-robotics-college-university-program-degree-1849354977",
+          "publishedOn": "2022-08-11T15:30:00.000Z",
+          "wordCount": 4401,
+          "title": "Degrees of the Future 2022: Autonomy & Robotics",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/12b7b65131a65d4025a980f88fb3bdfb.jpg"
+        },
+        {
+          "id": "1849354975",
+          "author": "Gizmodo Staff",
+          "description": "User experience design affects everyone, from voters trying to understand their ballots to a grandparent trying to video call with their grandchild. It’s crucial that these interfaces meet their moment, by making technologies like health care portals and smartphones as intuitive as possible. “User experience runs the…\nRead more...",
+          "link": "https://gizmodo.com/ux-design-college-university-program-degree-1849354975",
+          "publishedOn": "2022-08-11T15:30:00.000Z",
+          "wordCount": 4379,
+          "title": "Degrees of the Future 2022: UX Design",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/13d4988a15e39a375a99285c672eb4b3.jpg"
+        },
+        {
+          "id": "1849354968",
+          "author": "Gizmodo Staff",
+          "description": "Games are a reflection of our world and help shape the way we see it. For children, games can be a way of learning fundamental interpersonal and problem-solving skills—and so the way games are designed has a very real impact on society. “There’s been a shift away from tangible, mechanical approaches to design and more…\nRead more...",
+          "link": "https://gizmodo.com/game-design-college-university-program-degree-1849354968",
+          "publishedOn": "2022-08-11T15:30:00.000Z",
+          "wordCount": 4453,
+          "title": "Degrees of the Future 2022: Game Design",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/eaff3b1694cc75d255d586e3eebc4698.jpg"
+        },
+        {
+          "id": "1849354958",
+          "author": "Gizmodo Staff",
+          "description": "As our ability to gather huge amounts of information grows, so does our need to analyze it. “It’s such a fundamental driver of progress,” said Yves-Alexandre de Montjoye, a data scientist at Imperial College London and Special Adviser on AI and data protection to the European Commission’s Justice Commissioner, “when…\nRead more...",
+          "link": "https://gizmodo.com/data-science-college-university-program-degree-1849354958",
+          "publishedOn": "2022-08-11T15:30:00.000Z",
+          "wordCount": 4627,
+          "title": "Degrees of the Future 2022: Data Science",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/9991cbe79de4c09524ace6376a9ad801.jpg"
+        },
+        {
+          "id": "1849354951",
+          "author": "Gizmodo Staff",
+          "description": "In 2020, a patient in Germany died after hackers disrupted IT systems at a hospital, forcing a delay in her treatment. Ransom-seeking cyberattacks on health care systems have become a growing threat, showing the life-or-death stakes of modern cybersecurity. It’s crucial that computers are adequately guarded against…\nRead more...",
+          "link": "https://gizmodo.com/cybersecurity-college-university-program-degree-1849354951",
+          "publishedOn": "2022-08-11T15:30:00.000Z",
+          "wordCount": 4537,
+          "title": "Degrees of the Future 2022: Cybersecurity",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/1717c036457cc4705eec85d6dd16852c.jpg"
+        },
+        {
+          "id": "1849354948",
+          "author": "Gizmodo Staff",
+          "description": "Computer graphics determine how we experience and interact with technology; innovations in this field can literally change how we see the world. Work here will be relevant to a wide range of fields, from entertainment to medical imaging and training. “Computer graphics are needed in so many important aspects of our…\nRead more...",
+          "link": "https://gizmodo.com/computer-graphics-college-university-program-degree-1849354948",
+          "publishedOn": "2022-08-11T15:30:00.000Z",
+          "wordCount": 4515,
+          "title": "Degrees of the Future 2022: Computer Graphics",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/16ffcbb5c93fcf6609f62d108cf69607.jpg"
+        },
+        {
+          "id": "1849354946",
+          "author": "Gizmodo Staff",
+          "description": "A degree in artificial intelligence will soon be relevant to just about any field. As the problems humans try to solve become bigger, some of the best solutions may be achieved with AI. AI involves subdisciplines like machine learning and deep learning, both of which are means by which computers can be trained to…\nRead more...",
+          "link": "https://gizmodo.com/artificial-intelligence-college-program-degree-1849354946",
+          "publishedOn": "2022-08-11T15:30:00.000Z",
+          "wordCount": 4503,
+          "title": "Degrees of the Future 2022: Artificial Intelligence",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/dc30f627e6d8c6a9a28ee89504a69ebe.jpg"
+        },
+        {
+          "id": "1849354942",
+          "author": "Gizmodo Staff",
+          "description": "Neuroscientists study the brain and its various complex capabilities, from memory and learning to human behavior and consciousness. Neuroscientists generally need PhDs to do their work, which often is in a hospital or university setting. But neuroscience is an interdisciplinary field that may require knowledge of…\nRead more...",
+          "link": "https://gizmodo.com/neuroscience-college-university-program-degree-1849354942",
+          "publishedOn": "2022-08-11T15:30:00.000Z",
+          "wordCount": 4595,
+          "title": "Degrees of the Future 2022: Neuroscience",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/47f3fb9e934fe96ee152e4f473831628.jpg"
+        },
+        {
+          "id": "1849354938",
+          "author": "Gizmodo Staff",
+          "description": "Molecular and cellular biology probe the itsy-bitsy processes that make us human, from DNA replication to cell division. “It started out to be a pure scientific investigation of some absolutely classic questions in science,” said David Baltimore, biologist at Caltech and the Broad Institute and 1975 Nobel laureate.…\nRead more...",
+          "link": "https://gizmodo.com/molecular-cellular-biology-college-program-degree-1849354938",
+          "publishedOn": "2022-08-11T15:30:00.000Z",
+          "wordCount": 4605,
+          "title": "Degrees of the Future 2022: Molecular & Cellular Biology",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/ac96b6d6f318793d9935238094f396cd.jpg"
+        },
+        {
+          "id": "1849354933",
+          "author": "Gizmodo Staff",
+          "description": "Immunology and virology respectively study the strengths and weaknesses of our body’s immune system, and some of the most dangerous threats to them: viruses. As new viral outbreaks emerge and familiar viruses mutate into new threats, it’s crucial to know how our bodies can adapt.\nRead more...",
+          "link": "https://gizmodo.com/immunology-virology-college-university-program-degree-1849354933",
+          "publishedOn": "2022-08-11T15:30:00.000Z",
+          "wordCount": 4569,
+          "title": "Degrees of the Future 2022: Immunology & Virology",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/67adc24cf73385dd56783cc0be30d556.jpg"
+        },
+        {
+          "id": "1849354905",
+          "author": "Gizmodo Staff",
+          "description": "The study of the causes of diseases and their spread will continue to be crucial, particularly as climate change presents us with new health challenges and worsens the threat of pandemics. “Epidemiology provides analytic tools to better understand and respond to the urgent problems we are facing now, which will only…\nRead more...",
+          "link": "https://gizmodo.com/epidemiology-college-university-program-degree-1849354905",
+          "publishedOn": "2022-08-11T15:30:00.000Z",
+          "wordCount": 4539,
+          "title": "Degrees of the Future 2022: Epidemiology",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/548d20fc786e1631f2bf9c9d5d9cd257.jpg"
+        },
+        {
+          "id": "1849359473",
+          "author": "Gizmodo Staff",
+          "description": "Genetics is the study of inheritance—from someone’s brown eyes to their inability to eat dairy. Taken together with genomics—the study of the entire genome of an organism—researchers get better at understanding overall human health, and how to fight  diseases. \nRead more...",
+          "link": "https://gizmodo.com/genetics-genomics-college-university-program-degree-1849359473",
+          "publishedOn": "2022-08-11T15:30:00.000Z",
+          "wordCount": 4672,
+          "title": "Degrees of the Future 2022: Genetics",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/861c6ec8415221418ac03bb8e7cf36f1.jpg"
+        },
+        {
+          "id": "1849357231",
+          "author": "Gizmodo Staff",
+          "description": "In the 1950s, a visionary college student might have pursued a degree in computer science, and helped create our modern digital world. In the 1990s, that same student might have studied biotechnology, and developed genetic engineering techniques that are solving today’s health crises. But what and where should a…\nRead more...",
+          "link": "https://gizmodo.com/best-university-college-degree-programs-science-tech-1849357231",
+          "publishedOn": "2022-08-11T15:30:00.000Z",
+          "wordCount": 4689,
+          "title": "Gizmodo's Degrees of the Future 2022",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/1d703900c10d1aa1222a265b8442b237.png"
+        },
+        {
+          "id": "1849385174",
+          "author": "Isaac Schultz",
+          "description": "Gizmodo has partnered with the independent market research provider Statista to identify the top universities within 25 fields of study that we believe will define the 21st century. But which academic disciplines did we look at, and why?\nRead more...",
+          "link": "https://gizmodo.com/science-tech-best-emerging-college-university-majors-1849385174",
+          "publishedOn": "2022-08-11T15:30:00.000Z",
+          "wordCount": 9017,
+          "title": "These Are the Degrees of the Future",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/84e4b8be2473a7671053fdf2b995bbf2.jpg"
+        },
+        {
+          "id": "1849355065",
+          "author": "Gizmodo Staff",
+          "description": "Cities need to be designed to be more energy efficient, resilient, and affordable. Urban planners today are dealing with challenges that didn’t exist 30 years ago, including more frequent and more extreme weather emergencies. They’re also dealing with the impacts of decisions made long ago, like the prioritization of…\nRead more...",
+          "link": "https://gizmodo.com/urban-planning-college-university-program-degree-1849355065",
+          "publishedOn": "2022-08-11T15:30:00.000Z",
+          "wordCount": 4439,
+          "title": "Degrees of the Future 2022: Urban Planning",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/f4f12812b047bdff9466edf8fadad826.jpg"
+        },
+        {
+          "id": "1849355063",
+          "author": "Gizmodo Staff",
+          "description": "Runaway growth and rampant waste cannot continue the way they did in the 20th century—our natural resources are limited, and environmental destruction is an existential threat to both wildlife and human society. From fisheries management, to corporate sustainability, to designing the apartments of the future,…\nRead more...",
+          "link": "https://gizmodo.com/sustainability-college-university-program-degree-1849355063",
+          "publishedOn": "2022-08-11T15:30:00.000Z",
+          "wordCount": 4323,
+          "title": "Degrees of the Future 2022: Sustainability",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/42aae445a6c62fe9bba7f4bd61662849.jpg"
+        },
+        {
+          "id": "1849355055",
+          "author": "Gizmodo Staff",
+          "description": "Environmental and climate scientists help monitor Earth’s environment and investigate humans’ relationship with it. Understanding climate change and its effects is crucial for mitigating its immediate impacts. Earth’s environments are changing as the planet warms due to human industry. Building better climate models…\nRead more...",
+          "link": "https://gizmodo.com/environmental-science-climate-college-program-degree-1849355055",
+          "publishedOn": "2022-08-11T15:30:00.000Z",
+          "wordCount": 4433,
+          "title": "Degrees of the Future 2022: Environmental Science & Climate Change",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/9d56fb75c61ee5dcd08840d17aca3572.jpg"
+        },
+        {
+          "id": "1849355024",
+          "author": "Gizmodo Staff",
+          "description": "As long as there are countries, international security will be an imperative field of the future—even if the venues of conflict change. Jobs in international relations can range from diplomatic posts and peacekeeping roles to roles in homeland security and law. In the future, international relations and international…\nRead more...",
+          "link": "https://gizmodo.com/international-relations-security-college-program-degree-1849355024",
+          "publishedOn": "2022-08-11T15:30:00.000Z",
+          "wordCount": 4341,
+          "title": "Degrees of the Future 2022: International Relations & International Security Studies",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/39f07b5c04415c98742dcae5650f664a.jpg"
+        },
+        {
+          "id": "1849355021",
+          "author": "Gizmodo Staff",
+          "description": "Gender and diversity studies have grown and expanded in scope since they first began at institutions of higher learning about 50 years ago. Diversity studies examines concepts like social class, race, ethnicity, gender, sociality, and age, among  others; gender studies focuses on the social structures that have…\nRead more...",
+          "link": "https://gizmodo.com/diversity-gender-studies-college-program-degree-1849355021",
+          "publishedOn": "2022-08-11T15:30:00.000Z",
+          "wordCount": 4581,
+          "title": "Degrees of the Future 2022: Diversity & Gender Studies",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/6c2eed1b3d3ae74b8ff0338ab45f0197.jpg"
+        },
+        {
+          "id": "1849355018",
+          "author": "Gizmodo Staff",
+          "description": "Microbiologists scrutinize some of the smallest lifeforms, from helpful gut microbes to dangerous pathogens. The study of microorganisms their impacts on human health will help us manage threats and even harness their potential benefits. The bacteria that call us home shape seemingly every aspect of our…\nRead more...",
+          "link": "https://gizmodo.com/medical-microbiology-bacteriology-college-program-degre-1849355018",
+          "publishedOn": "2022-08-11T15:30:00.000Z",
+          "wordCount": 4407,
+          "title": "Degrees of the Future 2022: Medical Microbiology & Bacteriology",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/c2a3e801449a27900b5bcf9b994316b0.jpg"
+        },
+        {
+          "id": "1849355010",
+          "author": "Gizmodo Staff",
+          "description": "Medicine has come so far in 100 years—and yet many diseases have eluded our best efforts at treatments and cures. You can think of health research and innovation as the catch-all R&D department for healthcare. It’s essential work: Research in cell lines, animals, and computer models steadily progresses into human…\nRead more...",
+          "link": "https://gizmodo.com/health-research-innovation-college-program-degree-1849355010",
+          "publishedOn": "2022-08-11T15:30:00.000Z",
+          "wordCount": 4557,
+          "title": "Degrees of the Future 2022: Health Research & Innovation",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/d091f75c037c3720e7c07636c0f8723d.jpg"
+        },
+        {
+          "id": "1849355006",
+          "author": "Gizmodo Staff",
+          "description": "Health informatics broadly describes the streamlining of patient data processes and the administration of health care; it is an interdisciplinary field that is dedicated to fixing the health data ecosystem, thereby improving care for all patients. Data-driven approaches will overhaul older forms of medical record…\nRead more...",
+          "link": "https://gizmodo.com/health-informatics-college-university-program-degree-1849355006",
+          "publishedOn": "2022-08-11T15:30:00.000Z",
+          "wordCount": 4433,
+          "title": "Degrees of the Future 2022: Health Informatics",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/e90141c52348cb73a05d8bc0b35d3ca4.jpg"
+        },
+        {
+          "id": "1849355001",
+          "author": "Gizmodo Staff",
+          "description": "Environmental engineers help balance human needs and health with the preservation of nature, working to mitigate water and air pollution, manage stormwater runoff, and reduce erosion, among other issues. They will design future infrastructure and systems that are more efficient and less polluting. Their work will…\nRead more...",
+          "link": "https://gizmodo.com/environmental-engineering-college-program-degree-1849355001",
+          "publishedOn": "2022-08-11T15:30:00.000Z",
+          "wordCount": 4511,
+          "title": "Degrees of the Future 2022: Environmental Engineering",
+          "imageUrl": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/7f70998893f3a39362f25d377dfd5507.jpg"
         }
       ]
     },
