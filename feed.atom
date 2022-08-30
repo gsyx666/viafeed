@@ -2,600 +2,1236 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gsyx666.github.io/action-osmosfeed/index.html</id>
     <title>gsyx::feed</title>
-    <updated>2022-08-29T10:44:32.959Z</updated>
+    <updated>2022-08-30T10:41:49.533Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://gsyx666.github.io/action-osmosfeed/index.html"/>
     <link rel="self" href="https://gsyx666.github.io/action-osmosfeed/feed.atom"/>
     <entry>
-        <title type="html"><![CDATA[请教对空间地理数据熟悉的各位老哥， PostGIS 中的抽稀函数 ST_Simplify 如何考虑其他维度？]]></title>
-        <id>876250</id>
-        <link href="https://www.v2ex.com/t/876250"/>
-        <updated>2022-08-29T08:56:25.000Z</updated>
-        <summary type="html"><![CDATA[liuguangxuan: 
+        <title type="html"><![CDATA[Android Files.move()在不同 Android 版本上执行的移动操作逻辑是不同的？]]></title>
+        <id>876512</id>
+        <link href="https://www.v2ex.com/t/876512"/>
+        <updated>2022-08-30T08:52:07.000Z</updated>
+        <summary type="html"><![CDATA[Vindroid: 手上有两台盒子，一台 Android9 的，执行 java.nio.file.Files.move()移动大文件，是改文件指向，耗费就几百毫秒。另一台 Android11 的，执行 move()感觉是 copy+delete 的行为，花费了 30 多秒。使用 Runtime.exec 的结果也是一样，前者几百毫秒，后者 30 多秒。  
+操作的文件都是 /data/data/packagename/下的，不存在跨分区的原因。  
+有人说是文件系统格式的问题，但是不支持 df -T 来查看，没看到到底是什么格式的。我对这一块是一点都不了解，有人知道能解答下吗？]]></summary>
+        <author>
+            <name>Vindroid</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[华硕 750TI 圣骑士]]></title>
+        <id>876511</id>
+        <link href="https://www.v2ex.com/t/876511"/>
+        <updated>2022-08-30T08:51:33.000Z</updated>
+        <summary type="html"><![CDATA[yuewenjie: 
+17 年在淘宝上买的二手，算上邮费花了 452 ，整整五年过去了，还是那个店铺，标价 528 。这显卡这么保值么]]></summary>
+        <author>
+            <name>yuewenjie</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[请教一个高级语言中函数调用栈相关的问题]]></title>
+        <id>876510</id>
+        <link href="https://www.v2ex.com/t/876510"/>
+        <updated>2022-08-30T08:50:34.000Z</updated>
+        <summary type="html"><![CDATA[yezheyu: 
+最近在研究 JavaScript 中闭包，发现 A 函数返回值是其内部定义的 B 函数对象时，就算 A 函数执行完，因为词法环境的缘故，A 函数内部的局部变量也不会被销毁。
+类似的 python 中闭包也有这个特性
+而这个和我理解 C 语言或汇编的调用栈，一个函数执行完，调用栈中所有的变量都会被销毁，完全不一样
+直到我看到别人博客中一句话：
+“ 汇编或 C 语言中的栈和高级语言中栈是完全不同的。JavaScript 中闭包是在堆中申请的，使用 gc 管理，而汇编栈不存在 gc ，由函数调用与返回来自动更新 SP 指针实现的。所以在高级语言的闭包中其父级作用域在函数结束后不会被销毁 ”
+他这句话对吗？高级语言的函数调用栈是都在堆中申请的吗？
+function User(age){
+    this.age = age
+    this.changeAge = function(){
+        this.age += 1
+        console.log(this.age)
+    }
+}
+
+let tom = new User(18)
+tom.changeAge()  // 19
+tom.changeAge()  // 20 ，而不是 19
+
+所以 js 的构造函数可以反复使用方法修改属性就是借助闭包实现的是吗？
+class User:
+    def __init__(self, age):
+        self.age = age
+    def changeAge(self):
+        self.age += 1
+        print(self.age)
+
+tom = User(18)
+tom.changeAge()  // 19
+tom.changeAge()  // 20 ，而不是 19
+
+类似 python 的类的实现细节中，对象的方法可以反复修改对象的属性也是借助闭包实现是吗？]]></summary>
+        <author>
+            <name>yezheyu</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[有没有电脑上的背单词软件]]></title>
+        <id>876509</id>
+        <link href="https://www.v2ex.com/t/876509"/>
+        <updated>2022-08-30T08:44:46.000Z</updated>
+        <summary type="html"><![CDATA[WellTes: 
+生词用手机记录实在太麻烦啦 想问问看有没有电脑端的
+需求是 我们在软件上搜索英语单词 然后可以把这个单词可以添加进背单词的规划里
+web 端的也行
+最好是跟墨墨背单词一样有那种艾宾浩斯遗忘曲线的]]></summary>
+        <author>
+            <name>WellTes</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[好兄弟们，怎么用 pixel 备份 live photo 到 谷歌相册？]]></title>
+        <id>876508</id>
+        <link href="https://www.v2ex.com/t/876508"/>
+        <updated>2022-08-30T08:40:53.000Z</updated>
+        <summary type="html"><![CDATA[exposir213: 谷歌相册是不是只能用 iphone 上传 live photo 格式]]></summary>
+        <author>
+            <name>exposir213</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[一加氧 12 系统的用户请教一下]]></title>
+        <id>876507</id>
+        <link href="https://www.v2ex.com/t/876507"/>
+        <updated>2022-08-30T08:40:44.000Z</updated>
+        <summary type="html"><![CDATA[nbweb: 
+现在用的是一加 8T ，上周升到氧 os12 了，发现之前一直用的一加电话 app 用不了了，无法安装。
+1 ，有没有新的一加电话 app 可以安装在氧 12 上面？我提取了最新的氢电话 app ，同样无法安装。
+2 ，氧 12 取消了双击虚拟 home 键锁屏，这个倒不是必须要，双击空白区域也可以锁。
+3 ，氧 12 可以安装四件套模拟门禁卡吗？
+目前退回氧 11 了，我上周保留 root 升级时，nfc 是灰色的用不了，不然试下四件套门禁卡。]]></summary>
+        <author>
+            <name>nbweb</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[一直在 DDD(Domain Design Development)上面, 不得要领]]></title>
+        <id>876506</id>
+        <link href="https://www.v2ex.com/t/876506"/>
+        <updated>2022-08-30T08:40:06.000Z</updated>
+        <summary type="html"><![CDATA[hezhiming1993: 尝试几次在业务模块上落地, 都未成功 :(
+
+即便在新项目上落地 , 也感觉挺难的]]></summary>
+        <author>
+            <name>hezhiming1993</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[硬件]男人都喜欢小巧又高颜值的！唯独 xxx 喜欢傻大黑粗！ 18cm 冲啊！]]></title>
+        <id>876505</id>
+        <link href="https://www.v2ex.com/t/876505"/>
+        <updated>2022-08-30T08:35:49.000Z</updated>
+        <summary type="html"><![CDATA[Johnoo: 
+一、前言（ N5105 有问题？）
+N5105 是 intel 牙膏厂最新推出的低功耗赛扬系列 CPU （防杠：我知道 13 代牙膏快来了，但是低功耗的还远着），性能其实非常不错，但是被发版本号的 v1.v2.v3.v4 等各种版本搞的乌烟瘴气，收割 Chinese Chives 也太好说是不是。那我再次开发 N5105 是不是一个坑呢？——并不是！大家可以稍微思考下：
+从正常的商业视角来分析，你们更相信 Intel 还是 xxx ？ Intel 会承认自己 U 有 bug ？（有的话，打死也不承认）
+因为要开发同样 U 的产品，我测试过 v1.v2.v3.v4 均有问题，但是我使用相同的 i225b3 网卡，在别的机器上没有任何问题，那么证明：大概率 i225 网卡到 70 度就断网掉线的问题，不是网卡本身的问题！（*除非承认你用 fake product or HQB second-hand NICs.*）
+第三，v4 版本 i226-v 也断网掉线？ 这也侧面证明这锅不能全 i225 的背着（什么？你说 i226 也不完善？黑人问号）。总之，不好甩锅了推，好吧！那我只能甩锅给 N5105 这颗 U 了。目前 v 站有流传出聊天截图说 Intel 承认了！你们这群大佬真牛！真的挺佩服的！对了，Intel NUC 有一款也是 N5105 的 U ，我找省代拿台测试下（自我挖坑）
+按照正常逻辑来猜测：intel i225 网卡在我别的机器上不存在频繁死机断网的问题，i226 网卡的 N5105 也频繁死机断网，那么大概率排除是网卡侧的问题，有没有可能是主板设计或者说主板用料和做工的问题呢？ 还有一个疑问？ 为啥会有 V1/V2/V3/V4 这么多版本的 N5105 ，都解决了啥问题？
+(以上思考如有逻辑漏洞，烦请指出，轻喷。我写出我的思考是为了不让有些人士…]]></summary>
+        <author>
+            <name>Johnoo</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[V 友们，北京有便宜的宽带推荐吗？]]></title>
+        <id>876504</id>
+        <link href="https://www.v2ex.com/t/876504"/>
+        <updated>2022-08-30T08:26:50.000Z</updated>
+        <summary type="html"><![CDATA[xiaodongxier: 
+地址在望京花家地，老小区好像只有联通宽带，但是不知道怎么办理优惠，有知道的 V 友吗？]]></summary>
+        <author>
+            <name>xiaodongxier</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[杭州萧山有驾校推荐么]]></title>
+        <id>876503</id>
+        <link href="https://www.v2ex.com/t/876503"/>
+        <updated>2022-08-30T08:25:55.000Z</updated>
+        <summary type="html"><![CDATA[zhou405x: 
+rt
+之前不想学车的, 前两天坐网约车司机师傅说网约车需要 3 年驾龄,
+擦提前准备准备, 别等真开那天驾龄不够.]]></summary>
+        <author>
+            <name>zhou405x</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于 iOS 老设备（以 iPad mini2、 iPhone SE 为例）系统动画流畅改善的小 Tip。]]></title>
+        <id>876502</id>
+        <link href="https://www.v2ex.com/t/876502"/>
+        <updated>2022-08-30T08:23:01.000Z</updated>
+        <summary type="html"><![CDATA[jerryloveeat9012: 
 背景：
-假设飞机的一条轨迹，在数据库中保存为Geometry(LineString)类型，现在飞机的轨迹数据量太大，需要进行抽稀，仅仅保留轨迹拓扑结构，可以使用 PostGIS 提供的ST_Simplify()函数。
-但是飞机的轨迹不仅仅有经纬度，还有高度、速度等其他维度的参数？
-我的问题是：
-如何在抽稀的时候保留其他维度的数据（高度、速度、航向等等）？
-如果没办法保留，如何关联到原始的轨迹数据上？]]></summary>
+去年 10 月收了一台二手 iPad mini 2, 16GB Wi-Fi 版，运行 iOS 12.5.5 。用来看 PDF 文档和浏览网页。
+问题：
+在日常使用中经常会出现从底部上滑返回桌面不跟手，Safari ，Chrome ，Alook 等浏览网页经常重加载。
+尝试：
+广为流传的办法：比如减少系统动画，降低透明度，关闭后台刷新等。但效果并不明显。
+期间还刷回了 iOS 10.3.3 ，不得不承认，老系统动画确实流畅不掉帧。也带来了另一个问题：
+就本人而言，有些 App 即使下载了兼容 10 系统的版本也并不好用。需要更高（ iPad OS 13 或更新）系统版本的更是拒之门外。(I NNED Reeder 5 ！)
+再尝试：
+于是我把目光转向了排在设置里 C 位的“ iCloud 服务 ”。本人并不是 iCloud 重度用户。相册，备忘录，日历与电邮，提醒事项等都有更好的选择。平时也有备份本地数据的习惯。只要保留 iTunes 账户下载应用就好了。
+做好前期准备后，
+果断把 iCloud 账户登出了。在等待退出账户的过程中，我清楚地意识到不仅仅是云服务，查找设备，接力，iCloud 剪贴板等这些便利功能也是离我而去。 试一试嘛，又不会少块肉。
+顺理成章地，手势操作动画变得跟手起来，赏心悦目的动画开始欣赏我疑惑的脸。我感觉这也许是巧合。
+不甘心的我又把手头的备用机 iPhone SE 1 代 64GB ，运行 iOS 15.6.1 ，日常使用经常碰到动画卡顿的情况，在登出了 iCloud 账户后，开启 App 动画更加连贯，顿挫感一下子少了很多。我脸上的疑惑马上就被这赏心悦目的动画一扫而去。
+之前试过把很多 iCloud 功能开关选项关闭，但是都不如直接登出来得效果明显。
+思考：
+越新的 iOS 系统，iCloud 备份功能越丰富。而且它作为系统组件，占用的硬件资源多少我无法轻易窥见，系统处理的优先级会不会也更高呢？有 V 友研究过这个问题吗？本人能力有限，想问下大家的看法。
+以上提到的两个设备 RAM 不过 1GB 和 2GB ， 对于硬件资源充沛，没有动画卡顿困扰的 V 友就不建议了。
+iCloud 云备份依然是很好的工具。
+P.S. 这个月收了一台 iPad mini 5 ，深刻体会到换设备可以解决 100% 的问题。:-D]]></summary>
         <author>
-            <name>liuguangxuan</name>
+            <name>jerryloveeat9012</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[2022 最新百分百成功 Google Voice 注册方法]]></title>
-        <id>876249</id>
-        <link href="https://www.v2ex.com/t/876249"/>
-        <updated>2022-08-29T08:55:54.000Z</updated>
-        <summary type="html"><![CDATA[moksa: 
-目前 Google Voice 注册非常麻烦，大家都说调这个语言，调那个时区的其实都不会有太大效果（赞成吧？）、
-今天花重金测试了一下，并且搞废了自己一个账号-，-
-那接下来给大家讲一下，重点：美国实体卡！！！！！！
-每个号码基本只能绑定一次 Google Voice
-本次尝试的成本主要在初次注册美国电话，40 刀（套餐费。。。吐血）
-当然，美国的 IP 是必须的，其他的无所谓
-百分百成功
-感兴趣的小伙伴可以一起上车，帮助大家~~不管新号老号都可以，只要不是被 Google 禁用服务的
-VX:higo666666]]></summary>
+        <title type="html"><![CDATA[本地笔记软件 My Library(V3.0.2.0)更新]]></title>
+        <id>876501</id>
+        <link href="https://www.v2ex.com/t/876501"/>
+        <updated>2022-08-30T08:21:32.000Z</updated>
+        <summary type="html"><![CDATA[hhm2maker: 
+本软件是支持本地数据库的，所以基于此做了两个插件：网页管理和任务。
+以上内容都是搭了一个架子，具体后续更新再进行完善。
+下载地址： https://t.wss.ink/f/96352rgv9yl]]></summary>
         <author>
-            <name>moksa</name>
+            <name>hhm2maker</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[发现 Cloudflare 会检测 TLS 握手]]></title>
-        <id>876246</id>
-        <link href="https://www.v2ex.com/t/876246"/>
-        <updated>2022-08-29T08:50:49.000Z</updated>
-        <summary type="html"><![CDATA[gfwuzer: 用 golang 做的 MITM proxy 上网，被 CF 识别成 bot ，不给访问。]]></summary>
+        <title type="html"><![CDATA[[不懂就问] MySQL Redo log 的相关问题]]></title>
+        <id>876500</id>
+        <link href="https://www.v2ex.com/t/876500"/>
+        <updated>2022-08-30T08:18:16.000Z</updated>
+        <summary type="html"><![CDATA[wuxi889: 
+众所周知，当每次刷盘 redo log 记录到日志文件组中，write pos 位置就会后移更新。
+每次 MySQL 加载日志文件组恢复数据时，会清空加载过的 redo log 记录，并把 checkpoint 后移更新。
+write pos 和 checkpoint 之间的还空着的部分可以用来写入新的 redo log 记录。
+如果 write pos 追上 checkpoint ，表示日志文件组满了，这时候不能再写入新的 redo log 记录，MySQL 得停下来，把 checkpoint 推进一下，清空一些记录。
+问题来了：如果 write pos 追上 checkpoint 时，新的记录无法进入需要等待 checkpoint 推进，那么此时 MySQL 宕机了，是不是说此时正在等待进入 write pos 的记录就会消失？]]></summary>
         <author>
-            <name>gfwuzer</name>
+            <name>wuxi889</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[[Web3 远程] DeBank/Rabby 招聘 Web3 产品/数据/安全/后端/前端/SRE [3-7 年经验][$5K-$13K]]]></title>
-        <id>876244</id>
-        <link href="https://www.v2ex.com/t/876244"/>
-        <updated>2022-08-29T08:46:00.000Z</updated>
-        <summary type="html"><![CDATA[thbourlove: 
-简介
-我们是全球最有影响力的 Web3 产品团队之一，致力于在用户同 Web3 开发者之间建立信任的连接，将安全、高效、透明的 Web3 服务带给每一个人。产品主要有 DeFi 钱包 DeBank、开源 Web3 插件 Rabby 。公司目前仍处于 A 轮阶段，得到红杉等诸多一线机构的投资。产品服务海外市场和用户。整个团队目前还已有三十来人，产品和研发为主，现在需要更多优秀工程师加入。
-我们目前主要招聘产品经理、数据架构师，Web3 安全、SRE 、后端、前端工程师，技术栈上后端以 Golang 、Python 为主 Rust 为辅，前端则以 React 为主。所有工程师不要求区块链相关经验，但如果你有所了解会有加分。
-级别从三年经验起到七年内的资深专家都要，整体薪资范围在 30K - 80K 之间，年龄偏向于 30 岁以内。学历倾向于 985 、211 ，本科学历以下不收。目前团队全部远程工作。具体 JD 如下：
-JD
-产品经理
-工作职责：
-负责 Web3 产品的项目规划、产品设计和需求落地；
-收集、汇总、分析梳理来自市场、用户和公司内部的各类用户需求；
-向设计师提供逻辑清晰的产品需求文档，并完成较为完善的交互设计。
-职位要求：
-本科及以上学历，3 年左右互联网产品或设计经验；
-具备很强的学习、思考和总结能力，能在复杂多变的业务环境下，持续高效地提供优质的产品设计方案；
-具备较好的交互设计能力，能同 UI 设计师进行高效的协同；
-思维敏捷开阔，乐于尝试各种新鲜的互联网产品。
-大数据架构师
-工作职责：
-负责基于 Hadoop/Spark 等生态系统的大数据平台的架构设计、技术选型、搭建、建模及开发，保证集群高效稳定运行，对数据应用提供数据存储、查询引擎、实时计算的架构设计
-理解并合理抽象业务需求，与业务团队紧密合作
-职位要求：
-精通数据仓库实施方法…]]></summary>
+        <title type="html"><![CDATA[有什么全平台 RSS 阅读器推荐]]></title>
+        <id>876499</id>
+        <link href="https://www.v2ex.com/t/876499"/>
+        <updated>2022-08-30T08:17:35.000Z</updated>
+        <summary type="html"><![CDATA[mmr: 
+最好是好看一点的。]]></summary>
         <author>
-            <name>thbourlove</name>
+            <name>mmr</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[crwebview : 支持运行 chrome extension 的 android webview]]></title>
-        <id>876242</id>
-        <link href="https://www.v2ex.com/t/876242"/>
-        <updated>2022-08-29T08:45:06.000Z</updated>
-        <summary type="html"><![CDATA[wuruxu: 
-在最新的 chromium 代码基础上改了一个支持 chrome extension 的 webview
-crwebview]]></summary>
+        <title type="html"><![CDATA[创建了一个旅行办公 交流群，有想法的小伙伴可以加入呀]]></title>
+        <id>876498</id>
+        <link href="https://www.v2ex.com/t/876498"/>
+        <updated>2022-08-30T07:58:15.000Z</updated>
+        <summary type="html"><![CDATA[NerdTsai: 
+创建了一个旅行办公 交流群，群里有各互联网大厂的小伙伴，也有长期旅行办公的大佬。]]></summary>
         <author>
-            <name>wuruxu</name>
+            <name>NerdTsai</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[github 相关的 push pull clone 都很慢，挂代理了 clone 也只有 100kb/s 的速度,有什么解决办法么]]></title>
-        <id>876241</id>
-        <link href="https://www.v2ex.com/t/876241"/>
-        <updated>2022-08-29T08:40:07.000Z</updated>
-        <summary type="html"><![CDATA[Renco:]]></summary>
+        <title type="html"><![CDATA[QALI (Quick Aliasing): 用 Rust 实现了个命令简写和脚本管理工具]]></title>
+        <id>876497</id>
+        <link href="https://www.v2ex.com/t/876497"/>
+        <updated>2022-08-30T07:56:03.000Z</updated>
+        <summary type="html"><![CDATA[JettChen: 
+具体安装与操作方式请见 github 以及演示
+我编写该工具主要是为了解决个人平常命令行中遇到的以下问题：
+较长的指令输入麻烦 /记不住 eg. tar -xvf.....
+可以通过 alias {a}={b} 快速缩短指令，不过是在 session 内暂时储存的
+可以通过编辑 .zshrc, .bashrc 等设置，但是删、查、改以及迁移(eg. bash->zsh) 极为不方便
+想要全局访问自己写的 python/shell 脚本有点复杂，且不好维护
+在系统的命名空间设置 alias 以及添加自己的程序时容易和系统已有的指令冲突 (参考 start all your commands with comma )
+QALI 包含两个指令: q(常用操作) 和 qali(管理操作)，并解决了以上每个问题:
+eg. q -s untar "tar -xvf" 设置简写，并使用 q untar {文件名} 快速运行指令
+qali 将命令简写储存在本地文件夹内，不会丢失
+qali list 查看所有假名;
+qali remove 删除假名;
+qali select 通过 fuzzy select 查找指令
+eg. q -s hi ./hello.py ：自动识别 Python 脚本，并可以在任意地点通过 q hi 全局执行脚本 (目前还支持 shell)
+在 QALI 里面设置的命令不会和系统命名空间冲突，q {...} 命名空间有且仅有用户自己设置的命令简写
+写这个工具的同时也发现 github 上面有一些功能类似的项目，以下是一个对比：
+navi: 侧重于使用他人写的 cheatsheets, 要通过手动编辑文件管理指令
+espanso: 功能非常全面，也支持添加脚本，要通过手动编辑文件管理指令且使用图形界面
+zsh-abbr: 包含了快速的设置和执行功能，但是没有自己的 namespace, 且只支持 zsh
+欢迎各位在下方评论提建议以及在github上合作！]]></summary>
         <author>
-            <name>Renco</name>
+            <name>JettChen</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[厦门有啥健身房推荐下不，会展附近]]></title>
-        <id>876240</id>
-        <link href="https://www.v2ex.com/t/876240"/>
-        <updated>2022-08-29T08:40:01.000Z</updated>
-        <summary type="html"><![CDATA[Asakijz: 
-打算去锻炼下，现在自己这个体态真的太差了。。（ 192/60 ）
-有必要请私教嘛，感觉自己没人带有点难呀，啥都不会。。]]></summary>
+        <title type="html"><![CDATA[请教，关于智能门禁/门锁]]></title>
+        <id>876496</id>
+        <link href="https://www.v2ex.com/t/876496"/>
+        <updated>2022-08-30T07:50:40.000Z</updated>
+        <summary type="html"><![CDATA[codermali: 
+最近有一个需求，就是想把公司的门锁换成智能门锁，公司职员可以直接在自己开发的小程序上开门。
+需求很简单，但是碰到一个问题，就是不知道怎么为智能门锁接入系统。
+我查到小米有一个 loT 开放平台，海康威视也有开放平台，是不是接入了开放平台，就可以获得门禁的协议了？
+一直是做 java 开发，对硬件这一块实在是不了解，请各位 v 友赐教！]]></summary>
         <author>
-            <name>Asakijz</name>
+            <name>codermali</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[nreal air 拿来写代码咋样？有大佬试用过吗？]]></title>
-        <id>876239</id>
-        <link href="https://www.v2ex.com/t/876239"/>
-        <updated>2022-08-29T08:36:44.000Z</updated>
-        <summary type="html"><![CDATA[lbllol365: 
-迫于小单间空间狭窄，想整一个拿来写代码，连 Mac Pro ，起 IDEA 、VSCode 。看看价格和 oculus quest 2 竟然差不多，感觉有些不值。
-有大佬试用过谈谈感受吗？除了躺着看电影、玩游戏，还有啥使用场景吗？而且这玩意只能有线连接吗？]]></summary>
+        <title type="html"><![CDATA[关于新能源车和沪牌的纠结]]></title>
+        <id>876495</id>
+        <link href="https://www.v2ex.com/t/876495"/>
+        <updated>2022-08-30T07:48:06.000Z</updated>
+        <summary type="html"><![CDATA[kid8768611: 1.有老铁看过问届的 M5 么？推荐么？
+2.关于沪牌，有建议么，我有一辆车，在上海 6 年了，没沪牌好像也没什么影响。纠结要不要沪牌。]]></summary>
         <author>
-            <name>lbllol365</name>
+            <name>kid8768611</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[求指点，光猫下面接主路由，为什么需要改桥接呢？]]></title>
-        <id>876238</id>
-        <link href="https://www.v2ex.com/t/876238"/>
-        <updated>2022-08-29T08:36:08.000Z</updated>
-        <summary type="html"><![CDATA[Microi: 
-网络通信方面不太懂，目前光猫直接 LAN 接一个路由器，路由器接整个局域网。目前公网 IP 是拿不到了，看了很多光猫改桥接的，都说光猫性能差带不了太多设备，会影响 NAS 等等性能。求解，是因为不改桥接的话光猫还是会负责一些路由的工作吗？]]></summary>
-        <author>
-            <name>Microi</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[有什么办法可以有效扩展自己的人脉吗]]></title>
-        <id>876237</id>
-        <link href="https://www.v2ex.com/t/876237"/>
-        <updated>2022-08-29T08:35:33.000Z</updated>
-        <summary type="html"><![CDATA[Kamiender: 
-作为程序员却有着一颗社牛的心
-想认识各种各样的人，接触不同行业、专业的事物和人（最好能够面对面的沟通和交流）
-万能的 V 友，有没有啥比较好的、可行的方法去实施一下]]></summary>
-        <author>
-            <name>Kamiender</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[买控件遇到问题，啥是 1 Developer And 1 Deployment Location ？]]></title>
-        <id>876234</id>
-        <link href="https://www.v2ex.com/t/876234"/>
-        <updated>2022-08-29T08:32:02.000Z</updated>
-        <summary type="html"><![CDATA[bihui: 
-我是想开发软件卖到世界，
-sales 说必须买 1 Developer And Unlimited Deployment Locations 授权，
-那么请问这个 1 Developer And 1 Deployment Location 是啥意思？
-1 个开发者只能发布一次软件给一个人用？
-谢谢！]]></summary>
-        <author>
-            <name>bihui</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[25w 左右落地 买啥车]]></title>
-        <id>876233</id>
-        <link href="https://www.v2ex.com/t/876233"/>
-        <updated>2022-08-29T08:30:47.000Z</updated>
-        <summary type="html"><![CDATA[frank1256: 
-s60? a4L 能买吗? 凯迪拉克老婆不要...]]></summary>
-        <author>
-            <name>frank1256</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[8 月份全球 Wi-Fi6 技术标准更新]]></title>
-        <id>876231</id>
-        <link href="https://www.v2ex.com/t/876231"/>
-        <updated>2022-08-29T08:21:56.000Z</updated>
-        <summary type="html"><![CDATA[amberH11: 
-1.巴林 TRA 启用 Wi-Fi6
-2022 年 8 月 17 日，巴林电信管理局 (TRA) 批准了 5470-5725 MHz 和 5925-6425 MHz 频段用于 Wi-Fi 6 和 Wi-Fi 6E 应用。这些新功能将允许互联网用户在巴林享受光纤和 5G 服务的全部功能
-2.赞比亚 ZICTA 修订 5G 频谱路线图
-2022 年 8 月 4 日，赞比亚信息和通信技术管理局（ ZICTA ）发布了有关 5G 的通知，由于对频段的高需求，管理局已修订了 5G 频谱路线图，详情如下：
-a) 原定于 2023 年第一季度发布的 700 MHz 频段（ 703-733 MHz/ 758-788 MHz ）频谱将于 2022 年第三季度发布。
-b) 2600 MHz 频段（ 2550 - 2590 MHz ）中剩余的 40 MHz 频谱将在 2022 年第三季度发布。
-c) 26 GHz 频段（ 24.3–27.5 GHz ）的频谱将于 2022 年第四季度发布。
-d) 3300 MHz 频段（ 3300-3400 MHz ）将于 2023 年第四季度发布。
-e) 频谱 C 波段（ 3480-3600 MHz ）将于 2024 年发布。
-3.乔治亚共和国修正 SRD/RLAN 产品技术规范，开放 Wi-Fi 6E
-乔治亚国家通信传播委员会（ Georgian National Communications Commission- ComCom ）于 2022 年 6 月 16 日发布《第三号决议》并宣布即日起生效。
-该决议针对国家频谱分配计划及 SRD 及 RLAN 产品技术规范提出部分修正，尤其是开放 Wi-Fi 6E 使用。
-常见 SRD 及 RLAN 产品的工作频段及输出功率限制值如下：
-Technical Requirements for Non-specific SRD’s
-2400–2483.5 MHz: 10mW （ ERP ）
-5725–5875 MHz: 25mW （ EIRP ）
-Technical Requirements for Broadband Mobile Data Transfer System ，WAS/RLAN Networks
-2400–2483.5 MHz: 100mW （ EIRP ）
-5150–5350 MHz: 200mW （ EIRP ；限室内使用）
-5470–5725 MHz: 1W （ EIRP ）
-5725–5875 MHz: 2W （ EIRP ）
-5945–6425 MHz: 200mW （ EIRP ）
-4.肯尼亚修正 WAS/RLAN 产品技术规范并开放 Wi-Fi 6E
-肯亚通信管理局（ The Communications Authority of Kenya- CA ）于 2022 年 6 月 30 日发布《短距离无线通信产品频谱使用指引》，新指引针对 WAS/RLAN 产品技术规范提出部分修正并开放 Wi-Fi 6E 使用，有关 RLAN 产品的工作频段及输出功率限制值如下：
-2400–2483.5 MHz: 2W （ EIRP ）
-5150–5350 MHz: 200mW （ EIRP ；限室内使用）
-5470–5725 MHz: 1W （ EIRP ）
-5725–5875 MHz: 2W （ EIRP ）
-5925–6425 MHz: 23dBm （ EIRP ；限室内使用）； and 14dBm （ EIRP ；室内室外用）
-该决议自 2022 年 7 月 4 日起生效。]]></summary>
-        <author>
-            <name>amberH11</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[吐槽下上海随申码的首页核酸信息不能及时更新]]></title>
-        <id>876229</id>
-        <link href="https://www.v2ex.com/t/876229"/>
-        <updated>2022-08-29T08:17:46.000Z</updated>
-        <summary type="html"><![CDATA[ajdpsx000: 
-今天上午上班前 72 小时核酸快过期了，于是在单位门口做了一个，下午 2 点左右核算结果出来了，点进去能查询到，然后扫场所码发现随申码首页还是显示 72 小时核酸过期，跟地铁工作人员解释了半天，打 12345 问，说首页核酸信息是第二天凌晨才更新，这不是误事吗?明明今天的核酸结果已经出来了，首页还要等到第二天才更新信息]]></summary>
-        <author>
-            <name>ajdpsx000</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Django 怎么做同一个 url，对应不同的 view 函数？]]></title>
-        <id>876228</id>
-        <link href="https://www.v2ex.com/t/876228"/>
-        <updated>2022-08-29T08:16:31.000Z</updated>
-        <summary type="html"><![CDATA[elboble: 
-类似于那种定时抢购的逻辑。
-时间没到之前是个介绍页面，时间到了之后进入真正的 view 处理函数。
-触发条件不一定是时间，也可能是后台控制的。就是要做到程序不重启，同一 url 对应的 view 变了。
-我是这样做的，加了个全局变量，然后在 url 对应个 view 函数里做判断，后台改变这个全局变量，执行不同的 view 函数。
-IS_RELEASE 是全局变量，entrance 函数是入口函数，release 函数是改变入口的视图函数。
-IS_RELEASE = False  
-def entrance(request):
-@login_required
-这个方法在本地调试没问题，但是上到服务器后，出现执行 release 函数后 IS_RELEASE 没按预期改变，或者有秒级的延迟，我猜是不是有 cdn 的影响，但是这个都应该是动态页面，每个请求都要回服务器处理的。]]></summary>
-        <author>
-            <name>elboble</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[edge 浏览器自带优惠券插件有没什么坑？]]></title>
-        <id>876227</id>
-        <link href="https://www.v2ex.com/t/876227"/>
-        <updated>2022-08-29T08:16:23.000Z</updated>
-        <summary type="html"><![CDATA[king888: 
-购物经常 tab 上看到，都是当垃圾广告忽视，今天突然点击看看发现真可以，会不会有什么坑之类的]]></summary>
-        <author>
-            <name>king888</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[土区 google 账户被封（全家桶被封），求教各位大佬]]></title>
-        <id>876226</id>
-        <link href="https://www.v2ex.com/t/876226"/>
-        <updated>2022-08-29T08:14:40.000Z</updated>
-        <summary type="html"><![CDATA[Melville: 大致经过
-1 、一周前，用几个老账号尝试改区撸土区 google one 失败，然后挂 VPN 虚拟机新注册了一个土耳其账号，用国内信用卡购买成功（ 2T 一年 299 里拉好像 100 零几块钱）。
-2 、添加了几个自己以前的账户到土区家庭，共享 2T 空间。（有的账号有固定区域信息的不能添加共享）
-3 、修改注册时候验证的国外手机号为国内号码，用 Gmail 关联注册了几个应用，迁移 Google 相册到新账户。后面使用就没有挂 VPN 到土区了，以为 Google 宽容。
-4 、今天早上收到短信提醒，帐户被封。涉嫌违反 google 政策。
-附:Google 账户停用政策页面
-https://support.google.com/accounts/answer/40695?hl=zh-Hans
-被封后
-1 、手机登录的 Google 相关应用，全部自动退出，无法重新登入，目前未找到备份入口。加入土区家庭的账户，收到家庭群组停用通知，告知无法继续使用群组所用服务。可以退出但是 12 个月只能切换一次。（共享空间现在还是 2T ，可能有延迟）
-2 、登录被封账户提示如下
-“您的 Google 帐号似乎包含有害内容。这严重违反了 Google 的政策，而且可能违法。
-如果您认为自己的帐号不该被停用，请尽快提交申诉。”
- [这里草率了] 没有做功课就直接回复了，大厂一般就一次申诉机会，后面的申诉就直接无视，进入不到人工审核程序了。说是 2 个工作日等结果。大概率不会回来了。
-3 、关联注册帐号，刚注册不多，换绑顺利，国外的不像国内一根筋，国内很多只有邮箱一个安全认证方式的，直接进入死循环。
-4 、尝试新注册 Google 账户，被封账户绑定的中国手机号被拉黑，无法验证。
-补充细节&相关思考
-1 、个人账号比较多，喜欢账号细分使用，chrome 按账户设置桌面快捷方式使用很方便，Google 也允许注册多个账号，一个手机号可以验证 10 个就是侧面印证。
-2 、本人风险厌恶型，对事物的不确定性恐慌。国内网络存储类应用只放公开资源型，有个人信息的分开放在海外大厂。iCloud 外区账户不敢用，微软 OneDrive 总觉得也不是长远之计，大厂里面就选了 Google 做为远期打算，想更进一步结果翻车。
-3 、以前用 QQ 邮箱绑定英文邮箱、foxmail ，注册了很多账号。现在 QQ 以前没绑手机的，现在很难弄了。明明是自己十几年的号，说不定那天就登录不了了。绑定邮箱的相关账号，到时候处理起来是个大麻烦。所以想着 Google 、微软靠谱一点，注册了不少备用，慢慢切换过来，现在看来也是瑟瑟发抖。
-主账户都是关联 /注册几十个账户的，有些账户，没有邮箱可能就找不回来了。（看来重要账户要尽可能多的完善安全设置）
-4 、前几年，Google 主账户，Youtube 转载了几个国内地方电视台的节目视频，后面节目火了，他们开了官方帐号，我因为版权问题被投诉，邮件一次二次三次提示违规，直接封号，只是 YouTube 不让用了，其他功能正常使用，申诉无果。现在所有帐号用的都小心谨慎，国内国外都不敢轻易操作，躺平为看客。]]></summary>
-        <author>
-            <name>Melville</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Microsoft 365 共享订阅 有 3 个位置]]></title>
-        <id>876225</id>
-        <link href="https://www.v2ex.com/t/876225"/>
-        <updated>2022-08-29T08:13:47.000Z</updated>
-        <summary type="html"><![CDATA[kidxmu: 
-本人 Microsoft365 将在 9 月 2 号到期续订，去年只给 2 位亲友共享，有点浪费。
-这次希望能找 3 位需要的朋友的一起，暂定 50 元 /人。有意请与我联系。
-https://imgur.com/a/t6QVORK]]></summary>
-        <author>
-            <name>kidxmu</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[面试必备] 我跟面试官聊了一个小时线程池！]]></title>
-        <id>876224</id>
-        <link href="https://www.v2ex.com/t/876224"/>
-        <updated>2022-08-29T08:10:48.000Z</updated>
-        <summary type="html"><![CDATA[yanhomlin: 
-大家好，这篇文章主要跟大家聊下 Java 线程池面试中可能会问到的一些问题。
-全程干货，耐心看完，你能轻松应对各种线程池面试。
-相信各位 Javaer 在面试中或多或少肯定被问到过线程池相关问题吧，线程池是一个相对比较复杂的体系，基于此可以问出各种各样、五花八门的问题。
-若你很熟悉线程池，如果可以，完全可以滔滔不绝跟面试官扯一个小时线程池，一般面试也就一个小时左右，那么这样留给面试官问其他问题的时间就很少了，或者其他问题可能问的也就不深入了，那你通过面试的几率是不就更大点了呢。
+        <title type="html"><![CDATA[你们说 Python 这个是 Bug 还是 Feature？]]></title>
+        <id>876494</id>
+        <link href="https://www.v2ex.com/t/876494"/>
+        <updated>2022-08-30T07:44:32.000Z</updated>
+        <summary type="html"><![CDATA[lanlanye: 
+class Foo:
+    def __init__(self, s: set = set()):
+        self.s = s
 
-下面我们开始列下线程池面试可能会被问到的问题以及该怎么回答，以下只是参考答案，你也可以加入自己的理解。
-1. 面试官：日常工作中有用到线程池吗？什么是线程池？为什么要使用线程池？
-一般面试官考察你线程池相关知识前，大概率会先问这个问题，如果你说没用过，不了解，ok ，那就没以下问题啥事了，估计你的面试结果肯定也凶多吉少了。
-作为 JUC 包下的门面担当，线程池是名副其实的 JUC 一哥，不了解线程池，那说明你对 JUC 包其他工具也了解的不咋样吧，对 JUC 没深入研究过，那就是没掌握到 Java 的精髓，给面试官这样一个印象，那结果可想而知了。
-所以说，这一分一定要吃下，那我们应该怎么回答好这问题呢？
-可以这样说：
-计算机发展到现在，摩尔定律在现有工艺水平下已经遇到难易突破的物理瓶颈，通过多核 CPU 并行计算来提升服务器的性能已经成为主流，随之出现了多线程技术。
-线程作为操作系统宝贵的资源，对它的使用需要进行控制管理，线程池就是采用池化思想（类似连接池、常量池、对象池等）管理线程的工具。
-JUC 给我们提供了 ThreadPoolExecutor 体系类来帮助我们更方便的管理线程、并行执行任务。
-下图是 Java 线程池继承体系：
 
-使用线程池可以带来以下好处：
-降低资…]]></summary>
+if __name__ == "__main__":
+    f1 = Foo()
+    f2 = Foo()
+    f1.s.add(1)
+    f1.s.add(2)
+    f1.s.add(3)
+    print(f2.s)
+
+
+版本 3.10.4
+结果会是什么呢？]]></summary>
         <author>
-            <name>yanhomlin</name>
+            <name>lanlanye</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[为什么 Wireguard 安卓端可以访问内网而 MacOS 端却不行]]></title>
-        <id>876222</id>
-        <link href="https://www.v2ex.com/t/876222"/>
-        <updated>2022-08-29T08:02:37.000Z</updated>
-        <summary type="html"><![CDATA[jlak: 搞了个 Docker Wireguard 同个 peer 配置在 MasOS 上完全不能访问内网设备但却在安卓端神奇般的可以
-有没有办法让 MacOS 也可以？]]></summary>
+        <title type="html"><![CDATA[程序员，手指疼怎么办？]]></title>
+        <id>876493</id>
+        <link href="https://www.v2ex.com/t/876493"/>
+        <updated>2022-08-30T07:43:43.000Z</updated>
+        <summary type="html"><![CDATA[v2e0xAdmin2: 
+楼主是一名程序员，工作 5 年多了，可能是加班太厉害了，现在点击鼠标的右手指肚很疼，敲击键盘的时候，双手的小拇指也很疼；目前买了压力很轻的 30 克静电容键盘，有一丢丢缓解；但是右手点击鼠标的时候，食指还是非常的疼；自己也在用苹果触摸板，基本是鼠标和触摸板配合着用；但貌似效果不大；
+刚刚咋京东买了人体工程学的鼠标，不知道有没有效果；
+请问大家有没有类似的经验，能解决这个问题。万分感谢；]]></summary>
         <author>
-            <name>jlak</name>
+            <name>v2e0xAdmin2</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[换了 iPhone 想用美区，支付设置这一关没有美国手机号走不通，有没有解决办法？]]></title>
-        <id>876221</id>
-        <link href="https://www.v2ex.com/t/876221"/>
-        <updated>2022-08-29T08:00:55.000Z</updated>
-        <summary type="html"><![CDATA[zznext:]]></summary>
+        <title type="html"><![CDATA[JetBrains 系列即将涨价，抓紧最后的好价入手]]></title>
+        <id>876492</id>
+        <link href="https://www.v2ex.com/t/876492"/>
+        <updated>2022-08-30T07:43:23.000Z</updated>
+        <summary type="html"><![CDATA[Myramao: 
+对于开发者来讲，每天都要和各种编程 IDE 和开发工具打交道。想必一定听说过 JetBrains 公司，或旗下的产品：IntelliJ IDEA、PyCharm、WebStorm 等。
+不久前，JetBrains 发布公告，他们即将上调系列产品的订阅价格！
+
+涨价风暴将席卷旗下一众产品，包括：IDE 、.NET 工具和 All Products Pack 。
+此次价格调整将于 2022 年 10 月 1 日生效，届时订阅价格将上涨 10%~20%，以下是部分个人版的涨价情况：
+ReSharper：￥ 869 > ￥ 939
+WebStorm：￥ 399 > ￥ 469
+All Products Pack：￥ 1679 > ￥ 1949
+GoLand 、CLion 、RubyMine......：￥ 599 > ￥ 669
+
+JetBrains 这些产品对于开发者来讲可是刚需呀！知名代理商「数码荔枝」目前价格还未调整，大伙记得趁涨价前赶紧囤一波订阅，别等到涨价了才后悔错过优惠，现在就是入手的最佳时机！
+点击专属链接优惠订阅 / 续费 JetBrains 系列软件
+囤货的朋友还得注意一下，个人订阅允许最多至三年，企业订阅最多至两年！
+优秀、专业且强大
+工欲善其事，必先利其器。对于开发者来说，出色的编程技能固然重要，但要让敲代码变成轻松愉悦的享受，自然得备上一款能提升开发效率的好工具。
+自带代码辅助功能的 JetBrains 系列软件，非常值得各位开发者拥有。
+包含 IntelliJ IDEA 、PyCharm 、WebStorm 、AppCode 、CLion 、DataGrip 、GoLand 、PhpStorm 、RubyMine 等。
+
+各位使用 Java 、PHP 、Python 还是 Swift 开发语言的朋友，都能找到合适的开发工具。
+JetBrains 具备优秀的智能编码辅助和代码重构能力，强大、稳定的调试器帮助开发者节省更多调试时间。
+
+提供了包括提交、冲突解决、分支切换和分支对比在内的源码管理功能，帮助实现源代码高效版本控制。
+
+集成 Docker 、版本控制、反编译器等众多开发工具，丰富的插件生态系统，让开发者可以根据自己的特定需求定制 IDE 。
+
+优秀、专业且强大的工具，开发者和团队必备。现在续费还能获得额外折扣，不要错过！点击专属链接优惠入手 JetBrains 系列软件
+
+All Products Pack 更划算
+而对于全栈开发者来说，JetBrains 的全套编码工具更是开发时的不二之选。集合 IntelliJ IDEA 、PyCharm 、GoLand 等十余个 IDE ，多个 .NET 开发工具以及分析器。
+
+实力与优惠兼得的 JetBrains 编程开发工具集，涨价后 1949 元，现在还能以 1679 元的限时特价入手，立省几百！点击专属链接优惠订阅 All Products Pack
+产品汉化出色
+JetBrains 系列产品现已完成汉化，无需另外下载软件安装，大部分软件内直接安装语言插件，就可以显示简体中文界面。
+中文操作界面，新手更好入门！
+
+铂金代理 品质售后无忧
+购买专业软件不仅要选对代理商，还得看靠谱的售后服务。
+数码荔枝拥有开发商 JetBrains 的铂金代理资格。所销售的正版软件品质可靠，值得开发者信赖！
+
+除了可靠的授权，它们店铺的客服同样专业，可以为用户解决众多软件上的使用问题。在这购买 JetBrains 系列软件，使用自然没有后顾之忧。
+
+对于软件激活与授权安装的问题，它们的客服会提供专业售后服务。更多软件使用问题还可在官方平台提交工单，获得开发商的专业支持。
+JetBrains 系列产品的优秀有目共睹，除了官网，开发者现在又多了「数码荔枝」这样专业靠谱的购买渠道。
+快趁涨价前带走这些工具，高效助力你的开发！点击链接马上订阅 / 续费 JetBrains 系列软件]]></summary>
         <author>
-            <name>zznext</name>
+            <name>Myramao</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[MacBook Pro 2019 16 寸能卖多少了？大佬估个价]]></title>
-        <id>876220</id>
-        <link href="https://www.v2ex.com/t/876220"/>
-        <updated>2022-08-29T07:56:31.000Z</updated>
-        <summary type="html"><![CDATA[tbg: 
-16 英寸 MacBook Pro - 银色
-2.4GHz 8 核第九代 Intel Core i9 处理器，Turbo Boost 最高可达 5.0GHz
-64GB 2666MHz DDR4 内存
-AMD Radeon Pro 5500M 图形处理器，配备 8GB GDDR6 显存
-1TB 固态硬盘
-电池循环 127
-成色非常新
-购于 2020 年 4 月底，AC+到明年 4 月]]></summary>
+        <title type="html"><![CDATA[[火星救援] 鼠标飘、跳帧、卡顿的，真的可以通过 2.0 延长线解决。。]]></title>
+        <id>876491</id>
+        <link href="https://www.v2ex.com/t/876491"/>
+        <updated>2022-08-30T07:41:10.000Z</updated>
+        <summary type="html"><![CDATA[fuwenpei: 目前的设备：2020 款 m1 的 mbp ，官方 A2119 充电+屏幕+G304 鼠标；
+经常出现卡顿、跳帧、飘的情况，开始以为是鼠标没电了导致的，后来发现并不是；
+直到看到了有 V 站老哥说通过转 2.0 接头解决干扰就好了，所以我也花了几块钱买了个辣鸡 2.0 延长线，插在 A2119 上然后再连接 G304 的莱特斯比德接收器上
+然后到目前用了一整天了，真的不飘了。。。太高兴了发个帖水一下]]></summary>
         <author>
-            <name>tbg</name>
+            <name>fuwenpei</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[有没有什么一开始你看不上但最后发现它很牛逼的东西]]></title>
-        <id>876219</id>
-        <link href="https://www.v2ex.com/t/876219"/>
-        <updated>2022-08-29T07:56:29.000Z</updated>
-        <summary type="html"><![CDATA[ChuangChang: 
-Ethereum
-Richard Miller]]></summary>
+        <title type="html"><![CDATA[求推荐 iOS 电话黄页或者反骚扰电话 app]]></title>
+        <id>876488</id>
+        <link href="https://www.v2ex.com/t/876488"/>
+        <updated>2022-08-30T07:30:33.000Z</updated>
+        <summary type="html"><![CDATA[marcong95: 
+迫于最近各种营销电话较多，想找一个纯粹一点的黄页或者骚扰电话标记的 app ，百度必应 Google 了一圈，基本上搜到的都是腾讯 360 等大厂的产品，不过个人而言对大厂的这种手机助手电脑管家型的 app 还是心存芥蒂。
+想过来看看诸位把苹果设备玩得出神入化的知不知道有没有真·小而美的这种 app ，类似于说像熊猫吃短信一类的？]]></summary>
         <author>
-            <name>ChuangChang</name>
+            <name>marcong95</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[APPLE TV 遥控失灵]]></title>
-        <id>876218</id>
-        <link href="https://www.v2ex.com/t/876218"/>
-        <updated>2022-08-29T07:54:10.000Z</updated>
-        <summary type="html"><![CDATA[SeptApt: 
-APPLE TV 6 代美版 买来第二天坐到了遥控上 ，直接不能用了 lol ，外观没有任何问题。
-有什么地方可以维修吗，国内的天才吧会维修吗？
-现在用手机遥控，感觉也没什么问题]]></summary>
+        <title type="html"><![CDATA[2020 款 mbp 求教外接双显示器]]></title>
+        <id>876487</id>
+        <link href="https://www.v2ex.com/t/876487"/>
+        <updated>2022-08-30T07:28:55.000Z</updated>
+        <summary type="html"><![CDATA[monologue520: 2020 年的 mbp 打算外接两个显示器,一个是 vga 口,另外一个是 hdmi 口,现有一个多功能的绿联扩展坞,两个屏幕都可以连接上,但是由于是同一个雷雳 3 口引出的扩展坞,所以两块屏幕同一镜像,并不能像预期那样独立扩展.  现打算再从另外一个雷雳 3 口接一个独立的扩展坞来把两块屏幕分离开,事实证明这样也是可以的. 但是电脑只有两个雷雳 3 口,所以,这样的话电源线必须得插在其中一个扩展坞上了.  之前这样把电源线插到扩展坞,烧过主板,所以现在不敢这样做了. 很纠结,求解答....  另外有适配 mbp 的双屏异显的靠谱点扩展坞也请推荐一下哈]]></summary>
         <author>
-            <name>SeptApt</name>
+            <name>monologue520</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[分享一个自己做的集任务，笔记，聊天通话于一体的协作文档工具，诚邀内测用户体验]]></title>
-        <id>876217</id>
-        <link href="https://www.v2ex.com/t/876217"/>
-        <updated>2022-08-29T07:52:05.000Z</updated>
-        <summary type="html"><![CDATA[nlx: 
-疫情后，文档撰写和协同工具一直帮助我们团队提升生产力;总有一些场景用起来不算很方便，于是 我们团队自己做了一款工具，现在想邀请内测用户来体验:
-妙记多：
-我是 Moiidoc ，一个集任务，笔记，聊天于一体的协同文档工具。是适用干远程团队 /分布式团队 /异地沟通的一体化协作工具 。
-🔥🔥🔥免费，无限制的储存空间和语音通话流量 
-我们聚焦在如何让开会、协同办公，学习思考的过程变得高效和愉悦，希望为真知灼见的出现提供一点加速度。
-前往官网参与内测↓ https://www.mojidoc.com/
-分享四个邀请码：HKmuRT     hbUSxF    AeMxFJ    9sfVz7]]></summary>
+        <title type="html"><![CDATA[mac 上的 chrome 对刘海屏支持很不好]]></title>
+        <id>876486</id>
+        <link href="https://www.v2ex.com/t/876486"/>
+        <updated>2022-08-30T07:22:53.000Z</updated>
+        <summary type="html"><![CDATA[tlriavsihd: 
+mac 上的 chrome 对刘海屏支持很不好?
+使用 chrome 总是过一会就会变成 15 寸,但用其他 app 就不会]]></summary>
         <author>
-            <name>nlx</name>
+            <name>tlriavsihd</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[泪，肠镜一定要做无痛的]]></title>
-        <id>876216</id>
-        <link href="https://www.v2ex.com/t/876216"/>
-        <updated>2022-08-29T07:47:14.000Z</updated>
-        <summary type="html"><![CDATA[villivateur: 
-因为长年腹泻，外加知乎最近给我推了一大堆癌症话题，我怕得要死去做了肠镜。当时我问医生：普通肠镜很痛吗？她说我这种男性的话还好，于是我就信了这鬼话。
-反正感觉就是非常难受，不仅仅是痛，还有非常的胀（因为要打气），而且做完了之后因为气一时排不出去，要继续胀痛好久。
-我做完了去门诊挂号，挂号那边的医生说“你（真牛逼）刚做完就敢走过来”]]></summary>
+        <title type="html"><![CDATA[图片渲染效果较好(无毛边)的 markdown 笔记,推荐哪一款呢?]]></title>
+        <id>876485</id>
+        <link href="https://www.v2ex.com/t/876485"/>
+        <updated>2022-08-30T07:21:44.000Z</updated>
+        <summary type="html"><![CDATA[7RTDKSAK: 
+joplin,marktext,obsidian 都试过了,粘贴截图后,渲染结果太太太差了,图片里的文字有[巨大地毛边]  
+这是软件的问题?还是硬件问题?如何修正呢?]]></summary>
         <author>
-            <name>villivateur</name>
+            <name>7RTDKSAK</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[现在写几个简单文本带输入框的页面用什么前端技术]]></title>
-        <id>876213</id>
-        <link href="https://www.v2ex.com/t/876213"/>
-        <updated>2022-08-29T07:42:38.000Z</updated>
-        <summary type="html"><![CDATA[ea3ba5c0: 
-多年不写前端了，除了直接手写 html + js ，现在前端用啥技术。]]></summary>
+        <title type="html"><![CDATA[关于代码中多行注释的展示疑问]]></title>
+        <id>876484</id>
+        <link href="https://www.v2ex.com/t/876484"/>
+        <updated>2022-08-30T07:19:36.000Z</updated>
+        <summary type="html"><![CDATA[paopjian: 
+看到有些代码因为字数很多,需要多行来显示,有些人使用的是
+//第一行
+//第二行
+
+这种方法书写,他们粘贴文字的时候不会感觉很麻烦吗,既要保证每行的长度,又要回车一次加 //,还是说 ide 里已经自动配置好了多行注释的方法?
+看代码的时候想复制一下文字,还得先把注释符删掉]]></summary>
         <author>
-            <name>ea3ba5c0</name>
+            <name>paopjian</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[出个四声母 COM 域名]]></title>
-        <id>876211</id>
-        <link href="https://www.v2ex.com/t/876211"/>
-        <updated>2022-08-29T07:34:55.000Z</updated>
-        <summary type="html"><![CDATA[NETID: lslz.com
-1699 RMB
-已经上架阿里云一口价。]]></summary>
+        <title type="html"><![CDATA[有国内的朋友用过 Deco 路由器吗]]></title>
+        <id>876483</id>
+        <link href="https://www.v2ex.com/t/876483"/>
+        <updated>2022-08-30T07:17:41.000Z</updated>
+        <summary type="html"><![CDATA[sampdoria: 
+最近在选 mesh 路由器，出于强迫症，对设备的颜值还是有一定要求。看了各种评测，颜值还可以的性能普遍一般，性能不错的大多是八爪鱼造型。Netgear 号称无敌，可是价格实在离谱。目前看只有 linksys 大致满足要求，不过听说 app 用起来无比痛苦。
+偶然看到 tplink 在国外售卖的 Deco 系列，感觉颜值不错。我自己，经验上还算认可。于是想问问论坛上有没有在国内的朋友用过这个系列，体验如何
+https://www.tp-link.com/sg/home-networking/deco/
+先行谢过]]></summary>
         <author>
-            <name>NETID</name>
+            <name>sampdoria</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[有没有什么方便好用的比价工具]]></title>
-        <id>876210</id>
-        <link href="https://www.v2ex.com/t/876210"/>
-        <updated>2022-08-29T07:34:00.000Z</updated>
-        <summary type="html"><![CDATA[timeance: 
-网上很多比价网数据不全或者缺失，想问一下广大 V 友有什么好用的比价工具吗？
-刚刚发现有个 v 友提供的比价 bot 很好用，只不过 QQ 里群太多，而且我也不愿意在群里直接发送链接查询]]></summary>
+        <title type="html"><![CDATA[微信多开版，语音包 ZiDingYi.plist 里的语音代码是怎么转换来的]]></title>
+        <id>876481</id>
+        <link href="https://www.v2ex.com/t/876481"/>
+        <updated>2022-08-30T07:02:17.000Z</updated>
+        <summary type="html"><![CDATA[unishare: 
+微信多开版 插件 WeChat 里可以发语音，不知道要怎么自己制作，插件要求保存的路径里是这个文件 ZiDingYi.plist ，打开是语音的代码，可以自己添加代码就实现在微信上发送，代码都是别人做好的，不知道自己得如何制作音频的代码。]]></summary>
         <author>
-            <name>timeance</name>
+            <name>unishare</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[讨论一下程序员远程工作的趋势]]></title>
-        <id>876208</id>
-        <link href="https://www.v2ex.com/t/876208"/>
-        <updated>2022-08-29T07:31:13.000Z</updated>
-        <summary type="html"><![CDATA[iovekkk: 纯讨论帖
-基于新冠疫情长久以来无法终结的现状
-以及程序员工作的特殊性
-程序员工作未来能否实现彻底远程化办公呢？
-欢迎各位讨论
-如果能的话，说真的，我打算在鹤岗和云南一个小城各买一套房
-夏住鹤岗冬住云南，其他时间住我老家
-什么？你说孩子怎么办？
-不好意思，我不结婚]]></summary>
+        <title type="html"><![CDATA[Chrome 浏览器播放音频，无法点击标签页上的喇叭图标关闭声音]]></title>
+        <id>876480</id>
+        <link href="https://www.v2ex.com/t/876480"/>
+        <updated>2022-08-30T07:01:11.000Z</updated>
+        <summary type="html"><![CDATA[stx0821: 
+这是只有我这样吗]]></summary>
         <author>
-            <name>iovekkk</name>
+            <name>stx0821</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[润出的好时机]]></title>
-        <id>876207</id>
-        <link href="https://www.v2ex.com/t/876207"/>
-        <updated>2022-08-29T07:25:12.000Z</updated>
-        <summary type="html"><![CDATA[luckykong: 
-据说
-布鲁金斯学会在 8 月 24 日公布的一份新报告就发现，目前大概有 200 万至 400 万美国人因为这种神秘病症的影响而无法工作。这份新报告是以 1 月份的一份报告为基础，那份报告估计新冠长期症状造成了美国出现 15%的劳动力短缺。
-如果这是真的，那现在可是润出去的好机会啊。估计各种限制也会放开，吸引大批人过去吧。
-来源：
-http://jandan.net/p/111230
-https://www.popsci.com/health/long-covid-millions-americans-out-of-work/]]></summary>
+        <title type="html"><![CDATA[iOS 哪个 V2EX 客户端最好用]]></title>
+        <id>876479</id>
+        <link href="https://www.v2ex.com/t/876479"/>
+        <updated>2022-08-30T06:59:38.000Z</updated>
+        <summary type="html"><![CDATA[qmqsu:]]></summary>
         <author>
-            <name>luckykong</name>
+            <name>qmqsu</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[刚看了 MacBook 的 ac+👀包含随附配件]]></title>
-        <id>876206</id>
-        <link href="https://www.v2ex.com/t/876206"/>
-        <updated>2022-08-29T07:24:27.000Z</updated>
-        <summary type="html"><![CDATA[Andreas8: 充电头 /线和 Mac 一起保修的🥰]]></summary>
+        <title type="html"><![CDATA[我也来求个 PT 账号，倾向大站的，可用馒头或者幼儿园交换]]></title>
+        <id>876478</id>
+        <link href="https://www.v2ex.com/t/876478"/>
+        <updated>2022-08-30T06:53:04.000Z</updated>
+        <summary type="html"><![CDATA[sinORcos: RT ，其实馒头资源还可以，但是有部分小众资源没速度，顺便也想逛逛其他站，目前想要彩虹岛或者家园，可用馒头或者幼儿园的交换，不会连累人
+附个图
+https://imgur.com/a/sD4ZF3c]]></summary>
         <author>
-            <name>Andreas8</name>
+            <name>sinORcos</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[喜大普奔 Apple Watch 空气质量 又可以显示了？]]></title>
-        <id>876205</id>
-        <link href="https://www.v2ex.com/t/876205"/>
-        <updated>2022-08-29T07:23:38.000Z</updated>
-        <summary type="html"><![CDATA[gcxsyyyun: 
-昨天突然发现 watch 的 AQI 又可以显示在复杂功能的位置上了, 各位老哥有发现不？]]></summary>
+        <title type="html"><![CDATA[[远程全职 | 持续更新] 招聘前端开发工程师/月薪 30-35K RMB、全栈工程师/月薪 30-40K RMB 等 10 个岗位]]></title>
+        <id>876477</id>
+        <link href="https://www.v2ex.com/t/876477"/>
+        <updated>2022-08-30T06:52:40.000Z</updated>
+        <summary type="html"><![CDATA[ZCPgyer: 
+远程工作的理想光景
+我想在老家办公，拿上海的工资。
+告别职场的「卷」，回归家庭的「暖」。
+推荐 10 个优质的远程岗位（文末设有简历投递站）
+
+
+1.前端开发工程师「30-35K RMB 」
+这是一家主做红人经济和链游项目，合作对象包括全球知名 IP 迪士尼、环球等，这家公司的存在是为了激励下一代改变游戏规则的公司和创造者，对世界产生真正和持久的影响。企业在四月融资了六千万美金，预计在年内会有后续追加约一亿美金。目前在中国组建远程办公团队，欢迎您的加入！
+在这个岗位，您需要完成的工作内容： 
+
+我们希望您拥有： 
+
+
+2.全栈工程师「30-40K RMB 」
+这是一家北美 software-as-a-service 公司，提供基于云的开放分析数据平台；融资超过 6000 万美元，创始人曾就职于多家全球互联网百强企业，是一位高级数据专家；目前在中国成立远程办公团队。
+在这个岗位，您需要完成的工作内容： 
+
+我们希望您拥有： 
+
+
+3.安卓开发工程师「20-30K RMB 」
+这是一家提供亚洲食品的大型电商超市，公司使用 31 项技术产品和服务，包括 HTML5 、谷歌分析、jQuery 等，目前在中国成都组建远程技术中心。
+在这个岗位，您需要完成的工作内容： 
+
+我们希望您拥有： 
+
+
+4.高级全栈（偏后端）「30-35k RMB 」
+该企业帮助医生建立线上医疗全面体系，目前在美国是首个线上医疗的一站式平台 more patient, more efficient, 跟所有的药店，insurance 等等，一个平台可以接触到一个全线系统，目前在中国组建远程办公团队。
+在这个岗位，您需要完成的工作内容： 
+
+我们希望您拥有： 
+
+
+5.JAVA 开发工程师「30-35k RMB 」
+在这个岗位，您需要完成的工作内容： 
+
+我们希望您拥有： 
+
+
+6.ue4 开发工程师（无笔试）「30-40k RMB 」
+在这个岗位，您需要完成的工作内容： 
+
+我们希望您拥有 [需要有如下的技能中的多数项（不要求全部）] ： 
+
+
+7.高级系统工程师-区块链「（ 70-100W/年） RMB 」
+公司是用于去中心化应用程序的快速且开放的区块链平台；该平台的协议实现了安全和随机的状态分片，主网支持多个分片中的数千个节点，在几秒钟内生成具有即时确定性的块，他们的质押机制减少了中心化，同时支持质押委托，奖励复合和双签削减；公司融资金额超过 1800 万美金，2022 年上半年刚刚完成最新一轮融资。目前在中国成立远程办公团队。
+在这个岗位，您需要完成的工作内容： 
+
+我们希望您拥有： 
+
+
+8.高级密码工程师-区块链「（ 80-100W/年，可适度弹性沟通） RMB 」
+公司是用于去中心化应用程序的快速且开放的区块链平台；该平台的协议实现了安全和随机的状态分片，主网支持多个分片中的数千个节点，在几秒钟内生成具有即时确定性的块，他们的质押机制减少了中心化，同时支持质押委托，奖励复合和双签削减；公司融资金额超过 1800 万美金，2022 年上半年刚刚完成最新一轮融资。目前在中国成立远程办公团队。
+在这个岗位，您需要完成的工作内容： 
+
+我们希望您拥有： 
+
+
+9.高级密码工程师-区块链「（ 80-100W/年，可适度弹性沟通） RMB 」
+公司是用于去中心化应用程序的快速且开放的区块链平台；该平台的协议实现了安全和随机的状态分片，主网支持多个分片中的数千个节点，在几秒钟内生成具有即时确定性的块，他们的质押机制减少了中心化，同时支持质押委托，奖励复合和双签削减；公司融资金额超过 1800 万美金，2022 年上半年刚刚完成最新一轮融资。目前在中国成立远程办公团队。
+在这个岗位，您需要完成的工作内容： 
+
+我们希望您拥有： 
+
+10.techlead「35-42k/月 RMB 」
+在这个岗位，您需要完成的工作内容： 
+
+我们希望您拥有： 
+
+查看更多优质岗位&简历投递请戳]]></summary>
         <author>
-            <name>gcxsyyyun</name>
+            <name>ZCPgyer</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Obsidian 等软件有“双向链接”，关系图谱等。那么如果用来写自己的 Blog 怎么做到呢？]]></title>
-        <id>876204</id>
-        <link href="https://www.v2ex.com/t/876204"/>
-        <updated>2022-08-29T07:21:06.000Z</updated>
-        <summary type="html"><![CDATA[zjvbqla: 
-刚刚关注到目前此类笔记软件都有类似的功能。
-那么如果我是用 Markdown 格式写 Blog ，
-发布到网上，
-如何做到各种关系链接呢？
-手动？
-或者说我的这个需求怎么方便的实现？
-因为没有用过，可能问题有点傻，见谅。]]></summary>
+        <title type="html"><![CDATA[PS5 新改良版本]]></title>
+        <id>876476</id>
+        <link href="https://www.v2ex.com/t/876476"/>
+        <updated>2022-08-30T06:48:48.000Z</updated>
+        <summary type="html"><![CDATA[cyll: 
+「 CFI-1200 」近期出现了一个显示发售日的页面，显示为 9 月 15 日发售。参考上一个改良版本「 CFI-1100 」是机器重量轻了 300 克，并改进了散热片和底座螺丝，本次改良应该也是细节修改，正好搭配这次涨价。]]></summary>
         <author>
-            <name>zjvbqla</name>
+            <name>cyll</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[问问 nuc 具体怎么选？]]></title>
-        <id>876203</id>
-        <link href="https://www.v2ex.com/t/876203"/>
-        <updated>2022-08-29T07:17:15.000Z</updated>
-        <summary type="html"><![CDATA[yhgogogo: 我的需求就是搞一个 win 平台玩玩 xgp 的双点校园这种游戏，因为手柄在 xsx 上玩太累了，并且想把家里的 n1 旁路由的活也干了，后期就把 n1 出了。
-目前了解的方法是 PVE 虚拟 windows+openwrt ，了解到的 nuc 有：TL 50,华硕 PN52, 然后就被 nuc8 9 10 这些搞晕了
-我想图省事，不动手。。然后就是品控好一点，别 boom ，别吵（需要 24 小时运行）]]></summary>
+        <title type="html"><![CDATA[Go 可以运行， vscode 语法检查提示找不到包]]></title>
+        <id>876475</id>
+        <link href="https://www.v2ex.com/t/876475"/>
+        <updated>2022-08-30T06:36:15.000Z</updated>
+        <summary type="html"><![CDATA[nyxsonsleep: 
+代码块
+package main
+import(
+"github.com/gocolly/colly/v2"
+"fmt"
+)
+func main() {
+// create a new collector
+c := colly.NewCollector()
+fmt.Println(c)
+}
+
+运行结果
+Requests made: 0 (0 responses) | Callbacks: OnRequest: 0, OnHTML: 0, OnResponse: 0, OnError: 0
+
+这行"github.com/gocolly/colly/v2"飘红，提示：
+error while importing github.com/gocolly/colly/v2: cannot find package "github.com/saintfish/chardet" in any of
+能用，但是该怎么解决飘红的问题。有两个 gopath ，目前在第二个 gopath 目录下的 src 目录的下级目录中运行，有 go.mod,go.sum 。]]></summary>
         <author>
-            <name>yhgogogo</name>
+            <name>nyxsonsleep</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[学习 Dockerfile 的最佳编写指南，在实践中少走弯路]]></title>
-        <id>876202</id>
-        <link href="https://www.v2ex.com/t/876202"/>
-        <updated>2022-08-29T07:15:23.000Z</updated>
-        <summary type="html"><![CDATA[user7: 
-不论是个人开发者还是企业，上云已经成为基本的需求。使用 Dockerfile 构建 Docker 镜像是其中基础的一步，而 Dockerfile 编写得是否合理会直接影响到镜像的优劣。
-和开源团队 Jina AI 的 Engieer Manager 苗兆丰一起，聊一聊如何构建更小更优的 Docker 镜像，本次讲座将为你带来编写 Dockerfile 的最佳实践指南！
-分享内容
-什么是 Dockerfile
-Dockerfile 用于构建 Docker 镜像，运行镜像启动 Docker 容器
-编写 Dockerfile 的 3 条原则
-列举 3 条基本原则，帮助你更好地编写 Dockerfile
-经验分享 - 如何创建高效且可维护的 Dockerfile
-一步步的行动拆解，带你探究 Dockerfile 在工程实践中的实际用法
-关于讲师
-苗兆丰  Jina AI Engineering Manager
-本科毕业于西安交通大学，曾就职于腾讯，主要兴趣是 NodeJS 、云原生和 DevOps 。
-活动时间
-2022 年 8 月 30 日 明晚 19:00 - 19:45]]></summary>
+        <title type="html"><![CDATA[ArkID：开源的 IDaaS 系统全新上线，助企业构建标准化的用户身份体系]]></title>
+        <id>876474</id>
+        <link href="https://www.v2ex.com/t/876474"/>
+        <updated>2022-08-30T06:33:58.000Z</updated>
+        <summary type="html"><![CDATA[Qingxiu: 
+经过几年的总结和开发，ArkID 上线全新版本了。
+https://github.com/longguikeji/arkid
+ArkID： 企业级 IDaaS/IAM 平台系统
+丰富的插件，快速构建专属 IDaaS/IAM 平台 
+轻松集成您的所有应用 
+统一的身份，认证，权限管理系统
+
+ArkID 方舟一账通是一款开源的统一身份认证授权管理解决方案，支持多种标准协议(LDAP, OAuth2, SAML, OpenID)，细粒度权限控制，完整的 WEB 管理功能，钉钉、企业微信集成等，QQ group: 167885406
+官方网站
+官方 IDaaS
+官方文档
+用户指南
+开发者指南
+商业合作指南
+系统插件
+关于我们
+ArkID 功能特点
+插件化
+基于 Plug-in 插件化可扩展的底层应用架构
+可在不改动主体程序的情况下灵活极速的给主体程序增加新功能
+统一目录
+实现企业组织架构和海量人员身份信息的集中安全存储
+多维度建立对应关系，安全集成企业身份数据源
+实现在一个平台对企业人员、组织架构、应用信息的高效统一管理
+单点登录
+通过一套用户名和密码即可访问所有工作系统
+支持如 OIDC ，OAuth2 ，CAS ，SAML2 等单点登录协议
+通过插件定向支持各类自有协议或非标准协议
+通过浏览器插件支持账密代填的方式
+账号生命周期
+实现人员入离调转 /组织架构变动等身份信息在不同应用系统中的自动化流转
+有效提升账户配置效率，管理时间缩短 90%
+增加审计效率
+多因素认证
+支持手机，邮箱，人脸，指纹，扫码等各类认证因素
+支持图形验证码，动态验证码等各类二次认证
+支持微信，钉钉，企业微信等第三方认证
+根据客户不同业务场景及安全需要智能唤起不同组合形式的认证规则
+集中授权
+支持 RBAC ，ABAC 的权限管理
+支持权限数据统一录入，存储和分配
+统一权限验证，支持第三方权限系统集成
+集中审批
+支持自定义审批动作
+支持对接第三方审批系统
+数据同步
+支持 SCIM 协议，跨系统同步用户与组织架构数据
+支持包括用户，组织架构，认证，权限等各类数据同步
+支持对多个三方系统以各种组合方式进行同步，如将 HR 系统数据同步至 AD 或 LDAP 服务中
+安全审计
+实时记录用户和管理员的所有请求行为
+支持日志读取至第三方数据分析或安全分析系统中
+支持在系统中直接展示第三方数据分析系统的图表
+支持安全分析系统对认证规则和认证结果做出干预，实现安全的智能控制
+客户端
+自带 WEB 页面
+支持各类小程序，手机客户端
+插件无需编写前端代码即可展示页面
+云原生
+支持 Docker 开发
+支持 Docker ，K8S 容器化部署
+低代码开发框架
+对 OpenAPI 进行扩展，使前端页面由后端配置驱动
+快速构建页面原型
+支持自定义 CSS 主题
+插件与应用商店
+支持开发者共享出售插件
+支持 SaaS 应用伪本地化
+支持代理商代理与分成]]></summary>
         <author>
-            <name>user7</name>
+            <name>Qingxiu</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[北京联通卡优惠活动来袭]]></title>
-        <id>876201</id>
-        <link href="https://www.v2ex.com/t/876201"/>
-        <updated>2022-08-29T07:13:37.000Z</updated>
-        <summary type="html"><![CDATA[narodo: 
-北京联通校园卡限时超值福利！手慢无，限量发售💨
-‼️ 400 元打一年再送一个月（ 👉每月可享 30GB 全国流量+20GB 北京区域流量+200 分钟语音
-👉 购主卡，送副卡（激活即享 12 个月相关会员权益，包括腾讯 B 站 美团 单车 猫超等主流平台 APP ）
-👉不是学生也可办理‼️
-[欢迎校园代理和同学们组团来咨询]
-✅每月 50G 流量
-✅400 元 /年加送一个月，200 分钟通话
-‼️免费送副卡一张
-主卡＋副卡流量通话共享 互打免费
-副卡领取一整年免费会员权益
-🥳办卡流程
-扫描联通二维码线上选号甲填写收货信息 按照流程激活后 可领取各大平台会员
-优惠力度太大所以过时不保😭
-🚗快递：顺丰 1-2 天 超快‼️
-🤩会员权益
-通过联通 app 领取一会员任选
-视频：腾讯 爱奇艺 优酷 bilibili 芒果
-音乐：qq 音乐 网易云 喜马拉雅 优酷音乐会员
-购物：天猫 京东 wps 饿了么 美团会员
-😎能使用到的所有类型都有每个月可更换一次会员类型
-现在办理还有返现活动，有意者详情联系 TmFyb2Rvbw==]]></summary>
+        <title type="html"><![CDATA[看了钟文泽的理想 L9 体验视频，心动的感觉]]></title>
+        <id>876473</id>
+        <link href="https://www.v2ex.com/t/876473"/>
+        <updated>2022-08-30T06:25:03.000Z</updated>
+        <summary type="html"><![CDATA[meisen: 没有试驾，只看视频就让我很喜欢上它，各项功能都蛮符合我的需求，一家人出游应该很不错。
+另外搞了个汽车群，对新能源车感兴趣的可以进 https://t.me/tesla_chn]]></summary>
         <author>
-            <name>narodo</name>
+            <name>meisen</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[北京联通爱快多拨如何设置分流？]]></title>
+        <id>876472</id>
+        <link href="https://www.v2ex.com/t/876472"/>
+        <updated>2022-08-30T06:24:49.000Z</updated>
+        <summary type="html"><![CDATA[heamon7: 
+100M 上行，用爱快单线多拨和双线多拨都试了，可以成功拨号并分别拿到公网 IP ，不知道是分流设置有问题还是什么原因，测速的时候显示上行并没有叠加，有大佬方便晒一下分流是怎么设置的么？]]></summary>
+        <author>
+            <name>heamon7</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[微软通过升级 UEFI 强制报废了我的丐版 Surface Go]]></title>
+        <id>876470</id>
+        <link href="https://www.v2ex.com/t/876470"/>
+        <updated>2022-08-30T06:22:18.000Z</updated>
+        <summary type="html"><![CDATA[Adelell: 
+更新后重启就进不了系统了。google 了下, 发现是最新的 uefi 固件有 bug.
+今年五月放出来的更新, 到现在也没有官方的解决办法。微软程序员门槛越来越低了。等一波集体诉讼
+https://answers.microsoft.com/en-us/surface/forum/all/surface-go-4gb-bricked-after-uefi-10340-update/a21004ed-dd90-4943-bb50-6d457a734654
+https://answers.microsoft.com/en-us/surface/forum/all/surface-go-uefi-version-is-1034-no-bootable-device/38bab91d-6c09-4a4c-94a9-61156f9fb8b8]]></summary>
+        <author>
+            <name>Adelell</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[再也不想推荐电子产品了，心累]]></title>
+        <id>876469</id>
+        <link href="https://www.v2ex.com/t/876469"/>
+        <updated>2022-08-30T06:21:46.000Z</updated>
+        <summary type="html"><![CDATA[yexiao117: 如题，给老婆挑了一堆轻薄本，最后纠结来纠结去，她还是想买 mac ，心好累。
+可能我并不想说服她吧，选择在她自己，我该找的对比图、产品图、价格表，都已经发了。
+就这样， 吐槽一下，以后有人再找我，我也不会再做任何推荐了，徒增烦恼。
+专业与爱好被质疑，生一肚子闷气，何必呢。
+发这里，就是吐个槽，望共勉。
+不要试图改变任何人。]]></summary>
+        <author>
+            <name>yexiao117</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[请问是否有软件能自动生成扫描版 PDF 的书签或目录?]]></title>
+        <id>876465</id>
+        <link href="https://www.v2ex.com/t/876465"/>
+        <updated>2022-08-30T05:58:11.000Z</updated>
+        <summary type="html"><![CDATA[a33291: 
+一般扫描版 PDF 每一页都是一张图,并不是内嵌的文字.
+现在遇到这类资料只能手动加书签,我知道abbyy可以通过ocr技术来编辑这类扫描版pdf,所以想问哈是否有工具能够更进一步,利用ocr识别结果自动构造书签目录?]]></summary>
+        <author>
+            <name>a33291</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我受不了这白痴微信了 理解不了 理解不了]]></title>
+        <id>876464</id>
+        <link href="https://www.v2ex.com/t/876464"/>
+        <updated>2022-08-30T05:55:31.000Z</updated>
+        <summary type="html"><![CDATA[JvnaStudio: 
+[腾讯科技] 腾讯客服：尊敬的用户您好，这边是腾讯后台工作人员，您的微信帐号 xx****xx ，之前基于您已了解帐号违规行为并表示不再犯，人工客服帮助您恢复正常使用，但近期仍被他人投诉且核实存在违规行为。请您及时删除相关违规内容并退出相关违规群聊，避免再次被限制。若持续违规，微信平台将升级处理，人工不再协助处理，请务必重视，谢谢！]]></summary>
+        <author>
+            <name>JvnaStudio</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[有对 oracle 熟悉的老哥吗？ 求指导一个问题]]></title>
+        <id>876463</id>
+        <link href="https://www.v2ex.com/t/876463"/>
+        <updated>2022-08-30T05:55:27.000Z</updated>
+        <summary type="html"><![CDATA[scalaer: 
+java jdbc 连接 oracle, 偶尔会出现下面这个错误。
+Caused by: java.sql.SQLRecoverableException: IO Error: Connection reset by peer, connect lapse 9 ms., Authentication lapse 0 ms.
+at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:794)
+at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:688)
+at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:39)
+at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:691)
+at java.sql.DriverManager.getConnection(DriverManager.java:664)
+at java.sql.DriverManager.getConnection(DriverManager.java:208)
+... 9 more
+Caused by: java.io.IOException: Connection reset by peer, connect lapse 9 ms., Authentication lapse 0 ms.
+at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:790)
+... 17 more
+Caused by: java.io.IOException: Connection reset by peer, connect lapse 9 ms.
+at oracle.net.ns.NSProtocolNIO.negotiateConnection(NSProtocolNIO.java:138)
+at oracle.net.ns.NSProtocol.connect(NSProtocol.java:317)
+at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1438)
+at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:518)
+... 17 more
+Caused by: java.io.IOException: Connection reset by peer
+at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+at oracle.net.nt.TimeoutSocketChannel.read(TimeoutSocketChannel.java:168)
+at oracle.net.ns.NIOHeader.readHeaderBuffer(NIOHeader.java:82)
+at oracle.net.ns.NIOPacket.readNIOPacket(NIOPacket.java:252)
+at oracle.net.ns.NSProtocolNIO.negotiateConnection(NSProtocolNIO.java:118)
+
+
+报错信息从网上搜索的答案都是 oracle 连接数不够了， 但是写了一个测试程序， 申请的连接数大于 oracle 的最大连接数，无法触发相同的错误， 想请教下如何 100%触发这个报错]]></summary>
+        <author>
+            <name>scalaer</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AMD’s Zen 4/Ryzen 7000 Chips Are 'World's Fastest,' Coming in September]]></title>
+        <id>1849470723</id>
+        <link href="https://gizmodo.com/amd-zen-4-ryzen-7000-chips-release-date-price-specs-1849470723"/>
+        <updated>2022-08-29T23:30:00.000Z</updated>
+        <summary type="html"><![CDATA[AMD’s new Zen 4 desktop CPU lineup is its first since supply chains have started clearing up, and now it’s releasing in the middle of massive inflation. But that hasn’t stopped Lisa Su from coming forward with what, on paper, is looking to be the world’s new fastest set of gaming chips. At least until competition like…
+Read more...]]></summary>
+        <author>
+            <name>Michelle Ehrhardt</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Jaws in 3D (Not Jaws 3D) Is Out This Weekend and Worth Your Time]]></title>
+        <id>1849464067</id>
+        <link href="https://gizmodo.com/jaws-3d-real-d-rerelease-steven-spielberg-universal-sha-1849464067"/>
+        <updated>2022-08-29T23:15:00.000Z</updated>
+        <summary type="html"><![CDATA[As the summer movie season comes to an end, a few all-time blockbusters are busting back into theaters. One is from just last year but the other is the original. The first. Maybe the best of the best. Steven Spielberg’s 1975 classic, Jaws. 
+Read more...]]></summary>
+        <author>
+            <name>Germain Lussier</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Several Layers of Glaze Finish Mia Alajasko’s Ceramic Octopuses with Colorful Textures]]></title>
+        <id>https://www.thisiscolossal.com/?p=222078</id>
+        <link href="https://www.thisiscolossal.com/2022/08/mia-alajasko-octopus-sculptures/"/>
+        <updated>2022-08-29T22:43:15.000Z</updated>
+        <summary type="html"><![CDATA[Tentacles speckled with glaze and bulbous suckers support the bodies of Mia Alajasko’s ceramic mollusks. From her backyard workshop in Onsala, Sweden, the artist sculpts squids and octopuses that stand upwards of 40 centimeters. Each creature is cloaked in several layers of glaze that produce a diverse array of finishes from classic matte white and neutral-toned crackles to sleek rust and mottled shades of blue.
+Alajasko makes about a dozen pieces each month, and her next shop release is on September 28. More]]></summary>
+        <author>
+            <name>Grace Ebert</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What Did Princess Leia's Wedding Dress Look Like?]]></title>
+        <id>1849470625</id>
+        <link href="https://gizmodo.com/princess-leia-wedding-dress-star-wars-book-han-solo-mar-1849470625"/>
+        <updated>2022-08-29T22:30:00.000Z</updated>
+        <summary type="html"><![CDATA[One of the downsides of Star Wars Episode VII coming over 20 years after Return of the Jedi is we missed a lot of big life moments for Princess Leia, Luke Skywalker, and Han Solo. When we next saw them in the movies, life had hit them pretty hard. But Lucasfilm has been filling in those gaps in the publishing space…
+Read more...]]></summary>
+        <author>
+            <name>Germain Lussier</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Jeff Bezos Is More Like a McDonald's Hamburger Than He Realizes]]></title>
+        <id>1849470641</id>
+        <link href="https://gizmodo.com/jeff-bezos-amazon-mcdonalds-1849470641"/>
+        <updated>2022-08-29T21:45:00.000Z</updated>
+        <summary type="html"><![CDATA[Amazon CEO Jeff Bezos is the McDonald’s hamburger of humanity—an obscenely dry, flat  thing that hides its own curious nature with a slathering of condiments and toppings. Both man and burger represent the incredible wealth and ubiquitous extremes of modern consumerism, neither supplying enough to aid either…
+Read more...]]></summary>
+        <author>
+            <name>Kyle Barr</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Universal Monsters Are Streaming on Peacock in September]]></title>
+        <id>1849470074</id>
+        <link href="https://gizmodo.com/universal-monsters-streaming-horror-peacock-dracula-1849470074"/>
+        <updated>2022-08-29T21:45:00.000Z</updated>
+        <summary type="html"><![CDATA[Peacock better watch out. It’s about to be drained of blood, turned into a wolf, wrapped in bandages, and brought back from the dead. This month, as always, the streamer is adding a bunch of new content to its service. And while there are tons of cool movies coming soon (such as The Frighteners, Candyman, Shaun of the…
+Read more...]]></summary>
+        <author>
+            <name>Germain Lussier</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[FTC Accuses Data Broker of Letting Anyone Track Millions of Americans for Free]]></title>
+        <id>1849468965</id>
+        <link href="https://gizmodo.com/ftc-sues-data-broker-kochava-1849468965"/>
+        <updated>2022-08-29T21:20:00.000Z</updated>
+        <summary type="html"><![CDATA[The Federal Trade Commission announced a lawsuit Monday against a major data broker, accusing it of offering services that allow for the tracking of Americans at sensitive locations, such as addiction clinics or domestic violence shelters. 
+Read more...]]></summary>
+        <author>
+            <name>Lucas Ropek</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[French Tax Authorities Used Google AI to Snuff Out More than 20,000 Undeclared Swimming Pools]]></title>
+        <id>1849470533</id>
+        <link href="https://gizmodo.com/ai-taxes-france-swimming-pools-1849470533"/>
+        <updated>2022-08-29T21:20:00.000Z</updated>
+        <summary type="html"><![CDATA[They say the only two certainties in life are death and taxes. That seems especially true in France where tax authorities have begun deploying artificial intelligence to snuff out thousands of undeclared swimming pools reportedly worth around $10 million in uncollected tax revenue. The country could soon expand its…
+Read more...]]></summary>
+        <author>
+            <name>Mack DeGeurin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Tesla Can't Prevent Its Employees From Wearing Union Logo at Work, National Labor Board Ruled]]></title>
+        <id>1849470464</id>
+        <link href="https://gizmodo.com/tesla-union-uniform-elon-musk-1849470464"/>
+        <updated>2022-08-29T21:10:00.000Z</updated>
+        <summary type="html"><![CDATA[The National Labor Relations Board (NLRB) ruled it “unlawful” for Tesla to prohibit its employees from wearing union t-shirts or buttons at work, criticizing a company policy that required factory workers to dress in plain, black t-shirts or ones that bear the Tesla logo.
+Read more...]]></summary>
+        <author>
+            <name>Passant Rabie</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Killing Vampires With the Help of Social Media]]></title>
+        <id>1849462015</id>
+        <link href="https://gizmodo.com/killing-vampires-with-the-help-of-social-media-1849462015"/>
+        <updated>2022-08-29T21:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Read more...]]></summary>
+        <author>
+            <name>Germain Lussier and Artem Golub</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Happy 25th Birthday Netflix: Here's the Gizmodo Staff's Favorite Shows]]></title>
+        <id>1849469819</id>
+        <link href="https://gizmodo.com/netflix-best-shows-what-to-binge-1849469819"/>
+        <updated>2022-08-29T20:55:00.000Z</updated>
+        <summary type="html"><![CDATA[Ah Netflix, we love to loathe ‘ya, but on your 25th birthday, we at Gizmodo have decided to celebrate you. While you may have axed some of our favorites ahead of their time (you’re seriously going to do that to Archive 81?), you have blessed us with some of our favorite content. As a staff, we have compiled a list of…
+Read more...]]></summary>
+        <author>
+            <name>Gizmodo Staff</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Tesla Just Created a Virtual Power Plant in Japan With More Than 300 Home Battery Packs]]></title>
+        <id>1849469347</id>
+        <link href="https://gizmodo.com/tesla-virtual-power-plant-japan-1849469347"/>
+        <updated>2022-08-29T20:20:00.000Z</updated>
+        <summary type="html"><![CDATA[Using Tesla’s Powerwall batteries, households on the island of Miyako-jima in Japan have built out a virtual power plant that can send excess power to the electric grid in their area. 
+Read more...]]></summary>
+        <author>
+            <name>Passant Rabie</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Clue Drops Bodies in a New Animated Series]]></title>
+        <id>1849469997</id>
+        <link href="https://gizmodo.com/clue-board-game-new-animated-series-fox-hasbro-1849469997"/>
+        <updated>2022-08-29T20:15:00.000Z</updated>
+        <summary type="html"><![CDATA[Remember when we wrote about how Ryan Reynolds was working on a new Clue film? This film is not that. Dewayne Perkins, an Emmy-nominated writer and actor, has been brought on to write and executive produce a new Clue animated series. Tim Story and Lynn Barrie will also executive produce, according to Deadline.
+
+Read more...]]></summary>
+        <author>
+            <name>Linda Codega</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Trump Is Actively Platforming Dozens of Insane QAnon Accounts on Truth Social]]></title>
+        <id>1849470114</id>
+        <link href="https://gizmodo.com/qanon-trump-truth-social-1849470114"/>
+        <updated>2022-08-29T19:55:00.000Z</updated>
+        <summary type="html"><![CDATA[Truth Social, the Twitter-like social platform for the ultra-right and Trump sycophants, has a QAnon problem (yes, I heard your collective gasp). More than that, conspiracist accounts have become a celebrated and regular part of the greater Truth Social community, thanks to major Republican officials and the titular…
+Read more...]]></summary>
+        <author>
+            <name>Kyle Barr</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[NASA Says Megarocket Could Launch Friday as Engineers Race to Resolve Engine Issue]]></title>
+        <id>1849470036</id>
+        <link href="https://gizmodo.com/nasa-sls-delay-engine-issue-friday-launch-1849470036"/>
+        <updated>2022-08-29T19:50:00.000Z</updated>
+        <summary type="html"><![CDATA[NASA’s first attempt to launch its Space Launch System megarocket did not go as planned, with officials declaring a scrub due an “engine bleed” issue. Sounds ominous, but NASA officials said Monday afternoon that a re-attempt on Friday is not out of the question. 
+Read more...]]></summary>
+        <author>
+            <name>George Dvorsky</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[16 Awesome Tabletop Role-Playing Game Soundtracks]]></title>
+        <id>1849454823</id>
+        <link href="https://gizmodo.com/tabletop-role-playing-game-soundtracks-albums-ttrpg-1849454823"/>
+        <updated>2022-08-29T19:30:00.000Z</updated>
+        <summary type="html"><![CDATA[While tabletop roleplaying games might not be the first kind of game you think about when you hear “game soundtrack,” there is an incredible array of songs out there that have been created specifically for TTRPGs. From Spotify playlists to full orchestral compositions, players and gamemasters have used music to set…
+Read more...]]></summary>
+        <author>
+            <name>Linda Codega</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA['Climate Catastrophe': Floods Kill Over 1,100 People in Pakistan This Summer]]></title>
+        <id>1849469168</id>
+        <link href="https://gizmodo.com/pakistan-monsoon-flooding-summer-2022-1849469168"/>
+        <updated>2022-08-29T19:08:00.000Z</updated>
+        <summary type="html"><![CDATA[Pakistan is being pummeled by the worst floods the country has experienced in over a decade. Sherry Rehman, the country’s climate minister, has called this a “serious climate catastrophe,” Al Jazeera reported.
+
+Read more...]]></summary>
+        <author>
+            <name>Angely Mercado</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Single-Dose 'Polypill' Found to Save Lives, Prevent Heart Attacks in Major New Trial]]></title>
+        <id>1849469736</id>
+        <link href="https://gizmodo.com/heart-disease-polypill-trinomia-trial-1849469736"/>
+        <updated>2022-08-29T18:47:01.000Z</updated>
+        <summary type="html"><![CDATA[A three-in-one drug combo can help people with a history of heart attacks stay healthy, new research  shows. The randomized clinical trial found that people who took the bundled medication, also known as a polypill, went on to experience fewer heart attacks, strokes, or cardiovascular-related deaths than those given…
+Read more...]]></summary>
+        <author>
+            <name>Ed Cara</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Marvel Release Dates: When to See Upcoming MCU Movies and Disney+ Shows]]></title>
+        <id>1848196856</id>
+        <link href="https://gizmodo.com/marvel-release-dates-when-to-see-upcoming-mcu-movies-a-1848196856"/>
+        <updated>2022-08-29T18:35:00.000Z</updated>
+        <summary type="html"><![CDATA[With 27 feature films and six Disney+ shows in 14 years, the Marvel Cinematic Universe continues to rule pop culture. Thanks to the recent San Diego Comic-Con, we now have an ever better idea of what’s coming next from the MCU. In short: a lot. We’ve got all the details for  Phase Four, Phase Five, and even Phase Six …
+Read more...]]></summary>
+        <author>
+            <name>io9 Staff</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Flood Threat Continues as Mississippi's Pearl River Crests]]></title>
+        <id>1849468672</id>
+        <link href="https://gizmodo.com/mississippi-jackson-flooding-evacuations-1849468672"/>
+        <updated>2022-08-29T18:30:00.000Z</updated>
+        <summary type="html"><![CDATA[Jackson, Mississippi Mayor Chokwe Antar Lumumba is urging residents to take evacuation orders seriously following heavy rainfall. The Pearl River continues to see intense flooding as it reached a crest nearly 8 feet (2.5 meters) above its flood stage.
+
+Read more...]]></summary>
+        <author>
+            <name>Kevin Hurler</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Apple's Secretive AR/VR Headset Might Have Two Options, Custom Processor]]></title>
+        <id>1849468610</id>
+        <link href="https://gizmodo.com/apple-ar-vr-headset-1849468610"/>
+        <updated>2022-08-29T18:20:00.000Z</updated>
+        <summary type="html"><![CDATA[Is Apple secretly funding a shadowy shell company to buy up trademarks related to its in-development VR/AR headset? That’s the latest juicy speculation out of the Apple headset rumor mill over at Bloomberg. The new report cites trademark filings in nearly a dozen countries for names like, “Reality One,” “Reality Pro,”…
+Read more...]]></summary>
+        <author>
+            <name>Mack DeGeurin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Alexandra Rowland's Epic Fantasy Romance Is a Love Letter to Fandom]]></title>
+        <id>1849469132</id>
+        <link href="https://gizmodo.com/alexandra-rowland-interview-a-taste-of-gold-and-iron-1849469132"/>
+        <updated>2022-08-29T17:30:00.000Z</updated>
+        <summary type="html"><![CDATA[Alexandra Rowland’s A Taste of Gold and Iron required a joyful writing process. They started over six times, across six years. But Rowland never got discouraged; this book was something that they knew was going to take time to get right because they were working on something that embodied many of the tropes,…
+Read more...]]></summary>
+        <author>
+            <name>Linda Codega</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Webb Telescope Captures the Bamboozling Beauty of the Phantom Galaxy]]></title>
+        <id>1849468680</id>
+        <link href="https://gizmodo.com/webb-telescope-messier-74-hubble-spiral-galaxy-1849468680"/>
+        <updated>2022-08-29T16:53:00.000Z</updated>
+        <summary type="html"><![CDATA[Webb’s latest image release is a special collab with the Hubble Space Telescope. Scientists combined data from the two observatories to produce these spectacular shots of the spiral Phantom Galaxy (also known as Messier 74), about 32 million light-years from Earth.
+Read more...]]></summary>
+        <author>
+            <name>Isaac Schultz</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Leakers Allege Ava Labs Used 'Gangster Style' Legal Tactics to Screw Competing Crypto Companies]]></title>
+        <id>1849468341</id>
+        <link href="https://gizmodo.com/ava-labs-crypto-crypto-leaks-avax-tokens-1849468341"/>
+        <updated>2022-08-29T16:50:00.000Z</updated>
+        <summary type="html"><![CDATA[Ava Labs, the company behind the Avalanche blockchain project, is being buried in reaching allegations that they and their attorney were working in cahoots to attack market competitors “gangster style” by targeting crypto projects in class action lawsuits. Meanwhile, the attorney is clapping back, calling it a hit job…
+Read more...]]></summary>
+        <author>
+            <name>Kyle Barr</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Andor Stars' First Fandoms]]></title>
+        <id>1849448340</id>
+        <link href="https://gizmodo.com/andor-stars-first-fandoms-1849448340"/>
+        <updated>2022-08-29T16:45:00.000Z</updated>
+        <summary type="html"><![CDATA[Read more...]]></summary>
+        <author>
+            <name>Artem Golub and Sabina Graves</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Facebook Agrees to Settle 4-Year Lawsuit Over Cambridge Analytica Scandal]]></title>
+        <id>1849465063</id>
+        <link href="https://gizmodo.com/facebook-cambridge-analytica-scandal-lawsuit-settlement-1849465063"/>
+        <updated>2022-08-29T16:36:00.000Z</updated>
+        <summary type="html"><![CDATA[While news of Mark Zuckerberg’s appearance on the Joe Rogan Experience was making the rounds  Friday night, eventually trending on Twitter, attorneys at his company  were preparing to settle one of the biggest lawsuits he’s ever faced —ignited by one of the biggest controversies it’s ever caused.
+Read more...]]></summary>
+        <author>
+            <name>Dell Cameron</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Slayers Features Thomas Jane as a Vampire Hunter and We've Got the First Trailer]]></title>
+        <id>1849459279</id>
+        <link href="https://gizmodo.com/slayers-trailer-vampires-thomas-jane-malin-akerman-bres-1849459279"/>
+        <updated>2022-08-29T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Thomas Jane is hunting vampires. Honestly, that sentence alone is likely to get you interested in his new movie. But Slayers, which is in  theaters, on-demand, and on digital on October 21, goes beyond that. Jane’s vampire hunter needs to get into a very well-guarded vampire lair, so he uses a bunch of social media…
+Read more...]]></summary>
+        <author>
+            <name>Germain Lussier</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Eric Kripke Says Supernatural Was Inspired by Neil Gaiman's Sandman]]></title>
+        <id>1849468463</id>
+        <link href="https://gizmodo.com/eric-kripke-supernatural-neil-gaiman-sandman-inspiratio-1849468463"/>
+        <updated>2022-08-29T15:20:00.000Z</updated>
+        <summary type="html"><![CDATA[Last Friday, Rolling Stone released a feature on Neil Gaiman, an impressively extensive interview that covered the author’s storied career, starting in the ‘80s, when a then-26-year-old Gaiman began writing The Sandman for Vertigo comics. During the interview, he related how he succeeded in an attempt to tank a Jon…
+Read more...]]></summary>
+        <author>
+            <name>Linda Codega</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Netflix's Ad-Supported Subscription Could Cost $7 to $9]]></title>
+        <id>1849468103</id>
+        <link href="https://gizmodo.com/netflix-ads-streaming-service-stranger-things-1849468103"/>
+        <updated>2022-08-29T15:15:00.000Z</updated>
+        <summary type="html"><![CDATA[The time has finally come: After teasing its ad-supported plan earlier this year, Netflix is apparently considering charging users somewhere in the ballpark of $7 to $9 for the tier.
+
+Read more...]]></summary>
+        <author>
+            <name>Kevin Hurler</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Billowing Garments Encompass Diverse Narratives in Johanna Goodman’s Monumental Collages]]></title>
+        <id>https://www.thisiscolossal.com/?p=222035</id>
+        <link href="https://www.thisiscolossal.com/2022/08/johanna-goodman-collage-portraits/"/>
+        <updated>2022-08-29T15:08:07.000Z</updated>
+        <summary type="html"><![CDATA[Known for her vivid collages of female figures whose billowing garments embody an array of landscapes, architecture, flora, fauna, artworks, and symbolic objects, Johanna Goodman continues to celebrate the dynamism and diversity of women throughout the ages. Sourcing photographs and motifs from the public domain in addition to her own photographs, her ongoing Catalogue of Imaginary Beings series (previously) encompasses a broad spectrum of historical and contemporary imagery. More]]></summary>
+        <author>
+            <name>Kate Mothes</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[7 Unexpected Animals That Use Tools]]></title>
+        <id>1848546719</id>
+        <link href="https://gizmodo.com/6-unexpected-animals-that-use-tools-1848546719"/>
+        <updated>2022-08-29T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Scientists once thought that only humans and our closest relatives, chimps, were smart enough to use tools. But as our documenting of the natural world has gotten more detailed—and as we’ve become, perhaps, less haughty about our supposed superior intellect—we’ve found that many species are actually deft with sticks,…
+Read more...]]></summary>
+        <author>
+            <name>Isaac Schultz</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Lord of the Rings: The Rings of Power's Cast on How the Show's Elves and Dwarves Will Surprise Us]]></title>
+        <id>1849462175</id>
+        <link href="https://gizmodo.com/lord-of-the-rings-rings-of-power-prime-video-elves-1849462175"/>
+        <updated>2022-08-29T14:30:00.000Z</updated>
+        <summary type="html"><![CDATA[The Lord of the Rings: The Rings of Power will explore aspects of Middle-earth that haven’t been brought to the screen before, though there will be some familiar entrance points. Among these are the characters who loom large in J.R.R. Tolkien’s lore, including Elf leader Elrond, Dwarven Prince Durian IV, and…
+Read more...]]></summary>
+        <author>
+            <name>Cheryl Eddy</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Rebuild Docker Container in Docker Compose]]></title>
+        <id>https://www.baeldung.com/?p=129812</id>
+        <link href="https://feeds.feedblitz.com/~/708441964/0/baeldung~Rebuild-Docker-Container-in-Docker-Compose/"/>
+        <updated>2022-08-29T14:13:59.000Z</updated>
+        <summary type="html"><![CDATA[Learn how to rebuild a container independently from the others with docker-compose.]]></summary>
+        <author>
+            <name>baeldung</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[More Details on That Wild Star Trek: Strange New Worlds/Lower Decks Crossover]]></title>
+        <id>1849466736</id>
+        <link href="https://gizmodo.com/star-trek-discovery-lower-decks-house-dragon-she-hulk-1849466736"/>
+        <updated>2022-08-29T13:45:00.000Z</updated>
+        <summary type="html"><![CDATA[You might not have heard of The Lake, but this Thai creature feature will have life-size practical monsters courtesy of the legendary Jordu Schell, who has worked on movies like Blade, Planet of the Apes, Dawn of the Dead, Hellboy, Avatar, and Alien vs. Predator. Reginald the Vampire, which stars Spider-Man’s Jacob…
+Read more...]]></summary>
+        <author>
+            <name>James Whitbrook, Gordon Jackson,  and Linda Codega</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hazy Water Veils Vibrant Bouquets in Mystery in Robert Peek’s Photographs]]></title>
+        <id>https://www.thisiscolossal.com/?p=222011</id>
+        <link href="https://www.thisiscolossal.com/2022/08/robert-peek-flower-power/"/>
+        <updated>2022-08-29T13:34:03.000Z</updated>
+        <summary type="html"><![CDATA[Fresh flowers emerge through a smoke-like substance in the eerie images of Netherlands-based photographer Robert Peek (previously). Arranged in bouquets of a single species, the lifeforms adopt a more mysterious quality, which Peek produces by adding white ink to water and submerging his subject matter. Although veiled in the hazy liquid, the bright petals breach the surface and are enhanced by an additional light source that amplifies their textures and vibrant hues. More]]></summary>
+        <author>
+            <name>Grace Ebert</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Scrubbed: NASA Delays Artemis 1 Launch Due to Engine Issue]]></title>
+        <id>1849467703</id>
+        <link href="https://gizmodo.com/watch-live-artemis-1-launch-sls-nasa-delay-1849467703"/>
+        <updated>2022-08-29T12:10:00.000Z</updated>
+        <summary type="html"><![CDATA[Ground teams at Kennedy Space Center in Florida have detected an issue with one of four Space Launch System main engines, resulting in a scrub of today’s scheduled launch. 
+
+Read more...]]></summary>
+        <author>
+            <name>George Dvorsky</name>
         </author>
     </entry>
     <entry>
@@ -859,117 +1495,6 @@ Read more...]]></summary>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[American Ship Lost in 1859 Likely Rediscovered on Argentinian Beach]]></title>
-        <id>1849463062</id>
-        <link href="https://gizmodo.com/shipwreck-dolphin-tree-rings-argentina-1849463062"/>
-        <updated>2022-08-26T19:40:00.000Z</updated>
-        <summary type="html"><![CDATA[Tree ring data taken from the timbers of a 19th century vessel found in Argentina indicate the ship was a whaler out of Rhode Island, last seen afloat over 150 years ago. The remains—exposed at low tide on a beach near Puerto Madryn, a city about 700 miles south of Buenos Aires—appear to be that of the Dolphin,…
-Read more...]]></summary>
-        <author>
-            <name>Isaac Schultz</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[NASA: ‘We Are Go for Launch’ of SLS Megarocket]]></title>
-        <id>1849463070</id>
-        <link href="https://gizmodo.com/nasa-we-are-go-for-launch-of-sls-megarocket-1849463070"/>
-        <updated>2022-08-26T19:35:00.000Z</updated>
-        <summary type="html"><![CDATA[Read more...]]></summary>
-        <author>
-            <name>Passant Rabie and Artem Golub</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[See For Yourself if Google's LaMDA Bot Is Sentient Soon]]></title>
-        <id>1849462867</id>
-        <link href="https://gizmodo.com/google-lamda-bot-open-to-public-sentient-racist-bias-1849462867"/>
-        <updated>2022-08-26T19:25:00.000Z</updated>
-        <summary type="html"><![CDATA[If you’re still on the fence about whether or not former Google software engineer Blake Lemoine was bullshitting when he claimed the company’s LaMDA chatbot had the sentience of a “sweet kid,” you can soon find out for yourself.
-Read more...]]></summary>
-        <author>
-            <name>Mack DeGeurin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Star Trek Release Dates: When to Expect All the New and Returning Shows]]></title>
-        <id>1848839650</id>
-        <link href="https://gizmodo.com/star-trek-release-dates-where-to-stream-picard-discover-1848839650"/>
-        <updated>2022-08-26T19:25:00.000Z</updated>
-        <summary type="html"><![CDATA[Trying to keep track of what’s coming in the realm of Star Trek feels like trying to stop a tribble from procreating.  Before even more new series are announced, here’s our guide of when to expect all the new Star Trek shows, as well as returning familiar favorites, and what else is in the works right now. Engage!
-
-Read more...]]></summary>
-        <author>
-            <name>James Whitbrook</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Reddit's CEO Loves Blockchain Avatars, but He Isn't Saying 'NFT']]></title>
-        <id>1849462548</id>
-        <link href="https://gizmodo.com/reddit-nft-ceo-collectible-blockchain-avatar-cryptosnoo-1849462548"/>
-        <updated>2022-08-26T19:00:00.000Z</updated>
-        <summary type="html"><![CDATA[My Reddit avatar could not look like me if it tried. None of the hair options available  can really match my receding hairline that combines a widow’s peak and an ebbing ocean tide. I’m just one of those internet users who doesn’t much care how I present on an internet forum.
-
-Read more...]]></summary>
-        <author>
-            <name>Kyle Barr</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Why Do Dogs Get Dementia? Large Study Finds Similar Risk Factors to Humans]]></title>
-        <id>1849462764</id>
-        <link href="https://gizmodo.com/why-dogs-gets-dementia-risk-factors-1849462764"/>
-        <updated>2022-08-26T18:40:00.000Z</updated>
-        <summary type="html"><![CDATA[Dogs seem to have a lot in common with people when it comes to  dementia, new research suggests. The study found that dogs face an increasingly higher risk of dementia for every year past the age of 10, and the likelihood of dementia appears to be lower for dogs that are more physically active and higher for those…
-Read more...]]></summary>
-        <author>
-            <name>Ed Cara</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[This Week's Best Toys Are Trying to Tell You Now It's Sabotage]]></title>
-        <id>1849445852</id>
-        <link href="https://gizmodo.com/best-toys-of-the-week-pikachu-iron-man-beastie-boys-1849445852"/>
-        <updated>2022-08-26T18:30:00.000Z</updated>
-        <summary type="html"><![CDATA[Congratulations, it’s Friday, and you’ve once again found your way back to Toy Aisle,  io9's weekly round up of the best in toys, collectibles, and merchandise. This week a buildable Pikachu runs free, Hot Toys once again returns to Iron Man with its most detailed recreation of Tony Stark’s armor yet, and one of the…
-Read more...]]></summary>
-        <author>
-            <name>Andrew Liszewski and James Whitbrook</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Read the [Redacted] Affidavit Justifying the FBI's Search of Mar-a-Lago]]></title>
-        <id>1849462686</id>
-        <link href="https://gizmodo.com/redacted-affidavit-fbi-mar-a-lago-trump-search-espionag-1849462686"/>
-        <updated>2022-08-26T18:25:00.000Z</updated>
-        <summary type="html"><![CDATA[A redacted version of the affidavit justifying the FBI’s extraordinary actions at Mar-a-Lago has been released to the public on the order of a federal magistrate judge. It contains multiple references to suspicion that Trump potentially had information in his residence that is specially controlled to prevent its…
-Read more...]]></summary>
-        <author>
-            <name>Dell Cameron</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Sweeping Genetic Study of Ancient Eurasians Reveals Thousands of Years of History]]></title>
-        <id>1849457794</id>
-        <link href="https://gizmodo.com/sweeping-genetic-study-of-ancient-eurasians-reveals-tho-1849457794"/>
-        <updated>2022-08-26T18:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Three new scientific papers provide a fascinating and comprehensive analysis of the genomes of 777 humans who lived from the Neolithic period (about 10,000 years ago) to the Ottoman period (around 1700 CE). Altogether, the research adds nuance to the story of human dispersal and connection since the dawn of…
-Read more...]]></summary>
-        <author>
-            <name>Isaac Schultz</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Neil Gaiman Fended Off Bad Sandman Adaptations by Force]]></title>
-        <id>1849461594</id>
-        <link href="https://gizmodo.com/neil-gaiman-leaked-sandman-script-jon-peters-1849461594"/>
-        <updated>2022-08-26T17:45:00.000Z</updated>
-        <summary type="html"><![CDATA[As The Sandman enjoys an astounding success on Netflix, Neil Gaiman has done an exceptionally in-depth interview with Rolling Stone, where he describes the arduous and sometimes underhanded methods it took to get the adaption made to his specifications. “I spent 30-something years battling bad versions of Sandman,” he…
-Read more...]]></summary>
-        <author>
-            <name>Linda Codega</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Bound by Cord, the Women of Arghavan Khosravi’s Paintings Exemplify the Borderless Fight for Equality]]></title>
         <id>https://www.thisiscolossal.com/?p=222019</id>
         <link href="https://www.thisiscolossal.com/2022/08/arghavan-khosravi-paintings/"/>
@@ -978,204 +1503,6 @@ Read more...]]></summary>
 Working in vibrant, saturated colors, Khosravi blends surreal imagery with the motifs of Persian textiles and architecture. More]]></summary>
         <author>
             <name>Grace Ebert</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Samsung's Galaxy Watch 5 Is a Nice Little Update to the Best Android Smartwatch So Far]]></title>
-        <id>1849459406</id>
-        <link href="https://gizmodo.com/samsung-galaxy-watch-5-preview-pros-cons-best-android-1849459406"/>
-        <updated>2022-08-26T17:15:00.000Z</updated>
-        <summary type="html"><![CDATA[Life happens, and it’ll be a while before I have a full assessment of Samsung’s Galaxy Watch 5. But so far, I’m pleased with what I’ve been wearing. As I’ve been working on the Galaxy Z Fold 4 and Z Flip 4 reviews—the former of which is ready to read if you are—I’ve been testing the Galaxy Watch 5 to figure out what…
-Read more...]]></summary>
-        <author>
-            <name>Florence Ion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Texas Releases List of the Big, Bad Banks That Are Bullying Fossil Fuels]]></title>
-        <id>1849461624</id>
-        <link href="https://gizmodo.com/texas-comptroller-banks-boycotting-fossil-fuels-1849461624"/>
-        <updated>2022-08-26T17:06:00.000Z</updated>
-        <summary type="html"><![CDATA[Texas is standing up to bullies—big banks that bully oil and gas, that is. This week, the Texas’s comptroller’s office released a list of financial firms and funds it has determined are “boycotting” the oil and gas industry, directing pensions and other state funds to divest from these entities in accordance with…
-Read more...]]></summary>
-        <author>
-            <name>Molly Taft</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[10 1980s Side Characters That Deserve Their Own Movie]]></title>
-        <id>1849457574</id>
-        <link href="https://gizmodo.com/1980s-side-characters-spinoff-aliens-pee-wee-spaceballs-1849457574"/>
-        <updated>2022-08-26T17:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Movies are made by the quality of their supporting characters. Oh sure, the leads are the people that drive the story, but if they don’t have quirky best friends to bounce off, what’s the point? And if the characters who appear in only a scene or two are equally as memorable? That’s even better. 
-Read more...]]></summary>
-        <author>
-            <name>Germain Lussier</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Moderna Is Suing Pfizer Over the mRNA Covid-19 Vaccines]]></title>
-        <id>1849461967</id>
-        <link href="https://gizmodo.com/moderna-sues-pfizer-over-covid-mrna-vaccine-patent-1849461967"/>
-        <updated>2022-08-26T16:30:00.000Z</updated>
-        <summary type="html"><![CDATA[Moderna and Pfizer are set to wage legal battle over the technology that led to their respective covid-19 vaccines. Moderna is now suing Pfizer and its German partner BioNTech for the alleged infringement of patents related to the development of a viable mRNA vaccine platform that Moderna claims to have pioneered.…
-Read more...]]></summary>
-        <author>
-            <name>Ed Cara</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Russian Energy Plant Is Reportedly Burning Away $10 Million of Natural Gas Daily]]></title>
-        <id>1849461007</id>
-        <link href="https://gizmodo.com/russian-plant-burning-10-million-in-natural-gas-daily-1849461007"/>
-        <updated>2022-08-26T16:25:00.000Z</updated>
-        <summary type="html"><![CDATA[Among all the other destruction war brings, there are also the environmental consequences. As conflict rages, nations intensify their focus on weapons and political strategy over climate mitigation and ecological regulation. And Russia’s ongoing war in Ukraine is no exception.
-
-Read more...]]></summary>
-        <author>
-            <name>Lauren Leffer</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fantastic Four May Have Its New Director: WandaVision's Matt Shakman]]></title>
-        <id>1849462035</id>
-        <link href="https://gizmodo.com/fantastic-four-director-mcu-marvel-studios-wandavision-1849462035"/>
-        <updated>2022-08-26T16:07:00.000Z</updated>
-        <summary type="html"><![CDATA[Spider-Man’s director is out, WandaVision’s director is in. Matt Shakman, best known for directing the hit Marvel Studios show, is apparently the company’s new choice to direct its upcoming Fantastic Four film, which will be out November 8, 2024 as the first film in Phase Six. He’s currently in talks to take the job.
-Read more...]]></summary>
-        <author>
-            <name>Germain Lussier</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[She-Hulk Episode 2 Review]]></title>
-        <id>1849461521</id>
-        <link href="https://gizmodo.com/she-hulk-episode-2-review-1849461521"/>
-        <updated>2022-08-26T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Read more...]]></summary>
-        <author>
-            <name>Artem Golub and Germain Lussier</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[T-Mobile and Space X's Satellite Cell Plan Could Strain Budget for Lower Income Users Who Need It Most]]></title>
-        <id>1849461651</id>
-        <link href="https://gizmodo.com/t-mobile-space-x-satellite-cell-plan-starlink-dead-zone-1849461651"/>
-        <updated>2022-08-26T15:55:00.000Z</updated>
-        <summary type="html"><![CDATA[SpaceX may have found another way to put all those telescope blocking satellites it has littering night skies to some good use. Starting next year, T-Mobile phones will connect with SpaceX’s Starlink service to bring satellite internet to its devices in an effort to bring about, “the end of mobile dead zones.” If it…
-Read more...]]></summary>
-        <author>
-            <name>Mack DeGeurin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Zuckerberg Says to Expect Next Meta VR Headset in October on Joe Rogan Podcast]]></title>
-        <id>1849461365</id>
-        <link href="https://gizmodo.com/zuckerberg-joe-rogan-experience-podcast-spotify-meta-vr-1849461365"/>
-        <updated>2022-08-26T15:45:00.000Z</updated>
-        <summary type="html"><![CDATA[On Thursday night, Facebook CEO Mark Zuckerberg joined ex-MMA commentator and TV host Joe Rogan on the latter’s podcast, The Joe Rogan Experience, for some reason. The two collectively talked shit about rival social media platform Twitter, dropped hints about a new VR headset, and denied that social media is…
-Read more...]]></summary>
-        <author>
-            <name>Kyle Barr</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hong Kong Upgrading Traffic Lights to Project Down on Distracted Texters, Keep Them From Walking Into Cars]]></title>
-        <id>1849461265</id>
-        <link href="https://gizmodo.com/hong-kong-traffic-lights-project-down-texters-distracte-1849461265"/>
-        <updated>2022-08-26T15:35:00.000Z</updated>
-        <summary type="html"><![CDATA[As technology evolves, so does society, shaping itself around those new advancements. The automobile changed the layout of cities (maybe for the worse) and television changed household dynamics, but the smartphone promises to shake things up even more. In Hong Kong, in order to stop distracted phone users from…
-Read more...]]></summary>
-        <author>
-            <name>Andrew Liszewski</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[House of the Dragon Has Already Been Renewed for Season 2]]></title>
-        <id>1849461480</id>
-        <link href="https://gizmodo.com/house-of-the-dragon-season-2-renewed-game-of-thrones-1849461480"/>
-        <updated>2022-08-26T15:15:00.000Z</updated>
-        <summary type="html"><![CDATA[House of the Dragon has only just begun, but the Targaryen civil war has already been extended. HBO has announced that the series, set about 200 years before the events seen in Game of Thrones, will receive a second season, possibly because everyone and their mother (well, my mother, at least) watched last Sunday’s …
-Read more...]]></summary>
-        <author>
-            <name>Rob Bricken</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The Lord of the Rings: The Rings of Power's Cast on the Series' Incredibly Immersive Sets]]></title>
-        <id>1849457298</id>
-        <link href="https://gizmodo.com/lord-of-the-rings-rings-of-power-cast-middle-earth-sets-1849457298"/>
-        <updated>2022-08-26T14:30:00.000Z</updated>
-        <summary type="html"><![CDATA[Before anyone had gotten a glimpse of The Lord of the Rings: The Rings of Power, it became well-known that the Prime Video series had a staggeringly huge budget. Now that the show’s almost here, it’s clear where a lot of that money went: creating an incredibly detailed world that brings Middle-Earth to life on screen.
-Read more...]]></summary>
-        <author>
-            <name>Cheryl Eddy</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The Godzilla Vs. Kong Rematch Is Coming Soon]]></title>
-        <id>1849439327</id>
-        <link href="https://gizmodo.com/godzilla-vs-kong-2-stranger-things-the-umbrella-academy-1849439327"/>
-        <updated>2022-08-26T13:45:00.000Z</updated>
-        <summary type="html"><![CDATA[Maggie and Negan’s Walking Dead spin-off has a name. Don’t let the name fool you (or, you know, lean into it) Astonishing Tales of Terror: Rocktopussy looks to be some weirdly wonderful pulp satire. We’ve also got trailers for an eco-terror film led by Adam Driver and Greta Gerwig (White Noise) and the Prime Video…
-Read more...]]></summary>
-        <author>
-            <name>James Whitbrook, Gordon Jackson,  and Linda Codega</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The Best "Link in Bio" Tools For Pointing Your Followers to Your Work]]></title>
-        <id>1849453508</id>
-        <link href="https://gizmodo.com/link-in-bio-resume-work-personal-site-tools-portfolio-1849453508"/>
-        <updated>2022-08-26T13:30:00.000Z</updated>
-        <summary type="html"><![CDATA[You’ll no doubt be familiar with the phrase “see link in bio”—a common way of pointing Twitter or Instagram followers towards even more links on the web, plugging whatever needs to be plugged. These links aren’t difficult to set up and you’ve got numerous services to choose from to get your own, should you want to let…
-Read more...]]></summary>
-        <author>
-            <name>David Nield</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Watch the Artemis 1 Launch, NASA's Return to the Moon]]></title>
-        <id>1849457875</id>
-        <link href="https://gizmodo.com/how-to-watch-live-artemis-1-launch-nasa-moon-sls-1849457875"/>
-        <updated>2022-08-26T13:12:00.000Z</updated>
-        <summary type="html"><![CDATA[It’s finally happening: On Monday, August 29, NASA’s Space Launch System (SLS) megarocket is set to launch for the first time, boosting an uncrewed Orion capsule on a journey to the Moon. This crucial first mission in the Artemis program is part of the preparation to send astronauts to the Moon later this decade.
-Read more...]]></summary>
-        <author>
-            <name>Passant Rabie</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[It's a Real Pity the Samsung Galaxy Z Fold 4 Isn't More Affordable]]></title>
-        <id>1849449228</id>
-        <link href="https://gizmodo.com/samsung-galaxy-z-fold-4-review-price-positive-worth-it-1849449228"/>
-        <updated>2022-08-26T13:00:00.000Z</updated>
-        <summary type="html"><![CDATA[It’s a strange time for me to sit down and attempt to don the gadget reviewer hat. I was solo parenting a sick kid for the week, and then the rest of my family contracted the stupid virus, which meant this review had to take a backseat. There was much crying, mucus, missed deadlines, and a copious amount of video…
-Read more...]]></summary>
-        <author>
-            <name>Florence Ion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Coinbase Has Been Slammed With Multiple Class Action Suits Since the SEC Began Investigating It]]></title>
-        <id>1849458641</id>
-        <link href="https://gizmodo.com/coinbase-class-action-suits-sec-crypto-bitcoin-1849458641"/>
-        <updated>2022-08-26T10:30:00.000Z</updated>
-        <summary type="html"><![CDATA[Any institution regularly dealing with customers’ money will be a prime target for lawsuits, but Coinbase, one of the most popular crypto exchanges on the scene, has been practically showered with legal complaints just this past month, all of them aspiring class action suits.
-Read more...]]></summary>
-        <author>
-            <name>Kyle Barr</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[A Massive Hacking Campaign Stole 10,000 Login Credentials From 130 Different Organizations]]></title>
-        <id>1849457420</id>
-        <link href="https://gizmodo.com/oktapus-okta-hack-twilio-10000-logins-130-companies-1849457420"/>
-        <updated>2022-08-26T10:15:00.000Z</updated>
-        <summary type="html"><![CDATA[Researchers say that a mysterious “threat actor” (a fancy term for a hacker or hacker group) has managed to steal nearly 10,000 login credentials from the employees of 130 organizations, in  the latest far-reaching supply chain attack on corporate America. Many of the victims are prominent software companies,…
-Read more...]]></summary>
-        <author>
-            <name>Lucas Ropek</name>
         </author>
     </entry>
     <entry>
@@ -1189,29 +1516,6 @@ Read more...]]></summary>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Here Are All the Streaming Panels at Disney's D23 Expo]]></title>
-        <id>1849459224</id>
-        <link href="https://gizmodo.com/disney-d23-expo-streaming-panels-imagineering-parks-1849459224"/>
-        <updated>2022-08-25T23:00:00.000Z</updated>
-        <summary type="html"><![CDATA[In just a few weeks, D23 Expo will host its bi-annual Disney content showcase for fans at the Anaheim Convention Center. And while it’s long been sold out, the event will be taking a lot of its panels, presentations, exhibit tours, and conversations with special guests online so fans at home can watch.
-Read more...]]></summary>
-        <author>
-            <name>Sabina Graves</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Everything We Know about House of the Dragon]]></title>
-        <id>1847808778</id>
-        <link href="https://gizmodo.com/everything-we-know-about-house-of-the-dragon-1847808778"/>
-        <updated>2022-08-25T22:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Based on the 2018 book Fire & Blood by George R.R. Martin, House of the Dragon is a new series set centuries before the events of Game of Thrones.
-
-Read more...]]></summary>
-        <author>
-            <name>io9 Staff</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Industrial Fire Hoses and Bricks Are Upcycled into a Minimal Outdoor Furniture Set]]></title>
         <id>https://www.thisiscolossal.com/?p=221986</id>
         <link href="https://www.thisiscolossal.com/2022/08/local-works-studio-furniture/"/>
@@ -1219,28 +1523,6 @@ Read more...]]></summary>
         <summary type="html"><![CDATA[Loretta Bosence and Ben Bosence are behind the East Sussex-based Local Works Studio, which recently completed a furniture collection focused on revitalizing what’s been discarded or cast aside. Designed for Maggie’s Southampton cancer center, the functional goods are made almost entirely of upcycled goods sourced nearby. “People who sit in the chairs and touch the surfaces can ‘read’ the story of the furniture and understand where the materials came from. This connection to place and the playful character of the furniture is a powerful antidote to the usual impersonal, sterile environment of a hospital,” the studio said to dezeen. More]]></summary>
         <author>
             <name>Grace Ebert</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Zoom in on Webb Telescope's Biggest Image Yet]]></title>
-        <id>1849458237</id>
-        <link href="https://gizmodo.com/webb-telescope-ceers-survey-galaxies-image-1849458237"/>
-        <updated>2022-08-25T21:11:00.000Z</updated>
-        <summary type="html"><![CDATA[The Webb Space Telescope has taken its biggest image yet, exceeding the scale of the deep field image revealed by President Biden on July 12. The new image covers a region of sky eight times larger than the first Webb deep field, and it includes some dazzling structures from the cosmos.
-Read more...]]></summary>
-        <author>
-            <name>Isaac Schultz</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Jeffrey Dean Morgan Joins The Boys Season 4, Further Elevating the Supernatural Reunion Vibes]]></title>
-        <id>1849457150</id>
-        <link href="https://gizmodo.com/jeffrey-dean-morgan-the-boys-season-4-supernatural-1849457150"/>
-        <updated>2022-08-25T21:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Yep, they got it done. After some exchanges on Instagram teasing that Jeffrey Dean Morgan was circling his old Supernatural team, it’s finally going to happen. According to Entertainment Weekly, Morgan is set to reunite with his Winchester boy Jensen Ackles on Supernatural creator Eric Kripke’s current television…
-Read more...]]></summary>
-        <author>
-            <name>Sabina Graves</name>
         </author>
     </entry>
     <entry>
@@ -1347,16 +1629,6 @@ Well,   credit card numbers must be at least 16 digits long ... by Marc]]></summ
         <link href="https://feeds.feedblitz.com/~/707768752/0/baeldung~Swagger-Specify-Two-Responses-with-the-Same-Response-Code"/>
         <updated>2022-08-24T07:45:40.000Z</updated>
         <summary type="html"><![CDATA[Learn how to write an API specification that returns two different objects for the same response code using Java and Swagger.]]></summary>
-        <author>
-            <name>baeldung</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Difference Between Arrays.asList() and List.of()]]></title>
-        <id>https://drafts.baeldung.com/?p=140047</id>
-        <link href="https://feeds.feedblitz.com/~/707768754/0/baeldung~Difference-Between-ArraysasList-and-Listof"/>
-        <updated>2022-08-24T07:42:12.000Z</updated>
-        <summary type="html"><![CDATA[Java provides some helper functions for us to build List objects from arrays. We look at how they work and the capabilities and limitations of the resulting List objects.]]></summary>
         <author>
             <name>baeldung</name>
         </author>
@@ -1560,16 +1832,6 @@ Well,   credit card numbers must be at least 16 digits long ... by Marc]]></summ
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Ceramic Rings Link Nature and Community in Cecil Kemperink’s Elaborate Moveable Sculptures]]></title>
-        <id>https://www.thisiscolossal.com/?p=221859</id>
-        <link href="https://www.thisiscolossal.com/2022/08/cecil-kemperink-linked-ceramic-sculptures/"/>
-        <updated>2022-08-23T18:45:53.000Z</updated>
-        <summary type="html"><![CDATA[Constant motion and transformation underpin ceramic artist Cecil Kemperink’s philosophy, drawing inspiration from the rhythms of nature. Since 2019, she has lived on Texel, an island north of The Netherlands in the Wadden Sea that’s recognized by UNESCO as the largest continuous, undisturbed intertidal ecosystem in the world. The infinite crashing of waves on the shore, grasses or branches waving in the wind, and the way humans interact with these phenomena inspire the artist’s linked, organic pieces that combine sculpture with performance (previously). More]]></summary>
-        <author>
-            <name>Kate Mothes</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[研究首次将除草剂Roundup与动物的抽搐联系起来]]></title>
         <id>2022_08_23_en_hn_hn__32564275</id>
         <link href="https://news.ycombinator.com/item?id=32564275"/>
@@ -1608,17 +1870,6 @@ Well,   credit card numbers must be at least 16 digits long ... by Marc]]></summ
  #worldnews]]></summary>
         <author>
             <name>MastodonOk8087</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Symmetric Drawings on Antique Ledgers Balance Energy and Consciousness]]></title>
-        <id>https://www.thisiscolossal.com/?p=221878</id>
-        <link href="https://www.thisiscolossal.com/2022/08/tanya-p-johnson-wisdom-engines/"/>
-        <updated>2022-08-23T16:37:10.000Z</updated>
-        <summary type="html"><![CDATA[Conveying the “texture of a threshold,” the mixed-media drawings that comprise Tanya P. Johnson’s ongoing Wisdom Engines series invoke passing between wakefulness and sleep or life and death. Mirrored renderings entwine gears, levers, pulleys, and audio equipment with flowers and geometric motifs in elongated columns, referencing the shape of the human spine. The bisected works reflect both a connection between entities and finding balance through somatic experiences and symmetries.
-Drawn on vintage ledger paper, the pieces are “tools for consciousness hacking,” Johnson says, instruments for confronting the systems we’re accustomed to. More]]></summary>
-        <author>
-            <name>Grace Ebert</name>
         </author>
     </entry>
     <entry>
@@ -1672,17 +1923,6 @@ Drawn on vintage ledger paper, the pieces are “tools for consciousness hacking
  #nextfuckinglevel]]></summary>
         <author>
             <name>5_Frog_Margin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Interview: Jacob Hashimoto Relates How Narrative and Landscape Abstraction Inform How He Thinks About Space]]></title>
-        <id>https://www.thisiscolossal.com/?p=221876</id>
-        <link href="https://www.thisiscolossal.com/2022/08/interview-jacob-hashimoto/"/>
-        <updated>2022-08-23T14:22:41.000Z</updated>
-        <summary type="html"><![CDATA[In the suspended worlds of upstate New York-based artist Jacob Hashimoto (previously), a multitude of undulating forms and layers begin with a kite, a single element he discusses in a new interview supported by Colossal Members.
-Each screen-printed disc is inspired by his surroundings, pop culture, and current events, and the individual components are assembled into fields in a vast range of vivid colors, patterns, and sizes, from wall works to elaborate architectural installations. More]]></summary>
-        <author>
-            <name>Kate Mothes</name>
         </author>
     </entry>
     <entry>
@@ -3636,146 +3876,6 @@ Each screen-printed disc is inspired by his surroundings, pop culture, and curre
         <summary type="html"><![CDATA[08-15 - A happy ending #Unexpected]]></summary>
         <author>
             <name>pineapple277353</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[宣讲！]]></title>
-        <id>2022_08_15_en_reddit_reddit__r--antiwork--comments--wown0j--preach</id>
-        <link href="https://old.reddit.com/r/antiwork/comments/wown0j/preach/"/>
-        <updated>2022-08-15T22:26:25.000Z</updated>
-        <summary type="html"><![CDATA[08-15 - Preach! #antiwork]]></summary>
-        <author>
-            <name>Expired_Cookiez</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[戈登-拉姆塞是最优秀的人]]></title>
-        <id>2022_08_15_en_reddit_reddit__r--MadeMeSmile--comments--woydp5--gordon_ramsay_being_the_nicest_guy</id>
-        <link href="https://old.reddit.com/r/MadeMeSmile/comments/woydp5/gordon_ramsay_being_the_nicest_guy/"/>
-        <updated>2022-08-15T21:26:21.000Z</updated>
-        <summary type="html"><![CDATA[08-15 - Gordon Ramsay being the nicest guy #MadeMeSmile]]></summary>
-        <author>
-            <name>Limitless_yt89</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[妈妈们是妈妈。]]></title>
-        <id>2022_08_15_en_reddit_reddit__r--memes--comments--woob7k--moms_being_moms</id>
-        <link href="https://old.reddit.com/r/memes/comments/woob7k/moms_being_moms/"/>
-        <updated>2022-08-15T18:54:49.000Z</updated>
-        <summary type="html"><![CDATA[08-15 - Moms being moms. #memes]]></summary>
-        <author>
-            <name>pantherghast</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[猎物》中捕食者的幕后花絮，这里的实际效果令人惊叹]]></title>
-        <id>2022_08_15_en_reddit_reddit__r--nextfuckinglevel--comments--woub96--behind_the_scenes_of_predator_in_prey_the</id>
-        <link href="https://old.reddit.com/r/nextfuckinglevel/comments/woub96/behind_the_scenes_of_predator_in_prey_the/"/>
-        <updated>2022-08-15T17:26:06.000Z</updated>
-        <summary type="html"><![CDATA[08-15 - Behind the scenes of Predator in Prey, the practical effects here is amazing #nextfuckinglevel]]></summary>
-        <author>
-            <name>Klaskimo</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[布谷鸟雏鸟将其他蛋逐出巢穴以确保自己的生存]]></title>
-        <id>2022_08_14_en_reddit_reddit__r--interestingasfuck--comments--woc8mn--cuckoo_chick_evicting_other_eggs_from_the_nest_to</id>
-        <link href="https://old.reddit.com/r/interestingasfuck/comments/woc8mn/cuckoo_chick_evicting_other_eggs_from_the_nest_to/"/>
-        <updated>2022-08-15T15:36:44.000Z</updated>
-        <summary type="html"><![CDATA[08-15 - Cuckoo chick evicting other eggs from the nest to ensure its own survival #interestingasfuck]]></summary>
-        <author>
-            <name>Majorpain2006</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Tailscale改变其安卓应用以支持开源的Headscale服务器]]></title>
-        <id>2022_08_15_en_hn_hn__32468430</id>
-        <link href="https://news.ycombinator.com/item?id=32468430"/>
-        <updated>2022-08-15T13:14:21.000Z</updated>
-        <summary type="html"><![CDATA[08-15 - Tailscale changes its Android app to support the open source Headscale server↑ 528 HN Points: https://news.ycombinator.com/item?id=32468430]]></summary>
-        <author>
-            <name>hooooonk</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[当你的父母都是华盛顿地区的新闻主播。(珍妮特-雷耶斯和罗伯特-伯顿)]]></title>
-        <id>2022_08_15_en_reddit_reddit__r--MadeMeSmile--comments--wom96a--when_both_your_parents_are_dc_area_news_anchors</id>
-        <link href="https://old.reddit.com/r/MadeMeSmile/comments/wom96a/when_both_your_parents_are_dc_area_news_anchors/"/>
-        <updated>2022-08-15T12:05:10.000Z</updated>
-        <summary type="html"><![CDATA[08-15 - When both your parents are DC Area news anchors. (Janette Reyes and Robert Burton) #MadeMeSmile]]></summary>
-        <author>
-            <name>shaka_sulu</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[这很好]]></title>
-        <id>2022_08_14_en_reddit_reddit__r--Unexpected--comments--wo3ei0--thats_fine</id>
-        <link href="https://old.reddit.com/r/Unexpected/comments/wo3ei0/thats_fine/"/>
-        <updated>2022-08-15T09:53:28.000Z</updated>
-        <summary type="html"><![CDATA[08-14 - That’s fine #Unexpected]]></summary>
-        <author>
-            <name>aaa_azidoazideazide</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[我的女孩]]></title>
-        <id>2022_08_14_en_reddit_reddit__r--meirl--comments--wo6vbf--meirl</id>
-        <link href="https://old.reddit.com/r/meirl/comments/wo6vbf/meirl/"/>
-        <updated>2022-08-15T09:53:28.000Z</updated>
-        <summary type="html"><![CDATA[08-14 - meirl #meirl]]></summary>
-        <author>
-            <name>outfluenced</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[生活的梦想]]></title>
-        <id>2022_08_14_en_reddit_reddit__r--wholesomememes--comments--wo87ci--living_the_dream</id>
-        <link href="https://old.reddit.com/r/wholesomememes/comments/wo87ci/living_the_dream/"/>
-        <updated>2022-08-15T03:40:53.000Z</updated>
-        <summary type="html"><![CDATA[08-14 - Living the dream #wholesomememes]]></summary>
-        <author>
-            <name>hackyandbird</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[婴儿在10周时过世，父母从未见过他的全貌。r/ceisce为父母漂亮地拍摄了婴儿的脸。]]></title>
-        <id>2022_08_14_en_reddit_reddit__r--HumansBeingBros--comments--wodax7--baby_passed_at_10_weeks_and_parents_never_saw_his</id>
-        <link href="https://old.reddit.com/r/HumansBeingBros/comments/wodax7/baby_passed_at_10_weeks_and_parents_never_saw_his/"/>
-        <updated>2022-08-15T03:40:53.000Z</updated>
-        <summary type="html"><![CDATA[08-15 - Baby passed at 10 weeks and parents never saw his whole face. r/ceisce beautifully photoshops baby's face for the parents #HumansBeingBros]]></summary>
-        <author>
-            <name>flyart</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[老兄对这个问题的反应很狂野]]></title>
-        <id>2022_08_14_en_reddit_reddit__r--Unexpected--comments--wo7qwb--dudes_response_to_the_question_is_wild</id>
-        <link href="https://old.reddit.com/r/Unexpected/comments/wo7qwb/dudes_response_to_the_question_is_wild/"/>
-        <updated>2022-08-15T03:40:53.000Z</updated>
-        <summary type="html"><![CDATA[08-14 - Dude's response to the question is wild #Unexpected]]></summary>
-        <author>
-            <name>Tall_Network2560</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[我的女孩]]></title>
-        <id>2022_08_14_en_reddit_reddit__r--meirl--comments--wo1xa7--meirl</id>
-        <link href="https://old.reddit.com/r/meirl/comments/wo1xa7/meirl/"/>
-        <updated>2022-08-15T01:27:08.000Z</updated>
-        <summary type="html"><![CDATA[08-14 - meirl #meirl]]></summary>
-        <author>
-            <name>Muted_Dog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[一名印度尼西亚少年在海上漂流49天后幸存下来，因为他的木制捕鱼器滑落到系泊处。在被一艘路过的货船救起之前，他靠鱼和从衣服里挤出来的海水活了下来。]]></title>
-        <id>2022_08_14_en_reddit_reddit__r--Damnthatsinteresting--comments--wo3vv7--an_indonesian_teenager_survived_49_days_adrift_at</id>
-        <link href="https://old.reddit.com/r/Damnthatsinteresting/comments/wo3vv7/an_indonesian_teenager_survived_49_days_adrift_at/"/>
-        <updated>2022-08-14T23:19:37.000Z</updated>
-        <summary type="html"><![CDATA[08-14 - An Indonesian teenager survived 49 days adrift at sea after his wooden fish trap slipped its moorings. He survived on fish and seawater he squeezed from his clothing before being rescued by a passing cargo ship. #Damnthatsinteresting]]></summary>
-        <author>
-            <name>PEDERAHMET</name>
         </author>
     </entry>
 </feed>
